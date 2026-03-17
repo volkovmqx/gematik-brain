@@ -1,0 +1,293 @@
+@use "./base.scss";
+
+// ──────────────────────────────────────────────
+// gematik Brain — Editorial Precision
+// Custom visual identity overrides
+// ──────────────────────────────────────────────
+
+// === 4a. Global ===
+
+body {
+  background: linear-gradient(180deg, var(--light) 0%, color-mix(in srgb, var(--light) 97%, #d4c9a8) 100%);
+  transition: background-color 0.3s ease;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--secondary) 20%, transparent);
+  color: var(--dark);
+}
+
+// === 4b. Typography rhythm ===
+
+body {
+  font-feature-settings: "liga" 1, "onum" 1;
+}
+
+article > h1 {
+  letter-spacing: -0.02em;
+}
+
+h1, h2 {
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+h2 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.625rem;
+}
+
+h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+// === 4c. Page title ===
+
+.page-title {
+  font-size: 2rem;
+  letter-spacing: -0.03em;
+  position: relative;
+  padding-bottom: 0.625rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 3rem;
+    height: 2px;
+    background: var(--secondary);
+    border-radius: 1px;
+  }
+
+  a {
+    font-weight: 400;
+    color: var(--dark);
+
+    &:hover {
+      color: var(--secondary);
+    }
+  }
+}
+
+// === 4d. Links ===
+
+a {
+  transition: color 0.2s ease, border-color 0.2s ease;
+
+  &.internal {
+    background-color: transparent;
+    border-left: 2px solid var(--highlight);
+    border-radius: 0;
+    padding: 0 0.25rem;
+    transition: border-color 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      border-left-color: var(--secondary);
+    }
+
+    &:has(> img) {
+      border-left: none;
+      padding: 0;
+    }
+  }
+
+  &.external {
+    background-image: linear-gradient(var(--secondary), var(--secondary));
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease, color 0.2s ease;
+
+    &:hover {
+      background-size: 100% 1px;
+    }
+  }
+}
+
+// === 4e. Sidebar sections ===
+
+.sidebar.right > * {
+  border: 1px solid var(--lightgray);
+  border-radius: 0.375rem;
+  padding: 0.75rem;
+}
+
+.sidebar.right {
+  h3, .h3 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--gray);
+    margin-top: 0;
+  }
+}
+
+// === 4f. Callouts ===
+
+.callout {
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--border);
+  border-top: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 0.125rem 1.125rem;
+}
+
+// === 4g. Code blocks ===
+
+pre {
+  border-radius: 0.375rem;
+}
+
+code {
+  border-radius: 0.25rem;
+}
+
+figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+  border-radius: 0.375rem 0.375rem 0 0;
+  background: var(--highlight);
+  border-bottom: none;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.8rem;
+}
+
+pre > code > [data-line]::before {
+  color: var(--gray);
+  opacity: 0.5;
+}
+
+// === 4h. Footer ===
+
+footer {
+  border-top: 1px solid var(--lightgray);
+  padding-top: 1.5rem;
+  margin-top: 2rem;
+
+  p {
+    font-size: 0.85rem;
+    color: var(--gray);
+  }
+}
+
+// === 4i. Search modal ===
+
+.search-container > #search-space {
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+// === 4j. Accessibility ===
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --lightgray: #bbb;
+  }
+
+  a.internal {
+    border-left-width: 3px;
+  }
+
+  .callout {
+    border-width: 2px;
+    border-left-width: 5px;
+  }
+
+  body {
+    background: var(--light);
+  }
+}
+
+*:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 3px;
+}
+
+// Skip-to-content link
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 10000;
+  padding: 0.5rem 1rem;
+  background: var(--secondary);
+  color: #fff;
+  font-size: 0.85rem;
+  border-radius: 0 0 0.375rem 0;
+  text-decoration: none;
+
+  &:focus {
+    left: 0;
+  }
+}
+
+// === 4k. Print styles ===
+
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .sidebar,
+  .search-container,
+  .darkmode,
+  .graph,
+  .backlinks,
+  .toc,
+  .audience-filter,
+  footer {
+    display: none !important;
+  }
+
+  a {
+    color: #000;
+    text-decoration: underline;
+
+    &.internal {
+      border-left: none;
+    }
+  }
+
+  .page > #quartz-body {
+    display: block;
+  }
+
+  .page-title::after {
+    display: none;
+  }
+}
+
+// === 4l. Smooth transitions ===
+
+.text-highlight {
+  border-radius: 0.25rem;
+}
+
+img {
+  border-radius: 0.375rem;
+}
+
+// Consistent border-radius
+.table-container > table,
+.external-embed.youtube,
+iframe.pdf,
+audio,
+video {
+  border-radius: 0.375rem;
+}

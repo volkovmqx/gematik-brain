@@ -1,0 +1,245 @@
+{
+  "pending": [
+    {
+      "term": "HBA",
+      "category": "infrastructure",
+      "priority": 95,
+      "reason": "Heilberufsausweis for individual healthcare professionals. Mentioned in 7 articles (Konnektoren, SMC-B, ePA, E-Rezept, eAU, NFDM, TI-Messenger) as the card required for QES signatures. Direct counterpart to SMC-B which already has a page. Without this page, links to 'HBA' throughout the knowledge base are dangling.",
+      "mentionedIn": [
+        "content/infrastructure/Konnektoren.md",
+        "content/infrastructure/SMC-B.md",
+        "content/technologies/ePA.md",
+        "content/technologies/E-Rezept.md",
+        "content/technologies/eAU.md",
+        "content/processes/NFDM.md",
+        "content/technologies/TI-Messenger.md"
+      ]
+    },
+    {
+      "term": "gematik",
+      "category": "organization",
+      "priority": 92,
+      "reason": "Named in every article as the authority responsible for the TI. content/organization/ is entirely empty. Central actor without which the TI cannot be understood.",
+      "mentionedIn": [
+        "content/infrastructure/Telematikinfrastruktur.md",
+        "content/technologies/ePA.md",
+        "content/technologies/E-Rezept.md",
+        "content/standards/FHIR.md",
+        "content/index.md"
+      ]
+    },
+    {
+      "term": "PKI",
+      "category": "concepts",
+      "priority": 88,
+      "reason": "Public Key Infrastructure. Named in Telematikinfrastruktur ('TSP', 'TI-PKI'), eGK, SMC-B, KIM ('S/MIME mit Zertifikaten der TI-PKI'). The entire certificate-based trust model of the TI rests on this concept. content/concepts/ is entirely empty.",
+      "mentionedIn": [
+        "content/infrastructure/Telematikinfrastruktur.md",
+        "content/infrastructure/eGK.md",
+        "content/infrastructure/SMC-B.md",
+        "content/technologies/KIM.md"
+      ]
+    },
+    {
+      "term": "QES",
+      "category": "concepts",
+      "priority": 85,
+      "reason": "Qualifizierte Elektronische Signatur. Referenced in 5 articles as the legal signature type used for E-Rezept, eAU, NFDM, ePA documents. Legal basis (eIDAS, SGB V) deserves its own article. content/concepts/ is empty.",
+      "mentionedIn": [
+        "content/technologies/ePA.md",
+        "content/technologies/E-Rezept.md",
+        "content/technologies/eAU.md",
+        "content/processes/NFDM.md",
+        "content/infrastructure/Konnektoren.md"
+      ]
+    },
+    {
+      "term": "VZD",
+      "category": "infrastructure",
+      "priority": 80,
+      "reason": "Verzeichnisdienst (directory service). Central TI component mentioned in Telematikinfrastruktur ('zentrales Adressbuch'), KIM ('LDAP-basiertes Adressbuch'), and TI-Messenger ('VZD-FHIR-Directory'). All TI participants are listed here; it underpins KIM and TI-Messenger addressing.",
+      "mentionedIn": [
+        "content/infrastructure/Telematikinfrastruktur.md",
+        "content/technologies/KIM.md",
+        "content/technologies/TI-Messenger.md"
+      ]
+    },
+    {
+      "term": "IDP",
+      "category": "infrastructure",
+      "priority": 78,
+      "reason": "Identity Provider / IDP-Dienst. Named in Telematikinfrastruktur as a core service, referenced in TI-Messenger ('gematik IDP') and ePA ('Gesundheits-ID al.vi'). Central authentication gateway for the TI.",
+      "mentionedIn": [
+        "content/infrastructure/Telematikinfrastruktur.md",
+        "content/technologies/TI-Messenger.md",
+        "content/technologies/ePA.md"
+      ]
+    },
+    {
+      "term": "TI-Gateway",
+      "category": "infrastructure",
+      "priority": 75,
+      "reason": "Cloud-based replacement for hardware Konnektoren in TI 2.0. Mentioned in Telematikinfrastruktur and Konnektoren as the future of TI access. Critical for understanding the TI 2.0 migration path.",
+      "mentionedIn": [
+        "content/infrastructure/Telematikinfrastruktur.md",
+        "content/infrastructure/Konnektoren.md"
+      ]
+    },
+    {
+      "term": "VAU",
+      "category": "concepts",
+      "priority": 72,
+      "reason": "Vertrauenswürdige Ausführungsumgebung (Trusted Execution Environment). Mentioned in ePA as a core security mechanism. The ePA stores and processes sensitive data inside a VAU, which is a central architectural concept for TI data services.",
+      "mentionedIn": [
+        "content/technologies/ePA.md"
+      ]
+    },
+    {
+      "term": "Gesundheits-ID",
+      "category": "infrastructure",
+      "priority": 70,
+      "reason": "Digital identity for insured persons (al.vi). Mentioned in ePA as alternative to eGK for authentication, and in VSDM 2.0 as part of mobile scenarios. Will replace eGK for digital access in TI 2.0.",
+      "mentionedIn": [
+        "content/technologies/ePA.md",
+        "content/processes/VSDM.md"
+      ]
+    },
+    {
+      "term": "BSI",
+      "category": "organization",
+      "priority": 68,
+      "reason": "Bundesamt für Sicherheit in der Informationstechnik. Approves cryptographic standards used in the TI (RSA, ECC, BSI TR-03116). Relevant organization per CLAUDE.md. content/organization/ is empty.",
+      "mentionedIn": [
+        "content/infrastructure/Telematikinfrastruktur.md"
+      ]
+    },
+    {
+      "term": "DiGA",
+      "category": "technologies",
+      "priority": 65,
+      "reason": "Digitale Gesundheitsanwendungen (apps on prescription). Mentioned in E-Rezept ('DiGA-Verordnungen') and TI-Messenger ('TI-Messenger Connect: Zugang für Versicherte über integrierte Apps (DiGA, Patientenportale)'). BfArM-regulated category with its own TI implications.",
+      "mentionedIn": [
+        "content/technologies/E-Rezept.md",
+        "content/technologies/TI-Messenger.md"
+      ]
+    },
+    {
+      "term": "KBV",
+      "category": "organization",
+      "priority": 62,
+      "reason": "Kassenärztliche Bundesvereinigung. Named as producer of key FHIR profiles (KBV-Profile) used in E-Rezept, eAU, and FHIR. Relevant organization for understanding why certain data formats are the way they are.",
+      "mentionedIn": [
+        "content/technologies/E-Rezept.md",
+        "content/technologies/eAU.md",
+        "content/standards/FHIR.md"
+      ]
+    },
+    {
+      "term": "XDS",
+      "category": "standards",
+      "priority": 60,
+      "reason": "Cross-Enterprise Document Sharing. Mentioned in ePA as the document management standard ('XDS Document Management'). Listed in CLAUDE.md as a planned standards/ article. Important IHE profile used alongside FHIR in ePA.",
+      "mentionedIn": [
+        "content/technologies/ePA.md"
+      ]
+    },
+    {
+      "term": "OCSP",
+      "category": "concepts",
+      "priority": 58,
+      "reason": "Online Certificate Status Protocol. Named in Telematikinfrastruktur ('OCSP/CRL: Zertifikatsprüfung') and Konnektoren ('Zertifikatsprüfung (OCSP)'). Core mechanism for certificate revocation checking in TI.",
+      "mentionedIn": [
+        "content/infrastructure/Telematikinfrastruktur.md",
+        "content/infrastructure/Konnektoren.md"
+      ]
+    },
+    {
+      "term": "Matrix-Protokoll",
+      "category": "standards",
+      "priority": 55,
+      "reason": "Open federated messaging protocol underlying TI-Messenger. Named explicitly in TI-Messenger article. Understanding Matrix is prerequisite for understanding TI-Messenger's federation model and E2E encryption (Olm/Megolm).",
+      "mentionedIn": [
+        "content/technologies/TI-Messenger.md"
+      ]
+    },
+    {
+      "term": "ISiK",
+      "category": "standards",
+      "priority": 52,
+      "reason": "Informationstechnische Systeme im Krankenhaus. Mentioned in FHIR article as a key use case. gematik-mandated FHIR profiles for hospital information systems. Growing importance as hospitals digitize.",
+      "mentionedIn": [
+        "content/standards/FHIR.md"
+      ]
+    },
+    {
+      "term": "Zero-Trust",
+      "category": "concepts",
+      "priority": 50,
+      "reason": "Security architecture principle for TI 2.0. Explicitly named in Telematikinfrastruktur ('Zero-Trust-Architektur: Kein implizites Vertrauen') and VSDM ('VSDM 2.0 ist Vorreiter für die TI-2.0-Architektur'). Central design principle readers need to understand TI 2.0 changes.",
+      "mentionedIn": [
+        "content/infrastructure/Telematikinfrastruktur.md",
+        "content/processes/VSDM.md"
+      ]
+    },
+    {
+      "term": "BfArM",
+      "category": "organization",
+      "priority": 48,
+      "reason": "Bundesinstitut für Arzneimittel und Medizinprodukte. Regulates DiGA (Digitale Gesundheitsanwendungen) and is a central actor in the German health IT regulatory landscape. Listed in CLAUDE.md as a relevant organization.",
+      "mentionedIn": [
+        "content/technologies/E-Rezept.md"
+      ]
+    },
+    {
+      "term": "DEMIS",
+      "category": "technologies",
+      "priority": 45,
+      "reason": "Deutsches Elektronisches Melde- und Informationssystem für den Infektionsschutz. RKI-operated system for electronic disease notification, integrated with TI infrastructure via FHIR. Adjacent TI system with growing relevance post-pandemic.",
+      "mentionedIn": []
+    },
+    {
+      "term": "eHBA",
+      "category": "infrastructure",
+      "priority": 42,
+      "reason": "Elektronischer Heilberufsausweis (more precise name for HBA with electronic chip). The G2.1 card generation is current. Subtopic that could be covered within the HBA article, but listed here as the official full term.",
+      "mentionedIn": [
+        "content/infrastructure/SMC-B.md",
+        "content/infrastructure/Konnektoren.md"
+      ]
+    },
+    {
+      "term": "AMTS",
+      "category": "processes",
+      "priority": 40,
+      "reason": "Arzneimitteltherapiesicherheit (medication safety). Central use case driving ePA medication data and the Medikationsplan. Not directly named in articles but is the primary clinical justification for ePA medication features.",
+      "mentionedIn": []
+    },
+    {
+      "term": "Fachdienst",
+      "category": "infrastructure",
+      "priority": 38,
+      "reason": "Central backend services in the TI (E-Rezept-Fachdienst, KIM-Fachdienst, VSDM-Fachdienst). The term appears throughout articles but is never explained as an architectural pattern. Understanding what a Fachdienst is helps make sense of the whole TI service model.",
+      "mentionedIn": [
+        "content/infrastructure/Telematikinfrastruktur.md",
+        "content/technologies/E-Rezept.md",
+        "content/technologies/KIM.md",
+        "content/processes/VSDM.md"
+      ]
+    }
+  ],
+  "done": [
+    "ePA",
+    "E-Rezept",
+    "KIM",
+    "TI-Messenger",
+    "eAU",
+    "Telematikinfrastruktur",
+    "Konnektoren",
+    "eGK",
+    "SMC-B",
+    "FHIR",
+    "VSDM",
+    "NFDM"
+  ],
+  "lastRun": "2026-03-17"
+}
