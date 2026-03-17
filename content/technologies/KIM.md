@@ -31,7 +31,7 @@ KIM besteht aus drei Komponenten:
 Das Clientmodul ist in das Primärsystem (Praxissoftware) integriert. Es verschlüsselt und signiert Nachrichten über die Schnittstellen des [[Konnektoren|Konnektors]].
 
 ### 2. KIM-Fachdienst (Mailserver)
-Der Fachdienst routet verschlüsselte Nachrichten zwischen Teilnehmern. Er wird von zugelassenen Anbietern betrieben.
+Der [[Fachdienst|KIM-Fachdienst]] routet verschlüsselte Nachrichten zwischen Teilnehmern. Er wird von zugelassenen Anbietern betrieben.
 
 ### 3. Verzeichnisdienst
 Ein LDAP-basiertes Adressbuch ([[VZD]]), in dem alle registrierten KIM-Teilnehmer gelistet sind.
@@ -39,7 +39,7 @@ Ein LDAP-basiertes Adressbuch ([[VZD]]), in dem alle registrierten KIM-Teilnehme
 ### Technische Details
 - Verschlüsselung: S/MIME mit Zertifikaten der [[PKI|TI-PKI]]
 - Maximale Nachrichtengröße: 25 MB (ab KIM 1.5+: 524 MB)
-- Aktuelle Version: KIM 1.6.3 (Zertifizierungen gültig bis 2026)
+- Aktuelle Version: KIM 1.5.5 / Spezifikationsversion gemAnbT 1.6.8 / gemProdT 1.6.5 (Release KIM_1_5_5, Februar 2026)
 - Dienstkennungen ermöglichen automatisierte Verarbeitung und gezieltes Routing
 
 ### Ablauf

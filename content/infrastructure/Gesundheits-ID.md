@@ -19,7 +19,7 @@ Die Gesundheits-ID erlaubt es Versicherten, sich ohne physische [[eGK]] an TI-An
 
 Die Gesundheits-ID ist ein zentraler Baustein der TI 2.0-Strategie. Das Ziel: Die [[Telematikinfrastruktur]] soll nicht mehr zwingend Hardware wie [[eGK]] oder [[Konnektoren]] voraussetzen, sondern softwarebasiert und geräteunabhängig werden. Ab 2027 sollen Versicherte die Gesundheits-ID als vollwertigen Ersatz für die [[eGK]] auch beim Arztbesuch verwenden können.
 
-Technisch basiert die Gesundheits-ID auf dem [[IDP]]-System der TI. Jede Krankenkasse betreibt einen eigenen sektoralen Identity Provider (sektoraler IDP), der über die TI-Federation mit dem zentralen [[IDP]] verbunden ist. Versicherte authentifizieren sich über die App ihrer Krankenkasse und erhalten dort ein Token, das von TI-Diensten akzeptiert wird.
+Technisch basiert die Gesundheits-ID auf dem [[IDP]]-System der TI. Jede Krankenkasse betreibt einen eigenen sektoralen Identity Provider (sektoraler IDP), der über die [[TI-Federation]] mit dem zentralen [[IDP]] verbunden ist. Versicherte authentifizieren sich über die App ihrer Krankenkasse und erhalten dort ein Token, das von TI-Diensten akzeptiert wird.
 
 ## Technische Details
 
@@ -48,7 +48,7 @@ Zur Sicherheit ist eine Zwei-Faktor-Authentifizierung vorgesehen. Geräte mit ei
 - Protokoll: OpenID Connect (OIDC) über OAuth 2.0
 - Token: JSON Web Token (JWT) mit KVNR und Versicherungsattributen
 - Signing: ECDSA mit brainpoolP256r1
-- Infrastruktur: TI-Federation verbindet alle sektoralen IDPs mit dem zentralen [[IDP]]
+- Infrastruktur: [[TI-Federation]] verbindet alle sektoralen IDPs mit dem zentralen [[IDP]]
 
 ### Abgrenzung zur eGK
 

@@ -33,17 +33,18 @@ Das E-Rezept wird digital erstellt, signiert und kann auf drei Wegen eingelöst 
 - Rezepte für Privatversicherte
 
 ### Was kommt noch?
-- [[DiGA]]-Verordnungen (Digitale Gesundheitsanwendungen)
+- [[DiGA]]-Verordnungen (Digitale Gesundheitsanwendungen): ab Januar 2026
 - E-Rezept-Anforderung und Übermittlung via [[KIM]]
-- T-Rezepte (teratogene Stoffe)
+- T-Rezepte (teratogene Stoffe): Spezifikation seit August 2025 veröffentlicht, Einführung 2026 geplant
 - Betäubungsmittel-Rezepte (BtM)
 - Grenzüberschreitende Einlösung in der EU
-- Häufige Pflegeverordnung
-- Heil- und Hilfsmittelverordnungen
+- Häusliche Krankenpflege und außerklinische Intensivpflege: Pflicht ab 1. Juli 2026
+- Hilfsmittelverordnungen (Orthesen, Rollstühle etc.): Pflicht ab 1. Juli 2026
+- Heilmittelverordnungen (Physiotherapie, Ergotherapie, Logopädie): Pflicht ab 1. Januar 2027
 
 ## Architektur
 
-Der E-Rezept-Fachdienst ist ein zentraler Dienst in der [[Telematikinfrastruktur]].
+Der [[Fachdienst|E-Rezept-Fachdienst]] ist ein zentraler Dienst in der [[Telematikinfrastruktur]].
 
 ### Ablauf
 1. Arzt erstellt Verordnung im Praxisverwaltungssystem (PVS)

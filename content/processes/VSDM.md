@@ -23,7 +23,7 @@ VSDM ist eine gesetzlich vorgeschriebene Anwendung. Beim ersten Kontakt pro Quar
 
 ### Ablauf (VSDM 1.0)
 1. [[eGK]] wird im Kartenterminal gelesen
-2. [[Konnektoren|Konnektor]] baut Verbindung zum VSDM-Fachdienst auf
+2. [[Konnektoren|Konnektor]] baut Verbindung zum [[Fachdienst|VSDM-Fachdienst]] auf
 3. Stammdaten werden mit Krankenkassen-Daten abgeglichen
 4. Bei Abweichung: Update auf der [[eGK]]
 5. Prüfnachweis wird erstellt
@@ -33,7 +33,7 @@ Aktuell nur für gesetzlich Versicherte verfügbar.
 
 ## VSDM 2.0
 
-VSDM 2.0 ist die **erste TI-2.0-Anwendung** mit Zero-Trust-Architektur. Wichtige Änderungen:
+VSDM 2.0 ist die **erste TI-2.0-Anwendung** mit [[Zero-Trust]]-Architektur. Wichtige Änderungen:
 
 - Daten werden direkt vom Fachdienst der Krankenkasse abgerufen (nicht mehr von der [[eGK]])
 - Mobile Szenarien ohne physische Karte möglich

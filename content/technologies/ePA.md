@@ -46,7 +46,7 @@ Die ePA nutzt die [[Telematikinfrastruktur]] als sicheres Netzwerk. Der Zugriff 
 
 ### Versionen
 - ePA 3.0.5: Basis-Release
-- ePA 3.1.3: Spezifikation für erweitertes Medikationsmanagement; bundesweiter eMedikationsplan-Rollout verschoben auf Oktober 2026 (Pilotphase ab Juli 2026)
+- ePA 3.1.3: Spezifikation für erweitertes Medikationsmanagement ([[AMTS]]-relevante Zusatzinformationen); bundesweiter eMedikationsplan-Rollout verschoben auf Oktober 2026 (Pilotphase ab Juli 2026)
 
 ## Verknüpfungen
 

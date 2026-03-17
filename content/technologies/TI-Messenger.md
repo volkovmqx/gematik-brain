@@ -18,9 +18,9 @@ Während [[KIM]] für formelle, asynchrone Kommunikation gedacht ist (wie E-Mail
 
 ### Drei Varianten
 
-1. **TI-Messenger Pro**: Chat zwischen Leistungserbringern und Einrichtungen (Arztpraxen, Kliniken, Apotheken, Kassen)
+1. **TI-Messenger Pro**: Chat zwischen Leistungserbringern und Einrichtungen (Arztpraxen, Kliniken, Apotheken, Kassen). Seit Januar 2026 in Ausbaustufe 1 produktiv verfügbar. Version 1.1 ist für Mai 2026 geplant.
 2. **TI-Messenger ePA**: Nachrichten zwischen Versicherten und Leistungserbringern innerhalb der [[ePA]]
-3. **TI-Messenger Connect**: Zugang für Versicherte über integrierte Apps ([[DiGA]], Patientenportale, Telemedizin)
+3. **TI-Messenger Connect**: Zugang für Versicherte über integrierte Apps ([[DiGA]], Patientenportale, Telemedizin). Geplant ab Ende 2026.
 
 ## Architektur
 

@@ -53,7 +53,7 @@ Die gematik erfüllt laut SGB V mehrere zentrale Aufgaben:
 
 ### Verhältnis zu anderen Institutionen
 
-Die gematik arbeitet eng mit dem [[BSI]] (Bundesamt für Sicherheit in der Informationstechnik) zusammen. Das [[BSI]] genehmigt kryptografische Verfahren, die in der TI eingesetzt werden. Das **BfArM** (Bundesinstitut für Arzneimittel und Medizinprodukte) reguliert [[DiGA]] (Digitale Gesundheitsanwendungen).
+Die gematik arbeitet eng mit dem [[BSI]] (Bundesamt für Sicherheit in der Informationstechnik) zusammen. Das [[BSI]] genehmigt kryptografische Verfahren, die in der TI eingesetzt werden. Das **[[BfArM]]** (Bundesinstitut für Arzneimittel und Medizinprodukte) reguliert [[DiGA]] (Digitale Gesundheitsanwendungen).
 
 ### Normative Spezifikationen
 

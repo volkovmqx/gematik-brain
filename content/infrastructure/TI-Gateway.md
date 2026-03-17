@@ -21,7 +21,7 @@ Das TI-Gateway ist kein Gerät, sondern ein Dienst. Zugelassene Anbieter betreib
 
 Die ersten zugelassenen TI-Gateway-Lösungen sind bereits verfügbar. Der Übergang ist nicht abrupt: [[Konnektoren]] bleiben während der Migrationsphase parallel im Einsatz. Schritt für Schritt werden Anwendungen auf TI 2.0 umgestellt, beginnend mit [[VSDM]] 2.0 (Start: 30. Juni 2026).
 
-Das TI-Gateway ist eine Schlüsselkomponente der TI 2.0 und direkt mit deren zentralen Architekturprinzipien verbunden: [[Zero-Trust]]-Architektur und mTLS-Verschlüsselung.
+Das TI-Gateway ist eine Schlüsselkomponente der TI 2.0 und direkt mit deren zentralen Architekturprinzipien verbunden: [[Zero-Trust]]-Architektur und [[mTLS]]-Verschlüsselung.
 
 ## Technische Details
 
@@ -71,7 +71,7 @@ Laut gematik sollen künftig weitere Dienste über das TI-Gateway angeboten werd
 - Ersetzt den [[Konnektoren|Konnektor]] in der TI 2.0
 - Basiert auf [[Zero-Trust]]-Architektur
 - Erste Anwendung auf TI 2.0-Basis ist [[VSDM]] 2.0
-- Authentisierung über [[IDP]]-Dienst und mTLS
+- Authentisierung über [[IDP]]-Dienst und [[mTLS]]
 - Bestandteil der [[Telematikinfrastruktur]] 2.0
 
 ## Quellen

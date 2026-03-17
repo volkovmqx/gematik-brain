@@ -29,7 +29,7 @@ Im Kontext der Digitalisierung ist die KBV als Herausgeberin verbindlicher techn
 
 ### KBV-FHIR-Profile
 
-Die KBV veröffentlicht ihre [[FHIR]]-Implementierungsleitfäden auf dem FHIR-Simplifier unter `fhir.kbv.de` (weiterleitung zu simplifier.net). Die wichtigsten Pakete sind:
+Die KBV veröffentlicht ihre [[FHIR]]-Implementierungsleitfäden auf dem FHIR-Simplifier unter `fhir.kbv.de` (Weiterleitung zu simplifier.net). Die wichtigsten Pakete sind:
 
 - **`kbv.basis`**: Basisprofile, auf denen alle weiteren KBV-Profile aufbauen. Enthält angepasste Definitionen für gängige FHIR-Ressourcen (z.B. KBV_PR_Base_Patient).
 - **`kbv.ita.erp`**: FHIR-Profile für das [[E-Rezept]] (Electronic Prescription). Definiert KBV_PR_ERP_Prescription (Verordnung), KBV_PR_ERP_Medication (Medikament), KBV_PR_ERP_PractitionerRole.

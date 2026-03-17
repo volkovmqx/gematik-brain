@@ -1,7 +1,7 @@
 ---
 title: QES - Qualifizierte Elektronische Signatur
 audience: [technical, non-technical]
-tags: [konzepte, qes, signatur, eideas, recht]
+tags: [konzepte, qes, signatur, eidas, recht]
 aliases: [QES, Qualifizierte Elektronische Signatur, qualifizierte Signatur]
 ---
 

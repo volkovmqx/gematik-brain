@@ -1,5 +1,5 @@
 {
-  "lastScan": "2026-03-17",
+  "lastChecked": "2026-03-17",
   "lastRun": "2026-03-17",
   "findings": [
     {
@@ -7,130 +7,140 @@
       "date": "2026-03-01",
       "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/emedikationsplan-start-verschoben-auf-oktober-2026/68597927",
       "summary": "Der bundesweite Start des eMedikationsplans wurde von ursprünglich März 2026 auf Oktober 2026 verschoben. Ab Juli 2026 läuft zunächst eine kontrollierte Pilotphase in ausgewählten Modellregionen. Die Verschiebung begründet gematik mit der Priorisierung technischer Stabilität. Neu: Apotheken erhalten Schreibzugriff für OTC-Medikamente.",
-      "relevantTerms": ["ePA", "eMedikationsplan"],
-      "articleSuggestion": "ePA"
+      "relevantArticles": ["ePA.md"],
+      "action": "update",
+      "details": "ePA.md unter 'Versionen' bereits auf Oktober 2026 aktualisiert. Keine weiteren Änderungen nötig."
     },
     {
       "title": "ePA: Ab März 2026 Kontrolle per Push-Nachricht",
       "date": "2026-02-01",
       "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/epa-ab-maerz-2026-kontrolle-per-push-nachricht/68447169",
       "summary": "Seit März 2026 können Versicherte per Smartphone-Benachrichtigung (Push-Nachricht) nachverfolgen, wer auf ihre ePA zugegriffen oder Änderungen vorgenommen hat. Dies ist eine neue Transparenzfunktion der ePA für alle.",
-      "relevantTerms": ["ePA"],
-      "articleSuggestion": null
+      "relevantArticles": ["ePA.md"],
+      "action": "update",
+      "details": "ePA.md im Abschnitt 'Transparenz und Kontrolle' bereits mit März 2026 und Push-Nachrichten dokumentiert. Kein Update nötig."
     },
     {
       "title": "ePA für alle: Aktive Nutzungsrate bei ca. 3,6 Prozent ein Jahr nach Start",
       "date": "2026-02-07",
       "source": "https://borncity.com/blog/2026/02/07/wie-geht-es-der-epa-kaum-nutzung-und-epas-bei-aok-bayern-geloescht/",
       "summary": "Rund ein Jahr nach dem bundesweiten Rollout (April 2025) liegt die aktive Nutzungsrate der ePA bei etwa 3,6 Prozent. Ca. 75 Millionen Akten wurden automatisch angelegt (Opt-out-Quote 3,8–7 Prozent). Zum Vergleich: Bei der TK nutzen 750.000 von 11 Millionen Versicherten die ePA aktiv. Kliniken und Praxen: Ende 2025 waren knapp 46.000 von 160.000 Einrichtungen ePA-fähig.",
-      "relevantTerms": ["ePA"],
-      "articleSuggestion": null
+      "relevantArticles": ["ePA.md"],
+      "action": "info_only"
     },
     {
       "title": "E-Rezept: 1 Milliarde eingelöste Rezepte am 17. Oktober 2025",
       "date": "2025-10-17",
       "source": "https://www.gematik.de/newsroom/news-detail/eine-milliarde-eingeloeste-e-rezepte",
       "summary": "Am 17. Oktober 2025 wurde das milliardste E-Rezept eingelöst. Seit Pflichteinführung im Januar 2024 werden täglich mehrere Millionen E-Rezepte ausgestellt. Seit Januar 2025 fließen E-Rezept-Daten automatisch in die elektronische Medikationsliste (eML) der ePA.",
-      "relevantTerms": ["E-Rezept", "ePA"],
-      "articleSuggestion": null
+      "relevantArticles": ["E-Rezept.md", "ePA.md"],
+      "action": "info_only"
     },
     {
       "title": "RSA-zu-ECC-Migration in der TI: Fristen und aktueller Stand",
       "date": "2026-01-15",
       "source": "https://www.gematik.de/newsroom/news-detail/aktuelle-information-ti-verschluesselungsalgorithmen-umstellung-von-rsa-auf-ecc",
       "summary": "Die Umstellung von RSA auf ECC in der TI ist in vollem Gange. Harte Fristen: (1) Bis 31.12.2025 mussten alle RSA-only-Konnektoren ausgetauscht sein. (2) Bis 30.06.2026 müssen eHBA G2.0 und SMC-B G2.0 gegen ECC-fähige Nachfolger (G2.1) getauscht sein. (3) Bis 31.12.2026 müssen gSMC-KT-Terminals umgestellt sein. Noch offene Baustelle: ca. 30.000+ eHBAs müssen noch getauscht werden. Gematik verlängerte die eHBA-Frist bis 30.06.2026. Ab 01.01.2026 dürfen Kartenanbieter nur noch ECC-Karten produzieren.",
-      "relevantTerms": ["Telematikinfrastruktur", "SMC-B", "eGK", "Konnektoren"],
-      "articleSuggestion": "RSA-zu-ECC-Migration"
+      "relevantArticles": ["Telematikinfrastruktur.md", "Konnektoren.md", "SMC-B.md", "HBA.md"],
+      "action": "update",
+      "details": "Telematikinfrastruktur.md und Konnektoren.md bereits aktualisiert mit ECC-Fristen. Für SMC-B.md und HBA.md prüfen ob Fristen 30.06.2026 bzw. 31.12.2026 dokumentiert sind.",
+      "suggestedTerm": "RSA-zu-ECC-Migration"
     },
     {
       "title": "VSDM 2.0 startet Parallelbetrieb am 30. Juni 2026",
       "date": "2026-01-01",
       "source": "https://www.gematik.de/telematikinfrastruktur/ti-2-0",
       "summary": "VSDM 2.0 ist die erste TI-2.0-Anwendung mit Zero-Trust-Architektur. Ab 30. Juni 2026 beginnt der Parallelbetrieb mit VSDM 1.0. Vollständiger Rollout: Februar 2027. Ende des Parallelbetriebs (VSDM 1.0 Abschaltung): Mitte 2027. In VSDM 2.0 werden Versichertendaten direkt beim Fachdienst der Krankenkasse abgerufen, nicht mehr von der eGK. Mobile Szenarien und GesundheitsID werden unterstützt.",
-      "relevantTerms": ["VSDM", "Telematikinfrastruktur", "eGK"],
-      "articleSuggestion": null
+      "relevantArticles": ["Telematikinfrastruktur.md"],
+      "action": "info_only"
     },
     {
       "title": "PoPP Stufe 1 gestartet: Zuschlag an RISE",
       "date": "2026-01-01",
       "source": "https://www.gematik.de/newsroom/news-detail/popp-dienst-startet-mit-umsetzungsstufe-1-zuschlag-geht-an-rise",
-      "summary": "Der PoPP-Dienst (Proof of Patient Presence) ist in Umsetzungsstufe 1 gestartet. RISE hat den Zuschlag für die Entwicklung erhalten. Stufe 1 deckt den kryptografisch gesicherten Nachweis der Patientenpräsenz per eGK beim Leistungserbringer ab (Praxis, Hausbesuch). Stufe 1 soll Mitte 2026 abgeschlossen sein. Stufe 2 (Online-Check-in, GesundheitsID, Telemedizin) ist für Ende 2026 geplant. PoPP löst perspektivisch das bisherige VSDM++-Verfahren ab. Die PoPP-Spezifikationen für Fernbehandlungen sollen im Q1 2026 finalisiert werden.",
-      "relevantTerms": ["Telematikinfrastruktur", "eGK", "VSDM"],
-      "articleSuggestion": "PoPP"
+      "summary": "Der PoPP-Dienst (Proof of Patient Presence) ist in Umsetzungsstufe 1 gestartet. RISE hat den Zuschlag für die Entwicklung erhalten. Stufe 1 deckt den kryptografisch gesicherten Nachweis der Patientenpräsenz per eGK beim Leistungserbringer ab (Praxis, Hausbesuch). Stufe 1 soll Mitte 2026 abgeschlossen sein. Stufe 2 (Online-Check-in, GesundheitsID, Telemedizin) ist für Ende 2026 geplant. PoPP löst perspektivisch das bisherige VSDM++-Verfahren ab.",
+      "relevantArticles": ["Telematikinfrastruktur.md", "eGK.md"],
+      "action": "new_article",
+      "suggestedTerm": "PoPP"
     },
     {
       "title": "gematik verlängert eHBA-Austauchfrist bis 30. Juni 2026",
       "date": "2026-01-10",
       "source": "https://www.zm-online.de/news/detail/uebergangsloesung-fuer-ehba-bis-30-juni-2026",
       "summary": "Gematik hat die Übergangsfrist für den Austausch von eHBAs der Generation 2.0 (RSA) auf Generation 2.1 (ECC) bis zum 30. Juni 2026 verlängert. Betroffen sind noch über 30.000 Heilberufsausweise. Telekom-Kunden sind von dieser Fristverlängerung ausgenommen.",
-      "relevantTerms": ["Telematikinfrastruktur", "SMC-B"],
-      "articleSuggestion": "eHBA"
+      "relevantArticles": ["HBA.md", "Telematikinfrastruktur.md"],
+      "action": "update",
+      "details": "HBA.md sollte die Frist 30.06.2026 für G2.0-Tausch und den Ausnahmefall Telekom-Kunden dokumentieren.",
+      "suggestedTerm": "eHBA"
     },
     {
       "title": "CardLink-Zulassung für DocMorris und Redcare bis Januar 2027 verlängert",
       "date": "2025-07-15",
       "source": "https://www.eqs-news.com/news/corporate/gematik-verlangert-docmorris-cardlink-zulassung-bis-januar-2027/0133220b-a3d8-40be-ab4e-9516349bb3ca",
       "summary": "Gematik hat die Produktzulassung für CardLink (eGK-basiertes E-Rezept-Einlösen per App ohne PIN) für DocMorris und Redcare bis Ende Januar 2027 verlängert. Die Verlängerung überbrückt den Übergang zur PoPP-Technologie. Gematik plant, die kontaktlose eGK-Nutzung ohne PIN auch im PoPP-Kontext bis Ende 2026 verfügbar zu machen.",
-      "relevantTerms": ["E-Rezept", "eGK"],
-      "articleSuggestion": "CardLink"
+      "relevantArticles": ["E-Rezept.md", "eGK.md"],
+      "action": "new_article",
+      "suggestedTerm": "CardLink"
     },
     {
       "title": "DEMIS: Aktualisierte Stammdaten ab April 2026 Pflicht für Labore",
       "date": "2026-02-01",
       "source": "https://dorner.de/en/demis-schnittstelle/",
       "summary": "Ab April 2026 können nur Labore mit korrekt aktualisierten DEMIS-Stammdaten weiterhin Meldungen über die DEMIS-Schnittstelle versenden. Meldungsformat und Codelisten (LOINC, SNOMED) wurden aktualisiert. Ohne Anpassung laufen Meldungen in einen Fehlerstatus. Außerdem müssen seit der neuen DEMIS-Version auch negative SARS-CoV-2-PCR-Befunde gemäß IfSG §7 Abs. 4 gemeldet werden.",
-      "relevantTerms": ["DEMIS"],
-      "articleSuggestion": "DEMIS"
+      "relevantArticles": [],
+      "action": "new_article",
+      "suggestedTerm": "DEMIS"
     },
     {
       "title": "eVO (elektronische Heilmittelverordnung): Pflichtstart erst ab 2028",
       "date": "2026-03-10",
       "source": "https://www.up-aktuell.de/aktuell/2026/03/gematik-evo-soll-mehr-als-ein-digitalisiertes-formular-werden.html",
-      "summary": "Die elektronische Heilmittelverordnung (eVO) für Physiotherapie, Ergotherapie und Logopädie wird erst 2028 verpflichtend eingeführt. Pilotprojekte laufen 2026 und 2027. Gematik betont, die eVO solle mehr als nur ein digitalisiertes Formular werden: schnellere Übermittlung, sicherere Datenübertragung über die TI, flexiblere Anpassung von Verordnungsänderungen.",
-      "relevantTerms": ["E-Rezept", "Telematikinfrastruktur"],
-      "articleSuggestion": "eVO"
+      "summary": "Die elektronische Heilmittelverordnung (eVO) für Physiotherapie, Ergotherapie und Logopädie wird erst 2028 verpflichtend eingeführt. Pilotprojekte laufen 2026 und 2027. Gematik betont, die eVO solle mehr als nur ein digitalisiertes Formular werden: schnellere Übermittlung, sicherere Datenübertragung über die TI, flexiblere Anpassung von Verordnungsänderungen. Ab 01.07.2026 gilt die Pflicht bereits für häusliche Krankenpflege und außerklinische Intensivpflege.",
+      "relevantArticles": ["E-Rezept.md", "Telematikinfrastruktur.md"],
+      "action": "update",
+      "details": "E-Rezept.md listet Heilmittelverordnungen noch unter 'Was kommt noch?' ohne Datum. Ergänzen: Pflicht ab 2028 für Heilmittel, ab 01.07.2026 für häusliche Krankenpflege.",
+      "suggestedTerm": "eVO"
     },
     {
       "title": "Krankenkassen fordern gematik-Transformation und faire Finanzierung",
       "date": "2026-01-20",
-      "source": "https://www.sbk.org/presse/kassen-fordern-klaren-handlungsrahmen-und-faire-finanzierung/",
+      "source": "https://www.tk.de/presse/themen/digitale-gesundheit/digitaler-fortschritt/gematik-kassen-fordern-handlungsrahmen-und-faire-finanzierung-2211152",
       "summary": "Mehrere große Krankenkassen (AOK, BARMER, TK, DAK u.a.) fordern in einem gemeinsamen Positionspapier (Januar 2026) die Transformation der gematik zu einer modernen Digitalagentur mit klarem Handlungsrahmen. Kritikpunkte: GKV trägt 93 Prozent der gematik-Kosten (ca. 100 Mio. EUR/Jahr); zusätzlich 37 Cent je GKV-Mitglied für 2026. Forderung: Steuerfinanzierung für Aufgaben im öffentlichen Interesse.",
-      "relevantTerms": ["Telematikinfrastruktur"],
-      "articleSuggestion": null
+      "relevantArticles": ["Telematikinfrastruktur.md"],
+      "action": "info_only"
     },
     {
       "title": "TI 2.0: Zieltermin Ende 2026, neue Sicherheitsarchitektur Zero Trust",
       "date": "2026-01-01",
-      "source": "https://www.aend.de/article/223906",
-      "summary": "Bis Ende 2026 soll die bisherige TI vollständig auf TI 2.0 migriert sein. Kernelement ist der Wechsel von perimeter-basierter Sicherheit zu Zero-Trust-Architektur (ZETA). Das TI-Gateway ersetzt Hardware-Konnektoren schrittweise. VSDM 2.0 (Start Juni 2026) ist die erste echte TI-2.0-Anwendung.",
-      "relevantTerms": ["Telematikinfrastruktur", "Konnektoren"],
-      "articleSuggestion": "TI-Gateway"
+      "source": "https://www.gematik.de/telematikinfrastruktur/ti-2-0",
+      "summary": "Bis Ende 2026 soll die bisherige TI vollständig auf TI 2.0 migriert sein. Kernelement ist der Wechsel von perimeter-basierter Sicherheit zu Zero-Trust-Architektur (ZETA). Das TI-Gateway ersetzt Hardware-Konnektoren schrittweise. VSDM 2.0 (Start Juni 2026) ist die erste echte TI-2.0-Anwendung. Vollständiger Abschluss der Migration geplant bis 2028.",
+      "relevantArticles": ["Telematikinfrastruktur.md", "Konnektoren.md", "TI-Gateway.md"],
+      "action": "info_only"
     },
     {
       "title": "98 Prozent der Praxisverwaltungssysteme ready für ePA-Medikationsliste",
       "date": "2025-12-01",
       "source": "https://www.heise.de/en/news/Gematik-98-percent-of-practice-management-systems-ready-for-2026-11112236.html",
       "summary": "141 Primärsysteme haben den Evaluierungsprozess für die ePA-Medikationsliste erfolgreich abgeschlossen, was 98 Prozent des PVS-Marktanteils entspricht. Praxen, die ab Januar 2026 keine konforme Software haben, riskieren Abrechnungsausschluss.",
-      "relevantTerms": ["ePA", "E-Rezept"],
-      "articleSuggestion": null
+      "relevantArticles": ["ePA.md", "E-Rezept.md"],
+      "action": "info_only"
     },
     {
       "title": "Elektronisches T-Rezept: Spezifikation veröffentlicht, Start 2026 geplant",
       "date": "2025-08-01",
       "source": "https://www.gelbe-liste.de/apotheke/spezifikationen-e-t-rezept-veroeffentlicht",
       "summary": "gematik veröffentlichte im August 2025 die finale Spezifikation für das elektronische T-Rezept (Lenalidomid, Pomalidomid, Thalidomid). Einführung für 2026 geplant. Ca. 170.000 T-Rezepte werden jährlich ausgestellt. Papierdurchschläge entfallen; Datenweitergabe erfolgt automatisiert via E-Rezept-Fachdienst.",
-      "relevantTerms": ["E-Rezept"],
-      "articleSuggestion": "T-Rezept",
+      "relevantArticles": ["E-Rezept.md"],
       "action": "update",
-      "details": "E-Rezept.md listet T-Rezepte noch unter 'Was kommt noch?'. Die Spezifikation ist seit August 2025 veröffentlicht. Status in der 'Was kommt noch?'-Liste sollte auf 'Spezifikation veröffentlicht, Einführung 2026' präzisiert werden."
+      "details": "E-Rezept.md listet T-Rezepte noch unter 'Was kommt noch?' ohne Hinweis, dass die Spezifikation seit August 2025 veröffentlicht ist. Status sollte auf 'Spezifikation veröffentlicht, Einführung 2026' präzisiert werden.",
+      "suggestedTerm": "T-Rezept"
     },
     {
       "title": "Bundespolizei erhält E-Rezept ab Januar 2026",
       "date": "2026-01-01",
-      "source": "https://www.gematik.de/newsroom/news-detail/bundespolizistinnen-und-bundespolizisten-koennen-seit-januar-e-rezepte-erhalten",
+      "source": "https://www.apotheke-adhoc.de/nachrichten/detail/e-health/bundespolizei-e-rezept-ab-januar-2026/",
       "summary": "Seit 1. Januar 2026 können 44.000 Bundespolizistinnen und Bundespolizisten E-Rezepte erhalten. Das E-Rezept wird damit auch auf Bundesbehörden außerhalb der GKV ausgeweitet.",
-      "relevantTerms": ["E-Rezept"],
-      "articleSuggestion": null,
+      "relevantArticles": ["E-Rezept.md"],
       "action": "info_only"
     },
     {
@@ -138,19 +148,65 @@
       "date": "2026-01-01",
       "source": "https://www.bfdi.bund.de/DE/Buerger/Inhalte/Telematik-Statistik-Verkehr-Bildung/Weiteres/FAQ-eRezept.html",
       "summary": "Ab Mitte 2026 werden E-Rezept-Daten aus der ePA pseudonymisiert an das Forschungsdatenzentrum Gesundheit (FDZ) übermittelt. Grundlage ist das Gesundheitsdatennutzungsgesetz (GDNG). E-Rezept-Daten werden seit Januar 2025 automatisch in die eML der ePA kopiert.",
-      "relevantTerms": ["E-Rezept", "ePA"],
-      "articleSuggestion": "Forschungsdatenzentrum Gesundheit",
-      "action": "info_only"
+      "relevantArticles": ["E-Rezept.md", "ePA.md"],
+      "action": "new_article",
+      "suggestedTerm": "Forschungsdatenzentrum Gesundheit"
     },
     {
       "title": "TI-Messenger Pro seit Januar 2026 in erster Ausbaustufe verfügbar",
       "date": "2026-01-01",
       "source": "https://us.arvato-systems.com/blog/digitizing-cross-sector-communication-with-the-ti-messenger-tim",
       "summary": "TI-Messenger Pro ist seit Januar 2026 in Ausbaustufe 1 produktiv verfügbar. Zielgruppe: Leistungserbringer (Praxen, Kliniken, Apotheken, Kassen). Ziel: Ausbau auf 150.000 Organisationen. Element hat pentest-Zertifizierung (Rating 'Gut') für Multi-Tenancy-Lösung ESS Pro erhalten.",
-      "relevantTerms": ["TI-Messenger"],
-      "articleSuggestion": null,
+      "relevantArticles": ["TI-Messenger.md"],
       "action": "update",
-      "details": "TI-Messenger.md enthält keine Angaben zum Rollout-Status. Ergänzung sinnvoll: TI-Messenger Pro ab Januar 2026 verfügbar."
+      "details": "TI-Messenger.md enthält keine Angaben zum Rollout-Status. Ergänzung sinnvoll: TI-Messenger Pro ab Januar 2026 in Ausbaustufe 1 verfügbar."
+    },
+    {
+      "title": "gematik Spezifikationsrelease TI-Messenger_26_1 veröffentlicht",
+      "date": "2026-03-05",
+      "source": "https://gemspec.gematik.de/releases/",
+      "summary": "Am 05.03.2026 hat gematik den Release TI-Messenger_26_1 mit 2 aktualisierten Dokumenten veröffentlicht. Ebenfalls frisch erschienen: Betr_26_1 (12.03.2026, Betriebsspezifikationen), KIM_1_5_5 (12.02.2026, 4 Dokumente), VZD_25_2 (17.02.2026, 2 Dokumente), ePA_3_1_3-1 (26.01.2026, 14 Dokumente).",
+      "relevantArticles": ["TI-Messenger.md", "KIM.md", "ePA.md", "VZD.md"],
+      "action": "update",
+      "details": "KIM.md nennt 'Version 1.6.3' als aktuelle Version. Laut gemspec.gematik.de wurde KIM_1_5_5 am 12.02.2026 veröffentlicht. Versionsnummer in KIM.md prüfen und ggf. auf 1.5.5 korrigieren."
+    },
+    {
+      "title": "E-Rezept Pflicht für Hilfsmittel und häusliche Krankenpflege ab 1. Juli 2026",
+      "date": "2026-01-01",
+      "source": "https://www.apotheke-adhoc.de/nachrichten/detail/politik/bmg-das-aendert-sich-2026-in-gesundheit-und-pflege/",
+      "summary": "Ab 1. Juli 2026 müssen Verordnungen für Hilfsmittel (Orthesen, Prothesen, Rollstühle etc.) sowie für häusliche Krankenpflege und außerklinische Intensivpflege verpflichtend als E-Rezept ausgestellt werden. Damit weitet sich die E-Rezept-Pflicht über Arzneimittel hinaus auf weitere Versorgungsbereiche aus. Heilmittelverordnungen (Physiotherapie etc.) folgen erst ab 1. Januar 2027.",
+      "relevantArticles": ["E-Rezept.md"],
+      "action": "update",
+      "details": "E-Rezept.md listet Hilfsmittel- und Pflegeverordnungen unter 'Was kommt noch?' ohne Termine. Ergänzen: Hilfsmittel und häusliche Krankenpflege Pflicht ab 01.07.2026; Heilmittelverordnungen ab 01.01.2027."
+    },
+    {
+      "title": "TI-Pflicht in der Pflege: Ab Dezember 2026 vollständig elektronische Abrechnung über KIM",
+      "date": "2026-01-01",
+      "source": "https://www.medisign.de/blog/ab-2026-pflegeleistungen-vollelektronisch-via-kim-abrechnen/",
+      "summary": "Ab 1. Dezember 2026 müssen alle Pflegeeinrichtungen ihre Abrechnungsdaten (SGB XI) ausschließlich über die TI und den KIM-Dienst übermitteln. Papierbasierte Übermittlung ist danach nicht mehr möglich. Voraussetzung: Anbindung an TI (seit Juli 2025 Pflicht), SMC-B, eHBA, KIM-Client.",
+      "relevantArticles": ["KIM.md", "Telematikinfrastruktur.md", "SMC-B.md"],
+      "action": "update",
+      "details": "KIM.md und Telematikinfrastruktur.md sollten die Pflicht zur elektronischen Pflegeabrechnung ab 01.12.2026 via KIM erwähnen."
+    },
+    {
+      "title": "TI-Messenger Pro 1.1 Spezifikation: Konzeptphase läuft, Release geplant für Mai 2026",
+      "date": "2026-03-05",
+      "source": "https://wiki.gematik.de/spaces/TIMCOMP/pages/604603166/TI-Messenger+Compass+-+The+TI-M+Blog",
+      "summary": "Die Konzeptphase für TI-Messenger Pro 1.1 läuft seit Anfang 2026. Spezifikationsarbeiten starten Ende Februar 2026, Veröffentlichung ist für Mai 2026 geplant. Testbereitschaft wird für Q4 2026 erwartet. Für später 2026 ist 'TI-Messenger Connect' geplant, der den TI-Messenger außerhalb der ePA-Haupt-App nutzbar macht.",
+      "relevantArticles": ["TI-Messenger.md"],
+      "action": "update",
+      "details": "TI-Messenger.md sollte Version 1.1 in der Roadmap ergänzen und TI-Messenger Connect als geplante Variante ab Ende 2026 dokumentieren.",
+      "suggestedTerm": "TI-Messenger Pro"
+    },
+    {
+      "title": "ePA 2026: Neue Funktionen geplant (Volltextsuche, MIOs, Strukturierte Medikationspläne)",
+      "date": "2026-02-01",
+      "source": "https://www.aerztezeitung.de/Wirtschaft/Welche-neuen-ePA-Funktionen-2026-kommen-sollen-460768.html",
+      "summary": "Für 2026 geplante ePA-Erweiterungen: (1) Volltextsuche in Dokumenten für Ärzte und Patienten. (2) Strukturierte Dosierungsangaben im eMedikationsplan (mit Apotheken-Schreibzugriff). (3) Integration von Medizinischen Informationsobjekten (MIOs): Mutterpass, Impfausweis, Kinderuntersuchungsheft, Zahnärztliches Bonusheft. Zeitplan für MIOs noch nicht finalisiert.",
+      "relevantArticles": ["ePA.md"],
+      "action": "update",
+      "details": "ePA.md sollte Volltextsuche und MIO-Integration als geplante Funktionen für 2026 ergänzen.",
+      "suggestedTerm": "MIO"
     }
   ]
 }

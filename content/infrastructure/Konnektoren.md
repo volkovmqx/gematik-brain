@@ -48,7 +48,7 @@ Mit der TI 2.0 wird der Hardware-Konnektor schrittweise durch das **[[TI-Gateway
 - Virtuelle Konnektor-Funktionalität (vKON) als Cloud-Service
 - Eingebauter VPN-Zugangsdienst
 - Unterstützung bestehender Primärsystem-Schnittstellen
-- mTLS-Konfiguration im Primärsystem erforderlich
+- [[mTLS]]-Konfiguration im Primärsystem erforderlich
 - Ziel: Weniger Hardware, geringere Kosten, einfachere Wartung
 
 ## Verknüpfungen

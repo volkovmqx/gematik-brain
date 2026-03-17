@@ -1,83 +1,6 @@
 {
   "pending": [
     {
-      "term": "IHE",
-      "category": "organization",
-      "priority": 55,
-      "reason": "Integrating the Healthcare Enterprise. Publisher of XDS and other TI-relevant profiles. Referenced in new XDS and ISiK articles.",
-      "mentionedIn": [
-        "content/standards/XDS.md",
-        "content/standards/ISiK.md"
-      ]
-    },
-    {
-      "term": "Zero-Trust",
-      "category": "concepts",
-      "priority": 50,
-      "reason": "Security architecture principle for TI 2.0. Explicitly named in Telematikinfrastruktur ('Zero-Trust-Architektur: Kein implizites Vertrauen'), VSDM ('VSDM 2.0 ist Vorreiter für die TI-2.0-Architektur'), and TI-Gateway article. Central design principle readers need to understand TI 2.0 changes.",
-      "mentionedIn": [
-        "content/infrastructure/Telematikinfrastruktur.md",
-        "content/processes/VSDM.md",
-        "content/infrastructure/TI-Gateway.md"
-      ]
-    },
-    {
-      "term": "BfArM",
-      "category": "organization",
-      "priority": 48,
-      "reason": "Bundesinstitut für Arzneimittel und Medizinprodukte. Regulates DiGA (Digitale Gesundheitsanwendungen) and is a central actor in the German health IT regulatory landscape. Listed in CLAUDE.md as a relevant organization. Now also referenced in DiGA article.",
-      "mentionedIn": [
-        "content/technologies/E-Rezept.md",
-        "content/technologies/DiGA.md"
-      ]
-    },
-    {
-      "term": "DEMIS",
-      "category": "technologies",
-      "priority": 45,
-      "reason": "Deutsches Elektronisches Melde- und Informationssystem für den Infektionsschutz. RKI-operated system for electronic disease notification, integrated with TI infrastructure via FHIR. Adjacent TI system with growing relevance post-pandemic.",
-      "mentionedIn": []
-    },
-    {
-      "term": "AMTS",
-      "category": "processes",
-      "priority": 40,
-      "reason": "Arzneimitteltherapiesicherheit (medication safety). Central use case driving ePA medication data and the Medikationsplan. Not directly named in articles but is the primary clinical justification for ePA medication features.",
-      "mentionedIn": []
-    },
-    {
-      "term": "Fachdienst",
-      "category": "infrastructure",
-      "priority": 38,
-      "reason": "Central backend services in the TI (E-Rezept-Fachdienst, KIM-Fachdienst, VSDM-Fachdienst). The term appears throughout articles but is never explained as an architectural pattern. Understanding what a Fachdienst is helps make sense of the whole TI service model.",
-      "mentionedIn": [
-        "content/infrastructure/Telematikinfrastruktur.md",
-        "content/technologies/E-Rezept.md",
-        "content/technologies/KIM.md",
-        "content/processes/VSDM.md"
-      ]
-    },
-    {
-      "term": "TI-Federation",
-      "category": "infrastructure",
-      "priority": 35,
-      "reason": "Framework for federated identity in TI 2.0, enabling multiple sektorale IDPs alongside the central IDP. Newly documented in IDP article. Important for understanding how Gesundheits-ID and third-party IDPs work in the TI.",
-      "mentionedIn": [
-        "content/infrastructure/IDP.md",
-        "content/infrastructure/Gesundheits-ID.md"
-      ]
-    },
-    {
-      "term": "mTLS",
-      "category": "concepts",
-      "priority": 33,
-      "reason": "Mutual TLS - central security mechanism for TI 2.0. Required for TI-Gateway connections from primary systems. Referenced in TI-Gateway, Telematikinfrastruktur, and VSDM articles.",
-      "mentionedIn": [
-        "content/infrastructure/TI-Gateway.md",
-        "content/infrastructure/Telematikinfrastruktur.md"
-      ]
-    },
-    {
       "term": "DiGAV",
       "category": "standards",
       "priority": 30,
@@ -125,7 +48,15 @@
     "XDS",
     "OCSP",
     "Matrix-Protokoll",
-    "ISiK"
+    "ISiK",
+    "IHE",
+    "Zero-Trust",
+    "BfArM",
+    "DEMIS",
+    "AMTS",
+    "Fachdienst",
+    "TI-Federation",
+    "mTLS"
   ],
   "lastRun": "2026-03-17"
 }

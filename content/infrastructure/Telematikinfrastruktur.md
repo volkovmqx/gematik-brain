@@ -45,8 +45,8 @@ Die TI wird von der **[[gematik|gematik GmbH]]** (Berlin, Rosenthaler Straße 30
 
 Die TI wird grundlegend weiterentwickelt. Die wichtigsten Änderungen:
 
-- **Zero-Trust-Architektur**: Kein implizites Vertrauen mehr, jeder Zugriff wird geprüft
-- **mTLS-Verschlüsselung**: Gegenseitige Authentisierung bei jeder Verbindung
+- **[[Zero-Trust]]-Architektur**: Kein implizites Vertrauen mehr, jeder Zugriff wird geprüft
+- **[[mTLS]]-Verschlüsselung**: Gegenseitige Authentisierung bei jeder Verbindung
 - **[[TI-Gateway]] statt Konnektor**: Hardwareunabhängig, flexibler, zukunftssicher
 - **[[VSDM]] 2.0** ist die erste TI-2.0-Anwendung (Start: 30. Juni 2026)
 

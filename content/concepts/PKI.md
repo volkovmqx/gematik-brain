@@ -38,7 +38,7 @@ Die **gematik Root-CA** ist der einzige Vertrauensanker für alle nonQES-Zertifi
 
 ### Trust Service Provider (TSP)
 
-Zertifikataussteller in der TI heißen Trust Service Provider (TSP). Jeder TSP muss von der gematik akkreditiert werden. Nach erfolgreicher Akkreditierung stellt die gematik Root-CA dem TSP eine Sub-CA aus. Der TSP nutzt diese Sub-CA, um End-Entity-Zertifikate für Karten und Komponenten auszustellen.
+Zertifikatsaussteller in der TI heißen Trust Service Provider (TSP). Jeder TSP muss von der gematik akkreditiert werden. Nach erfolgreicher Akkreditierung stellt die gematik Root-CA dem TSP eine Sub-CA aus. Der TSP nutzt diese Sub-CA, um End-Entity-Zertifikate für Karten und Komponenten auszustellen.
 
 ### Trust Service List (TSL)
 
