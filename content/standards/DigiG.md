@@ -19,7 +19,7 @@ Das DigiG (Gesetz zur Beschleunigung der Digitalisierung des Gesundheitswesens) 
 
 Das Herzstück des DigiG ist das **Opt-out-Modell für die [[ePA]]**: Ab dem 15. Januar 2025 wird für alle gesetzlich Versicherten automatisch eine elektronische Patientenakte angelegt. Wer keine haben möchte, muss der eigenen Krankenkasse gegenüber aktiv widersprechen. Damit soll die ePA-Nutzung von wenigen Prozent auf nahezu alle GKV-Versicherten gesteigert werden.
 
-Neben der ePA enthält das DigiG Regelungen zu Telemedizin, DiGA, Cloud-Nutzung und der Governance der [[gematik]].
+Neben der ePA enthält das DigiG Regelungen zu [[Telemedizin]], DiGA, Cloud-Nutzung und der Governance der [[gematik]].
 
 ## Technische Details
 
@@ -51,7 +51,7 @@ Das DigiG erlaubt, dass [[DiGA]] künftig auch Medizinprodukte der Risikoklasse 
 
 ### Telemedizin
 
-Das DigiG hebt die bisherigen Mengenbeschränkungen für Videosprechstunden für Vertragsärzte auf. Außerdem wird "assistierte Telemedizin" eingeführt: Apotheken können Versicherten kostenlos bei Videosprechstunden unterstützen und die Technik bereitstellen.
+Das DigiG hebt die bisherigen Mengenbeschränkungen für Videosprechstunden für Vertragsärzte auf. Außerdem wird "assistierte [[Telemedizin]]" eingeführt: Apotheken können Versicherten kostenlos bei Videosprechstunden unterstützen und die Technik bereitstellen.
 
 ### Digital Advisory Board bei der gematik
 
@@ -63,7 +63,7 @@ Das DigiG richtet einen **Digitalbeirat** bei der [[gematik]] ein. Dieser Beirat
 |---|---|---|
 | [[DVG]] | 2019 | DiGA eingeführt, TI-Pflichtanbindung für Apotheken/Kliniken |
 | [[PDSG]] | 2020 | Datenschutzrahmen für ePA, VSDM-Modernisierung |
-| DVPMG | 2021 | DiPA (Digitale Pflegeanwendungen) eingeführt |
+| [[DVPMG]] | 2021 | DiPA (Digitale Pflegeanwendungen) eingeführt |
 | DigiG | 2024 | ePA opt-out, Cloud, DiGA-Erweiterung, Telemedizin |
 
 ## Verknüpfungen

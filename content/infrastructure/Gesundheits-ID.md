@@ -26,7 +26,7 @@ Technisch basiert die Gesundheits-ID auf dem [[IDP]]-System der TI. Jede Kranken
 ### Registrierung
 
 Bei der Erstregistrierung muss die Identität des Versicherten zweifelsfrei festgestellt werden. Dafür gibt es drei Wege:
-- eID-Funktion des Personalausweises (Online-Ausweisen)
+- [[eID]]-Funktion des Personalausweises (Online-Ausweisen)
 - [[eGK]] mit PIN
 - Persönliche Identifizierung über die Krankenkasse
 
@@ -68,6 +68,8 @@ Zur Sicherheit ist eine Zwei-Faktor-Authentifizierung vorgesehen. Geräte mit ei
 - [[VSDM]] (Versicherungsstammdaten, VSDM 2.0 integriert Gesundheits-ID)
 - [[Telematikinfrastruktur]] (Gesamtsystem, in das die Gesundheits-ID eingebettet ist)
 - [[TI-Gateway]] (TI-2.0-Zugang, kompatibel mit Gesundheits-ID)
+- [[eID]] (Online-Ausweisfunktion des Personalausweises, einer der Registrierungswege für die Gesundheits-ID)
+- [[EUDI-Wallet]] (perspektivische EU-weite Integration der Gesundheits-ID)
 
 ## Quellen
 

@@ -23,7 +23,7 @@ Ein PVS übernimmt alle zentralen Abläufe einer Praxis:
 - Ausstellung von Verordnungen und Überweisungen
 - Kommunikation über die [[Telematikinfrastruktur]]
 
-Die [[KBV]] (Kassenärztliche Bundesvereinigung) ist die zentrale Instanz für die Zertifizierung von PVS-Software. Sie prüft gesetzlich vorgeschriebene Funktionen und gibt Zertifizierungen aus. Seit dem Inkrafttreten des Digitalisierungsgesetzes (GDNG) im März 2024 müssen PVS-Hersteller zusätzlich eine Konformitätsbewertung (KOB) bei der [[gematik]] durchlaufen. Dabei prüft gematik, ob die TI-Anbindung korrekt implementiert ist.
+Die [[KBV]] (Kassenärztliche Bundesvereinigung) ist die zentrale Instanz für die Zertifizierung von PVS-Software. Sie prüft gesetzlich vorgeschriebene Funktionen und gibt Zertifizierungen aus. Seit dem Inkrafttreten des [[GDNG|Digitalisierungsgesetzes (GDNG)]] im März 2024 müssen PVS-Hersteller zusätzlich eine Konformitätsbewertung (KOB) bei der [[gematik]] durchlaufen. Dabei prüft gematik, ob die TI-Anbindung korrekt implementiert ist.
 
 Es gibt über 100 zertifizierte PVS-Produkte in Deutschland. Marktführer sind CompuGroup Medical (CGM) mit Systemen wie CGM M1 PRO, medatixx mit x.isynet (über 14.600 Installationen), sowie weitere Anbieter wie Turbomed, Zollsoft und INDAMED.
 

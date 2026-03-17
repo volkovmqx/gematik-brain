@@ -21,7 +21,7 @@ Vor eIDAS gab es in jedem EU-Land eigene nationale Regelungen für elektronische
 
 Die Verordnung regelt zwei große Bereiche:
 
-1. **Elektronische Identifizierung (eID)**: Gegenseitige Anerkennung nationaler eID-Systeme (z.B. der deutschen Online-Ausweisfunktion des Personalausweises) für den grenzüberschreitenden Zugang zu Behördenportalen.
+1. **Elektronische Identifizierung (eID)**: Gegenseitige Anerkennung nationaler [[eID]]-Systeme (z.B. der deutschen Online-Ausweisfunktion des Personalausweises) für den grenzüberschreitenden Zugang zu Behördenportalen.
 2. **Vertrauensdienste**: Elektronische Signaturen, Siegel, Zeitstempel, Zertifikate für die Websiteauthentifizierung sowie elektronische Einschreiben.
 
 In der deutschen [[Telematikinfrastruktur]] ist eIDAS die rechtliche Grundlage für die [[QES]], die Ärzte beim Ausstellen von [[E-Rezept|E-Rezepten]] und [[eAU|elektronischen Krankmeldungen]] verwenden.
@@ -46,7 +46,7 @@ Die [[QES]] erfordert:
 
 Organisationen, die qualifizierte Vertrauensdienste anbieten, werden als **qualifizierte Vertrauensdiensteanbieter (VDA)** bezeichnet. Sie müssen sich einer Konformitätsprüfung unterziehen und werden in der offiziellen EU-Vertrauensliste ("Trusted List") geführt.
 
-In Deutschland unterliegen VDAs dem **Vertrauensdienstegesetz (VDG)** und der Aufsicht der **[[Bundesnetzagentur]]**. Sie prüft Anträge, führt Überwachungsaudits durch und kann Anbieter aus der Vertrauensliste streichen.
+In Deutschland unterliegen VDAs dem **[[VDG|Vertrauensdienstegesetz (VDG)]]** und der Aufsicht der **[[Bundesnetzagentur]]**. Sie prüft Anträge, führt Überwachungsaudits durch und kann Anbieter aus der Vertrauensliste streichen.
 
 Qualifizierte Zertifikate für den [[HBA]] in der TI werden von akkreditierten VDAs ausgestellt, beispielsweise von D-Trust (Bundesdruckerei) und T-Systems.
 
@@ -71,9 +71,9 @@ In der TI werden überwiegend CAdES-Signaturen eingesetzt, z.B. beim [[E-Rezept]
 
 ### eIDAS 2.0
 
-Die überarbeitete eIDAS-Verordnung (EU 2024/1183, auch "eIDAS 2.0") trat am 20. Mai 2024 in Kraft. Kernneuerung ist die **European Digital Identity Wallet (EUDI Wallet)**: Jeder EU-Mitgliedstaat muss seinen Bürgern bis spätestens Anfang 2027 eine kostenlose, staatlich angebotene digitale Brieftasche bereitstellen, mit der sie sich grenzüberschreitend identifizieren und Nachweise (Führerschein, Krankenversicherungskarte, Zeugnisse) präsentieren können.
+Die überarbeitete eIDAS-Verordnung (EU 2024/1183, auch "eIDAS 2.0") trat am 20. Mai 2024 in Kraft. Kernneuerung ist die **[[EUDI-Wallet|European Digital Identity Wallet (EUDI Wallet)]]**: Jeder EU-Mitgliedstaat muss seinen Bürgern bis spätestens Anfang 2027 eine kostenlose, staatlich angebotene digitale Brieftasche bereitstellen, mit der sie sich grenzüberschreitend identifizieren und Nachweise (Führerschein, Krankenversicherungskarte, Zeugnisse) präsentieren können.
 
-Die Nutzung ist freiwillig. Deutschland entwickelt seine EUDI-Wallet-Lösung unter Beteiligung der Bundesdruckerei und des BMI. Die Relevanz für die TI liegt darin, dass die Gesundheits-ID und der HBA zukünftig in die EUDI Wallet integriert werden könnten.
+Die Nutzung ist freiwillig. Deutschland entwickelt seine EUDI-Wallet-Lösung unter Beteiligung der Bundesdruckerei und des BMI. Die Relevanz für die TI liegt darin, dass die Gesundheits-ID und der HBA zukünftig in die [[EUDI-Wallet]] integriert werden könnten.
 
 ## Verknüpfungen
 
@@ -85,7 +85,7 @@ Die Nutzung ist freiwillig. Deutschland entwickelt seine EUDI-Wallet-Lösung unt
 - [[eAU]]: Anwendungsfall, der QES nach eIDAS erfordert
 - [[SMC-B]]: Erzeugt keine QES, sondern eine Organisationssignatur
 - [[TI-Federation]]: Nutzt eIDAS-konforme Identitätsmechanismen
-- [[Gesundheits-ID]]: Langfristig mögliche Integration mit EUDI Wallet
+- [[Gesundheits-ID]]: Langfristig mögliche Integration mit [[EUDI-Wallet]]
 
 ## Quellen
 

@@ -24,7 +24,7 @@ Typische Risiken, die AMTS adressiert:
 - **Doppelverordnungen**: Derselbe Wirkstoff wird von mehreren Ärzten gleichzeitig verschrieben
 - **Fehldosierungen**: Falsche Menge oder falsches Anwendungsintervall
 
-Die gesetzliche Grundlage für digitale AMTS-Unterstützung wurde mit dem E-Health-Gesetz (2015) und dem [[DVG|Digitale-Versorgung-Gesetz (2019)]] geschaffen. Patienten mit fünf oder mehr Dauermedikamenten haben gesetzlichen Anspruch auf einen Medikationsplan.
+Die gesetzliche Grundlage für digitale AMTS-Unterstützung wurde mit dem [[E-Health-Gesetz]] (2015) und dem [[DVG|Digitale-Versorgung-Gesetz (2019)]] geschaffen. Patienten mit fünf oder mehr Dauermedikamenten haben gesetzlichen Anspruch auf einen Medikationsplan.
 
 ### Medikationsplan und ePA
 
@@ -68,7 +68,7 @@ Der Zugriff ist strikt an die Einwilligung des Patienten gebunden und wird in de
 
 ### Primärsysteme und AMTS-Software
 
-Die eigentliche Interaktionsprüfung (Wechselwirkungscheck) findet nicht im [[Fachdienst]] der [[ePA]] statt, sondern in den Primärsystemen ([[PVS]], [[KIS]], [[AVS]]). Diese integrieren Datenbanken wie ABDA oder MMI-Pharmindex, die Arzneimitteldaten und bekannte Interaktionen enthalten. Die [[ePA]] liefert dazu die vollständige Datenbasis aller Medikamente.
+Die eigentliche Interaktionsprüfung (Wechselwirkungscheck) findet nicht im [[Fachdienst]] der [[ePA]] statt, sondern in den Primärsystemen ([[PVS]], [[KIS]], [[AVS]]). Diese integrieren Datenbanken wie [[ABDA]] oder MMI-Pharmindex, die Arzneimitteldaten und bekannte Interaktionen enthalten. Die [[ePA]] liefert dazu die vollständige Datenbasis aller Medikamente.
 
 ## Verknüpfungen
 

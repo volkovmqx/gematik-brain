@@ -15,7 +15,7 @@ Die GKV funktioniert wie eine große Solidargemeinschaft: Alle zahlen gemeinsam 
 
 ## Überblick
 
-Die GKV ist das Rückgrat des deutschen Gesundheitssystems. Rund 73 Millionen Menschen in Deutschland sind gesetzlich versichert, das entspricht etwa 88 Prozent der Bevölkerung. Die restlichen rund 12 Prozent sind privat versichert (PKV).
+Die GKV ist das Rückgrat des deutschen Gesundheitssystems. Rund 73 Millionen Menschen in Deutschland sind gesetzlich versichert, das entspricht etwa 88 Prozent der Bevölkerung. Die restlichen rund 12 Prozent sind privat versichert ([[PKV]]).
 
 Das Grundprinzip der GKV ist das Solidarprinzip: Beiträge richten sich nach dem Einkommen, nicht nach dem individuellen Krankheitsrisiko. Arbeitnehmer zahlen ihren Beitrag je zur Hälfte selbst und zur Hälfte über den Arbeitgeber. Kinder und nicht erwerbstätige Ehepartner sind beitragsfrei mitversichert.
 

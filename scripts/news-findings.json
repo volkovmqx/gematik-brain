@@ -1,6 +1,6 @@
 {
-  "lastChecked": "2026-03-17",
-  "lastRun": "2026-03-17",
+  "lastChecked": "2026-03-18",
+  "lastRun": "2026-03-18",
   "findings": [
     {
       "title": "eMedikationsplan: Start verschoben auf Oktober 2026",
@@ -262,8 +262,7 @@
       "action": "update",
       "details": "ePA.md sollte Volltextsuche und MIO-Integration als geplante Funktionen für 2026 ergänzen.",
       "suggestedTerm": "MIO"
-    }
-    ,
+    },
     {
       "title": "AOK Bayern: 6.400 ePA-Akten versehentlich geschlossen",
       "date": "2026-02-10",
@@ -312,6 +311,126 @@
       "action": "update",
       "details": "E-Rezept.md listet BtM-Rezepte unter 'Was kommt noch?' ohne Zeitangabe. Ergänzen: Pilotstart frühestens Q4/2026, verpflichtende Einführung 2027.",
       "suggestedTerm": "E-BtM-Rezept"
+    },
+    {
+      "title": "HSM-B Pilotprojekt gestartet: Kartenlose Institutionsidentität im Highspeed-Konnektor",
+      "date": "2026-03-10",
+      "source": "https://www.gematik.de/newsroom/news-detail/gemeinsames-pilotprojekt-zur-kartenlosen-institutions-identitaet-hsm-b-im-highspeed-konnektor",
+      "summary": "Gematik startet gemeinsam mit RHÖN-KLINIKUM AG, D-Trust, DKTIG und RISE ein Friendly-User-Test-Pilotprojekt für HSM-B (Hardware Security Module Typ B). HSM-B ersetzt die physische SMC-B-Karte durch eine direkt im Highspeed-Konnektor (HSK) hinterlegte digitale Institutionsidentität. Vorteile: weniger Kartenterminals, kein PIN-Eintippen, Unterstützung mobiler Szenarien (z.B. Hausbesuche). Produktiver Einsatz ab 2026 geplant. HSK kann HSM-B und SMC-B parallel betreiben.",
+      "relevantArticles": ["SMC-B.md", "Konnektoren.md", "TI-Gateway.md"],
+      "category": "specification",
+      "action": "update",
+      "details": "SMC-B.md sollte HSM-B als perspektivischen Nachfolger und den Pilotstart März 2026 erwähnen. Konnektoren.md sollte HSM-B im Kontext des Highspeed-Konnektors (HSK) ergänzen.",
+      "suggestedTerm": "HSM-B"
+    },
+    {
+      "title": "IOP-Roadmap 2026-2027 veröffentlicht: Themen für zwei Jahre festgelegt",
+      "date": "2026-03-10",
+      "source": "https://www.gematik.de/newsroom/news-detail/iop-roadmap-legt-themen-der-naechsten-zwei-jahre-fest",
+      "summary": "Das Kompetenzzentrum Interoperabilität im Gesundheitswesen (KIG) hat gemeinsam mit dem Interop Council und dem IOP-Fachkreis die Roadmap für 2026 und 2027 veröffentlicht. Mehr als 50 Themeneinreichungen wurden per Scoring priorisiert. Laufende Arbeitsgruppen: Patientenportale (aktiv), Medizinische Register (in Vorbereitung), Notfallversorgung (in Vorbereitung). Neu: kürzere Workshop-Formate; stärkerer Fokus auf gesetzlich verankerte KIG-Aufgaben.",
+      "relevantArticles": ["Telematikinfrastruktur.md", "FHIR.md", "ISiK.md"],
+      "category": "specification",
+      "action": "info_only"
+    },
+    {
+      "title": "Europäische Delegation bei gematik: EHDS und NCPeH im Fokus (März 2026)",
+      "date": "2026-03-16",
+      "source": "https://www.gematik.de/newsroom/news-detail/grenzueberschreitender-digitaler-gesundheitsdatenaustausch-europaeische-delegation-bei-der-gematik",
+      "summary": "Fast 50 Vertreter aus 14 EU-Ländern und der Europäischen Kommission besuchten die gematik am 16. März 2026. Themen: grenzübergreifender Austausch von Gesundheitsdaten via MyHealth@EU (NCPeH als Gateway zwischen TI und EHDS) sowie Umsetzung der EHDS-Verordnung (EU 2025/327, in Kraft seit März 2025). Ziel: Bürger sollen ab 2029 Gesundheitsdaten (Patientenzusammenfassung, E-Rezept) EU-weit nutzen können.",
+      "relevantArticles": ["Telematikinfrastruktur.md", "ePA.md", "E-Rezept.md"],
+      "category": "regulation",
+      "action": "new_article",
+      "suggestedTerm": "NCPeH",
+      "details": "NCPeH (National Contact Point for eHealth) ist noch nicht als eigener Artikel dokumentiert. Artikel würde MyHealth@EU-Integration und EHDS-Kontext für Deutschland abdecken."
+    },
+    {
+      "title": "TI-Dashboard: Nutzungsstatistiken für TI-Messenger jetzt öffentlich einsehbar",
+      "date": "2026-03-05",
+      "source": "https://www.gematik.de/newsroom/news-detail/ti-dashboard-zeigt-aktuelle-zahlen-zum-ti-messenger",
+      "summary": "Gematik hat das TI-Dashboard um tägliche Echtzeit-Kennzahlen zum TI-Messenger erweitert. Erfasst werden: Anzahl aktiver Mitarbeiter aus Einrichtungen und Institutionen, Anzahl registrierter Versicherter, Nachrichtenvolumen. Das Dashboard macht die Nutzungsrate des TI-Messengers transparent und vergleichbar. Die Zahlen werden täglich aktualisiert.",
+      "relevantArticles": ["TI-Messenger.md"],
+      "category": "info",
+      "action": "info_only"
+    },
+    {
+      "title": "ePA-Stakeholder-Dialog: Weißbuch für Weiterentwicklung erschienen (Februar 2026)",
+      "date": "2026-02-25",
+      "source": "https://www.gematik.de/newsroom/news-detail/epa-fuer-alle-gemeinsame-impulse-fuer-die-weiterentwicklung",
+      "summary": "Gematik veröffentlichte die Ergebnisse eines Stakeholder-Dialogs (Juni bis Oktober 2025) mit über 30 Expertinnen und Experten. Ergebnis ist ein Weißbuch mit Impulsen für die ePA-Weiterentwicklung. Schwerpunkte: Labor- und Befunddaten, Diagnosen und Prozeduren, diagnostische Bildgebung, Widerspruchsmöglichkeiten. Botschaft: 'Wir entwickeln die ePA nicht allein.' Das Weißbuch fließt in kommende Spezifikationszyklen ein.",
+      "relevantArticles": ["ePA.md"],
+      "category": "regulation",
+      "action": "info_only"
+    },
+    {
+      "title": "MyHealth@EU: EU-E-Rezept ab Februar 2026 in Österreich einlösbar",
+      "date": "2026-02-25",
+      "source": "https://www.gesundheit.gv.at/news/aktuelles/aktuell-2026/eu-rezept.html",
+      "summary": "Seit dem 25. Februar 2026 können in Österreich erstmals elektronische Rezepte aus anderen EU-Staaten (zunächst Tschechien) eingelöst werden. Österreich ist damit Teil von MyHealth@EU, der europäischen Infrastruktur für grenzüberschreitenden Gesundheitsdatenaustausch. Deutschland plant die Teilnahme an MyHealth@EU (E-Rezept) für Wave 10 in 2026. Ab 2029 ist EU-weite Pflicht geplant. Das NCPeH ist das deutsche Gateway zur europäischen Infrastruktur.",
+      "relevantArticles": ["E-Rezept.md", "Telematikinfrastruktur.md"],
+      "category": "regulation",
+      "action": "new_article",
+      "suggestedTerm": "MyHealth@EU",
+      "details": "MyHealth@EU ist noch nicht als eigener Artikel dokumentiert. Sollte zusammen mit NCPeH beschrieben werden."
+    },
+    {
+      "title": "HDDT Release Candidate 26_1: FHIR-Profile für Lungenfunktion und Blutdruck (März 2026)",
+      "date": "2026-03-10",
+      "source": "https://gemspec.gematik.de/prereleases/Draft_HDDT_26_1/index.html",
+      "summary": "Gematik veröffentlichte am 10. März 2026 den Release Candidate der HDDT-Spezifikation (Health Device Data Transfer) Version 26_1. HDDT definiert die Schnittstelle zwischen Medizinprodukten/Implantaten und DiGAs gemäß §374a SGB V. Die neue Version ergänzt die Diabetes-Profile um FHIR-Profile für Lungenfunktionsmessung und Blutdruckmessung. Kommentierungsfrist läuft bis 1. April 2026.",
+      "relevantArticles": ["DiGA.md"],
+      "category": "specification",
+      "action": "update",
+      "details": "DiGA.md sollte die HDDT-Schnittstelle (§374a SGB V) als Verbindung zu Medizingeräten erwähnen. Ggf. eigener Artikel 'HDDT' sinnvoll.",
+      "suggestedTerm": "HDDT"
+    },
+    {
+      "title": "GDAG gescheitert: Koalitionsvertrag 2025 sieht gematik-Modernisierung ohne GDAG vor",
+      "date": "2025-04-09",
+      "source": "https://pm-report.de/gesundheitswesen/2025/geplanter-koalitionsvertrag-was-soll-im-gesundheitswesen-passieren.html",
+      "summary": "Das Gesundheits-Digitalagentur-Gesetz (GDAG) ist mit dem Ende der Ampel-Koalition gescheitert (2. und 3. Lesung im Bundestag wurden wegen Neuwahl nicht mehr durchgeführt). Der Koalitionsvertrag von CDU/CSU und SPD (April 2025) sieht dennoch eine Modernisierung der gematik zu einer 'modernen Agentur' vor. Konkrete Umsetzungsschritte oder ein Nachfolgegesetz für das GDAG sind noch nicht beschlossen. Alle Software-/IT-Anbieter im Gesundheitswesen müssen bis 2027 verlustfreien Datenaustausch auf Basis einheitlicher Standards sicherstellen.",
+      "relevantArticles": ["gematik.md", "DigiG.md"],
+      "category": "regulation",
+      "action": "update",
+      "details": "gematik.md sollte das Scheitern des GDAG und die Pläne im Koalitionsvertrag 2025 erwähnen. DigiG.md könnte den Kontext des GDAG als geplante Erweiterung dokumentieren.",
+      "suggestedTerm": "GDAG"
+    },
+    {
+      "title": "TI-SUMMIT 2026: Zweiter Messekongress am 7.-8. Oktober 2026 in Leipzig",
+      "date": "2026-03-01",
+      "source": "https://dktig.de/save-the-date-dktig-auf-der-ti-summit-am-07-und-08-10-2026/",
+      "summary": "Der zweite TI-SUMMIT findet am 7. und 8. Oktober 2026 in der Kongresshalle am Zoo Leipzig statt. Veranstalter: INNO3 gemeinsam mit gematik als exklusivem Inhaltspartner. Erwartete Teilnehmer: über 1.000 Gesundheits-IT-Fachleute. Themen: ePA, E-Rezept, KIM, TI-Messenger, TI-Gateway, PoPP, Digitale Identitäten, KI in der TI.",
+      "relevantArticles": ["Telematikinfrastruktur.md"],
+      "category": "info",
+      "action": "info_only"
+    },
+    {
+      "title": "DMEA 2026: Letzte DMEA in Berlin (21.-23. April 2026), ab 2027 München",
+      "date": "2026-03-01",
+      "source": "https://www.heise.de/en/news/DMEA-Digital-Health-Trade-Fair-to-Change-Location-from-2027-11159313.html",
+      "summary": "Die DMEA 2026 findet vom 21. bis 23. April 2026 in Berlin statt und ist die letzte Ausgabe am Berliner Standort. Ab April 2027 zieht Europas führende Digital-Health-Messe nach München um. Gematik ist als Aussteller und Redner vertreten. Themenschwerpunkt 2026: KI-gestützte Kliniksysteme, datengetriebene Forschung, EHDS-Umsetzung.",
+      "relevantArticles": ["Telematikinfrastruktur.md"],
+      "category": "info",
+      "action": "info_only"
+    },
+    {
+      "title": "ePA-Sicherheitslücken (CCC 2024): Endgültige Lösung kommt mit PoPP in 2026",
+      "date": "2025-04-30",
+      "source": "https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/epa-sicherheitsluecke-geschlossen-pm-30-04-25.html",
+      "summary": "Die vom Chaos Computer Club (CCC) Ende 2024 aufgedeckten ePA-Sicherheitslücken (Nutzung gefälschter SMC-B-Karten für Massenzugriff auf Patientenakten) wurden durch Sofortmaßnahmen teilweise geschlossen. Die endgültige technische Lösung aller bekannten Angriffsszenarien ist die Einführung von PoPP (Proof of Patient Presence), die 2026 produktiv geht. BSI und gematik betonen, dass kein Massenmissbrauch stattgefunden hat.",
+      "relevantArticles": ["ePA.md"],
+      "category": "security",
+      "action": "update",
+      "details": "ePA.md sollte den CCC-Vorfall und den PoPP-basierten Fix als Sicherheitskontext ergänzen."
+    },
+    {
+      "title": "GesundheitsID als Versicherungsnachweis: eGK wird nicht abgeschafft (Faktencheck gematik)",
+      "date": "2026-02-01",
+      "source": "https://www.gematik.de/telematikinfrastruktur/transparenz/faktencheck-1/ab-2026-soll-die-gesundheitsid-als-versicherungsnachweis-dienen-wird-die-egk-abgeschafft",
+      "summary": "Gematik stellt klar: Die elektronische Gesundheitskarte (eGK) wird nicht abgeschafft. Die GesundheitsID ist ab 2026 ein zusätzlicher, digitaler Weg für den Versicherungsnachweis. Beide Wege koexistieren. Die GesundheitsID ermöglicht den Nachweis per Smartphone, ohne physische Karte. Frühestens 2027 soll die GesundheitsID als vollwertiger Arztbesuch-Ersatz für die eGK nutzbar sein.",
+      "relevantArticles": ["Gesundheits-ID.md", "eGK.md"],
+      "category": "info",
+      "action": "update",
+      "details": "Gesundheits-ID.md nennt 2027 als Datum für vollwertigen eGK-Ersatz beim Arztbesuch. Der Faktencheck bestätigt dies. Kein Update nötig, aber der Mythos der eGK-Abschaffung könnte als FAQ-Punkt ergänzt werden."
     }
   ]
 }

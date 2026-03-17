@@ -35,7 +35,7 @@ Die TR-03116-1 schreibt vor, welche Algorithmen zugelassen sind und bis wann äl
 ### Weitere relevante BSI-Richtlinien
 
 - **BSI TR-02102**: Kryptografische Verfahren allgemein (Empfehlungen zu Algorithmen und Schlüssellängen)
-- **BSI TR-03110**: eID-Verfahren (relevant für die [[Gesundheits-ID]])
+- **BSI TR-03110**: [[eID]]-Verfahren (relevant für die [[Gesundheits-ID]])
 - **BSI IT-Grundschutz**: Rahmenwerk für Informationssicherheit in Behörden und Unternehmen
 
 ### Zertifizierungsverfahren

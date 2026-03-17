@@ -49,7 +49,7 @@ Einrichtungen, die die Fristen verpassten, mussten Abzüge bei der Vergütung hi
 
 ### Abgrenzung zu Folgegesetzen
 
-Das DVG wurde durch das DVPMG (Digitale-Versorgung-und-Pflege-Modernisierungs-Gesetz, 2021) ergänzt, das die [[DiPA]] (Digitale Pflegeanwendungen) einführte. Das [[PDSG]] (Patientendaten-Schutz-Gesetz, 2020) und das [[DigiG]] (Digitalgesetz, 2024) bauen auf den Strukturen des DVG auf und erweitern sie.
+Das DVG wurde durch das [[DVPMG]] (Digitale-Versorgung-und-Pflege-Modernisierungs-Gesetz, 2021) ergänzt, das die [[DiPA]] (Digitale Pflegeanwendungen) einführte. Das [[PDSG]] (Patientendaten-Schutz-Gesetz, 2020) und das [[DigiG]] (Digitalgesetz, 2024) bauen auf den Strukturen des DVG auf und erweitern sie.
 
 ## Verknüpfungen
 
@@ -61,7 +61,7 @@ Das DVG wurde durch das DVPMG (Digitale-Versorgung-und-Pflege-Modernisierungs-Ge
 - [[ePA]]: Spätere Integration von DiGA-Daten in die Patientenakte
 - [[E-Rezept]]: Verordnungsweg für DiGA geplant
 - [[DiGAV]]: Digitale-Gesundheitsanwendungen-Verordnung, Ausführungsverordnung zum DVG
-- [[DiPA]]: Schwesterkonzept für Pflegeanwendungen, eingeführt durch DVPMG 2021
+- [[DiPA]]: Schwesterkonzept für Pflegeanwendungen, eingeführt durch [[DVPMG]] 2021
 
 ## Quellen
 

@@ -31,9 +31,9 @@ Das E-Rezept wird digital erstellt, signiert und kann auf drei Wegen eingelöst 
 - Selbstzahler-Rezepte
 - Zytostatika-Zuweisungen an Apotheken
 - Rezepte für Privatversicherte
+- [[DiGA]]-Verordnungen (Digitale Gesundheitsanwendungen, seit Januar 2026)
 
 ### Was kommt noch?
-- [[DiGA]]-Verordnungen (Digitale Gesundheitsanwendungen): ab Januar 2026
 - E-Rezept-Anforderung und Übermittlung via [[KIM]]
 - T-Rezepte (teratogene Stoffe): Spezifikation seit August 2025 veröffentlicht, Einführung 2026 geplant
 - Betäubungsmittel-Rezepte (BtM): Pilotprojekt frühestens Q4/2026, verpflichtende Einführung voraussichtlich 2027

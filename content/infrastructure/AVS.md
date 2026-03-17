@@ -21,7 +21,7 @@ Apotheken waren nach dem [[DVG]] (2019) verpflichtet, sich bis spätestens 1. Se
 
 Die wichtigste TI-Anwendung für Apotheken ist das [[E-Rezept]]. Das AVS ruft digitale Verordnungen vom E-Rezept-[[Fachdienst]] ab, verarbeitet sie und übermittelt die Abgabedaten zurück. Daneben nutzt das AVS den Zugang zur [[ePA]] für den Medikationsplan-Abgleich und [[KIM]] für die sichere Kommunikation mit Arztpraxen.
 
-Zertifizierungsbehörde für AVS-Software ist das ADAS (Apothekenrechenzentrum-Datenaustausch-Systemprüfstelle) über die ABDA (Bundesvereinigung Deutscher Apothekerverbände). Die [[gematik]] prüft seit 2024 zusätzlich die korrekte TI-Implementierung im Rahmen der Konformitätsbewertung.
+Zertifizierungsbehörde für AVS-Software ist das ADAS (Apothekenrechenzentrum-Datenaustausch-Systemprüfstelle) über die [[ABDA]] (Bundesvereinigung Deutscher Apothekerverbände). Die [[gematik]] prüft seit 2024 zusätzlich die korrekte TI-Implementierung im Rahmen der Konformitätsbewertung.
 
 ## Technische Details
 
@@ -82,6 +82,7 @@ Marktführende AVS-Systeme in Deutschland sind LAUER-FISCHER (WINAPO), ADG (Apos
 - [[FHIR]]: Datenformat für E-Rezept und ePA-Schnittstellen
 - [[gematik]]: Spezifiziert TI-Anforderungen und prüft AVS-Konformität
 - [[DVG]]: Gesetz, das die TI-Pflichtanbindung für Apotheken einführte
+- [[ABDA]]: Dachverband der Apothekerschaft, Herausgeberin des Artikelstamms und TA1-Format
 
 ## Quellen
 

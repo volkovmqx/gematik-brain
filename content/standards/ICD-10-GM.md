@@ -17,7 +17,7 @@ Damit Ärzte in ganz Deutschland über Krankheiten einheitlich sprechen können,
 
 Die ICD (International Classification of Diseases) ist ein Klassifikationssystem der Weltgesundheitsorganisation (WHO). Deutschland nutzt eine eigene nationale Modifikation, die ICD-10-GM, die vom [[BfArM]] im Auftrag des [[BMG]] gepflegt und jährlich aktualisiert wird.
 
-Die ICD-10-GM ist die offizielle Grundlage für die Diagnosecodierung in der ambulanten und stationären Versorgung. Sie ist verpflichtend für die Abrechnung gegenüber gesetzlichen Krankenkassen ([[GKV]]) und für die stationäre Abrechnung nach dem G-DRG-System (German Diagnosis Related Groups). Auch die Morbiditätsadjustierung im Risikostrukturausgleich zwischen den Krankenkassen basiert auf ICD-10-GM-Diagnosen.
+Die ICD-10-GM ist die offizielle Grundlage für die Diagnosecodierung in der ambulanten und stationären Versorgung. Sie ist verpflichtend für die Abrechnung gegenüber gesetzlichen Krankenkassen ([[GKV]]) und für die stationäre Abrechnung nach dem [[DRG|G-DRG-System]] (German Diagnosis Related Groups). Auch die Morbiditätsadjustierung im Risikostrukturausgleich zwischen den Krankenkassen basiert auf ICD-10-GM-Diagnosen.
 
 ICD-10-GM wird außerdem als Terminologiesystem in der deutschen [[Telematikinfrastruktur]] eingesetzt: in [[FHIR]]-Profilen für [[ISiK]], in [[MIO|Medizinischen Informationsobjekten (MIO)]] der [[KBV]] und in [[DEMIS]]-Meldungen des [[RKI]].
 
@@ -73,8 +73,8 @@ Die WHO hat 2022 ICD-11 eingeführt. Deutschland plant eine schrittweise Migrati
 
 Das BfArM pflegt neben ICD-10-GM weitere Kodiersysteme:
 
-- **OPS** (Operationen- und Prozedurenschlüssel): Prozedurenkodierung, Pendant zu ICD für Eingriffe
-- **SNOMED CT**: Klinische Terminologie, zunehmend in MIO-Profilen genutzt
+- **[[OPS]]** (Operationen- und Prozedurenschlüssel): Prozedurenkodierung, Pendant zu ICD für Eingriffe
+- **[[SNOMED-CT|SNOMED CT]]**: Klinische Terminologie, zunehmend in MIO-Profilen genutzt
 - **Alpha-ID-SE**: Seltenheitsindex für seltene Erkrankungen
 
 ## Verknüpfungen

@@ -22,8 +22,8 @@ Ein KIS deckt den gesamten Behandlungsprozess im stationären Bereich ab, von de
 - Pflegerische Dokumentation: Pflegepläne, Vitalzeichen, Medikamentenvergabe
 - Auftragsmanagement: Laboranforderungen, Radiologieanforderungen (Radiologie-Informationssystem, RIS)
 - Medikamentenmanagement (Verbindung zum Klinikapothekensystem)
-- Abrechnung nach DRG (Diagnosis Related Groups) gegenüber den Krankenkassen
-- Kodierung nach ICD-10-GM und OPS (Operationen- und Prozedurenschlüssel)
+- Abrechnung nach [[DRG]] (Diagnosis Related Groups) gegenüber den Krankenkassen
+- Kodierung nach ICD-10-GM und [[OPS]] (Operationen- und Prozedurenschlüssel)
 
 Der deutsche KIS-Markt ist stark konzentriert. Marktführer ist **Dedalus** mit dem System ORBIS. Laut Marktberichten von 2024 werden über 41 Prozent aller stationären Fälle in Deutschland über ORBIS abgerechnet. Weitere wichtige Anbieter:
 
@@ -83,7 +83,7 @@ Die [[IHE]]-Integrationsprofile (z.B. XDS.b für Dokumentenverteilung, PIX/PDQ f
 
 ### Krankenhausfinanzierungsgesetz und KHZG
 
-Das Krankenhauszukunftsgesetz (KHZG, 2020) stellte Fördermittel von 4,3 Milliarden Euro für die Digitalisierung von Krankenhäusern bereit. Ein Förderschwerpunkt war die Beschaffung und Modernisierung von KIS-Systemen sowie die Implementierung von Patientenportalen und digitalen Prozessen. KHZG-Vorhaben müssen Interoperabilitätsanforderungen erfüllen, die sich mit ISiK überschneiden.
+Das [[KHZG|Krankenhauszukunftsgesetz (KHZG, 2020)]] stellte Fördermittel von 4,3 Milliarden Euro für die Digitalisierung von Krankenhäusern bereit. Ein Förderschwerpunkt war die Beschaffung und Modernisierung von KIS-Systemen sowie die Implementierung von Patientenportalen und digitalen Prozessen. KHZG-Vorhaben müssen Interoperabilitätsanforderungen erfüllen, die sich mit ISiK überschneiden.
 
 ## Verknüpfungen
 

@@ -23,7 +23,7 @@ Für die Telematikinfrastruktur sind die Kapitel 11 (Datentransparenz), 12 (Info
 
 Wichtige Reformgesetze, die das SGB V in Bezug auf die TI ergänzt haben:
 
-- **E-Health-Gesetz (2015)**: Führte Zeitpläne für eGK-Anwendungen ein
+- **[[E-Health-Gesetz]] (2015)**: Führte Zeitpläne für eGK-Anwendungen ein
 - **Digitale-Versorgung-Gesetz ([[DVG]], 2019)**: Einführung der [[DiGA]], verpflichtende [[ePA]]
 - **Patientendaten-Schutz-Gesetz ([[PDSG]], 2020)**: Konkrete Regelungen zur [[ePA]] und zu [[VSDM]]
 - **Digital-Gesetz ([[DigiG]], 2024)**: Opt-out-Modell für die [[ePA]], Beschleunigung der TI
@@ -79,7 +79,7 @@ Das SGB V steht in einem engen Verhältnis zu weiteren Rechtsquellen:
 
 | Jahr | Gesetz | Änderung |
 |---|---|---|
-| 2015 | E-Health-Gesetz | Zeitpläne für TI-Einführung, eGK-Anwendungen |
+| 2015 | [[E-Health-Gesetz]] | Zeitpläne für TI-Einführung, eGK-Anwendungen |
 | 2019 | DVG | §33a DiGA, §341 ePA-Pflicht für Krankenkassen |
 | 2020 | PDSG | Datenschutzrahmen für ePA, VSDM-Regelungen |
 | 2024 | DigiG | Opt-out-ePA, Beschleunigung, neue ISiK-Stufen |

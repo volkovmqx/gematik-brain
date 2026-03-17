@@ -63,7 +63,7 @@ Beispiel für Basis-Ressourcen:
 - `ISiKPatient` (basiert auf FHIR Patient)
 - `ISiKKontaktGesundheitseinrichtung` (basiert auf FHIR Encounter)
 - `ISiKDiagnose` (basiert auf FHIR Condition, mit [[ICD-10-GM]]-Kodierung)
-- `ISiKProzedur` (basiert auf FHIR Procedure, mit OPS-Kodierung)
+- `ISiKProzedur` (basiert auf FHIR Procedure, mit [[OPS]]-Kodierung)
 
 ### Bestätigungsverfahren
 

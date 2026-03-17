@@ -47,7 +47,7 @@ Das BMG hat eine Reihe von Digitalisierungsgesetzen für das Gesundheitswesen ve
 
 - **[[DVG]]** (2019): Einführung von [[DiGA]], Pflichtanbindung weiterer TI-Teilnehmer
 - **[[PDSG]]** (2020): Datenschutzrahmen für die [[ePA]]
-- **DVPMG** (2021): Einführung der [[DiPA]]
+- **[[DVPMG]]** (2021): Einführung der [[DiPA]]
 - **[[DigiG]]** (2024): Opt-out-Modell für die ePA, Weiterentwicklung der TI
 
 ### gematik-Gesellschafterstruktur

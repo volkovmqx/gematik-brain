@@ -47,7 +47,7 @@ Die qualifizierten C.HP.QES-Zertifikate auf dem [[HBA]] stammen aus dem QES-Bere
 ### Relevante Rechtsgrundlagen
 
 - **eIDAS-Verordnung** (EU) Nr. 910/2014, Art. 17 ff.: Aufsichtspflichten
-- **Vertrauensdienstegesetz (VDG)**: Deutsches Ausführungsgesetz zur eIDAS-Verordnung
+- **[[VDG|Vertrauensdienstegesetz (VDG)]]**: Deutsches Ausführungsgesetz zur eIDAS-Verordnung
 - **eIDAS 2.0** (EU-Verordnung 2024/1183): Erweiterung um die Europäische Digitale Identität
 
 ## Verknüpfungen

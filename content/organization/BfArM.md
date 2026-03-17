@@ -42,7 +42,7 @@ Das BfArM führt das öffentliche DiGA-Verzeichnis unter `diga.bfarm.de`. Dort s
 
 ### DiPA-Verfahren
 
-Seit 2022 betreibt das BfArM auch das Fast-Track-Verfahren für [[DiPA|digitale Pflegeanwendungen (DiPA)]] nach § 40a SGB XI. DiPA werden durch die Pflegeversicherung erstattet. Das Prüfverfahren ist analog zu DiGA aufgebaut.
+Seit 2022 betreibt das BfArM auch das Fast-Track-Verfahren für [[DiPA|digitale Pflegeanwendungen (DiPA)]] nach § 40a [[SGB-XI|SGB XI]]. DiPA werden durch die Pflegeversicherung erstattet. Das Prüfverfahren ist analog zu DiGA aufgebaut.
 
 ### Medizinproduktebewertung
 
@@ -53,8 +53,8 @@ Das BfArM bewertet Risiken von Medizinprodukten, koordiniert Rückrufe und betre
 Das BfArM pflegt und übersetzt internationale Klassifikationssysteme für den deutschen Gesundheitsmarkt:
 
 - **[[ICD-10-GM]]**: Internationale Klassifikation der Krankheiten, German Modification
-- **OPS**: Operationen- und Prozedurenschlüssel
-- **SNOMED CT**: Systematisierte Nomenklatur der Medizin (deutsche Übersetzung)
+- **[[OPS]]**: Operationen- und Prozedurenschlüssel
+- **[[SNOMED-CT|SNOMED CT]]**: Systematisierte Nomenklatur der Medizin (deutsche Übersetzung)
 
 Diese Klassifikationssysteme sind Grundlage für [[FHIR]]-Profile in der [[Telematikinfrastruktur]], insbesondere in [[ISiK]]-Profilen.
 

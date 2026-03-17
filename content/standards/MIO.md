@@ -17,7 +17,7 @@ Stell dir die [[ePA]] als einen Aktenschrank vor. Damit alle Ärzte und Systeme 
 
 Das Konzept der MIOs wurde von der [[KBV]] entwickelt. Die KBV ist die Kassenärztliche Bundesvereinigung und damit die Normgeberin für Vertragsärzte in Deutschland. Die technische Umsetzung erfolgt durch die Tochtergesellschaft **mio42 GmbH**, die 2019 gegründet wurde und die MIO-Spezifikationen entwickelt und pflegt.
 
-MIOs sind [[FHIR]]-basierte Profile, die bestehende internationale Ressourcen des [[HL7]]-Standards auf den deutschen Versorgungskontext zuschneiden. Sie definieren: welche Felder eines Datensatzes verpflichtend sind, welche Terminologien (z. B. SNOMED CT, LOINC, [[ICD-10-GM]]) zu verwenden sind und wie Verweise zwischen Ressourcen strukturiert werden.
+MIOs sind [[FHIR]]-basierte Profile, die bestehende internationale Ressourcen des [[HL7]]-Standards auf den deutschen Versorgungskontext zuschneiden. Sie definieren: welche Felder eines Datensatzes verpflichtend sind, welche Terminologien (z. B. [[SNOMED-CT|SNOMED CT]], [[LOINC]], [[ICD-10-GM]]) zu verwenden sind und wie Verweise zwischen Ressourcen strukturiert werden.
 
 MIOs werden über das öffentliche Portal [mio.kbv.de](https://mio.kbv.de) veröffentlicht. Alle Spezifikationen sind frei zugänglich. Das Portal enthält auch den MIO Viewer, ein Werkzeug zur menschenlesbaren Darstellung von MIO-Instanzen im Browser.
 
@@ -29,7 +29,7 @@ MIOs basieren auf **[[FHIR]] R4** (Fast Healthcare Interoperability Resources, V
 
 Die verwendeten Terminologien:
 - **SNOMED CT**: Klinische Konzepte (Diagnosen, Prozeduren, Befunde)
-- **LOINC**: Laborparameter und Beobachtungen
+- **[[LOINC]]**: Laborparameter und Beobachtungen
 - **[[ICD-10-GM]]**: Diagnosecodierung nach deutschem Standard ([[BfArM]] pflegt die deutsche Modifikation)
 - **ATC**: Arzneimittelklassifikation
 

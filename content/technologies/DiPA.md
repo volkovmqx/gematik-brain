@@ -7,7 +7,7 @@ aliases: [Digitale Pflegeanwendungen, DiPA]
 
 # DiPA
 
-Digitale Pflegeanwendungen (DiPA) sind vom [[BfArM]] zugelassene digitale Anwendungen für Pflegebedürftige, die von der gesetzlichen Pflegeversicherung nach SGB XI erstattet werden.
+Digitale Pflegeanwendungen (DiPA) sind vom [[BfArM]] zugelassene digitale Anwendungen für Pflegebedürftige, die von der gesetzlichen Pflegeversicherung nach [[SGB-XI|SGB XI]] erstattet werden.
 
 ## Erklärt für Einsteiger
 
@@ -15,7 +15,7 @@ Digitale Pflegeanwendungen (DiPA) sind vom [[BfArM]] zugelassene digitale Anwend
 
 ## Überblick
 
-DiPA wurden mit dem Digitale-Versorgung-und-Pflege-Modernisierungs-Gesetz (DVPMG) vom 9. Juni 2021 eingeführt. Die rechtliche Grundlage findet sich in den §§ 40a und 40b des Elften Buches Sozialgesetzbuch (SGB XI). Die zugehörige Ausführungsverordnung ist die Digitale Pflegeanwendungen-Verordnung (DiPAV) vom Oktober 2022.
+DiPA wurden mit dem Digitale-Versorgung-und-Pflege-Modernisierungs-Gesetz ([[DVPMG]]) vom 9. Juni 2021 eingeführt. Die rechtliche Grundlage findet sich in den §§ 40a und 40b des Elften Buches Sozialgesetzbuch ([[SGB-XI|SGB XI]]). Die zugehörige Ausführungsverordnung ist die [[DiPAV|Digitale Pflegeanwendungen-Verordnung (DiPAV)]] vom Oktober 2022.
 
 Das [[BfArM]] führt das Prüfverfahren durch und betreibt das DiPA-Verzeichnis. Nur DiPA, die in diesem Verzeichnis aufgeführt sind, können von den Pflegekassen erstattet werden. Pflegebedürftige der Pflegegrade 1 bis 5 in häuslicher Pflege haben Anspruch auf Versorgung mit DiPA.
 
@@ -32,7 +32,7 @@ DiGA und DiPA haben ein ähnliches Prüfmodell, unterscheiden sich aber in wesen
 | Merkmal | [[DiGA]] | DiPA |
 |---|---|---|
 | Rechtsgrundlage | § 139e SGB V | §§ 40a, 40b SGB XI |
-| Einführung | DVG 2019 | DVPMG 2021 |
+| Einführung | DVG 2019 | [[DVPMG]] 2021 |
 | Kostenträger | Gesetzliche Krankenversicherung ([[GKV]]) | Gesetzliche Pflegeversicherung |
 | Verordnungsweg | Ärztliche/psychotherapeutische Verordnung | Eigenantrag bei der Pflegekasse |
 | Zielgruppe | GKV-Versicherte mit medizinischer Indikation | Pflegebedürftige Pflegegrade 1-5 |
@@ -52,7 +52,7 @@ Wie bei [[DiGA]] gibt es die Möglichkeit einer vorläufigen Aufnahme ins Verzei
 
 ### Interoperabilität
 
-Die DiPAV schreibt Anforderungen an die Interoperabilität vor. Exportierte Daten sollen in standardisierten Formaten vorliegen. Eine direkte Integration mit der [[ePA]] ist perspektivisch vorgesehen, da die ePA für alle Versicherten auch Pflegerelevante Daten aufnehmen soll.
+Die [[DiPAV]] schreibt Anforderungen an die Interoperabilität vor. Exportierte Daten sollen in standardisierten Formaten vorliegen. Eine direkte Integration mit der [[ePA]] ist perspektivisch vorgesehen, da die ePA für alle Versicherten auch Pflegerelevante Daten aufnehmen soll.
 
 ### Nutzungskontext
 
@@ -68,7 +68,9 @@ DiPA werden häufig in folgenden Versorgungsbereichen eingesetzt:
 
 - [[DiGA]]: Schwesterkonzept in der gesetzlichen Krankenversicherung
 - [[BfArM]]: Zuständige Prüfbehörde und Betreiber des DiPA-Verzeichnisses
-- [[DVG]]: Vorläufer-Gesetz, das den DiGA-Rahmen schuf; DVPMG ergänzte ihn um DiPA
+- [[DVPMG]]: Einführendes Gesetz von 2021, das DiPA in §§ 40a, 40b SGB XI verankerte
+- [[DiPAV]]: Ausführungsverordnung, die das Prüfverfahren für DiPA im Detail regelt
+- [[DVG]]: Vorläufer-Gesetz, das den DiGA-Rahmen schuf
 - [[ePA]]: Perspektivische Integration von DiPA-Daten in die elektronische Patientenakte
 - [[GKV]]: Abgrenzung zur Krankenversicherung, die DiGA erstattet
 - [[FHIR]]: Interoperabilitätsstandard, der auch für DiPA-Datenexporte gilt
