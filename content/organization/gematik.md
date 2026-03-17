@@ -19,7 +19,7 @@ Die gematik wurde im Jahr **2005** gegründet und hat ihren Sitz in Berlin (Rose
 
 ### Gesellschafter
 
-Die gematik hat neun Gesellschafter. Das Bundesministerium für Gesundheit (BMG) hält die Mehrheit.
+Die gematik hat neun Gesellschafter. Das Bundesministerium für Gesundheit ([[BMG]]) hält die Mehrheit.
 
 | Gesellschafter | Anteil |
 |---|---|

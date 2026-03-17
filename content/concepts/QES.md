@@ -50,7 +50,7 @@ Die PIN-Eingabe ist nicht verzichtbar. Sie stellt sicher, dass der Inhaber des H
 
 ### Qualifiziertes Zertifikat und QSCD
 
-Das QES-Zertifikat auf dem [[HBA]] ist ein **qualifiziertes Zertifikat** nach eIDAS. Es wird von einem zugelassenen **Vertrauensdiensteanbieter (VDA)** ausgestellt, der unter Aufsicht der **Bundesnetzagentur** steht.
+Das QES-Zertifikat auf dem [[HBA]] ist ein **qualifiziertes Zertifikat** nach eIDAS. Es wird von einem zugelassenen **Vertrauensdiensteanbieter (VDA)** ausgestellt, der unter Aufsicht der **[[Bundesnetzagentur]]** steht.
 
 Die Signaturerstellung erfolgt auf einer **QSCD** (Qualified Signature Creation Device, dt. qualifizierter Signaturerstellungseinheit). Im TI-Kontext ist das der kryptografische Chip auf dem [[HBA]]. Der private Schlüssel verlässt die Karte nie.
 
@@ -85,7 +85,7 @@ Die [[SMC-B]] kann keine QES erzeugen. Sie erzeugt nur eine **Organisationssigna
 - Teil der TI-[[PKI]] (Zertifikatsprüfung)
 - Genutzt in [[E-Rezept]], [[eAU]], [[NFDM]]
 - Rechtsbasis: [[eIDAS]]-Verordnung (EU) Nr. 910/2014
-- Ausgabe der Zertifikate durch VDA unter Aufsicht der Bundesnetzagentur
+- Ausgabe der Zertifikate durch VDA unter Aufsicht der [[Bundesnetzagentur]]
 - Eingebunden in [[Telematikinfrastruktur]]
 
 ## Quellen

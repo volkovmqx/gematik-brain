@@ -31,7 +31,7 @@ Der VZD ist eine Pflichtkomponente: Ohne ihn können weder [[KIM]] noch der [[TI
 
 Der klassische VZD basiert auf dem LDAP-Protokoll (Lightweight Directory Access Protocol). Einträge folgen einem definierten Schema mit Attributen wie:
 
-- Telematik-ID des Teilnehmers
+- [[Telematik-ID]] des Teilnehmers
 - KIM-Adresse(n)
 - X.509-Zertifikate für die Verschlüsselung
 - Name und Typ der Einrichtung (Arztpraxis, Apotheke, Krankenhaus usw.)
@@ -76,7 +76,7 @@ Die Implementierung des VZD-FHIR-Directory wird kontinuierlich weiterentwickelt.
 - Pflichtkomponente für [[KIM]] (LDAP-Adressauflösung) und [[TI-Messenger]] (FHIR-Suche)
 - Basiert auf [[FHIR]] für die moderne REST-Schnittstelle
 - Authentisierung über den [[IDP]]-Dienst der TI
-- Einträge enthalten Telematik-IDs aus [[SMC-B]] und [[HBA]]-Zertifikaten
+- Einträge enthalten [[Telematik-ID]]s aus [[SMC-B]] und [[HBA]]-Zertifikaten
 - Bestandteil der [[Telematikinfrastruktur]]
 
 ## Quellen

@@ -25,8 +25,8 @@ Wichtige Reformgesetze, die das SGB V in Bezug auf die TI ergänzt haben:
 
 - **E-Health-Gesetz (2015)**: Führte Zeitpläne für eGK-Anwendungen ein
 - **Digitale-Versorgung-Gesetz ([[DVG]], 2019)**: Einführung der [[DiGA]], verpflichtende [[ePA]]
-- **Patientendaten-Schutz-Gesetz (PDSG, 2020)**: Konkrete Regelungen zur [[ePA]] und zu [[VSDM]]
-- **Digital-Gesetz (DigiG, 2024)**: Opt-out-Modell für die [[ePA]], Beschleunigung der TI
+- **Patientendaten-Schutz-Gesetz ([[PDSG]], 2020)**: Konkrete Regelungen zur [[ePA]] und zu [[VSDM]]
+- **Digital-Gesetz ([[DigiG]], 2024)**: Opt-out-Modell für die [[ePA]], Beschleunigung der TI
 
 ## Technische Details
 
@@ -72,7 +72,7 @@ Das SGB V steht in einem engen Verhältnis zu weiteren Rechtsquellen:
 
 - **Bundesmantelvertrag-Ärzte (BMV-Ä)**: Konkretisiert SGB-V-Regelungen für den Vertragsarztbereich
 - **DSGVO und BDSG**: Überlagerung der SGB-V-Datenschutzregelungen durch europäisches Datenschutzrecht
-- **MDR (EU Medizinprodukteverordnung)**: Gilt ergänzend für DiGA neben dem SGB V
+- **[[MDR]] (EU Medizinprodukteverordnung)**: Gilt ergänzend für DiGA neben dem SGB V
 - **[[DiGAV]]**: Durchführungsverordnung zu §33a SGB V
 
 ### Änderungshistorie (TI-relevant)

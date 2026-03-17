@@ -63,7 +63,7 @@ Sektorale IDPs müssen laut gematik-Spezifikation (`gemSpec_IDP_Sek`) folgende A
 
 - Basierung auf OAuth 2.0 und OpenID Connect (OIDC)
 - Unterstützung von Pushed Authorization Requests (PAR)
-- Standardisierte Claims: KVNR (Krankenversicherungsnummer), Versicherungsattribute
+- Standardisierte Claims: [[KVNR]] (Krankenversicherungsnummer), Versicherungsattribute
 - Einheitliche Scopes für Nutzergruppen
 - Registrierung beim Trust Anchor (gematik) über ein Subordinate Statement
 - Nutzung von JSON Web Keys (JWK) statt klassischer TLS-PKI für die Federation

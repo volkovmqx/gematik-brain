@@ -7,7 +7,7 @@ tags: [standard, fhir, interoperabilitaet]
 
 # FHIR - Fast Healthcare Interoperability Resources
 
-**FHIR** (ausgesprochen "fire") ist der internationale Standard für den Austausch von Gesundheitsdaten, entwickelt von HL7 International. Die [[gematik]] nutzt FHIR als Grundlage für die Datenformate der [[Telematikinfrastruktur]].
+**FHIR** (ausgesprochen "fire") ist der internationale Standard für den Austausch von Gesundheitsdaten, entwickelt von [[HL7|HL7 International]]. Die [[gematik]] nutzt FHIR als Grundlage für die Datenformate der [[Telematikinfrastruktur]].
 
 ## Erklärt für Einsteiger
 

@@ -49,7 +49,7 @@ Der Standardfluss folgt dem OAuth 2.0 Authorization Code Grant mit PKCE:
 
 Der IDP stellt drei Token-Typen aus:
 
-- **ID_TOKEN**: OpenID Connect Token. Enthält Identitätsattribute aus dem X.509-Zertifikat der Chipkarte (Name, Telematik-ID, Berufsbezeichnung).
+- **ID_TOKEN**: OpenID Connect Token. Enthält Identitätsattribute aus dem X.509-Zertifikat der Chipkarte (Name, [[Telematik-ID]], Berufsbezeichnung).
 - **ACCESS_TOKEN**: OAuth 2.0 Token. Berechtigt den Zugriff auf konkrete Fachdienste (z.B. ePA-Aktensystem, E-Rezept-Fachdienst). Zeitlich begrenzt.
 - **SSO_TOKEN**: Session-Token gemäß RFC 7519. Ermöglicht Einmalanmeldung ohne erneute Karteninteraktion.
 

@@ -21,7 +21,7 @@ Das Ziel von ISiK ist Interoperabilität: Relevante Patientendaten sollen sektor
 
 ISiK betrifft primär Krankenhäuser, die Fördermittel nach dem Krankenhausfinanzierungsgesetz (KHG) erhalten. Die Konformität mit ISiK ist seit Stufe 3 (01.07.2025) Voraussetzung für bestimmte Fördermaßnahmen nach § 21 Abs. 2 KHSFV. Hersteller von [[KIS|Krankenhausinformationssystemen (KIS)]] und anderen primären Systemen müssen ihre Produkte durch [[gematik]] bestätigen lassen.
 
-ISiK ergänzt bestehende Standards wie HL7 FHIR, [[IHE]] und KBV-Profile. Es ist kein eigenständiges System, sondern ein Set von Spezifikationen und Bestätigungsanforderungen.
+ISiK ergänzt bestehende Standards wie [[HL7]] FHIR, [[IHE]] und KBV-Profile. Es ist kein eigenständiges System, sondern ein Set von Spezifikationen und Bestätigungsanforderungen.
 
 ## Technische Details
 
@@ -62,7 +62,7 @@ ISiK-Profile sind auf Simplifier.net veröffentlicht und können dort eingesehen
 Beispiel für Basis-Ressourcen:
 - `ISiKPatient` (basiert auf FHIR Patient)
 - `ISiKKontaktGesundheitseinrichtung` (basiert auf FHIR Encounter)
-- `ISiKDiagnose` (basiert auf FHIR Condition, mit ICD-10-GM-Kodierung)
+- `ISiKDiagnose` (basiert auf FHIR Condition, mit [[ICD-10-GM]]-Kodierung)
 - `ISiKProzedur` (basiert auf FHIR Procedure, mit OPS-Kodierung)
 
 ### Bestätigungsverfahren

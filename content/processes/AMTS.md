@@ -24,11 +24,11 @@ Typische Risiken, die AMTS adressiert:
 - **Doppelverordnungen**: Derselbe Wirkstoff wird von mehreren Ärzten gleichzeitig verschrieben
 - **Fehldosierungen**: Falsche Menge oder falsches Anwendungsintervall
 
-Die gesetzliche Grundlage für digitale AMTS-Unterstützung wurde mit dem E-Health-Gesetz (2015) und dem Digitale-Versorgung-Gesetz (2019) geschaffen. Patienten mit fünf oder mehr Dauermedikamenten haben gesetzlichen Anspruch auf einen Medikationsplan.
+Die gesetzliche Grundlage für digitale AMTS-Unterstützung wurde mit dem E-Health-Gesetz (2015) und dem [[DVG|Digitale-Versorgung-Gesetz (2019)]] geschaffen. Patienten mit fünf oder mehr Dauermedikamenten haben gesetzlichen Anspruch auf einen Medikationsplan.
 
 ### Medikationsplan und ePA
 
-Der **elektronische Medikationsplan (eMP)** ist das zentrale Instrument der digitalen AMTS-Unterstützung. Er listet alle aktuellen Medikamente eines Patienten inklusive Wirkstoff, Handelsname, Stärke, Dosierungsform und Einnahmehinweisen.
+Der **[[eMP|elektronische Medikationsplan (eMP)]]** ist das zentrale Instrument der digitalen AMTS-Unterstützung. Er listet alle aktuellen Medikamente eines Patienten inklusive Wirkstoff, Handelsname, Stärke, Dosierungsform und Einnahmehinweisen.
 
 Seit März 2026 ist der eMP in die [[ePA]] integriert. Die ePA enthält daneben eine elektronische Medikationsliste, in die [[E-Rezept]]-Daten automatisch einfließen. Ärzte und Apotheker können so den aktuellen Medikationsstatus eines Patienten vollständig einsehen, sofern der Patient den Zugriff erlaubt.
 
@@ -61,17 +61,18 @@ Vor der ePA gab es den **Bundeseinheitlichen Medikationsplan (BMP)** in Papierfo
 Zugriff auf die Medikationsdaten in der [[ePA]] haben:
 
 - Ärzte und andere Leistungserbringer über ihr Primärsystem und den [[Fachdienst|ePA-Fachdienst]]
-- Apotheker über das Apothekenverwaltungssystem (AVS)
+- Apotheker über das [[AVS|Apothekenverwaltungssystem (AVS)]]
 - Versicherte selbst über die ePA-App
 
 Der Zugriff ist strikt an die Einwilligung des Patienten gebunden und wird in der [[ePA]] protokolliert.
 
 ### Primärsysteme und AMTS-Software
 
-Die eigentliche Interaktionsprüfung (Wechselwirkungscheck) findet nicht im [[Fachdienst]] der [[ePA]] statt, sondern in den Primärsystemen ([[PVS]], [[KIS]], AVS). Diese integrieren Datenbanken wie ABDA oder MMI-Pharmindex, die Arzneimitteldaten und bekannte Interaktionen enthalten. Die [[ePA]] liefert dazu die vollständige Datenbasis aller Medikamente.
+Die eigentliche Interaktionsprüfung (Wechselwirkungscheck) findet nicht im [[Fachdienst]] der [[ePA]] statt, sondern in den Primärsystemen ([[PVS]], [[KIS]], [[AVS]]). Diese integrieren Datenbanken wie ABDA oder MMI-Pharmindex, die Arzneimitteldaten und bekannte Interaktionen enthalten. Die [[ePA]] liefert dazu die vollständige Datenbasis aller Medikamente.
 
 ## Verknüpfungen
 
+- [[eMP]] (elektronischer Medikationsplan, das zentrale AMTS-Instrument)
 - [[ePA]] (zentrale Datenbasis für alle Medikationsdaten eines Patienten)
 - [[E-Rezept]] (Verordnungsdaten fließen automatisch in den Medikationsprozess ein)
 - [[FHIR]] (Datenformat für alle Medikationsressourcen in der TI)

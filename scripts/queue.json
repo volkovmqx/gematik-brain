@@ -1,127 +1,93 @@
 {
   "pending": [
     {
-      "term": "DVG",
-      "category": "standards",
-      "reason": "Digitale-Versorgung-Gesetz (2019). Introduced DiGA, enabled digital health applications on prescription. Referenced in DiGA and AMTS articles. Key enabling legislation for TI digitalization wave.",
-      "mentionedIn": [
-        "content/technologies/DiGA.md",
-        "content/processes/AMTS.md"
-      ],
-      "priority": 34
-    },
-    {
-      "term": "Bundesnetzagentur",
+      "term": "ABDA",
       "category": "organization",
-      "reason": "Federal supervisory authority for qualified trust service providers (VDA) that issue QES certificates. Referenced in QES and PKI articles as regulator of the eIDAS trust chain for HBA certificates.",
+      "reason": "Bundesvereinigung Deutscher Apothekerverbände. Zertifizierungsstelle für AVS-Software; betreibt den Artikelstamm und TA1-Abrechnungsformat. In AVS.md mehrfach als zentrale Stelle für Apotheken erwähnt.",
       "mentionedIn": [
-        "content/concepts/QES.md",
-        "content/concepts/PKI.md"
-      ],
-      "priority": 33
-    },
-    {
-      "term": "DiPA",
-      "category": "technologies",
-      "reason": "Digitale Pflegeanwendungen. Sister concept to DiGA for nursing care context, reimbursed by Pflegeversicherung, regulated by BfArM. Mentioned in DiGA and BfArM articles. Growing in importance.",
-      "mentionedIn": [
-        "content/technologies/DiGA.md",
-        "content/organization/BfArM.md"
-      ],
-      "priority": 32
-    },
-    {
-      "term": "AVS",
-      "category": "infrastructure",
-      "reason": "Apothekenverwaltungssystem. The primary pharmacy software, mentioned in TI-Gateway, Konnektoren, AMTS, Fachdienst. Parallel to PVS for pharmacies. Central in E-Rezept dispensing workflow.",
-      "mentionedIn": [
-        "content/infrastructure/TI-Gateway.md",
-        "content/infrastructure/Konnektoren.md",
-        "content/infrastructure/Fachdienst.md",
-        "content/processes/AMTS.md"
-      ],
-      "priority": 31
-    },
-    {
-      "term": "eMP",
-      "category": "processes",
-      "reason": "Elektronischer Medikationsplan. Central instrument of digital AMTS. Described in detail in AMTS article as integrated into ePA since March 2026. Supersedes the paper-based BMP. Deserves its own page.",
-      "mentionedIn": [
+        "content/infrastructure/AVS.md",
         "content/processes/AMTS.md",
-        "content/technologies/ePA.md"
+        "content/processes/eMP.md"
       ],
-      "priority": 30
+      "priority": 20
     },
     {
-      "term": "eGBR",
+      "term": "eID",
       "category": "infrastructure",
-      "reason": "Elektronisches Gesundheitsberuferegister. Register for health professions not covered by traditional chambers (nurses, midwives, physiotherapists). Mentioned in HBA as the HBA issuer for these groups. Increasingly relevant.",
+      "reason": "Online-Ausweisfunktion des deutschen Personalausweises. Wird zur Erst-Registrierung der Gesundheits-ID genutzt. In Gesundheits-ID.md, eIDAS.md und BSI.md erwähnt (BSI TR-03110). Grundlage für kartenlose TI-Identität.",
       "mentionedIn": [
-        "content/infrastructure/HBA.md"
-      ],
-      "priority": 27
-    },
-    {
-      "term": "IfSG",
-      "category": "standards",
-      "reason": "Infektionsschutzgesetz. Legal basis for DEMIS and infection reporting obligations. Mentioned in DEMIS article (3x). Foundational law for public health surveillance digitalization.",
-      "mentionedIn": [
-        "content/technologies/DEMIS.md"
-      ],
-      "priority": 26
-    },
-    {
-      "term": "Telematik-ID",
-      "category": "infrastructure",
-      "reason": "Unique identifier for all TI participants (practitioners, institutions). Referenced in VZD (LDAP entries), IDP (token claims), HBA/SMC-B certificates. Central concept for identity in the TI, mentioned across multiple articles without its own page.",
-      "mentionedIn": [
-        "content/infrastructure/VZD.md",
-        "content/infrastructure/IDP.md"
-      ],
-      "priority": 25
-    },
-    {
-      "term": "TSP",
-      "category": "infrastructure",
-      "reason": "Trust Service Provider. Certificate issuers in the TI-PKI, accredited by gematik. Described in PKI article but deserves own page: role in TI trust chain, accreditation process, relationship to eIDAS qualified VDAs.",
-      "mentionedIn": [
-        "content/concepts/PKI.md",
-        "content/infrastructure/Telematikinfrastruktur.md",
-        "content/concepts/OCSP.md"
-      ],
-      "priority": 24
-    },
-    {
-      "term": "ICD-10-GM",
-      "category": "standards",
-      "reason": "Internationale Klassifikation der Krankheiten, German Modification. Maintained by BfArM, used in ISiK profiles (ISiKDiagnose), DEMIS meldungen. Fundamental coding standard in German healthcare IT.",
-      "mentionedIn": [
-        "content/organization/BfArM.md",
-        "content/technologies/DEMIS.md",
-        "content/standards/ISiK.md"
-      ],
-      "priority": 23
-    },
-    {
-      "term": "BMG",
-      "category": "organization",
-      "reason": "Bundesministerium für Gesundheit. Holds 51% of gematik and sets TI policy direction. Referenced in gematik, BfArM, BSI articles. Key political actor in TI governance.",
-      "mentionedIn": [
-        "content/organization/gematik.md",
-        "content/organization/BfArM.md",
+        "content/infrastructure/Gesundheits-ID.md",
+        "content/standards/eIDAS.md",
         "content/organization/BSI.md"
       ],
-      "priority": 22
+      "priority": 19
     },
     {
-      "term": "KVNR",
-      "category": "concepts",
-      "reason": "Krankenversicherungsnummer. Unique patient identifier used in TI-Federation tokens, Gesundheits-ID, VSDM. Referenced in TI-Federation and Gesundheits-ID articles as a key claim in OAuth tokens.",
+      "term": "DVPMG",
+      "category": "standards",
+      "reason": "Digitale-Versorgung-und-Pflege-Modernisierungs-Gesetz (2021). Führte DiPA ein und erweiterte den DVG-Rahmen auf die Pflege. In DVG.md und DiPA.md referenziert.",
       "mentionedIn": [
-        "content/infrastructure/TI-Federation.md",
-        "content/infrastructure/Gesundheits-ID.md"
+        "content/standards/DVG.md",
+        "content/technologies/DiPA.md"
       ],
-      "priority": 21
+      "priority": 18
+    },
+    {
+      "term": "DiPAV",
+      "category": "standards",
+      "reason": "Digitale Pflegeanwendungen-Verordnung (2022). Ausführungsverordnung für DiPA, analog zur DiGAV für DiGA. In DiPA.md referenziert.",
+      "mentionedIn": [
+        "content/technologies/DiPA.md"
+      ],
+      "priority": 17
+    },
+    {
+      "term": "VDG",
+      "category": "standards",
+      "reason": "Vertrauensdienstegesetz. Deutsches Ausführungsgesetz zur eIDAS-Verordnung, regelt qualifizierte VDAs unter Aufsicht der Bundesnetzagentur. In Bundesnetzagentur.md referenziert.",
+      "mentionedIn": [
+        "content/organization/Bundesnetzagentur.md"
+      ],
+      "priority": 16
+    },
+    {
+      "term": "OPS",
+      "category": "standards",
+      "reason": "Operationen- und Prozedurenschlüssel. Deutsches Kodierungssystem für medizinische Prozeduren, gepflegt vom BfArM. In BfArM.md, ISiK.md und KIS.md erwähnt. Pendant zu ICD-10-GM auf Prozedurenebene.",
+      "mentionedIn": [
+        "content/organization/BfArM.md",
+        "content/standards/ISiK.md",
+        "content/infrastructure/KIS.md"
+      ],
+      "priority": 15
+    },
+    {
+      "term": "SNOMED CT",
+      "category": "standards",
+      "reason": "Systematisierte Nomenklatur der Medizin – klinische Terminologie. Vom BfArM ins Deutsche übersetzt; in MIO-Profilen und ISiK-Diagnosen als Terminologiesystem genutzt. In MIO.md und BfArM.md erwähnt.",
+      "mentionedIn": [
+        "content/standards/MIO.md",
+        "content/organization/BfArM.md"
+      ],
+      "priority": 14
+    },
+    {
+      "term": "KHZG",
+      "category": "standards",
+      "reason": "Krankenhauszukunftsgesetz 2020. Stellte 4,3 Mrd. Euro für die Krankenhausdigitalisierung bereit und ist Kontext für ISiK-Anforderungen. In KIS.md beschrieben als Förderrahmen für KIS-Digitalisierung.",
+      "mentionedIn": [
+        "content/infrastructure/KIS.md"
+      ],
+      "priority": 13
+    },
+    {
+      "term": "GDNG",
+      "category": "standards",
+      "reason": "Gesundheitsdatennutzungsgesetz 2024. Erwähnt im PVS-Artikel im Kontext der Konformitätsbewertung. Regelt die Nutzung von Gesundheitsdaten für Forschung und Sekundärnutzung.",
+      "mentionedIn": [
+        "content/infrastructure/PVS.md"
+      ],
+      "priority": 12
     }
   ],
   "done": [
@@ -168,7 +134,23 @@
     "GKV",
     "DiGAV",
     "SGB V",
-    "MIO"
+    "MIO",
+    "eMP",
+    "eGBR",
+    "IfSG",
+    "Telematik-ID",
+    "DVG",
+    "Bundesnetzagentur",
+    "DiPA",
+    "AVS",
+    "TSP",
+    "DigiG",
+    "KVNR",
+    "PDSG",
+    "BMG",
+    "HL7",
+    "MDR",
+    "ICD-10-GM"
   ],
   "lastRun": "2026-03-17"
 }

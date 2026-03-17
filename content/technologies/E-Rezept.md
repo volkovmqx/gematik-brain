@@ -36,7 +36,7 @@ Das E-Rezept wird digital erstellt, signiert und kann auf drei Wegen eingelöst 
 - [[DiGA]]-Verordnungen (Digitale Gesundheitsanwendungen): ab Januar 2026
 - E-Rezept-Anforderung und Übermittlung via [[KIM]]
 - T-Rezepte (teratogene Stoffe): Spezifikation seit August 2025 veröffentlicht, Einführung 2026 geplant
-- Betäubungsmittel-Rezepte (BtM)
+- Betäubungsmittel-Rezepte (BtM): Pilotprojekt frühestens Q4/2026, verpflichtende Einführung voraussichtlich 2027
 - Grenzüberschreitende Einlösung in der EU
 - Häusliche Krankenpflege und außerklinische Intensivpflege: Pflicht ab 1. Juli 2026
 - Hilfsmittelverordnungen (Orthesen, Rollstühle etc.): Pflicht ab 1. Juli 2026

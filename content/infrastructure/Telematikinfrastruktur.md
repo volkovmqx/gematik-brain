@@ -15,12 +15,12 @@ Stell dir das Internet vor, aber nur für das Gesundheitswesen und besonders ges
 
 ## Überblick
 
-Die TI wird von der **[[gematik|gematik GmbH]]** (Berlin, Rosenthaler Straße 30) im Auftrag des Bundesministeriums für Gesundheit (BMG) verantwortet.
+Die TI wird von der **[[gematik|gematik GmbH]]** (Berlin, Rosenthaler Straße 30) im Auftrag des Bundesministeriums für Gesundheit ([[BMG]]) verantwortet.
 
 ### Zentrale Dienste
 - **[[IDP]]-Dienst**: Identitätsmanagement und Authentisierung
 - **[[VZD]] (Verzeichnisdienst)**: Zentrales Adressbuch aller TI-Teilnehmer
-- **TSP (Trust Service Provider)**: [[PKI]]-Infrastruktur für Zertifikate
+- **[[TSP]] (Trust Service Provider)**: [[PKI]]-Infrastruktur für Zertifikate
 - **[[OCSP]]/CRL**: Zertifikatsprüfung
 
 ### Anwendungen auf der TI

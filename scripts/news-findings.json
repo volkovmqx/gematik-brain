@@ -263,5 +263,55 @@
       "details": "ePA.md sollte Volltextsuche und MIO-Integration als geplante Funktionen für 2026 ergänzen.",
       "suggestedTerm": "MIO"
     }
+    ,
+    {
+      "title": "AOK Bayern: 6.400 ePA-Akten versehentlich geschlossen",
+      "date": "2026-02-10",
+      "source": "https://www.aok.de/pp/bayern/pm/update-epa-akten/",
+      "summary": "Im Rahmen einer internen Systemumstellung löste AOK Bayern versehentlich einen Schließungsbefehl für ca. 6.400 aktive elektronische Patientenakten aus. Betroffene Versicherte verloren vorübergehend den Zugriff auf ihre Dokumente und erhielten irrtümlich Löschbestätigungen. Kein Datenverlust: Daten blieben verschlüsselt im Backup. AOK Bayern rekonstruierte die Akten mit höchster Priorität. Kein Hackerangriff.",
+      "relevantArticles": ["ePA.md"],
+      "category": "security",
+      "action": "info_only"
+    },
+    {
+      "title": "PoPP-Dienstspezifikation Stufe 1 veröffentlicht (03.03.2026)",
+      "date": "2026-03-03",
+      "source": "https://gemspec.gematik.de/docs/gemSpec/gemSpec_PoPP_Service/gemSpec_PoPP_Service_V1.0.0/index.html",
+      "summary": "Am 3. März 2026 veröffentlichte gematik die finale Spezifikation des PoPP-Service (Proof of Patient Presence) Version 1.0.0. Damit ist die Umsetzungsstufe 1 technisch vollständig spezifiziert. RISE hat den Implementierungsauftrag erhalten. Produktivstart Stufe 1 (eGK-basierter Präsenznachweis in Praxis und Hausbesuch): Mitte 2026. Stufe 2 (Telemedizin, GesundheitsID) folgt Q4/2026.",
+      "relevantArticles": ["Telematikinfrastruktur.md", "eGK.md", "VSDM.md"],
+      "category": "specification",
+      "action": "new_article",
+      "suggestedTerm": "PoPP"
+    },
+    {
+      "title": "TI-Anbindungsfrist für Heil- und Hilfsmittelerbringer auf Oktober 2027 verlängert",
+      "date": "2026-01-01",
+      "source": "https://www.verbandsbuero.de/ti-anbindung-fristverlaengerung-bis-oktober-2027/",
+      "summary": "Der Bundestag verschob die verpflichtende TI-Anbindung für Heil- und Hilfsmittelerbringer (Physiotherapeuten, Ergotherapeuten, Logopäden, Podologen etc.) vom ursprünglichen Termin 1. Januar 2026 auf den 1. Oktober 2027. Begründung: Die elektronische Heilmittelverordnung (eVO), der zentrale Nutzwert für diese Gruppe, ist noch nicht verfügbar. Verbände begrüßen die Verschiebung ausdrücklich.",
+      "relevantArticles": ["Telematikinfrastruktur.md", "E-Rezept.md"],
+      "category": "regulation",
+      "action": "update",
+      "details": "E-Rezept.md und Telematikinfrastruktur.md sollten vermerken, dass die TI-Pflicht für Heilmittelerbringer auf Oktober 2027 verschoben wurde. Dies tangiert auch den Rollout der eVO."
+    },
+    {
+      "title": "vzbv: ePA hat viel Potenzial, bislang wenig Nutzen (Februar 2026)",
+      "date": "2026-02-18",
+      "source": "https://www.vzbv.de/pressemitteilungen/elektronische-patientenakte-viel-potenzial-bislang-wenig-nutzen",
+      "summary": "Der Verbraucherzentrale Bundesverband (vzbv) veröffentlichte im Februar 2026 ein Forderungspapier zur ePA. Kritisiert werden: unzureichende Information durch Krankenkassen, fehlende granulare Datenkontrolle, technische Komplexität und anhaltende Datenschutzbedenken (u.a. nach CCC-Befunden). Forderung: Nationales ePA-Kompetenzzentrum, strukturierter Verbraucheraustausch, bessere Steuerungsmöglichkeiten für Dokumente.",
+      "relevantArticles": ["ePA.md"],
+      "category": "regulation",
+      "action": "info_only"
+    },
+    {
+      "title": "E-BtM-Rezept (Betäubungsmittelrezept): Pilotstart frühestens Q4/2026",
+      "date": "2026-01-06",
+      "source": "https://www.deutsche-apotheker-zeitung.de/autoren/news/artikel/2026/01/06/epa-e-rezept-und-mehr-was-kommt-2026",
+      "summary": "Das elektronische Betäubungsmittelrezept (eBtM) ist derzeit noch in der Spezifikationsphase. Ein Pilotprojekt ist frühestens für Q4/2026 geplant. Verpflichtende Einführung wird erst 2027 erwartet. Gematik hat den Feature-Draft eBtM_25_1 als Vorabveröffentlichung bereitgestellt.",
+      "relevantArticles": ["E-Rezept.md"],
+      "category": "specification",
+      "action": "update",
+      "details": "E-Rezept.md listet BtM-Rezepte unter 'Was kommt noch?' ohne Zeitangabe. Ergänzen: Pilotstart frühestens Q4/2026, verpflichtende Einführung 2027.",
+      "suggestedTerm": "E-BtM-Rezept"
+    }
   ]
 }

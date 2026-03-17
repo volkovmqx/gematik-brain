@@ -54,7 +54,7 @@ Qualifizierte Zertifikate für den [[HBA]] in der TI werden von akkreditierten V
 
 Die [[PKI]] der Telematikinfrastruktur enthält zwei Zertifikatskategorien:
 
-- **TI-PKI-Zertifikate**: Von gematik akkreditierte Trust Service Provider (TSP) ausgestellt, für alle TI-Operationen (Authentifizierung, Verschlüsselung, Organisationssignaturen)
+- **TI-PKI-Zertifikate**: Von gematik akkreditierte [[TSP|Trust Service Provider (TSP)]] ausgestellt, für alle TI-Operationen (Authentifizierung, Verschlüsselung, Organisationssignaturen)
 - **eIDAS-qualifizierte Zertifikate**: Auf dem [[HBA]] gespeichert (C.HP.QES), von VDAs ausgestellt, ausschließlich für die [[QES]]
 
 Nur das QES-Zertifikat auf dem HBA ist nach eIDAS qualifiziert. Die anderen Zertifikate auf HBA und [[SMC-B]] sind TI-spezifische, nicht-qualifizierte Zertifikate.

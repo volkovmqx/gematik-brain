@@ -58,7 +58,7 @@ Das RKI betreibt mehrere Surveillance-Systeme parallel:
 
 ### Abgrenzung zur Telematikinfrastruktur
 
-Das RKI ist kein Teil der [[Telematikinfrastruktur]] und keine gematik-Einrichtung. DEMIS ist ein eigenständiges Fachsystem des öffentlichen Gesundheitsdienstes. Es nutzt dieselben Interoperabilitätsstandards ([[FHIR]], ICD-10-GM) wie die TI, ist aber technisch unabhängig davon.
+Das RKI ist kein Teil der [[Telematikinfrastruktur]] und keine gematik-Einrichtung. DEMIS ist ein eigenständiges Fachsystem des öffentlichen Gesundheitsdienstes. Es nutzt dieselben Interoperabilitätsstandards ([[FHIR]], [[ICD-10-GM]]) wie die TI, ist aber technisch unabhängig davon.
 
 Der Berührungspunkt mit der TI entsteht über die Primärsysteme: [[PVS]] und [[KIS]] können DEMIS-Meldungen aus ihren Workflows heraus erzeugen und über DEMIS versenden.
 

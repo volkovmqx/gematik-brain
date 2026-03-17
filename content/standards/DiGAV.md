@@ -17,7 +17,7 @@ Damit eine Gesundheits-App von der Krankenkasse bezahlt wird, muss sie eine stre
 
 Das Digitale-Versorgung-Gesetz ([[DVG]]) schuf 2019 in [[SGB-V]] §33a den Rechtsanspruch gesetzlich Versicherter auf DiGA als Kassenleistung. Die DiGAV konkretisiert diesen gesetzlichen Rahmen: Sie definiert das Prüfverfahren, die Anforderungskategorien, die Nachweismethoden für positive Versorgungseffekte und die Bedingungen für das öffentliche DiGA-Verzeichnis.
 
-Die Verordnung trat am 11. April 2020 in Kraft und wird laufend durch Änderungsverordnungen aktualisiert. Sie gilt ausschließlich für DiGA, also digitale Medizinprodukte der Risikoklasse I oder IIa nach der europäischen Medizinprodukteverordnung (MDR), nicht für andere digitale Gesundheitsprodukte.
+Die Verordnung trat am 11. April 2020 in Kraft und wird laufend durch Änderungsverordnungen aktualisiert. Sie gilt ausschließlich für DiGA, also digitale Medizinprodukte der Risikoklasse I oder IIa nach der europäischen Medizinprodukteverordnung ([[MDR]]), nicht für andere digitale Gesundheitsprodukte.
 
 Das [[BfArM]] prüft DiGA-Anträge auf Basis der DiGAV innerhalb von maximal drei Monaten nach Eingang einer vollständigen Antragstellung. Dieses Fast-Track-Verfahren ist international ohne Parallele.
 

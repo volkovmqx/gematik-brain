@@ -15,11 +15,11 @@ Stell dir vor, dein Arzt verschreibt dir nicht eine Pille, sondern eine App. Das
 
 ## Überblick
 
-DiGA wurden mit dem Digitale-Versorgung-Gesetz (DVG) im Jahr 2019 in Deutschland eingeführt. Seitdem können Ärzte und Psychotherapeuten DiGA auf einem Kassenrezept verordnen. Die [[GKV]] übernimmt die Kosten für alle 73 Millionen GKV-Versicherten.
+DiGA wurden mit dem [[DVG|Digitale-Versorgung-Gesetz (DVG)]] im Jahr 2019 in Deutschland eingeführt. Seitdem können Ärzte und Psychotherapeuten DiGA auf einem Kassenrezept verordnen. Die [[GKV]] übernimmt die Kosten für alle 73 Millionen GKV-Versicherten.
 
 Das Bundesinstitut für Arzneimittel und Medizinprodukte ([[BfArM]]) ist die zuständige Zulassungsbehörde. Es führt das öffentliche DiGA-Verzeichnis, in dem alle zugelassenen Apps mit Informationen zu Indikation, Evidenz und Erstattungsbetrag aufgeführt sind.
 
-DiGA sind rechtlich Medizinprodukte der Risikoklasse I oder IIa nach der europäischen Medizinprodukteverordnung (MDR). Sie müssen ein CE-Kennzeichen tragen. Zusätzlich zur MDR gelten die speziellen Anforderungen der Digitale-Gesundheitsanwendungen-Verordnung ([[DiGAV]]).
+DiGA sind rechtlich Medizinprodukte der Risikoklasse I oder IIa nach der europäischen Medizinprodukteverordnung ([[MDR]]). Sie müssen ein CE-Kennzeichen tragen. Zusätzlich zur MDR gelten die speziellen Anforderungen der Digitale-Gesundheitsanwendungen-Verordnung ([[DiGAV]]).
 
 Anwendungsfelder sind breit: Kardiologie, Diabetologie, Psychotherapie, Physiotherapie, Gynäkologie und mehr. Typische DiGA helfen bei der Dokumentation von Symptomen, bei Verhaltensinterventionen oder bei der Unterstützung einer laufenden Therapie.
 
@@ -60,7 +60,7 @@ Der [[TI-Messenger]] sieht eine Zugangsoption für Versicherte über integrierte
 
 ### Abgrenzung: DiGA vs. DiPA
 
-Seit 2022 gibt es auch Digitale Pflegeanwendungen (DiPA), die analog zu DiGA für Pflegebedürftige konzipiert sind. DiPA werden durch die Pflegeversicherung erstattet und ebenfalls vom BfArM zugelassen.
+Seit 2022 gibt es auch [[DiPA|Digitale Pflegeanwendungen (DiPA)]], die analog zu DiGA für Pflegebedürftige konzipiert sind. DiPA werden durch die Pflegeversicherung erstattet und ebenfalls vom BfArM zugelassen.
 
 ## Verknüpfungen
 

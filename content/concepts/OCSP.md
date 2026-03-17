@@ -17,7 +17,7 @@ Wenn du einer Person vertraust, weil sie dir einen Ausweis zeigt, möchtest du m
 
 OCSP (Online Certificate Status Protocol) ist ein Protokoll aus der Infrastruktur für öffentliche Schlüssel ([[PKI]]). Es ermöglicht einem Client, den aktuellen Sperrstatus eines [[PKI|X.509]]-Zertifikats bei einer Zertifizierungsstelle oder einem beauftragten OCSP-Responder abzufragen. Der Standard ist in RFC 6960 spezifiziert und ersetzt in vielen Szenarien die älteren Certificate Revocation Lists (CRL).
 
-In der [[Telematikinfrastruktur]] (TI) ist OCSP ein zentraler Mechanismus zur Zertifikatsprüfung. [[Konnektoren]] prüfen bei jeder Kommunikation die Gültigkeit von Zertifikaten auf [[eGK]], [[HBA]] und [[SMC-B]] über OCSP-Anfragen an die TSP-Responder. Die gematik-Spezifikation gemKPT_PKI_TIP beschreibt OCSP als Standardprotokoll für den Zertifikatsstatus und definiert Optimierungsoptionen für die TI-Architektur.
+In der [[Telematikinfrastruktur]] (TI) ist OCSP ein zentraler Mechanismus zur Zertifikatsprüfung. [[Konnektoren]] prüfen bei jeder Kommunikation die Gültigkeit von Zertifikaten auf [[eGK]], [[HBA]] und [[SMC-B]] über OCSP-Anfragen an die [[TSP]]-Responder. Die gematik-Spezifikation gemKPT_PKI_TIP beschreibt OCSP als Standardprotokoll für den Zertifikatsstatus und definiert Optimierungsoptionen für die TI-Architektur.
 
 Der Vorteil von OCSP gegenüber CRL liegt in der Aktualität: CRLs müssen heruntergeladen und lokal gecacht werden und können veraltet sein. OCSP liefert eine Echtzeitauskunft direkt für das angefragte Zertifikat.
 

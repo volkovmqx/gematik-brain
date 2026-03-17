@@ -18,7 +18,7 @@ In einem Krankenhaus läuft sehr viel gleichzeitig: Patienten werden aufgenommen
 Ein KIS deckt den gesamten Behandlungsprozess im stationären Bereich ab, von der Aufnahme bis zur Entlassung:
 
 - Patientenaufnahme, Belegungsmanagement und Entlassung
-- Ärztliche Dokumentation: Anamnese, Diagnosen (ICD-10-GM), Therapieplanung
+- Ärztliche Dokumentation: Anamnese, Diagnosen ([[ICD-10-GM]]), Therapieplanung
 - Pflegerische Dokumentation: Pflegepläne, Vitalzeichen, Medikamentenvergabe
 - Auftragsmanagement: Laboranforderungen, Radiologieanforderungen (Radiologie-Informationssystem, RIS)
 - Medikamentenmanagement (Verbindung zum Klinikapothekensystem)
@@ -45,7 +45,7 @@ Moderne KIS-Systeme sind modular aufgebaut. Ein typisches KIS besteht aus einem 
 - **Klinikapothekenmodul**: Medikamentenlogistik und Unit-Dose-Versorgung
 - **Stationssystem/Pflegedokumentation**: Pflegerische Dokumentation auf Station
 
-Die Subsysteme kommunizieren über standardisierte Schnittstellen, historisch vorwiegend über **HL7 v2** (z.B. HL7 ADT-Nachrichten für Aufnahme, Verlegung, Entlassung). Neuere Systeme implementieren zunehmend **[[FHIR]] R4**.
+Die Subsysteme kommunizieren über standardisierte Schnittstellen, historisch vorwiegend über **[[HL7|HL7]] v2** (z.B. HL7 ADT-Nachrichten für Aufnahme, Verlegung, Entlassung). Neuere Systeme implementieren zunehmend **[[FHIR]] R4**.
 
 ### ISiK-Anforderungen
 

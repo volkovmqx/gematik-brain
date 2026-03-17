@@ -34,7 +34,7 @@ Seit März 2026 erhalten Versicherte Push-Benachrichtigungen über die Krankenka
 
 ## Architektur
 
-Die ePA nutzt die [[Telematikinfrastruktur]] als sicheres Netzwerk. Der Zugriff für Leistungserbringer läuft über [[Konnektoren]] und das jeweilige Primärsystem ([[PVS]], [[KIS]], AVS).
+Die ePA nutzt die [[Telematikinfrastruktur]] als sicheres Netzwerk. Der Zugriff für Leistungserbringer läuft über [[Konnektoren]] und das jeweilige Primärsystem ([[PVS]], [[KIS]], [[AVS]]).
 
 ### Technische Basis
 - Datenformat: [[FHIR]] R4 Profile

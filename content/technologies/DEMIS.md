@@ -15,7 +15,7 @@ Wenn ein Arzt eine meldepflichtige Krankheit wie Masern oder Tuberkulose diagnos
 
 ## Überblick
 
-DEMIS wurde auf Basis des Infektionsschutzgesetzes (IfSG) entwickelt und schrittweise eingeführt. Das RKI ist als nationale Gesundheitsbehörde für Betrieb und Weiterentwicklung verantwortlich.
+DEMIS wurde auf Basis des [[IfSG|Infektionsschutzgesetzes (IfSG)]] entwickelt und schrittweise eingeführt. Das RKI ist als nationale Gesundheitsbehörde für Betrieb und Weiterentwicklung verantwortlich.
 
 Das System digitalisiert die Meldekette nach IfSG: Ärzte, Krankenhäuser, Labore und andere meldepflichtige Einrichtungen übermitteln Krankheitsmeldungen und Laborbefunde elektronisch an die zuständigen Gesundheitsämter. Die Gesundheitsämter übermitteln aggregierte Daten weiter an die Landesbehörden und schließlich an das RKI.
 
@@ -27,7 +27,7 @@ DEMIS ist technisch unabhängig von der [[Telematikinfrastruktur]] der [[gematik
 
 ### Rechtsgrundlage
 
-Das Infektionsschutzgesetz (IfSG), insbesondere §§ 6, 7 und 9, verpflichtet zur Meldung bestimmter Krankheiten und Erreger. Die §§ 14 und 15 IfSG regeln die Übermittlung der Daten. Das Patientendaten-Schutz-Gesetz (PDSG) von 2020 schuf zusätzliche Rechtsgrundlagen für die Digitalisierung des Meldewesens.
+Das [[IfSG|Infektionsschutzgesetz (IfSG)]], insbesondere §§ 6, 7 und 9, verpflichtet zur Meldung bestimmter Krankheiten und Erreger. Die §§ 14 und 15 IfSG regeln die Übermittlung der Daten. Das [[PDSG|Patientendaten-Schutz-Gesetz (PDSG)]] von 2020 schuf zusätzliche Rechtsgrundlagen für die Digitalisierung des Meldewesens.
 
 ### FHIR-Basis
 
@@ -62,11 +62,13 @@ Eingehende Meldungen durchlaufen beim RKI eine automatische Validierung gegen di
 
 ### Abgrenzung zu anderen Systemen
 
-DEMIS ist kein Teil der klinischen TI-Infrastruktur (kein Dienst der [[Telematikinfrastruktur]]). Es ist ein Fachsystem des öffentlichen Gesundheitsdienstes. Schnittstellen zur TI bestehen nicht direkt, aber indirekt über gemeinsame Standards ([[FHIR]], ICD-10-GM) und die Nutzung von Patientenidentifikatoren.
+DEMIS ist kein Teil der klinischen TI-Infrastruktur (kein Dienst der [[Telematikinfrastruktur]]). Es ist ein Fachsystem des öffentlichen Gesundheitsdienstes. Schnittstellen zur TI bestehen nicht direkt, aber indirekt über gemeinsame Standards ([[FHIR]], [[ICD-10-GM]]) und die Nutzung von Patientenidentifikatoren.
 
 ## Verknüpfungen
 
 - [[FHIR]]: Technische Basis aller DEMIS-Meldungen
+- [[IfSG]]: Rechtsgrundlage für DEMIS und alle Meldepflichten
+- [[RKI]]: Betreibt DEMIS und koordiniert die nationale Surveillance
 - [[gematik]]: Betreiber der TI; DEMIS nutzt analoge Standards, ist aber ein eigenständiges System
 - [[Telematikinfrastruktur]]: Parallele Infrastruktur mit ähnlichen Interoperabilitätszielen
 - [[ISiK]]: Krankenhaus-Interoperabilitätsstandard, aus dem DEMIS-Meldungen generiert werden können

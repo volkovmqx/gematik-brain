@@ -20,7 +20,7 @@ Die TI-PKI ist die Vertrauensbasis der gesamten [[Telematikinfrastruktur]]. Ohne
 Die PKI der TI gliedert sich in zwei Bereiche:
 
 1. **X.509-PKI (nonQES)**: Für Authentisierung, Verschlüsselung und Organisationssignaturen. Die [[gematik]] ist hier die Policy Authority und betreibt die Root-CA.
-2. **QES-PKI**: Für qualifizierte elektronische Signaturen nach [[eIDAS]]-Verordnung. Hier agieren zugelassene Vertrauensdiensteanbieter (VDA) unter Aufsicht der Bundesnetzagentur.
+2. **QES-PKI**: Für qualifizierte elektronische Signaturen nach [[eIDAS]]-Verordnung. Hier agieren zugelassene Vertrauensdiensteanbieter (VDA) unter Aufsicht der [[Bundesnetzagentur]].
 
 ### Zertifikatshierarchie
 
@@ -38,7 +38,7 @@ Die **gematik Root-CA** ist der einzige Vertrauensanker für alle nonQES-Zertifi
 
 ### Trust Service Provider (TSP)
 
-Zertifikatsaussteller in der TI heißen Trust Service Provider (TSP). Jeder TSP muss von der gematik akkreditiert werden. Nach erfolgreicher Akkreditierung stellt die gematik Root-CA dem TSP eine Sub-CA aus. Der TSP nutzt diese Sub-CA, um End-Entity-Zertifikate für Karten und Komponenten auszustellen.
+Zertifikatsaussteller in der TI heißen [[TSP|Trust Service Provider (TSP)]]. Jeder TSP muss von der gematik akkreditiert werden. Nach erfolgreicher Akkreditierung stellt die gematik Root-CA dem TSP eine Sub-CA aus. Der TSP nutzt diese Sub-CA, um End-Entity-Zertifikate für Karten und Komponenten auszustellen.
 
 ### Trust Service List (TSL)
 
@@ -86,7 +86,7 @@ Laut gematik-Spezifikation gilt:
 
 ### QES-PKI
 
-Für [[QES]]-Zertifikate gilt ein separates Regelwerk nach der eIDAS-Verordnung (EU) Nr. 910/2014. Die ausstellenden VDAs werden nicht von der gematik, sondern von der **Bundesnetzagentur** beaufsichtigt. Die QES-Zertifikate auf dem [[HBA]] (C.HP.QES) stammen von solchen qualifizierten VDAs.
+Für [[QES]]-Zertifikate gilt ein separates Regelwerk nach der eIDAS-Verordnung (EU) Nr. 910/2014. Die ausstellenden VDAs werden nicht von der gematik, sondern von der **[[Bundesnetzagentur]]** beaufsichtigt. Die QES-Zertifikate auf dem [[HBA]] (C.HP.QES) stammen von solchen qualifizierten VDAs.
 
 ## Verknüpfungen
 

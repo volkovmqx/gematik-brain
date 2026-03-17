@@ -37,7 +37,7 @@ Nach erfolgreicher Einmalidentifikation wird das Smartphone-Gerät registriert u
 1. Versicherter öffnet die Krankenkassen-App und initiiert die Anmeldung
 2. Die App kommuniziert mit dem sektoralen IDP der Krankenkasse
 3. Der sektorale IDP stellt ein signiertes Token aus (OpenID Connect / OAuth 2.0)
-4. Das Token enthält die Krankenversicherungsnummer (KVNR) und Versicherungsdaten
+4. Das Token enthält die [[KVNR|Krankenversicherungsnummer (KVNR)]] und Versicherungsdaten
 5. Der TI-Dienst (z.B. ePA-Aktensystem) prüft das Token über die TI-Federation
 6. Bei erfolgreicher Prüfung erhält der Versicherte Zugriff
 
@@ -46,7 +46,7 @@ Zur Sicherheit ist eine Zwei-Faktor-Authentifizierung vorgesehen. Geräte mit ei
 ### Tokenformat und Protokolle
 
 - Protokoll: OpenID Connect (OIDC) über OAuth 2.0
-- Token: JSON Web Token (JWT) mit KVNR und Versicherungsattributen
+- Token: JSON Web Token (JWT) mit [[KVNR]] und Versicherungsattributen
 - Signing: ECDSA mit brainpoolP256r1
 - Infrastruktur: [[TI-Federation]] verbindet alle sektoralen IDPs mit dem zentralen [[IDP]]
 

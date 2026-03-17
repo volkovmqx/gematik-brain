@@ -22,7 +22,7 @@ Die Ausgabe erfolgt über die zuständigen Heilberufskammern:
 - Zahnärzte: Landeszahnärztekammern
 - Apotheker: Landesapothekerkammern
 - Psychotherapeuten: Landespsychotherapeutenkammern
-- Pflegekräfte, Hebammen, Physiotherapeuten: über das elektronische Gesundheitsberuferegister (eGBR)
+- Pflegekräfte, Hebammen, Physiotherapeuten: über das [[eGBR|elektronische Gesundheitsberuferegister (eGBR)]]
 
 Für bestimmte Gruppen, zum Beispiel EU-Versandapotheker, ist [[gematik]] direkt der Kartenherausgeber.
 
@@ -75,7 +75,8 @@ Die PIN-Eingabe am Kartenterminal ist für jede QES-Signatur Pflicht. Damit wird
 - Zertifikate werden von der TI-[[PKI]] ausgestellt
 - Zugang zur [[ePA]] und [[KIM]]
 - Eingebunden in die [[Telematikinfrastruktur]]
-- Herausgeber: [[gematik]] und Heilberufskammern
+- Herausgeber: [[gematik]], Heilberufskammern und [[eGBR]]
+- Enthält die [[Telematik-ID]] des Inhabers im Zertifikat
 
 ## Quellen
 
