@@ -18,7 +18,8 @@ echo "--- Running orchestrator agent ---"
 claude --agent orchestrator \
   -p "Run expansion cycle. Write 5-8 new articles." \
   --verbose \
-  --allowedTools 'Read,Write,Edit,Glob,Grep,WebSearch,WebFetch,Bash(npx quartz build),Agent(explorer,researcher,news-scout,grammar-fixer)'
+  --output-format stream-json \
+  --allowedTools 'Read,Write,Edit,Glob,Grep,WebSearch,WebFetch,Bash(*),Agent(explorer),Agent(researcher),Agent(news-scout),Agent(grammar-fixer)'
 
 # 3. Final build verification outside agent
 echo ""

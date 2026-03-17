@@ -184,6 +184,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     "--dark",
     "--darkgray",
     "--bodyFont",
+    "--headerFont",
   ] as const
   const computedStyleMap = cssVars.reduce(
     (acc, key) => {
@@ -209,7 +210,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     const numLinks = graphData.links.filter(
       (l) => l.source.id === d.id || l.target.id === d.id,
     ).length
-    return 2 + Math.sqrt(numLinks)
+    return 4 + Math.sqrt(numLinks) * 1.5
   }
 
   let hoveredNodeId: string | null = null
@@ -378,12 +379,12 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       interactive: false,
       eventMode: "none",
       text: n.text,
-      alpha: 0,
-      anchor: { x: 0.5, y: 1.2 },
+      alpha: 0.7,
+      anchor: { x: 0.5, y: -0.4 },
       style: {
-        fontSize: fontSize * 15,
+        fontSize: fontSize * 12,
         fill: computedStyleMap["--dark"],
-        fontFamily: computedStyleMap["--bodyFont"],
+        fontFamily: computedStyleMap["--headerFont"],
       },
       resolution: window.devicePixelRatio * 4,
     })
@@ -391,13 +392,22 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
 
     let oldLabelOpacity = 0
     const isTagNode = nodeId.startsWith("tags/")
+    const isCurrent = nodeId === slug
     const gfx = new Graphics({
       interactive: true,
       label: nodeId,
       eventMode: "static",
-      hitArea: new Circle(0, 0, nodeRadius(n)),
+      hitArea: new Circle(0, 0, nodeRadius(n) * 1.5),
       cursor: "pointer",
     })
+
+    // glow rings for the current page node
+    if (isCurrent) {
+      gfx.circle(0, 0, nodeRadius(n) * 3).fill({ color: computedStyleMap["--secondary"], alpha: 0.08 })
+      gfx.circle(0, 0, nodeRadius(n) * 2).fill({ color: computedStyleMap["--secondary"], alpha: 0.15 })
+    }
+
+    gfx
       .circle(0, 0, nodeRadius(n))
       .fill({ color: isTagNode ? computedStyleMap["--light"] : color(n) })
       .on("pointerover", (e) => {
@@ -511,7 +521,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
 
           // zoom adjusts opacity of labels too
           const scale = transform.k * opacityScale
-          let scaleOpacity = Math.max((scale - 1) / 3.75, 0)
+          let scaleOpacity = Math.min(Math.max(scale * 0.7, 0.15), 1)
           const activeNodes = nodeRenderData.filter((n) => n.active).flatMap((n) => n.label)
 
           for (const label of labelsContainer.children) {
@@ -541,7 +551,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       l.gfx.moveTo(linkData.source.x! + width / 2, linkData.source.y! + height / 2)
       l.gfx
         .lineTo(linkData.target.x! + width / 2, linkData.target.y! + height / 2)
-        .stroke({ alpha: l.alpha, width: 1, color: l.color })
+        .stroke({ alpha: l.alpha, width: 1.5, color: l.color })
     }
 
     tweens.forEach((t) => t.update(time))
