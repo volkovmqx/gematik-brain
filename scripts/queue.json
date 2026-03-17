@@ -1,116 +1,24 @@
 {
   "pending": [
     {
-      "term": "HBA",
-      "category": "infrastructure",
-      "priority": 95,
-      "reason": "Heilberufsausweis for individual healthcare professionals. Mentioned in 7 articles (Konnektoren, SMC-B, ePA, E-Rezept, eAU, NFDM, TI-Messenger) as the card required for QES signatures. Direct counterpart to SMC-B which already has a page. Without this page, links to 'HBA' throughout the knowledge base are dangling.",
-      "mentionedIn": [
-        "content/infrastructure/Konnektoren.md",
-        "content/infrastructure/SMC-B.md",
-        "content/technologies/ePA.md",
-        "content/technologies/E-Rezept.md",
-        "content/technologies/eAU.md",
-        "content/processes/NFDM.md",
-        "content/technologies/TI-Messenger.md"
-      ]
-    },
-    {
-      "term": "gematik",
-      "category": "organization",
-      "priority": 92,
-      "reason": "Named in every article as the authority responsible for the TI. content/organization/ is entirely empty. Central actor without which the TI cannot be understood.",
-      "mentionedIn": [
-        "content/infrastructure/Telematikinfrastruktur.md",
-        "content/technologies/ePA.md",
-        "content/technologies/E-Rezept.md",
-        "content/standards/FHIR.md",
-        "content/index.md"
-      ]
-    },
-    {
-      "term": "PKI",
-      "category": "concepts",
-      "priority": 88,
-      "reason": "Public Key Infrastructure. Named in Telematikinfrastruktur ('TSP', 'TI-PKI'), eGK, SMC-B, KIM ('S/MIME mit Zertifikaten der TI-PKI'). The entire certificate-based trust model of the TI rests on this concept. content/concepts/ is entirely empty.",
-      "mentionedIn": [
-        "content/infrastructure/Telematikinfrastruktur.md",
-        "content/infrastructure/eGK.md",
-        "content/infrastructure/SMC-B.md",
-        "content/technologies/KIM.md"
-      ]
-    },
-    {
-      "term": "QES",
-      "category": "concepts",
-      "priority": 85,
-      "reason": "Qualifizierte Elektronische Signatur. Referenced in 5 articles as the legal signature type used for E-Rezept, eAU, NFDM, ePA documents. Legal basis (eIDAS, SGB V) deserves its own article. content/concepts/ is empty.",
-      "mentionedIn": [
-        "content/technologies/ePA.md",
-        "content/technologies/E-Rezept.md",
-        "content/technologies/eAU.md",
-        "content/processes/NFDM.md",
-        "content/infrastructure/Konnektoren.md"
-      ]
-    },
-    {
-      "term": "VZD",
-      "category": "infrastructure",
-      "priority": 80,
-      "reason": "Verzeichnisdienst (directory service). Central TI component mentioned in Telematikinfrastruktur ('zentrales Adressbuch'), KIM ('LDAP-basiertes Adressbuch'), and TI-Messenger ('VZD-FHIR-Directory'). All TI participants are listed here; it underpins KIM and TI-Messenger addressing.",
-      "mentionedIn": [
-        "content/infrastructure/Telematikinfrastruktur.md",
-        "content/technologies/KIM.md",
-        "content/technologies/TI-Messenger.md"
-      ]
-    },
-    {
-      "term": "IDP",
-      "category": "infrastructure",
-      "priority": 78,
-      "reason": "Identity Provider / IDP-Dienst. Named in Telematikinfrastruktur as a core service, referenced in TI-Messenger ('gematik IDP') and ePA ('Gesundheits-ID al.vi'). Central authentication gateway for the TI.",
-      "mentionedIn": [
-        "content/infrastructure/Telematikinfrastruktur.md",
-        "content/technologies/TI-Messenger.md",
-        "content/technologies/ePA.md"
-      ]
-    },
-    {
-      "term": "TI-Gateway",
-      "category": "infrastructure",
-      "priority": 75,
-      "reason": "Cloud-based replacement for hardware Konnektoren in TI 2.0. Mentioned in Telematikinfrastruktur and Konnektoren as the future of TI access. Critical for understanding the TI 2.0 migration path.",
-      "mentionedIn": [
-        "content/infrastructure/Telematikinfrastruktur.md",
-        "content/infrastructure/Konnektoren.md"
-      ]
-    },
-    {
-      "term": "VAU",
-      "category": "concepts",
-      "priority": 72,
-      "reason": "Vertrauenswürdige Ausführungsumgebung (Trusted Execution Environment). Mentioned in ePA as a core security mechanism. The ePA stores and processes sensitive data inside a VAU, which is a central architectural concept for TI data services.",
-      "mentionedIn": [
-        "content/technologies/ePA.md"
-      ]
-    },
-    {
       "term": "Gesundheits-ID",
       "category": "infrastructure",
       "priority": 70,
-      "reason": "Digital identity for insured persons (al.vi). Mentioned in ePA as alternative to eGK for authentication, and in VSDM 2.0 as part of mobile scenarios. Will replace eGK for digital access in TI 2.0.",
+      "reason": "Digital identity for insured persons (al.vi). Mentioned in ePA as alternative to eGK for authentication, in IDP article (TI-Federation), and in VSDM 2.0. Will replace eGK for digital access in TI 2.0.",
       "mentionedIn": [
         "content/technologies/ePA.md",
-        "content/processes/VSDM.md"
+        "content/processes/VSDM.md",
+        "content/infrastructure/IDP.md"
       ]
     },
     {
       "term": "BSI",
       "category": "organization",
       "priority": 68,
-      "reason": "Bundesamt für Sicherheit in der Informationstechnik. Approves cryptographic standards used in the TI (RSA, ECC, BSI TR-03116). Relevant organization per CLAUDE.md. content/organization/ is empty.",
+      "reason": "Bundesamt für Sicherheit in der Informationstechnik. Approves cryptographic standards used in the TI (RSA, ECC, BSI TR-03116). Now also referenced in VAU article. content/organization/ is empty.",
       "mentionedIn": [
-        "content/infrastructure/Telematikinfrastruktur.md"
+        "content/infrastructure/Telematikinfrastruktur.md",
+        "content/concepts/VAU.md"
       ]
     },
     {
@@ -175,10 +83,11 @@
       "term": "Zero-Trust",
       "category": "concepts",
       "priority": 50,
-      "reason": "Security architecture principle for TI 2.0. Explicitly named in Telematikinfrastruktur ('Zero-Trust-Architektur: Kein implizites Vertrauen') and VSDM ('VSDM 2.0 ist Vorreiter für die TI-2.0-Architektur'). Central design principle readers need to understand TI 2.0 changes.",
+      "reason": "Security architecture principle for TI 2.0. Explicitly named in Telematikinfrastruktur ('Zero-Trust-Architektur: Kein implizites Vertrauen'), VSDM ('VSDM 2.0 ist Vorreiter für die TI-2.0-Architektur'), and TI-Gateway article. Central design principle readers need to understand TI 2.0 changes.",
       "mentionedIn": [
         "content/infrastructure/Telematikinfrastruktur.md",
-        "content/processes/VSDM.md"
+        "content/processes/VSDM.md",
+        "content/infrastructure/TI-Gateway.md"
       ]
     },
     {
@@ -198,16 +107,6 @@
       "mentionedIn": []
     },
     {
-      "term": "eHBA",
-      "category": "infrastructure",
-      "priority": 42,
-      "reason": "Elektronischer Heilberufsausweis (more precise name for HBA with electronic chip). The G2.1 card generation is current. Subtopic that could be covered within the HBA article, but listed here as the official full term.",
-      "mentionedIn": [
-        "content/infrastructure/SMC-B.md",
-        "content/infrastructure/Konnektoren.md"
-      ]
-    },
-    {
       "term": "AMTS",
       "category": "processes",
       "priority": 40,
@@ -225,6 +124,25 @@
         "content/technologies/KIM.md",
         "content/processes/VSDM.md"
       ]
+    },
+    {
+      "term": "TI-Federation",
+      "category": "infrastructure",
+      "priority": 35,
+      "reason": "Framework for federated identity in TI 2.0, enabling multiple sektorale IDPs alongside the central IDP. Newly documented in IDP article. Important for understanding how Gesundheits-ID and third-party IDPs work in the TI.",
+      "mentionedIn": [
+        "content/infrastructure/IDP.md"
+      ]
+    },
+    {
+      "term": "mTLS",
+      "category": "concepts",
+      "priority": 33,
+      "reason": "Mutual TLS - central security mechanism for TI 2.0. Required for TI-Gateway connections from primary systems. Referenced in TI-Gateway, Telematikinfrastruktur, and VSDM articles.",
+      "mentionedIn": [
+        "content/infrastructure/TI-Gateway.md",
+        "content/infrastructure/Telematikinfrastruktur.md"
+      ]
     }
   ],
   "done": [
@@ -239,7 +157,15 @@
     "SMC-B",
     "FHIR",
     "VSDM",
-    "NFDM"
+    "NFDM",
+    "VZD",
+    "IDP",
+    "TI-Gateway",
+    "VAU",
+    "HBA",
+    "gematik",
+    "PKI",
+    "QES"
   ],
   "lastRun": "2026-03-17"
 }

@@ -6,39 +6,39 @@ tags: [anwendung, e-rezept, verordnung]
 
 # E-Rezept
 
-Das **E-Rezept** ist die digitale Form der arztlichen Verordnung. Seit dem **1. Januar 2024** ist es fur verschreibungspflichtige Arzneimittel in der gesetzlichen Krankenversicherung verpflichtend.
+Das **E-Rezept** ist die digitale Form der ärztlichen Verordnung. Seit dem **1. Januar 2024** ist es für verschreibungspflichtige Arzneimittel in der gesetzlichen Krankenversicherung verpflichtend.
 
-## Erklart fur Einsteiger
+## Erklärt für Einsteiger
 
-Fruher hat der Arzt ein Rezept auf einen rosa Zettel geschrieben, und du hast den Zettel zur Apotheke gebracht. Jetzt macht der Arzt das digital: Er erstellt das Rezept am Computer, unterschreibt es elektronisch, und es wird auf einen sicheren Server geschickt. In der Apotheke steckst du einfach deine Gesundheitskarte ein, und die Apotheke kann dein Rezept abrufen. Oder du nutzt die E-Rezept-App auf deinem Handy.
+Früher hat der Arzt ein Rezept auf einen rosa Zettel geschrieben, und du hast den Zettel zur Apotheke gebracht. Jetzt macht der Arzt das digital: Er erstellt das Rezept am Computer, unterschreibt es elektronisch, und es wird auf einen sicheren Server geschickt. In der Apotheke steckst du einfach deine Gesundheitskarte ein, und die Apotheke kann dein Rezept abrufen. Oder du nutzt die E-Rezept-App auf deinem Handy.
 
-## Uberblick
+## Überblick
 
-Das E-Rezept wird digital erstellt, signiert und kann auf drei Wegen eingelost werden:
+Das E-Rezept wird digital erstellt, signiert und kann auf drei Wegen eingelöst werden:
 
 1. **[[eGK]] einstecken** in der Apotheke
-2. **E-Rezept-App** von gematik auf dem Smartphone (braucht NFC-fahiges Handy und Gesundheitskarten-PIN)
+2. **E-Rezept-App** von gematik auf dem Smartphone (braucht NFC-fähiges Handy und Gesundheitskarten-PIN)
 3. **Papierausdruck** mit Sammelcode (Datamatrix-Code)
 
-### Gultigkeit
-- 28 Tage fur Erstattung durch die Krankenkasse
-- Danach noch als Selbstzahler-Rezept einlosbar (bis zu 3 Monate nach Ausstellung)
-- Eingeloste Rezepte werden nach 100 Tagen automatisch geloscht
-- Nicht eingeloste Rezepte werden 10 Tage nach Ablauf geloscht
+### Gültigkeit
+- 28 Tage für Erstattung durch die Krankenkasse
+- Danach noch als Selbstzahler-Rezept einlösbar (bis zu 3 Monate nach Ausstellung)
+- Eingelöste Rezepte werden nach 100 Tagen automatisch gelöscht
+- Nicht eingelöste Rezepte werden 10 Tage nach Ablauf gelöscht
 
 ### Was ist schon live?
 - Verschreibungspflichtige Arzneimittel (Pflicht)
 - Selbstzahler-Rezepte
 - Zytostatika-Zuweisungen an Apotheken
-- Rezepte fur Privatversicherte
+- Rezepte für Privatversicherte
 
 ### Was kommt noch?
 - DiGA-Verordnungen (Digitale Gesundheitsanwendungen)
-- E-Rezept-Anforderung und Ubermittlung via [[KIM]]
+- E-Rezept-Anforderung und Übermittlung via [[KIM]]
 - T-Rezepte (teratogene Stoffe)
-- Betaubungsmittel-Rezepte (BtM)
-- Grenzuberschreitende Einlosung in der EU
-- Haufige Pflegevertragung
+- Betäubungsmittel-Rezepte (BtM)
+- Grenzüberschreitende Einlösung in der EU
+- Häufige Pflegeverordnung
 - Heil- und Hilfsmittelverordnungen
 
 ## Architektur
@@ -47,28 +47,28 @@ Der E-Rezept-Fachdienst ist ein zentraler Dienst in der [[Telematikinfrastruktur
 
 ### Ablauf
 1. Arzt erstellt Verordnung im Praxisverwaltungssystem (PVS)
-2. Verordnung wird mit qualifizierter elektronischer Signatur (QES) via HBA/[[SMC-B]] signiert
-3. Verordnung wird uber die TI an den E-Rezept-Fachdienst ubertragen
+2. Verordnung wird mit qualifizierter elektronischer Signatur ([[QES]]) via [[HBA]]/[[SMC-B]] signiert
+3. Verordnung wird über die TI an den E-Rezept-Fachdienst übertragen
 4. Versicherter weist Verordnung der Apotheke zu (per App, eGK oder Ausdruck)
 5. Apotheke ruft Verordnung ab und gibt das Medikament aus
 
 ### Technische Details
 - Datenformat: [[FHIR]] R4 (KBV-Profile)
-- Transport: HTTPS uber [[Telematikinfrastruktur]]
-- Signatur: Qualifizierte elektronische Signatur, gepruft bei der Abgabe
-- Zulassung: Hersteller mussen die Tiger-Testsuite bestehen und Ergebnisse uber das Titus-Portal einreichen
+- Transport: HTTPS über [[Telematikinfrastruktur]]
+- Signatur: [[QES|Qualifizierte elektronische Signatur]], geprüft bei der Abgabe
+- Zulassung: Hersteller müssen die Tiger-Testsuite bestehen und Ergebnisse über das Titus-Portal einreichen
 
 ## Sicherheit
 
-Jedes E-Rezept tragt eine qualifizierte elektronische Signatur. Apotheken prufen diese bei der Abgabe. Ein Rezept kann nur einmal eingelost werden, was Falschungssicherheit gewahrleistet.
+Jedes E-Rezept trägt eine qualifizierte elektronische Signatur. Apotheken prüfen diese bei der Abgabe. Ein Rezept kann nur einmal eingelöst werden, was Fälschungssicherheit gewährleistet.
 
-## Verknupfungen
+## Verknüpfungen
 
-- Verordnungsdaten fliessen in die [[ePA]]
-- Nutzt [[Konnektoren]] fur die TI-Anbindung
+- Verordnungsdaten fließen in die [[ePA]]
+- Nutzt [[Konnektoren]] für die TI-Anbindung
 - Benachrichtigungen via [[KIM]]
-- Einlosung uber [[eGK]]
-- Signatur uber [[SMC-B]] und HBA
+- Einlösung über [[eGK]]
+- Signatur über [[SMC-B]] und [[HBA]]
 
 ## Quellen
 

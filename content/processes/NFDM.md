@@ -6,50 +6,50 @@ tags: [prozess, nfdm, notfalldaten]
 
 # NFDM - Notfalldatenmanagement
 
-**NFDM** ermoglicht die Speicherung und den Abruf von Notfalldaten auf der [[eGK]]. Im Notfall konnen Rettungskrafte und Arzte schnell auf wichtige medizinische Informationen zugreifen.
+**NFDM** ermöglicht die Speicherung und den Abruf von Notfalldaten auf der [[eGK]]. Im Notfall können Rettungskräfte und Ärzte schnell auf wichtige medizinische Informationen zugreifen.
 
-## Erklart fur Einsteiger
+## Erklärt für Einsteiger
 
-Stell dir vor, du bist bewusstlos und der Rettungsdienst kommt. Die wissen nicht, ob du Allergien hast, welche Medikamente du nimmst oder ob du einen Herzschrittmacher hast. Mit NFDM sind diese Infos auf deiner Gesundheitskarte gespeichert. Der Rettungssanitater steckt die Karte ins Lesegerat und sieht sofort, worauf er achten muss. Das ist freiwillig: Dein Hausarzt tragt die Daten auf Wunsch ein.
+Stell dir vor, du bist bewusstlos und der Rettungsdienst kommt. Die wissen nicht, ob du Allergien hast, welche Medikamente du nimmst oder ob du einen Herzschrittmacher hast. Mit NFDM sind diese Infos auf deiner Gesundheitskarte gespeichert. Der Rettungssanitäter steckt die Karte ins Lesegerät und sieht sofort, worauf er achten muss. Das ist freiwillig: Dein Hausarzt trägt die Daten auf Wunsch ein.
 
-## Uberblick
+## Überblick
 
-NFDM ist eine freiwillige Anwendung. Versicherte konnen bei ihrem Arzt Notfalldaten auf der [[eGK]] speichern lassen.
+NFDM ist eine freiwillige Anwendung. Versicherte können bei ihrem Arzt Notfalldaten auf der [[eGK]] speichern lassen.
 
 ### Gespeicherte Daten
 - Vorerkrankungen und Diagnosen
 - Aktuelle Medikation
-- Allergien und Unvertraglichkeiten
-- Kontaktdaten behandelnder Arzte
+- Allergien und Unverträglichkeiten
+- Kontaktdaten behandelnder Ärzte
 - Notfallkontakt (Angehörige)
-- Hinweis auf Patientenverfugung, Organspende-Erklarung, Vorsorgevollmacht (in einem separaten Datensatz "Personliche Erklarungen")
+- Hinweis auf Patientenverfügung, Organspende-Erklärung, Vorsorgevollmacht (in einem separaten Datensatz "Persönliche Erklärungen")
 
 ### Wer darf zugreifen?
-- Arzte, Zahnarzte und deren Personal
-- Rettungskrafte (im Notfall)
-- Apotheker und Psychotherapeuten (mit Einwilligung, ausserhalb von Notfallen)
+- Ärzte, Zahnärzte und deren Personal
+- Rettungskräfte (im Notfall)
+- Apotheker und Psychotherapeuten (mit Einwilligung, außerhalb von Notfällen)
 
 ## Ablauf
 
 1. Versicherter bittet seinen Arzt (meistens den Hausarzt) um die Erfassung
-2. Arzt benotigt: [[eGK]] im Kartenterminal, eigenen HBA, Primarsystem, TI-Zugang
-3. Arzt erstellt standardisierten Datensatz im Primarsystem
-4. Daten werden auf der [[eGK]] gespeichert und mit qualifizierter elektronischer Signatur signiert
+2. Arzt benötigt: [[eGK]] im Kartenterminal, eigenen [[HBA]], Primärsystem, TI-Zugang
+3. Arzt erstellt standardisierten Datensatz im Primärsystem
+4. Daten werden auf der [[eGK]] gespeichert und mit [[QES|qualifizierter elektronischer Signatur]] signiert
 5. Versicherter kann den Zugriff optional mit einer PIN schutzen
 
 ## Technische Details
 
 - Speicherort: [[eGK]] (lokaler Speicher auf der Chipkarte)
-- Zugriff: Uber [[Konnektoren|Konnektor]] und Kartenterminal
-- Berechtigung: Arzt mit HBA
+- Zugriff: Über [[Konnektoren|Konnektor]] und Kartenterminal
+- Berechtigung: Arzt mit [[HBA]]
 - Datenformat: XML nach gematik-Spezifikation
-- Offline-fahig: Keine TI-Verbindung fur Lesezugriff notig (die Daten liegen direkt auf der Karte)
+- Offline-fähig: Keine TI-Verbindung für Lesezugriff nötig (die Daten liegen direkt auf der Karte)
 
-## Verknupfungen
+## Verknüpfungen
 
 - Daten auf der [[eGK]] gespeichert
-- Zugriff uber [[Konnektoren]]
-- Notfalldaten konnen auch in die [[ePA]] fliessen
+- Zugriff über [[Konnektoren]]
+- Notfalldaten können auch in die [[ePA]] fließen
 - Teil der [[Telematikinfrastruktur]]-Anwendungen
 
 ## Quellen

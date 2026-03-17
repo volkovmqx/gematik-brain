@@ -1,4 +1,117 @@
 {
-  "lastRun": null,
-  "findings": []
+  "lastScan": "2026-03-17",
+  "findings": [
+    {
+      "title": "eMedikationsplan: Start verschoben auf Oktober 2026",
+      "date": "2026-03-01",
+      "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/emedikationsplan-start-verschoben-auf-oktober-2026/68597927",
+      "summary": "Der bundesweite Start des eMedikationsplans wurde von ursprünglich März 2026 auf Oktober 2026 verschoben. Ab Juli 2026 läuft zunächst eine kontrollierte Pilotphase in ausgewählten Modellregionen. Die Verschiebung begründet gematik mit der Priorisierung technischer Stabilität. Neu: Apotheken erhalten Schreibzugriff für OTC-Medikamente.",
+      "relevantTerms": ["ePA", "eMedikationsplan"],
+      "articleSuggestion": "ePA"
+    },
+    {
+      "title": "ePA: Ab März 2026 Kontrolle per Push-Nachricht",
+      "date": "2026-02-01",
+      "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/epa-ab-maerz-2026-kontrolle-per-push-nachricht/68447169",
+      "summary": "Seit März 2026 können Versicherte per Smartphone-Benachrichtigung (Push-Nachricht) nachverfolgen, wer auf ihre ePA zugegriffen oder Änderungen vorgenommen hat. Dies ist eine neue Transparenzfunktion der ePA für alle.",
+      "relevantTerms": ["ePA"],
+      "articleSuggestion": null
+    },
+    {
+      "title": "ePA für alle: Aktive Nutzungsrate bei ca. 3,6 Prozent ein Jahr nach Start",
+      "date": "2026-02-07",
+      "source": "https://borncity.com/blog/2026/02/07/wie-geht-es-der-epa-kaum-nutzung-und-epas-bei-aok-bayern-geloescht/",
+      "summary": "Rund ein Jahr nach dem bundesweiten Rollout (April 2025) liegt die aktive Nutzungsrate der ePA bei etwa 3,6 Prozent. Ca. 75 Millionen Akten wurden automatisch angelegt (Opt-out-Quote 3,8–7 Prozent). Zum Vergleich: Bei der TK nutzen 750.000 von 11 Millionen Versicherten die ePA aktiv. Kliniken und Praxen: Ende 2025 waren knapp 46.000 von 160.000 Einrichtungen ePA-fähig.",
+      "relevantTerms": ["ePA"],
+      "articleSuggestion": null
+    },
+    {
+      "title": "E-Rezept: 1 Milliarde eingelöste Rezepte am 17. Oktober 2025",
+      "date": "2025-10-17",
+      "source": "https://www.gematik.de/newsroom/news-detail/eine-milliarde-eingeloeste-e-rezepte",
+      "summary": "Am 17. Oktober 2025 wurde das milliardste E-Rezept eingelöst. Seit Pflichteinführung im Januar 2024 werden täglich mehrere Millionen E-Rezepte ausgestellt. Seit Januar 2025 fließen E-Rezept-Daten automatisch in die elektronische Medikationsliste (eML) der ePA.",
+      "relevantTerms": ["E-Rezept", "ePA"],
+      "articleSuggestion": null
+    },
+    {
+      "title": "RSA-zu-ECC-Migration in der TI: Fristen und aktueller Stand",
+      "date": "2026-01-15",
+      "source": "https://www.gematik.de/newsroom/news-detail/aktuelle-information-ti-verschluesselungsalgorithmen-umstellung-von-rsa-auf-ecc",
+      "summary": "Die Umstellung von RSA auf ECC in der TI ist in vollem Gange. Harte Fristen: (1) Bis 31.12.2025 mussten alle RSA-only-Konnektoren ausgetauscht sein. (2) Bis 30.06.2026 müssen eHBA G2.0 und SMC-B G2.0 gegen ECC-fähige Nachfolger (G2.1) getauscht sein. (3) Bis 31.12.2026 müssen gSMC-KT-Terminals umgestellt sein. Noch offene Baustelle: ca. 30.000+ eHBAs müssen noch getauscht werden. Gematik verlängerte die eHBA-Frist bis 30.06.2026. Ab 01.01.2026 dürfen Kartenanbieter nur noch ECC-Karten produzieren.",
+      "relevantTerms": ["Telematikinfrastruktur", "SMC-B", "eGK", "Konnektoren"],
+      "articleSuggestion": "RSA-zu-ECC-Migration"
+    },
+    {
+      "title": "VSDM 2.0 startet Parallelbetrieb am 30. Juni 2026",
+      "date": "2026-01-01",
+      "source": "https://www.gematik.de/telematikinfrastruktur/ti-2-0",
+      "summary": "VSDM 2.0 ist die erste TI-2.0-Anwendung mit Zero-Trust-Architektur. Ab 30. Juni 2026 beginnt der Parallelbetrieb mit VSDM 1.0. Vollständiger Rollout: Februar 2027. Ende des Parallelbetriebs (VSDM 1.0 Abschaltung): Mitte 2027. In VSDM 2.0 werden Versichertendaten direkt beim Fachdienst der Krankenkasse abgerufen, nicht mehr von der eGK. Mobile Szenarien und GesundheitsID werden unterstützt.",
+      "relevantTerms": ["VSDM", "Telematikinfrastruktur", "eGK"],
+      "articleSuggestion": null
+    },
+    {
+      "title": "PoPP Stufe 1 gestartet: Zuschlag an RISE",
+      "date": "2026-01-01",
+      "source": "https://www.gematik.de/newsroom/news-detail/popp-dienst-startet-mit-umsetzungsstufe-1-zuschlag-geht-an-rise",
+      "summary": "Der PoPP-Dienst (Proof of Patient Presence) ist in Umsetzungsstufe 1 gestartet. RISE hat den Zuschlag für die Entwicklung erhalten. Stufe 1 deckt den kryptografisch gesicherten Nachweis der Patientenpräsenz per eGK beim Leistungserbringer ab (Praxis, Hausbesuch). Stufe 1 soll Mitte 2026 abgeschlossen sein. Stufe 2 (Online-Check-in, GesundheitsID, Telemedizin) ist für Ende 2026 geplant. PoPP löst perspektivisch das bisherige VSDM++-Verfahren ab. Die PoPP-Spezifikationen für Fernbehandlungen sollen im Q1 2026 finalisiert werden.",
+      "relevantTerms": ["Telematikinfrastruktur", "eGK", "VSDM"],
+      "articleSuggestion": "PoPP"
+    },
+    {
+      "title": "gematik verlängert eHBA-Austauchfrist bis 30. Juni 2026",
+      "date": "2026-01-10",
+      "source": "https://www.zm-online.de/news/detail/uebergangsloesung-fuer-ehba-bis-30-juni-2026",
+      "summary": "Gematik hat die Übergangsfrist für den Austausch von eHBAs der Generation 2.0 (RSA) auf Generation 2.1 (ECC) bis zum 30. Juni 2026 verlängert. Betroffen sind noch über 30.000 Heilberufsausweise. Telekom-Kunden sind von dieser Fristverlängerung ausgenommen.",
+      "relevantTerms": ["Telematikinfrastruktur", "SMC-B"],
+      "articleSuggestion": "eHBA"
+    },
+    {
+      "title": "CardLink-Zulassung für DocMorris und Redcare bis Januar 2027 verlängert",
+      "date": "2025-07-15",
+      "source": "https://www.eqs-news.com/news/corporate/gematik-verlangert-docmorris-cardlink-zulassung-bis-januar-2027/0133220b-a3d8-40be-ab4e-9516349bb3ca",
+      "summary": "Gematik hat die Produktzulassung für CardLink (eGK-basiertes E-Rezept-Einlösen per App ohne PIN) für DocMorris und Redcare bis Ende Januar 2027 verlängert. Die Verlängerung überbrückt den Übergang zur PoPP-Technologie. Gematik plant, die kontaktlose eGK-Nutzung ohne PIN auch im PoPP-Kontext bis Ende 2026 verfügbar zu machen.",
+      "relevantTerms": ["E-Rezept", "eGK"],
+      "articleSuggestion": "CardLink"
+    },
+    {
+      "title": "DEMIS: Aktualisierte Stammdaten ab April 2026 Pflicht für Labore",
+      "date": "2026-02-01",
+      "source": "https://dorner.de/en/demis-schnittstelle/",
+      "summary": "Ab April 2026 können nur Labore mit korrekt aktualisierten DEMIS-Stammdaten weiterhin Meldungen über die DEMIS-Schnittstelle versenden. Meldungsformat und Codelisten (LOINC, SNOMED) wurden aktualisiert. Ohne Anpassung laufen Meldungen in einen Fehlerstatus. Außerdem müssen seit der neuen DEMIS-Version auch negative SARS-CoV-2-PCR-Befunde gemäß IfSG §7 Abs. 4 gemeldet werden.",
+      "relevantTerms": ["DEMIS"],
+      "articleSuggestion": "DEMIS"
+    },
+    {
+      "title": "eVO (elektronische Heilmittelverordnung): Pflichtstart erst ab 2028",
+      "date": "2026-03-10",
+      "source": "https://www.up-aktuell.de/aktuell/2026/03/gematik-evo-soll-mehr-als-ein-digitalisiertes-formular-werden.html",
+      "summary": "Die elektronische Heilmittelverordnung (eVO) für Physiotherapie, Ergotherapie und Logopädie wird erst 2028 verpflichtend eingeführt. Pilotprojekte laufen 2026 und 2027. Gematik betont, die eVO solle mehr als nur ein digitalisiertes Formular werden: schnellere Übermittlung, sicherere Datenübertragung über die TI, flexiblere Anpassung von Verordnungsänderungen.",
+      "relevantTerms": ["E-Rezept", "Telematikinfrastruktur"],
+      "articleSuggestion": "eVO"
+    },
+    {
+      "title": "Krankenkassen fordern gematik-Transformation und faire Finanzierung",
+      "date": "2026-01-20",
+      "source": "https://www.sbk.org/presse/kassen-fordern-klaren-handlungsrahmen-und-faire-finanzierung/",
+      "summary": "Mehrere große Krankenkassen (AOK, BARMER, TK, DAK u.a.) fordern in einem gemeinsamen Positionspapier (Januar 2026) die Transformation der gematik zu einer modernen Digitalagentur mit klarem Handlungsrahmen. Kritikpunkte: GKV trägt 93 Prozent der gematik-Kosten (ca. 100 Mio. EUR/Jahr); zusätzlich 37 Cent je GKV-Mitglied für 2026. Forderung: Steuerfinanzierung für Aufgaben im öffentlichen Interesse.",
+      "relevantTerms": ["Telematikinfrastruktur"],
+      "articleSuggestion": null
+    },
+    {
+      "title": "TI 2.0: Zieltermin Ende 2026, neue Sicherheitsarchitektur Zero Trust",
+      "date": "2026-01-01",
+      "source": "https://www.aend.de/article/223906",
+      "summary": "Bis Ende 2026 soll die bisherige TI vollständig auf TI 2.0 migriert sein. Kernelement ist der Wechsel von perimeter-basierter Sicherheit zu Zero-Trust-Architektur (ZETA). Das TI-Gateway ersetzt Hardware-Konnektoren schrittweise. VSDM 2.0 (Start Juni 2026) ist die erste echte TI-2.0-Anwendung.",
+      "relevantTerms": ["Telematikinfrastruktur", "Konnektoren"],
+      "articleSuggestion": "TI-Gateway"
+    },
+    {
+      "title": "98 Prozent der Praxisverwaltungssysteme ready für ePA-Medikationsliste",
+      "date": "2025-12-01",
+      "source": "https://www.heise.de/en/news/Gematik-98-percent-of-practice-management-systems-ready-for-2026-11112236.html",
+      "summary": "141 Primärsysteme haben den Evaluierungsprozess für die ePA-Medikationsliste erfolgreich abgeschlossen, was 98 Prozent des PVS-Marktanteils entspricht. Praxen, die ab Januar 2026 keine konforme Software haben, riskieren Abrechnungsausschluss.",
+      "relevantTerms": ["ePA", "E-Rezept"],
+      "articleSuggestion": null
+    }
+  ]
 }

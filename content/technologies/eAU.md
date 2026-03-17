@@ -1,39 +1,39 @@
 ---
-title: eAU - Elektronische Arbeitsunfahigkeitsbescheinigung
+title: eAU - Elektronische Arbeitsunfähigkeitsbescheinigung
 audience: [technical, non-technical]
 tags: [anwendung, eau, arbeitsunfaehigkeit]
 ---
 
-# eAU - Elektronische Arbeitsunfahigkeitsbescheinigung
+# eAU - Elektronische Arbeitsunfähigkeitsbescheinigung
 
-Die **eAU** ist die digitale Krankmeldung. Seit dem **1. Januar 2023** mussen Arzte die AU-Daten elektronisch an die Krankenkasse ubermitteln.
+Die **eAU** ist die digitale Krankmeldung. Seit dem **1. Januar 2023** müssen Ärzte die AU-Daten elektronisch an die Krankenkasse übermitteln.
 
-## Erklart fur Einsteiger
+## Erklärt für Einsteiger
 
-Wenn du krank bist und nicht arbeiten kannst, stellt dir der Arzt eine Krankmeldung aus. Fruher war das ein gelber Zettel: ein Blatt fur dich, eins fur den Arbeitgeber, eins fur die Krankenkasse. Jetzt schickt der Arzt die Daten direkt elektronisch an die Krankenkasse. Dein Arbeitgeber ruft die Krankmeldung dann bei der Krankenkasse digital ab. Du musst selbst nichts mehr einschicken.
+Wenn du krank bist und nicht arbeiten kannst, stellt dir der Arzt eine Krankmeldung aus. Früher war das ein gelber Zettel: ein Blatt für dich, eins für den Arbeitgeber, eins für die Krankenkasse. Jetzt schickt der Arzt die Daten direkt elektronisch an die Krankenkasse. Dein Arbeitgeber ruft die Krankmeldung dann bei der Krankenkasse digital ab. Du musst selbst nichts mehr einschicken.
 
-## Uberblick
+## Überblick
 
 ### Ablauf
 1. Arzt stellt AU im Praxisverwaltungssystem (PVS) aus
-2. AU-Daten werden uber [[KIM]] an die Krankenkasse gesendet
+2. AU-Daten werden über [[KIM]] an die Krankenkasse gesendet
 3. Arbeitgeber ruft die eAU-Daten bei der Krankenkasse elektronisch ab
 
-Der Versicherte bekommt weiterhin einen Durchschlag fur die eigenen Unterlagen.
+Der Versicherte bekommt weiterhin einen Durchschlag für die eigenen Unterlagen.
 
 ## Technische Basis
 
 - Transport: [[KIM]]-Nachricht
-- Signatur: Qualifizierte elektronische Signatur (QES) via [[Konnektoren|Konnektor]] und HBA
+- Signatur: [[QES|Qualifizierte elektronische Signatur]] via [[Konnektoren|Konnektor]] und [[HBA]]
 - Datenformat: Strukturiertes XML (KBV-Vorgabe)
-- TI-Anbindung: Uber [[Konnektoren]] und [[SMC-B]]
+- TI-Anbindung: Über [[Konnektoren]] und [[SMC-B]]
 
-## Verknupfungen
+## Verknüpfungen
 
 - Nutzt [[KIM]] als Transportweg
-- AU-Daten konnen in der [[ePA]] gespeichert werden
-- Anbindung uber die [[Telematikinfrastruktur]]
-- Signatur uber [[SMC-B]] und HBA
+- AU-Daten können in der [[ePA]] gespeichert werden
+- Anbindung über die [[Telematikinfrastruktur]]
+- Signatur über [[SMC-B]] und [[HBA]]
 
 ## Quellen
 

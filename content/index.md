@@ -8,15 +8,15 @@ audience: all
 Willkommen im **gematik Brain**, dem Wissensgraph rund um die digitale Gesundheitsinfrastruktur Deutschlands.
 
 > [!warning] Hinweis
-> Dieses Projekt ist eine **private, nicht-offizielle** Zusammenstellung. Die Inhalte wurden mit Hilfe von KI zusammengefasst und auf Basis offentlich zuganglicher Quellen (vor allem [fachportal.gematik.de](https://fachportal.gematik.de) und [gematik.de](https://www.gematik.de)) erstellt. Es besteht **keine Verbindung zur gematik GmbH**. Fehler sind moglich. Wer Fehler findet oder beitragen will, ist willkommen.
+> Dieses Projekt ist eine **private, nicht-offizielle** Zusammenstellung. Die Inhalte wurden mit Hilfe von KI zusammengefasst und auf Basis öffentlich zugänglicher Quellen (vor allem [fachportal.gematik.de](https://fachportal.gematik.de) und [gematik.de](https://www.gematik.de)) erstellt. Es besteht **keine Verbindung zur gematik GmbH**. Fehler sind möglich. Wer Fehler findet oder beitragen will, ist willkommen.
 
 ## Warum dieses Projekt?
 
-Die Telematikinfrastruktur betrifft alle im Gesundheitswesen, aber die Dokumentation ist verstreut und oft schwer zugangig. Dieses Projekt sammelt das Wissen an einem Ort und erklart es so, dass man es auch ohne Informatikstudium versteht.
+Die Telematikinfrastruktur betrifft alle im Gesundheitswesen, aber die Dokumentation ist verstreut und oft schwer zugänglich. Dieses Projekt sammelt das Wissen an einem Ort und erklärt es so, dass man es auch ohne Informatikstudium versteht.
 
 ## Navigation
 
-Wahle oben deine **Perspektive** aus:
+Wähle oben deine **Perspektive** aus:
 
 - **Alle Inhalte**: Alles sehen
 - **Management & Strategie**: Konzepte, Nutzen, Zusammenhange
@@ -31,7 +31,7 @@ Das sichere Netzwerk des deutschen Gesundheitswesens.
 - [[ePA]]: Elektronische Patientenakte
 - [[E-Rezept]]: Digitales Rezept
 - [[KIM]]: Sichere E-Mail im Gesundheitswesen
-- [[TI-Messenger]]: Instant Messaging fur Leistungserbringer
+- [[TI-Messenger]]: Instant Messaging für Leistungserbringer
 - [[eAU]]: Elektronische Arbeitsunfahigkeitsbescheinigung
 
 ### Infrastruktur
@@ -40,7 +40,7 @@ Das sichere Netzwerk des deutschen Gesundheitswesens.
 - [[SMC-B]]: Institutionskarte
 
 ### Standards & Prozesse
-- [[FHIR]]: Interoperabilitatsstandard
+- [[FHIR]]: Interoperabilitätsstandard
 - [[VSDM]]: Versichertenstammdatenmanagement
 - [[NFDM]]: Notfalldatenmanagement
 

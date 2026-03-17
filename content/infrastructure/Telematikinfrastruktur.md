@@ -9,18 +9,18 @@ tags: [infrastruktur, ti, netzwerk]
 
 Die **Telematikinfrastruktur (TI)** ist das sichere digitale Netzwerk des deutschen Gesundheitswesens. Sie verbindet Arztpraxen, Krankenhauser, Apotheken, Krankenkassen und weitere Akteure miteinander.
 
-## Erklart fur Einsteiger
+## Erklärt für Einsteiger
 
-Stell dir das Internet vor, aber nur fur das Gesundheitswesen und besonders gesichert. Wenn dein Arzt ein Rezept ausstellt, deine Krankmeldung an die Kasse schickt oder deine Patientenakte offnet, laufen diese Daten uber die TI. Es ist wie ein eigenes Netz, das dafur sorgt, dass Gesundheitsdaten sicher von A nach B kommen und nur die richtigen Leute Zugriff haben. Die gematik in Berlin ist dafur verantwortlich.
+Stell dir das Internet vor, aber nur für das Gesundheitswesen und besonders gesichert. Wenn dein Arzt ein Rezept ausstellt, deine Krankmeldung an die Kasse schickt oder deine Patientenakte öffnet, laufen diese Daten über die TI. Es ist wie ein eigenes Netz, das dafür sorgt, dass Gesundheitsdaten sicher von A nach B kommen und nur die richtigen Leute Zugriff haben. Die [[gematik]] in Berlin ist dafür verantwortlich.
 
-## Uberblick
+## Überblick
 
-Die TI wird von der **gematik GmbH** (Berlin, Rosenthaler Strasse 30) im Auftrag des Bundesministeriums fur Gesundheit (BMG) verantwortet.
+Die TI wird von der **[[gematik|gematik GmbH]]** (Berlin, Rosenthaler Straße 30) im Auftrag des Bundesministeriums für Gesundheit (BMG) verantwortet.
 
 ### Zentrale Dienste
-- **IDP-Dienst**: Identitatsmanagement und Authentisierung
-- **VZD (Verzeichnisdienst)**: Zentrales Adressbuch aller TI-Teilnehmer
-- **TSP (Trust Service Provider)**: PKI-Infrastruktur fur Zertifikate
+- **[[IDP]]-Dienst**: Identitätsmanagement und Authentisierung
+- **[[VZD]] (Verzeichnisdienst)**: Zentrales Adressbuch aller TI-Teilnehmer
+- **TSP (Trust Service Provider)**: [[PKI]]-Infrastruktur für Zertifikate
 - **OCSP/CRL**: Zertifikatsprufung
 
 ### Anwendungen auf der TI
@@ -28,7 +28,7 @@ Die TI wird von der **gematik GmbH** (Berlin, Rosenthaler Strasse 30) im Auftrag
 - [[E-Rezept]]: Digitales Rezept
 - [[KIM]]: Sichere E-Mail
 - [[TI-Messenger]]: Instant Messaging
-- [[eAU]]: Elektronische Arbeitsunfahigkeitsbescheinigung
+- [[eAU]]: Elektronische Arbeitsunfähigkeitsbescheinigung
 - [[VSDM]]: Versichertenstammdaten
 - [[NFDM]]: Notfalldaten
 
@@ -36,21 +36,21 @@ Die TI wird von der **gematik GmbH** (Berlin, Rosenthaler Strasse 30) im Auftrag
 
 ### Zugangskomponenten
 - **[[Konnektoren]]**: Hardware-VPN-Gateway in Praxen und Kliniken
-- **TI-Gateway**: Cloud-basierte Alternative zum Konnektor (TI 2.0)
+- **[[TI-Gateway]]**: Cloud-basierte Alternative zum Konnektor (TI 2.0)
 - **[[eGK]]**: Versichertenausweis mit NFC-Chip
-- **[[SMC-B]]**: Institutionskarte fur Leistungserbringer
-- **HBA**: Heilberufsausweis fur Arzte und Apotheker
+- **[[SMC-B]]**: Institutionskarte für Leistungserbringer
+- **[[HBA]]**: Heilberufsausweis für Ärzte und Apotheker
 
 ### TI 2.0
 
-Die TI wird grundlegend weiterentwickelt. Die wichtigsten Anderungen:
+Die TI wird grundlegend weiterentwickelt. Die wichtigsten Änderungen:
 
-- **Zero-Trust-Architektur**: Kein implizites Vertrauen mehr, jeder Zugriff wird gepruft
-- **mTLS-Verschlusselung**: Gegenseitige Authentisierung bei jeder Verbindung
-- **TI-Gateway statt Konnektor**: Hardwareunabhangig, flexibler, zukunftssicher
+- **Zero-Trust-Architektur**: Kein implizites Vertrauen mehr, jeder Zugriff wird geprüft
+- **mTLS-Verschlüsselung**: Gegenseitige Authentisierung bei jeder Verbindung
+- **[[TI-Gateway]] statt Konnektor**: Hardwareunabhängig, flexibler, zukunftssicher
 - **[[VSDM]] 2.0** ist die erste TI-2.0-Anwendung (Start: 30. Juni 2026)
 
-Uber 19 zugelassene VPN-Zugangsdienstanbieter bieten Anschluss-Pakete an.
+Über 19 zugelassene VPN-Zugangsdienstanbieter bieten Anschluss-Pakete an.
 
 ### Netzwerk
 - Zentrales VPN-Netz mit Konzentratoren
@@ -60,9 +60,9 @@ Uber 19 zugelassene VPN-Zugangsdienstanbieter bieten Anschluss-Pakete an.
 ## Standards
 
 Die TI nutzt internationale Standards:
-- [[FHIR]] fur Dateninteroperabilitat
-- OAuth 2.0 / OpenID Connect fur Authentisierung
-- X.509-Zertifikate fur PKI
+- [[FHIR]] für Dateninteroperabilität
+- OAuth 2.0 / OpenID Connect für Authentisierung
+- X.509-Zertifikate für die [[PKI]]
 - RSA 2048 (bis Ende 2025), dann ECC
 
 ## Quellen
