@@ -33,7 +33,7 @@ Das E-Rezept wird digital erstellt, signiert und kann auf drei Wegen eingelöst 
 - Rezepte für Privatversicherte
 
 ### Was kommt noch?
-- DiGA-Verordnungen (Digitale Gesundheitsanwendungen)
+- [[DiGA]]-Verordnungen (Digitale Gesundheitsanwendungen)
 - E-Rezept-Anforderung und Übermittlung via [[KIM]]
 - T-Rezepte (teratogene Stoffe)
 - Betäubungsmittel-Rezepte (BtM)
@@ -53,7 +53,7 @@ Der E-Rezept-Fachdienst ist ein zentraler Dienst in der [[Telematikinfrastruktur
 5. Apotheke ruft Verordnung ab und gibt das Medikament aus
 
 ### Technische Details
-- Datenformat: [[FHIR]] R4 (KBV-Profile)
+- Datenformat: [[FHIR]] R4 ([[KBV]]-Profile)
 - Transport: HTTPS über [[Telematikinfrastruktur]]
 - Signatur: [[QES|Qualifizierte elektronische Signatur]], geprüft bei der Abgabe
 - Zulassung: Hersteller müssen die Tiger-Testsuite bestehen und Ergebnisse über das Titus-Portal einreichen

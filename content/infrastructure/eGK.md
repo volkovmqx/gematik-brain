@@ -19,7 +19,7 @@ Jeder gesetzlich Versicherte besitzt eine eGK. Die Karte hat einen Mikroprozesso
 ### Funktionen
 - Identifikation des Versicherten
 - Zugang zur [[ePA]]
-- Einlosen von [[E-Rezept]]en in der Apotheke
+- Einlösen von [[E-Rezept]]en in der Apotheke
 - [[VSDM]]: Online-Abgleich der Stammdaten
 - [[NFDM]]: Speicherung von Notfalldaten (freiwillig)
 

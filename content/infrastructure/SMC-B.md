@@ -6,7 +6,7 @@ tags: [infrastruktur, smcb, karte, identitaet]
 
 # SMC-B - Security Module Card Typ B
 
-Die **SMC-B** (Institutionskarte) identifiziert eine Einrichtung (Praxis, Apotheke, Krankenhaus) in der [[Telematikinfrastruktur]]. Sie ist das Gegenstuck zum [[HBA]] (Heilberufsausweis), der einzelne Personen identifiziert.
+Die **SMC-B** (Institutionskarte) identifiziert eine Einrichtung (Praxis, Apotheke, Krankenhaus) in der [[Telematikinfrastruktur]]. Sie ist das Gegenstück zum [[HBA]] (Heilberufsausweis), der einzelne Personen identifiziert.
 
 ## Erklärt für Einsteiger
 

@@ -20,11 +20,11 @@ Während [[KIM]] für formelle, asynchrone Kommunikation gedacht ist (wie E-Mail
 
 1. **TI-Messenger Pro**: Chat zwischen Leistungserbringern und Einrichtungen (Arztpraxen, Kliniken, Apotheken, Kassen)
 2. **TI-Messenger ePA**: Nachrichten zwischen Versicherten und Leistungserbringern innerhalb der [[ePA]]
-3. **TI-Messenger Connect**: Zugang für Versicherte über integrierte Apps (DiGA, Patientenportale, Telemedizin)
+3. **TI-Messenger Connect**: Zugang für Versicherte über integrierte Apps ([[DiGA]], Patientenportale, Telemedizin)
 
 ## Architektur
 
-Der TI-Messenger basiert auf dem **Matrix-Protokoll**, einem offenen, föderierten Standard von Matrix.org.
+Der TI-Messenger basiert auf dem **[[Matrix-Protokoll]]**, einem offenen, föderierten Standard von Matrix.org.
 
 ### Komponenten
 - **TI-Messenger-Client**: App oder Integration im Primärsystem
@@ -45,7 +45,7 @@ Der TI-Messenger basiert auf dem **Matrix-Protokoll**, einem offenen, föderiert
 
 ## Sicherheit
 
-Alle Nachrichten sind Ende-zu-Ende-verschlüsselt. Die Identität jedes Teilnehmers wird über die TI verifiziert. Das föderierte Matrix-Protokoll ermöglicht anbieterübergreifende Kommunikation, ohne die Sicherheit zu beeinträchtigen.
+Alle Nachrichten sind Ende-zu-Ende-verschlüsselt. Die Identität jedes Teilnehmers wird über die TI verifiziert. Das föderierte [[Matrix-Protokoll]] ermöglicht anbieterübergreifende Kommunikation, ohne die Sicherheit zu beeinträchtigen.
 
 ## Verknüpfungen
 

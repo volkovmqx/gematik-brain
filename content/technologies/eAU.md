@@ -25,7 +25,7 @@ Der Versicherte bekommt weiterhin einen Durchschlag für die eigenen Unterlagen.
 
 - Transport: [[KIM]]-Nachricht
 - Signatur: [[QES|Qualifizierte elektronische Signatur]] via [[Konnektoren|Konnektor]] und [[HBA]]
-- Datenformat: Strukturiertes XML (KBV-Vorgabe)
+- Datenformat: Strukturiertes XML ([[KBV]]-Vorgabe)
 - TI-Anbindung: Über [[Konnektoren]] und [[SMC-B]]
 
 ## Verknüpfungen

@@ -1,82 +1,13 @@
 {
   "pending": [
     {
-      "term": "Gesundheits-ID",
-      "category": "infrastructure",
-      "priority": 70,
-      "reason": "Digital identity for insured persons (al.vi). Mentioned in ePA as alternative to eGK for authentication, in IDP article (TI-Federation), and in VSDM 2.0. Will replace eGK for digital access in TI 2.0.",
-      "mentionedIn": [
-        "content/technologies/ePA.md",
-        "content/processes/VSDM.md",
-        "content/infrastructure/IDP.md"
-      ]
-    },
-    {
-      "term": "BSI",
+      "term": "IHE",
       "category": "organization",
-      "priority": 68,
-      "reason": "Bundesamt für Sicherheit in der Informationstechnik. Approves cryptographic standards used in the TI (RSA, ECC, BSI TR-03116). Now also referenced in VAU article. content/organization/ is empty.",
-      "mentionedIn": [
-        "content/infrastructure/Telematikinfrastruktur.md",
-        "content/concepts/VAU.md"
-      ]
-    },
-    {
-      "term": "DiGA",
-      "category": "technologies",
-      "priority": 65,
-      "reason": "Digitale Gesundheitsanwendungen (apps on prescription). Mentioned in E-Rezept ('DiGA-Verordnungen') and TI-Messenger ('TI-Messenger Connect: Zugang für Versicherte über integrierte Apps (DiGA, Patientenportale)'). BfArM-regulated category with its own TI implications.",
-      "mentionedIn": [
-        "content/technologies/E-Rezept.md",
-        "content/technologies/TI-Messenger.md"
-      ]
-    },
-    {
-      "term": "KBV",
-      "category": "organization",
-      "priority": 62,
-      "reason": "Kassenärztliche Bundesvereinigung. Named as producer of key FHIR profiles (KBV-Profile) used in E-Rezept, eAU, and FHIR. Relevant organization for understanding why certain data formats are the way they are.",
-      "mentionedIn": [
-        "content/technologies/E-Rezept.md",
-        "content/technologies/eAU.md",
-        "content/standards/FHIR.md"
-      ]
-    },
-    {
-      "term": "XDS",
-      "category": "standards",
-      "priority": 60,
-      "reason": "Cross-Enterprise Document Sharing. Mentioned in ePA as the document management standard ('XDS Document Management'). Listed in CLAUDE.md as a planned standards/ article. Important IHE profile used alongside FHIR in ePA.",
-      "mentionedIn": [
-        "content/technologies/ePA.md"
-      ]
-    },
-    {
-      "term": "OCSP",
-      "category": "concepts",
-      "priority": 58,
-      "reason": "Online Certificate Status Protocol. Named in Telematikinfrastruktur ('OCSP/CRL: Zertifikatsprüfung') and Konnektoren ('Zertifikatsprüfung (OCSP)'). Core mechanism for certificate revocation checking in TI.",
-      "mentionedIn": [
-        "content/infrastructure/Telematikinfrastruktur.md",
-        "content/infrastructure/Konnektoren.md"
-      ]
-    },
-    {
-      "term": "Matrix-Protokoll",
-      "category": "standards",
       "priority": 55,
-      "reason": "Open federated messaging protocol underlying TI-Messenger. Named explicitly in TI-Messenger article. Understanding Matrix is prerequisite for understanding TI-Messenger's federation model and E2E encryption (Olm/Megolm).",
+      "reason": "Integrating the Healthcare Enterprise. Publisher of XDS and other TI-relevant profiles. Referenced in new XDS and ISiK articles.",
       "mentionedIn": [
-        "content/technologies/TI-Messenger.md"
-      ]
-    },
-    {
-      "term": "ISiK",
-      "category": "standards",
-      "priority": 52,
-      "reason": "Informationstechnische Systeme im Krankenhaus. Mentioned in FHIR article as a key use case. gematik-mandated FHIR profiles for hospital information systems. Growing importance as hospitals digitize.",
-      "mentionedIn": [
-        "content/standards/FHIR.md"
+        "content/standards/XDS.md",
+        "content/standards/ISiK.md"
       ]
     },
     {
@@ -94,9 +25,10 @@
       "term": "BfArM",
       "category": "organization",
       "priority": 48,
-      "reason": "Bundesinstitut für Arzneimittel und Medizinprodukte. Regulates DiGA (Digitale Gesundheitsanwendungen) and is a central actor in the German health IT regulatory landscape. Listed in CLAUDE.md as a relevant organization.",
+      "reason": "Bundesinstitut für Arzneimittel und Medizinprodukte. Regulates DiGA (Digitale Gesundheitsanwendungen) and is a central actor in the German health IT regulatory landscape. Listed in CLAUDE.md as a relevant organization. Now also referenced in DiGA article.",
       "mentionedIn": [
-        "content/technologies/E-Rezept.md"
+        "content/technologies/E-Rezept.md",
+        "content/technologies/DiGA.md"
       ]
     },
     {
@@ -131,7 +63,8 @@
       "priority": 35,
       "reason": "Framework for federated identity in TI 2.0, enabling multiple sektorale IDPs alongside the central IDP. Newly documented in IDP article. Important for understanding how Gesundheits-ID and third-party IDPs work in the TI.",
       "mentionedIn": [
-        "content/infrastructure/IDP.md"
+        "content/infrastructure/IDP.md",
+        "content/infrastructure/Gesundheits-ID.md"
       ]
     },
     {
@@ -142,6 +75,25 @@
       "mentionedIn": [
         "content/infrastructure/TI-Gateway.md",
         "content/infrastructure/Telematikinfrastruktur.md"
+      ]
+    },
+    {
+      "term": "DiGAV",
+      "category": "standards",
+      "priority": 30,
+      "reason": "Digitale-Gesundheitsanwendungen-Verordnung. Legal regulation governing DiGA approval requirements (interoperability, data protection, evidence of benefit). Now referenced in DiGA article. Important for understanding the regulatory framework.",
+      "mentionedIn": [
+        "content/technologies/DiGA.md"
+      ]
+    },
+    {
+      "term": "MIO",
+      "category": "standards",
+      "priority": 28,
+      "reason": "Medizinische Informationsobjekte. Standardized FHIR profiles for specific clinical documents (vaccination records, Mutterpass, etc.) used in the ePA. Referenced in KBV and DiGA articles.",
+      "mentionedIn": [
+        "content/organization/KBV.md",
+        "content/technologies/DiGA.md"
       ]
     }
   ],
@@ -165,7 +117,15 @@
     "HBA",
     "gematik",
     "PKI",
-    "QES"
+    "QES",
+    "Gesundheits-ID",
+    "BSI",
+    "DiGA",
+    "KBV",
+    "XDS",
+    "OCSP",
+    "Matrix-Protokoll",
+    "ISiK"
   ],
   "lastRun": "2026-03-17"
 }

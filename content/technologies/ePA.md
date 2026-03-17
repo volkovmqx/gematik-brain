@@ -29,15 +29,18 @@ Seit dem **15. Januar 2025** wird die ePA automatisch für alle gesetzlich Versi
 - **Leistungserbringer**: Über ihr Praxissystem, mit Einwilligung
 - **Krankenkassen**: Über das Aktensystem (Backend)
 
+### Transparenz und Kontrolle
+Seit März 2026 erhalten Versicherte Push-Benachrichtigungen über die Krankenkassen-App, wenn jemand auf ihre ePA zugreift oder Änderungen vornimmt.
+
 ## Architektur
 
 Die ePA nutzt die [[Telematikinfrastruktur]] als sicheres Netzwerk. Der Zugriff für Leistungserbringer läuft über [[Konnektoren]] und das jeweilige Primärsystem (PVS, KIS, AVS).
 
 ### Technische Basis
 - Datenformat: [[FHIR]] R4 Profile
-- Dokumentenverwaltung: XDS Document Management
+- Dokumentenverwaltung: [[XDS]] Document Management
 - Medikationsdienst: Eigener FHIR-basierter Service
-- Authentisierung: [[eGK]] oder Gesundheits-ID (al.vi)
+- Authentisierung: [[eGK]] oder [[Gesundheits-ID]] (al.vi)
 - Sicherheit: [[VAU|Vertrauenswürdige Ausführungsumgebung (VAU)]]
 - Arztbriefe erfordern eine qualifizierte elektronische Signatur ([[QES]]) über den [[HBA]]
 

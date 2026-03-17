@@ -19,9 +19,9 @@ FHIR definiert **Ressourcen** (z.B. Patient, Medication, Observation) und **Prof
 
 ### Einsatz bei gematik
 - [[ePA]]: Medizinische Dokumente als FHIR-Bundles, Medikationsdienst
-- [[E-Rezept]]: Verordnungsdaten als FHIR MedicationRequest (KBV-Profile)
+- [[E-Rezept]]: Verordnungsdaten als FHIR MedicationRequest ([[KBV]]-Profile)
 - [[TI-Messenger]]: [[VZD|VZD-FHIR-Directory]] für das Adressbuch
-- ISiK (Informationstechnische Systeme im Krankenhaus)
+- [[ISiK]] (Informationstechnische Systeme im Krankenhaus)
 
 ## Technische Details
 
@@ -33,7 +33,7 @@ FHIR definiert **Ressourcen** (z.B. Patient, Medication, Observation) und **Prof
 - **Organization**: Daten zur Einrichtung
 
 ### Deutsche Profile
-- **KBV-Profile**: Für [[E-Rezept]], [[eAU]]
+- **[[KBV]]-Profile**: Für [[E-Rezept]], [[eAU]]
 - **gematik-Profile**: Für [[ePA]], Dispensierinformationen
 - **Deutsche Basisprofile**: Grundlegende Anpassungen (z.B. Versichertennummer als Identifier)
 

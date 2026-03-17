@@ -26,7 +26,7 @@ VSDM ist eine gesetzlich vorgeschriebene Anwendung. Beim ersten Kontakt pro Quar
 2. [[Konnektoren|Konnektor]] baut Verbindung zum VSDM-Fachdienst auf
 3. Stammdaten werden mit Krankenkassen-Daten abgeglichen
 4. Bei Abweichung: Update auf der [[eGK]]
-5. Prufnachweis wird erstellt
+5. Prüfnachweis wird erstellt
 
 ### Einschränkung
 Aktuell nur für gesetzlich Versicherte verfügbar.
@@ -37,7 +37,7 @@ VSDM 2.0 ist die **erste TI-2.0-Anwendung** mit Zero-Trust-Architektur. Wichtige
 
 - Daten werden direkt vom Fachdienst der Krankenkasse abgerufen (nicht mehr von der [[eGK]])
 - Mobile Szenarien ohne physische Karte möglich
-- Integration mit der Gesundheits-ID
+- Integration mit der [[Gesundheits-ID]]
 
 ### Zeitplan
 - **30. Juni 2026**: Parallelbetrieb VSDM 1.0 und 2.0 beginnt
@@ -49,7 +49,7 @@ VSDM 2.0 ist die **erste TI-2.0-Anwendung** mit Zero-Trust-Architektur. Wichtige
 - Transport: HTTPS über [[Telematikinfrastruktur]]
 - Authentisierung: [[eGK]] + [[Konnektoren|Konnektor]] + [[SMC-B]]
 - Daten: Stammdaten-Container (XML-Format)
-- Prufnachweis: Signiertes Token des Fachdienstes
+- Prüfnachweis: Signiertes Token des Fachdienstes
 
 ## Verknüpfungen
 

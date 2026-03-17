@@ -70,7 +70,7 @@ Jede TI-Komponente lädt die TSL regelmäßig herunter und prüft damit eingehen
 
 Für die Prüfung der Zertifikatsgültigkeit nutzt die TI zwei Mechanismen:
 
-- **OCSP** (Online Certificate Status Protocol): Echtzeit-Abfrage beim OCSP-Responder des TSP
+- **[[OCSP]]** (Online Certificate Status Protocol): Echtzeit-Abfrage beim OCSP-Responder des TSP
 - **CRL** (Certificate Revocation List): Liste gesperrter Zertifikate
 
 [[Konnektoren]] führen diese Prüfungen durch und verwerfen Verbindungen mit gesperrten oder abgelaufenen Zertifikaten.
@@ -82,7 +82,7 @@ Laut gematik-Spezifikation gilt:
 - **RSA 2048**: War bis Ende 2025 zugelassen
 - **ECC (brainpoolP256r1, brainpoolP384r1)**: Aktuelle Standard seit 2026
 - **SHA-256 / SHA-384**: Hashfunktionen
-- Anforderungen folgen den BSI-Technischen Richtlinien (TR-03116, TR-02102)
+- Anforderungen folgen den [[BSI]]-Technischen Richtlinien (TR-03116, TR-02102)
 
 ### QES-PKI
 
@@ -95,7 +95,7 @@ Für [[QES]]-Zertifikate gilt ein separates Regelwerk nach der eIDAS-Verordnung 
 - Geprüft von [[Konnektoren]] über OCSP/CRL
 - Basis für [[QES]] (qualifizierte Signaturen)
 - Eingebunden in die [[Telematikinfrastruktur]]
-- Kryptografische Anforderungen vom BSI (TR-03116)
+- Kryptografische Anforderungen vom [[BSI]] (TR-03116)
 
 ## Quellen
 

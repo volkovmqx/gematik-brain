@@ -7,7 +7,7 @@ tags: [infrastruktur, ti, netzwerk]
 
 # Telematikinfrastruktur (TI)
 
-Die **Telematikinfrastruktur (TI)** ist das sichere digitale Netzwerk des deutschen Gesundheitswesens. Sie verbindet Arztpraxen, Krankenhauser, Apotheken, Krankenkassen und weitere Akteure miteinander.
+Die **Telematikinfrastruktur (TI)** ist das sichere digitale Netzwerk des deutschen Gesundheitswesens. Sie verbindet Arztpraxen, Krankenhäuser, Apotheken, Krankenkassen und weitere Akteure miteinander.
 
 ## Erklärt für Einsteiger
 
@@ -21,7 +21,7 @@ Die TI wird von der **[[gematik|gematik GmbH]]** (Berlin, Rosenthaler Straße 30
 - **[[IDP]]-Dienst**: Identitätsmanagement und Authentisierung
 - **[[VZD]] (Verzeichnisdienst)**: Zentrales Adressbuch aller TI-Teilnehmer
 - **TSP (Trust Service Provider)**: [[PKI]]-Infrastruktur für Zertifikate
-- **OCSP/CRL**: Zertifikatsprufung
+- **[[OCSP]]/CRL**: Zertifikatsprüfung
 
 ### Anwendungen auf der TI
 - [[ePA]]: Elektronische Patientenakte
@@ -54,7 +54,7 @@ Die TI wird grundlegend weiterentwickelt. Die wichtigsten Änderungen:
 
 ### Netzwerk
 - Zentrales VPN-Netz mit Konzentratoren
-- Sichere DNS-Auflosung (TI-DNS)
+- Sichere DNS-Auflösung (TI-DNS)
 - IPv4 (Standard-MTU 1500) und IPv6 (Dual-Stack-Lite, MTU 1400)
 
 ## Standards
@@ -63,7 +63,7 @@ Die TI nutzt internationale Standards:
 - [[FHIR]] für Dateninteroperabilität
 - OAuth 2.0 / OpenID Connect für Authentisierung
 - X.509-Zertifikate für die [[PKI]]
-- RSA 2048 (bis Ende 2025), dann ECC
+- ECC 256 (seit 1. Januar 2026 Pflicht; eHBA-Übergangsfrist bis 30. Juni 2026; gSMC-KT bis 31. Dezember 2026)
 
 ## Quellen
 

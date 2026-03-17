@@ -1,5 +1,6 @@
 {
   "lastScan": "2026-03-17",
+  "lastRun": "2026-03-17",
   "findings": [
     {
       "title": "eMedikationsplan: Start verschoben auf Oktober 2026",
@@ -112,6 +113,44 @@
       "summary": "141 Primärsysteme haben den Evaluierungsprozess für die ePA-Medikationsliste erfolgreich abgeschlossen, was 98 Prozent des PVS-Marktanteils entspricht. Praxen, die ab Januar 2026 keine konforme Software haben, riskieren Abrechnungsausschluss.",
       "relevantTerms": ["ePA", "E-Rezept"],
       "articleSuggestion": null
+    },
+    {
+      "title": "Elektronisches T-Rezept: Spezifikation veröffentlicht, Start 2026 geplant",
+      "date": "2025-08-01",
+      "source": "https://www.gelbe-liste.de/apotheke/spezifikationen-e-t-rezept-veroeffentlicht",
+      "summary": "gematik veröffentlichte im August 2025 die finale Spezifikation für das elektronische T-Rezept (Lenalidomid, Pomalidomid, Thalidomid). Einführung für 2026 geplant. Ca. 170.000 T-Rezepte werden jährlich ausgestellt. Papierdurchschläge entfallen; Datenweitergabe erfolgt automatisiert via E-Rezept-Fachdienst.",
+      "relevantTerms": ["E-Rezept"],
+      "articleSuggestion": "T-Rezept",
+      "action": "update",
+      "details": "E-Rezept.md listet T-Rezepte noch unter 'Was kommt noch?'. Die Spezifikation ist seit August 2025 veröffentlicht. Status in der 'Was kommt noch?'-Liste sollte auf 'Spezifikation veröffentlicht, Einführung 2026' präzisiert werden."
+    },
+    {
+      "title": "Bundespolizei erhält E-Rezept ab Januar 2026",
+      "date": "2026-01-01",
+      "source": "https://www.gematik.de/newsroom/news-detail/bundespolizistinnen-und-bundespolizisten-koennen-seit-januar-e-rezepte-erhalten",
+      "summary": "Seit 1. Januar 2026 können 44.000 Bundespolizistinnen und Bundespolizisten E-Rezepte erhalten. Das E-Rezept wird damit auch auf Bundesbehörden außerhalb der GKV ausgeweitet.",
+      "relevantTerms": ["E-Rezept"],
+      "articleSuggestion": null,
+      "action": "info_only"
+    },
+    {
+      "title": "E-Rezept-Daten fließen ab Mitte 2026 pseudonymisiert ans Forschungsdatenzentrum",
+      "date": "2026-01-01",
+      "source": "https://www.bfdi.bund.de/DE/Buerger/Inhalte/Telematik-Statistik-Verkehr-Bildung/Weiteres/FAQ-eRezept.html",
+      "summary": "Ab Mitte 2026 werden E-Rezept-Daten aus der ePA pseudonymisiert an das Forschungsdatenzentrum Gesundheit (FDZ) übermittelt. Grundlage ist das Gesundheitsdatennutzungsgesetz (GDNG). E-Rezept-Daten werden seit Januar 2025 automatisch in die eML der ePA kopiert.",
+      "relevantTerms": ["E-Rezept", "ePA"],
+      "articleSuggestion": "Forschungsdatenzentrum Gesundheit",
+      "action": "info_only"
+    },
+    {
+      "title": "TI-Messenger Pro seit Januar 2026 in erster Ausbaustufe verfügbar",
+      "date": "2026-01-01",
+      "source": "https://us.arvato-systems.com/blog/digitizing-cross-sector-communication-with-the-ti-messenger-tim",
+      "summary": "TI-Messenger Pro ist seit Januar 2026 in Ausbaustufe 1 produktiv verfügbar. Zielgruppe: Leistungserbringer (Praxen, Kliniken, Apotheken, Kassen). Ziel: Ausbau auf 150.000 Organisationen. Element hat pentest-Zertifizierung (Rating 'Gut') für Multi-Tenancy-Lösung ESS Pro erhalten.",
+      "relevantTerms": ["TI-Messenger"],
+      "articleSuggestion": null,
+      "action": "update",
+      "details": "TI-Messenger.md enthält keine Angaben zum Rollout-Status. Ergänzung sinnvoll: TI-Messenger Pro ab Januar 2026 verfügbar."
     }
   ]
 }

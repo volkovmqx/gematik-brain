@@ -21,7 +21,7 @@ Jede Einrichtung im Gesundheitswesen braucht entweder einen Konnektor oder die n
 - Signatur-Erstellung ([[QES]]) mit [[HBA]] und [[SMC-B]]
 - Ver- und Entschlüsselung für [[KIM]]
 - Kartenterminal-Management ([[eGK]], [[HBA]], [[SMC-B]])
-- Zertifikatsprüfung (OCSP)
+- Zertifikatsprüfung ([[OCSP]])
 
 ## Architektur
 
@@ -36,12 +36,12 @@ Jede Einrichtung im Gesundheitswesen braucht entweder einen Konnektor oder die n
 - LDAP: Verzeichnisdienstabfragen
 
 ### Netzwerk
-- RSA 2048 Verschlüsselung (bis Ende 2025), danach ECC
+- ECC 256 Verschlüsselung (seit 1. Januar 2026 Pflicht; RSA-only-Konnektoren haben keinen TI-Zugang mehr)
 - IPv4 mit Standard-MTU von 1500 (konfigurierbar)
 - IPv6 mit Dual-Stack-Lite und reduzierter MTU von 1400
 - Größere Einrichtungen nutzen Highspeed-Konnektoren für Skalierbarkeit
 
-## TI 2.0: Ablosung durch TI-Gateway
+## TI 2.0: Ablösung durch TI-Gateway
 
 Mit der TI 2.0 wird der Hardware-Konnektor schrittweise durch das **[[TI-Gateway]]** ersetzt:
 

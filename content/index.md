@@ -19,7 +19,7 @@ Die Telematikinfrastruktur betrifft alle im Gesundheitswesen, aber die Dokumenta
 Wähle oben deine **Perspektive** aus:
 
 - **Alle Inhalte**: Alles sehen
-- **Management & Strategie**: Konzepte, Nutzen, Zusammenhange
+- **Management & Strategie**: Konzepte, Nutzen, Zusammenhänge
 - **Technik & Entwicklung**: Schnittstellen, Standards, Implementierung
 
 ## Themenbereiche
@@ -32,7 +32,7 @@ Das sichere Netzwerk des deutschen Gesundheitswesens.
 - [[E-Rezept]]: Digitales Rezept
 - [[KIM]]: Sichere E-Mail im Gesundheitswesen
 - [[TI-Messenger]]: Instant Messaging für Leistungserbringer
-- [[eAU]]: Elektronische Arbeitsunfahigkeitsbescheinigung
+- [[eAU]]: Elektronische Arbeitsunfähigkeitsbescheinigung
 
 ### Infrastruktur
 - [[Konnektoren]]: Anbindung an die TI

@@ -35,7 +35,7 @@ NFDM ist eine freiwillige Anwendung. Versicherte können bei ihrem Arzt Notfalld
 2. Arzt benötigt: [[eGK]] im Kartenterminal, eigenen [[HBA]], Primärsystem, TI-Zugang
 3. Arzt erstellt standardisierten Datensatz im Primärsystem
 4. Daten werden auf der [[eGK]] gespeichert und mit [[QES|qualifizierter elektronischer Signatur]] signiert
-5. Versicherter kann den Zugriff optional mit einer PIN schutzen
+5. Versicherter kann den Zugriff optional mit einer PIN schützen
 
 ## Technische Details
 

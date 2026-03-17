@@ -53,7 +53,7 @@ Die gematik erfüllt laut SGB V mehrere zentrale Aufgaben:
 
 ### Verhältnis zu anderen Institutionen
 
-Die gematik arbeitet eng mit dem **BSI** (Bundesamt für Sicherheit in der Informationstechnik) zusammen. Das BSI genehmigt kryptografische Verfahren, die in der TI eingesetzt werden. Das **BfArM** (Bundesinstitut für Arzneimittel und Medizinprodukte) reguliert DiGA (Digitale Gesundheitsanwendungen).
+Die gematik arbeitet eng mit dem [[BSI]] (Bundesamt für Sicherheit in der Informationstechnik) zusammen. Das [[BSI]] genehmigt kryptografische Verfahren, die in der TI eingesetzt werden. Das **BfArM** (Bundesinstitut für Arzneimittel und Medizinprodukte) reguliert [[DiGA]] (Digitale Gesundheitsanwendungen).
 
 ### Normative Spezifikationen
 
@@ -65,7 +65,7 @@ Alle technischen Anforderungen werden in gemSpec-Dokumenten veröffentlicht. Die
 - Betreibt die TI-[[PKI]] (Root-CA)
 - Herausgeber von [[HBA]] und [[SMC-B]]
 - Definiert Standards für [[FHIR]], [[KIM]], [[E-Rezept]], [[ePA]]
-- Arbeitet mit BSI für Kryptografiestandards zusammen
+- Arbeitet mit [[BSI]] für Kryptografiestandards zusammen
 - Reguliert den Zugang für [[Konnektoren]] und alle TI-Komponenten
 
 ## Quellen
