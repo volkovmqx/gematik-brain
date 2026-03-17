@@ -74,7 +74,7 @@ Damit Clients den richtigen sektoralen IDP für eine Nutzergruppe finden können
 
 ### Vertrauensniveaus
 
-Die TI-Federation legt einheitliche Vertrauensniveaus fest. Je nachdem, wie stark die initiale Identitätsprüfung bei der Registrierung war, erhält ein Token ein bestimmtes Vertrauensniveau (entsprechend eIDAS-Stufen). Dienste können konfigurieren, welches Mindest-Vertrauensniveau sie akzeptieren.
+Die TI-Federation legt einheitliche Vertrauensniveaus fest. Je nachdem, wie stark die initiale Identitätsprüfung bei der Registrierung war, erhält ein Token ein bestimmtes Vertrauensniveau (entsprechend [[eIDAS]]-Stufen). Dienste können konfigurieren, welches Mindest-Vertrauensniveau sie akzeptieren.
 
 ### Abgrenzung zum zentralen IDP
 

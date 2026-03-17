@@ -15,15 +15,15 @@ Stell dir vor, alle Arztpraxen in Deutschland müssen Rezepte auf eine bestimmte
 
 ## Überblick
 
-Die KBV ist eine Körperschaft des öffentlichen Rechts und Teil der ärztlichen Selbstverwaltung im System der gesetzlichen Krankenversicherung (GKV). Sie ist die bundesweite Interessenvertretung der rund 180.000 niedergelassenen Vertragsärztinnen und -ärzte sowie Vertragspsychotherapeutinnen und -psychotherapeuten.
+Die KBV ist eine Körperschaft des öffentlichen Rechts und Teil der ärztlichen Selbstverwaltung im System der gesetzlichen Krankenversicherung ([[GKV]]). Sie ist die bundesweite Interessenvertretung der rund 180.000 niedergelassenen Vertragsärztinnen und -ärzte sowie Vertragspsychotherapeutinnen und -psychotherapeuten.
 
 Zu den Kernaufgaben gehören:
 - Sicherstellung der flächendeckenden ambulanten medizinischen Versorgung (Sicherstellungsauftrag)
 - Interessenvertretung der niedergelassenen Ärzteschaft gegenüber den Krankenkassen
 - Verhandlung der Vergütung vertragsärztlicher Leistungen
-- Standardisierung der Schnittstellen für Praxisverwaltungssysteme (PVS)
+- Standardisierung der Schnittstellen für [[PVS|Praxisverwaltungssysteme (PVS)]]
 
-Im Kontext der Digitalisierung ist die KBV als Herausgeberin verbindlicher technischer Standards besonders relevant. Das Bundesgesundheitsministerium beauftragt die KBV, Schnittstellen nach § 291d SGB V festzulegen. Diese Schnittstellen bestimmen, wie Arztpraxissoftware mit der [[Telematikinfrastruktur]] kommuniziert.
+Im Kontext der Digitalisierung ist die KBV als Herausgeberin verbindlicher technischer Standards besonders relevant. Das Bundesgesundheitsministerium beauftragt die KBV, Schnittstellen nach § 291d [[SGB-V]] festzulegen. Diese Schnittstellen bestimmen, wie Arztpraxissoftware mit der [[Telematikinfrastruktur]] kommuniziert.
 
 ## Technische Details
 
@@ -38,7 +38,7 @@ Die KBV veröffentlicht ihre [[FHIR]]-Implementierungsleitfäden auf dem FHIR-Si
 
 ### MIOs (Medizinische Informationsobjekte)
 
-Gemeinsam mit der [[gematik]] und der Kassenärztlichen Vereinigung entwickelt die KBV sogenannte MIOs (Medizinische Informationsobjekte). MIOs sind standardisierte [[FHIR]]-Profile für spezifische klinische Dokumente, z.B.:
+Gemeinsam mit der [[gematik]] und der Kassenärztlichen Vereinigung entwickelt die KBV sogenannte [[MIO]]s (Medizinische Informationsobjekte). MIOs sind standardisierte [[FHIR]]-Profile für spezifische klinische Dokumente, z.B.:
 - Impfpass
 - Mutterpass
 - Kinderuntersuchungsheft

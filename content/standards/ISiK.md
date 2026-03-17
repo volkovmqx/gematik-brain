@@ -7,7 +7,7 @@ aliases: [Informationstechnische Systeme im Krankenhaus, Informationstechnische 
 
 # ISiK
 
-Verbindlicher [[FHIR]]-basierter Interoperabilitätsstandard von [[gematik]] für den Datenaustausch zwischen IT-Systemen in Krankenhäusern, gesetzlich vorgeschrieben nach § 373 SGB V.
+Verbindlicher [[FHIR]]-basierter Interoperabilitätsstandard von [[gematik]] für den Datenaustausch zwischen IT-Systemen in Krankenhäusern, gesetzlich vorgeschrieben nach § 373 [[SGB-V]].
 
 ## Erklärt für Einsteiger
 
@@ -15,11 +15,11 @@ In einem Krankenhaus gibt es viele verschiedene Computersysteme: Eines für die 
 
 ## Überblick
 
-ISiK (Informationstechnische Systeme in Krankenhäusern) ist ein von [[gematik]] entwickelter verbindlicher Standard für den Datenaustausch zwischen IT-Systemen in Krankenhäusern. Rechtsgrundlage ist § 373 SGB V, der gematik beauftragt, eine standardisierte Schnittstelle für Krankenhaus-Informationssysteme zu definieren.
+ISiK (Informationstechnische Systeme in Krankenhäusern) ist ein von [[gematik]] entwickelter verbindlicher Standard für den Datenaustausch zwischen IT-Systemen in Krankenhäusern. Rechtsgrundlage ist § 373 [[SGB-V]], der gematik beauftragt, eine standardisierte Schnittstelle für Krankenhaus-Informationssysteme zu definieren.
 
 Das Ziel von ISiK ist Interoperabilität: Relevante Patientendaten sollen sektorenübergreifend aktuell und strukturiert verfügbar sein. Vor ISiK kommunizierten Krankenhaussysteme häufig über proprietäre Schnittstellen, die wartungsintensiv und nicht erweiterbar waren.
 
-ISiK betrifft primär Krankenhäuser, die Fördermittel nach dem Krankenhausfinanzierungsgesetz (KHG) erhalten. Die Konformität mit ISiK ist seit Stufe 3 (01.07.2025) Voraussetzung für bestimmte Fördermaßnahmen nach § 21 Abs. 2 KHSFV. Hersteller von Krankenhausinformationssystemen (KIS) und anderen primären Systemen müssen ihre Produkte durch [[gematik]] bestätigen lassen.
+ISiK betrifft primär Krankenhäuser, die Fördermittel nach dem Krankenhausfinanzierungsgesetz (KHG) erhalten. Die Konformität mit ISiK ist seit Stufe 3 (01.07.2025) Voraussetzung für bestimmte Fördermaßnahmen nach § 21 Abs. 2 KHSFV. Hersteller von [[KIS|Krankenhausinformationssystemen (KIS)]] und anderen primären Systemen müssen ihre Produkte durch [[gematik]] bestätigen lassen.
 
 ISiK ergänzt bestehende Standards wie HL7 FHIR, [[IHE]] und KBV-Profile. Es ist kein eigenständiges System, sondern ein Set von Spezifikationen und Bestätigungsanforderungen.
 

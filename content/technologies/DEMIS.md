@@ -7,7 +7,7 @@ aliases: [Deutsches Elektronisches Melde- und Informationssystem für den Infekt
 
 # DEMIS
 
-DEMIS (Deutsches Elektronisches Melde- und Informationssystem für den Infektionsschutz) ist das vom Robert Koch-Institut (RKI) betriebene, [[FHIR]]-basierte System zur elektronischen Meldung meldepflichtiger Infektionskrankheiten in Deutschland.
+DEMIS (Deutsches Elektronisches Melde- und Informationssystem für den Infektionsschutz) ist das vom [[RKI|Robert Koch-Institut (RKI)]] betriebene, [[FHIR]]-basierte System zur elektronischen Meldung meldepflichtiger Infektionskrankheiten in Deutschland.
 
 ## Erklärt für Einsteiger
 
@@ -52,7 +52,7 @@ Die Profile sind domänenspezifisch nach Erregern bzw. Krankheiten strukturiert.
 
 ### Technische Übertragung
 
-Meldungen werden per HTTPS über eine REST-API übermittelt. Primärsysteme (Laborsoftware, KIS) können DEMIS-Meldungen direkt aus dem Workflow heraus erzeugen und versenden. Das RKI stellt Referenzimplementierungen und Testumgebungen bereit.
+Meldungen werden per HTTPS über eine REST-API übermittelt. Primärsysteme (Laborsoftware, [[KIS]]) können DEMIS-Meldungen direkt aus dem Workflow heraus erzeugen und versenden. Das RKI stellt Referenzimplementierungen und Testumgebungen bereit.
 
 Die Authentifizierung der meldenden Einrichtungen erfolgt über Zertifikate, die von zugelassenen Stellen ausgestellt werden. Damit wird sichergestellt, dass nur berechtigte Einrichtungen Meldungen einreichen können.
 

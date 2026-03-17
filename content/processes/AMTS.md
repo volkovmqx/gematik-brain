@@ -36,7 +36,7 @@ Die ePA-Version 3.1.3 führt ergänzend **AMTS-relevante Zusatzinformationen (AM
 
 ### Verbindung zum E-Rezept
 
-Das [[E-Rezept]] ist eng mit dem AMTS-Prozess verbunden. Wenn ein [[E-Rezept]] ausgestellt wird, kann das Primärsystem des Arztes (PVS) automatisiert gegen bekannte Wechselwirkungen und Kontraindikationen prüfen. Die Daten des eingelösten [[E-Rezept]]s fließen in die [[ePA]] ein und vervollständigen so das Bild der aktuellen Medikation.
+Das [[E-Rezept]] ist eng mit dem AMTS-Prozess verbunden. Wenn ein [[E-Rezept]] ausgestellt wird, kann das Primärsystem des Arztes ([[PVS]]) automatisiert gegen bekannte Wechselwirkungen und Kontraindikationen prüfen. Die Daten des eingelösten [[E-Rezept]]s fließen in die [[ePA]] ein und vervollständigen so das Bild der aktuellen Medikation.
 
 ## Technische Details
 
@@ -50,7 +50,7 @@ Die Medikationsdaten in der [[ePA]] basieren auf [[FHIR]] R4. Die relevanten FHI
 - `MedicationAdministration`: Dokumentierte Einnahme
 - `MedicationDispense`: Abgabe durch die Apotheke (aus [[E-Rezept]])
 
-Die KBV definiert spezifische [[FHIR]]-Profile für den Medikationsplan (MIO Medikationsplan). Diese Profile standardisieren, wie Medikationsdaten in der TI dargestellt werden.
+Die KBV definiert spezifische [[FHIR]]-Profile für den Medikationsplan ([[MIO]] Medikationsplan). Diese Profile standardisieren, wie Medikationsdaten in der TI dargestellt werden.
 
 ### Überführung des Bundeseinheitlichen Medikationsplans
 
@@ -68,7 +68,7 @@ Der Zugriff ist strikt an die Einwilligung des Patienten gebunden und wird in de
 
 ### Primärsysteme und AMTS-Software
 
-Die eigentliche Interaktionsprüfung (Wechselwirkungscheck) findet nicht im [[Fachdienst]] der [[ePA]] statt, sondern in den Primärsystemen (PVS, KIS, AVS). Diese integrieren Datenbanken wie ABDA oder MMI-Pharmindex, die Arzneimitteldaten und bekannte Interaktionen enthalten. Die [[ePA]] liefert dazu die vollständige Datenbasis aller Medikamente.
+Die eigentliche Interaktionsprüfung (Wechselwirkungscheck) findet nicht im [[Fachdienst]] der [[ePA]] statt, sondern in den Primärsystemen ([[PVS]], [[KIS]], AVS). Diese integrieren Datenbanken wie ABDA oder MMI-Pharmindex, die Arzneimitteldaten und bekannte Interaktionen enthalten. Die [[ePA]] liefert dazu die vollständige Datenbasis aller Medikamente.
 
 ## Verknüpfungen
 

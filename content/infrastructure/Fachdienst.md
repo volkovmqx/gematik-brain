@@ -17,7 +17,7 @@ Die [[Telematikinfrastruktur]] besteht nicht nur aus dem Netz, das Arztpraxen ve
 
 In der TI-Architektur gibt es eine klare Trennung zwischen der Basis-Infrastruktur (Netz, [[PKI]], [[IDP]], [[VZD]]) und den Anwendungs-Fachdiensten. Letztere implementieren die Fachlogik einer bestimmten TI-Anwendung.
 
-Jeder Fachdienst wird von einem oder mehreren zugelassenen Anbietern betrieben. Die [[gematik]] spezifiziert die Anforderungen und prüft die Zulassung. Der Anbieter übernimmt den Betrieb. Primärsysteme (PVS, KIS, AVS) in Arztpraxen, Kliniken und Apotheken kommunizieren mit dem Fachdienst über definierte Schnittstellen.
+Jeder Fachdienst wird von einem oder mehreren zugelassenen Anbietern betrieben. Die [[gematik]] spezifiziert die Anforderungen und prüft die Zulassung. Der Anbieter übernimmt den Betrieb. Primärsysteme ([[PVS]], [[KIS]], AVS) in Arztpraxen, Kliniken und Apotheken kommunizieren mit dem Fachdienst über definierte Schnittstellen.
 
 ### Bekannte Fachdienste
 
@@ -70,7 +70,7 @@ Zentrale TI-Dienste wie [[IDP]], [[VZD]] und [[PKI]] bilden die gemeinsame Basis
 
 Fachdienste bieten typischerweise zwei Schnittstellentypen:
 
-- **Primärsystem-Schnittstelle**: Wird von PVS, KIS und AVS aufgerufen. In der Regel REST/FHIR.
+- **Primärsystem-Schnittstelle**: Wird von [[PVS]], [[KIS]] und AVS aufgerufen. In der Regel REST/FHIR.
 - **Versicherten-App-Schnittstelle**: Wird von mobilen Apps aufgerufen. Ebenfalls REST/FHIR, aber mit anderen Authentisierungsflüssen.
 
 ## Verknüpfungen

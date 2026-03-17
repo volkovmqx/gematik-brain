@@ -25,7 +25,7 @@ mTLS ist kein neues Protokoll, sondern eine Konfigurationsoption innerhalb von T
 
 In der [[Telematikinfrastruktur]] 2.0 ist mTLS ein zentrales Sicherheitsprinzip. Es ersetzt das bisherige Modell, bei dem ein [[Konnektoren|Konnektor]] als vertrauenswürdige Hardware-Grenze die sichere Verbindung hergestellt hat.
 
-Mit dem [[TI-Gateway]] entfällt die Hardware-Box in der Praxis. Stattdessen muss das Primärsystem (PVS, KIS, AVS) selbst per mTLS eine gegenseitige Authentisierung mit dem TI-Gateway durchführen. Das Gateway prüft das Zertifikat des Primärsystems, und das Primärsystem prüft das Zertifikat des Gateways.
+Mit dem [[TI-Gateway]] entfällt die Hardware-Box in der Praxis. Stattdessen muss das Primärsystem ([[PVS]], [[KIS]], AVS) selbst per mTLS eine gegenseitige Authentisierung mit dem TI-Gateway durchführen. Das Gateway prüft das Zertifikat des Primärsystems, und das Primärsystem prüft das Zertifikat des Gateways.
 
 mTLS ist damit ein Kernbestandteil der [[Zero-Trust]]-Architektur der TI 2.0. Kein Gerät und kein Dienst erhält automatisch Vertrauen, nur weil es sich im selben Netz befindet.
 

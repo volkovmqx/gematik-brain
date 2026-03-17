@@ -28,7 +28,7 @@ Jede Einrichtung im Gesundheitswesen braucht entweder einen Konnektor oder die n
 ### Komponenten
 - **Konnektor-Hardware**: Zertifiziertes Gerät (z.B. von secunet, RISE)
 - **Kartenterminals**: eHealth-KT zum Lesen der Chipkarten
-- **Primärsystem**: Praxis-/Apothekensoftware (PVS, AVS, KIS)
+- **Primärsystem**: Praxis-/Apothekensoftware ([[PVS]], AVS, [[KIS]])
 
 ### Schnittstellen
 - SOAP-Webservices: Signatur, Verschlüsselung, Kartendienste

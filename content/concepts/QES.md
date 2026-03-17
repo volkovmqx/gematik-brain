@@ -15,7 +15,7 @@ Wenn ein Arzt ein Rezept unterschreibt, beweist seine Unterschrift: "Ich, Dr. M�
 
 ## Überblick
 
-Die QES ist in Deutschland und der EU durch die **eIDAS-Verordnung** (EU) Nr. 910/2014 geregelt. Sie ist die einzige Signaturform, die der Handunterschrift rechtlich vollständig gleichgestellt ist.
+Die QES ist in Deutschland und der EU durch die **[[eIDAS]]-Verordnung** (EU) Nr. 910/2014 geregelt. Sie ist die einzige Signaturform, die der Handunterschrift rechtlich vollständig gleichgestellt ist.
 
 In der [[Telematikinfrastruktur]] ist die QES für mehrere Anwendungsfälle verpflichtend oder rechtlich erforderlich:
 
@@ -57,7 +57,7 @@ Die Signaturerstellung erfolgt auf einer **QSCD** (Qualified Signature Creation 
 ### Technischer Ablauf (TI)
 
 ```
-1. Primärsystem (PVS) erstellt Dokument (z.B. FHIR-Bundle für E-Rezept)
+1. Primärsystem ([[PVS]]) erstellt Dokument (z.B. FHIR-Bundle für E-Rezept)
 2. Anfrage an Konnektor: "Signiere dieses Dokument"
 3. Konnektor leitet Anfrage an HBA im Kartenterminal weiter
 4. Arzt gibt PIN am Terminal ein
@@ -84,7 +84,7 @@ Die [[SMC-B]] kann keine QES erzeugen. Sie erzeugt nur eine **Organisationssigna
 - Erstellt über [[Konnektoren]] und Kartenterminal
 - Teil der TI-[[PKI]] (Zertifikatsprüfung)
 - Genutzt in [[E-Rezept]], [[eAU]], [[NFDM]]
-- Rechtsbasis: eIDAS-Verordnung (EU) Nr. 910/2014
+- Rechtsbasis: [[eIDAS]]-Verordnung (EU) Nr. 910/2014
 - Ausgabe der Zertifikate durch VDA unter Aufsicht der Bundesnetzagentur
 - Eingebunden in [[Telematikinfrastruktur]]
 

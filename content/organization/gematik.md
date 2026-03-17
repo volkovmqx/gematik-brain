@@ -15,7 +15,7 @@ Stell dir das digitale Gesundheitsnetz Deutschlands wie ein großes Straßennetz
 
 ## Überblick
 
-Die gematik wurde im Jahr **2005** gegründet und hat ihren Sitz in Berlin (Rosenthaler Straße 30, 10178 Berlin). Sie ist als GmbH organisiert, also als Gesellschaft mit beschränkter Haftung. Der gesetzliche Auftrag ergibt sich aus dem Fünften Buch Sozialgesetzbuch (SGB V).
+Die gematik wurde im Jahr **2005** gegründet und hat ihren Sitz in Berlin (Rosenthaler Straße 30, 10178 Berlin). Sie ist als GmbH organisiert, also als Gesellschaft mit beschränkter Haftung. Der gesetzliche Auftrag ergibt sich aus dem Fünften Buch Sozialgesetzbuch ([[SGB-V]]).
 
 ### Gesellschafter
 

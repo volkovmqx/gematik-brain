@@ -15,11 +15,11 @@ Stell dir vor, dein Arzt verschreibt dir nicht eine Pille, sondern eine App. Das
 
 ## Überblick
 
-DiGA wurden mit dem Digitale-Versorgung-Gesetz (DVG) im Jahr 2019 in Deutschland eingeführt. Seitdem können Ärzte und Psychotherapeuten DiGA auf einem Kassenrezept verordnen. Die gesetzliche Krankenversicherung übernimmt die Kosten für alle 73 Millionen GKV-Versicherten.
+DiGA wurden mit dem Digitale-Versorgung-Gesetz (DVG) im Jahr 2019 in Deutschland eingeführt. Seitdem können Ärzte und Psychotherapeuten DiGA auf einem Kassenrezept verordnen. Die [[GKV]] übernimmt die Kosten für alle 73 Millionen GKV-Versicherten.
 
 Das Bundesinstitut für Arzneimittel und Medizinprodukte ([[BfArM]]) ist die zuständige Zulassungsbehörde. Es führt das öffentliche DiGA-Verzeichnis, in dem alle zugelassenen Apps mit Informationen zu Indikation, Evidenz und Erstattungsbetrag aufgeführt sind.
 
-DiGA sind rechtlich Medizinprodukte der Risikoklasse I oder IIa nach der europäischen Medizinprodukteverordnung (MDR). Sie müssen ein CE-Kennzeichen tragen. Zusätzlich zur MDR gelten die speziellen Anforderungen der Digitale-Gesundheitsanwendungen-Verordnung (DiGAV).
+DiGA sind rechtlich Medizinprodukte der Risikoklasse I oder IIa nach der europäischen Medizinprodukteverordnung (MDR). Sie müssen ein CE-Kennzeichen tragen. Zusätzlich zur MDR gelten die speziellen Anforderungen der Digitale-Gesundheitsanwendungen-Verordnung ([[DiGAV]]).
 
 Anwendungsfelder sind breit: Kardiologie, Diabetologie, Psychotherapie, Physiotherapie, Gynäkologie und mehr. Typische DiGA helfen bei der Dokumentation von Symptomen, bei Verhaltensinterventionen oder bei der Unterstützung einer laufenden Therapie.
 
@@ -31,7 +31,7 @@ Das BfArM prüft DiGA-Anträge im sogenannten Fast-Track-Verfahren innerhalb von
 
 1. **Sicherheit und Funktionstüchtigkeit**: Entspricht der MDR, kein Schaden für Patienten
 2. **Datenschutz**: Daten dürfen nur in Deutschland verarbeitet werden; strenge Anforderungen an Datensparsamkeit
-3. **Interoperabilität**: DiGA müssen Daten in interoperablen Formaten exportieren (FHIR-basierter MIO DiGA Toolkit)
+3. **Interoperabilität**: DiGA müssen Daten in interoperablen Formaten exportieren ([[FHIR]]-basierter [[MIO]] DiGA Toolkit)
 4. **Positiver Versorgungseffekt**: Hersteller müssen entweder direkt einen Nutzennachweis erbringen oder werden vorläufig aufgenommen und müssen den Nachweis innerhalb von 12 Monaten erbringen
 
 ### Interoperabilität und FHIR

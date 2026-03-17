@@ -47,24 +47,51 @@
       "suggestedTerm": "RSA-zu-ECC-Migration"
     },
     {
+      "title": "ECC-Testwochen auf Referenzumgebung: Februar bis März 2026",
+      "date": "2026-02-16",
+      "source": "https://www.gematik.de/newsroom",
+      "summary": "Gematik führt ECC-Testwochen auf der Referenzumgebung (RU) zwischen dem 16. Februar und 19. März 2026 durch. Hersteller und Anbieter können dort ECC-Kompatibilität ihrer TI-Komponenten validieren. Ziel: Frühzeitige Erkennung von Integrationsproblemen vor dem Produktiveinsatz.",
+      "relevantArticles": ["Konnektoren.md", "Telematikinfrastruktur.md"],
+      "action": "info_only"
+    },
+    {
       "title": "VSDM 2.0 startet Parallelbetrieb am 30. Juni 2026",
       "date": "2026-01-01",
       "source": "https://www.gematik.de/telematikinfrastruktur/ti-2-0",
       "summary": "VSDM 2.0 ist die erste TI-2.0-Anwendung mit Zero-Trust-Architektur. Ab 30. Juni 2026 beginnt der Parallelbetrieb mit VSDM 1.0. Vollständiger Rollout: Februar 2027. Ende des Parallelbetriebs (VSDM 1.0 Abschaltung): Mitte 2027. In VSDM 2.0 werden Versichertendaten direkt beim Fachdienst der Krankenkasse abgerufen, nicht mehr von der eGK. Mobile Szenarien und GesundheitsID werden unterstützt.",
-      "relevantArticles": ["Telematikinfrastruktur.md"],
+      "relevantArticles": ["VSDM.md", "Telematikinfrastruktur.md", "Zero-Trust.md"],
       "action": "info_only"
+    },
+    {
+      "title": "Zero Trust ZETA-Kernkomponenten als Open Source veröffentlicht",
+      "date": "2025-12-15",
+      "source": "https://www.gematik.de/newsroom/news-detail/neuer-sicherheitsstandard-fuer-die-telematikinfrastruktur-ti-20-erste-version-von-zero-trust-kernkomponenten-veroeffentlicht",
+      "summary": "Gematik veröffentlichte am 15. Dezember 2025 die erste Version der ZETA-Kernkomponenten (Zero-Trust-Architektur für TI 2.0) als Open Source auf GitHub. Veröffentlicht wurden: ZETA-Client-SDK und ZETA-Guard. Erster produktiver Einsatz ist für Juli 2026 mit VSDM 2.0 geplant. Ab 2027 folgen weitere TI-Anwendungen, vollständige Migration bis 2029 geplant.",
+      "relevantArticles": ["Zero-Trust.md", "Telematikinfrastruktur.md", "VSDM.md"],
+      "action": "update",
+      "details": "Zero-Trust.md und Telematikinfrastruktur.md sollten den Open-Source-Release der ZETA-Komponenten vom Dezember 2025 und den GitHub-Link (github.com/gematik/zeta) ergänzen.",
+      "suggestedTerm": "ZETA"
+    },
+    {
+      "title": "Zero Trust für TI 2.0: Vertrag mit EY Consulting erteilt",
+      "date": "2025-11-01",
+      "source": "https://www.gematik.de/newsroom/news-detail/zero-trust-als-sicherheitsstandard-fuer-die-ti-20-zuschlag-erteilt",
+      "summary": "Gematik vergab den Auftrag zur Entwicklung, Wartung und Weiterentwicklung der zentralen Zero-Trust-Softwarekomponenten für TI 2.0 an EY Consulting GmbH. Umsetzung nach dem Prinzip 'Vertraue niemandem, prüfe alles'. Erster produktiver ZETA-Einsatz: Juli 2026 (VSDM 2.0 und Internet-Zugang für Praxen/Apotheken). Phase 2: Mobiler Zugang für Versicherte.",
+      "relevantArticles": ["Zero-Trust.md", "Telematikinfrastruktur.md"],
+      "action": "update",
+      "details": "Zero-Trust.md sollte EY Consulting als Auftragnehmer und den geplanten Zeitplan für ZETA-Phasen ergänzen."
     },
     {
       "title": "PoPP Stufe 1 gestartet: Zuschlag an RISE",
       "date": "2026-01-01",
       "source": "https://www.gematik.de/newsroom/news-detail/popp-dienst-startet-mit-umsetzungsstufe-1-zuschlag-geht-an-rise",
       "summary": "Der PoPP-Dienst (Proof of Patient Presence) ist in Umsetzungsstufe 1 gestartet. RISE hat den Zuschlag für die Entwicklung erhalten. Stufe 1 deckt den kryptografisch gesicherten Nachweis der Patientenpräsenz per eGK beim Leistungserbringer ab (Praxis, Hausbesuch). Stufe 1 soll Mitte 2026 abgeschlossen sein. Stufe 2 (Online-Check-in, GesundheitsID, Telemedizin) ist für Ende 2026 geplant. PoPP löst perspektivisch das bisherige VSDM++-Verfahren ab.",
-      "relevantArticles": ["Telematikinfrastruktur.md", "eGK.md"],
+      "relevantArticles": ["Telematikinfrastruktur.md", "eGK.md", "VSDM.md"],
       "action": "new_article",
       "suggestedTerm": "PoPP"
     },
     {
-      "title": "gematik verlängert eHBA-Austauchfrist bis 30. Juni 2026",
+      "title": "gematik verlängert eHBA-Tauschfrist bis 30. Juni 2026",
       "date": "2026-01-10",
       "source": "https://www.zm-online.de/news/detail/uebergangsloesung-fuer-ehba-bis-30-juni-2026",
       "summary": "Gematik hat die Übergangsfrist für den Austausch von eHBAs der Generation 2.0 (RSA) auf Generation 2.1 (ECC) bis zum 30. Juni 2026 verlängert. Betroffen sind noch über 30.000 Heilberufsausweise. Telekom-Kunden sind von dieser Fristverlängerung ausgenommen.",
@@ -87,9 +114,9 @@
       "date": "2026-02-01",
       "source": "https://dorner.de/en/demis-schnittstelle/",
       "summary": "Ab April 2026 können nur Labore mit korrekt aktualisierten DEMIS-Stammdaten weiterhin Meldungen über die DEMIS-Schnittstelle versenden. Meldungsformat und Codelisten (LOINC, SNOMED) wurden aktualisiert. Ohne Anpassung laufen Meldungen in einen Fehlerstatus. Außerdem müssen seit der neuen DEMIS-Version auch negative SARS-CoV-2-PCR-Befunde gemäß IfSG §7 Abs. 4 gemeldet werden.",
-      "relevantArticles": [],
-      "action": "new_article",
-      "suggestedTerm": "DEMIS"
+      "relevantArticles": ["DEMIS.md"],
+      "action": "update",
+      "details": "DEMIS.md sollte die Pflichtaktualisierung der Stammdaten ab April 2026 und die Erweiterung auf negative SARS-CoV-2-Befunde dokumentieren."
     },
     {
       "title": "eVO (elektronische Heilmittelverordnung): Pflichtstart erst ab 2028",
@@ -106,14 +133,24 @@
       "date": "2026-01-20",
       "source": "https://www.tk.de/presse/themen/digitale-gesundheit/digitaler-fortschritt/gematik-kassen-fordern-handlungsrahmen-und-faire-finanzierung-2211152",
       "summary": "Mehrere große Krankenkassen (AOK, BARMER, TK, DAK u.a.) fordern in einem gemeinsamen Positionspapier (Januar 2026) die Transformation der gematik zu einer modernen Digitalagentur mit klarem Handlungsrahmen. Kritikpunkte: GKV trägt 93 Prozent der gematik-Kosten (ca. 100 Mio. EUR/Jahr); zusätzlich 37 Cent je GKV-Mitglied für 2026. Forderung: Steuerfinanzierung für Aufgaben im öffentlichen Interesse.",
-      "relevantArticles": ["Telematikinfrastruktur.md"],
+      "relevantArticles": ["gematik.md"],
       "action": "info_only"
+    },
+    {
+      "title": "gematik veröffentlicht sieben Leitsätze für die digitale Zukunft des Gesundheitswesens",
+      "date": "2026-01-15",
+      "source": "https://www.gematik.de/newsroom/news-detail/sieben-leitlinien-der-gematik-fuer-die-digitale-zukunft-des-gesundheitswesens",
+      "summary": "Am 15. Januar 2026 veröffentlichte gematik-Geschäftsführer Dr. Florian Fuhrmann sieben strategische Leitsätze. Kernaussagen: Digitalisierung ist keine Kür sondern Pflicht; Betriebsstabilität hat absolute Priorität; Komplexität muss reduziert werden; Gemeinschaftsprojekt aller Akteure; grenzübergreifendes Denken notwendig. Die Leitsätze signalisieren eine stärkere Fokussierung auf Nutzerfreundlichkeit und Vereinfachung.",
+      "relevantArticles": ["gematik.md", "Telematikinfrastruktur.md"],
+      "action": "update",
+      "details": "gematik.md sollte die strategischen Leitsätze von Januar 2026 und deren Bedeutung für die TI-Weiterentwicklung ergänzen.",
+      "suggestedTerm": "gematik-Strategie-2026"
     },
     {
       "title": "TI 2.0: Zieltermin Ende 2026, neue Sicherheitsarchitektur Zero Trust",
       "date": "2026-01-01",
       "source": "https://www.gematik.de/telematikinfrastruktur/ti-2-0",
-      "summary": "Bis Ende 2026 soll die bisherige TI vollständig auf TI 2.0 migriert sein. Kernelement ist der Wechsel von perimeter-basierter Sicherheit zu Zero-Trust-Architektur (ZETA). Das TI-Gateway ersetzt Hardware-Konnektoren schrittweise. VSDM 2.0 (Start Juni 2026) ist die erste echte TI-2.0-Anwendung. Vollständiger Abschluss der Migration geplant bis 2028.",
+      "summary": "Bis Ende 2026 soll die bisherige TI vollständig auf TI 2.0 migriert sein. Kernelement ist der Wechsel von perimeter-basierter Sicherheit zu Zero-Trust-Architektur (ZETA). Das TI-Gateway ersetzt Hardware-Konnektoren schrittweise. VSDM 2.0 (Start Juni 2026) ist die erste echte TI-2.0-Anwendung. Vollständiger Abschluss der Migration geplant bis 2029.",
       "relevantArticles": ["Telematikinfrastruktur.md", "Konnektoren.md", "TI-Gateway.md"],
       "action": "info_only"
     },
@@ -129,7 +166,7 @@
       "title": "Elektronisches T-Rezept: Spezifikation veröffentlicht, Start 2026 geplant",
       "date": "2025-08-01",
       "source": "https://www.gelbe-liste.de/apotheke/spezifikationen-e-t-rezept-veroeffentlicht",
-      "summary": "gematik veröffentlichte im August 2025 die finale Spezifikation für das elektronische T-Rezept (Lenalidomid, Pomalidomid, Thalidomid). Einführung für 2026 geplant. Ca. 170.000 T-Rezepte werden jährlich ausgestellt. Papierdurchschläge entfallen; Datenweitergabe erfolgt automatisiert via E-Rezept-Fachdienst.",
+      "summary": "Gematik veröffentlichte im August 2025 die finale Spezifikation für das elektronische T-Rezept (Lenalidomid, Pomalidomid, Thalidomid). Einführung für 2026 geplant. Ca. 170.000 T-Rezepte werden jährlich ausgestellt. Papierdurchschläge entfallen; Datenweitergabe erfolgt automatisiert via E-Rezept-Fachdienst.",
       "relevantArticles": ["E-Rezept.md"],
       "action": "update",
       "details": "E-Rezept.md listet T-Rezepte noch unter 'Was kommt noch?' ohne Hinweis, dass die Spezifikation seit August 2025 veröffentlicht ist. Status sollte auf 'Spezifikation veröffentlicht, Einführung 2026' präzisiert werden.",
@@ -162,6 +199,15 @@
       "details": "TI-Messenger.md enthält keine Angaben zum Rollout-Status. Ergänzung sinnvoll: TI-Messenger Pro ab Januar 2026 in Ausbaustufe 1 verfügbar."
     },
     {
+      "title": "TI-Messenger: Mehrere große Krankenkassen schalten Versichertenkanal um März 2026 live",
+      "date": "2026-03-01",
+      "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/ti-messenger-digitaler-gesundheits-chat-startet-durch/68501956",
+      "summary": "Mehrere große Krankenkassen planen, den direkten Nachrichtenkanal zwischen Versicherten und ihrer Kasse über den TI-Messenger um März 2026 herum zu aktivieren. Versicherte können damit Anfragen stellen, Dokumente einsenden und Anliegen klären, ohne Telefon oder Post nutzen zu müssen.",
+      "relevantArticles": ["TI-Messenger.md"],
+      "action": "update",
+      "details": "TI-Messenger.md sollte den Krankenkassen-Kanal für Versicherte (Variante 'ePA' bzw. Versichertenkommunikation) als März 2026 go-live ergänzen."
+    },
+    {
       "title": "gematik Spezifikationsrelease TI-Messenger_26_1 veröffentlicht",
       "date": "2026-03-05",
       "source": "https://gemspec.gematik.de/releases/",
@@ -169,6 +215,15 @@
       "relevantArticles": ["TI-Messenger.md", "KIM.md", "ePA.md", "VZD.md"],
       "action": "update",
       "details": "KIM.md nennt 'Version 1.6.3' als aktuelle Version. Laut gemspec.gematik.de wurde KIM_1_5_5 am 12.02.2026 veröffentlicht. Versionsnummer in KIM.md prüfen und ggf. auf 1.5.5 korrigieren."
+    },
+    {
+      "title": "ePA 3.1.2: Volltextsuche, Push-Nachrichten und Sekundärnutzung veröffentlicht (Mai 2025)",
+      "date": "2025-05-28",
+      "source": "https://gemspec.gematik.de/releases/ePA_3_1_2/",
+      "summary": "ePA 3.1.2 (Release Mai 2025) brachte: Volltextsuche für FHIR/MHD-Dienste (Boolean-Operatoren, Phrasensuche), Push-Benachrichtigungen als TI-Basisdienst, Datenweiterleitung an Forschungseinrichtungen (Sekundärnutzung), Erweiterung der XDS-APPEND-Funktionalität und neue FHIR-IGs (IG ePA Medication Service v1.2.0, IG ePA Basisfunktionalitäten v1.2.0).",
+      "relevantArticles": ["ePA.md"],
+      "action": "update",
+      "details": "ePA.md könnte die FHIR-IG-Versionen aus ePA 3.1.2 ergänzen. Die Volltextsuche ist bereits als Funktion ab März 2026 dokumentiert, passt zu Release 3.1.2 (Mai 2025) als technischer Grundlage."
     },
     {
       "title": "E-Rezept Pflicht für Hilfsmittel und häusliche Krankenpflege ab 1. Juli 2026",

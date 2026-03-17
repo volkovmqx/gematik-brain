@@ -47,7 +47,7 @@ Das E-Rezept wird digital erstellt, signiert und kann auf drei Wegen eingelöst 
 Der [[Fachdienst|E-Rezept-Fachdienst]] ist ein zentraler Dienst in der [[Telematikinfrastruktur]].
 
 ### Ablauf
-1. Arzt erstellt Verordnung im Praxisverwaltungssystem (PVS)
+1. Arzt erstellt Verordnung im [[PVS|Praxisverwaltungssystem (PVS)]]
 2. Verordnung wird mit qualifizierter elektronischer Signatur ([[QES]]) via [[HBA]]/[[SMC-B]] signiert
 3. Verordnung wird über die TI an den E-Rezept-Fachdienst übertragen
 4. Versicherter weist Verordnung der Apotheke zu (per App, eGK oder Ausdruck)

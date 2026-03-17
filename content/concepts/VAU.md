@@ -22,7 +22,7 @@ Die VAU stellt sicher, dass:
 - Selbst der Systembetreiber keinen Zugriff auf unverschlüsselte Daten hat.
 - Jede Verarbeitung in einer kryptografisch gesicherten, attestierten Umgebung stattfindet.
 
-Die VAU ist laut gematik-Spezifikation für das ePA-Aktensystem Pflicht. Sie ist eine Grundvoraussetzung dafür, dass die [[ePA]] das Datenschutzniveau erfüllt, das das Sozialgesetzbuch (SGB V) vorschreibt.
+Die VAU ist laut gematik-Spezifikation für das ePA-Aktensystem Pflicht. Sie ist eine Grundvoraussetzung dafür, dass die [[ePA]] das Datenschutzniveau erfüllt, das das [[SGB-V]] vorschreibt.
 
 Über die [[ePA]] hinaus gibt es das VAU-Konzept auch beim [[E-Rezept]]-Fachdienst, der ebenfalls eine VAU nutzt, um Rezeptdaten vor dem Betreiber zu schützen.
 

@@ -15,7 +15,7 @@ Wenn du krank bist und nicht arbeiten kannst, stellt dir der Arzt eine Krankmeld
 ## Überblick
 
 ### Ablauf
-1. Arzt stellt AU im Praxisverwaltungssystem (PVS) aus
+1. Arzt stellt AU im [[PVS|Praxisverwaltungssystem (PVS)]] aus
 2. AU-Daten werden über [[KIM]] an die Krankenkasse gesendet
 3. Arbeitgeber ruft die eAU-Daten bei der Krankenkasse elektronisch ab
 

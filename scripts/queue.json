@@ -1,23 +1,127 @@
 {
   "pending": [
     {
-      "term": "DiGAV",
+      "term": "DVG",
       "category": "standards",
-      "priority": 30,
-      "reason": "Digitale-Gesundheitsanwendungen-Verordnung. Legal regulation governing DiGA approval requirements (interoperability, data protection, evidence of benefit). Now referenced in DiGA article. Important for understanding the regulatory framework.",
+      "reason": "Digitale-Versorgung-Gesetz (2019). Introduced DiGA, enabled digital health applications on prescription. Referenced in DiGA and AMTS articles. Key enabling legislation for TI digitalization wave.",
       "mentionedIn": [
-        "content/technologies/DiGA.md"
-      ]
+        "content/technologies/DiGA.md",
+        "content/processes/AMTS.md"
+      ],
+      "priority": 34
     },
     {
-      "term": "MIO",
-      "category": "standards",
-      "priority": 28,
-      "reason": "Medizinische Informationsobjekte. Standardized FHIR profiles for specific clinical documents (vaccination records, Mutterpass, etc.) used in the ePA. Referenced in KBV and DiGA articles.",
+      "term": "Bundesnetzagentur",
+      "category": "organization",
+      "reason": "Federal supervisory authority for qualified trust service providers (VDA) that issue QES certificates. Referenced in QES and PKI articles as regulator of the eIDAS trust chain for HBA certificates.",
       "mentionedIn": [
-        "content/organization/KBV.md",
-        "content/technologies/DiGA.md"
-      ]
+        "content/concepts/QES.md",
+        "content/concepts/PKI.md"
+      ],
+      "priority": 33
+    },
+    {
+      "term": "DiPA",
+      "category": "technologies",
+      "reason": "Digitale Pflegeanwendungen. Sister concept to DiGA for nursing care context, reimbursed by Pflegeversicherung, regulated by BfArM. Mentioned in DiGA and BfArM articles. Growing in importance.",
+      "mentionedIn": [
+        "content/technologies/DiGA.md",
+        "content/organization/BfArM.md"
+      ],
+      "priority": 32
+    },
+    {
+      "term": "AVS",
+      "category": "infrastructure",
+      "reason": "Apothekenverwaltungssystem. The primary pharmacy software, mentioned in TI-Gateway, Konnektoren, AMTS, Fachdienst. Parallel to PVS for pharmacies. Central in E-Rezept dispensing workflow.",
+      "mentionedIn": [
+        "content/infrastructure/TI-Gateway.md",
+        "content/infrastructure/Konnektoren.md",
+        "content/infrastructure/Fachdienst.md",
+        "content/processes/AMTS.md"
+      ],
+      "priority": 31
+    },
+    {
+      "term": "eMP",
+      "category": "processes",
+      "reason": "Elektronischer Medikationsplan. Central instrument of digital AMTS. Described in detail in AMTS article as integrated into ePA since March 2026. Supersedes the paper-based BMP. Deserves its own page.",
+      "mentionedIn": [
+        "content/processes/AMTS.md",
+        "content/technologies/ePA.md"
+      ],
+      "priority": 30
+    },
+    {
+      "term": "eGBR",
+      "category": "infrastructure",
+      "reason": "Elektronisches Gesundheitsberuferegister. Register for health professions not covered by traditional chambers (nurses, midwives, physiotherapists). Mentioned in HBA as the HBA issuer for these groups. Increasingly relevant.",
+      "mentionedIn": [
+        "content/infrastructure/HBA.md"
+      ],
+      "priority": 27
+    },
+    {
+      "term": "IfSG",
+      "category": "standards",
+      "reason": "Infektionsschutzgesetz. Legal basis for DEMIS and infection reporting obligations. Mentioned in DEMIS article (3x). Foundational law for public health surveillance digitalization.",
+      "mentionedIn": [
+        "content/technologies/DEMIS.md"
+      ],
+      "priority": 26
+    },
+    {
+      "term": "Telematik-ID",
+      "category": "infrastructure",
+      "reason": "Unique identifier for all TI participants (practitioners, institutions). Referenced in VZD (LDAP entries), IDP (token claims), HBA/SMC-B certificates. Central concept for identity in the TI, mentioned across multiple articles without its own page.",
+      "mentionedIn": [
+        "content/infrastructure/VZD.md",
+        "content/infrastructure/IDP.md"
+      ],
+      "priority": 25
+    },
+    {
+      "term": "TSP",
+      "category": "infrastructure",
+      "reason": "Trust Service Provider. Certificate issuers in the TI-PKI, accredited by gematik. Described in PKI article but deserves own page: role in TI trust chain, accreditation process, relationship to eIDAS qualified VDAs.",
+      "mentionedIn": [
+        "content/concepts/PKI.md",
+        "content/infrastructure/Telematikinfrastruktur.md",
+        "content/concepts/OCSP.md"
+      ],
+      "priority": 24
+    },
+    {
+      "term": "ICD-10-GM",
+      "category": "standards",
+      "reason": "Internationale Klassifikation der Krankheiten, German Modification. Maintained by BfArM, used in ISiK profiles (ISiKDiagnose), DEMIS meldungen. Fundamental coding standard in German healthcare IT.",
+      "mentionedIn": [
+        "content/organization/BfArM.md",
+        "content/technologies/DEMIS.md",
+        "content/standards/ISiK.md"
+      ],
+      "priority": 23
+    },
+    {
+      "term": "BMG",
+      "category": "organization",
+      "reason": "Bundesministerium für Gesundheit. Holds 51% of gematik and sets TI policy direction. Referenced in gematik, BfArM, BSI articles. Key political actor in TI governance.",
+      "mentionedIn": [
+        "content/organization/gematik.md",
+        "content/organization/BfArM.md",
+        "content/organization/BSI.md"
+      ],
+      "priority": 22
+    },
+    {
+      "term": "KVNR",
+      "category": "concepts",
+      "reason": "Krankenversicherungsnummer. Unique patient identifier used in TI-Federation tokens, Gesundheits-ID, VSDM. Referenced in TI-Federation and Gesundheits-ID articles as a key claim in OAuth tokens.",
+      "mentionedIn": [
+        "content/infrastructure/TI-Federation.md",
+        "content/infrastructure/Gesundheits-ID.md"
+      ],
+      "priority": 21
     }
   ],
   "done": [
@@ -56,7 +160,15 @@
     "AMTS",
     "Fachdienst",
     "TI-Federation",
-    "mTLS"
+    "mTLS",
+    "PVS",
+    "eIDAS",
+    "RKI",
+    "KIS",
+    "GKV",
+    "DiGAV",
+    "SGB V",
+    "MIO"
   ],
   "lastRun": "2026-03-17"
 }

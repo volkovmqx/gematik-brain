@@ -50,7 +50,7 @@ Der HBA ist eine Smartcard mit kryptografischem Prozessor nach ISO 7816 (kontakt
 | **C.HP.QES** | Qualifizierte elektronische Signatur (gesetzlich der Handunterschrift gleichgestellt) |
 | **C.HP.AUTN** | Nicht-repudiation, Organisationssignatur |
 
-Das QES-Zertifikat (C.HP.QES) ist ein qualifiziertes Zertifikat nach eIDAS-Verordnung. Es wird von einem zugelassenen Vertrauensdiensteanbieter (VDA) ausgestellt. Die Signaturerstellung erfordert immer die PIN-Eingabe durch den Karteninhaber.
+Das QES-Zertifikat (C.HP.QES) ist ein qualifiziertes Zertifikat nach [[eIDAS]]-Verordnung. Es wird von einem zugelassenen Vertrauensdiensteanbieter (VDA) ausgestellt. Die Signaturerstellung erfordert immer die PIN-Eingabe durch den Karteninhaber.
 
 ### Einbindung in die TI
 

@@ -20,7 +20,7 @@ Die TI-PKI ist die Vertrauensbasis der gesamten [[Telematikinfrastruktur]]. Ohne
 Die PKI der TI gliedert sich in zwei Bereiche:
 
 1. **X.509-PKI (nonQES)**: Für Authentisierung, Verschlüsselung und Organisationssignaturen. Die [[gematik]] ist hier die Policy Authority und betreibt die Root-CA.
-2. **QES-PKI**: Für qualifizierte elektronische Signaturen nach eIDAS-Verordnung. Hier agieren zugelassene Vertrauensdiensteanbieter (VDA) unter Aufsicht der Bundesnetzagentur.
+2. **QES-PKI**: Für qualifizierte elektronische Signaturen nach [[eIDAS]]-Verordnung. Hier agieren zugelassene Vertrauensdiensteanbieter (VDA) unter Aufsicht der Bundesnetzagentur.
 
 ### Zertifikatshierarchie
 
