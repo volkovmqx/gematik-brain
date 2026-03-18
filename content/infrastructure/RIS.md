@@ -3,6 +3,7 @@ title: RIS
 audience: [technical]
 tags: [infrastruktur, radiologie, krankenhaus, software, bildgebung]
 aliases: [Radiologie-Informationssystem, Radiologieinformationssystem]
+maturity: immergruen
 ---
 
 # RIS
@@ -20,7 +21,7 @@ Das RIS ist eines der wichtigsten Subsysteme im [[KIS]] (Krankenhausinformations
 1. Empfang eines Bildgebungsauftrags vom KIS (z.B. CT-Thorax für Patient XY)
 2. Terminplanung und Ressourcenzuteilung (welches Gerät, wann)
 3. Übermittlung der Patientendaten und des Auftrags an das bildgebende Gerät via DICOM-Worklist
-4. Empfang der fertigen Bilder und Weiterleitung an das PACS (Picture Archiving and Communication System)
+4. Empfang der fertigen Bilder und Weiterleitung an das [[PACS]] (Picture Archiving and Communication System)
 5. Befundung durch den Radiologen (direkt im RIS oder über ein separates Befundsystem)
 6. Rückübertragung des Befunds an das KIS und den verordnenden Arzt
 
@@ -71,7 +72,7 @@ Das RIS ist kein direkter Teilnehmer der [[Telematikinfrastruktur]], kommunizier
 
 - [[KIS]] (übergeordnetes System; sendet Aufträge an das RIS)
 - [[DICOM]] (Bildübertragungsstandard; Basis für Worklist und Bildspeicherung)
-- PACS (Picture Archiving and Communication System; Bildarchiv; eng mit RIS gekoppelt)
+- [[PACS]] (Picture Archiving and Communication System; Bildarchiv; eng mit RIS gekoppelt)
 - [[HL7]] (Nachrichtenstandard für Auftrags- und Befundkommunikation mit KIS)
 - [[FHIR]] (modernes Interoperabilitätsformat, zunehmend für RIS-KIS-Kommunikation)
 - [[ISiK]] (FHIR-basierter Standard für diagnostische Befunde im Krankenhaus)

@@ -52,7 +52,7 @@ PVS-Systeme unterstützen mehrere Schnittstellenstandards:
 - **GDT** (Gerätedatentransfer): Datenübernahme von Laborgeräten und anderen Medizingeräten
 - **LDT** (Labor-Datentransfer): Übertragung von Laborbefunden
 - **BDT** (Behandlungsdatentransfer): Export und Import von Patientendaten bei Praxiswechsel
-- **xDT**: Sammelbegriff für alle DT-basierten Austauschformate
+- **[[xDT]]**: Sammelbegriff für alle DT-basierten Austauschformate
 
 Die KBV definiert FHIR-Profile unter fhir.kbv.de, die PVS-Systeme für das E-Rezept und andere Anwendungen implementieren müssen.
 

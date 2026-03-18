@@ -1,60 +1,6 @@
 {
   "pending": [
     {
-      "term": "PACS",
-      "category": "infrastructure",
-      "reason": "Picture Archiving and Communication System. Zentrales Bildarchiv-System in Krankenhäusern für DICOM-Bilder. In KIS.md als KIS-Subsystem beschrieben, in DICOM.md als Kernsystem für Bildübertragung (C-STORE, C-FIND, C-MOVE), in ISMS.md als Schnittstellensystem. Eng mit DICOM und RIS verknüpft, relevant für TI 2.0 und ePA-Bildintegration.",
-      "mentionedIn": [
-        "content/infrastructure/KIS.md",
-        "content/standards/DICOM.md",
-        "content/concepts/ISMS.md"
-      ],
-      "priority": 36
-    },
-    {
-      "term": "Bundesärztekammer",
-      "category": "organization",
-      "reason": "Bundesärztekammer (BÄK). Dachverband aller deutschen Landesärztekammern und gematik-Gesellschafter. In gematik.md, BMG.md, Telemedizin.md (MBO-Ä § 7 Abs. 4) und EUDI-Wallet.md erwähnt. Relevant für Berufsrecht, Fernbehandlungsregelung und HBA-Ausgabe durch Landesärztekammern.",
-      "mentionedIn": [
-        "content/organization/gematik.md",
-        "content/organization/BMG.md",
-        "content/concepts/Telemedizin.md",
-        "content/infrastructure/EUDI-Wallet.md"
-      ],
-      "priority": 34
-    },
-    {
-      "term": "Medizinischer Dienst",
-      "category": "organization",
-      "reason": "Medizinischer Dienst (MD, früher MDK). Prüfdienst der gesetzlichen Krankenkassen für medizinische und pflegerische Fragen. In DRG.md als Prüfinstanz bei DRG-Abrechnungen, in GKV.md als Leistungsbeurteilungsinstanz erwähnt. Wichtiger Akteur für Krankenhausabrechnung, Pflegeeinstufung und Qualitätssicherung.",
-      "mentionedIn": [
-        "content/concepts/DRG.md",
-        "content/concepts/GKV.md"
-      ],
-      "priority": 25
-    },
-    {
-      "term": "xDT",
-      "category": "standards",
-      "reason": "Sammelbegriff für ältere deutsche Austauschformate im ambulanten Bereich: KVDT (Abrechnungsdaten), GDT (Gerätedatentransfer), LDT (Labor-Datentransfer), BDT (Behandlungsdatentransfer). In PVS.md und Kassenaerztliche-Vereinigung.md als historische Schnittstellenstandards beschrieben. Historisch wichtig für das Verständnis des Migrationspfads zu FHIR.",
-      "mentionedIn": [
-        "content/infrastructure/PVS.md",
-        "content/organization/KBV.md",
-        "content/organization/Kassenaerztliche-Vereinigung.md"
-      ],
-      "priority": 24
-    },
-    {
-      "term": "BSI C5",
-      "category": "standards",
-      "reason": "BSI Cloud Computing Compliance Criteria Catalogue. In DigiG.md als Pflichtzertifizierung für Cloud-Dienstleister im Gesundheitswesen nach § 393 SGB V erwähnt. Typ-1-Audit bis 1. Juli 2024, Typ-2-Audit bis 1. Juli 2025. Voraussetzung für die rechtskonforme Cloud-Nutzung in der TI und bei ePA-Anbietern.",
-      "mentionedIn": [
-        "content/standards/DigiG.md",
-        "content/organization/BSI.md"
-      ],
-      "priority": 23
-    },
-    {
       "term": "KV-SafeNet",
       "category": "infrastructure",
       "reason": "Von Kassenärztlichen Vereinigungen betriebenes VPN-Netz für die Abrechnungskommunikation zwischen Praxen und KVen. In VPN-Zugangsdienst.md und Kassenaerztliche-Vereinigung.md als parallele TI-Infrastruktur erwähnt, die durch die TI 2.0 abgelöst wird. Relevant für das Verständnis der Netzwerkmigration.",
@@ -270,7 +216,12 @@
     "VPN-Zugangsdienst",
     "EHDS",
     "ÖGD",
-    "ZETA"
+    "ZETA",
+    "PACS",
+    "Bundesärztekammer",
+    "Medizinischer Dienst",
+    "xDT",
+    "BSI C5"
   ],
   "lastRun": "2026-03-18"
 }

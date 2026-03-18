@@ -21,7 +21,7 @@ DICOM ist heute in nahezu jeder bildgebenden Einrichtung im Einsatz: Krankenhäu
 
 Im deutschen Krankenhaus-IT-Kontext ist DICOM die Basis für:
 
-- **PACS** (Picture Archiving and Communication System): Das Archiv, in dem DICOM-Bilder langfristig gespeichert werden.
+- **[[PACS]]** (Picture Archiving and Communication System): Das Archiv, in dem DICOM-Bilder langfristig gespeichert werden.
 - **[[RIS]]** (Radiologie-Informationssystem): Verwaltet Aufträge und Befunde und kommuniziert über DICOM-Worklists mit den Modalitäten.
 - **Teleradiologie**: DICOM-Bilder können über standardisierte Schnittstellen an externe Befunder übertragen werden.
 

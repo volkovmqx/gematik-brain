@@ -3,6 +3,7 @@ title: gematik
 audience: [technical, non-technical]
 tags: [organisation, gematik, ti, regulierung]
 aliases: [gematik GmbH, Nationale Agentur für Digitale Medizin]
+maturity: wachsend
 ---
 
 # gematik
@@ -26,7 +27,7 @@ Die gematik hat neun Gesellschafter. Das Bundesministerium für Gesundheit ([[BM
 | Bundesministerium für Gesundheit (BMG) | 51 % |
 | [[GKV-Spitzenverband]] | 22,05 % |
 | [[PKV\|Verband der Privaten Krankenversicherung (PKV)]] | 7 % |
-| Bundesärztekammer (BÄK) | je anteilig |
+| [[Bundesaerztekammer|Bundesärztekammer (BÄK)]] | je anteilig |
 | Bundeszahnärztekammer (BZÄK) | je anteilig |
 | Deutscher Apothekerverband (DAV) | je anteilig |
 | Deutsche Krankenhausgesellschaft (DKG) | je anteilig |
@@ -63,7 +64,7 @@ Alle technischen Anforderungen werden in gemSpec-Dokumenten veröffentlicht. Die
 
 ### GDAG gescheitert
 
-Das **GDAG (Gesundheits-Digitalagentur-Gesetz)** sollte die gematik zu einer modernen Bundesagentur umstrukturieren. Der Gesetzentwurf scheiterte in der Legislaturperiode 2021-2025 mit dem Ende der Ampel-Koalition: Die zweite und dritte Lesung im Bundestag fanden aufgrund der vorzeitigen Neuwahl nicht mehr statt. Der Koalitionsvertrag von CDU/CSU und SPD (2025) sieht eine gematik-Modernisierung ohne GDAG vor. Das [[BMG]] plant als Nachfolge ein neues **Gesetz für digitale Versorgung und den Gesundheitsdatenraum**, das Elemente der gematik-Transformation mit dem Ausbau des Gesundheitsdatenraums verbinden soll. Ein konkreter Referentenentwurf lag zum Zeitpunkt der Recherche noch nicht vor.
+Das **GDAG (Gesundheits-Digitalagentur-Gesetz)** sollte die gematik zu einer modernen Bundesagentur umstrukturieren. Der Gesetzentwurf scheiterte in der Legislaturperiode 2021-2025 mit dem Ende der Ampel-Koalition: Die zweite und dritte Lesung im Bundestag fanden aufgrund der vorzeitigen Neuwahl nicht mehr statt. Der Koalitionsvertrag von CDU/CSU und SPD (2025) sieht eine gematik-Modernisierung ohne GDAG vor. Das [[BMG]] plant als Nachfolge das **GDVG (Gesetz für digitale Versorgung und den Gesundheitsdatenraum)**, das Elemente der gematik-Transformation mit dem Ausbau des Gesundheitsdatenraums verbinden soll. Es ersetzt das gescheiterte GDAG. Der Referentenentwurf wird für H1/2026 erwartet. Ziel ist die Umgestaltung der gematik zu einer modernen Digitalagentur.
 
 ### Strategische Leitsätze 2026
 

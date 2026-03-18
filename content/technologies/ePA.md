@@ -3,6 +3,7 @@ title: ePA - Elektronische Patientenakte
 audience: [technical, non-technical]
 tags: [anwendung, epa, patientenakte]
 aliases: [Elektronische Patientenakte, Patientenakte]
+maturity: setzling
 ---
 
 # ePA - Elektronische Patientenakte
@@ -19,13 +20,13 @@ Seit dem **15. Januar 2025** wird die ePA automatisch für alle gesetzlich Versi
 
 Ab **April 2026** müssen [[KIS|Krankenhausinformationssysteme (KIS)]] ein zertifiziertes ePA-Modul enthalten. Krankenhäuser, deren KIS diese Anforderung nicht erfüllt, riskieren finanzielle Sanktionen.
 
-Über 150 Krankenkassen betreiben zugelassene Aktensysteme. Die technischen Implementierungen stammen von IBM und RISE/BITMARCK.
+Rund 100 Krankenkassen nutzen zugelassene Aktensysteme. Die technischen Implementierungen stammen von IBM (ca. 16 Kassen) und RISE/BITMARCK (ca. 87 Kassen).
 
 ### Aktuelle Nutzung (Stand März 2026)
 
 Stand März 2026 haben über **130.000 von ca. 160.000 Einrichtungen (81 Prozent)** mindestens eine ePA geöffnet. Mehr als **700 Millionen Datensätze** wurden verarbeitet, darunter über **37 Millionen hochgeladene Dokumente**.
 
-Seit **1. Januar 2026** sind Abrechnungsdaten in der ePA nur noch für Versicherte selbst sichtbar. Ärzte und andere Leistungserbringer können Abrechnungsdaten nicht ohne explizite Freigabe durch den Versicherten einsehen. Grundlage ist das **BEEP-Gesetz** (Gesetz zur Befugniserweiterung und Entbürokratisierung in der Pflege).
+Seit **1. Januar 2026** sind Abrechnungsdaten in der ePA nur noch für Versicherte selbst sichtbar. Ärzte und andere Leistungserbringer können Abrechnungsdaten nicht ohne explizite Freigabe durch den Versicherten einsehen. Grundlage ist das **BEEP-Gesetz** (Gesetz zur Befugniserweiterung und Entbürokratisierung in der Pflege). Ebenfalls seit 1. Januar 2026 können Praxen in therapeutisch begründeten Einzelfällen auf die ePA-Befüllung verzichten (**§ 347 SGB V**).
 
 ### Was wird gespeichert?
 
@@ -78,7 +79,7 @@ Leistungserbringer authentisieren sich über [[SMC-B]] (Einrichtung) und [[HBA]]
 
 ### Geplante 2026-Erweiterungen
 
-- **Volltextsuche**: Suche in gespeicherten Dokumenten der ePA
+- **Volltextsuche**: Suche in gespeicherten Dokumenten der ePA. Die Funktion ist noch nicht produktiv. Pilot geplant für Q3/2026, bundesweiter Rollout ab Januar 2027.
 - **Strukturierte Dosierungsangaben**: Im eMedikationsplan, mit Schreibzugriff für Apotheken
 - **MIO-Integration**: Einbindung der Medizinischen Informationsobjekte ([[MIO]]) Mutterpass, Impfausweis, Kinderuntersuchungsheft und Zahnärztliches Bonusheft
 
@@ -87,6 +88,11 @@ Leistungserbringer authentisieren sich über [[SMC-B]] (Einrichtung) und [[HBA]]
 Ende 2024 entdeckte der Chaos Computer Club (CCC) eine Sicherheitslücke in der ePA: Durch den Einsatz gefälschter [[SMC-B]]-Karten wäre theoretisch ein Massenzugriff auf Patientenakten möglich gewesen. Die [[gematik]] und das [[BSI]] bestätigten, dass kein Missbrauch dieser Art stattgefunden hatte. Sofortmaßnahmen wurden eingeleitet.
 
 Die dauerhafte Lösung kommt über den **[[PoPP]]-Dienst** (Proof of Patient Presence). PoPP stellt kryptografisch sicher, dass der Zugriff auf die ePA eines Versicherten nur dann möglich ist, wenn der Versicherte physisch anwesend ist oder aktiv online eingewilligt hat. Die PoPP-Spezifikation V1.0.0 wurde am 3. März 2026 veröffentlicht. Stufe 1 (eGK-basierter Präsenznachweis) soll Mitte 2026 produktiv gehen.
+
+## Quiz
+
+> [!quiz] Wer hat standardmäßig Zugriff auf die ePA?
+> Seit Januar 2025 wird die ePA automatisch für alle gesetzlich Versicherten angelegt (Opt-out-Verfahren). Zugriff haben Versicherte selbst (über die Krankenkassen-App), Leistungserbringer (mit Einwilligung über ihr Praxissystem) und Krankenkassen (über das Aktensystem-Backend).
 
 ## Verknüpfungen
 

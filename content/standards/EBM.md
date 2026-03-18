@@ -60,7 +60,7 @@ Die Höhe der TI-Pauschalen wird regelmäßig angepasst und ist im EBM-Kapitel 0
 
 ### Datenformat und Abrechnung
 
-Die Abrechnung gegenüber der [[Kassenärztliche Vereinigung|KV]] erfolgt über das **KVDT-Format** (Kassenärztlicher Datentransfer), das zur Familie der xDT-Formate gehört. Das [[PVS|Praxisverwaltungssystem (PVS)]] erzeugt eine KVDT-Datei mit allen im Quartal erbrachten Leistungen. Diese wird elektronisch an die KV übermittelt.
+Die Abrechnung gegenüber der [[Kassenärztliche Vereinigung|KV]] erfolgt über das **KVDT-Format** (Kassenärztlicher Datentransfer), das zur Familie der [[xDT]]-Formate gehört. Das [[PVS|Praxisverwaltungssystem (PVS)]] erzeugt eine KVDT-Datei mit allen im Quartal erbrachten Leistungen. Diese wird elektronisch an die KV übermittelt.
 
 Seit 2020 stellt die [[KBV]] den EBM auch in einem maschinenlesbaren XML-Format bereit, das von PVS-Herstellern zur automatischen Kodierunterstützung genutzt werden kann.
 

@@ -3,6 +3,7 @@ title: DigiG - Digital-Gesetz
 audience: [technical, non-technical]
 tags: [standards, gesetzgebung, epa, telematikinfrastruktur, sgb-v]
 aliases: [DigiG, Digitalgesetz, Digital-Gesetz, Gesetz zur Beschleunigung der Digitalisierung des Gesundheitswesens]
+maturity: wachsend
 ---
 
 # DigiG - Digital-Gesetz
@@ -15,11 +16,13 @@ Früher musste man aktiv "Ja" sagen, wenn man eine elektronische Patientenakte h
 
 ## Überblick
 
-Das DigiG (Gesetz zur Beschleunigung der Digitalisierung des Gesundheitswesens) wurde am 22. März 2024 im Bundesgesetzblatt verkündet und trat größtenteils am 26. März 2024 in Kraft. Es ist das bis dahin weitreichendste Digitalisierungsgesetz für das deutsche Gesundheitswesen und baut auf dem [[DVG]] (2019) und dem [[PDSG]] (2020) auf.
+Das DigiG (Gesetz zur Beschleunigung der Digitalisierung des Gesundheitswesens) wurde am 25. März 2024 im Bundesgesetzblatt verkündet und trat größtenteils am 26. März 2024 in Kraft. Es ist das bis dahin weitreichendste Digitalisierungsgesetz für das deutsche Gesundheitswesen und baut auf dem [[DVG]] (2019) und dem [[PDSG]] (2020) auf.
 
 Das Herzstück des DigiG ist das **Opt-out-Modell für die [[ePA]]**: Ab dem 15. Januar 2025 wird für alle gesetzlich Versicherten automatisch eine elektronische Patientenakte angelegt. Wer keine haben möchte, muss der eigenen Krankenkasse gegenüber aktiv widersprechen. Damit soll die ePA-Nutzung von wenigen Prozent auf nahezu alle GKV-Versicherten gesteigert werden.
 
 Neben der ePA enthält das DigiG Regelungen zu [[Telemedizin]], DiGA, Cloud-Nutzung und der Governance der [[gematik]].
+
+Das DigiG ist kein Endpunkt der Gesetzgebung. Als Nachfolge des gescheiterten GDAG plant das [[BMG]] das **GDVG (Gesetz für digitale Versorgung und den Gesundheitsdatenraum)**, dessen Referentenentwurf für H1/2026 erwartet wird. Das GDVG soll die gematik zu einer modernen Digitalagentur umgestalten und den Gesundheitsdatenraum weiter ausbauen.
 
 ## Technische Details
 
@@ -28,7 +31,7 @@ Neben der ePA enthält das DigiG Regelungen zu [[Telemedizin]], DiGA, Cloud-Nutz
 Das DigiG änderte zahlreiche Paragrafen im [[SGB-V]], darunter:
 
 - **§ 335 SGB V (ePA Opt-out)**: Jeder GKV-Versicherte erhält automatisch eine ePA. Widerspruch ist gegenüber der Krankenkasse möglich.
-- **§ 393 SGB V (Cloud-Nutzung)**: Leistungserbringer dürfen Gesundheitsdaten in zertifizierten Cloud-Diensten verarbeiten. Gefordert wird die C5-Zertifizierung des [[BSI]] (Typ 1 bis 1. Juli 2024, Typ 2 bis 1. Juli 2025).
+- **§ 393 SGB V (Cloud-Nutzung)**: Leistungserbringer dürfen Gesundheitsdaten in zertifizierten Cloud-Diensten verarbeiten. Gefordert wird die [[BSI-C5|C5-Zertifizierung]] des [[BSI]] (Typ 1 bis 1. Juli 2024, Typ 2 bis 1. Juli 2025).
 - **§ 75b SGB V (IT-Sicherheit)**: Strengere IT-Sicherheitsanforderungen für Vertragsärzte, Umsetzung nach BSI-Richtlinien.
 - **§ 139e SGB V (DiGA)**: Erweiterung der DiGA auf Risikoklasse IIb (Medizinprodukte für komplexere Behandlungen wie Telemonitoring).
 
@@ -74,7 +77,8 @@ Das DigiG richtet einen **Digitalbeirat** bei der [[gematik]] ein. Dieser Beirat
 - [[PDSG]]: Vorläufergesetz (2020)
 - [[DiGA]]: Durch DigiG auf Risikoklasse IIb erweitert
 - [[gematik]]: Erhält durch DigiG einen Digitalbeirat
-- [[BSI]]: C5-Zertifizierung für Cloud-Nutzung nach § 393 SGB V
+- [[BSI]]: Zuständig für Kryptografiestandards und IT-Sicherheit in der TI
+- [[BSI-C5]]: C5-Zertifizierung für Cloud-Nutzung nach § 393 SGB V
 - [[GKV]]: Krankenkassen legen ePA für alle Versicherten an
 - [[Telematikinfrastruktur]]: TI-Rollout durch DigiG beschleunigt
 

@@ -41,7 +41,7 @@ Moderne KIS-Systeme sind modular aufgebaut. Ein typisches KIS besteht aus einem 
 
 - **RIS** (Radiologie-Informationssystem): Verwaltung radiologischer Aufträge und Befunde
 - **LIS** (Labor-Informationssystem): Labordatenverarbeitung
-- **PACS** (Picture Archiving and Communication System): Speicherung und Verteilung medizinischer Bilder ([[DICOM]])
+- **[[PACS]]** (Picture Archiving and Communication System): Speicherung und Verteilung medizinischer Bilder ([[DICOM]])
 - **Klinikapothekenmodul**: Medikamentenlogistik und Unit-Dose-Versorgung
 - **Stationssystem/Pflegedokumentation**: Pflegerische Dokumentation auf Station
 

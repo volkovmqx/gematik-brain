@@ -8,7 +8,8 @@
       "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/emedikationsplan-start-verschoben-auf-oktober-2026/68597927",
       "summary": "Der bundesweite Start des eMedikationsplans wurde von ursprünglich März 2026 auf Oktober 2026 verschoben. Ab Juli 2026 läuft zunächst eine kontrollierte Pilotphase in ausgewählten Modellregionen. Die Verschiebung begründet gematik mit der Priorisierung technischer Stabilität. Neu: Apotheken erhalten Schreibzugriff für OTC-Medikamente.",
       "relevantArticles": ["ePA.md"],
-      "action": "update",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
       "details": "ePA.md unter 'Versionen' bereits auf Oktober 2026 aktualisiert. Keine weiteren Änderungen nötig."
     },
     {
@@ -17,7 +18,8 @@
       "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/epa-ab-maerz-2026-kontrolle-per-push-nachricht/68447169",
       "summary": "Seit März 2026 können Versicherte per Smartphone-Benachrichtigung (Push-Nachricht) nachverfolgen, wer auf ihre ePA zugegriffen oder Änderungen vorgenommen hat. Dies ist eine neue Transparenzfunktion der ePA für alle.",
       "relevantArticles": ["ePA.md"],
-      "action": "update",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
       "details": "ePA.md im Abschnitt 'Transparenz und Kontrolle' bereits mit März 2026 und Push-Nachrichten dokumentiert. Kein Update nötig."
     },
     {
@@ -89,7 +91,8 @@
       "source": "https://www.gematik.de/newsroom/news-detail/popp-dienst-startet-mit-umsetzungsstufe-1-zuschlag-geht-an-rise",
       "summary": "Der PoPP-Dienst (Proof of Patient Presence) ist in Umsetzungsstufe 1 gestartet. RISE hat den Zuschlag für die Entwicklung erhalten. Stufe 1 deckt den kryptografisch gesicherten Nachweis der Patientenpräsenz per eGK beim Leistungserbringer ab (Praxis, Hausbesuch). Stufe 1 soll Mitte 2026 abgeschlossen sein. Stufe 2 (Online-Check-in, GesundheitsID, Telemedizin) ist für Ende 2026 geplant. PoPP löst perspektivisch das bisherige VSDM++-Verfahren ab.",
       "relevantArticles": ["Telematikinfrastruktur.md", "eGK.md", "VSDM.md"],
-      "action": "new_article",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
       "suggestedTerm": "PoPP"
     },
     {
@@ -109,7 +112,8 @@
       "source": "https://www.eqs-news.com/news/corporate/gematik-verlangert-docmorris-cardlink-zulassung-bis-januar-2027/0133220b-a3d8-40be-ab4e-9516349bb3ca",
       "summary": "Gematik hat die Produktzulassung für CardLink (eGK-basiertes E-Rezept-Einlösen per App ohne PIN) für DocMorris und Redcare bis Ende Januar 2027 verlängert. Die Verlängerung überbrückt den Übergang zur PoPP-Technologie. Gematik plant, die kontaktlose eGK-Nutzung ohne PIN auch im PoPP-Kontext bis Ende 2026 verfügbar zu machen.",
       "relevantArticles": ["E-Rezept.md", "eGK.md"],
-      "action": "new_article",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
       "suggestedTerm": "CardLink"
     },
     {
@@ -193,7 +197,8 @@
       "source": "https://www.bfdi.bund.de/DE/Buerger/Inhalte/Telematik-Statistik-Verkehr-Bildung/Weiteres/FAQ-eRezept.html",
       "summary": "Ab Mitte 2026 werden E-Rezept-Daten aus der ePA pseudonymisiert an das Forschungsdatenzentrum Gesundheit (FDZ) übermittelt. Grundlage ist das Gesundheitsdatennutzungsgesetz (GDNG). E-Rezept-Daten werden seit Januar 2025 automatisch in die eML der ePA kopiert.",
       "relevantArticles": ["E-Rezept.md", "ePA.md"],
-      "action": "new_article",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
       "suggestedTerm": "Forschungsdatenzentrum Gesundheit"
     },
     {
@@ -271,8 +276,9 @@
       "source": "https://www.aerztezeitung.de/Wirtschaft/Welche-neuen-ePA-Funktionen-2026-kommen-sollen-460768.html",
       "summary": "Für 2026 geplante ePA-Erweiterungen: (1) Volltextsuche in Dokumenten für Ärzte und Patienten. (2) Strukturierte Dosierungsangaben im eMedikationsplan (mit Apotheken-Schreibzugriff). (3) Integration von Medizinischen Informationsobjekten (MIOs): Mutterpass, Impfausweis, Kinderuntersuchungsheft, Zahnärztliches Bonusheft. Zeitplan für MIOs noch nicht finalisiert.",
       "relevantArticles": ["ePA.md"],
-      "action": "update",
-      "details": "ePA.md sollte Volltextsuche und MIO-Integration als geplante Funktionen für 2026 ergänzen.",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
+      "details": "ePA.md Volltextsuche-Zeitplan präzisiert: Pilot Q3/2026, bundesweiter Rollout ab Januar 2027.",
       "suggestedTerm": "MIO"
     },
     {
@@ -291,18 +297,20 @@
       "summary": "Am 3. März 2026 veröffentlichte gematik die finale Spezifikation des PoPP-Service (Proof of Patient Presence) Version 1.0.0. Damit ist die Umsetzungsstufe 1 technisch vollständig spezifiziert. RISE hat den Implementierungsauftrag erhalten. Produktivstart Stufe 1 (eGK-basierter Präsenznachweis in Praxis und Hausbesuch): Mitte 2026. Stufe 2 (Telemedizin, GesundheitsID) folgt Q4/2026.",
       "relevantArticles": ["Telematikinfrastruktur.md", "eGK.md", "VSDM.md"],
       "category": "specification",
-      "action": "new_article",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
       "suggestedTerm": "PoPP"
     },
     {
       "title": "TI-Anbindungsfrist für Heil- und Hilfsmittelerbringer auf Oktober 2027 verlängert",
       "date": "2026-01-01",
+      "appliedDate": "2026-03-18",
       "source": "https://www.verbandsbuero.de/ti-anbindung-fristverlaengerung-bis-oktober-2027/",
       "summary": "Der Bundestag verschob die verpflichtende TI-Anbindung für Heil- und Hilfsmittelerbringer (Physiotherapeuten, Ergotherapeuten, Logopäden, Podologen etc.) vom ursprünglichen Termin 1. Januar 2026 auf den 1. Oktober 2027. Begründung: Die elektronische Heilmittelverordnung (eVO), der zentrale Nutzwert für diese Gruppe, ist noch nicht verfügbar. Verbände begrüßen die Verschiebung ausdrücklich.",
       "relevantArticles": ["Telematikinfrastruktur.md", "E-Rezept.md"],
       "category": "regulation",
-      "action": "update",
-      "details": "E-Rezept.md und Telematikinfrastruktur.md sollten vermerken, dass die TI-Pflicht für Heilmittelerbringer auf Oktober 2027 verschoben wurde. Dies tangiert auch den Rollout der eVO."
+      "action": "applied",
+      "details": "E-Rezept.md aktualisiert: TI-Anbindungspflicht für Heilmittelerbringer auf 1. Oktober 2027 verschoben. Verordner-Pflicht ab 1. Januar 2027 klargestellt."
     },
     {
       "title": "vzbv: ePA hat viel Potenzial, bislang wenig Nutzen (Februar 2026)",
@@ -353,9 +361,10 @@
       "summary": "Fast 50 Vertreter aus 14 EU-Ländern und der Europäischen Kommission besuchten die gematik am 16. März 2026. Themen: grenzübergreifender Austausch von Gesundheitsdaten via MyHealth@EU (NCPeH als Gateway zwischen TI und EHDS) sowie Umsetzung der EHDS-Verordnung (EU 2025/327, in Kraft seit März 2025). Ziel: Bürger sollen ab 2029 Gesundheitsdaten (Patientenzusammenfassung, E-Rezept) EU-weit nutzen können.",
       "relevantArticles": ["Telematikinfrastruktur.md", "ePA.md", "E-Rezept.md"],
       "category": "regulation",
-      "action": "new_article",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
       "suggestedTerm": "NCPeH",
-      "details": "NCPeH (National Contact Point for eHealth) ist noch nicht als eigener Artikel dokumentiert. Artikel würde MyHealth@EU-Integration und EHDS-Kontext für Deutschland abdecken."
+      "details": "NCPeH-Artikel bereits vorhanden. Artikel erfasst MyHealth@EU-Integration und EHDS-Kontext für Deutschland."
     },
     {
       "title": "TI-Dashboard: Nutzungsstatistiken für TI-Messenger jetzt öffentlich einsehbar",
@@ -382,9 +391,10 @@
       "summary": "Seit dem 25. Februar 2026 können in Österreich erstmals elektronische Rezepte aus anderen EU-Staaten (zunächst Tschechien) eingelöst werden. Österreich ist damit Teil von MyHealth@EU, der europäischen Infrastruktur für grenzüberschreitenden Gesundheitsdatenaustausch. Deutschland plant die Teilnahme an MyHealth@EU (E-Rezept) für Wave 10 in 2026. Ab 2029 ist EU-weite Pflicht geplant. Das NCPeH ist das deutsche Gateway zur europäischen Infrastruktur.",
       "relevantArticles": ["E-Rezept.md", "Telematikinfrastruktur.md"],
       "category": "regulation",
-      "action": "new_article",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
       "suggestedTerm": "MyHealth@EU",
-      "details": "MyHealth@EU ist noch nicht als eigener Artikel dokumentiert. Sollte zusammen mit NCPeH beschrieben werden."
+      "details": "MyHealth@EU-Artikel bereits vorhanden. Artikel zusammen mit NCPeH dokumentiert."
     },
     {
       "title": "HDDT Release Candidate 26_1: FHIR-Profile für Lungenfunktion und Blutdruck (März 2026)",
@@ -434,8 +444,9 @@
       "summary": "Die vom Chaos Computer Club (CCC) Ende 2024 aufgedeckten ePA-Sicherheitslücken (Nutzung gefälschter SMC-B-Karten für Massenzugriff auf Patientenakten) wurden durch Sofortmaßnahmen teilweise geschlossen. Die endgültige technische Lösung aller bekannten Angriffsszenarien ist die Einführung von PoPP (Proof of Patient Presence), die 2026 produktiv geht. BSI und gematik betonen, dass kein Massenmissbrauch stattgefunden hat.",
       "relevantArticles": ["ePA.md"],
       "category": "security",
-      "action": "update",
-      "details": "ePA.md sollte den CCC-Vorfall und den PoPP-basierten Fix als Sicherheitskontext ergänzen."
+      "action": "applied",
+      "appliedDate": "2026-03-18",
+      "details": "ePA.md Sicherheitsabschnitt bereits dokumentiert (CCC-Vorfall Ende 2024, Sofortmaßnahmen, PoPP als dauerhafte Lösung)."
     },
     {
       "title": "GesundheitsID als Versicherungsnachweis: eGK wird nicht abgeschafft (Faktencheck gematik)",
@@ -444,8 +455,9 @@
       "summary": "Gematik stellt klar: Die elektronische Gesundheitskarte (eGK) wird nicht abgeschafft. Die GesundheitsID ist ab 2026 ein zusätzlicher, digitaler Weg für den Versicherungsnachweis. Beide Wege koexistieren. Die GesundheitsID ermöglicht den Nachweis per Smartphone, ohne physische Karte. Frühestens 2027 soll die GesundheitsID als vollwertiger Arztbesuch-Ersatz für die eGK nutzbar sein.",
       "relevantArticles": ["Gesundheits-ID.md", "eGK.md"],
       "category": "info",
-      "action": "update",
-      "details": "Gesundheits-ID.md nennt 2027 als Datum für vollwertigen eGK-Ersatz beim Arztbesuch. Der Faktencheck bestätigt dies. Kein Update nötig, aber der Mythos der eGK-Abschaffung könnte als FAQ-Punkt ergänzt werden."
+      "action": "applied",
+      "appliedDate": "2026-03-18",
+      "details": "Kein Update nötig. Gesundheits-ID.md dokumentiert 2027 bereits als Datum für vollwertigen eGK-Ersatz."
     },
     {
       "title": "ePA: Abrechnungsdaten ab 1. Januar 2026 nur noch für Patienten sichtbar",
@@ -454,8 +466,9 @@
       "summary": "Seit 1. Januar 2026 sind Abrechnungsdaten in der ePA ausschließlich für die Versicherten selbst sichtbar. Ärzte, Therapeuten und Apotheker können diese Daten nicht mehr einsehen, solange der Patient sie nicht explizit freigibt. Grundlage ist das Gesetz zur Befugniserweiterung und Entbürokratisierung in der Pflege (BEEP), das gleichzeitig in Kraft trat. Außerdem: Praxen können seit 1. Januar 2026 in therapeutisch begründeten Einzelfällen auf die ePA-Befüllung verzichten (§ 347 SGB V).",
       "relevantArticles": ["ePA.md"],
       "category": "regulation",
-      "action": "update",
-      "details": "ePA.md sollte die neue Abrechnungsdaten-Datenschutzfunktion (ab 01.01.2026, nur Patienten sichtbar) und die therapeutische Ausnahme von der Befüllungspflicht gemäß § 347 SGB V dokumentieren."
+      "action": "applied",
+      "appliedDate": "2026-03-18",
+      "details": "ePA.md aktualisiert: § 347 SGB V Ausnahme ergänzt. BEEP-Gesetz und Abrechnungsdaten-Sichtbarkeit bereits korrekt dokumentiert."
     },
     {
       "title": "DiGA per E-Rezept verordnungsfähig seit Oktober 2025",

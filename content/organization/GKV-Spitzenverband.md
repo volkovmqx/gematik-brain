@@ -3,6 +3,7 @@ title: GKV-Spitzenverband
 audience: [technical, non-technical]
 tags: [organisation, gkv, finanzierung, governance, gematik]
 aliases: [GKV-SV, Spitzenverband Bund der Krankenkassen]
+maturity: immergruen
 ---
 
 # GKV-Spitzenverband
@@ -30,7 +31,7 @@ Als Dachverband aller gesetzlichen Krankenkassen vertritt der GKV-Spitzenverband
 
 ### Rolle in der gematik
 
-Der GKV-Spitzenverband ist mit **22,05 Prozent** zweitgrößter Gesellschafter der [[gematik]] (nach dem Bundesministerium für Gesundheit mit 51 Prozent). Er finanziert gemeinsam mit den anderen Kassenvertretern rund **93 Prozent** der laufenden gematik-Betriebskosten über die GKV-Umlage, die sich 2026 nach Angaben der Krankenkassen auf rund **100 Millionen Euro jährlich** beläuft (zuzüglich 37 Cent je GKV-Mitglied).
+Der GKV-Spitzenverband ist mit **22,05 Prozent** zweitgrößter Gesellschafter der [[gematik]] (nach dem Bundesministerium für Gesundheit mit 51 Prozent). Er finanziert gemeinsam mit den anderen Kassenvertretern rund **93 Prozent** der laufenden gematik-Betriebskosten über die GKV-Umlage, die sich 2026 nach Branchenschätzungen auf rund **100 Millionen Euro jährlich** beläuft (zuzüglich 37 Cent je GKV-Mitglied).
 
 Diese finanzielle Last ist ein dauerhafter Konfliktpunkt. In einem gemeinsamen Positionspapier (Januar 2026) forderten mehrere große Kassen (AOK, BARMER, TK, DAK) die Transformation der gematik zu einer öffentlich finanzierten Digitalagentur, um die einseitige Belastung der GKV zu beenden.
 

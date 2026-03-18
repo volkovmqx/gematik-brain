@@ -28,7 +28,7 @@ Auf Bundesebene ist die [[KBV]] (Kassenärztliche Bundesvereinigung) der Dachver
 
 ### KVDT: Abrechnungsdatenformat
 
-Das **KVDT** (Kassenärztlicher Datentransfer) ist das standardisierte Dateiformat für die Übertragung von Abrechnungsdaten aus dem [[PVS|Praxisverwaltungssystem (PVS)]] an die jeweilige KV. Es gehört zur Familie der xDT-Formate (KVDT, GDT, LDT, BDT), die von der [[KBV]] und den KVen spezifiziert werden.
+Das **KVDT** (Kassenärztlicher Datentransfer) ist das standardisierte Dateiformat für die Übertragung von Abrechnungsdaten aus dem [[PVS|Praxisverwaltungssystem (PVS)]] an die jeweilige KV. Es gehört zur Familie der [[xDT]]-Formate (KVDT, GDT, LDT, BDT), die von der [[KBV]] und den KVen spezifiziert werden.
 
 Der Abrechnungsworkflow:
 1. Arzt erfasst Behandlungsfall im [[PVS]]
