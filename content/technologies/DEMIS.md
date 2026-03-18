@@ -60,6 +60,12 @@ Die Authentifizierung der meldenden Einrichtungen erfolgt über Zertifikate, die
 
 Eingehende Meldungen durchlaufen beim RKI eine automatische Validierung gegen die FHIR-Profile. Fehlerhafte Meldungen werden zurückgewiesen mit einer strukturierten Fehlermeldung (FHIR OperationOutcome). Valide Meldungen werden in das RKI-eigene Surveillance-System übernommen und fließen in Lageberichte und die öffentliche Statistik ein.
 
+### Änderungen ab April 2026
+
+Ab **April 2026** gelten neue Pflichten für meldende Labore:
+
+- **Stammdaten-Pflicht**: Labore müssen ihre DEMIS-Stammdaten korrekt und aktuell gepflegt haben, um weiterhin Meldungen einreichen zu können. Unvollständige oder veraltete Stammdaten führen zur Zurückweisung von Meldungen.
+- **Aktualisiertes Meldungsformat**: Das Meldungsformat und die verwendeten Codelisten (LOINC, SNOMED CT) wurden aktualisiert. Primärsysteme müssen die neuen Profile unterstützen.
 ### Abgrenzung zu anderen Systemen
 
 DEMIS ist kein Teil der klinischen TI-Infrastruktur (kein Dienst der [[Telematikinfrastruktur]]). Es ist ein Fachsystem des öffentlichen Gesundheitsdienstes. Schnittstellen zur TI bestehen nicht direkt, aber indirekt über gemeinsame Standards ([[FHIR]], [[ICD-10-GM]]) und die Nutzung von Patientenidentifikatoren.

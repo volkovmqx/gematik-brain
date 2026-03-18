@@ -59,6 +59,22 @@ Die gematik arbeitet eng mit dem [[BSI]] (Bundesamt für Sicherheit in der Infor
 
 Alle technischen Anforderungen werden in gemSpec-Dokumenten veröffentlicht. Diese sind öffentlich zugänglich unter [gemspec.gematik.de](https://gemspec.gematik.de). Die Spezifikationen umfassen Architekturkonzepte (gemKPT), Produkttypsteckbriefe (gemProdT) und Schnittstellenbeschreibungen (gemSpec).
 
+## Aktuelle Entwicklungen
+
+### GDAG gescheitert
+
+Das **GDAG (Gesundheits-Digitalagentur-Gesetz)** sollte die gematik zu einer modernen Bundesagentur umstrukturieren. Der Gesetzentwurf scheiterte mit dem Ende der Ampel-Koalition: Die zweite und dritte Lesung im Bundestag fanden aufgrund der vorzeitigen Neuwahl nicht mehr statt. Der Koalitionsvertrag von CDU/CSU und SPD (2025) sieht weiterhin vor, die gematik zu einer "modernen Agentur" weiterzuentwickeln. Ein konkreter Nachfolgegesetzentwurf liegt noch nicht vor.
+
+### Strategische Leitsätze 2026
+
+Am **15. Januar 2026** veröffentlichte gematik-CEO Dr. Florian Fuhrmann sieben strategische Leitsätze für die Weiterentwicklung der gematik. Kernaussagen:
+
+- Digitalisierung im Gesundheitswesen ist keine Option, sondern Pflicht
+- Betriebsstabilität hat höchste Priorität: Bestehende Dienste müssen zuverlässig funktionieren
+- Komplexität muss reduziert werden, nicht erhöht
+- Vernetztes Denken über Sektorengrenzen hinweg ist notwendig
+- Schnelle Umsetzung ist wichtiger als perfekte Planung
+
 ## Verknüpfungen
 
 - Verantwortet die [[Telematikinfrastruktur]]

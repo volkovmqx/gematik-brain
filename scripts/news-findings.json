@@ -431,6 +431,66 @@
       "category": "info",
       "action": "update",
       "details": "Gesundheits-ID.md nennt 2027 als Datum für vollwertigen eGK-Ersatz beim Arztbesuch. Der Faktencheck bestätigt dies. Kein Update nötig, aber der Mythos der eGK-Abschaffung könnte als FAQ-Punkt ergänzt werden."
+    },
+    {
+      "title": "ePA: Abrechnungsdaten ab 1. Januar 2026 nur noch für Patienten sichtbar",
+      "date": "2026-01-01",
+      "source": "https://borncity.com/news/epa-update-patienten-erhalten-alleinige-kontrolle-ueber-abrechnungsdaten/",
+      "summary": "Seit 1. Januar 2026 sind Abrechnungsdaten in der ePA ausschließlich für die Versicherten selbst sichtbar. Ärzte, Therapeuten und Apotheker können diese Daten nicht mehr einsehen, solange der Patient sie nicht explizit freigibt. Grundlage ist das Gesetz zur Befugniserweiterung und Entbürokratisierung in der Pflege (BEEP), das gleichzeitig in Kraft trat. Außerdem: Praxen können seit 1. Januar 2026 in therapeutisch begründeten Einzelfällen auf die ePA-Befüllung verzichten (§ 347 SGB V).",
+      "relevantArticles": ["ePA.md"],
+      "category": "regulation",
+      "action": "update",
+      "details": "ePA.md sollte die neue Abrechnungsdaten-Datenschutzfunktion (ab 01.01.2026, nur Patienten sichtbar) und die therapeutische Ausnahme von der Befüllungspflicht gemäß § 347 SGB V dokumentieren."
+    },
+    {
+      "title": "DiGA per E-Rezept verordnungsfähig seit Oktober 2025",
+      "date": "2025-10-01",
+      "source": "https://www.gematik.de/anwendungen/diga",
+      "summary": "Seit Oktober 2025 können Digitale Gesundheitsanwendungen (DiGA) als E-Rezept verordnet werden. Das E-Rezept für DiGA wird nicht in der Apotheke, sondern bei der Krankenkasse eingereicht. Die Kasse erstellt daraufhin einen Gutscheincode für die DiGA-App. Ein Pilotprojekt lief von Mai bis September 2025. Etwa 15 von 91 im BfArM-Verzeichnis gelisteten DiGA wurden in den ersten Tests via E-Rezept verordnet.",
+      "relevantArticles": ["DiGA.md", "E-Rezept.md"],
+      "category": "specification",
+      "action": "update",
+      "details": "DiGA.md und E-Rezept.md sollten die DiGA-E-Rezept-Verordnungsmöglichkeit seit Oktober 2025 dokumentieren. Wichtiger Hinweis: DiGA-E-Rezept geht nicht an Apotheke, sondern an Krankenkasse."
+    },
+    {
+      "title": "EUDI-Wallet Testumgebung gestartet (28. Januar 2026)",
+      "date": "2026-01-28",
+      "source": "https://www.heise.de/en/news/EUDI-Wallet-gets-a-test-environment-11157061.html",
+      "summary": "Am 28. Januar 2026 wurde eine Testumgebung (Sandbox) für die deutsche EUDI-Wallet bereitgestellt, betrieben vom Bundesministerium für Digitales und Staatsmodernisierung (BMDS) und der Bundesagentur für Sprunginnovationen (SPRIND). Unternehmen und Verwaltung können dort die Grundfunktion der digitalen Identifikation via Person Identification Data (PID) testen. Die erste öffentliche Stufe der deutschen EUDI-Wallet ist für Anfang 2027 geplant. Nach 12 Monaten können alternative Wallet-Anbieter ihre Lösungen als EUDI-Wallet zertifizieren lassen.",
+      "relevantArticles": ["EUDI-Wallet.md", "Gesundheits-ID.md"],
+      "category": "specification",
+      "action": "update",
+      "details": "EUDI-Wallet.md sollte den Start der Testumgebung am 28. Januar 2026 und den geplanten Produktivstart Anfang 2027 ergänzen.",
+      "suggestedTerm": "EUDI-Wallet"
+    },
+    {
+      "title": "GFF klagt gegen zentrales Gesundheitsdaten-Speichersystem / FDZ Gesundheit (Februar 2026)",
+      "date": "2026-02-26",
+      "source": "https://borncity.com/blog/2026/02/26/gff-klage-gegen-zentrale-gesundheitsdatenspeicherung-aufgenommen/",
+      "summary": "Die Gesellschaft für Freiheitsrechte (GFF, unterstützt vom CCC) hat im Februar 2026 eine Klage gegen das Forschungsdatenzentrum Gesundheit (FDZ) aufgenommen. Kritikpunkte: Die Pseudonymisierung der Daten von 73 Millionen GKV-Versicherten reiche nicht aus (Re-Identifizierung bei seltenen Krankheiten möglich). Es fehlen gesetzlich verankerte ausreichende Sicherheitsstandards und moderne Verschlüsselung. GKV-Versicherte haben kein Widerspruchsrecht gegen die Datenübermittlung an das FDZ, PKV-Versicherte hingegen schon.",
+      "relevantArticles": ["ePA.md", "GDNG.md"],
+      "category": "security",
+      "action": "update",
+      "details": "ePA.md und GDNG.md sollten die GFF-Klage gegen das FDZ und die Kritik an der Pseudonymisierung als rechtlichen Kontext ergänzen."
+    },
+    {
+      "title": "ePA im Krankenhaus: KIS-Pflichtmodule ab April 2026, Sanktionen bei Fehlen",
+      "date": "2026-03-04",
+      "source": "https://www.gematik.de/newsroom/news-detail/die-epa-im-krankenhaus-einblicke-aus-den-dr-erler-kliniken-in-nuernberg",
+      "summary": "Ab April 2026 müssen Krankenhäuser, deren Krankenhausinformationssystem (KIS) kein zertifiziertes ePA-Modul enthält, mit finanziellen Sanktionen rechnen. Gematik veröffentlichte im März 2026 einen Erfahrungsbericht der Dr.-Erler-Kliniken Nürnberg als frühes Anwenderbeispiel für die ePA im stationären Bereich. Der Großteil der Kliniken erwartet den flächendeckenden ePA-Betrieb erst im ersten oder zweiten Quartal 2026.",
+      "relevantArticles": ["ePA.md", "KIS.md"],
+      "category": "regulation",
+      "action": "update",
+      "details": "ePA.md und KIS.md sollten den Sanktionstermin April 2026 für KIS-Einrichtungen ohne zertifiziertes ePA-Modul dokumentieren."
+    },
+    {
+      "title": "VSDM2_25_3 Spezifikationsrelease veröffentlicht (2. Februar 2026)",
+      "date": "2026-02-02",
+      "source": "https://gemspec.gematik.de/releases/VSDM2_25_3/index.html",
+      "summary": "Am 2. Februar 2026 veröffentlichte gematik den Release VSDM2_25_3 mit 3 aktualisierten Dokumenten (Spezifikation, Anbietersteckbrief, Produktsteckbrief für VSDM 2 FD). Das Release enthält Korrekturen und Klarstellungen für die VSDM-2.0-Implementierung und ist Voraussetzung für die Zulassung zum Produktivbetrieb ab Juni 2026.",
+      "relevantArticles": ["VSDM.md"],
+      "category": "specification",
+      "action": "info_only"
     }
   ]
 }

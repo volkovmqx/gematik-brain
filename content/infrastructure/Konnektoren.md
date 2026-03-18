@@ -2,6 +2,7 @@
 title: Konnektoren
 audience: [technical, non-technical]
 tags: [infrastruktur, konnektor, hardware]
+aliases: [Konnektor, TI-Konnektor, Health Connector]
 ---
 
 # Konnektoren
@@ -17,6 +18,7 @@ Der Konnektor ist eine kleine Box, die in jeder Arztpraxis, Apotheke und jedem K
 Jede Einrichtung im Gesundheitswesen braucht entweder einen Konnektor oder die neue [[TI-Gateway]]-Lösung, um an der TI teilzunehmen.
 
 ### Funktionen
+
 - VPN-Verbindung zur TI
 - Signatur-Erstellung ([[QES]]) mit [[HBA]] und [[SMC-B]]
 - Ver- und Entschlüsselung für [[KIM]]
@@ -26,20 +28,51 @@ Jede Einrichtung im Gesundheitswesen braucht entweder einen Konnektor oder die n
 ## Architektur
 
 ### Komponenten
+
 - **Konnektor-Hardware**: Zertifiziertes Gerät (z.B. von secunet, RISE)
 - **Kartenterminals**: eHealth-KT zum Lesen der Chipkarten
 - **Primärsystem**: Praxis-/Apothekensoftware ([[PVS]], [[AVS]], [[KIS]])
 
-### Schnittstellen
-- SOAP-Webservices: Signatur, Verschlüsselung, Kartendienste
-- gRPC: Neuere APIs (TI 2.0)
-- LDAP: Verzeichnisdienstabfragen
-
 ### Netzwerk
+
 - ECC 256 Verschlüsselung (seit 1. Januar 2026 Pflicht; RSA-only-Konnektoren haben keinen TI-Zugang mehr)
 - IPv4 mit Standard-MTU von 1500 (konfigurierbar)
 - IPv6 mit Dual-Stack-Lite und reduzierter MTU von 1400
 - Größere Einrichtungen nutzen Highspeed-Konnektoren für Skalierbarkeit
+
+## Technische Details
+
+### SOAP-Webservices
+
+Das Primärsystem kommuniziert mit dem Konnektor über SOAP-Webservices. Diese Schnittstelle ist in der gemSpec_Kon (Konnektor-Spezifikation) der [[gematik]] definiert. Die wichtigsten Dienste:
+
+- **SignaturDienst**: Erstellt und prüft qualifizierte elektronische Signaturen ([[QES]]) via [[HBA]]
+- **VerschlüsselungsDienst**: Ver- und Entschlüsselung von Nachrichten (für [[KIM]])
+- **ZertifikatsDienst**: Liest Zertifikate von Smartcards und prüft deren Gültigkeit via [[OCSP]]
+- **EventDienst**: Benachrichtigt das Primärsystem über Kartenereignisse (z.B. Karte eingesteckt)
+- **KartendiensteKomfort**: Bietet vereinfachte Kartenadministration
+
+Die SOAP-Schnittstelle ist abwärtskompatibel gehalten, damit bestehende Primärsysteme ohne Anpassung weitergenutzt werden können.
+
+### gRPC für TI 2.0
+
+Mit der Einführung von TI 2.0 werden neben SOAP auch **gRPC**-basierte APIs eingeführt. gRPC ist effizienter als SOAP, binärbasiert und besser für moderne Anwendungsarchitekturen geeignet. Neue Primärsysteme und Fachdienste können damit direkt integriert werden.
+
+### ECC 256 Migration
+
+Seit 1. Januar 2026 ist ECC 256 (Elliptic Curve Cryptography) für alle Konnektoren Pflicht. RSA-only-Konnektoren verlieren seither den TI-Zugang. Hintergrund: RSA gilt langfristig als weniger sicher gegenüber Quantencomputer-Angriffen, und ECC ermöglicht bei gleichem Sicherheitsniveau kürzere Schlüssel und schnellere Operationen.
+
+### Netzwerkkonfiguration
+
+- **IPv4**: Standard-MTU 1500 Byte; der VPN-Overhead reduziert die effektive Nutzlast leicht
+- **IPv6**: Dual-Stack-Lite mit MTU 1400 Byte; ermöglicht parallelen Betrieb beider Protokollversionen
+- Die VPN-Verbindung läuft zu einem der über 19 zugelassenen VPN-Zugangsdienstanbieter
+
+### Highspeed-Konnektor (HSK) und HSM-B
+
+Für größere Einrichtungen (Krankenhäuser, MVZ) gibt es den **Highspeed-Konnektor (HSK)**. Er unterstützt höhere Durchsatzraten und kann mehrere Kartenterminals gleichzeitig verwalten.
+
+Im März 2026 startete die [[gematik]] einen Friendly-User-Test für das **HSM-B** (Hardware Security Module Typ B) im HSK-Kontext. Beim HSM-B wird die institutionelle Identität (bisher auf der physischen [[SMC-B]]-Karte) direkt im HSK gespeichert. Beteiligte Pilotpartner: RHÖN-KLINIKUM, D-Trust, DKTIG, RISE. HSK kann HSM-B und [[SMC-B]] parallel betreiben, was eine schrittweise Migration ermöglicht.
 
 ## TI 2.0: Ablösung durch TI-Gateway
 

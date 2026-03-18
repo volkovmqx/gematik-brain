@@ -2,6 +2,7 @@
 title: VSDM - Versichertenstammdatenmanagement
 audience: [technical, non-technical]
 tags: [prozess, vsdm, stammdaten]
+aliases: [Versichertenstammdatenmanagement, Versichertenstammdaten-Management]
 ---
 
 # VSDM - Versichertenstammdatenmanagement
@@ -58,7 +59,9 @@ VSDM 2.0 ist die **erste TI-2.0-Anwendung** mit [[Zero-Trust]]-Architektur. Wich
 - Prüfnachweis relevant für [[ePA]] und [[E-Rezept]]
 - Dienst auf der [[Telematikinfrastruktur]]
 - VSDM 2.0 ist Vorreiter für die TI-2.0-Architektur
+- [[PoPP]]: Ablöser des VSDM++-Präsenznachweises
 
 ## Quellen
 
 - [VSDM - Fachportal](https://fachportal.gematik.de/anwendungen/versichertenstammdaten-management)
+- [TI 2.0 – gematik](https://www.gematik.de/telematikinfrastruktur/ti-2-0)

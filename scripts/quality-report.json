@@ -1,0 +1,273 @@
+{
+  "lastRun": "2026-03-18",
+  "overallScore": 79,
+  "testResults": {
+    "passed": 73,
+    "failed": 6,
+    "total": 79
+  },
+  "articles": [
+    {
+      "file": "content/infrastructure/SMC-B.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        {
+          "type": "source_count",
+          "description": "Only 2 sources. Acceptable minimum met, but HSM-B/Friendly-User-Test claim (March 2026) has no dedicated source.",
+          "severity": "warning"
+        }
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/technologies/TI-Messenger.md",
+      "verdict": "revise",
+      "score": 72,
+      "issues": [
+        {
+          "type": "factual_inaccuracy",
+          "description": "Claims TI-Messenger Pro is 'seit Januar 2026 in Ausbaustufe 1 produktiv verfügbar'. gematik's own documentation indicates the specification work and test system updates for Pro 1.1 were still ongoing in February–March 2026, and productive availability for the broader market was not confirmed for January 2026. The article conflates approval/first-productive-instances with general availability.",
+          "severity": "error"
+        },
+        {
+          "type": "missing_section",
+          "description": "The 'Kosten für Anbieter' subsection (EUR 180/60 per month) cites no source. These figures are unverifiable from official gematik sources in the article.",
+          "severity": "warning"
+        }
+      ],
+      "fixInstructions": "Clarify the January 2026 productive-launch claim: either add a source (e.g. gematik press release) confirming the exact date, or soften to 'ab Anfang 2026'. Add or remove the cost figures if no official source can be cited."
+    },
+    {
+      "file": "content/infrastructure/Konnektoren.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [
+        {
+          "type": "unverified_claim",
+          "description": "'über 19 zugelassene VPN-Zugangsdienstanbieter' – number is plausible but no source given for the exact count.",
+          "severity": "warning"
+        }
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/infrastructure/Telematikinfrastruktur.md",
+      "verdict": "pass",
+      "score": 90,
+      "issues": [
+        {
+          "type": "minor_consistency",
+          "description": "eHBA G2.0 transition deadline cited as '30. Juni 2026' here and in HBA.md — consistent.",
+          "severity": "info"
+        }
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/technologies/ePA.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        {
+          "type": "factual_accuracy",
+          "description": "Launch date '15. Januar 2025' and 'Pflicht ab 1. Oktober 2025' confirmed by BMG and gematik sources. PoPP claim (V1.0.0 veröffentlicht am 3. März 2026) is consistent with PoPP.md. No issues found.",
+          "severity": "info"
+        }
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/organization/gematik.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [
+        {
+          "type": "minor_imprecision",
+          "description": "States gematik was founded in '2005'. Wikipedia and gematik.de confirm 'January 2005'. The year is correct.",
+          "severity": "info"
+        },
+        {
+          "type": "unverified_claim",
+          "description": "CEO Dr. Florian Fuhrmann '15. Januar 2026 strategische Leitsätze' – plausible, but no dedicated source URL in article for this specific claim.",
+          "severity": "warning"
+        }
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/concepts/Zero-Trust.md",
+      "verdict": "pass",
+      "score": 91,
+      "issues": [
+        {
+          "type": "factual_accuracy",
+          "description": "ZETA Open Source release on 15. Dezember 2025 confirmed by gematik newsroom. EY attribution: confirmed (EY Strategy and Transactions GmbH holds copyright on ZETA Tiger Testsuite, but is not the development/maintenance contractor per public sources — only copyright holder on test suite). The article states EY 'erhielt den Auftrag für Entwicklung und Wartung der zentralen Zero-Trust-Softwarekomponenten'. This is unverified; EY's role appears limited to the test suite. Flag as unverifiable.",
+          "severity": "warning"
+        }
+      ],
+      "fixInstructions": "Verify the claim that EY received the development and maintenance contract for ZETA core components. Public sources only show EY holding copyright on the Tiger test suite. If unconfirmed, either remove the EY sentence or qualify it as referring to the test suite only."
+    },
+    {
+      "file": "content/technologies/DEMIS.md",
+      "verdict": "revise",
+      "score": 68,
+      "issues": [
+        {
+          "type": "factual_inaccuracy",
+          "description": "Claims that as of April 2026, per '§ 7 Abs. 4 IfSG', negative SARS-CoV-2 PCR results must be reported to DEMIS. RKI and current IfSG sources confirm that only positive detections are reportable under § 7 IfSG. No source found for a legislative change mandating negative test reporting. This appears to be a fabricated regulatory change.",
+          "severity": "error"
+        },
+        {
+          "type": "unverified_claim",
+          "description": "The April 2026 Stammdaten-Pflicht and updated Meldungsformat are plausible gematik/RKI changes but have no source URL in the article.",
+          "severity": "warning"
+        }
+      ],
+      "fixInstructions": "Remove or correct the claim about negative SARS-CoV-2 PCR reporting. Current law (§ 7 IfSG) requires reporting only of positive pathogen detections. If a legislative amendment is intended, cite the specific Bundesgesetzblatt reference. Add sources for the April 2026 Stammdaten-Pflicht changes."
+    },
+    {
+      "file": "content/infrastructure/HBA.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        {
+          "type": "factual_accuracy",
+          "description": "G2.1 ECC transition, Übergangsfrist 30. Juni 2026, confirmed by gematik RSA-to-ECC migration page. '30.000 eHBAs noch auszutauschen' is unverifiable from official sources but is a plausible operational figure.",
+          "severity": "info"
+        },
+        {
+          "type": "unverified_claim",
+          "description": "'Ausnahme: Telekom-Kunden sind von der Übergangsfrist ausgenommen' — this specific exception for Telekom customers is not confirmed by public gematik documentation.",
+          "severity": "warning"
+        }
+      ],
+      "fixInstructions": "Verify or remove the Telekom exception claim. If it cannot be sourced from an official document, delete it."
+    },
+    {
+      "file": "content/standards/GDNG.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [
+        {
+          "type": "factual_accuracy",
+          "description": "Inkrafttreten '26. März 2024' confirmed by gesetze-im-internet.de. DSGVO Art. 9 Abs. 2 lit. i and j references are correct. FDZ at BfArM confirmed.",
+          "severity": "info"
+        },
+        {
+          "type": "source_quality",
+          "description": "Third source is aok.de (health insurer website), not an authoritative legal/governmental source. Fourth source (datenschutz.hessen.de) is a state DPA — acceptable but peripheral.",
+          "severity": "warning"
+        }
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/processes/PoPP.md",
+      "verdict": "pass",
+      "score": 80,
+      "issues": [
+        {
+          "type": "source_count",
+          "description": "Only 2 sources. One is gemspec.gematik.de (authoritative), one is gematik newsroom. Minimum met.",
+          "severity": "info"
+        },
+        {
+          "type": "unverified_claim",
+          "description": "States VSDM 1.0 Abschaltung is prospective. The PoPP spec search result mentions 'shutdown of VSDM1 services is planned for March 31, 2026' — this contradicts VSDM.md which says VSDM 1.0 runs until Mitte 2027. PoPP.md does not state a VSDM 1.0 shutdown date itself, so no direct error in PoPP.md.",
+          "severity": "info"
+        }
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/technologies/CardLink.md",
+      "verdict": "pass",
+      "score": 82,
+      "issues": [
+        {
+          "type": "source_count",
+          "description": "Only 2 sources (minimum met). DocMorris/Redcare January 2027 extension claim has no dedicated source.",
+          "severity": "warning"
+        },
+        {
+          "type": "unverified_claim",
+          "description": "The specific claim that DocMorris and Redcare zulassung was extended until January 2027 is plausible but unverified via official source.",
+          "severity": "warning"
+        }
+      ],
+      "fixInstructions": "Add a source for the DocMorris/Redcare CardLink extension until January 2027 (e.g. gematik press release or Fachportal page)."
+    },
+    {
+      "file": "content/infrastructure/NCPeH.md",
+      "verdict": "revise",
+      "score": 65,
+      "issues": [
+        {
+          "type": "factual_inaccuracy",
+          "description": "States 'Die gematik betreibt den NCPeH im Auftrag des BMG.' According to fachportal.gematik.de, the NCPeH is operated by DVKA (Deutsche Verbindungsstelle Krankenversicherung Ausland). gematik's role is specification and product type confirmation, not operation.",
+          "severity": "error"
+        },
+        {
+          "type": "source_quality",
+          "description": "Only 2 sources, and the first is a generic gematik newsroom URL without a specific article path — not a stable, citable reference.",
+          "severity": "warning"
+        },
+        {
+          "type": "missing_wikilink",
+          "description": "DVKA is mentioned in the operator role but does not appear in the article at all — the article incorrectly attributes operation to gematik.",
+          "severity": "error"
+        }
+      ],
+      "fixInstructions": "Correct the operator: DVKA (Deutsche Verbindungsstelle Krankenversicherung Ausland) betreibt den NCPeH; gematik ist für Spezifikation und Produkttypzulassung zuständig. Add DVKA as a Verknüpfung if a DVKA article exists or note it as prose. Replace the generic newsroom URL with the specific news article URL: https://www.gematik.de/newsroom/news-detail/grenzueberschreitender-digitaler-gesundheitsdatenaustausch-europaeische-delegation-bei-der-gematik"
+    },
+    {
+      "file": "content/technologies/E-Rezept.md",
+      "verdict": "revise",
+      "score": 60,
+      "issues": [
+        {
+          "type": "missing_section",
+          "description": "## Technische Details section is missing. The article has '### Technische Details' as a subsection under ## Architektur instead of a top-level H2 section. This causes test.sh to flag it as a structural failure.",
+          "severity": "error"
+        },
+        {
+          "type": "missing_frontmatter_field",
+          "description": "aliases field is missing from frontmatter. test.sh confirms this.",
+          "severity": "error"
+        }
+      ],
+      "fixInstructions": "1. Add aliases to frontmatter: aliases: [Elektronisches Rezept, eRezept]. 2. Promote '### Technische Details' to '## Technische Details' (H2 heading) so it is recognized as a required top-level section."
+    },
+    {
+      "file": "content/processes/VSDM.md",
+      "verdict": "revise",
+      "score": 58,
+      "issues": [
+        {
+          "type": "missing_frontmatter_field",
+          "description": "aliases field is missing from frontmatter. test.sh confirms this.",
+          "severity": "error"
+        },
+        {
+          "type": "insufficient_sources",
+          "description": "Only 1 source under Quellen. Minimum is 2. test.sh confirms this.",
+          "severity": "error"
+        }
+      ],
+      "fixInstructions": "1. Add aliases: [Versichertenstammdatenmanagement, VSDM 2.0] to frontmatter. 2. Add a second source, e.g. gematik TI 2.0 page: https://www.gematik.de/telematikinfrastruktur/ti-2-0"
+    }
+  ],
+  "contradictions": [
+    {
+      "claim": "VSDM 1.0 shutdown date",
+      "articleA": "content/processes/VSDM.md says VSDM 1.0 Abschaltung Mitte 2027 after February 2027 full rollout",
+      "articleB": "gemspec.gematik.de PoPP spec page (external) referenced 'planned shutdown of VSDM1 for March 31, 2026' — but this may refer to VSDM++ not VSDM 1.0 core. No internal article contradicts VSDM.md directly. Flag for monitoring."
+    }
+  ],
+  "staleArticles": [
+    "content/technologies/DEMIS.md — claims negative SARS-CoV-2 PCR results become reportable April 2026 per § 7 Abs. 4 IfSG; no legislative basis found for this change.",
+    "content/technologies/TI-Messenger.md — TI-Messenger Pro produktiv January 2026 claim needs sourcing; gematik documentation suggests specification work was still ongoing in February 2026.",
+    "content/infrastructure/NCPeH.md — incorrectly attributes NCPeH operation to gematik; operator is DVKA."
+  ]
+}

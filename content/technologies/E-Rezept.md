@@ -2,6 +2,7 @@
 title: E-Rezept
 audience: [technical, non-technical]
 tags: [anwendung, e-rezept, verordnung]
+aliases: [Elektronisches Rezept, eRezept, E-Rezept-Fachdienst]
 ---
 
 # E-Rezept
@@ -53,7 +54,7 @@ Der [[Fachdienst|E-Rezept-Fachdienst]] ist ein zentraler Dienst in der [[Telemat
 4. Versicherter weist Verordnung der Apotheke zu (per App, eGK oder Ausdruck)
 5. Apotheke ruft Verordnung ab und gibt das Medikament aus
 
-### Technische Details
+## Technische Details
 - Datenformat: [[FHIR]] R4 ([[KBV]]-Profile)
 - Transport: HTTPS über [[Telematikinfrastruktur]]
 - Signatur: [[QES|Qualifizierte elektronische Signatur]], geprüft bei der Abgabe
@@ -69,6 +70,7 @@ Jedes E-Rezept trägt eine qualifizierte elektronische Signatur. Apotheken prüf
 - Nutzt [[Konnektoren]] für die TI-Anbindung
 - Benachrichtigungen via [[KIM]]
 - Einlösung über [[eGK]]
+- Einlösung bei Online-Apotheken via [[CardLink]]
 - Signatur über [[SMC-B]] und [[HBA]]
 
 ## Quellen

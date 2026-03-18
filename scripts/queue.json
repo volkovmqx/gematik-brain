@@ -1,6 +1,22 @@
 {
   "pending": [
     {
+      "term": "Kartenterminal",
+      "category": "infrastructure",
+      "reason": "eHealth-Kartenterminal (eHealth-KT) ist das Lesegerät für eGK, HBA und SMC-B, das am Konnektor oder TI-Gateway hängt. In 20 Stellen über 14 Artikel erwähnt (HBA, SMC-B, eGK, Konnektoren, NFDM, VSDM, PVS, KIS, QES, GKV, PKV, gematik, eGBR, TI-Gateway). Zentrales Hardware-Bindeglied zwischen Chipkarte und TI ohne eigene Seite.",
+      "mentionedIn": [
+        "content/infrastructure/HBA.md",
+        "content/infrastructure/SMC-B.md",
+        "content/infrastructure/eGK.md",
+        "content/infrastructure/Konnektoren.md",
+        "content/infrastructure/TI-Gateway.md",
+        "content/processes/NFDM.md",
+        "content/processes/VSDM.md",
+        "content/concepts/QES.md"
+      ],
+      "priority": 38
+    },
+    {
       "term": "Kassenärztliche Vereinigung",
       "category": "organization",
       "reason": "KV (Kassenärztliche Vereinigung) ist die regionale Körperschaft, über die niedergelassene Ärzte mit den Krankenkassen abrechnen. In PVS.md als KVDT-Abrechnungsformat und in GKV.md als zentraler Akteur der ambulanten Versorgung erwähnt. Ohne KV kein ambulantes Abrechnungssystem.",
@@ -10,6 +26,17 @@
         "content/organization/KBV.md"
       ],
       "priority": 28
+    },
+    {
+      "term": "CDA",
+      "category": "standards",
+      "reason": "Clinical Document Architecture (HL7 CDA). Älterer HL7-Standard für strukturierte medizinische Dokumente (Arztbriefe, Entlassbriefe). In HL7.md als eigenständige Sektion beschrieben, in KIS.md und XDS.md als Format für klinische Dokumente erwähnt. Insgesamt 8 Nennungen in 3 Artikeln. Wichtig für Verständnis des Migrationspfads von CDA zu FHIR in der TI.",
+      "mentionedIn": [
+        "content/standards/HL7.md",
+        "content/infrastructure/KIS.md",
+        "content/standards/XDS.md"
+      ],
+      "priority": 26
     },
     {
       "term": "PZN",
@@ -24,6 +51,30 @@
       "priority": 25
     },
     {
+      "term": "DSGVO",
+      "category": "standards",
+      "reason": "Datenschutz-Grundverordnung (EU) 2016/679. In 5 Artikeln erwähnt (KVNR, DiGAV, SGB-V, GDNG, DiPA) als Rechtsgrundlage für Verarbeitung von Gesundheitsdaten. Direkt verlinkt in GDNG.md mit [[BDSG]]-Beziehung. Zentrale EU-Rechtsgrundlage für alle datenschutzrelevanten TI-Anwendungen.",
+      "mentionedIn": [
+        "content/concepts/KVNR.md",
+        "content/standards/DiGAV.md",
+        "content/standards/SGB-V.md",
+        "content/standards/GDNG.md",
+        "content/technologies/DiPA.md"
+      ],
+      "priority": 24
+    },
+    {
+      "term": "ÖGD",
+      "category": "organization",
+      "reason": "Öffentlicher Gesundheitsdienst (ÖGD), insbesondere Gesundheitsämter. In DEMIS.md, RKI.md und IfSG.md als zentrale Empfänger von Infektionsschutzmeldungen und als Akteure der öffentlichen Gesundheitsinfrastruktur erwähnt. Gesundheitsämter 13-mal in 3 Artikeln genannt. Wichtiger Knotenpunkt zwischen Meldesystemen (DEMIS) und Surveillance (RKI).",
+      "mentionedIn": [
+        "content/technologies/DEMIS.md",
+        "content/organization/RKI.md",
+        "content/standards/IfSG.md"
+      ],
+      "priority": 23
+    },
+    {
       "term": "InEK",
       "category": "organization",
       "reason": "Institut für das Entgeltsystem im Krankenhaus. Entwickelt das G-DRG-System und die Deutschen Kodierrichtlinien (DKR), die OPS und ICD-10-GM verbindlich anwenden. In OPS.md und ICD-10-GM.md als Herausgeber der Kodierrichtlinien für die DRG-Abrechnung erwähnt.",
@@ -34,14 +85,17 @@
       "priority": 22
     },
     {
-      "term": "CDA",
-      "category": "standards",
-      "reason": "Clinical Document Architecture (HL7 CDA). Älterer HL7-Standard für strukturierte medizinische Dokumente, z.B. Arztbriefe und Entlassbriefe. In HL7.md als Vorgänger von FHIR und in KIS.md als Format für Kliniknachrichten erwähnt. Relevant für Migrationspfad von CDA zu FHIR in der TI.",
+      "term": "OAuth 2.0",
+      "category": "concepts",
+      "reason": "OAuth 2.0 und OpenID Connect (OIDC) sind die Authentisierungs- und Autorisierungsprotokolle der TI. In 8 Artikeln außerhalb des IDP-Artikels erwähnt (VZD, TI-Federation, Gesundheits-ID, Fachdienst, Zero-Trust, mTLS, Telematikinfrastruktur). Grundlage für alle Token-basierten TI-Dienste.",
       "mentionedIn": [
-        "content/standards/HL7.md",
-        "content/infrastructure/KIS.md"
+        "content/infrastructure/IDP.md",
+        "content/infrastructure/VZD.md",
+        "content/infrastructure/TI-Federation.md",
+        "content/infrastructure/Gesundheits-ID.md",
+        "content/infrastructure/Fachdienst.md"
       ],
-      "priority": 20
+      "priority": 21
     },
     {
       "term": "KHVVG",
@@ -70,6 +124,16 @@
         "content/organization/BMG.md"
       ],
       "priority": 16
+    },
+    {
+      "term": "BDSG",
+      "category": "standards",
+      "reason": "Bundesdatenschutzgesetz. Mit [[BDSG]] wiki-link in GDNG.md verlinkt (einzige direkte Wiki-Verlinkung). Außerdem in SGB-V.md als Ergänzung der SGB-V-Datenschutzregelungen erwähnt. Nationales Datenschutzrecht, das die DSGVO im deutschen Gesundheitskontext ergänzt.",
+      "mentionedIn": [
+        "content/standards/GDNG.md",
+        "content/standards/SGB-V.md"
+      ],
+      "priority": 15
     },
     {
       "term": "IVDR",
@@ -216,7 +280,10 @@
     "LOINC",
     "DRG",
     "GDNG",
-    "E-Health-Gesetz"
+    "E-Health-Gesetz",
+    "PoPP",
+    "CardLink",
+    "NCPeH"
   ],
   "lastRun": "2026-03-18"
 }

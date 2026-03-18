@@ -1,0 +1,7 @@
+{
+  "timestamp": "2026-03-18T00:22:44Z",
+  "totalArticles": 79,
+  "passed": 75,
+  "failed": 4,
+  "issues": [{"file":"content/infrastructure/eGK.md","type":"missing_frontmatter_field","severity":"error","message":"Missing frontmatter field: aliases"},{"file":"content/processes/NFDM.md","type":"missing_frontmatter_field","severity":"error","message":"Missing frontmatter field: aliases"},{"file":"content/processes/NFDM.md","type":"insufficient_sources","severity":"warning","message":"Only 1 source(s) under Quellen (minimum 2)"},{"file":"content/technologies/eAU.md","type":"missing_frontmatter_field","severity":"error","message":"Missing frontmatter field: aliases"},{"file":"content/technologies/eAU.md","type":"missing_section","severity":"error","message":"Missing required section: ## Technische Details"},{"file":"content/technologies/KIM.md","type":"missing_frontmatter_field","severity":"error","message":"Missing frontmatter field: aliases"},{"file":"content/technologies/KIM.md","type":"missing_section","severity":"error","message":"Missing required section: ## Technische Details"}]
+}

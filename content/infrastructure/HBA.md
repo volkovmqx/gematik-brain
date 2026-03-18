@@ -58,6 +58,12 @@ Der HBA wird in ein Kartenterminal gesteckt, das am [[Konnektoren|Konnektor]] h�
 
 Die PIN-Eingabe am Kartenterminal ist für jede QES-Signatur Pflicht. Damit wird sichergestellt, dass der Inhaber selbst die Signatur autorisiert.
 
+### ECC-Migration und Übergangsfrist
+
+Die Vorgängergeneration **G2.0** unterstützte ausschließlich RSA. Die Übergangsfrist für den Wechsel von G2.0 (RSA) auf G2.1 (ECC) wurde bis zum **30. Juni 2026** verlängert. Über 30.000 eHBAs müssen noch ausgetauscht werden.
+
+Ab **1. Januar 2026** dürfen Kartenherausgeber nur noch ECC-fähige Karten produzieren. Ausnahme: Telekom-Kunden sind von der Übergangsfrist ausgenommen, da für dieses Segment die Migration bereits früher abgeschlossen wurde.
+
 ### Unterschied zu SMC-B
 
 | Merkmal | HBA | [[SMC-B]] |

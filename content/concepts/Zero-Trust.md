@@ -64,6 +64,15 @@ Die erste TI-2.0-Anwendung auf Zero-Trust-Basis ist [[VSDM]] 2.0, geplant zum 30
 
 Zero Trust ist kein einzelnes Produkt, sondern ein Gestaltungsprinzip. Das BSI betont, dass Zero Trust "keine einmalige Investition, sondern ein langfristiges Vorhaben" ist, das personelle und finanzielle Ressourcen erfordert.
 
+### ZETA: Zero-Trust-Implementierung für die TI
+
+Die konkrete Umsetzung von Zero Trust in der TI 2.0 erfolgt über das **ZETA**-Framework (Zero-Trust-Architektur). Am **15. Dezember 2025** veröffentlichte die [[gematik]] die zentralen ZETA-Komponenten als Open Source auf GitHub:
+
+- **ZETA-Client-SDK**: Bibliothek für die Integration in Primärsysteme und Fachdienste
+- **ZETA-Guard**: Enforcer-Komponente, die Zero-Trust-Richtlinien durchsetzt
+
+Der erste produktive Einsatz ist für **Juli 2026** mit [[VSDM]] 2.0 geplant. Die vollständige Migration der TI auf ZETA ist bis **2029** vorgesehen. Die EY Consulting GmbH erhielt den Auftrag für Entwicklung und Wartung der zentralen Zero-Trust-Softwarekomponenten für TI 2.0.
+
 ### Bezug zu NIST SP 800-207
 
 Das NIST-Dokument SP 800-207 "Zero Trust Architecture" von 2020 ist die führende Referenz für Zero-Trust-Architekturen. Es formuliert Grundprinzipien und Implementierungsansätze. Das BSI hat diese Konzepte für den deutschen Markt aufgegriffen.
