@@ -20,7 +20,7 @@ Ein KIS deckt den gesamten Behandlungsprozess im stationären Bereich ab, von de
 - Patientenaufnahme, Belegungsmanagement und Entlassung
 - Ärztliche Dokumentation: Anamnese, Diagnosen ([[ICD-10-GM]]), Therapieplanung
 - Pflegerische Dokumentation: Pflegepläne, Vitalzeichen, Medikamentenvergabe
-- Auftragsmanagement: Laboranforderungen, Radiologieanforderungen (Radiologie-Informationssystem, RIS)
+- Auftragsmanagement: Laboranforderungen, Radiologieanforderungen ([[RIS|Radiologie-Informationssystem, RIS]])
 - Medikamentenmanagement (Verbindung zum Klinikapothekensystem)
 - Abrechnung nach [[DRG]] (Diagnosis Related Groups) gegenüber den Krankenkassen
 - Kodierung nach ICD-10-GM und [[OPS]] (Operationen- und Prozedurenschlüssel)

@@ -70,9 +70,9 @@ Seit 1. Januar 2026 ist ECC 256 (Elliptic Curve Cryptography) für alle Konnekto
 
 ### Highspeed-Konnektor (HSK) und HSM-B
 
-Für größere Einrichtungen (Krankenhäuser, [[MVZ]]) gibt es den **Highspeed-Konnektor (HSK)**. Er unterstützt höhere Durchsatzraten und kann mehrere Kartenterminals gleichzeitig verwalten.
+Für größere Einrichtungen (Krankenhäuser, [[MVZ]]) gibt es den **[[Highspeed-Konnektor]] (HSK)**. Er unterstützt höhere Durchsatzraten und kann mehrere Kartenterminals gleichzeitig verwalten.
 
-Im März 2026 startete die [[gematik]] einen Friendly-User-Test für das **HSM-B** (Hardware Security Module Typ B) im HSK-Kontext. Beim HSM-B wird die institutionelle Identität (bisher auf der physischen [[SMC-B]]-Karte) direkt im HSK gespeichert. Beteiligte Pilotpartner: RHÖN-KLINIKUM, D-Trust, DKTIG, RISE. HSK kann HSM-B und [[SMC-B]] parallel betreiben, was eine schrittweise Migration ermöglicht.
+Im März 2026 startete die [[gematik]] einen Friendly-User-Test für das **[[HSM-B]]** (Hardware Security Module Typ B) im HSK-Kontext. Beim HSM-B wird die institutionelle Identität (bisher auf der physischen [[SMC-B]]-Karte) direkt im HSK gespeichert. Beteiligte Pilotpartner: RHÖN-KLINIKUM, D-Trust, DKTIG, RISE. HSK kann HSM-B und [[SMC-B]] parallel betreiben, was eine schrittweise Migration ermöglicht.
 
 ## TI 2.0: Ablösung durch TI-Gateway
 

@@ -15,7 +15,7 @@ Normalerweise hat jeder Arzt seine eigene Praxis. Ein MVZ ist wie ein Einkaufsze
 
 ## Überblick
 
-MVZ wurden durch das GKV-Modernisierungsgesetz vom 14. November 2003 (in Kraft seit 1. Januar 2004) in [[SGB-V]] § 95 eingeführt. Sie sind eine eigenständige Versorgungsform neben der klassischen Einzelpraxis. Gründen können ein MVZ unter anderem: Krankenhäuser, Vertragsärzte, Kommunen und bestimmte gemeinnützige Einrichtungen.
+MVZ wurden durch das GKV-Modernisierungsgesetz (GMG, verabschiedet November 2003, in Kraft ab 1. Januar 2004) in [[SGB-V]] § 95 eingeführt. Sie sind eine eigenständige Versorgungsform neben der klassischen Einzelpraxis. Gründen können ein MVZ unter anderem: Krankenhäuser, Vertragsärzte, Kommunen und bestimmte gemeinnützige Einrichtungen.
 
 Ein MVZ hat eine eigene Zulassung als Einrichtung und beschäftigt angestellte Ärzte oder lässt niedergelassene Ärzte mit ihren Kassenzulassungen im MVZ tätig sein. Die Abrechnung mit den Kassenärztlichen Vereinigungen ([[Kassenärztliche Vereinigung|KV]]) erfolgt über die Einrichtung, nicht über einzelne Ärzte.
 
@@ -30,7 +30,7 @@ Für die [[Telematikinfrastruktur]] sind MVZ relevanter als Einzelpraxen, weil s
 - Komplexere [[PVS|Praxisverwaltungssysteme (PVS)]] oder [[KIS|Krankenhausinformationssysteme (KIS)]] nutzen
 - Potenziell mehrere Kartenterminals und Netzwerksegmente betreiben
 
-Größere MVZ mit vielen Arztarbeitsplätzen setzen häufig einen **Highspeed-Konnektor (HSK)** ein, der mehrere Arztarbeitsplätze und Kartenterminals an einem zentralen Konnektor bündelt. Das ist wirtschaftlicher als ein separater [[Konnektoren|Konnektor]] pro Arztzimmer.
+Größere MVZ mit vielen Arztarbeitsplätzen setzen häufig einen **[[Highspeed-Konnektor]] (HSK)** ein, der mehrere Arztarbeitsplätze und Kartenterminals an einem zentralen Konnektor bündelt. Das ist wirtschaftlicher als ein separater [[Konnektoren|Konnektor]] pro Arztzimmer.
 
 ## Technische Details
 

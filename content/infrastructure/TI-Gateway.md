@@ -78,7 +78,7 @@ Laut gematik sollen künftig weitere Dienste über das TI-Gateway angeboten werd
 
 Zugelassene TI-Gateway-Anbieter konkurrieren um Einrichtungen als Kunden. Aktive Anbieter (Stand März 2026): **RISE**, **Arvato Systems**, **Akquinet** sowie die **Deutsche Telekom** mit dem Produkt **TI-Connect**.
 
-Telekom **TI-Connect** (seit Anfang 2026): Cloud-basiertes TI-Gateway ohne lokalen Konnektor. Einrichtungen verbinden sich per VPN mit einem Highspeed-Konnektor (HSK) im Telekom-Rechenzentrum. TI-Connect richtet sich insbesondere an größere Einrichtungen, die keine eigene Hardware betreiben wollen.
+Telekom **TI-Connect** (seit Anfang 2026): Cloud-basiertes TI-Gateway ohne lokalen Konnektor. Einrichtungen verbinden sich per VPN mit einem [[Highspeed-Konnektor]] (HSK) im Telekom-Rechenzentrum. TI-Connect richtet sich insbesondere an größere Einrichtungen, die keine eigene Hardware betreiben wollen.
 
 ### RISE-Ausfall März 2026
 

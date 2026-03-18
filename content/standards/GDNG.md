@@ -34,7 +34,7 @@ Das GDNG richtet beim [[BfArM]] eine zentrale **Datenzugangs- und Koordinierungs
 
 ### Forschungsdatenzentrum Gesundheit
 
-Das bestehende **Forschungsdatenzentrum Gesundheit (FDZ)** beim [[BfArM]] wird durch das GDNG ausgebaut. Das FDZ stellt pseudonymisierte Abrechnungsdaten der gesetzlichen Krankenversicherung ([[GKV]]) für zugelassene Forschungsprojekte bereit. Es war bereits vor dem GDNG durch das DVS (Digitale-Versorgung-und-Pflege-Modernisierungs-Gesetz) eingerichtet worden, wird aber durch das GDNG erheblich erweitert.
+Das bestehende **[[Forschungsdatenzentrum-Gesundheit|Forschungsdatenzentrum Gesundheit (FDZ)]]** beim [[BfArM]] wird durch das GDNG ausgebaut. Das FDZ stellt pseudonymisierte Abrechnungsdaten der gesetzlichen Krankenversicherung ([[GKV]]) für zugelassene Forschungsprojekte bereit. Es war bereits vor dem GDNG durch das DVS (Digitale-Versorgung-und-Pflege-Modernisierungs-Gesetz) eingerichtet worden, wird aber durch das GDNG erheblich erweitert.
 
 Das FDZ kann unter dem GDNG pseudonymisierte Daten mit weiteren Registerdaten verknüpfen, zum Beispiel mit klinischen Krebsregistern.
 

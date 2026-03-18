@@ -64,12 +64,17 @@ Ein LDAP-basiertes Adressbuch ([[VZD]]), in dem alle registrierten KIM-Teilnehme
 
 Dienstkennungen sind strukturierte Metadaten im KIM-Header, die eine automatische Verarbeitung eingehender Nachrichten ermöglichen. Sie identifizieren den Anwendungsfall (z.B. eAU-Meldung, Arztbrief, Abrechnungsdaten) und erlauben gezieltes Routing im Primärsystem.
 
+### Pflicht zur elektronischen Pflegeabrechnung
+
+Ab **1. Dezember 2026** müssen alle Pflegeeinrichtungen ihre Abrechnungsdaten nach SGB XI ausschließlich über KIM übermitteln. Eine papierbasierte Übermittlung ist ab diesem Zeitpunkt nicht mehr möglich. Voraussetzung ist die vollständige TI-Anbindung der Pflegeeinrichtung (Pflicht seit Juli 2025) einschließlich [[SMC-B]] und KIM-Client.
+
 ## Verknüpfungen
 
 - Wird ergänzt durch [[TI-Messenger]] für Echtzeit-Kommunikation
 - Transportweg für [[eAU]]
 - Nutzt [[Konnektoren]] und [[SMC-B]] für Verschlüsselung
 - Adressbuch über den [[VZD|Verzeichnisdienst]] der [[Telematikinfrastruktur]]
+- [[SGB XI]] (Pflegeabrechnungspflicht ab Dezember 2026)
 
 ## Quellen
 

@@ -15,7 +15,7 @@ Wenn ein Arzt dich behandelt, bekommt er dafür Geld von der Krankenkasse. Aber 
 
 ## Überblick
 
-Der EBM wird gemeinsam von der [[KBV]] (Kassenärztliche Bundesvereinigung) und dem GKV-Spitzenverband im **Bewertungsausschuss** beschlossen. Er ist das zentrale Vergütungsinstrument für die ambulante vertragsärztliche Versorgung in Deutschland und gilt für alle rund 150.000 Vertragsärzte und Vertragspsychotherapeuten.
+Der EBM wird gemeinsam von der [[KBV]] (Kassenärztliche Bundesvereinigung) und dem [[GKV-Spitzenverband]] im **Bewertungsausschuss** beschlossen. Er ist das zentrale Vergütungsinstrument für die ambulante vertragsärztliche Versorgung in Deutschland und gilt für alle rund 150.000 Vertragsärzte und Vertragspsychotherapeuten.
 
 Der EBM ist nach Fachgebieten und Leistungsbereichen strukturiert. Er enthält mehrere tausend **GOP** (Gebührenordnungspositionen), die jeweils durch eine fünfstellige Ziffernkombination identifiziert werden. Jede GOP hat eine Punktzahl und Abrechnungsvoraussetzungen (z.B. Mindestzeit, Quartalsbeschränkungen).
 

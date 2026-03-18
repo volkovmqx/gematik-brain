@@ -70,7 +70,7 @@ Im Infineon-Chip **SLE78** wurde die Sicherheitslücke EUCLEAK (CVE-2024-45678) 
 
 D-Trust liefert Ersatzkarten auf Basis von G&D-Chips seit Februar 2026 aus. Ein Angriff über EUCLEAK erfordert physischen Kartenzugang, Kenntnis der PIN und Spezialausrüstung. Das Risiko eines Missbrauchs im Alltag wird daher als gering eingestuft, aber der Austausch ist aus regulatorischen Gründen verpflichtend.
 
-Separat wurde ein Rückruf von rund **2.600 ECC-only-HBAs** des Anbieters medisign bekannt. Diese Karten wurden im Januar 2026 ausgeliefert und weisen eine fehlerhafte RSA-Deaktivierung auf. Auch für diese Karten ist ein Austausch erforderlich.
+Separat lieferte medisign im Januar 2026 rund **2.600 ECC-only-eHBAs** mit fehlerhafter Personalisierung aus. Die [[gematik]] verpflichtete medisign zum Austausch der betroffenen Karten.
 
 ### Unterschied zu SMC-B
 

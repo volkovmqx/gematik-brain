@@ -21,7 +21,7 @@ Das Grundprinzip der GKV ist das Solidarprinzip: Beiträge richten sich nach dem
 
 Die GKV ist gesetzlich im [[SGB-V]] geregelt. Wichtige Durchführungsvorschriften für die digitale Infrastruktur finden sich in den §§ 291 bis 395 SGB V.
 
-Der **GKV-Spitzenverband** ist der Dachverband aller gesetzlichen Krankenkassen in Deutschland. Er hält 22,05 Prozent der Anteile an der [[gematik]] GmbH und finanziert deren Betrieb zu 93 Prozent (1,50 Euro pro Versichertem und Jahr). Die größten Krankenkassen sind AOK, Barmer, Techniker Krankenkasse (TK), DAK-Gesundheit und KNAPPSCHAFT.
+Der **[[GKV-Spitzenverband]]** ist der Dachverband aller gesetzlichen Krankenkassen in Deutschland. Er hält 22,05 Prozent der Anteile an der [[gematik]] GmbH und finanziert deren Betrieb zu 93 Prozent (1,50 Euro pro Versichertem und Jahr). Die größten Krankenkassen sind AOK, Barmer, Techniker Krankenkasse (TK), DAK-Gesundheit und KNAPPSCHAFT.
 
 ## Technische Details
 

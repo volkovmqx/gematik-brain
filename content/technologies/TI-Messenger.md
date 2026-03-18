@@ -63,6 +63,12 @@ Die Identität jedes Teilnehmers wird über die TI verifiziert:
 
 Für die Adressierung von Teilnehmern nutzt der TI-Messenger den [[VZD|VZD-FHIR-Directory]]. Das Verzeichnis basiert auf [[FHIR]] und enthält die Matrix-User-IDs aller zugelassenen Teilnehmer. Beim Aufbau einer Verbindung wird die Empfängeradresse per FHIR-Suche im VZD aufgelöst. Das ermöglicht die Suche nach Ärzten und Einrichtungen anhand von Name, Fachrichtung oder Ort.
 
+### MatrixRTC und Sprachfunktionen
+
+Sprachanrufe und Videoanrufe im TI-Messenger hängen von **MatrixRTC** (Matrix Spec Change 4143) ab. MatrixRTC erweitert das Matrix-Protokoll um Echtzeit-Kommunikationsfunktionen. Ein Release im TI-Messenger-Kontext ist für **2026** geplant.
+
+**TI-Messenger Pro 1.2** befindet sich in der Konzeptplanung. Start der Konzeptphase: Ende Mai 2026. Testbereitschaft: Q3/2027. TI-Messenger Pro 1.2 enthält unter anderem Sprachanrufe.
+
 ### Nachrichtenrouting
 
 Eine Nachricht von Arzt A (Homeserver X) an Arzt B (Homeserver Y) wird wie folgt zugestellt:

@@ -17,7 +17,7 @@ Stell dir vor, das Stromnetz fällt aus, Krankenhäuser können keine Patienten 
 
 KRITIS-Betreiber unterliegen in Deutschland zwei gesetzlichen Rahmenwerken: dem **BSI-Gesetz (BSIG)** für digitale Sicherheit und dem neueren **KRITIS-Dachgesetz (KRITIS-DachG)** für die physische Resilienz.
 
-Zehn Sektoren gelten als kritisch: Energie, Transport und Verkehr, Bankwesen, Finanzmarktinfrastrukturen, Gesundheit, Trinkwasser, Abwasser, Digitale Infrastruktur, Weltraum und Lebensmittel. Diese Sektoren orientieren sich am Anhang der EU-CER-Richtlinie (EU 2022/2557), die das KRITIS-DachG umsetzt. Deutschland hat dabei den Sektor "öffentliche Verwaltung" nicht als eigenständigen KRITIS-Sektor übernommen.
+Zehn Sektoren gelten als kritisch: Energie, Transport und Verkehr, Bankwesen, Finanzmarktinfrastrukturen, Gesundheit, Trinkwasser, Abwasser, Digitale Infrastruktur, Weltraum und Lebensmittel. Diese Sektoren orientieren sich am Anhang der EU-CER-Richtlinie (EU 2022/2557), weichen aber in Details ab.
 
 Im **Gesundheitssektor** fallen folgende Einrichtungen in den KRITIS-Scope:
 - Krankenhäuser ab **30.000 stationären Fällen** pro Jahr

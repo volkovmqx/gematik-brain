@@ -29,7 +29,7 @@ Deutschland plant die Teilnahme an MyHealth@EU ab **Wave 10 (2026)** über den d
 
 ### Sekundärnutzung: Forschung und Innovation
 
-Der EHDS schafft einen rechtlichen Rahmen für die Nutzung von Gesundheitsdaten zu wissenschaftlichen, statistischen und regulatorischen Zwecken. Die Daten werden über nationale **Gesundheitsdaten-Zugangsstellen** (Health Data Access Bodies, HDAB) bereitgestellt. In Deutschland ist das Forschungsdatenzentrum Gesundheit die zuständige Stelle.
+Der EHDS schafft einen rechtlichen Rahmen für die Nutzung von Gesundheitsdaten zu wissenschaftlichen, statistischen und regulatorischen Zwecken. Die Daten werden über nationale **Gesundheitsdaten-Zugangsstellen** (Health Data Access Bodies, HDAB) bereitgestellt. In Deutschland ist das [[Forschungsdatenzentrum-Gesundheit|Forschungsdatenzentrum Gesundheit]] die zuständige Stelle.
 
 Die Grundlagen für die Sekundärnutzung in Deutschland liegen im [[GDNG|Gesundheitsdatennutzungsgesetz (GDNG)]] von 2024, das den EHDS-Anforderungen entspricht.
 

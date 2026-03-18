@@ -1,6 +1,6 @@
 {
   "lastChecked": "2026-03-18",
-  "lastRun": "2026-03-18T16:00:00Z",
+  "lastRun": "2026-03-18T18:30:00Z",
   "findings": [
     {
       "title": "eMedikationsplan: Start verschoben auf Oktober 2026",
@@ -98,7 +98,8 @@
       "source": "https://www.zm-online.de/news/detail/uebergangsloesung-fuer-ehba-bis-30-juni-2026",
       "summary": "Gematik hat die Übergangsfrist für den Austausch von eHBAs der Generation 2.0 (RSA) auf Generation 2.1 (ECC) bis zum 30. Juni 2026 verlängert. Betroffen sind noch über 30.000 Heilberufsausweise. Telekom-Kunden sind von dieser Fristverlängerung ausgenommen.",
       "relevantArticles": ["HBA.md", "Telematikinfrastruktur.md"],
-      "action": "update",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
       "details": "HBA.md sollte die Frist 30.06.2026 für G2.0-Tausch und den Ausnahmefall Telekom-Kunden dokumentieren.",
       "suggestedTerm": "eHBA"
     },
@@ -249,7 +250,8 @@
       "source": "https://www.medisign.de/blog/ab-2026-pflegeleistungen-vollelektronisch-via-kim-abrechnen/",
       "summary": "Ab 1. Dezember 2026 müssen alle Pflegeeinrichtungen ihre Abrechnungsdaten (SGB XI) ausschließlich über die TI und den KIM-Dienst übermitteln. Papierbasierte Übermittlung ist danach nicht mehr möglich. Voraussetzung: Anbindung an TI (seit Juli 2025 Pflicht), SMC-B, eHBA, KIM-Client.",
       "relevantArticles": ["KIM.md", "Telematikinfrastruktur.md", "SMC-B.md"],
-      "action": "update",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
       "details": "KIM.md und Telematikinfrastruktur.md sollten die Pflicht zur elektronischen Pflegeabrechnung ab 01.12.2026 via KIM erwähnen."
     },
     {
@@ -474,7 +476,7 @@
       "summary": "Am 28. Januar 2026 wurde eine Testumgebung (Sandbox) für die deutsche EUDI-Wallet bereitgestellt, betrieben vom Bundesministerium für Digitales und Staatsmodernisierung (BMDS) und der Bundesagentur für Sprunginnovationen (SPRIND). Unternehmen und Verwaltung können dort die Grundfunktion der digitalen Identifikation via Person Identification Data (PID) testen. Die erste öffentliche Stufe der deutschen EUDI-Wallet ist für Anfang 2027 geplant. Nach 12 Monaten können alternative Wallet-Anbieter ihre Lösungen als EUDI-Wallet zertifizieren lassen.",
       "relevantArticles": ["EUDI-Wallet.md", "Gesundheits-ID.md"],
       "category": "specification",
-      "action": "update",
+      "action": "applied",
       "details": "EUDI-Wallet.md sollte den Start der Testumgebung am 28. Januar 2026 und den geplanten Produktivstart Anfang 2027 ergänzen.",
       "suggestedTerm": "EUDI-Wallet"
     },
@@ -601,7 +603,8 @@
       "summary": "medisign GmbH lieferte Anfang Januar 2026 rund 2.600 ECC-only-HBAs mit fehlerhafter Personalisierung aus: Der RSA-Schlüssel war nicht korrekt deaktiviert, was zu Interoperabilitätsproblemen mit manchen Konnektoren führen kann. Gematik stellte die Fehlkonfiguration fest und verpflichtete medisign zum Austausch. Karten können weiterhin genutzt werden (kein Sicherheitsproblem), Betroffene wurden ab 19. Februar 2026 per E-Mail informiert. Zusätzliche Belastung für betroffene Leistungserbringer nach dem bereits laufenden RSA-zu-ECC-Tausch.",
       "relevantArticles": ["HBA.md", "Konnektoren.md"],
       "category": "security",
-      "action": "update",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
       "details": "HBA.md sollte den medisign-Rückruf von Januar 2026 als Hinweis auf Qualitätssicherungsprobleme bei der ECC-Migration erwähnen."
     },
     {
@@ -667,7 +670,8 @@
       "summary": "Laut aktuellem gematik-Dashboard haben mehr als 110.000 von ca. 160.000 Einrichtungen (69 Prozent) bereits mindestens eine Patientenakte geöffnet. In der vergangenen Woche öffneten über 93.000 Einrichtungen aktiv Patientenakten. Inklusive E-Rezept-Daten enthalten die Patientenakten mehr als 700 Millionen Datensätze. Insgesamt wurden 22 Millionen Dokumente hochgeladen, 13 Millionen Medikamentenlisten abgerufen. Die Nutzung steigt kontinuierlich, bleibt aber hinter Erwartungen bezüglich aktiver Patientennutzung zurück.",
       "relevantArticles": ["ePA.md"],
       "category": "info",
-      "action": "update",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
       "details": "ePA.md sollte aktuelle Nutzungsstatistiken aus März 2026 ergänzen: 110.000+ Einrichtungen aktiv, 700 Mio. Datensätze gesamt, 22 Mio. hochgeladene Dokumente."
     },
     {
@@ -727,7 +731,8 @@
       "source": "https://wiki.gematik.de/spaces/TIMCOMP/pages/604603166/TI-Messenger+Compass+-+The+TI-M+Blog",
       "summary": "Die Sprachanruf- und Videofunktion im TI-Messenger hängt von der Fertigstellung und Freigabe der MatrixRTC-Spezifikation (MSC 4143) der Matrix Foundation ab. Aktuelle Erwartung: MatrixRTC-Release 2026. Danach kann der TI-Messenger föderierte Sprachanrufe und Videoanrufe integrieren. Eine gematik-Spezifikation für Sprachanrufe im TI-Messenger ist für Version Pro 1.2 (Testbereitschaft Q3/2027) geplant. Außerdem ist TI-Messenger Pro 1.2 in Konzeptplanung ab Ende Mai 2026 mit Testbereitschaft Q3/2027.",
       "affects": ["TI-Messenger.md", "Matrix-Protokoll.md"],
-      "action": "update",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
       "details": "TI-Messenger.md sollte MatrixRTC als geplante Technologie für Sprachanrufe und Video erwähnen, sowie den Zeitplan für Pro 1.2 (Konzeptphase ab Mai 2026, Test Q3/2027).",
       "category": "specification",
       "suggestedTerm": "MatrixRTC"
@@ -750,6 +755,67 @@
       "affects": ["Telematikinfrastruktur.md"],
       "action": "info_only",
       "category": "specification"
+    },
+    {
+      "title": "E-Rezept: Hilfsmittelverordnungen werden erst ab 1. Juli 2027 Pflicht (nicht 2026)",
+      "date": "2026-03-18",
+      "source": "https://www.gelbe-liste.de/e-rezept/e-rezept-zeitplan",
+      "summary": "Die verpflichtende Einführung des E-Rezepts für Hilfsmittelverordnungen (Orthesen, Prothesen, Rollstühle etc.) sowie Verbandmittel, Medizinprodukte und enterale Ernährung gilt erst ab 1. Juli 2027, nicht ab 1. Juli 2026. Der bisherige Eintrag in E-Rezept.md war falsch. Korrekte Termine: (1) Häusliche Krankenpflege und außerklinische Intensivpflege: 1. Juli 2026. (2) Heilmittelverordnungen: 1. Januar 2027. (3) Hilfsmittel und weitere: 1. Juli 2027. Die Grundlage ist das Digital-Gesetz (DigiG) vom Dezember 2023.",
+      "affects": ["E-Rezept.md"],
+      "category": "regulation",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
+      "details": "E-Rezept.md korrigiert: Hilfsmittel-Pflicht auf 1. Juli 2027 geändert. Häusliche Krankenpflege bleibt 1. Juli 2026. Separate Zeile für Heilmittelverordnungen ab 1. Januar 2027 hinzugefügt (Ärzte müssen ab diesem Datum elektronisch ausstellen)."
+    },
+    {
+      "title": "GDVG: BMG legt Referentenentwurf für Gesetz für digitale Versorgung und Gesundheitsdatenraum vor",
+      "date": "2026-03-11",
+      "source": "https://www.kma-online.de/aktuelles/it-digital-health/detail/bvitg-anforderungen-nutzung-der-gesundheitsdaten-und-weiterentwicklung-der-infrastruktur-55357",
+      "summary": "Das BMG hat angekündigt, in der ersten Jahreshälfte 2026 den Referentenentwurf für das Gesetz für digitale Versorgung und Gesundheitsdatenraum (GDVG) vorzulegen. Das Gesetz soll das gescheiterte GDAG ersetzen und gematik zu einer modernen Digitalagentur weiterentwickeln. Bvitg fordert in einem Positionspapier (11. März 2026): gematik als neutralen Rahmenanbieter (kein Marktakteur), erleichterten Datenzugang für Forschung und Industrie, stabile TI, interoperable Prozesse mit ePA als zentralem Hub. Das Gesetz soll außerdem gematik erweiterte Durchsetzungsbefugnisse für einheitliche Standardimplementierungen geben.",
+      "affects": ["gematik.md", "DigiG.md"],
+      "category": "regulation",
+      "action": "update",
+      "details": "gematik.md und DigiG.md sollten den Gesetzgebungsprozess für das GDVG erwähnen: Referentenentwurf geplant für H1/2026, als Nachfolger des gescheiterten GDAG. DigiG.md könnte das GDVG als geplante Weiterentwicklung der DigiG-Regelungen beschreiben.",
+      "suggestedTerm": "GDVG"
+    },
+    {
+      "title": "T-Rezept elektronisch: Start-Rollout in Mitte Q4/2026 bestätigt",
+      "date": "2026-01-06",
+      "source": "https://www.deutsche-apotheker-zeitung.de/autoren/news/artikel/2026/01/06/epa-e-rezept-und-mehr-was-kommt-2026",
+      "summary": "Der Rollout des elektronischen T-Rezepts (für Lenalidomid, Pomalidomid, Thalidomid) beginnt laut Roadmap im Q3/2026; der eigentliche Rollout-Start für Praxen und Apotheken wird Mitte Q4/2026 erwartet. Damit entfallen die bisher notwendigen Papierdurchschläge und die manuelle BfArM-Übermittlung durch Apotheken. Die Spezifikation wurde im August 2025 veröffentlicht.",
+      "affects": ["E-Rezept.md"],
+      "category": "specification",
+      "action": "update",
+      "details": "E-Rezept.md 'Was kommt noch?': T-Rezept-Eintrag präzisieren auf 'Start Mitte Q4/2026' statt nur '2026 geplant'."
+    },
+    {
+      "title": "NCPeH_24_2: Spezifikationsrelease für grenzüberschreitendes E-Rezept veröffentlicht (März 2025)",
+      "date": "2025-03-12",
+      "source": "https://gemspec.gematik.de/releases/NCPeH_24_2/index.html",
+      "summary": "Gematik veröffentlichte am 12. März 2025 den Release NCPeH_24_2 mit der Feature-Spezifikation 'EU Zugriff E-Rezept' (gemF_eRp_EU V1.0.0). Damit ist die technische Spezifikation für den Anwendungsfall ePrescription/eDispensation Country A vollständig: Versicherte können deutschen Leistungserbringern im EU-Ausland Zugriff auf ihre E-Rezepte erteilen. Der Autorisierungsmechanismus nutzt einen 6-stelligen alphanumerischen Zugangscode zusammen mit der Versicherten-ID. Deutschland plant den produktiven Wave-10-Anschluss an MyHealth@EU für E-Rezepte 2026.",
+      "affects": ["NCPeH.md", "E-Rezept.md"],
+      "category": "specification",
+      "action": "update",
+      "details": "NCPeH.md sollte gemF_eRp_EU V1.0.0 und den 6-stelligen Zugangscode-Mechanismus für die EU-E-Rezept-Einlösung als technisches Detail ergänzen. E-Rezept.md kann den Wave-10-Anschluss als konkrete 2026-Maßnahme für grenzüberschreitende Einlösung ergänzen."
+    },
+    {
+      "title": "ePA Volltextsuche: Pilot Q3/2026, bundesweiter Rollout ab Januar 2027",
+      "date": "2026-02-01",
+      "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/epa-wird-interaktiv-push-nachrichten-und-volltextsuche-starten-2026/68529113",
+      "summary": "Die Volltextsuche in der ePA startet nicht bereits im März 2026, sondern erst in Q3/2026 im Pilotbetrieb. Der bundesweite Rollout ist für Januar 2027 geplant. Die Funktion ermöglicht die Suche nach Begriffen innerhalb von Dokumenttexten (nicht nur in Metadaten). Technische Basis ist ePA 3.1.2 (Mai 2025). Die ePA-App ermöglicht ab März 2026 nur Push-Benachrichtigungen, nicht die Volltextsuche.",
+      "affects": ["ePA.md"],
+      "category": "specification",
+      "action": "update",
+      "details": "ePA.md sollte klarstellen: Push-Nachrichten ab März 2026 live, Volltextsuche erst Pilot Q3/2026, bundesweit ab Januar 2027. Bisherige Formulierung könnte den Eindruck erwecken, die Volltextsuche sei bereits im März 2026 gestartet."
+    },
+    {
+      "title": "CI_25_5-1: Patch-Release für Zentrale Infrastrukturkomponenten (20. Januar 2026)",
+      "date": "2026-01-20",
+      "source": "https://gemspec.gematik.de/releases/",
+      "summary": "Am 20. Januar 2026 veröffentlichte gematik den Patch-Release CI_25_5-1 mit einem Dokument als Korrektur zum CI_25_5-Release vom 13. Januar 2026 (PKI, VPN, ECC-Umstellung).",
+      "affects": ["Telematikinfrastruktur.md"],
+      "category": "specification",
+      "action": "info_only"
     }
   ]
 }

@@ -21,6 +21,12 @@ Ab **April 2026** müssen [[KIS|Krankenhausinformationssysteme (KIS)]] ein zerti
 
 Über 150 Krankenkassen betreiben zugelassene Aktensysteme. Die technischen Implementierungen stammen von IBM und RISE/BITMARCK.
 
+### Aktuelle Nutzung (Stand März 2026)
+
+Stand März 2026 haben über **130.000 von ca. 160.000 Einrichtungen (81 Prozent)** mindestens eine ePA geöffnet. Mehr als **700 Millionen Datensätze** wurden verarbeitet, darunter über **37 Millionen hochgeladene Dokumente**.
+
+Seit **1. Januar 2026** sind Abrechnungsdaten in der ePA nur noch für Versicherte selbst sichtbar. Ärzte und andere Leistungserbringer können Abrechnungsdaten nicht ohne explizite Freigabe durch den Versicherten einsehen. Grundlage ist das **BEEP-Gesetz** (Gesetz zur Befugniserweiterung und Entbürokratisierung in der Pflege).
+
 ### Was wird gespeichert?
 
 - Medikationsinformationen

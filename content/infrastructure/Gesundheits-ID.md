@@ -17,7 +17,7 @@ Stell dir vor, du brauchst normalerweise einen Bibliotheksausweis aus Plastik, u
 
 Die Gesundheits-ID erlaubt es Versicherten, sich ohne physische [[eGK]] an TI-Anwendungen anzumelden. Nutzbar ist sie etwa für die [[ePA]], das [[E-Rezept]] oder den [[TI-Messenger]]. Die gesetzliche Grundlage verpflichtet die Krankenkassen seit dem 1. Januar 2024, ihren Versicherten auf Wunsch eine Gesundheits-ID bereitzustellen.
 
-Seit **1. Januar 2026** kann die GesundheitsID als digitaler Versicherungsnachweis gegenüber Leistungserbringern genutzt werden. Bis März 2026 haben sich nach Angaben der gematik rund **4,4 Millionen Versicherte** registriert.
+Seit **1. Januar 2026** kann die GesundheitsID als digitaler Versicherungsnachweis gegenüber Leistungserbringern genutzt werden. Stand Anfang 2026 haben sich laut Branchenberichten rund **4,4 Millionen Versicherte** registriert.
 
 Die Gesundheits-ID ist ein zentraler Baustein der TI 2.0-Strategie. Das Ziel: Die [[Telematikinfrastruktur]] soll nicht mehr zwingend Hardware wie [[eGK]] oder [[Konnektoren]] voraussetzen, sondern softwarebasiert und geräteunabhängig werden. Ab 2027 sollen Versicherte die Gesundheits-ID als vollwertigen Ersatz für die [[eGK]] auch beim Arztbesuch verwenden können.
 
@@ -77,4 +77,5 @@ Zur Sicherheit ist eine Zwei-Faktor-Authentifizierung vorgesehen. Geräte mit ei
 
 - [GesundheitsID: Digitale Identitäten im Gesundheitswesen | gematik](https://www.gematik.de/anwendungen/gesundheitsid)
 - [Identitäten in der TI | gematik Fachportal](https://fachportal.gematik.de/schnelleinstieg/smartcards-und-identitaeten-in-der-ti/identitaeten)
-- [Die GesundheitsID als Alternative zur Gesundheitskarte | datenschutz-notizen.de](https://www.datenschutz-notizen.de/die-gesundheitsid-als-alternative-zur-gesundheitskarte-4646083/)
+- [Gesundheits-ID als Versicherungsnachweis ab 2026 | gematik Newsroom](https://www.gematik.de/newsroom)
+- [Nutzungszahlen GesundheitsID | datenschutz-notizen.de (Branchenblog)](https://www.datenschutz-notizen.de/die-gesundheitsid-als-alternative-zur-gesundheitskarte-4646083/)

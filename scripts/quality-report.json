@@ -1,260 +1,191 @@
 {
-  "timestamp": "2026-03-18T11:45:00Z",
+  "timestamp": "2026-03-18T12:00:00Z",
   "overallScore": 84,
   "testResults": {
-    "passed": 98,
-    "failed": 1,
-    "total": 99
+    "passed": 102,
+    "failed": 2,
+    "total": 104
   },
   "articles": [
     {
-      "file": "content/standards/DiGAV.md",
-      "verdict": "pass",
-      "score": 88,
-      "issues": [
-        "AbEM entry-into-force date 1. Februar 2026 confirmed via BMG and buzer.de",
-        "Transition clause for 20%-Anforderung (gilt ab 1. Januar 2026 für DiGA mit dauerhaftem Erstattungsbetrag) is factually correct per the Referentenentwurf",
-        "The paragraph structure makes the chronology clear: permanent-rate DiGA from 1.1.2026 via transitional rule, general rule from 1.2.2026",
-        "4 sources including BMG, gesetze-im-internet.de, BfArM — all authoritative",
-        "All required sections present, wiki-links resolve"
-      ],
-      "fixInstructions": "None required."
-    },
-    {
-      "file": "content/technologies/CardLink.md",
-      "verdict": "pass",
-      "score": 82,
-      "issues": [
-        "Extension of DocMorris and Redcare CardLink approvals until end of January 2027 confirmed by gematik decision (July 2025) — finanznachrichten.de/finanzen.net reporting confirmed",
-        "Article correctly softens language: 'laut Branchenberichten voraussichtlich bis Ende Januar 2027' and 'ein abschließend bestätigter Abschalttermin durch die gematik lag zum Zeitpunkt der Recherche nicht vor' — appropriately cautious",
-        "PoPP parallel phase dates (July 2026, August 2026 to January 2027) are internally consistent with gematik roadmap",
-        "Third source is Apotheke Adhoc — a trade publication, not an official source. Only 2 of 3 sources are from gematik domains",
-        "VSDM link in parallel-phase section: article references [[VSDM]] which resolves correctly"
-      ],
-      "fixInstructions": "Minor: Consider adding the official gematik press release or fachportal announcement as a third source to replace the Apotheke Adhoc news article, strengthening source quality."
-    },
-    {
-      "file": "content/concepts/KRITIS.md",
+      "file": "content/organization/GKV-Spitzenverband.md",
       "verdict": "revise",
-      "score": 70,
+      "score": 72,
       "issues": [
-        "INACCURACY: Article states 'Elf Sektoren gelten als kritisch' and lists 11 sectors. The final KRITIS-DachG (as passed by Bundestag 29.01.2026 and Bundesrat 06.03.2026) defines 10 sectors, not 11. The CER Directive itself (EU 2022/2557) has 11 sectors in its Annex, but the German transposition removed 'öffentliche Verwaltung' as a separate sector and combined/adjusted to reach 10 sectors in the national law. Multiple legal sources confirm '10 Sektoren' for KRITIS-DachG",
-        "The article claims the 11 sectors 'entsprechen dem Anhang der EU-CER-Richtlinie' — while the CER Directive Annex has 11 sectors, the German law has 10, so this attribution is imprecise even if partially correct",
-        "KRITIS-DachG dates (Bundestag 29.01.2026, Bundesrat 06.03.2026) confirmed correct",
-        "Krankenhaus threshold of 30.000 vollstationäre Fälle confirmed correct against BSI-KritisV",
-        "Registration deadline 'voraussichtlich ab Mitte 2026' is hedged appropriately and consistent with the law's transition provisions",
-        "4 sources including bsi.bund.de and Wikipedia — sources adequate"
+        "Broken wiki-link [[GBA]] — no GBA article exists in the knowledge base (confirmed by test-report.json and Grep search)",
+        "Versicherte count stated as '73 Millionen' — current official figure is approximately 75 Millionen (BMG/GKV-Spitzenverband 2025/2026 data)",
+        "100 Millionen Euro/Jahr figure for gematik-Betriebskosten is not backed by an authoritative source — only a TK press release cited"
       ],
-      "fixInstructions": "Correct the sector count from 'Elf' to 'Zehn'. Update the list of sectors to match the KRITIS-DachG Anlage exactly: Energie, Transport und Verkehr, Bankwesen, Finanzmarktinfrastrukturen, Gesundheit, Trinkwasser, Abwasser, Digitale Infrastruktur, Weltraum, Lebensmittel — ten sectors total. Remove 'öffentliche Verwaltung' from the list or note it is a CER sector not adopted verbatim in the KRITIS-DachG. Correct the attribution: 'Diese Sektoren orientieren sich am Anhang der EU-CER-Richtlinie (EU 2022/2557), weichen aber in Details ab.'"
+      "fixInstructions": "1. Replace [[GBA]] with plain text 'Gemeinsamer Bundesausschuss (G-BA)' until a G-BA article is created, or remove the link. 2. Update Versicherte count from 73 Millionen to approximately 75 Millionen (source: BMG Zahlen und Fakten zur Krankenversicherung). 3. Either add an authoritative source for the 100M EUR figure or qualify it as 'nach Branchenschätzungen'."
     },
     {
-      "file": "content/infrastructure/MVZ.md",
+      "file": "content/infrastructure/RIS.md",
       "verdict": "revise",
       "score": 75,
       "issues": [
-        "BROKEN WIKI-LINKS: test.sh reports no broken links for MVZ.md in this run, but the [[Kassenärztliche Vereinigung|KV]] pipe-alias syntax is used in the current file — correctly resolves. No structural failures for MVZ.md in the current test-report.json",
-        "GKV-Modernisierungsgesetz 2004: article says 'durch das GKV-Modernisierungsgesetz 2004' — the law passed 14 November 2003 and MVZ came into effect 1 January 2004. The year '2004' can be read as the year it took effect, which is acceptable but slightly ambiguous",
-        "§ 95 SGB V reference confirmed correct for MVZ legal basis",
-        "3 sources including gesetze-im-internet.de and KBV — adequate",
-        "All required sections present"
+        "Broken wiki-link [[PACS]] in Verknüpfungen section — no PACS article exists in the knowledge base (confirmed by test-report.json)",
+        "PACS also appears as plain text in the Verknüpfungen list — inconsistent treatment within the same section"
       ],
-      "fixInstructions": "For clarity, change 'durch das GKV-Modernisierungsgesetz 2004' to 'durch das GKV-Modernisierungsgesetz (GMG, verabschiedet November 2003, in Kraft ab 1. Januar 2004)'. No structural issues remain after the fix in this cycle."
+      "fixInstructions": "Remove the [[PACS]] wiki-link brackets in the Verknüpfungen bullet and keep it as plain text 'PACS (Picture Archiving and Communication System)' until a dedicated PACS article is created. This fixes the broken link flagged by test-report.json."
     },
     {
-      "file": "content/infrastructure/MyHealthAtEU.md",
+      "file": "content/infrastructure/Highspeed-Konnektor.md",
       "verdict": "pass",
-      "score": 86,
+      "score": 88,
       "issues": [
-        "EU-LISA claim: Current article correctly states 'Die operative Steuerung liegt beim eHealth Network und seinem Operational Management Board unter der Federführung von DG SANTE ... und HaDEA' — eu-LISA is NOT mentioned in this version. The previous cycle had the eu-LISA inaccuracy; the fix was applied and verified. Article is now factually correct on this point",
-        "EHDS entry into force 'März 2025' confirmed (exact date 26. März 2025 — 'März 2025' is not wrong)",
-        "EHDS 4-year deadline 'März 2029' for grenzüberschreitend exchange confirmed against EU 2025/327",
-        "Claim 'vollständige Teilnahme aller Mitgliedstaaten bis März 2031': EHDS implements in stages; March 2029 is for first priority data categories, March 2031 for full scope — consistent with EHDS regulation timeline",
-        "Austria's February 2026 e-prescription participation: consistent with NCPeH.md, plausible but no additional source provided in this article",
-        "4 sources including EC health portal, gematik.de, EUR-Lex — all authoritative"
+        "PTV version 2.1.1 not independently confirmed from public search results — marked as unverifiable rather than wrong",
+        "RISE GmbH as sole HSK manufacturer confirmed via gematik pilot announcement"
       ],
-      "fixInstructions": "Optional: Add a specific source for Austria's February 2026 e-prescription rollout (e.g. ELGA Austria announcement or EC health.europa.eu news)."
+      "fixInstructions": ""
     },
     {
-      "file": "content/infrastructure/KIS.md",
+      "file": "content/infrastructure/HSM-B.md",
       "verdict": "pass",
-      "score": 87,
+      "score": 90,
       "issues": [
-        "ePA-Modul Pflicht for Krankenhäuser ab April 2026 confirmed: AOK Gesundheitspartner confirms 'Sanktionen für Krankenhäuser gelten ab April 2026' — claim is accurate",
-        "Dedalus ORBIS market share '41 Prozent aller stationären Fälle' and 'über 820 Installationen' — plausible per trade sources but exact figure is from 2024 market report, marked as such",
-        "ISiK Stufe 3 deadline '01.07.2025' as KHSFV-Fördervoraussetzung: consistent with gematik ISiK documentation",
-        "4 sources, including gematik ISiK, kma-online (trade press), Dedalus press release — min 2 official sources met",
-        "All required sections present, no broken links"
+        "Pilot partners (RHÖN-KLINIKUM AG, D-Trust GmbH, DKTIG GmbH, RISE GmbH) confirmed against gematik newsroom",
+        "Friendly-User-Test scope (nur bei RHÖN-KLINIKUM) confirmed",
+        "Only 3 sources — all authoritative (gematik.de, fachportal, gemspec)"
       ],
-      "fixInstructions": "None required."
+      "fixInstructions": ""
     },
     {
-      "file": "content/organization/gematik.md",
+      "file": "content/infrastructure/Forschungsdatenzentrum-Gesundheit.md",
       "verdict": "pass",
-      "score": 89,
+      "score": 88,
       "issues": [
-        "Gründungsjahr 2005 confirmed by Wikipedia and gematik.de",
-        "BMG 51% confirmed — BMG majority share acquired via TSVG (Terminservice- und Versorgungsgesetz) in May 2019",
-        "GKV-Spitzenverband 22,05% and financing 93%/7% split: consistent with public gematik sources",
-        "GDAG failure described accurately: Ampel coalition collapse, no second/third reading",
-        "7 strategic Leitsätze published 15. Januar 2026 by CEO Dr. Florian Fuhrmann: consistent with gematik.de newsroom, specific enough to be verifiable",
-        "3 sources including gematik.de and Wikipedia — minimum met",
-        "All required sections present"
+        "GDNG Inkrafttreten 'März 2024' confirmed (official date: 26. März 2024)",
+        "FDZ beim BfArM confirmed via bfarm.de",
+        "GFF-Klage (Februar 2026) sourced only to freiheitsrechte.org root URL — no specific article URL, but plausible and appropriately described as 'anhängig'"
       ],
-      "fixInstructions": "None required."
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/concepts/KRITIS.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [
+        "Sector count of 10 confirmed: KRITIS-DachG defines 10 sectors as stated. List in article (Energie, Transport und Verkehr, Bankwesen, Finanzmarktinfrastrukturen, Gesundheit, Trinkwasser, Abwasser, Digitale Infrastruktur, Weltraum, Lebensmittel) = 10 items. The previous cycle's reported '11 sector' error has been corrected in this version.",
+        "KRITIS-DachG dates confirmed: Bundestag 29. Januar 2026, Bundesrat 6. März 2026",
+        "Krankenhaus threshold 30.000 vollstationäre Fälle confirmed against BSI-KritisV",
+        "Registration deadline 'voraussichtlich ab Mitte 2026' appropriately hedged"
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/concepts/ISMS.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "PACS referenced inline as 'PACS (Picture Archiving and Communication System)' without wiki-link — acceptable since no PACS article exists; consistent fix from previous cycle",
+        "ISO 27001:2022 — 93 controls in 4 domains confirmed",
+        "B3S Krankenhaus developed jointly by DKG and BSI confirmed via bsi.bund.de"
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/infrastructure/MVZ.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "GKV-Modernisierungsgesetz date clarification confirmed correct: GMG passed 14 November 2003, MVZ in force from 1 January 2004",
+        "§ 95 SGB V as legal basis confirmed",
+        "All wiki-links resolve correctly"
+      ],
+      "fixInstructions": ""
     },
     {
       "file": "content/infrastructure/Gesundheits-ID.md",
       "verdict": "pass",
-      "score": 84,
+      "score": 82,
       "issues": [
-        "Krankenkassen-Pflicht ab 1. Januar 2024 correct (DigiG/DVPMG mandate)",
-        "GesundheitsID as digitaler Versicherungsnachweis ab 1. Januar 2026: confirmed against DigiG § 291 SGB V mandate",
-        "'Rund 4,4 Millionen Versicherte' registriert bis März 2026: specific figure not confirmed via search results — no official gematik announcement with this exact number found. Mark as UNVERIFIABLE but plausible given rollout scale",
-        "Ab 2027 als vollwertiger eGK-Ersatz: consistent with gematik roadmap across multiple articles",
-        "Technical details (OIDC, brainpoolP256r1, TI-Federation) all accurate",
-        "3 sources — minimum met, though one source (datenschutz-notizen.de) is a blog, not an official source"
+        "4,4 Millionen Versicherte registriert: figure sourced to datenschutz-notizen.de (Branchenblog); article qualifies it as 'laut Branchenberichten', which is appropriate. No official gematik figure available via web search.",
+        "GesundheitsID as digitaler Versicherungsnachweis ab 1. Januar 2026 confirmed",
+        "Technical details (OIDC, brainpoolP256r1, TI-Federation) confirmed accurate"
       ],
-      "fixInstructions": "Add a qualifier to the 4,4-Millionen claim: 'Stand März 2026 haben sich nach Angaben der gematik rund 4,4 Millionen Versicherte registriert.' If this figure is not from gematik official communications, remove it or replace with the most recent publicly confirmed figure from gematik.de/newsroom. Optionally replace datenschutz-notizen.de with an official gematik or GKV source."
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/infrastructure/HBA.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [
+        "EUCLEAK (CVE-2024-45678): 130,000 affected eHBAs, D-Trust and SHC+Care, June 30 2026 deadline — confirmed via gematik.de ECC migration page",
+        "medisign 2,600 ECC-only eHBAs with faulty personalization in January 2026 — confirmed from gematik context",
+        "G2.0 to G2.1 ECC migration deadline 30. Juni 2026 confirmed",
+        "Claim 'Ab 1. Januar 2026 dürfen Kartenherausgeber nur noch ECC-fähige Karten produzieren' — plausible per ECC migration context but exact production ban date not confirmed via search; marked unverifiable"
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/technologies/ePA.md",
+      "verdict": "revise",
+      "score": 62,
+      "issues": [
+        "FACTUAL ERROR: 'BEEP-Gesetz (Gesetz zur Beschleunigung der Einführung der elektronischen Patientenakte)' — acronym expansion is wrong. BEEP = 'Gesetz zur Befugniserweiterung und Entbürokratisierung in der Pflege'. The Abrechnungsdaten restriction effective 1. Januar 2026 is real and attributable to BEEP, but the name expansion in the article is incorrect.",
+        "STALE STATISTICS: Article states 'über 110.000 von ca. 160.000 Einrichtungen' and 'über 22 Millionen hochgeladene Dokumente'. Current gematik figures: 130.000 Einrichtungen (81%) and 37 Millionen Dokumente. Both data points are outdated."
+      ],
+      "fixInstructions": "1. Correct BEEP-Gesetz expansion: replace 'Gesetz zur Beschleunigung der Einführung der elektronischen Patientenakte' with 'Gesetz zur Befugniserweiterung und Entbürokratisierung in der Pflege'. 2. Update statistics: '130.000 von ca. 160.000 Einrichtungen (81%)' statt 110.000; '37 Millionen hochgeladene Dokumente' statt 22 Millionen. Source for updated figures: gematik.de/newsroom/news-detail/update-aktuelle-zahlen-zur-epa-fuer-alle"
+    },
+    {
+      "file": "content/technologies/KIM.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [
+        "Pflege-Abrechnung ab 1. Dezember 2026 via KIM confirmed: gematik.de/pflege/praxisbeispiel-pflege-elektronische-abrechnung states exactly this deadline",
+        "KIM 1.5.5 as current version confirmed",
+        "Only 2 sources — minimum met, both official gematik sources"
+      ],
+      "fixInstructions": ""
     },
     {
       "file": "content/technologies/TI-Messenger.md",
       "verdict": "pass",
-      "score": 90,
+      "score": 85,
       "issues": [
-        "Usage stats confirmed via gematik TI-Dashboard: 7.309 Einrichtungen, 254.952 Versicherte, 500.577 Nachrichten as of ~9. März 2026 — all verified against gematik newsroom",
-        "TI-Messenger Pro first productive instances early 2026 confirmed",
-        "Version 1.1 geplant für Mai 2026: plausible per gematik roadmap, not independently confirmed — appropriately described as 'geplant'",
-        "Matrix-Protokoll, Olm/Megolm E2E encryption described accurately",
-        "3 sources including fachportal.gematik.de and gemspec.gematik.de — authoritative",
-        "All required sections present"
+        "MatrixRTC (MSC 4143) dependency confirmed; MatrixRTC release expected 2026 confirmed",
+        "TI-Messenger Pro 1.2 concept phase end of May 2026, test readiness Q3/2027 confirmed via gematik wiki",
+        "Usage figures (7.309 Einrichtungen, 254.952 Versicherte, 500.577 Nachrichten) as of March 2026 plausible but not independently confirmed from authoritative source — acceptable as reporter's current data"
       ],
-      "fixInstructions": "None required."
+      "fixInstructions": ""
     },
     {
-      "file": "content/organization/Kassenaerztliche-Vereinigung.md",
+      "file": "content/infrastructure/EUDI-Wallet.md",
       "verdict": "pass",
-      "score": 87,
+      "score": 83,
       "issues": [
-        "17 KVen confirmed (16 Bundesländer + NRW split into KV Nordrhein and KV Westfalen-Lippe) — correct",
-        "SGB V § 77 ff. as legal basis confirmed via gesetze-im-internet.de",
-        "KVDT format description accurate",
-        "EBM link and description accurate (consistent with new EBM.md)",
-        "KV-SafeNet described as non-TI parallel network — accurate",
-        "3 sources including KBV, Wikipedia, gesetze-im-internet.de",
-        "All required sections present, alias list expanded with 'Kassenärztliche Vereinigung' singular — this fixes the MVZ.md cross-reference issue"
+        "Deadline 'bis November 2026': eIDAS 2.0 (EU 2024/1183) mandates wallets within 24 months of implementing acts entering into force. Implementing acts adopted in multiple rounds (latest July 2025), making exact deadline variable. Official sources describe deadline as 'by end of 2026' — 'November 2026' is plausible but more specific than confirmed. Acceptable as approximate.",
+        "BMDS as responsible ministry: recently renamed ministry, article uses current name correctly",
+        "Anfang 2027 for first productive public version consistent with German government announcements",
+        "eIDAS 2.0 entry into force 20. Mai 2024 confirmed"
       ],
-      "fixInstructions": "None required."
-    },
-    {
-      "file": "content/standards/DICOM.md",
-      "verdict": "pass",
-      "score": 91,
-      "issues": [
-        "ACR-NEMA first version 1985 confirmed — officially ACR/NEMA Standard 300 published 1985",
-        "Name change to DICOM with version 3.0 in 1993 confirmed",
-        "ISO 12052:2017 confirmed as the ISO normierung of DICOM",
-        "SOP-Classes, DIMSE services (C-STORE, C-FIND, C-MOVE), DICOMweb (WADO-RS, STOW-RS, QIDO-RS) all technically accurate",
-        "DICOM default port 104 confirmed",
-        "4 sources including dicomstandard.org, NEMA DICOM spec, Wikipedia, IHE — all authoritative",
-        "All required sections present",
-        "[[PACS]] wiki-link in article: PACS.md does not exist; this link appears in DICOM.md but test.sh did NOT flag DICOM.md — it flagged ISMS.md. DICOM.md uses [[PACS]] in prose but the test-report only shows ISMS.md as failing. Need to check whether DICOM.md's [[PACS]] link is broken"
-      ],
-      "fixInstructions": "Verify whether [[PACS]] in DICOM.md is broken (test.sh did not flag it, suggesting it may resolve via an alias). If PACS.md or an alias exists, no action needed. If the link is dead, either create a stub PACS.md or change the reference to inline prose."
-    },
-    {
-      "file": "content/standards/EBM.md",
-      "verdict": "pass",
-      "score": 92,
-      "issues": [
-        "Orientierungswert 2026 of 12,7404 Cent confirmed by KBV and multiple sources (increase of 2,8% from 12,3934 Cent in 2025)",
-        "Bewertungsausschuss as joint KBV/GKV-Spitzenverband body confirmed",
-        "§ 87 SGB V as EBM legal basis confirmed",
-        "GOP structure description (fünfstellige Ziffernkombination, Punktzahl, Kalkulationszeit, Prüfzeit) accurate",
-        "TI-Pauschalen (GOP 01660, 01670-01672, 01469) listed — plausible but specific GOP numbers unverified against current EBM text",
-        "4 sources including KBV, Bewertungsausschuss, Wikipedia, gesetze-im-internet.de — all authoritative",
-        "All required sections present"
-      ],
-      "fixInstructions": "None required."
-    },
-    {
-      "file": "content/organization/InEK.md",
-      "verdict": "pass",
-      "score": 89,
-      "issues": [
-        "Gründungsjahr 2001 confirmed — founded 10. Mai 2001 in Siegburg",
-        "Siegburg as location confirmed",
-        "Three shareholders (DKG, GKV-Spitzenverband, PKV) confirmed",
-        "PEPP system responsibility confirmed (since 2013)",
-        "DKR 2026 published December 2025, effective 1. Januar 2026: plausible and consistent with annual InEK cycle",
-        "260 Kalkulationskrankenhäuser for G-DRG 2026: specific figure not confirmed via search — mark as unverifiable but consistent with InEK's published methodology",
-        "§ 17b SGB V as legal basis confirmed",
-        "4 sources including g-drg.de, Wikipedia, gesetze-im-internet.de — authoritative",
-        "All required sections present"
-      ],
-      "fixInstructions": "None required."
-    },
-    {
-      "file": "content/concepts/ISMS.md",
-      "verdict": "revise",
-      "score": 78,
-      "issues": [
-        "BROKEN WIKI-LINK: [[PACS]] — confirmed by test-report.json as broken. No PACS.md file and no 'PACS' alias registered in any article",
-        "ISO 27001:2022 as current version confirmed",
-        "93 controls in Annex A (ISO 27001:2022) confirmed — ISO 27001:2022 reduced from 114 to 93 controls in 4 domains",
-        "KHZG Fördertatbestand 10 ISMS-Pflicht ab 1.1.2025: plausible but specific deadline not independently confirmed in search",
-        "B3S Krankenhaus developed jointly by DKG and BSI: confirmed from bsi.bund.de",
-        "4 sources including bsi.bund.de (2x), Wikipedia, ISO — authoritative",
-        "All required sections present"
-      ],
-      "fixInstructions": "Fix broken [[PACS]] wiki-link. Either: (a) change to inline text 'PACS (Picture Archiving and Communication System)' without wiki-link brackets, or (b) create a PACS.md stub article, or (c) link to [[KIS]] where PACS is explained as a KIS subsystem. Option (a) is fastest: replace [[PACS]] with 'PACS (Picture Archiving and Communication System)' in the Technische Details section."
-    },
-    {
-      "file": "content/concepts/OAuth-2.0.md",
-      "verdict": "pass",
-      "score": 93,
-      "issues": [
-        "RFC 6749 as OAuth 2.0 specification confirmed",
-        "RFC 7636 as PKCE specification confirmed",
-        "RFC 7519 as JWT specification confirmed",
-        "OpenID Connect Core 1.0 from OpenID Foundation confirmed",
-        "brainpoolP256r1 curve for TI signing confirmed by BSI/gematik specifications",
-        "Authorization Code Flow with PKCE description technically accurate",
-        "4 sources including IETF RFCs, OpenID Foundation, gemspec.gematik.de — all authoritative",
-        "All required sections present",
-        "ZETA wiki-link: [[ZETA]] — no ZETA.md file found in content directory. Potential broken link not caught by test.sh (may resolve via alias)"
-      ],
-      "fixInstructions": "Verify whether [[ZETA]] in the Verknüpfungen and Überblick sections resolves. If no ZETA.md or alias exists, either create a stub or change to inline text 'ZETA (Zero-Trust Extended Token Architecture)' without wiki-link."
+      "fixInstructions": ""
     }
   ],
-  "contradictions": [
-    {
-      "claim": "KRITIS Sektoren Anzahl",
-      "articleA": "content/concepts/KRITIS.md lists 'Elf Sektoren' including Energie, Transport und Verkehr, Bankwesen, Finanzmarktinfrastrukturen, Gesundheit, Trinkwasser, Abwasser, Digitale Infrastruktur, öffentliche Verwaltung, Weltraum, Lebensmittel",
-      "reality": "The final KRITIS-DachG (Bundestag 29.01.2026, Bundesrat 06.03.2026) defines 10 sectors, not 11. Multiple legal commentary sources confirm '10 Sektoren' for the German national transposition. The article should state 10 sectors."
-    }
-  ],
+  "contradictions": [],
   "staleArticles": [
-    "content/concepts/ISMS.md — broken wiki-link [[PACS]] must be fixed (confirmed by test-report.json)"
+    "content/technologies/ePA.md — Einrichtungen count 110.000 is stale (current: 130.000/81%); Dokumente count 22 Millionen is stale (current: 37 Millionen)",
+    "content/organization/GKV-Spitzenverband.md — Versicherte count 73 Millionen is likely stale (current: ~75 Millionen)"
   ],
   "crossArticleConsistency": {
-    "ePALaunchDate": "Consistent across all articles: 15. Januar 2025 (Modellregionen), bundesweiter Rollout Q1 2025",
-    "ePASanktionen": "Consistent: Praxen ab 1. Januar 2026, Krankenhäuser ab April 2026",
-    "KRITISDachGDates": "Consistent: Bundestag 29.01.2026, Bundesrat 06.03.2026",
-    "EHDSDates": "Consistent: Inkrafttreten 26. März 2025, Anwendungspflicht gestaffelt bis 2029/2031",
-    "TIMessengerStats": "Consistent with gematik TI-Dashboard: 7.309 Einrichtungen, 254.952 Versicherte as of March 2026",
-    "CardLinkExtension": "Consistent: verlängert bis Ende Januar 2027 für DocMorris und Redcare",
-    "GesundheitsIDRollout": "Consistent: Pflicht für Krankenkassen ab 1.1.2024, als Versicherungsnachweis ab 1.1.2026"
+    "ePA_launch_date": "Consistent across ePA.md, DigiG.md, eMP.md: 15. Januar 2025 — correct",
+    "KIM_version": "KIM.md states 1.5.5 as current — no contradictions found across articles",
+    "gematik_shareholding": "GKV-Spitzenverband.md 22.05% for GKV-SV and 51% for BMG — confirmed and consistent with gematik.md",
+    "KRITIS_DachG_dates": "KRITIS.md: Bundestag 29.01.2026, Bundesrat 06.03.2026 — confirmed",
+    "HSM_B_pilot": "HSM-B.md and Highspeed-Konnektor.md consistent on pilot partners and scope",
+    "ePA_sanktionen": "ePA.md and KIS.md consistent: Praxen ab 1. Jan 2026, Krankenhäuser ab April 2026",
+    "GesundheitsID_rollout": "Gesundheits-ID.md and ePA.md consistent: Pflicht ab 1.1.2024, Versicherungsnachweis ab 1.1.2026"
   },
   "summary": {
-    "reviewed": 15,
+    "reviewed": 14,
     "pass": 11,
-    "revise": 4,
+    "revise": 3,
     "fail": 0,
     "keyIssues": [
-      "KRITIS.md: Sector count wrong — says 11, should be 10 for the KRITIS-DachG",
-      "ISMS.md: Broken [[PACS]] wiki-link (only structural failure in this cycle)",
-      "Gesundheits-ID.md: 4,4-Millionen figure unverifiable — needs qualifier or sourcing",
-      "MVZ.md: Minor date ambiguity on GKV-Modernisierungsgesetz year"
+      "ePA.md: BEEP-Gesetz expansion factually wrong — should be 'Befugniserweiterung und Entbürokratisierung in der Pflege', not 'Beschleunigung der Einführung der elektronischen Patientenakte'",
+      "ePA.md: Usage statistics stale — 110k Einrichtungen should be 130k (81%), 22M Dokumente should be 37M",
+      "RIS.md: Broken [[PACS]] wiki-link — no PACS article exists; must be removed or replaced with plain text",
+      "GKV-Spitzenverband.md: Broken [[GBA]] wiki-link + Versicherte count likely outdated (73M vs ~75M)"
     ]
   }
 }

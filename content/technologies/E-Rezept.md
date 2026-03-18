@@ -37,7 +37,8 @@ Das E-Rezept wird digital erstellt, signiert und kann auf drei Wegen eingelöst 
 ### Was kommt noch?
 - E-Rezept-Anforderung und Übermittlung via [[KIM]]
 - T-Rezepte (teratogene Stoffe, z.B. Lenalidomid): Spezifikation seit August 2025 veröffentlicht, Einführung 2026 geplant
-- Hilfsmittelverordnungen (Orthesen, Rollstühle etc.) und häusliche Krankenpflege: Pflicht ab 1. Juli 2026
+- Häusliche Krankenpflege und außerklinische Intensivpflege: Pflicht ab 1. Juli 2026
+- Hilfsmittelverordnungen (Orthesen, Rollstühle etc.): Pflicht ab 1. Juli 2027
 - Heilmittelverordnungen (eVO, Physiotherapie, Ergotherapie, Logopädie): Pilotprojekte 2026 und 2027, Pflicht ab 2028
 - E-BtM-Rezept (Betäubungsmittel): Pilotstart frühestens Q4/2026, verpflichtende Einführung voraussichtlich 2027
 - Grenzüberschreitende Einlösung in der EU
