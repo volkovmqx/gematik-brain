@@ -105,6 +105,19 @@ bash scripts/test.sh
 | `scripts/quality-report.json` | Per-article quality verdicts | Fact-Checker |
 | `scripts/test-report.json` | Structural check results | Style Guide Bot |
 
+## Contributing
+
+Feedback and contributions are welcome:
+
+- **[Suggest an article](../../issues/new?template=artikelwunsch.md)** - Which term is missing?
+- **[Report an error](../../issues/new?template=fehler-melden.md)** - Something wrong?
+- **[Suggest an improvement](../../issues/new?template=verbesserung.md)** - Ideas welcome
+- **Submit a Pull Request** - See [CONTRIBUTING.md](CONTRIBUTING.md)
+
+## License
+
+Code: MIT (Quartz). Content: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+
 ## Disclaimer
 
 This content is AI-generated. It should not be used as advice. Please consult the [official gematik documentation](https://fachportal.gematik.de/). Be aware of hallucinations and double-check every piece of information.
