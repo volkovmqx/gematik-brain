@@ -18,6 +18,8 @@ Stell dir vor, du gehst zum Arzt und der weiß nicht, welche Medikamente dir ein
 
 Ab dem **15. Januar 2025** startete die ePA in Modellregionen (Pilot). Der **bundesweite Rollout** begann am **29. April 2025**: Seither wird die ePA automatisch für alle gesetzlich Versicherten angelegt. Man muss aktiv widersprechen, wenn man keine haben will (Opt-out). Seit dem **1. Oktober 2025** ist die ePA in allen medizinischen Einrichtungen Pflicht.
 
+Laut dem **TI-Atlas 2025** (gematik / IGES Institut, veröffentlicht 24. November 2025, Befragung von über 6.600 Einrichtungen und 1.400 Bürgerinnen und Bürgern) hatten **drei Viertel der Arztpraxen die ePA bereits vor dem Pflichtstarttermin genutzt**.
+
 Ab **April 2026** müssen [[KIS|Krankenhausinformationssysteme (KIS)]] ein zertifiziertes ePA-Modul enthalten. Krankenhäuser, deren KIS diese Anforderung nicht erfüllt, riskieren finanzielle Sanktionen.
 
 Rund 100 Krankenkassen nutzen zugelassene Aktensysteme. Die technischen Implementierungen stammen von IBM (ca. 16 Kassen) und RISE/BITMARCK (ca. 87 Kassen).
@@ -26,7 +28,7 @@ Rund 100 Krankenkassen nutzen zugelassene Aktensysteme. Die technischen Implemen
 
 Stand März 2026 haben über **130.000 von ca. 160.000 Einrichtungen (81 Prozent)** mindestens eine ePA geöffnet. Mehr als **700 Millionen Datensätze** wurden verarbeitet, darunter über **37 Millionen hochgeladene Dokumente**.
 
-Seit **1. Januar 2026** sind Abrechnungsdaten in der ePA nur noch für Versicherte selbst sichtbar. Ärzte und andere Leistungserbringer können Abrechnungsdaten nicht ohne explizite Freigabe durch den Versicherten einsehen. Grundlage ist das **BEEP-Gesetz** (Gesetz zur Befugniserweiterung und Entbürokratisierung in der Pflege). Ebenfalls seit 1. Januar 2026 können Praxen in therapeutisch begründeten Einzelfällen auf die ePA-Befüllung verzichten (**§ 347 SGB V**).
+Seit **1. Januar 2026** sind Abrechnungsdaten in der ePA nur noch für Versicherte selbst sichtbar. Ärzte und andere Leistungserbringer können Abrechnungsdaten nicht ohne explizite Freigabe durch den Versicherten einsehen. Grundlage ist das **[[BEEP-Gesetz]]** (Gesetz zur Befugniserweiterung und Entbürokratisierung in der Pflege). Ebenfalls seit 1. Januar 2026 können Praxen in therapeutisch begründeten Einzelfällen auf die ePA-Befüllung verzichten (**§ 347 SGB V**).
 
 ### Was wird gespeichert?
 
@@ -76,7 +78,7 @@ Versicherte authentisieren sich bei der ePA über mehrere Wege:
 
 - **[[eGK]]**: Kontaktlose Nutzung am Kartenterminal in der Praxis (VSDM-Verfahren)
 - **[[Gesundheits-ID]]** (al.vi): App-basierte Authentisierung über den Identitätsdienst der Krankenkasse
-- **ePass** (ab 25. März 2026): NFC-basiertes Identifikationsverfahren, das den NFC-Chip eines deutschen Personalausweises (ab August 2021) oder Reisepasses (ab 2005) per Smartphone ausliest. In einem zweistufigen Verfahren wird der Ausweis fotografiert und ein Selfie-Video aufgenommen; biometrische Daten werden abgeglichen. Entwickelt von Nect GmbH, bereitgestellt über BITMARCK für ca. 80 Prozent der GKV-Kassen. Rechtsgrundlage: BEEP-Gesetz (in Kraft 1. Januar 2026). PIN oder Praxisbesuch entfallen. ePass ergänzt die Gesundheits-ID und die eGK, konkurriert nicht mit diesen Verfahren.
+- **ePass** (ab 25. März 2026): NFC-basiertes Identifikationsverfahren, das den NFC-Chip eines deutschen Personalausweises (ab August 2021) oder Reisepasses (ab 2005) per Smartphone ausliest. In einem zweistufigen Verfahren wird der Ausweis fotografiert und ein Selfie-Video aufgenommen; biometrische Daten werden abgeglichen. Entwickelt von Nect GmbH, bereitgestellt über BITMARCK für ca. 80 Prozent der GKV-Kassen. Rechtsgrundlage: [[BEEP-Gesetz]] (in Kraft 1. Januar 2026). PIN oder Praxisbesuch entfallen. ePass ergänzt die Gesundheits-ID und die eGK, konkurriert nicht mit diesen Verfahren.
 
 Leistungserbringer authentisieren sich über [[SMC-B]] (Einrichtung) und [[HBA]] (Person). Arztbriefe erfordern eine qualifizierte elektronische Signatur ([[QES]]) über den [[HBA]].
 
@@ -115,3 +117,4 @@ Die dauerhafte Lösung kommt über den **[[PoPP]]-Dienst** (Proof of Patient Pre
 - [ePA Spezifikationen](https://gemspec.gematik.de/releases/ePA_3_1_3-1/)
 - [ePA Wiki](https://wiki.gematik.de/pages/viewpage.action?pageId=588640498)
 - [ePA PoC Collection - GitHub](https://github.com/gematik/epa-poc-collection)
+- [TI-Atlas 2025 | gematik](https://www.gematik.de/newsroom/news-detail/meldung-ti-atlas)

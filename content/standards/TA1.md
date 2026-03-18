@@ -16,7 +16,7 @@ Wenn eine Apotheke ein Rezept einlöst, muss sie am Ende des Monats der Krankenk
 
 ## Überblick
 
-Die TA1 wird gemeinsam vom **GKV-Spitzenverband** und dem **Deutschen Apothekerverband (DAV)** herausgegeben. Sie ist als Anlage des **Rahmenvertrages nach § 129 SGB V** verbindlich.
+Die TA1 wird gemeinsam vom **GKV-Spitzenverband** und dem **[[DAV|Deutschen Apothekerverband (DAV)]]** herausgegeben. Sie ist als Anlage des **Rahmenvertrages nach § 129 SGB V** verbindlich.
 
 Die TA1 definiert:
 

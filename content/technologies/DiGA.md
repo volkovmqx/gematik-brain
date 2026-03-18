@@ -39,6 +39,15 @@ Das BfArM prüft DiGA-Anträge im sogenannten Fast-Track-Verfahren innerhalb von
 
 Laut DiGAV Anlage 2 müssen DiGA Datenexporte in interoperablen Formaten ermöglichen. Der Datenexport soll dem MIO DiGA Toolkit entsprechen, das auf [[FHIR]] R4 basiert. Das BfArM stellt einen FHIR-Validator im DiGA-Antragsportal bereit.
 
+### Schnittstelle zu Medizingeräten: HDDT
+
+Seit § 374a [[SGB V]] können Medizinprodukte und Implantate (z.B. Insulinpumpen, Herzmonitore, Spirometer) Messdaten direkt an DiGAs übertragen. Die technische Schnittstelle dafür heißt **HDDT** (Health Device Data Transfer). Die gematik veröffentlichte am 10. März 2026 den Release Candidate der HDDT-Spezifikation Version 26_1. Diese Version ergänzt die bereits vorhandenen [[FHIR]]-Profile für Diabetes (Glukosemessung) um Profile für:
+
+- **Lungenfunktionsmessung** (Spirometrie-Daten)
+- **Blutdruckmessung** (systolisch, diastolisch, Puls)
+
+Die Kommentierungsfrist für den Release Candidate läuft bis 1. April 2026. HDDT-Daten folgen dem [[FHIR]] R4-Standard und können bei Einwilligung des Versicherten in die [[ePA]] übertragen werden.
+
 ### Integration mit der ePA
 
 Ab dem **1. Februar 2026** müssen DiGA verpflichtend den Schreibzugriff auf die [[ePA]] unterstützen. Versicherte können DiGA-Daten mit ihrer Einwilligung automatisch in ihre [[ePA]] übertragen lassen. Die Übertragung ist konfigurierbar und endet automatisch nach Ablauf der Verordnungsdauer. Grundlage ist die Zweite Verordnung zur Änderung der [[DiGAV]], die gleichzeitig die Authentifizierung via [[Gesundheits-ID]] als Pflichtanforderung einführt. DiGA, die diese Anforderungen nicht erfüllen, riskieren den Ausschluss aus dem BfArM-Verzeichnis.

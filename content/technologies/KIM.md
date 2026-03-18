@@ -3,7 +3,7 @@ title: KIM - Kommunikation im Medizinwesen
 audience: [technical, non-technical]
 tags: [anwendung, kim, kommunikation]
 aliases: [Kommunikation im Medizinwesen, KOM-LE, Sichere E-Mail TI]
-maturity: immergruen
+maturity: wachsend
 ---
 
 # KIM - Kommunikation im Medizinwesen
@@ -65,6 +65,10 @@ Ein LDAP-basiertes Adressbuch ([[VZD]]), in dem alle registrierten KIM-Teilnehme
 
 Dienstkennungen sind strukturierte Metadaten im KIM-Header, die eine automatische Verarbeitung eingehender Nachrichten ermöglichen. Sie identifizieren den Anwendungsfall (z.B. eAU-Meldung, Arztbrief, Abrechnungsdaten) und erlauben gezieltes Routing im Primärsystem.
 
+### Verbreitung im Pflegesektor
+
+Laut **TI-Atlas 2025** (gematik / IGES Institut, veröffentlicht 24. November 2025) haben **mehr als 80 Prozent der Pflegeeinrichtungen einen Heilberufsausweis beantragt**. Ein Drittel der Pflegeeinrichtungen ist bereits vollständig TI-angebunden und **nutzt KIM aktiv**. Die Studie befragte über 6.600 Einrichtungen und 1.400 Bürgerinnen und Bürger.
+
 ### Pflicht zur elektronischen Pflegeabrechnung
 
 Ab **1. Dezember 2026** müssen alle Pflegeeinrichtungen ihre Abrechnungsdaten nach SGB XI ausschließlich über KIM übermitteln. Eine papierbasierte Übermittlung ist ab diesem Zeitpunkt nicht mehr möglich. Voraussetzung ist die vollständige TI-Anbindung der Pflegeeinrichtung (Pflicht seit Juli 2025) einschließlich [[SMC-B]] und KIM-Client.
@@ -81,3 +85,4 @@ Ab **1. Dezember 2026** müssen alle Pflegeeinrichtungen ihre Abrechnungsdaten n
 
 - [KIM - Fachportal](https://fachportal.gematik.de/anwendungen/kommunikation-im-medizinwesen)
 - Spezifikationen: gemSpec gemAnbT_FD_KOMLE, gemProdT_CM_KOMLE, gemProdT_FD_KOMLE
+- [TI-Atlas 2025 | gematik](https://www.gematik.de/newsroom/news-detail/meldung-ti-atlas)

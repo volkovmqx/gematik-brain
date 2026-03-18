@@ -62,7 +62,7 @@ Das BSI IT-Grundschutz-Kompendium besteht aus:
 
 ### Branchenspezifischer Sicherheitsstandard (B3S) Krankenhaus
 
-Der **B3S Krankenhaus** wurde von der DKG (Deutsche Krankenhausgesellschaft) gemeinsam mit dem [[BSI]] entwickelt und als sektorspezifische Alternative zu ISO 27001 für Krankenhäuser anerkannt. Er konkretisiert die KRITIS-Anforderungen für den Krankenhausbetrieb und berücksichtigt Besonderheiten wie:
+Der **B3S Krankenhaus** wurde von der [[DKG|DKG (Deutsche Krankenhausgesellschaft)]] gemeinsam mit dem [[BSI]] entwickelt und als sektorspezifische Alternative zu ISO 27001 für Krankenhäuser anerkannt. Er konkretisiert die KRITIS-Anforderungen für den Krankenhausbetrieb und berücksichtigt Besonderheiten wie:
 
 - Medizingeräte-Netzwerke (IoMT)
 - Verfügbarkeitsanforderungen in Notaufnahmen und Intensivstationen

@@ -15,7 +15,7 @@ Die ABDA ist für Apotheken das, was die Ärztekammer für Ärzte ist: der Dachv
 
 ## Überblick
 
-Die ABDA wurde 1950 gegründet und hat ihren Sitz in Berlin. Sie bündelt die 17 Landesapothekerverbände und die 17 Landesapothekerkammern unter zwei organisatorischen Dächern: dem Deutschen Apothekerverband (DAV) für berufs- und wirtschaftspolitische Themen und der Bundesapothekerkammer (BAK) für Berufsrecht und Qualitätssicherung.
+Die ABDA wurde 1950 gegründet und hat ihren Sitz in Berlin. Sie bündelt die 17 Landesapothekerverbände und die 17 Landesapothekerkammern unter zwei organisatorischen Dächern: dem [[DAV|Deutschen Apothekerverband (DAV)]] für berufs- und wirtschaftspolitische Themen und der Bundesapothekerkammer (BAK) für Berufsrecht und Qualitätssicherung.
 
 Im deutschen Gesundheitswesen nimmt die ABDA Aufgaben wahr, die für das Zusammenspiel von Apotheken mit der Telematikinfrastruktur direkt relevant sind. Sie handelt die Abrechnungsvereinbarungen mit den Krankenkassenverbänden aus und definiert die technischen Formate für den elektronischen Datenaustausch zwischen Apotheken und [[Apothekenrechenzentrum|Apothekenrechenzentren]].
 

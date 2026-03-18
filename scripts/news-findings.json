@@ -1,6 +1,6 @@
 {
   "lastChecked": "2026-03-18",
-  "lastRun": "2026-03-18T12:00:00Z",
+  "lastRun": "2026-03-18T14:30:00Z",
   "findings": [
     {
       "title": "eMedikationsplan: Start verschoben auf Oktober 2026",
@@ -406,8 +406,9 @@
       "summary": "Gematik veröffentlichte am 10. März 2026 den Release Candidate der HDDT-Spezifikation (Health Device Data Transfer) Version 26_1. HDDT definiert die Schnittstelle zwischen Medizinprodukten/Implantaten und DiGAs gemäß §374a SGB V. Die neue Version ergänzt die Diabetes-Profile um FHIR-Profile für Lungenfunktionsmessung und Blutdruckmessung. Kommentierungsfrist läuft bis 1. April 2026.",
       "relevantArticles": ["DiGA.md"],
       "category": "specification",
-      "action": "update",
-      "details": "DiGA.md sollte die HDDT-Schnittstelle (§374a SGB V) als Verbindung zu Medizingeräten erwähnen. Ggf. eigener Artikel 'HDDT' sinnvoll.",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
+      "details": "DiGA.md: HDDT-Schnittstelle (§374a SGB V) in 'Technische Details' ergänzt. FHIR-Profile für Lungenfunktionsmessung und Blutdruckmessung aus RC 26_1 dokumentiert.",
       "suggestedTerm": "HDDT"
     },
     {
@@ -702,8 +703,9 @@
       "summary": "Gematik veröffentlichte am 24. November 2025 die Ergebnisse des TI-Atlas 2025, der gemeinsam mit dem IGES Institut durchgeführten jährlichen Digitalisierungsstudie. Befragung von über 6.600 Einrichtungen und 1.400 Bürgerinnen und Bürgern. Zentrale Ergebnisse: E-Rezept gilt bei 90 Prozent der GKV-Versicherten als sinnvoll, 87 Prozent sind zufrieden. Drei Viertel der Arztpraxen nutzten die ePA bereits vor dem Pflichtstarttermin. Pflegesektor: Mehr als 80 Prozent der Pflegeeinrichtungen haben einen Heilberufsausweis beantragt, ein Drittel ist bereits TI-angebunden und nutzt KIM.",
       "relevantArticles": ["ePA.md", "E-Rezept.md", "KIM.md", "Telematikinfrastruktur.md"],
       "category": "info",
-      "action": "update",
-      "details": "ePA.md und E-Rezept.md können die TI-Atlas-2025-Nutzungszahlen als Beleg für die Verbreitung zitieren. KIM.md sollte die wachsende Pflegesektorbeteiligung aus dem TI-Atlas ergänzen."
+      "action": "applied",
+      "appliedDate": "2026-03-18",
+      "details": "ePA.md: Drei-Viertel-Stat für Arztpraxen im Überblick ergänzt. E-Rezept.md: 90%/87%-Zufriedenheitsdaten im Überblick ergänzt. KIM.md: 80%-HBA-Antrag und Drittel-KIM-Nutzung in neuem Abschnitt 'Verbreitung im Pflegesektor' ergänzt. Quelle TI-Atlas 2025 in allen drei Artikeln hinzugefügt."
     },
     {
       "title": "gemspec Releases Consumer_26_1 und SigD_26_1: Kompatibilitätsupdates für KIM 1.5.5 und ePA 3.1.3",
@@ -1011,6 +1013,35 @@
       "action": "applied",
       "appliedDate": "2026-03-18",
       "details": "E-Rezept.md: Neuer Abschnitt 'Betriebsstabilität und Kritik' mit ABDA-Forderungen, TI-Ausfällen März 2026 und bundesweitem Apothekenstreiktag 23.03.2026 ergänzt."
+    },
+    {
+      "title": "gematik startet neue Themenseiten für Heil- und Hilfsmittelerbringer (24. Februar 2026)",
+      "date": "2026-02-24",
+      "source": "https://www.gematik.de/newsroom/news-detail/neue-themenseiten-zum-ti-anschluss-fuer-heil-und-hilfsmittelerbringende",
+      "summary": "Gematik veröffentlichte am 24. Februar 2026 neue, praxisorientierte Themenseiten für Heilmittelerbringer (Physiotherapeuten, Ergotherapeuten, Logopäden, Podologen) und Hilfsmittelerbringer (Hörakustiker, Orthopädietechniker). Die Seiten umfassen Checklisten zur TI-Anbindungsplanung, Übersichten zu benötigten Komponenten (KIM, SMC-B, eHBA), Finanzierungshinweise und Informationen zu den Nutzwerten (eVO, E-Rezept ab 2027). Hintergrund ist die auf den 1. Oktober 2027 verschobene TI-Anbindungspflicht für diese Sektoren.",
+      "relevantArticles": ["Telematikinfrastruktur.md", "KIM.md"],
+      "category": "info",
+      "action": "info_only"
+    },
+    {
+      "title": "dgMP-Start März 2026: Digitaler Medikationsprozess in erster Stufe live",
+      "date": "2026-03-01",
+      "source": "https://www.gematik.de/newsroom/news-detail/aktuelles-ueberblick-das-sind-die-neuen-funktionen-der-epa-fuer-alle",
+      "summary": "Der digital gestützte Medikationsprozess (dgMP) ist seit März 2026 in erster Stufe produktiv. Bestandteile: (1) Elektronische Medikationsliste (eML): Seit Januar 2025 werden E-Rezept-Dispensierdaten automatisch in die ePA kopiert; seit März 2026 können Ärzte auch Medikamente ohne vorliegendes E-Rezept nachtragen. (2) Elektronischer Medikationsplan (eMP): Strukturierter Plan mit Dosierungsangaben, Indikationen, Statusangaben (geplant/aktiv/pausiert/beendet) und AMTS-relevanten Zusatzinformationen. Pilotphase für den eMP läuft ab Juli 2026 in ausgewählten Regionen; bundesweiter Rollout des vollständigen eMedikationsplans erst Oktober 2026. Grundlage ist ePA 3.1.2 (Mai 2025), technische Konzeptspezifikation von gematik im Juli 2025 vorveröffentlicht.",
+      "relevantArticles": ["ePA.md", "E-Rezept.md"],
+      "category": "specification",
+      "action": "update",
+      "details": "ePA.md sollte den March-2026-Start der dgMP-Phase-1 (Arzt-Nachtragen ohne E-Rezept) präziser darstellen. Der Artikel trennt eML und eMP noch nicht klar genug. Ein eigener Unterabschnitt 'Digitaler Medikationsprozess (dgMP)' wäre sinnvoll.",
+      "suggestedTerm": "dgMP"
+    },
+    {
+      "title": "ePA wird zur Plattform: Terminbuchung soll integriert werden (Konzeptphase)",
+      "date": "2025-11-22",
+      "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/epa-wird-zur-plattform-termin-buchung-soll-integriert-werden/68379472",
+      "summary": "Gematik-Produktmanagerin Lena Dimde kündigte an, die ePA perspektivisch zu einem digitalen Versorgungsportal weiterzuentwickeln. Geplante Erweiterung: Integration von Terminbuchungsfunktionen direkt in der ePA-App, so dass Versicherte z.B. nach Einsicht in ihren Impfausweis einen Impftermin direkt buchen können. Zeitplan: keine konkreten Meilensteine; realistische Umsetzung frühestens 2026/2027. Die Funktion hängt von der Primärversorgungsreform der Bundesregierung ab.",
+      "relevantArticles": ["ePA.md"],
+      "category": "specification",
+      "action": "info_only"
     }
   ]
 }

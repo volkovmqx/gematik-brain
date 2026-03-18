@@ -26,7 +26,7 @@ Der G-BA besteht aus:
 
 - **Unparteiischen Mitgliedern**: Drei unparteiische Mitglieder (darunter der Vorsitzende) werden einvernehmlich von den Trägerorganisationen bestellt.
 - **GKV-Seite**: Der [[GKV-Spitzenverband]] entsendet Vertreter.
-- **Leistungserbringerseite**: [[KBV]] (Kassenärztliche Bundesvereinigung), KZBV (Kassenzahnärztliche Bundesvereinigung) und Deutsche Krankenhausgesellschaft (DKG) entsenden Vertreter je nach Thema.
+- **Leistungserbringerseite**: [[KBV]] (Kassenärztliche Bundesvereinigung), [[KZBV]] (Kassenzahnärztliche Bundesvereinigung) und [[DKG|Deutsche Krankenhausgesellschaft (DKG)]] entsenden Vertreter je nach Thema.
 - **Patientenvertreter**: Haben Mitberatungs- aber kein Stimmrecht.
 
 ### Kernaufgaben

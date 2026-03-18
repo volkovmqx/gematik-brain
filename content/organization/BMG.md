@@ -60,11 +60,11 @@ Die gematik hat neun Gesellschafter. Das BMG hält mit 51 Prozent die Mehrheit:
 | [[GKV-Spitzenverband]] | 22,05 % |
 | Verband der Privaten Krankenversicherung | 7,0 % |
 | Kassenärztliche Bundesvereinigung ([[KBV]]) | anteilig |
-| Kassenzahnärztliche Bundesvereinigung | anteilig |
+| [[KZBV|Kassenzahnärztliche Bundesvereinigung]] | anteilig |
 | [[Bundesaerztekammer|Bundesärztekammer]] | anteilig |
 | Bundeszahnärztekammer | anteilig |
-| Deutscher Apothekerverband | anteilig |
-| Deutsche Krankenhausgesellschaft | anteilig |
+| [[DAV|Deutscher Apothekerverband]] | anteilig |
+| [[DKG|Deutsche Krankenhausgesellschaft]] | anteilig |
 
 Die restlichen 19,95 Prozent verteilen sich auf die sechs Verbände aus dem Gesundheitswesen.
 

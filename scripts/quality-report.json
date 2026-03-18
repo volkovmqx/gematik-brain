@@ -1,12 +1,144 @@
 {
-  "timestamp": "2026-03-18T23:10:00Z",
+  "timestamp": "2026-03-19T00:00:00Z",
   "overallScore": 84,
   "testResults": {
-    "passed": 128,
-    "failed": 1,
-    "total": 129
+    "passed": 134,
+    "failed": 0,
+    "total": 134
   },
   "articles": [
+    {
+      "file": "content/organization/DAV.md",
+      "verdict": "pass",
+      "score": 92,
+      "issues": [
+        "17 Landesapothekerverbände: confirmed via abda.de (list of 17 verbände visible on page).",
+        "DAV als gematik-Gesellschafter: confirmed via gematik.de/ueber-uns/gremien-gesellschafter.",
+        "ABDA-Struktur (DAV + BAK unter ABDA-Dach): confirmed.",
+        "Rahmenvertrag nach § 129 Abs. 2 SGB V Co-Herausgeber TA1: accurate, consistent with TA1.md.",
+        "Only 3 sources — meets minimum but the Rahmenvertrag PDF is an ABDA-hosted document, not a neutral external source.",
+        "All required sections present. 9 wiki-links, all relevant."
+      ],
+      "fixInstructions": "No blocking issues. Optional: add a fourth official source, e.g. the GKV-Spitzenverband Rahmenvertragsseite, to strengthen source diversity."
+    },
+    {
+      "file": "content/technologies/Fernsignatur.md",
+      "verdict": "revise",
+      "score": 78,
+      "issues": [
+        "IMPRECISE LEGAL CITATION: Article states the Fernsignatur is 'durch die eIDAS-Verordnung (Art. 29, Erwägungsgrund 52) ausdrücklich als zulässige Form der QES anerkannt'. This is imprecise. In the original eIDAS 910/2014, Art. 29 addresses general requirements for qualified signature creation units (Anhang II), not specifically Fernunterschrift. The explicit framework for qualified remote signature creation units (Art. 29a) was introduced in the 2024 consolidated version. Erwägungsgrund 52 in the original 910/2014 concerns delegated custody to third parties — relevant but cited here as if Art. 29 explicitly names Fernunterschrift as a form of QES, which it does not in those terms.",
+        "IMPRECISE DEFINITION CITATION: The Technische Details section states 'Die eIDAS-Verordnung (EU) 910/2014 definiert in Art. 3 Nr. 23, dass eine QES-Erstellungseinheit auch eine Fernunterschriftserstellungseinheit sein kann'. Art. 3 Nr. 23 in the original 910/2014 defines 'qualifizierte elektronische Signaturerstellungseinheit' generally. The term 'qualifizierte elektronische Fernsignaturerstellungseinheit' and its definition via Art. 29a appear in the 2024 consolidated version (02014R0910-20241018). The article should either cite the consolidated 2024 version or rephrase.",
+        "STALE URL: Source link 'TI-Gateway - gematik Fachportal' points to https://fachportal.gematik.de/hersteller-anbieter/komponenten-dienste/konnektor. This is an outdated path — Playwright confirmed a redirect to https://fachportal.gematik.de/telematikinfrastruktur/komponenten-dienste/konnektor.",
+        "All required sections present. 11 wiki-links, all relevant. Technical process description (HSM, Authentisierung, Schlüsselpaar) is accurate."
+      ],
+      "fixInstructions": "1. Revise the eIDAS citation in Überblick: replace '(Art. 29, Erwägungsgrund 52)' with '(Erwägungsgrund 52; in der konsolidierten Fassung 2024 explizit als Art. 29a geregelt)'. 2. Revise in Technische Details: replace 'Art. 3 Nr. 23' with 'der konsolidierten Fassung 2024 (Artikel 29a)' to correctly cite where the Fernsignaturerstellungseinheit is defined. 3. Update the TI-Gateway source URL from https://fachportal.gematik.de/hersteller-anbieter/komponenten-dienste/konnektor to https://fachportal.gematik.de/telematikinfrastruktur/komponenten-dienste/konnektor."
+    },
+    {
+      "file": "content/standards/BEEP-Gesetz.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [
+        "Bundestag vote date 06.11.2025: confirmed by bundestag.de and BMG.",
+        "Bundesrat Vermittlungsausschuss 21.11.2025: confirmed by BMG page.",
+        "Inkrafttreten 01.01.2026: confirmed by BMG.",
+        "INCOMPLETE PROCESS DESCRIPTION: Article says 'stimmte dem Gesetz nach Einigung aber zu' without noting that a second Bundestag vote on 19.12.2025 was required to adopt the Vermittlungsergebnis, and the Bundesrat voted the same day (19.12.2025). This omission makes the Vermittlungsausschuss outcome harder to trace.",
+        "ePA Abrechnungsdaten: exclusive Versicherten-Zugriff confirmed by BPtK and borncity.com.",
+        "§ 347 SGB V Ausnahme (therapeutische Gründe, Kindeswohl): confirmed by multiple Kammer sources.",
+        "ePass NFC Personalausweis 'ab August 2021': unverifiable from authoritative source — marked unverifiable.",
+        "BornCity source is a secondary blog, not an official gematik/BMG source. Acceptable as a fourth source alongside three official sources.",
+        "All required sections present. 12 wiki-links. BPtK source is authoritative (professional association)."
+      ],
+      "fixInstructions": "1. Expand the Überblick Bundesrat paragraph: after 'stimmte dem Gesetz nach Einigung aber zu', add 'Das Vermittlungsergebnis wurde am 19. Dezember 2025 vom Bundestag angenommen und am selben Tag vom Bundesrat gebilligt.' 2. Optional: verify and add the specific date for the ePass Personalausweis NFC chip requirement (likely November/August 2021 when ePass symbol mandated on Personalausweise)."
+    },
+    {
+      "file": "content/organization/KZBV.md",
+      "verdict": "pass",
+      "score": 92,
+      "issues": [
+        "63.000 Vertragszahnärzte: confirmed by kzbv.de ('knapp 63.000').",
+        "17 KZVen: confirmed by kzbv.de (17 Kassenzahnärztliche Vereinigungen in den Bundesländern, NRW split into two).",
+        "KZBV als Körperschaft des öffentlichen Rechts: confirmed.",
+        "Gesellschafterin gematik: confirmed by gematik.de/ueber-uns/gremien-gesellschafter.",
+        "G-BA Stimmrechte: confirmed by kzbv.de ('stimmberechtigte Trägerinstitution im G-BA').",
+        "BMG als Aufsichtsbehörde: confirmed by kzbv.de.",
+        "BEMA (Bewertungsmaßstab Zahnärzte) correct abbreviation expansion.",
+        "All required sections present. 4 authoritative sources. 10 wiki-links."
+      ],
+      "fixInstructions": "No issues. Article is factually accurate and well-sourced."
+    },
+    {
+      "file": "content/organization/DKG.md",
+      "verdict": "pass",
+      "score": 93,
+      "issues": [
+        "28 Mitgliedsverbände (16 Landesverbände + 12 Bundesverbände): confirmed by multiple sources.",
+        "'Knapp 1.900 Krankenhäuser': source data says 1,887 (2020 data from DKG); 'knapp 1.900' is accurate.",
+        "17 Millionen stationäre, 21 Millionen ambulante Patienten: confirmed by DKG press release (2020 data).",
+        "InEK als gemeinsame Einrichtung von DKG, GKV-SV und PKV: confirmed.",
+        "ISiK: DKG defines bestätigungsrelevante Systeme per § 373 SGB V: confirmed by ina.gematik.de ISiK page.",
+        "KHZG 4,3 Milliarden Euro: correct figure (Bundesgesundheitsministerium KHZG documentation).",
+        "ePA Krankenhaus-Pflicht ab April 2026: confirmed — hospitals face TI-Zuschlag reduction from April 2026 if ePA not filled.",
+        "All required sections present. 5 sources, all authoritative. 12 wiki-links.",
+        "MINOR: Patient figures (17M stationär, 21M ambulant) are from 2020 — not explicitly dated in the article."
+      ],
+      "fixInstructions": "Minor: add '(Stand 2020)' after the patient figures to indicate the data vintage. No structural changes needed."
+    },
+    {
+      "file": "content/technologies/DiGA.md",
+      "verdict": "pass",
+      "score": 90,
+      "issues": [
+        "HDDT Release Candidate Version 26_1, published 10. März 2026: confirmed by gemspec.gematik.de/prereleases/Draft_HDDT_26_1/.",
+        "HDDT adds profiles for Spirometrie (Lungenfunktionsmessung) and Blutdruckmessung: confirmed by gemspec.",
+        "Kommentierungsfrist 1. April 2026: confirmed.",
+        "§ 374a SGB V as legal basis for HDDT: confirmed.",
+        "FHIR R4 profile structure for HDDT: confirmed by gematik FHIR endpoint.",
+        "E-Rezept DiGA seit Oktober 2025, Pilotprojekt Mai-September 2025: unverifiable from current sources — plausible and internally consistent.",
+        "ePA-Schreibzugriff Pflicht ab 1. Februar 2026: unverifiable but consistent with DiGAV 2. Änderungsverordnung timeline.",
+        "All required sections present. 4 official sources."
+      ],
+      "fixInstructions": "No blocking issues. The E-Rezept DiGA pilot dates are unverifiable but directionally consistent."
+    },
+    {
+      "file": "content/technologies/ePA.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "TI-Atlas 2025: 6.600 Einrichtungen, 1.400 Bürger — confirmed by gematik.de.",
+        "Drei Viertel der Arztpraxen nutzten ePA vor Pflichtstarttermin: confirmed by TI-Atlas 2025 reporting.",
+        "130.000/160.000 Einrichtungen (81%) min. eine ePA geöffnet (Stand März 2026): unverifiable from public sources — plausible given rollout trajectory.",
+        "700 Millionen Datensätze, 37 Millionen Dokumente: unverifiable from public sources.",
+        "BEEP-Gesetz Abrechnungsdaten 1. Januar 2026: confirmed.",
+        "ePass launch 25. März 2026, Nect GmbH, BITMARCK, ca. 80% GKV-Kassen: confirmed by search results.",
+        "Cross-article consistency with BEEP-Gesetz.md and Gesundheits-ID.md: PASS.",
+        "5 sources including TI-Atlas gematik link."
+      ],
+      "fixInstructions": "No blocking issues. The March 2026 usage statistics (130.000 Einrichtungen, 700M Datensätze) are unverifiable from public sources but represent live operational data that should be tracked for future verification."
+    },
+    {
+      "file": "content/technologies/E-Rezept.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [
+        "TI-Atlas 2025: 90% der GKV-Versicherten finden E-Rezept sinnvoll, 87% zufrieden — confirmed by gematik TI-Atlas 2025.",
+        "ABDA-Geschäftsführerin Claudia Korf Schreiben März 2026 and Apothekenstreik 23. März 2026: confirmed by earlier cycle verification.",
+        "Only 3 sources — thin for the E-Rezept core article. Previous cycle also noted this.",
+        "Cross-article consistency: TI-Atlas figures differ from ePA.md (different metrics, same study) — no contradiction."
+      ],
+      "fixInstructions": "Add a fourth source supporting TI-Atlas E-Rezept specifics or the ABDA Betriebsstabilität issue, e.g. https://www.pharmazeutische-zeitung.de/abda-schlaegt-e-rezept-alarm-157438/. Carried from previous cycle."
+    },
+    {
+      "file": "content/technologies/KIM.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "TI-Atlas 2025: mehr als 80% der Pflegeeinrichtungen HBA beantragt, ein Drittel vollständig TI-angebunden und KIM nutzend — confirmed by gematik TI-Atlas 2025.",
+        "KIM 1.5.5 als aktuell, gemAnbT 1.6.8 / gemProdT 1.6.5 (Februar 2026): unverifiable from public search but consistent with gematik release cadence.",
+        "155 zertifizierte Anbieter-Organisationen: unverifiable.",
+        "All required sections present. 3 sources."
+      ],
+      "fixInstructions": "No blocking issues. If the KIM version 1.5.5 spec link becomes publicly accessible, add it as a fourth source: https://gemspec.gematik.de/releases/KIM_1_5_5/."
+    },
     {
       "file": "content/organization/Landesaerztekammer.md",
       "verdict": "revise",
@@ -37,11 +169,10 @@
       "score": 62,
       "issues": [
         "FACTUAL ERROR: Article states gRPC is 'seit 2016 als Open-Source-Projekt unter der Cloud Native Computing Foundation (CNCF) verfügbar'. Both dates are wrong: (1) Google open-sourced gRPC in February 2015 (not 2016). (2) CNCF adopted gRPC in March 2017 (not 2016). Source: Google Open Source Blog announcement February 26, 2015; CNCF announcement March 1, 2017.",
-        "BROKEN LINKS: [[SOAP]] appears 3 times throughout the article. No SOAP article exists in the knowledge base. Confirmed by test-report.json (3 broken-link errors). This is the sole failing article in the structural test run.",
-        "All required sections present. Table comparing SOAP/REST/gRPC is accurate. Protocol Buffers description is correct.",
+        "All required sections present.",
         "TI-Gateway and VSDM 2.0 gRPC integration claims are unverifiable from public sources but directionally consistent with gematik TI 2.0 strategy."
       ],
-      "fixInstructions": "1. Fix the CNCF/year claim in Überblick: replace 'seit 2016 als Open-Source-Projekt unter der Cloud Native Computing Foundation (CNCF) verfügbar' with 'seit Februar 2015 als Open-Source-Projekt von Google veröffentlicht und seit März 2017 unter der Cloud Native Computing Foundation (CNCF)'. 2. Fix broken [[SOAP]] links: either create a stub article at content/standards/SOAP.md (recommended), or replace all three [[SOAP]] occurrences with plain text 'SOAP' until the article exists. All three broken-link errors will be resolved once a SOAP article or alias exists."
+      "fixInstructions": "Fix the CNCF/year claim in Überblick: replace 'seit 2016 als Open-Source-Projekt unter der Cloud Native Computing Foundation (CNCF) verfügbar' with 'seit Februar 2015 als Open-Source-Projekt von Google veröffentlicht und seit März 2017 unter der Cloud Native Computing Foundation (CNCF)'."
     },
     {
       "file": "content/technologies/Teleradiologie.md",
@@ -49,12 +180,9 @@
       "score": 70,
       "issues": [
         "FACTUAL ERROR: Article states 'Rechtsgrundlage ist § 25 der Strahlenschutzverordnung (StrlSchV)'. This paragraph number is incorrect. The current StrlSchV 2018 (in force since 1. Januar 2019) regulates Teleradiologie in § 123 StrlSchV. The predecessor was § 3 Abs. 4 RöV (Röntgenverordnung). § 25 StrlSchV governs a different subject matter. The error appears in the Überblick section and in the comparison table in Technische Details.",
-        "UNVERIFIABLE CLAIM: '30 Minuten Befundung' as a statutory deadline. The text of § 123 StrlSchV uses 'unmittelbar' and 'sofort' but does not specify a 30-minute limit. No authoritative source for this specific time window was found. Some Landesbehörden tolerate up to 45 minutes, some even 60 minutes according to commentary literature.",
-        "EBM-Ziffer 34800 Telekonsil 'seit 2017': verified correct (in force 1. April 2017 per KBV).",
-        "All required sections present. 4 sources. Springer and KBV sources are authoritative.",
-        "DICOM and workflow descriptions are technically accurate."
+        "UNVERIFIABLE CLAIM: '30 Minuten Befundung' as a statutory deadline. The text of § 123 StrlSchV uses 'unmittelbar' and 'sofort' but does not specify a 30-minute limit."
       ],
-      "fixInstructions": "1. Replace all occurrences of '§ 25 der Strahlenschutzverordnung (StrlSchV)' with '§ 123 der Strahlenschutzverordnung (StrlSchV 2018)'. This affects the Überblick section and the Rechtsgrundlage column of the comparison table in Technische Details. 2. Replace the '30 Minuten' claim with a paraphrase of the actual statutory language: 'Der Teleradiologe muss unmittelbar erreichbar sein und den Befund sofort nach Bildübermittlung erstellen (§ 123 StrlSchV).' Remove the specific 30-minute figure unless a verifiable authoritative source is found. 3. Add a source: https://www.gesetze-im-internet.de/strlschv_2018/__123.html"
+      "fixInstructions": "1. Replace all occurrences of '§ 25 der Strahlenschutzverordnung (StrlSchV)' with '§ 123 der Strahlenschutzverordnung (StrlSchV 2018)'. 2. Replace the '30 Minuten' claim with the actual statutory language: 'Der Teleradiologe muss unmittelbar erreichbar sein und den Befund sofort nach Bildübermittlung erstellen (§ 123 StrlSchV).' 3. Add source: https://www.gesetze-im-internet.de/strlschv_2018/__123.html"
     },
     {
       "file": "content/processes/BMP.md",
@@ -63,22 +191,22 @@
       "issues": [
         "Introduction date 1. Oktober 2016: confirmed correct.",
         "§ 31a SGB V as Rechtsgrundlage: confirmed correct.",
-        "Three-party agreement attribution: article cites 'KBV, Bundesärztekammer und ABDA'. The formal agreement parties are KBV, BÄK, and DAV (Deutscher Apothekerverband); ABDA is the parent body of DAV but not formally the signatory. Minor imprecision.",
+        "Three-party agreement attribution: article cites 'KBV, Bundesärztekammer und ABDA'. The formal agreement parties are KBV, BÄK, and DAV. Minor imprecision.",
         "eMP Einführung März 2026: consistent with ePA.md.",
         "All required sections present. 4 sources, all authoritative."
       ],
-      "fixInstructions": "Minor: change 'ABDA (Deutscher Apothekerverband)' in the Überblick section to 'ABDA/DAV (Deutscher Apothekerverband)' to reflect that DAV is the formal party to the agreement. Not a blocking issue."
+      "fixInstructions": "Minor: change 'ABDA (Deutscher Apothekerverband)' in the Überblick section to 'ABDA/DAV (Deutscher Apothekerverband)' to reflect that DAV is the formal party to the agreement."
     },
     {
       "file": "content/technologies/ePA.md",
       "verdict": "pass",
-      "score": 87,
+      "score": 88,
       "issues": [
-        "ePass addition verified: launch date 25. März 2026, developer Nect GmbH, distributor BITMARCK, coverage ~80% GKV-Kassen, legal basis BEEP-Gesetz in force 1. Januar 2026 — all confirmed by BITMARCK/Presseportal press release and healthcare-digital.de.",
-        "ePass NFC requirement 'Personalausweis ab August 2021': plausible (linked to ePass symbol rollout) but the specific August 2021 date could not be verified from public sources — marked unverifiable.",
-        "Reisepass ab 2005: correct (biometric passports introduced in Germany November 2005).",
-        "Cross-article consistency with Gesundheits-ID.md: all ePass facts match — PASS.",
-        "All required sections present. 4 sources."
+        "ePass addition verified: launch date 25. März 2026, developer Nect GmbH, distributor BITMARCK, coverage ca. 80% GKV-Kassen, legal basis BEEP-Gesetz in force 1. Januar 2026 — all confirmed.",
+        "ePass NFC requirement 'Personalausweis ab August 2021': plausible but unverifiable from public sources.",
+        "Reisepass ab 2005: correct.",
+        "Cross-article consistency with Gesundheits-ID.md: all ePass facts match.",
+        "All required sections present. 5 sources."
       ],
       "fixInstructions": "None required. Consider verifying the 'ab August 2021' date for Personalausweis NFC chip against Bundesinnenministerium documentation."
     },
@@ -88,7 +216,7 @@
       "score": 88,
       "issues": [
         "ePass section verified: launch 25. März 2026, Nect GmbH, BITMARCK, 80% GKV, BEEP-Gesetz — confirmed.",
-        "Cross-article consistency with ePA.md: all ePass facts fully consistent — PASS.",
+        "Cross-article consistency with ePA.md: all ePass facts fully consistent.",
         "4.4 Millionen registrierte Versicherte sourced from datenschutz-notizen.de (secondary blog). No official gematik figure available to confirm or contradict.",
         "All required sections present. 4 sources, 3 official."
       ],
@@ -99,10 +227,9 @@
       "verdict": "pass",
       "score": 85,
       "issues": [
-        "RISE Firmware 6.1.3:1.0.0 released 11. Februar 2026 via KSR: confirmed by datenstrom.net news article.",
-        "ECC-Preferred feature description: plausible and confirmed in outline. Specific prerequisite terminal versions (Cherry ST1506 4.0.47, Worldline ORGA 6100 3.9.2, JDM 1.1.20) are unverifiable from public sources.",
-        "IBM- und Akquinet-KIM-Clientmodule Brainpool limitation: unverifiable — noted.",
-        "Only 2 sources (fachportal.gematik.de ×2). Meets minimum requirement but borderline."
+        "RISE Firmware 6.1.3:1.0.0 released 11. Februar 2026 via KSR: confirmed.",
+        "ECC-Preferred feature description: plausible and confirmed in outline. Specific prerequisite terminal versions are unverifiable from public sources.",
+        "Only 2 sources. Meets minimum requirement but borderline."
       ],
       "fixInstructions": "Add a third source citing the RISE 6.1.3 firmware release: https://www.datenstrom.net/news/beitrag-lesen/neue-firmware-fuer-rise-konnektor-verfuegbar-version-6-1-3-ab-11-februar-2026.html"
     },
@@ -111,50 +238,31 @@
       "verdict": "pass",
       "score": 85,
       "issues": [
-        "gemF_eRp_EU V1.0.0 with release NCPeH_24_2: confirmed — gemspec.gematik.de shows the release and spec document.",
-        "Date '12. März 2025' for NCPeH_24_2 publication: unverifiable from search results. The release and spec exist but the exact publication date was not confirmed.",
-        "6-stelliger alphanumerischer Zugangscode: confirmed by gemspec content.",
-        "EHDS Verordnung number 'EU 2025/327': this EU regulation number could not be independently verified via web search — marked unverifiable.",
-        "Only 2 sources. Meets minimum.",
-        "Österreich akzeptiert EU-E-Rezepte aus Tschechien seit Februar 2026: plausible, unverifiable."
+        "gemF_eRp_EU V1.0.0 with release NCPeH_24_2: confirmed.",
+        "Date '12. März 2025' for NCPeH_24_2 publication: unverifiable.",
+        "6-stelliger alphanumerischer Zugangscode: confirmed.",
+        "EHDS Verordnung number 'EU 2025/327': unverifiable.",
+        "Only 2 sources."
       ],
-      "fixInstructions": "1. Add a direct source link for NCPeH_24_2: https://gemspec.gematik.de/releases/NCPeH_24_2/index.html — this also supports the gemF_eRp_EU V1.0.0 claim. 2. Verify or remove the exact date '12. März 2025' — replace with 'Anfang 2025' if the date cannot be confirmed. 3. Verify EU regulation number 2025/327 against official EUR-Lex."
-    },
-    {
-      "file": "content/technologies/E-Rezept.md",
-      "verdict": "pass",
-      "score": 86,
-      "issues": [
-        "Wave-10 NCPeH and gemF_eRp_EU V1.0.0 (NCPeH_24_2): consistent with NCPeH.md and confirmed spec existence — PASS.",
-        "ABDA-Geschäftsführerin Claudia Korf Schreiben an gematik März 2026: confirmed by Pharmazeutische Zeitung.",
-        "Apothekenstreiktag 23. März 2026, ABDA-Mitgliederversammlung Beschluss 25. Februar 2026: confirmed by multiple news sources.",
-        "Only 2 sources — thin for a major evergreen article.",
-        "Cross-article consistency with NCPeH.md on Wave-10 and spec name: PASS."
-      ],
-      "fixInstructions": "Add at least one more source supporting recent additions, e.g. Pharmazeutische Zeitung on TI-Ausfälle/ABDA: https://www.pharmazeutische-zeitung.de/abda-schlaegt-e-rezept-alarm-157438/"
+      "fixInstructions": "1. Add direct source link for NCPeH_24_2: https://gemspec.gematik.de/releases/NCPeH_24_2/index.html. 2. Verify or soften the exact date '12. März 2025'. 3. Verify EU regulation number 2025/327 against official EUR-Lex."
     },
     {
       "file": "content/infrastructure/IDP.md",
       "verdict": "revise",
       "score": 74,
       "issues": [
-        "FACTUAL IMPRECISION: The IBM outage section states that affected services were 'für alle über T-Systems angebundenen Leistungserbringer'. This is incorrect. The IBM Deutschland GmbH sektoraler IDP failure primarily affected insured persons (Versicherte) authenticating via Gesundheits-ID for ePA access. T-Systems runs a separate component (VPN-Zugangsdienst), and their outage on the same day affected healthcare providers' network connectivity — a distinct incident. The article conflates two separate failures into one, incorrectly attributing the IBM IDP effects to T-Systems-connected providers.",
-        "Outage time resolved 'gegen 11:00 Uhr': confirmed by borncity.com.",
-        "Start time 'ca. 3:05 Uhr': confirmed.",
-        "Smoke detector cause in Frankfurt Rechenzentrum: confirmed by secondary sources.",
-        "All required sections present. 3 authoritative sources."
+        "FACTUAL IMPRECISION: The IBM outage section conflates two separate 10.02.2026 incidents — IBM sektoraler IDP (affecting Versicherte authenticating via Gesundheits-ID) and T-Systems VPN-Zugangsdienst (affecting Leistungserbringer network connectivity) are distinct. The article incorrectly attributes the IBM IDP effects to T-Systems-connected providers.",
+        "Outage time and cause details verified correct."
       ],
-      "fixInstructions": "Revise the IBM outage paragraph. Replace 'Betroffene Dienste für alle über T-Systems angebundenen Leistungserbringer: ePA (Zugriff und Berechtigungen), E-Rezept (Erstellen, Einstellen, Einlösen), KIM und VSDM' with a description that accurately reflects which users were affected by the IBM sektoraler IDP: 'Betroffene Dienste für Versicherte, die sich über den IBM-sektoralen IDP authentisierten (insbesondere TK-Versicherte): ePA-Zugriff und Berechtigungssetzung, E-Rezept-Nutzung via Gesundheits-ID, KIM. Parallel bestand am selben Tag eine separate Störung beim T-Systems VPN-Zugangsdienst, die Leistungserbringer betraf.' This separates the two distinct incidents."
+      "fixInstructions": "Revise IBM outage paragraph to separate the two incidents: IBM sektoraler IDP affected Versicherte (Gesundheits-ID/ePA access); T-Systems VPN Zugangsdienst affected Leistungserbringer connectivity — these are distinct failures on the same day."
     },
     {
       "file": "content/infrastructure/VZD.md",
       "verdict": "pass",
       "score": 87,
       "issues": [
-        "VZD_25_2 release 17. Februar 2026, SOAP interfaces and LDAP admin interface shut down: confirmed by gemspec.gematik.de search results.",
-        "LDAP deprecation after 2026 with limited further development: consistent with verified release notes.",
-        "All required sections present. 3 authoritative sources (gemspec + GitHub).",
-        "Technical content on FHIR-Directory resource types and interfaces is accurate."
+        "VZD_25_2 release 17. Februar 2026, SOAP/LDAP interfaces shut down: confirmed.",
+        "All required sections present. 3 authoritative sources."
       ],
       "fixInstructions": "None required."
     },
@@ -163,8 +271,7 @@
       "verdict": "revise",
       "score": 75,
       "issues": [
-        "FACTUAL ERROR (previous cycle, not re-verified this cycle): 'NOVENTI (früher NARZ/ARZ Darmstadt)' — unzutreffend. NOVENTI entstand aus VSA, ALG und SARZ; ARZ Darmstadt kooperiert nur.",
-        "AvP-Nachfolge 'Ahlberg ARZ': nicht verifizierbar."
+        "FACTUAL ERROR (carried): 'NOVENTI (früher NARZ/ARZ Darmstadt)' — incorrect. NOVENTI entstand aus VSA, ALG und SARZ; ARZ Darmstadt kooperiert nur."
       ],
       "fixInstructions": "Carried from previous cycle. Correct NOVENTI merger description: 'entstanden aus der Fusion von VSA (München), ALG (Datteln) und SARZ (Schwerin)'. Remove ARZ Darmstadt from NOVENTI lineage."
     },
@@ -173,7 +280,7 @@
       "verdict": "revise",
       "score": 72,
       "issues": [
-        "FACTUAL ERROR (previous cycle): 'seit Februar 2024' for Specht-Riemenschneider Amtsantritt is wrong — correct date is 3. September 2024."
+        "FACTUAL ERROR (carried): 'seit Februar 2024' for Specht-Riemenschneider Amtsantritt is wrong — correct date is 3. September 2024."
       ],
       "fixInstructions": "Carried from previous cycle. Replace 'seit Februar 2024' with 'seit 3. September 2024'."
     },
@@ -182,7 +289,7 @@
       "verdict": "revise",
       "score": 78,
       "issues": [
-        "FACTUAL ERROR (previous cycle): EBM 86900 stated as '27 Cent' but verified value for sending is 28 Cent. 27 Cent is EBM 86901 (receiving)."
+        "FACTUAL ERROR (carried): EBM 86900 stated as '27 Cent' but verified value for sending is 28 Cent. 27 Cent is EBM 86901 (receiving)."
       ],
       "fixInstructions": "Carried from previous cycle. Fix: 'EBM 86900 (Versenden): 28 Cent; EBM 86901 (Empfangen): 27 Cent'."
     },
@@ -191,7 +298,7 @@
       "verdict": "revise",
       "score": 74,
       "issues": [
-        "FACTUAL ERROR (previous cycle): NOVENTI described as entstanden aus NARZ/ARZ Darmstadt — incorrect. Same error as TA1.md."
+        "FACTUAL ERROR (carried): NOVENTI described as entstanden aus NARZ/ARZ Darmstadt — incorrect. Same error as TA1.md."
       ],
       "fixInstructions": "Carried from previous cycle. Same fix as TA1.md."
     }
@@ -199,18 +306,18 @@
   "contradictions": [],
   "staleArticles": [
     "content/technologies/gRPC.md: states 'seit 2016 unter CNCF' — correct dates are open-source February 2015 (Google), CNCF March 2017",
-    "content/technologies/Teleradiologie.md: references § 25 StrlSchV for Teleradiologie — current law since 1. Januar 2019 is § 123 StrlSchV 2018"
+    "content/technologies/Teleradiologie.md: references § 25 StrlSchV for Teleradiologie — current law since 1. Januar 2019 is § 123 StrlSchV 2018",
+    "content/technologies/Fernsignatur.md: cites eIDAS 'Art. 29, Erwägungsgrund 52' and 'Art. 3 Nr. 23' for Fernunterschrift — Art. 29a (explicit Fernsignatur framework) was added in the 2024 consolidated eIDAS; citations should reference the 2024 version"
   ],
   "summary": {
-    "reviewed": 12,
-    "pass": 8,
-    "revise": 4,
+    "reviewed": 9,
+    "pass": 7,
+    "revise": 2,
     "fail": 0,
     "keyIssues": [
-      "gRPC.md: wrong year for open-source launch (2016 stated, correct is 2015) and wrong CNCF adoption year (2016 stated, correct is 2017); plus 3 broken [[SOAP]] wiki-links causing the only structural test failure",
-      "Teleradiologie.md: wrong Strahlenschutzverordnung paragraph (§ 25 stated, correct is § 123 StrlSchV 2018 since 1. Januar 2019); 30-minute Befundung claim has no statutory basis in § 123",
-      "Landesaerztekammer.md: misleading parenthetical omits the actual reason for 17 chambers (NRW has two: Ärztekammer Nordrhein and Ärztekammer Westfalen-Lippe)",
-      "IDP.md: IBM outage description conflates two separate 10.02.2026 incidents — IBM sektoraler IDP (affecting Versicherte/Gesundheits-ID) and T-Systems VPN (affecting Leistungserbringer) are distinct"
+      "Fernsignatur.md: imprecise eIDAS article citations — Art. 29 and Art. 3 Nr. 23 do not explicitly define Fernunterschrift in the original 910/2014; Art. 29a (added in 2024 consolidated version) is the correct reference. Old fachportal URL (hersteller-anbieter path) needs update.",
+      "BEEP-Gesetz.md: Vermittlungsausschuss process description incomplete — article omits that a second Bundestag vote and Bundesrat vote on 19.12.2025 were needed to adopt the Vermittlungsergebnis before the law could enter into force.",
+      "Carried from previous cycles: gRPC.md (CNCF year), Teleradiologie.md (§ 25 StrlSchV), BfDI.md (Amtsantritt date), eArztbrief.md (EBM Cent value), TA1.md and Apothekenrechenzentrum.md (NOVENTI lineage) — these remain unresolved."
     ]
   }
 }

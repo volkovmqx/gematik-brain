@@ -65,7 +65,8 @@ Dieser Mechanismus führt dazu, dass Kassen für Digitalisierungsmaßnahmen zahl
 - [[Gesundheits-ID]] (Kassen stellen GesundheitsID bereit; GKV-SV koordiniert Standards)
 - [[SGB V]] (§§ 217a ff. SGB V: Rechtsgrundlage des GKV-Spitzenverbands)
 - [[BMG]] (Bundesministerium für Gesundheit; führt Rechtsaufsicht über GKV-SV; ist Mehrheitsgesellschafter der gematik)
-- [[KBV]] (Kassenzahnärztliche Bundesvereinigung ist Vertragspartner für Arztverträge)
+- [[KBV]] (Kassenärztliche Bundesvereinigung ist Vertragspartner für Arztverträge)
+- [[KZBV]] (Kassenzahnärztliche Bundesvereinigung ist Vertragspartner für Zahnarztverträge)
 - [[KHZG]] (GKV-SV beteiligte sich an Ausgestaltung der Krankenhaus-Digitalförderung)
 
 ## Quellen

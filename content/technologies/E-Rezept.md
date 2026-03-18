@@ -16,6 +16,8 @@ Früher hat der Arzt ein Rezept auf einen rosa Zettel geschrieben, und du hast d
 
 ## Überblick
 
+Laut dem **TI-Atlas 2025** (gematik / IGES Institut, veröffentlicht 24. November 2025, Befragung von über 6.600 Einrichtungen und 1.400 Bürgerinnen und Bürgern) halten **90 Prozent der GKV-Versicherten das E-Rezept für sinnvoll**, und **87 Prozent sind damit zufrieden**.
+
 Das E-Rezept wird digital erstellt, signiert und kann auf drei Wegen eingelöst werden:
 
 1. **[[eGK]] einstecken** in der Apotheke
@@ -84,3 +86,4 @@ Im März 2026 forderte ABDA-Geschäftsführerin Claudia Korf in einem Schreiben 
 
 - [E-Rezept - Fachportal](https://fachportal.gematik.de/anwendungen/elektronisches-rezept)
 - [E-Rezept - gematik.de](https://www.gematik.de/anwendungen/e-rezept)
+- [TI-Atlas 2025 | gematik](https://www.gematik.de/newsroom/news-detail/meldung-ti-atlas)

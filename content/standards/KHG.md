@@ -31,7 +31,7 @@ Das KHG basiert auf dem Prinzip der dualen Finanzierung:
 
 ### KHG als Rahmengesetz
 
-Das KHG ist ein Rahmengesetz. Es ermächtigt den Bundesgesetzgeber und die Selbstverwaltung (Deutsche Krankenhausgesellschaft, GKV-Spitzenverband, Kassenärztliche Vereinigungen), konkrete Vergütungssysteme und Regelwerke zu entwickeln. Daraus entstanden unter anderem:
+Das KHG ist ein Rahmengesetz. Es ermächtigt den Bundesgesetzgeber und die Selbstverwaltung ([[DKG|Deutsche Krankenhausgesellschaft]], GKV-Spitzenverband, Kassenärztliche Vereinigungen), konkrete Vergütungssysteme und Regelwerke zu entwickeln. Daraus entstanden unter anderem:
 
 - Das [[DRG]]-System (§ 17b KHG), das 2003 eingeführt wurde
 - Die Krankenhausplanung durch die Länder (§ 6 KHG)

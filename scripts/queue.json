@@ -1,57 +1,14 @@
 {
   "pending": [
     {
-      "term": "DAV",
-      "category": "organization",
-      "reason": "Deutscher Apothekerverband. Dachverband der Apothekeninhaber in Deutschland und Gesellschafter der gematik. Co-Herausgeber der TA1 (Technische Anlage 1 zum Rahmenvertrag über die Arzneimittelversorgung). In 13 Erwähnungen über ABDA.md, Apothekenrechenzentrum.md, TA1.md und gematik.md. Zentraler Akteur im E-Rezept-Ökosystem neben ABDA.",
-      "mentionedIn": [
-        "content/organization/ABDA.md",
-        "content/infrastructure/Apothekenrechenzentrum.md",
-        "content/standards/TA1.md",
-        "content/organization/gematik.md"
-      ],
-      "priority": 18
-    },
-    {
-      "term": "Fernsignatur",
+      "term": "ePass",
       "category": "technologies",
-      "reason": "Ferngesteuerte qualifizierte elektronische Signatur ohne lokale Chipkarte. In TI-Gateway.md als geplanter Zusatzdienst erwähnt, in EUDI-Wallet.md und eID.md im Kontext digitaler Identität und Signatur. Mit TI 2.0 und cloudbasiertem TI-Gateway wird Fernsignatur zunehmend relevant für QES ohne HBA am Gerät.",
+      "reason": "NFC-basiertes Identifikationsverfahren für TI-Dienste (insbesondere ePA), das den NFC-Chip eines deutschen Personalausweises oder Reisepasses per Smartphone ausliest. Seit 25. März 2026 verfügbar. Von Nect GmbH entwickelt, über BITMARCK für ca. 80 Prozent der GKV-Kassen bereitgestellt. Rechtsgrundlage: BEEP-Gesetz. Ergänzt Gesundheits-ID und eGK als dritten Authentifizierungsweg. In 7 Erwähnungen in ePA.md und Gesundheits-ID.md.",
       "mentionedIn": [
-        "content/infrastructure/TI-Gateway.md",
-        "content/infrastructure/EUDI-Wallet.md",
-        "content/infrastructure/eID.md"
+        "content/technologies/ePA.md",
+        "content/infrastructure/Gesundheits-ID.md"
       ],
-      "priority": 18
-    },
-    {
-      "term": "BEEP-Gesetz",
-      "category": "standards",
-      "reason": "Gesetz zur Befugniserweiterung und Entbürokratisierung in der Pflege. In ePA.md als Rechtsgrundlage dafür erwähnt, dass seit 1. Januar 2026 Abrechnungsdaten in der ePA nur noch für Versicherte selbst sichtbar sind (nicht mehr für Leistungserbringer ohne explizite Freigabe). Relevant für Datenzugriffsbeschränkungen in der ePA.",
-      "mentionedIn": [
-        "content/technologies/ePA.md"
-      ],
-      "priority": 17
-    },
-    {
-      "term": "KZBV",
-      "category": "organization",
-      "reason": "Kassenzahnärztliche Bundesvereinigung. In gematik.md und BMG.md als Gesellschafter der gematik erwähnt. Pendant zur KBV für die Zahnärzteschaft. Relevant für zahnärztliche TI-Anwendungen (E-Rezept für Zahnärzte, HBA für Zahnärzte, ePA-Zugriff).",
-      "mentionedIn": [
-        "content/organization/gematik.md",
-        "content/organization/BMG.md"
-      ],
-      "priority": 17
-    },
-    {
-      "term": "DKG",
-      "category": "organization",
-      "reason": "Deutsche Krankenhausgesellschaft. In gematik.md und BMG.md als Gesellschafter der gematik erwähnt, in InEK.md und ISMS.md als Interessenvertretung der Krankenhäuser. Relevant für KIS-Anforderungen, KHZG, ISiK und DRG-Kontext.",
-      "mentionedIn": [
-        "content/organization/gematik.md",
-        "content/organization/BMG.md",
-        "content/organization/InEK.md"
-      ],
-      "priority": 17
+      "priority": 16
     },
     {
       "term": "IVDR",
@@ -71,6 +28,18 @@
         "content/standards/GOÄ.md"
       ],
       "priority": 16
+    },
+    {
+      "term": "TI-Pauschale",
+      "category": "concepts",
+      "reason": "Monatliche Vergütung für Arztpraxen zur Abdeckung der TI-Infrastrukturkosten (Konnektor oder TI-Gateway, Kartenterminals, SMC-B, HBA, TI-Anwendungen). Seit 1. Januar 2026 ca. 263,62 Euro pro Einzelpraxis. Kürzung bei fehlenden Pflichtanwendungsnachweisen. Geregelt im EBM. In 7 Erwähnungen in Telematikinfrastruktur.md, EBM.md, Kartenterminal.md und Kassenaerztliche-Vereinigung.md. Zentrales Steuerungsinstrument für TI-Adoptionsquoten.",
+      "mentionedIn": [
+        "content/infrastructure/Telematikinfrastruktur.md",
+        "content/standards/EBM.md",
+        "content/infrastructure/Kartenterminal.md",
+        "content/organization/Kassenaerztliche-Vereinigung.md"
+      ],
+      "priority": 15
     },
     {
       "term": "PEPP",
@@ -94,19 +63,30 @@
     {
       "term": "KHVVG",
       "category": "standards",
-      "reason": "Krankenhausversorgungsverbesserungsgesetz 2024. Nachfolgegesetz des KHZG. Löst die einmalige Investitionsförderung durch strukturelle Vergütungsreformen ab (DRG-Strukturreform, Level-II-Versorgung). In KHZG.md als Folgegesetz erwähnt. Bedeutsam für Krankenhausplanung und KIS-Kontext.",
+      "reason": "Krankenhausversorgungsverbesserungsgesetz 2024. Nachfolgegesetz des KHZG. Löst die einmalige Investitionsförderung durch strukturelle Vergütungsreformen ab (DRG-Strukturreform, Level-II-Versorgung). In KHZG.md und KHG.md als Folgegesetz erwähnt. Bedeutsam für Krankenhausplanung und KIS-Kontext.",
       "mentionedIn": [
-        "content/standards/KHZG.md"
+        "content/standards/KHZG.md",
+        "content/standards/KHG.md"
       ],
       "priority": 14
     },
     {
+      "term": "AMNOG",
+      "category": "standards",
+      "reason": "Arzneimittelmarktneuordnungsgesetz (2011). Regelt die frühe Nutzenbewertung neuer Arzneimittel durch G-BA und IQWiG. Bestimmt Erstattungsbeträge für neue Medikamente in der GKV. In G-BA.md als zentrales Verfahren erwähnt. Relevant für das Verständnis des DiGA-Nutzenbewertungsverfahrens (das AMNOG als Vorbild hatte).",
+      "mentionedIn": [
+        "content/organization/G-BA.md"
+      ],
+      "priority": 13
+    },
+    {
       "term": "ATC-Code",
       "category": "standards",
-      "reason": "Anatomisch-therapeutisch-chemische Klassifikation. Internationales WHO-Klassifikationssystem für Arzneimittel. In MIO.md als Terminologie für Arzneimittelklassifikation in FHIR-Profilen erwähnt, in AMTS.md im Kontext der Medikationsdaten. Relevant für E-Rezept, eMP und ePA-Medikationsdaten.",
+      "reason": "Anatomisch-therapeutisch-chemische Klassifikation. Internationales WHO-Klassifikationssystem für Arzneimittel. In MIO.md als Terminologie für Arzneimittelklassifikation in FHIR-Profilen erwähnt, in AMTS.md und Patient-Summary.md im Kontext der Medikationsdaten. Relevant für E-Rezept, eMP und ePA-Medikationsdaten.",
       "mentionedIn": [
         "content/standards/MIO.md",
-        "content/processes/AMTS.md"
+        "content/processes/AMTS.md",
+        "content/standards/Patient-Summary.md"
       ],
       "priority": 13
     },
@@ -119,6 +99,16 @@
         "content/standards/SGB-V.md"
       ],
       "priority": 12
+    },
+    {
+      "term": "BZÄK",
+      "category": "organization",
+      "reason": "Bundeszahnärztekammer. Gematik-Gesellschafter (anteilig zusammen mit anderen Verbänden). In gematik.md und BMG.md als Gesellschafter gelistet. Pendant zur Bundesärztekammer für Zahnärzte. Herausgeber von HBA für Zahnärzte über Landeszahnärztekammern. Relevant für zahnärztliche TI-Anwendungen.",
+      "mentionedIn": [
+        "content/organization/gematik.md",
+        "content/organization/BMG.md"
+      ],
+      "priority": 11
     }
   ],
   "done": [
@@ -250,7 +240,12 @@
     "GDAG",
     "gRPC",
     "Teleradiologie",
-    "BMP"
+    "BMP",
+    "DAV",
+    "Fernsignatur",
+    "BEEP-Gesetz",
+    "KZBV",
+    "DKG"
   ],
   "lastRun": "2026-03-18"
 }

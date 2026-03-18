@@ -17,7 +17,7 @@ Wenn jemand ins Krankenhaus kommt, bekommt das Krankenhaus von der Krankenkasse 
 
 Das InEK wurde im Jahr **2001** gegründet und hat seinen Sitz in Siegburg (Nordrhein-Westfalen). Es ist eine gemeinnützige GmbH im Eigentum der drei Selbstverwaltungspartner:
 
-- **Deutsche Krankenhausgesellschaft (DKG)**: Interessenvertretung der Krankenhäuser
+- **[[DKG|Deutsche Krankenhausgesellschaft (DKG)]]**: Interessenvertretung der Krankenhäuser
 - **GKV-Spitzenverband**: Dachverband der gesetzlichen Krankenkassen
 - **Verband der Privaten Krankenversicherung (PKV)**
 
