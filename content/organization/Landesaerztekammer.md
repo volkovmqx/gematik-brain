@@ -3,6 +3,7 @@ title: Landesärztekammer
 audience: [technical, non-technical]
 tags: [organisation, berufsrecht, approbation, hba, kammer]
 aliases: [Landesärztekammern, Ärztekammer, Ärztliche Kammer]
+maturity: wachsend
 ---
 
 # Landesärztekammer
@@ -15,7 +16,7 @@ Wenn ein Arzt in Deutschland arbeiten möchte, braucht er eine Genehmigung des S
 
 ## Überblick
 
-In Deutschland gibt es 17 Landesärztekammern, eine je Bundesland (Bayern und Sachsen haben je eine, Hamburg und Berlin je eine). Zusammen sind sie im Dachverband [[Bundesaerztekammer|Bundesärztekammer (BÄK)]] organisiert. Die Mitgliedschaft in der Kammer des jeweiligen Bundeslandes ist für alle approbierten Ärzte mit Berufssitz oder Hauptwohnsitz in diesem Land verpflichtend.
+In Deutschland gibt es 17 Landesärztekammern. Da Nordrhein-Westfalen historisch zwei separate Kammern hat, die Ärztekammer Nordrhein und die Ärztekammer Westfalen-Lippe, ergibt sich für 16 Bundesländer die Gesamtzahl von 17. Zusammen sind sie im Dachverband [[Bundesaerztekammer|Bundesärztekammer (BÄK)]] organisiert. Die Mitgliedschaft in der Kammer des jeweiligen Bundeslandes ist für alle approbierten Ärzte mit Berufssitz oder Hauptwohnsitz in diesem Land verpflichtend.
 
 Rechtsgrundlage für die Landesärztekammern sind die **Heilberufe- und Kammergesetze der Länder** (z.B. das Heilberufsgesetz NRW, das Heilberufekammergesetz Bayern). Jede Kammer ist eine Körperschaft des öffentlichen Rechts mit Satzungsautonomie.
 

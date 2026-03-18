@@ -23,7 +23,7 @@ Im deutschen Krankenhaus-IT-Kontext ist DICOM die Basis für:
 
 - **[[PACS]]** (Picture Archiving and Communication System): Das Archiv, in dem DICOM-Bilder langfristig gespeichert werden.
 - **[[RIS]]** (Radiologie-Informationssystem): Verwaltet Aufträge und Befunde und kommuniziert über DICOM-Worklists mit den Modalitäten.
-- **Teleradiologie**: DICOM-Bilder können über standardisierte Schnittstellen an externe Befunder übertragen werden.
+- **[[Teleradiologie]]**: DICOM-Bilder können über standardisierte Schnittstellen an externe Befunder übertragen werden.
 
 ### Relevanz für die Telematikinfrastruktur
 
@@ -87,7 +87,7 @@ DICOM-Dateien enthalten direkte Patientenidentifikatoren (Name, Geburtsdatum, Pa
 - [[MyHealth@EU]] (Plant DICOM-Bildaustausch in Wave 2)
 - [[ePA]] (Langfristig: Einbindung von DICOM-Objekten)
 - [[MIO]] (Medizinische Informationsobjekte, perspektivisch Bildintegration)
-- [[Telemedizin]] (Teleradiologie nutzt DICOM für Fernbefundung)
+- [[Telemedizin]] ([[Teleradiologie]] nutzt DICOM für Fernbefundung)
 
 ## Quellen
 

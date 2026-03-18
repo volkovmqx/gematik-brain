@@ -16,7 +16,7 @@ Stell dir vor, die Firma, die das digitale Gesundheitsnetz betreibt, braucht neu
 
 ## Überblick
 
-Das GDVG ist der Nachfolger des gescheiterten **GDAG (Gesundheits-Digitalagentur-Gesetz)**. Das GDAG war unter der Ampel-Koalition entwickelt worden, hatte aber wegen des Koalitionsbruchs Ende 2024 den Bundestag nicht mehr passiert.
+Das GDVG ist der Nachfolger des gescheiterten **[[GDAG]] (Gesundheits-Digitalagentur-Gesetz)**. Das GDAG war unter der Ampel-Koalition entwickelt worden, hatte aber wegen des Koalitionsbruchs Ende 2024 den Bundestag nicht mehr passiert.
 
 Der Koalitionsvertrag von CDU/CSU und SPD (April 2025) sieht die Modernisierung der [[gematik]] zu einer "modernen Digitalagentur" als Ziel vor. Das [[BMG]] unter Bundesgesundheitsministerin Nina Warken (CDU) kündigte im Februar 2026 an, den Referentenentwurf für das GDVG in der **ersten Jahreshälfte 2026** vorzulegen.
 

@@ -1,343 +1,216 @@
 {
-  "timestamp": "2026-03-18T21:45:00Z",
-  "overallScore": 88,
+  "timestamp": "2026-03-18T23:10:00Z",
+  "overallScore": 84,
   "testResults": {
-    "passed": 124,
-    "failed": 0,
-    "total": 124
+    "passed": 128,
+    "failed": 1,
+    "total": 129
   },
   "articles": [
     {
-      "file": "content/standards/TA1.md",
-      "verdict": "pass",
-      "score": 88,
-      "issues": [
-        "NOVENTI merger timeline 'zwischen 2016 und 2018' is imprecise: ALG (Datteln) was already part of VSA since 2004; the 2016–2018 window covers only the holding-company formation and SARZ acquisition. Claim is not wrong but may confuse readers.",
-        "Source noventi.de/apotheke/abrechnung/ should be verified for 404 before final publish."
-      ],
-      "fixInstructions": "Clarify NOVENTI timeline: 'ALG (Datteln, seit 2004 Teil der VSA), SARZ (Schwerin, übernommen 2016/2017); 2016 Gründung der NOVENTI Holding; 2018 Umbenennung zu NOVENTI HealthCare GmbH.'"
-    },
-    {
-      "file": "content/infrastructure/Apothekenrechenzentrum.md",
-      "verdict": "pass",
-      "score": 88,
-      "issues": [
-        "Same NOVENTI merger timeline imprecision as in TA1.md: 'zwischen 2016 und 2018' is incomplete — ALG joined VSA in 2004, not 2016."
-      ],
-      "fixInstructions": "Same fix as TA1.md: add that ALG joined VSA in 2004; clarify 2016–2018 refers to holding creation and SARZ acquisition."
-    },
-    {
-      "file": "content/organization/BfDI.md",
-      "verdict": "pass",
-      "score": 95,
-      "issues": [
-        "Election date 16. Mai 2024 and Amtsantritt 3. September 2024 verified correct. Rücktrittsankündigung confirmed. No issues."
-      ],
-      "fixInstructions": ""
-    },
-    {
-      "file": "content/standards/GDNG.md",
-      "verdict": "pass",
-      "score": 93,
-      "issues": [
-        "Inkrafttreten 26. März 2024 verified correct. DVPMG reference verified correct. No factual errors found."
-      ],
-      "fixInstructions": ""
-    },
-    {
-      "file": "content/technologies/KIM.md",
-      "verdict": "pass",
-      "score": 90,
-      "issues": [
-        "KIM 1.5.5 as current version confirmed on gemspec.gematik.de.",
-        "Only one URL source listed; the second entry is a spec reference without a URL — technically meets minimum but a second clickable source would be stronger.",
-        "'155 zertifizierte Anbieter-Organisationen': no source found to verify this number; flagged as unverifiable."
-      ],
-      "fixInstructions": "Add a second URL source, e.g. https://gemspec.gematik.de/releases/KIM_1_5_5/. Verify or remove the '155 zertifizierte Anbieter-Organisationen' claim if no authoritative source exists."
-    },
-    {
-      "file": "content/technologies/DiGA.md",
-      "verdict": "pass",
-      "score": 90,
-      "issues": [
-        "ePA integration as of 1. Februar 2026 and Gesundheits-ID as Pflichtanforderung: verified correct via DiGAV 2. ÄndV.",
-        "E-Rezept für DiGA 'seit Oktober 2025': plausible but no independent confirmation found for the exact date; flagged as unverifiable."
-      ],
-      "fixInstructions": "Add a source for the DiGA-E-Rezept start (Oktober 2025), e.g. a KBV or gematik press release."
-    },
-    {
-      "file": "content/standards/DiGAV.md",
-      "verdict": "pass",
-      "score": 92,
-      "issues": [
-        "Zweite Änderungsverordnung 1. Februar 2026 and AbEM: fully verified. ePA integration mandate verified. No factual errors."
-      ],
-      "fixInstructions": ""
-    },
-    {
-      "file": "content/technologies/ePA.md",
+      "file": "content/organization/Landesaerztekammer.md",
       "verdict": "revise",
       "score": 80,
       "issues": [
-        "UNVERIFIABLE VERSIONS: Article claims 'IG ePA Medication Service v1.2.0' and 'IG ePA Basisfunktionalitäten v1.2.0' for ePA 3.1.2 (Mai 2025). Searches found v1.1.5 (published 2025-05-28) and v1.3.0 on gematik.de, but no v1.2.0 clearly linked to ePA 3.1.2. These version numbers cannot be verified.",
-        "IMPRECISE DATE: Article says 'Seit dem 15. Januar 2025 wird die ePA automatisch für alle gesetzlich Versicherten angelegt'. Verified: 15.01.2025 was the Modellregionen start only; bundesweiter Rollout began 29. April 2025. The phrasing implies universal rollout from January.",
-        "Version inconsistency: the Quellen URL points to ePA_3_1_3 release while the body discusses ePA 3.1.2 features."
+        "INACCURATE FRAMING: Article states 'In Deutschland gibt es 17 Landesärztekammern, eine je Bundesland (Bayern und Sachsen haben je eine, Hamburg und Berlin je eine)'. The parenthetical lists four states that each have one chamber, which is true of nearly every state and explains nothing. The actual reason the count is 17 rather than 16 is that Nordrhein-Westfalen has TWO chambers (Ärztekammer Nordrhein and Ärztekammer Westfalen-Lippe). The article omits this entirely.",
+        "All required sections present. 4 sources, all authoritative official URLs (BÄK, BLÄK, gematik Fachportal).",
+        "Technical content on HBA process is accurate. BAN reference and VDA roles are correctly described.",
+        "§ 95d SGB V citation for Fortbildungspflicht and 250-Punkte threshold: correct."
       ],
-      "fixInstructions": "1. Verify IG version numbers against https://simplifier.net/epa-medication-v3-1 or gematik GitHub ePA-Medication repo; replace v1.2.0 with confirmed numbers. 2. Clarify ePA rollout: 'Ab 15. Januar 2025 startete die ePA in den Modellregionen; bundesweiter Rollout ab 29. April 2025.'"
+      "fixInstructions": "Replace the parenthetical in Überblick: change '(Bayern und Sachsen haben je eine, Hamburg und Berlin je eine)' to '(Nordrhein-Westfalen zählt zwei: Ärztekammer Nordrhein und Ärztekammer Westfalen-Lippe)'. This is the actual reason the count is 17 and not 16."
     },
     {
-      "file": "content/infrastructure/TI-Gateway.md",
-      "verdict": "pass",
-      "score": 90,
-      "issues": [
-        "RISE Ausfall März 2026: confirmed by search results. Exact dates (3.–5. März 2026) could not be independently verified to day-level precision.",
-        "22.000 virtuelle Konnektor-Instanzen (Stand Oktober 2025): unverifiable from public sources."
-      ],
-      "fixInstructions": "Add a source or attribution for the 22.000 vKON instances figure."
-    },
-    {
-      "file": "content/organization/gematik.md",
-      "verdict": "pass",
-      "score": 93,
-      "issues": [
-        "Beirat Vorsitz Semler: election confirmed as 26.11.2024 — article says 'November 2024', correct.",
-        "Hans-Peter Bursig role confirmed as ZVEI."
-      ],
-      "fixInstructions": ""
-    },
-    {
-      "file": "content/technologies/eArztbrief.md",
-      "verdict": "revise",
-      "score": 78,
-      "issues": [
-        "FACTUAL ERROR: EBM Ziffer 86900 described as '27 Cent je Brief'. Verified: 86900 (Versenden) = 28 Cent; 86901 (Empfangen) = 27 Cent. The article quotes the receiving tariff for the sending code.",
-        "§ 291f SGB V as legal basis for QES requirement: could not independently verify the exact paragraph; flagged as unverifiable."
-      ],
-      "fixInstructions": "Fix EBM: 'EBM 86900 (Versenden eines eArztbriefs): 28 Cent; EBM 86901 (Empfangen): 27 Cent je Brief.' Verify §291f SGB V or replace with the verified paragraph reference."
-    },
-    {
-      "file": "content/organization/G-BA.md",
-      "verdict": "pass",
-      "score": 93,
-      "issues": [
-        "G-BA Gründung 2004 durch GKV-Modernisierungsgesetz: confirmed.",
-        "AMNOG year 2011: confirmed.",
-        "No structural or factual issues found."
-      ],
-      "fixInstructions": ""
-    },
-    {
-      "file": "content/standards/KRITIS-Dachgesetz.md",
+      "file": "content/standards/GDAG.md",
       "verdict": "pass",
       "score": 88,
       "issues": [
-        "Bundestag 29. Januar 2026 and Bundesrat 6. März 2026: both confirmed.",
-        "Registrierungspflicht 17. Juli 2026: confirmed.",
-        "Article does not mention the Inkrafttreten date (17. März 2026, published 16. März im Bundesgesetzblatt). Minor omission.",
-        "Bußgeld '2 Prozent des globalen Jahresumsatzes': searches found 500.000 EUR cap for registration violations specifically. The '2 percent' figure may apply only to the most serious violations. Article should distinguish violation categories."
+        "Key dates verified correct: Referentenentwurf 15. Mai 2024, Kabinettsfassung 17. Juli 2024, erste Lesung Bundestag 17. Oktober 2024 — all confirmed against official BMG and Bundestag sources.",
+        "UNVERIFIABLE: Koalitionsvertrag CDU/CSU+SPD April 2025, Ministerin Nina Warken (CDU), GDVG Referentenentwurf 'erste Jahreshälfte 2026' — plausible and consistent with GDVG.md, but not independently verifiable for this article.",
+        "Secondary source (AOK) present alongside three official sources — acceptable.",
+        "All required sections present. Article correctly marks GDAG as failed legislation."
       ],
-      "fixInstructions": "Add Inkrafttreten date (17. März 2026). Clarify Bußgeld: registration violations up to 500.000 EUR; other serious violations potentially up to 2% Jahresumsatz."
+      "fixInstructions": "None required. Minor: the GDVG and Ministerin Warken claims are projections that may need updating if plans change."
     },
     {
-      "file": "content/technologies/DiPaG.md",
+      "file": "content/technologies/gRPC.md",
       "verdict": "revise",
-      "score": 84,
+      "score": 62,
       "issues": [
-        "MINOR FACTUAL ERROR: Article states DiPag_25_1 release date as '27. Mai 2025'. Verified release date is 22. Mai 2025 per gemspec.gematik.de.",
-        "All 3 sources point to gematik's own platform. No independent source (e.g. BMG, industry reporting). Weak source diversity."
+        "FACTUAL ERROR: Article states gRPC is 'seit 2016 als Open-Source-Projekt unter der Cloud Native Computing Foundation (CNCF) verfügbar'. Both dates are wrong: (1) Google open-sourced gRPC in February 2015 (not 2016). (2) CNCF adopted gRPC in March 2017 (not 2016). Source: Google Open Source Blog announcement February 26, 2015; CNCF announcement March 1, 2017.",
+        "BROKEN LINKS: [[SOAP]] appears 3 times throughout the article. No SOAP article exists in the knowledge base. Confirmed by test-report.json (3 broken-link errors). This is the sole failing article in the structural test run.",
+        "All required sections present. Table comparing SOAP/REST/gRPC is accurate. Protocol Buffers description is correct.",
+        "TI-Gateway and VSDM 2.0 gRPC integration claims are unverifiable from public sources but directionally consistent with gematik TI 2.0 strategy."
       ],
-      "fixInstructions": "Correct release date to '22. Mai 2025'. Add one independent source about DiPaG (e.g. BMG or KBV announcement)."
+      "fixInstructions": "1. Fix the CNCF/year claim in Überblick: replace 'seit 2016 als Open-Source-Projekt unter der Cloud Native Computing Foundation (CNCF) verfügbar' with 'seit Februar 2015 als Open-Source-Projekt von Google veröffentlicht und seit März 2017 unter der Cloud Native Computing Foundation (CNCF)'. 2. Fix broken [[SOAP]] links: either create a stub article at content/standards/SOAP.md (recommended), or replace all three [[SOAP]] occurrences with plain text 'SOAP' until the article exists. All three broken-link errors will be resolved once a SOAP article or alias exists."
     },
     {
-      "file": "content/standards/Patient-Summary.md",
-      "verdict": "pass",
-      "score": 88,
+      "file": "content/technologies/Teleradiologie.md",
+      "verdict": "revise",
+      "score": 70,
       "issues": [
-        "EHDS 'seit März 2025 in Kraft': verified correct (Inkrafttreten 26. März 2025). However EHDS provisions do not apply until March 2027; the article could clarify this to avoid misunderstanding.",
-        "Germany plans Patient Summary ab 2029: consistent with EU roadmap (2029 = first EHDS priority data categories), but no specific German commitment document found.",
-        "ISO 27269:2021 as IPS norm: confirmed."
+        "FACTUAL ERROR: Article states 'Rechtsgrundlage ist § 25 der Strahlenschutzverordnung (StrlSchV)'. This paragraph number is incorrect. The current StrlSchV 2018 (in force since 1. Januar 2019) regulates Teleradiologie in § 123 StrlSchV. The predecessor was § 3 Abs. 4 RöV (Röntgenverordnung). § 25 StrlSchV governs a different subject matter. The error appears in the Überblick section and in the comparison table in Technische Details.",
+        "UNVERIFIABLE CLAIM: '30 Minuten Befundung' as a statutory deadline. The text of § 123 StrlSchV uses 'unmittelbar' and 'sofort' but does not specify a 30-minute limit. No authoritative source for this specific time window was found. Some Landesbehörden tolerate up to 45 minutes, some even 60 minutes according to commentary literature.",
+        "EBM-Ziffer 34800 Telekonsil 'seit 2017': verified correct (in force 1. April 2017 per KBV).",
+        "All required sections present. 4 sources. Springer and KBV sources are authoritative.",
+        "DICOM and workflow descriptions are technically accurate."
       ],
-      "fixInstructions": "Add a note that while EHDS entered into force in March 2025, its provisions apply from 2027 (and full Patient Summary obligation from 2031)."
+      "fixInstructions": "1. Replace all occurrences of '§ 25 der Strahlenschutzverordnung (StrlSchV)' with '§ 123 der Strahlenschutzverordnung (StrlSchV 2018)'. This affects the Überblick section and the Rechtsgrundlage column of the comparison table in Technische Details. 2. Replace the '30 Minuten' claim with a paraphrase of the actual statutory language: 'Der Teleradiologe muss unmittelbar erreichbar sein und den Befund sofort nach Bildübermittlung erstellen (§ 123 StrlSchV).' Remove the specific 30-minute figure unless a verifiable authoritative source is found. 3. Add a source: https://www.gesetze-im-internet.de/strlschv_2018/__123.html"
     },
     {
-      "file": "content/organization/DVKA.md",
-      "verdict": "pass",
-      "score": 93,
-      "issues": [
-        "DVKA als 'Abteilung des GKV-Spitzenverbandes (seit 1. Juli 2008)' — bestätigt korrekt via dvka.de und Wikipedia.",
-        "EHDS-Verordnung EU 2025/327 'in Kraft seit März 2025' — bestätigt korrekt: Inkrafttreten 26. März 2025.",
-        "Wave 10 / 2026 für E-Rezept via MyHealth@EU: plausibel, aber aus öffentlichen Quellen nicht verifizierbar."
-      ],
-      "fixInstructions": "Kein kritischer Fix erforderlich. Wave-10-Claim mit einer Quellenangabe absichern, falls eine offizielle MyHealth@EU- oder gematik-Quelle gefunden werden kann."
-    },
-    {
-      "file": "content/organization/Medizinischer-Dienst.md",
+      "file": "content/processes/BMP.md",
       "verdict": "pass",
       "score": 90,
       "issues": [
-        "BGBl. I 2019, S. 2789 im Text — bestätigt korrekt (bgbl.de-Link zielt auf bgbl119s2789.pdf).",
-        "Quellen-URL (Zeile 75) zeigt auf bgbl119s2789.pdf — im vorherigen Zyklus war der Link noch auf s2184; der aktuelle Stand wurde geprüft und ist jetzt korrekt.",
-        "Umwandlung zum 1. Januar 2020 in Körperschaften des öffentlichen Rechts — bestätigt korrekt.",
-        "Minor: 'Im Rahmen der Krankenhausreform 2023' ohne [[KHVVG]]-Wikilink."
+        "Introduction date 1. Oktober 2016: confirmed correct.",
+        "§ 31a SGB V as Rechtsgrundlage: confirmed correct.",
+        "Three-party agreement attribution: article cites 'KBV, Bundesärztekammer und ABDA'. The formal agreement parties are KBV, BÄK, and DAV (Deutscher Apothekerverband); ABDA is the parent body of DAV but not formally the signatory. Minor imprecision.",
+        "eMP Einführung März 2026: consistent with ePA.md.",
+        "All required sections present. 4 sources, all authoritative."
       ],
-      "fixInstructions": "Optional: [[KHVVG]]-Wikilink in den Satz zur Krankenhausreform 2023 einfügen."
-    },
-    {
-      "file": "content/standards/GDNG.md",
-      "verdict": "pass",
-      "score": 91,
-      "issues": [
-        "Datum 26. März 2024 in Kraft — bestätigt korrekt via gesetze-im-internet.de und BMG.",
-        "GFF-Klage-Abschnitt: Wiederaufnahme Februar 2026 nach Ruhen seit Februar 2023 — bestätigt korrekt via GFF-Pressemitteilung und netzpolitik.org.",
-        "Formulierung 'nahm im Februar 2026 ihre 2022 eingereichte Klage wieder auf' ist bereits korrekt und unmissverständlich.",
-        "Verknüpfungen-Sektion nennt [[DVG]] als Gründer des FDZ-Vorgängers — möglicherweise ungenau: das FDZ beim BfArM wurde durch das DVPMG (2021) eingerichtet, nicht das DVG (2019)."
-      ],
-      "fixInstructions": "Prüfen und ggf. korrigieren: In der Sektion 'Forschungsdatenzentrum Gesundheit' steht 'durch das DVS (Digitale-Versorgung-und-Pflege-Modernisierungs-Gesetz) eingerichtet'. Das Akronym 'DVS' passt nicht zum genannten Gesetznamen. Korrekt wäre DVPMG oder DVPG. Die Verknüpfungen nennen [[DVG]] — das DVG (2019) schuf das FDZ nicht; das war das DVPMG (2021). Link auf [[DVPMG]] korrigieren falls ein solcher Artikel existiert, oder Referenz präzisieren."
+      "fixInstructions": "Minor: change 'ABDA (Deutscher Apothekerverband)' in the Überblick section to 'ABDA/DAV (Deutscher Apothekerverband)' to reflect that DAV is the formal party to the agreement. Not a blocking issue."
     },
     {
       "file": "content/technologies/ePA.md",
       "verdict": "pass",
-      "score": 90,
+      "score": 87,
       "issues": [
-        "15. Januar 2025 als Opt-out-Startdatum — bestätigt korrekt (gesetzlicher Starttermin; bundesweiter Rollout folgte am 29. April 2025, aber 15. Jan. 2025 war korrekt für die Pilotregionen).",
-        "1. Oktober 2025 Pflicht für alle Einrichtungen — bestätigt korrekt.",
-        "BEEP-Gesetz: Vollständiger offizieller Name nicht verifizierbar. Es ist unklar, ob 'BEEP-Gesetz' ein offizieller Name oder ein informelles Kürzel ist.",
-        "PoPP V1.0.0 Veröffentlichung 3. März 2026, Stufe 1 Mitte 2026: plausibel, aus Suchergebnissen nicht direkt bestätigt."
+        "ePass addition verified: launch date 25. März 2026, developer Nect GmbH, distributor BITMARCK, coverage ~80% GKV-Kassen, legal basis BEEP-Gesetz in force 1. Januar 2026 — all confirmed by BITMARCK/Presseportal press release and healthcare-digital.de.",
+        "ePass NFC requirement 'Personalausweis ab August 2021': plausible (linked to ePass symbol rollout) but the specific August 2021 date could not be verified from public sources — marked unverifiable.",
+        "Reisepass ab 2005: correct (biometric passports introduced in Germany November 2005).",
+        "Cross-article consistency with Gesundheits-ID.md: all ePass facts match — PASS.",
+        "All required sections present. 4 sources."
       ],
-      "fixInstructions": "Klären, ob 'BEEP-Gesetz' der offizielle Kurzname ist. Falls informell, den vollständigen offiziellen Gesetznamen in Klammern ergänzen."
+      "fixInstructions": "None required. Consider verifying the 'ab August 2021' date for Personalausweis NFC chip against Bundesinnenministerium documentation."
+    },
+    {
+      "file": "content/infrastructure/Gesundheits-ID.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "ePass section verified: launch 25. März 2026, Nect GmbH, BITMARCK, 80% GKV, BEEP-Gesetz — confirmed.",
+        "Cross-article consistency with ePA.md: all ePass facts fully consistent — PASS.",
+        "4.4 Millionen registrierte Versicherte sourced from datenschutz-notizen.de (secondary blog). No official gematik figure available to confirm or contradict.",
+        "All required sections present. 4 sources, 3 official."
+      ],
+      "fixInstructions": "None required. If an official gematik Nutzungszahlen source for Gesundheits-ID registration becomes available, replace the blog source."
+    },
+    {
+      "file": "content/infrastructure/Konnektoren.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [
+        "RISE Firmware 6.1.3:1.0.0 released 11. Februar 2026 via KSR: confirmed by datenstrom.net news article.",
+        "ECC-Preferred feature description: plausible and confirmed in outline. Specific prerequisite terminal versions (Cherry ST1506 4.0.47, Worldline ORGA 6100 3.9.2, JDM 1.1.20) are unverifiable from public sources.",
+        "IBM- und Akquinet-KIM-Clientmodule Brainpool limitation: unverifiable — noted.",
+        "Only 2 sources (fachportal.gematik.de ×2). Meets minimum requirement but borderline."
+      ],
+      "fixInstructions": "Add a third source citing the RISE 6.1.3 firmware release: https://www.datenstrom.net/news/beitrag-lesen/neue-firmware-fuer-rise-konnektor-verfuegbar-version-6-1-3-ab-11-februar-2026.html"
+    },
+    {
+      "file": "content/infrastructure/NCPeH.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [
+        "gemF_eRp_EU V1.0.0 with release NCPeH_24_2: confirmed — gemspec.gematik.de shows the release and spec document.",
+        "Date '12. März 2025' for NCPeH_24_2 publication: unverifiable from search results. The release and spec exist but the exact publication date was not confirmed.",
+        "6-stelliger alphanumerischer Zugangscode: confirmed by gemspec content.",
+        "EHDS Verordnung number 'EU 2025/327': this EU regulation number could not be independently verified via web search — marked unverifiable.",
+        "Only 2 sources. Meets minimum.",
+        "Österreich akzeptiert EU-E-Rezepte aus Tschechien seit Februar 2026: plausible, unverifiable."
+      ],
+      "fixInstructions": "1. Add a direct source link for NCPeH_24_2: https://gemspec.gematik.de/releases/NCPeH_24_2/index.html — this also supports the gemF_eRp_EU V1.0.0 claim. 2. Verify or remove the exact date '12. März 2025' — replace with 'Anfang 2025' if the date cannot be confirmed. 3. Verify EU regulation number 2025/327 against official EUR-Lex."
+    },
+    {
+      "file": "content/technologies/E-Rezept.md",
+      "verdict": "pass",
+      "score": 86,
+      "issues": [
+        "Wave-10 NCPeH and gemF_eRp_EU V1.0.0 (NCPeH_24_2): consistent with NCPeH.md and confirmed spec existence — PASS.",
+        "ABDA-Geschäftsführerin Claudia Korf Schreiben an gematik März 2026: confirmed by Pharmazeutische Zeitung.",
+        "Apothekenstreiktag 23. März 2026, ABDA-Mitgliederversammlung Beschluss 25. Februar 2026: confirmed by multiple news sources.",
+        "Only 2 sources — thin for a major evergreen article.",
+        "Cross-article consistency with NCPeH.md on Wave-10 and spec name: PASS."
+      ],
+      "fixInstructions": "Add at least one more source supporting recent additions, e.g. Pharmazeutische Zeitung on TI-Ausfälle/ABDA: https://www.pharmazeutische-zeitung.de/abda-schlaegt-e-rezept-alarm-157438/"
+    },
+    {
+      "file": "content/infrastructure/IDP.md",
+      "verdict": "revise",
+      "score": 74,
+      "issues": [
+        "FACTUAL IMPRECISION: The IBM outage section states that affected services were 'für alle über T-Systems angebundenen Leistungserbringer'. This is incorrect. The IBM Deutschland GmbH sektoraler IDP failure primarily affected insured persons (Versicherte) authenticating via Gesundheits-ID for ePA access. T-Systems runs a separate component (VPN-Zugangsdienst), and their outage on the same day affected healthcare providers' network connectivity — a distinct incident. The article conflates two separate failures into one, incorrectly attributing the IBM IDP effects to T-Systems-connected providers.",
+        "Outage time resolved 'gegen 11:00 Uhr': confirmed by borncity.com.",
+        "Start time 'ca. 3:05 Uhr': confirmed.",
+        "Smoke detector cause in Frankfurt Rechenzentrum: confirmed by secondary sources.",
+        "All required sections present. 3 authoritative sources."
+      ],
+      "fixInstructions": "Revise the IBM outage paragraph. Replace 'Betroffene Dienste für alle über T-Systems angebundenen Leistungserbringer: ePA (Zugriff und Berechtigungen), E-Rezept (Erstellen, Einstellen, Einlösen), KIM und VSDM' with a description that accurately reflects which users were affected by the IBM sektoraler IDP: 'Betroffene Dienste für Versicherte, die sich über den IBM-sektoralen IDP authentisierten (insbesondere TK-Versicherte): ePA-Zugriff und Berechtigungssetzung, E-Rezept-Nutzung via Gesundheits-ID, KIM. Parallel bestand am selben Tag eine separate Störung beim T-Systems VPN-Zugangsdienst, die Leistungserbringer betraf.' This separates the two distinct incidents."
+    },
+    {
+      "file": "content/infrastructure/VZD.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [
+        "VZD_25_2 release 17. Februar 2026, SOAP interfaces and LDAP admin interface shut down: confirmed by gemspec.gematik.de search results.",
+        "LDAP deprecation after 2026 with limited further development: consistent with verified release notes.",
+        "All required sections present. 3 authoritative sources (gemspec + GitHub).",
+        "Technical content on FHIR-Directory resource types and interfaces is accurate."
+      ],
+      "fixInstructions": "None required."
     },
     {
       "file": "content/standards/TA1.md",
       "verdict": "revise",
       "score": 75,
       "issues": [
-        "FAKTISCHER FEHLER: 'NOVENTI (früher NARZ/ARZ Darmstadt)' — unzutreffend. NOVENTI (HealthCare GmbH) entstand aus der Fusion von VSA (München), ALG (Datteln) und SARZ (Schwerin) in den Jahren 2016-2018. ARZ Darmstadt hat mit NOVENTI nur eine Kooperationsvereinbarung (seit 2018), ist aber kein Teil von NOVENTI. NARZ ist ein eigenständiges Unternehmen ohne Verbindung zu NOVENTI.",
-        "AvP-Nachfolge 'Ahlberg ARZ': nicht verifizierbar. Belegte Nachfolge für Hilfsmittel-Abrechnungen ist RZH (Tochter von ARZ Haan), die im September 2020 Teile des AvP-Geschäftsbetriebs übernahm. 'Ahlberg ARZ' erscheint in keiner verifizierbaren Quelle."
+        "FACTUAL ERROR (previous cycle, not re-verified this cycle): 'NOVENTI (früher NARZ/ARZ Darmstadt)' — unzutreffend. NOVENTI entstand aus VSA, ALG und SARZ; ARZ Darmstadt kooperiert nur.",
+        "AvP-Nachfolge 'Ahlberg ARZ': nicht verifizierbar."
       ],
-      "fixInstructions": "1. NOVENTI-Beschreibung korrigieren: 'NOVENTI (entstanden aus der Fusion von VSA, ALG und SARZ; Kooperationspartner von ARZ Darmstadt seit 2018)'. 2. AvP-Nachfolge-Claim ersetzen: 'Teile des Geschäftsbetriebs wurden 2020 von RZH (einer ARZ-Haan-Tochter) übernommen' — oder den Claim entfernen, wenn keine zuverlässige Quelle gefunden werden kann."
-    },
-    {
-      "file": "content/infrastructure/SMC-B.md",
-      "verdict": "pass",
-      "score": 90,
-      "issues": [
-        "G2.0 RSA-only → G2.1 ECC, Migrationsfrist 30. Juni 2026 — bestätigt korrekt via gematik.de RSA2ECC-Seite.",
-        "Ab 1. Januar 2026 nur noch ECC-fähige SMC-B produzierbar: konsistent mit gematik-Vorgaben, plausibel.",
-        "HSM-B-Pilotprojekt: RHÖN-KLINIKUM bestätigt (Friendly User Test exklusiv dort laut gematik-News März 2026). D-Trust in verwandtem Kontext bestätigt. DKTIG und RISE im HSM-B-Pilotkontext nicht direkt aus Suchergebnissen verifizierbar.",
-        "Nur 2 Quellen — Mindestanforderung knapp erfüllt."
-      ],
-      "fixInstructions": "1. DKTIG und RISE als Pilot-Partner verifizieren über https://www.gematik.de/newsroom/news-detail/gemeinsames-pilotprojekt-zur-kartenlosen-institutions-identitaet-hsm-b-im-highspeed-konnektor. 2. Diese URL ggf. als dritte Quelle hinzufügen."
-    },
-    {
-      "file": "content/technologies/E-Rezept.md",
-      "verdict": "pass",
-      "score": 91,
-      "issues": [
-        "T-Rezept-Wirkstoffe: Lenalidomid korrekt (auch Pomalidomid und Thalidomid laut gematik-Spezifikation — Artikel nennt nur Lenalidomid als Beispiel, was zulässig ist).",
-        "Heilmittel TI-Anbindungspflicht 1. Oktober 2027 — konsistent mit eVO.md und Telematikinfrastruktur.md.",
-        "E-Rezept Pflicht 1. Januar 2024 — bestätigt korrekt.",
-        "T-Rezept 'Spezifikation seit August 2025': Exaktes Datum nicht verifiziert; gemSpec zeigt V1.1.0 und Draft-Versionen, Zeitangabe plausibel.",
-        "Nur 2 Quellen."
-      ],
-      "fixInstructions": "Optional: Dritte Quelle ergänzen (z.B. gematik T-Rezept Spezifikationsseite auf gemspec.gematik.de)."
-    },
-    {
-      "file": "content/infrastructure/Telematikinfrastruktur.md",
-      "verdict": "pass",
-      "score": 92,
-      "issues": [
-        "TI-Pauschale +2,8 Prozent ab 1. Januar 2026 — bestätigt korrekt via KBV.",
-        "263,62 Euro für Praxis mit bis zu 3 Ärzten — bestätigt korrekt via KBV-Tabelle.",
-        "50-Prozent-Kürzung bei fehlendem Anwendungsnachweis — bestätigt korrekt.",
-        "Heilmittelerbringer-Frist 1. Oktober 2027 — konsistent mit eVO.md und E-Rezept.md."
-      ],
-      "fixInstructions": "Kein kritischer Fix erforderlich."
-    },
-    {
-      "file": "content/infrastructure/Apothekenrechenzentrum.md",
-      "verdict": "revise",
-      "score": 74,
-      "issues": [
-        "FAKTISCHER FEHLER: 'NOVENTI: Marktführer, entstanden durch Zusammenschlüsse der NARZ, ARZ Darmstadt und weiterer Dienstleister' — unzutreffend. NOVENTI HealthCare GmbH entstand aus der Fusion von VSA, ALG und SARZ (2016-2018). ARZ Darmstadt hat mit NOVENTI nur eine Kooperationsvereinbarung (2018). NARZ ist ein eigenständiges norddeutsches ARZ ohne Verbindung zu NOVENTI.",
-        "Letzter Quelleneintrag 'ARZ Darmstadt (jetzt NOVENTI): Rezeptabrechnung' — irreführende Beschriftung; ARZ Darmstadt ist nicht Teil von NOVENTI."
-      ],
-      "fixInstructions": "1. NOVENTI-Beschreibung korrigieren: 'NOVENTI: Marktführer (nach Branchenschätzungen ca. 50 Prozent der GKV-Rezepte), entstanden aus der Fusion von VSA (München), ALG (Datteln) und SARZ (Schwerin). Kooperationspartner von ARZ Darmstadt seit 2018.' 2. Quelleneintrag zu ARZ Darmstadt umbenennen: Entweder Quellenlink entfernen oder korrekten Titel verwenden (ohne 'jetzt NOVENTI')."
-    },
-    {
-      "file": "content/processes/eVO.md",
-      "verdict": "pass",
-      "score": 89,
-      "issues": [
-        "Zeitplan konsistent mit E-Rezept.md und Telematikinfrastruktur.md: 1. Januar 2027 (Verordner), 1. Oktober 2027 (TI-Anbindungspflicht Heilmittelerbringer), 2028 (Vollpflicht).",
-        "3 Quellen vorhanden. verbandsbuero.de ist kein staatlicher Träger, korroboriert die Deadline aber.",
-        "Strukturprüfung bestanden: alle Pflichtabschnitte vorhanden, ausreichend Wikilinks."
-      ],
-      "fixInstructions": "Kein kritischer Fix erforderlich."
-    },
-    {
-      "file": "content/standards/KHG.md",
-      "verdict": "pass",
-      "score": 92,
-      "issues": [
-        "Ausfertigungsdatum 29. Juni 1972, BGBl. I S. 1009 — bestätigt korrekt via gesetze-im-internet.de.",
-        "DRG-Einführung 2003 via § 17b KHG — bestätigt korrekt.",
-        "KHZG 4,3 Milliarden Euro — bestätigt korrekt.",
-        "KHVVG 2024 als Strukturreform — bestätigt korrekt.",
-        "5 Quellen inkl. gesetze-im-internet.de und BMG."
-      ],
-      "fixInstructions": "Kein Fix erforderlich."
-    },
-    {
-      "file": "content/standards/GDVG.md",
-      "verdict": "pass",
-      "score": 89,
-      "issues": [
-        "Artikel korrekt als 'geplantes Gesetz' / 'Referentenentwurf geplant für erste Jahreshälfte 2026' gekennzeichnet.",
-        "Nina Warken (CDU) als Bundesgesundheitsministerin — bestätigt via kma-online.de (BMG-Pressemitteilung Februar 2026).",
-        "EHDS EU 2025/327 'in Kraft seit März 2025' — bestätigt korrekt (26. März 2025).",
-        "GDAG als nicht verabschiedeter Vorgänger — bestätigt korrekt (Kabinettsentwurf Juli 2024, wegen Koalitionsbruch nicht verabschiedet).",
-        "Quelle pm-report.de für Koalitionsvertrag ist Sekundärquelle — akzeptabel."
-      ],
-      "fixInstructions": "Kein kritischer Fix erforderlich. Optional: Koalitionsvertrag-Referenz mit offizieller bundesregierung.de-Quelle absichern."
+      "fixInstructions": "Carried from previous cycle. Correct NOVENTI merger description: 'entstanden aus der Fusion von VSA (München), ALG (Datteln) und SARZ (Schwerin)'. Remove ARZ Darmstadt from NOVENTI lineage."
     },
     {
       "file": "content/organization/BfDI.md",
       "verdict": "revise",
       "score": 72,
       "issues": [
-        "FAKTISCHER FEHLER: 'Amtsinhaberin (Stand März 2026): Prof. Dr. Louisa Specht-Riemenschneider (seit Februar 2024)' — FALSCH. Sie trat das Amt am 3. September 2024 an (Ernennung durch Bundespräsident Steinmeier). Gewählt wurde sie am 16. Mai 2024 durch den Bundestag. 'Februar 2024' ist in keiner Quelle belegbar.",
-        "Rücktrittsankündigung 'im März 2026 aus gesundheitlichen Gründen' — bestätigt korrekt via BfDI-Pressemitteilung und heise.de.",
-        "'180 Mitarbeiterinnen und Mitarbeiter' — plausibel, nicht aus Suchergebnissen verifiziert.",
-        "Amtszeit 'fünfjährige Amtszeit' — korrekt per BDSG."
+        "FACTUAL ERROR (previous cycle): 'seit Februar 2024' for Specht-Riemenschneider Amtsantritt is wrong — correct date is 3. September 2024."
       ],
-      "fixInstructions": "Zeile 20 korrigieren: 'seit Februar 2024' ersetzen durch 'seit September 2024' (präziser: 'seit 3. September 2024'). Quellen für das korrekte Datum: BfDI-Pressemitteilung 'Neue BfDI tritt Amt an' (https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2024/10_Neue-BfDI.html)."
-    }
-  ],
-  "contradictions": [
-    {
-      "claim": "NOVENTI merger timeline",
-      "articleA": "TA1.md says 'entstanden aus der Fusion von VSA (München), ALG (Datteln) und SARZ (Schwerin) zwischen 2016 und 2018'",
-      "articleB": "Apothekenrechenzentrum.md states the same. External sources confirm ALG joined VSA in 2004, not 2016. Both articles share the same imprecise formulation."
+      "fixInstructions": "Carried from previous cycle. Replace 'seit Februar 2024' with 'seit 3. September 2024'."
     },
     {
-      "claim": "ePA rollout start date",
-      "articleA": "ePA.md: 'Seit dem 15. Januar 2025 wird die ePA automatisch für alle gesetzlich Versicherten angelegt' (implies universal from January)",
-      "articleB": "Verified: 15.01.2025 = Modellregionen only; bundesweiter Rollout ab 29. April 2025. Internal imprecision within ePA.md, not cross-article."
+      "file": "content/technologies/eArztbrief.md",
+      "verdict": "revise",
+      "score": 78,
+      "issues": [
+        "FACTUAL ERROR (previous cycle): EBM 86900 stated as '27 Cent' but verified value for sending is 28 Cent. 27 Cent is EBM 86901 (receiving)."
+      ],
+      "fixInstructions": "Carried from previous cycle. Fix: 'EBM 86900 (Versenden): 28 Cent; EBM 86901 (Empfangen): 27 Cent'."
+    },
+    {
+      "file": "content/infrastructure/Apothekenrechenzentrum.md",
+      "verdict": "revise",
+      "score": 74,
+      "issues": [
+        "FACTUAL ERROR (previous cycle): NOVENTI described as entstanden aus NARZ/ARZ Darmstadt — incorrect. Same error as TA1.md."
+      ],
+      "fixInstructions": "Carried from previous cycle. Same fix as TA1.md."
     }
   ],
-  "staleArticles": [],
+  "contradictions": [],
+  "staleArticles": [
+    "content/technologies/gRPC.md: states 'seit 2016 unter CNCF' — correct dates are open-source February 2015 (Google), CNCF March 2017",
+    "content/technologies/Teleradiologie.md: references § 25 StrlSchV for Teleradiologie — current law since 1. Januar 2019 is § 123 StrlSchV 2018"
+  ],
   "summary": {
-    "reviewed": 15,
-    "pass": 11,
-    "revise": 3,
+    "reviewed": 12,
+    "pass": 8,
+    "revise": 4,
     "fail": 0,
     "keyIssues": [
-      "eArztbrief.md: EBM 86900 Vergütung stated as 27 Cent but verified value for sending (86900) is 28 Cent; 27 Cent is the receiving tariff (86901). Factual error requiring correction.",
-      "ePA.md: FHIR IG version numbers (v1.2.0) for ePA 3.1.2 are unverifiable; searches found v1.1.5 and v1.3.0 but not v1.2.0. Also, rollout timeline conflates Modellregionen start (15.01.2025) with universal rollout (29.04.2025).",
-      "DiPaG.md: Release date stated as '27. Mai 2025'; verified date is '22. Mai 2025'.",
-      "TA1.md and Apothekenrechenzentrum.md: NOVENTI merger timeline 'zwischen 2016 und 2018' is imprecise — ALG joined VSA already in 2004.",
-      "KRITIS-Dachgesetz.md: Missing Inkrafttreten date (17. März 2026); Bußgeld structure needs clarification.",
-      "All 124 structural tests pass (0 failures)."
+      "gRPC.md: wrong year for open-source launch (2016 stated, correct is 2015) and wrong CNCF adoption year (2016 stated, correct is 2017); plus 3 broken [[SOAP]] wiki-links causing the only structural test failure",
+      "Teleradiologie.md: wrong Strahlenschutzverordnung paragraph (§ 25 stated, correct is § 123 StrlSchV 2018 since 1. Januar 2019); 30-minute Befundung claim has no statutory basis in § 123",
+      "Landesaerztekammer.md: misleading parenthetical omits the actual reason for 17 chambers (NRW has two: Ärztekammer Nordrhein and Ärztekammer Westfalen-Lippe)",
+      "IDP.md: IBM outage description conflates two separate 10.02.2026 incidents — IBM sektoraler IDP (affecting Versicherte/Gesundheits-ID) and T-Systems VPN (affecting Leistungserbringer) are distinct"
     ]
   }
 }

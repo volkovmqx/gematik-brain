@@ -1,48 +1,6 @@
 {
   "pending": [
     {
-      "term": "Landesärztekammer",
-      "category": "organization",
-      "reason": "Ärztliche Körperschaft auf Landesebene. Zuständig für Approbation, Berufsrecht und Ausstellung des HBA. In 12 Erwähnungen über Bundesaerztekammer.md und HBA.md als HBA-Herausgeber zentral. Ohne Landesärztekammer kein HBA und damit keine QES-fähige Signatur für Ärzte. Unmittelbares Bindeglied zwischen Berufsrecht und TI-Zugang.",
-      "mentionedIn": [
-        "content/organization/Bundesaerztekammer.md",
-        "content/infrastructure/HBA.md"
-      ],
-      "priority": 22
-    },
-    {
-      "term": "GDAG",
-      "category": "standards",
-      "reason": "Gesundheits-Digitalagentur-Gesetz. Geplantes Gesetz zur Umwandlung der gematik in eine staatliche Digitalagentur mit erweitertem Mandat. In gematik.md, GDVG.md und DigiG.md als wichtige gesetzgeberische Initiative erwähnt. GDAG ist der unmittelbare gesetzliche Rahmen für die Neuausrichtung der gematik und bestimmt ihre künftige Rolle im deutschen Gesundheitssystem.",
-      "mentionedIn": [
-        "content/organization/gematik.md",
-        "content/standards/GDVG.md",
-        "content/standards/DigiG.md"
-      ],
-      "priority": 21
-    },
-    {
-      "term": "gRPC",
-      "category": "technologies",
-      "reason": "Google Remote Procedure Call. Modernes, binärbasiertes API-Protokoll, das SOAP in TI 2.0 für neue Dienste ergänzt bzw. ersetzt. In Konnektoren.md als gRPC-basierte API für TI 2.0 beschrieben, in TI-Gateway.md als neue Schnittstelle (neben SOAP). Relevant für Entwickler, die TI-2.0-Integrationen implementieren.",
-      "mentionedIn": [
-        "content/infrastructure/Konnektoren.md",
-        "content/infrastructure/TI-Gateway.md"
-      ],
-      "priority": 20
-    },
-    {
-      "term": "Teleradiologie",
-      "category": "technologies",
-      "reason": "Fernbefundung von DICOM-Bildern durch externe Radiologen. In DICOM.md, PACS.md und RIS.md als wichtiger Anwendungsfall der radiologischen Bildgebung erwähnt. Ermöglicht Versorgung in radiologisch unterversorgten Regionen. Berührungspunkt mit TI-Infrastruktur (PACS-Zugriff über sichere Netze).",
-      "mentionedIn": [
-        "content/standards/DICOM.md",
-        "content/infrastructure/PACS.md",
-        "content/infrastructure/RIS.md"
-      ],
-      "priority": 19
-    },
-    {
       "term": "DAV",
       "category": "organization",
       "reason": "Deutscher Apothekerverband. Dachverband der Apothekeninhaber in Deutschland und Gesellschafter der gematik. Co-Herausgeber der TA1 (Technische Anlage 1 zum Rahmenvertrag über die Arzneimittelversorgung). In 13 Erwähnungen über ABDA.md, Apothekenrechenzentrum.md, TA1.md und gematik.md. Zentraler Akteur im E-Rezept-Ökosystem neben ABDA.",
@@ -51,16 +9,6 @@
         "content/infrastructure/Apothekenrechenzentrum.md",
         "content/standards/TA1.md",
         "content/organization/gematik.md"
-      ],
-      "priority": 18
-    },
-    {
-      "term": "BMP",
-      "category": "processes",
-      "reason": "Bundeseinheitlicher Medikationsplan. Papierbasierter Vorgänger des elektronischen Medikationsplans (eMP) mit QR-Code auf DIN-A4. In eMP.md und AMTS.md als abzulösender Vorläufer ausführlich beschrieben, inkl. Migration (gemInfo_Überführung_BMP_in_eMP). 7 Erwähnungen. Verständnis der eMP-Einführung erfordert Kenntnis des BMP.",
-      "mentionedIn": [
-        "content/processes/eMP.md",
-        "content/processes/AMTS.md"
       ],
       "priority": 18
     },
@@ -297,7 +245,12 @@
     "G-BA",
     "KRITIS-Dachgesetz",
     "DiPaG",
-    "Patient Summary"
+    "Patient Summary",
+    "Landesärztekammer",
+    "GDAG",
+    "gRPC",
+    "Teleradiologie",
+    "BMP"
   ],
   "lastRun": "2026-03-18"
 }

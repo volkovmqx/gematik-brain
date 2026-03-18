@@ -54,7 +54,7 @@ Die KBV definiert spezifische [[FHIR]]-Profile für den Medikationsplan ([[MIO]]
 
 ### Überführung des Bundeseinheitlichen Medikationsplans
 
-Vor der ePA gab es den **Bundeseinheitlichen Medikationsplan (BMP)** in Papierform. Er wurde als maschinenlesbarer QR-Code auf einem DIN-A4-Blatt gedruckt. Die Spezifikation `gemInfo_Überführung_BMP_in_eMP` beschreibt, wie bestehende BMP-Daten in das eMP-Format der [[ePA]] überführt werden.
+Vor der ePA gab es den **[[BMP|Bundeseinheitlichen Medikationsplan (BMP)]]** in Papierform. Er wurde als maschinenlesbarer QR-Code auf einem DIN-A4-Blatt gedruckt. Die Spezifikation `gemInfo_Überführung_BMP_in_eMP` beschreibt, wie bestehende BMP-Daten in das eMP-Format der [[ePA]] überführt werden.
 
 ### Zugriff auf Medikationsdaten in der ePA
 

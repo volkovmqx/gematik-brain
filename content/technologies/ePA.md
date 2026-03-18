@@ -3,7 +3,7 @@ title: ePA - Elektronische Patientenakte
 audience: [technical, non-technical]
 tags: [anwendung, epa, patientenakte]
 aliases: [Elektronische Patientenakte, Patientenakte]
-maturity: immergruen
+maturity: wachsend
 ---
 
 # ePA - Elektronische Patientenakte

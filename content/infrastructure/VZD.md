@@ -3,6 +3,7 @@ title: VZD - Verzeichnisdienst
 audience: [technical, non-technical]
 tags: [infrastruktur, verzeichnis, kim, ti-messenger]
 aliases: [VZD, Verzeichnisdienst, VZD-FHIR-Directory]
+maturity: wachsend
 ---
 
 # VZD - Verzeichnisdienst

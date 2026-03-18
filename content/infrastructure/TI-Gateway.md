@@ -37,7 +37,7 @@ Das TI-Gateway besteht aus zwei zentralen Teilen:
 
 Das TI-Gateway unterstützt bestehende Primärsystem-Schnittstellen (SOAP-Webservices), die auch der Konnektor verwendet. So können [[PVS|Praxisverwaltungssysteme (PVS)]], [[KIS|Krankenhausinformationssysteme (KIS)]] und [[AVS|Apothekenverwaltungssysteme (AVS)]] ohne vollständige Neuimplementierung auf das TI-Gateway umsteigen.
 
-Neue Schnittstellen nutzen gRPC, wie es für TI 2.0 vorgesehen ist.
+Neue Schnittstellen nutzen [[gRPC]], wie es für TI 2.0 vorgesehen ist.
 
 ### mTLS-Anforderung
 

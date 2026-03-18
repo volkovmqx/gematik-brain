@@ -3,6 +3,7 @@ title: Konnektoren
 audience: [technical, non-technical]
 tags: [infrastruktur, konnektor, hardware]
 aliases: [Konnektor, TI-Konnektor, Health Connector]
+maturity: wachsend
 ---
 
 # Konnektoren
@@ -56,7 +57,7 @@ Die SOAP-Schnittstelle ist abwärtskompatibel gehalten, damit bestehende Primär
 
 ### gRPC für TI 2.0
 
-Mit der Einführung von TI 2.0 werden neben SOAP auch **gRPC**-basierte APIs eingeführt. gRPC ist effizienter als SOAP, binärbasiert und besser für moderne Anwendungsarchitekturen geeignet. Neue Primärsysteme und Fachdienste können damit direkt integriert werden.
+Mit der Einführung von TI 2.0 werden neben SOAP auch **[[gRPC]]**-basierte APIs eingeführt. gRPC ist effizienter als SOAP, binärbasiert und besser für moderne Anwendungsarchitekturen geeignet. Neue Primärsysteme und Fachdienste können damit direkt integriert werden.
 
 ### ECC 256 Migration
 

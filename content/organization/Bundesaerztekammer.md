@@ -8,7 +8,7 @@ maturity: wachsend
 
 # Bundesärztekammer
 
-Die **Bundesärztekammer (BÄK)** ist der Dachverband aller 17 deutschen Landesärztekammern und vertritt die beruflichen und gesundheitspolitischen Interessen der Ärzteschaft in Deutschland.
+Die **Bundesärztekammer (BÄK)** ist der Dachverband aller 17 deutschen [[Landesaerztekammer|Landesärztekammern]] und vertritt die beruflichen und gesundheitspolitischen Interessen der Ärzteschaft in Deutschland.
 
 ## Erklärt für Einsteiger
 
@@ -38,7 +38,7 @@ Die Bundesärztekammer ist Gesellschafterin der [[gematik]]. Ihr Anteil ist Teil
 
 ### HBA-Ausgabe durch Landesärztekammern
 
-Der **[[HBA]] (Heilberufsausweis)** für Ärzte wird nicht von der Bundesärztekammer selbst ausgegeben, sondern von den einzelnen **Landesärztekammern**. Jede Landesärztekammer ist für die Ärzteschaft in ihrem Bundesland zuständig und beauftragt zugelassene Trustcenter (z.B. D-Trust, Medisign, TELESEC) mit der technischen Produktion der Karten.
+Der **[[HBA]] (Heilberufsausweis)** für Ärzte wird nicht von der Bundesärztekammer selbst ausgegeben, sondern von den einzelnen **[[Landesaerztekammer|Landesärztekammern]]**. Jede Landesärztekammer ist für die Ärzteschaft in ihrem Bundesland zuständig und beauftragt zugelassene Trustcenter (z.B. D-Trust, Medisign, TELESEC) mit der technischen Produktion der Karten.
 
 Der HBA enthält:
 - Ein Zertifikat für die **qualifizierte elektronische Signatur (QES)**, mit der Arztbriefe und E-Rezepte rechtssicher signiert werden

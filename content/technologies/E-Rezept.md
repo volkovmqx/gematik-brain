@@ -3,7 +3,7 @@ title: E-Rezept
 audience: [technical, non-technical]
 tags: [anwendung, e-rezept, verordnung]
 aliases: [Elektronisches Rezept, eRezept]
-maturity: immergruen
+maturity: wachsend
 ---
 
 # E-Rezept

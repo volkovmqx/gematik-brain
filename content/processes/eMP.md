@@ -19,7 +19,7 @@ Der eMP enthält eine strukturierte Übersicht aller Medikamente eines Patienten
 
 Patienten mit drei oder mehr verordneten Medikamenten haben gesetzlichen Anspruch auf einen Medikationsplan gemäß § 31a [[SGB V]]. Der eMP ist die digitale Umsetzung dieses Anspruchs.
 
-Vor dem eMP gab es den **Bundeseinheitlichen Medikationsplan (BMP)** als Papierausdruck mit maschinenlesbarem QR-Code auf einem DIN-A4-Blatt. Der BMP konnte auch auf der [[eGK]] gespeichert werden. Der eMP löst den BMP ab und ist seit März 2026 in die [[ePA]] integriert. Die gematik-Spezifikation `gemInfo_Überführung_BMP_in_eMP` beschreibt die Migration bestehender BMP-Daten.
+Vor dem eMP gab es den **[[BMP|Bundeseinheitlichen Medikationsplan (BMP)]]** als Papierausdruck mit maschinenlesbarem QR-Code auf einem DIN-A4-Blatt. Der BMP konnte auch auf der [[eGK]] gespeichert werden. Der eMP löst den BMP ab und ist seit März 2026 in die [[ePA]] integriert. Die gematik-Spezifikation `gemInfo_Überführung_BMP_in_eMP` beschreibt die Migration bestehender BMP-Daten.
 
 Der eMP ist eng mit der **elektronischen Medikationsliste (eML)** verknüpft. Während die eML alle verordneten und abgegebenen Medikamente automatisch aus [[E-Rezept]]-Daten zusammenstellt, enthält der eMP eine kuratierte, arztgeführte Übersicht der aktuellen Dauermedikation inklusive Selbstmedikation und klinischer Hinweise.
 

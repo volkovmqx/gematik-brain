@@ -18,7 +18,7 @@ Stell dir vor, ein Arzt braucht eine Art Personalausweis für das digitale Gesun
 Der HBA wird an einzelne Personen ausgegeben, nicht an Einrichtungen. Das unterscheidet ihn von der [[SMC-B]], die eine ganze Praxis oder Apotheke repräsentiert. Jeder Arzt, Zahnarzt, Apotheker und Psychotherapeut braucht seinen eigenen HBA.
 
 Die Ausgabe erfolgt über die zuständigen Heilberufskammern:
-- Ärzte: Landesärztekammern
+- Ärzte: [[Landesaerztekammer|Landesärztekammern]]
 - Zahnärzte: Landeszahnärztekammern
 - Apotheker: Landesapothekerkammern
 - Psychotherapeuten: Landespsychotherapeutenkammern

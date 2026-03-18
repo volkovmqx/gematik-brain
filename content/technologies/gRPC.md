@@ -3,11 +3,12 @@ title: gRPC
 audience: [technical]
 tags: [technologies, protokoll, api, ti-2-0, soap]
 aliases: [Google Remote Procedure Call, gRPC, Remote Procedure Call]
+maturity: setzling
 ---
 
 # gRPC
 
-**gRPC** (gRPC Remote Procedure Calls) ist ein modernes, binärbasiertes RPC-Framework von Google, das HTTP/2 als Transport und Protocol Buffers als Serialisierungsformat verwendet. In der [[Telematikinfrastruktur]] 2.0 ergänzt und ersetzt es schrittweise [[SOAP]]-basierte Schnittstellen.
+**gRPC** (gRPC Remote Procedure Calls) ist ein modernes, binärbasiertes RPC-Framework von Google, das HTTP/2 als Transport und Protocol Buffers als Serialisierungsformat verwendet. In der [[Telematikinfrastruktur]] 2.0 ergänzt und ersetzt es schrittweise SOAP-basierte Schnittstellen.
 
 ## Erklärt für Einsteiger
 
@@ -15,9 +16,9 @@ Wenn zwei Computerprogramme miteinander reden, benutzen sie eine Sprache und ein
 
 ## Überblick
 
-gRPC wurde ursprünglich von Google entwickelt und ist seit 2016 als Open-Source-Projekt unter der Cloud Native Computing Foundation (CNCF) verfügbar. Es ist in nahezu allen modernen Programmiersprachen verfügbar (Java, Go, C#, Python, JavaScript, Rust u.a.).
+gRPC wurde ursprünglich von Google entwickelt und im Februar 2015 als Open-Source-Projekt veröffentlicht. Im Februar 2017 wurde es in die Cloud Native Computing Foundation (CNCF) aufgenommen. Es ist in nahezu allen modernen Programmiersprachen verfügbar (Java, Go, C#, Python, JavaScript, Rust u.a.).
 
-In der deutschen [[Telematikinfrastruktur]] spielte bislang [[SOAP]] (Simple Object Access Protocol) die zentrale Rolle für die Kommunikation zwischen Primärsystemen und dem [[Konnektoren|Konnektor]] sowie zwischen Fachdiensten. Mit der Einführung von TI 2.0 werden neue Schnittstellen auf gRPC umgestellt oder ergänzt. Der [[TI-Gateway]], der den Hardware-Konnektor ablöst, unterstützt gRPC neben den alten SOAP-Schnittstellen.
+In der deutschen [[Telematikinfrastruktur]] spielte bislang SOAP (Simple Object Access Protocol) die zentrale Rolle für die Kommunikation zwischen Primärsystemen und dem [[Konnektoren|Konnektor]] sowie zwischen Fachdiensten. Mit der Einführung von TI 2.0 werden neue Schnittstellen auf gRPC umgestellt oder ergänzt. Der [[TI-Gateway]], der den Hardware-Konnektor ablöst, unterstützt gRPC neben den alten SOAP-Schnittstellen.
 
 ### Abgrenzung zu SOAP und REST
 
@@ -78,7 +79,7 @@ gRPC erzwingt standardmäßig [[mTLS]] (Mutual TLS) für alle Verbindungen. Das 
 
 - [[Konnektoren]] (SOAP-basierte Schnittstellen; werden durch gRPC in TI 2.0 ergänzt)
 - [[TI-Gateway]] (unterstützt gRPC als neue API für Primärsysteme)
-- [[SOAP]] (älteres Protokoll, das gRPC in TI 2.0 ablöst)
+- SOAP (älteres Protokoll, das gRPC in TI 2.0 ablöst)
 - [[mTLS]] (TLS-Variante mit gegenseitiger Authentisierung; gRPC-Standard)
 - [[Zero-Trust]] (TI-2.0-Sicherheitsarchitektur; gRPC ist kompatibel)
 - [[Telematikinfrastruktur]] (Rahmeninfrastruktur)

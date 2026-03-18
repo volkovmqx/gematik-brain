@@ -3,6 +3,7 @@ title: BMP
 audience: [technical, non-technical]
 tags: [prozess, medikation, medikationsplan, papier, qr-code]
 aliases: [Bundeseinheitlicher Medikationsplan, Medikationsplan, BMP]
+maturity: immergruen
 ---
 
 # BMP
@@ -11,7 +12,7 @@ Der **BMP (Bundeseinheitlicher Medikationsplan)** ist der papierbasierte Medikat
 
 ## Erklärt für Einsteiger
 
-Stell dir vor, du nimmst fünf Medikamente von drei verschiedenen Ärzten. Kein Arzt kennt das vollständige Bild. Der Bundeseinheitliche Medikationsplan ist ein DIN-A4-Zettel, auf dem alle deine Medikamente übersichtlich stehen, mit einem QR-Code, den jeder Arzt und jede Apotheke einscannnen kann. So sieht jeder auf einen Blick, was du nimmst. Er war die erste verbindliche Form des Medikationsplans in Deutschland, bevor alles digital wurde.
+Stell dir vor, du nimmst fünf Medikamente von drei verschiedenen Ärzten. Kein Arzt kennt das vollständige Bild. Der Bundeseinheitliche Medikationsplan ist ein DIN-A4-Zettel, auf dem alle deine Medikamente übersichtlich stehen, mit einem QR-Code, den jeder Arzt und jede Apotheke einscannen kann. So sieht jeder auf einen Blick, was du nimmst. Er war die erste verbindliche Form des Medikationsplans in Deutschland, bevor alles digital wurde.
 
 ## Überblick
 

@@ -3,6 +3,7 @@ title: GDAG
 audience: [technical, non-technical]
 tags: [standards, recht, gesetz, gematik, digitalisierung]
 aliases: [Gesundheits-Digitalagentur-Gesetz, Gesundheits-Digital-Agentur-Errichtungsgesetz]
+maturity: wachsend
 ---
 
 # GDAG
