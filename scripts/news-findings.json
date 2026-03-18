@@ -1,6 +1,6 @@
 {
   "lastChecked": "2026-03-18",
-  "lastRun": "2026-03-18T14:30:00Z",
+  "lastRun": "2026-03-18T16:00:00Z",
   "findings": [
     {
       "title": "eMedikationsplan: Start verschoben auf Oktober 2026",
@@ -146,7 +146,8 @@
       "source": "https://www.gematik.de/newsroom/news-detail/sieben-leitlinien-der-gematik-fuer-die-digitale-zukunft-des-gesundheitswesens",
       "summary": "Am 15. Januar 2026 veröffentlichte gematik-Geschäftsführer Dr. Florian Fuhrmann sieben strategische Leitsätze. Kernaussagen: Digitalisierung ist keine Kür sondern Pflicht; Betriebsstabilität hat absolute Priorität; Komplexität muss reduziert werden; Gemeinschaftsprojekt aller Akteure; grenzübergreifendes Denken notwendig. Die Leitsätze signalisieren eine stärkere Fokussierung auf Nutzerfreundlichkeit und Vereinfachung.",
       "relevantArticles": ["gematik.md", "Telematikinfrastruktur.md"],
-      "action": "update",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
       "details": "gematik.md sollte die strategischen Leitsätze von Januar 2026 und deren Bedeutung für die TI-Weiterentwicklung ergänzen.",
       "suggestedTerm": "gematik-Strategie-2026"
     },
@@ -402,7 +403,7 @@
       "summary": "Das Gesundheits-Digitalagentur-Gesetz (GDAG) ist mit dem Ende der Ampel-Koalition gescheitert (2. und 3. Lesung im Bundestag wurden wegen Neuwahl nicht mehr durchgeführt). Der Koalitionsvertrag von CDU/CSU und SPD (April 2025) sieht dennoch eine Modernisierung der gematik zu einer 'modernen Agentur' vor. Konkrete Umsetzungsschritte oder ein Nachfolgegesetz für das GDAG sind noch nicht beschlossen. Alle Software-/IT-Anbieter im Gesundheitswesen müssen bis 2027 verlustfreien Datenaustausch auf Basis einheitlicher Standards sicherstellen.",
       "relevantArticles": ["gematik.md", "DigiG.md"],
       "category": "regulation",
-      "action": "update",
+      "action": "applied",
       "details": "gematik.md sollte das Scheitern des GDAG und die Pläne im Koalitionsvertrag 2025 erwähnen. DigiG.md könnte den Kontext des GDAG als geplante Erweiterung dokumentieren.",
       "suggestedTerm": "GDAG"
     },
@@ -495,7 +496,7 @@
       "summary": "Ab April 2026 müssen Krankenhäuser, deren Krankenhausinformationssystem (KIS) kein zertifiziertes ePA-Modul enthält, mit finanziellen Sanktionen rechnen. Gematik veröffentlichte im März 2026 einen Erfahrungsbericht der Dr.-Erler-Kliniken Nürnberg als frühes Anwenderbeispiel für die ePA im stationären Bereich. Der Großteil der Kliniken erwartet den flächendeckenden ePA-Betrieb erst im ersten oder zweiten Quartal 2026.",
       "relevantArticles": ["ePA.md", "KIS.md"],
       "category": "regulation",
-      "action": "update",
+      "action": "applied",
       "details": "ePA.md und KIS.md sollten den Sanktionstermin April 2026 für KIS-Einrichtungen ohne zertifiziertes ePA-Modul dokumentieren."
     },
     {
@@ -633,7 +634,8 @@
       "summary": "Laut TI-Dashboard waren am 9. März 2026 insgesamt 7.309 Einrichtungen und 254.952 Versicherte im TI-Messenger aktiv registriert. Seit Einführung wurden 500.577 Aktivitäten (versendete Nachrichten) gezählt. Im Zeitraum 1. Januar bis 9. März 2026 stieg die Aktivität um rund 126.000 Nachrichten. Trotz kontinuierlichem Wachstum gilt die Nutzung für ein Netz mit 160.000 potenziellen Einrichtungen als verhalten.",
       "relevantArticles": ["TI-Messenger.md"],
       "category": "info",
-      "action": "update",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
       "details": "TI-Messenger.md sollte aktuelle Nutzungszahlen aus März 2026 ergänzen: 7.309 Einrichtungen, 254.952 Versicherte, 500.577 Nachrichten kumuliert."
     },
     {
@@ -702,7 +704,8 @@
       "source": "https://www.kma-online.de/aktuelles/politik/detail/bmg-stellt-digitalisierungsstrategie-2026-vor-das-sind-warkens-plaene-55231",
       "summary": "Bundesgesundheitsministerin Nina Warken (CDU) stellte am 11. Februar 2026 die Weiterentwicklung der Digitalisierungsstrategie für das Gesundheitswesen vor. Kernpunkte: (1) Gesetzentwurf 'Gesetz für digitale Versorgung und den Gesundheitsdatenraum' soll in Q1/2026 vorgelegt werden. (2) ePA-Ziel: ca. 20 Millionen aktive Nutzer bis 2030 (aktuell ca. 4 Millionen). (3) KI-gestützte Dokumentation soll bis 2028 in über 70 Prozent der Gesundheits- und Pflegeeinrichtungen Standard sein. (4) gematik erhält erweiterte Durchsetzungsbefugnisse zur einheitlichen Standardimplementierung. (5) FDZ Gesundheit wird mit KI-Fähigkeiten ausgebaut und an den EHDS angebunden.",
       "affects": ["BMG.md", "gematik.md", "ePA.md", "DiGA.md"],
-      "action": "update",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
       "details": "BMG.md sollte die neue Digitalisierungsstrategie 2026 und das geplante 'Gesetz für digitale Versorgung und den Gesundheitsdatenraum' erwähnen. gematik.md sollte die erweiterten Durchsetzungsbefugnisse ergänzen.",
       "category": "regulation",
       "suggestedTerm": "Gesetz für digitale Versorgung und den Gesundheitsdatenraum"
@@ -713,7 +716,8 @@
       "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/gesundheits-id-startet-als-digitaler-versicherungsnachweis/68447211",
       "summary": "Seit dem 1. Januar 2026 ist die Gesundheits-ID offiziell als digitaler Versicherungsnachweis beim Arztbesuch nutzbar. Bis Anfang 2026 haben sich ca. 4,4 Millionen Versicherte registriert (von ca. 74 Millionen GKV-Versicherten). Der Rollout nach erfolgreicher gematik-Zulassung fand im Frühjahr 2026 statt. Krankenkassen bewarben im Q1/2026 intensiv den Download der GesundheitsID-App. Bis Ende 2026 soll die digitale Identität als Standard-Versicherungsnachweis in Praxen etabliert sein. Als vollwertiger Ersatz der eGK beim Arztbesuch (inkl. PoPP-Szenario) ist die GesundheitsID ab 2027 geplant.",
       "affects": ["Gesundheits-ID.md", "eGK.md"],
-      "action": "update",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
       "details": "Gesundheits-ID.md sollte den konkreten Rollout-Termin 1. Januar 2026 für den Versicherungsnachweis ergänzen und die Nutzungszahl von 4,4 Millionen Registrierungen nennen. Der Artikel erwähnt bislang nur das Pflichtdatum 2024 für Krankenkassen und 2027 als Zieldatum für vollwertigen eGK-Ersatz.",
       "category": "specification"
     },

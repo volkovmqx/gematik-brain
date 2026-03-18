@@ -15,14 +15,14 @@ Wenn du im Urlaub in Spanien krank wirst und ins Krankenhaus musst, sprechen die
 
 ## Überblick
 
-MyHealth@EU wurde von der Europäischen Kommission im Rahmen des Programms für digitale Gesundheit in Europa aufgebaut. Die operative Steuerung liegt beim **eHealth Network** und seinem Operational Management Board unter der Federführung von DG SANTE (Generaldirektion Gesundheit und Lebensmittelsicherheit) und HaDEA (Europäische Gesundheits- und Digitalagentur). Die Infrastruktur vernetzt die nationalen Kontaktpunkte ([[NCPeH]]) der Mitgliedstaaten über ein zentrales Gateway.
+MyHealth@EU wurde von der Europäischen Kommission im Rahmen des Programms für digitale Gesundheit in Europa aufgebaut. Die Infrastruktur wird von der **Europäischen Kommission (DG SANTE)** betrieben. Die operative Steuerung liegt beim **eHealth Network** und seinem Operational Management Board unter der Federführung von DG SANTE (Generaldirektion Gesundheit und Lebensmittelsicherheit) und HaDEA (Europäische Gesundheits- und Digitalagentur). Die Infrastruktur vernetzt die nationalen Kontaktpunkte ([[NCPeH]]) der Mitgliedstaaten über ein zentrales Gateway.
 
 Derzeit unterstützt MyHealth@EU zwei Dienste:
 
 1. **ePrescription / eDispensation**: Elektronische Rezepte, die in anderen EU-Ländern eingelöst werden können.
 2. **Patient Summary**: Zusammenfassung der wichtigsten Gesundheitsdaten eines Patienten (aktuelle Diagnosen, Dauermedikation, Allergien, Impfungen).
 
-In einer zweiten Ausbaustufe (Wave 2) sollen weitere Dienste hinzukommen: Laborbefunde, Entlassungsbriefe, medizinische Bildgebung (DICOM) und Notfallausweise.
+In einer zweiten Ausbaustufe (Wave 2) sollen weitere Dienste hinzukommen: Laborbefunde, Entlassungsbriefe, medizinische Bildgebung ([[DICOM]]) und Notfallausweise.
 
 ### Mitgliedstaaten und Rollout
 

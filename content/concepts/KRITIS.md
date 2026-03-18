@@ -17,7 +17,7 @@ Stell dir vor, das Stromnetz fällt aus, Krankenhäuser können keine Patienten 
 
 KRITIS-Betreiber unterliegen in Deutschland zwei gesetzlichen Rahmenwerken: dem **BSI-Gesetz (BSIG)** für digitale Sicherheit und dem neueren **KRITIS-Dachgesetz (KRITIS-DachG)** für die physische Resilienz.
 
-Elf Sektoren gelten als kritisch: Energie, Transport und Verkehr, Bankwesen, Finanzmarktinfrastrukturen, Gesundheit, Trinkwasser, Abwasser, Digitale Infrastruktur, öffentliche Verwaltung, Weltraum und Lebensmittel. Diese Sektoren entsprechen dem Anhang der EU-CER-Richtlinie (EU 2022/2557), die das KRITIS-DachG umsetzt.
+Zehn Sektoren gelten als kritisch: Energie, Transport und Verkehr, Bankwesen, Finanzmarktinfrastrukturen, Gesundheit, Trinkwasser, Abwasser, Digitale Infrastruktur, Weltraum und Lebensmittel. Diese Sektoren orientieren sich am Anhang der EU-CER-Richtlinie (EU 2022/2557), die das KRITIS-DachG umsetzt. Deutschland hat dabei den Sektor "öffentliche Verwaltung" nicht als eigenständigen KRITIS-Sektor übernommen.
 
 Im **Gesundheitssektor** fallen folgende Einrichtungen in den KRITIS-Scope:
 - Krankenhäuser ab **30.000 stationären Fällen** pro Jahr
@@ -48,7 +48,7 @@ Klassische KRITIS-Betreiber nach BSIG müssen:
 1. **Technische und organisatorische Maßnahmen (TOMs)** zum Schutz ihrer IT-Systeme und Kommunikationsinfrastruktur umsetzen (§ 8a BSIG).
 2. Alle **zwei Jahre** den Nachweis der umgesetzten Maßnahmen gegenüber dem [[BSI]] erbringen, durch Audits, Prüfungen oder Zertifizierungen.
 3. **Sicherheitsvorfälle** erheblicher Wirkung unverzüglich dem [[BSI]] melden (§ 8b BSIG).
-4. Ein **ISMS** (Informationssicherheits-Managementsystem) betreiben, häufig zertifiziert nach ISO 27001 oder BSI IT-Grundschutz.
+4. Ein **[[ISMS]]** (Informationssicherheits-Managementsystem) betreiben, häufig zertifiziert nach ISO 27001 oder BSI IT-Grundschutz.
 
 ### Relevanz für die Telematikinfrastruktur
 

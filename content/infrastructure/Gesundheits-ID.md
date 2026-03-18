@@ -17,6 +17,8 @@ Stell dir vor, du brauchst normalerweise einen Bibliotheksausweis aus Plastik, u
 
 Die Gesundheits-ID erlaubt es Versicherten, sich ohne physische [[eGK]] an TI-Anwendungen anzumelden. Nutzbar ist sie etwa für die [[ePA]], das [[E-Rezept]] oder den [[TI-Messenger]]. Die gesetzliche Grundlage verpflichtet die Krankenkassen seit dem 1. Januar 2024, ihren Versicherten auf Wunsch eine Gesundheits-ID bereitzustellen.
 
+Seit **1. Januar 2026** kann die GesundheitsID als digitaler Versicherungsnachweis gegenüber Leistungserbringern genutzt werden. Bis März 2026 haben sich nach Angaben der gematik rund **4,4 Millionen Versicherte** registriert.
+
 Die Gesundheits-ID ist ein zentraler Baustein der TI 2.0-Strategie. Das Ziel: Die [[Telematikinfrastruktur]] soll nicht mehr zwingend Hardware wie [[eGK]] oder [[Konnektoren]] voraussetzen, sondern softwarebasiert und geräteunabhängig werden. Ab 2027 sollen Versicherte die Gesundheits-ID als vollwertigen Ersatz für die [[eGK]] auch beim Arztbesuch verwenden können.
 
 Technisch basiert die Gesundheits-ID auf dem [[IDP]]-System der TI. Jede Krankenkasse betreibt einen eigenen sektoralen Identity Provider (sektoraler IDP), der über die [[TI-Federation]] mit dem zentralen [[IDP]] verbunden ist. Versicherte authentifizieren sich über die App ihrer Krankenkasse und erhalten dort ein Token, das von TI-Diensten akzeptiert wird.

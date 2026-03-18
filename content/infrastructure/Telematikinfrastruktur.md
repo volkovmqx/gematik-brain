@@ -79,7 +79,7 @@ Seit 1. Januar 2026 ist ECC 256 für alle neu ausgestellten Zertifikate Pflicht.
 
 ### Authentisierung und Autorisierung
 
-Für die Authentisierung setzt die TI auf OAuth 2.0 und OpenID Connect. Der [[IDP]]-Dienst der [[gematik]] ist der zentrale Identitätsanker. Versicherte authentisieren sich über die [[eGK]] oder die [[Gesundheits-ID]]. Leistungserbringer nutzen [[HBA]] und [[SMC-B]].
+Für die Authentisierung setzt die TI auf [[OAuth 2.0]] und OpenID Connect. Der [[IDP]]-Dienst der [[gematik]] ist der zentrale Identitätsanker. Versicherte authentisieren sich über die [[eGK]] oder die [[Gesundheits-ID]]. Leistungserbringer nutzen [[HBA]] und [[SMC-B]].
 
 Token-basierte Autorisierung sichert den Zugriff auf Fachdienste. Jedes Token hat einen eingeschränkten Scope und eine begrenzte Gültigkeitsdauer.
 

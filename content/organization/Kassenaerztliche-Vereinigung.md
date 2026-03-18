@@ -35,7 +35,7 @@ Der Abrechnungsworkflow:
 2. PVS erstellt eine KVDT-Datei (strukturiertes Textformat mit Feldkennzeichen)
 3. Datei wird online an die KV übermittelt (in der Regel über ein KV-Connect-Portal)
 4. KV prüft sachlich und rechnerisch, bereinigt Unstimmigkeiten (Plausibilitätsprüfung)
-5. KV vergütet auf Basis des EBM (Einheitlicher Bewertungsmaßstab)
+5. KV vergütet auf Basis des [[EBM]] (Einheitlicher Bewertungsmaßstab)
 
 ### Bezug zur Telematikinfrastruktur
 
@@ -53,6 +53,7 @@ KV-SafeNet ist ein von mehreren KVen betriebenes VPN-Netz für den sicheren Date
 ## Verknüpfungen
 
 - [[KBV]] (Kassenärztliche Bundesvereinigung, Dachverband der KVen)
+- [[EBM]] (Einheitlicher Bewertungsmaßstab, Vergütungsgrundlage für KV-Abrechnungen)
 - [[PVS]] (Praxisverwaltungssystem, aus dem KVDT-Abrechnungsdaten exportiert werden)
 - [[eAU]] (Elektronische Arbeitsunfähigkeitsbescheinigung, wird über TI an Krankenkassen und KV gemeldet)
 - [[KIM]] (Kommunikationsdienst, zunehmend für Abrechnungsdaten genutzt)

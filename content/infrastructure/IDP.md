@@ -30,7 +30,7 @@ Der IDP ist für alle TI-Anwendungen relevant, die eine gesicherte Nutzeridentit
 
 Der IDP-Dienst basiert auf anerkannten offenen Standards:
 
-- **OAuth 2.0**: Autorisierungsframework (RFC 6749)
+- **[[OAuth 2.0]]**: Autorisierungsframework (RFC 6749)
 - **OpenID Connect (OIDC)**: Identitätsschicht über OAuth 2.0
 - **JSON Web Token (JWT)**: Tokenformat für alle ausgestellten Tokens
 - **PKCE** (Proof Key for Code Exchange): Schutzmechanismus gegen Code-Interception-Angriffe

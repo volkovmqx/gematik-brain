@@ -57,7 +57,7 @@ Das [[DigiG]] ermöglichte es, [[DiGA]] der Risikoklasse IIb für Telemonitoring
 
 ### Teleradiologie
 
-Teleradiologie ist ein spezieller Bereich der Telemedizin. Radiologische Aufnahmen werden in DICOM-Format über gesicherte Netzwerke übertragen und von räumlich entfernten Radiologen befundet. In Deutschland ist Teleradiologie durch die Röntgenverordnung (RöV) und DIN-Norm 6868-159 geregelt.
+Teleradiologie ist ein spezieller Bereich der Telemedizin. Radiologische Aufnahmen werden in [[DICOM]]-Format über gesicherte Netzwerke übertragen und von räumlich entfernten Radiologen befundet. In Deutschland ist Teleradiologie durch die Röntgenverordnung (RöV) und DIN-Norm 6868-159 geregelt.
 
 ### Rechtlicher Rahmen
 

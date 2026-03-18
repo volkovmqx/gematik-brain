@@ -1,60 +1,25 @@
 {
   "pending": [
     {
-      "term": "DICOM",
-      "category": "standards",
-      "reason": "Digital Imaging and Communications in Medicine. Standard für medizinische Bilddaten (Röntgen, MRT, CT). In KIS.md als PACS/RIS-Integrationspunkt 4-mal erwähnt; in Telemedizin.md für Teleradiologie; in IHE.md und MIO.md. 7+ Nennungen ohne eigene Seite. Zentral für das Verständnis von KIS-Systemarchitektur und Teleradiologie.",
+      "term": "GKV-Spitzenverband",
+      "category": "organization",
+      "reason": "Zweitgrößter gematik-Gesellschafter mit 22 %, finanziert 93 % des gematik-Betriebs. In 10 Artikeln erwähnt (gematik.md, GKV.md, DiGAV.md, KHZG.md u.a.). Zentrale Entscheidungsinstanz für TI-Finanzierung und Rahmenbedingungen.",
       "mentionedIn": [
-        "content/infrastructure/KIS.md",
-        "content/concepts/Telemedizin.md",
-        "content/standards/IHE.md",
-        "content/standards/MIO.md"
+        "content/organization/gematik.md",
+        "content/concepts/GKV.md",
+        "content/standards/DiGAV.md",
+        "content/standards/KHZG.md"
+      ],
+      "priority": 32
+    },
+    {
+      "term": "RIS",
+      "category": "infrastructure",
+      "reason": "Radiologie-Informationssystem. In KIS.md als zentrales KIS-Subsystem für radiologische Aufträge und Befunde beschrieben (Auftragsmanagement, DICOM-Anbindung). 13 Nennungen im gesamten Wissensbestand. Wichtig für das Verständnis der KIS-Architektur und der Subsystemlandschaft im Krankenhaus.",
+      "mentionedIn": [
+        "content/infrastructure/KIS.md"
       ],
       "priority": 26
-    },
-    {
-      "term": "EBM",
-      "category": "standards",
-      "reason": "Einheitlicher Bewertungsmaßstab. Das zentrale Vergütungsinstrument für ambulante ärztliche Leistungen in der GKV. In Kassenaerztliche-Vereinigung.md als Abrechnungsgrundlage der KVen beschrieben. Relevant für das Verständnis der ambulanten Vergütungsstruktur und des KVDT-Abrechnungsformats.",
-      "mentionedIn": [
-        "content/organization/Kassenaerztliche-Vereinigung.md",
-        "content/standards/SGB-V.md"
-      ],
-      "priority": 23
-    },
-    {
-      "term": "InEK",
-      "category": "organization",
-      "reason": "Institut für das Entgeltsystem im Krankenhaus. Entwickelt das G-DRG-System und die Deutschen Kodierrichtlinien (DKR), die OPS und ICD-10-GM verbindlich anwenden. In DRG.md und OPS.md als Herausgeber der Kodierrichtlinien für die DRG-Abrechnung erwähnt. 5 Nennungen ohne eigene Seite.",
-      "mentionedIn": [
-        "content/concepts/DRG.md",
-        "content/standards/OPS.md"
-      ],
-      "priority": 22
-    },
-    {
-      "term": "ISMS",
-      "category": "concepts",
-      "reason": "Informationssicherheitsmanagementsystem. In KHZG.md als Pflicht für alle KHZG-geförderten Krankenhäuser ab 1.1.2025 erwähnt (ISO 27001 oder BSI-Grundschutz). In BSI.md im KRITIS-Dachgesetz-Kontext. In Zero-Trust.md und VPN-Zugangsdienst.md als Sicherheitsrahmenwerk. 4+ Nennungen als relevantes Konzept für Krankenhaus-IT-Sicherheit.",
-      "mentionedIn": [
-        "content/standards/KHZG.md",
-        "content/organization/BSI.md",
-        "content/concepts/Zero-Trust.md"
-      ],
-      "priority": 21
-    },
-    {
-      "term": "OAuth 2.0",
-      "category": "concepts",
-      "reason": "OAuth 2.0 und OpenID Connect (OIDC) sind die Authentisierungs- und Autorisierungsprotokolle der TI. In 8 Artikeln außerhalb des IDP-Artikels erwähnt (VZD, TI-Federation, Gesundheits-ID, Fachdienst, Zero-Trust, mTLS, Telematikinfrastruktur, ZETA). Grundlage für alle Token-basierten TI-Dienste.",
-      "mentionedIn": [
-        "content/infrastructure/IDP.md",
-        "content/infrastructure/VZD.md",
-        "content/infrastructure/TI-Federation.md",
-        "content/infrastructure/Gesundheits-ID.md",
-        "content/concepts/ZETA.md"
-      ],
-      "priority": 21
     },
     {
       "term": "Highspeed-Konnektor",
@@ -62,18 +27,10 @@
       "reason": "HSK (Highspeed-Konnektor) ist die skalierbare Konnektor-Variante für größere Einrichtungen wie Krankenhäuser und MVZ. In Konnektoren.md und SMC-B.md als eigenständige Geräteklasse beschrieben, die HSM-B-Pilotprojekte hostet. Fehlt als eigene Seite, obwohl zentral für das Verständnis der TI-Infrastruktur in Kliniken.",
       "mentionedIn": [
         "content/infrastructure/Konnektoren.md",
-        "content/infrastructure/SMC-B.md"
+        "content/infrastructure/SMC-B.md",
+        "content/infrastructure/TI-Gateway.md"
       ],
-      "priority": 19
-    },
-    {
-      "term": "KHVVG",
-      "category": "standards",
-      "reason": "Krankenhausversorgungsverbesserungsgesetz 2024. Nachfolgegesetz des KHZG. Löst die einmalige Investitionsförderung durch strukturelle Vergütungsreformen ab. In KHZG.md als Folgegesetz zur Krankenhausreform erwähnt. Bedeutsam für Leistungserbringer und KIS-Kontext.",
-      "mentionedIn": [
-        "content/standards/KHZG.md"
-      ],
-      "priority": 18
+      "priority": 20
     },
     {
       "term": "HSM-B",
@@ -82,6 +39,17 @@
       "mentionedIn": [
         "content/infrastructure/Konnektoren.md",
         "content/infrastructure/SMC-B.md"
+      ],
+      "priority": 19
+    },
+    {
+      "term": "xDT",
+      "category": "standards",
+      "reason": "Sammelbegriff für ältere deutsche Austauschformate im ambulanten Bereich: KVDT (7 Nennungen), GDT (Gerätedatentransfer, 2), LDT (Labor-Datentransfer, 2), BDT (Behandlungsdatentransfer, 2). In PVS.md und Kassenaerztliche-Vereinigung.md als Schnittstellenstandards beschrieben. Historisch wichtig für das Verständnis des Migrationspfads zu FHIR.",
+      "mentionedIn": [
+        "content/infrastructure/PVS.md",
+        "content/organization/KBV.md",
+        "content/organization/Kassenaerztliche-Vereinigung.md"
       ],
       "priority": 18
     },
@@ -96,34 +64,25 @@
       "priority": 18
     },
     {
-      "term": "BSI C5",
-      "category": "standards",
-      "reason": "BSI Cloud Computing Compliance Criteria Catalogue. In DigiG.md als Pflichtzertifizierung für Cloud-Dienstleister im Gesundheitswesen nach § 393 SGB V erwähnt. Voraussetzung für die Nutzung von Cloud-Diensten in der TI und bei ePA-Anbietern.",
-      "mentionedIn": [
-        "content/standards/DigiG.md"
-      ],
-      "priority": 17
-    },
-    {
-      "term": "gRPC",
-      "category": "technologies",
-      "reason": "Google Remote Procedure Call. Modernes API-Protokoll, das SOAP in TI 2.0 für neue Dienste ersetzt. In Konnektoren.md als Protokoll der TI-Gateway-Schnittstelle und in TI-Gateway.md als Transportprotokoll für ZETA-basierte Dienste beschrieben. Relevant für Entwickler, die TI-2.0-Integrationen implementieren.",
-      "mentionedIn": [
-        "content/infrastructure/Konnektoren.md",
-        "content/infrastructure/TI-Gateway.md"
-      ],
-      "priority": 16
-    },
-    {
       "term": "Bundesärztekammer",
       "category": "organization",
-      "reason": "Bundesärztekammer (BÄK). Dachverband aller deutschen Landesärztekammern. In gematik.md und BMG.md als Gesellschafter der gematik erwähnt. In Telemedizin.md als Regelgeber für Fernbehandlung (MBO-Ä). Relevant für Berufsrecht, Weiterbildung und Interessenvertretung der Ärzteschaft in der TI-Governance.",
+      "reason": "Bundesärztekammer (BÄK). Dachverband aller deutschen Landesärztekammern. In gematik.md und BMG.md als Gesellschafter der gematik erwähnt. In Telemedizin.md als Regelgeber für Fernbehandlung (MBO-Ä). 4 Nennungen ohne eigene Seite. Relevant für Berufsrecht und HBA-Ausgabe.",
       "mentionedIn": [
         "content/organization/gematik.md",
         "content/organization/BMG.md",
         "content/concepts/Telemedizin.md"
       ],
-      "priority": 16
+      "priority": 17
+    },
+    {
+      "term": "BSI C5",
+      "category": "standards",
+      "reason": "BSI Cloud Computing Compliance Criteria Catalogue. In DigiG.md als Pflichtzertifizierung für Cloud-Dienstleister im Gesundheitswesen nach § 393 SGB V erwähnt. Voraussetzung für die Nutzung von Cloud-Diensten in der TI und bei ePA-Anbietern.",
+      "mentionedIn": [
+        "content/standards/DigiG.md",
+        "content/organization/BSI.md"
+      ],
+      "priority": 17
     },
     {
       "term": "KV-SafeNet",
@@ -133,7 +92,47 @@
         "content/infrastructure/VPN-Zugangsdienst.md",
         "content/organization/Kassenaerztliche-Vereinigung.md"
       ],
+      "priority": 16
+    },
+    {
+      "term": "gRPC",
+      "category": "technologies",
+      "reason": "Google Remote Procedure Call. Modernes API-Protokoll, das SOAP in TI 2.0 für neue Dienste ergänzt bzw. ersetzt. In Konnektoren.md als gRPC-basierte API für TI 2.0 und in TI-Gateway.md als neue Schnittstelle beschrieben. Relevant für Entwickler, die TI-2.0-Integrationen implementieren.",
+      "mentionedIn": [
+        "content/infrastructure/Konnektoren.md",
+        "content/infrastructure/TI-Gateway.md"
+      ],
+      "priority": 16
+    },
+    {
+      "term": "Apothekenrechenzentrum",
+      "category": "infrastructure",
+      "reason": "ARZ (Apothekenrechenzentrum). Verarbeitungsdienstleister zwischen Apotheken und Krankenkassen für die GKV-Abrechnung nach TA1-Format (15 Nennungen). In AVS.md und ABDA.md als Abrechnungspartner der Apotheken erwähnt. Zentrale Infrastruktur für den Abrechnungsfluss des E-Rezepts. TA1 ist das Kernformat dieser Kommunikation.",
+      "mentionedIn": [
+        "content/infrastructure/AVS.md",
+        "content/organization/ABDA.md"
+      ],
       "priority": 15
+    },
+    {
+      "term": "DVKA",
+      "category": "organization",
+      "reason": "Deutsche Verbindungsstelle Krankenversicherung Ausland. Betreibt den NCPeH und ist die zentrale Verwaltungsstelle für grenzüberschreitende Gesundheitsleistungen in der EU. In NCPeH.md und EHDS.md als Betreiber des nationalen Zugangspunkts benannt. 3 Nennungen. Wichtiger Akteur für MyHealth@EU-Integration.",
+      "mentionedIn": [
+        "content/infrastructure/NCPeH.md",
+        "content/standards/EHDS.md",
+        "content/infrastructure/MyHealthAtEU.md"
+      ],
+      "priority": 15
+    },
+    {
+      "term": "BfDI",
+      "category": "organization",
+      "reason": "Bundesbeauftragter für den Datenschutz und die Informationsfreiheit. In BSI.md als Koordinationspartner bei TI-Sicherheitsfragen erwähnt. 4 Nennungen als relevante Datenschutz-Aufsichtsbehörde für die TI und Gesundheitsdaten.",
+      "mentionedIn": [
+        "content/organization/BSI.md"
+      ],
+      "priority": 14
     },
     {
       "term": "IVDR",
@@ -142,42 +141,12 @@
       "mentionedIn": [
         "content/standards/MDR.md"
       ],
-      "priority": 15
-    },
-    {
-      "term": "PEPP",
-      "category": "concepts",
-      "reason": "Pauschalierendes Entgeltsystem Psychiatrie und Psychosomatik. Parallelsystem zum G-DRG für psychiatrische und psychosomatische Krankenhäuser. In DRG.md als eigenständiges Vergütungssystem für psychiatrische Einrichtungen erwähnt. Relevant für KIS-Implementierungen in psychiatrischen Kliniken.",
-      "mentionedIn": [
-        "content/concepts/DRG.md",
-        "content/infrastructure/KIS.md"
-      ],
       "priority": 14
-    },
-    {
-      "term": "DVKA",
-      "category": "organization",
-      "reason": "Deutsche Verbindungsstelle Krankenversicherung Ausland. Betreibt den NCPeH und ist die zentrale Verwaltungsstelle für grenzüberschreitende Gesundheitsleistungen in der EU. In NCPeH.md und EHDS.md als Betreiber des nationalen Zugangspunkts benannt. Wichtiger Akteur für MyHealth@EU-Integration.",
-      "mentionedIn": [
-        "content/infrastructure/NCPeH.md",
-        "content/standards/EHDS.md"
-      ],
-      "priority": 14
-    },
-    {
-      "term": "Apothekenrechenzentrum",
-      "category": "infrastructure",
-      "reason": "ARZ (Apothekenrechenzentrum). Verarbeitungsdienstleister zwischen Apotheken und Krankenkassen für die GKV-Abrechnung nach TA1-Format. In AVS.md und ABDA.md als Abrechnungspartner der Apotheken erwähnt. Zentrale Infrastruktur für den Abrechnungsfluss des E-Rezepts.",
-      "mentionedIn": [
-        "content/infrastructure/AVS.md",
-        "content/organization/ABDA.md"
-      ],
-      "priority": 13
     },
     {
       "term": "Forschungsdatenzentrum Gesundheit",
       "category": "infrastructure",
-      "reason": "FDZ Gesundheit beim BfArM. Stellt pseudonymisierte GKV-Abrechnungsdaten für Forschungsprojekte bereit und wird durch das GDNG erheblich erweitert. In GDNG.md und EHDS.md als zentrale Forschungsdateninfrastruktur Deutschlands beschrieben. Relevant für EHDS-Sekundärnutzung und Versorgungsforschung.",
+      "reason": "FDZ Gesundheit beim BfArM. Stellt pseudonymisierte GKV-Abrechnungsdaten für Forschungsprojekte bereit und wird durch das GDNG erheblich erweitert. In GDNG.md und EHDS.md als zentrale Forschungsdateninfrastruktur Deutschlands beschrieben. 4 Nennungen. Relevant für EHDS-Sekundärnutzung und Versorgungsforschung.",
       "mentionedIn": [
         "content/standards/GDNG.md",
         "content/standards/EHDS.md"
@@ -185,13 +154,21 @@
       "priority": 13
     },
     {
-      "term": "xDT",
-      "category": "standards",
-      "reason": "Sammelbegriff für ältere deutsche Austauschformate im ambulanten Bereich: KVDT (Kassenärztliche Vereinigung Datentransfer), GDT (Gerätedatentransfer), LDT (Labor-Datentransfer), BDT (Behandlungsdatentransfer). In PVS.md und Kassenaerztliche-Vereinigung.md als Schnittstellenstandards beschrieben. Historisch wichtig für das Verständnis des Migrationspfads zu FHIR.",
+      "term": "PEPP",
+      "category": "concepts",
+      "reason": "Pauschalierendes Entgeltsystem Psychiatrie und Psychosomatik. Parallelsystem zum G-DRG für psychiatrische und psychosomatische Krankenhäuser. In DRG.md als eigenständiges Vergütungssystem für psychiatrische Einrichtungen erwähnt. 2 Nennungen. Relevant für KIS-Implementierungen in psychiatrischen Kliniken.",
       "mentionedIn": [
-        "content/infrastructure/PVS.md",
-        "content/organization/KBV.md",
-        "content/organization/Kassenaerztliche-Vereinigung.md"
+        "content/concepts/DRG.md",
+        "content/infrastructure/KIS.md"
+      ],
+      "priority": 12
+    },
+    {
+      "term": "KHVVG",
+      "category": "standards",
+      "reason": "Krankenhausversorgungsverbesserungsgesetz 2024. Nachfolgegesetz des KHZG. Löst die einmalige Investitionsförderung durch strukturelle Vergütungsreformen ab. In KHZG.md als Folgegesetz zur Krankenhausreform erwähnt. Bedeutsam für Leistungserbringer und KIS-Kontext.",
+      "mentionedIn": [
+        "content/standards/KHZG.md"
       ],
       "priority": 12
     },
@@ -202,7 +179,7 @@
       "mentionedIn": [
         "content/organization/gematik.md"
       ],
-      "priority": 12
+      "priority": 11
     },
     {
       "term": "KZBV",
@@ -225,17 +202,6 @@
       "priority": 10
     },
     {
-      "term": "GKV-Spitzenverband",
-      "category": "organization",
-      "reason": "Spitzenverband der gesetzlichen Krankenversicherungen. In gematik.md als 22%-Gesellschafter und in GKV.md sowie DiGAV.md als zentraler Akteur erwähnt. Zweitgrößter Gesellschafter nach BMG.",
-      "mentionedIn": [
-        "content/organization/gematik.md",
-        "content/concepts/GKV.md",
-        "content/standards/DiGAV.md"
-      ],
-      "priority": 10
-    },
-    {
       "term": "ATC-Code",
       "category": "standards",
       "reason": "Anatomisch-therapeutisch-chemische Klassifikation (ATC). Internationales Klassifikationssystem für Arzneimittel der WHO. In MIO.md als verwendete Terminologie für Arzneimittelklassifikation in FHIR-Profilen erwähnt. Relevant für AMTS, E-Rezept und ePA-Medikationsdaten.",
@@ -244,18 +210,14 @@
         "content/processes/AMTS.md"
       ],
       "priority": 10
-    },
-    {
-      "term": "BfDI",
-      "category": "organization",
-      "reason": "Bundesbeauftragter für den Datenschutz und die Informationsfreiheit. In BSI.md als Koordinationspartner bei TI-Sicherheitsfragen erwähnt. Relevante Aufsichtsbehörde für Datenschutz in der TI.",
-      "mentionedIn": [
-        "content/organization/BSI.md"
-      ],
-      "priority": 9
     }
   ],
   "done": [
+    "DICOM",
+    "EBM",
+    "InEK",
+    "ISMS",
+    "OAuth 2.0",
     "MyHealth@EU",
     "TSL",
     "gSMC-KT",

@@ -41,7 +41,7 @@ Moderne KIS-Systeme sind modular aufgebaut. Ein typisches KIS besteht aus einem 
 
 - **RIS** (Radiologie-Informationssystem): Verwaltung radiologischer Aufträge und Befunde
 - **LIS** (Labor-Informationssystem): Labordatenverarbeitung
-- **PACS** (Picture Archiving and Communication System): Speicherung und Verteilung medizinischer Bilder (DICOM)
+- **PACS** (Picture Archiving and Communication System): Speicherung und Verteilung medizinischer Bilder ([[DICOM]])
 - **Klinikapothekenmodul**: Medikamentenlogistik und Unit-Dose-Versorgung
 - **Stationssystem/Pflegedokumentation**: Pflegerische Dokumentation auf Station
 
@@ -58,6 +58,8 @@ Der verbindliche [[ISiK]]-Standard (Informationstechnische Systeme in Krankenhä
 Dedalus ORBIS hat bereits ISiK Stufe 1 bestätigt. Die ISiK-Bestätigung erfolgt durch die [[gematik]].
 
 ### Anbindung an die Telematikinfrastruktur
+
+Ab **April 2026** müssen KIS ein zertifiziertes [[ePA]]-Modul enthalten. Krankenhäuser, deren KIS diese Anforderung nicht erfüllt, riskieren finanzielle Sanktionen.
 
 Krankenhäuser sind TI-Teilnehmer und benötigen entweder einen [[Konnektoren|Konnektor]] oder ab TI 2.0 ein [[TI-Gateway]]. Das KIS kommuniziert über den Konnektor/TI-Gateway mit den TI-Diensten:
 
@@ -77,7 +79,7 @@ KIS-Systeme implementieren typischerweise:
 - **HL7 v2 ORM/ORU**: Laboraufträge und -ergebnisse
 - **HL7 v3 [[CDA]]** (Clinical Document Architecture): Strukturierte klinische Dokumente (Arztbriefe)
 - **HL7 FHIR R4**: Neue Standard-Schnittstelle für ISiK und TI-Anwendungen
-- **DICOM**: Bildübertragung im Radiologiekontext (PACS-Anbindung)
+- **[[DICOM]]**: Bildübertragung im Radiologiekontext (PACS-Anbindung)
 
 Die [[IHE]]-Integrationsprofile (z.B. XDS.b für Dokumentenverteilung, PIX/PDQ für Patientenidentifikation) werden von größeren KIS-Installationen zunehmend unterstützt.
 

@@ -17,7 +17,7 @@ Stell dir vor, viele verschiedene Länder sprechen Englisch, aber jedes Land nut
 
 IHE wurde 1998 gemeinsam von der RSNA (Radiological Society of North America) und der HIMSS (Healthcare Information and Management Systems Society) gegründet. Ziel war es, die Fragmentierung im Bereich der medizinischen Bildgebung zu überwinden. Heute ist IHE International eine globale Organisation mit nationalen Mitgliedsorganisationen in über zwanzig Ländern.
 
-IHE entwickelt keine neuen Standards, sondern veröffentlicht sogenannte Integrationsprofile. Ein Integrationsprofil beschreibt, wie bestehende Standards wie [[FHIR]], [[HL7|HL7]] v2, HL7 v3 oder DICOM in einem konkreten klinischen Anwendungsfall zusammenspielen. Jedes Profil definiert Akteure, Transaktionen und Anforderungen.
+IHE entwickelt keine neuen Standards, sondern veröffentlicht sogenannte Integrationsprofile. Ein Integrationsprofil beschreibt, wie bestehende Standards wie [[FHIR]], [[HL7|HL7]] v2, HL7 v3 oder [[DICOM]] in einem konkreten klinischen Anwendungsfall zusammenspielen. Jedes Profil definiert Akteure, Transaktionen und Anforderungen.
 
 Die Arbeit ist in Domänen gegliedert: IT Infrastructure (ITI), Radiology, Pathology and Laboratory, Cardiology und weitere. Die technischen Spezifikationen werden im sogenannten Technical Framework veröffentlicht.
 

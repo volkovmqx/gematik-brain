@@ -55,7 +55,7 @@ Die TI 2.0 löst dieses Modell ab. Laut gematik gilt: "In der TI 2.0 werden alle
 
 - **[[mTLS]] (Mutual TLS)**: Jede Verbindung zwischen Primärsystem und [[TI-Gateway]] erfordert beidseitige Zertifikatsauthentifizierung. Beide Seiten müssen gültige Zertifikate vorlegen.
 - **[[IDP]]-Dienst**: Alle Nutzer und Dienste authentifizieren sich über einen zentralen Identitätsdienst. Die [[Gesundheits-ID]] ist das Identitätsmittel für Versicherte.
-- **Token-basierte Autorisierung**: OAuth 2.0 und OpenID Connect sichern den Zugriff auf Fachdienste. Jedes Token hat begrenzte Gültigkeit und eingeschränkten Scope.
+- **Token-basierte Autorisierung**: [[OAuth 2.0]] und OpenID Connect sichern den Zugriff auf Fachdienste. Jedes Token hat begrenzte Gültigkeit und eingeschränkten Scope.
 - **[[PKI]]**: Die Telematik-PKI stellt Zertifikate für alle Teilnehmer aus. Jede Verbindung basiert auf verifizierten Identitäten, nicht auf Netzwerkpositionen.
 
 ### Umsetzung in der Praxis

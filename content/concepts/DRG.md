@@ -17,7 +17,7 @@ Früher bezahlten Krankenkassen Krankenhäuser nach Liegezeit: Je länger ein Pa
 
 Das deutsche DRG-System heißt offiziell G-DRG (German Diagnosis Related Groups). Es wurde auf Basis des australischen AR-DRG-Systems entwickelt und 2003 freiwillig, ab 2004 verpflichtend eingeführt. Rechtsgrundlage ist § 17b des Krankenhausfinanzierungsgesetzes (KHG).
 
-Verantwortlich für die Pflege und Weiterentwicklung des G-DRG-Systems ist das **Institut für das Entgeltsystem im Krankenhaus (InEK GmbH)** in Siegburg. Das InEK aktualisiert den DRG-Katalog jährlich auf Basis von Kostendaten, die Kalkulationskrankenhäuser aus ganz Deutschland einreichen. Der Katalog enthält rund 1.200 unterschiedliche DRG-Codes.
+Verantwortlich für die Pflege und Weiterentwicklung des G-DRG-Systems ist das **[[InEK|Institut für das Entgeltsystem im Krankenhaus (InEK GmbH)]]** in Siegburg. Das InEK aktualisiert den DRG-Katalog jährlich auf Basis von Kostendaten, die Kalkulationskrankenhäuser aus ganz Deutschland einreichen. Der Katalog enthält rund 1.200 unterschiedliche DRG-Codes.
 
 Das G-DRG-System veränderte die Anreizstruktur im Krankenhausbetrieb grundlegend. Effiziente Behandlung wird belohnt, lange Liegezeiten werden nicht mehr vergütet. Gleichzeitig wuchs der Druck auf Krankenhäuser, Diagnosen und Prozeduren vollständig und korrekt zu dokumentieren, weil jede fehlende Kodierung zu Einnahmeverlusten führt.
 
@@ -71,6 +71,7 @@ Psychiatrische und psychosomatische Krankenhäuser unterliegen nicht dem G-DRG-S
 
 - [[ICD-10-GM]] (Diagnosekodierung als Grundlage des G-DRG-Groupers)
 - [[OPS]] (Prozedurkodierung als zweite Grundlage des G-DRG-Groupers)
+- [[InEK]] (Institut für das Entgeltsystem im Krankenhaus, Herausgeber des G-DRG-Katalogs)
 - [[KIS]] (Krankenhausinformationssystem, in dem DRG-Kodierung durchgeführt wird)
 - [[BfArM]] (pflegt ICD-10-GM und OPS, die Codierbasis des G-DRG-Systems)
 - [[GKV]] (bezahlt die Fallpauschalen an die Krankenhäuser)

@@ -59,7 +59,7 @@ Das [[BfArM]] veröffentlicht jährlich eine neue OPS-Version. Die aktuelle Vers
 - Alphabetisches Verzeichnis (Stichwortsuche)
 - Anwendungshinweise und Kodierrichtlinien
 
-Die Deutschen Kodierrichtlinien (DKR) des InEK (Institut für das Entgeltsystem im Krankenhaus) ergänzen den OPS mit verbindlichen Anwendungsregeln für die DRG-Abrechnung.
+Die Deutschen Kodierrichtlinien (DKR) des [[InEK]] (Institut für das Entgeltsystem im Krankenhaus) ergänzen den OPS mit verbindlichen Anwendungsregeln für die DRG-Abrechnung.
 
 ### FHIR-Repräsentation
 

@@ -17,7 +17,7 @@ Normalerweise muss man zum Einlösen eines Rezepts entweder zur Apotheke gehen o
 
 CardLink wurde eingeführt, um die Lücke zwischen dem [[E-Rezept]]-System und der Nutzung bei Online-Apotheken zu schließen. Bis eine breite Nutzung der [[Gesundheits-ID]] oder des [[PoPP]]-Dienstes etabliert ist, bietet CardLink einen zugänglichen Übergangsweg für Versicherte.
 
-Das Verfahren wurde zunächst für ausgewählte Anbieter erprobt. Laut Branchenberichten soll die Zulassung für **DocMorris** und **Redcare** (zwei der größten europäischen Online-Apotheken) bis **31. Januar 2027** verlängert werden. Ein offiziell von der [[gematik]] bestätigter Abschalttermin lag zum Zeitpunkt der Recherche nicht vor.
+Das Verfahren wurde zunächst für ausgewählte Anbieter erprobt. Die Zulassung für **DocMorris** und **Redcare** (zwei der größten europäischen Online-Apotheken) ist laut Branchenberichten voraussichtlich bis Ende Januar 2027 verlängert. Ein abschließend bestätigter Abschalttermin durch die [[gematik]] lag zum Zeitpunkt der Recherche nicht vor.
 
 ### Parallelphase und Ablösung durch PoPP
 

@@ -27,6 +27,8 @@ Während [[KIM]] für formelle, asynchrone Kommunikation gedacht ist (wie E-Mail
 
 Mehrere Krankenkassen haben ab März 2026 den Versichertenkanal aktiviert. Dieser ermöglicht es Versicherten, direkt über den TI-Messenger mit ihrer Krankenkasse zu kommunizieren. Am 5. März 2026 veröffentlichte die [[gematik]] die Spezifikation TI-Messenger_26_1, die weitere Ausbaustufen und Interoperabilitätsanforderungen definiert.
 
+Stand März 2026 sind **7.309 Einrichtungen** an den TI-Messenger angebunden. **254.952 Versicherte** haben sich registriert. Kumuliert wurden **500.577 Nachrichten** über den Dienst verschickt.
+
 ## Architektur
 
 Der TI-Messenger basiert auf dem **[[Matrix-Protokoll]]**, einem offenen, föderierten Standard von Matrix.org.
