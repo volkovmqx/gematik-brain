@@ -17,6 +17,7 @@ export type ContentDetails = {
   tags: string[]
   content: string
   audience?: string[]
+  maturity?: string
   richContent?: string
   date?: Date
   description?: string
@@ -112,6 +113,7 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
             tags: file.data.frontmatter?.tags ?? [],
             content: file.data.text ?? "",
             audience: file.data.frontmatter?.audience ?? ["technical", "non-technical"],
+            maturity: (file.data.frontmatter as Record<string, unknown>)?.maturity as string | undefined,
             richContent: opts?.rssFullHtml
               ? escapeHTML(toHtml(tree as Root, { allowDangerousHtml: true }))
               : undefined,

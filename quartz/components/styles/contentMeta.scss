@@ -11,4 +11,13 @@
       }
     }
   }
+
+  .depth-indicator {
+    font-size: 0.85em;
+
+    .depth-dots {
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+  }
 }

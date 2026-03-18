@@ -1,4 +1,4 @@
-import { getFullSlug } from "../../util/path"
+import { getFullSlug, resolveRelative } from "../../util/path"
 
 document.addEventListener("nav", () => {
   const buttons = document.querySelectorAll<HTMLButtonElement>(".floating-button[data-action]")
@@ -7,7 +7,7 @@ document.addEventListener("nav", () => {
     const action = btn.dataset.action
     if (!action || action === "graph") continue
 
-    const handler = () => {
+    const handler = async () => {
       switch (action) {
         case "scrollTop":
           window.scrollTo({ top: 0, behavior: "smooth" })
@@ -16,18 +16,16 @@ document.addEventListener("nav", () => {
           window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" })
           break
         case "random": {
-          const slug = getFullSlug(window)
-          fetch(`${document.location.origin}/static/contentIndex.json`)
-            .then((res) => res.json())
-            .then((data) => {
-              const pages = Object.keys(data).filter(
-                (k) => !k.endsWith("/index") && k !== "index" && k !== slug,
-              )
-              if (pages.length > 0) {
-                const target = pages[Math.floor(Math.random() * pages.length)]
-                window.spaNavigate(new URL(`/${target}`, window.location.origin))
-              }
-            })
+          const currentSlug = getFullSlug(window)
+          const data = await fetchData
+          const pages = Object.keys(data).filter(
+            (k) => !k.endsWith("/index") && k !== "index" && k !== currentSlug,
+          )
+          if (pages.length > 0) {
+            const target = pages[Math.floor(Math.random() * pages.length)]
+            const url = new URL(resolveRelative(currentSlug, target), window.location.toString())
+            window.spaNavigate(url)
+          }
           break
         }
       }

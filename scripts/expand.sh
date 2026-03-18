@@ -4,6 +4,14 @@ set -uo pipefail
 REPO_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$REPO_DIR"
 
+# Lock file to prevent overlapping runs (mkdir is atomic)
+LOCKFILE="/tmp/gematik-brain-expand.lock"
+if ! mkdir "$LOCKFILE" 2>/dev/null; then
+  echo "Another expansion cycle is already running. Exiting."
+  exit 0
+fi
+trap 'rmdir "$LOCKFILE"' EXIT
+
 MAX_RETRIES=3
 RETRY_DELAY=30
 
@@ -80,7 +88,12 @@ if [ -f "scripts/quality-report.json" ]; then
   QUALITY_SCORE=$(python3 -c "import json; r=json.load(open('scripts/quality-report.json')); print(r.get('overallScore', '?'))" 2>/dev/null || echo "")
 fi
 
-# 6. Build verification
+# 6. Set maturity stages based on quality scores
+echo ""
+echo "--- Setting maturity stages ---"
+bash scripts/set-maturity.sh || echo "Warning: maturity assignment failed"
+
+# 7. Build verification
 echo ""
 echo "--- Final build verification ---"
 if npx quartz build; then
@@ -89,7 +102,7 @@ else
   echo "Warning: build failed, committing content anyway"
 fi
 
-# 7. Commit and push
+# 8. Commit and push
 echo ""
 echo "--- Committing changes ---"
 git add content/ scripts/queue.json scripts/news-findings.json scripts/quality-report.json scripts/test-report.json

@@ -3,6 +3,13 @@ import { resolveRelative } from "../util/path"
 import { getDate } from "./Date"
 import { byDateAndAlphabetical } from "./PageList"
 import style from "./styles/homepage.scss"
+import dailyFactStyle from "./styles/dailyFact.scss"
+import heatmapStyle from "./styles/heatmap.scss"
+import explorationStyle from "./styles/explorationProgress.scss"
+// @ts-ignore
+import explorationScript from "./scripts/explorationProgress.inline"
+// @ts-ignore
+import dailyFactScript from "./scripts/dailyFact.inline"
 
 const categories = [
   {
@@ -68,10 +75,66 @@ export default (() => {
       return { ...cat, count: files.length, topLinks }
     })
 
-    const totalArticles = allFiles.filter(
+    const contentFiles = allFiles.filter(
       (f) => !f.slug?.endsWith("/index") && f.slug !== "index",
-    ).length
+    )
+    const totalArticles = contentFiles.length
     const totalLinks = allFiles.reduce((sum, f) => sum + (f.links?.length ?? 0), 0)
+
+    // Daily fact data
+    const facts = contentFiles
+      .filter((f) => f.text)
+      .map((f) => {
+        const text = f.text ?? ""
+        const title = f.frontmatter?.title ?? ""
+        const lines = text.split("\n").filter((l) => l.trim() && !l.startsWith("#"))
+        // Skip lines matching the article title (plain text heading)
+        const contentLines = lines.filter((l) => l.trim() !== title.trim())
+        const firstLine = contentLines[0]?.trim() ?? ""
+        const firstSentence = firstLine.includes(".")
+          ? firstLine.slice(0, firstLine.indexOf(".") + 1)
+          : ""
+        return {
+          text: firstSentence,
+          title,
+          slug: resolveRelative(slug, f.slug!),
+        }
+      })
+      .filter((f) => f.text.length > 20 && f.text.includes("."))
+
+    // Heatmap: count articles modified per day over last 13 weeks
+    const now = new Date()
+    const activityMap = new Map<string, number>()
+    for (const f of contentFiles) {
+      const date = getDate(cfg, f)
+      if (!date) continue
+      const key = date.toISOString().slice(0, 10)
+      activityMap.set(key, (activityMap.get(key) ?? 0) + 1)
+    }
+
+    // Build grid: 13 weeks x 7 days, always including today
+    // Find this week's Monday
+    const currentDay = now.getDay()
+    const currentMonday = new Date(now)
+    currentMonday.setDate(now.getDate() - ((currentDay + 6) % 7))
+    // Go back 12 more weeks (13 total columns)
+    const startDate = new Date(currentMonday)
+    startDate.setDate(currentMonday.getDate() - 12 * 7)
+
+    const heatmapCells: { date: Date; count: number }[] = []
+    for (let i = 0; i < 91; i++) {
+      const d = new Date(startDate)
+      d.setDate(d.getDate() + i)
+      const key = d.toISOString().slice(0, 10)
+      heatmapCells.push({ date: d, count: activityMap.get(key) ?? 0 })
+    }
+
+    function heatLevel(count: number): number {
+      if (count === 0) return 0
+      if (count === 1) return 1
+      if (count <= 3) return 2
+      return 3
+    }
 
     // Recent updates
     const recentPages = allFiles
@@ -132,6 +195,13 @@ export default (() => {
           </div>
         </div>
 
+        {/* Daily Fact */}
+        <div class="daily-fact" data-facts={JSON.stringify(facts)}>
+          <div class="daily-fact-header">Wusstest du schon?</div>
+          <p class="daily-fact-text">Lade...</p>
+          <a class="daily-fact-link" href="#">→ Zum Artikel</a>
+        </div>
+
         {/* Category Cards */}
         <section class="homepage-categories">
           {categoryCounts.map((cat) => (
@@ -154,6 +224,14 @@ export default (() => {
                   ))}
                 </ul>
               )}
+              <div class="category-progress" data-folder={cat.folder} data-total={cat.count}>
+                <svg class="progress-ring" viewBox="0 0 24 24">
+                  <circle class="progress-ring-bg" cx="12" cy="12" r="10" />
+                  <circle class="progress-ring-fill" cx="12" cy="12" r="10"
+                    style="stroke-dasharray: 62.83; stroke-dashoffset: 62.83" />
+                </svg>
+                <span class="progress-text">0/{cat.count} gelesen</span>
+              </div>
             </a>
           ))}
         </section>
@@ -182,6 +260,32 @@ export default (() => {
               )
             })}
           </ul>
+        </section>
+
+        {/* Heatmap */}
+        <section class="homepage-heatmap">
+          <h2 class="section-heading">Aktivität</h2>
+          <div class="heatmap-grid">
+            {heatmapCells.map((cell) => {
+              const level = heatLevel(cell.count)
+              const dateStr = cell.date.toLocaleDateString("de-DE", {
+                day: "numeric",
+                month: "long",
+                year: "numeric",
+              })
+              const title =
+                cell.count === 0
+                  ? dateStr
+                  : `${cell.count} Artikel am ${dateStr}`
+              return (
+                <div
+                  class="heatmap-cell"
+                  data-level={level}
+                  title={title}
+                />
+              )
+            })}
+          </div>
         </section>
 
         {/* Graph Teaser */}
@@ -241,6 +345,7 @@ export default (() => {
     )
   }
 
-  Homepage.css = style
+  Homepage.css = style + dailyFactStyle + heatmapStyle + explorationStyle
+  Homepage.afterDOMLoaded = dailyFactScript + explorationScript
   return Homepage
 }) satisfies QuartzComponentConstructor

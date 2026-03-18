@@ -1,0 +1,19 @@
+.category-graph {
+  margin-bottom: 1.5rem;
+
+  .category-graph-container {
+    height: 300px;
+    border-radius: 0.5rem;
+    border: 1px solid var(--lightgray);
+    background: color-mix(in srgb, var(--light) 88%, var(--gray));
+    background-image: radial-gradient(circle, var(--lightgray) 0.8px, transparent 0.8px);
+    background-size: 20px 20px;
+    overflow: hidden;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .category-graph .category-graph-container {
+    height: 200px;
+  }
+}

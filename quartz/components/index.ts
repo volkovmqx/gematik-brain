@@ -25,6 +25,8 @@ import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import Homepage from "./Homepage"
 import FloatingButtons from "./FloatingButtons"
+import DailyFact from "./DailyFact"
+import CategoryGraph from "./CategoryGraph"
 
 export {
   ArticleTitle,
@@ -54,4 +56,6 @@ export {
   ConditionalRender,
   Homepage,
   FloatingButtons,
+  DailyFact,
+  CategoryGraph,
 }

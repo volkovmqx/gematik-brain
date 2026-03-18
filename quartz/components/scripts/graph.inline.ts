@@ -89,15 +89,23 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     enableRadial,
   } = JSON.parse(graph.dataset["cfg"]!) as D3Config
 
-  const data: Map<SimpleSlug, ContentDetails> = new Map(
+  const folderFilter = graph.dataset["folder"] as string | undefined
+  const allData: Map<SimpleSlug, ContentDetails> = new Map(
     Object.entries<ContentDetails>(await fetchData).map(([k, v]) => [
       simplifySlug(k as FullSlug),
       v,
     ]),
   )
+
+  // If folder filter is set, only include nodes from that folder
+  // but keep cross-links as valid targets
+  const data: Map<SimpleSlug, ContentDetails> = folderFilter
+    ? new Map([...allData].filter(([_, v]) => v.filePath?.startsWith(folderFilter + "/")))
+    : allData
+
   const links: SimpleLinkData[] = []
   const tags: SimpleSlug[] = []
-  const validLinks = new Set(data.keys())
+  const validLinks = folderFilter ? new Set(allData.keys()) : new Set(data.keys())
 
   const tweens = new Map<string, TweenNode>()
   for (const [source, details] of data.entries()) {
@@ -124,7 +132,14 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
 
   const neighbourhood = new Set<SimpleSlug>()
   const wl: (SimpleSlug | "__SENTINEL")[] = [slug, "__SENTINEL"]
-  if (depth >= 0) {
+  if (folderFilter) {
+    // For folder-filtered graphs: include all folder nodes + their direct cross-links
+    data.forEach((_, id) => neighbourhood.add(id))
+    for (const link of links) {
+      neighbourhood.add(link.source)
+      neighbourhood.add(link.target)
+    }
+  } else if (depth >= 0) {
     while (depth >= 0 && wl.length > 0) {
       // compute neighbours
       const cur = wl.shift()!
