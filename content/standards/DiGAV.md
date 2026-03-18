@@ -64,6 +64,12 @@ Auf eine öffentliche Stellungnahmephase (wie bei Arzneimitteln) wird verzichtet
 
 Nach Aufnahme in das DiGA-Verzeichnis gilt für die Erprobungsphase ein Erstattungsbetrag, den der Hersteller selbst festlegt. Nach dauerhafter Aufnahme verhandeln GKV-Spitzenverband und Hersteller einen Erstattungsbetrag. Einigen sie sich nicht, entscheidet eine Schiedsstelle.
 
+### Zweite Änderungsverordnung (2026): Anwendungsbegleitende Erfolgsmessung
+
+Die **Zweite Verordnung zur Änderung der DiGAV** trat am **1. Februar 2026** in Kraft. Die wesentliche Neuerung ist die **Anwendungsbegleitende Erfolgsmessung (AbEM)**:
+
+Für neue DiGA, die ab **1. Februar 2026** in das DiGA-Verzeichnis aufgenommen werden, muss mindestens **20 Prozent** des Erstattungsbetrags von messbaren Versorgungsergebnissen abhängen. Hersteller sind verpflichtet, vierteljährlich Daten zu Nutzung, Patientenzufriedenheit und Gesundheitsstatus zu erheben. Diese Daten werden dem [[BfArM]] halbjährlich gemeldet. Das [[BfArM]] hat seit Anfang 2026 damit begonnen, AbEM-Ergebnisse für bereits zugelassene DiGA auf Basis bestehender Regelungen im DiGA-Verzeichnis zu veröffentlichen, sodass Versicherte und Verordner die tatsächliche Wirksamkeit einer DiGA einsehen können.
+
 ## Verknüpfungen
 
 - [[DiGA]] (die Anwendungen, die die DiGAV reguliert)

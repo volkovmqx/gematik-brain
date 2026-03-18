@@ -49,7 +49,7 @@ Gesundheitsdaten sind nach Art. 9 DSGVO besonders schützenswerte Daten. Die Ver
 
 Für die Pflicht zur Bestellung eines Datenschutzbeauftragten (DSB) gelten zwei ergänzende Regelungen:
 
-**§ 38 BDSG (nationale Regelung):** Nichtöffentliche Stellen müssen einen DSB benennen, wenn in der Regel mindestens 20 Personen ständig mit der automatisierten Verarbeitung personenbezogener Daten beschäftigt sind.
+**§ 38 BDSG (nationale Regelung):** § 38 BDSG verpflichtet Verantwortliche, die mindestens 20 Personen ständig mit der automatisierten Verarbeitung personenbezogener Daten beschäftigen, einen Datenschutzbeauftragten zu benennen.
 
 **Art. 37 Abs. 1 lit. b DSGVO (EU-Regelung):** Unabhängig von der Mitarbeiterzahl muss ein DSB bestellt werden, wenn die Kerntätigkeit einer Organisation in der umfangreichen Verarbeitung besonderer Datenkategorien besteht, die eine regelmäßige und systematische Überwachung von Betroffenen erfordert. Gesundheitsdaten nach Art. 9 DSGVO fallen unter diese besonderen Kategorien.
 

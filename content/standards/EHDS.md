@@ -19,7 +19,7 @@ Der EHDS trat im März 2025 in Kraft. Er ist in zwei Hauptbereiche gegliedert:
 
 ### Primärnutzung: Patientenversorgung
 
-Der EHDS verpflichtet die EU-Mitgliedstaaten, digitale Gesundheitsdaten über die Infrastruktur **MyHealth@EU** grenzüberschreitend zugänglich zu machen. Versicherte erhalten das Recht auf Zugang zu ihren eigenen Gesundheitsdaten in einem interoperablen, maschinenlesbaren Format.
+Der EHDS verpflichtet die EU-Mitgliedstaaten, digitale Gesundheitsdaten über die Infrastruktur **[[MyHealthAtEU|MyHealth@EU]]** grenzüberschreitend zugänglich zu machen. Versicherte erhalten das Recht auf Zugang zu ihren eigenen Gesundheitsdaten in einem interoperablen, maschinenlesbaren Format.
 
 Konkrete Dienste im Aufbau:
 - **ePrescription / eDispensation**: Elektronische Rezepte, die EU-weit eingelöst werden können
@@ -38,12 +38,11 @@ Die Grundlagen für die Sekundärnutzung in Deutschland liegen im [[GDNG|Gesundh
 | Meilenstein | Datum |
 |---|---|
 | EHDS in Kraft | März 2025 |
-| Europäische Kommission: Durchführungsrechtsakte zur Primärnutzung | Bis 2027 |
-| Verpflichtender grenzüberschreitender Datenaustausch (Primärnutzung) | März 2029 |
-| Anwendung Sekundärnutzungsregeln | 4 Jahre nach Inkrafttreten (ca. 2029) |
-| Vollständige MyHealth@EU-Teilnahme aller Mitgliedstaaten | Bis 2029 |
+| Durchführungsrechtsakte der Kommission (technische Anforderungen) | März 2027 |
+| Anwendung Primär- und Sekundärnutzungsregeln (erste Gruppe) | März 2029 |
+| Vollständige Teilnahme aller Mitgliedstaaten | März 2031 |
 
-Die Frist **2027** bezeichnet den Termin, bis zu dem die Europäische Kommission Durchführungsrechtsakte (Implementing Acts) zu den technischen Anforderungen der Primärnutzung erlassen muss. Die **Pflicht zum tatsächlichen grenzüberschreitenden Datenaustausch** gilt für die Mitgliedstaaten erst ab März 2029 (vier Jahre nach Inkrafttreten der Verordnung).
+Die Frist **März 2027** bezeichnet den Termin, bis zu dem die Europäische Kommission Durchführungsrechtsakte (Implementing Acts) zu den technischen Anforderungen der Primär- und Sekundärnutzung erlassen muss. Die **Pflicht zum tatsächlichen grenzüberschreitenden Datenaustausch** gilt für die Mitgliedstaaten erst ab März 2029 (vier Jahre nach Inkrafttreten). Die vollständige Teilnahme aller Mitgliedstaaten ist bis März 2031 (sechs Jahre nach Inkrafttreten) gefordert.
 
 ## Technische Details
 

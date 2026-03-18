@@ -1,6 +1,6 @@
 {
   "lastChecked": "2026-03-18",
-  "lastRun": "2026-03-18T12:00:00Z",
+  "lastRun": "2026-03-18T14:30:00Z",
   "findings": [
     {
       "title": "eMedikationsplan: Start verschoben auf Oktober 2026",
@@ -329,7 +329,8 @@
       "summary": "Gematik startet gemeinsam mit RHÖN-KLINIKUM AG, D-Trust, DKTIG und RISE ein Friendly-User-Test-Pilotprojekt für HSM-B (Hardware Security Module Typ B). HSM-B ersetzt die physische SMC-B-Karte durch eine direkt im Highspeed-Konnektor (HSK) hinterlegte digitale Institutionsidentität. Vorteile: weniger Kartenterminals, kein PIN-Eintippen, Unterstützung mobiler Szenarien (z.B. Hausbesuche). Produktiver Einsatz ab 2026 geplant. HSK kann HSM-B und SMC-B parallel betreiben.",
       "relevantArticles": ["SMC-B.md", "Konnektoren.md", "TI-Gateway.md"],
       "category": "specification",
-      "action": "update",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
       "details": "SMC-B.md sollte HSM-B als perspektivischen Nachfolger und den Pilotstart März 2026 erwähnen. Konnektoren.md sollte HSM-B im Kontext des Highspeed-Konnektors (HSK) ergänzen.",
       "suggestedTerm": "HSM-B"
     },
@@ -568,7 +569,8 @@
       "summary": "Am 3. März 2026 fiel das TI-Gateway des Anbieters RISE aus, was alle über RISE angeschlossenen Leistungserbringer von der TI trennte. E-Rezept, ePA, VSDM und KIM waren für betroffene Apotheken und Praxen nicht nutzbar. Es folgten weitere Teilausfälle am 4. und 5. März. Der Ausfall gilt als einer der Auslöser für den bundesweiten Apothekenprotest am 23. März 2026. Mangels Offline-Fallback mussten viele Apotheken Patienten abweisen.",
       "relevantArticles": ["E-Rezept.md", "TI-Gateway.md", "Telematikinfrastruktur.md"],
       "category": "security",
-      "action": "update",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
       "details": "TI-Gateway.md sollte Verfügbarkeitsanforderungen und bekannte Ausfallszenarien ergänzen. E-Rezept.md kann auf Ausfallproblematik und fehlende Offline-Fallback-Lösung hinweisen."
     },
     {
@@ -587,7 +589,8 @@
       "summary": "Die Telekom bietet ab Anfang 2026 mit TI-Connect einen TI-Zugang über ein cloudbasiertes TI-Gateway ohne lokalen Konnektor an. Einrichtungen verbinden sich per VPN mit einem Hochgeschwindigkeitskonnektor im Telekom-Rechenzentrum. Updates und Konfigurationen erfolgen zentral im Rechenzentrum. Die Telekom positioniert TI-Connect als Brücke zur TI 2.0. Das Produkt konkurriert mit ähnlichen Angeboten von RISE, Arvato Systems und Akquinet.",
       "relevantArticles": ["Konnektoren.md", "TI-Gateway.md", "Telematikinfrastruktur.md"],
       "category": "specification",
-      "action": "update",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
       "details": "TI-Gateway.md sollte TI-Connect der Telekom als weiteres Produkt neben RISE, Arvato und Akquinet ergänzen. Konnektoren.md kann auf den zunehmenden Markt von Cloud-Konnektoren hinweisen."
     },
     {
@@ -607,7 +610,8 @@
       "summary": "Eine im September 2024 von NinjaLab entdeckte Seitenkanalangriff-Schwachstelle (EUCLEAK, CVE-2024-45678) im Infineon SLE78-Chip betrifft rund 130.000 eHBAs der Generation 2.1 von D-Trust und SHC+Care (Kartenträger: Idemia). Betroffene Karten müssen bis 30. Juni 2026 ausgetauscht werden, danach werden sie gesperrt. D-Trust liefert seit Februar 2026 Ersatzkarten auf G&D-Basis. Für einen Angriff wäre physischer Kartenzugang, PIN-Kenntnis und spezialisierte Ausrüstung nötig. Karten bleiben bis zum Tausch nutzbar.",
       "relevantArticles": ["HBA.md", "PKI.md", "SMC-B.md"],
       "category": "security",
-      "action": "update",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
       "details": "HBA.md sollte die EUCLEAK-Schwachstelle und die Tauschpflicht bis 30.06.2026 für D-Trust/SHC+Care-Karten dokumentieren. PKI.md kann die Chip-Sicherheitsproblematik im Kontext der TI-PKI erwähnen.",
       "suggestedTerm": "EUCLEAK"
     },
@@ -618,7 +622,8 @@
       "summary": "Die Zweite Verordnung zur Änderung der DiGAV ist am 1. Februar 2026 in Kraft getreten. Kernänderung: Ab 2026 muss mindestens 20 Prozent des DiGA-Vergütungsbetrags von messbaren Versorgungserfolgen abhängen (Anwendungsbegleitende Erfolgsmessung, AbEM). Hersteller müssen vierteljährlich Daten zu Nutzungshäufigkeit, Patientenzufriedenheit und Gesundheitszustand erheben und halbjährlich an das BfArM melden. Ab 1. Januar 2026 veröffentlicht das BfArM AbEM-Ergebnisse im DiGA-Verzeichnis. Einführung der AbEM erfolgt schrittweise.",
       "relevantArticles": ["DiGA.md", "DiGAV.md", "BfArM.md"],
       "category": "regulation",
-      "action": "update",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
       "details": "DiGA.md und DiGAV.md sollten die neue erfolgsabhängige Vergütungskomponente (20% AbEM ab 2026) und die Veröffentlichung der Ergebnisse im DiGA-Verzeichnis dokumentieren."
     },
     {
@@ -638,7 +643,8 @@
       "summary": "Gematik bestätigte den finalen Abschaltzeitpunkt für CardLink: 31. Januar 2027. Zwischen August 2026 und Januar 2027 laufen CardLink, VSDM 1.0 und PoPP im Parallelbetrieb. PoPP ersetzt ab Juli 2026 schrittweise CardLink (eGK-basierter Präsenznachweis). Die GesundheitsID ermöglicht ab 2026 den PoPP-basierten Zugang ohne physische Karte. Online-Apotheken (DocMorris, Redcare) haben ihre CardLink-Zulassung bis Ende Januar 2027 verlängert bekommen.",
       "relevantArticles": ["CardLink.md", "E-Rezept.md", "eGK.md"],
       "category": "specification",
-      "action": "update",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
       "details": "CardLink.md sollte das konkrete Abschaltdatum 31. Januar 2027 und den Parallelbetrieb mit PoPP ab August 2026 dokumentieren."
     },
     {
@@ -689,6 +695,57 @@
       "relevantArticles": ["Telematikinfrastruktur.md", "Konnektoren.md", "HBA.md", "SMC-B.md"],
       "category": "specification",
       "action": "info_only"
+    },
+    {
+      "title": "BMG Digitalisierungsstrategie 2026: Warken kündigt Gesetz für digitale Versorgung an (11. Februar 2026)",
+      "date": "2026-02-11",
+      "source": "https://www.kma-online.de/aktuelles/politik/detail/bmg-stellt-digitalisierungsstrategie-2026-vor-das-sind-warkens-plaene-55231",
+      "summary": "Bundesgesundheitsministerin Nina Warken (CDU) stellte am 11. Februar 2026 die Weiterentwicklung der Digitalisierungsstrategie für das Gesundheitswesen vor. Kernpunkte: (1) Gesetzentwurf 'Gesetz für digitale Versorgung und den Gesundheitsdatenraum' soll in Q1/2026 vorgelegt werden. (2) ePA-Ziel: ca. 20 Millionen aktive Nutzer bis 2030 (aktuell ca. 4 Millionen). (3) KI-gestützte Dokumentation soll bis 2028 in über 70 Prozent der Gesundheits- und Pflegeeinrichtungen Standard sein. (4) gematik erhält erweiterte Durchsetzungsbefugnisse zur einheitlichen Standardimplementierung. (5) FDZ Gesundheit wird mit KI-Fähigkeiten ausgebaut und an den EHDS angebunden.",
+      "affects": ["BMG.md", "gematik.md", "ePA.md", "DiGA.md"],
+      "action": "update",
+      "details": "BMG.md sollte die neue Digitalisierungsstrategie 2026 und das geplante 'Gesetz für digitale Versorgung und den Gesundheitsdatenraum' erwähnen. gematik.md sollte die erweiterten Durchsetzungsbefugnisse ergänzen.",
+      "category": "regulation",
+      "suggestedTerm": "Gesetz für digitale Versorgung und den Gesundheitsdatenraum"
+    },
+    {
+      "title": "GesundheitsID: Start als digitaler Versicherungsnachweis am 1. Januar 2026, 4,4 Millionen Registrierungen",
+      "date": "2026-01-01",
+      "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/gesundheits-id-startet-als-digitaler-versicherungsnachweis/68447211",
+      "summary": "Seit dem 1. Januar 2026 ist die Gesundheits-ID offiziell als digitaler Versicherungsnachweis beim Arztbesuch nutzbar. Bis Anfang 2026 haben sich ca. 4,4 Millionen Versicherte registriert (von ca. 74 Millionen GKV-Versicherten). Der Rollout nach erfolgreicher gematik-Zulassung fand im Frühjahr 2026 statt. Krankenkassen bewarben im Q1/2026 intensiv den Download der GesundheitsID-App. Bis Ende 2026 soll die digitale Identität als Standard-Versicherungsnachweis in Praxen etabliert sein. Als vollwertiger Ersatz der eGK beim Arztbesuch (inkl. PoPP-Szenario) ist die GesundheitsID ab 2027 geplant.",
+      "affects": ["Gesundheits-ID.md", "eGK.md"],
+      "action": "update",
+      "details": "Gesundheits-ID.md sollte den konkreten Rollout-Termin 1. Januar 2026 für den Versicherungsnachweis ergänzen und die Nutzungszahl von 4,4 Millionen Registrierungen nennen. Der Artikel erwähnt bislang nur das Pflichtdatum 2024 für Krankenkassen und 2027 als Zieldatum für vollwertigen eGK-Ersatz.",
+      "category": "specification"
+    },
+    {
+      "title": "TI-Messenger: MatrixRTC für Sprachanrufe und Videokommunikation erwartet 2026",
+      "date": "2026-03-01",
+      "source": "https://wiki.gematik.de/spaces/TIMCOMP/pages/604603166/TI-Messenger+Compass+-+The+TI-M+Blog",
+      "summary": "Die Sprachanruf- und Videofunktion im TI-Messenger hängt von der Fertigstellung und Freigabe der MatrixRTC-Spezifikation (MSC 4143) der Matrix Foundation ab. Aktuelle Erwartung: MatrixRTC-Release 2026. Danach kann der TI-Messenger föderierte Sprachanrufe und Videoanrufe integrieren. Eine gematik-Spezifikation für Sprachanrufe im TI-Messenger ist für Version Pro 1.2 (Testbereitschaft Q3/2027) geplant. Außerdem ist TI-Messenger Pro 1.2 in Konzeptplanung ab Ende Mai 2026 mit Testbereitschaft Q3/2027.",
+      "affects": ["TI-Messenger.md", "Matrix-Protokoll.md"],
+      "action": "update",
+      "details": "TI-Messenger.md sollte MatrixRTC als geplante Technologie für Sprachanrufe und Video erwähnen, sowie den Zeitplan für Pro 1.2 (Konzeptphase ab Mai 2026, Test Q3/2027).",
+      "category": "specification",
+      "suggestedTerm": "MatrixRTC"
+    },
+    {
+      "title": "E-Rezept für Heilmittelverordnungen: Pflicht ab 1. Januar 2027",
+      "date": "2026-01-01",
+      "source": "https://thevea.de/praxis-wissen/e-rezept-heilmittelerbringer/",
+      "summary": "Ab dem 1. Januar 2027 müssen Ärzte Heilmittelverordnungen (Physiotherapie, Ergotherapie, Logopädie, Podologie) verpflichtend als E-Rezept über die TI ausstellen. Heilmittelerbringer müssen ab diesem Datum auf Basis der elektronischen Verordnung abrechnen. Die TI-Anbindungspflicht für Heilmittelerbringer ist auf den 1. Oktober 2027 verschoben (nicht Oktober 2026). Die elektronische Heilmittelverordnung (eVO) ist damit ein Vorläufer des E-Rezepts für Heilmittel.",
+      "affects": ["E-Rezept.md", "Telematikinfrastruktur.md"],
+      "action": "update",
+      "details": "E-Rezept.md 'Was kommt noch?' sollte den Pflichttermin 1. Januar 2027 für Heilmittelverordnungen klar benennen. Bisher ist im Artikel die eVO-Pflicht 2028 genannt (für Heilmittelerbringer gesamt), aber Verordner müssen bereits ab 1.1.2027 elektronisch ausstellen.",
+      "category": "regulation"
+    },
+    {
+      "title": "gemspec Release Betr_26_1: Betriebskonzept und Performance-Spezifikation aktualisiert (12. März 2026)",
+      "date": "2026-03-12",
+      "source": "https://gemspec.gematik.de/releases/Betr_26_1/index.html",
+      "summary": "Am 12. März 2026 veröffentlichte gematik den Release Betr_26_1 mit zwei aktualisierten Dokumenten: (1) gemKPT_Betr (Betriebskonzept) V3.61.0: Anpassungen zu Alert-Systemen, Service-Monitoring-Anforderungen, Fehlerbehandlung für User Agents und Verfügbarkeitsmodellen bei Wartungsfenstern. (2) gemSpec_Perf (Performance und Mengengerüst) V2.78.0: Überarbeitete Leistungsanforderungen, Telemetriedaten-Spezifikationen und Korrekturen zu ePA-Historikdaten-Berichtszeiträumen.",
+      "affects": ["Telematikinfrastruktur.md"],
+      "action": "info_only",
+      "category": "specification"
     }
   ]
 }

@@ -60,7 +60,7 @@ OCSP Stapling (RFC 5019 / TLS Certificate Status Request, RFC 6066) ist eine Opt
 
 ### OCSP in der Telematikinfrastruktur
 
-Die TI-[[PKI]] verwendet eine Trust Service List (TSL), in der alle akkreditierten TSP-X.509-CAs eingetragen sind. Jedes Zertifikat enthält die OCSP-Responder-URL des ausstellenden TSP. [[Konnektoren]] prüfen Zertifikate von [[eGK]], [[HBA]] und [[SMC-B]] über diese Responder. Das gematik-Referenzprojekt `ref-GemLibPki` implementiert die OCSP-Abfragen gemäß gematik-Spezifikation. Laut gemKPT_PKI_TIP ist neben OCSP auch CRL als Fallback-Mechanismus vorgesehen.
+Die TI-[[PKI]] verwendet eine [[TSL|Trust Service List (TSL)]], in der alle akkreditierten TSP-X.509-CAs eingetragen sind. Jedes Zertifikat enthält die OCSP-Responder-URL des ausstellenden TSP. [[Konnektoren]] prüfen Zertifikate von [[eGK]], [[HBA]] und [[SMC-B]] über diese Responder. Das gematik-Referenzprojekt `ref-GemLibPki` implementiert die OCSP-Abfragen gemäß gematik-Spezifikation. Laut gemKPT_PKI_TIP ist neben OCSP auch CRL als Fallback-Mechanismus vorgesehen.
 
 ### Kryptografische Anforderungen
 

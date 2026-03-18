@@ -75,7 +75,7 @@ Das Netz der TI ist kein öffentliches Netz. Es basiert auf einem VPN-Overlay ü
 
 Die gesamte Vertrauensinfrastruktur der TI basiert auf einer mehrstufigen [[PKI]] (Public Key Infrastructure). Die [[gematik]] betreibt die Root-CA. Unterhalb der Root-CA gibt es Zwischen-CAs für verschiedene Kartenfamilien ([[eGK]], [[HBA]], [[SMC-B]]) und Dienste. Alle Zertifikate verwenden X.509 v3.
 
-Seit 1. Januar 2026 ist ECC 256 für alle neu ausgestellten Zertifikate Pflicht. Laufende Übergangsfristen: eHBA G2.0 (RSA) bis 30. Juni 2026, gSMC-KT bis 31. Dezember 2026.
+Seit 1. Januar 2026 ist ECC 256 für alle neu ausgestellten Zertifikate Pflicht. Laufende Übergangsfristen: eHBA G2.0 (RSA) bis 30. Juni 2026, [[gSMC-KT]] bis 31. Dezember 2026.
 
 ### Authentisierung und Autorisierung
 

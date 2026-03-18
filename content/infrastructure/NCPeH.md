@@ -7,7 +7,7 @@ aliases: [National Contact Point for eHealth, Nationaler Kontaktpunkt eHealth]
 
 # NCPeH - National Contact Point for eHealth
 
-Der **NCPeH** (National Contact Point for eHealth) ist Deutschlands nationaler Zugangspunkt zur europäischen MyHealth@EU-Infrastruktur. Er verbindet die deutsche [[Telematikinfrastruktur]] mit dem grenzüberschreitenden Gesundheitsdatenaustausch in der EU.
+Der **NCPeH** (National Contact Point for eHealth) ist Deutschlands nationaler Zugangspunkt zur europäischen [[MyHealthAtEU|MyHealth@EU]]-Infrastruktur. Er verbindet die deutsche [[Telematikinfrastruktur]] mit dem grenzüberschreitenden Gesundheitsdatenaustausch in der EU.
 
 ## Erklärt für Einsteiger
 
@@ -15,7 +15,7 @@ Stell dir vor, du bist im Urlaub in Spanien und wirst krank. Der spanische Arzt 
 
 ## Überblick
 
-Die **DVKA** (Deutsche Verbindungsstelle Krankenversicherung – Ausland) betreibt den NCPeH. Die [[gematik]] ist für die Spezifikation und Produkttypbestätigung zuständig. Der NCPeH ist die technische Schnittstelle zwischen der deutschen [[Telematikinfrastruktur]] und dem europäischen **MyHealth@EU**-Netzwerk (früher eHealth-Netzwerk).
+Die **DVKA** (Deutsche Verbindungsstelle Krankenversicherung – Ausland) betreibt den NCPeH. Die [[gematik]] ist für die Spezifikation und Produkttypbestätigung zuständig. Der NCPeH ist die technische Schnittstelle zwischen der deutschen [[Telematikinfrastruktur]] und dem europäischen **[[MyHealthAtEU|MyHealth@EU]]**-Netzwerk (früher eHealth-Netzwerk).
 
 Die rechtliche Grundlage auf EU-Ebene ist die **[[EHDS]]-Verordnung** (European Health Data Space, EU 2025/327), die im März 2025 in Kraft trat. Sie verpflichtet die EU-Mitgliedstaaten schrittweise zur Teilnahme am grenzüberschreitenden Gesundheitsdatenaustausch.
 

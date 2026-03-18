@@ -17,7 +17,11 @@ Normalerweise muss man zum Einlösen eines Rezepts entweder zur Apotheke gehen o
 
 CardLink wurde eingeführt, um die Lücke zwischen dem [[E-Rezept]]-System und der Nutzung bei Online-Apotheken zu schließen. Bis eine breite Nutzung der [[Gesundheits-ID]] oder des [[PoPP]]-Dienstes etabliert ist, bietet CardLink einen zugänglichen Übergangsweg für Versicherte.
 
-Das Verfahren wurde zunächst für ausgewählte Anbieter erprobt. Die Zulassung für **DocMorris** und **Redcare** (zwei der größten europäischen Online-Apotheken) wurde bis **Januar 2027** verlängert. Damit bleibt CardLink als Übergangsverfahren bestehen, bis die nachfolgende Technologie ([[PoPP]], kontaktlose eGK-Nutzung) vollständig ausgerollt ist.
+Das Verfahren wurde zunächst für ausgewählte Anbieter erprobt. Laut Branchenberichten soll die Zulassung für **DocMorris** und **Redcare** (zwei der größten europäischen Online-Apotheken) bis **31. Januar 2027** verlängert werden. Ein offiziell von der [[gematik]] bestätigter Abschalttermin lag zum Zeitpunkt der Recherche nicht vor.
+
+### Parallelphase und Ablösung durch PoPP
+
+Von **August 2026 bis Januar 2027** laufen CardLink, [[VSDM]] 1.0 und [[PoPP]] parallel. Ab **Juli 2026** ersetzt [[PoPP]] CardLink schrittweise als primäres Verfahren für die E-Rezept-Einlösung bei Online-Apotheken. Die [[Gesundheits-ID]] ermöglicht ab 2026 einen PoPP-basierten Zugang ohne physische Karte.
 
 Die [[gematik]] plant, die kontaktlose eGK-Nutzung ohne PIN auch im [[PoPP]]-Kontext bis Ende 2026 zu ermöglichen. CardLink bildet damit technisch eine Brücke zwischen dem aktuellen E-Rezept-Einlöseweg und der künftigen PoPP-basierten Authentisierung.
 
@@ -61,3 +65,4 @@ Da CardLink ohne PIN auskommt, ist die Sicherheit geringer als bei PIN-gesichert
 
 - [CardLink - gematik Fachportal](https://fachportal.gematik.de/anwendungen/e-rezept/cardlink)
 - [gematik: E-Rezept für Online-Apotheken](https://www.gematik.de/anwendungen/e-rezept)
+- [Apotheke Adhoc: Nach CardLink - so geht's 2026 weiter](https://www.apotheke-adhoc.de/nachrichten/detail/e-health/nach-cardlink-so-gehts-2026-weiter/)

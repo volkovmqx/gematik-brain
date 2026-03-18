@@ -36,7 +36,7 @@ Nach erfolgreicher Akkreditierung stellt die gematik Root-CA dem TSP ein Sub-CA-
 
 ### Trust Service List (TSL)
 
-Die **TSL** (Trust Service List) ist das zentrale Verzeichnis aller zugelassenen TSPs. Sie enthält:
+Die **[[TSL]]** (Trust Service List) ist das zentrale Verzeichnis aller zugelassenen TSPs. Sie enthält:
 
 - X.509-CA-Zertifikate aller akkreditierten TSPs
 - [[OCSP]]-Responder-Adressen für die Zertifikatsprüfung

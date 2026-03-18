@@ -74,6 +74,16 @@ Laut gematik sollen künftig weitere Dienste über das TI-Gateway angeboten werd
 - Authentisierung über [[IDP]]-Dienst und [[mTLS]]
 - Bestandteil der [[Telematikinfrastruktur]] 2.0
 
+### Anbieter und Wettbewerb
+
+Zugelassene TI-Gateway-Anbieter konkurrieren um Einrichtungen als Kunden. Aktive Anbieter (Stand März 2026): **RISE**, **Arvato Systems**, **Akquinet** sowie die **Deutsche Telekom** mit dem Produkt **TI-Connect**.
+
+Telekom **TI-Connect** (seit Anfang 2026): Cloud-basiertes TI-Gateway ohne lokalen Konnektor. Einrichtungen verbinden sich per VPN mit einem Highspeed-Konnektor (HSK) im Telekom-Rechenzentrum. TI-Connect richtet sich insbesondere an größere Einrichtungen, die keine eigene Hardware betreiben wollen.
+
+### RISE-Ausfall März 2026
+
+Am **3. März 2026** fiel das TI-Gateway von **RISE** aus. Alle über RISE angebundenen Einrichtungen verloren den Zugang zur [[Telematikinfrastruktur]]. Betroffen waren [[E-Rezept]], [[ePA]], [[VSDM]] und [[KIM]]. Weitere Ausfälle folgten am 4. und 5. März. Da kein Offline-Fallback für TI-Anwendungen existiert, mussten Apotheken Patienten ohne Rezeptabgabe wegschicken. Der Ausfall verdeutlichte die Abhängigkeit von einzelnen TI-Gateway-Anbietern und die fehlende Redundanz im TI-2.0-Modell.
+
 ## Quellen
 
 - [TI-Zugang - Fachportal gematik](https://fachportal.gematik.de/telematikinfrastruktur/ti-zugang)

@@ -64,6 +64,14 @@ Die Vorgängergeneration **G2.0** unterstützte ausschließlich RSA. Die Überga
 
 Ab **1. Januar 2026** dürfen Kartenherausgeber nur noch ECC-fähige Karten produzieren. Ausnahme: Telekom-Kunden sind von der Übergangsfrist ausgenommen, da für dieses Segment die Migration bereits früher abgeschlossen wurde.
 
+### EUCLEAK-Sicherheitslücke (CVE-2024-45678)
+
+Im Infineon-Chip **SLE78** wurde die Sicherheitslücke EUCLEAK (CVE-2024-45678) entdeckt. Betroffen sind rund **130.000 eHBAs** der Anbieter D-Trust und SHC+Care, die auf diesem Chip basieren. Diese Karten müssen bis zum **30. Juni 2026** ausgetauscht werden. Nach diesem Datum werden die betroffenen Karten in der TI gesperrt.
+
+D-Trust liefert Ersatzkarten auf Basis von G&D-Chips seit Februar 2026 aus. Ein Angriff über EUCLEAK erfordert physischen Kartenzugang, Kenntnis der PIN und Spezialausrüstung. Das Risiko eines Missbrauchs im Alltag wird daher als gering eingestuft, aber der Austausch ist aus regulatorischen Gründen verpflichtend.
+
+Separat wurde ein Rückruf von rund **2.600 ECC-only-HBAs** des Anbieters medisign bekannt. Diese Karten wurden im Januar 2026 ausgeliefert und weisen eine fehlerhafte RSA-Deaktivierung auf. Auch für diese Karten ist ein Austausch erforderlich.
+
 ### Unterschied zu SMC-B
 
 | Merkmal | HBA | [[SMC-B]] |

@@ -42,7 +42,7 @@ Zertifikatsaussteller in der TI heißen [[TSP|Trust Service Provider (TSP)]]. Je
 
 ### Trust Service List (TSL)
 
-Die **TSL** (Trust Service List) ist eine signierte Whitelist aller zugelassenen Zertifikatsaussteller. Sie enthält:
+Die **[[TSL]]** (Trust Service List) ist eine signierte Whitelist aller zugelassenen Zertifikatsaussteller. Sie enthält:
 
 - X.509-CA-Zertifikate aller akkreditierten TSPs
 - OCSP-Responder-Adressen für die Zertifikatsprüfung
