@@ -22,7 +22,7 @@ Das Herzstück des DigiG ist das **Opt-out-Modell für die [[ePA]]**: Ab dem 15.
 
 Neben der ePA enthält das DigiG Regelungen zu [[Telemedizin]], DiGA, Cloud-Nutzung und der Governance der [[gematik]].
 
-Das DigiG ist kein Endpunkt der Gesetzgebung. Als Nachfolge des gescheiterten GDAG plant das [[BMG]] das **GDVG (Gesetz für digitale Versorgung und den Gesundheitsdatenraum)**, dessen Referentenentwurf für H1/2026 erwartet wird. Das GDVG soll die gematik zu einer modernen Digitalagentur umgestalten und den Gesundheitsdatenraum weiter ausbauen.
+Das DigiG ist kein Endpunkt der Gesetzgebung. Als Nachfolge des gescheiterten GDAG plant das [[BMG]] das **[[GDVG]] (Gesetz für digitale Versorgung und den Gesundheitsdatenraum)**, dessen Referentenentwurf für H1/2026 erwartet wird. Das GDVG soll die gematik zu einer modernen Digitalagentur umgestalten und den Gesundheitsdatenraum weiter ausbauen.
 
 ## Technische Details
 

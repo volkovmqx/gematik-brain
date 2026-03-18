@@ -15,7 +15,7 @@ Früher bezahlten Krankenkassen Krankenhäuser nach Liegezeit: Je länger ein Pa
 
 ## Überblick
 
-Das deutsche DRG-System heißt offiziell G-DRG (German Diagnosis Related Groups). Es wurde auf Basis des australischen AR-DRG-Systems entwickelt und 2003 freiwillig, ab 2004 verpflichtend eingeführt. Rechtsgrundlage ist § 17b des Krankenhausfinanzierungsgesetzes (KHG).
+Das deutsche DRG-System heißt offiziell G-DRG (German Diagnosis Related Groups). Es wurde auf Basis des australischen AR-DRG-Systems entwickelt und 2003 freiwillig, ab 2004 verpflichtend eingeführt. Rechtsgrundlage ist § 17b des [[KHG|Krankenhausfinanzierungsgesetzes (KHG)]].
 
 Verantwortlich für die Pflege und Weiterentwicklung des G-DRG-Systems ist das **[[InEK|Institut für das Entgeltsystem im Krankenhaus (InEK GmbH)]]** in Siegburg. Das InEK aktualisiert den DRG-Katalog jährlich auf Basis von Kostendaten, die Kalkulationskrankenhäuser aus ganz Deutschland einreichen. Der Katalog enthält rund 1.200 unterschiedliche DRG-Codes.
 

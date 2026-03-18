@@ -3,7 +3,7 @@ title: GDNG
 audience: [technical, non-technical]
 tags: [standards, recht, gesetz, forschung, datenschutz, sekundärnutzung]
 aliases: [Gesundheitsdatennutzungsgesetz, Health Data Use Act]
-maturity: wachsend
+maturity: immergruen
 ---
 
 # GDNG
@@ -39,9 +39,9 @@ Das bestehende **[[Forschungsdatenzentrum-Gesundheit|Forschungsdatenzentrum Gesu
 
 Das FDZ kann unter dem GDNG pseudonymisierte Daten mit weiteren Registerdaten verknüpfen, zum Beispiel mit klinischen Krebsregistern.
 
-### GFF-Klage gegen das FDZ (2026)
+### GFF-Klage gegen das FDZ (2022/2026)
 
-Die Gesellschaft für Freiheitsrechte (GFF, unterstützt vom CCC) nahm im Februar 2026 eine Klage gegen das [[Forschungsdatenzentrum-Gesundheit|Forschungsdatenzentrum Gesundheit (FDZ)]] auf. Die Kritikpunkte: Die Pseudonymisierung der Daten von 73 Millionen GKV-Versicherten reiche nicht aus, da eine Re-Identifizierung bei seltenen Krankheiten möglich sei. Außerdem fehlen gesetzlich verankerte ausreichende Sicherheitsstandards. Ein weiterer Kritikpunkt: GKV-Versicherte haben kein Widerspruchsrecht gegen die Datenübermittlung an das FDZ, PKV-Versicherte hingegen schon. Die Klage ist zum Stand März 2026 anhängig.
+Die Gesellschaft für Freiheitsrechte (GFF, unterstützt vom CCC) nahm im Februar 2026 ihre 2022 eingereichte Klage gegen das [[Forschungsdatenzentrum-Gesundheit|Forschungsdatenzentrum Gesundheit (FDZ)]] wieder auf (das Verfahren hatte seit Februar 2023 geruht, da das FDZ nicht operativ war). Die Kritikpunkte: Die Pseudonymisierung der Daten von 73 Millionen GKV-Versicherten reiche nicht aus, da eine Re-Identifizierung bei seltenen Krankheiten möglich sei. Außerdem fehlen gesetzlich verankerte ausreichende Sicherheitsstandards. Ein weiterer Kritikpunkt: GKV-Versicherte haben kein Widerspruchsrecht gegen die Datenübermittlung an das FDZ, PKV-Versicherte hingegen schon. Die Klage ist zum Stand März 2026 anhängig.
 
 ### Datensicherheit und Forschungsgeheimnis
 

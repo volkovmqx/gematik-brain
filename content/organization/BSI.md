@@ -19,7 +19,7 @@ Das BSI wurde 1991 gegründet und ist dem Bundesministerium des Innern (BMI) unt
 
 Im Kontext der [[Telematikinfrastruktur]] hat das BSI eine klar definierte Rolle: Es zertifiziert wichtige TI-Komponenten, nachdem unabhängige Prüfstellen die Komponenten evaluiert haben. Ohne BSI-Zertifizierung darf eine Komponente nicht in der TI eingesetzt werden. Die [[gematik]] ist für die Zulassung zuständig, das BSI für die sicherheitstechnische Bewertung.
 
-Das BSI arbeitet eng mit der [[gematik]] zusammen, um Sicherheitsstandards fortlaufend an neue Bedrohungslagen anzupassen. Die Zusammenarbeit ist im [[SGB-V]] gesetzlich verankert. Auch der Bundesbeauftragte für Datenschutz und Informationsfreiheit (BfDI) ist in diesen Koordinierungsrahmen eingebunden.
+Das BSI arbeitet eng mit der [[gematik]] zusammen, um Sicherheitsstandards fortlaufend an neue Bedrohungslagen anzupassen. Die Zusammenarbeit ist im [[SGB-V]] gesetzlich verankert. Auch der [[BfDI|Bundesbeauftragte für Datenschutz und Informationsfreiheit (BfDI)]] ist in diesen Koordinierungsrahmen eingebunden.
 
 ## Technische Details
 

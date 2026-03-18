@@ -3,7 +3,7 @@ title: ePA - Elektronische Patientenakte
 audience: [technical, non-technical]
 tags: [anwendung, epa, patientenakte]
 aliases: [Elektronische Patientenakte, Patientenakte]
-maturity: wachsend
+maturity: immergruen
 ---
 
 # ePA - Elektronische Patientenakte
@@ -83,9 +83,9 @@ Leistungserbringer authentisieren sich über [[SMC-B]] (Einrichtung) und [[HBA]]
 - **Strukturierte Dosierungsangaben**: Im eMedikationsplan, mit Schreibzugriff für Apotheken
 - **MIO-Integration**: Einbindung der Medizinischen Informationsobjekte ([[MIO]]) Mutterpass, Impfausweis, Kinderuntersuchungsheft und Zahnärztliches Bonusheft
 
-### GFF-Klage gegen das FDZ (2026)
+### GFF-Klage gegen das FDZ (2022/2026)
 
-Die Gesellschaft für Freiheitsrechte (GFF, unterstützt vom CCC) nahm im Februar 2026 eine Klage gegen das Forschungsdatenzentrum Gesundheit (FDZ) auf. Kritisiert wird, dass die Pseudonymisierung der ePA-Daten von 73 Millionen GKV-Versicherten unzureichend sei und eine Re-Identifizierung bei seltenen Krankheiten ermögliche. Ein weiterer Kritikpunkt: GKV-Versicherte haben kein Widerspruchsrecht gegen die Datenübermittlung an das FDZ, PKV-Versicherte hingegen schon. Die Klage ist zum Stand März 2026 anhängig. Weitere Details im Artikel zum [[GDNG]].
+Die Gesellschaft für Freiheitsrechte (GFF, unterstützt vom CCC) nahm im Februar 2026 ihre 2022 eingereichte Klage gegen das Forschungsdatenzentrum Gesundheit (FDZ) wieder auf (das Verfahren hatte seit Februar 2023 geruht, da das FDZ nicht operativ war). Kritisiert wird, dass die Pseudonymisierung der ePA-Daten von 73 Millionen GKV-Versicherten unzureichend sei und eine Re-Identifizierung bei seltenen Krankheiten ermögliche. Ein weiterer Kritikpunkt: GKV-Versicherte haben kein Widerspruchsrecht gegen die Datenübermittlung an das FDZ, PKV-Versicherte hingegen schon. Die Klage ist zum Stand März 2026 anhängig. Weitere Details im Artikel zum [[GDNG]].
 
 ### Sicherheitsvorfälle und PoPP
 

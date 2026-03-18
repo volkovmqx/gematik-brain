@@ -33,7 +33,7 @@ Die [[DSGVO]] hat als EU-Verordnung grundsätzlich Vorrang vor nationalem Recht.
 
 ### Aufsicht
 
-Der **Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI)** überwacht die Einhaltung des BDSG bei Bundesbehörden und Telekommunikationsunternehmen. Für private Unternehmen zuständig sind die Datenschutzaufsichtsbehörden der Länder.
+Der **[[BfDI|Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI)]]** überwacht die Einhaltung des BDSG bei Bundesbehörden und Telekommunikationsunternehmen. Für private Unternehmen zuständig sind die Datenschutzaufsichtsbehörden der Länder.
 
 ## Technische Details
 

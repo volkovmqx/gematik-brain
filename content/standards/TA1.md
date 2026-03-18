@@ -3,7 +3,7 @@ title: TA1
 audience: [technical]
 tags: [standards, abrechnung, apotheke, gkv, datenaustausch]
 aliases: [Technische Anlage 1, TA 1, Apothekenabrechnung, ARZ-Format]
-maturity: wachsend
+maturity: setzling
 ---
 
 # TA1
@@ -21,7 +21,7 @@ Die TA1 wird gemeinsam vom **GKV-Spitzenverband** und dem **Deutschen Apothekerv
 Die TA1 definiert:
 
 - Das Dateiformat für die Rezeptabrechnungsdaten (Struktur, Feldlängen, Codierungen)
-- Die Prüfregeln, die Apothekenrechenzentren (ARZ) bei der Eingangsprüfung anwenden
+- Die Prüfregeln, die [[Apothekenrechenzentrum|Apothekenrechenzentren (ARZ)]] bei der Eingangsprüfung anwenden
 - Die Fehlercodeliste für zurückgewiesene Abrechnungssätze
 - Die Kommunikationsabläufe zwischen Apotheke, ARZ und Krankenkasse
 
@@ -66,8 +66,8 @@ Scheitert eine Prüfung, wird der Satz mit einem Fehlercode (Retaxationscode) an
 
 Die wichtigsten Apothekenrechenzentren in Deutschland:
 
-- **NOVENTI** (früher NARZ/ARZ Darmstadt): Marktführer, verarbeitet ca. 50 % der GKV-Rezepte
-- **AvP** (insolvent 2020, Nachfolger: Ahlberg ARZ)
+- **NOVENTI**: Marktführer, verarbeitet nach Branchenschätzungen ca. 50 % der GKV-Rezepte; entstanden aus dem Zusammenschluss der Abrechnungszentren VSA, ALG und SARZ (2016-2018)
+- **AvP** (insolvent 2020; Teile des Geschäftsbetriebs wurden von der ARZ-Haan-Gruppe übernommen, insbesondere durch deren Tochter RZH)
 - **DAD** (Deutsches Apothekenrechenzentrum der ABDA)
 - **ARZ Haan**
 - **GRZ** (Gesundheitsrechenzentrum)
@@ -96,6 +96,7 @@ Die TA1 ist die mengenmäßig bedeutsamste, da sie alle GKV-Arzneimittelrezepte 
 
 ## Verknüpfungen
 
+- [[Apothekenrechenzentrum]] (ARZ; prüft und übermittelt die TA1-Abrechnungsdaten an die Krankenkassen)
 - [[AVS]] (Apothekenverwaltungssystem; erzeugt die TA1-Abrechnungsdaten)
 - [[E-Rezept]] (Verordnungsformat; Dispensierdaten fließen in die TA1-Abrechnung ein)
 - [[PZN]] (Pharmazentralnummer; Pflichtfeld in jedem TA1-Abrechnungssatz)

@@ -1,32 +1,49 @@
 {
   "pending": [
     {
-      "term": "eVO",
-      "category": "processes",
-      "reason": "Elektronische Heilmittelverordnung. In E-Rezept.md als geplante Pflichteinführung für Physiotherapeuten, Ergotherapeuten und Logopäden ab 2027 detailliert beschrieben. Verknüpft mit der verschobenen TI-Anbindungspflicht für Heilmittelerbringer (1. Oktober 2027). Relevant für Verständnis der schrittweisen E-Rezept-Ausweitung.",
+      "term": "eArztbrief",
+      "category": "technologies",
+      "reason": "Elektronischer Arztbrief im CDA-Format, über KIM versandt. In 13 Artikeln erwähnt (KIM, HBA, KIS, QES, XDS, CDA, HL7, ISiK, PDSG, ePA, MIO, HSM-B, Bundesaerztekammer). Kernnutzungsfall von KIM und CDA. Erklärt wie strukturierte Arztbriefe von der Papierform zur digitalen Übertragung über die TI migriert wurden.",
       "mentionedIn": [
-        "content/technologies/E-Rezept.md"
+        "content/technologies/KIM.md",
+        "content/infrastructure/HBA.md",
+        "content/infrastructure/KIS.md",
+        "content/concepts/QES.md",
+        "content/standards/CDA.md",
+        "content/standards/XDS.md",
+        "content/standards/HL7.md",
+        "content/standards/ISiK.md",
+        "content/technologies/ePA.md"
+      ],
+      "priority": 25
+    },
+    {
+      "term": "G-BA",
+      "category": "organization",
+      "reason": "Gemeinsamer Bundesausschuss. Höchstes Beschlussgremium der gemeinsamen Selbstverwaltung im deutschen Gesundheitswesen. Entscheidet über Leistungsumfang der GKV (Arzneimittel, Heilmittel, Hilfsmittel), Qualitätssicherungsmaßnahmen und Richtlinien. Erwähnt in GKV-Spitzenverband.md. Zentrales Organ für Erstattungsentscheidungen (DiGA-Nutzenbewertung, AMNOG) und Behandlungsrichtlinien.",
+      "mentionedIn": [
+        "content/organization/GKV-Spitzenverband.md"
       ],
       "priority": 21
     },
     {
-      "term": "KHG",
-      "category": "standards",
-      "reason": "Krankenhausfinanzierungsgesetz. Rechtliche Grundlage für das DRG-System (§ 17b KHG) und die Krankenhausplanung in Deutschland. In DRG.md, KHZG.md und ISiK.md mehrfach erwähnt. Rahmengesetz für alle Krankenhaus-Digitalisierungsgesetze (KHZG, KHVVG).",
+      "term": "gRPC",
+      "category": "technologies",
+      "reason": "Google Remote Procedure Call. Modernes, binärbasiertes API-Protokoll, das SOAP in TI 2.0 für neue Dienste ergänzt bzw. ersetzt. In Konnektoren.md als gRPC-basierte API für TI 2.0 beschrieben, in TI-Gateway.md als neue Schnittstelle (neben SOAP). Relevant für Entwickler, die TI-2.0-Integrationen implementieren.",
       "mentionedIn": [
-        "content/concepts/DRG.md",
-        "content/standards/KHZG.md",
-        "content/standards/ISiK.md"
+        "content/infrastructure/Konnektoren.md",
+        "content/infrastructure/TI-Gateway.md"
       ],
       "priority": 20
     },
     {
-      "term": "GDVG",
+      "term": "KRITIS-Dachgesetz",
       "category": "standards",
-      "reason": "Gesetz für digitale Versorgung und den Gesundheitsdatenraum. Geplanter Nachfolger des gescheiterten GDAG, Referentenentwurf für H1/2026 erwartet. In gematik.md und DigiG.md als strategisches Reformgesetz zur Umgestaltung der gematik zu einer modernen Digitalagentur beschrieben. Wichtig für Verständnis der künftigen gematik-Governance.",
+      "reason": "Deutsches Umsetzungsgesetz der EU-CER-Richtlinie, in Kraft seit Januar/März 2026. Schafft einheitliche Mindeststandards für den physischen Schutz kritischer Infrastrukturen. Krankenhäuser fallen ausdrücklich in den Geltungsbereich. Registrierungspflicht ab 17. Juli 2026. Erwähnt in KRITIS.md, BSI.md und KIS.md. Direkt relevant für Krankenhäuser und TI-Betreiber.",
       "mentionedIn": [
-        "content/organization/gematik.md",
-        "content/standards/DigiG.md"
+        "content/concepts/KRITIS.md",
+        "content/organization/BSI.md",
+        "content/infrastructure/KIS.md"
       ],
       "priority": 20
     },
@@ -42,12 +59,35 @@
       "priority": 19
     },
     {
+      "term": "Patient Summary",
+      "category": "standards",
+      "reason": "Europäisches Format für Patientenkurzakte (ePS). Zusammenfassung aktiver Diagnosen, Dauermedikation, Allergien und Impfungen. Kernbestandteil von MyHealth@EU für grenzüberschreitenden Datenaustausch. In 4 Artikeln erwähnt: NCPeH.md, MyHealthAtEU.md, EHDS.md, DVKA.md. Deutschland plant Bereitstellung ab 2029.",
+      "mentionedIn": [
+        "content/infrastructure/NCPeH.md",
+        "content/infrastructure/MyHealthAtEU.md",
+        "content/standards/EHDS.md",
+        "content/organization/DVKA.md"
+      ],
+      "priority": 19
+    },
+    {
       "term": "BMP",
       "category": "processes",
       "reason": "Bundeseinheitlicher Medikationsplan. Papierbasierter Vorgänger des elektronischen Medikationsplans (eMP) mit QR-Code auf DIN-A4. In eMP.md und AMTS.md als abzulösender Vorläufer ausführlich beschrieben, inkl. Migration (gemInfo_Überführung_BMP_in_eMP). 7 Erwähnungen. Verständnis der eMP-Einführung erfordert Kenntnis des BMP.",
       "mentionedIn": [
         "content/processes/eMP.md",
         "content/processes/AMTS.md"
+      ],
+      "priority": 18
+    },
+    {
+      "term": "Fernsignatur",
+      "category": "technologies",
+      "reason": "Ferngesteuerte qualifizierte elektronische Signatur ohne lokale Chipkarte. In TI-Gateway.md als geplanter Zusatzdienst erwähnt, in EUDI-Wallet.md und eID.md im Kontext digitaler Identität und Signatur. Mit TI 2.0 und cloudbasiertem TI-Gateway wird Fernsignatur zunehmend relevant für QES ohne HBA am Gerät.",
+      "mentionedIn": [
+        "content/infrastructure/TI-Gateway.md",
+        "content/infrastructure/EUDI-Wallet.md",
+        "content/infrastructure/eID.md"
       ],
       "priority": 18
     },
@@ -59,37 +99,6 @@
         "content/technologies/ePA.md"
       ],
       "priority": 17
-    },
-    {
-      "term": "Apothekenrechenzentrum",
-      "category": "infrastructure",
-      "reason": "ARZ (Apothekenrechenzentrum). Verarbeitungsdienstleister zwischen Apotheken und Krankenkassen für die GKV-Abrechnung nach TA1-Format. In AVS.md und ABDA.md als Abrechnungspartner der Apotheken und Verarbeitungsstelle für E-Rezept-Dispensierdaten erwähnt. Zentrale Infrastruktur für den Abrechnungsfluss.",
-      "mentionedIn": [
-        "content/infrastructure/AVS.md",
-        "content/organization/ABDA.md",
-        "content/standards/PZN.md"
-      ],
-      "priority": 21
-    },
-    {
-      "term": "BfDI",
-      "category": "organization",
-      "reason": "Bundesbeauftragter für den Datenschutz und die Informationsfreiheit. In BSI.md als Koordinationspartner bei TI-Sicherheitsfragen erwähnt. Relevante Datenschutz-Aufsichtsbehörde für die TI und Gesundheitsdaten auf Bundesebene.",
-      "mentionedIn": [
-        "content/organization/BSI.md",
-        "content/standards/DSGVO.md"
-      ],
-      "priority": 20
-    },
-    {
-      "term": "gRPC",
-      "category": "technologies",
-      "reason": "Google Remote Procedure Call. Modernes, binärbasiertes API-Protokoll, das SOAP in TI 2.0 für neue Dienste ergänzt bzw. ersetzt. In Konnektoren.md als gRPC-basierte API für TI 2.0 beschrieben, in TI-Gateway.md als neue Schnittstelle (neben SOAP). Relevant für Entwickler, die TI-2.0-Integrationen implementieren.",
-      "mentionedIn": [
-        "content/infrastructure/Konnektoren.md",
-        "content/infrastructure/TI-Gateway.md"
-      ],
-      "priority": 20
     },
     {
       "term": "KZBV",
@@ -118,6 +127,16 @@
       "reason": "In-vitro-Diagnostika-Verordnung (EU) 2017/746. Schwesternverordnung zur MDR für Labordiagnostika und Testsysteme. In MDR.md als parallele EU-Regulierung erwähnt. Relevant für DEMIS-Labormeldungen, DiGA im Laborkontext und LIS-Systeme.",
       "mentionedIn": [
         "content/standards/MDR.md"
+      ],
+      "priority": 16
+    },
+    {
+      "term": "GOZ",
+      "category": "standards",
+      "reason": "Gebührenordnung für Zahnärzte. Abrechnungsgrundlage für privatärztliche zahnärztliche Leistungen. Natürliches Pendant zu GOÄ (Ärzte) und EBM (GKV). In EBM.md und GOÄ.md im Kontext des Gebührenordnungssystems erwähnt. Relevant für zahnärztliche TI-Anwendungen (HBA für Zahnärzte, E-Rezept, ePA-Zugriff).",
+      "mentionedIn": [
+        "content/standards/EBM.md",
+        "content/standards/GOÄ.md"
       ],
       "priority": 16
     },
@@ -265,7 +284,12 @@
     "LIS",
     "TA1",
     "KV-SafeNet",
-    "DVKA"
+    "DVKA",
+    "Apothekenrechenzentrum",
+    "eVO",
+    "KHG",
+    "GDVG",
+    "BfDI"
   ],
   "lastRun": "2026-03-18"
 }

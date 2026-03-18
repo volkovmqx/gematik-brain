@@ -3,7 +3,7 @@ title: Medizinischer Dienst
 audience: [technical, non-technical]
 tags: [organisation, gkv, pruefung, pflege, krankenhaus]
 aliases: [MD, MDK, Medizinischer Dienst der Krankenversicherung, MDS]
-maturity: setzling
+maturity: immergruen
 ---
 
 # Medizinischer Dienst

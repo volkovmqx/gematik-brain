@@ -3,6 +3,7 @@ title: Telematikinfrastruktur (TI)
 aliases: [TI, Telematikinfrastruktur]
 audience: [technical, non-technical]
 tags: [infrastruktur, ti, netzwerk]
+maturity: immergruen
 ---
 
 # Telematikinfrastruktur (TI)
@@ -37,6 +38,12 @@ Die TI wird von der **[[gematik|gematik GmbH]]** (Berlin, Rosenthaler Straße 30
 ### Anbindungspflichten
 
 Die Pflicht zur TI-Anbindung wird schrittweise ausgeweitet. Pflegeeinrichtungen müssen ab **1. Dezember 2026** die elektronische Abrechnung über [[KIM]] nutzen. Für Heilmittelerbringer wurde die Anbindungsfrist auf den **1. Oktober 2027** verlängert.
+
+### TI-Pauschale
+
+Die monatliche TI-Pauschale vergütet Arztpraxen die Kosten für TI-Infrastruktur und -Anwendungen. Zum **1. Januar 2026** stieg die Pauschale um **2,8 Prozent**. Für eine Einzelpraxis beträgt sie seither ca. **263,62 Euro pro Monat**.
+
+Die Pauschale setzt voraus, dass die Praxis vollständig technisch ausgestattet ist (Konnektor oder TI-Gateway, Kartenterminals, [[SMC-B]], [[HBA]]) und zentrale TI-Anwendungen aktiv nutzt ([[eAU]], [[ePA]], [[KIM]]). Fehlt der Nachweis einer Anwendung, wird die Pauschale um **50 Prozent** gekürzt. Fehlen mehrere Nachweise, entfällt sie vollständig.
 
 ## Architektur
 

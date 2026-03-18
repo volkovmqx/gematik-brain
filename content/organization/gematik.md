@@ -64,7 +64,7 @@ Alle technischen Anforderungen werden in gemSpec-Dokumenten veröffentlicht. Die
 
 ### GDAG gescheitert
 
-Das **GDAG (Gesundheits-Digitalagentur-Gesetz)** sollte die gematik zu einer modernen Bundesagentur umstrukturieren. Der Gesetzentwurf scheiterte in der Legislaturperiode 2021-2025 mit dem Ende der Ampel-Koalition: Die zweite und dritte Lesung im Bundestag fanden aufgrund der vorzeitigen Neuwahl nicht mehr statt. Der Koalitionsvertrag von CDU/CSU und SPD (2025) sieht eine gematik-Modernisierung ohne GDAG vor. Das [[BMG]] plant als Nachfolge das **GDVG (Gesetz für digitale Versorgung und den Gesundheitsdatenraum)**, das Elemente der gematik-Transformation mit dem Ausbau des Gesundheitsdatenraums verbinden soll. Es ersetzt das gescheiterte GDAG. Der Referentenentwurf wird für H1/2026 erwartet. Ziel ist die Umgestaltung der gematik zu einer modernen Digitalagentur.
+Das **GDAG (Gesundheits-Digitalagentur-Gesetz)** sollte die gematik zu einer modernen Bundesagentur umstrukturieren. Der Gesetzentwurf scheiterte in der Legislaturperiode 2021-2025 mit dem Ende der Ampel-Koalition: Die zweite und dritte Lesung im Bundestag fanden aufgrund der vorzeitigen Neuwahl nicht mehr statt. Der Koalitionsvertrag von CDU/CSU und SPD (2025) sieht eine gematik-Modernisierung ohne GDAG vor. Das [[BMG]] plant als Nachfolge das **[[GDVG]] (Gesetz für digitale Versorgung und den Gesundheitsdatenraum)**, das Elemente der gematik-Transformation mit dem Ausbau des Gesundheitsdatenraums verbinden soll. Es ersetzt das gescheiterte GDAG. Der Referentenentwurf wird für H1/2026 erwartet. Ziel ist die Umgestaltung der gematik zu einer modernen Digitalagentur.
 
 ### Strategische Leitsätze 2026
 

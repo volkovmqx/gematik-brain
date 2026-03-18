@@ -63,7 +63,7 @@ Das EMRAM-Modell (Electronic Medical Record Adoption Model) des HIMSS-Instituts 
 
 ### Abgrenzung zum KHSFV
 
-Das KHZG schuf den Förderfonds (KHZF). Die Krankenhaus-Strukturfonds-Verfahrensverordnung (KHSFV) regelt Folgeanforderungen an Interoperabilität im Kontext des regulären Krankenhausstrukturgesetzes (KHG). ISiK-Bestätigungen sind seit Stufe 3 Voraussetzung für bestimmte KHSFV-Fördermaßnahmen nach § 21 Abs. 2 KHSFV.
+Das KHZG schuf den Förderfonds (KHZF). Die Krankenhaus-Strukturfonds-Verfahrensverordnung (KHSFV) regelt Folgeanforderungen an Interoperabilität im Kontext des regulären [[KHG|Krankenhausstrukturgesetzes (KHG)]]. ISiK-Bestätigungen sind seit Stufe 3 Voraussetzung für bestimmte KHSFV-Fördermaßnahmen nach § 21 Abs. 2 KHSFV.
 
 ### Nachfolgegesetzgebung
 

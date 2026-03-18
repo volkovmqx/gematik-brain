@@ -3,7 +3,7 @@ title: DVKA
 audience: [technical, non-technical]
 tags: [organisation, eu, grenzüberschreitend, ncpeh, ehds]
 aliases: [Deutsche Verbindungsstelle Krankenversicherung Ausland, DVKA]
-maturity: setzling
+maturity: immergruen
 ---
 
 # DVKA

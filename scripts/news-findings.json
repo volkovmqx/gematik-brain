@@ -1,6 +1,6 @@
 {
   "lastChecked": "2026-03-18",
-  "lastRun": "2026-03-18T20:00:00Z",
+  "lastRun": "2026-03-18T22:30:00Z",
   "findings": [
     {
       "title": "eMedikationsplan: Start verschoben auf Oktober 2026",
@@ -44,8 +44,9 @@
       "source": "https://www.gematik.de/newsroom/news-detail/aktuelle-information-ti-verschluesselungsalgorithmen-umstellung-von-rsa-auf-ecc",
       "summary": "Die Umstellung von RSA auf ECC in der TI ist in vollem Gange. Harte Fristen: (1) Bis 31.12.2025 mussten alle RSA-only-Konnektoren ausgetauscht sein. (2) Bis 30.06.2026 müssen eHBA G2.0 und SMC-B G2.0 gegen ECC-fähige Nachfolger (G2.1) getauscht sein. (3) Bis 31.12.2026 müssen gSMC-KT-Terminals umgestellt sein. Noch offene Baustelle: ca. 30.000+ eHBAs müssen noch getauscht werden. Gematik verlängerte die eHBA-Frist bis 30.06.2026. Ab 01.01.2026 dürfen Kartenanbieter nur noch ECC-Karten produzieren.",
       "relevantArticles": ["Telematikinfrastruktur.md", "Konnektoren.md", "SMC-B.md", "HBA.md"],
-      "action": "update",
-      "details": "Telematikinfrastruktur.md und Konnektoren.md bereits aktualisiert mit ECC-Fristen. Für SMC-B.md und HBA.md prüfen ob Fristen 30.06.2026 bzw. 31.12.2026 dokumentiert sind.",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
+      "details": "SMC-B.md: Zusatz 'Ab 1. Januar 2026 dürfen Kartenherausgeber nur noch ECC-fähige SMC-B-Karten produzieren' ergänzt. HBA.md und Telematikinfrastruktur.md waren bereits aktualisiert.",
       "suggestedTerm": "RSA-zu-ECC-Migration"
     },
     {
@@ -545,8 +546,9 @@
       "summary": "Die monatliche TI-Pauschale für Arztpraxen stieg zum 1. Januar 2026 um 2,8 Prozent. Für eine Einzelpraxis beträgt sie nun beispielsweise ca. 263,62 Euro monatlich. Die Pauschale erfordert die vollständige technische Ausstattung (Konnektor, Kartenterminals, SMC-B, eHBA) sowie die Nutzung zentraler TI-Anwendungen (eAU, ePA, KIM). Fehlt der Nachweis einer Anwendung, wird die Pauschale um 50 Prozent gekürzt; fehlen mehrere, entfällt sie ganz.",
       "relevantArticles": ["Telematikinfrastruktur.md", "KIM.md"],
       "category": "regulation",
-      "action": "update",
-      "details": "Telematikinfrastruktur.md sollte die aktuelle TI-Pauschale 2026 (+2,8 %) und Sanktionsregelungen erwähnen. Bisher fehlen konkrete Beträge im Artikel.",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
+      "details": "Telematikinfrastruktur.md: Neuer Abschnitt 'TI-Pauschale' mit konkreten Beträgen (263,62 EUR/Monat Einzelpraxis), Steigerung +2,8% ab 1.1.2026 und Sanktionsregelungen ergänzt.",
       "suggestedTerm": "TI-Pauschale"
     },
     {
@@ -759,8 +761,9 @@
       "source": "https://thevea.de/praxis-wissen/e-rezept-heilmittelerbringer/",
       "summary": "Ab dem 1. Januar 2027 müssen Ärzte Heilmittelverordnungen (Physiotherapie, Ergotherapie, Logopädie, Podologie) verpflichtend als E-Rezept über die TI ausstellen. Heilmittelerbringer müssen ab diesem Datum auf Basis der elektronischen Verordnung abrechnen. Die TI-Anbindungspflicht für Heilmittelerbringer ist auf den 1. Oktober 2027 verschoben (nicht Oktober 2026). Die elektronische Heilmittelverordnung (eVO) ist damit ein Vorläufer des E-Rezepts für Heilmittel.",
       "affects": ["E-Rezept.md", "Telematikinfrastruktur.md"],
-      "action": "update",
-      "details": "E-Rezept.md 'Was kommt noch?' sollte den Pflichttermin 1. Januar 2027 für Heilmittelverordnungen klar benennen. Bisher ist im Artikel die eVO-Pflicht 2028 genannt (für Heilmittelerbringer gesamt), aber Verordner müssen bereits ab 1.1.2027 elektronisch ausstellen.",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
+      "details": "E-Rezept.md enthält bereits korrekten Pflichttermin 1. Januar 2027 für Verordner und TI-Anbindungspflicht Oktober 2027 für Heilmittelerbringer. Wiki-Link [[eVO]] ergänzt.",
       "category": "regulation"
     },
     {
@@ -802,8 +805,9 @@
       "summary": "Der Rollout des elektronischen T-Rezepts (für Lenalidomid, Pomalidomid, Thalidomid) beginnt laut Roadmap im Q3/2026; der eigentliche Rollout-Start für Praxen und Apotheken wird Mitte Q4/2026 erwartet. Damit entfallen die bisher notwendigen Papierdurchschläge und die manuelle BfArM-Übermittlung durch Apotheken. Die Spezifikation wurde im August 2025 veröffentlicht.",
       "affects": ["E-Rezept.md"],
       "category": "specification",
-      "action": "update",
-      "details": "E-Rezept.md 'Was kommt noch?': T-Rezept-Eintrag präzisieren auf 'Start Mitte Q4/2026' statt nur '2026 geplant'."
+      "action": "applied",
+      "appliedDate": "2026-03-18",
+      "details": "E-Rezept.md 'Was kommt noch?': T-Rezept-Eintrag auf 'Rollout-Start Mitte Q4/2026' aktualisiert."
     },
     {
       "title": "NCPeH_24_2: Spezifikationsrelease für grenzüberschreitendes E-Rezept veröffentlicht (März 2025)",
@@ -822,8 +826,9 @@
       "summary": "Die Volltextsuche in der ePA startet nicht bereits im März 2026, sondern erst in Q3/2026 im Pilotbetrieb. Der bundesweite Rollout ist für Januar 2027 geplant. Die Funktion ermöglicht die Suche nach Begriffen innerhalb von Dokumenttexten (nicht nur in Metadaten). Technische Basis ist ePA 3.1.2 (Mai 2025). Die ePA-App ermöglicht ab März 2026 nur Push-Benachrichtigungen, nicht die Volltextsuche.",
       "affects": ["ePA.md"],
       "category": "specification",
-      "action": "update",
-      "details": "ePA.md sollte klarstellen: Push-Nachrichten ab März 2026 live, Volltextsuche erst Pilot Q3/2026, bundesweit ab Januar 2027. Bisherige Formulierung könnte den Eindruck erwecken, die Volltextsuche sei bereits im März 2026 gestartet."
+      "action": "applied",
+      "appliedDate": "2026-03-18",
+      "details": "ePA.md bereits korrekt: Push-Nachrichten seit März 2026, Volltextsuche Pilot Q3/2026, bundesweit ab Januar 2027. Abschnitt GFF-Klage als Wiederaufnahme 2022-Klage klargestellt."
     },
     {
       "title": "CI_25_5-1: Patch-Release für Zentrale Infrastrukturkomponenten (20. Januar 2026)",
@@ -875,6 +880,44 @@
       "category": "info",
       "action": "update",
       "details": "gematik.md sollte die neue Beiratsspitze seit November 2024 nennen: Sebastian Claudius Semler (Vorsitz) und Hans-Peter Bursig (stellv. Vorsitz). Stärkt das Bild der institutionellen Struktur der gematik."
+    },
+    {
+      "title": "Draft_ZETA_26_1: Optimierungen der Zero-Trust-Spezifikation (16. März 2026)",
+      "date": "2026-03-16",
+      "source": "https://gemspec.gematik.de/prereleases/Draft_ZETA_26_1/index.html",
+      "summary": "Gematik veröffentlichte am 16. März 2026 den Pre-Release Draft_ZETA_26_1 mit aktualisierten Dokumenten zu gemSpec_ZETA und dem ZETA-Guard-Anforderungsverzeichnis. Inhaltlich enthält der Release 'Optimierungen und Aktualisierungen'. Kommentierungsfrist lief bis 23. März 2026. Änderungen sind als Change-Marked-Dokumente im ZIP verfügbar. Der Release ist Vorbereitung auf den offiziellen ZETA-Release, der vor dem Produktivstart von VSDM 2.0 im Juni 2026 erwartet wird.",
+      "relevantArticles": ["ZETA.md", "Zero-Trust.md", "VSDM.md"],
+      "category": "specification",
+      "action": "info_only"
+    },
+    {
+      "title": "DiGAV 2. ÄndV: Pflicht zur ePA-Schreibzugriff und GesundheitsID-Authentifizierung ab Februar 2026",
+      "date": "2026-02-01",
+      "source": "https://www.seqly.de/en/newsroom/detail/fda-relaxes-rules-for-wearables-1/",
+      "summary": "Die Zweite Verordnung zur Änderung der DiGAV (in Kraft 1. Februar 2026) enthält neben der bereits dokumentierten AbEM-Pflicht zwei weitere wesentliche Neuerungen: (1) DiGA müssen künftig verpflichtend ePA-Schreibzugriff implementieren, damit Versicherte DiGA-Daten automatisch in die ePA übertragen lassen können. (2) DiGA müssen die Authentifizierung via GesundheitsID (digitale Identität der Versicherten) unterstützen. Übergangsfristen entfallen vollständig. DiGA, die diese Anforderungen nicht erfüllen, riskieren den Ausschluss aus dem BfArM-DiGA-Verzeichnis.",
+      "relevantArticles": ["DiGA.md", "DiGAV.md", "Gesundheits-ID.md", "ePA.md"],
+      "category": "regulation",
+      "action": "update",
+      "details": "DiGA.md und DiGAV.md sollten die Pflicht zur ePA-Interoperabilität (Schreibzugriff) und zur GesundheitsID-Authentifizierung als verbindliche Anforderungen ab 1. Februar 2026 ergänzen. DiGA.md Abschnitt 'Integration mit der ePA' derzeit noch als Ziel formuliert, muss auf 'Pflicht ab 2026' aktualisiert werden."
+    },
+    {
+      "title": "ApoVWG: Zweite und dritte Lesung im Bundestag für 16. April 2026 terminiert",
+      "date": "2026-03-18",
+      "source": "https://www.pharmazeutische-zeitung.de/apovwg-soll-am-16-april-beschlossen-werden-163685/",
+      "summary": "Die zweite und dritte Lesung des Apothekenversorgung-Weiterentwicklungsgesetzes (ApoVWG) im Bundestag sind für den 16. April 2026 angesetzt. Wesentliche Streitpunkte: Honorarerhöhung auf 9,50 Euro pro Packung, Zulassung von PTA-Vertretung und Regelungen zu Zweigapotheken. Ein Bundesrats-Veto wäre möglich. Das ApoVWG regelt auch Telepharmazie-Strukturen und indirekt die E-Rezept-Abwicklung in neuen Apothekenmodellen. Sofern beschlossen, tritt das Gesetz voraussichtlich Mitte 2026 in Kraft.",
+      "relevantArticles": ["E-Rezept.md"],
+      "category": "regulation",
+      "action": "monitor",
+      "details": "ApoVWG betrifft E-Rezept-Abwicklung und Telepharmazie-Regelungen. Nach Beschluss am 16. April 2026 E-Rezept.md auf neue Apothekenstrukturen und mögliche Änderungen in der Rezept-Einlösung prüfen. Bisherigen 'monitor'-Eintrag als Folgeaktion behandeln."
+    },
+    {
+      "title": "Draft_VSDM2_26_1: Fachdienstlokalisierung und weitere Anpassungen (18. März 2026)",
+      "date": "2026-03-18",
+      "source": "https://gemspec.gematik.de/prereleases/Draft_VSDM2_26_1/index.html",
+      "summary": "Am 18. März 2026 veröffentlichte gematik den Pre-Release Draft_VSDM2_26_1. Kernneuerung: Ergänzung der 'Fachdienstlokalisierung' (CC2 mit alternativer Lösung via zentralem Fachdienst). Enthalten sind Aktualisierungen der VSDM-2-Spezifikation, des Anbietersteckbriefs VSDM 2 FD und des Produktsteckbriefs VSDM 2 FD sowie der Clientsystem-Schnittstelle. Kommentierungsfrist lief bis 23. März 2026. Der Release ist Vorbereitung auf den Produktivstart VSDM 2.0 im Juni 2026 (Parallelbetrieb mit VSDM 1.0).",
+      "relevantArticles": ["VSDM.md", "Telematikinfrastruktur.md"],
+      "category": "specification",
+      "action": "info_only"
     }
   ]
 }

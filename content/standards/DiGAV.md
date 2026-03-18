@@ -39,7 +39,7 @@ Anlage 2 der DiGAV regelt die Interoperabilitätsanforderungen. Kernpflicht: Ver
 
 Das [[BfArM]] stellt im DiGA-Antragsportal einen [[FHIR]]-Validator bereit, mit dem Hersteller ihre Exporte gegen das MIO DiGA Toolkit prüfen können. Die Nutzung des Validators ist derzeit freiwillig.
 
-Langfristiges Ziel ist die direkte Integration mit der [[ePA]]: DiGA sollen Daten automatisch in die Patientenakte des Versicherten schreiben können.
+Seit der Zweiten Änderungsverordnung (**1. Februar 2026**) ist die direkte Integration mit der [[ePA]] verpflichtend: DiGA müssen Schreibzugriff auf die ePA implementieren, damit Versicherte ihre DiGA-Daten automatisch in die Patientenakte übertragen lassen können. Gleichzeitig wurde die Authentifizierung via [[Gesundheits-ID]] (digitale Identität der Versicherten) zur Pflichtanforderung. Übergangsfristen entfallen vollständig.
 
 ### Positiver Versorgungseffekt
 

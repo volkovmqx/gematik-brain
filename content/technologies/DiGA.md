@@ -40,7 +40,7 @@ Laut DiGAV Anlage 2 müssen DiGA Datenexporte in interoperablen Formaten ermögl
 
 ### Integration mit der ePA
 
-DiGA sollen mit der [[ePA]] interoperabel sein. Konkret bedeutet das: Versicherte können (mit ihrer Einwilligung) DiGA-Daten automatisch in ihre [[ePA]] übertragen lassen. Diese Übertragung soll konfigurierbar sein und endet automatisch nach Ablauf der Verordnungsdauer.
+Ab dem **1. Februar 2026** müssen DiGA verpflichtend den Schreibzugriff auf die [[ePA]] unterstützen. Versicherte können DiGA-Daten mit ihrer Einwilligung automatisch in ihre [[ePA]] übertragen lassen. Die Übertragung ist konfigurierbar und endet automatisch nach Ablauf der Verordnungsdauer. Grundlage ist die Zweite Verordnung zur Änderung der [[DiGAV]], die gleichzeitig die Authentifizierung via [[Gesundheits-ID]] als Pflichtanforderung einführt. DiGA, die diese Anforderungen nicht erfüllen, riskieren den Ausschluss aus dem BfArM-Verzeichnis.
 
 ### Integration mit dem E-Rezept
 
