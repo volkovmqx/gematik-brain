@@ -15,7 +15,7 @@ Die DSGVO ist ein EU-Gesetz, das festlegt, wie Unternehmen und Behörden mit dei
 
 ## Überblick
 
-Die DSGVO trat am 25. Mai 2018 in Kraft. Sie gilt unmittelbar in allen 27 EU-Mitgliedstaaten, ohne dass eine nationale Umsetzung nötig ist. In Deutschland ergänzt das Bundesdatenschutzgesetz (BDSG) die DSGVO in Bereichen, die nationale Regelungsspielräume lassen.
+Die DSGVO trat am 25. Mai 2018 in Kraft. Sie gilt unmittelbar in allen 27 EU-Mitgliedstaaten, ohne dass eine nationale Umsetzung nötig ist. In Deutschland ergänzt das [[BDSG|Bundesdatenschutzgesetz (BDSG)]] die DSGVO in Bereichen, die nationale Regelungsspielräume lassen.
 
 Für Gesundheitsdaten gilt Artikel 9 DSGVO: Gesundheitsdaten sind "besondere Kategorien personenbezogener Daten" und dürfen grundsätzlich nicht verarbeitet werden. Ausnahmen sind in Art. 9 Abs. 2 aufgeführt, u.a.:
 
@@ -73,7 +73,7 @@ Im Kontext der [[EUDI-Wallet]] gilt die DSGVO für alle personenbezogenen Daten,
 - [[DiGA]] (DiGAV konkretisiert DSGVO für digitale Medizinprodukte)
 - [[GDNG]] (Gesundheitsdatennutzungsgesetz; regelt Sekundärnutzung nach DSGVO)
 - [[SGB-V]] (Spezialgesetzliche Grundlage, die die DSGVO im GKV-Bereich ergänzt)
-- Bundesdatenschutzgesetz (BDSG) (Nationales Datenschutzgesetz, ergänzt DSGVO in Deutschland)
+- [[BDSG]] (Nationales Datenschutzgesetz, ergänzt DSGVO in Deutschland)
 - [[EUDI-Wallet]] (Privacy-by-Design-Anforderungen nach DSGVO)
 - [[BSI]] (technische und organisatorische Maßnahmen nach DSGVO Art. 32)
 - [[Telematikinfrastruktur]] (Gesamtsystem, für das DSGVO-Compliance nachgewiesen werden muss)

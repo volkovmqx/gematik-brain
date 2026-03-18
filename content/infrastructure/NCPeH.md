@@ -17,7 +17,7 @@ Stell dir vor, du bist im Urlaub in Spanien und wirst krank. Der spanische Arzt 
 
 Die **DVKA** (Deutsche Verbindungsstelle Krankenversicherung – Ausland) betreibt den NCPeH. Die [[gematik]] ist für die Spezifikation und Produkttypbestätigung zuständig. Der NCPeH ist die technische Schnittstelle zwischen der deutschen [[Telematikinfrastruktur]] und dem europäischen **MyHealth@EU**-Netzwerk (früher eHealth-Netzwerk).
 
-Die rechtliche Grundlage auf EU-Ebene ist die **EHDS-Verordnung** (European Health Data Space, EU 2025/327), die im März 2025 in Kraft trat. Sie verpflichtet die EU-Mitgliedstaaten schrittweise zur Teilnahme am grenzüberschreitenden Gesundheitsdatenaustausch.
+Die rechtliche Grundlage auf EU-Ebene ist die **[[EHDS]]-Verordnung** (European Health Data Space, EU 2025/327), die im März 2025 in Kraft trat. Sie verpflichtet die EU-Mitgliedstaaten schrittweise zur Teilnahme am grenzüberschreitenden Gesundheitsdatenaustausch.
 
 Am **16. März 2026** besuchten fast 50 Delegierte aus 14 EU-Ländern die [[gematik]], um sich über den deutschen NCPeH und die TI-Infrastruktur zu informieren. Das zeigt das wachsende Interesse anderer Mitgliedstaaten an der deutschen Implementierung.
 
@@ -68,6 +68,7 @@ Der NCPeH überträgt personenbezogene Gesundheitsdaten über Ländergrenzen hin
 - [[Telematikinfrastruktur]]: Nationale Infrastruktur, mit der der NCPeH verbunden ist
 - [[ePA]]: Patientendaten, die über den NCPeH zugänglich gemacht werden
 - [[E-Rezept]]: Geplante Datenart für den grenzüberschreitenden Austausch
+- [[EHDS]]: EU-Verordnung, die den rechtlichen Rahmen für MyHealth@EU schafft
 - [[gematik]]: Spezifikation und Produkttypbestätigung für den NCPeH
 - [[FHIR]]: Datenformat für den Austausch über MyHealth@EU
 - [[GDNG]]: Deutsches Gesetz zur Sekundärnutzung von Gesundheitsdaten

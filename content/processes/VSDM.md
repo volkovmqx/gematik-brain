@@ -2,7 +2,7 @@
 title: VSDM - Versichertenstammdatenmanagement
 audience: [technical, non-technical]
 tags: [prozess, vsdm, stammdaten]
-aliases: [Versichertenstammdatenmanagement, Versichertenstammdaten-Management]
+aliases: [Versichertenstammdatenmanagement, VSDM 2.0, Versichertenstammdaten-Management]
 ---
 
 # VSDM - Versichertenstammdatenmanagement

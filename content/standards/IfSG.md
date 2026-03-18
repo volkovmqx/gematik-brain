@@ -11,7 +11,7 @@ Das **IfSG (Infektionsschutzgesetz)** ist das zentrale deutsche Bundesgesetz zum
 
 ## Erklärt für Einsteiger
 
-Wenn ein Arzt bei einem Patienten eine gefährliche ansteckende Krankheit feststellt, muss er das dem Gesundheitsamt melden. Das ist gesetzlich vorgeschrieben. Das IfSG ist das Gesetz, das diese Pflicht festlegt: Wer muss was melden, an wen, und wie schnell. Mit [[DEMIS]] wird diese Meldung heute digital abgewickelt, statt per Fax oder Brief.
+Wenn ein Arzt bei einem Patienten eine gefährliche ansteckende Krankheit feststellt, muss er das dem [[OeGD|Gesundheitsamt]] melden. Das ist gesetzlich vorgeschrieben. Das IfSG ist das Gesetz, das diese Pflicht festlegt: Wer muss was melden, an wen, und wie schnell. Mit [[DEMIS]] wird diese Meldung heute digital abgewickelt, statt per Fax oder Brief.
 
 ## Überblick
 

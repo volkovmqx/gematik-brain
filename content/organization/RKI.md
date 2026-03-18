@@ -34,7 +34,7 @@ Das RKI nimmt eine "Antennenfunktion" wahr: Es erkennt Gesundheitsgefahren früh
 
 Das RKI ist nach § 4 IfSG die zuständige Bundesbehörde für Aufgaben des Infektionsschutzes. Dort ist festgelegt, dass das RKI Aufgaben der epidemiologischen Surveillance, der Infektionsepidemiologie und der Prävention übernimmt.
 
-Als Bundesoberbehörde hat das RKI keine Weisungsbefugnis gegenüber den Ländern oder Gesundheitsämtern. Es kann Empfehlungen aussprechen und Daten aufbereiten, die operative Infektionsschutzarbeit liegt jedoch bei den Gesundheitsämtern der Länder.
+Als Bundesoberbehörde hat das RKI keine Weisungsbefugnis gegenüber den Ländern oder Gesundheitsämtern. Es kann Empfehlungen aussprechen und Daten aufbereiten, die operative Infektionsschutzarbeit liegt jedoch bei den [[OeGD|Gesundheitsämtern]] der Länder.
 
 ### DEMIS: Das elektronische Meldesystem
 

@@ -30,7 +30,7 @@ Das TI-Gateway ist eine Schlüsselkomponente der TI 2.0 und direkt mit deren zen
 Das TI-Gateway besteht aus zwei zentralen Teilen:
 
 1. **Virtueller Konnektor (vKON)**: Implementiert die Konnektor-Funktionalität als Software-Service. Übernimmt kryptografische Operationen, Kartendienste und Schnittstellenlogik.
-2. **Integrierter VPN-Zugangsdienst**: Der VPN-Tunnel zur TI ist im TI-Gateway bereits eingebaut. Beim klassischen Konnektor war der VPN-Zugangsdienst ein separater Dienst.
+2. **Integrierter [[VPN-Zugangsdienst]]**: Der VPN-Tunnel zur TI ist im TI-Gateway bereits eingebaut. Beim klassischen Konnektor war der VPN-Zugangsdienst ein separater Dienst.
 
 ### Schnittstellen zum Primärsystem
 

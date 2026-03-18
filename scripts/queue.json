@@ -1,15 +1,14 @@
 {
   "pending": [
     {
-      "term": "VPN-Zugangsdienst",
-      "category": "infrastructure",
-      "reason": "Eigenständige TI-Infrastrukturkomponente, die den verschlüsselten VPN-Tunnel zwischen Konnektor und TI-Netz herstellt. Über 19 zugelassene Anbieter. In Konnektoren.md, TI-Gateway.md und Telematikinfrastruktur.md als separater Dienst erwähnt, ohne eigene Seite. Mit TI 2.0 im TI-Gateway integriert.",
+      "term": "KRITIS",
+      "category": "concepts",
+      "reason": "Kritische Infrastrukturen nach BSI-Gesetz. In BSI.md als Kernaufgabe des BSI (KRITIS-Regulierung) ausführlich beschrieben; Krankenhäuser ab 30.000 stationären Fällen fallen in den KRITIS-Scope. KRITIS-Dachgesetz (KRITIS-DachG) trat März 2026 in Kraft. Relevant für TI-Sicherheitsanforderungen, ISMS-Pflicht und Meldewesen bei Sicherheitsvorfällen.",
       "mentionedIn": [
-        "content/infrastructure/Konnektoren.md",
-        "content/infrastructure/TI-Gateway.md",
-        "content/infrastructure/Telematikinfrastruktur.md"
+        "content/organization/BSI.md",
+        "content/standards/KHZG.md"
       ],
-      "priority": 32
+      "priority": 28
     },
     {
       "term": "MVZ",
@@ -22,25 +21,14 @@
       "priority": 27
     },
     {
-      "term": "EHDS",
-      "category": "standards",
-      "reason": "European Health Data Space (EU 2025/327). EU-Verordnung, die den primären und sekundären grenzüberschreitenden Gesundheitsdatenaustausch reguliert. In NCPeH.md als rechtliche Grundlage für MyHealth@EU genannt und mit GDNG verknüpft (Sekundärnutzung). Zentral für den EU-weiten Kontext der deutschen TI. 4 Nennungen in NCPeH.md und GDNG.md.",
+      "term": "gSMC-KT",
+      "category": "infrastructure",
+      "reason": "Security Module Card für Kartenterminals (gSMC-KT). Sicherheitschip im Kartenterminal, der die Authentizität des Terminals gegenüber dem Konnektor nachweist. In Kartenterminal.md als Pflichtbestandteil jedes zugelassenen Kartenterminals beschrieben. ECC-Migration-Frist: 31.12.2026. Eigenständige Komponente neben SMC-B und HBA in der Smartcard-Hierarchie.",
       "mentionedIn": [
-        "content/infrastructure/NCPeH.md",
-        "content/standards/GDNG.md"
+        "content/infrastructure/Kartenterminal.md",
+        "content/infrastructure/SMC-B.md"
       ],
-      "priority": 23
-    },
-    {
-      "term": "ÖGD",
-      "category": "organization",
-      "reason": "Öffentlicher Gesundheitsdienst (ÖGD), insbesondere Gesundheitsämter. In DEMIS.md, RKI.md und IfSG.md als zentrale Empfänger von Infektionsschutzmeldungen und als Akteure der öffentlichen Gesundheitsinfrastruktur erwähnt. Gesundheitsämter 13-mal in 3 Artikeln genannt. Wichtiger Knotenpunkt zwischen Meldesystemen (DEMIS) und Surveillance (RKI).",
-      "mentionedIn": [
-        "content/technologies/DEMIS.md",
-        "content/organization/RKI.md",
-        "content/standards/IfSG.md"
-      ],
-      "priority": 23
+      "priority": 24
     },
     {
       "term": "InEK",
@@ -49,6 +37,16 @@
       "mentionedIn": [
         "content/concepts/DRG.md",
         "content/standards/OPS.md"
+      ],
+      "priority": 22
+    },
+    {
+      "term": "TSL",
+      "category": "infrastructure",
+      "reason": "Trust Service List (Vertrauensliste) der TI-PKI. Signierte XML-Liste aller vertrauenswürdigen CAs der Telematikinfrastruktur. In PKI.md als zentrales Vertrauensanker-Dokument beschrieben; jede TI-Komponente lädt die TSL und akzeptiert nur Zertifikate von dort gelisteten TSPs. In TSP.md als Publishingziel der gematik Root-CA erwähnt. Voraussetzung für das Verständnis der PKI-Hierarchie.",
+      "mentionedIn": [
+        "content/concepts/PKI.md",
+        "content/infrastructure/TSP.md"
       ],
       "priority": 22
     },
@@ -73,16 +71,6 @@
         "content/infrastructure/Fachdienst.md"
       ],
       "priority": 21
-    },
-    {
-      "term": "ZETA",
-      "category": "concepts",
-      "reason": "Zero-Trust-Architektur-Framework der gematik für TI 2.0. Am 15. Dezember 2025 als Open Source veröffentlicht (ZETA-Client-SDK und ZETA-Guard). Erster produktiver Einsatz mit VSDM 2.0 geplant für Juli 2026. In Zero-Trust.md als zentrale TI-2.0-Umsetzungskomponente beschrieben. 5 Nennungen. Wichtig für Entwickler, die TI-2.0-Integration implementieren.",
-      "mentionedIn": [
-        "content/concepts/Zero-Trust.md",
-        "content/infrastructure/TI-Gateway.md"
-      ],
-      "priority": 20
     },
     {
       "term": "Highspeed-Konnektor",
@@ -114,6 +102,16 @@
       "priority": 18
     },
     {
+      "term": "Medizinischer Dienst",
+      "category": "organization",
+      "reason": "Medizinischer Dienst (MD, früher MDK). Prüfdienst der gesetzlichen Krankenkassen für medizinische und pflegerische Fragen. In DRG.md als Prüfinstanz bei DRG-Abrechnungen der Krankenhäuser beschrieben; in GKV.md als Leistungsbeurteilungsinstanz erwähnt. Wichtiger Akteur für Krankenhausabrechnung und Pflegeeinstufung.",
+      "mentionedIn": [
+        "content/concepts/DRG.md",
+        "content/concepts/GKV.md"
+      ],
+      "priority": 18
+    },
+    {
       "term": "BSI C5",
       "category": "standards",
       "reason": "BSI Cloud Computing Compliance Criteria Catalogue. In DigiG.md als Pflichtzertifizierung für Cloud-Dienstleister im Gesundheitswesen nach § 393 SGB V erwähnt. Voraussetzung für die Nutzung von Cloud-Diensten in der TI und bei ePA-Anbietern.",
@@ -121,6 +119,16 @@
         "content/standards/DigiG.md"
       ],
       "priority": 17
+    },
+    {
+      "term": "gRPC",
+      "category": "technologies",
+      "reason": "Google Remote Procedure Call. Modernes API-Protokoll, das SOAP in TI 2.0 für neue Dienste ersetzt. In Konnektoren.md als Protokoll der TI-Gateway-Schnittstelle und in TI-Gateway.md als Transportprotokoll für ZETA-basierte Dienste beschrieben. Relevant für Entwickler, die TI-2.0-Integrationen implementieren.",
+      "mentionedIn": [
+        "content/infrastructure/Konnektoren.md",
+        "content/infrastructure/TI-Gateway.md"
+      ],
+      "priority": 16
     },
     {
       "term": "Bundesärztekammer",
@@ -133,16 +141,6 @@
       "priority": 16
     },
     {
-      "term": "BDSG",
-      "category": "standards",
-      "reason": "Bundesdatenschutzgesetz. Mit [[BDSG]] wiki-link in GDNG.md verlinkt (einzige direkte Wiki-Verlinkung). Außerdem in SGB-V.md als Ergänzung der SGB-V-Datenschutzregelungen erwähnt. Nationales Datenschutzrecht, das die DSGVO im deutschen Gesundheitskontext ergänzt.",
-      "mentionedIn": [
-        "content/standards/GDNG.md",
-        "content/standards/SGB-V.md"
-      ],
-      "priority": 15
-    },
-    {
       "term": "IVDR",
       "category": "standards",
       "reason": "In-vitro-Diagnostika-Verordnung (EU) 2017/746. Schwesternverordnung zur MDR für Labordiagnostika und Testsysteme. In MDR.md als parallele EU-Regulierung erwähnt. Relevant für DEMIS-Labormeldungen und DiGA im Laborkontext.",
@@ -150,6 +148,16 @@
         "content/standards/MDR.md"
       ],
       "priority": 15
+    },
+    {
+      "term": "PEPP",
+      "category": "concepts",
+      "reason": "Pauschalierendes Entgeltsystem Psychiatrie und Psychosomatik. Parallelsystem zum G-DRG für psychiatrische und psychosomatische Krankenhäuser. In DRG.md als eigenständiges Vergütungssystem für psychiatrische Einrichtungen erwähnt. Relevant für KIS-Implementierungen in psychiatrischen Kliniken.",
+      "mentionedIn": [
+        "content/concepts/DRG.md",
+        "content/infrastructure/KIS.md"
+      ],
+      "priority": 14
     },
     {
       "term": "DVKA",
@@ -177,6 +185,15 @@
       "mentionedIn": [
         "content/infrastructure/PVS.md",
         "content/organization/KBV.md"
+      ],
+      "priority": 12
+    },
+    {
+      "term": "GDAG",
+      "category": "standards",
+      "reason": "Gesundheits-Digitalagentur-Gesetz. Geplantes Gesetz zur Umwandlung der gematik in eine Gesundheits-Digitalagentur mit erweitertem Mandat. In gematik.md als gescheiterte Reforminitiative 2024/2025 erwähnt. Relevant für das Verständnis der gematik-Governance und der laufenden Diskussion über die institutionelle Zukunft der TI-Steuerung.",
+      "mentionedIn": [
+        "content/organization/gematik.md"
       ],
       "priority": 12
     },
@@ -325,7 +342,12 @@
     "E-Health-Gesetz",
     "PoPP",
     "CardLink",
-    "NCPeH"
+    "NCPeH",
+    "BDSG",
+    "VPN-Zugangsdienst",
+    "EHDS",
+    "ÖGD",
+    "ZETA"
   ],
   "lastRun": "2026-03-18"
 }

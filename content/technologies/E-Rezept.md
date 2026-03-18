@@ -2,7 +2,7 @@
 title: E-Rezept
 audience: [technical, non-technical]
 tags: [anwendung, e-rezept, verordnung]
-aliases: [Elektronisches Rezept, eRezept, E-Rezept-Fachdienst]
+aliases: [Elektronisches Rezept, eRezept]
 ---
 
 # E-Rezept
@@ -32,16 +32,15 @@ Das E-Rezept wird digital erstellt, signiert und kann auf drei Wegen eingelöst 
 - Selbstzahler-Rezepte
 - Zytostatika-Zuweisungen an Apotheken
 - Rezepte für Privatversicherte
-- [[DiGA]]-Verordnungen (Digitale Gesundheitsanwendungen, seit Januar 2026)
+- [[DiGA]]-Verordnungen (Digitale Gesundheitsanwendungen, seit Oktober 2025)
 
 ### Was kommt noch?
 - E-Rezept-Anforderung und Übermittlung via [[KIM]]
-- T-Rezepte (teratogene Stoffe): Spezifikation seit August 2025 veröffentlicht, Einführung 2026 geplant
-- Betäubungsmittel-Rezepte (BtM): Pilotprojekt frühestens Q4/2026, verpflichtende Einführung voraussichtlich 2027
+- T-Rezepte (teratogene Stoffe, z.B. Lenalidomid): Spezifikation seit August 2025 veröffentlicht, Einführung 2026 geplant
+- Hilfsmittelverordnungen (Orthesen, Rollstühle etc.) und häusliche Krankenpflege: Pflicht ab 1. Juli 2026
+- Heilmittelverordnungen (eVO, Physiotherapie, Ergotherapie, Logopädie): Pilotprojekte 2026 und 2027, Pflicht ab 2028
+- E-BtM-Rezept (Betäubungsmittel): Pilotstart frühestens Q4/2026, verpflichtende Einführung voraussichtlich 2027
 - Grenzüberschreitende Einlösung in der EU
-- Häusliche Krankenpflege und außerklinische Intensivpflege: Pflicht ab 1. Juli 2026
-- Hilfsmittelverordnungen (Orthesen, Rollstühle etc.): Pflicht ab 1. Juli 2026
-- Heilmittelverordnungen (Physiotherapie, Ergotherapie, Logopädie): Pflicht ab 1. Januar 2027
 
 ## Architektur
 

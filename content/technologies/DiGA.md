@@ -65,7 +65,7 @@ Seit 2022 gibt es auch [[DiPA|Digitale Pflegeanwendungen (DiPA)]], die analog zu
 ## Verknüpfungen
 
 - [[ePA]] (DiGA können Daten in die Patientenakte schreiben)
-- [[E-Rezept]] (DiGA-Verordnungen per E-Rezept geplant)
+- [[E-Rezept]] (DiGA-Verordnungen per E-Rezept seit Oktober 2025 möglich)
 - [[TI-Messenger]] (Zugang für Versicherte über DiGA-Apps vorgesehen)
 - [[FHIR]] (Datenformat für DiGA-Interoperabilität, MIO DiGA Toolkit)
 - [[Telematikinfrastruktur]] (Rahmeninfrastruktur, in die DiGA zunehmend integriert werden)

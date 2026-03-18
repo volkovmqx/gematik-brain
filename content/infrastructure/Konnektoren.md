@@ -66,7 +66,7 @@ Seit 1. Januar 2026 ist ECC 256 (Elliptic Curve Cryptography) für alle Konnekto
 
 - **IPv4**: Standard-MTU 1500 Byte; der VPN-Overhead reduziert die effektive Nutzlast leicht
 - **IPv6**: Dual-Stack-Lite mit MTU 1400 Byte; ermöglicht parallelen Betrieb beider Protokollversionen
-- Die VPN-Verbindung läuft zu einem der über 19 zugelassenen VPN-Zugangsdienstanbieter
+- Die VPN-Verbindung läuft zu einem der über 19 zugelassenen [[VPN-Zugangsdienst|VPN-Zugangsdienstanbieter]]
 
 ### Highspeed-Konnektor (HSK) und HSM-B
 
@@ -79,7 +79,7 @@ Im März 2026 startete die [[gematik]] einen Friendly-User-Test für das **HSM-B
 Mit der TI 2.0 wird der Hardware-Konnektor schrittweise durch das **[[TI-Gateway]]** ersetzt:
 
 - Virtuelle Konnektor-Funktionalität (vKON) als Cloud-Service
-- Eingebauter VPN-Zugangsdienst
+- Eingebauter [[VPN-Zugangsdienst]]
 - Unterstützung bestehender Primärsystem-Schnittstellen
 - [[mTLS]]-Konfiguration im Primärsystem erforderlich
 - Ziel: Weniger Hardware, geringere Kosten, einfachere Wartung

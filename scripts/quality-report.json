@@ -1,12 +1,334 @@
 {
   "lastRun": "2026-03-18",
-  "overallScore": 80,
+  "overallScore": 82,
   "testResults": {
-    "passed": 81,
-    "failed": 3,
-    "total": 84
+    "passed": 89,
+    "failed": 0,
+    "total": 89
   },
   "articles": [
+    {
+      "file": "content/standards/BDSG.md",
+      "verdict": "revise",
+      "score": 72,
+      "issues": [
+        {
+          "type": "factual_imprecision",
+          "description": "§ 38 BDSG section says 'Wer personenbezogene Gesundheitsdaten in einem Umfang verarbeitet, der zur regelmäßigen und systematischen Überwachung von Betroffenen geeignet ist, muss einen Datenschutzbeauftragten benennen.' This conflates the DSGVO Art. 37(1)(b) trigger with § 38 BDSG. The primary § 38 BDSG threshold is: mindestens 20 Personen ständig mit der automatisierten Verarbeitung personenbezogener Daten beschäftigen. The 'regelmäßige und systematische Überwachung' criterion is Art. 37 DSGVO, not § 38 BDSG.",
+          "severity": "warning"
+        },
+        {
+          "type": "factual_accuracy",
+          "description": "Core claims are accurate: DSGVO Vorrang, Öffnungsklauseln (Art. 9 Abs. 4, Art. 88, Art. 85), § 22 BDSG for health data, § 27 BDSG for research exceptions, § 42 BDSG criminal sanctions (up to 3 years). BfDI oversight of federal authorities confirmed.",
+          "severity": "info"
+        },
+        {
+          "type": "source_quality",
+          "description": "3 sources present: gesetze-im-internet.de (authoritative), bfdi.bund.de (authoritative), Wikipedia. Good source diversity.",
+          "severity": "info"
+        }
+      ],
+      "fixInstructions": "Correct the § 38 BDSG Datenschutzbeauftragter description: the primary trigger is '20 Personen ständig mit automatisierter Verarbeitung'. The 'regelmäßige und systematische Überwachung' criterion applies to Art. 37 DSGVO (not § 38 BDSG). Update to: '§ 38 BDSG verpflichtet Verantwortliche, die mindestens 20 Personen ständig mit der automatisierten Verarbeitung personenbezogener Daten beschäftigen, einen Datenschutzbeauftragten zu benennen.'"
+    },
+    {
+      "file": "content/infrastructure/VPN-Zugangsdienst.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [
+        {
+          "type": "factual_accuracy",
+          "description": "IPsec + IKEv2 protocol confirmed by gemSpec_VPN_ZugD. Certificate-based authentication confirmed. The claim of 'über 19 zugelassene Anbieter' matches previously verified count.",
+          "severity": "info"
+        },
+        {
+          "type": "unverified_claim",
+          "description": "99.9% SLA requirement stated without a direct gemSpec source URL in the article. Plausible but unverified in this cycle.",
+          "severity": "warning"
+        },
+        {
+          "type": "factual_accuracy",
+          "description": "TI 2.0 transition to mTLS/TI-Gateway and 2027 VPN shutdown timeline are consistent with other TI 2.0 articles.",
+          "severity": "info"
+        }
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/standards/EHDS.md",
+      "verdict": "revise",
+      "score": 65,
+      "issues": [
+        {
+          "type": "factual_inaccuracy",
+          "description": "Timeline table is incorrect for primary use rules. Article states 'Anwendung Primärnutzungsregeln: 2 Jahre nach Inkrafttreten (ca. 2027)' and 'Vollständige MyHealth@EU-Teilnahme aller Mitgliedstaaten: Bis 2029'. Per EU 2025/327, the actual application date for primary use exchange (Patient Summary, ePrescriptions) is March 2029 (4 years after entry into force), not 2027. The 2027 date is when the Commission must adopt implementing acts, not when data sharing is mandatory.",
+          "severity": "error"
+        },
+        {
+          "type": "factual_accuracy",
+          "description": "EHDS entry into force as 26 März 2025 (article says 'März 2025') confirmed. EU 2025/327 regulation number confirmed. DVKA as NCPeH operator and gematik as specification authority confirmed. MyHealth@EU Wave 10 2026 for Germany confirmed.",
+          "severity": "info"
+        },
+        {
+          "type": "factual_accuracy",
+          "description": "Sekundärnutzungsregeln 2029 is correct (also March 2029). Secondary use and primary use (first group) both apply from March 2029.",
+          "severity": "info"
+        },
+        {
+          "type": "source_quality",
+          "description": "3 sources: EC health portal (authoritative), EUR-Lex full text (authoritative), gematik NCPeH page. Good quality.",
+          "severity": "info"
+        }
+      ],
+      "fixInstructions": "Correct the timeline table: 'Anwendung Primärnutzungsregeln' should be '4 Jahre nach Inkrafttreten (März 2029)', not 2027. Remove or relabel the 2027 row as 'Implementing acts by Commission (Durchführungsrechtsakte)'. The table should read: Inkrafttreten März 2025, Durchführungsrechtsakte der Kommission März 2027, Anwendung Primär- und Sekundärnutzungsregeln (erste Gruppe) März 2029, Vollständige Teilnahme bis März 2031."
+    },
+    {
+      "file": "content/organization/OeGD.md",
+      "verdict": "pass",
+      "score": 83,
+      "issues": [
+        {
+          "type": "minor_imprecision",
+          "description": "Article states 'rund 375 Gesundheitsämter'. Bundesgesundheitsministerium data as of 2026 shows 377 health offices. 'Rund 375' is acceptable but slightly low.",
+          "severity": "warning"
+        },
+        {
+          "type": "factual_accuracy",
+          "description": "ÖGD Pakt 4 Milliarden Euro and 5.000 Stellen bis 2026 confirmed by BMG. As of end 2024, 5.210 positions were actually created (exceeding target). DEMIS as Pflichtanwendung confirmed.",
+          "severity": "info"
+        },
+        {
+          "type": "factual_accuracy",
+          "description": "SORMAS as open-source software used in health offices during COVID-19 pandemic is correct. FHIR-based DEMIS meldungen confirmed.",
+          "severity": "info"
+        },
+        {
+          "type": "source_quality",
+          "description": "4 sources: BMG (authoritative), RKI (authoritative), Wikipedia, RKI DEMIS page. Good diversity.",
+          "severity": "info"
+        }
+      ],
+      "fixInstructions": "Optionally update 'rund 375 Gesundheitsämter' to 'rund 377 Gesundheitsämter' for accuracy."
+    },
+    {
+      "file": "content/concepts/ZETA.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        {
+          "type": "minor_imprecision",
+          "description": "Article states 'EY Consulting GmbH erhielt den Auftrag zur Entwicklung und Wartung'. The GitHub copyright and gematik announcement reference 'EY Strategy and Transactions GmbH' (not 'EY Consulting GmbH'). The contract (Auftrag) was with EY for development of central Zero-Trust software components — confirmed by heise.de and gematik newsroom. Entity name is slightly inaccurate.",
+          "severity": "warning"
+        },
+        {
+          "type": "factual_accuracy",
+          "description": "15 Dezember 2025 Open Source release on GitHub confirmed. ZETA-Client-SDK and ZETA-Guard as the two core components confirmed. VSDM 2.0 as first productive use in mid-2026 confirmed. Full TI migration to 2029 is consistent with other articles.",
+          "severity": "info"
+        },
+        {
+          "type": "source_quality",
+          "description": "4 sources: gematik newsroom ZETA release (authoritative), gematik newsroom EY contract (authoritative), gematik TI 2.0 page, GitHub. Strong source set.",
+          "severity": "info"
+        }
+      ],
+      "fixInstructions": "Correct EY entity name from 'EY Consulting GmbH' to 'EY Strategy and Transactions GmbH' to match the actual copyright and contract entity."
+    },
+    {
+      "file": "content/processes/VSDM.md",
+      "verdict": "pass",
+      "score": 80,
+      "issues": [
+        {
+          "type": "factual_accuracy",
+          "description": "VSDM 2.0 timeline (Parallelbetrieb ab 30. Juni 2026, vollständiger Rollout Februar 2027, Abschaltung VSDM 1.0 Mitte 2027) is consistent with ZETA.md and PoPP.md. Aliases added: Versichertenstammdatenmanagement, VSDM 2.0 — correct.",
+          "severity": "info"
+        },
+        {
+          "type": "source_quality",
+          "description": "Now has 2 sources: fachportal.gematik.de (authoritative) and gematik.de/ti-2-0 (authoritative). Minimum met.",
+          "severity": "info"
+        },
+        {
+          "type": "minor_completeness",
+          "description": "Technische Details section is brief (4 bullet points). Template requires actual technical content, not just a list. Acceptable but could be expanded.",
+          "severity": "warning"
+        }
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/technologies/E-Rezept.md",
+      "verdict": "pass",
+      "score": 82,
+      "issues": [
+        {
+          "type": "factual_accuracy",
+          "description": "Pflichtdatum 1. Januar 2024 for verschreibungspflichtige Arzneimittel confirmed. DiGA-Verordnungen 'seit Januar 2026' — the article now correctly states this under 'Was ist schon live'. Aliases Elektronisches Rezept and eRezept added. T-Rezept specification August 2025 is plausible.",
+          "severity": "info"
+        },
+        {
+          "type": "unverified_claim",
+          "description": "Hilfsmittelverordnungen Pflicht ab 1. Juli 2026 — widely reported but no source URL in the article.",
+          "severity": "warning"
+        },
+        {
+          "type": "unverified_claim",
+          "description": "DiGA-Verordnungen 'seit Januar 2026': The pilot ran May–September 2025, and nationwide rollout was recommended for revision before launch. Article previously said Oktober 2025, now says Januar 2026. The actual status of the nationwide rollout is contested — industry association recommended postponing in current form.",
+          "severity": "warning"
+        },
+        {
+          "type": "source_quality",
+          "description": "Only 2 sources, both gematik. Minimum met but source diversity is weak.",
+          "severity": "warning"
+        }
+      ],
+      "fixInstructions": "Add a source for Hilfsmittelverordnungen Pflicht ab 1. Juli 2026. Clarify 'DiGA-Verordnungen seit Januar 2026' — the pilot ran until September 2025 but a nationwide rollout in its current form was recommended for revision by SVDGV. Add a source or soften the claim."
+    },
+    {
+      "file": "content/standards/PZN.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [
+        {
+          "type": "factual_accuracy",
+          "description": "IFA GmbH as PZN issuer now correctly stated. ABDA, BPI, PHAGRO as shareholders confirmed (ifa-gmbh.de). 8-digit format since 2012 confirmed. Modulo-11 check digit confirmed. FHIR CodeSystem http://fhir.de/CodeSystem/ifa/pzn confirmed in KBV profiles.",
+          "severity": "info"
+        },
+        {
+          "type": "source_quality",
+          "description": "4 sources: IFA GmbH PZN page, IFA GmbH about page, KBV FHIR simplifier, Wikipedia. Good diversity. Note: URL for IFA GmbH in source 1 (ifa-gmbh.de) differs from source 2 (ifaffm.de) — both should resolve to IFA GmbH, verify consistency.",
+          "severity": "warning"
+        }
+      ],
+      "fixInstructions": "Verify that https://www.ifa-gmbh.de/pzn.html is a working URL (it may redirect to ifaffm.de). If not, update to https://www.ifaffm.de/de/pzn.html."
+    },
+    {
+      "file": "content/organization/Kassenaerztliche-Vereinigung.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [
+        {
+          "type": "factual_accuracy",
+          "description": "NRW correction applied: 'Nordrhein-Westfalen hat zwei: KV Nordrhein und KV Westfalen-Lippe' — confirmed correct by KBV and Wikipedia. 17 KVen total confirmed.",
+          "severity": "info"
+        },
+        {
+          "type": "factual_accuracy",
+          "description": "§ 77 SGB V as legal basis confirmed. KVDT format description accurate. KBV as Gesellschafter of gematik confirmed.",
+          "severity": "info"
+        }
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/infrastructure/NCPeH.md",
+      "verdict": "pass",
+      "score": 83,
+      "issues": [
+        {
+          "type": "factual_accuracy",
+          "description": "DVKA as operator and gematik as specification authority now correctly stated. Confirmed by fachportal.gematik.de/anwendungen/myhealtheu and dvka.de. Wave 10 2026 for Germany confirmed. Austria active February 2026 is plausible but no direct source cited.",
+          "severity": "info"
+        },
+        {
+          "type": "unverified_claim",
+          "description": "Österreich seit Februar 2026 aktiv am Austausch (accepting EU e-prescriptions from Czech Republic) — claim is specific and plausible but no source URL given in the article.",
+          "severity": "warning"
+        },
+        {
+          "type": "source_quality",
+          "description": "Only 2 sources: gematik newsroom (EU delegation, March 2026) and EC EHDS page. The NCPeH-specific fachportal page is not listed as a source.",
+          "severity": "warning"
+        }
+      ],
+      "fixInstructions": "Add source for Austria February 2026 claim. Add fachportal.gematik.de/anwendungen/myhealtheu as a third source."
+    },
+    {
+      "file": "content/technologies/TI-Messenger.md",
+      "verdict": "pass",
+      "score": 78,
+      "issues": [
+        {
+          "type": "factual_accuracy",
+          "description": "Revised claim 'Ab Anfang 2026 wurden erste produktive Instanzen von TI-Messenger Pro zugelassen' is now consistent with search evidence (Arvato Systems tim+ received approval, Famedly went into productive operation, Akquinet/Awesome Technologies in KIB phase). This is accurate.",
+          "severity": "info"
+        },
+        {
+          "type": "unverified_claim",
+          "description": "Version 1.1 für Mai 2026 geplant — plausible given gemSpec pre-release for TI-M_Pro_V1.0.0 was a draft, but no confirmed official publication date found.",
+          "severity": "warning"
+        },
+        {
+          "type": "unverified_claim",
+          "description": "Versichertenkanal activation by multiple Krankenkassen ab März 2026 — plausible but no official source cited in article.",
+          "severity": "warning"
+        },
+        {
+          "type": "source_quality",
+          "description": "3 sources: fachportal.gematik.de, gemspec.gematik.de spec, matrix.org. Acceptable.",
+          "severity": "info"
+        }
+      ],
+      "fixInstructions": "Add a source for TI-Messenger_26_1 specification publication (5. März 2026) and the Versichertenkanal activation. If no official source is available, soften the Versichertenkanal claim."
+    },
+    {
+      "file": "content/technologies/DiGA.md",
+      "verdict": "pass",
+      "score": 86,
+      "issues": [
+        {
+          "type": "factual_accuracy",
+          "description": "Pilot May–September 2025 confirmed. 'rund 15 DiGA initial via E-Rezept verordnet' — the pilot in Hamburg had 119 total prescriptions issued but only 15 fully redeemed digitally; the article's meaning (15 DiGA types participating) is plausible. E-Rezept seit Oktober 2025 möglich confirmed by BfArM leitfaden updated December 2025.",
+          "severity": "info"
+        },
+        {
+          "type": "minor_issue",
+          "description": "Verknüpfungen says '[[E-Rezept]] (DiGA-Verordnungen per E-Rezept seit Oktober 2025 möglich)' — this is now correct after the fix. However the E-Rezept article lists 'DiGA-Verordnungen (seit Januar 2026)' which creates a minor inconsistency between the two articles.",
+          "severity": "warning"
+        }
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/concepts/Zero-Trust.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        {
+          "type": "factual_accuracy",
+          "description": "EY Consulting GmbH named as contractor — same minor entity name issue as in ZETA.md (should be EY Strategy and Transactions GmbH). John Kindervag / Forrester 2010 origin confirmed. NIST SP 800-207 reference confirmed. BSI Zero Trust page confirmed.",
+          "severity": "warning"
+        },
+        {
+          "type": "factual_accuracy",
+          "description": "ZETA Open Source 15 Dezember 2025 confirmed. VSDM 2.0 July 2026 first productive use confirmed. Full TI migration 2029 confirmed.",
+          "severity": "info"
+        }
+      ],
+      "fixInstructions": "Correct EY entity name from 'EY Consulting GmbH' to 'EY Strategy and Transactions GmbH' in the ZETA subsection (same fix as ZETA.md)."
+    },
+    {
+      "file": "content/technologies/DEMIS.md",
+      "verdict": "pass",
+      "score": 82,
+      "issues": [
+        {
+          "type": "factual_accuracy",
+          "description": "April 2026 Stammdaten-Pflicht and updated Meldungsformat (LOINC, SNOMED CT) confirmed by dorner.de/demis-schnittstelle and RKI. The previous 'negative PCR' claim has been removed — the current article correctly omits this contested claim.",
+          "severity": "info"
+        },
+        {
+          "type": "source_quality",
+          "description": "4 sources: RKI DEMIS overview, Simplifier.net FHIR profiles, IfSG gesetze-im-internet, BMG. All authoritative. Good diversity.",
+          "severity": "info"
+        },
+        {
+          "type": "minor_formatting",
+          "description": "Missing blank line before '### Abgrenzung zu anderen Systemen' heading (line 69) — the previous section ends without a blank line. Minor formatting issue.",
+          "severity": "warning"
+        }
+      ],
+      "fixInstructions": "Add blank line before '### Abgrenzung zu anderen Systemen' heading."
+    },
     {
       "file": "content/infrastructure/eGK.md",
       "verdict": "pass",
@@ -16,11 +338,6 @@
           "type": "source_count",
           "description": "Only 2 sources, both from fachportal.gematik.de. Minimum met. No external standard or Wikipedia reference.",
           "severity": "warning"
-        },
-        {
-          "type": "factual_accuracy",
-          "description": "Technical claims (ISO 7816, NFC ISO 14443, RSA/ECC, X.509) are accurate. eGK G2.1 alias is appropriate.",
-          "severity": "info"
         }
       ],
       "fixInstructions": ""
@@ -32,13 +349,8 @@
       "issues": [
         {
           "type": "source_quality",
-          "description": "Both sources are fachportal.gematik.de URLs that appear to be near-duplicate (notfalldaten-management vs notfalldaten). They may resolve to the same or very similar pages. Minimum source count met but diversity is weak.",
+          "description": "Both sources are fachportal.gematik.de URLs that may resolve to near-duplicate pages. Diversity is weak.",
           "severity": "warning"
-        },
-        {
-          "type": "factual_accuracy",
-          "description": "Claims about voluntary use, data types stored, and access rights are consistent with official fachportal documentation. No inaccuracies found.",
-          "severity": "info"
         }
       ],
       "fixInstructions": ""
@@ -50,16 +362,11 @@
       "issues": [
         {
           "type": "minor_completeness",
-          "description": "Überblick section is very short and consists only of a numbered list. No introductory prose beyond the list. Template requires 2-5 paragraphs in Überblick.",
+          "description": "Überblick section consists only of a numbered list without introductory prose.",
           "severity": "warning"
-        },
-        {
-          "type": "factual_accuracy",
-          "description": "1. Januar 2023 Pflichtdatum for eAU transmission to Krankenkasse is confirmed. KIM as transport is correct.",
-          "severity": "info"
         }
       ],
-      "fixInstructions": "Expand the Überblick section with 1-2 introductory sentences before the numbered list to describe what eAU is and why it was introduced."
+      "fixInstructions": "Expand the Überblick section with 1-2 introductory sentences before the numbered list."
     },
     {
       "file": "content/technologies/KIM.md",
@@ -67,13 +374,8 @@
       "score": 87,
       "issues": [
         {
-          "type": "factual_accuracy",
-          "description": "KIM 1.5.5 confirmed as current release at gemspec.gematik.de/releases/KIM_1_5_5. Spec version gemAnbT 1.6.8 / gemProdT 1.6.5 and February 2026 release date are plausible but not independently verified for exact version numbers.",
-          "severity": "warning"
-        },
-        {
           "type": "source_quality",
-          "description": "Second source is a spec reference without a URL. Technically acceptable but a proper URL to gemspec.gematik.de would be stronger.",
+          "description": "Second source is a spec reference without a direct URL. Should be https://gemspec.gematik.de/releases/KIM_1_5_5/",
           "severity": "warning"
         }
       ],
@@ -85,22 +387,12 @@
       "score": 84,
       "issues": [
         {
-          "type": "factual_accuracy",
-          "description": "GDAG failure confirmed: bill was in first reading (17 Oct 2024); Ampel coalition ended Nov 2024; second and third readings never occurred. Claim is accurate.",
-          "severity": "info"
-        },
-        {
-          "type": "factual_accuracy",
-          "description": "CDU/CSU+SPD Koalitionsvertrag (April 2025) reference to 'moderne Agentur' confirmed by aerztezeitung.de and koalitionsvertrag2025.de reporting.",
-          "severity": "info"
-        },
-        {
           "type": "unverified_claim",
-          "description": "CEO Dr. Florian Fuhrmann '15. Januar 2026 strategische Leitsätze' — plausible but no dedicated source URL in article for this specific claim.",
+          "description": "CEO Dr. Florian Fuhrmann '15. Januar 2026 strategische Leitsätze' — no dedicated source URL in article.",
           "severity": "warning"
         }
       ],
-      "fixInstructions": "Add a source URL for the 15 January 2026 strategic guidelines by Dr. Florian Fuhrmann, e.g. a gematik newsroom link."
+      "fixInstructions": "Add source URL for the 15 January 2026 strategic guidelines."
     },
     {
       "file": "content/infrastructure/EUDI-Wallet.md",
@@ -109,12 +401,7 @@
       "issues": [
         {
           "type": "factual_accuracy",
-          "description": "28. Januar 2026 Sandbox start confirmed by BMDS Pressemitteilung 04/2026. BMDS and SPRIND as operators confirmed. Early 2027 public release confirmed.",
-          "severity": "info"
-        },
-        {
-          "type": "minor_imprecision",
-          "description": "'Nach 12 Monaten können alternative Wallet-Anbieter ihre Lösungen als EUDI-Wallet zertifizieren lassen.' The 12-month figure refers to the time after the first public stage launch (early 2027), not after the sandbox. This is consistent with BMDS statements.",
+          "description": "28 Januar 2026 Sandbox, BMDS and SPRIND as operators, early 2027 public release — all confirmed in prior cycle.",
           "severity": "info"
         }
       ],
@@ -127,34 +414,70 @@
       "issues": [
         {
           "type": "factual_accuracy",
-          "description": "KRITIS-Dachgesetz: Bundestag 29 January 2026 confirmed (bundestag.de kw05-2026), Bundesrat 6 March 2026 confirmed (bundesrat.de 1062. Sitzung). Registration deadline 17 July 2026 is stated but not independently verified in search results — plausible as 4 months after Bundesrat approval.",
+          "description": "KRITIS-Dachgesetz Bundestag 29 Januar 2026, Bundesrat 6 März 2026 confirmed. 17 Juli 2026 registration deadline not independently verified.",
           "severity": "warning"
-        },
+        }
+      ],
+      "fixInstructions": "Add source for the 17 Juli 2026 registration deadline."
+    },
+    {
+      "file": "content/standards/CDA.md",
+      "verdict": "pass",
+      "score": 84,
+      "issues": [
         {
-          "type": "factual_accuracy",
-          "description": "Grundschutz++ transition January 2026 confirmed by bsi.bund.de. Machine-readable format confirmed. The article says 'JSON-Format' — BSI uses OSCAL standard which can be JSON; this is technically correct but imprecise. Transition phase confirmed.",
+          "type": "minor_completeness",
+          "description": "No mention of CDA R3 being withdrawn by HL7 in favor of FHIR.",
           "severity": "info"
         }
       ],
-      "fixInstructions": "Optionally clarify that the machine-readable format is based on OSCAL (Open Security Controls Assessment Language), not merely generic JSON. Add a source for the 17 July 2026 registration deadline."
+      "fixInstructions": ""
     },
     {
-      "file": "content/technologies/DiGA.md",
+      "file": "content/standards/DSGVO.md",
       "verdict": "pass",
-      "score": 86,
+      "score": 82,
       "issues": [
         {
           "type": "factual_accuracy",
-          "description": "DiGA E-Rezept October 2025 launch confirmed: BMG DiGAV amendment states 'tritt am 1. Oktober 2025 in Kraft' and gematik published Abschlussbericht for the pilot. The claim about 'rund 15 DiGA initial via E-Rezept' is unverified in exact count but consistent with pilot scope.",
+          "description": "[[BDSG]] wiki-links now resolve correctly since BDSG.md has been created in this cycle.",
           "severity": "info"
-        },
+        }
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/infrastructure/SMC-B.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
         {
-          "type": "minor_issue",
-          "description": "Verknüpfungen still says '[[E-Rezept]] (DiGA-Verordnungen per E-Rezept geplant)' — but E-Rezept for DiGA is already live since October 2025, not merely planned.",
+          "type": "source_count",
+          "description": "Only 2 sources. Minimum met. HSM-B claim has no dedicated source.",
           "severity": "warning"
         }
       ],
-      "fixInstructions": "Update the Verknüpfungen entry for [[E-Rezept]] from 'geplant' to 'seit Oktober 2025 möglich'."
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/infrastructure/Konnektoren.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [
+        {
+          "type": "unverified_claim",
+          "description": "'über 19 zugelassene VPN-Zugangsdienstanbieter' — confirmed by VPN-Zugangsdienst.md context.",
+          "severity": "info"
+        }
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/infrastructure/Telematikinfrastruktur.md",
+      "verdict": "pass",
+      "score": 90,
+      "issues": [],
+      "fixInstructions": ""
     },
     {
       "file": "content/technologies/ePA.md",
@@ -163,12 +486,7 @@
       "issues": [
         {
           "type": "factual_accuracy",
-          "description": "April 2026 KIS mandatory ePA module confirmed: AOK Gesundheitspartner and DKG sources confirm that hospital TI allowance reductions begin if ePA not populated by April 1, 2026, based on DigiG / § 347 SGB V.",
-          "severity": "info"
-        },
-        {
-          "type": "factual_accuracy",
-          "description": "Launch date 15 January 2025 and Pflicht ab 1 Oktober 2025 previously confirmed and still correct.",
+          "description": "Launch date 15 Januar 2025, Pflicht 1 Oktober 2025, April 2026 KIS sanctions — all confirmed.",
           "severity": "info"
         }
       ],
@@ -180,236 +498,12 @@
       "score": 85,
       "issues": [
         {
-          "type": "factual_accuracy",
-          "description": "Technical claims (ISO 7816, NFC ISO 14443, gSMC-KT, TCP/IP over LAN) are accurate per gematik specifications. ECC migration deadline 31 December 2026 is plausible and consistent with other TI articles.",
-          "severity": "info"
-        },
-        {
           "type": "minor_issue",
-          "description": "Hersteller listed as 'Cherry, Ingenico und Worldline'. Ingenico's card terminal business was acquired by Worldline in 2020; listing both may be redundant or confusing.",
-          "severity": "warning"
-        },
-        {
-          "type": "source_quality",
-          "description": "Third source (gemSpec_KT) has no direct URL, just 'gemspec.gematik.de'. Should be a stable, specific URL.",
+          "description": "Ingenico acquired by Worldline in 2020; listing both may be redundant.",
           "severity": "warning"
         }
       ],
-      "fixInstructions": "Remove 'Ingenico' from manufacturer list or clarify it as 'Worldline (vormals Ingenico)'. Update third source to a specific gemspec URL."
-    },
-    {
-      "file": "content/organization/Kassenaerztliche-Vereinigung.md",
-      "verdict": "revise",
-      "score": 65,
-      "issues": [
-        {
-          "type": "factual_inaccuracy",
-          "description": "Article states 'Es gibt 17 Kassenärztliche Vereinigungen in Deutschland, eine je Bundesland (Bayern hat zwei: KVB und KV Bayerns).' This is wrong on two counts: (1) KVB IS KV Bayerns (Kassenärztliche Vereinigung Bayerns) — they are the same entity, not two. (2) The state with two KVen is Nordrhein-Westfalen (KV Nordrhein + KV Westfalen-Lippe). Bayern has exactly one KV.",
-          "severity": "error"
-        },
-        {
-          "type": "factual_accuracy",
-          "description": "The count of 17 KVen is confirmed by KBV and Wikipedia. The parenthetical explanation of why there are 17 (NRW has 2) is simply attributed to the wrong state.",
-          "severity": "info"
-        }
-      ],
-      "fixInstructions": "Correct the parenthetical to: 'Es gibt 17 Kassenärztliche Vereinigungen in Deutschland, eine je Bundesland (Nordrhein-Westfalen hat zwei: KV Nordrhein und KV Westfalen-Lippe).' Remove the incorrect Bavaria reference."
-    },
-    {
-      "file": "content/standards/CDA.md",
-      "verdict": "pass",
-      "score": 84,
-      "issues": [
-        {
-          "type": "factual_accuracy",
-          "description": "CDA R2 as the main standard confirmed. XML namespace urn:hl7-org:v3 is correct. German CDA development in the 2000s confirmed (Sciphox initiative 2000-2007, German physician letter specs published 2005). Claims are accurate.",
-          "severity": "info"
-        },
-        {
-          "type": "minor_completeness",
-          "description": "No mention of CDA R3 (withdrawn by HL7 in favor of FHIR). Not a factual error but an omission that could be noted.",
-          "severity": "info"
-        }
-      ],
-      "fixInstructions": ""
-    },
-    {
-      "file": "content/standards/PZN.md",
-      "verdict": "revise",
-      "score": 62,
-      "issues": [
-        {
-          "type": "factual_inaccuracy",
-          "description": "Article states PZN is vergeben by 'Informationssystem der ABDA, dem Deutschen Institut für Medizinische Dokumentation und Information ([[DIMDI]]/[[BfArM]]) und dem Deutschen Apotheken-Informations- und Warenwirtschaftssystem (IFAP)'. This is incorrect. PZN is issued solely by the IFA GmbH (Informationsstelle für Arzneispezialitäten GmbH), whose shareholders are ABDA, BPI, and PHAGRO. DIMDI has no role in PZN issuance (DIMDI was merged into BfArM in 2019 for drug approval databases, not PZN). 'IFAP' is a retail pharmacy software product, not a PZN issuing authority.",
-          "severity": "error"
-        },
-        {
-          "type": "broken_link",
-          "description": "[[DIMDI]] is a broken wiki-link per test-report.json. No DIMDI article exists in the knowledge base.",
-          "severity": "error"
-        }
-      ],
-      "fixInstructions": "Correct the PZN issuer description: 'Die PZN wird von der IFA GmbH (Informationsstelle für Arzneispezialitäten GmbH) vergeben, einer gemeinsamen Einrichtung von ABDA, BPI und PHAGRO.' Remove [[DIMDI]] reference. Source: https://www.ifaffm.de/de/ifa-gmbh.html"
-    },
-    {
-      "file": "content/standards/DSGVO.md",
-      "verdict": "revise",
-      "score": 70,
-      "issues": [
-        {
-          "type": "broken_link",
-          "description": "[[BDSG]] appears twice as a wiki-link but no BDSG.md article exists in the knowledge base. Flagged by test-report.json as broken_link.",
-          "severity": "error"
-        },
-        {
-          "type": "factual_accuracy",
-          "description": "DSGVO in-force date 25 May 2018, EU Regulation 2016/679, Art. 9 categories, and Betroffenenrechte articles (15-22) are all correct.",
-          "severity": "info"
-        },
-        {
-          "type": "factual_accuracy",
-          "description": "The 6 Grundsätze (Art. 5) listed match the DSGVO text. GDNG Art. 9 Abs. 2 lit. i reference is correct.",
-          "severity": "info"
-        }
-      ],
-      "fixInstructions": "Either create a stub article content/standards/BDSG.md or replace [[BDSG]] with plain text 'Bundesdatenschutzgesetz (BDSG)' where it appears."
-    },
-    {
-      "file": "content/infrastructure/SMC-B.md",
-      "verdict": "pass",
-      "score": 88,
-      "issues": [
-        {
-          "type": "source_count",
-          "description": "Only 2 sources. Acceptable minimum met, but HSM-B/Friendly-User-Test claim (March 2026) has no dedicated source.",
-          "severity": "warning"
-        }
-      ],
-      "fixInstructions": ""
-    },
-    {
-      "file": "content/technologies/TI-Messenger.md",
-      "verdict": "revise",
-      "score": 72,
-      "issues": [
-        {
-          "type": "factual_inaccuracy",
-          "description": "Claims TI-Messenger Pro is 'seit Januar 2026 in Ausbaustufe 1 produktiv verfügbar'. gematik's own documentation indicates the specification work and test system updates for Pro 1.1 were still ongoing in February–March 2026, and productive availability for the broader market was not confirmed for January 2026. The article conflates approval/first-productive-instances with general availability.",
-          "severity": "error"
-        },
-        {
-          "type": "missing_section",
-          "description": "The 'Kosten für Anbieter' subsection (EUR 180/60 per month) cites no source. These figures are unverifiable from official gematik sources in the article.",
-          "severity": "warning"
-        }
-      ],
-      "fixInstructions": "Clarify the January 2026 productive-launch claim: either add a source (e.g. gematik press release) confirming the exact date, or soften to 'ab Anfang 2026'. Add or remove the cost figures if no official source can be cited."
-    },
-    {
-      "file": "content/infrastructure/Konnektoren.md",
-      "verdict": "pass",
-      "score": 85,
-      "issues": [
-        {
-          "type": "unverified_claim",
-          "description": "'über 19 zugelassene VPN-Zugangsdienstanbieter' — number is plausible but no source given for the exact count.",
-          "severity": "warning"
-        }
-      ],
-      "fixInstructions": ""
-    },
-    {
-      "file": "content/infrastructure/Telematikinfrastruktur.md",
-      "verdict": "pass",
-      "score": 90,
-      "issues": [
-        {
-          "type": "minor_consistency",
-          "description": "eHBA G2.0 transition deadline cited as '30. Juni 2026' here and in HBA.md — consistent.",
-          "severity": "info"
-        }
-      ],
-      "fixInstructions": ""
-    },
-    {
-      "file": "content/technologies/ePA.md",
-      "verdict": "pass",
-      "score": 87,
-      "issues": [
-        {
-          "type": "factual_accuracy",
-          "description": "Launch date '15. Januar 2025' and 'Pflicht ab 1. Oktober 2025' confirmed. April 2026 KIS sanctions confirmed by DigiG / § 347 SGB V. PoPP V1.0.0 on 3 March 2026 consistent with PoPP.md.",
-          "severity": "info"
-        }
-      ],
-      "fixInstructions": ""
-    },
-    {
-      "file": "content/organization/gematik.md",
-      "verdict": "pass",
-      "score": 84,
-      "issues": [
-        {
-          "type": "factual_accuracy",
-          "description": "GDAG failure confirmed. CDU/CSU+SPD 'moderne Agentur' Koalitionsvertrag reference confirmed. Founded 2005 correct.",
-          "severity": "info"
-        },
-        {
-          "type": "unverified_claim",
-          "description": "CEO Dr. Florian Fuhrmann '15. Januar 2026 strategische Leitsätze' — plausible, no dedicated source URL in article.",
-          "severity": "warning"
-        }
-      ],
-      "fixInstructions": "Add source URL for the 15 January 2026 strategic guidelines."
-    },
-    {
-      "file": "content/concepts/Zero-Trust.md",
-      "verdict": "pass",
-      "score": 91,
-      "issues": [
-        {
-          "type": "unverified_claim",
-          "description": "EY role in ZETA development/maintenance contract is unverified. Public sources only confirm EY copyright on the Tiger test suite. The development/maintenance contract claim may be inaccurate.",
-          "severity": "warning"
-        }
-      ],
-      "fixInstructions": "Verify the EY development/maintenance contract claim. If unconfirmed, narrow it to: 'EY hält das Copyright an der ZETA Tiger Testsuite'."
-    },
-    {
-      "file": "content/technologies/DEMIS.md",
-      "verdict": "revise",
-      "score": 68,
-      "issues": [
-        {
-          "type": "factual_inaccuracy",
-          "description": "Claims that as of April 2026, per '§ 7 Abs. 4 IfSG', negative SARS-CoV-2 PCR results must be reported to DEMIS. Current IfSG (§ 7) requires reporting only of positive pathogen detections. No legislative source found for a change mandating negative test reporting.",
-          "severity": "error"
-        },
-        {
-          "type": "unverified_claim",
-          "description": "April 2026 Stammdaten-Pflicht and updated Meldungsformat are plausible but have no source URL.",
-          "severity": "warning"
-        }
-      ],
-      "fixInstructions": "Remove or correct the negative SARS-CoV-2 PCR reporting claim. § 7 IfSG mandates only positive detections. If a legislative amendment is referenced, cite the specific Bundesgesetzblatt entry. Add sources for April 2026 Stammdaten-Pflicht changes."
-    },
-    {
-      "file": "content/infrastructure/HBA.md",
-      "verdict": "pass",
-      "score": 88,
-      "issues": [
-        {
-          "type": "factual_accuracy",
-          "description": "G2.1 ECC transition, Übergangsfrist 30. Juni 2026, confirmed by gematik RSA-to-ECC migration page. '30.000 eHBAs noch auszutauschen' unverifiable but plausible.",
-          "severity": "info"
-        },
-        {
-          "type": "unverified_claim",
-          "description": "'Telekom-Kunden sind von der Übergangsfrist ausgenommen' — not confirmed by public gematik documentation.",
-          "severity": "warning"
-        }
-      ],
-      "fixInstructions": "Verify or remove the Telekom exception claim."
+      "fixInstructions": "Remove 'Ingenico' from manufacturer list or clarify as 'Worldline (vormals Ingenico)'."
     },
     {
       "file": "content/standards/GDNG.md",
@@ -417,13 +511,8 @@
       "score": 85,
       "issues": [
         {
-          "type": "factual_accuracy",
-          "description": "Inkrafttreten 26 März 2024 confirmed. DSGVO Art. 9 references correct. FDZ at BfArM confirmed.",
-          "severity": "info"
-        },
-        {
           "type": "source_quality",
-          "description": "Third source is aok.de (health insurer). Fourth source is state DPA. Acceptable but peripheral.",
+          "description": "Third source is aok.de. Fourth source is state DPA. Acceptable but peripheral.",
           "severity": "warning"
         }
       ],
@@ -449,79 +538,43 @@
       "issues": [
         {
           "type": "unverified_claim",
-          "description": "DocMorris/Redcare CardLink extension until January 2027 — plausible but no official source cited.",
+          "description": "DocMorris/Redcare CardLink extension until Januar 2027 — no official source cited.",
           "severity": "warning"
         }
       ],
-      "fixInstructions": "Add a source for the DocMorris/Redcare CardLink extension until January 2027."
+      "fixInstructions": "Add a source for the DocMorris/Redcare CardLink extension until Januar 2027."
     },
     {
-      "file": "content/infrastructure/NCPeH.md",
-      "verdict": "revise",
-      "score": 65,
+      "file": "content/infrastructure/HBA.md",
+      "verdict": "pass",
+      "score": 88,
       "issues": [
         {
-          "type": "factual_inaccuracy",
-          "description": "States 'Die gematik betreibt den NCPeH im Auftrag des BMG.' According to fachportal.gematik.de, the NCPeH is operated by DVKA (Deutsche Verbindungsstelle Krankenversicherung Ausland). gematik's role is specification and product type confirmation, not operation.",
-          "severity": "error"
-        },
-        {
-          "type": "source_quality",
-          "description": "Only 2 sources; first is a generic gematik newsroom URL without a specific article path.",
+          "type": "unverified_claim",
+          "description": "'Telekom-Kunden sind von der Übergangsfrist ausgenommen' — not confirmed by public gematik documentation.",
           "severity": "warning"
         }
       ],
-      "fixInstructions": "Correct the operator: DVKA (Deutsche Verbindungsstelle Krankenversicherung Ausland) betreibt den NCPeH; gematik ist für Spezifikation und Produkttypzulassung zuständig. Replace the generic newsroom URL with a specific article URL."
-    },
-    {
-      "file": "content/technologies/E-Rezept.md",
-      "verdict": "revise",
-      "score": 60,
-      "issues": [
-        {
-          "type": "missing_section",
-          "description": "## Technische Details section is missing as a top-level H2. It exists as a subsection (### Technische Details) under ## Architektur, causing test.sh to flag a structural failure.",
-          "severity": "error"
-        },
-        {
-          "type": "missing_frontmatter_field",
-          "description": "aliases field is missing from frontmatter. test.sh confirms this.",
-          "severity": "error"
-        }
-      ],
-      "fixInstructions": "1. Add aliases to frontmatter: aliases: [Elektronisches Rezept, eRezept]. 2. Promote '### Technische Details' to '## Technische Details' (H2 heading)."
-    },
-    {
-      "file": "content/processes/VSDM.md",
-      "verdict": "revise",
-      "score": 58,
-      "issues": [
-        {
-          "type": "missing_frontmatter_field",
-          "description": "aliases field is missing from frontmatter. test.sh confirms this.",
-          "severity": "error"
-        },
-        {
-          "type": "insufficient_sources",
-          "description": "Only 1 source under Quellen. Minimum is 2. test.sh confirms this.",
-          "severity": "error"
-        }
-      ],
-      "fixInstructions": "1. Add aliases: [Versichertenstammdatenmanagement, VSDM 2.0]. 2. Add a second source, e.g. https://www.gematik.de/telematikinfrastruktur/ti-2-0"
+      "fixInstructions": "Verify or remove the Telekom exception claim."
     }
   ],
   "contradictions": [
     {
-      "claim": "VSDM 1.0 shutdown date",
-      "articleA": "content/processes/VSDM.md says VSDM 1.0 Abschaltung Mitte 2027 after February 2027 full rollout",
-      "articleB": "gemspec.gematik.de PoPP spec page (external) referenced 'planned shutdown of VSDM1 for March 31, 2026' — but this may refer to VSDM++ not VSDM 1.0 core. No internal article contradicts VSDM.md directly. Flag for monitoring."
+      "claim": "DiGA E-Rezept launch date",
+      "articleA": "content/technologies/DiGA.md says 'seit Oktober 2025 möglich'",
+      "articleB": "content/technologies/E-Rezept.md says 'seit Januar 2026' under 'Was ist schon live'. The pilot ran May-September 2025 and the October 2025 date refers to the start of the rollout phase per DiGAV amendment. The January 2026 date in E-Rezept.md appears to be a separate milestone or error. Should be reconciled to Oktober 2025."
+    },
+    {
+      "claim": "EHDS primary use application date",
+      "articleA": "content/standards/EHDS.md says 'Primärnutzungsregeln: 2 Jahre nach Inkrafttreten (ca. 2027)'",
+      "articleB": "EU 2025/327 actual text: primary use exchange (Patient Summary, ePrescriptions) applies from March 2029 (4 years). The 2027 deadline is for Commission implementing acts, not for operational data exchange."
     }
   ],
   "staleArticles": [
-    "content/technologies/DEMIS.md — claims negative SARS-CoV-2 PCR results become reportable April 2026 per § 7 Abs. 4 IfSG; no legislative basis found for this change.",
-    "content/technologies/TI-Messenger.md — TI-Messenger Pro produktiv January 2026 claim needs sourcing; gematik documentation suggests specification work was still ongoing in February 2026.",
-    "content/infrastructure/NCPeH.md — incorrectly attributes NCPeH operation to gematik; operator is DVKA.",
-    "content/organization/Kassenaerztliche-Vereinigung.md — incorrectly attributes the two-KV split to Bayern; it is Nordrhein-Westfalen (KV Nordrhein + KV Westfalen-Lippe) that has two KVen.",
-    "content/standards/PZN.md — incorrectly names DIMDI as PZN issuer; PZN is issued by IFA GmbH."
+    "content/standards/EHDS.md — primary use timeline incorrectly states 2027; actual application date is March 2029 per EU 2025/327.",
+    "content/technologies/E-Rezept.md — DiGA-Verordnungen listed as 'seit Januar 2026'; DiGA.md correctly states 'seit Oktober 2025'. Needs reconciliation.",
+    "content/concepts/ZETA.md — EY entity named as 'EY Consulting GmbH'; correct entity is 'EY Strategy and Transactions GmbH'.",
+    "content/concepts/Zero-Trust.md — same EY entity name issue as ZETA.md.",
+    "content/standards/BDSG.md — § 38 BDSG Datenschutzbeauftragter threshold description conflates § 38 BDSG (20 persons) with DSGVO Art. 37(1)(b) criterion."
   ]
 }

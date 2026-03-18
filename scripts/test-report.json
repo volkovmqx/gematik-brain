@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-03-18T01:08:08Z",
-  "totalArticles": 84,
-  "passed": 83,
-  "failed": 1,
-  "issues": [{"file":"content/standards/SGB-V.md","type":"broken_link","severity":"error","message":"Broken wiki-link: [[BDSG]] — no matching file or alias"}]
+  "timestamp": "2026-03-18T08:38:35Z",
+  "totalArticles": 89,
+  "passed": 89,
+  "failed": 0,
+  "issues": []
 }
