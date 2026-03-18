@@ -17,7 +17,7 @@ Wenn ein Krankenhaus einen Arztbrief in eine andere Klinik schickt, muss der Bri
 
 CDA wurde von [[HL7]] International entwickelt und ist in zwei wesentlichen Versionen erschienen. CDA Release 2 (CDA R2) ist der in Deutschland und weltweit am weitesten verbreitete Standard. Er wurde in den 2000er Jahren eingeführt und ist noch in vielen [[KIS|Krankenhausinformationssystemen]] und [[PVS|Praxissystemen]] im Einsatz.
 
-In Deutschland hat die [[KBV]] CDA-Implementierungsleitfäden für verschiedene Dokumenttypen veröffentlicht. Für den Arztbrief (elektronischer Arztbrief, eArztbrief) gab es einen eigenen deutschen CDA-Leitfaden, der über [[KIM]] versendet wurde.
+In Deutschland hat die [[KBV]] CDA-Implementierungsleitfäden für verschiedene Dokumenttypen veröffentlicht. Für den Arztbrief (elektronischer Arztbrief, [[eArztbrief]]) gab es einen eigenen deutschen CDA-Leitfaden, der über [[KIM]] versendet wurde.
 
 CDA-Dokumente bestehen aus zwei Teilen:
 

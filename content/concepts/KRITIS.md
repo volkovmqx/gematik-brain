@@ -15,7 +15,7 @@ Stell dir vor, das Stromnetz fällt aus, Krankenhäuser können keine Patienten 
 
 ## Überblick
 
-KRITIS-Betreiber unterliegen in Deutschland zwei gesetzlichen Rahmenwerken: dem **BSI-Gesetz (BSIG)** für digitale Sicherheit und dem neueren **KRITIS-Dachgesetz (KRITIS-DachG)** für die physische Resilienz.
+KRITIS-Betreiber unterliegen in Deutschland zwei gesetzlichen Rahmenwerken: dem **BSI-Gesetz (BSIG)** für digitale Sicherheit und dem neueren **[[KRITIS-Dachgesetz]] (KRITIS-DachG)** für die physische Resilienz.
 
 Zehn Sektoren gelten als kritisch: Energie, Transport und Verkehr, Bankwesen, Finanzmarktinfrastrukturen, Gesundheit, Trinkwasser, Abwasser, Digitale Infrastruktur, Weltraum und Lebensmittel. Diese Sektoren orientieren sich am Anhang der EU-CER-Richtlinie (EU 2022/2557), weichen aber in Details ab.
 
@@ -27,7 +27,7 @@ Im **Gesundheitssektor** fallen folgende Einrichtungen in den KRITIS-Scope:
 
 ### KRITIS-DachG
 
-Das **KRITIS-Dachgesetz** wurde am **29. Januar 2026** vom Bundestag und am **6. März 2026** vom Bundesrat verabschiedet. Es setzt die EU-Richtlinie **CER (Critical Entities Resilience Directive, EU 2022/2557)** in deutsches Recht um und ergänzt das bisherige digitale KRITIS-Recht um Anforderungen an die physische Widerstandsfähigkeit.
+Das **[[KRITIS-Dachgesetz]]** wurde am **29. Januar 2026** vom Bundestag und am **6. März 2026** vom Bundesrat verabschiedet. Es setzt die EU-Richtlinie **CER (Critical Entities Resilience Directive, EU 2022/2557)** in deutsches Recht um und ergänzt das bisherige digitale KRITIS-Recht um Anforderungen an die physische Widerstandsfähigkeit.
 
 Kernanforderungen des KRITIS-DachG:
 - **Registrierung**: KRITIS-Betreiber müssen sich voraussichtlich ab Mitte 2026 beim [[BSI]] registrieren.

@@ -3,6 +3,7 @@ title: DiGAV
 audience: [technical, non-technical]
 tags: [standards, recht, diga, regulierung, bfarm]
 aliases: [Digitale-Gesundheitsanwendungen-Verordnung, DiGA-Verordnung]
+maturity: immergruen
 ---
 
 # DiGAV

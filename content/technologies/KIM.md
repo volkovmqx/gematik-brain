@@ -3,6 +3,7 @@ title: KIM - Kommunikation im Medizinwesen
 audience: [technical, non-technical]
 tags: [anwendung, kim, kommunikation]
 aliases: [Kommunikation im Medizinwesen, KOM-LE, Sichere E-Mail TI]
+maturity: immergruen
 ---
 
 # KIM - Kommunikation im Medizinwesen
@@ -18,7 +19,7 @@ Stell dir vor, ein Arzt will einem anderen Arzt deinen Befund schicken. Per norm
 KIM funktioniert wie E-Mail, ist aber Ende-zu-Ende-verschlüsselt und in die TI eingebunden. Jeder Teilnehmer hat eine KIM-Adresse im Format `name@anbieter.kim.telematik`. Es gibt 155 zertifizierte Anbieter-Organisationen.
 
 ### Was wird über KIM verschickt?
-- Arztbriefe
+- [[eArztbrief|Arztbriefe]]
 - Befunde und Laborergebnisse
 - [[eAU]]-Meldungen an Krankenkassen
 - Abrechnungsdaten

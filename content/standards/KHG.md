@@ -35,7 +35,7 @@ Das KHG ist ein Rahmengesetz. Es ermächtigt den Bundesgesetzgeber und die Selbs
 
 - Das [[DRG]]-System (§ 17b KHG), das 2003 eingeführt wurde
 - Die Krankenhausplanung durch die Länder (§ 6 KHG)
-- Das Qualitätssicherungssystem über den Gemeinsamen Bundesausschuss (G-BA)
+- Das Qualitätssicherungssystem über den [[G-BA|Gemeinsamen Bundesausschuss (G-BA)]]
 
 Das KHG wurde durch folgende Gesetze ergänzt oder weiterentwickelt:
 

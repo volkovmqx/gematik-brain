@@ -16,7 +16,7 @@ Stell dir vor, du gehst zum Arzt und der weiß nicht, welche Medikamente dir ein
 
 ## Überblick
 
-Seit dem **15. Januar 2025** wird die ePA automatisch für alle gesetzlich Versicherten angelegt. Man muss aktiv widersprechen, wenn man keine haben will (Opt-out). Seit dem **1. Oktober 2025** ist die ePA in allen medizinischen Einrichtungen Pflicht.
+Ab dem **15. Januar 2025** startete die ePA in Modellregionen (Pilot). Der **bundesweite Rollout** begann am **29. April 2025**: Seither wird die ePA automatisch für alle gesetzlich Versicherten angelegt. Man muss aktiv widersprechen, wenn man keine haben will (Opt-out). Seit dem **1. Oktober 2025** ist die ePA in allen medizinischen Einrichtungen Pflicht.
 
 Ab **April 2026** müssen [[KIS|Krankenhausinformationssysteme (KIS)]] ein zertifiziertes ePA-Modul enthalten. Krankenhäuser, deren KIS diese Anforderung nicht erfüllt, riskieren finanzielle Sanktionen.
 
@@ -59,6 +59,8 @@ Die ePA nutzt die [[Telematikinfrastruktur]] als sicheres Netzwerk. Der Zugriff 
 ### Datenformate und Dokumentenverwaltung
 
 Die ePA verwendet [[FHIR]] R4 als primäres Datenformat. Deutsche FHIR-Profile für die ePA sind von der [[gematik]] spezifiziert und auf Simplifier.net veröffentlicht. Für die Dokumentenverwaltung kommt [[XDS]] (Cross-Enterprise Document Sharing) zum Einsatz: Dokumente werden in einem Document Registry registriert und in einem Document Repository gespeichert.
+
+Mit Release ePA 3.1.2 (Mai 2025) wurden FHIR Implementation Guides aktualisiert, die den Medikationsdienst und die Basisfunktionalitäten der Akte abdecken. Die Guides sind auf Simplifier.net veröffentlicht und bilden die technische Grundlage für die FHIR-basierten ePA-Schnittstellen.
 
 ### Medikationsdienst
 

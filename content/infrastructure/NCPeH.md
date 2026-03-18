@@ -26,7 +26,7 @@ Am **16. März 2026** besuchten fast 50 Delegierte aus 14 EU-Ländern die [[gema
 Deutschland plant die Teilnahme an MyHealth@EU in mehreren Wellen:
 
 - **Wave 10 (2026)**: Deutschland plant den Anschluss für das [[E-Rezept]] (ePrescription)
-- **Bis 2029**: Vollständige Nutzbarkeit von Patientenzusammenfassung (Patient Summary) und [[E-Rezept]] EU-weit
+- **Bis 2029**: Vollständige Nutzbarkeit von [[Patient-Summary|Patientenzusammenfassung (Patient Summary)]] und [[E-Rezept]] EU-weit
 
 Österreich ist bereits seit **Februar 2026** aktiv am Austausch beteiligt: Es akzeptiert EU-E-Rezepte aus Tschechien, was ein erstes konkretes Beispiel für den funktionierenden grenzüberschreitenden Austausch ist.
 

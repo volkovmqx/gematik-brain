@@ -58,7 +58,7 @@ Die [[VAU]] (Vertrauenswürdige Ausführungsumgebung) des ePA-Aktensystems und d
 
 ### KRITIS-Dachgesetz
 
-Der Bundestag verabschiedete das [[KRITIS|KRITIS-Dachgesetz]] am 29. Januar 2026, der Bundesrat stimmte am 6. März 2026 zu. Das Gesetz setzt die EU-CER-Richtlinie um und schafft einheitliche Mindeststandards für den physischen Schutz kritischer Infrastrukturen. Krankenhäuser und Gesundheitseinrichtungen fallen ausdrücklich in den Geltungsbereich. Betroffene Betreiber müssen sich ab 17. Juli 2026 registrieren und Risikoanalysen sowie Resilienzpläne erstellen. Das BSI koordiniert die Aufsicht über Cybersicherheitsanforderungen im Zusammenspiel mit dem neuen Gesetz.
+Der Bundestag verabschiedete das [[KRITIS-Dachgesetz]] am 29. Januar 2026, der Bundesrat stimmte am 6. März 2026 zu. Das Gesetz setzt die EU-CER-Richtlinie um und schafft einheitliche Mindeststandards für den physischen Schutz kritischer Infrastrukturen. Krankenhäuser und Gesundheitseinrichtungen fallen ausdrücklich in den Geltungsbereich. Betroffene Betreiber müssen sich ab 17. Juli 2026 registrieren und Risikoanalysen sowie Resilienzpläne erstellen. Das BSI koordiniert die Aufsicht über Cybersicherheitsanforderungen im Zusammenspiel mit dem neuen Gesetz.
 
 ### IT-Grundschutz++
 

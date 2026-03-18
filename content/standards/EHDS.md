@@ -23,7 +23,7 @@ Der EHDS verpflichtet die EU-Mitgliedstaaten, digitale Gesundheitsdaten über di
 
 Konkrete Dienste im Aufbau:
 - **ePrescription / eDispensation**: Elektronische Rezepte, die EU-weit eingelöst werden können
-- **Patient Summary**: Zusammenfassung der wichtigsten Gesundheitsdaten (Diagnosen, Medikamente, Allergien)
+- **[[Patient-Summary|Patient Summary]]**: Zusammenfassung der wichtigsten Gesundheitsdaten (Diagnosen, Medikamente, Allergien)
 
 Deutschland plant die Teilnahme an MyHealth@EU ab **Wave 10 (2026)** über den deutschen [[NCPeH]].
 

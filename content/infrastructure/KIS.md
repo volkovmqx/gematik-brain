@@ -87,7 +87,7 @@ Die [[IHE]]-Integrationsprofile (z.B. XDS.b für Dokumentenverteilung, PIX/PDQ f
 
 ### KRITIS-Dachgesetz und Krankenhäuser
 
-Das KRITIS-Dachgesetz (Bundestag 29. Januar 2026, Bundesrat 6. März 2026) setzt die EU-CER-Richtlinie um und schafft einheitliche Mindeststandards für den physischen Schutz kritischer Infrastrukturen. Krankenhäuser fallen ausdrücklich in den Geltungsbereich. Betroffene Betreiber müssen sich ab **17. Juli 2026** registrieren sowie Risikoanalysen und Resilienzpläne erstellen. Das [[BSI]] koordiniert die Aufsicht über die Cybersicherheitsanforderungen im Zusammenspiel mit dem neuen Gesetz.
+Das [[KRITIS-Dachgesetz]] (Bundestag 29. Januar 2026, Bundesrat 6. März 2026) setzt die EU-CER-Richtlinie um und schafft einheitliche Mindeststandards für den physischen Schutz kritischer Infrastrukturen. Krankenhäuser fallen ausdrücklich in den Geltungsbereich. Betroffene Betreiber müssen sich ab **17. Juli 2026** registrieren sowie Risikoanalysen und Resilienzpläne erstellen. Das [[BSI]] koordiniert die Aufsicht über die Cybersicherheitsanforderungen im Zusammenspiel mit dem neuen Gesetz.
 
 ### Krankenhausfinanzierungsgesetz und KHZG
 

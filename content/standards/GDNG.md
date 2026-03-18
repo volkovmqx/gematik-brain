@@ -35,7 +35,7 @@ Das GDNG richtet beim [[BfArM]] eine zentrale **Datenzugangs- und Koordinierungs
 
 ### Forschungsdatenzentrum Gesundheit
 
-Das bestehende **[[Forschungsdatenzentrum-Gesundheit|Forschungsdatenzentrum Gesundheit (FDZ)]]** beim [[BfArM]] wird durch das GDNG ausgebaut. Das FDZ stellt pseudonymisierte Abrechnungsdaten der gesetzlichen Krankenversicherung ([[GKV]]) für zugelassene Forschungsprojekte bereit. Es war bereits vor dem GDNG durch das DVS (Digitale-Versorgung-und-Pflege-Modernisierungs-Gesetz) eingerichtet worden, wird aber durch das GDNG erheblich erweitert.
+Das bestehende **[[Forschungsdatenzentrum-Gesundheit|Forschungsdatenzentrum Gesundheit (FDZ)]]** beim [[BfArM]] wird durch das GDNG ausgebaut. Das FDZ stellt pseudonymisierte Abrechnungsdaten der gesetzlichen Krankenversicherung ([[GKV]]) für zugelassene Forschungsprojekte bereit. Es war bereits vor dem GDNG durch das [[DVPMG]] (Digitale-Versorgung-und-Pflege-Modernisierungs-Gesetz, 2021) eingerichtet worden, wird aber durch das GDNG erheblich erweitert.
 
 Das FDZ kann unter dem GDNG pseudonymisierte Daten mit weiteren Registerdaten verknüpfen, zum Beispiel mit klinischen Krebsregistern.
 
@@ -73,7 +73,7 @@ Als berechtigte Forschungszwecke gelten: medizinische Forschung, Versorgungsfors
 - [[BfArM]] (beherbergt die Datenzugangs- und Koordinierungsstelle und das FDZ)
 - [[BMG]] (hat das GDNG initiiert und ist zuständiges Ministerium)
 - [[GKV]] (Abrechnungsdaten der GKV sind zentrale Datenquelle im FDZ)
-- [[DVG]] (schuf die Vorgängerinstitution des FDZ)
+- [[DVPMG]] (schuf das FDZ beim BfArM, 2021)
 - [[PDSG]] (regelt den Datenschutz der ePA als ergänzendes Gesetz)
 
 ## Quellen

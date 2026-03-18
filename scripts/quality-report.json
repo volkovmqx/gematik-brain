@@ -1,12 +1,164 @@
 {
-  "timestamp": "2026-03-18T17:30:00Z",
-  "overallScore": 87,
+  "timestamp": "2026-03-18T21:45:00Z",
+  "overallScore": 88,
   "testResults": {
-    "passed": 119,
+    "passed": 124,
     "failed": 0,
-    "total": 119
+    "total": 124
   },
   "articles": [
+    {
+      "file": "content/standards/TA1.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "NOVENTI merger timeline 'zwischen 2016 und 2018' is imprecise: ALG (Datteln) was already part of VSA since 2004; the 2016–2018 window covers only the holding-company formation and SARZ acquisition. Claim is not wrong but may confuse readers.",
+        "Source noventi.de/apotheke/abrechnung/ should be verified for 404 before final publish."
+      ],
+      "fixInstructions": "Clarify NOVENTI timeline: 'ALG (Datteln, seit 2004 Teil der VSA), SARZ (Schwerin, übernommen 2016/2017); 2016 Gründung der NOVENTI Holding; 2018 Umbenennung zu NOVENTI HealthCare GmbH.'"
+    },
+    {
+      "file": "content/infrastructure/Apothekenrechenzentrum.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "Same NOVENTI merger timeline imprecision as in TA1.md: 'zwischen 2016 und 2018' is incomplete — ALG joined VSA in 2004, not 2016."
+      ],
+      "fixInstructions": "Same fix as TA1.md: add that ALG joined VSA in 2004; clarify 2016–2018 refers to holding creation and SARZ acquisition."
+    },
+    {
+      "file": "content/organization/BfDI.md",
+      "verdict": "pass",
+      "score": 95,
+      "issues": [
+        "Election date 16. Mai 2024 and Amtsantritt 3. September 2024 verified correct. Rücktrittsankündigung confirmed. No issues."
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/standards/GDNG.md",
+      "verdict": "pass",
+      "score": 93,
+      "issues": [
+        "Inkrafttreten 26. März 2024 verified correct. DVPMG reference verified correct. No factual errors found."
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/technologies/KIM.md",
+      "verdict": "pass",
+      "score": 90,
+      "issues": [
+        "KIM 1.5.5 as current version confirmed on gemspec.gematik.de.",
+        "Only one URL source listed; the second entry is a spec reference without a URL — technically meets minimum but a second clickable source would be stronger.",
+        "'155 zertifizierte Anbieter-Organisationen': no source found to verify this number; flagged as unverifiable."
+      ],
+      "fixInstructions": "Add a second URL source, e.g. https://gemspec.gematik.de/releases/KIM_1_5_5/. Verify or remove the '155 zertifizierte Anbieter-Organisationen' claim if no authoritative source exists."
+    },
+    {
+      "file": "content/technologies/DiGA.md",
+      "verdict": "pass",
+      "score": 90,
+      "issues": [
+        "ePA integration as of 1. Februar 2026 and Gesundheits-ID as Pflichtanforderung: verified correct via DiGAV 2. ÄndV.",
+        "E-Rezept für DiGA 'seit Oktober 2025': plausible but no independent confirmation found for the exact date; flagged as unverifiable."
+      ],
+      "fixInstructions": "Add a source for the DiGA-E-Rezept start (Oktober 2025), e.g. a KBV or gematik press release."
+    },
+    {
+      "file": "content/standards/DiGAV.md",
+      "verdict": "pass",
+      "score": 92,
+      "issues": [
+        "Zweite Änderungsverordnung 1. Februar 2026 and AbEM: fully verified. ePA integration mandate verified. No factual errors."
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/technologies/ePA.md",
+      "verdict": "revise",
+      "score": 80,
+      "issues": [
+        "UNVERIFIABLE VERSIONS: Article claims 'IG ePA Medication Service v1.2.0' and 'IG ePA Basisfunktionalitäten v1.2.0' for ePA 3.1.2 (Mai 2025). Searches found v1.1.5 (published 2025-05-28) and v1.3.0 on gematik.de, but no v1.2.0 clearly linked to ePA 3.1.2. These version numbers cannot be verified.",
+        "IMPRECISE DATE: Article says 'Seit dem 15. Januar 2025 wird die ePA automatisch für alle gesetzlich Versicherten angelegt'. Verified: 15.01.2025 was the Modellregionen start only; bundesweiter Rollout began 29. April 2025. The phrasing implies universal rollout from January.",
+        "Version inconsistency: the Quellen URL points to ePA_3_1_3 release while the body discusses ePA 3.1.2 features."
+      ],
+      "fixInstructions": "1. Verify IG version numbers against https://simplifier.net/epa-medication-v3-1 or gematik GitHub ePA-Medication repo; replace v1.2.0 with confirmed numbers. 2. Clarify ePA rollout: 'Ab 15. Januar 2025 startete die ePA in den Modellregionen; bundesweiter Rollout ab 29. April 2025.'"
+    },
+    {
+      "file": "content/infrastructure/TI-Gateway.md",
+      "verdict": "pass",
+      "score": 90,
+      "issues": [
+        "RISE Ausfall März 2026: confirmed by search results. Exact dates (3.–5. März 2026) could not be independently verified to day-level precision.",
+        "22.000 virtuelle Konnektor-Instanzen (Stand Oktober 2025): unverifiable from public sources."
+      ],
+      "fixInstructions": "Add a source or attribution for the 22.000 vKON instances figure."
+    },
+    {
+      "file": "content/organization/gematik.md",
+      "verdict": "pass",
+      "score": 93,
+      "issues": [
+        "Beirat Vorsitz Semler: election confirmed as 26.11.2024 — article says 'November 2024', correct.",
+        "Hans-Peter Bursig role confirmed as ZVEI."
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/technologies/eArztbrief.md",
+      "verdict": "revise",
+      "score": 78,
+      "issues": [
+        "FACTUAL ERROR: EBM Ziffer 86900 described as '27 Cent je Brief'. Verified: 86900 (Versenden) = 28 Cent; 86901 (Empfangen) = 27 Cent. The article quotes the receiving tariff for the sending code.",
+        "§ 291f SGB V as legal basis for QES requirement: could not independently verify the exact paragraph; flagged as unverifiable."
+      ],
+      "fixInstructions": "Fix EBM: 'EBM 86900 (Versenden eines eArztbriefs): 28 Cent; EBM 86901 (Empfangen): 27 Cent je Brief.' Verify §291f SGB V or replace with the verified paragraph reference."
+    },
+    {
+      "file": "content/organization/G-BA.md",
+      "verdict": "pass",
+      "score": 93,
+      "issues": [
+        "G-BA Gründung 2004 durch GKV-Modernisierungsgesetz: confirmed.",
+        "AMNOG year 2011: confirmed.",
+        "No structural or factual issues found."
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/standards/KRITIS-Dachgesetz.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "Bundestag 29. Januar 2026 and Bundesrat 6. März 2026: both confirmed.",
+        "Registrierungspflicht 17. Juli 2026: confirmed.",
+        "Article does not mention the Inkrafttreten date (17. März 2026, published 16. März im Bundesgesetzblatt). Minor omission.",
+        "Bußgeld '2 Prozent des globalen Jahresumsatzes': searches found 500.000 EUR cap for registration violations specifically. The '2 percent' figure may apply only to the most serious violations. Article should distinguish violation categories."
+      ],
+      "fixInstructions": "Add Inkrafttreten date (17. März 2026). Clarify Bußgeld: registration violations up to 500.000 EUR; other serious violations potentially up to 2% Jahresumsatz."
+    },
+    {
+      "file": "content/technologies/DiPaG.md",
+      "verdict": "revise",
+      "score": 84,
+      "issues": [
+        "MINOR FACTUAL ERROR: Article states DiPag_25_1 release date as '27. Mai 2025'. Verified release date is 22. Mai 2025 per gemspec.gematik.de.",
+        "All 3 sources point to gematik's own platform. No independent source (e.g. BMG, industry reporting). Weak source diversity."
+      ],
+      "fixInstructions": "Correct release date to '22. Mai 2025'. Add one independent source about DiPaG (e.g. BMG or KBV announcement)."
+    },
+    {
+      "file": "content/standards/Patient-Summary.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "EHDS 'seit März 2025 in Kraft': verified correct (Inkrafttreten 26. März 2025). However EHDS provisions do not apply until March 2027; the article could clarify this to avoid misunderstanding.",
+        "Germany plans Patient Summary ab 2029: consistent with EU roadmap (2029 = first EHDS priority data categories), but no specific German commitment document found.",
+        "ISO 27269:2021 as IPS norm: confirmed."
+      ],
+      "fixInstructions": "Add a note that while EHDS entered into force in March 2025, its provisions apply from 2027 (and full Patient Summary obligation from 2031)."
+    },
     {
       "file": "content/organization/DVKA.md",
       "verdict": "pass",
@@ -163,24 +315,29 @@
   ],
   "contradictions": [
     {
-      "claim": "NOVENTI-Herkunft",
-      "articleA": "TA1.md: 'NOVENTI (früher NARZ/ARZ Darmstadt)'",
-      "articleB": "Apothekenrechenzentrum.md: 'entstanden durch Zusammenschlüsse der NARZ, ARZ Darmstadt und weiterer Dienstleister'",
-      "note": "Beide Beschreibungen sind faktisch unzutreffend. NOVENTI entstammt der Fusion von VSA, ALG, SARZ. ARZ Darmstadt ist Kooperationspartner, kein Teil von NOVENTI. NARZ ist ein eigenständiges Unternehmen. Beide Artikel müssen korrigiert werden."
+      "claim": "NOVENTI merger timeline",
+      "articleA": "TA1.md says 'entstanden aus der Fusion von VSA (München), ALG (Datteln) und SARZ (Schwerin) zwischen 2016 und 2018'",
+      "articleB": "Apothekenrechenzentrum.md states the same. External sources confirm ALG joined VSA in 2004, not 2016. Both articles share the same imprecise formulation."
+    },
+    {
+      "claim": "ePA rollout start date",
+      "articleA": "ePA.md: 'Seit dem 15. Januar 2025 wird die ePA automatisch für alle gesetzlich Versicherten angelegt' (implies universal from January)",
+      "articleB": "Verified: 15.01.2025 = Modellregionen only; bundesweiter Rollout ab 29. April 2025. Internal imprecision within ePA.md, not cross-article."
     }
   ],
   "staleArticles": [],
   "summary": {
-    "reviewed": 13,
-    "pass": 10,
+    "reviewed": 15,
+    "pass": 11,
     "revise": 3,
     "fail": 0,
     "keyIssues": [
-      "BfDI.md: Amtsantritt von Specht-Riemenschneider falsch als 'Februar 2024' angegeben — korrekt ist 3. September 2024.",
-      "TA1.md und Apothekenrechenzentrum.md: NOVENTI-Herkunftsbeschreibung in beiden Artikeln inkorrekt — NOVENTI entstand aus VSA/ALG/SARZ-Fusion, nicht aus NARZ oder ARZ Darmstadt.",
-      "TA1.md: AvP-Nachfolge als 'Ahlberg ARZ' nicht verifizierbar; belegte Nachfolge ist RZH (ARZ-Haan-Tochter).",
-      "GDNG.md: Akronym 'DVS' im Text stimmt nicht mit dem genannten Gesetznamen überein; zudem Verknüpfung auf [[DVG]] statt korrekt [[DVPMG]] für FDZ-Gründungsgesetz.",
-      "Alle strukturellen Tests bestanden: 119/119 Artikel fehlerfrei."
+      "eArztbrief.md: EBM 86900 Vergütung stated as 27 Cent but verified value for sending (86900) is 28 Cent; 27 Cent is the receiving tariff (86901). Factual error requiring correction.",
+      "ePA.md: FHIR IG version numbers (v1.2.0) for ePA 3.1.2 are unverifiable; searches found v1.1.5 and v1.3.0 but not v1.2.0. Also, rollout timeline conflates Modellregionen start (15.01.2025) with universal rollout (29.04.2025).",
+      "DiPaG.md: Release date stated as '27. Mai 2025'; verified date is '22. Mai 2025'.",
+      "TA1.md and Apothekenrechenzentrum.md: NOVENTI merger timeline 'zwischen 2016 und 2018' is imprecise — ALG joined VSA already in 2004.",
+      "KRITIS-Dachgesetz.md: Missing Inkrafttreten date (17. März 2026); Bußgeld structure needs clarification.",
+      "All 124 structural tests pass (0 failures)."
     ]
   }
 }

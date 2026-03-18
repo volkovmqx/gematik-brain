@@ -46,7 +46,7 @@ Technisch basiert der NCPeH auf den **eHDSI-Spezifikationen** (eHealth Digital S
 
 [[MyHealthAtEU|MyHealth@EU]] ist die europäische Infrastruktur für grenzüberschreitende Gesundheitsdaten. Sie umfasst aktuell zwei Anwendungsfälle:
 
-1. **Patient Summary**: Eine strukturierte Patientenzusammenfassung (Diagnosen, Allergien, aktuelle Medikamente) im CDA-Format (HL7 CDA Level 3). Wird beim Arztbesuch im EU-Ausland übermittelt, wenn der Patient zustimmt.
+1. **[[Patient-Summary|Patient Summary]]**: Eine strukturierte Patientenzusammenfassung (Diagnosen, Allergien, aktuelle Medikamente) im CDA-Format (HL7 CDA Level 3). Wird beim Arztbesuch im EU-Ausland übermittelt, wenn der Patient zustimmt.
 2. **ePrescription**: Grenzüberschreitendes Einlösen von E-Rezepten in anderen EU-Ländern. Deutschland plant die Teilnahme an MyHealth@EU für das [[E-Rezept]] für Wave 10 in 2026.
 
 Die Datenschutzkontrolle liegt beim Versicherten: Er muss aktiv zustimmen, bevor sein Arzt im Ausland auf die Daten zugreifen kann.

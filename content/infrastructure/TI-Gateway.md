@@ -3,6 +3,7 @@ title: TI-Gateway
 audience: [technical, non-technical]
 tags: [infrastruktur, ti-2-0, gateway, cloud, konnektor]
 aliases: [TI-Gateway, TI 2.0 Gateway, vKON]
+maturity: immergruen
 ---
 
 # TI-Gateway
@@ -80,6 +81,10 @@ Zugelassene TI-Gateway-Anbieter konkurrieren um Einrichtungen als Kunden. Aktive
 
 Telekom **TI-Connect** (seit Anfang 2026): Cloud-basiertes TI-Gateway ohne lokalen Konnektor. Einrichtungen verbinden sich per VPN mit einem [[Highspeed-Konnektor]] (HSK) im Telekom-Rechenzentrum. TI-Connect richtet sich insbesondere an größere Einrichtungen, die keine eigene Hardware betreiben wollen.
 
+### Nutzungszahlen
+
+Laut TI-Dashboard (Stand Oktober 2025) sind rund **22.000 virtuelle Konnektor-Instanzen** über das TI-Gateway angebunden. Die Zahl wächst kontinuierlich mit dem schrittweisen Übergang von Hardware-Konnektoren auf cloud-basierte Lösungen.
+
 ### RISE-Ausfall März 2026
 
 Am **3. März 2026** fiel das TI-Gateway von **RISE** aus. Alle über RISE angebundenen Einrichtungen verloren den Zugang zur [[Telematikinfrastruktur]]. Betroffen waren [[E-Rezept]], [[ePA]], [[VSDM]] und [[KIM]]. Weitere Ausfälle folgten am 4. und 5. März. Da kein Offline-Fallback für TI-Anwendungen existiert, mussten Apotheken Patienten ohne Rezeptabgabe wegschicken. Der Ausfall verdeutlichte die Abhängigkeit von einzelnen TI-Gateway-Anbietern und die fehlende Redundanz im TI-2.0-Modell.
@@ -89,3 +94,4 @@ Am **3. März 2026** fiel das TI-Gateway von **RISE** aus. Alle über RISE angeb
 - [TI-Zugang - Fachportal gematik](https://fachportal.gematik.de/telematikinfrastruktur/ti-zugang)
 - [TI 2.0 - gematik.de](https://www.gematik.de/telematikinfrastruktur/ti-2-0)
 - [gemSpec_TI-Gateway - gematik Fachportal](https://gemspec.gematik.de/docs/gemSpec/gemSpec_TI-Gateway/latest/)
+- [TI-Zugang_25_3 - Spezifikationsrelease (27. Januar 2026)](https://gemspec.gematik.de/releases/TI-Zugang_25_3/)

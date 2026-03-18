@@ -3,7 +3,7 @@ title: gematik
 audience: [technical, non-technical]
 tags: [organisation, gematik, ti, regulierung]
 aliases: [gematik GmbH, Nationale Agentur für Digitale Medizin]
-maturity: wachsend
+maturity: immergruen
 ---
 
 # gematik
@@ -39,6 +39,8 @@ Die restlichen 19,95 % verteilen sich auf die sechs Verbände aus dem Gesundheit
 ### Governance
 
 Die höchste Entscheidungsinstanz ist die **Gesellschafterversammlung**. Für Beschlüsse ist eine einfache Mehrheit (51 %) erforderlich, was dem BMG faktisch ein Vetorecht gibt. Daneben gibt es eine **Schlichtungsstelle**, einen **Beirat** (Länder, Patienten, Wissenschaft) und einen **Digitalbeirat**.
+
+Seit November 2024 führt **Sebastian Claudius Semler** (TMF, Technologie- und Methodenplattform für die vernetzte medizinische Forschung) den Beirat als Vorsitzender. Stellvertretender Vorsitzender ist **Hans-Peter Bursig** (ZVEI, Zentralverband Elektrotechnik- und Elektronikindustrie).
 
 ## Technische Details
 

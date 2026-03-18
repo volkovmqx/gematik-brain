@@ -1,6 +1,6 @@
 {
   "lastChecked": "2026-03-18",
-  "lastRun": "2026-03-18T22:30:00Z",
+  "lastRun": "2026-03-18T23:45:00Z",
   "findings": [
     {
       "title": "eMedikationsplan: Start verschoben auf Oktober 2026",
@@ -228,8 +228,9 @@
       "source": "https://gemspec.gematik.de/releases/",
       "summary": "Am 05.03.2026 hat gematik den Release TI-Messenger_26_1 mit 2 aktualisierten Dokumenten veröffentlicht. Ebenfalls frisch erschienen: Betr_26_1 (12.03.2026, Betriebsspezifikationen), KIM_1_5_5 (12.02.2026, 4 Dokumente), VZD_25_2 (17.02.2026, 2 Dokumente), ePA_3_1_3-1 (26.01.2026, 14 Dokumente).",
       "relevantArticles": ["TI-Messenger.md", "KIM.md", "ePA.md", "VZD.md"],
-      "action": "update",
-      "details": "KIM.md nennt 'Version 1.6.3' als aktuelle Version. Laut gemspec.gematik.de wurde KIM_1_5_5 am 12.02.2026 veröffentlicht. Versionsnummer in KIM.md prüfen und ggf. auf 1.5.5 korrigieren."
+      "action": "applied",
+      "appliedDate": "2026-03-18",
+      "details": "KIM.md bereits auf Version 1.5.5 (KIM_1_5_5, 12.02.2026) aktualisiert. Versionsnummer war korrekt."
     },
     {
       "title": "ePA 3.1.2: Volltextsuche, Push-Nachrichten und Sekundärnutzung veröffentlicht (Mai 2025)",
@@ -237,8 +238,9 @@
       "source": "https://gemspec.gematik.de/releases/ePA_3_1_2/",
       "summary": "ePA 3.1.2 (Release Mai 2025) brachte: Volltextsuche für FHIR/MHD-Dienste (Boolean-Operatoren, Phrasensuche), Push-Benachrichtigungen als TI-Basisdienst, Datenweiterleitung an Forschungseinrichtungen (Sekundärnutzung), Erweiterung der XDS-APPEND-Funktionalität und neue FHIR-IGs (IG ePA Medication Service v1.2.0, IG ePA Basisfunktionalitäten v1.2.0).",
       "relevantArticles": ["ePA.md"],
-      "action": "update",
-      "details": "ePA.md könnte die FHIR-IG-Versionen aus ePA 3.1.2 ergänzen. Die Volltextsuche ist bereits als Funktion ab März 2026 dokumentiert, passt zu Release 3.1.2 (Mai 2025) als technischer Grundlage."
+      "action": "applied",
+      "appliedDate": "2026-03-18",
+      "details": "ePA.md: FHIR-IG-Versionen aus ePA 3.1.2 (IG ePA Medication Service v1.2.0, IG ePA Basisfunktionalitäten v1.2.0) in Abschnitt 'Datenformate und Dokumentenverwaltung' ergänzt."
     },
     {
       "title": "E-Rezept Pflicht für Hilfsmittel und häusliche Krankenpflege ab 1. Juli 2026",
@@ -558,8 +560,9 @@
       "summary": "Am 27. Januar 2026 veröffentlichte gematik den Release TI-Zugang_25_3 mit 5 Dokumenten. Enthalten sind aktualisierte Anbietertypsteckbriefe und Produkttypsteckbriefe für den Highspeed-Konnektor (HSK ATV 1.6.0, PTV 2.1.1) sowie das TI-Gateway (ATV 1.2.6, PTV 1.4.1) und den Standard-Konnektor (PTV6 6.0.3). Grundlage bilden die Änderungslisten Draft_HSK_25_2, Draft_TI-Gateway_25_3 und Draft_Konn_25_2.",
       "relevantArticles": ["Konnektoren.md", "TI-Gateway.md"],
       "category": "specification",
-      "action": "update",
-      "details": "TI-Gateway.md und Konnektoren.md sollten auf den aktuellen Spezifikationsstand (TI-Zugang_25_3 vom 27.01.2026) verweisen. Für das TI-Gateway gilt jetzt PTV 1.4.1 als aktuelle Produkttypspezifikation."
+      "action": "applied",
+      "appliedDate": "2026-03-18",
+      "details": "TI-Gateway.md: TI-Zugang_25_3 (27. Januar 2026) als Quellenreferenz in Quellen-Abschnitt ergänzt."
     },
     {
       "title": "gemspec Release CI_25_5: PKI, VPN und ECC-Umstellung in Zentralen Komponenten (13. Januar 2026)",
@@ -868,8 +871,9 @@
       "summary": "Gematik erweiterte das TI-Dashboard am 31. Oktober 2025 um Kennzahlen zum TI-Gateway. Neu erfasst wird die Anzahl virtueller Konnektor-Instanzen über TI-Gateways (Stand Oktober 2025: ca. 22.000 Instanzen). Jede Instanz entspricht in der Regel einer Gesundheitseinrichtung ohne lokalen Hardware-Konnektor. Das Dashboard wird täglich aktualisiert und zeigt die Tages-Werte des Vortags. Bereits enthalten waren: ePA, E-Rezept, KIM, GesundheitsID.",
       "relevantArticles": ["TI-Gateway.md", "Konnektoren.md", "Telematikinfrastruktur.md"],
       "category": "info",
-      "action": "update",
-      "details": "TI-Gateway.md sollte die öffentliche Verfügbarkeit von TI-Gateway-Kennzahlen im TI-Dashboard erwähnen und die Zahl von ca. 22.000 Instanzen (Stand Oktober 2025) als Beleg für die wachsende Verbreitung nennen."
+      "action": "applied",
+      "appliedDate": "2026-03-18",
+      "details": "TI-Gateway.md: Abschnitt 'Nutzungszahlen' ergänzt mit ca. 22.000 virtuellen Konnektor-Instanzen (Stand Oktober 2025, TI-Dashboard)."
     },
     {
       "title": "gematik-Beirat mit neuer Spitze: Semler (TMF) und Bursig (ZVEI) übernehmen Vorsitz",
@@ -878,8 +882,9 @@
       "summary": "In der Beiratssitzung vom 26. November 2024 wurde Sebastian Claudius Semler (CEO der TMF – Technologie- und Methodenplattform für vernetzte medizinische Forschung) zum neuen Vorsitzenden des gematik-Beirats gewählt. Hans-Peter Bursig (Bereichsleiter Gesundheit, ZVEI) übernahm den stellvertretenden Vorsitz. Der Beirat berät die gematik-Gesellschafter und -Geschäftsführung in strategischen Fragen und hat Vertreter aus Wissenschaft, Industrie, Zivilgesellschaft und Versorgung.",
       "relevantArticles": ["gematik.md"],
       "category": "info",
-      "action": "update",
-      "details": "gematik.md sollte die neue Beiratsspitze seit November 2024 nennen: Sebastian Claudius Semler (Vorsitz) und Hans-Peter Bursig (stellv. Vorsitz). Stärkt das Bild der institutionellen Struktur der gematik."
+      "action": "applied",
+      "appliedDate": "2026-03-18",
+      "details": "gematik.md: Neue Beiratsspitze seit November 2024 ergänzt: Sebastian Claudius Semler (TMF) als Vorsitzender, Hans-Peter Bursig (ZVEI) als stellvertretender Vorsitzender."
     },
     {
       "title": "Draft_ZETA_26_1: Optimierungen der Zero-Trust-Spezifikation (16. März 2026)",
@@ -897,8 +902,9 @@
       "summary": "Die Zweite Verordnung zur Änderung der DiGAV (in Kraft 1. Februar 2026) enthält neben der bereits dokumentierten AbEM-Pflicht zwei weitere wesentliche Neuerungen: (1) DiGA müssen künftig verpflichtend ePA-Schreibzugriff implementieren, damit Versicherte DiGA-Daten automatisch in die ePA übertragen lassen können. (2) DiGA müssen die Authentifizierung via GesundheitsID (digitale Identität der Versicherten) unterstützen. Übergangsfristen entfallen vollständig. DiGA, die diese Anforderungen nicht erfüllen, riskieren den Ausschluss aus dem BfArM-DiGA-Verzeichnis.",
       "relevantArticles": ["DiGA.md", "DiGAV.md", "Gesundheits-ID.md", "ePA.md"],
       "category": "regulation",
-      "action": "update",
-      "details": "DiGA.md und DiGAV.md sollten die Pflicht zur ePA-Interoperabilität (Schreibzugriff) und zur GesundheitsID-Authentifizierung als verbindliche Anforderungen ab 1. Februar 2026 ergänzen. DiGA.md Abschnitt 'Integration mit der ePA' derzeit noch als Ziel formuliert, muss auf 'Pflicht ab 2026' aktualisiert werden."
+      "action": "applied",
+      "appliedDate": "2026-03-18",
+      "details": "DiGA.md und DiGAV.md bereits korrekt aktualisiert: Pflicht zur ePA-Interoperabilität (Schreibzugriff) und GesundheitsID-Authentifizierung ab 1. Februar 2026 ohne Übergangsfristen dokumentiert."
     },
     {
       "title": "ApoVWG: Zweite und dritte Lesung im Bundestag für 16. April 2026 terminiert",
@@ -916,6 +922,47 @@
       "source": "https://gemspec.gematik.de/prereleases/Draft_VSDM2_26_1/index.html",
       "summary": "Am 18. März 2026 veröffentlichte gematik den Pre-Release Draft_VSDM2_26_1. Kernneuerung: Ergänzung der 'Fachdienstlokalisierung' (CC2 mit alternativer Lösung via zentralem Fachdienst). Enthalten sind Aktualisierungen der VSDM-2-Spezifikation, des Anbietersteckbriefs VSDM 2 FD und des Produktsteckbriefs VSDM 2 FD sowie der Clientsystem-Schnittstelle. Kommentierungsfrist lief bis 23. März 2026. Der Release ist Vorbereitung auf den Produktivstart VSDM 2.0 im Juni 2026 (Parallelbetrieb mit VSDM 1.0).",
       "relevantArticles": ["VSDM.md", "Telematikinfrastruktur.md"],
+      "category": "specification",
+      "action": "info_only"
+    },
+    {
+      "title": "ePass: Neues NFC-Identifikationsverfahren für ePA startet am 25. März 2026",
+      "date": "2026-03-17",
+      "source": "https://www.presseportal.de/pm/181613/6237230",
+      "summary": "Am 25. März 2026 startet ePass als erstes volldigitales Identifikationsverfahren für die ePA. BITMARCK stellt das Verfahren 80 Prozent der GKV-Kassen zur Verfügung. Technisches Verfahren (zweistufig): (1) NFC-Chip des Personalausweises oder Reisepasses wird per Smartphone ausgelesen. (2) Ausweis wird fotografiert und ein Selfie-Video aufgenommen; biometrische Daten werden abgeglichen. Rechtsgrundlage: BEEP-Gesetz (in Kraft 01.01.2026). Entwickelt von Nect GmbH. Unterstützte Dokumente: deutsche Personalausweise ab August 2021 und Reisepässe ab 2005 sowie ausländische Reisedokumente mit ePass-Funktion. PIN oder Besuch einer Geschäftsstelle entfällt. Einsetzbar nicht nur für ePA, sondern auch für Online-Servicecenter der Kassen.",
+      "relevantArticles": ["ePA.md", "Gesundheits-ID.md", "IDP.md"],
+      "category": "specification",
+      "action": "update",
+      "details": "ePA.md sollte ePass als neues Identifikationsverfahren ab 25. März 2026 im Abschnitt 'Zugang und Authentifizierung' ergänzen. Gesundheits-ID.md kann ePass als ergänzendes (nicht konkurrierendes) Verfahren zur GesundheitsID erwähnen. Beide Verfahren ermöglichen ePA-Zugang ohne PIN oder Praxisbesuch, nutzen aber unterschiedliche Träger (GesundheitsID: Krankenversichertenkarte-Ableitung; ePass: hoheitliches Ausweisdokument).",
+      "suggestedTerm": "ePass"
+    },
+    {
+      "title": "Draft_E-Rezept_26_1: Pre-Release mit 9 Änderungen veröffentlicht (17. März 2026)",
+      "date": "2026-03-17",
+      "source": "https://gemspec.gematik.de/prereleases/Draft_E-Rezept_26_1/index.html",
+      "summary": "Gematik veröffentlichte am 17. März 2026 den Pre-Release Draft_E-Rezept_26_1 zur Kommentierung (Frist: 31. März 2026). Wesentliche Änderungen: (1) Communication v3: Überarbeitete Datenarchitektur für E-Rezept-Fachdienst-Nachrichten. (2) Push-Nachrichten: Klarstellung des notification.identifier-Felds. (3) DiGA-Ausdruck: Pflichtaushändigung eines Patientenausdrucks bei DiGA-Verordnung. (4) User-Agent-Header: E-Rezept-Fachdienst muss beim Kommunizieren mit Zentraldiensten User-Agent-Informationen übermitteln. (5) Digitales Doppel Fehlerbehandlung: Fehlerverhalten bei fehlender Telematik-ID. (6) ePA-Integration: E-Rezept-Fachdienst als Client des ePA MedicationService. (7) Registrierungszeitstempel: Speicherung von App-Registrierungszeitpunkten. (8) MedicationDispense-Referenz: Korrektur der Referenzdokumentation. (9) Versichertenidentifikation: Mechanismen für Testidentitäten.",
+      "relevantArticles": ["E-Rezept.md", "ePA.md"],
+      "category": "specification",
+      "action": "monitor",
+      "details": "Nach Abschluss der Kommentierungsphase und Veröffentlichung als finaler Release E-Rezept_26_1 sollte E-Rezept.md die Communication-v3-Architektur und die ePA-Integration (Fachdienst als MedicationService-Client) erwähnen. DiGA.md: Pflichtaushändigung eines Patientenausdrucks bei DiGA-Verordnung ist eine neue Anforderung."
+    },
+    {
+      "title": "DiPaG 1.0: Digitale Patientenrechnung startet Ende 2026",
+      "date": "2026-02-26",
+      "source": "https://fachportal.gematik.de/telematikinfrastruktur/roadmap",
+      "summary": "Die Digitale Patientenrechnung (DiPaG, gemäß §359a SGB V) ist laut OneRoadmap Q1/2026 für Ende 2026 als neue TI-Anwendung geplant. DiPaG ermöglicht Leistungserbringern (Ärzte, Zahnärzte, Apotheker), Rechnungen für Privatleistungen und Zuzahlungen digital zu übermitteln. Versicherte können die Rechnung in ihrer ePA oder GesundheitsID-App einsehen und an den Kostenträger (PKV, Beihilfe) weiterleiten. Ausbaustufe 2.0 mit erweiterten Funktionen folgt 2027. Produkttypsteckbrief und Feature-Spezifikation (gemF_DiPag V1.1.1) bereits auf gemspec.gematik.de veröffentlicht. API-Dokumentation auf GitHub (gematik/api-dipag).",
+      "relevantArticles": ["ePA.md", "Gesundheits-ID.md", "Fachdienst.md"],
+      "category": "specification",
+      "action": "new_article",
+      "details": "DiPaG ist eine neue TI-Anwendung ohne eigenen Artikel in der Wissensbasis. Da Spezifikation und Produkttypsteckbrief bereits vorhanden sind, ist jetzt ein guter Zeitpunkt für einen Artikel. Vorgeschlagener Pfad: content/technologies/DiPaG.md.",
+      "suggestedTerm": "DiPaG"
+    },
+    {
+      "title": "OneRoadmap Q1/2026: ePA 3.1.3 Teil 1 für H2/2026, PoPP 2.0 für Q4/2026 bestätigt",
+      "date": "2026-02-26",
+      "source": "https://fachportal.gematik.de/telematikinfrastruktur/roadmap",
+      "summary": "Die aktualisierte OneRoadmap (Stand 26. Februar 2026) bestätigt und präzisiert folgende Meilensteine: ePA 3.1.3 Teil 1 (eMedikationsplan-Pilot mit Push-Nachrichten): Q3/2026. ePA 3.1.3 Teil 2 (Volltextsuche): H1/2027. PoPP 2.0 (Telemedizin, GesundheitsID-Authentifizierung): Q4/2026. DiPaG 1.0 (Digitale Patientenrechnung): Ende 2026. E-Rezept 26.1 (strukturierte KIM-Nachrichten für Pflegeeinrichtungen): H1/2026. MyHealth@EU/NCPeH 2.1 (grenzüberschreitendes E-Rezept): H1/2027. T-Rezept und kontrollierte Substanzen: E-Rezept 27.2/27.4.",
+      "relevantArticles": ["ePA.md", "E-Rezept.md", "VSDM.md", "Telematikinfrastruktur.md"],
       "category": "specification",
       "action": "info_only"
     }

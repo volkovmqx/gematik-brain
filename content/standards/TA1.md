@@ -66,8 +66,9 @@ Scheitert eine Prüfung, wird der Satz mit einem Fehlercode (Retaxationscode) an
 
 Die wichtigsten Apothekenrechenzentren in Deutschland:
 
-- **NOVENTI**: Marktführer, verarbeitet nach Branchenschätzungen ca. 50 % der GKV-Rezepte; entstanden aus dem Zusammenschluss der Abrechnungszentren VSA, ALG und SARZ (2016-2018)
-- **AvP** (insolvent 2020; Teile des Geschäftsbetriebs wurden von der ARZ-Haan-Gruppe übernommen, insbesondere durch deren Tochter RZH)
+- **NOVENTI**: Marktführer (nach Branchenschätzungen ca. 50 % der GKV-Rezepte), entstanden aus der Fusion von VSA (München), ALG (Datteln) und SARZ (Schwerin) zwischen 2016 und 2018. Kooperationspartner von ARZ Darmstadt seit 2018.
+- **ARZ Darmstadt**: eigenständiges, apothekergetragenes Rechenzentrum; kooperiert seit 2018 mit NOVENTI bei bestimmten Softwareprojekten, ist aber rechtlich und operativ unabhängig.
+- **AvP** (insolvent 2020; Teile des Geschäftsbetriebs wurden von RZH, einer Tochter der ARZ-Haan-Gruppe, übernommen)
 - **DAD** (Deutsches Apothekenrechenzentrum der ABDA)
 - **ARZ Haan**
 - **GRZ** (Gesundheitsrechenzentrum)

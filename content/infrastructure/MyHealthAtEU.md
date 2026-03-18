@@ -20,7 +20,7 @@ MyHealth@EU wurde von der Europäischen Kommission im Rahmen des Programms für 
 Derzeit unterstützt MyHealth@EU zwei Dienste:
 
 1. **ePrescription / eDispensation**: Elektronische Rezepte, die in anderen EU-Ländern eingelöst werden können.
-2. **Patient Summary**: Zusammenfassung der wichtigsten Gesundheitsdaten eines Patienten (aktuelle Diagnosen, Dauermedikation, Allergien, Impfungen).
+2. **[[Patient-Summary|Patient Summary]]**: Zusammenfassung der wichtigsten Gesundheitsdaten eines Patienten (aktuelle Diagnosen, Dauermedikation, Allergien, Impfungen).
 
 In einer zweiten Ausbaustufe (Wave 2) sollen weitere Dienste hinzukommen: Laborbefunde, Entlassungsbriefe, medizinische Bildgebung ([[DICOM]]) und Notfallausweise.
 

@@ -1,30 +1,14 @@
 {
   "pending": [
     {
-      "term": "eArztbrief",
-      "category": "technologies",
-      "reason": "Elektronischer Arztbrief im CDA-Format, über KIM versandt. In 13 Artikeln erwähnt (KIM, HBA, KIS, QES, XDS, CDA, HL7, ISiK, PDSG, ePA, MIO, HSM-B, Bundesaerztekammer). Kernnutzungsfall von KIM und CDA. Erklärt wie strukturierte Arztbriefe von der Papierform zur digitalen Übertragung über die TI migriert wurden.",
-      "mentionedIn": [
-        "content/technologies/KIM.md",
-        "content/infrastructure/HBA.md",
-        "content/infrastructure/KIS.md",
-        "content/concepts/QES.md",
-        "content/standards/CDA.md",
-        "content/standards/XDS.md",
-        "content/standards/HL7.md",
-        "content/standards/ISiK.md",
-        "content/technologies/ePA.md"
-      ],
-      "priority": 25
-    },
-    {
-      "term": "G-BA",
+      "term": "Landesärztekammer",
       "category": "organization",
-      "reason": "Gemeinsamer Bundesausschuss. Höchstes Beschlussgremium der gemeinsamen Selbstverwaltung im deutschen Gesundheitswesen. Entscheidet über Leistungsumfang der GKV (Arzneimittel, Heilmittel, Hilfsmittel), Qualitätssicherungsmaßnahmen und Richtlinien. Erwähnt in GKV-Spitzenverband.md. Zentrales Organ für Erstattungsentscheidungen (DiGA-Nutzenbewertung, AMNOG) und Behandlungsrichtlinien.",
+      "reason": "Ärztliche Körperschaft auf Landesebene. Zuständig für Approbation, Berufsrecht und Ausstellung des HBA. In 12 Erwähnungen über Bundesaerztekammer.md und HBA.md als HBA-Herausgeber zentral. Ohne Landesärztekammer kein HBA und damit keine QES-fähige Signatur für Ärzte. Unmittelbares Bindeglied zwischen Berufsrecht und TI-Zugang.",
       "mentionedIn": [
-        "content/organization/GKV-Spitzenverband.md"
+        "content/organization/Bundesaerztekammer.md",
+        "content/infrastructure/HBA.md"
       ],
-      "priority": 21
+      "priority": 22
     },
     {
       "term": "gRPC",
@@ -37,17 +21,6 @@
       "priority": 20
     },
     {
-      "term": "KRITIS-Dachgesetz",
-      "category": "standards",
-      "reason": "Deutsches Umsetzungsgesetz der EU-CER-Richtlinie, in Kraft seit Januar/März 2026. Schafft einheitliche Mindeststandards für den physischen Schutz kritischer Infrastrukturen. Krankenhäuser fallen ausdrücklich in den Geltungsbereich. Registrierungspflicht ab 17. Juli 2026. Erwähnt in KRITIS.md, BSI.md und KIS.md. Direkt relevant für Krankenhäuser und TI-Betreiber.",
-      "mentionedIn": [
-        "content/concepts/KRITIS.md",
-        "content/organization/BSI.md",
-        "content/infrastructure/KIS.md"
-      ],
-      "priority": 20
-    },
-    {
       "term": "Teleradiologie",
       "category": "technologies",
       "reason": "Fernbefundung von DICOM-Bildern durch externe Radiologen. In DICOM.md, PACS.md und RIS.md als wichtiger Anwendungsfall der radiologischen Bildgebung erwähnt. Ermöglicht Versorgung in radiologisch unterversorgten Regionen. Berührungspunkt mit TI-Infrastruktur (PACS-Zugriff über sichere Netze).",
@@ -55,18 +28,6 @@
         "content/standards/DICOM.md",
         "content/infrastructure/PACS.md",
         "content/infrastructure/RIS.md"
-      ],
-      "priority": 19
-    },
-    {
-      "term": "Patient Summary",
-      "category": "standards",
-      "reason": "Europäisches Format für Patientenkurzakte (ePS). Zusammenfassung aktiver Diagnosen, Dauermedikation, Allergien und Impfungen. Kernbestandteil von MyHealth@EU für grenzüberschreitenden Datenaustausch. In 4 Artikeln erwähnt: NCPeH.md, MyHealthAtEU.md, EHDS.md, DVKA.md. Deutschland plant Bereitstellung ab 2029.",
-      "mentionedIn": [
-        "content/infrastructure/NCPeH.md",
-        "content/infrastructure/MyHealthAtEU.md",
-        "content/standards/EHDS.md",
-        "content/organization/DVKA.md"
       ],
       "priority": 19
     },
@@ -151,6 +112,15 @@
       "priority": 15
     },
     {
+      "term": "Bewertungsausschuss",
+      "category": "organization",
+      "reason": "Paritätisches Gremium aus KBV und GKV-Spitzenverband zur Festlegung und Bewertung des EBM. Beschließt Punktwerte, Abrechnungsregeln und neue Leistungspositionen. In EBM.md zentral als normgebendes Organ, 5 Erwähnungen. Kein Verständnis des EBM-Abrechnungssystems ohne Kenntnis dieses Gremiums.",
+      "mentionedIn": [
+        "content/standards/EBM.md"
+      ],
+      "priority": 15
+    },
+    {
       "term": "KHVVG",
       "category": "standards",
       "reason": "Krankenhausversorgungsverbesserungsgesetz 2024. Nachfolgegesetz des KHZG. Löst die einmalige Investitionsförderung durch strukturelle Vergütungsreformen ab (DRG-Strukturreform, Level-II-Versorgung). In KHZG.md als Folgegesetz erwähnt. Bedeutsam für Krankenhausplanung und KIS-Kontext.",
@@ -168,6 +138,16 @@
         "content/processes/AMTS.md"
       ],
       "priority": 13
+    },
+    {
+      "term": "Bundesmantelvertrag",
+      "category": "standards",
+      "reason": "Rahmenvertrag zwischen KBV und GKV-Spitzenverband. Regelt Grundsätze der ambulanten Versorgung, u.a. Genehmigungsvoraussetzungen für Videosprechstunden (Telemedizin.md) und Formvorschriften für Verordnungen. In SGB-V.md als Rechtsgrundlage. 2 Erwähnungen, aber wichtig für das Verständnis vertragsärztlicher Pflichten.",
+      "mentionedIn": [
+        "content/concepts/Telemedizin.md",
+        "content/standards/SGB-V.md"
+      ],
+      "priority": 12
     }
   ],
   "done": [
@@ -289,7 +269,12 @@
     "eVO",
     "KHG",
     "GDVG",
-    "BfDI"
+    "BfDI",
+    "eArztbrief",
+    "G-BA",
+    "KRITIS-Dachgesetz",
+    "DiPaG",
+    "Patient Summary"
   ],
   "lastRun": "2026-03-18"
 }

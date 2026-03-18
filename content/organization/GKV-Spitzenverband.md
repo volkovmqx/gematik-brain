@@ -25,7 +25,7 @@ Als Dachverband aller gesetzlichen Krankenkassen vertritt der GKV-Spitzenverband
 - Abschluss von Rahmenverträgen mit Ärzten, Apothekern, Krankenhäusern und anderen Leistungserbringern
 - Festlegung einheitlicher Bewertungsmaßstäbe (z.B. Einheitlicher Bewertungsmaßstab, EBM)
 - Wahrnehmung von Aufgaben der gemeinsamen Selbstverwaltung im Gesundheitswesen
-- Verhandlungen mit dem Gemeinsamen Bundesausschuss (G-BA) über Leistungen und Qualitätsstandards
+- Verhandlungen mit dem [[G-BA|Gemeinsamen Bundesausschuss (G-BA)]] über Leistungen und Qualitätsstandards
 - Koordination der Datenstandards und IT-Sicherheitsanforderungen nach § 217f SGB V
 - Stellungnahmen zu Gesetzgebungsvorhaben im Gesundheitsbereich
 
