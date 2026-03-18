@@ -5,9 +5,9 @@ import style from "./styles/audienceFilter.scss"
 import { classNames } from "../util/lang"
 
 const audiences = [
-  { value: "all", label: "Alle Inhalte" },
-  { value: "non-technical", label: "Management & Strategie" },
-  { value: "technical", label: "Technik & Entwicklung" },
+  { value: "all", label: "Alle Inhalte", short: "Alle" },
+  { value: "non-technical", label: "Management & Strategie", short: "Management" },
+  { value: "technical", label: "Technik & Entwicklung", short: "Technik" },
 ] as const
 
 const AudienceFilter: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
@@ -15,11 +15,12 @@ const AudienceFilter: QuartzComponent = ({ displayClass }: QuartzComponentProps)
     <div class={classNames(displayClass, "audience-filter")} aria-label="Zielgruppe">
       <span class="audience-label">Perspektive:</span>
       <div class="audience-toggle" role="radiogroup" aria-label="Zielgruppe wechseln">
-        {audiences.map(({ value, label }) => (
+        {audiences.map(({ value, label, short }) => (
           <button
             role="radio"
             aria-checked={value === "all" ? "true" : "false"}
             data-audience-value={value}
+            data-short={short}
             class={`audience-btn${value === "all" ? " active" : ""}`}
             tabindex={value === "all" ? 0 : -1}
           >
@@ -27,6 +28,7 @@ const AudienceFilter: QuartzComponent = ({ displayClass }: QuartzComponentProps)
           </button>
         ))}
       </div>
+      <div id="audience-status" class="audience-status" aria-live="polite" />
     </div>
   )
 }

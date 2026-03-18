@@ -263,6 +263,9 @@ export function renderPage(
     <html lang={lang} dir={direction}>
       <Head {...componentData} />
       <body data-slug={slug}>
+        <a href="#main-content" class="skip-to-content">
+          Zum Inhalt springen
+        </a>
         <div id="quartz-root" class="page">
           <Body {...componentData}>
             {LeftComponent}
@@ -279,7 +282,9 @@ export function renderPage(
                   ))}
                 </div>
               </div>
-              <Content {...componentData} />
+              <main id="main-content">
+                <Content {...componentData} />
+              </main>
               <hr />
               <div class="page-footer">
                 {afterBody.map((BodyComponent) => (

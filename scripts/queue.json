@@ -64,6 +64,16 @@
       "priority": 24
     },
     {
+      "term": "EHDS",
+      "category": "standards",
+      "reason": "European Health Data Space (EU 2025/327). EU-Verordnung, die den primären und sekundären grenzüberschreitenden Gesundheitsdatenaustausch reguliert. In NCPeH.md als rechtliche Grundlage für MyHealth@EU genannt und mit GDNG verknüpft (Sekundärnutzung). Zentral für den EU-weiten Kontext der deutschen TI. 4 Nennungen in NCPeH.md und GDNG.md.",
+      "mentionedIn": [
+        "content/infrastructure/NCPeH.md",
+        "content/standards/GDNG.md"
+      ],
+      "priority": 23
+    },
+    {
       "term": "ÖGD",
       "category": "organization",
       "reason": "Öffentlicher Gesundheitsdienst (ÖGD), insbesondere Gesundheitsämter. In DEMIS.md, RKI.md und IfSG.md als zentrale Empfänger von Infektionsschutzmeldungen und als Akteure der öffentlichen Gesundheitsinfrastruktur erwähnt. Gesundheitsämter 13-mal in 3 Artikeln genannt. Wichtiger Knotenpunkt zwischen Meldesystemen (DEMIS) und Surveillance (RKI).",
@@ -77,10 +87,10 @@
     {
       "term": "InEK",
       "category": "organization",
-      "reason": "Institut für das Entgeltsystem im Krankenhaus. Entwickelt das G-DRG-System und die Deutschen Kodierrichtlinien (DKR), die OPS und ICD-10-GM verbindlich anwenden. In OPS.md und ICD-10-GM.md als Herausgeber der Kodierrichtlinien für die DRG-Abrechnung erwähnt.",
+      "reason": "Institut für das Entgeltsystem im Krankenhaus. Entwickelt das G-DRG-System und die Deutschen Kodierrichtlinien (DKR), die OPS und ICD-10-GM verbindlich anwenden. In DRG.md und OPS.md als Herausgeber der Kodierrichtlinien für die DRG-Abrechnung erwähnt. 5 Nennungen ohne eigene Seite.",
       "mentionedIn": [
-        "content/standards/OPS.md",
-        "content/standards/ICD-10-GM.md"
+        "content/concepts/DRG.md",
+        "content/standards/OPS.md"
       ],
       "priority": 22
     },
@@ -98,11 +108,31 @@
       "priority": 21
     },
     {
+      "term": "ZETA",
+      "category": "concepts",
+      "reason": "Zero-Trust-Architektur-Framework der gematik für TI 2.0. Am 15. Dezember 2025 als Open Source veröffentlicht (ZETA-Client-SDK und ZETA-Guard). Erster produktiver Einsatz mit VSDM 2.0 geplant für Juli 2026. In Zero-Trust.md als zentrale TI-2.0-Umsetzungskomponente beschrieben. 5 Nennungen. Wichtig für Entwickler, die TI-2.0-Integration implementieren.",
+      "mentionedIn": [
+        "content/concepts/Zero-Trust.md",
+        "content/infrastructure/TI-Gateway.md"
+      ],
+      "priority": 20
+    },
+    {
       "term": "KHVVG",
       "category": "standards",
       "reason": "Krankenhausversorgungsverbesserungsgesetz 2024. Nachfolgegesetz des KHZG. Löst die einmalige Investitionsförderung durch strukturelle Vergütungsreformen ab. In KHZG.md als Folgegesetz zur Krankenhausreform erwähnt. Bedeutsam für Leistungserbringer und KIS-Kontext.",
       "mentionedIn": [
         "content/standards/KHZG.md"
+      ],
+      "priority": 18
+    },
+    {
+      "term": "HSM-B",
+      "category": "infrastructure",
+      "reason": "Hardware Security Module Typ B. Pilotprojekt der gematik als digitaler Nachfolger der physischen SMC-B-Karte. Die institutionelle TI-Identität wird direkt im Highspeed-Konnektor (HSK) gespeichert statt auf einer Chipkarte. Friendly-User-Test gestartet März 2026 mit Partnern RHÖN-KLINIKUM, D-Trust, DKTIG, RISE. 8 Nennungen in Konnektoren.md und SMC-B.md. Relevant für große Einrichtungen und TI-2.0-Migration.",
+      "mentionedIn": [
+        "content/infrastructure/Konnektoren.md",
+        "content/infrastructure/SMC-B.md"
       ],
       "priority": 18
     },
@@ -188,9 +218,10 @@
     {
       "term": "DICOM",
       "category": "standards",
-      "reason": "Digital Imaging and Communications in Medicine. Internationaler Standard für medizinische Bilddaten (Röntgen, MRT, CT). In KIS.md als PACS/RIS-Integrationspunkt erwähnt.",
+      "reason": "Digital Imaging and Communications in Medicine. Internationaler Standard für medizinische Bilddaten (Röntgen, MRT, CT). In KIS.md als PACS/RIS-Integrationspunkt erwähnt. 5 Nennungen ohne eigene Seite.",
       "mentionedIn": [
-        "content/infrastructure/KIS.md"
+        "content/infrastructure/KIS.md",
+        "content/concepts/Telemedizin.md"
       ],
       "priority": 10
     },

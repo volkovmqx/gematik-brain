@@ -1,0 +1,60 @@
+@use "../../styles/variables.scss" as *;
+
+.floating-buttons {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 100;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+
+  .floating-button {
+    appearance: none;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--light);
+    border: 1px solid var(--lightgray);
+    color: var(--darkgray);
+    cursor: pointer;
+    padding: 0;
+    transition:
+      background 0.15s ease,
+      color 0.15s ease;
+
+    &:hover {
+      background: var(--lightgray);
+      color: var(--dark);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--secondary);
+      outline-offset: -2px;
+    }
+
+    // collapse borders between stacked buttons
+    & + .floating-button {
+      margin-top: -1px;
+    }
+
+    &:first-child {
+      border-radius: 0.375rem 0.375rem 0 0;
+    }
+
+    &:last-child {
+      border-radius: 0 0 0.375rem 0.375rem;
+    }
+  }
+}
+
+@media all and ($mobile) {
+  .floating-buttons {
+    bottom: 1rem;
+    right: 1rem;
+  }
+}

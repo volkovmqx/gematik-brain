@@ -74,27 +74,64 @@ npx quartz build        # Build the site
 npx quartz build --serve  # Local preview on localhost:8080
 ```
 
-## Agent swarm system
+## Newsroom system
 
-The knowledge base is autonomously expanded by a swarm of Claude Code agents:
+The knowledge base is autonomously expanded by a newsroom of Claude Code agents with editorial oversight:
 
-- **Orchestrator** (`.claude/agents/orchestrator.md`): Main agent, runs via `claude --agent orchestrator`. Spawns and coordinates all subagents.
-- **Explorer** (`.claude/agents/explorer.md`): Reads all content, identifies missing terms and content gaps semantically. Writes to `scripts/queue.json`.
-- **Researcher** (`.claude/agents/researcher.md`): Researches terms via WebSearch/WebFetch and writes articles following the template. Handles 3-5 terms per batch.
-- **News Scout** (`.claude/agents/news-scout.md`): Finds recent gematik/TI news and regulatory changes. Writes to `scripts/news-findings.json`.
-- **Grammar Fixer** (`.claude/agents/grammar-fixer.md`): Fixes umlauts, spelling, and grammar across all articles.
+### Roles
 
-### Running the swarm
+| Role | Agent | File | Responsibility |
+|------|-------|------|----------------|
+| **Chefredakteur** | orchestrator | `.claude/agents/orchestrator.md` | Editorial decisions, dispatches agents, review gates |
+| **Beat Editor** | explorer | `.claude/agents/explorer.md` | Scans coverage gaps, writes `scripts/queue.json` |
+| **Reporter** | researcher | `.claude/agents/researcher.md` | Writes new articles, integrates news, fixes quality issues |
+| **Wire Desk** | news-scout | `.claude/agents/news-scout.md` | Scans recent news, writes `scripts/news-findings.json` |
+| **Fact-Checker** | fact-checker | `.claude/agents/fact-checker.md` | Verifies facts, runs quality checks, writes `scripts/quality-report.json` |
+| **Copy Desk** | grammar-fixer | `.claude/agents/grammar-fixer.md` | Fixes umlauts, spelling, and grammar |
+| **Style Guide Bot** | — | `scripts/test.sh` | Deterministic structural checks (no LLM), writes `scripts/test-report.json` |
 
-```bash
-# Full expansion cycle (used by cron)
-./scripts/expand.sh
+### Editorial workflow (one cycle)
 
-# Manual test run
-claude --agent orchestrator -p "Run a small test: explore gaps, write 2 articles, fix grammar."
+```
+1. Chefredakteur reads quality-report.json + news-findings.json + test-report.json
+2. Dispatches Beat Editor + Wire Desk (parallel)
+3. Builds assignment list (priority: fixes > news > new articles)
+4. Dispatches Reporter with assignments
+5. Dispatches Fact-Checker → review gate (max 1 revision round)
+6. Dispatches Copy Desk
+7. Runs test.sh final check
 ```
 
-### Queue files
+### Running the newsroom
 
-- `scripts/queue.json` - Tracks pending terms and completed articles
-- `scripts/news-findings.json` - Recent news findings from the news scout
+```bash
+# Full editorial cycle (used by cron)
+./scripts/expand.sh
+
+# Run just the style guide checks
+bash scripts/test.sh
+
+# Manual test run
+claude --agent orchestrator -p "Run a small editorial cycle: explore gaps, write 2 articles, review, fix grammar."
+```
+
+### Tuning parameters
+
+These thresholds live in `.claude/agents/orchestrator.md` and should be adjusted over time as the knowledge base matures:
+
+| Parameter | Current value | Location | Notes |
+|-----------|--------------|----------|-------|
+| Quality threshold (fix-first mode) | 70% | orchestrator.md, Phase 2 Priority A | Below this, the Chefredakteur prioritizes fixing existing articles over writing new ones. Increase as baseline quality improves. |
+| Max quality fixes per cycle | 5 | orchestrator.md, Phase 2 | How many articles to fix in one cycle. |
+| Max news updates per cycle | 5 | orchestrator.md, Phase 2 | How many news findings to integrate per cycle. |
+| Max new articles per cycle | 5 | orchestrator.md, Phase 2 | How many new articles to write per cycle. |
+| Revision rounds | 1 | orchestrator.md, Phase 4 | Max fact-checker → reporter loops before proceeding. |
+
+Start with these defaults and raise the quality threshold over time (e.g., 70 → 75 → 80) as the backlog of structural issues shrinks.
+
+### Data files
+
+- `scripts/queue.json` — Pending terms and completed articles (Beat Editor output)
+- `scripts/news-findings.json` — Recent news findings (Wire Desk output)
+- `scripts/quality-report.json` — Per-article quality verdicts (Fact-Checker output, tracked in git)
+- `scripts/test-report.json` — Structural check results (Style Guide Bot output)

@@ -1,18 +1,82 @@
 const STORAGE_KEY = "gematik-brain-audience"
 
-function applyAudienceFilter(audience: string) {
-  document.documentElement.dataset.audience = audience
+type AudienceIndex = Map<string, string[]>
 
-  document.querySelectorAll("[data-audience]").forEach((el) => {
-    if (el instanceof HTMLElement && !el.closest(".audience-toggle")) {
-      const elAudience = el.dataset.audience ?? "all"
-      if (audience === "all" || elAudience === "all" || elAudience.includes(audience)) {
-        el.classList.remove("audience-hidden")
-      } else {
-        el.classList.add("audience-hidden")
-      }
+let audienceIndex: AudienceIndex | null = null
+
+async function loadAudienceIndex(): Promise<AudienceIndex> {
+  if (audienceIndex) return audienceIndex
+  const data = await fetchData
+  audienceIndex = new Map()
+  for (const [slug, details] of Object.entries(data)) {
+    const d = details as { audience?: string[] }
+    audienceIndex.set(slug, d.audience ?? ["technical", "non-technical"])
+  }
+  return audienceIndex
+}
+
+function slugFromHref(href: string): string {
+  try {
+    const url = new URL(href, location.origin)
+    let path = url.pathname
+    // Remove trailing slash and leading base path
+    path = path.replace(/\/$/, "").replace(/^\//, "")
+    return path
+  } catch {
+    return href.replace(/^\//, "").replace(/\/$/, "")
+  }
+}
+
+function matchesAudience(pageAudience: string[], selected: string): boolean {
+  if (selected === "all") return true
+  if (pageAudience.includes("all")) return true
+  return pageAudience.includes(selected)
+}
+
+async function applyAudienceFilter(audience: string) {
+  document.documentElement.dataset.audience = audience
+  const index = await loadAudienceIndex()
+
+  // Filter explorer links
+  const explorerLinks = document.querySelectorAll<HTMLAnchorElement>(".explorer-ul a[data-for]")
+  let shown = 0
+  let total = 0
+
+  explorerLinks.forEach((link) => {
+    const slug = link.dataset.for ?? ""
+    const li = link.closest("li")
+    if (!li) return
+    const pageAudience = index.get(slug) ?? ["technical", "non-technical"]
+    total++
+    if (matchesAudience(pageAudience, audience)) {
+      li.classList.remove("audience-hidden")
+      shown++
+    } else {
+      li.classList.add("audience-hidden")
     }
   })
+
+  // Filter page listing items (folder/tag pages)
+  document.querySelectorAll<HTMLAnchorElement>(".section-li a.internal").forEach((link) => {
+    const href = link.getAttribute("href") ?? ""
+    const slug = slugFromHref(href)
+    const li = link.closest("li")
+    if (!li) return
+    const pageAudience = index.get(slug) ?? ["technical", "non-technical"]
+    total++
+    if (matchesAudience(pageAudience, audience)) {
+      li.classList.remove("audience-hidden")
+      shown++
+    } else {
+      li.classList.add("audience-hidden")
+    }
+  })
+
+  // Update status region
+  const status = document.getElementById("audience-status")
+  if (status && total > 0) {
+    status.textContent = `${shown} von ${total} Einträgen angezeigt`
+  }
 }
 
 // Apply saved preference immediately to avoid flash
@@ -20,6 +84,9 @@ const saved = localStorage.getItem(STORAGE_KEY) ?? "all"
 document.documentElement.dataset.audience = saved
 
 document.addEventListener("nav", () => {
+  // Reset cache on navigation (new page may have different explorer)
+  audienceIndex = null
+
   const group = document.querySelector(".audience-toggle") as HTMLElement | null
   if (!group) return
 

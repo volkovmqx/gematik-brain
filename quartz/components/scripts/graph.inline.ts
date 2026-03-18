@@ -210,7 +210,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     const numLinks = graphData.links.filter(
       (l) => l.source.id === d.id || l.target.id === d.id,
     ).length
-    return 4 + Math.sqrt(numLinks) * 1.5
+    return 3 + Math.sqrt(numLinks)
   }
 
   let hoveredNodeId: string | null = null
@@ -358,7 +358,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     autoStart: false,
     autoDensity: true,
     backgroundAlpha: 0,
-    preference: "webgpu",
+    preference: "webgl",
     resolution: window.devicePixelRatio,
     eventMode: "static",
   })
@@ -648,6 +648,13 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
   Array.from(containerIcons).forEach((icon) => {
     icon.addEventListener("click", renderGlobalGraph)
     window.addCleanup(() => icon.removeEventListener("click", renderGlobalGraph))
+  })
+
+  // Close button for global graph
+  const closeButtons = document.getElementsByClassName("global-graph-close")
+  Array.from(closeButtons).forEach((btn) => {
+    btn.addEventListener("click", hideGlobalGraph)
+    window.addCleanup(() => btn.removeEventListener("click", hideGlobalGraph))
   })
 
   document.addEventListener("keydown", shortcutHandler)

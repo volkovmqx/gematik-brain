@@ -492,5 +492,58 @@
       "category": "specification",
       "action": "info_only"
     }
+  ,
+    {
+      "title": "KRITIS-Dachgesetz: Bundestag und Bundesrat beschlossen, Registrierungspflicht ab Juli 2026",
+      "date": "2026-03-06",
+      "source": "https://www.bundestag.de/dokumente/textarchiv/2026/kw05-de-kritische-infrastruktur-1137002",
+      "summary": "Der Bundestag verabschiedete das KRITIS-Dachgesetz am 29. Januar 2026, der Bundesrat stimmte am 6. März 2026 zu. Das Gesetz setzt die EU-CER-Richtlinie um und schafft erstmals einheitliche Mindeststandards für den physischen Schutz kritischer Infrastrukturen in Deutschland. Krankenhäuser und Gesundheitseinrichtungen fallen ausdrücklich in den Geltungsbereich. Betroffene Betreiber müssen sich ab 17. Juli 2026 registrieren und Risikoanalysen sowie Resilienzpläne erstellen. Bei Verstößen drohen empfindliche Bußgelder.",
+      "relevantArticles": ["Telematikinfrastruktur.md", "KIS.md", "BSI.md"],
+      "category": "regulation",
+      "action": "update",
+      "details": "BSI.md und KIS.md sollten das KRITIS-Dachgesetz als neuen Rechtsrahmen für kritische Infrastrukturen im Gesundheitswesen erwähnen. Registrierungspflicht ab 17.07.2026. Ggf. eigener Artikel 'KRITIS-Dachgesetz' sinnvoll.",
+      "suggestedTerm": "KRITIS-Dachgesetz"
+    },
+    {
+      "title": "TI-Pauschale 2026 um 2,8 Prozent gestiegen",
+      "date": "2026-01-08",
+      "source": "https://www.kbv.de/praxis/tools-und-services/praxisnachrichten/2026/01-08/ti-pauschale-gestiegen",
+      "summary": "Die monatliche TI-Pauschale für Arztpraxen stieg zum 1. Januar 2026 um 2,8 Prozent. Für eine Einzelpraxis beträgt sie nun beispielsweise ca. 263,62 Euro monatlich. Die Pauschale erfordert die vollständige technische Ausstattung (Konnektor, Kartenterminals, SMC-B, eHBA) sowie die Nutzung zentraler TI-Anwendungen (eAU, ePA, KIM). Fehlt der Nachweis einer Anwendung, wird die Pauschale um 50 Prozent gekürzt; fehlen mehrere, entfällt sie ganz.",
+      "relevantArticles": ["Telematikinfrastruktur.md", "KIM.md"],
+      "category": "regulation",
+      "action": "update",
+      "details": "Telematikinfrastruktur.md sollte die aktuelle TI-Pauschale 2026 (+2,8 %) und Sanktionsregelungen erwähnen. Bisher fehlen konkrete Beträge im Artikel.",
+      "suggestedTerm": "TI-Pauschale"
+    },
+    {
+      "title": "gemspec Release TI-Zugang_25_3: HSK und TI-Gateway Spezifikationen aktualisiert (27. Januar 2026)",
+      "date": "2026-01-27",
+      "source": "https://gemspec.gematik.de/releases/TI-Zugang_25_3/index.html",
+      "summary": "Am 27. Januar 2026 veröffentlichte gematik den Release TI-Zugang_25_3 mit 5 Dokumenten. Enthalten sind aktualisierte Anbietertypsteckbriefe und Produkttypsteckbriefe für den Highspeed-Konnektor (HSK ATV 1.6.0, PTV 2.1.1) sowie das TI-Gateway (ATV 1.2.6, PTV 1.4.1) und den Standard-Konnektor (PTV6 6.0.3). Grundlage bilden die Änderungslisten Draft_HSK_25_2, Draft_TI-Gateway_25_3 und Draft_Konn_25_2.",
+      "relevantArticles": ["Konnektoren.md", "TI-Gateway.md"],
+      "category": "specification",
+      "action": "update",
+      "details": "TI-Gateway.md und Konnektoren.md sollten auf den aktuellen Spezifikationsstand (TI-Zugang_25_3 vom 27.01.2026) verweisen. Für das TI-Gateway gilt jetzt PTV 1.4.1 als aktuelle Produkttypspezifikation."
+    },
+    {
+      "title": "gemspec Release CI_25_5: PKI, VPN und ECC-Umstellung in Zentralen Komponenten (13. Januar 2026)",
+      "date": "2026-01-13",
+      "source": "https://gemspec.gematik.de/releases/CI_25_5/index.html",
+      "summary": "Am 13. Januar 2026 veröffentlichte gematik Release CI_25_5 mit 17 Dokumenten zu Zentralen Komponenten, VPN-Zugangsdienst, PKI und TSP-Kartenherausgeber. Inhaltlich enthält der Release: Spezifikationen zum TI-User-Agent, Optimierungen des IPv4-Adresskonzepts, Anpassung der PKI-Referenzen an aktuelle ETSI-Standards (Implementing Acts zu Trusted Lists) und die Freigabe von ECC für OCSP-Signaturen im Rahmen der RSA-Abschaltung.",
+      "relevantArticles": ["Telematikinfrastruktur.md", "PKI.md"],
+      "category": "specification",
+      "action": "info_only"
+    },
+    {
+      "title": "BSI modernisiert IT-Grundschutz zu Grundschutz++ ab 2026",
+      "date": "2026-01-01",
+      "source": "https://wiki.isms-ratgeber.info/wiki/Grundschutz++",
+      "summary": "Das BSI führt ab 2026 eine umfassende Modernisierung des IT-Grundschutzes ein, bekannt als Grundschutz++. Kernänderungen: Überführung in maschinenlesbares JSON-Format für automatisierte Compliance-Prüfungen, stärker risikobasierter Ansatz, reduzierte Dokumentationslast insbesondere für KMU. Eine Übergangsphase läuft ab Januar 2026. Da die TI unter IT-Grundschutz-Anforderungen fällt, sind TI-Betreiber und Hersteller von den Neuerungen betroffen.",
+      "relevantArticles": ["BSI.md", "Telematikinfrastruktur.md"],
+      "category": "regulation",
+      "action": "update",
+      "details": "BSI.md sollte Grundschutz++ als Nachfolger des klassischen IT-Grundschutzes ab 2026 erwähnen. Relevanz für TI-Betreiber: neue Anforderungsformate, JSON-basiert.",
+      "suggestedTerm": "IT-Grundschutz++"
+    }
   ]
 }

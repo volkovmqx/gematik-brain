@@ -5,11 +5,16 @@ import AudienceFilter from "./quartz/components/AudienceFilter"
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [AudienceFilter()],
-  afterBody: [],
+  header: [
+    Component.ConditionalRender({
+      component: AudienceFilter(),
+      condition: (page) => page.fileData.slug !== "index",
+    }),
+  ],
+  afterBody: [Component.FloatingButtons()],
   footer: Component.Footer({
     links: {
-      "gematik GitHub": "https://github.com/gematik",
+      "GitHub": "https://github.com/volkovmqx/gematik-brain",
       "gematik.de": "https://www.gematik.de",
     },
   }),
@@ -22,9 +27,22 @@ export const defaultContentPageLayout: PageLayout = {
       component: Component.Breadcrumbs(),
       condition: (page) => page.fileData.slug !== "index",
     }),
-    Component.ArticleTitle(),
-    Component.ContentMeta(),
-    Component.TagList(),
+    Component.ConditionalRender({
+      component: Component.ArticleTitle(),
+      condition: (page) => page.fileData.slug !== "index",
+    }),
+    Component.ConditionalRender({
+      component: Component.ContentMeta(),
+      condition: (page) => page.fileData.slug !== "index",
+    }),
+    Component.ConditionalRender({
+      component: Component.TagList(),
+      condition: (page) => page.fileData.slug !== "index",
+    }),
+    Component.ConditionalRender({
+      component: Component.Homepage(),
+      condition: (page) => page.fileData.slug === "index",
+    }),
   ],
   left: [
     Component.PageTitle(),
@@ -42,9 +60,17 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
-    Component.Graph(),
+    Component.ConditionalRender({
+      component: Component.Graph({
+        localGraph: { depth: 1, scale: 1.2 },
+      }),
+      condition: (page) => page.fileData.slug !== "index",
+    }),
     Component.DesktopOnly(Component.TableOfContents()),
-    Component.Backlinks(),
+    Component.ConditionalRender({
+      component: Component.Backlinks(),
+      condition: (page) => page.fileData.slug !== "index",
+    }),
   ],
 }
 
