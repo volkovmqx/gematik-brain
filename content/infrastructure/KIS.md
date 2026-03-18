@@ -75,7 +75,7 @@ KIS-Systeme implementieren typischerweise:
 
 - **HL7 v2 ADT**: Aufnahme/Entlassung/Verlegung-Nachrichten, weit verbreitet
 - **HL7 v2 ORM/ORU**: Laboraufträge und -ergebnisse
-- **HL7 v3 CDA** (Clinical Document Architecture): Strukturierte klinische Dokumente (Arztbriefe)
+- **HL7 v3 [[CDA]]** (Clinical Document Architecture): Strukturierte klinische Dokumente (Arztbriefe)
 - **HL7 FHIR R4**: Neue Standard-Schnittstelle für ISiK und TI-Anwendungen
 - **DICOM**: Bildübertragung im Radiologiekontext (PACS-Anbindung)
 

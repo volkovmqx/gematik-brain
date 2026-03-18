@@ -19,7 +19,7 @@ XDS steht für Cross-Enterprise Document Sharing und ist ein Integrationsprofil 
 
 In Deutschland wird XDS als Grundlage für das Dokumentenmanagement der [[ePA]] (elektronische Patientenakte) genutzt. Die Schnittstellen der ePA basieren auf IHE-Spezifikationen, insbesondere auf dem XDS-Konzept für die Ablage und den Abruf medizinischer Dokumente. Das zugehörige Datenmodell-Dokument gemSpec_DM_ePA legt fest, welche XDS-Metadatenattribute auf Ebene von Submission Set, Document Entry und Folder zu verwenden sind.
 
-XDS ist dokumenteninhaltsneutral: Es unterstützt beliebige Dateiformate wie [[FHIR]]-Dokumente, CDA, DICOM, PDF oder Plaintext. Die Organisation erfolgt ausschließlich über Metadaten.
+XDS ist dokumenteninhaltsneutral: Es unterstützt beliebige Dateiformate wie [[FHIR]]-Dokumente, [[CDA]], DICOM, PDF oder Plaintext. Die Organisation erfolgt ausschließlich über Metadaten.
 
 ## Technische Details
 

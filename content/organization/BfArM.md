@@ -64,7 +64,7 @@ Die Bundesopiumstelle ist eine Abteilung des BfArM und reguliert Betäubungsmitt
 
 ### Zusammenwirken mit gematik und E-Rezept
 
-Das [[E-Rezept]]-Ökosystem betrifft das BfArM indirekt über die Arzneimittelzulassung: Nur zugelassene Arzneimittel dürfen verordnet werden. Die Verordnungsdaten im [[E-Rezept]] (FHIR MedicationRequest nach [[KBV]]-Profil) enthalten PZN-Nummern (Pharmazentralnummern), die sich auf das Arzneimittelstammsortiment beziehen.
+Das [[E-Rezept]]-Ökosystem betrifft das BfArM indirekt über die Arzneimittelzulassung: Nur zugelassene Arzneimittel dürfen verordnet werden. Die Verordnungsdaten im [[E-Rezept]] (FHIR MedicationRequest nach [[KBV]]-Profil) enthalten [[PZN|PZN-Nummern (Pharmazentralnummern)]], die sich auf das Arzneimittelstammsortiment beziehen.
 
 ## Verknüpfungen
 

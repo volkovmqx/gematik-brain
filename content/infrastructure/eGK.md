@@ -2,6 +2,7 @@
 title: eGK - Elektronische Gesundheitskarte
 audience: [technical, non-technical]
 tags: [infrastruktur, egk, karte, identitaet]
+aliases: [Elektronische Gesundheitskarte, Gesundheitskarte, eGK G2.1]
 ---
 
 # eGK - Elektronische Gesundheitskarte
@@ -43,7 +44,7 @@ Smartcards im TI-System bestehen aus: Kartenkörper, Chipmodul (Mikroprozessor +
 
 ## Verknüpfungen
 
-- Wird gelesen über [[Konnektoren]] und Kartenterminals
+- Wird gelesen über [[Konnektoren]] und [[Kartenterminal|Kartenterminals]]
 - Zugang zu [[ePA]] und [[E-Rezept]]
 - Stammdaten via [[VSDM]]
 - Notfalldaten via [[NFDM]]

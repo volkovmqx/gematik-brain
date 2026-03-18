@@ -50,7 +50,7 @@ HL7 v3 war technisch konsistenter als v2, aber in der Praxis deutlich komplexer 
 
 ### Clinical Document Architecture (CDA)
 
-CDA (Clinical Document Architecture) ist ein Dokumentenstandard, der auf HL7 v3 basiert. Er definiert die Struktur und Semantik klinischer Dokumente wie Arztbriefe, Entlassberichte und Laborbefunde.
+[[CDA]] (Clinical Document Architecture) ist ein Dokumentenstandard, der auf HL7 v3 basiert. Er definiert die Struktur und Semantik klinischer Dokumente wie Arztbriefe, Entlassberichte und Laborbefunde.
 
 CDA-Dokumente sind XML-Dateien mit einem definierten Header (Metadaten) und einem Body (Inhalt). Der Body kann unstrukturierten Text, tabellarische Daten oder vollständig codierte Entries enthalten (Level 1, 2, 3).
 

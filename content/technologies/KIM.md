@@ -2,6 +2,7 @@
 title: KIM - Kommunikation im Medizinwesen
 audience: [technical, non-technical]
 tags: [anwendung, kim, kommunikation]
+aliases: [Kommunikation im Medizinwesen, KOM-LE, Sichere E-Mail TI]
 ---
 
 # KIM - Kommunikation im Medizinwesen
@@ -23,31 +24,45 @@ KIM funktioniert wie E-Mail, ist aber Ende-zu-Ende-verschlüsselt und in die TI 
 - Abrechnungsdaten
 - Strukturierte Daten über sogenannte Dienstkennungen (für automatische Verarbeitung)
 
-## Architektur
+## Technische Details
+
+### Architektur
 
 KIM besteht aus drei Komponenten:
 
-### 1. Clientmodul
+#### 1. Clientmodul
 Das Clientmodul ist in das Primärsystem (Praxissoftware) integriert. Es verschlüsselt und signiert Nachrichten über die Schnittstellen des [[Konnektoren|Konnektors]].
 
-### 2. KIM-Fachdienst (Mailserver)
+#### 2. KIM-Fachdienst (Mailserver)
 Der [[Fachdienst|KIM-Fachdienst]] routet verschlüsselte Nachrichten zwischen Teilnehmern. Er wird von zugelassenen Anbietern betrieben.
 
-### 3. Verzeichnisdienst
-Ein LDAP-basiertes Adressbuch ([[VZD]]), in dem alle registrierten KIM-Teilnehmer gelistet sind.
+#### 3. Verzeichnisdienst (VZD)
+Ein LDAP-basiertes Adressbuch ([[VZD]]), in dem alle registrierten KIM-Teilnehmer gelistet sind. KIM-Adressen haben das Format `name@anbieter.kim.telematik` und werden über den [[VZD]] aufgelöst.
 
-### Technische Details
+### Protokoll und Verschlüsselung
+
 - Verschlüsselung: S/MIME mit Zertifikaten der [[PKI|TI-PKI]]
-- Maximale Nachrichtengröße: 25 MB (ab KIM 1.5+: 524 MB)
-- Aktuelle Version: KIM 1.5.5 / Spezifikationsversion gemAnbT 1.6.8 / gemProdT 1.6.5 (Release KIM_1_5_5, Februar 2026)
-- Dienstkennungen ermöglichen automatisierte Verarbeitung und gezieltes Routing
+- Signatur: Qualifizierte elektronische Signatur ([[QES]]) über [[Konnektoren|Konnektor]] und [[HBA]] oder [[SMC-B]]
+- Maximale Nachrichtengröße: 25 MB (ab KIM 1.5: 524 MB über Large Message Service)
+- Transport: SMTP/IMAP mit TLS
+
+### Versionen
+
+- KIM 1.0: Einführungsversion mit S/MIME und Basisauthentisierung
+- KIM 1.5: Erweiterung der Nachrichtengröße auf 524 MB (Large Message Service), Dienstkennungen für automatisiertes Routing
+- KIM 1.5.5 (aktuell): Release KIM_1_5_5, Spezifikationsversion gemAnbT 1.6.8 / gemProdT 1.6.5 (Februar 2026)
 
 ### Ablauf
+
 1. Absender verfasst Nachricht im Primärsystem
 2. Clientmodul verschlüsselt und signiert über den Konnektor
 3. Nachricht wird an den KIM-Fachdienst übertragen
 4. Fachdienst routet an den Empfänger-Fachdienst
 5. Empfänger-Clientmodul entschlüsselt die Nachricht
+
+### Dienstkennungen
+
+Dienstkennungen sind strukturierte Metadaten im KIM-Header, die eine automatische Verarbeitung eingehender Nachrichten ermöglichen. Sie identifizieren den Anwendungsfall (z.B. eAU-Meldung, Arztbrief, Abrechnungsdaten) und erlauben gezieltes Routing im Primärsystem.
 
 ## Verknüpfungen
 

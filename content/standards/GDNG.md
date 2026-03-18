@@ -44,7 +44,7 @@ Das FDZ kann unter dem GDNG pseudonymisierte Daten mit weiteren Registerdaten ve
 
 ### Verhältnis zu DSGVO und BDSG
 
-Das GDNG stützt sich auf Art. 9 Abs. 2 lit. i und lit. j DSGVO (Verarbeitung besonderer Kategorien personenbezogener Daten für Forschungszwecke). Es schafft als nationales Gesetz die rechtliche Grundlage, die die DSGVO für solche Ausnahmen verlangt. Es ergänzt das Bundesdatenschutzgesetz (BDSG) für den Bereich der Gesundheitsforschung.
+Das GDNG stützt sich auf Art. 9 Abs. 2 lit. i und lit. j [[DSGVO]] (Verarbeitung besonderer Kategorien personenbezogener Daten für Forschungszwecke). Es schafft als nationales Gesetz die rechtliche Grundlage, die die [[DSGVO]] für solche Ausnahmen verlangt. Es ergänzt das Bundesdatenschutzgesetz (BDSG) für den Bereich der Gesundheitsforschung.
 
 ### Beziehung zu ePA und DigiG
 

@@ -2,6 +2,7 @@
 title: eAU - Elektronische Arbeitsunfähigkeitsbescheinigung
 audience: [technical, non-technical]
 tags: [anwendung, eau, arbeitsunfaehigkeit]
+aliases: [Elektronische Arbeitsunfähigkeitsbescheinigung, Elektronische Krankschreibung, Digitale Krankschreibung]
 ---
 
 # eAU - Elektronische Arbeitsunfähigkeitsbescheinigung
@@ -21,7 +22,7 @@ Wenn du krank bist und nicht arbeiten kannst, stellt dir der Arzt eine Krankmeld
 
 Der Versicherte bekommt weiterhin einen Durchschlag für die eigenen Unterlagen.
 
-## Technische Basis
+## Technische Details
 
 - Transport: [[KIM]]-Nachricht
 - Signatur: [[QES|Qualifizierte elektronische Signatur]] via [[Konnektoren|Konnektor]] und [[HBA]]

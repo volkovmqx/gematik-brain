@@ -1,67 +1,25 @@
 {
   "pending": [
     {
-      "term": "Kartenterminal",
+      "term": "VPN-Zugangsdienst",
       "category": "infrastructure",
-      "reason": "eHealth-Kartenterminal (eHealth-KT) ist das Lesegerät für eGK, HBA und SMC-B, das am Konnektor oder TI-Gateway hängt. In 20 Stellen über 14 Artikel erwähnt (HBA, SMC-B, eGK, Konnektoren, NFDM, VSDM, PVS, KIS, QES, GKV, PKV, gematik, eGBR, TI-Gateway). Zentrales Hardware-Bindeglied zwischen Chipkarte und TI ohne eigene Seite.",
+      "reason": "Eigenständige TI-Infrastrukturkomponente, die den verschlüsselten VPN-Tunnel zwischen Konnektor und TI-Netz herstellt. Über 19 zugelassene Anbieter. In Konnektoren.md, TI-Gateway.md und Telematikinfrastruktur.md als separater Dienst erwähnt, ohne eigene Seite. Mit TI 2.0 im TI-Gateway integriert.",
       "mentionedIn": [
-        "content/infrastructure/HBA.md",
-        "content/infrastructure/SMC-B.md",
-        "content/infrastructure/eGK.md",
         "content/infrastructure/Konnektoren.md",
         "content/infrastructure/TI-Gateway.md",
-        "content/processes/NFDM.md",
-        "content/processes/VSDM.md",
-        "content/concepts/QES.md"
+        "content/infrastructure/Telematikinfrastruktur.md"
       ],
-      "priority": 38
+      "priority": 32
     },
     {
-      "term": "Kassenärztliche Vereinigung",
-      "category": "organization",
-      "reason": "KV (Kassenärztliche Vereinigung) ist die regionale Körperschaft, über die niedergelassene Ärzte mit den Krankenkassen abrechnen. In PVS.md als KVDT-Abrechnungsformat und in GKV.md als zentraler Akteur der ambulanten Versorgung erwähnt. Ohne KV kein ambulantes Abrechnungssystem.",
+      "term": "MVZ",
+      "category": "infrastructure",
+      "reason": "Medizinisches Versorgungszentrum (MVZ). In Konnektoren.md als typische Einrichtung für Highspeed-Konnektor-Einsatz erwähnt. MVZ sind ambulante Einrichtungen mit mehreren Ärzten verschiedener Fachrichtungen; relevant für TI-Anbindung größerer ambulanter Strukturen. Konzept taucht in mehreren TI-Kontexten auf.",
       "mentionedIn": [
-        "content/infrastructure/PVS.md",
-        "content/concepts/GKV.md",
-        "content/organization/KBV.md"
+        "content/infrastructure/Konnektoren.md",
+        "content/infrastructure/PVS.md"
       ],
-      "priority": 28
-    },
-    {
-      "term": "CDA",
-      "category": "standards",
-      "reason": "Clinical Document Architecture (HL7 CDA). Älterer HL7-Standard für strukturierte medizinische Dokumente (Arztbriefe, Entlassbriefe). In HL7.md als eigenständige Sektion beschrieben, in KIS.md und XDS.md als Format für klinische Dokumente erwähnt. Insgesamt 8 Nennungen in 3 Artikeln. Wichtig für Verständnis des Migrationspfads von CDA zu FHIR in der TI.",
-      "mentionedIn": [
-        "content/standards/HL7.md",
-        "content/infrastructure/KIS.md",
-        "content/standards/XDS.md"
-      ],
-      "priority": 26
-    },
-    {
-      "term": "PZN",
-      "category": "standards",
-      "reason": "Pharmazentralnummer. Eindeutige numerische Produktkennung für alle in Deutschland zugelassenen Arzneimittel. Im E-Rezept (FHIR MedicationRequest), AVS und BfArM-Kontext als Pflichtfeld bei Verordnungen erwähnt. Zentrales Verbindungselement zwischen Verordnung, Apotheke und Abrechnung.",
-      "mentionedIn": [
-        "content/organization/BfArM.md",
-        "content/infrastructure/AVS.md",
-        "content/organization/ABDA.md",
-        "content/technologies/E-Rezept.md"
-      ],
-      "priority": 25
-    },
-    {
-      "term": "DSGVO",
-      "category": "standards",
-      "reason": "Datenschutz-Grundverordnung (EU) 2016/679. In 5 Artikeln erwähnt (KVNR, DiGAV, SGB-V, GDNG, DiPA) als Rechtsgrundlage für Verarbeitung von Gesundheitsdaten. Direkt verlinkt in GDNG.md mit [[BDSG]]-Beziehung. Zentrale EU-Rechtsgrundlage für alle datenschutzrelevanten TI-Anwendungen.",
-      "mentionedIn": [
-        "content/concepts/KVNR.md",
-        "content/standards/DiGAV.md",
-        "content/standards/SGB-V.md",
-        "content/standards/GDNG.md",
-        "content/technologies/DiPA.md"
-      ],
-      "priority": 24
+      "priority": 27
     },
     {
       "term": "EHDS",
@@ -95,6 +53,15 @@
       "priority": 22
     },
     {
+      "term": "MyHealth@EU",
+      "category": "infrastructure",
+      "reason": "Europäische eHealth-Infrastruktur für den grenzüberschreitenden Gesundheitsdatenaustausch zwischen EU-Mitgliedstaaten. Deutschland plant Teilnahme ab Wave 10 (2026). In NCPeH.md als zentrales Zielnetz des deutschen NCPeH beschrieben. Eigenständiges Konzept neben NCPeH (als Infrastruktur vs. nationalem Zugangspunkt).",
+      "mentionedIn": [
+        "content/infrastructure/NCPeH.md"
+      ],
+      "priority": 21
+    },
+    {
       "term": "OAuth 2.0",
       "category": "concepts",
       "reason": "OAuth 2.0 und OpenID Connect (OIDC) sind die Authentisierungs- und Autorisierungsprotokolle der TI. In 8 Artikeln außerhalb des IDP-Artikels erwähnt (VZD, TI-Federation, Gesundheits-ID, Fachdienst, Zero-Trust, mTLS, Telematikinfrastruktur). Grundlage für alle Token-basierten TI-Dienste.",
@@ -116,6 +83,16 @@
         "content/infrastructure/TI-Gateway.md"
       ],
       "priority": 20
+    },
+    {
+      "term": "Highspeed-Konnektor",
+      "category": "infrastructure",
+      "reason": "HSK (Highspeed-Konnektor) ist die skalierbare Konnektor-Variante für größere Einrichtungen wie Krankenhäuser und MVZ. In Konnektoren.md und SMC-B.md als eigenständige Geräteklasse beschrieben, die HSM-B-Pilotprojekte hostet. Fehlt als eigene Seite, obwohl zentral für das Verständnis der TI-Infrastruktur in Kliniken.",
+      "mentionedIn": [
+        "content/infrastructure/Konnektoren.md",
+        "content/infrastructure/SMC-B.md"
+      ],
+      "priority": 19
     },
     {
       "term": "KHVVG",
@@ -175,6 +152,15 @@
       "priority": 15
     },
     {
+      "term": "DVKA",
+      "category": "organization",
+      "reason": "Deutsche Verbindungsstelle Krankenversicherung Ausland. Betreibt den NCPeH und ist die zentrale Verwaltungsstelle für grenzüberschreitende Gesundheitsleistungen in der EU. In NCPeH.md als Betreiber des nationalen Zugangspunkts benannt. Wichtiger Akteur für MyHealth@EU-Integration.",
+      "mentionedIn": [
+        "content/infrastructure/NCPeH.md"
+      ],
+      "priority": 14
+    },
+    {
       "term": "Apothekenrechenzentrum",
       "category": "infrastructure",
       "reason": "ARZ (Apothekenrechenzentrum). Verarbeitungsdienstleister zwischen Apotheken und Krankenkassen für die GKV-Abrechnung nach TA1-Format. In AVS.md und ABDA.md als Abrechnungspartner der Apotheken erwähnt. Zentrale Infrastruktur für den Abrechnungsfluss des E-Rezepts.",
@@ -183,6 +169,16 @@
         "content/organization/ABDA.md"
       ],
       "priority": 13
+    },
+    {
+      "term": "xDT",
+      "category": "standards",
+      "reason": "Sammelbegriff für ältere deutsche Austauschformate im ambulanten Bereich: KVDT (Kassenärztliche Vereinigung Datentransfer), GDT (Gerätedatentransfer), LDT (Labor-Datentransfer), BDT (Behandlungsdatentransfer). In PVS.md als Schnittstellenstandards beschrieben. Historisch wichtig für das Verständnis des Migrationspfads zu FHIR.",
+      "mentionedIn": [
+        "content/infrastructure/PVS.md",
+        "content/organization/KBV.md"
+      ],
+      "priority": 12
     },
     {
       "term": "KZBV",
@@ -226,6 +222,16 @@
       "priority": 10
     },
     {
+      "term": "ATC-Code",
+      "category": "standards",
+      "reason": "Anatomisch-therapeutisch-chemische Klassifikation (ATC). Internationales Klassifikationssystem für Arzneimittel der WHO. In MIO.md als verwendete Terminologie für Arzneimittelklassifikation in FHIR-Profilen erwähnt. Relevant für AMTS, E-Rezept und ePA-Medikationsdaten.",
+      "mentionedIn": [
+        "content/standards/MIO.md",
+        "content/processes/AMTS.md"
+      ],
+      "priority": 10
+    },
+    {
       "term": "BfDI",
       "category": "organization",
       "reason": "Bundesbeauftragter für den Datenschutz und die Informationsfreiheit. In BSI.md als Koordinationspartner bei TI-Sicherheitsfragen erwähnt. Relevante Aufsichtsbehörde für Datenschutz in der TI.",
@@ -241,6 +247,11 @@
     "KIM",
     "TI-Messenger",
     "eAU",
+    "Kartenterminal",
+    "Kassenärztliche Vereinigung",
+    "CDA",
+    "PZN",
+    "DSGVO",
     "Telematikinfrastruktur",
     "Konnektoren",
     "eGK",

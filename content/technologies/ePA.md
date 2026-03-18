@@ -17,6 +17,8 @@ Stell dir vor, du gehst zum Arzt und der weiß nicht, welche Medikamente dir ein
 
 Seit dem **15. Januar 2025** wird die ePA automatisch für alle gesetzlich Versicherten angelegt. Man muss aktiv widersprechen, wenn man keine haben will (Opt-out). Seit dem **1. Oktober 2025** ist die ePA in allen medizinischen Einrichtungen Pflicht.
 
+Ab **April 2026** müssen [[KIS|Krankenhausinformationssysteme (KIS)]] ein zertifiziertes ePA-Modul enthalten. Krankenhäuser, deren KIS diese Anforderung nicht erfüllt, riskieren finanzielle Sanktionen.
+
 Über 150 Krankenkassen betreiben zugelassene Aktensysteme. Die technischen Implementierungen stammen von IBM und RISE/BITMARCK.
 
 ### Was wird gespeichert?

@@ -56,6 +56,14 @@ Die [[PKI]] der Telematikinfrastruktur muss die BSI-Vorgaben zu Zertifikaten, Sc
 
 Die [[VAU]] (Vertrauenswürdige Ausführungsumgebung) des ePA-Aktensystems und des E-Rezept-Fachdienstes wird im Rahmen des Zulassungsverfahrens vom BSI geprüft. Der öffentliche Schlüssel der VAU ist in einem BSI-geprüften Verfahren verankert.
 
+### KRITIS-Dachgesetz
+
+Der Bundestag verabschiedete das KRITIS-Dachgesetz am 29. Januar 2026, der Bundesrat stimmte am 6. März 2026 zu. Das Gesetz setzt die EU-CER-Richtlinie um und schafft einheitliche Mindeststandards für den physischen Schutz kritischer Infrastrukturen. Krankenhäuser und Gesundheitseinrichtungen fallen ausdrücklich in den Geltungsbereich. Betroffene Betreiber müssen sich ab 17. Juli 2026 registrieren und Risikoanalysen sowie Resilienzpläne erstellen. Das BSI koordiniert die Aufsicht über Cybersicherheitsanforderungen im Zusammenspiel mit dem neuen Gesetz.
+
+### IT-Grundschutz++
+
+Ab 2026 modernisiert das BSI den IT-Grundschutz unter dem Namen Grundschutz++. Kernänderungen sind die Überführung in ein maschinenlesbares JSON-Format für automatisierte Compliance-Prüfungen, ein stärker risikobasierter Ansatz und eine reduzierte Dokumentationslast besonders für kleinere Organisationen. Da die [[Telematikinfrastruktur]] unter IT-Grundschutz-Anforderungen fällt, sind TI-Betreiber und Hersteller von den Neuerungen betroffen. Eine Übergangsphase läuft ab Januar 2026.
+
 ## Verknüpfungen
 
 - [[gematik]] (Zulassungsbehörde; kooperiert mit BSI für Kryptografiestandards)

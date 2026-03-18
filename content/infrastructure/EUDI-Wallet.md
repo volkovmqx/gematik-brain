@@ -66,8 +66,8 @@ Das WSCD (Wallet Secure Cryptographic Device) schützt kryptografische Schlüsse
 
 In Deutschland wird die EUDI-Wallet vom Bundesministerium für Digitales und Staatsmodernisierung (BMDS) verantwortet. Die Umsetzung erfolgt durch die Bundesagentur für Sprunginnovationen (SPRIND) in Zusammenarbeit mit dem [[BSI]], der Bundesdruckerei und weiteren Partnern.
 
-- Januar 2026: Testumgebung (Sandbox) gestartet, erste Pilotanwendungen mit PID
-- Anfang 2027: Geplante Bereitstellung der ersten produktiven Version
+- 28. Januar 2026: Testumgebung (Sandbox) gestartet, betrieben von BMDS und SPRIND. Unternehmen und Behörden können dort digitale Identifikation via Person Identification Data (PID) testen. Nach 12 Monaten können alternative Wallet-Anbieter ihre Lösungen als EUDI-Wallet zertifizieren lassen.
+- Anfang 2027: Geplante Bereitstellung der ersten produktiven Version für die Öffentlichkeit
 
 Der Quellcode der staatlichen EUDI-Wallet wird als Open Source veröffentlicht.
 

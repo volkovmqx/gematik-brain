@@ -44,7 +44,7 @@ DiGA sollen mit der [[ePA]] interoperabel sein. Konkret bedeutet das: Versichert
 
 ### Integration mit dem E-Rezept
 
-Die Verordnung von DiGA per [[E-Rezept]] ist in Vorbereitung (DiGA-Verordnungen via E-Rezept-Fachdienst). Im aktuellen Prozess erhalten Patienten noch ein Papierrezept oder ein Rezept per Ausdruck, das sie bei der Krankenkasse einreichen.
+Seit Oktober 2025 können DiGA als [[E-Rezept]] verordnet werden. Ein Pilotprojekt lief von Mai bis September 2025, rund 15 der im BfArM-Verzeichnis gelisteten DiGA wurden initial via E-Rezept verordnet. Wichtig: Das DiGA-E-Rezept wird nicht in der Apotheke, sondern direkt bei der Krankenkasse eingereicht. Die Kasse prüft und stellt daraufhin einen Gutscheincode für die DiGA-App aus.
 
 ### Integration mit dem TI-Messenger
 
