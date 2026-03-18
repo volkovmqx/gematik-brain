@@ -1,25 +1,64 @@
 {
   "pending": [
     {
-      "term": "KV-SafeNet",
-      "category": "infrastructure",
-      "reason": "Von Kassenärztlichen Vereinigungen betriebenes VPN-Netz für die Abrechnungskommunikation zwischen Praxen und KVen. In VPN-Zugangsdienst.md und Kassenaerztliche-Vereinigung.md als parallele TI-Infrastruktur erwähnt, die durch die TI 2.0 abgelöst wird. Relevant für das Verständnis der Netzwerkmigration.",
+      "term": "eVO",
+      "category": "processes",
+      "reason": "Elektronische Heilmittelverordnung. In E-Rezept.md als geplante Pflichteinführung für Physiotherapeuten, Ergotherapeuten und Logopäden ab 2027 detailliert beschrieben. Verknüpft mit der verschobenen TI-Anbindungspflicht für Heilmittelerbringer (1. Oktober 2027). Relevant für Verständnis der schrittweisen E-Rezept-Ausweitung.",
       "mentionedIn": [
-        "content/infrastructure/VPN-Zugangsdienst.md",
-        "content/organization/Kassenaerztliche-Vereinigung.md"
+        "content/technologies/E-Rezept.md"
       ],
-      "priority": 22
+      "priority": 21
     },
     {
-      "term": "DVKA",
-      "category": "organization",
-      "reason": "Deutsche Verbindungsstelle Krankenversicherung Ausland. Betreibt den NCPeH und ist die zentrale Verwaltungsstelle für grenzüberschreitende Gesundheitsleistungen in der EU. In NCPeH.md und EHDS.md als Betreiber des nationalen Zugangspunkts benannt. Wichtiger Akteur für MyHealth@EU-Integration.",
+      "term": "KHG",
+      "category": "standards",
+      "reason": "Krankenhausfinanzierungsgesetz. Rechtliche Grundlage für das DRG-System (§ 17b KHG) und die Krankenhausplanung in Deutschland. In DRG.md, KHZG.md und ISiK.md mehrfach erwähnt. Rahmengesetz für alle Krankenhaus-Digitalisierungsgesetze (KHZG, KHVVG).",
       "mentionedIn": [
-        "content/infrastructure/NCPeH.md",
-        "content/standards/EHDS.md",
-        "content/infrastructure/MyHealthAtEU.md"
+        "content/concepts/DRG.md",
+        "content/standards/KHZG.md",
+        "content/standards/ISiK.md"
       ],
-      "priority": 22
+      "priority": 20
+    },
+    {
+      "term": "GDVG",
+      "category": "standards",
+      "reason": "Gesetz für digitale Versorgung und den Gesundheitsdatenraum. Geplanter Nachfolger des gescheiterten GDAG, Referentenentwurf für H1/2026 erwartet. In gematik.md und DigiG.md als strategisches Reformgesetz zur Umgestaltung der gematik zu einer modernen Digitalagentur beschrieben. Wichtig für Verständnis der künftigen gematik-Governance.",
+      "mentionedIn": [
+        "content/organization/gematik.md",
+        "content/standards/DigiG.md"
+      ],
+      "priority": 20
+    },
+    {
+      "term": "Teleradiologie",
+      "category": "technologies",
+      "reason": "Fernbefundung von DICOM-Bildern durch externe Radiologen. In DICOM.md, PACS.md und RIS.md als wichtiger Anwendungsfall der radiologischen Bildgebung erwähnt. Ermöglicht Versorgung in radiologisch unterversorgten Regionen. Berührungspunkt mit TI-Infrastruktur (PACS-Zugriff über sichere Netze).",
+      "mentionedIn": [
+        "content/standards/DICOM.md",
+        "content/infrastructure/PACS.md",
+        "content/infrastructure/RIS.md"
+      ],
+      "priority": 19
+    },
+    {
+      "term": "BMP",
+      "category": "processes",
+      "reason": "Bundeseinheitlicher Medikationsplan. Papierbasierter Vorgänger des elektronischen Medikationsplans (eMP) mit QR-Code auf DIN-A4. In eMP.md und AMTS.md als abzulösender Vorläufer ausführlich beschrieben, inkl. Migration (gemInfo_Überführung_BMP_in_eMP). 7 Erwähnungen. Verständnis der eMP-Einführung erfordert Kenntnis des BMP.",
+      "mentionedIn": [
+        "content/processes/eMP.md",
+        "content/processes/AMTS.md"
+      ],
+      "priority": 18
+    },
+    {
+      "term": "BEEP-Gesetz",
+      "category": "standards",
+      "reason": "Gesetz zur Befugniserweiterung und Entbürokratisierung in der Pflege. In ePA.md als Rechtsgrundlage dafür erwähnt, dass seit 1. Januar 2026 Abrechnungsdaten in der ePA nur noch für Versicherte selbst sichtbar sind (nicht mehr für Leistungserbringer ohne explizite Freigabe). Relevant für Datenzugriffsbeschränkungen in der ePA.",
+      "mentionedIn": [
+        "content/technologies/ePA.md"
+      ],
+      "priority": 17
     },
     {
       "term": "Apothekenrechenzentrum",
@@ -221,7 +260,12 @@
     "Bundesärztekammer",
     "Medizinischer Dienst",
     "xDT",
-    "BSI C5"
+    "BSI C5",
+    "GOÄ",
+    "LIS",
+    "TA1",
+    "KV-SafeNet",
+    "DVKA"
   ],
   "lastRun": "2026-03-18"
 }

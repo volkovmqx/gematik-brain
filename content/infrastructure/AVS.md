@@ -60,7 +60,7 @@ Apotheker haben Zugriffsrechte auf die [[ePA]] ihrer Kunden für die Medikations
 | Konnektor/TI-Gateway | SOAP | TI-Basisoperationen |
 | E-Rezept-Fachdienst | [[FHIR]] R4 (REST) | Rezeptabruf und Abgabe |
 | ePA-Fachdienst | [[FHIR]] R4 | Medikationsplan |
-| Apothekenrechenzentrum | TA1/ABDA-Format | Abrechnung |
+| Apothekenrechenzentrum | [[TA1]]/ABDA-Format | Abrechnung |
 | Warenwirtschaft | ABDA-Artikelstamm | Produktdaten |
 
 ### Bekannte AVS-Hersteller

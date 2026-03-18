@@ -23,7 +23,7 @@ Im deutschen Gesundheitswesen nimmt die ABDA Aufgaben wahr, die für das Zusamme
 
 ### Rolle im Zertifizierungswesen
 
-Die Prüfung von AVS-Software erfolgt über das **ADAS** (Apothekenrechenzentrum-Datenaustausch-Systemprüfstelle), das im Auftrag des DAV tätig wird. Apothekensoftware muss nachweisen, dass sie die technischen Anlagen zur Abrechnungsvereinbarung korrekt umsetzt, insbesondere die **Technische Anlage 1 (TA1)** für den Datenaustausch mit den Apothekenrechenzentren. Ohne diese Prüfung kann ein AVS nicht zur GKV-Abrechnung zugelassen werden.
+Die Prüfung von AVS-Software erfolgt über das **ADAS** (Apothekenrechenzentrum-Datenaustausch-Systemprüfstelle), das im Auftrag des DAV tätig wird. Apothekensoftware muss nachweisen, dass sie die technischen Anlagen zur Abrechnungsvereinbarung korrekt umsetzt, insbesondere die **[[TA1|Technische Anlage 1 (TA1)]]** für den Datenaustausch mit den Apothekenrechenzentren. Ohne diese Prüfung kann ein AVS nicht zur GKV-Abrechnung zugelassen werden.
 
 ## Technische Details
 

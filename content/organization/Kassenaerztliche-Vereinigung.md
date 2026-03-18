@@ -48,7 +48,7 @@ Für die Prüfung der TI-Nutzung durch ihre Mitglieder spielen die KVen eine wic
 
 ### KV-SafeNet
 
-KV-SafeNet ist ein von mehreren KVen betriebenes VPN-Netz für den sicheren Datenaustausch zwischen Praxen und KVen. Es ist kein Teil der [[Telematikinfrastruktur]], wird aber parallel genutzt für die Abrechnungskommunikation. Mit der Ausbreitung der TI wird KV-SafeNet schrittweise abgelöst.
+[[KV-SafeNet]] ist ein von mehreren KVen betriebenes VPN-Netz für den sicheren Datenaustausch zwischen Praxen und KVen. Es ist kein Teil der [[Telematikinfrastruktur]], wird aber parallel genutzt für die Abrechnungskommunikation. Mit der Ausbreitung der TI wird KV-SafeNet schrittweise abgelöst.
 
 ## Verknüpfungen
 

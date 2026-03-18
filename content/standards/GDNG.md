@@ -3,6 +3,7 @@ title: GDNG
 audience: [technical, non-technical]
 tags: [standards, recht, gesetz, forschung, datenschutz, sekundärnutzung]
 aliases: [Gesundheitsdatennutzungsgesetz, Health Data Use Act]
+maturity: wachsend
 ---
 
 # GDNG
@@ -37,6 +38,10 @@ Das GDNG richtet beim [[BfArM]] eine zentrale **Datenzugangs- und Koordinierungs
 Das bestehende **[[Forschungsdatenzentrum-Gesundheit|Forschungsdatenzentrum Gesundheit (FDZ)]]** beim [[BfArM]] wird durch das GDNG ausgebaut. Das FDZ stellt pseudonymisierte Abrechnungsdaten der gesetzlichen Krankenversicherung ([[GKV]]) für zugelassene Forschungsprojekte bereit. Es war bereits vor dem GDNG durch das DVS (Digitale-Versorgung-und-Pflege-Modernisierungs-Gesetz) eingerichtet worden, wird aber durch das GDNG erheblich erweitert.
 
 Das FDZ kann unter dem GDNG pseudonymisierte Daten mit weiteren Registerdaten verknüpfen, zum Beispiel mit klinischen Krebsregistern.
+
+### GFF-Klage gegen das FDZ (2026)
+
+Die Gesellschaft für Freiheitsrechte (GFF, unterstützt vom CCC) nahm im Februar 2026 eine Klage gegen das [[Forschungsdatenzentrum-Gesundheit|Forschungsdatenzentrum Gesundheit (FDZ)]] auf. Die Kritikpunkte: Die Pseudonymisierung der Daten von 73 Millionen GKV-Versicherten reiche nicht aus, da eine Re-Identifizierung bei seltenen Krankheiten möglich sei. Außerdem fehlen gesetzlich verankerte ausreichende Sicherheitsstandards. Ein weiterer Kritikpunkt: GKV-Versicherte haben kein Widerspruchsrecht gegen die Datenübermittlung an das FDZ, PKV-Versicherte hingegen schon. Die Klage ist zum Stand März 2026 anhängig.
 
 ### Datensicherheit und Forschungsgeheimnis
 
@@ -77,3 +82,4 @@ Als berechtigte Forschungszwecke gelten: medizinische Forschung, Versorgungsfors
 - [Gesetze im Internet: GDNG Volltext](https://www.gesetze-im-internet.de/gdng/BJNR0660B0024.html)
 - [AOK: GDNG - Gesetz zur verbesserten Nutzung von Gesundheitsdaten](https://www.aok.de/pp/reform/gdng/)
 - [Datenschutz Hessen: Gesundheitsdatennutzungsgesetz tritt in Kraft](https://datenschutz.hessen.de/presse/gesundheitsdatennutzungsgesetz-tritt-in-kraft)
+- [GFF-Klage gegen FDZ Gesundheit (Februar 2026)](https://freiheitsrechte.org/themen/datenschutz/fdz)

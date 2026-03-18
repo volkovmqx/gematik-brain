@@ -72,6 +72,6 @@ Die Begutachtung erfolgt in der Regel beim Versicherten zu Hause oder in der Pfl
 ## Quellen
 
 - [Medizinischer Dienst Bund: Über uns](https://www.medizinischerdienst.de/der-md/wer-wir-sind/)
-- [MDK-Reformgesetz (BGBl. I 2019, S. 2789)](https://www.bgbl.de/xaver/bgbl/start.xav?startbk=Bundesanzeiger_BGBl&jumpTo=bgbl119s2184.pdf)
+- [MDK-Reformgesetz (BGBl. I 2019, S. 2789)](https://www.bgbl.de/xaver/bgbl/start.xav?startbk=Bundesanzeiger_BGBl&jumpTo=bgbl119s2789.pdf)
 - [Wikipedia: Medizinischer Dienst](https://de.wikipedia.org/wiki/Medizinischer_Dienst_(Krankenversicherung))
 - [§ 275 SGB V – Beauftragung des MD](https://www.gesetze-im-internet.de/sgb_5/__275.html)

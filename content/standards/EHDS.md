@@ -71,7 +71,7 @@ Der EHDS steht im Einklang mit der [[DSGVO]] und dem [[BDSG]]. Für Gesundheitsd
 
 ### Bezug zur deutschen TI
 
-Der [[NCPeH]] ist Deutschlands technischer Zugangspunkt zum EHDS-Ökosystem. Die [[gematik]] ist für Spezifikation und Produkttypzulassung des NCPeH zuständig; die DVKA (Deutsche Verbindungsstelle Krankenversicherung Ausland) betreibt ihn. Die [[ePA]] dient als Quelle für die exportierbaren Patientendaten.
+Der [[NCPeH]] ist Deutschlands technischer Zugangspunkt zum EHDS-Ökosystem. Die [[gematik]] ist für Spezifikation und Produkttypzulassung des NCPeH zuständig; die [[DVKA]] (Deutsche Verbindungsstelle Krankenversicherung Ausland) betreibt ihn. Die [[ePA]] dient als Quelle für die exportierbaren Patientendaten.
 
 ## Verknüpfungen
 

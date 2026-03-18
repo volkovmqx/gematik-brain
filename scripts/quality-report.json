@@ -1,191 +1,146 @@
 {
-  "timestamp": "2026-03-18T14:00:00Z",
-  "overallScore": 88,
+  "timestamp": "2026-03-18T17:00:00Z",
+  "overallScore": 86,
   "testResults": {
-    "passed": 109,
+    "passed": 114,
     "failed": 0,
-    "total": 109
+    "total": 114
   },
   "articles": [
     {
-      "file": "content/technologies/ePA.md",
-      "verdict": "revise",
-      "score": 75,
+      "file": "content/standards/GOÄ.md",
+      "verdict": "pass",
+      "score": 92,
       "issues": [
-        "FACTUAL ERROR: 'Über 150 Krankenkassen betreiben zugelassene Aktensysteme' ist falsch. Es gibt insgesamt nur 93 GKV-Krankenkassen (Stand Januar 2026). BITMARCK/RISE bedienen ca. 87 Kassen, IBM ca. 16 Kassen. Die Aussage '150+' war nie zutreffend.",
-        "BEEP-Gesetz-Expansion korrekt: 'Gesetz zur Befugniserweiterung und Entbürokratisierung in der Pflege' stimmt mit dem vorherigen Zyklus-Fix überein.",
-        "§ 347 SGB V-Ausnahme (therapeutisch begründeter Verzicht auf ePA-Befüllung ab 1. Januar 2026) korrekt verifiziert.",
-        "ePA-Startdatum 15. Januar 2025 und Pilotregionen Hamburg, Franken, Nordrhein korrekt.",
-        "Pflicht ab 1. Oktober 2025 für alle Einrichtungen korrekt.",
-        "700 Millionen Datensätze und 37 Millionen Dokumente: Zahlen korrekt aktualisiert gegenüber Vorzyklus."
+        "Minor: Einsteiger-Abschnitt sagt Arzt darf 'zwischen dem 1,0- und 3,5-fachen' berechnen — leicht ungenau, da 3,5 nur für persönliche Leistungen gilt (technische Leistungen max. 2,5). Die Technischen Details korrigieren das korrekt mit der 2,3/1,8/3,5/2,5-Aufschlüsselung."
       ],
-      "fixInstructions": "Zeile 22 ersetzen: 'Über 150 Krankenkassen betreiben zugelassene Aktensysteme.' durch 'Rund 100 Krankenkassen nutzen zugelassene Aktensysteme. Die technischen Implementierungen stammen von IBM (ca. 16 Kassen) und RISE/BITMARCK (ca. 87 Kassen).' Quellen: BITMARCK-Pressemitteilungen 2025, IBM Newsroom April 2025."
+      "fixInstructions": ""
     },
     {
-      "file": "content/organization/GKV-Spitzenverband.md",
+      "file": "content/infrastructure/LIS.md",
       "verdict": "pass",
       "score": 90,
       "issues": [
-        "'75 Millionen GKV-Versicherte' ist eine akzeptable Rundung (Ist-Wert Jan 2025: 74,63 Mio. laut BMG-Statistik KM1).",
-        "GKV-Wettbewerbsstärkungsgesetz 2007 und Gründungsdatum des GKV-Spitzenverbands (Satzung 18. Juni 2007, operative Aufnahme 1. Juli 2008) korrekt.",
-        "§§ 217a ff. SGB V als Rechtsgrundlage korrekt.",
-        "GKV-Gesellschafteranteil 22,05 % korrekt. Finanzierungsanteil 93 % korrekt.",
-        "100-Millionen-EUR-Figur korrekt als 'Branchenschätzungen' qualifiziert.",
-        "[[GBA]]-Link aus Vorzyklus behoben: Artikel enthält jetzt nur 'Gemeinsamen Bundesausschuss (G-BA)' in der Kernaufgaben-Liste ohne broken wiki-link."
+        "Claim 'Ab April 2026 können nur Labore mit korrekt aktualisierten DEMIS-Stammdaten weiterhin Meldungen versenden' — Deadline plausibel aber nicht aus öffentlicher Quelle verifiziert. Als unverifiable eingestuft, nicht als Fehler.",
+        "LDT 3.0 als aktuelle Version korrekt."
       ],
-      "fixInstructions": ""
+      "fixInstructions": "Quelle für die April-2026-DEMIS-Stammdaten-Deadline ergänzen oder Formulierung abschwächen."
     },
     {
-      "file": "content/infrastructure/RIS.md",
-      "verdict": "pass",
-      "score": 93,
-      "issues": [
-        "[[PACS]]-Wiki-Link korrekt ergänzt, PACS-Artikel existiert jetzt (neuer Artikel in diesem Zyklus).",
-        "HL7-Nachrichtentypen (ORM, ORR, ORU) korrekt beschrieben.",
-        "DICOM-Dienste (MWL, MPPS, C-STORE, C-FIND/C-MOVE) korrekt.",
-        "Anbieter (Dedalus ORBIS, Siemens Healthineers Syngo, Sectra, AGFA Healthcare) plausibel.",
-        "Strukturell vollständig, 4 Quellen."
-      ],
-      "fixInstructions": ""
-    },
-    {
-      "file": "content/organization/gematik.md",
+      "file": "content/standards/TA1.md",
       "verdict": "pass",
       "score": 88,
       "issues": [
-        "Gründungsjahr 2005 korrekt verifiziert.",
-        "BMG-Anteil 51 % korrekt (seit 2019).",
-        "GKV-SV-Anteil 22,05 % korrekt.",
-        "GDVG-Erwähnung korrekt: Referentenentwurf für H1/2026 erwartet, Websuche bestätigt.",
-        "GDAG-Scheitern durch Ampel-Ende korrekt beschrieben.",
-        "Finanzierungsformel '1,50 Euro pro gesetzlich Versichertem' — Angabe unverifiable aus öffentlichen Quellen; als intern plausibel eingestuft."
+        "Minor: 'NOVENTI verarbeitet ca. 50 % der GKV-Rezepte' — plausible Schätzung, aber ohne Quellenbeleg.",
+        "Minor: 'AvP (insolvent 2020, Nachfolger: Ahlberg ARZ)' — AvP-Insolvenz 2020 korrekt, aber Nachfolger 'Ahlberg ARZ' ist unverifiable und möglicherweise veraltet.",
+        "TA2-Scope (Verbandmittel/Kompressionsmittel) unverifiable, aber plausibel."
+      ],
+      "fixInstructions": "AvP-Nachfolger-Claim entweder mit Quelle belegen oder entfernen. NOVENTI-Marktanteil als Schätzung qualifizieren."
+    },
+    {
+      "file": "content/infrastructure/KV-SafeNet.md",
+      "verdict": "pass",
+      "score": 90,
+      "issues": [
+        "Minor: Zugangsprovider-Marktführer (Telekom, Vodafone) ohne Quellenbeleg genannt — plausibel, aber unverifiable."
       ],
       "fixInstructions": ""
     },
     {
-      "file": "content/standards/DigiG.md",
+      "file": "content/organization/DVKA.md",
       "verdict": "revise",
-      "score": 82,
+      "score": 72,
       "issues": [
-        "FACTUAL ERROR: 'am 22. März 2024 im Bundesgesetzblatt verkündet' ist falsch. Korrektes Datum laut Bundesgesetzblatt Nr. 101: 25. März 2024. Inkrafttreten: 26. März 2024. Quelle: recht.bund.de/bgbl/1/2024/101/VO.html",
-        "Inhaltliche Beschreibung des Opt-out-Modells, C5-Zertifizierungsfristen und DiGA-Erweiterung auf Risikoklasse IIb korrekt.",
-        "[[BSI-C5]]-Link korrekt ergänzt und funktional.",
-        "GDVG-Absatz korrekt und konsistent mit gematik.md."
+        "FAKTISCHER FEHLER: Artikel behauptet DVKA 'ist organisatorisch bei der BITMARCK Dienstleistungs GmbH angesiedelt'. Das ist falsch. Die DVKA ist eine Abteilung des GKV-Spitzenverbandes (seit 1. Juli 2008). BITMARCK ist ein IT-Dienstleister der GKV-Organisationen, nicht der organisatorische Träger der DVKA.",
+        "Minor: 'Wave 10 in 2026' für E-Rezept-Teilnahme an MyHealth@EU — plausibel aber unverifiable."
       ],
-      "fixInstructions": "Zeile 18: '22. März 2024' ersetzen durch '25. März 2024'. Korrekte Formulierung: 'Das DigiG (Gesetz zur Beschleunigung der Digitalisierung des Gesundheitswesens) wurde am 25. März 2024 im Bundesgesetzblatt verkündet und trat größtenteils am 26. März 2024 in Kraft.'"
+      "fixInstructions": "Zeile 18 korrigieren: Ersetze 'ist organisatorisch bei der BITMARCK Dienstleistungs GmbH angesiedelt und wurde im Auftrag des GKV-Spitzenverbandes eingerichtet' durch 'ist eine Abteilung des GKV-Spitzenverbandes und in dieser Organisationsform seit dem 1. Juli 2008 tätig'."
     },
     {
-      "file": "content/technologies/E-Rezept.md",
+      "file": "content/infrastructure/KIS.md",
       "verdict": "pass",
-      "score": 91,
+      "score": 88,
       "issues": [
-        "TI-Anbindungspflicht für Heilmittelerbringer auf 1. Oktober 2027 verschoben: korrekt verifiziert (BEEP-Gesetz-Änderungsantrag CDU/CSU/SPD vom 6. November 2025).",
-        "Begründung (eVO noch nicht verfügbar) korrekt.",
-        "Pflicht für Verordner ab 1. Januar 2027 und Einlösepflicht ab 2028 korrekt.",
-        "Strukturell vollständig, 2 offizielle Quellen."
+        "KRITIS-Dachgesetz-Daten verifiziert korrekt: Bundestag 29. Januar 2026, Bundesrat 6. März 2026, Registrierungspflicht ab 17. Juli 2026.",
+        "Minor: ISiK Stufe 5 als 'Juli 2025 veröffentlicht' — plausibel aber nicht aus öffentlicher Quelle verifiziert."
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/standards/GDNG.md",
+      "verdict": "pass",
+      "score": 86,
+      "issues": [
+        "Minor: GFF-Klage als 'nahm im Februar 2026 eine Klage... auf' beschrieben. Die Klage wurde ursprünglich 2022 eingereicht, ruhte seit Februar 2023 und wurde 2026 wieder aufgenommen. 'Aufnahme' ist korrekt im Sinne von Wiederaufnahme, aber die Formulierung könnte eine Neuklage suggerieren."
+      ],
+      "fixInstructions": "GFF-Klage-Abschnitt präzisieren: Verdeutlichen, dass es sich um die Wiederaufnahme der ursprünglich 2022 eingereichten Klage handelt. Vorschlag: 'Die Gesellschaft für Freiheitsrechte (GFF) nahm im Februar 2026 ihre 2022 eingereichte Klage gegen das FDZ wieder auf (das Verfahren hatte seit Februar 2023 geruht, da das FDZ nicht operativ war).'."
+    },
+    {
+      "file": "content/technologies/ePA.md",
+      "verdict": "pass",
+      "score": 89,
+      "issues": [
+        "Fix aus Vorzyklus ('Rund 100 Krankenkassen' statt '150') korrekt angewendet und verifiziert.",
+        "GFF-Klage: gleiche Ambiguität wie in GDNG.md — Wiederaufnahme 2026 der 2022 eingereichten Klage sollte klarer formuliert sein.",
+        "Minor: '1. Oktober 2025 ist die ePA in allen medizinischen Einrichtungen Pflicht' — stark formulierte Behauptung, die einer Quellenangabe bedürfte."
+      ],
+      "fixInstructions": "GFF-Klage-Formulierung analog zu GDNG.md präzisieren: Wiederaufnahme der 2022 eingereichten Klage, nicht Neuklage."
+    },
+    {
+      "file": "content/standards/DigiG.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "Fix aus Vorzyklus ('25. März 2024') verifiziert korrekt: recht.bund.de führt BGBl. I Nr. 101 mit Datum 25.03.2024. Fix war korrekt angewendet.",
+        "Minor: Pilotregionen als 'Hamburg, Franken und Nordrhein' — präziser wäre 'Hamburg und Umland, Franken sowie Teile NRW'. Keine wesentliche Ungenauigkeit."
       ],
       "fixInstructions": ""
     },
     {
       "file": "content/infrastructure/PACS.md",
-      "verdict": "revise",
-      "score": 83,
-      "issues": [
-        "MINOR INACCURACY: 'nach den Röntgenverordnungen mindestens 10 Jahre' — die Röntgenverordnung (RöV) wurde 2018 aufgehoben. Die Aufbewahrungspflicht ergibt sich nun aus § 85 Strahlenschutzgesetz (StrlSchG). Die 10-Jahres-Frist und die Sonderregelung für Minderjährige (bis 28. Lebensjahr) sind inhaltlich korrekt, der Rechtsgrundlagen-Verweis ist jedoch veraltet.",
-        "DICOM-Dienste korrekt und vollständig (C-STORE, C-FIND, C-MOVE, C-GET, WADO-RS).",
-        "VNA-Beschreibung korrekt.",
-        "Mehrstufige Speicherarchitektur (Tier 1-3) korrekt.",
-        "Anbieter (Agfa HealthCare, Dedalus, Sectra, Siemens Healthineers, Fujifilm Synapse, Visus JiveX) plausibel.",
-        "Strukturell vollständig, 4 Quellen."
-      ],
-      "fixInstructions": "Zeile 50 anpassen: 'nach den Röntgenverordnungen' ersetzen durch 'nach § 85 Strahlenschutzgesetz (StrlSchG)'. Die Röntgenverordnung (RöV) wurde 2018 durch das Strahlenschutzgesetz abgelöst. Begleitend ggf. Quellenhinweis auf § 85 StrlSchG ergänzen."
-    },
-    {
-      "file": "content/organization/Bundesaerztekammer.md",
       "verdict": "pass",
-      "score": 88,
+      "score": 91,
       "issues": [
-        "Gründungsjahr 1947 korrekt verifiziert.",
-        "'Privatrechtlicher Verein' korrekt: BÄK ist ein nicht eingetragener Verein (kein Körperschaft des öffentlichen Rechts).",
-        "17 Landesärztekammern korrekt.",
-        "MBO-Ä § 7 Abs. 4 (Fernbehandlungsregelung, 2018 liberalisiert) korrekt beschrieben.",
-        "HBA-Ausgabe durch Landesärztekammern, nicht BÄK selbst, korrekt.",
-        "Strukturell vollständig, 4 Quellen."
+        "Fix aus Vorzyklus (§ 85 StrlSchG statt Röntgenverordnung) korrekt angewendet und verifiziert. Verweis auf § 85 StrlSchG für die 10-Jahres-Aufbewahrungspflicht (inkl. Sonderregel für Minderjährige bis 28. Lebensjahr) ist korrekt."
       ],
       "fixInstructions": ""
     },
     {
       "file": "content/organization/Medizinischer-Dienst.md",
       "verdict": "revise",
-      "score": 68,
+      "score": 78,
       "issues": [
-        "FACTUAL ERROR: 'MDK-Reformgesetz (Gesetz zur Stärkung des Pflegepersonals, 2019)' ist falsch. Der offizielle Gesetzestitel lautet 'Gesetz für bessere und unabhängigere Prüfungen (MDK-Reformgesetz)', BGBl. I 2019, S. 2789, in Kraft seit 1. Januar 2020. Das 'Gesetz zur Stärkung des Pflegepersonals' ist das PpSG (Pflegepersonal-Stärkungsgesetz, 2018, BGBl. I 2018) — ein vollständig anderes Gesetz.",
-        "FACTUAL ERROR: Quellenangabe Zeile 74 'BGBl. I 2019, S. 2097' ist falsch; korrekte Fundstelle ist BGBl. I 2019, S. 2789.",
-        "Das MDK-Reformgesetz trat am 1. Januar 2020 in Kraft (nicht im Jahr 2019).",
-        "Übrige Inhalte (Aufgaben, Pflegegrad-Einstufung 6 Lebensbereiche, KIM-Kommunikation, ePA-Zugang nach § 342 ff. SGB V) korrekt.",
-        "Strukturell vollständig, 4 Quellen."
+        "Fix aus Vorzyklus teilweise angewendet: Gesetzesname und BGBl-Seitenzahl im Text ('BGBl. I 2019, S. 2789') sind jetzt korrekt. Verifiziert via dejure.org.",
+        "VERBLEIBENDER FEHLER: Die Quellen-URL (Zeile 75) verlinkt noch auf 'bgbl119s2184.pdf' (alter falscher Seitenlink), obwohl der Text bereits S. 2789 nennt. Der Hyperlink wurde beim Fix nicht aktualisiert."
       ],
-      "fixInstructions": "1. Zeile 18: Ersetze '(Gesetz zur Stärkung des Pflegepersonals, 2019)' durch '(Gesetz für bessere und unabhängigere Prüfungen, BGBl. I 2019, S. 2789)'. Das Gesetz trat am 1. Januar 2020 in Kraft — dieses Datum ggf. ergänzen. 2. Zeile 74 (Quelle): BGBl.-Fundstelle korrigieren von 'S. 2097' auf 'S. 2789'."
+      "fixInstructions": "Zeile 75: Quellen-URL korrigieren von 'bgbl119s2184.pdf' auf 'bgbl119s2789.pdf'. Korrekte URL: https://www.bgbl.de/xaver/bgbl/start.xav?startbk=Bundesanzeiger_BGBl&jumpTo=bgbl119s2789.pdf"
     },
     {
       "file": "content/standards/xDT.md",
-      "verdict": "revise",
-      "score": 78,
-      "issues": [
-        "POTENTIAL INACCURACY: 'GDT 3.1, die 2014 von der [[KBV]] verabschiedet wurde' — die im selben Artikel verlinkte Quell-URL der KBV lautet '/html/2016_27222.php', was auf 2016 als Publikationsjahr hindeutet, nicht 2014. Das exakte Verabschiedungsjahr war aus öffentlich zugänglichen Quellen nicht sicher verifierbar; '2014' ist daher unbestätigt.",
-        "MINOR: GDT wird nicht allein von der KBV, sondern durch den Qualitätsring Medizinische Software (QMS) standardisiert. Die KBV trägt zur Pflege bei, ist aber nicht der einzige Herausgeber.",
-        "Technische Beschreibung des xDT-Formats (Länge+Feldnummer+Inhalt) korrekt.",
-        "LDT 3.0 mit LOINC-Unterstützung korrekt.",
-        "Migrationspfad FHIR korrekt.",
-        "Strukturell vollständig, 4 Quellen."
-      ],
-      "fixInstructions": "Zeile 62 anpassen: '2014' entweder auf '2016' korrigieren (entsprechend Quell-URL im Artikel) oder auf 'Mitte 2010er Jahre' verallgemeinern. Außerdem Formulierung ergänzen: GDT 3.1 wurde durch den Qualitätsring Medizinische Software (QMS) standardisiert, nicht allein durch die KBV."
-    },
-    {
-      "file": "content/standards/BSI-C5.md",
       "verdict": "pass",
-      "score": 92,
+      "score": 86,
       "issues": [
-        "17 Themenbereiche des C5:2020 korrekt verifiziert (BSI-Quelldokument: 17 Bereiche, 121 Kriterien gesamt).",
-        "Typ-1-Testat (bis 1. Juli 2024) und Typ-2-Testat (bis 1. Juli 2025) korrekt.",
-        "Verhältnis zu ISO/IEC 27001 und SOC 2 korrekt beschrieben.",
-        "Erstveröffentlichung 2016, Update 2020 korrekt.",
-        "Gesetzliche Grundlage § 393 SGB V durch DigiG korrekt.",
-        "Strukturell vollständig, 4 Quellen."
+        "Fix aus Vorzyklus verifiziert: Artikel beschreibt GDT 3.1 als 'Mitte der 2010er Jahre vom Qualitätsring Medizinische Software (QMS) standardisiert und von der KBV verabschiedet'. Die QMS-Attribution ist korrekt und wurde ergänzt. 'Mitte der 2010er Jahre' ist ausreichend präzise für die verfügbare Quellenlage.",
+        "KBV-Quell-URL /html/2016_27222.php bestätigt 2016-Veröffentlichung, konsistent mit 'Mitte 2010er'."
       ],
       "fixInstructions": ""
     }
   ],
-  "contradictions": [
-    {
-      "claim": "Anzahl GKV-Versicherte",
-      "articleA": "GKV-Spitzenverband.md sagt 'rund 75 Millionen GKV-Versicherte' (nah am Istwert Jan 2025: 74,63 Mio.)",
-      "articleB": "GKV.md (nicht in diesem Review-Zyklus) sagt '73 Millionen'; DiGA.md sagt '73 Millionen GKV-Versicherten' — beide Altartikel mit veralteter Zahl"
-    },
-    {
-      "claim": "Anzahl ePA-nutzender Krankenkassen",
-      "articleA": "ePA.md behauptet 'über 150 Krankenkassen' — faktisch falsch",
-      "articleB": "Insgesamt existieren nur 93 GKV-Krankenkassen in Deutschland (Stand Januar 2026); ca. 103 nutzen das ePA-System (87 via BITMARCK/RISE, 16 via IBM)"
-    }
-  ],
+  "contradictions": [],
   "staleArticles": [
-    "ePA.md: '150 Krankenkassen' — faktisch falsch, nie zutreffend (nur 93 GKV-Kassen existent gesamt)",
-    "DigiG.md: BGBl-Datum '22. März 2024' ist falsch (korrekt: 25. März 2024)",
-    "Medizinischer-Dienst.md: Gesetzestitel 'Gesetz zur Stärkung des Pflegepersonals' ist ein falscher Gesetzname (korrekt: 'Gesetz für bessere und unabhängigere Prüfungen'); BGBl-Fundstelle S. 2097 falsch (korrekt: S. 2789)",
-    "PACS.md: Verweis auf 'Röntgenverordnungen' veraltet (RöV 2018 durch StrlSchG § 85 abgelöst)",
-    "xDT.md: GDT-3.1-Jahr '2014' unbestätigt; eigene Quell-URL deutet auf 2016 hin"
+    "Medizinischer-Dienst.md: Quellen-URL zeigt noch auf bgbl119s2184.pdf (falsche Seite) obwohl Text korrekt S. 2789 nennt — Fix unvollständig.",
+    "DVKA.md: DVKA als 'bei BITMARCK angesiedelt' beschrieben, korrekt ist: Abteilung des GKV-Spitzenverbandes."
   ],
   "summary": {
-    "reviewed": 11,
-    "pass": 6,
-    "revise": 5,
+    "reviewed": 13,
+    "pass": 11,
+    "revise": 2,
     "fail": 0,
     "keyIssues": [
-      "ePA.md: '150 Krankenkassen' falsch — es gibt nur 93 GKV-Kassen; ca. 103 nutzen die ePA",
-      "DigiG.md: BGBl-Verkündungsdatum '22. März' falsch (korrekt: 25. März 2024)",
-      "Medizinischer-Dienst.md: MDK-Reformgesetz hat falschen offiziellen Gesetzesnamen und falsche BGBl-Seitenangabe",
-      "PACS.md: Röntgenverordnung als Rechtsgrundlage veraltet (gilt seit 2018: § 85 StrlSchG)",
-      "xDT.md: GDT-3.1-Jahreszahl '2014' nicht verifizierbar, Quell-URL im Artikel deutet auf 2016"
+      "DVKA.md: Faktischer Fehler — DVKA ist Abteilung des GKV-Spitzenverbandes, nicht bei BITMARCK angesiedelt.",
+      "Medizinischer-Dienst.md: Quellen-URL für MDK-Reformgesetz zeigt auf falsche BGBl-Seite (s2184 statt s2789) — Text wurde korrigiert aber Link nicht.",
+      "GDNG.md und ePA.md: GFF-Klage-Formulierung etwas irreführend (klingt nach Neuklage, ist Wiederaufnahme einer 2022 eingereichten Klage). Keine schwerwiegende Ungenauigkeit.",
+      "Alle Strukturprüfungen bestanden: 114/114 Artikel, 0 Fehler."
     ]
   }
 }

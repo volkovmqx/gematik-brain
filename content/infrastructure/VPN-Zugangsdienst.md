@@ -23,7 +23,7 @@ Der VPN-Zugangsdienst ist technisch unabhängig vom [[Konnektoren|Konnektor]] un
 
 ### Abgrenzung von KV-SafeNet
 
-Neben dem TI-VPN-Zugangsdienst existiert das **KV-SafeNet**, ein von den Kassenärztlichen Vereinigungen betriebenes VPN-Netz für die Abrechnungskommunikation zwischen Praxen und [[Kassenaerztliche-Vereinigung|KVen]]. KV-SafeNet ist kein Teil der Telematikinfrastruktur, wird aber häufig parallel betrieben. Mit der Ausbreitung der TI wird KV-SafeNet schrittweise abgelöst.
+Neben dem TI-VPN-Zugangsdienst existiert das **[[KV-SafeNet]]**, ein von den Kassenärztlichen Vereinigungen betriebenes VPN-Netz für die Abrechnungskommunikation zwischen Praxen und [[Kassenaerztliche-Vereinigung|KVen]]. KV-SafeNet ist kein Teil der Telematikinfrastruktur, wird aber häufig parallel betrieben. Mit der Ausbreitung der TI wird KV-SafeNet schrittweise abgelöst.
 
 ### Rolle in TI 2.0
 

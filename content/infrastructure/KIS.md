@@ -3,6 +3,7 @@ title: KIS
 audience: [technical, non-technical]
 tags: [infrastruktur, krankenhaus, software, primärsystem]
 aliases: [Krankenhausinformationssystem, Klinikinformationssystem]
+maturity: wachsend
 ---
 
 # KIS
@@ -40,7 +41,7 @@ Der deutsche KIS-Markt ist stark konzentriert. Marktführer ist **Dedalus** mit 
 Moderne KIS-Systeme sind modular aufgebaut. Ein typisches KIS besteht aus einem Kernsystem (administrative und klinische Basisfunktionen) und spezialisierten Subsystemen:
 
 - **RIS** (Radiologie-Informationssystem): Verwaltung radiologischer Aufträge und Befunde
-- **LIS** (Labor-Informationssystem): Labordatenverarbeitung
+- **[[LIS]]** (Labor-Informationssystem): Labordatenverarbeitung
 - **[[PACS]]** (Picture Archiving and Communication System): Speicherung und Verteilung medizinischer Bilder ([[DICOM]])
 - **Klinikapothekenmodul**: Medikamentenlogistik und Unit-Dose-Versorgung
 - **Stationssystem/Pflegedokumentation**: Pflegerische Dokumentation auf Station
@@ -53,7 +54,8 @@ Der verbindliche [[ISiK]]-Standard (Informationstechnische Systeme in Krankenhä
 
 - **Stufe 1**: Bereitstellung von Basis-FHIR-Ressourcen (Patient, Encounter, Condition, Procedure)
 - **Stufe 2**: Erweiterte Ressourcen (Medikation, Beobachtungen, Diagnosen, Terminverwaltung)
-- **Stufe 3**: Aktive Schreib-Schnittstellen (ab 01.07.2025 Voraussetzung für bestimmte KHSFV-Förderung)
+- **Stufe 3**: Verbindlich bis 30.06.2026 (ab 01.07.2025 Voraussetzung für bestimmte KHSFV-Förderung)
+- **Stufe 5**: Im Juli 2025 veröffentlicht; fasst alle ISiK-Module zusammen. Pflichtdatum noch offen.
 
 Dedalus ORBIS hat bereits ISiK Stufe 1 bestätigt. Die ISiK-Bestätigung erfolgt durch die [[gematik]].
 
@@ -82,6 +84,10 @@ KIS-Systeme implementieren typischerweise:
 - **[[DICOM]]**: Bildübertragung im Radiologiekontext (PACS-Anbindung)
 
 Die [[IHE]]-Integrationsprofile (z.B. XDS.b für Dokumentenverteilung, PIX/PDQ für Patientenidentifikation) werden von größeren KIS-Installationen zunehmend unterstützt.
+
+### KRITIS-Dachgesetz und Krankenhäuser
+
+Das KRITIS-Dachgesetz (Bundestag 29. Januar 2026, Bundesrat 6. März 2026) setzt die EU-CER-Richtlinie um und schafft einheitliche Mindeststandards für den physischen Schutz kritischer Infrastrukturen. Krankenhäuser fallen ausdrücklich in den Geltungsbereich. Betroffene Betreiber müssen sich ab **17. Juli 2026** registrieren sowie Risikoanalysen und Resilienzpläne erstellen. Das [[BSI]] koordiniert die Aufsicht über die Cybersicherheitsanforderungen im Zusammenspiel mit dem neuen Gesetz.
 
 ### Krankenhausfinanzierungsgesetz und KHZG
 

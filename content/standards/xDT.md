@@ -3,7 +3,7 @@ title: xDT
 audience: [technical]
 tags: [standards, datenaustausch, interoperabilität, historisch, kvdt, gdt, ldt, bdt]
 aliases: [xDT-Formate, KVDT, GDT, LDT, BDT, Gerätedatentransfer]
-maturity: setzling
+maturity: wachsend
 ---
 
 # xDT

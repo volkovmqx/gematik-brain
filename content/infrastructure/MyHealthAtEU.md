@@ -28,7 +28,7 @@ In einer zweiten Ausbaustufe (Wave 2) sollen weitere Dienste hinzukommen: Laborb
 
 MyHealth@EU wächst schrittweise. Der Beitritt erfolgt in sogenannten **Waves** (Wellen). Pioniere wie Finnland, Estland und Tschechien sind seit mehreren Jahren aktiv. Österreich nahm im **Februar 2026** den grenzüberschreitenden Empfang von EU-E-Rezepten (aus Tschechien) auf.
 
-**Deutschland** plant die Teilnahme ab **Wave 10 (2026)**. Der deutsche [[NCPeH]], betrieben von der DVKA (Deutsche Verbindungsstelle Krankenversicherung Ausland), wird dabei als nationaler Zugangspunkt dienen. Die [[gematik]] ist für die Spezifikation des NCPeH zuständig.
+**Deutschland** plant die Teilnahme ab **Wave 10 (2026)**. Der deutsche [[NCPeH]], betrieben von der [[DVKA]] (Deutsche Verbindungsstelle Krankenversicherung Ausland), wird dabei als nationaler Zugangspunkt dienen. Die [[gematik]] ist für die Spezifikation des NCPeH zuständig.
 
 ### Rechtlicher Rahmen: EHDS
 

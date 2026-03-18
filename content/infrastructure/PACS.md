@@ -3,7 +3,7 @@ title: PACS
 audience: [technical]
 tags: [infrastruktur, radiologie, krankenhaus, bildgebung, dicom]
 aliases: [Picture Archiving and Communication System, Bildarchiv]
-maturity: wachsend
+maturity: immergruen
 ---
 
 # PACS

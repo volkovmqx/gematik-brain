@@ -1,6 +1,6 @@
 {
   "lastChecked": "2026-03-18",
-  "lastRun": "2026-03-18T18:30:00Z",
+  "lastRun": "2026-03-18T20:00:00Z",
   "findings": [
     {
       "title": "eMedikationsplan: Start verschoben auf Oktober 2026",
@@ -496,12 +496,13 @@
     {
       "title": "GFF klagt gegen zentrales Gesundheitsdaten-Speichersystem / FDZ Gesundheit (Februar 2026)",
       "date": "2026-02-26",
+      "appliedDate": "2026-03-18",
       "source": "https://borncity.com/blog/2026/02/26/gff-klage-gegen-zentrale-gesundheitsdatenspeicherung-aufgenommen/",
       "summary": "Die Gesellschaft für Freiheitsrechte (GFF, unterstützt vom CCC) hat im Februar 2026 eine Klage gegen das Forschungsdatenzentrum Gesundheit (FDZ) aufgenommen. Kritikpunkte: Die Pseudonymisierung der Daten von 73 Millionen GKV-Versicherten reiche nicht aus (Re-Identifizierung bei seltenen Krankheiten möglich). Es fehlen gesetzlich verankerte ausreichende Sicherheitsstandards und moderne Verschlüsselung. GKV-Versicherte haben kein Widerspruchsrecht gegen die Datenübermittlung an das FDZ, PKV-Versicherte hingegen schon.",
       "relevantArticles": ["ePA.md", "GDNG.md"],
       "category": "security",
-      "action": "update",
-      "details": "ePA.md und GDNG.md sollten die GFF-Klage gegen das FDZ und die Kritik an der Pseudonymisierung als rechtlichen Kontext ergänzen."
+      "action": "applied",
+      "details": "ePA.md und GDNG.md: GFF-Klage gegen FDZ ergänzt. Kritikpunkte Pseudonymisierung und fehlende GKV-Widerspruchsmöglichkeit dokumentiert."
     },
     {
       "title": "ePA im Krankenhaus: KIS-Pflichtmodule ab April 2026, Sanktionen bei Fehlen",
@@ -529,11 +530,12 @@
       "date": "2026-03-06",
       "appliedDate": "2026-03-18",
       "source": "https://www.bundestag.de/dokumente/textarchiv/2026/kw05-de-kritische-infrastruktur-1137002",
+
       "summary": "Der Bundestag verabschiedete das KRITIS-Dachgesetz am 29. Januar 2026, der Bundesrat stimmte am 6. März 2026 zu. Das Gesetz setzt die EU-CER-Richtlinie um und schafft erstmals einheitliche Mindeststandards für den physischen Schutz kritischer Infrastrukturen in Deutschland. Krankenhäuser und Gesundheitseinrichtungen fallen ausdrücklich in den Geltungsbereich. Betroffene Betreiber müssen sich ab 17. Juli 2026 registrieren und Risikoanalysen sowie Resilienzpläne erstellen. Bei Verstößen drohen empfindliche Bußgelder.",
       "relevantArticles": ["Telematikinfrastruktur.md", "KIS.md", "BSI.md"],
       "category": "regulation",
-      "action": "update",
-      "details": "BSI.md und KIS.md sollten das KRITIS-Dachgesetz als neuen Rechtsrahmen für kritische Infrastrukturen im Gesundheitswesen erwähnen. Registrierungspflicht ab 17.07.2026. Ggf. eigener Artikel 'KRITIS-Dachgesetz' sinnvoll.",
+      "action": "applied",
+      "details": "BSI.md: KRITIS-Dachgesetz-Abschnitt bereits vorhanden. KIS.md: neuen Abschnitt 'KRITIS-Dachgesetz und Krankenhäuser' mit Registrierungsfrist 17.07.2026 ergänzt.",
       "suggestedTerm": "KRITIS-Dachgesetz"
     },
     {
@@ -571,11 +573,12 @@
       "date": "2026-01-01",
       "appliedDate": "2026-03-18",
       "source": "https://wiki.isms-ratgeber.info/wiki/Grundschutz++",
+
       "summary": "Das BSI führt ab 2026 eine umfassende Modernisierung des IT-Grundschutzes ein, bekannt als Grundschutz++. Kernänderungen: Überführung in maschinenlesbares JSON-Format für automatisierte Compliance-Prüfungen, stärker risikobasierter Ansatz, reduzierte Dokumentationslast insbesondere für KMU. Eine Übergangsphase läuft ab Januar 2026. Da die TI unter IT-Grundschutz-Anforderungen fällt, sind TI-Betreiber und Hersteller von den Neuerungen betroffen.",
       "relevantArticles": ["BSI.md", "Telematikinfrastruktur.md"],
       "category": "regulation",
-      "action": "update",
-      "details": "BSI.md sollte Grundschutz++ als Nachfolger des klassischen IT-Grundschutzes ab 2026 erwähnen. Relevanz für TI-Betreiber: neue Anforderungsformate, JSON-basiert.",
+      "action": "applied",
+      "details": "BSI.md: IT-Grundschutz++-Abschnitt bereits vorhanden mit JSON-Format, risikobasiertem Ansatz und Übergangsphase ab Januar 2026.",
       "suggestedTerm": "IT-Grundschutz++"
     },
     {
@@ -783,12 +786,13 @@
     {
       "title": "GDVG: BMG legt Referentenentwurf für Gesetz für digitale Versorgung und Gesundheitsdatenraum vor",
       "date": "2026-03-11",
+      "appliedDate": "2026-03-18",
       "source": "https://www.kma-online.de/aktuelles/it-digital-health/detail/bvitg-anforderungen-nutzung-der-gesundheitsdaten-und-weiterentwicklung-der-infrastruktur-55357",
       "summary": "Das BMG hat angekündigt, in der ersten Jahreshälfte 2026 den Referentenentwurf für das Gesetz für digitale Versorgung und Gesundheitsdatenraum (GDVG) vorzulegen. Das Gesetz soll das gescheiterte GDAG ersetzen und gematik zu einer modernen Digitalagentur weiterentwickeln. Bvitg fordert in einem Positionspapier (11. März 2026): gematik als neutralen Rahmenanbieter (kein Marktakteur), erleichterten Datenzugang für Forschung und Industrie, stabile TI, interoperable Prozesse mit ePA als zentralem Hub. Das Gesetz soll außerdem gematik erweiterte Durchsetzungsbefugnisse für einheitliche Standardimplementierungen geben.",
       "affects": ["gematik.md", "DigiG.md"],
       "category": "regulation",
-      "action": "update",
-      "details": "gematik.md und DigiG.md sollten den Gesetzgebungsprozess für das GDVG erwähnen: Referentenentwurf geplant für H1/2026, als Nachfolger des gescheiterten GDAG. DigiG.md könnte das GDVG als geplante Weiterentwicklung der DigiG-Regelungen beschreiben.",
+      "action": "applied",
+      "details": "gematik.md: GDVG-Abschnitt bereits vorhanden (GDAG gescheitert, GDVG als Nachfolger). DigiG.md: GDVG-Erwähnung bereits im Überblick-Abschnitt ergänzt.",
       "suggestedTerm": "GDVG"
     },
     {
@@ -829,6 +833,48 @@
       "affects": ["Telematikinfrastruktur.md"],
       "category": "specification",
       "action": "info_only"
+    },
+    {
+      "title": "RISE Konnektor Firmware 6.1.3: ECC-Preferred-Feature ab 11. Februar 2026",
+      "date": "2026-02-11",
+      "source": "https://www.datenstrom.net/news/beitrag-lesen/neue-firmware-fuer-rise-konnektor-verfuegbar-version-6-1-3-ab-11-februar-2026.html",
+      "summary": "Ab dem 11. Februar 2026 steht Firmware-Version 6.1.3:1.0.0 für den RISE Konnektor via KSR bereit. Kernmerkmal ist das ECC-Preferred-Feature, das den schrittweisen Umstieg von RSA auf ECC ermöglicht. Außerdem enthält das Update Anpassungen für Laufzeitverlängerungen und Bundesnetzagentur-Anforderungen. Bekannte Kompatibilitätsprobleme: IBM- und Akquinet-KIM-Clientmodule unterstützen Brainpool-Kurven nicht und können beim Umschalten auf ECC-Serverzertifikat Fehler zeigen. Voraussetzung für das Firmware-Update: Kartenterminals müssen vorab auf kompatible Versionen aktualisiert werden (Cherry ST1506 4.0.47, Worldline ORGA 6100 3.9.2, JDM 1.1.20).",
+      "relevantArticles": ["Konnektoren.md", "HBA.md", "SMC-B.md"],
+      "category": "specification",
+      "action": "update",
+      "details": "Konnektoren.md sollte die neue RISE-Firmware 6.1.3 (Februar 2026) und das ECC-Preferred-Feature erwähnen. Wichtig für Leistungserbringer, die noch RSA-Konnektoren betreiben: Dieser Release ist ein notwendiger Schritt vor dem eHBA/SMC-B-Tausch bis 30.06.2026."
+    },
+    {
+      "title": "ISiK Stufe 5 veröffentlicht, Stufe 4 abgekündigt (ab Juli 2025)",
+      "date": "2025-07-01",
+      "appliedDate": "2026-03-18",
+      "source": "https://fachportal.gematik.de/informationen-fuer/isik",
+      "summary": "Gematik hat ISiK (Informationstechnische Systeme im Krankenhaus) Stufe 5 zum 1. Juli 2025 veröffentlicht. ISiK Stufe 4 wurde gleichzeitig abgekündigt (Abkündigungsdatum 1. Juli 2025). Stufe 3 (inkl. Module Dokumentenaustausch, Medikation) ist verpflichtend ab 1. Juli 2025 und gültig bis 30. Juni 2026. Pflichttermin und Gültigkeitszeitraum für Stufe 5 sind noch nicht festgelegt ('TBD'). ISiK definiert verbindliche FHIR-basierte Schnittstellen für Krankenhausinformationssysteme (KIS) gemäß §374 SGB V. Neue Module in Stufe 5 sind noch nicht abschließend kommuniziert.",
+      "relevantArticles": ["ISiK.md", "KIS.md", "FHIR.md"],
+      "category": "specification",
+      "action": "applied",
+      "details": "ISiK.md: Stufen-Tabelle aktualisiert mit Stufe 5 (veröffentlicht 01.07.2025, Pflichttermin TBD), Stufe 3 verbindlich bis 30.06.2026, Stufe 4 abgekündigt. KIS.md: ISiK-Stufen-Liste aktualisiert.",
+      "suggestedTerm": "ISiK"
+    },
+    {
+      "title": "TI-Dashboard: Neue Kennzahlen zum TI-Gateway (Oktober 2025)",
+      "date": "2025-10-31",
+      "source": "https://www.gematik.de/newsroom/news-detail/ti-dashboard-erweitert-neue-kennzahlen-zum-ti-gateway",
+      "summary": "Gematik erweiterte das TI-Dashboard am 31. Oktober 2025 um Kennzahlen zum TI-Gateway. Neu erfasst wird die Anzahl virtueller Konnektor-Instanzen über TI-Gateways (Stand Oktober 2025: ca. 22.000 Instanzen). Jede Instanz entspricht in der Regel einer Gesundheitseinrichtung ohne lokalen Hardware-Konnektor. Das Dashboard wird täglich aktualisiert und zeigt die Tages-Werte des Vortags. Bereits enthalten waren: ePA, E-Rezept, KIM, GesundheitsID.",
+      "relevantArticles": ["TI-Gateway.md", "Konnektoren.md", "Telematikinfrastruktur.md"],
+      "category": "info",
+      "action": "update",
+      "details": "TI-Gateway.md sollte die öffentliche Verfügbarkeit von TI-Gateway-Kennzahlen im TI-Dashboard erwähnen und die Zahl von ca. 22.000 Instanzen (Stand Oktober 2025) als Beleg für die wachsende Verbreitung nennen."
+    },
+    {
+      "title": "gematik-Beirat mit neuer Spitze: Semler (TMF) und Bursig (ZVEI) übernehmen Vorsitz",
+      "date": "2024-11-26",
+      "source": "https://www.gematik.de/newsroom/news-detail/aktuelles-gematik-beirat-mit-neuer-spitze-sebastian-claudius-semler-tmf-und-hans-peter-bursig-zvei-uebernehmen-vorsitz",
+      "summary": "In der Beiratssitzung vom 26. November 2024 wurde Sebastian Claudius Semler (CEO der TMF – Technologie- und Methodenplattform für vernetzte medizinische Forschung) zum neuen Vorsitzenden des gematik-Beirats gewählt. Hans-Peter Bursig (Bereichsleiter Gesundheit, ZVEI) übernahm den stellvertretenden Vorsitz. Der Beirat berät die gematik-Gesellschafter und -Geschäftsführung in strategischen Fragen und hat Vertreter aus Wissenschaft, Industrie, Zivilgesellschaft und Versorgung.",
+      "relevantArticles": ["gematik.md"],
+      "category": "info",
+      "action": "update",
+      "details": "gematik.md sollte die neue Beiratsspitze seit November 2024 nennen: Sebastian Claudius Semler (Vorsitz) und Hans-Peter Bursig (stellv. Vorsitz). Stärkt das Bild der institutionellen Struktur der gematik."
     }
   ]
 }

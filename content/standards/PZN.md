@@ -54,7 +54,7 @@ Das CodeSystem `http://fhir.de/CodeSystem/ifa/pzn` ist das offizielle FHIR-Codes
 
 ### Abrechnung in der Apotheke
 
-Apotheken übertragen beim Einlösen eines [[E-Rezept]]s die PZN an die Apothekenrechenzentren, die die Abrechnung mit der [[GKV]] durchführen. Das Abrechnungsformat (TA1 nach § 300 [[SGB-V]]) enthält die PZN als Pflichtelement.
+Apotheken übertragen beim Einlösen eines [[E-Rezept]]s die PZN an die Apothekenrechenzentren, die die Abrechnung mit der [[GKV]] durchführen. Das Abrechnungsformat ([[TA1]] nach § 300 [[SGB-V]]) enthält die PZN als Pflichtelement.
 
 Im [[AVS|Apothekenverwaltungssystem (AVS)]] ist die PZN der primäre Schlüssel für den Warenbestand. Die PZN ermöglicht den automatischen Abgleich zwischen verordnetem und dispensiertem Arzneimittel.
 
