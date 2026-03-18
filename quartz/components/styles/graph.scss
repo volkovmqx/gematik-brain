@@ -63,11 +63,41 @@
       right: calc(10vw + 0.75rem);
       z-index: 10000;
       display: flex;
+      align-items: center;
       gap: 0.5rem;
 
       @media all and not ($desktop) {
         top: calc(5% + 0.75rem);
         right: calc(5% + 0.75rem);
+      }
+
+      .global-graph-search {
+        appearance: none;
+        border: 1px solid var(--lightgray);
+        border-radius: 0.375rem;
+        background: var(--light);
+        color: var(--dark);
+        padding: 0.4rem 0.75rem;
+        font-size: 0.875rem;
+        font-family: var(--bodyFont);
+        outline: none;
+        height: 36px;
+        box-sizing: border-box;
+        width: 180px;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+        &:focus {
+          border-color: var(--secondary);
+          box-shadow: 0 0 0 2px color-mix(in srgb, var(--secondary) 25%, transparent);
+        }
+
+        &::placeholder {
+          color: var(--gray);
+        }
+
+        @media all and not ($desktop) {
+          width: 140px;
+        }
       }
 
       button {
@@ -92,6 +122,73 @@
           outline: 2px solid var(--secondary);
           outline-offset: 2px;
         }
+      }
+    }
+
+    & > .global-graph-timeline {
+      position: fixed;
+      bottom: calc(10vh + 1rem);
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10000;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: var(--light);
+      border: 1px solid var(--lightgray);
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+
+      @media all and not ($desktop) {
+        bottom: calc(5% + 1rem);
+        width: 80%;
+        padding: 0.4rem 0.75rem;
+      }
+
+      .timeline-play {
+        appearance: none;
+        border: 1px solid var(--lightgray);
+        border-radius: 0.375rem;
+        background: var(--light);
+        color: var(--dark);
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 0.875rem;
+        flex-shrink: 0;
+        transition: background 0.2s ease;
+
+        &:hover {
+          background: var(--lightgray);
+        }
+
+        &:focus-visible {
+          outline: 2px solid var(--secondary);
+          outline-offset: 2px;
+        }
+      }
+
+      .timeline-slider {
+        flex: 1;
+        min-width: 200px;
+        accent-color: var(--secondary);
+        cursor: pointer;
+
+        @media all and not ($desktop) {
+          min-width: 100px;
+        }
+      }
+
+      .timeline-date {
+        font-size: 0.8rem;
+        color: var(--darkgray);
+        font-family: var(--bodyFont);
+        min-width: 70px;
+        text-align: right;
+        flex-shrink: 0;
       }
     }
 

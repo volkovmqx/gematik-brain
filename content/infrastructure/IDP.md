@@ -75,6 +75,12 @@ Der IDP prüft bei jeder Authentisierung Gültigkeit, Integrität und Signatur d
 - RSA 2048 bit: gültig bis Ende 2025
 - ECDSA (brainpoolP256r1 oder P-256): gültig bis mindestens 2029
 
+### Abhängigkeitsrisiken: Ausfall sektoraler IDPs
+
+Die TI-Federation verteilt die Authentisierung auf mehrere sektorale IDPs. Das schafft Redundanz in der Theorie, birgt aber Konzentrationsrisiken in der Praxis: Wenn ein sektoraler IDP, der für viele Kassen zuständig ist, ausfällt, sind alle über ihn angebundenen Leistungserbringer nicht mehr authentisierbar.
+
+Am **10. Februar 2026** fiel der sektorale IDP der **IBM Deutschland GmbH** ab ca. 3:05 Uhr aus. Vermutliche Ursache war ein Rauchmelder-Problem in einem Frankfurter Rechenzentrum, das zu einem automatischen Shutdown führte. Behebung gegen 11:00 Uhr. Dauer: ca. 8 Stunden. Betroffene Dienste für alle über T-Systems angebundenen Leistungserbringer: [[ePA]] (Zugriff und Berechtigungen), [[E-Rezept]] (Erstellen, Einstellen, Einlösen), [[KIM]] und [[VSDM]]. Das Ereignis verdeutlicht die Abhängigkeit kritischer TI-Anwendungen von einzelnen sektoralen IDPs.
+
 ## Verknüpfungen
 
 - Stellt Tokens für [[ePA]], [[E-Rezept]], [[TI-Messenger]] aus

@@ -52,6 +52,12 @@ Zur Sicherheit ist eine Zwei-Faktor-Authentifizierung vorgesehen. Geräte mit ei
 - Signing: ECDSA mit brainpoolP256r1
 - Infrastruktur: [[TI-Federation]] verbindet alle sektoralen IDPs mit dem zentralen [[IDP]]
 
+### ePass als ergänzendes Identifikationsverfahren
+
+Seit dem **25. März 2026** steht mit **ePass** ein weiteres Identifikationsverfahren für TI-Dienste zur Verfügung. ePass nutzt den NFC-Chip eines deutschen Personalausweises oder Reisepasses, um die Identität per Smartphone zu prüfen. Das Verfahren wurde von der Nect GmbH entwickelt und von BITMARCK für rund 80 Prozent der GKV-Kassen bereitgestellt. Rechtsgrundlage ist das BEEP-Gesetz (in Kraft 1. Januar 2026).
+
+ePass und Gesundheits-ID sind komplementäre Verfahren, keine Konkurrenten. Beide ermöglichen den Zugang zu TI-Diensten wie der [[ePA]] ohne physische eGK und ohne Praxisbesuch. Der Unterschied: Die Gesundheits-ID leitet sich aus der Versichertenidentität bei der Krankenkasse ab; ePass nutzt ein staatliches hoheitliches Ausweisdokument als Vertrauensanker.
+
 ### Abgrenzung zur eGK
 
 | Merkmal | [[eGK]] | Gesundheits-ID |

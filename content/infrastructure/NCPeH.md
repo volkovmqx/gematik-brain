@@ -43,6 +43,12 @@ Der NCPeH ist ein Gateway zwischen zwei Infrastrukturen:
 
 Der Datenaustausch über MyHealth@EU basiert auf **IHE**-Profilen (Integrating the Healthcare Enterprise) und auf [[FHIR]]-basierten Austauschformaten.
 
+### EU E-Rezept: gemF_eRp_EU V1.0.0
+
+Gematik veröffentlichte am 12. März 2025 mit Release **NCPeH_24_2** die Feature-Spezifikation **gemF_eRp_EU V1.0.0** für den Anwendungsfall "EU Zugriff E-Rezept" (ePrescription/eDispensation Country A). Sie beschreibt, wie Versicherte deutschen Leistungserbringern im EU-Ausland Zugriff auf ihre [[E-Rezept|E-Rezepte]] erteilen können.
+
+Der Autorisierungsmechanismus nutzt einen **6-stelligen alphanumerischen Zugangscode** zusammen mit der Versicherten-ID. Das Verfahren funktioniert ohne Konnektor oder physische Karte auf der ausländischen Seite. Der produktive Wave-10-Anschluss Deutschlands an MyHealth@EU für E-Rezepte ist für 2026 geplant.
+
 ### Datenarten im Austausch
 
 | Dienst | Inhalt | Status Deutschland |

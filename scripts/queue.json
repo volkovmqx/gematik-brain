@@ -11,6 +11,17 @@
       "priority": 22
     },
     {
+      "term": "GDAG",
+      "category": "standards",
+      "reason": "Gesundheits-Digitalagentur-Gesetz. Geplantes Gesetz zur Umwandlung der gematik in eine staatliche Digitalagentur mit erweitertem Mandat. In gematik.md, GDVG.md und DigiG.md als wichtige gesetzgeberische Initiative erwähnt. GDAG ist der unmittelbare gesetzliche Rahmen für die Neuausrichtung der gematik und bestimmt ihre künftige Rolle im deutschen Gesundheitssystem.",
+      "mentionedIn": [
+        "content/organization/gematik.md",
+        "content/standards/GDVG.md",
+        "content/standards/DigiG.md"
+      ],
+      "priority": 21
+    },
+    {
       "term": "gRPC",
       "category": "technologies",
       "reason": "Google Remote Procedure Call. Modernes, binärbasiertes API-Protokoll, das SOAP in TI 2.0 für neue Dienste ergänzt bzw. ersetzt. In Konnektoren.md als gRPC-basierte API für TI 2.0 beschrieben, in TI-Gateway.md als neue Schnittstelle (neben SOAP). Relevant für Entwickler, die TI-2.0-Integrationen implementieren.",
@@ -30,6 +41,18 @@
         "content/infrastructure/RIS.md"
       ],
       "priority": 19
+    },
+    {
+      "term": "DAV",
+      "category": "organization",
+      "reason": "Deutscher Apothekerverband. Dachverband der Apothekeninhaber in Deutschland und Gesellschafter der gematik. Co-Herausgeber der TA1 (Technische Anlage 1 zum Rahmenvertrag über die Arzneimittelversorgung). In 13 Erwähnungen über ABDA.md, Apothekenrechenzentrum.md, TA1.md und gematik.md. Zentraler Akteur im E-Rezept-Ökosystem neben ABDA.",
+      "mentionedIn": [
+        "content/organization/ABDA.md",
+        "content/infrastructure/Apothekenrechenzentrum.md",
+        "content/standards/TA1.md",
+        "content/organization/gematik.md"
+      ],
+      "priority": 18
     },
     {
       "term": "BMP",

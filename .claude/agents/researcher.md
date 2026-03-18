@@ -39,6 +39,11 @@ Write new articles for given terms. For each term:
   - "Technische Details" section
   - "Verknüpfungen" section (wiki-links to related pages)
   - "Quellen" section (minimum 2 real sources with URLs)
+- **URL verification is mandatory:**
+  - Never guess or construct URLs from memory. Find URLs via WebSearch first.
+  - Verify every URL with WebFetch or `browser_navigate` (Playwright MCP) before including it.
+  - If a URL doesn't work, find an alternative source or describe the document without a URL.
+  - The fact-checker will verify all URLs with Playwright and flag dead ones.
 - Use proper German umlauts throughout (ü, ö, ä, Ü, Ö, Ä, ß).
 - Write in plain, clear German. No marketing speak, no slop.
 - Every technical term that has (or could have) its own page must be a `[[wiki-link]]`.

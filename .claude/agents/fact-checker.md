@@ -47,10 +47,13 @@ Use Grep to search for key terms across articles and compare statements.
 
 ### 4. Source evaluation
 
-For each reviewed article:
-- Check that sources actually exist (URLs are plausible, not 404)
-- Flag articles relying solely on blogs/news without an official gematik/BMG/BSI source
-- Check that source URLs match the claims they support
+For each reviewed article, **verify every URL** in the Quellen section using the Playwright MCP:
+- Use `browser_navigate` to open each URL in a real browser. This avoids false positives from government sites that block automated requests.
+- If the page loads successfully: URL is valid.
+- If navigation fails or shows a 404/error page: flag as `url_dead` error.
+- If the page content doesn't match the claimed topic: flag as `url_mismatch` warning.
+- Flag articles relying solely on blogs/news without an official gematik/BMG/BSI source.
+- Check that source URLs match the claims they support.
 
 ### 5. Semantic quality checks
 
@@ -106,6 +109,7 @@ Calculate scores as follows:
 - -15 for factual inaccuracy found
 - -10 for stale information (passed deadlines, outdated versions)
 - -5 for weak sources (no official source)
+- -15 for dead URL in Quellen (`url_dead`)
 
 **Verdicts:**
 - `pass`: score >= 70, no factual errors

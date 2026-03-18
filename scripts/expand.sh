@@ -50,7 +50,7 @@ for attempt in $(seq 1 "$MAX_RETRIES"); do
     -p "Run editorial cycle. Read quality reports, decide priorities, dispatch agents, review output." \
     --verbose \
     --output-format stream-json \
-    --allowedTools 'Read,Write,Edit,Glob,Grep,Bash(*),WebSearch,WebFetch,Agent(explorer),Agent(researcher),Agent(news-scout),Agent(grammar-fixer),Agent(fact-checker)'; then
+    --allowedTools 'Read,Write,Edit,Glob,Grep,Bash(*),WebSearch,WebFetch,mcp__plugin_playwright_playwright__browser_navigate,mcp__plugin_playwright_playwright__browser_snapshot,mcp__plugin_playwright_playwright__browser_close,mcp__plugin_playwright_playwright__browser_tabs,Agent(explorer),Agent(researcher),Agent(news-scout),Agent(grammar-fixer),Agent(fact-checker)'; then
     AGENT_SUCCESS=true
     break
   else

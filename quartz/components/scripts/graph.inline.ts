@@ -31,6 +31,8 @@ type NodeData = {
   id: SimpleSlug
   text: string
   tags: string[]
+  date?: number
+  folder?: string
 } & SimulationNodeDatum
 
 type SimpleLinkData = {
@@ -45,11 +47,22 @@ type LinkData = {
 
 type LinkRenderData = GraphicsInfo & {
   simulationData: LinkData
+  width: number
 }
 
 type NodeRenderData = GraphicsInfo & {
   simulationData: NodeData
   label: Text
+}
+
+// Category color palette for folder-based coloring
+const CATEGORY_COLORS: Record<string, string> = {
+  technologies: "#5B9BD5",
+  infrastructure: "#6BAF6E",
+  standards: "#E0924F",
+  concepts: "#A473B5",
+  processes: "#4DB8A4",
+  organization: "#D4729A",
 }
 
 const localStorageKey = "graph-visited"
@@ -72,6 +85,8 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   const slug = simplifySlug(fullSlug)
   const visited = getVisited()
   removeAllChildren(graph)
+
+  const isGlobalGraph = graph.classList.contains("global-graph-container")
 
   let {
     drag: enableDrag,
@@ -159,11 +174,18 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   }
 
   const nodes = [...neighbourhood].map((url) => {
-    const text = url.startsWith("tags/") ? "#" + url.substring(5) : (data.get(url)?.title ?? url)
+    const details = data.get(url)
+    const text = url.startsWith("tags/") ? "#" + url.substring(5) : (details?.title ?? url)
+    const filePath = details?.filePath
+    const folder = filePath ? filePath.split("/")[0] : undefined
+    const dateRaw = details?.date
+    const date = dateRaw ? new Date(dateRaw as unknown as string).getTime() : undefined
     return {
       id: url,
       text,
-      tags: data.get(url)?.tags ?? [],
+      tags: details?.tags ?? [],
+      date,
+      folder,
     }
   })
   const graphData: { nodes: NodeData[]; links: LinkData[] } = {
@@ -209,16 +231,13 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     {} as Record<(typeof cssVars)[number], string>,
   )
 
-  // calculate color
+  // Color by category folder, with fallbacks
   const color = (d: NodeData) => {
-    const isCurrent = d.id === slug
-    if (isCurrent) {
-      return computedStyleMap["--secondary"]
-    } else if (visited.has(d.id) || d.id.startsWith("tags/")) {
-      return computedStyleMap["--tertiary"]
-    } else {
-      return computedStyleMap["--gray"]
-    }
+    if (d.id === slug) return computedStyleMap["--secondary"]
+    if (d.id.startsWith("tags/")) return computedStyleMap["--light"]
+    if (d.folder && CATEGORY_COLORS[d.folder]) return CATEGORY_COLORS[d.folder]
+    if (visited.has(d.id)) return computedStyleMap["--tertiary"]
+    return computedStyleMap["--gray"]
   }
 
   function nodeRadius(d: NodeData) {
@@ -232,6 +251,23 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   let hoveredNeighbours: Set<string> = new Set()
   const linkRenderData: LinkRenderData[] = []
   const nodeRenderData: NodeRenderData[] = []
+
+  // Filter state (global graph only)
+  let timelineCutoff: number | null = null
+  let searchQuery: string = ""
+  let zoomLabelAlpha: number = 0
+
+  function isTimelineHidden(n: NodeData): boolean {
+    return timelineCutoff !== null && n.date != null && n.date > timelineCutoff
+  }
+
+  function isSearchFaded(n: NodeData): boolean {
+    return searchQuery !== "" && !n.text.toLowerCase().includes(searchQuery.toLowerCase())
+  }
+
+  // Hover glow graphic (declared here, created after app init)
+  let hoverGlowGfx: Graphics
+
   function updateHoverInfo(newHoveredId: string | null) {
     hoveredNodeId = newHoveredId
 
@@ -270,16 +306,29 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     const tweenGroup = new TweenGroup()
 
     for (const l of linkRenderData) {
+      const src = l.simulationData.source
+      const tgt = l.simulationData.target
       let alpha = 1
+      let targetWidth = 1.5
 
-      // if we are hovering over a node, we want to highlight the immediate neighbours
-      // with full alpha and the rest with default alpha
-      if (hoveredNodeId) {
-        alpha = l.active ? 1 : 0.2
+      if (isTimelineHidden(src) || isTimelineHidden(tgt)) {
+        alpha = 0
+      } else if (hoveredNodeId) {
+        if (l.active) {
+          alpha = 1
+          targetWidth = focusOnHover ? 2.5 : 1.5
+        } else {
+          alpha = focusOnHover ? 0.05 : 0.2
+        }
+      } else if (isSearchFaded(src) || isSearchFaded(tgt)) {
+        alpha = 0.08
       }
 
-      l.color = l.active ? computedStyleMap["--gray"] : computedStyleMap["--lightgray"]
-      tweenGroup.add(new Tweened<LinkRenderData>(l).to({ alpha }, 200))
+      l.color =
+        l.active && hoveredNodeId
+          ? (focusOnHover ? computedStyleMap["--secondary"] : computedStyleMap["--gray"])
+          : computedStyleMap["--lightgray"]
+      tweenGroup.add(new Tweened<LinkRenderData>(l).to({ alpha, width: targetWidth }, 150))
     }
 
     tweenGroup.getAll().forEach((tw) => tw.start())
@@ -296,31 +345,35 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     const tweenGroup = new TweenGroup()
 
     const defaultScale = 1 / scale
-    const activeScale = defaultScale * 1.1
     for (const n of nodeRenderData) {
       const nodeId = n.simulationData.id
+      let targetAlpha: number
+      let targetScale = defaultScale
 
-      if (hoveredNodeId === nodeId) {
-        tweenGroup.add(
-          new Tweened<Text>(n.label).to(
-            {
-              alpha: 1,
-              scale: { x: activeScale, y: activeScale },
-            },
-            100,
-          ),
-        )
+      if (isTimelineHidden(n.simulationData)) {
+        targetAlpha = 0
+      } else if (hoveredNodeId === nodeId) {
+        targetAlpha = 1
+        targetScale = defaultScale * 1.5
+      } else if (hoveredNodeId !== null && n.active) {
+        targetAlpha = 0.85
+      } else if (isSearchFaded(n.simulationData)) {
+        targetAlpha = 0.05
+      } else if (nodeId === slug) {
+        targetAlpha = isGlobalGraph ? Math.max(0.5, zoomLabelAlpha) : 0.8
       } else {
-        tweenGroup.add(
-          new Tweened<Text>(n.label).to(
-            {
-              alpha: n.label.alpha,
-              scale: { x: defaultScale, y: defaultScale },
-            },
-            100,
-          ),
-        )
+        targetAlpha = isGlobalGraph ? zoomLabelAlpha : 0.7
       }
+
+      tweenGroup.add(
+        new Tweened<Text>(n.label).to(
+          {
+            alpha: targetAlpha,
+            scale: { x: targetScale, y: targetScale },
+          },
+          150,
+        ),
+      )
     }
 
     tweenGroup.getAll().forEach((tw) => tw.start())
@@ -337,14 +390,30 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
 
     const tweenGroup = new TweenGroup()
     for (const n of nodeRenderData) {
-      let alpha = 1
+      const nd = n.simulationData
+      let targetAlpha = 1
+      let targetScale = 1
 
-      // if we are hovering over a node, we want to highlight the immediate neighbours
-      if (hoveredNodeId !== null && focusOnHover) {
-        alpha = n.active ? 1 : 0.2
+      if (isTimelineHidden(nd)) {
+        targetAlpha = 0
+      } else if (hoveredNodeId === nd.id) {
+        targetAlpha = 1
+        targetScale = focusOnHover ? 1.3 : 1
+      } else if (hoveredNodeId !== null && n.active && focusOnHover) {
+        targetAlpha = 1
+        targetScale = 1.1
+      } else if (hoveredNodeId !== null && focusOnHover) {
+        targetAlpha = 0.08
+      } else if (isSearchFaded(nd)) {
+        targetAlpha = 0.08
       }
 
-      tweenGroup.add(new Tweened<Graphics>(n.gfx, tweenGroup).to({ alpha }, 200))
+      tweenGroup.add(
+        new Tweened<Graphics>(n.gfx, tweenGroup).to(
+          { alpha: targetAlpha, scale: { x: targetScale, y: targetScale } },
+          150,
+        ),
+      )
     }
 
     tweenGroup.getAll().forEach((tw) => tw.start())
@@ -356,10 +425,46 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     })
   }
 
+  function renderHoverGlow() {
+    tweens.get("glow")?.stop()
+
+    if (!focusOnHover || hoveredNodeId === null) {
+      hoverGlowGfx.visible = false
+      return
+    }
+
+    const hoveredNode = nodeRenderData.find((n) => n.simulationData.id === hoveredNodeId)
+    if (!hoveredNode) {
+      hoverGlowGfx.visible = false
+      return
+    }
+
+    const r = nodeRadius(hoveredNode.simulationData)
+    hoverGlowGfx.clear()
+    hoverGlowGfx.circle(0, 0, r * 3).fill({ color: computedStyleMap["--secondary"], alpha: 0.15 })
+    hoverGlowGfx.visible = true
+    hoverGlowGfx.alpha = 0.8
+
+    // Pulse animation
+    const tweenGroup = new TweenGroup()
+    tweenGroup.add(
+      new Tweened<Graphics>(hoverGlowGfx).to({ alpha: 1 }, 800).repeat(Infinity).yoyo(true),
+    )
+    tweenGroup.getAll().forEach((tw) => tw.start())
+    tweens.set("glow", {
+      update: tweenGroup.update.bind(tweenGroup),
+      stop() {
+        tweenGroup.getAll().forEach((tw) => tw.stop())
+        hoverGlowGfx.visible = false
+      },
+    })
+  }
+
   function renderPixiFromD3() {
     renderNodes()
     renderLinks()
     renderLabels()
+    renderHoverGlow()
   }
 
   tweens.forEach((tween) => tween.stop())
@@ -382,19 +487,29 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   const stage = app.stage
   stage.interactive = false
 
-  const labelsContainer = new Container<Text>({ zIndex: 3, isRenderGroup: true })
-  const nodesContainer = new Container<Graphics>({ zIndex: 2, isRenderGroup: true })
+  const glowContainer = new Container<Graphics>({ zIndex: 0, isRenderGroup: true })
   const linkContainer = new Container<Graphics>({ zIndex: 1, isRenderGroup: true })
-  stage.addChild(nodesContainer, labelsContainer, linkContainer)
+  const nodesContainer = new Container<Graphics>({ zIndex: 2, isRenderGroup: true })
+  const labelsContainer = new Container<Text>({ zIndex: 3, isRenderGroup: true })
+  stage.addChild(glowContainer, linkContainer, nodesContainer, labelsContainer)
+
+  // Single reusable hover glow element
+  hoverGlowGfx = new Graphics({ interactive: false, eventMode: "none" })
+  hoverGlowGfx.visible = false
+  glowContainer.addChild(hoverGlowGfx)
 
   for (const n of graphData.nodes) {
     const nodeId = n.id
 
+    const isCurrent = nodeId === slug
+    const isTagNode = nodeId.startsWith("tags/")
+
+    // Labels: hidden by default in global graph, visible in local graph
     const label = new Text({
       interactive: false,
       eventMode: "none",
       text: n.text,
-      alpha: 0.7,
+      alpha: isCurrent ? (isGlobalGraph ? 0.5 : 0.8) : (isGlobalGraph ? 0 : 0.7),
       anchor: { x: 0.5, y: -0.4 },
       style: {
         fontSize: fontSize * 12,
@@ -406,8 +521,6 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     label.scale.set(1 / scale)
 
     let oldLabelOpacity = 0
-    const isTagNode = nodeId.startsWith("tags/")
-    const isCurrent = nodeId === slug
     const gfx = new Graphics({
       interactive: true,
       label: nodeId,
@@ -418,8 +531,12 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
 
     // glow rings for the current page node
     if (isCurrent) {
-      gfx.circle(0, 0, nodeRadius(n) * 3).fill({ color: computedStyleMap["--secondary"], alpha: 0.08 })
-      gfx.circle(0, 0, nodeRadius(n) * 2).fill({ color: computedStyleMap["--secondary"], alpha: 0.15 })
+      gfx
+        .circle(0, 0, nodeRadius(n) * 3)
+        .fill({ color: computedStyleMap["--secondary"], alpha: 0.08 })
+      gfx
+        .circle(0, 0, nodeRadius(n) * 2)
+        .fill({ color: computedStyleMap["--secondary"], alpha: 0.15 })
     }
 
     gfx
@@ -469,6 +586,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       color: computedStyleMap["--lightgray"],
       alpha: 1,
       active: false,
+      width: 1.5,
     }
 
     linkRenderData.push(linkRenderDatum)
@@ -521,22 +639,39 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     }
   }
 
+  // Zoom — store reference for programmatic centering
+  let zoomBehavior: any = null
   if (enableZoom) {
-    select<HTMLCanvasElement, NodeData>(app.canvas).call(
-      zoom<HTMLCanvasElement, NodeData>()
-        .extent([
-          [0, 0],
-          [width, height],
-        ])
-        .scaleExtent([0.25, 4])
-        .on("zoom", ({ transform }) => {
-          currentTransform = transform
-          stage.scale.set(transform.k, transform.k)
-          stage.position.set(transform.x, transform.y)
+    zoomBehavior = zoom<HTMLCanvasElement, NodeData>()
+      .extent([
+        [0, 0],
+        [width, height],
+      ])
+      .scaleExtent([0.25, 4])
+      .on("zoom", ({ transform }) => {
+        currentTransform = transform
+        stage.scale.set(transform.k, transform.k)
+        stage.position.set(transform.x, transform.y)
 
-          // zoom adjusts opacity of labels too
-          const scale = transform.k * opacityScale
-          let scaleOpacity = Math.min(Math.max(scale * 0.7, 0.15), 1)
+        if (isGlobalGraph) {
+          // Labels hidden by default, progressively reveal on zoom > 1.5
+          zoomLabelAlpha = transform.k > 1.5 ? Math.min((transform.k - 1.5) / 1.5, 1) : 0
+
+          // Direct alpha update (no tween) for smooth zoom interaction
+          for (const n of nodeRenderData) {
+            const nodeId = n.simulationData.id
+            // Don't override hover-managed labels
+            if (hoveredNodeId === nodeId || (hoveredNodeId !== null && n.active)) continue
+            if (nodeId === slug) {
+              n.label.alpha = Math.max(0.5, zoomLabelAlpha)
+            } else {
+              n.label.alpha = zoomLabelAlpha
+            }
+          }
+        } else {
+          // Local graph: existing zoom-based opacity
+          const s = transform.k * opacityScale
+          let scaleOpacity = Math.min(Math.max(s * 0.7, 0.15), 1)
           const activeNodes = nodeRenderData.filter((n) => n.active).flatMap((n) => n.label)
 
           for (const label of labelsContainer.children) {
@@ -544,8 +679,148 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
               label.alpha = scaleOpacity
             }
           }
-        }),
-    )
+        }
+      })
+
+    select<HTMLCanvasElement, NodeData>(app.canvas).call(zoomBehavior)
+  }
+
+  // Center view on a specific node (used by search)
+  function centerOnNode(nodeId: string) {
+    if (!zoomBehavior) return
+    const node = graphData.nodes.find((n) => n.id === nodeId)
+    if (node?.x == null || node?.y == null) return
+
+    const x = node.x + width / 2
+    const y = node.y + height / 2
+    const k = Math.max(currentTransform.k, 2)
+    const newTransform = zoomIdentity.translate(width / 2, height / 2).scale(k).translate(-x, -y)
+
+    select<HTMLCanvasElement, NodeData>(app.canvas).call(zoomBehavior.transform, newTransform)
+  }
+
+  // Timeline & Search controls (global graph only)
+  const controlCleanups: (() => void)[] = []
+
+  if (isGlobalGraph) {
+    const outer = graph.closest(".global-graph-outer")
+    if (outer) {
+      // --- Timeline ---
+      const timelineEl = outer.querySelector(".global-graph-timeline") as HTMLElement | null
+      const timelineSlider = outer.querySelector(".timeline-slider") as HTMLInputElement | null
+      const timelineDateEl = outer.querySelector(".timeline-date") as HTMLElement | null
+      const playBtn = outer.querySelector(".timeline-play") as HTMLButtonElement | null
+
+      if (timelineSlider && timelineDateEl && playBtn) {
+        const datedNodes = graphData.nodes
+          .filter((n) => n.date != null)
+          .sort((a, b) => a.date! - b.date!)
+
+        if (datedNodes.length > 0) {
+          timelineSlider.min = "0"
+          timelineSlider.max = String(datedNodes.length)
+          timelineSlider.value = timelineSlider.max
+          timelineDateEl.textContent = "Alle"
+          timelineCutoff = null
+
+          const updateTimeline = () => {
+            const idx = parseInt(timelineSlider.value)
+            if (idx >= datedNodes.length) {
+              timelineCutoff = null
+              timelineDateEl.textContent = "Alle"
+            } else {
+              timelineCutoff = datedNodes[idx].date!
+              const d = new Date(timelineCutoff)
+              timelineDateEl.textContent = d.toLocaleDateString("de-DE", {
+                year: "numeric",
+                month: "short",
+              })
+            }
+            renderPixiFromD3()
+          }
+
+          timelineSlider.addEventListener("input", updateTimeline)
+          controlCleanups.push(() => timelineSlider.removeEventListener("input", updateTimeline))
+
+          let playing = false
+          let playInterval: number | null = null
+
+          const togglePlay = () => {
+            if (playing) {
+              playing = false
+              playBtn.textContent = "\u25B6"
+              if (playInterval !== null) {
+                clearInterval(playInterval)
+                playInterval = null
+              }
+            } else {
+              playing = true
+              playBtn.textContent = "\u23F8"
+              // Start from beginning if at end
+              if (parseInt(timelineSlider.value) >= datedNodes.length) {
+                timelineSlider.value = "0"
+              }
+              playInterval = window.setInterval(() => {
+                const val = parseInt(timelineSlider.value)
+                if (val >= datedNodes.length) {
+                  togglePlay()
+                  return
+                }
+                timelineSlider.value = String(val + 1)
+                updateTimeline()
+              }, 200)
+            }
+          }
+
+          playBtn.addEventListener("click", togglePlay)
+          controlCleanups.push(() => {
+            playBtn.removeEventListener("click", togglePlay)
+            if (playInterval !== null) clearInterval(playInterval)
+          })
+        } else if (timelineEl) {
+          // No dated nodes — hide timeline
+          timelineEl.style.display = "none"
+          controlCleanups.push(() => {
+            timelineEl.style.display = ""
+          })
+        }
+      }
+
+      // --- Search ---
+      const searchInput = outer.querySelector(".global-graph-search") as HTMLInputElement | null
+      if (searchInput) {
+        searchInput.value = ""
+        searchQuery = ""
+
+        const handleSearchInput = () => {
+          searchQuery = searchInput.value.trim()
+          renderPixiFromD3()
+        }
+
+        const handleSearchKeydown = (e: KeyboardEvent) => {
+          if (e.key === "Enter" && searchQuery) {
+            const match = graphData.nodes.find((n) =>
+              n.text.toLowerCase().includes(searchQuery.toLowerCase()),
+            )
+            if (match) centerOnNode(match.id)
+          }
+          if (e.key === "Escape") {
+            searchInput.blur()
+            searchQuery = ""
+            searchInput.value = ""
+            renderPixiFromD3()
+            e.stopPropagation()
+          }
+        }
+
+        searchInput.addEventListener("input", handleSearchInput)
+        searchInput.addEventListener("keydown", handleSearchKeydown)
+        controlCleanups.push(() => {
+          searchInput.removeEventListener("input", handleSearchInput)
+          searchInput.removeEventListener("keydown", handleSearchKeydown)
+        })
+      }
+    }
   }
 
   let stopAnimation = false
@@ -560,13 +835,22 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       }
     }
 
+    // Position hover glow at hovered node
+    if (hoverGlowGfx.visible && hoveredNodeId) {
+      const hoveredNode = nodeRenderData.find((n) => n.simulationData.id === hoveredNodeId)
+      if (hoveredNode) {
+        const { x, y } = hoveredNode.simulationData
+        if (x && y) hoverGlowGfx.position.set(x + width / 2, y + height / 2)
+      }
+    }
+
     for (const l of linkRenderData) {
       const linkData = l.simulationData
       l.gfx.clear()
       l.gfx.moveTo(linkData.source.x! + width / 2, linkData.source.y! + height / 2)
       l.gfx
         .lineTo(linkData.target.x! + width / 2, linkData.target.y! + height / 2)
-        .stroke({ alpha: l.alpha, width: 1.5, color: l.color })
+        .stroke({ alpha: l.alpha, width: l.width, color: l.color })
     }
 
     tweens.forEach((t) => t.update(time))
@@ -578,6 +862,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   return () => {
     stopAnimation = true
     app.destroy()
+    for (const cleanup of controlCleanups) cleanup()
   }
 }
 

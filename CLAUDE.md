@@ -86,7 +86,7 @@ The knowledge base is autonomously expanded by a newsroom of Claude Code agents 
 | **Beat Editor** | explorer | `.claude/agents/explorer.md` | Scans coverage gaps, writes `scripts/queue.json` |
 | **Reporter** | researcher | `.claude/agents/researcher.md` | Writes new articles, integrates news, fixes quality issues |
 | **Wire Desk** | news-scout | `.claude/agents/news-scout.md` | Scans recent news, writes `scripts/news-findings.json` |
-| **Fact-Checker** | fact-checker | `.claude/agents/fact-checker.md` | Verifies facts, runs quality checks, writes `scripts/quality-report.json` |
+| **Fact-Checker** | fact-checker | `.claude/agents/fact-checker.md` | Verifies facts, validates URLs (Playwright MCP), writes `scripts/quality-report.json` |
 | **Copy Desk** | grammar-fixer | `.claude/agents/grammar-fixer.md` | Fixes umlauts, spelling, and grammar |
 | **Style Guide Bot** | — | `scripts/test.sh` | Deterministic structural checks (no LLM), writes `scripts/test-report.json` |
 

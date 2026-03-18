@@ -62,6 +62,8 @@ Mit der Einführung von TI 2.0 werden neben SOAP auch **gRPC**-basierte APIs ein
 
 Seit 1. Januar 2026 ist ECC 256 (Elliptic Curve Cryptography) für alle Konnektoren Pflicht. RSA-only-Konnektoren verlieren seither den TI-Zugang. Hintergrund: RSA gilt langfristig als weniger sicher gegenüber Quantencomputer-Angriffen, und ECC ermöglicht bei gleichem Sicherheitsniveau kürzere Schlüssel und schnellere Operationen.
 
+RISE hat am **11. Februar 2026** die Firmware-Version **6.1.3:1.0.0** für den RISE Konnektor über den Konnektor-Software-Repository (KSR) freigegeben. Das zentrale neue Merkmal ist das **ECC-Preferred-Feature**: Es ermöglicht den schrittweisen Umstieg von RSA auf ECC, bevor alle Kartenterminals vollständig aktualisiert sind. Das Update ist ein wichtiger Schritt vor dem Pflichtaustausch von eHBA G2.0 und SMC-B G2.0 gegen ECC-fähige Karten bis 30. Juni 2026. Voraussetzung: Kartenterminals müssen vorab auf kompatible Versionen aktualisiert sein (Cherry ST1506 4.0.47, Worldline ORGA 6100 3.9.2, JDM 1.1.20). Bekannte Einschränkung: IBM- und Akquinet-KIM-Clientmodule unterstützen Brainpool-Kurven nicht vollständig.
+
 ### Netzwerkkonfiguration
 
 - **IPv4**: Standard-MTU 1500 Byte; der VPN-Overhead reduziert die effektive Nutzlast leicht

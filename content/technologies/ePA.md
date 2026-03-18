@@ -72,10 +72,11 @@ Die [[VAU|Vertrauenswürdige Ausführungsumgebung (VAU)]] ist eine zentrale Sich
 
 ### Authentisierungsmethoden
 
-Versicherte authentisieren sich bei der ePA über zwei Wege:
+Versicherte authentisieren sich bei der ePA über mehrere Wege:
 
 - **[[eGK]]**: Kontaktlose Nutzung am Kartenterminal in der Praxis (VSDM-Verfahren)
 - **[[Gesundheits-ID]]** (al.vi): App-basierte Authentisierung über den Identitätsdienst der Krankenkasse
+- **ePass** (ab 25. März 2026): NFC-basiertes Identifikationsverfahren, das den NFC-Chip eines deutschen Personalausweises (ab August 2021) oder Reisepasses (ab 2005) per Smartphone ausliest. In einem zweistufigen Verfahren wird der Ausweis fotografiert und ein Selfie-Video aufgenommen; biometrische Daten werden abgeglichen. Entwickelt von Nect GmbH, bereitgestellt über BITMARCK für ca. 80 Prozent der GKV-Kassen. Rechtsgrundlage: BEEP-Gesetz (in Kraft 1. Januar 2026). PIN oder Praxisbesuch entfallen. ePass ergänzt die Gesundheits-ID und die eGK, konkurriert nicht mit diesen Verfahren.
 
 Leistungserbringer authentisieren sich über [[SMC-B]] (Einrichtung) und [[HBA]] (Person). Arztbriefe erfordern eine qualifizierte elektronische Signatur ([[QES]]) über den [[HBA]].
 

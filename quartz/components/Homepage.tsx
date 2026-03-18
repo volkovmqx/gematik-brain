@@ -289,7 +289,7 @@ export default (() => {
         </section>
 
         {/* Graph Teaser */}
-        <section class="homepage-graph-teaser">
+        <section class="homepage-graph-teaser graph">
           <h2 class="section-heading">Wissensgraph</h2>
           <div
             class="graph-container"
@@ -311,6 +311,13 @@ export default (() => {
           ></div>
           <div class="global-graph-outer">
             <div class="global-graph-controls">
+              <input
+                type="text"
+                class="global-graph-search"
+                placeholder="Suchen..."
+                autocomplete="off"
+                spellcheck={false}
+              />
               <button class="global-graph-close" aria-label="Graph schließen">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <line x1="18" y1="6" x2="6" y2="18" />
@@ -330,12 +337,17 @@ export default (() => {
                 linkDistance: 30,
                 fontSize: 0.6,
                 opacityScale: 1,
-                showTags: true,
+                showTags: false,
                 removeTags: [],
                 focusOnHover: true,
                 enableRadial: true,
               })}
             ></div>
+            <div class="global-graph-timeline">
+              <button class="timeline-play" aria-label="Abspielen">{"\u25B6"}</button>
+              <input type="range" class="timeline-slider" min="0" max="100" value="100" />
+              <span class="timeline-date">Alle</span>
+            </div>
           </div>
           <button class="graph-teaser-btn global-graph-icon" aria-label="Vollständigen Graphen anzeigen">
             Vollständigen Graphen anzeigen

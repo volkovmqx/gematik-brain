@@ -1,6 +1,6 @@
 {
   "lastChecked": "2026-03-18",
-  "lastRun": "2026-03-18T23:45:00Z",
+  "lastRun": "2026-03-18T12:00:00Z",
   "findings": [
     {
       "title": "eMedikationsplan: Start verschoben auf Oktober 2026",
@@ -819,8 +819,9 @@
       "summary": "Gematik veröffentlichte am 12. März 2025 den Release NCPeH_24_2 mit der Feature-Spezifikation 'EU Zugriff E-Rezept' (gemF_eRp_EU V1.0.0). Damit ist die technische Spezifikation für den Anwendungsfall ePrescription/eDispensation Country A vollständig: Versicherte können deutschen Leistungserbringern im EU-Ausland Zugriff auf ihre E-Rezepte erteilen. Der Autorisierungsmechanismus nutzt einen 6-stelligen alphanumerischen Zugangscode zusammen mit der Versicherten-ID. Deutschland plant den produktiven Wave-10-Anschluss an MyHealth@EU für E-Rezepte 2026.",
       "affects": ["NCPeH.md", "E-Rezept.md"],
       "category": "specification",
-      "action": "update",
-      "details": "NCPeH.md sollte gemF_eRp_EU V1.0.0 und den 6-stelligen Zugangscode-Mechanismus für die EU-E-Rezept-Einlösung als technisches Detail ergänzen. E-Rezept.md kann den Wave-10-Anschluss als konkrete 2026-Maßnahme für grenzüberschreitende Einlösung ergänzen."
+      "action": "applied",
+      "appliedDate": "2026-03-18",
+      "details": "NCPeH.md: Neuer Unterabschnitt 'EU E-Rezept: gemF_eRp_EU V1.0.0' mit 6-stelligem Zugangscode-Mechanismus ergänzt. E-Rezept.md: Wave-10-Anschluss 2026 und gemF_eRp_EU V1.0.0 in 'Was kommt noch?' ergänzt. NCPeH-Link in Verknüpfungen von E-Rezept.md hinzugefügt."
     },
     {
       "title": "ePA Volltextsuche: Pilot Q3/2026, bundesweiter Rollout ab Januar 2027",
@@ -849,8 +850,9 @@
       "summary": "Ab dem 11. Februar 2026 steht Firmware-Version 6.1.3:1.0.0 für den RISE Konnektor via KSR bereit. Kernmerkmal ist das ECC-Preferred-Feature, das den schrittweisen Umstieg von RSA auf ECC ermöglicht. Außerdem enthält das Update Anpassungen für Laufzeitverlängerungen und Bundesnetzagentur-Anforderungen. Bekannte Kompatibilitätsprobleme: IBM- und Akquinet-KIM-Clientmodule unterstützen Brainpool-Kurven nicht und können beim Umschalten auf ECC-Serverzertifikat Fehler zeigen. Voraussetzung für das Firmware-Update: Kartenterminals müssen vorab auf kompatible Versionen aktualisiert werden (Cherry ST1506 4.0.47, Worldline ORGA 6100 3.9.2, JDM 1.1.20).",
       "relevantArticles": ["Konnektoren.md", "HBA.md", "SMC-B.md"],
       "category": "specification",
-      "action": "update",
-      "details": "Konnektoren.md sollte die neue RISE-Firmware 6.1.3 (Februar 2026) und das ECC-Preferred-Feature erwähnen. Wichtig für Leistungserbringer, die noch RSA-Konnektoren betreiben: Dieser Release ist ein notwendiger Schritt vor dem eHBA/SMC-B-Tausch bis 30.06.2026."
+      "action": "applied",
+      "appliedDate": "2026-03-18",
+      "details": "Konnektoren.md: RISE Firmware 6.1.3 (11. Februar 2026) mit ECC-Preferred-Feature in Abschnitt 'ECC 256 Migration' ergänzt. Schritt vor eHBA/SMC-B-Tauschfrist 30.06.2026 dokumentiert."
     },
     {
       "title": "ISiK Stufe 5 veröffentlicht, Stufe 4 abgekündigt (ab Juli 2025)",
@@ -932,8 +934,9 @@
       "summary": "Am 25. März 2026 startet ePass als erstes volldigitales Identifikationsverfahren für die ePA. BITMARCK stellt das Verfahren 80 Prozent der GKV-Kassen zur Verfügung. Technisches Verfahren (zweistufig): (1) NFC-Chip des Personalausweises oder Reisepasses wird per Smartphone ausgelesen. (2) Ausweis wird fotografiert und ein Selfie-Video aufgenommen; biometrische Daten werden abgeglichen. Rechtsgrundlage: BEEP-Gesetz (in Kraft 01.01.2026). Entwickelt von Nect GmbH. Unterstützte Dokumente: deutsche Personalausweise ab August 2021 und Reisepässe ab 2005 sowie ausländische Reisedokumente mit ePass-Funktion. PIN oder Besuch einer Geschäftsstelle entfällt. Einsetzbar nicht nur für ePA, sondern auch für Online-Servicecenter der Kassen.",
       "relevantArticles": ["ePA.md", "Gesundheits-ID.md", "IDP.md"],
       "category": "specification",
-      "action": "update",
-      "details": "ePA.md sollte ePass als neues Identifikationsverfahren ab 25. März 2026 im Abschnitt 'Zugang und Authentifizierung' ergänzen. Gesundheits-ID.md kann ePass als ergänzendes (nicht konkurrierendes) Verfahren zur GesundheitsID erwähnen. Beide Verfahren ermöglichen ePA-Zugang ohne PIN oder Praxisbesuch, nutzen aber unterschiedliche Träger (GesundheitsID: Krankenversichertenkarte-Ableitung; ePass: hoheitliches Ausweisdokument).",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
+      "details": "ePA.md: ePass als neues NFC-Identifikationsverfahren ab 25. März 2026 in Abschnitt 'Authentisierungsmethoden' ergänzt. Gesundheits-ID.md: ePass als ergänzendes, nicht konkurrierendes Verfahren mit eigenem Unterabschnitt dokumentiert.",
       "suggestedTerm": "ePass"
     },
     {
@@ -965,6 +968,49 @@
       "relevantArticles": ["ePA.md", "E-Rezept.md", "VSDM.md", "Telematikinfrastruktur.md"],
       "category": "specification",
       "action": "info_only"
+    },
+    {
+      "title": "TI-Ausfall 10. Februar 2026: IBM sektoraler IDP 8 Stunden ausgefallen",
+      "date": "2026-02-10",
+      "source": "https://borncity.com/blog/2026/02/11/stoerung-ti-epa-erezept-und-datev-am-10-feb-2026/",
+      "summary": "Am 10. Februar 2026 ab ca. 3:05 Uhr fiel der sektorale Identity Provider (IDP) der IBM Deutschland GmbH aus. Betroffene Dienste: ePA (Zugriff und Berechtigungen), E-Rezept (Erstellen, Einstellen, Einlösen), KIM und VSDM für über T-Systems angebundene Leistungserbringer. Vermutliche Ursache: Rauchmelder-Problem in einem Frankfurter Rechenzentrum führte zu automatischem Shutdown. Behebung gegen 11:00 Uhr. Dauer ca. 8 Stunden. Dies war der zweite schwere TI-Ausfall in kurzer Zeit (nach dem RISE-Ausfall Anfang März). In einem Statement räumte gematik Beeinträchtigungen ein und verwies auf die zugrunde liegenden Dienste.",
+      "relevantArticles": ["IDP.md", "TI-Federation.md", "E-Rezept.md", "ePA.md", "Telematikinfrastruktur.md"],
+      "category": "security",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
+      "details": "IDP.md: Neuer Unterabschnitt 'Abhängigkeitsrisiken: Ausfall sektoraler IDPs' ergänzt. IBM-IDP-Ausfall vom 10.02.2026 (8 Stunden, Rauchmelder-Problem Frankfurt, betroffene Dienste ePA/E-Rezept/KIM/VSDM) dokumentiert. Konzentrationsrisiken der TI-Federation bei einzelnen sektoralen IDPs hervorgehoben."
+    },
+    {
+      "title": "VZD_25_2: LDAP-Schnittstellen abgekündigt, Migration zu FHIR-VZD ab 2026 beschleunigt",
+      "date": "2026-02-17",
+      "source": "https://gemspec.gematik.de/releases/VZD_25_2/index.html",
+      "summary": "Der Release VZD_25_2 (17. Februar 2026) leitet das Ende der LDAP-basierten VZD-Schnittstellen ein: SOAP-Schnittstellen und die LDAP-Administrations-Schnittstelle werden abgeschaltet. Alle Anwendungen sollen schrittweise zum VZD-FHIR-Directory migrieren. Die LDAP-Variante wird nach 2026 abgekündigt und nur noch begrenzt weiterentwickelt. Im FHIR-Directory werden außerdem die Authentifizierungsbeschreibungen aktualisiert, neue ProfessionOIDs ergänzt und die OID 'Krankenkasse ePA' entfernt.",
+      "relevantArticles": ["VZD.md", "KIM.md", "TI-Messenger.md"],
+      "category": "specification",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
+      "details": "VZD.md aktualisiert: LDAP-Abkündigung nach 2026 und SOAP/LDAP-Admin-Interface-Entfernung im Release VZD_25_2 (17.02.2026) dokumentiert. Hinweis auf Migration zu FHIR-VZD ergänzt.",
+      "suggestedTerm": "VZD-LDAP-Abkündigung"
+    },
+    {
+      "title": "KV Niedersachsen fordert höhere TI-Pauschale nach Ausfallserie",
+      "date": "2026-03-13",
+      "source": "https://www.aerzteblatt.de/news/kv-niedersachsen-drangt-auf-hohere-pauschalen-fur-betrieb-der-telematikinfrastruktur-2e6c9cf7-ec95-4289-a6e4-f8c5fd7cb7c1",
+      "summary": "Die Vertreterversammlung der KV Niedersachsen forderte das BMG am 13. März 2026 auf, die monatliche TI-Pauschale für Arztpraxen anzuheben. Begründung: Praxen tragen seit Monaten erhebliche Kosten für Rückruf- und Austauschprozesse (Personal, Fremdtechniker) durch die ECC-Umstellung. Dazu kommen wiederholte TI-Ausfälle (IBM IDP, RISE TI-Gateway), die Praxen arbeitsunfähig gemacht haben. Die Versammlung bezeichnete die Situation als 'nicht mehr tragbar'. Konkrete Beträge wurden nicht genannt. Gleichzeitig wurde gefordert, die Ausgleichsregelungen aus dem TSVG für Fachärzte zu erhalten.",
+      "relevantArticles": ["Telematikinfrastruktur.md", "Kassenaerztliche-Vereinigung.md", "KBV.md"],
+      "category": "regulation",
+      "action": "info_only"
+    },
+    {
+      "title": "ABDA fordert höhere TI-Betriebsstabilität: E-Rezept-Ausfälle nicht länger tolerierbar",
+      "date": "2026-03-10",
+      "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/e-rezept-chaos-apotheker-rufen-zum-bundesweiten-streik-auf/68654346",
+      "summary": "ABDA-Geschäftsführerin Claudia Korf forderte in einem Schreiben an gematik nach dem TI-Gateway-Ausfall Anfang März 2026 eine deutlich höhere Ausfallsicherheit der Telematikinfrastruktur. Die ABDA bezifferte die wirtschaftliche Belastung für Apotheken: Betriebskosten seit 2013 um 65 Prozent gestiegen, Vergütung (Festbetrag 8,35 Euro/Packung) seit 13 Jahren eingefroren. Gematik antwortete mit dem Hinweis auf die aktualisierte OneRoadmap, die u.a. PoPP und VSDM 2.0 als Stabilitätsverbesserungen vorsieht. Der TI-Ausfall vom 3. März 2026 gilt als Mitauslöser des bundesweiten Apothekenstreiks am 23. März 2026.",
+      "relevantArticles": ["E-Rezept.md", "TI-Gateway.md", "Telematikinfrastruktur.md"],
+      "category": "regulation",
+      "action": "applied",
+      "appliedDate": "2026-03-18",
+      "details": "E-Rezept.md: Neuer Abschnitt 'Betriebsstabilität und Kritik' mit ABDA-Forderungen, TI-Ausfällen März 2026 und bundesweitem Apothekenstreiktag 23.03.2026 ergänzt."
     }
   ]
 }

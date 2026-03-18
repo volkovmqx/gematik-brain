@@ -37,7 +37,7 @@ const defaultOptions: GraphOptions = {
     linkDistance: 30,
     fontSize: 0.6,
     opacityScale: 1,
-    showTags: true,
+    showTags: false,
     removeTags: [],
     focusOnHover: false,
     enableRadial: false,
@@ -52,7 +52,7 @@ const defaultOptions: GraphOptions = {
     linkDistance: 30,
     fontSize: 0.6,
     opacityScale: 1,
-    showTags: true,
+    showTags: false,
     removeTags: [],
     focusOnHover: true,
     enableRadial: true,
@@ -97,6 +97,13 @@ export default ((opts?: Partial<GraphOptions>) => {
         </div>
         <div class="global-graph-outer">
           <div class="global-graph-controls">
+            <input
+              type="text"
+              class="global-graph-search"
+              placeholder="Suchen..."
+              autocomplete="off"
+              spellcheck={false}
+            />
             <button class="global-graph-close" aria-label="Graph schließen">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="18" y1="6" x2="6" y2="18" />
@@ -105,6 +112,11 @@ export default ((opts?: Partial<GraphOptions>) => {
             </button>
           </div>
           <div class="global-graph-container" data-cfg={JSON.stringify(globalGraph)}></div>
+          <div class="global-graph-timeline">
+            <button class="timeline-play" aria-label="Abspielen">{"\u25B6"}</button>
+            <input type="range" class="timeline-slider" min="0" max="100" value="100" />
+            <span class="timeline-date">Alle</span>
+          </div>
         </div>
       </div>
     )

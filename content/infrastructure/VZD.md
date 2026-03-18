@@ -19,9 +19,9 @@ Der VZD wird von der [[Telematikinfrastruktur]] als zentraler Dienst betrieben u
 
 Der VZD hat zwei unterschiedliche technische Realisierungen, die parallel existieren:
 
-1. **LDAP-basierter VZD**: Die klassische, ältere Variante. Wird von [[KIM]] genutzt, um Empfängeradressen aufzulösen. Jeder KIM-Teilnehmer ist dort mit seiner KIM-Adresse eingetragen.
+1. **LDAP-basierter VZD**: Die klassische, ältere Variante. Wird von [[KIM]] genutzt, um Empfängeradressen aufzulösen. Jeder KIM-Teilnehmer ist dort mit seiner KIM-Adresse eingetragen. Mit dem Release VZD_25_2 (17. Februar 2026) wurden die SOAP-Schnittstellen und die LDAP-Administrations-Schnittstelle abgeschaltet. Die LDAP-Variante wird nach 2026 abgekündigt und nur noch begrenzt weiterentwickelt.
 
-2. **VZD-FHIR-Directory**: Eine moderne, REST-basierte Variante auf Basis von [[FHIR]]. Sie wird primär vom [[TI-Messenger]] genutzt und enthält zusätzliche strukturierte Informationen über Einrichtungen und deren Dienste.
+2. **VZD-FHIR-Directory**: Eine moderne, REST-basierte Variante auf Basis von [[FHIR]]. Sie wird primär vom [[TI-Messenger]] genutzt und enthält zusätzliche strukturierte Informationen über Einrichtungen und deren Dienste. Alle Anwendungen sollen schrittweise auf das FHIR-Directory migrieren.
 
 Der VZD ist eine Pflichtkomponente: Ohne ihn können weder [[KIM]] noch der [[TI-Messenger]] Adressen auflösen oder Identitäten überprüfen.
 

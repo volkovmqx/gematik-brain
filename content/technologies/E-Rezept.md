@@ -36,6 +36,7 @@ Das E-Rezept wird digital erstellt, signiert und kann auf drei Wegen eingelöst 
 - [[DiGA]]-Verordnungen (Digitale Gesundheitsanwendungen, seit Oktober 2025)
 
 ### Was kommt noch?
+- **Wave-10-Anschluss an MyHealth@EU (2026)**: Deutschland plant die grenzüberschreitende E-Rezept-Einlösung im EU-Ausland über den [[NCPeH]]. Technische Grundlage ist die Spezifikation gemF_eRp_EU V1.0.0 (NCPeH_24_2, März 2025). Der Zugangsmechanismus für ausländische Leistungserbringer nutzt einen 6-stelligen alphanumerischen Code zusammen mit der Versicherten-ID.
 - E-Rezept-Anforderung und Übermittlung via [[KIM]]
 - T-Rezepte (teratogene Stoffe, z.B. Lenalidomid): Spezifikation seit August 2025 veröffentlicht, Rollout-Start Mitte Q4/2026
 - Häusliche Krankenpflege und außerklinische Intensivpflege: Pflicht ab 1. Juli 2026
@@ -65,6 +66,10 @@ Der [[Fachdienst|E-Rezept-Fachdienst]] ist ein zentraler Dienst in der [[Telemat
 
 Jedes E-Rezept trägt eine qualifizierte elektronische Signatur. Apotheken prüfen diese bei der Abgabe. Ein Rezept kann nur einmal eingelöst werden, was Fälschungssicherheit gewährleistet.
 
+## Betriebsstabilität und Kritik
+
+Im März 2026 forderte ABDA-Geschäftsführerin Claudia Korf in einem Schreiben an die [[gematik]] eine deutlich höhere Ausfallsicherheit der [[Telematikinfrastruktur]]. Hintergrund waren mehrere TI-Ausfälle Anfang März 2026, die E-Rezept, [[ePA]] und [[KIM]] für viele Apotheken und Praxen zeitweise unnutzbar machten. Apotheken, die mangels Offline-Fallback Patienten abweisen mussten, bezifferten den wirtschaftlichen Schaden als erheblich. Der Ausfall gilt als Mitauslöser für den bundesweiten Apothekenstreiktag am 23. März 2026, den die ABDA-Mitgliederversammlung am 25. Februar 2026 beschlossen hatte. Die gematik verwies in ihrer Antwort auf die OneRoadmap mit PoPP und VSDM 2.0 als geplante Stabilitätsverbesserungen.
+
 ## Verknüpfungen
 
 - Verordnungsdaten fließen in die [[ePA]]
@@ -73,6 +78,7 @@ Jedes E-Rezept trägt eine qualifizierte elektronische Signatur. Apotheken prüf
 - Einlösung über [[eGK]]
 - Einlösung bei Online-Apotheken via [[CardLink]]
 - Signatur über [[SMC-B]] und [[HBA]]
+- Grenzüberschreitende Nutzung via [[NCPeH]] (MyHealth@EU)
 
 ## Quellen
 
