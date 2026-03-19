@@ -57,7 +57,7 @@ Die Feldnummern sind in der jeweiligen xDT-Spezifikation definiert und beschreib
 GDT ist die bekannteste xDT-Variante und wird bis heute aktiv genutzt. Es verbindet Arztpraxissysteme mit Medizingeräten:
 
 1. Das [[PVS]] sendet eine GDT-Datei mit Patientenstammdaten an das Gerät (z.B. EKG, Spirometer, Ultraschall).
-2. Das Gerät führt die Messung durch und erzeugt eine GDT-Antwortsatei mit den Messergebnissen.
+2. Das Gerät führt die Messung durch und erzeugt eine GDT-Antwortsdatei mit den Messergebnissen.
 3. Das PVS liest die Antwortdatei und übernimmt die Werte in die Patientenakte.
 
 Die aktuelle GDT-Version ist GDT 3.1, die Mitte der 2010er Jahre vom Qualitätsring Medizinische Software (QMS) standardisiert und von der [[KBV]] verabschiedet wurde. GDT 3.1 unterstützt auch den Austausch von Bild- und PDF-Anhängen.
@@ -70,7 +70,7 @@ LDT-Dateien können als Einzelsatzdateien oder als Batchdateien mit mehreren Bef
 
 ### KVDT und Abrechnung
 
-KVDT ist das Format für die Quartalsabrechnung der niedergelassenen Ärzte mit der Kassenärztlichen Vereinigung ([[Kassenärztliche-Vereinigung]]). Jede Praxis übermittelt nach Quartalsende ihre Abrechnungsdaten im KVDT-Format an die zuständige KV. Die KV prüft die Daten und überweist die Vergütung.
+KVDT ist das Format für die Quartalsabrechnung der niedergelassenen Ärzte mit der Kassenärztlichen Vereinigung ([[Kassenaerztliche-Vereinigung]]). Jede Praxis übermittelt nach Quartalsende ihre Abrechnungsdaten im KVDT-Format an die zuständige KV. Die KV prüft die Daten und überweist die Vergütung.
 
 ### Migrationspfad zu FHIR
 
@@ -87,7 +87,7 @@ In vielen PVS-Systemen koexistieren xDT und FHIR: xDT für Altschnittstellen (La
 
 - [[PVS]] (Praxisverwaltungssysteme; primäre Nutzer der xDT-Formate)
 - [[KBV]] (entwickelt und pflegt die xDT-Spezifikationen)
-- [[Kassenärztliche-Vereinigung]] (Empfänger von KVDT-Abrechnungsdaten)
+- [[Kassenaerztliche-Vereinigung]] (Empfänger von KVDT-Abrechnungsdaten)
 - [[FHIR]] (moderner Nachfolgestandard; löst xDT schrittweise ab)
 - [[HL7]] (internationale Standardfamilie, zu der FHIR gehört)
 - [[LOINC]] (Terminologie für Laborparameter; in LDT 3.0 integriert)

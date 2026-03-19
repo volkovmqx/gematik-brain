@@ -3,7 +3,7 @@ title: DMP
 audience: [technical, non-technical]
 tags: [processes, chronische-erkrankung, gkv, g-ba, versorgung]
 aliases: [Disease-Management-Programm, Disease-Management-Programme, Chronikerprogramm]
-maturity: setzling
+maturity: wachsend
 ---
 
 # DMP
@@ -39,6 +39,8 @@ Vier weitere Indikationen, für die der G-BA Anforderungen beschlossen hat, befi
 - Chronischer Rückenschmerz
 - Depression
 - Adipositas (Erwachsene sowie Kinder und Jugendliche)
+
+8 Indikationen sind aktuell vom Bundesamt für Soziale Sicherung (BAS) zugelassen. Adipositas, Chronische Herzinsuffizienz, Chronischer Rückenschmerz und Depression haben G-BA-Anforderungen, befinden sich aber noch in der Umsetzungsphase (Stand Januar 2026).
 
 ### Einschreibung und Teilnahme
 
@@ -87,5 +89,5 @@ Die Krankenkassen müssen dem BAS bis zum 30. September jeden Jahres einen Quali
 
 - [G-BA: Disease-Management-Programme](https://www.g-ba.de/themen/disease-management-programme/)
 - [Bundesamt für Soziale Sicherung: DMP-Grundlegende Informationen](https://www.bundesamtsozialesicherung.de/de/themen/disease-management-programme/dmp-grundlegende-informationen/)
-- [KBV: DMP für Arztpraxen](https://www.kbv.de/html/dmp.php)
+- [KBV: DMP für Arztpraxen](https://www.kbv.de/praxis/patientenversorgung/dmp)
 - [G-BA: DMP-Anforderungen-Richtlinie](https://www.g-ba.de/richtlinien/83/)

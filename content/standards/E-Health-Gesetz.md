@@ -39,7 +39,7 @@ Ab Oktober 2016 hatten Versicherte, die drei oder mehr Dauermedikamente gleichze
 **Kommunikation im Medizinwesen ([[KIM]]):**
 Das Gesetz verpflichtete Leistungserbringer, ab Mitte 2018 sichere elektronische Kommunikation zu nutzen. Dies war die rechtliche Grundlage für den Aufbau von KIM (damals noch als KOM-LE bezeichnet), dem verschlüsselten E-Mail-Dienst der TI.
 
-**Interoperabilitätsverzeichnis:**
+**[[Interoperabilitaetsverzeichnis|Interoperabilitätsverzeichnis]]:**
 Die [[gematik]] wurde verpflichtet, bis Mitte 2017 ein öffentliches Verzeichnis der in der TI genutzten Standards und Schnittstellen zu erstellen. Dieses Verzeichnis sollte Herstellern und Institutionen als Referenz dienen.
 
 **Elektronische Patientenakte (ePA):**

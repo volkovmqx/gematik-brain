@@ -17,7 +17,7 @@ Wenn du eine Website im Browser öffnest, zeigt dir die Website ihr Zertifikat. 
 
 Normales TLS (Transport Layer Security) schützt die Verbindung durch Verschlüsselung und stellt sicher, dass der Client mit dem richtigen Server spricht. Die Identität des Clients wird aber bei Standard-TLS nicht auf Protokollebene geprüft. Stattdessen passiert das meist auf Anwendungsebene, zum Beispiel durch Benutzername und Passwort.
 
-mTLS erweitert dieses Modell: Beide Seiten der Verbindung müssen ein gültiges X.509-Zertifikat vorlegen und beweisen, dass sie den zugehörigen privaten Schlüssel besitzen. Nur wenn beide Seiten erfolgreich validiert wurden, kommt die Verbindung zustande.
+mTLS erweitert dieses Modell: Beide Seiten der Verbindung müssen ein gültiges [[X.509]]-Zertifikat vorlegen und beweisen, dass sie den zugehörigen privaten Schlüssel besitzen. Nur wenn beide Seiten erfolgreich validiert wurden, kommt die Verbindung zustande.
 
 mTLS ist kein neues Protokoll, sondern eine Konfigurationsoption innerhalb von TLS (definiert seit TLS 1.0). Die Spezifikation für zertifikatsgebundene Access Tokens in Verbindung mit mTLS ist in RFC 8705 festgelegt.
 

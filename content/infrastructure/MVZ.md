@@ -17,7 +17,7 @@ Normalerweise hat jeder Arzt seine eigene Praxis. Ein MVZ ist wie ein Einkaufsze
 
 MVZ wurden durch das GKV-Modernisierungsgesetz (GMG, verabschiedet November 2003, in Kraft ab 1. Januar 2004) in [[SGB-V]] § 95 eingeführt. Sie sind eine eigenständige Versorgungsform neben der klassischen Einzelpraxis. Gründen können ein MVZ unter anderem: Krankenhäuser, Vertragsärzte, Kommunen und bestimmte gemeinnützige Einrichtungen.
 
-Ein MVZ hat eine eigene Zulassung als Einrichtung und beschäftigt angestellte Ärzte oder lässt niedergelassene Ärzte mit ihren Kassenzulassungen im MVZ tätig sein. Die Abrechnung mit den Kassenärztlichen Vereinigungen ([[Kassenärztliche Vereinigung|KV]]) erfolgt über die Einrichtung, nicht über einzelne Ärzte.
+Ein MVZ hat eine eigene Zulassung als Einrichtung und beschäftigt angestellte Ärzte oder lässt niedergelassene Ärzte mit ihren Kassenzulassungen im MVZ tätig sein. Die Abrechnung mit den Kassenärztlichen Vereinigungen ([[Kassenaerztliche-Vereinigung|KV]]) erfolgt über die Einrichtung, nicht über einzelne Ärzte.
 
 MVZ sind insbesondere in städtischen Ballungsräumen und in der Nachfolge von Krankenhäusern (Ambulantisierung) gewachsen. Krankenhäuser dürfen MVZ gründen, um ambulante Vor- und Nachsorge für ihre stationären Patienten zu integrieren.
 
@@ -46,7 +46,7 @@ Für die Netzwerkarchitektur gibt es mehrere Muster:
 
 ### Abrechnung und TI
 
-Die Abrechnung eines MVZ läuft über die [[Kassenärztliche Vereinigung|KV]]. Für [[E-Rezept]] und [[eAU]] ist die QES-Signatur durch den behandelnden Arzt mit seinem persönlichen [[HBA]] erforderlich. Die [[SMC-B]] des MVZ wird für die Einrichtungsauthentisierung und den [[KIM]]-Nachrichtenversand genutzt.
+Die Abrechnung eines MVZ läuft über die [[Kassenaerztliche-Vereinigung|KV]]. Für [[E-Rezept]] und [[eAU]] ist die QES-Signatur durch den behandelnden Arzt mit seinem persönlichen [[HBA]] erforderlich. Die [[SMC-B]] des MVZ wird für die Einrichtungsauthentisierung und den [[KIM]]-Nachrichtenversand genutzt.
 
 ### Besonderheit: Krankenhausgetragene MVZ
 
@@ -60,7 +60,7 @@ Krankenhäuser dürfen MVZ gründen (§ 95 Abs. 1 SGB V). Solche Einrichtungen n
 - [[HBA]] (jeder Arzt im MVZ braucht seinen eigenen HBA)
 - [[PVS]] (Praxisverwaltungssystem im MVZ)
 - [[KIS]] (bei krankenhausgetragenen MVZ)
-- [[Kassenärztliche Vereinigung|KV]] (Abrechnungspartner des MVZ)
+- [[Kassenaerztliche-Vereinigung|KV]] (Abrechnungspartner des MVZ)
 - [[E-Rezept]] (Kernfunktion der TI-Anbindung im MVZ)
 - [[SGB-V]] (§ 95 SGB V: Rechtsgrundlage für MVZ)
 

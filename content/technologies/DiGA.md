@@ -3,7 +3,7 @@ title: DiGA
 audience: [technical, non-technical]
 tags: [technologies, digitale-gesundheit, medizinprodukt, bfarm]
 aliases: [Digitale Gesundheitsanwendungen, App auf Rezept, DiGAV]
-maturity: immergruen
+maturity: wachsend
 relevance:
   sectors: [startup, hersteller, arztpraxis, psychotherapie, patient, kasse, regulierung]
   interests: [technik, business, compliance, patient]
@@ -58,6 +58,11 @@ Ab dem **1. Februar 2026** müssen DiGA verpflichtend den Schreibzugriff auf die
 ### Integration mit dem E-Rezept
 
 Seit Oktober 2025 können DiGA als [[E-Rezept]] verordnet werden. Ein Pilotprojekt lief von Mai bis September 2025, rund 15 der im BfArM-Verzeichnis gelisteten DiGA wurden initial via E-Rezept verordnet. Wichtig: Das DiGA-E-Rezept wird nicht in der Apotheke, sondern direkt bei der Krankenkasse eingereicht. Die Kasse prüft und stellt daraufhin einen Gutscheincode für die DiGA-App aus.
+
+Seit März 2026 ist zusätzlich die freiwillige elektronische DiGA-Verordnung ohne E-Rezept-Format möglich. Ärzte können DiGA damit auch über andere digitale Verordnungswege einreichen, die nicht das strenge E-Rezept-Format voraussetzen. Eine Pflicht zur elektronischen DiGA-Verordnung besteht bislang nicht. Das klassische Papierrezept (Muster 16) ist weiterhin zulässig.
+
+> [!interesse-compliance]
+> Keine Pflicht zur elektronischen DiGA-Verordnung (Stand März 2026). Zwei optionale Wege: E-Rezept-Verordnung (seit Oktober 2025) und freiwillige elektronische Verordnung ohne E-Rezept-Format (seit März 2026). Das klassische Muster-16-Rezept bleibt zulässig.
 
 ### Integration mit dem TI-Messenger
 

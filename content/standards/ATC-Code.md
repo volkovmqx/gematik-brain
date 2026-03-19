@@ -19,9 +19,9 @@ Wenn du in einer Apotheke ein Medikament kaufst, gehört es zu einer Wirkstoffgr
 
 ## Überblick
 
-Das ATC-Klassifikationssystem hat seinen Ursprung in der Klassifikation der European Pharmaceutical Market Research Association (EPhMRA), die 1971 gegründet wurde. Norwegische Forscher entwickelten daraus in den frühen 1970er Jahren das ATC/DDD-System, das 1976 in den nordischen Ländern eingeführt wurde. Das WHO Collaborating Centre for Drug Statistics Methodology wurde 1982 in Oslo eingerichtet und pflegt das System seither. Im Jahr 1996 empfahl die WHO das ATC/DDD-System als internationalen Standard für Arzneimittelverbrauchsstudien.
+Die Grundlage des ATC-Systems wurde 1971 von der European Pharmaceutical Market Research Association (EPhMRA) gelegt. Das heutige ATC/DDD-System wurde von norwegischen Forschern als Erweiterung des EPhMRA-Systems entwickelt und 1976 erstmals für nordische Arzneimittelstatistiken eingesetzt. Die WHO erkannte das System 1996 als internationalen Standard an.
 
-In Deutschland gibt das **[[BfArM]]** (Bundesinstitut für Arzneimittel und Medizinprodukte) jährlich eine amtliche deutsche Fassung der ATC-Klassifikation heraus, angepasst an die deutschen Versorgungsbesonderheiten (z.B. pflanzliche Arzneimittel). Diese Fassung tritt jeweils zum 1. Januar des Folgejahres in Kraft. Die Rechtsgrundlage für die deutschen Anpassungen liegt in § 73 [[SGB-V]].
+In Deutschland gibt das **[[BfArM]]** (Bundesinstitut für Arzneimittel und Medizinprodukte) jährlich eine amtliche deutsche Fassung der ATC-Klassifikation heraus, angepasst an die deutschen Versorgungsbesonderheiten (z.B. pflanzliche Arzneimittel). Diese Fassung tritt jeweils zum 1. Januar des Folgejahres in Kraft. Die Rechtsgrundlage für die deutschen Anpassungen liegt in § 73 Abs. 8 [[SGB-V]].
 
 ### Relevanz für die TI
 
@@ -112,7 +112,7 @@ Das CodeSystem für den deutschen ATC ist: `http://fhir.de/CodeSystem/bfarm/atc`
 - [[MIO]] (medizinische Informationsobjekte; Arzneimitteldaten mit ATC-Code)
 - [[TA1]] (Apothekenabrechnung; enthält ATC-Code je Abrechnungssatz)
 - [[Patient-Summary]] (europäischer Patientensummary; ATC-Codes für Medikation)
-- [[SGB-V]] (§ 73: Rechtsgrundlage für die deutsche ATC-Anpassung)
+- [[SGB-V]] (§ 73 Abs. 8: Rechtsgrundlage für die deutsche ATC-Anpassung durch das BfArM)
 
 ## Quellen
 

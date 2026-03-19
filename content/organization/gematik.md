@@ -3,7 +3,7 @@ title: gematik
 audience: [technical, non-technical]
 tags: [organisation, gematik, ti, regulierung]
 aliases: [gematik GmbH, Nationale Agentur für Digitale Medizin]
-maturity: immergruen
+maturity: wachsend
 relevance:
   sectors: [regulierung, hersteller, it-dienstleister, startup, kasse, arztpraxis, krankenhaus]
   interests: [compliance, business, technik]
@@ -55,7 +55,7 @@ Die gematik erfüllt laut SGB V mehrere zentrale Aufgaben:
 2. **Zulassung**: Kein Produkt darf in der TI eingesetzt werden, ohne von der gematik zugelassen zu sein. Das gilt für [[Konnektoren]], Kartenterminals, die [[SMC-B]], den [[HBA]] und alle Fachdienste.
 3. **Betrieb**: Zentrale Dienste wie der [[IDP]]-Dienst, die [[PKI]]-Infrastruktur und die Root-CA werden von der gematik betrieben oder beauftragt.
 4. **Kartenherausgabe**: Die gematik ist Herausgeber des [[HBA]] für bestimmte Berufsgruppen sowie der [[SMC-B]] für Institutionen.
-5. **Interoperabilität**: Als Kompetenzzentrum für Interoperabilität definiert sie [[FHIR]]-Profile und Datenaustauschformate.
+5. **Interoperabilität**: Als Kompetenzzentrum für Interoperabilität definiert sie [[FHIR]]-Profile und Datenaustauschformate. Sie führt gemeinsam mit dem [[BMG]] das [[Interoperabilitaetsverzeichnis|Interoperabilitätsverzeichnis]] (§ 385 SGB V).
 
 ### Verhältnis zu anderen Institutionen
 
@@ -69,7 +69,13 @@ Alle technischen Anforderungen werden in gemSpec-Dokumenten veröffentlicht. Die
 
 ### GDAG gescheitert
 
-Das **[[GDAG]] (Gesundheits-Digitalagentur-Gesetz)** sollte die gematik zu einer modernen Bundesagentur umstrukturieren. Der Gesetzentwurf scheiterte in der Legislaturperiode 2021-2025 mit dem Ende der Ampel-Koalition: Die zweite und dritte Lesung im Bundestag fanden aufgrund der vorzeitigen Neuwahl nicht mehr statt. Der Koalitionsvertrag von CDU/CSU und SPD (2025) sieht eine gematik-Modernisierung ohne GDAG vor. Das [[BMG]] plant als Nachfolge das **[[GDVG]] (Gesetz für digitale Versorgung und den Gesundheitsdatenraum)**, das Elemente der gematik-Transformation mit dem Ausbau des Gesundheitsdatenraums verbinden soll. Es ersetzt das gescheiterte GDAG. Der Referentenentwurf wird für H1/2026 erwartet. Ziel ist die Umgestaltung der gematik zu einer modernen Digitalagentur.
+Das **[[GDAG]] (Gesundheits-Digitalagentur-Gesetz)** sollte die gematik zu einer modernen Bundesagentur umstrukturieren. Der Gesetzentwurf scheiterte in der Legislaturperiode 2021-2025 mit dem Ende der Ampel-Koalition: Die zweite und dritte Lesung im Bundestag fanden aufgrund der vorzeitigen Neuwahl nicht mehr statt. Der Koalitionsvertrag von CDU/CSU und SPD (2025) sieht eine gematik-Modernisierung ohne GDAG vor. Das [[BMG]] plant als Nachfolge das **[[GDVG]] (Gesetz für digitale Versorgung und den Gesundheitsdatenraum)**, das Elemente der gematik-Transformation mit dem Ausbau des Gesundheitsdatenraums verbinden soll. Es ersetzt das gescheiterte GDAG. Der Referentenentwurf wird für Q2/2026 erwartet. Ziel ist die Umgestaltung der gematik zu einer modernen Digitalagentur.
+
+Das GDVG verfolgt laut Referentenentwurf-Entwürfen drei konkrete Ziele:
+
+1. **gematik-Umbau**: Die gematik soll als eigenständige Digitalagentur des Bundes neu aufgestellt werden, mit klarerer Governance und schlankeren Entscheidungsstrukturen.
+2. **FDZ-Ausbau**: Das [[Forschungsdatenzentrum-Gesundheit|Forschungsdatenzentrum Gesundheit (FDZ)]] soll zu einem zentralen Gesundheitsdatenraum ausgebaut werden, der auch an den [[EHDS]] (Europäischen Gesundheitsdatenraum) angeschlossen wird.
+3. **ePA-Wachstumsziel**: Die aktive Nutzungsrate der [[ePA]] soll durch regulatorische Anreize und technische Verbesserungen signifikant gesteigert werden.
 
 ### Strategische Leitsätze 2026
 

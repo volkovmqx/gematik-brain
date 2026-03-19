@@ -3,7 +3,7 @@ title: GDNG
 audience: [technical, non-technical]
 tags: [standards, recht, gesetz, forschung, datenschutz, sekundärnutzung]
 aliases: [Gesundheitsdatennutzungsgesetz, Health Data Use Act]
-maturity: immergruen
+maturity: wachsend
 ---
 
 # GDNG
@@ -54,6 +54,15 @@ Das GDNG stützt sich auf Art. 9 Abs. 2 lit. i und lit. j [[DSGVO]] (Verarbeitun
 ### Beziehung zu ePA und DigiG
 
 Das GDNG und das [[DigiG]] bilden zusammen ein Gesetzespaket. Während das DigiG die [[ePA]] für alle GKV-Versicherten einführte und das Opt-out-Modell verankerte, regelt das GDNG die Bedingungen, unter denen die in der ePA gespeicherten Daten sekundär genutzt werden dürfen. Beide Gesetze wurden zeitgleich verabschiedet und aufeinander abgestimmt.
+
+### GDVG und EHDS: Weiterentwicklung des FDZ
+
+Das geplante **[[GDVG]] (Gesetz für digitale Versorgung und den Gesundheitsdatenraum)**, dessen Referentenentwurf für Q2/2026 erwartet wird, soll das GDNG ergänzen und weiterentwickeln. Konkret vorgesehen:
+
+- **EHDS-Anschluss**: Das [[Forschungsdatenzentrum-Gesundheit|Forschungsdatenzentrum Gesundheit (FDZ)]] soll an den Europäischen Gesundheitsdatenraum ([[EHDS]], EU-Verordnung 2025/327) angebunden werden. Damit können deutsche Gesundheitsdaten im Rahmen des EHDS grenzüberschreitend für zugelassene Forschungsprojekte bereitgestellt werden.
+- **KI-Fähigkeit**: Der Gesundheitsdatenraum soll KI-fähig ausgebaut werden. Datensätze werden so aufbereitet, dass sie für maschinelles Lernen und KI-Modelltraining nutzbar sind, unter Wahrung der Pseudonymisierungsanforderungen des GDNG.
+
+Diese Erweiterungen bedeuten für Forscher: Mehr Datenquellen, grenzüberschreitende Verknüpfung und bessere Werkzeuge für KI-gestützte Analysen.
 
 ### Datenquellen und berechtigte Forschungszwecke
 

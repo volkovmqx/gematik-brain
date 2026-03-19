@@ -6,6 +6,7 @@ aliases: [Informationstechnische Systeme im Krankenhaus, Informationstechnische 
 relevance:
   sectors: [krankenhaus, hersteller, it-dienstleister]
   interests: [technik, compliance]
+maturity: wachsend
 ---
 
 # ISiK
@@ -23,6 +24,8 @@ ISiK (Informationstechnische Systeme in Krankenhäusern) ist ein von [[gematik]]
 Das Ziel von ISiK ist Interoperabilität: Relevante Patientendaten sollen sektorenübergreifend aktuell und strukturiert verfügbar sein. Vor ISiK kommunizierten Krankenhaussysteme häufig über proprietäre Schnittstellen, die wartungsintensiv und nicht erweiterbar waren.
 
 ISiK betrifft primär Krankenhäuser, die Fördermittel nach dem Krankenhausfinanzierungsgesetz (KHG) erhalten. Die Konformität mit ISiK ist seit Stufe 3 (01.07.2025) Voraussetzung für bestimmte Fördermaßnahmen nach § 21 Abs. 2 KHSFV. Hersteller von [[KIS|Krankenhausinformationssystemen (KIS)]] und anderen primären Systemen müssen ihre Produkte durch [[gematik]] bestätigen lassen.
+
+Das Krankenhausaufnahmegesetz (KHAG) verstärkt den Druck zur ISiK-Umsetzung: Es legt digitale Mindestanforderungen für Krankenhäuser fest und verweist auf das [[Interoperabilitaetsverzeichnis|Interoperabilitätsverzeichnis]] (§ 385 SGB V) als verbindliche Grundlage. Ab September 2026 müssen Krankenhäuser die dort verankerten Interoperabilitätsstandards erfüllen, zu denen ISiK zählt.
 
 ISiK ergänzt bestehende Standards wie [[HL7]] FHIR, [[IHE]] und KBV-Profile. Es ist kein eigenständiges System, sondern ein Set von Spezifikationen und Bestätigungsanforderungen.
 

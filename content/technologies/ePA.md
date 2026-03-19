@@ -98,7 +98,7 @@ Mit Release ePA 3.1.2 (Mai 2025) wurden FHIR Implementation Guides aktualisiert,
 
 Der **digital gestützte Medikationsprozess (dgMP)** ist seit März 2026 in seiner ersten Stufe produktiv. Er besteht aus zwei Komponenten, die klar zu unterscheiden sind:
 
-**Elektronische Medikationsliste (eML)**: Automatische Sammlung von Medikamentendaten in der ePA. Seit Januar 2025 werden E-Rezept-Dispensierdaten beim Einlösen automatisch in die eML der ePA kopiert. Seit März 2026 können Ärzte zusätzlich Medikamente ohne vorliegendes E-Rezept manuell nachtragen ("Nachtragen"). Die eML ist ein laufendes, chronologisches Protokoll der verordneten und abgegebenen Medikamente.
+**Elektronische Medikationsliste (eML)**: Automatische Sammlung von Medikamentendaten in der ePA. Seit Januar 2025 werden E-Rezept-Dispensierdaten beim Einlösen automatisch in die eML der ePA kopiert. Seit März 2026 können Ärzte zusätzlich Medikamente ohne vorliegendes E-Rezept manuell nachtragen ("Nachtragen"). Ebenfalls seit März 2026 können Apotheken und Arztpraxen bestehende Medikationseinträge bearbeiten und korrigieren, etwa wenn ein Medikament eingetragen ist, das der Patient nie eingenommen hat. Die eML ist ein laufendes, chronologisches Protokoll der verordneten und abgegebenen Medikamente.
 
 **Elektronischer Medikationsplan (eMP)**: Strukturierter Plan mit Dosierungsangaben, Indikationen und Statusangaben (geplant/aktiv/pausiert/beendet) sowie [[AMTS]]-relevanten Zusatzinformationen. Die Pilotphase für den eMP startet im Juli 2026 in ausgewählten Regionen. Der bundesweite Rollout des vollständigen eMP ist für Oktober 2026 geplant.
 

@@ -21,7 +21,7 @@ Der IDP-Dienst ist eine zentrale Infrastrukturkomponente, die von der [[gematik]
 1. **Authentisierung**: Er prüft die Identität von Nutzern anhand ihrer Chipkarten ([[eGK]], [[HBA]], [[SMC-B]]) oder biometrischer Alternativen.
 2. **Autorisierung**: Er stellt zeitbegrenzte Tokens aus, mit denen TI-Dienste (Fachdienste) aufgerufen werden können.
 
-Ursprünglich gab es einen zentralen IDP-Dienst der gematik. Mit TI 2.0 wird dieses Modell durch die **[[TI-Federation]]** erweitert: Mehrere zugelassene **sektorale IDPs** ergänzen den zentralen Dienst. Jeder sektorale IDP ist für eine bestimmte Nutzergruppe zuständig, zum Beispiel Krankenkassen für ihre Versicherten.
+Ursprünglich gab es einen zentralen IDP-Dienst der gematik. Mit TI 2.0 wird dieses Modell durch die **[[TI-Federation]]** erweitert: Mehrere zugelassene **[[Sektoraler-IDP|sektorale IDPs]]** ergänzen den zentralen Dienst. Jeder sektorale IDP ist für eine bestimmte Nutzergruppe zuständig, zum Beispiel Krankenkassen für ihre Versicherten.
 
 Der IDP ist für alle TI-Anwendungen relevant, die eine gesicherte Nutzeridentität benötigen, insbesondere [[ePA]], [[E-Rezept]], [[TI-Messenger]] und [[Gesundheits-ID]].
 

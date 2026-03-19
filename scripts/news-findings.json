@@ -1,6 +1,6 @@
 {
   "lastChecked": "2026-03-19",
-  "lastRun": "2026-03-19T14:00:00Z",
+  "lastRun": "2026-03-19T16:00:00Z",
   "findings": [
     {
       "title": "eMedikationsplan: Start verschoben auf Oktober 2026",
@@ -1074,8 +1074,9 @@
       "summary": "Der Bundestag beschloss am 6. März 2026 das Krankenhausreformanpassungsgesetz (KHAG). Digital relevante Neuerungen: (1) Bis September 2026 müssen bundeseinheitliche Mindestanforderungen und Interoperabilitätsstandards für Krankenhäuser definiert werden. (2) Telemedizin-Netzwerke (inkl. robotergestützte Fernchirurgie, Fernberatung, sektorenübergreifende Vernetzung) werden über den Transformationsfonds (Fördertatbestand 3) gefördert. (3) Patientenportale werden als strategische Pflichtinfrastruktur gestärkt: Krankenhäuser ohne zertifiziertes Patientenportal zahlen ab 1. Januar 2026 einen Abschlag von 0,5 Prozent je Abrechnungsfall. (4) Der KrankenhausTransformationsfonds (KHTF) erhält 50 Milliarden Euro (2026-2035). Der Bundesrat stimmte am 27. März 2026 zu. Das KHAG tritt damit in Kraft und schafft mehr Planungssicherheit für digitale Klinikinvestitionen 2026/2027.",
       "relevantArticles": ["KIS.md", "Telematikinfrastruktur.md", "ISiK.md"],
       "category": "regulation",
-      "action": "update",
-      "details": "KIS.md sollte das KHAG und die September-2026-Frist für Interoperabilitätsstandards sowie den Patientenportal-Abschlag ab 2026 dokumentieren. ISiK.md kann den KHAG-Kontext ergänzen. Patientenportal.md sollte auf die neue gesetzliche Pflichtverankerung hinweisen.",
+      "action": "applied",
+      "appliedDate": "2026-03-19",
+      "details": "KIS.md: KHAG-Abschnitt ergänzt mit September-2026-Frist und Patientenportal-Abschlag. ISiK.md: KHAG-Kontext ergänzt.",
       "suggestedTerm": "KHAG"
     },
     {
@@ -1085,8 +1086,9 @@
       "summary": "Seit März 2026 können Ärzte DiGA-Verordnungen freiwillig elektronisch ausstellen, ohne auf das formale E-Rezept-System angewiesen zu sein. Dies ergänzt die seit Oktober 2025 bestehende Möglichkeit, DiGA per E-Rezept zu verordnen. Praktische Bedeutung: Arztpraxen können DiGA-Verordnungen je nach Präferenz und Ausstattung als E-Rezept, per direkter Softwareintegration oder auf dem Papierweg ausstellen. Die Pflicht zur E-Rezept-Verordnung für DiGA ist noch nicht eingeführt. Hintergrund: Laut DiGAV-Änderungsverordnung (2. DiGAVÄndV, in Kraft 1. Februar 2026) müssen DiGA die Authentifizierung via GesundheitsID und den ePA-Schreibzugriff unterstützen.",
       "relevantArticles": ["DiGA.md", "E-Rezept.md"],
       "category": "specification",
-      "action": "update",
-      "details": "DiGA.md sollte klarstellen, dass seit Oktober 2025 E-Rezept-Verordnung möglich und seit März 2026 auch freiwillige elektronische Verordnung ohne E-Rezept-Format zulässig ist. Derzeit keine Pflicht zur elektronischen Verordnung für DiGA. E-Rezept.md Abschnitt zu DiGA prüfen."
+      "action": "applied",
+      "appliedDate": "2026-03-19",
+      "details": "DiGA.md: Abschnitt zu E-Rezept-Integration aktualisiert. Freiwillige elektronische Verordnung ab März 2026 dokumentiert. Compliance-Callout ergänzt."
     },
     {
       "title": "GDVG-Referentenentwurf: BMG konkretisiert gematik-Umbau für Q2/2026",
@@ -1095,8 +1097,9 @@
       "summary": "Das BMG treibt die Verabschiedung des Gesetzes für digitale Versorgung und den Gesundheitsdatenraum (GDVG) voran. Laut Bundesgesundheitsministerin Warken wird der Referentenentwurf in Q1/Q2 2026 vorgelegt. Kernpunkte: (1) gematik wird zur modernen Digitalagentur mit erweiterten Durchsetzungsbefugnissen umgebaut (Nachfolge des gescheiterten GDAG). (2) Das Forschungsdatenzentrum Gesundheit (FDZ) wird KI-fähig ausgebaut und an den EHDS angebunden. (3) Ziel: bis Ende 2026 mindestens 300 FDZ-Forschungsprojekte. (4) ePA soll bis 2030 auf 20 Millionen aktive Nutzer wachsen (Stand März 2026: ca. 4 Millionen). (5) KI-gestützte Dokumentation soll bis 2028 in über 70 Prozent der Einrichtungen Standard sein. Der Bvitg (Bundesverband Gesundheits-IT) fordert gematik als neutralen Rahmenanbieter und erleichterten Forschungsdatenzugang.",
       "relevantArticles": ["gematik.md", "GDNG.md", "ePA.md"],
       "category": "regulation",
-      "action": "update",
-      "details": "gematik.md sollte den Fortschritt des GDVG-Referentenentwurfs und die konkreten Ziele (gematik-Umbau, FDZ-Ausbau, ePA-Wachstumsziel) ergänzen. GDNG.md kann den EHDS-Anschluss des FDZ und die KI-Fähigkeit dokumentieren.",
+      "action": "applied",
+      "appliedDate": "2026-03-19",
+      "details": "gematik.md: GDVG-Referentenentwurf-Ziele ergänzt (gematik-Umbau, FDZ-Ausbau, ePA-Wachstumsziel). GDNG.md: EHDS-Anschluss und KI-Fähigkeit des FDZ dokumentiert.",
       "suggestedTerm": "GDVG"
     },
     {
@@ -1106,6 +1109,26 @@
       "summary": "Der Bundesrat soll dem am 6. März 2026 vom Bundestag beschlossenen KHAG am 27. März 2026 zustimmen. Das Gesetz bedarf der Zustimmung des Bundesrats. Wesentliche Inhalte: Erhöhung des Transformationsfonds von 25 auf 29 Milliarden Euro (Finanzierung aus Infrastrukturreserven statt GKV-Mitteln), Reduzierung der Leistungsgruppen von 65 auf 61, Verlängerung der Länder-Implementierungsfristen. Der KHTF (Krankenhaus-Transformationsfonds) fördert digitale Investitionen ab 2026.",
       "relevantArticles": ["KIS.md", "Telematikinfrastruktur.md"],
       "category": "regulation",
+      "action": "info_only"
+    },
+    {
+      "title": "eML: Medikationseinträge ab März 2026 durch Apotheken und Praxen korrigierbar",
+      "date": "2026-03-01",
+      "source": "https://www.aerztezeitung.de/Wirtschaft/Welche-neuen-ePA-Funktionen-2026-kommen-sollen-460768.html",
+      "summary": "Seit März 2026 können Apotheken und Arztpraxen einzelne Einträge in der elektronischen Medikationsliste (eML) nachträglich bearbeiten und korrigieren. Anwendungsfall: Ein Medikament ist in der eML eingetragen, obwohl der Patient es nie eingenommen hat. Bislang war nur das Hinzufügen (Nachtragen) von Medikamenten ohne E-Rezept möglich; das Editieren bestehender Einträge ist eine neue Funktion aus dem dgMP-Start März 2026. Technische Grundlage ist ePA 3.1.2 (Mai 2025).",
+      "relevantArticles": ["ePA.md"],
+      "category": "specification",
+      "action": "applied",
+      "appliedDate": "2026-03-19",
+      "details": "ePA.md: eML-Abschnitt um Korrektur-/Bearbeitungsfunktion für bestehende Medikationseinträge erweitert (seit März 2026 durch Apotheken und Praxen möglich)."
+    },
+    {
+      "title": "gematik auf der DMEA 2026 (Berlin, 21.–23. April 2026)",
+      "date": "2026-03-19",
+      "source": "https://www.gematik.de/newsroom/news-detail/die-gematik-auf-der-dmea-2026-zukunft-vernetzt-sich",
+      "summary": "Gematik kündigt ihre Teilnahme an der DMEA 2026 (21.–23. April 2026, Berlin) an. Die DMEA 2026 ist die letzte Ausgabe in Berlin; ab 2027 zieht die Messe nach München. Gematik ist als Aussteller und mit Vorträgen vertreten. Themenschwerpunkte am gematik-Stand: TI 2.0, ePA-Weiterentwicklung, VSDM 2.0, PoPP, ZETA, DiPaG, EHDS/NCPeH, KI in der TI.",
+      "relevantArticles": ["Telematikinfrastruktur.md"],
+      "category": "info",
       "action": "info_only"
     }
   ]

@@ -16,7 +16,7 @@ Bevor es die Telematikinfrastruktur gab, brauchten Arztpraxen trotzdem schon ein
 
 ## Überblick
 
-KV-SafeNet wurde von der **Kassenärztlichen Bundesvereinigung ([[KBV]])** und den 17 regionalen [[Kassenärztliche-Vereinigung|Kassenärztlichen Vereinigungen]] entwickelt und betrieben. Es entstand in den 2000er Jahren als gesichertes Netzwerk für den elektronischen Datenaustausch im ambulanten Bereich, lange bevor die [[Telematikinfrastruktur]] produktiv wurde.
+KV-SafeNet wurde von der **Kassenärztlichen Bundesvereinigung ([[KBV]])** und den 17 regionalen [[Kassenaerztliche-Vereinigung|Kassenärztlichen Vereinigungen]] entwickelt und betrieben. Es entstand in den 2000er Jahren als gesichertes Netzwerk für den elektronischen Datenaustausch im ambulanten Bereich, lange bevor die [[Telematikinfrastruktur]] produktiv wurde.
 
 Die Hauptanwendungsfälle von KV-SafeNet sind:
 
@@ -74,7 +74,7 @@ Der [[VPN-Zugangsdienst]] der Telematikinfrastruktur ist ein eigener, separater 
 
 ## Verknüpfungen
 
-- [[Kassenärztliche-Vereinigung]] (betreibt KV-SafeNet; nimmt Abrechnungsdaten entgegen)
+- [[Kassenaerztliche-Vereinigung]] (betreibt KV-SafeNet; nimmt Abrechnungsdaten entgegen)
 - [[KBV]] (definiert technische Standards für KV-SafeNet)
 - [[PVS]] (Praxisverwaltungssystem; nutzt KV-SafeNet für Quartalsabrechnung)
 - [[xDT]] (KVDT-Format für die Abrechnungsdaten, die über KV-SafeNet übermittelt werden)

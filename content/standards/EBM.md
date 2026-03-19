@@ -12,7 +12,7 @@ Der **Einheitliche Bewertungsmaßstab (EBM)** ist das bundesweit gültige Abrech
 
 ## Erklärt für Einsteiger
 
-Wenn ein Arzt dich behandelt, bekommt er dafür Geld von der Krankenkasse. Aber wie viel? Das legt der EBM fest. Er listet alle ärztlichen Leistungen auf, von der einfachen Beratung bis zur komplizierten Operation, und ordnet jeder Leistung eine Punktzahl zu. Ein Punkt hat einen festgelegten Geldwert, den sogenannten Orientierungswert. Der Arzt rechnet seine Leistungen über die [[Kassenärztliche Vereinigung|KV]] ab, die das Geld von der Krankenkasse bekommt und es an die Praxen verteilt.
+Wenn ein Arzt dich behandelt, bekommt er dafür Geld von der Krankenkasse. Aber wie viel? Das legt der EBM fest. Er listet alle ärztlichen Leistungen auf, von der einfachen Beratung bis zur komplizierten Operation, und ordnet jeder Leistung eine Punktzahl zu. Ein Punkt hat einen festgelegten Geldwert, den sogenannten Orientierungswert. Der Arzt rechnet seine Leistungen über die [[Kassenaerztliche-Vereinigung|KV]] ab, die das Geld von der Krankenkasse bekommt und es an die Praxen verteilt.
 
 ## Überblick
 
@@ -25,7 +25,7 @@ Der EBM ist nach Fachgebieten und Leistungsbereichen strukturiert. Er enthält m
 Das Punktesystem des EBM funktioniert zweistufig:
 
 1. **Orientierungswert**: Der bundeseinheitliche Geldwert eines Punktes, der jährlich zwischen KBV und GKV-Spitzenverband verhandelt wird. Für 2026 beträgt er **12,7404 Cent** (Anstieg um 2,8 % gegenüber 2025).
-2. **Regionaler Punktwert**: Die tatsächliche Vergütung kann je nach Morbiditätsstruktur und Budgetvolumen der einzelnen [[Kassenärztliche Vereinigung|KV]] variieren.
+2. **Regionaler Punktwert**: Die tatsächliche Vergütung kann je nach Morbiditätsstruktur und Budgetvolumen der einzelnen [[Kassenaerztliche-Vereinigung|KV]] variieren.
 
 ### Abgrenzung zu anderen Vergütungssystemen
 
@@ -61,7 +61,7 @@ Die Höhe der TI-Pauschalen wird regelmäßig angepasst und ist im EBM-Kapitel 0
 
 ### Datenformat und Abrechnung
 
-Die Abrechnung gegenüber der [[Kassenärztliche Vereinigung|KV]] erfolgt über das **KVDT-Format** (Kassenärztlicher Datentransfer), das zur Familie der [[xDT]]-Formate gehört. Das [[PVS|Praxisverwaltungssystem (PVS)]] erzeugt eine KVDT-Datei mit allen im Quartal erbrachten Leistungen. Diese wird elektronisch an die KV übermittelt.
+Die Abrechnung gegenüber der [[Kassenaerztliche-Vereinigung|KV]] erfolgt über das **KVDT-Format** (Kassenärztlicher Datentransfer), das zur Familie der [[xDT]]-Formate gehört. Das [[PVS|Praxisverwaltungssystem (PVS)]] erzeugt eine KVDT-Datei mit allen im Quartal erbrachten Leistungen. Diese wird elektronisch an die KV übermittelt.
 
 Seit 2020 stellt die [[KBV]] den EBM auch in einem maschinenlesbaren XML-Format bereit, das von PVS-Herstellern zur automatischen Kodierunterstützung genutzt werden kann.
 
@@ -73,7 +73,7 @@ Der **Bewertungsausschuss** (BA) ist das gemeinsame Beschlussgremium von KBV und
 
 ## Verknüpfungen
 
-- [[Kassenärztliche Vereinigung|KV]] (nimmt Abrechnungen nach EBM entgegen, verteilt Vergütung)
+- [[Kassenaerztliche-Vereinigung|KV]] (nimmt Abrechnungen nach EBM entgegen, verteilt Vergütung)
 - [[KBV]] (gibt den EBM gemeinsam mit dem GKV-Spitzenverband heraus)
 - [[PVS]] (Praxissoftware, in der EBM-Ziffern erfasst und KVDT-Dateien erstellt werden)
 - [[GKV]] (Kostenträger, finanziert EBM-Vergütungen über Gesamtvergütungen an KVen)

@@ -7,7 +7,7 @@ aliases: [OAuth2, OpenID Connect, OIDC, OAuth 2.0 / OpenID Connect]
 
 # OAuth 2.0
 
-**OAuth 2.0** ist ein offenes Autorisierungsframework und zusammen mit **OpenID Connect (OIDC)** die technische Grundlage für die Token-basierte Authentifizierung und Autorisierung in der [[Telematikinfrastruktur]].
+**OAuth 2.0** ist ein offenes Autorisierungsframework und zusammen mit **[[OIDC|OpenID Connect (OIDC)]]** die technische Grundlage für die Token-basierte Authentifizierung und Autorisierung in der [[Telematikinfrastruktur]].
 
 ## Erklärt für Einsteiger
 
@@ -49,7 +49,7 @@ Der in der TI verwendete **Authorization Code Flow** (mit PKCE nach RFC 7636) l�
 
 OAuth 2.0 kennt drei Tokentypen, die in der TI alle eine Rolle spielen:
 
-- **Access Token**: Kurzlebig (Minuten bis Stunden). Berechtigt zum Zugriff auf eine Ressource. In der TI als signiertes **JSON Web Token (JWT)** nach RFC 7519 realisiert.
+- **Access Token**: Kurzlebig (Minuten bis Stunden). Berechtigt zum Zugriff auf eine Ressource. In der TI als signiertes **[[JWT|JSON Web Token (JWT)]]** nach RFC 7519 realisiert.
 - **Refresh Token**: Langlebig. Ermöglicht das Erneuern von Access Tokens ohne erneute Nutzerauthentifizierung.
 - **ID Token**: OIDC-spezifisch. Enthält Informationen über die Identität des Nutzers (Name, [[KVNR]], [[Telematik-ID]]).
 

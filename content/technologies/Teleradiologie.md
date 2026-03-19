@@ -67,7 +67,7 @@ Die Teleradiologie im engeren Sinne (Befundung ohne Radiologen vor Ort) ist an s
 - **Genehmigungspflicht**: Der externe Befunder benötigt eine eigene Röntgengenehmigung für Teleradiologie.
 
 > [!interesse-compliance]
-> Rechtsgrundlage für Teleradiologie im engeren Sinne ist § 123 StrlSchV 2018 (in Kraft seit 1. Januar 2019). Der Teleradiologe muss unmittelbar erreichbar sein und den Befund sofort nach Bildübermittlung erstellen. Der externe Befunder benötigt eine eigene Röntgengenehmigung. Abrechnung des Telekonsils erfolgt über EBM-Ziffer 34800 ff. durch die zuständige [[Kassenärztliche-Vereinigung|Kassenärztliche Vereinigung]].
+> Rechtsgrundlage für Teleradiologie im engeren Sinne ist § 123 StrlSchV 2018 (in Kraft seit 1. Januar 2019). Der Teleradiologe muss unmittelbar erreichbar sein und den Befund sofort nach Bildübermittlung erstellen. Der externe Befunder benötigt eine eigene Röntgengenehmigung. Abrechnung des Telekonsils erfolgt über EBM-Ziffer 34800 ff. durch die zuständige [[Kassenaerztliche-Vereinigung|Kassenärztliche Vereinigung]].
 
 ### Abgrenzung: Teleradiologie vs. Telekonsil
 

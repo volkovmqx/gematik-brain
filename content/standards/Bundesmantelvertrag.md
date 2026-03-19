@@ -25,7 +25,7 @@ Vertragsparteien sind:
 - **[[KBV]]** (Kassenärztliche Bundesvereinigung): Vertritt die niedergelassenen Kassenärzte und Psychotherapeuten
 - **[[GKV-Spitzenverband]]**: Vertritt alle gesetzlichen Krankenkassen
 
-Der BMV-Ä ist bindend für alle [[GKV]]-Krankenkassen und alle Vertragsärzte in Deutschland. Er bildet die Basis, auf der die regionalen Kassenärztlichen Vereinigungen ([[Kassenärztliche-Vereinigung|KVen]]) und Krankenkassen weitere Verträge aufbauen können.
+Der BMV-Ä ist bindend für alle [[GKV]]-Krankenkassen und alle Vertragsärzte in Deutschland. Er bildet die Basis, auf der die regionalen Kassenärztlichen Vereinigungen ([[Kassenaerztliche-Vereinigung|KVen]]) und Krankenkassen weitere Verträge aufbauen können.
 
 ### Regelungsbereiche
 
@@ -36,7 +36,7 @@ Der Bundesmantelvertrag gliedert sich in 36 Anlagen und regelt drei Kernbereiche
 3. **Überweisungen und Verordnungen**: Formvorschriften für Überweisungsscheine, Rezepte, Heilmittelverordnungen und Krankenhauseinweisungen
 
 > [!interesse-compliance]
-> Der Bundesmantelvertrag ist für alle Vertragsärzte, Vertragspsychotherapeuten und GKV-Krankenkassen bindend. Praxen, die gegen BMV-Regelungen verstoßen, riskieren Retaxationen und disziplinarische Maßnahmen durch die [[Kassenärztliche-Vereinigung|KV]]. Für Videosprechstunden gelten die Anforderungen aus Anlage 31b des BMV-Ä. Die aktuelle Fassung (April 2025) ist auf kbv.de und gkv-spitzenverband.de abrufbar.
+> Der Bundesmantelvertrag ist für alle Vertragsärzte, Vertragspsychotherapeuten und GKV-Krankenkassen bindend. Praxen, die gegen BMV-Regelungen verstoßen, riskieren Retaxationen und disziplinarische Maßnahmen durch die [[Kassenaerztliche-Vereinigung|KV]]. Für Videosprechstunden gelten die Anforderungen aus Anlage 31b des BMV-Ä. Die aktuelle Fassung (April 2025) ist auf kbv.de und gkv-spitzenverband.de abrufbar.
 
 ### Relevanz für die Digitalisierung
 
@@ -55,7 +55,7 @@ Neben dem BMV-Ä existiert der **Bundesmantelvertrag-Zahnärzte (BMV-Z)** zwisch
 
 ### Relevanz für Abrechnungsdatenformate
 
-Der BMV-Ä verweist auf technische Anlagen, die für die digitale Abrechnung relevant sind. Die KBV definiert auf dieser Grundlage das **KVDT-Format** (Kassenärztliche Vereinigung Datentransfer), das von [[PVS|Praxisverwaltungssystemen]] für die Quartalsabrechnung gegenüber den [[Kassenärztliche-Vereinigung|KVen]] verwendet wird.
+Der BMV-Ä verweist auf technische Anlagen, die für die digitale Abrechnung relevant sind. Die KBV definiert auf dieser Grundlage das **KVDT-Format** (Kassenärztliche Vereinigung Datentransfer), das von [[PVS|Praxisverwaltungssystemen]] für die Quartalsabrechnung gegenüber den [[Kassenaerztliche-Vereinigung|KVen]] verwendet wird.
 
 Formvorschriften im BMV-Ä bestimmen auch, welche Pflichtfelder Verordnungen enthalten müssen, was direkt in die FHIR-Profile für das [[E-Rezept]] eingeflossen ist.
 
@@ -79,7 +79,7 @@ Der BMV-Ä setzt die gesetzlichen Vorgaben des [[SGB-V]] in konkrete Vertragsreg
 - [[GKV-Spitzenverband]] (Vertragspartei; vertritt die Krankenkassen)
 - [[SGB-V]] (§ 87 Abs. 1: Rechtsgrundlage des BMV-Ä)
 - [[GKV]] (Kassenarten, für die der BMV-Ä gilt)
-- [[Kassenärztliche-Vereinigung]] (KV; setzt den BMV-Ä regional um)
+- [[Kassenaerztliche-Vereinigung]] (KV; setzt den BMV-Ä regional um)
 - [[PVS]] (Praxisverwaltungssysteme; müssen Formvorschriften des BMV-Ä umsetzen)
 - [[E-Rezept]] (FHIR-Pflichtfelder basieren auf BMV-Ä-Formvorschriften)
 - [[Telemedizin]] (Anlage 31b: Videosprechstunden-Regelungen)

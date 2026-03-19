@@ -17,7 +17,7 @@ Früher gab es in der TI genau einen Türsteher, der alle überprüft hat. Mit d
 
 Ursprünglich gab es in der TI nur einen zentralen [[IDP]]-Dienst, betrieben von der [[gematik]]. Alle TI-Anwendungen mussten sich an diesen einen Dienst wenden, um Nutzeridentitäten zu prüfen.
 
-Mit der TI 2.0 wird dieses Modell aufgebrochen. Die TI-Federation erlaubt es, dass mehrere **sektorale IDPs** gleichberechtigt neben dem zentralen IDP operieren. Jeder sektorale IDP ist für seine eigene Nutzergruppe zuständig:
+Mit der TI 2.0 wird dieses Modell aufgebrochen. Die TI-Federation erlaubt es, dass mehrere **[[Sektoraler-IDP|sektorale IDPs]]** gleichberechtigt neben dem zentralen IDP operieren. Jeder sektorale IDP ist für seine eigene Nutzergruppe zuständig:
 
 - Krankenkassen betreiben sektorale IDPs für ihre Versicherten (Grundlage für die [[Gesundheits-ID]])
 - Andere sektorale IDPs können für Leistungserbringer (Ärzte, Apotheken) entstehen

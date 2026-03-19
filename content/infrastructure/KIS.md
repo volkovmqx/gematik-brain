@@ -102,6 +102,13 @@ Das [[KRITIS-Dachgesetz]] (Bundestag 29. Januar 2026, Bundesrat 6. März 2026) s
 
 Das [[KHZG|Krankenhauszukunftsgesetz (KHZG, 2020)]] stellte Fördermittel von 4,3 Milliarden Euro für die Digitalisierung von Krankenhäusern bereit. Ein Förderschwerpunkt war die Beschaffung und Modernisierung von KIS-Systemen sowie die Implementierung von [[Patientenportal|Patientenportalen]] und digitalen Prozessen. KHZG-Vorhaben müssen Interoperabilitätsanforderungen erfüllen, die sich mit ISiK überschneiden.
 
+### KHAG: Interoperabilitätspflichten ab 2026
+
+Das Krankenhausaufnahmegesetz (KHAG) legt digitale Mindestanforderungen für Krankenhäuser fest. Ab September 2026 müssen Krankenhäuser verbindliche Interoperabilitätsstandards umsetzen, die im [[Interoperabilitaetsverzeichnis|Interoperabilitätsverzeichnis]] (§ 385 SGB V) verankert sind. Krankenhäuser, die kein zertifiziertes [[Patientenportal]] betreiben, erhalten ab 2026 einen DRG-Abschlag. KIS-Systeme müssen die KHAG-Anforderungen erfüllen, um Krankenhäuser bei der Umsetzung zu unterstützen.
+
+> [!interesse-compliance]
+> KHAG: Verbindliche Interoperabilitätsstandards für Krankenhäuser ab September 2026. DRG-Abschlag für Krankenhäuser ohne zertifiziertes Patientenportal ab 2026. ISiK Stufe 3 ist Pflicht bis 30.06.2026. KRITIS-Dachgesetz: Registrierungspflicht ab 17.07.2026.
+
 ## Verknüpfungen
 
 - [[PVS]]: Äquivalent zum KIS im ambulanten Praxisbereich
