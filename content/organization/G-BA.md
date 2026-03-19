@@ -2,8 +2,11 @@
 title: G-BA
 audience: [technical, non-technical]
 tags: [organisation, gkv, regulierung, selbstverwaltung, diga]
-aliases: [Gemeinsamer Bundesausschuss, Gemeinsamer Bundesausschuß, G-BA]
-maturity: immergruen
+aliases: [Gemeinsamer Bundesausschuss, G-BA]
+maturity: wachsend
+relevance:
+  sectors: [arztpraxis, krankenhaus, kasse, hersteller, startup, regulierung]
+  interests: [compliance, business]
 ---
 
 # G-BA
@@ -31,6 +34,9 @@ Der G-BA besteht aus:
 
 ### Kernaufgaben
 
+> [!interesse-compliance] G-BA-Richtlinien als Rechtsrahmen
+> G-BA-Richtlinien haben Gesetzeskraft für alle Vertragsärzte, Krankenhäuser und Krankenkassen (§ 91 [[SGB-V]]). Wer Leistungen erbringt oder Produkte (z.B. [[DiGA]]) in den GKV-Leistungskatalog bringen will, muss die jeweils geltenden G-BA-Richtlinien einhalten. Für [[DiGA]]-Hersteller: Der G-BA kann nach der BfArM-Aufnahme eine eigene Nutzenbewertung beauftragen, die über Dauerverordnungsfähigkeit entscheidet.
+
 Der G-BA entscheidet über den Leistungskatalog der [[GKV]]:
 
 - **Arzneimittel-Nutzenbewertung ([[AMNOG]])**: Nach der Markteinführung neuer Medikamente bewertet der G-BA deren Zusatznutzen gegenüber der Standardtherapie. Das Ergebnis bestimmt den Erstattungsbetrag.
@@ -49,6 +55,9 @@ Bei der Erstattung Digitaler Gesundheitsanwendungen ([[DiGA]]) greifen zwei para
 2. **G-BA-Nutzenbewertung**: Nach einer Übergangsphase kann der G-BA eine Nutzenbewertung für DiGA beauftragen, wenn der Zusatznutzen aus dem Fast-Track-Verfahren nicht ausreichend belegt ist.
 
 Dieses zweistufige Verfahren war bei Einführung des DVG 2019 neu und international ohne Vorbild.
+
+> [!interesse-business] DiGA-Markt und G-BA-Nutzenbewertung
+> Hersteller von [[DiGA]] müssen nach der 12-monatigen Erprobungsphase im BfArM-Fast-Track einen positiven Zusatznutzennachweis erbringen. Der G-BA beauftragt dafür das [[IQWiG]]. Ohne nachgewiesenen Zusatznutzen wird der Erstattungsbetrag auf den Vergleichspreis gedeckelt. Stand 2026 stehen über 50 DiGA im offiziellen Verzeichnis. Davon haben etwa die Hälfte die permanente Aufnahme erreicht.
 
 ### AMNOG-Verfahren
 

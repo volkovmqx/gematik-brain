@@ -20,7 +20,7 @@ Das PDSG (Gesetz zum Schutz elektronischer Patientendaten in der Telematikinfras
 Das PDSG verfolgte drei Hauptziele:
 
 1. **Datenschutzrahmen für die ePA**: Klare gesetzliche Grundlagen für Zugriff, Verarbeitung und Löschung von ePA-Daten.
-2. **Erweiterung der ePA-Inhalte**: Stufenweise Einführung von Dokumententypen (Impfpass, Mutterpass, Kinderuntersuchungsheft, Zahnbonusheft, Arztbriefe).
+2. **Erweiterung der ePA-Inhalte**: Stufenweise Einführung von Dokumententypen ([[eImpfpass|Impfpass]], [[Mutterpass]], [[Kinderuntersuchungsheft]], Zahnbonusheft, Arztbriefe).
 3. **VSDM-Modernisierung**: Neue Regeln für das Versichertenstammdatenmanagement, einschließlich Online-Prüfpflicht.
 
 Das PDSG gilt als Zwischengesetz zwischen dem [[DVG]] (2019) und dem [[DigiG]] (2024). Während das DVG die ePA einführte, regelte das PDSG konkret, wie sie sicher betrieben werden soll. Das DigiG stellte das Modell dann auf Opt-out um.
@@ -33,7 +33,7 @@ Das PDSG ergänzte und änderte den elften Abschnitt des [[SGB-V]] (§§ 291a bi
 
 - **§ 336 SGB V**: Pflicht der Krankenkassen, ihren Versicherten ab 2021 eine ePA bereitzustellen.
 - **§ 337 SGB V**: Zugriff auf die ePA nur mit ausdrücklicher Einwilligung des Versicherten. Definiert die technischen Mechanismen für Zugriffssteuerung.
-- **§ 341 SGB V**: Inhalte der ePA: Medikationsplan, Notfalldaten, Arztbriefe, Befunde, Impfdokumentation, Mutterpass, Kinderuntersuchungshefte, Zahnbonusheft.
+- **§ 341 SGB V**: Inhalte der ePA: Medikationsplan, Notfalldaten, Arztbriefe, Befunde, Impfdokumentation, [[Mutterpass]], [[Kinderuntersuchungsheft|Kinderuntersuchungshefte]], Zahnbonusheft.
 - **§ 342 SGB V**: Stufenweise Einführung der ePA-Dokumententypen bis 2023.
 - **§ 353 SGB V**: Besondere Zugriffsschutzregelungen für sensible Kategorien von Gesundheitsdaten (z.B. psychiatrische Diagnosen, Suchterkrankungen).
 - **§ 307 SGB V**: Meldepflicht bei Sicherheitsvorfällen gegenüber der [[gematik]]. Bußgeld bis 300.000 Euro bei Verstößen.

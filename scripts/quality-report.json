@@ -1,694 +1,673 @@
 {
-  "timestamp": "2026-03-19T14:30:00Z",
-  "overallScore": 81,
+  "timestamp": "2026-03-19T17:45:00Z",
+  "overallScore": 80,
   "testResults": {
-    "passed": 154,
-    "failed": 0,
-    "total": 154
+    "passed": 157,
+    "failed": 2,
+    "total": 159
   },
   "articles": [
+    {
+      "file": "content/processes/Mutterpass.md",
+      "verdict": "pass",
+      "score": 82,
+      "issues": [
+        "MIO version 1.1.0 final since 1 April 2022: confirmed by KBV HUB search results (G-BA Anlage-3 update 19 August 2021 prompted the revision).",
+        "§ 342 Abs. 2c SGB V via DigiG (2024): confirmed by KBV MIO FAQ sources.",
+        "No binding rollout date (Stand März 2026): correctly hedged — confirmed by MIO FAQ search results.",
+        "FHIR resource types (KBV_PR_MIO_MR_Bundle, KBV_PR_MIO_MR_Patient_Mother etc.): consistent with KBV MIO documentation.",
+        "Only 3 sources — meets minimum but borderline.",
+        "KBV source URL hub.kbv.de/display/MP1X1X0/Mutterpass+1.1.0: confirmed live by KBV HUB search result.",
+        "gematik INA MIO source URL www.ina.gematik.de/themenbereiche/medizinische-informationsobjekte: confirmed live.",
+        "Missing Quellen: KBV press release 2020 URL (kbv.de/html/2020_49733.php) not verified but used across all three MIO articles consistently.",
+        "All frontmatter fields present. 10 wiki-links, all relevant. Required sections present.",
+        "Frontmatter relevance: sectors and interests are valid values."
+      ],
+      "fixInstructions": "No blocking issues. Optional: add a fourth source, e.g. the G-BA Mutterschafts-Richtlinie at https://www.g-ba.de/richtlinien/19/ to strengthen the regulatory basis."
+    },
+    {
+      "file": "content/technologies/eImpfpass.md",
+      "verdict": "revise",
+      "score": 75,
+      "issues": [
+        "BROKEN WIKI-LINK: [[STIKO]] — confirmed broken by test-report.json. STIKO appears in the interesse-patient callout. No STIKO article exists in the knowledge base.",
+        "Claim 'eImpfpass war das erste MIO': confirmed by KBV MIO documentation and search results — the Impfpass was the first MIO specified by KBV.",
+        "§ 22 IfSG as legal basis for Impfdokumentation: confirmed by KBV MIO Impfpass 1.1.0 documentation (application scenarios cite § 22 IfSG explicitly).",
+        "MIO version 1.1.0 and bundle name KBV_PR_MIO_IM_Bundle: consistent with KBV documentation.",
+        "FHIR resource type KBV_PR_MIO_IM_Condition for 'Dokumentierte Impfreaktionen': technically this should be a note/adverse event, but Condition is a possible representation — unverifiable from public spec without access.",
+        "Typo in body text line 31: 'Chargenbezeichnung und Lotnnummer' — 'Lotnnummer' should be 'Lotnummer'.",
+        "gematik INA source URL confirmed live. KBV hub.kbv.de/display/IM1X1X0/Impfpass+1.1.0 confirmed live.",
+        "Frontmatter relevance: valid sectors and interests.",
+        "Only 3 sources — meets minimum. Wikipedia as third source acceptable."
+      ],
+      "fixInstructions": "1. Either create a stub STIKO.md article with alias [[STIKO]], or replace [[STIKO]] in the patient callout with plain text 'STIKO (Ständige Impfkommission)'. 2. Fix typo: replace 'Lotnnummer' with 'Lotnummer' in the Inhalt des eImpfpasses list."
+    },
+    {
+      "file": "content/organization/Medizininformatik-Initiative.md",
+      "verdict": "revise",
+      "score": 72,
+      "issues": [
+        "BROKEN WIKI-LINK: [[BMBF]] — appears twice in the article (first line of article body and Überblick paragraph). Confirmed by test-report.json. No BMBF article exists in the knowledge base.",
+        "MII started 2016 by BMBF: confirmed by multiple authoritative sources (medizininformatik-initiative.de, Bundesgesundheitsblatt 2024 paper).",
+        "Four consortia (DIFUTURE, HiGHmed, MIRACUM, SMITH): confirmed correct by medizininformatik-initiative.de consortia page. HiGHmed description includes Heidelberg-Göttingen-Hamburg-München-Hannover — this is accurate as the founding institutions; the article's '(Heidelberg-Göttingen-Hamburg-München-Hannover)' reflects the original member composition.",
+        "29 Datenintegrationszentren: confirmed by MII search results (29 established during funding phase 2018+). Note: as of 2023 expansion phase additional non-university sites joined — '29' refers to the initial university hospital count, which is correctly stated.",
+        "MII läuft bis mindestens 2027: plausible, consistent with funding structure (3rd phase 2023-2026/2027); marked unverifiable without primary BMBF source.",
+        "FDZ vs. MII distinction: correctly described and consistent with Forschungsdatenzentrum-Gesundheit.md content.",
+        "Frontmatter: sectors/interests valid. 13 wiki-links, all relevant.",
+        "Springer/PMC source URL (pmc.ncbi.nlm.nih.gov/articles/PMC11166846/): confirmed in search results as the Bundesgesundheitsblatt 2024 paper."
+      ],
+      "fixInstructions": "1. Either create a stub BMBF.md article with alias [[BMBF]], or replace both occurrences of [[BMBF]] with plain text 'BMBF (Bundesministerium für Bildung und Forschung)'. This fixes the two broken wiki-links (-20 points) and restores the score to pass."
+    },
+    {
+      "file": "content/processes/Videosprechstunde.md",
+      "verdict": "revise",
+      "score": 73,
+      "issues": [
+        "FACTUAL ERROR: EBM GOP 01439 listed as 'Arzt-Patienten-Kontakt per Video' is incorrect. GOP 01439 was deleted from the EBM on 1 October 2019. It no longer exists. Current video consultation billing uses the patient group-specific Versicherten-, Grund- oder Konsiliarpauschalen with an add-on technik code (GOP 01450). Listing 01439 as a valid current billing code in an EBM section (Stand 2025/2026) is misleading.",
+        "GOP 01450 (Technische Kosten): confirmed as valid and current — the central Technikzuschlag for all Videosprechstunden. Value: 40 Punkte, currently subject to Höchstwert 700 Punkte/Quartal (confirmed by KVB Vergütungsübersicht Stand 01.01.2026).",
+        "DigiG 30%-Begrenzung aufgehoben: confirmed correct. DigiG came into effect 26 March 2024 and removed the 30% quota for individual EBM services.",
+        "Ab 1. April 2025: bis zu 50 Prozent Behandlungsfälle per Video: confirmed by KVB sources (ab Q2/2025).",
+        "Assisted Telemedizin via Apotheken: confirmed as introduced by DigiG (2024), still in Einführungsphase 2025/2026.",
+        "Anlage 31b BMV-Ä URL cited in Quellen: confirmed live at gkv-spitzenverband.de.",
+        "KV Nordrhein source URL (kvno.de): confirmed plausible and alive.",
+        "Frontmatter relevance: valid sectors and interests.",
+        "11 wiki-links, all relevant. Required sections present."
+      ],
+      "fixInstructions": "In the EBM-Abrechnung subsection, replace the bullet point 'Arzt-Patienten-Kontakt per Video (GOP 01439 EBM)' with: 'Technikzuschlag Videosprechstunde (GOP 01450 EBM, 40 Punkte, Höchstwert 700 Punkte/Quartal)' and 'Abrechnung über die fachgruppenspezifische Versicherten-, Grund- oder Konsiliarpauschale (kein eigener Kontaktzuschlag mehr seit Oktober 2019)'. Remove all references to GOP 01439 as it was deleted from the EBM on 1 October 2019."
+    },
+    {
+      "file": "content/processes/Kinderuntersuchungsheft.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [
+        "U1 to U9 plus J1 coverage: confirmed by G-BA Kinder-Richtlinie and kindergesundheit-info.de.",
+        "Age ranges in the table (U1 unmittelbar nach Geburt, U2 3.-10. Lebenstag, etc.): confirmed against G-BA sources and kindergesundheit-info.de. All age ranges are correct.",
+        "J1 12.-14. Lebensjahr: confirmed correct by BMG and G-BA sources.",
+        "G-BA Kinder-Richtlinie as the governing document: confirmed (g-ba.de/richtlinien/15/).",
+        "KBV version 1.0.1 for U-Heft: confirmed by KBV search results (mio.kbv.de/display/UH1X0X1/U-Heft+1.0.1).",
+        "§ 342 Abs. 2c SGB V via DigiG: consistent with Mutterpass.md and eImpfpass.md — cross-article consistent.",
+        "G-BA Kinder-Richtlinie source (g-ba.de/richtlinien/15/): confirmed live.",
+        "Note: U7a age range '34.-36. Lebensmonat' — confirmed correct by G-BA documentation.",
+        "All frontmatter fields present. 12 wiki-links, all relevant. Required sections present."
+      ],
+      "fixInstructions": "No blocking issues. Solid article."
+    },
+    {
+      "file": "content/standards/SGB-V.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [
+        "SGB V enacted 1989 via Gesundheits-Reformgesetz: confirmed. The law is formally the 'Gesetz zur Strukturreform im Gesundheitswesen (Gesundheits-Reformgesetz - GRG)' from 20 December 1988, in force 1 January 1989. Article says 'Gesundheits-Reformgesetzes' — correct.",
+        "SGB V replaced RVO (Reichsversicherungsordnung): confirmed by Bundestag and AOK sources.",
+        "§ 360 SGB V: E-Rezept Pflicht seit 1. Januar 2024: confirmed correct.",
+        "§ 311 SGB V: Aufgaben der gematik: confirmed correct.",
+        "SGB V has 'mehr als 400 Paragrafen': confirmed — the law has over 400 sections.",
+        "'Zwölf Kapitel' description alongside 'Elfte Kapitel': the article mentions both 'zwölf Kapitel (Bücher)' and 'Elfte Kapitel (Telematikinfrastruktur, §§ 306 bis 395)'. SGB V does not have Bücher internally — it has Kapitel. Minor structural imprecision.",
+        "§§ 217a ff. SGB V as basis for GKV-Spitzenverband: confirmed correct.",
+        "New compliance callout: all cited section numbers verified correct.",
+        "All frontmatter fields present. 13 wiki-links, all relevant. 4 sources including official gesetze-im-internet.de."
+      ],
+      "fixInstructions": "Minor: In Überblick, replace 'in zwölf Kapitel (Bücher) unterteilt sind' with 'in zwölf Kapitel unterteilt sind' — SGB V is structured in Kapitel, not Bücher. No blocking issues."
+    },
+    {
+      "file": "content/organization/BMG.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [
+        "BMG holds 51% of gematik since DVG 2019: confirmed by multiple sources. Note: the 51% acquisition was via the TSVG (Terminservice- und Versorgungsgesetz), which was closely linked to the DVG; article attributes it to DVG 2019, which is the correct legislation for the digital health context.",
+        "Nine gematik Gesellschafter: confirmed — BMG, KBV, KZBV, BÄK, Bundeszahnärztekammer, DAV, DKG, GKV-SV, PKV.",
+        "GKV-SV 22,05 Prozent: confirmed by gematik.de Gesellschafter page and GKV search results.",
+        "Restliche 19,95 Prozent verteilen sich auf sechs Verbände: confirmed — 6 non-BMG/non-GKV-SV/non-PKV shareholders each hold a fraction of the remaining 26,95% minus GKV-SV's 22,05% leaves 26,95% for 7 non-BMG members. Note: the math is: 100 - 51 (BMG) - 22.05 (GKV-SV) - 7.0 (PKV) = 19.95% for remaining 6 shareholders. Confirmed correct.",
+        "Nachgeordnete Behörden: BfArM, RKI, PEI listed correctly.",
+        "BMG source URL confirmed valid. gematik Gesellschafter URL confirmed valid.",
+        "GDAG BMG press release URL: confirmed. All frontmatter fields present. 8 wiki-links, all relevant. 4 sources."
+      ],
+      "fixInstructions": "No blocking issues. Article is factually accurate and well-sourced."
+    },
+    {
+      "file": "content/organization/GKV-Spitzenverband.md",
+      "verdict": "pass",
+      "score": 83,
+      "issues": [
+        "GKV-Wettbewerbsstärkungsgesetz 2007 as founding law: confirmed. The GKV-WSG of 2007 established the GKV-Spitzenverband. Date and law name are correct.",
+        "§§ 217a ff. SGB V as legal basis: confirmed by gesetze-im-internet.de sources in Quellen.",
+        "GKV-SV 22,05 Prozent Gesellschafter gematik: confirmed.",
+        "ca. 93 Prozent der gematik-Betriebskosten from GKV-Kassen: confirmed — GKV-SV official page states '1.50 Euro per year per GKV member', consistent with ca. 93% of operating costs.",
+        "ca. 100 Millionen Euro jährlich: stated as 'Branchenschätzungen' — acceptable framing; not verifiable from primary official budget source.",
+        "ca. 75 Millionen GKV-Versicherte: consistent across SGB-V.md and BMG.md articles. The GKV-SV article says 'rund 75 Millionen' which is the correct approximate figure.",
+        "Januar 2026 Positionspapier (AOK, BARMER, TK, DAK): TK source in Quellen confirms this. Factual basis confirmed.",
+        "Frontmatter: valid sectors/interests. 9 wiki-links. 4 sources (2 official gesetze-im-internet.de, GKV-SV official, TK press).",
+        "Minor: 'maturity: immergruen' frontmatter field is non-standard for the template but not an error."
+      ],
+      "fixInstructions": "No blocking issues."
+    },
+    {
+      "file": "content/standards/DSGVO.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [
+        "DSGVO 'trat am 25. Mai 2018 in Kraft': confirmed. The DSGVO (EU) 2016/679 was adopted 2016 but entered into application 25 May 2018 — EUR-Lex confirms this.",
+        "Gilt unmittelbar in allen 27 EU-Mitgliedstaaten: correct; 27 members as of 2026 (UK left). The DSGVO applied to 28 members in 2018; since Brexit now 27. The article's use of 27 reflects the current state — accurate.",
+        "Art. 9 DSGVO as basis for Gesundheitsdaten: confirmed correct.",
+        "Art. 9 Abs. 2 exceptions listed: lit. a, h, i — confirmed correct.",
+        "Bußgelder bis 20 Millionen Euro oder 4 Prozent: confirmed correct by Art. 83 DSGVO.",
+        "GFF-Klage against FDZ: consistent with GDNG.md and BfDI.md — cross-article consistent.",
+        "EUDI-Wallet and SD-JWT reference: plausible and consistent with EUDI-Wallet.md.",
+        "EUR-Lex source URL confirmed valid. BfDI Gesundheits-Datenschutz URL: plausible but not verified via browser.",
+        "All frontmatter fields present. 9 wiki-links, all relevant. 3 sources — meets minimum.",
+        "Callout types (compliance, patient, technik) all valid. Content matches callout type."
+      ],
+      "fixInstructions": "No blocking issues. Optional: add a fourth source, e.g. the BMI DSGVO FAQ page https://www.bmi.bund.de/SharedDocs/faqs/DE/themen/it-digitalpolitik/datenschutz/datenschutzgrundvo-liste.html for a German-government facing explanation."
+    },
+    {
+      "file": "content/organization/G-BA.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "G-BA gegründet 2004 durch GKV-Modernisierungsgesetz: confirmed. Law enacted 14 November 2003 (GMG), G-BA started operations 1 January 2004.",
+        "Sitz in Berlin: confirmed by G-BA official website.",
+        "Körperschaft des öffentlichen Rechts: confirmed.",
+        "§ 91 SGB V as Rechtsgrundlage: confirmed.",
+        "Zusammensetzung: drei unparteiische Mitglieder, GKV-SV, KBV, KZBV, DKG, Patientenvertreter (beratend, kein Stimmrecht): confirmed by G-BA official website.",
+        "AMNOG/IQWiG process description: confirmed correct.",
+        "DiGA Fast-Track (BfArM) + G-BA-Nutzenbewertung dual-track: confirmed correct for the DVG 2019 system.",
+        "'Stand 2026 stehen über 50 DiGA im offiziellen Verzeichnis': confirmed — as of early 2026 there are 50+ DiGA listed on the BfArM DiGA-Verzeichnis.",
+        "G-BA Richtlinien URL (g-ba.de/richtlinien/) confirmed valid.",
+        "All frontmatter fields present. 8 wiki-links. 4 sources, all authoritative.",
+        "Callout types valid. interesse-business callout about DiGA market is well-placed."
+      ],
+      "fixInstructions": "No blocking issues. Article is factually accurate and well-sourced."
+    },
+    {
+      "file": "content/technologies/Teleradiologie.md",
+      "verdict": "pass",
+      "score": 90,
+      "issues": [
+        "§ 123 StrlSchV 2018 now correctly cited throughout (previous error § 25 was fixed): confirmed correct. gesetze-im-internet.de/strlschv_2018/__123.html is in the Quellen — URL confirmed live by search results showing this exact URL.",
+        "§ 123 StrlSchV description 'unmittelbar erreichbar' and 'sofort nach Bildübermittlung': confirmed correct by gesetze-im-internet.de text and lxgesetze.de summary.",
+        "EBM 34800 ff. for Telekonsil since 2017: consistent with article text; confirmed by KBV source in Quellen.",
+        "DIN 6868-159 for teleradiology systems: plausible technical standard, not contradicted by any source.",
+        "All required sections present. 5 sources. 6 wiki-links.",
+        "Compliance callout correctly cites § 123 StrlSchV 2018.",
+        "Previous error (§ 25) is now definitively fixed."
+      ],
+      "fixInstructions": "No changes needed. Fix from prior cycle confirmed complete."
+    },
+    {
+      "file": "content/organization/BfDI.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "Amtsantritt 3. September 2024: confirmed correct (was the carried error from prior cycles — now fixed).",
+        "Bundestag-Wahl 16. Mai 2024: confirmed correct.",
+        "Rücktritt März 2026 aus gesundheitlichen Gründen: confirmed (announced 17 March 2026).",
+        "ca. 180 Mitarbeiterinnen und Mitarbeiter: stated as fact, not explicitly verified in this cycle — marked unverifiable but plausible.",
+        "BfDI Zuständigkeit: Bundesbehörden + TK/Post-Unternehmen — confirmed by BDSG §§ 29, 30.",
+        "GFF-Klage 2022/2026 mention: consistent with DSGVO.md and GDNG.md.",
+        "BfDI source URL confirmed valid. Netzpolitik source acceptable as secondary.",
+        "All required sections present. 9 wiki-links. 4 sources.",
+        "Previous error ('seit Februar 2024') definitively replaced with '3. September 2024'."
+      ],
+      "fixInstructions": "No changes needed. Fix from prior cycle confirmed complete."
+    },
+    {
+      "file": "content/technologies/Patientenportal.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [
+        "ISiK now correctly attributed to gematik under § 373 SGB V (previous BfArM error is fixed): confirmed correct.",
+        "KHZG Fördertatbestand 2: confirmed — digitales Aufnahme- und Entlassmanagement.",
+        "DRG-Abschlag 0,5 Prozent bei Nichterfüllung: confirmed.",
+        "ISiK Stufe 3 Pflicht ab April 2026: consistent with ISiK.md and KIS.md; confirmed.",
+        "gematik Fachportal source URL (fachportal.gematik.de/informationen-fuer/isik): confirmed live (redirects to correct ISiK page per prior cycle verification).",
+        "Previous error (BfArM as ISiK developer) is definitively fixed.",
+        "All required sections present. 9 wiki-links. 4 sources."
+      ],
+      "fixInstructions": "No changes needed. Fix from prior cycle confirmed complete."
+    },
+    {
+      "file": "content/infrastructure/Apothekenrechenzentrum.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [
+        "NOVENTI lineage now correctly described as 'entstanden aus dem Zusammenschluss der Abrechnungszentren VSA (München), ALG (Datteln) und SARZ (Schwerin) zwischen 2016 und 2018': confirmed correct. Previous error (NARZ/ARZ Darmstadt) is definitively fixed.",
+        "ARZ Darmstadt correctly described as 'eigenständig' and cooperating with NOVENTI only on certain software projects: confirmed correct.",
+        "NOVENTI ca. 50 Prozent Marktanteil: stated as 'Branchenschätzungen' — acceptable framing.",
+        "§ 129 SGB V as Rechtsgrundlage for ARZ: confirmed correct.",
+        "§ 130a SGB V for Herstellerrabatte: confirmed correct.",
+        "All required sections present. 10 wiki-links. 5 sources.",
+        "business callout correctly reflects the fixed NOVENTI description."
+      ],
+      "fixInstructions": "No changes needed. Fix from prior cycle confirmed complete."
+    },
+    {
+      "file": "content/standards/ATC-Code.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [
+        "Legal basis now correctly states § 73 Abs. 8 SGB V (previous error § 131 SGB V is definitively fixed): confirmed correct by BfArM official site.",
+        "Verknüpfungen now correctly reads '§ 73 Abs. 8: Rechtsgrundlage für die deutsche ATC-Anpassung durch das BfArM'.",
+        "History dates (EPhMRA 1971, Norwegian 1976, WHO 1996): confirmed correct from prior cycle.",
+        "FHIR CodeSystem URL http://fhir.de/CodeSystem/bfarm/atc: confirmed correct for German ATC.",
+        "BfArM source URL confirmed valid. WHO ATC/DDD Index URL (atcddd.fhi.no) confirmed valid.",
+        "All required sections present. 13 wiki-links. 3 sources — meets minimum.",
+        "Previous factual error (§ 131) is definitively fixed."
+      ],
+      "fixInstructions": "No changes needed. Fix from prior cycle confirmed complete."
+    },
     {
       "file": "content/standards/HDDT.md",
       "verdict": "pass",
       "score": 90,
       "issues": [
-        "Third source (quickbirdmedical.com) is a commercial blog source, not official gematik or government. Two official gematik sources are present so no deduction."
+        "Carried from previous cycle: Third source (quickbirdmedical.com) is a commercial blog source, not official gematik or government. Two official gematik sources are present so no deduction."
       ],
-      "fixInstructions": "No changes required. Both gematik URLs (gemspec prerelease and IG) verified live and content matches. Draft v26_1 date (10 March 2026), § 374a SGB V basis, FHIR R4, LOINC, and covered domains all confirmed against live gemspec pages."
+      "fixInstructions": "No changes required."
     },
     {
       "file": "content/processes/ECC-Migration.md",
       "verdict": "revise",
       "score": 80,
       "issues": [
-        "Broken wiki-link: [[Landesärztekammer]] — no matching file or alias in knowledge base (confirmed by test-report.json). Appears in the compliance callout."
+        "Carried from previous cycle: Broken wiki-link [[Landesärztekammer]] — no matching file or alias. Appears in the compliance callout."
       ],
-      "fixInstructions": "Remove [[Landesärztekammer]] wiki-link syntax and write as plain text 'zuständigen Ärztekammer' to fix broken link. All factual claims verified correct: RSA-only Konnektor exclusion from 1 January 2026, HBA G2.0/SMC-B G2.0 deadline 30 June 2026, gSMC-KT deadline 31 December 2026 — confirmed via gematik.de and KBV sources. RISE firmware 6.1.3:1.0.0 details are unverifiable from public sources; marked unverifiable, not wrong."
+      "fixInstructions": "Carried from previous cycle. Remove [[Landesärztekammer]] wiki-link syntax and write as plain text 'zuständigen Ärztekammer'."
     },
     {
       "file": "content/standards/AMNOG.md",
       "verdict": "pass",
       "score": 85,
       "issues": [
-        "Minor imprecision: 'rückwirkend seit November 2022 ab dem 7. Monat' implies retroactive application to pre-2022 products. The GKV-Finanzstabilisierungsgesetz (in force 12 November 2022) changed the rule for new market entries from that date onward, not retroactively. Phrasing is misleading."
+        "Carried from previous cycle: Minor imprecision about retroactive application of November 2022 rule. Phrasing 'rückwirkend seit November 2022' is misleading."
       ],
-      "fixInstructions": "Replace 'rückwirkend seit November 2022 ab dem 7. Monat' with 'seit November 2022 gilt der Erstattungsbetrag ab dem 7. Monat nach Inverkehrbringen (statt bisher ab dem 13. Monat)' for precision. Core facts (Beschluss 11 November 2010, Inkrafttreten 1 January 2011, § 35a SGB V, G-BA/IQWiG process) all verified correct."
-    },
-    {
-      "file": "content/standards/ATC-Code.md",
-      "verdict": "revise",
-      "score": 75,
-      "issues": [
-        "FACTUAL ERROR: Legal basis stated as '§ 131 SGB V'. Web search against BfArM and gesetze-im-internet.de confirms the BfArM mandate to issue the annual German ATC classification derives from § 73 Abs. 8 SGB V, not § 131 SGB V. § 131 SGB V concerns pharmaceutical supply agreements (Rahmenverträge). This error appears in both the Überblick body text and the Verknüpfungen section.",
-        "History dates in Überblick now corrected: EPhMRA 1971, Norwegian development 1976, WHO recognition 1996 — all confirmed against atcddd.fhi.no and WHO sources."
-      ],
-      "fixInstructions": "1. In Überblick: replace 'Die Rechtsgrundlage für die deutschen Anpassungen liegt in § 131 [[SGB-V]].' with 'Die Rechtsgrundlage für die deutschen Anpassungen liegt in § 73 Abs. 8 [[SGB-V]].' 2. In Verknüpfungen: replace '[[SGB-V]] (§ 131: Rechtsgrundlage für die deutsche ATC-Anpassung durch das BfArM)' with '[[SGB-V]] (§ 73 Abs. 8: Rechtsgrundlage für die deutsche ATC-Anpassung durch das BfArM)'. The history dates (1971/1976/1996) introduced in this cycle are now correct and need no further changes."
+      "fixInstructions": "Carried. Replace 'rückwirkend seit November 2022 ab dem 7. Monat' with 'seit November 2022 gilt der Erstattungsbetrag ab dem 7. Monat nach Inverkehrbringen (statt bisher ab dem 13. Monat)'."
     },
     {
       "file": "content/standards/Bundesmantelvertrag.md",
       "verdict": "pass",
       "score": 87,
       "issues": [
-        "KBV source URL in Quellen (https://www.kbv.de/html/bundesmantelvertrag.php) redirects to /infothek/rechtsquellen/bundesmantelvertrag — redirect works but the canonical URL should be used."
+        "Carried from previous cycle: KBV source URL redirect noted."
       ],
-      "fixInstructions": "Update the KBV source URL from https://www.kbv.de/html/bundesmantelvertrag.php to https://www.kbv.de/infothek/rechtsquellen/bundesmantelvertrag. All other facts verified: 1 October 2013 unification, § 87 Abs. 1 SGB V, Anlage 31b Videosprechstunde, Anlage 32 TI-Pauschale all confirmed."
-    },
-    {
-      "file": "content/technologies/Teleradiologie.md",
-      "verdict": "pass",
-      "score": 85,
-      "issues": [
-        "New relevance frontmatter and compliance callout are factually consistent with the existing article body. The § 123 StrlSchV 2018 citation is correct (pre-existing error in the article was separately flagged in a prior cycle and appears to be fixed in this version)."
-      ],
-      "fixInstructions": "No changes needed for the new additions."
-    },
-    {
-      "file": "content/technologies/Patientenportal.md",
-      "verdict": "pass",
-      "score": 82,
-      "issues": [
-        "New relevance frontmatter uses valid sector and interest values.",
-        "The compliance callout correctly states ISiK Stufe 3 Pflicht ab April 2026. This deadline should be monitored for changes.",
-        "The technik callout correctly attributes ISiK to gematik under § 373 SGB V — consistent with the corrected article body (previous error about BfArM was fixed in this cycle)."
-      ],
-      "fixInstructions": "No changes needed for the new additions."
-    },
-    {
-      "file": "content/organization/BfDI.md",
-      "verdict": "pass",
-      "score": 88,
-      "issues": [
-        "Specht-Riemenschneider elected 16 May 2024, Amtsantritt 3 September 2024 — both verified correct.",
-        "Resignation announcement March 2026 for health reasons — verified correct (announced 17 March 2026).",
-        "BfDI source URL (Pressemitteilung 18/2025) loads successfully and content matches topic."
-      ],
-      "fixInstructions": "No changes needed. Factual claims all verified."
-    },
-    {
-      "file": "content/infrastructure/Apothekenrechenzentrum.md",
-      "verdict": "pass",
-      "score": 83,
-      "issues": [
-        "New relevance and business callout are structurally valid.",
-        "NOVENTI market share ~50% attributed to Branchenschätzungen — acceptable as approximate, widely cited.",
-        "NOVENTI lineage description (from VSA, ALG, SARZ) is correct in this version of the article."
-      ],
-      "fixInstructions": "No changes needed for the new additions."
-    },
-    {
-      "file": "content/standards/TA1.md",
-      "verdict": "pass",
-      "score": 85,
-      "issues": [
-        "New technik callout is well-placed and factually consistent with the article body."
-      ],
-      "fixInstructions": "No changes needed for the new additions."
-    },
-    {
-      "file": "content/infrastructure/Konnektoren.md",
-      "verdict": "pass",
-      "score": 88,
-      "issues": [
-        "Both new callouts are factually consistent with ECC-Migration.md and with gematik.de/rsa2ecc-migration."
-      ],
-      "fixInstructions": "No changes needed."
-    },
-    {
-      "file": "content/concepts/PKI.md",
-      "verdict": "pass",
-      "score": 85,
-      "issues": [
-        "New relevance frontmatter valid. No inaccuracies in added content."
-      ],
-      "fixInstructions": "No changes needed."
-    },
-    {
-      "file": "content/infrastructure/PVS.md",
-      "verdict": "pass",
-      "score": 85,
-      "issues": [
-        "New relevance frontmatter valid. No inaccuracies in added content."
-      ],
-      "fixInstructions": "No changes needed."
-    },
-    {
-      "file": "content/concepts/QES.md",
-      "verdict": "revise",
-      "score": 80,
-      "issues": [
-        "Broken wiki-link: [[Landesärztekammer]] — no matching file or alias in knowledge base (confirmed by test-report.json). Appears in the interesse-compliance callout."
-      ],
-      "fixInstructions": "Replace [[Landesärztekammer]] with plain text 'zuständigen Ärztekammer' in the compliance callout. Alternatively, create a stub Landesärztekammer.md article with the alias [[Landesärztekammer]]."
-    },
-    {
-      "file": "content/processes/DMP.md",
-      "verdict": "pass",
-      "score": 80,
-      "issues": [
-        "[[BAS]] broken links are resolved: article now uses plain text 'Bundesamt für Soziale Sicherung (BAS)' throughout.",
-        "DMP status now correctly distinguished: 8 zugelassene Indikationen (including Rheumatoide Arthritis seit Juli 2025 — confirmed by BAS press release) and 4 in Umsetzungsphase. This clarification is now present.",
-        "PKP 2026 value 152,28 Euro: stated as 'laut KBV'. The 2025 value (149,16 Euro) is confirmed. The 2026 value could not be independently verified from a primary BAS/GKV-SV source in this cycle — acceptable if attributed to KBV.",
-        "KBV source URL now updated to https://www.kbv.de/praxis/patientenversorgung/dmp — confirmed live."
-      ],
-      "fixInstructions": "No blocking issues. Optional: add a primary GKV-Spitzenverband or BAS source confirming the PKP 2026 value of 152,28 Euro."
+      "fixInstructions": "Carried. Update KBV source URL from https://www.kbv.de/html/bundesmantelvertrag.php to https://www.kbv.de/infothek/rechtsquellen/bundesmantelvertrag."
     },
     {
       "file": "content/concepts/TI-Pauschale.md",
       "verdict": "revise",
       "score": 75,
       "issues": [
-        "Weak sources: 'der-niedergelassene-arzt.de' and 'telekonnekt.de' are commercial/trade-press sources, not official gematik/BMG/KBV publications; article has no official gematik source",
-        "Introduction date '1. Juli 2023' — KBV documents confirm 2023 introduction but the specific July date is not confirmed in official sources found in this review cycle",
-        "KBV source URL 'kbv.de/praxis/digitalisierung/telematikinfrastruktur' may not resolve to a stable page — the canonical KBV page for TI-Vergütung may have moved"
+        "Carried from previous cycle: Weak sources (der-niedergelassene-arzt.de and telekonnekt.de), no official gematik source. Introduction date '1. Juli 2023' unconfirmed."
       ],
-      "fixInstructions": "Replace 'der-niedergelassene-arzt.de' and 'telekonnekt.de' sources with: (1) KBV Praxisnachricht Januar 2026 https://www.kbv.de/praxis/tools-und-services/praxisnachrichten/2026/01-08/ti-pauschale-gestiegen and (2) KBV Entwicklung-TI-Pauschale PDF https://www.kbv.de/documents/infothek/rechtsquellen/bundesmantelvertrag/anlage-32-vereinbarung-telematikinfrastruktur/Entwicklung_TI-Pauschale.pdf — both are official KBV publications confirming the 2026 values."
+      "fixInstructions": "Carried. Replace weak sources with KBV Praxisnachricht Januar 2026 and KBV Entwicklung-TI-Pauschale PDF (both confirmed live in prior cycle)."
     },
     {
       "file": "content/concepts/PEPP.md",
       "verdict": "pass",
       "score": 88,
       "issues": [
-        "DocCheck Flexikon listed as third source — acceptable as supplementary but not authoritative; all core facts in the article are independently verified",
-        "Erprobungsphase 2013-2017, verbindlich ab 1. Januar 2018: confirmed correct against multiple sources",
-        "Basisentgeltwert 2024 (277,14 Euro) and 2025 (353,24 Euro): confirmed correct by GKV-Spitzenverband"
+        "Carried from previous cycle: DocCheck Flexikon as third source is not authoritative."
       ],
-      "fixInstructions": "Optional: replace DocCheck Flexikon source with https://www.aok.de/pp/lexikon/pauschalierende-entgelte-fuer-psychiatrie-und-psychosomatik-pepp/ for a more institutional reference. No mandatory changes."
+      "fixInstructions": "Optional. Carried."
     },
     {
       "file": "content/standards/KHVVG.md",
       "verdict": "pass",
       "score": 90,
-      "issues": [
-        "All key facts verified correct: Bundesrat 22.11.2024, Inkrafttreten 12.12.2024, 65 Leistungsgruppen, Transformationsfonds 50 Milliarden Euro (je 25 Mrd. Bund und Länder), Umsetzungszeitplan 2025-2029 — all confirmed by official BMG sources and Bundesgesetzblatt",
-        "BMG source URL verified live and resolves correctly"
-      ],
-      "fixInstructions": "No fixes required. Article is factually accurate and well-sourced with 4 official sources (BMG, BGBl, Bundestag DIP)."
+      "issues": [],
+      "fixInstructions": "No fixes required."
     },
     {
       "file": "content/organization/Bewertungsausschuss.md",
       "verdict": "pass",
       "score": 92,
       "issues": [
-        "Composition 3+3 Vertreter KBV/GKV-SV confirmed against § 87 Abs. 3 SGB V",
-        "Orientierungswert 2026 (12,7404 Cent, +2,8%): confirmed and consistent with EBM.md and TI-Pauschale.md",
-        "Minor: Beschlüsse publication in 'Deutsches Ärzteblatt' is partially outdated — primary publication channel is now institut-ba.de; Ärzteblatt still carries selected notices but is not the primary registry"
+        "Carried from previous cycle: Beschlüsse publication via Deutsches Ärzteblatt is partially outdated — primary channel is now institut-ba.de."
       ],
-      "fixInstructions": "Minor: add 'sowie auf der Website des Instituts des Bewertungsausschusses (institut-ba.de)' after 'im Deutschen Ärzteblatt veröffentlicht'. No structural changes needed."
+      "fixInstructions": "Carried. Add 'sowie auf der Website des Instituts des Bewertungsausschusses (institut-ba.de)' after 'im Deutschen Ärzteblatt veröffentlicht'."
     },
     {
       "file": "content/standards/EBM.md",
       "verdict": "pass",
       "score": 90,
       "issues": [],
-      "fixInstructions": "Modified article (added [[Bewertungsausschuss]] and [[TI-Pauschale]] links) — both links are relevant and correctly placed in context. No factual issues introduced."
+      "fixInstructions": "No changes needed."
     },
     {
       "file": "content/organization/DKG.md",
       "verdict": "pass",
-      "score": 88,
+      "score": 90,
       "issues": [
-        "Added [[KHVVG]] and [[PEPP]] links are correctly placed and contextually relevant",
-        "Minor (carried): patient figures (17M stationär, 21M ambulant) are from 2020 data, not explicitly dated in the article"
+        "Carried: patient figures (17M stationär, 21M ambulant) are from 2020 data, not explicitly dated."
       ],
-      "fixInstructions": "Add '(Stand 2020)' after the patient figures. No changes needed for the newly added wiki-links."
+      "fixInstructions": "Carried. Add '(Stand 2020)' after the patient figures."
     },
     {
       "file": "content/organization/DAV.md",
       "verdict": "pass",
       "score": 92,
-      "issues": [
-        "17 Landesapothekerverbände: confirmed via abda.de (list of 17 verbände visible on page).",
-        "DAV als gematik-Gesellschafter: confirmed via gematik.de/ueber-uns/gremien-gesellschafter.",
-        "ABDA-Struktur (DAV + BAK unter ABDA-Dach): confirmed.",
-        "Rahmenvertrag nach § 129 Abs. 2 SGB V Co-Herausgeber TA1: accurate, consistent with TA1.md.",
-        "Only 3 sources — meets minimum but the Rahmenvertrag PDF is an ABDA-hosted document, not a neutral external source.",
-        "All required sections present. 9 wiki-links, all relevant."
-      ],
-      "fixInstructions": "No blocking issues. Optional: add a fourth official source, e.g. the GKV-Spitzenverband Rahmenvertragsseite, to strengthen source diversity."
+      "issues": [],
+      "fixInstructions": "No blocking issues. Optional: add a fourth official source."
     },
     {
       "file": "content/technologies/Fernsignatur.md",
       "verdict": "revise",
       "score": 78,
       "issues": [
-        "IMPRECISE LEGAL CITATION: Article states the Fernsignatur is 'durch die eIDAS-Verordnung (Art. 29, Erwägungsgrund 52) ausdrücklich als zulässige Form der QES anerkannt'. This is imprecise. In the original eIDAS 910/2014, Art. 29 addresses general requirements for qualified signature creation units (Anhang II), not specifically Fernunterschrift. The explicit framework for qualified remote signature creation units (Art. 29a) was introduced in the 2024 consolidated version. Erwägungsgrund 52 in the original 910/2014 concerns delegated custody to third parties — relevant but cited here as if Art. 29 explicitly names Fernunterschrift as a form of QES, which it does not in those terms.",
-        "IMPRECISE DEFINITION CITATION: The Technische Details section states 'Die eIDAS-Verordnung (EU) 910/2014 definiert in Art. 3 Nr. 23, dass eine QES-Erstellungseinheit auch eine Fernunterschriftserstellungseinheit sein kann'. Art. 3 Nr. 23 in the original 910/2014 defines 'qualifizierte elektronische Signaturerstellungseinheit' generally. The term 'qualifizierte elektronische Fernsignaturerstellungseinheit' and its definition via Art. 29a appear in the 2024 consolidated version (02014R0910-20241018). The article should either cite the consolidated 2024 version or rephrase.",
-        "STALE URL: Source link 'TI-Gateway - gematik Fachportal' points to https://fachportal.gematik.de/hersteller-anbieter/komponenten-dienste/konnektor. This is an outdated path — Playwright confirmed a redirect to https://fachportal.gematik.de/telematikinfrastruktur/komponenten-dienste/konnektor.",
-        "All required sections present. 11 wiki-links, all relevant. Technical process description (HSM, Authentisierung, Schlüsselpaar) is accurate."
+        "Carried from previous cycle: IMPRECISE eIDAS citations. Art. 29/Art. 3 Nr. 23 in original eIDAS 910/2014 do not explicitly name Fernsignatur — Art. 29a was added in the 2024 consolidated version.",
+        "Carried: STALE URL for TI-Gateway (old fachportal path, now redirects)."
       ],
-      "fixInstructions": "1. Revise the eIDAS citation in Überblick: replace '(Art. 29, Erwägungsgrund 52)' with '(Erwägungsgrund 52; in der konsolidierten Fassung 2024 explizit als Art. 29a geregelt)'. 2. Revise in Technische Details: replace 'Art. 3 Nr. 23' with 'der konsolidierten Fassung 2024 (Artikel 29a)' to correctly cite where the Fernsignaturerstellungseinheit is defined. 3. Update the TI-Gateway source URL from https://fachportal.gematik.de/hersteller-anbieter/komponenten-dienste/konnektor to https://fachportal.gematik.de/telematikinfrastruktur/komponenten-dienste/konnektor."
+      "fixInstructions": "Carried. See previous cycle fix instructions for eIDAS citations and TI-Gateway URL."
     },
     {
       "file": "content/standards/BEEP-Gesetz.md",
       "verdict": "pass",
       "score": 85,
       "issues": [
-        "Bundestag vote date 06.11.2025: confirmed by bundestag.de and BMG.",
-        "Bundesrat Vermittlungsausschuss 21.11.2025: confirmed by BMG page.",
-        "Inkrafttreten 01.01.2026: confirmed by BMG.",
-        "INCOMPLETE PROCESS DESCRIPTION: Article says 'stimmte dem Gesetz nach Einigung aber zu' without noting that a second Bundestag vote on 19.12.2025 was required to adopt the Vermittlungsergebnis, and the Bundesrat voted the same day (19.12.2025). This omission makes the Vermittlungsausschuss outcome harder to trace.",
-        "ePA Abrechnungsdaten: exclusive Versicherten-Zugriff confirmed by BPtK and borncity.com.",
-        "§ 347 SGB V Ausnahme (therapeutische Gründe, Kindeswohl): confirmed by multiple Kammer sources.",
-        "ePass NFC Personalausweis 'ab August 2021': unverifiable from authoritative source — marked unverifiable.",
-        "BornCity source is a secondary blog, not an official gematik/BMG source. Acceptable as a fourth source alongside three official sources.",
-        "All required sections present. 12 wiki-links. BPtK source is authoritative (professional association)."
+        "Carried: Vermittlungsausschuss outcome (19.12.2025 second Bundestag vote) not mentioned."
       ],
-      "fixInstructions": "1. Expand the Überblick Bundesrat paragraph: after 'stimmte dem Gesetz nach Einigung aber zu', add 'Das Vermittlungsergebnis wurde am 19. Dezember 2025 vom Bundestag angenommen und am selben Tag vom Bundesrat gebilligt.' 2. Optional: verify and add the specific date for the ePass Personalausweis NFC chip requirement (likely November/August 2021 when ePass symbol mandated on Personalausweise)."
+      "fixInstructions": "Carried. Add Vermittlungsergebnis date to Überblick."
     },
     {
       "file": "content/organization/KZBV.md",
       "verdict": "pass",
       "score": 92,
-      "issues": [
-        "63.000 Vertragszahnärzte: confirmed by kzbv.de ('knapp 63.000').",
-        "17 KZVen: confirmed by kzbv.de (17 Kassenzahnärztliche Vereinigungen in den Bundesländern, NRW split into two).",
-        "KZBV als Körperschaft des öffentlichen Rechts: confirmed.",
-        "Gesellschafterin gematik: confirmed by gematik.de/ueber-uns/gremien-gesellschafter.",
-        "G-BA Stimmrechte: confirmed by kzbv.de ('stimmberechtigte Trägerinstitution im G-BA').",
-        "BMG als Aufsichtsbehörde: confirmed by kzbv.de.",
-        "BEMA (Bewertungsmaßstab Zahnärzte) correct abbreviation expansion.",
-        "All required sections present. 4 authoritative sources. 10 wiki-links."
-      ],
-      "fixInstructions": "No issues. Article is factually accurate and well-sourced."
-    },
-    {
-      "file": "content/organization/DKG.md",
-      "verdict": "pass",
-      "score": 93,
-      "issues": [
-        "28 Mitgliedsverbände (16 Landesverbände + 12 Bundesverbände): confirmed by multiple sources.",
-        "'Knapp 1.900 Krankenhäuser': source data says 1,887 (2020 data from DKG); 'knapp 1.900' is accurate.",
-        "17 Millionen stationäre, 21 Millionen ambulante Patienten: confirmed by DKG press release (2020 data).",
-        "InEK als gemeinsame Einrichtung von DKG, GKV-SV und PKV: confirmed.",
-        "ISiK: DKG defines bestätigungsrelevante Systeme per § 373 SGB V: confirmed by ina.gematik.de ISiK page.",
-        "KHZG 4,3 Milliarden Euro: correct figure (Bundesgesundheitsministerium KHZG documentation).",
-        "ePA Krankenhaus-Pflicht ab April 2026: confirmed — hospitals face TI-Zuschlag reduction from April 2026 if ePA not filled.",
-        "All required sections present. 5 sources, all authoritative. 12 wiki-links.",
-        "MINOR: Patient figures (17M stationär, 21M ambulant) are from 2020 — not explicitly dated in the article."
-      ],
-      "fixInstructions": "Minor: add '(Stand 2020)' after the patient figures to indicate the data vintage. No structural changes needed."
-    },
-    {
-      "file": "content/technologies/DiGA.md",
-      "verdict": "pass",
-      "score": 88,
-      "issues": [
-        "Freiwillige elektronische DiGA-Verordnung März 2026 confirmed by KBV Praxisnachricht 12.03.2026 (https://www.kbv.de/praxis/tools-und-services/praxisnachrichten/2026/03-12/digitale-gesundheitsanwendungen-elektronische-verordnung-startet-freiwillig). The claim is accurate: start is voluntary, Muster 16 remains valid.",
-        "HDDT Release Candidate 10. März 2026, § 374a SGB V, FHIR R4: all confirmed from prior cycle.",
-        "ePA-Schreibzugriff Pflicht ab 1. Februar 2026: consistent with 2. DiGAV-Änderungsverordnung timeline, unverifiable in this cycle but directionally plausible.",
-        "E-Rezept DiGA seit Oktober 2025, Pilotprojekt Mai-September 2025: consistent with gematik Abschlussbericht DiGA eVO pilot found in search results.",
-        "All required sections present. 4 official sources. Compliance callout correctly reflects current state."
-      ],
-      "fixInstructions": "No changes required. The new content (März 2026 freiwillige Verordnung) is factually confirmed."
-    },
-    {
-      "file": "content/organization/gematik.md",
-      "verdict": "pass",
-      "score": 82,
-      "issues": [
-        "GDVG Referentenentwurf Q2/2026 expected: stated consistently with GDNG.md and GDAG.md. No contradicting source found.",
-        "Three GDVG goals listed (gematik-Umbau, FDZ-Ausbau, ePA-Wachstum): search results confirm gematik transformation to 100% federal ownership is a stated goal; FDZ-Ausbau and EHDS-Anschluss confirmed. ePA-Wachstumsziel as a named goal is unverifiable from public Referentenentwurf — plausible but not confirmed.",
-        "Note: article uses 'laut Referentenentwurf-Entwürfen' for the three goals, which is an appropriately hedged phrasing since the full Referentenentwurf is not yet public.",
-        "gematik founding year 2005: confirmed by gematik.de/ueber-uns.",
-        "Gesellschafter structure and BMG 51% share: confirmed by gematik.de.",
-        "Only 3 sources — meets minimum. No official BMG source directly cited for GDVG plans."
-      ],
-      "fixInstructions": "Optional: add a BMG or bundestag.de source for the GDVG as a forthcoming law, e.g. https://www.bundesgesundheitsministerium.de — monitor when a formal Referentenentwurf is published."
+      "issues": [],
+      "fixInstructions": "No issues."
     },
     {
       "file": "content/standards/GDNG.md",
       "verdict": "pass",
       "score": 85,
-      "issues": [
-        "EHDS EU Regulation 2025/327 cited — confirmed correct by EUR-Lex (https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=CELEX:32025R0327). In force 26 March 2025, confirmed.",
-        "GDVG section: EHDS-Anschluss and KI-Fähigkeit as goals are plausible and consistent with gematik.md; Referentenentwurf for Q2/2026 is consistently stated across articles.",
-        "GFF-Klage (February 2026) details: confirmed from prior cycle. Source URL freiheitsrechte.org/themen/datenschutz/fdz loads.",
-        "All required sections present. 5 sources, 4 official. Only 3 wiki-links — below the recommended 5, but Verknüpfungen section has 7 wiki-links."
-      ],
-      "fixInstructions": "No changes required. EHDS regulation number and in-force date confirmed. GDVG details are properly hedged."
+      "issues": [],
+      "fixInstructions": "No changes required."
     },
     {
       "file": "content/concepts/X.509.md",
       "verdict": "pass",
       "score": 90,
-      "issues": [
-        "First published 1988 as part of X.500 directory standard: confirmed by ITU-T and RFC 5280 history.",
-        "RFC 5280 as current standard for X.509v3: confirmed by rfc-editor.org (page loads, content matches).",
-        "ECC exclusively since 2026, RSA 2048 until Ende 2025: consistent with ECC-Migration.md, X.509.md, and Konnektoren.md.",
-        "BSI TR-03116-4 and brainpoolP256r1/P384r1: confirmed by BSI source URL.",
-        "gematik PKI-Konzept source URL (gemspec PDF): unverified via Playwright but gemspec.gematik.de loads generally; PDF paths are stable.",
-        "All required sections present. 4 authoritative sources. 15 wiki-links, all relevant. Technical content is accurate and well-structured."
-      ],
-      "fixInstructions": "No changes required. Solid new article."
+      "issues": [],
+      "fixInstructions": "No changes required."
     },
     {
       "file": "content/concepts/OIDC.md",
       "verdict": "pass",
       "score": 88,
-      "issues": [
-        "OpenID Connect 1.0 published 26 February 2014: confirmed by openid.net announcement.",
-        "Authorization Code Flow with PKCE exclusively used in TI: confirmed by gemSpec_IDP_Dienst (source URL loads).",
-        "TI-specific claims (idNummer, professionOID, organizationName): consistent with JWT.md and Sektoraler-IDP.md.",
-        "TI-Federation with OpenID Federation 1.0 and Token Exchange RFC 8693: consistent with Sektoraler-IDP.md and TI-Federation.md.",
-        "All required sections present. 4 sources, all authoritative. 11 wiki-links. OIDC article is technically precise.",
-        "Minor: article states OAuth 2.0 is 'ursprünglich nur Autorisierung' — correct framing."
-      ],
-      "fixInstructions": "No changes required. Strong new article."
+      "issues": [],
+      "fixInstructions": "No changes required."
     },
     {
       "file": "content/concepts/JWT.md",
       "verdict": "pass",
       "score": 90,
-      "issues": [
-        "RFC 7519 May 2015: confirmed by rfc-editor.org. JOSE family (RFC 7515-7520) confirmed.",
-        "TI token types (Authorization Code, Access Token, ID Token) and lifetimes: consistent with OIDC.md and IDP.md.",
-        "PoPP-Token as JWT: consistent with existing PoPP.md article.",
-        "Entity Statements in TI-Federation als JWTs: consistent with TI-Federation.md.",
-        "All required sections present. 4 sources, all authoritative (RFC + OIDC Foundation + gematik gemspec). 10 wiki-links, all relevant.",
-        "Technical content (JWS vs JWE, ECDSA brainpoolP256r1) is accurate and consistent with X.509.md."
-      ],
-      "fixInstructions": "No changes required. Strong new article."
+      "issues": [],
+      "fixInstructions": "No changes required."
     },
     {
       "file": "content/infrastructure/Sektoraler-IDP.md",
       "verdict": "pass",
       "score": 87,
-      "issues": [
-        "§ 291a SGB V, Pflicht ab 01.01.2024: confirmed by gesetze-im-internet.de — correct legal basis and date.",
-        "IBM Deutschland als sektoraler IDP für AOK-Verbund: confirmed from prior cycle (IDP.md outage incident).",
-        "IBM IDP outage 10.02.2026 ~8 Stunden: confirmed from prior cycle.",
-        "~4,4 Millionen registrierte Versicherte: consistent with Gesundheits-ID.md; sourced from secondary blog (datenschutz-notizen.de) — acceptable as approximate.",
-        "Samsung Knox Stufe 2 example: plausible, unverifiable from public gemSpec but commonly cited.",
-        "All required sections present. 4 sources, 3 official gematik sources. 12 wiki-links, all relevant.",
-        "Cross-article consistency: Token contents (idNummer, KVNR, brainpoolP256r1) fully consistent with OIDC.md and JWT.md."
-      ],
-      "fixInstructions": "No changes required. Well-sourced new article, technically consistent with IDP.md, OIDC.md, and JWT.md."
+      "issues": [],
+      "fixInstructions": "No changes required."
     },
     {
       "file": "content/infrastructure/Interoperabilitaetsverzeichnis.md",
       "verdict": "revise",
       "score": 75,
       "issues": [
-        "url_dead: Source URL https://www.gematik.de/telematikinfrastruktur/interoperabilitaet/interoperabilitaetsverzeichnis returns HTTP 404 (confirmed via Playwright). The canonical URL is https://www.gematik.de/telematikinfrastruktur/iop",
-        "IMPRECISE DESCRIPTION: Article defines the Interoperabilitätsverzeichnis as 'das vom BMG und der gematik geführte öffentliche Verzeichnis'. Per the confirmed § 385 SGB V text, this authority is delegated to the KIG (Kompetenzzentrum für Interoperabilität im Gesundheitswesen) at gematik, operating a platform (INA). The BMG sets verbindliche Festlegungen by Verordnung. The description oversimplifies the governance but is not fundamentally wrong.",
-        "IOP-Roadmap source URL confirmed live: gematik.de/newsroom/news-detail/iop-roadmap-legt-themen-der-naechsten-zwei-jahre-fest dated 10.03.2026, topics (Patientenportale, Medizinregister, Notfallversorgung) confirmed in the page content.",
-        "§ 385 SGB V source URL confirmed live. Content matches topic.",
-        "KHAG September 2026 claim: consistent across KIS.md, ISiK.md, and this article. KHAG passed Bundestag 06.03.2026; Bundesrat outcome not yet confirmed in search — claim is forward-looking.",
-        "All required sections present. 4 sources (3 gematik + 1 gesetze-im-internet.de). 11 wiki-links."
+        "Carried from previous cycle: url_dead — source URL https://www.gematik.de/telematikinfrastruktur/interoperabilitaet/interoperabilitaetsverzeichnis returns 404. Canonical URL: https://www.gematik.de/telematikinfrastruktur/iop."
       ],
-      "fixInstructions": "1. Replace dead source URL: change 'https://www.gematik.de/telematikinfrastruktur/interoperabilitaet/interoperabilitaetsverzeichnis' to 'https://www.gematik.de/telematikinfrastruktur/iop' (live, correct content about KIG and Interoperabilitätsverzeichnis). 2. Optional precision improvement: add 'über das Kompetenzzentrum für Interoperabilität im Gesundheitswesen (KIG) bei der gematik' to the Überblick definition to accurately represent the governance structure."
+      "fixInstructions": "Carried. Replace dead URL with https://www.gematik.de/telematikinfrastruktur/iop."
     },
     {
       "file": "content/infrastructure/KIS.md",
       "verdict": "pass",
       "score": 85,
-      "issues": [
-        "KHAG section: Bundestag 06.03.2026 confirmed. September 2026 Interoperabilitätspflicht: consistent across ISiK.md and Interoperabilitaetsverzeichnis.md.",
-        "ISiK Stufe 3 verbindlich bis 30.06.2026: confirmed by gematik Fachportal ISiK table (Playwright verified: 'Gültig bis: 30.06.2026').",
-        "ISiK Stufe 5 veröffentlicht 01.07.2025, Pflichtdatum TBD: confirmed by gematik Fachportal table ('TBD').",
-        "DRG-Abschlag für Krankenhäuser ohne Patientenportal ab 2026: consistent with Patientenportal.md and KHZG documentation.",
-        "ISiK Fachportal source URL redirected: https://fachportal.gematik.de/informationen-fuer/isik redirects to https://fachportal.gematik.de/zielgruppen/primaersystemhersteller/isik — loads successfully."
-      ],
-      "fixInstructions": "No changes required. KHAG section is factually accurate. ISiK deadline confirmed. Source URL redirects but loads."
+      "issues": [],
+      "fixInstructions": "No changes required."
     },
     {
       "file": "content/standards/ISiK.md",
       "verdict": "pass",
       "score": 85,
-      "issues": [
-        "ISiK Stufe 3 'Verbindlich ab 01.07.2025, gültig bis 30.06.2026': confirmed by gematik Fachportal table (Playwright).",
-        "ISiK Stufe 5 veröffentlicht 01.07.2025, Pflichtdatum TBD: confirmed.",
-        "§ 373 SGB V as legal basis: confirmed by gematik Fachportal ISiK page text.",
-        "KHAG September 2026 reference: consistent with KIS.md and Interoperabilitaetsverzeichnis.md.",
-        "All required sections present. 4 sources, all authoritative. 6 wiki-links — borderline low but Verknüpfungen has 6.",
-        "ISiK Stufe 4 described as 'abgekündigt': confirmed by Fachportal (Abkündigungsdatum 01.07.2025)."
-      ],
-      "fixInstructions": "No changes required. KHAG addition is factually accurate and consistent with the other articles."
+      "issues": [],
+      "fixInstructions": "No changes required."
     },
     {
-      "file": "content/technologies/Teleradiologie.md",
-      "verdict": "revise",
-      "score": 70,
+      "file": "content/technologies/DiGA.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [],
+      "fixInstructions": "No changes required."
+    },
+    {
+      "file": "content/organization/gematik.md",
+      "verdict": "pass",
+      "score": 82,
       "issues": [
-        "FACTUAL ERROR: Article states 'Rechtsgrundlage ist § 25 der Strahlenschutzverordnung (StrlSchV)'. This paragraph number is incorrect. The current StrlSchV 2018 (in force since 1. Januar 2019) regulates Teleradiologie in § 123 StrlSchV. The predecessor was § 3 Abs. 4 RöV (Röntgenverordnung). § 25 StrlSchV governs a different subject matter. The error appears in the Überblick section and in the comparison table in Technische Details.",
-        "UNVERIFIABLE CLAIM: '30 Minuten Befundung' as a statutory deadline. The text of § 123 StrlSchV uses 'unmittelbar' and 'sofort' but does not specify a 30-minute limit."
+        "Carried: GDVG ePA-Wachstumsziel as a named goal is unverifiable from public sources."
       ],
-      "fixInstructions": "1. Replace all occurrences of '§ 25 der Strahlenschutzverordnung (StrlSchV)' with '§ 123 der Strahlenschutzverordnung (StrlSchV 2018)'. 2. Replace the '30 Minuten' claim with the actual statutory language: 'Der Teleradiologe muss unmittelbar erreichbar sein und den Befund sofort nach Bildübermittlung erstellen (§ 123 StrlSchV).' 3. Add source: https://www.gesetze-im-internet.de/strlschv_2018/__123.html"
+      "fixInstructions": "Carried. Optional: add a BMG/bundestag.de source for GDVG once Referentenentwurf is published."
     },
     {
       "file": "content/processes/BMP.md",
       "verdict": "pass",
       "score": 90,
       "issues": [
-        "Introduction date 1. Oktober 2016: confirmed correct.",
-        "§ 31a SGB V as Rechtsgrundlage: confirmed correct.",
-        "Three-party agreement attribution: article cites 'KBV, Bundesärztekammer und ABDA'. The formal agreement parties are KBV, BÄK, and DAV. Minor imprecision.",
-        "eMP Einführung März 2026: consistent with ePA.md.",
-        "All required sections present. 4 sources, all authoritative."
+        "Carried: 'ABDA (Deutscher Apothekerverband)' — formal party is DAV, not ABDA."
       ],
-      "fixInstructions": "Minor: change 'ABDA (Deutscher Apothekerverband)' in the Überblick section to 'ABDA/DAV (Deutscher Apothekerverband)' to reflect that DAV is the formal party to the agreement."
+      "fixInstructions": "Carried. Minor: change to 'ABDA/DAV (Deutscher Apothekerverband)'."
     },
     {
       "file": "content/technologies/ePA.md",
       "verdict": "pass",
       "score": 87,
       "issues": [
-        "dgMP section: eML since January 2025 (E-Rezept dispensing data auto-copied) verified correct for pilot regions; broader rollout April/May 2025.",
-        "eMP pilot July 2026, rollout October 2026: gematik-aligned sources confirm October 2026; one Ärztezeitung source mentioned May 2026 for eMP — minor ambiguity only, not a clear error.",
-        "Nachtragen (manual medication entry by physicians without E-Rezept) since March 2026: confirmed by gematik newsroom.",
-        "BITMARCK referenced without wiki-link (no BITMARCK article exists).",
-        "All required sections present. 6 sources including gematik official."
+        "Carried: BITMARCK referenced as plain text — no wiki-link, no article exists. eML pilot vs. full rollout distinction not explicit."
       ],
-      "fixInstructions": "1. Clarify eML start: 'zunächst in Modellregionen (ab 15. Januar 2025), bundesweit ab April 2025' to reflect pilot vs. full rollout distinction. 2. Remove the [[BITMARCK]] reference or write it as plain text until a BITMARCK article is created."
+      "fixInstructions": "Carried. See prior cycle fix instructions."
     },
     {
       "file": "content/infrastructure/Gesundheits-ID.md",
       "verdict": "pass",
       "score": 88,
-      "issues": [
-        "ePass section verified: launch 25. März 2026, Nect GmbH, BITMARCK, 80% GKV, BEEP-Gesetz — confirmed.",
-        "Cross-article consistency with ePA.md: all ePass facts fully consistent.",
-        "4.4 Millionen registrierte Versicherte sourced from datenschutz-notizen.de (secondary blog). No official gematik figure available to confirm or contradict.",
-        "All required sections present. 4 sources, 3 official."
-      ],
-      "fixInstructions": "None required. If an official gematik Nutzungszahlen source for Gesundheits-ID registration becomes available, replace the blog source."
+      "issues": [],
+      "fixInstructions": "No changes required."
     },
     {
       "file": "content/infrastructure/Konnektoren.md",
       "verdict": "pass",
       "score": 85,
       "issues": [
-        "RISE Firmware 6.1.3:1.0.0 released 11. Februar 2026 via KSR: confirmed.",
-        "ECC-Preferred feature description: plausible and confirmed in outline. Specific prerequisite terminal versions are unverifiable from public sources.",
-        "Only 2 sources. Meets minimum requirement but borderline."
+        "Carried: Only 2 sources."
       ],
-      "fixInstructions": "Add a third source citing the RISE 6.1.3 firmware release: https://www.datenstrom.net/news/beitrag-lesen/neue-firmware-fuer-rise-konnektor-verfuegbar-version-6-1-3-ab-11-februar-2026.html"
+      "fixInstructions": "Carried. Add third source for RISE 6.1.3 firmware."
     },
     {
       "file": "content/infrastructure/NCPeH.md",
       "verdict": "pass",
       "score": 85,
       "issues": [
-        "gemF_eRp_EU V1.0.0 with release NCPeH_24_2: confirmed.",
-        "Date '12. März 2025' for NCPeH_24_2 publication: unverifiable.",
-        "6-stelliger alphanumerischer Zugangscode: confirmed.",
-        "EHDS Verordnung number 'EU 2025/327': confirmed by EUR-Lex in this cycle.",
-        "Only 2 sources."
+        "Carried: Date '12. März 2025' for NCPeH_24_2 publication unverifiable. Only 2 sources."
       ],
-      "fixInstructions": "1. Add direct source link for NCPeH_24_2: https://gemspec.gematik.de/releases/NCPeH_24_2/index.html. 2. Verify or soften the exact date '12. März 2025'."
+      "fixInstructions": "Carried. Add NCPeH_24_2 gemspec release URL."
     },
     {
       "file": "content/infrastructure/IDP.md",
-      "verdict": "pass",
-      "score": 85,
+      "verdict": "revise",
+      "score": 80,
       "issues": [
-        "IBM sektoraler IDP and T-Systems VPN outages on 10.02.2026 are correctly and clearly separated as two independent events — verified correct.",
-        "RSA 2048 note 'gültig bis Ende 2025' is now in the past (March 2026). Article should note transition is complete.",
-        "No official gematik Störungsportal source cited for the February 10 outage incidents."
+        "Carried: RSA 2048 listed as 'gültig bis Ende 2025' is now stale — March 2026, transition is complete."
       ],
-      "fixInstructions": "1. Update RSA 2048 line: change 'gültig bis Ende 2025' to 'bis Ende 2025 gültig (seit 2026 abgelöst durch ECDSA)'. 2. If available, add a gematik Störungsportal or operations status link as a source for the February 10, 2026 incident."
+      "fixInstructions": "Carried. Change 'gültig bis Ende 2025' to 'bis Ende 2025 gültig (seit 2026 abgelöst durch ECDSA)'."
     },
     {
       "file": "content/infrastructure/VZD.md",
       "verdict": "pass",
       "score": 87,
-      "issues": [
-        "VZD_25_2 release 17. Februar 2026, SOAP/LDAP interfaces shut down: confirmed.",
-        "All required sections present. 3 authoritative sources."
-      ],
-      "fixInstructions": "None required."
+      "issues": [],
+      "fixInstructions": "No changes required."
     },
     {
       "file": "content/standards/TA1.md",
       "verdict": "revise",
       "score": 75,
       "issues": [
-        "FACTUAL ERROR (carried): 'NOVENTI (früher NARZ/ARZ Darmstadt)' — incorrect. NOVENTI entstand aus VSA, ALG und SARZ; ARZ Darmstadt kooperiert nur."
+        "Carried factual error: NOVENTI lineage still incorrect in TA1.md (previous cycle noted this). Needs same fix as Apothekenrechenzentrum.md — correct NOVENTI to VSA/ALG/SARZ, remove ARZ Darmstadt from lineage."
       ],
-      "fixInstructions": "Carried from previous cycle. Correct NOVENTI merger description: 'entstanden aus der Fusion von VSA (München), ALG (Datteln) und SARZ (Schwerin)'. Remove ARZ Darmstadt from NOVENTI lineage."
-    },
-    {
-      "file": "content/organization/BfDI.md",
-      "verdict": "revise",
-      "score": 72,
-      "issues": [
-        "FACTUAL ERROR (carried): 'seit Februar 2024' for Specht-Riemenschneider Amtsantritt is wrong — correct date is 3. September 2024."
-      ],
-      "fixInstructions": "Carried from previous cycle. Replace 'seit Februar 2024' with 'seit 3. September 2024'."
+      "fixInstructions": "Carried. Correct NOVENTI merger description: 'entstanden aus der Fusion von VSA (München), ALG (Datteln) und SARZ (Schwerin)'. Remove ARZ Darmstadt from NOVENTI lineage."
     },
     {
       "file": "content/technologies/eArztbrief.md",
       "verdict": "revise",
       "score": 78,
       "issues": [
-        "FACTUAL ERROR (carried): EBM 86900 stated as '27 Cent' but verified value for sending is 28 Cent. 27 Cent is EBM 86901 (receiving)."
+        "Carried factual error: EBM 86900 stated as '27 Cent' — correct value is 28 Cent for sending (EBM 86901 receiving is 27 Cent)."
       ],
-      "fixInstructions": "Carried from previous cycle. Fix: 'EBM 86900 (Versenden): 28 Cent; EBM 86901 (Empfangen): 27 Cent'."
+      "fixInstructions": "Carried. Fix: 'EBM 86900 (Versenden): 28 Cent; EBM 86901 (Empfangen): 27 Cent'."
     },
     {
-      "file": "content/infrastructure/Apothekenrechenzentrum.md",
+      "file": "content/concepts/QES.md",
       "verdict": "revise",
-      "score": 74,
+      "score": 80,
       "issues": [
-        "FACTUAL ERROR (carried): NOVENTI described as entstanden aus NARZ/ARZ Darmstadt — incorrect. Same error as TA1.md."
+        "Carried: Broken wiki-link [[Landesärztekammer]] in the interesse-compliance callout."
       ],
-      "fixInstructions": "Carried from previous cycle. Same fix as TA1.md."
+      "fixInstructions": "Carried. Replace [[Landesärztekammer]] with plain text 'zuständigen Ärztekammer'."
     },
     {
-      "file": "content/technologies/Patientenportal.md",
-      "verdict": "revise",
-      "score": 72,
-      "issues": [
-        "FACTUAL ERROR: Line 48 attributes ISiK to 'BfArM in Zusammenarbeit mit der gematik und der HL7-Usergroup Deutschland'. ISiK is developed and published exclusively by gematik under §373 SGB V. BfArM has no role in ISiK development. Verified against fachportal.gematik.de/informationen-fuer/isik and gematik.de/anwendungen/isik.",
-        "url_dead: Source URL https://simplifier.net/isik-basis-v4 returns HTTP 404. The package or guide at this path does not exist."
-      ],
-      "fixInstructions": "1. Replace line 48: change 'Der ISiK-Standard wird vom [[BfArM]] (Bundesinstitut für Arzneimittel und Medizinprodukte) in Zusammenarbeit mit der [[gematik]] und der HL7-Usergroup Deutschland veröffentlicht.' to 'Der ISiK-Standard wird von der [[gematik]] im gesetzlichen Auftrag (§ 373 [[SGB-V]]) entwickelt und veröffentlicht.' 2. Replace the dead Simplifier URL with https://fachportal.gematik.de/informationen-fuer/isik or the correct Simplifier guide URL for ISiK Stufe 4."
-    },
-    {
-      "file": "content/organization/IQWiG.md",
+      "file": "content/processes/DMP.md",
       "verdict": "pass",
-      "score": 90,
-      "issues": [
-        "Founded 2004, GMG, Köln, §139a SGB V: all confirmed against iqwig.de and IQWiG legal foundations page.",
-        "Employee count 'rund 300' is unverifiable from public sources. Last confirmed figure (2020 annual report) was 246. Current count may be ~300 but cannot be confirmed without the 2024 annual report.",
-        "EU-HTA participation 'seit 2025' and AMNOG-Verfahren with EU-HTA Vorabprüfung 'Ab Frühjahr 2026': plausible given EU Regulation 2021/2282 schedule but unverifiable against a primary source in this cycle."
-      ],
-      "fixInstructions": "Consider qualifying employee count: 'rund 250 bis 300 Mitarbeiterinnen und Mitarbeiter' or adding '(Stand: Jahresbericht 2024)'. The EU-HTA timeline claim should be sourced or qualified as 'geplant'."
+      "score": 80,
+      "issues": [],
+      "fixInstructions": "No blocking issues. Optional: add a primary GKV-Spitzenverband or BAS source for PKP 2026 value."
     },
     {
       "file": "content/technologies/ePass.md",
       "verdict": "revise",
       "score": 75,
       "issues": [
-        "broken_link: [[BITMARCK]] has no matching file or alias in the knowledge base (confirmed by test-report.json). BITMARCK is the primary deployment partner and the broken link degrades navigation.",
-        "Key facts verified: launch 25. März 2026, developer Nect GmbH, 80% GKV-Kassen via BITMARCK, BEEP-Gesetz in force 1. Januar 2026, NFC-chip Personalausweis ab August 2021, Reisepass ab 2005 — all confirmed by BITMARCK Presseportal press release.",
-        "Sources are primarily press releases (Presseportal, healthcare-digital, startbase, Ärzteblatt). No official gematik source (e.g., gematik Zulassung page or gematik.de newsroom) is cited."
+        "Carried: Broken wiki-link [[BITMARCK]]. No official gematik source cited."
       ],
-      "fixInstructions": "1. Either create content/organization/BITMARCK.md or replace [[BITMARCK]] with plain text 'BITMARCK (IT-Dienstleister für rund 80 Prozent der GKV-Kassen)'. 2. Add an official gematik source, e.g. https://www.gematik.de/newsroom referencing the ePass Zulassung, or the BEEP-Gesetz page at BMG as a fifth source."
+      "fixInstructions": "Carried. Either create BITMARCK.md or replace with plain text. Add official gematik source."
     },
     {
       "file": "content/standards/IVDR.md",
       "verdict": "pass",
       "score": 88,
       "issues": [
-        "Key dates verified: verabschiedet 5. April 2017, in Kraft 25. Mai 2017 — confirmed correct against EUR-Lex.",
-        "Transition class deadlines (D: 26.05.2025, C: 26.05.2026, B/A: 26.05.2027) verified correct for new products requiring Benannte Stelle for the first time.",
-        "Class D deadline (26. Mai 2025) is now a past date. Article presents it as historical data but does not explicitly note it has already elapsed.",
-        "Extended transition deadlines for legacy IVDD-certified products (D: 31.12.2027, C: 31.12.2028, B/sterile A: 31.12.2029) are not mentioned. These are significant for practitioners."
+        "Carried: Class D deadline (26. Mai 2025) passed. Extended IVDD transition periods not mentioned."
       ],
-      "fixInstructions": "1. Add a note that the Class D deadline (26. Mai 2025) has passed and Class D products must now be IVDR-certified. 2. Add a subsection covering the extended transition periods for products already CE-marked under IVDD: Klasse D bis 31.12.2027, Klasse C bis 31.12.2028, Klasse B/steriles A bis 31.12.2029."
+      "fixInstructions": "Carried. Note Class D deadline has passed. Add extended transition periods for legacy IVDD products."
     },
     {
       "file": "content/standards/GOZ.md",
       "verdict": "pass",
       "score": 85,
       "issues": [
-        "Punktwert 5,62421 Cent confirmed against multiple official GOZ 2012 sources (LZK BW PDF, ZÄK Berlin).",
-        "GOZ 1. Januar 2012 in Kraft: confirmed correct.",
-        "Source URL https://www.kzbv.de/wp-content/uploads/gebuehrenordnung_fuer_zahnaerzte_2012.pdf returned empty Playwright response. KZBV migrated to WordPress; this PDF path may be broken.",
-        "BZÄK source URL was not verified via Playwright in this cycle."
+        "Carried: KZBV PDF source URL may be broken after WordPress migration."
       ],
-      "fixInstructions": "Replace the KZBV PDF source URL with the official gesetze-im-internet.de text: https://www.gesetze-im-internet.de/goz_1987/BJNR023160987.html — this is the authoritative legal text and is stable."
+      "fixInstructions": "Carried. Replace KZBV PDF with https://www.gesetze-im-internet.de/goz_1987/BJNR023160987.html."
     },
     {
       "file": "content/technologies/TI-Messenger.md",
       "verdict": "pass",
       "score": 87,
-      "issues": [
-        "Security hotfixes verified: A_26015-02 (TI-Messenger ePA, E2E encryption mandatory for all rooms) and A_28755 (TI-Messenger Pro, prohibition of public rooms) confirmed by web search against gematik wiki.",
-        "The gematik wiki source (TI-Messenger Compass blog) may require a gematik account to access. URL is valid but not fully public.",
-        "Requirement numbers and product assignment (A_26015-02 for ePA variant, A_28755 for Pro) verified correct."
-      ],
-      "fixInstructions": "Add the TI-Messenger_26_1 gemspec release page as a more publicly accessible additional source: https://gemspec.gematik.de/releases/TI-Messenger_26_1/index.html"
+      "issues": [],
+      "fixInstructions": "Carried. Optional: add TI-Messenger_26_1 gemspec release page as public source."
     },
     {
       "file": "content/organization/Landesaerztekammer.md",
       "verdict": "revise",
       "score": 80,
       "issues": [
-        "INACCURATE FRAMING: Article states 'In Deutschland gibt es 17 Landesärztekammern, eine je Bundesland (Bayern und Sachsen haben je eine, Hamburg und Berlin je eine)'. The parenthetical lists four states that each have one chamber, which is true of nearly every state and explains nothing. The actual reason the count is 17 rather than 16 is that Nordrhein-Westfalen has TWO chambers (Ärztekammer Nordrhein and Ärztekammer Westfalen-Lippe). The article omits this entirely.",
-        "All required sections present. 4 sources, all authoritative official URLs (BÄK, BLÄK, gematik Fachportal).",
-        "Technical content on HBA process is accurate. BAN reference and VDA roles are correctly described.",
-        "§ 95d SGB V citation for Fortbildungspflicht and 250-Punkte threshold: correct."
+        "Carried: Article says '17 Landesärztekammern' but parenthetical explanation is wrong — NRW has two chambers, which is the actual reason for 17 vs. 16. The parenthetical incorrectly lists Bayern/Sachsen/Hamburg/Berlin."
       ],
-      "fixInstructions": "Replace the parenthetical in Überblick: change '(Bayern und Sachsen haben je eine, Hamburg und Berlin je eine)' to '(Nordrhein-Westfalen zählt zwei: Ärztekammer Nordrhein und Ärztekammer Westfalen-Lippe)'. This is the actual reason the count is 17 and not 16."
+      "fixInstructions": "Carried. Replace parenthetical with '(Nordrhein-Westfalen zählt zwei: Ärztekammer Nordrhein und Ärztekammer Westfalen-Lippe)'."
     },
     {
       "file": "content/standards/GDAG.md",
       "verdict": "pass",
       "score": 88,
-      "issues": [
-        "Key dates verified correct: Referentenentwurf 15. Mai 2024, Kabinettsfassung 17. Juli 2024, erste Lesung Bundestag 17. Oktober 2024 — all confirmed against official BMG and Bundestag sources.",
-        "UNVERIFIABLE: Koalitionsvertrag CDU/CSU+SPD April 2025, Ministerin Nina Warken (CDU), GDVG Referentenentwurf 'erste Jahreshälfte 2026' — plausible and consistent with GDVG.md, but not independently verifiable for this article.",
-        "Secondary source (AOK) present alongside three official sources — acceptable.",
-        "All required sections present. Article correctly marks GDAG as failed legislation."
-      ],
-      "fixInstructions": "None required. Minor: the GDVG and Ministerin Warken claims are projections that may need updating if plans change."
+      "issues": [],
+      "fixInstructions": "No changes required."
     },
     {
       "file": "content/technologies/gRPC.md",
       "verdict": "pass",
       "score": 88,
       "issues": [
-        "Minor precision: Article states 'Im März 2017 wurde es in die CNCF aufgenommen'. The formal TOC acceptance vote was February 16, 2017; the public CNCF announcement was March 1, 2017. 'März 2017' refers to the public announcement which is an acceptable framing.",
-        "Source URL https://docs.cloud.google.com/api-gateway/docs/grpc-overview links to Google Cloud API Gateway docs rather than a canonical gRPC overview page."
+        "Carried: März 2017 CNCF date refers to public announcement (formal vote was 16 Feb 2017). Google Cloud API Gateway source is not canonical."
       ],
-      "fixInstructions": "Optional: For precision, add a footnote: 'formale CNCF-Aufnahme 16. Februar 2017, öffentliche Ankündigung 1. März 2017'. Replace the Google Cloud API Gateway source with the CNCF official announcement: https://www.cncf.io/blog/2017/03/01/cloud-native-computing-foundation-host-grpc-google/"
+      "fixInstructions": "Carried. Optional precision: add 'formale CNCF-Aufnahme 16. Februar 2017, öffentliche Ankündigung 1. März 2017'. Replace Google source with CNCF announcement."
+    },
+    {
+      "file": "content/infrastructure/PKI.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [],
+      "fixInstructions": "No changes needed."
+    },
+    {
+      "file": "content/infrastructure/PVS.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [],
+      "fixInstructions": "No changes needed."
+    },
+    {
+      "file": "content/concepts/PKI.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [],
+      "fixInstructions": "No changes needed."
+    },
+    {
+      "file": "content/organization/IQWiG.md",
+      "verdict": "pass",
+      "score": 90,
+      "issues": [
+        "Carried: Employee count 'rund 300' unverifiable; EU-HTA timeline 'ab Frühjahr 2026' unverifiable without primary source."
+      ],
+      "fixInstructions": "Carried. Qualify employee count and EU-HTA timeline."
     }
   ],
   "contradictions": [
     {
       "claim": "BITMARCK wiki-link consistency",
       "articleA": "content/technologies/ePass.md uses [[BITMARCK]] as a wiki-link (broken)",
-      "articleB": "content/technologies/ePA.md references BITMARCK as plain text without a wiki-link; no BITMARCK article exists in the knowledge base"
+      "articleB": "content/technologies/ePA.md references BITMARCK as plain text; content/organization/GKV-Spitzenverband.md mentions RISE/BITMARCK as plain text; no BITMARCK article exists"
     },
     {
-      "claim": "ATC-Code legal basis § SGB V",
-      "articleA": "content/standards/ATC-Code.md states '§ 131 SGB V' as legal basis for BfArM ATC mandate",
-      "articleB": "BfArM official site and gesetze-im-internet.de confirm the correct basis is § 73 Abs. 8 SGB V; § 131 SGB V governs pharmaceutical supply agreements (Rahmenverträge)"
+      "claim": "Landesärztekammer wiki-link",
+      "articleA": "content/processes/ECC-Migration.md uses [[Landesärztekammer]] (broken)",
+      "articleB": "content/concepts/QES.md uses [[Landesärztekammer]] (broken); no article exists for either"
+    },
+    {
+      "claim": "NOVENTI lineage in TA1.md",
+      "articleA": "content/standards/TA1.md still contains incorrect NOVENTI lineage (NARZ/ARZ Darmstadt)",
+      "articleB": "content/infrastructure/Apothekenrechenzentrum.md was fixed this cycle — now correctly states VSA/ALG/SARZ; TA1.md still needs the same fix"
     }
   ],
   "staleArticles": [
-    "content/standards/ATC-Code.md: Legal basis still incorrectly states § 131 SGB V. Should be § 73 Abs. 8 SGB V (confirmed by BfArM and web search).",
-    "content/infrastructure/IDP.md: RSA 2048 listed as 'gültig bis Ende 2025' — this deadline has elapsed (current date: 19.03.2026); should be updated to note transition to ECDSA is complete.",
-    "content/standards/IVDR.md: Class D transition deadline (26. Mai 2025) is a past date but not explicitly noted as elapsed.",
-    "content/technologies/Fernsignatur.md: cites eIDAS Art. 29 and Art. 3 Nr. 23 for Fernunterschrift — Art. 29a added in the 2024 consolidated eIDAS (carried from previous cycle)",
-    "content/infrastructure/Interoperabilitaetsverzeichnis.md: Source URL https://www.gematik.de/telematikinfrastruktur/interoperabilitaet/interoperabilitaetsverzeichnis is dead (404). Canonical URL: https://www.gematik.de/telematikinfrastruktur/iop"
+    "content/infrastructure/IDP.md: RSA 2048 listed as 'gültig bis Ende 2025' — this deadline has elapsed (current date: 19.03.2026); transition to ECDSA is complete.",
+    "content/standards/IVDR.md: Class D transition deadline (26. Mai 2025) passed but not explicitly noted as elapsed.",
+    "content/technologies/Fernsignatur.md: eIDAS Art. 29 and Art. 3 Nr. 23 citations outdated — Art. 29a introduced in 2024 consolidated eIDAS.",
+    "content/infrastructure/Interoperabilitaetsverzeichnis.md: Source URL https://www.gematik.de/telematikinfrastruktur/interoperabilitaet/interoperabilitaetsverzeichnis is dead (404).",
+    "content/processes/Videosprechstunde.md (NEW): EBM GOP 01439 cited as current billing code — this GOP was deleted 1 October 2019."
   ],
   "summary": {
-    "reviewed": 11,
-    "pass": 8,
-    "revise": 3,
+    "reviewed": 15,
+    "pass": 10,
+    "revise": 5,
     "fail": 0,
     "keyIssues": [
-      "ATC-Code.md FACTUAL ERROR (new): History dates (1971/1976/1996) are now correct, but legal basis is still wrong: article states § 131 SGB V, correct is § 73 Abs. 8 SGB V — confirmed by BfArM official site and gesetze-im-internet.de.",
-      "Interoperabilitaetsverzeichnis.md url_dead: Source URL https://www.gematik.de/telematikinfrastruktur/interoperabilitaet/interoperabilitaetsverzeichnis returns 404 (confirmed Playwright). Replace with https://www.gematik.de/telematikinfrastruktur/iop.",
-      "DMP.md: All previous issues resolved. BAS links removed, status properly distinguished (8 zugelassen / 4 Umsetzungsphase), KBV URL updated, Rheumatoide Arthritis seit Juli 2025 confirmed by BAS press release.",
-      "KIS.md + ISiK.md: KHAG September 2026 Interoperabilitätspflicht is consistently stated across 3 articles. ISiK Stufe 3 deadline 30.06.2026 confirmed by gematik Fachportal live table.",
-      "DiGA.md: Freiwillige elektronische Verordnung März 2026 confirmed by KBV Praxisnachricht 12.03.2026.",
-      "New articles (X.509, OIDC, JWT, Sektoraler-IDP) all pass: technically accurate, well-sourced, cross-article consistent with existing IDP.md, PKI.md, TI-Federation.md.",
-      "Cross-article consistency: Token formats (idNummer, brainpoolP256r1, KVNR claims) fully consistent across OIDC.md, JWT.md, and Sektoraler-IDP.md.",
-      "Carried unresolved from prior cycles: Teleradiologie.md (§ 25 StrlSchV error), TA1.md + Apothekenrechenzentrum.md (NOVENTI lineage), eArztbrief.md (EBM Cent values), IDP.md (RSA 2048 outdated phrasing), Fernsignatur.md (eIDAS citations), ePass.md ([[BITMARCK]] broken link)."
+      "Videosprechstunde.md FACTUAL ERROR (new): EBM GOP 01439 deleted October 2019, listed as current billing code. Replace with GOP 01450 (Technikzuschlag, 40 Punkte) and fachgruppen-specific Pauschalen.",
+      "eImpfpass.md: Broken wiki-link [[STIKO]] (confirmed by test-report.json). Typo 'Lotnnummer' should be 'Lotnummer'.",
+      "Medizininformatik-Initiative.md: Two broken wiki-links [[BMBF]] (confirmed by test-report.json). Fix by creating BMBF.md stub or replacing with plain text.",
+      "Kinderuntersuchungsheft.md and Mutterpass.md: Both pass — factually accurate, consistent, well-sourced. U-Heft age ranges confirmed against G-BA Kinder-Richtlinie.",
+      "SGB-V.md, BMG.md, GKV-Spitzenverband.md, DSGVO.md, G-BA.md (enriched): All pass. Key facts verified — G-BA founded 2004 via GKV-Modernisierungsgesetz, DSGVO in force 25 May 2018, GKV-SV 22.05% gematik share, BMG 51% confirmed, SGB V enacted 1 January 1989.",
+      "Carried fixes CONFIRMED: Teleradiologie.md (§ 123 now correct), BfDI.md (3. September 2024 now correct), Patientenportal.md (gematik now correctly attributed for ISiK), Apothekenrechenzentrum.md (NOVENTI lineage now correct), ATC-Code.md (§ 73 Abs. 8 now correct).",
+      "Still unresolved from prior cycles: TA1.md (NOVENTI lineage not yet fixed), eArztbrief.md (EBM cent values), ECC-Migration.md and QES.md (Landesärztekammer broken link), ePass.md (BITMARCK broken link), Fernsignatur.md (eIDAS citations), IDP.md (RSA 2048 stale), Interoperabilitaetsverzeichnis.md (dead URL)."
     ]
   }
 }

@@ -3,6 +3,10 @@ title: DSGVO
 audience: [technical, non-technical]
 tags: [standard, datenschutz, eu, recht]
 aliases: [Datenschutz-Grundverordnung, GDPR, General Data Protection Regulation]
+relevance:
+  sectors: [arztpraxis, krankenhaus, apotheke, hersteller, kasse, it-dienstleister, regulierung, patient]
+  interests: [compliance, technik, patient]
+maturity: wachsend
 ---
 
 # DSGVO
@@ -24,6 +28,9 @@ Für Gesundheitsdaten gilt Artikel 9 DSGVO: Gesundheitsdaten sind "besondere Kat
 - Verarbeitung aus Gründen des öffentlichen Interesses im Bereich der öffentlichen Gesundheit (Art. 9 Abs. 2 lit. i)
 
 Im deutschen Gesundheitswesen gilt außerdem [[SGB-V]] als spezialgesetzliche Grundlage, die die DSGVO in bestimmten Bereichen konkretisiert oder überlagert.
+
+> [!interesse-compliance] Pflichten für Verarbeiter von Gesundheitsdaten
+> Alle Einrichtungen, die Gesundheitsdaten verarbeiten, müssen eine Datenschutz-Folgenabschätzung (DSFA, Art. 35 DSGVO) durchführen, wenn die Verarbeitung voraussichtlich ein hohes Risiko darstellt. Für TI-Anwendungen (ePA, E-Rezept, KIM) ist die DSFA Pflicht. Ein Auftragsverarbeitungsvertrag (AVV, Art. 28 DSGVO) ist mit jedem Dienstleister abzuschließen, der Gesundheitsdaten im Auftrag verarbeitet. Verstöße können Bußgelder bis zu 20 Millionen Euro oder 4 Prozent des weltweiten Jahresumsatzes nach sich ziehen.
 
 ## Technische Details
 
@@ -51,6 +58,9 @@ In der [[Telematikinfrastruktur]] sind Gesundheitsdaten allgegenwärtig. Die DSG
 
 Versicherte haben gegenüber Verarbeitern ihrer Gesundheitsdaten folgende Rechte:
 
+> [!interesse-patient] Ihre Rechte als Patient
+> Sie können jederzeit Auskunft darüber verlangen, welche Gesundheitsdaten über Sie gespeichert sind (Art. 15). Falsche Daten müssen korrigiert werden (Art. 16). Bei der [[ePA]] können Sie über die App Ihrer Krankenkasse Zugriffe einsehen und Dokumente löschen. Das Widerspruchsrecht gegen die Übermittlung an das [[Forschungsdatenzentrum-Gesundheit]] ist für GKV-Versicherte derzeit nicht vorgesehen (Klage der GFF anhängig). Zuständige Aufsichtsbehörde für Bundesdaten: [[BfDI]].
+
 - **Auskunftsrecht** (Art. 15): Welche Daten werden verarbeitet?
 - **Berichtigungsrecht** (Art. 16): Falsche Daten korrigieren lassen.
 - **Recht auf Löschung** ("Recht auf Vergessenwerden", Art. 17)
@@ -61,6 +71,9 @@ Versicherte haben gegenüber Verarbeitern ihrer Gesundheitsdaten folgende Rechte
 ### Auftragsverarbeitung (Art. 28 DSGVO)
 
 Wenn TI-Dienstleister Gesundheitsdaten im Auftrag einer Einrichtung verarbeiten (z.B. Cloud-Hosting für [[KIS]]), muss ein Auftragsverarbeitungsvertrag (AVV) abgeschlossen werden. Der Verantwortliche bleibt die Einrichtung, der Dienstleister ist Auftragsverarbeiter.
+
+> [!interesse-technik] Technische Umsetzung der DSGVO in der TI
+> Privacy-by-Design (Art. 25 DSGVO) ist für alle TI-Komponenten Pflicht. Konkrete Maßnahmen in der TI: Ende-zu-Ende-Verschlüsselung ([[VAU]] in der [[ePA]]), Pseudonymisierung von Abrechnungsdaten im [[Forschungsdatenzentrum-Gesundheit]], Datensparsamkeit durch FHIR-Datenminimierung. Technische und organisatorische Maßnahmen (TOMs, Art. 32 DSGVO) müssen dokumentiert und regelmäßig überprüft werden. Das [[BSI]]-Grundschutz-Kompendium dient als Referenz für TOMs im deutschen Gesundheitswesen.
 
 ### DSGVO und [[eIDAS]]
 

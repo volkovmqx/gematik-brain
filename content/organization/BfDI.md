@@ -3,7 +3,7 @@ title: BfDI
 audience: [technical, non-technical]
 tags: [organisation, datenschutz, aufsicht, bundesbehörde]
 aliases: [Bundesbeauftragter für den Datenschutz und die Informationsfreiheit, Bundesdatenschutzbeauftragte, BfDI]
-maturity: setzling
+maturity: wachsend
 relevance:
   sectors: [regulierung, ti-infrastruktur, hersteller, kasse, krankenhaus, patient]
   interests: [compliance, patient]

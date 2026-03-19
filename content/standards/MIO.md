@@ -44,10 +44,10 @@ MIOs sind als npm-Pakete veröffentlicht und können in [[FHIR]]-Validatoren dir
 
 | MIO | Version | Beschreibung |
 |---|---|---|
-| Impfpass | 1.1.0 | Digitale Dokumentation von Impfungen, Impfreaktionen und Immunstatus |
+| [[eImpfpass\|Impfpass]] | 1.1.0 | Digitale Dokumentation von Impfungen, Impfreaktionen und Immunstatus |
 | Zahnärztliches Bonusheft | 1.1.0 | Dokumentation von Prophylaxe- und Zahnbehandlungsleistungen |
-| Mutterpass | 1.1.0 | Schwangerschaftsdokumentation gemäß Mutterschafts-Richtlinien |
-| U-Heft | 1.0.1 | Kinderuntersuchungen (U1 bis U9) nach Kinder-Richtlinien |
+| [[Mutterpass]] | 1.1.0 | Schwangerschaftsdokumentation gemäß Mutterschafts-Richtlinien |
+| [[Kinderuntersuchungsheft\|U-Heft]] | 1.0.1 | Kinderuntersuchungen (U1 bis U9) nach Kinder-Richtlinien |
 
 #### MIOs in Entwicklung
 

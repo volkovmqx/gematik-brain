@@ -17,7 +17,7 @@ Früher musste man für jeden Arztbesuch persönlich in die Praxis fahren. Bei d
 
 Telemedizin umfasst mehrere Versorgungsformen. Die wichtigsten sind:
 
-- **Videosprechstunde**: Synchrone Echtzeit-Konsultation per zertifizierter Videoverbindung
+- **[[Videosprechstunde]]**: Synchrone Echtzeit-Konsultation per zertifizierter Videoverbindung
 - **Fernbehandlung (allgemein)**: Diagnostik und Beratung ohne persönlichen Erstkontakt
 - **Telemonitoring**: Kontinuierliche Übertragung von Messwerten (z.B. Herzfrequenz, Blutzucker) chronisch Kranker
 - **Teleradiologie**: Fernbefundung von Röntgen-, MRT- und CT-Aufnahmen durch Radiologen

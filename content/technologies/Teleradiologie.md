@@ -3,7 +3,7 @@ title: Teleradiologie
 audience: [technical, non-technical]
 tags: [technologies, radiologie, dicom, telemedizin, bildgebung]
 aliases: [Teleradiology, Telekonsil Radiologie, Fernbefundung]
-maturity: setzling
+maturity: immergruen
 relevance:
   sectors: [krankenhaus, arztpraxis, hersteller, it-dienstleister, regulierung]
   interests: [compliance, technik]

@@ -3,6 +3,10 @@ title: SGB V
 audience: [technical, non-technical]
 tags: [standards, recht, gesetz, krankenversicherung, telematikinfrastruktur]
 aliases: [Fünftes Sozialgesetzbuch, SGB 5, Sozialgesetzbuch V]
+relevance:
+  sectors: [arztpraxis, krankenhaus, apotheke, kasse, hersteller, regulierung, it-dienstleister, patient]
+  interests: [compliance, technik, business]
+maturity: wachsend
 ---
 
 # SGB V
@@ -27,6 +31,14 @@ Wichtige Reformgesetze, die das SGB V in Bezug auf die TI ergänzt haben:
 - **Digitale-Versorgung-Gesetz ([[DVG]], 2019)**: Einführung der [[DiGA]], verpflichtende [[ePA]]
 - **Patientendaten-Schutz-Gesetz ([[PDSG]], 2020)**: Konkrete Regelungen zur [[ePA]] und zu [[VSDM]]
 - **Digital-Gesetz ([[DigiG]], 2024)**: Opt-out-Modell für die [[ePA]], Beschleunigung der TI
+
+> [!interesse-compliance] Wichtige Paragrafen für Leistungserbringer und Hersteller
+> - **§ 291**: Elektronische Gesundheitskarte ([[eGK]]) als Pflichtausweis für GKV-Versicherte
+> - **§ 311**: Gesetzlicher Auftrag der [[gematik]]; Grundlage für alle TI-Zulassungsverfahren
+> - **§ 360**: E-Rezept-Pflicht seit 1. Januar 2024 für alle vertragsärztlichen Verordnungen
+> - **§§ 334 ff.**: [[ePA]] für alle (Opt-out); Pflicht für Leistungserbringer seit 1. Oktober 2025
+> - **§ 371**: [[ISiK]]-Pflicht für Krankenhäuser; Sanktionen bei Nichtumsetzung ab April 2026
+> - **§§ 217a ff.**: Errichtung und Aufgaben des [[GKV-Spitzenverband]]s
 
 ## Technische Details
 
@@ -83,6 +95,9 @@ Das SGB V steht in einem engen Verhältnis zu weiteren Rechtsquellen:
 | 2019 | DVG | §33a DiGA, §341 ePA-Pflicht für Krankenkassen |
 | 2020 | PDSG | Datenschutzrahmen für ePA, VSDM-Regelungen |
 | 2024 | DigiG | Opt-out-ePA, Beschleunigung, neue ISiK-Stufen |
+
+> [!interesse-business] Marktrelevanz des SGB V
+> Das SGB V ist der wichtigste Nachfragetreiber im deutschen Health-IT-Markt. Jede neue Pflichtanwendung (E-Rezept, ePA, ISiK) entsteht durch eine SGB-V-Änderung und öffnet Marktsegmente für Hersteller und Dienstleister. Die ca. 75 Millionen GKV-Versicherten und rund 160.000 Leistungserbringer sind der Adressatenkreis. TI-Zulassungen durch die [[gematik]] (§ 311 SGB V) sind Markteintrittsvoraussetzung für alle TI-Komponenten.
 
 ## Verknüpfungen
 

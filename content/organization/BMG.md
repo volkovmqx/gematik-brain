@@ -3,6 +3,10 @@ title: BMG
 audience: [technical, non-technical]
 tags: [organisation, gesundheitspolitik, regulierung, gematik, telematikinfrastruktur]
 aliases: [Bundesministerium für Gesundheit, Bundesgesundheitsministerium]
+relevance:
+  sectors: [regulierung, hersteller, kasse, ti-infrastruktur, it-dienstleister, startup]
+  interests: [compliance, business]
+maturity: wachsend
 ---
 
 # BMG
@@ -20,6 +24,9 @@ Das BMG ist eine oberste Bundesbehörde und Teil der Bundesregierung. Es trägt 
 Im Bereich Digitalisierung ist das BMG der maßgebliche politische Akteur. Es initiiert und verantwortet Gesetze wie das [[DVG]] (Digitale-Versorgung-Gesetz, 2019), das [[PDSG]] (Patientendaten-Schutz-Gesetz, 2020) und das [[DigiG]] (Digitalgesetz, 2024). Diese Gesetze schufen die Grundlage für [[DiGA]], die [[ePA]] und die Weiterentwicklung der [[Telematikinfrastruktur]].
 
 Das BMG ist Mehrheitsgesellschafter der [[gematik]]. Seit dem Digitale-Versorgung-Gesetz von 2019 hält es 51 Prozent der Gesellschaftsanteile. Bei Abstimmungen in der Gesellschafterversammlung reicht damit die einfache Mehrheit aus, was dem Ministerium ein faktisches Vetorecht und Durchsetzungsvermögen gegenüber allen anderen Gesellschaftern gibt.
+
+> [!interesse-compliance] BMG als Regulierer
+> Das BMG ist die Quelle aller wesentlichen Digitalisierungspflichten im deutschen Gesundheitswesen. Gesetze wie [[DVG]], [[PDSG]] und [[DigiG]] wurden durch das BMG initiiert. Wer als Hersteller oder Dienstleister TI-Produkte entwickelt, muss laufend die BMG-Gesetzgebungsvorhaben beobachten. Das Referentenstadium neuer Gesetze wird regelmäßig auf bundesgesundheitsministerium.de veröffentlicht.
 
 Als Aufsichtsbehörde ist das BMG auch für nachgeordnete Bundesbehörden zuständig. In seinem Geschäftsbereich liegen das [[BfArM]] (Bundesinstitut für Arzneimittel und Medizinprodukte), das [[RKI]] (Robert Koch-Institut) und das Paul-Ehrlich-Institut (PEI).
 
@@ -51,6 +58,9 @@ Das BMG hat eine Reihe von Digitalisierungsgesetzen für das Gesundheitswesen ve
 - **[[DigiG]]** (2024): Opt-out-Modell für die ePA, Weiterentwicklung der TI
 
 ### gematik-Gesellschafterstruktur
+
+> [!interesse-business] Marktmacht des BMG
+> Das BMG kann als 51-Prozent-Gesellschafter der [[gematik]] allein über Einführungsfristen, Budgets und Spezifikationsprioritäten entscheiden. Startups und IT-Dienstleister, die TI-Produkte entwickeln, sind direkt von BMG-Entscheidungen abhängig. Die geplante Umwandlung der gematik zu einer Digitalagentur (GDAG-Diskussion) würde die Eigentümerstruktur grundlegend verändern.
 
 Die gematik hat neun Gesellschafter. Das BMG hält mit 51 Prozent die Mehrheit:
 

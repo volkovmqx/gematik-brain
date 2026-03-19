@@ -1,67 +1,6 @@
 {
   "pending": [
     {
-      "term": "Mutterpass",
-      "category": "processes",
-      "reason": "Elektronischer Mutterpass als MIO in der ePA. In 5 Artikeln erwähnt (KBV, MIO, SNOMED CT, PDSG, ePA). Dokumentiert Schwangerschaft, Vorsorgeuntersuchungen und Geburtsvorbereitungsdaten. Eines der ersten MIOs in der ePA.",
-      "mentionedIn": [
-        "content/organization/KBV.md",
-        "content/standards/MIO.md",
-        "content/standards/SNOMED-CT.md",
-        "content/standards/PDSG.md",
-        "content/technologies/ePA.md"
-      ],
-      "priority": 16
-    },
-    {
-      "term": "eImpfpass",
-      "category": "technologies",
-      "reason": "Elektronischer Impfausweis als MIO-Profil in der ePA. In 3 Artikeln erwähnt (ePA, MIO, PDSG). Ersetzt schrittweise den gelben Impfpass. FHIR-basiert, von KBV spezifiziert. Ab 2024 in ePA 3.0 integriert.",
-      "mentionedIn": [
-        "content/technologies/ePA.md",
-        "content/standards/MIO.md",
-        "content/standards/PDSG.md"
-      ],
-      "priority": 15
-    },
-    {
-      "term": "Medizininformatik-Initiative",
-      "category": "organization",
-      "reason": "MII: Vom BMBF geförderter Verbund der deutschen Universitätskliniken für Forschungsdateninfrastruktur. In 3 Artikeln erwähnt (Forschungsdatenzentrum Gesundheit, GDNG, ePA). Betreibt DIZ (Datenintegrationszentren) und kooperiert mit dem Forschungsdatenzentrum Gesundheit.",
-      "mentionedIn": [
-        "content/infrastructure/Forschungsdatenzentrum-Gesundheit.md",
-        "content/standards/GDNG.md",
-        "content/technologies/ePA.md"
-      ],
-      "priority": 15
-    },
-    {
-      "term": "Videosprechstunde",
-      "category": "processes",
-      "reason": "Wichtige telemedizinische Versorgungsform, geregelt in Bundesmantelvertrag (Anlage 31b) und DigiG. In 7 Artikeln erwähnt (Telemedizin, GOÄ, G-BA, Bundesmantelvertrag, DigiG, Bewertungsausschuss, Bundesärztekammer). Seit DigiG sind Mengenbeschränkungen aufgehoben, assistierte Telemedizin über Apotheken eingeführt.",
-      "mentionedIn": [
-        "content/concepts/Telemedizin.md",
-        "content/standards/Bundesmantelvertrag.md",
-        "content/standards/DigiG.md",
-        "content/organization/G-BA.md",
-        "content/organization/Bundesaerztekammer.md",
-        "content/organization/Bewertungsausschuss.md",
-        "content/standards/GOÄ.md"
-      ],
-      "priority": 14
-    },
-    {
-      "term": "Kinderuntersuchungsheft",
-      "category": "processes",
-      "reason": "Elektronisches Kinderuntersuchungsheft (U-Heft) als MIO in der ePA. In 3 Artikeln erwähnt (KBV, PDSG, ePA). Dokumentiert Vorsorgeuntersuchungen U1-U9 und J1. Wichtiges MIO für die Kindergesundheitsversorgung.",
-      "mentionedIn": [
-        "content/organization/KBV.md",
-        "content/standards/PDSG.md",
-        "content/technologies/ePA.md"
-      ],
-      "priority": 13
-    },
-    {
       "term": "Terminologieserver",
       "category": "infrastructure",
       "reason": "Server für medizinische Terminologien und Codesysteme (SNOMED CT, LOINC, ICD-10, FHIR ValueSets). In 2 Artikeln erwähnt (LOINC, SNOMED CT). Betrieben von BfArM für das deutsche Gesundheitswesen unter ontoserver.bfarm.de. Grundlage für FHIR-Terminologiedienste.",
@@ -304,7 +243,12 @@
     "OIDC",
     "JWT",
     "Sektoraler IDP",
-    "Interoperabilitätsverzeichnis"
+    "Interoperabilitätsverzeichnis",
+    "Mutterpass",
+    "eImpfpass",
+    "Medizininformatik-Initiative",
+    "Videosprechstunde",
+    "Kinderuntersuchungsheft"
   ],
   "missingRelevance": [
     "content/concepts/DRG.md",

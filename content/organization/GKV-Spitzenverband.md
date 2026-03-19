@@ -3,7 +3,10 @@ title: GKV-Spitzenverband
 audience: [technical, non-technical]
 tags: [organisation, gkv, finanzierung, governance, gematik]
 aliases: [GKV-SV, Spitzenverband Bund der Krankenkassen]
-maturity: immergruen
+maturity: wachsend
+relevance:
+  sectors: [kasse, regulierung, hersteller, it-dienstleister, ti-infrastruktur]
+  interests: [compliance, business]
 ---
 
 # GKV-Spitzenverband
@@ -35,6 +38,9 @@ Der GKV-Spitzenverband ist mit **22,05 Prozent** zweitgrößter Gesellschafter d
 
 Diese finanzielle Last ist ein dauerhafter Konfliktpunkt. In einem gemeinsamen Positionspapier (Januar 2026) forderten mehrere große Kassen (AOK, BARMER, TK, DAK) die Transformation der gematik zu einer öffentlich finanzierten Digitalagentur, um die einseitige Belastung der GKV zu beenden.
 
+> [!interesse-business] Finanzierungslast und Marktdynamik
+> Der GKV-Spitzenverband finanziert über seine Mitgliedskassen rund 93 Prozent der gematik-Betriebskosten, was sich 2026 auf ca. 100 Millionen Euro jährlich beläuft. IT-Dienstleister und Hersteller, die Verträge mit dem GKV-SV oder seinen Mitgliedskassen anstreben, sollten dessen Positionen zu Digitalisierungskosten und Standardsetzung kennen. Die TA1-FHIR-Migration und ISiK-Weiterentwicklung werden maßgeblich durch den GKV-SV mitgeprägt.
+
 In der Gesellschafterversammlung der gematik hat der GKV-Spitzenverband zusammen mit den anderen Kassenverbänden erheblichen Einfluss auf strategische Entscheidungen: Einführungsfristen für TI-Anwendungen, Budgets und Spezifikationsprioritäten werden maßgeblich durch die GKV-Seite mitgeprägt.
 
 ## Technische Details
@@ -48,6 +54,9 @@ Nach § 217f SGB V ist der GKV-Spitzenverband verpflichtet, einheitliche Datenst
 - Anforderungen an digitale Verwaltungsdienste der Kassen (z.B. Online-Portale, Apps)
 
 Der GKV-Spitzenverband ist auch an der Festlegung der **Kassenzulassung** für Krankenkassen-Apps und der Zulassung von Aktensystemen für die [[ePA]] beteiligt. Krankenkassen müssen ihren Versicherten nach gesetzlicher Vorgabe eine [[ePA]] und eine [[Gesundheits-ID]] bereitstellen.
+
+> [!interesse-compliance] Pflichten für Krankenkassen
+> Krankenkassen sind nach [[SGB-V]] verpflichtet, ihren Versicherten eine [[ePA]] und eine [[Gesundheits-ID]] bereitzustellen. Die zugelassenen Aktensysteme (IBM, RISE/BITMARCK) müssen den vom GKV-SV koordinierten technischen Anforderungen entsprechen. Datenstandards und IT-Sicherheitsrichtlinien nach § 217f SGB V sind bindend für alle Kassen.
 
 ### Finanzierungsstruktur der gematik
 

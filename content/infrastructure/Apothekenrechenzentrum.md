@@ -3,7 +3,7 @@ title: Apothekenrechenzentrum
 audience: [technical, non-technical]
 tags: [infrastruktur, apotheke, abrechnung, gkv, arz]
 aliases: [ARZ, Apothekenrechenzentren, VDARZ]
-maturity: setzling
+maturity: wachsend
 relevance:
   sectors: [apotheke, kasse, hersteller, it-dienstleister, regulierung]
   interests: [compliance, technik, business]

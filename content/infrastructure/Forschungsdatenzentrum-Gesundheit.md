@@ -84,6 +84,7 @@ Nach § 303e SGB V sind berechtigt:
 - [[ICD-10-GM]] (Diagnosekodierung in den FDZ-Daten)
 - [[SGB V]] (§§ 303a–303f: Rechtsgrundlage des FDZ)
 - [[DVPMG]] (Gründungsgesetz des FDZ)
+- [[Medizininformatik-Initiative]] (MII; komplementäre Forschungsinfrastruktur für Universitätskliniken)
 
 ## Quellen
 

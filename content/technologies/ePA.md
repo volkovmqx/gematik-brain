@@ -122,7 +122,7 @@ Leistungserbringer authentisieren sich über [[SMC-B]] (Einrichtung) und [[HBA]]
 
 - **Volltextsuche**: Suche in gespeicherten Dokumenten der ePA. Die Funktion ist noch nicht produktiv. Pilot geplant für Q3/2026, bundesweiter Rollout ab Januar 2027.
 - **Strukturierte Dosierungsangaben**: Im eMedikationsplan, mit Schreibzugriff für Apotheken
-- **MIO-Integration**: Einbindung der Medizinischen Informationsobjekte ([[MIO]]) Mutterpass, Impfausweis, Kinderuntersuchungsheft und Zahnärztliches Bonusheft
+- **MIO-Integration**: Einbindung der Medizinischen Informationsobjekte ([[MIO]]) [[Mutterpass]], [[eImpfpass|Impfausweis]], [[Kinderuntersuchungsheft]] und Zahnärztliches Bonusheft
 
 ### GFF-Klage gegen das FDZ (2022/2026)
 

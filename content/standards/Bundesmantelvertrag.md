@@ -42,7 +42,7 @@ Der Bundesmantelvertrag gliedert sich in 36 Anlagen und regelt drei Kernbereiche
 
 Der Bundesmantelvertrag enthält mehrere Anlagen zur digitalen Versorgung:
 
-- **Anlage 31b (Videosprechstunde)**: Regelt die technischen und organisatorischen Anforderungen an Videokonsultationen. Ärzte benötigen eine zugelassene Videoplattform und müssen bestimmte Datenschutzanforderungen erfüllen. Relevant im Kontext von [[Telemedizin]].
+- **Anlage 31b ([[Videosprechstunde]])**: Regelt die technischen und organisatorischen Anforderungen an Videokonsultationen. Ärzte benötigen eine zugelassene Videoplattform und müssen bestimmte Datenschutzanforderungen erfüllen. Relevant im Kontext von [[Telemedizin]].
 - **Anlage zu DiGA**: Regelungen zur Verordnung von [[DiGA|digitalen Gesundheitsanwendungen]].
 - **TI-Pauschale**: Refinanzierung der [[Telematikinfrastruktur]]-Kosten für Praxen über Anlage 32.
 - **Vordrucke**: Anlage 2 definiert die amtlichen Vordrucke (z.B. Muster 1 Überweisungsschein, Muster 10 Krankenhauseinweisung).
@@ -83,6 +83,7 @@ Der BMV-Ä setzt die gesetzlichen Vorgaben des [[SGB-V]] in konkrete Vertragsreg
 - [[PVS]] (Praxisverwaltungssysteme; müssen Formvorschriften des BMV-Ä umsetzen)
 - [[E-Rezept]] (FHIR-Pflichtfelder basieren auf BMV-Ä-Formvorschriften)
 - [[Telemedizin]] (Anlage 31b: Videosprechstunden-Regelungen)
+- [[Videosprechstunde]] (Anlage 31b BMV-Ä: technische Anforderungen)
 - [[DiGA]] (Anlage zu DiGA im BMV-Ä)
 - [[eGK]] (Einsatz und Vordrucke im BMV-Ä geregelt)
 - [[MVZ]] (Medizinische Versorgungszentren; Organisationsregeln im BMV-Ä)

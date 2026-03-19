@@ -3,7 +3,7 @@ title: Patientenportal
 audience: [technical, non-technical]
 tags: [technologies, krankenhaus, khzg, isik, digitalisierung]
 aliases: [Patientenportale, digitales Patientenportal, Krankenhausportal]
-maturity: setzling
+maturity: wachsend
 relevance:
   sectors: [krankenhaus, hersteller, it-dienstleister, patient, kasse]
   interests: [compliance, technik, patient]

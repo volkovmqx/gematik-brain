@@ -42,9 +42,9 @@ Die KBV veröffentlicht ihre [[FHIR]]-Implementierungsleitfäden auf dem FHIR-Si
 ### MIOs (Medizinische Informationsobjekte)
 
 Gemeinsam mit der [[gematik]] und der Kassenärztlichen Vereinigung entwickelt die KBV sogenannte [[MIO]]s (Medizinische Informationsobjekte). MIOs sind standardisierte [[FHIR]]-Profile für spezifische klinische Dokumente, z.B.:
-- Impfpass
-- Mutterpass
-- Kinderuntersuchungsheft
+- [[eImpfpass|Impfpass]]
+- [[Mutterpass]]
+- [[Kinderuntersuchungsheft]]
 - Zahnbonusheft
 
 MIOs werden in der [[ePA]] gespeichert und ermöglichen es, klinische Daten zwischen verschiedenen Systemen austauschbar zu machen.

@@ -6,7 +6,7 @@ aliases: [ATC, Anatomisch-Therapeutisch-Chemische Klassifikation, ATC-Klassifika
 relevance:
   sectors: [arztpraxis, apotheke, krankenhaus, kasse, hersteller, forschung]
   interests: [technik, compliance]
-maturity: setzling
+maturity: wachsend
 ---
 
 # ATC-Code
