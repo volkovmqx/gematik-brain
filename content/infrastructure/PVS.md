@@ -27,7 +27,7 @@ Ein PVS übernimmt alle zentralen Abläufe einer Praxis:
 - Ausstellung von Verordnungen und Überweisungen
 - Kommunikation über die [[Telematikinfrastruktur]]
 
-Die [[KBV]] (Kassenärztliche Bundesvereinigung) ist die zentrale Instanz für die Zertifizierung von PVS-Software. Sie prüft gesetzlich vorgeschriebene Funktionen und gibt Zertifizierungen aus. Seit dem Inkrafttreten des [[GDNG|Digitalisierungsgesetzes (GDNG)]] im März 2024 müssen PVS-Hersteller zusätzlich eine Konformitätsbewertung (KOB) bei der [[gematik]] durchlaufen. Dabei prüft gematik, ob die TI-Anbindung korrekt implementiert ist.
+Die [[KBV]] (Kassenärztliche Bundesvereinigung) ist die zentrale Instanz für die Zertifizierung von PVS-Software. Sie prüft gesetzlich vorgeschriebene Funktionen und gibt Zertifizierungen aus. Seit dem Inkrafttreten des [[GDNG|Digitalisierungsgesetzes (GDNG)]] im März 2024 müssen PVS-Hersteller zusätzlich eine [[Konformitaetsbewertung|Konformitätsbewertung (KOB)]] bei der [[gematik]] durchlaufen. Dabei prüft gematik, ob die TI-Anbindung korrekt implementiert ist.
 
 Es gibt über 100 zertifizierte PVS-Produkte in Deutschland. Marktführer sind CompuGroup Medical (CGM) mit Systemen wie CGM M1 PRO, medatixx mit x.isynet (über 14.600 Installationen), sowie weitere Anbieter wie Turbomed, Zollsoft und INDAMED.
 
@@ -72,7 +72,7 @@ Die KBV hat nach § 371 Abs. 1 SGB V eine einheitliche Verordnungssoftware-Schni
 
 ### Konformitätsbewertung (KOB)
 
-Seit 2024 führt die [[gematik]] Konformitätsbewertungen für PVS-Systeme durch. Die KOB prüft insbesondere die korrekte Implementierung der TI-Anwendungen (E-Rezept, ePA, eAU). PVS ohne gültige KOB-Bestätigung dürfen bestimmte TI-Funktionen nicht nutzen.
+Seit 2024 führt die [[gematik]] [[Konformitaetsbewertung|Konformitätsbewertungen (KOB)]] für PVS-Systeme durch. Die KOB prüft insbesondere die korrekte Implementierung der TI-Anwendungen (E-Rezept, ePA, eAU). PVS ohne gültige KOB-Bestätigung dürfen bestimmte TI-Funktionen nicht nutzen.
 
 ### TI 2.0 und mTLS
 

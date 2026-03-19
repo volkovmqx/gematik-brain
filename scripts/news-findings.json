@@ -1,6 +1,6 @@
 {
   "lastChecked": "2026-03-19",
-  "lastRun": "2026-03-19T16:00:00Z",
+  "lastRun": "2026-03-19T18:00:00Z",
   "findings": [
     {
       "title": "eMedikationsplan: Start verschoben auf Oktober 2026",
@@ -1130,6 +1130,47 @@
       "relevantArticles": ["Telematikinfrastruktur.md"],
       "category": "info",
       "action": "info_only"
+    },
+    {
+      "title": "Draft_CI_26_2: VPN-Zugangsdienst-Patch für RSA/ECC-Migrationsproblem bei Konnektor-Registrierungen (4. März 2026)",
+      "date": "2026-03-04",
+      "source": "https://gemspec.gematik.de/prereleases/Draft_CI_26_2/index.html",
+      "summary": "Gematik veröffentlichte am 4. März 2026 den Pre-Release Draft_CI_26_2 (2 Dokumente: C_12622_Anlage_V1.0.0 und gemAenderungsliste). Problem: Konnektoren bis PTV5 führten Registrierungen mit ECC-basiertem C.VPN.NK kombiniert mit RSA-basierter SMC-B-Signatur durch. Der VPN-Zugangsdienst prüft zyklisch gespeicherte Zertifikate auf Gültigkeit und entfernt ungültige Registrierungen. Bei RSA/ECC-Migration werden RSA-Zertifikate widerrufen, was diese Registrierungen als ungültig markiert und IPsec-Verbindungen terminiert. Lösung: Zyklische Verifikation wird konfigurierbar mit Toggles für 'Widerrufsstatus' und 'Laufzeit'; bei Bedarf pausierbar. Kommentierungsfrist lief bis 18. März 2026.",
+      "relevantArticles": ["Konnektoren.md", "VPN-Zugangsdienst.md", "Telematikinfrastruktur.md"],
+      "category": "specification",
+      "action": "info_only"
+    },
+    {
+      "title": "BMG/Warken plant umfassende Gesundheitsdatenverknüpfung: ePA als Plattform, FDZ mit KI, Registerdaten (Februar 2026)",
+      "date": "2026-02-16",
+      "source": "https://netzpolitik.org/2026/bundesgesundheitsministerium-so-umfassend-will-warken-die-gesundheitsdaten-aller-versicherten-verknuepfen/",
+      "summary": "Das BMG stellte am 11. Februar 2026 eine erweiterte Digitalisierungsstrategie vor. Drei Kernelemente: (1) ePA wird zur Gesundheitsdatenplattform mit Echtzeit-Abfragen, strukturierten Daten und Terminbuchung. (2) FDZ Gesundheit erhält tägliche automatische ePA-Datenübermittlung; 80+ Institutionen (Forscher, Pharmaunternehmen, Behörden) erhalten Zugriff. (3) Medizinregistergesetz: ca. 350 bestehende Register werden standardisiert, Register-übergreifende Datenverknüpfung über pseudonymisierte Identifikatoren auf Basis der Versichertennummer. Datenschützer kritisieren unzureichenden Re-Identifizierungsschutz und fehlende Widerspruchsmöglichkeit. Ziel: EHDS-Anbindung bis 2029. Geplantes GDVG soll Rechtsgrundlage schaffen.",
+      "relevantArticles": ["ePA.md", "Forschungsdatenzentrum-Gesundheit.md", "GDNG.md", "BMG.md"],
+      "category": "regulation",
+      "action": "applied",
+      "appliedDate": "2026-03-19",
+      "details": "Forschungsdatenzentrum-Gesundheit.md: Neuer Abschnitt 'Geplante Erweiterung 2026' mit täglicher ePA-Datenübermittlung, KI-Ausbau, Medizinregistergesetz und erweiterten Zugangsmöglichkeiten ergänzt.",
+      "suggestedTerm": "Medizinregistergesetz"
+    },
+    {
+      "title": "KOB 2026: Konformitätsbewertung weitet sich auf Medikationsplan aus",
+      "date": "2025-12-11",
+      "source": "https://www.gematik.de/newsroom/news-detail/kob-sorgt-mit-standards-fuer-transparenz-141-systeme-bereits-erfolgreich-bewertet",
+      "summary": "Nach dem Abschluss der eML-KOB-Phase (141 Systeme, 98% Marktanteil) weitet gematik das Konformitätsbewertungsverfahren (KOB) 2026 auf den elektronischen Medikationsplan (eMP) aus. Systeme, die den Anforderungen nicht entsprechen, können vom Markt ausgeschlossen werden. Eine Schnittstellenimplementierung wird gemeinsam mit mio42 entwickelt. Gematik bezeichnet die KOB als 'Game-Changer' für Interoperabilität und Wettbewerb im PVS-Markt.",
+      "relevantArticles": ["ePA.md", "PVS.md"],
+      "category": "specification",
+      "action": "info_only"
+    },
+    {
+      "title": "ePA-Nutzungsstatistik Stand März 2026 aktualisiert: 130.000 Einrichtungen, 37 Millionen Dokumente",
+      "date": "2026-03-19",
+      "source": "https://www.gematik.de/newsroom",
+      "summary": "Stand März 2026 haben über 130.000 von ca. 160.000 Einrichtungen (81 Prozent) mindestens eine ePA geöffnet. Über 37 Millionen Dokumente wurden hochgeladen (ältere Angabe: 22 Millionen). Mehr als 700 Millionen Datensätze insgesamt (inkl. E-Rezept-Daten). In der jeweils vergangenen Woche öffneten über 93.000 Einrichtungen aktiv Patientenakten. Die aktive Patientennutzung bleibt mit ca. 3,6 Prozent hinter den Erwartungen zurück.",
+      "relevantArticles": ["ePA.md"],
+      "category": "info",
+      "action": "applied",
+      "appliedDate": "2026-03-19",
+      "details": "ePA.md Nutzungsstatistik bereits auf dem Stand: 130.000+ Einrichtungen (81%), 700 Mio. Datensätze, 37 Mio. Dokumente. Die früheren Zahlen (110.000, 22 Mio. Dokumente) wurden bereits im Artikel aktualisiert."
     }
   ]
 }

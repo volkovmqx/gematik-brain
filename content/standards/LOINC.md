@@ -60,7 +60,7 @@ Eine FHIR-Observation für einen Kaliumwert enthält typischerweise:
 }
 ```
 
-HL7 stellt eine offizielle Definition des LOINC-Codesystems in FHIR bereit. LOINC betreibt außerdem einen eigenen FHIR-Terminologieserver unter loinc.org/fhir, der LOINC-Codes als FHIR-Ressourcen ausliefert.
+HL7 stellt eine offizielle Definition des LOINC-Codesystems in FHIR bereit. LOINC betreibt außerdem einen eigenen FHIR-[[Terminologieserver]] unter loinc.org/fhir, der LOINC-Codes als FHIR-Ressourcen ausliefert.
 
 ### Einsatz in MIOs und ISiK
 

@@ -3,7 +3,10 @@ title: TI-Pauschale
 audience: [technical, non-technical]
 tags: [concepts, vergütung, ebm, telematikinfrastruktur, arztpraxis]
 aliases: [TI-Finanzierungspauschale, Telematikinfrastruktur-Pauschale]
-maturity: setzling
+maturity: wachsend
+relevance:
+  sectors: [arztpraxis, krankenhaus, zahnarzt, psychotherapie, apotheke, pflege, kasse, it-dienstleister]
+  interests: [compliance, business]
 ---
 
 # TI-Pauschale
@@ -54,9 +57,29 @@ Um die volle TI-Pauschale zu erhalten, müssen Praxen sowohl die erforderlichen 
 
 Praxen, die einzelne Pflichtanwendungen nicht in der aktuell geforderten Version nachweisen können, erhalten Abzüge von der TI-Pauschale. Das System schafft damit einen wirtschaftlichen Anreiz für die vollständige TI-Nutzung.
 
+> [!praxis-tipp] Praxis-Tipp: Volle Pauschale sichern, Abzüge vermeiden
+> Fehlt eine Pflichtanwendung: Sie erhalten nur noch 50 % der Pauschale (also ca. 131 Euro statt 263,62 Euro für Einzelpraxen).
+> Fehlen zwei oder mehr Anwendungen: Die Pauschale entfällt vollständig.
+>
+> Checkliste für Ihre Praxis:
+> 1. [[ePA]]-Modul im PVS aktiv und in aktueller Version? Apotheken: ePA-Nachweis bis Ende 2025 erforderlich, sonst Kürzung ab 2026.
+> 2. [[KIM]]-Adresse eingerichtet und im Verzeichnisdienst (VZD) eingetragen?
+> 3. [[E-Rezept]] und [[eAU]] aktiv genutzt?
+> 4. [[HBA]]- und [[SMC-B]]-Ablaufdaten prüfen. Neue Ausweise haben eine Vorlaufzeit von 4-6 Wochen.
+>
+> In Ihrer Praxis bedeutet das: Prüfen Sie einmal pro Quartal den Status aller TI-Komponenten und Anwendungen. Ihre KV informiert Sie über fehlende Nachweise.
+
 ## Technische Details
 
 ### Abrechnung und Auszahlung
+
+> [!praxis-tipp] Praxis-Tipp: Pauschale kommt automatisch, Nachweise aber nicht
+> Die TI-Pauschale wird monatlich von Ihrer KV ausgezahlt. Sie müssen keine Leistung pro Patient abrechnen. Aber: Die KV prüft technische Verbindungsdaten und Nutzungsnachweise. Stimmen diese nicht, wird die Pauschale still gekürzt.
+>
+> Was Sie jetzt tun sollten:
+> 1. Ihren IT-Dienstleister beauftragen, alle Verbindungsnachweise des Konnektors zu dokumentieren.
+> 2. Prüfen, ob Ihr PVS automatisch Nutzungsdaten an die KV übermittelt.
+> 3. Bei Kürzungen: Widerspruch innerhalb von 4 Wochen nach Auszahlung einlegen.
 
 Die TI-Pauschale wird nicht über die reguläre EBM-Fallabrechnung vergütet, sondern als eigene Pauschale außerhalb des Regelleistungsvolumens (RLV) gewährt. Die [[Kassenaerztliche-Vereinigung|Kassenärztliche Vereinigung]] zahlt sie monatlich direkt an die Praxis aus, ohne dass eine Leistungsabrechnung pro Patient erforderlich ist.
 
@@ -91,4 +114,4 @@ Die TI-Pauschale ist als eigenständige EBM-Position konzipiert. Der [[Bewertung
 
 - [KBV Praxisnachricht: TI-Pauschale um 2,8 Prozent gestiegen (Januar 2026)](https://www.kbv.de/praxis/tools-und-services/praxisnachrichten/2026/01-08/ti-pauschale-gestiegen)
 - [KBV: Telematikinfrastruktur – Finanzierung und Betrieb](https://www.kbv.de/praxis/digitalisierung/telematikinfrastruktur)
-- [KVWL: Telematikinfrastruktur – Refinanzierung](https://www.kvwl.de/mitglieder/it-praxis/telematikinfrastruktur-ti-refinanzierung)
+- [gematik: Telematikinfrastruktur – Finanzierung für Leistungserbringer](https://www.gematik.de/telematikinfrastruktur/finanzierung)

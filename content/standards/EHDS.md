@@ -3,6 +3,10 @@ title: EHDS
 audience: [technical, non-technical]
 tags: [standard, eu, datenschutz, interoperabilitaet, recht]
 aliases: [European Health Data Space, Europäischer Gesundheitsdatenraum, EU 2025/327]
+relevance:
+  sectors: [krankenhaus, kasse, hersteller, it-dienstleister, regulierung, forschung, patient]
+  interests: [compliance, technik, patient]
+maturity: wachsend
 ---
 
 # EHDS
@@ -27,6 +31,17 @@ Konkrete Dienste im Aufbau:
 
 Deutschland plant die Teilnahme an MyHealth@EU ab **Wave 10 (2026)** über den deutschen [[NCPeH]].
 
+> [!patientenrecht] Patientenrecht: Gesundheitsdaten im EU-Ausland
+> Sie haben das Recht, Ihre Gesundheitsdaten zu erhalten. Das gilt auch im EU-Ausland.
+>
+> **Was bedeutet das für mich?**
+> Wenn Sie in einem anderen EU-Land krank werden, kann der dortige Arzt Ihre wichtigsten Daten abrufen. Zum Beispiel Ihre Medikamente oder bekannte Allergien. Das geht aber nur, wenn Sie dem zugestimmt haben.
+>
+> **Was kann ich tun?**
+> 1. Fragen Sie Ihre Krankenkasse, wann dieser Dienst in Deutschland startet (geplant: 2026).
+> 2. Achten Sie auf Informationen Ihrer Krankenkasse zur Teilnahme an MyHealth@EU.
+> 3. Sie können der Weitergabe Ihrer Daten ins EU-Ausland widersprechen. Wenden Sie sich dazu an Ihre Krankenkasse.
+
 ### Sekundärnutzung: Forschung und Innovation
 
 Der EHDS schafft einen rechtlichen Rahmen für die Nutzung von Gesundheitsdaten zu wissenschaftlichen, statistischen und regulatorischen Zwecken. Die Daten werden über nationale **Gesundheitsdaten-Zugangsstellen** (Health Data Access Bodies, HDAB) bereitgestellt. In Deutschland ist das [[Forschungsdatenzentrum-Gesundheit|Forschungsdatenzentrum Gesundheit]] die zuständige Stelle.
@@ -34,6 +49,9 @@ Der EHDS schafft einen rechtlichen Rahmen für die Nutzung von Gesundheitsdaten 
 Die Grundlagen für die Sekundärnutzung in Deutschland liegen im [[GDNG|Gesundheitsdatennutzungsgesetz (GDNG)]] von 2024, das den EHDS-Anforderungen entspricht.
 
 ### Zeitplan der Umsetzung
+
+> [!interesse-compliance] Fristen für Hersteller und Anbieter
+> Der EHDS verpflichtet EHR-System-Hersteller, ihre Produkte interoperabel zu machen. Die technischen Anforderungen werden in Durchführungsrechtsakten bis März 2027 festgelegt. Ab **März 2029** gilt die Pflicht zum grenzüberschreitenden Datenaustausch. Hersteller von Patientenaktensystemen (wie [[ePA]]-Modulen) sollten die EHDS-Interoperabilitätsvorgaben bereits in der Produktentwicklung berücksichtigen, um rechtzeitig zertifizierungsfähig zu sein.
 
 | Meilenstein | Datum |
 |---|---|
@@ -56,6 +74,9 @@ MyHealth@EU (früher eHealth Digital Service Infrastructure, eHDSI) ist die Infr
 
 ### Interoperabilitätsvorgaben
 
+> [!interesse-technik] EHDS-Architektur für Entwickler
+> Technisches Format: European EHR Exchange Format (EEHRxF) auf Basis von [[HL7]] [[FHIR]] R4. Terminologien: [[SNOMED CT]], [[LOINC]], ICD-10. Deutsche Umsetzung: [[NCPeH]] als Gateway; [[ePA]] als nationale Datenquelle. Implementierungsleitfäden werden von der Europäischen Kommission und [[IHE]] Europe erarbeitet. GitHub: [github.com/Xt-EHR](https://github.com/Xt-EHR) (Xt-EHR-Projekt für FHIR-Profile).
+
 Der EHDS verpflichtet Mitgliedstaaten und Hersteller von Gesundheits-IT zur technischen Interoperabilität. Konkret:
 
 - Elektronische Patientenakten-Systeme (EHR-Systeme) müssen die Interoperabilitätsvorgaben gemäß den Durchführungsrechtsakten der Kommission (erwartet bis 2027) umsetzen. Die Pflicht zur tatsächlichen grenzüberschreitenden Bereitstellung gilt ab März 2029.
@@ -68,6 +89,20 @@ Der EHDS steht im Einklang mit der [[DSGVO]] und dem [[BDSG]]. Für Gesundheitsd
 - Für die Primärnutzung: Einwilligung des Versicherten oder gesetzliche Erlaubnis
 - Für die Sekundärnutzung: Genehmigung durch die HDAB; keine direkte Identifizierbarkeit der Patienten
 - Opt-out-Recht: Versicherte können der Nutzung ihrer Daten für Forschungszwecke widersprechen
+
+> [!patientenrecht] Patientenrecht: Widerspruch gegen Forschungsnutzung (Opt-out)
+> Ihre Gesundheitsdaten dürfen für Forschung genutzt werden. Das passiert automatisch, wenn Sie nicht widersprechen.
+>
+> **Sie möchten das nicht?** Sie haben das Recht zu widersprechen. Das nennt sich Opt-out.
+>
+> **So können Sie widersprechen:**
+> 1. In Deutschland können Sie der Forschungsnutzung Ihrer ePA-Daten über die App Ihrer Krankenkasse widersprechen.
+> 2. Der EHDS sieht zusätzlich ein EU-weites Widerspruchsrecht vor. Wie das genau funktioniert, teilt Ihre Krankenkasse mit.
+>
+> **Wichtig:** Eine Begründung für den Widerspruch ist nicht nötig. Bereits genutzte Daten können nicht rückwirkend gelöscht werden.
+
+> [!interesse-patient] Ihre Rechte im EHDS
+> Der EHDS gibt Ihnen das Recht, Ihre eigenen Gesundheitsdaten in einem maschinenlesbaren Format zu erhalten und sie in allen EU-Ländern nutzen zu lassen. Wenn Sie in einem anderen EU-Land behandelt werden, kann der dortige Arzt mit Ihrer Zustimmung auf Ihre Kerndaten zugreifen. Für die Nutzung Ihrer Daten in der Forschung haben Sie ein Widerspruchsrecht (Opt-out). Das Opt-out-Recht für die Forschungsnutzung über die [[ePA]] gilt auch im EHDS-Kontext.
 
 ### Bezug zur deutschen TI
 

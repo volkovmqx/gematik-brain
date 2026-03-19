@@ -6,12 +6,12 @@ aliases: [MII, Medical Informatics Initiative]
 relevance:
   sectors: [krankenhaus, forschung, it-dienstleister, hersteller, regulierung, kasse]
   interests: [technik, business, compliance]
-maturity: setzling
+maturity: wachsend
 ---
 
 # Medizininformatik-Initiative
 
-Die **Medizininformatik-Initiative (MII)** ist ein vom Bundesministerium für Bildung und Forschung (BMBF) geförderter Verbund aller deutschen Universitätsklinika, der eine föderierte Forschungsdateninfrastruktur für die medizinische Forschung aufbaut.
+Die **Medizininformatik-Initiative (MII)** ist ein vom [[BMBF]] (Bundesministerium für Bildung und Forschung) geförderter Verbund aller deutschen Universitätsklinika, der eine föderierte Forschungsdateninfrastruktur für die medizinische Forschung aufbaut.
 
 ## Erklärt für Einsteiger
 
@@ -19,7 +19,7 @@ In deutschen Universitätskrankenhäusern entstehen täglich riesige Mengen an m
 
 ## Überblick
 
-Die MII wurde 2016 vom BMBF gestartet und läuft bis mindestens 2027. Sie feiert 2026 ihr zehnjähriges Bestehen. An der Initiative beteiligen sich alle Universitätskliniken Deutschlands an über 30 Standorten.
+Die MII wurde 2016 vom [[BMBF]] gestartet und läuft bis mindestens 2027. Sie feiert 2026 ihr zehnjähriges Bestehen. An der Initiative beteiligen sich alle Universitätskliniken Deutschlands an über 30 Standorten.
 
 Die MII hat vier Konsortien, in denen die Universitätskliniken zusammenarbeiten:
 

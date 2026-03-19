@@ -22,7 +22,7 @@ Die GOZ gilt für:
 - **Privatpatienten** (PKV): Volle Erstattung gemäß GOZ-Sätzen, abhängig vom Versicherungstarif.
 - **GKV-Patienten bei privat zu vergütenden Leistungen**: Zahnarzt berechnet GOZ für Mehrkostentarife (z.B. Zuzahlung bei Zahnersatz, Individualprophylaxe für Erwachsene).
 
-Parallel zur GOZ gilt für GKV-Leistungen der **BEMA (Bewertungsmaßstab zahnärztlicher Leistungen)**, der als Kollektivvertrag zwischen [[KZBV]] und [[GKV]]-Spitzenverband ausgehandelt wird. GOZ und BEMA schließen sich gegenseitig aus: Eine Leistung wird entweder nach BEMA (GKV) oder nach GOZ (PKV/Selbstzahler) abgerechnet.
+Parallel zur GOZ gilt für GKV-Leistungen der **[[BEMA]] (Bewertungsmaßstab zahnärztlicher Leistungen)**, der als Kollektivvertrag zwischen [[KZBV]] und [[GKV]]-Spitzenverband ausgehandelt wird. GOZ und BEMA schließen sich gegenseitig aus: Eine Leistung wird entweder nach BEMA (GKV) oder nach GOZ (PKV/Selbstzahler) abgerechnet.
 
 ### Verhältnis zu GOÄ und EBM
 

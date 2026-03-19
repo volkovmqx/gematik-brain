@@ -3,6 +3,10 @@ title: BDSG
 audience: [technical, non-technical]
 tags: [standard, datenschutz, recht]
 aliases: [Bundesdatenschutzgesetz, Bundesdatenschutz-Gesetz]
+relevance:
+  sectors: [arztpraxis, krankenhaus, apotheke, kasse, hersteller, it-dienstleister, regulierung, patient]
+  interests: [compliance, technik, patient]
+maturity: wachsend
 ---
 
 # BDSG
@@ -35,6 +39,9 @@ Die [[DSGVO]] hat als EU-Verordnung grundsätzlich Vorrang vor nationalem Recht.
 
 Der **[[BfDI|Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI)]]** überwacht die Einhaltung des BDSG bei Bundesbehörden und Telekommunikationsunternehmen. Für private Unternehmen zuständig sind die Datenschutzaufsichtsbehörden der Länder.
 
+> [!interesse-compliance] Datenschutzpflichten im Gesundheitswesen
+> Gesundheitsdaten sind nach Art. 9 DSGVO besonders schützenswert. Arztpraxen, Krankenhäuser und Apotheken brauchen zwingend eine Rechtsgrundlage für jede Verarbeitung. Ein Datenschutzbeauftragter (DSB) ist ab 20 Personen mit Datenzugang (§ 38 BDSG) Pflicht, für Kliniken und Kassen auch unabhängig von der Größe (Art. 37 DSGVO). Verstöße können mit Bußgeldern bis zu 20 Millionen Euro oder 4 % des weltweiten Jahresumsatzes geahndet werden.
+
 ## Technische Details
 
 ### Besondere Kategorien: Gesundheitsdaten
@@ -65,6 +72,9 @@ Das BDSG verpflichtet zur Umsetzung angemessener technischer und organisatorisch
 - [[VAU|Vertrauenswürdige Ausführungsumgebungen (VAU)]] beim E-Rezept-Fachdienst
 
 ### Betroffenenrechte
+
+> [!interesse-patient] Ihre Rechte bei Gesundheitsdaten
+> Sie haben das Recht zu erfahren, welche Daten Ihre Arztpraxis, das Krankenhaus oder Ihre Krankenkasse über Sie speichert (Auskunftsrecht, Art. 15 DSGVO). Fehlerhafte Daten können Sie berichtigen lassen. Unter bestimmten Umständen können Sie die Löschung verlangen. Bei der [[ePA]] haben Sie zusätzliche Kontrollrechte: Sie entscheiden selbst, wer Ihre Akte einsehen darf.
 
 Das BDSG ergänzt die DSGVO-Betroffenenrechte (Auskunft, Berichtigung, Löschung, Widerspruch) um Einschränkungen, die für das Gesundheitswesen relevant sind. § 27 BDSG erlaubt die Einschränkung von Betroffenenrechten bei der Verarbeitung zu wissenschaftlichen Zwecken, wenn deren Erfüllung den Forschungszweck erheblich beeinträchtigen würde.
 

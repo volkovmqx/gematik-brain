@@ -37,7 +37,7 @@ Die MDR klassifiziert Medizinprodukte in vier Risikoklassen. Die Klasse bestimmt
 | IIb | Mittel-hoch | Beatmungsgeräte, Röntgengeräte | Benannte Stelle erforderlich |
 | III | Hoch | Herzklappen, Koronarstents | Benannte Stelle, umfangreichste Prüfung |
 
-### Konformitätsbewertung
+### [[Konformitaetsbewertung|Konformitätsbewertung]]
 
 Das Konformitätsbewertungsverfahren ist der zentrale Nachweis, dass ein Produkt die Anforderungen der MDR erfüllt. Es umfasst:
 

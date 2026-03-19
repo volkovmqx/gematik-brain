@@ -6,7 +6,7 @@ aliases: [Videokonsultation, Online-Sprechstunde, Telekonsultation]
 relevance:
   sectors: [arztpraxis, krankenhaus, psychotherapie, patient, kasse, hersteller, it-dienstleister]
   interests: [compliance, technik, patient]
-maturity: setzling
+maturity: wachsend
 ---
 
 # Videosprechstunde
@@ -59,12 +59,13 @@ Anbieter, die diese Anforderungen erfüllen, werden in einer öffentlichen Liste
 
 Videosprechstunden werden über den [[EBM]] abgerechnet. Abrechnungsfähige Leistungen umfassen unter anderem:
 
-- Technikzuschlag Videosprechstunde (GOP 01450 EBM, 40 Punkte): wird neben der Versicherten-, Grund- oder Konsiliarpauschale abgerechnet
+- Technikzuschlag Videosprechstunde (GOP 01450 EBM, 40 Punkte, Höchstwert 700 Punkte/Quartal)
+- Abrechnung über die fachgruppenspezifische Versicherten-, Grund- oder Konsiliarpauschale (kein eigener Kontaktzuschlag mehr seit Oktober 2019)
 - Authentifizierungszuschlag für unbekannte Patienten (GOP 01444 EBM, 10 Punkte, befristet bis 31. Dezember 2026)
 - Fachgruppenspezifische Videosprechstundenpauschalen (z.B. psychiatrische Videokonsultation, psychotherapeutische Videositzung)
 - Ab 1. April 2025: Zuschlag für ausschließlich per Video behandelte Bestandspatienten (GOP 01452 EBM, 30 Punkte)
 
-Ab 2025 wurden im Rahmen des EBM 2025 weitere Leistungen für Videosprechstunden geöffnet und die Vergütungssätze angepasst. Die frühere GOP 01439 (Arzt-Patienten-Kontakt per Video) wurde am 1. Oktober 2019 aus dem EBM gestrichen und durch die fachgruppenspezifischen Pauschalen ersetzt.
+Ab 2025 wurden im Rahmen des EBM 2025 weitere Leistungen für Videosprechstunden geöffnet und die Vergütungssätze angepasst.
 
 ### Datenschutz und DSGVO
 

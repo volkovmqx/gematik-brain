@@ -38,6 +38,17 @@ Ab **Mitte 2026** fließen [[E-Rezept]]-Daten pseudonymisiert aus der [[ePA]] an
 
 Im **Februar 2026** reichte die Gesellschaft für Freiheitsrechte (GFF) eine Klage gegen die Weitergabe von GKV-Daten an das FDZ ein. Die GFF zweifelt daran, ob das eingesetzte Pseudonymisierungsverfahren ausreichend ist, um eine Reidentifikation von Versicherten auszuschließen. Das Verfahren ist anhängig.
 
+### Geplante Erweiterung 2026: Tägliche ePA-Daten und KI-Fähigkeiten
+
+Das BMG stellte im Februar 2026 Pläne vor, das FDZ deutlich auszubauen. Kernpunkte der Strategie:
+
+- **Tägliche ePA-Datenübermittlung**: Ab Inkrafttreten des geplanten [[GDVG]] sollen pseudonymisierte Daten aus der [[ePA]] täglich automatisch an das FDZ übermittelt werden. Aktuell fließen E-Rezept-Daten erst ab Mitte 2026 ans FDZ.
+- **KI-Ausbau**: Das FDZ soll KI-fähig werden, um komplexe Auswertungen über große Datenmengen zu ermöglichen.
+- **Medizinregistergesetz**: Rund 350 bestehende medizinische Register sollen vereinheitlicht und über pseudonymisierte Identifikatoren (auf Basis der Versichertennummer) miteinander und mit FDZ-Daten verknüpfbar gemacht werden.
+- **Mehr Zugangsberechtigte**: Über 80 Institutionen, darunter Pharmaunternehmen und Behörden, sollen Zugang erhalten.
+
+Datenschützer und die GFF kritisieren, dass die Pseudonymisierung bei seltenen Krankheiten keine ausreichende Re-Identifikationsbarriere bietet. GKV-Versicherte haben kein Widerspruchsrecht gegen die Datenübermittlung ans FDZ.
+
 ### Verbindung zum EHDS
 
 Das FDZ Gesundheit ist der deutsche Beitrag zur **Secondary Use**-Infrastruktur des [[EHDS]] (European Health Data Space). Der EHDS verpflichtet alle EU-Mitgliedstaaten, eine nationale Infrastruktur für die Sekundärnutzung von Gesundheitsdaten aufzubauen. Das FDZ fungiert als nationaler HealthData@EU-Zugangspunkt für Deutschland.

@@ -3,7 +3,10 @@ title: IDP - Identity Provider
 audience: [technical, non-technical]
 tags: [infrastruktur, authentisierung, oauth, idp]
 aliases: [IDP, IDP-Dienst, Identity Provider, sektoraler IDP, TI-Federation]
-maturity: wachsend
+maturity: setzling
+relevance:
+  sectors: [arztpraxis, krankenhaus, apotheke, kasse, hersteller, ti-infrastruktur, it-dienstleister, startup]
+  interests: [technik, compliance]
 ---
 
 # IDP - Identity Provider
@@ -28,6 +31,9 @@ Der IDP ist für alle TI-Anwendungen relevant, die eine gesicherte Nutzeridentit
 ## Technische Details
 
 ### Standards
+
+> [!interesse-technik] IDP-Integration für Entwickler
+> Spezifikation: [gemSpec_IDP_Dienst](https://gemspec.gematik.de/docs/gemSpec/gemSpec_IDP_Dienst/latest/). Der IDP folgt OAuth 2.0 Authorization Code Grant mit PKCE (RFC 7636). Discovery-Endpunkt: `https://idp.zentral.idp.splitdns.ti-dienste.de/.well-known/openid-configuration`. Token-Signatur: ECDSA mit brainpoolP256r1. Sektorale IDPs sind über die [[TI-Federation]]-Discovery auffindbar. Für die Integration müssen Fachdienste ihre Client-ID bei der gematik registrieren.
 
 Der IDP-Dienst basiert auf anerkannten offenen Standards:
 
@@ -59,6 +65,9 @@ Der IDP stellt drei Token-Typen aus:
 Über den **Pairing-Endpunkt** können Nutzer alternative Authentisierungsmethoden registrieren. So ist es möglich, sich nach einmaliger Chipkarten-Registrierung künftig per Biometrie (Fingerabdruck, Face ID) oder PIN zu authentisieren, ohne die Karte erneut einzustecken.
 
 ### TI-Federation und sektorale IDPs
+
+> [!interesse-compliance] Authentisierungsanforderungen
+> Alle TI-Fachdienste, die auf personenbezogene Gesundheitsdaten zugreifen, müssen den IDP-Dienst der gematik nutzen. Eigenentwickelte Authentisierungslösungen sind nicht zulässig. Krankenkassen, die einen sektoralen IDP betreiben wollen, benötigen eine gematik-Zulassung nach den gemSpec_IDP_Sek-Anforderungen. Ab 2026 müssen alle neuen TI-Anwendungen die [[TI-Federation]] unterstützen.
 
 Mit der [[TI-Federation]] wird die Authentisierung dezentralisiert. Sektorale IDPs sind eigenständige Identity Provider, die:
 

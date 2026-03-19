@@ -6,7 +6,7 @@ aliases: [Elektronischer Impfausweis, Impfpass MIO, elektronischer Impfpass]
 relevance:
   sectors: [arztpraxis, apotheke, krankenhaus, patient, kasse, hersteller, it-dienstleister]
   interests: [compliance, technik, patient]
-maturity: setzling
+maturity: wachsend
 ---
 
 # eImpfpass
@@ -45,7 +45,7 @@ Impfungen können eingetragen werden von:
 - Öffentlichem Gesundheitsdienst ([[ÖGD]])
 
 > [!interesse-patient] Ihr digitaler Impfausweis
-> Über die App Ihrer Krankenkasse können Sie Ihren aktuellen Impfstatus einsehen. Der eImpfpass zeigt auch, welche Impfungen nach den Empfehlungen der Ständigen Impfkommission (STIKO) fällig wären. Impflücken können so schneller erkannt werden. Bei Reisen ins Ausland oder im Notfall ist der Impfstatus sofort verfügbar, ohne dass Sie den Papierpass mitbringen müssen.
+> Über die App Ihrer Krankenkasse können Sie Ihren aktuellen Impfstatus einsehen. Der eImpfpass zeigt auch, welche Impfungen nach den Empfehlungen der [[STIKO]] (Ständigen Impfkommission) fällig wären. Impflücken können so schneller erkannt werden. Bei Reisen ins Ausland oder im Notfall ist der Impfstatus sofort verfügbar, ohne dass Sie den Papierpass mitbringen müssen.
 
 ## Technische Details
 

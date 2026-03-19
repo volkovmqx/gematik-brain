@@ -60,7 +60,7 @@ Im [[AVS|Apothekenverwaltungssystem (AVS)]] ist die PZN der primäre Schlüssel 
 
 ### AMTS und PZN
 
-In der [[AMTS|Arzneimitteltherapiesicherheit]] wird die PZN verwendet, um Wechselwirkungen und Kontraindikationen zu prüfen. Datenbanken wie die ABDA-Datenbank und die Interaktionsdatenbank ABDA ordnen PZNs ihren Wirkstoffen zu, um eine pharmakologische Analyse zu ermöglichen.
+In der [[AMTS|Arzneimitteltherapiesicherheit]] wird die PZN verwendet, um Wechselwirkungen und Kontraindikationen zu prüfen. Datenbanken wie die [[ABDA-Datenbank]] und die Interaktionsdatenbank ABDA ordnen PZNs ihren Wirkstoffen zu, um eine pharmakologische Analyse zu ermöglichen.
 
 ### Abgrenzung: PZN vs. andere Identifikatoren
 

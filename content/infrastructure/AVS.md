@@ -21,7 +21,7 @@ Apotheken waren nach dem [[DVG]] (2019) verpflichtet, sich bis spätestens 1. Se
 
 Die wichtigste TI-Anwendung für Apotheken ist das [[E-Rezept]]. Das AVS ruft digitale Verordnungen vom E-Rezept-[[Fachdienst]] ab, verarbeitet sie und übermittelt die Abgabedaten zurück. Daneben nutzt das AVS den Zugang zur [[ePA]] für den Medikationsplan-Abgleich und [[KIM]] für die sichere Kommunikation mit Arztpraxen.
 
-Zertifizierungsbehörde für AVS-Software ist das ADAS (Apothekenrechenzentrum-Datenaustausch-Systemprüfstelle) über die [[ABDA]] (Bundesvereinigung Deutscher Apothekerverbände). Die [[gematik]] prüft seit 2024 zusätzlich die korrekte TI-Implementierung im Rahmen der Konformitätsbewertung.
+Zertifizierungsbehörde für AVS-Software ist das ADAS (Apothekenrechenzentrum-Datenaustausch-Systemprüfstelle) über die [[ABDA]] (Bundesvereinigung Deutscher Apothekerverbände). Die [[gematik]] prüft seit 2024 zusätzlich die korrekte TI-Implementierung im Rahmen der [[Konformitaetsbewertung|Konformitätsbewertung (KOB)]].
 
 ## Technische Details
 
@@ -43,7 +43,7 @@ Der E-Rezept-Einlöseprozess im AVS läuft wie folgt ab:
 
 ### AMTS-Prüfung
 
-Das AVS ist neben [[PVS]] und [[KIS]] eines der Primärsysteme, in denen die eigentliche AMTS-Interaktionsprüfung stattfindet. Das AVS integriert Arzneimitteldatenbanken (z.B. ABDA-Datenbank, MMI-Pharmindex), die bekannte Wechselwirkungen und Kontraindikationen enthalten. Seit der ePA-Integration kann das AVS außerdem den vollständigen Medikationsplan aus der [[ePA]] abrufen und für den Interaktionscheck nutzen, sofern der Versicherte den Zugriff erlaubt hat.
+Das AVS ist neben [[PVS]] und [[KIS]] eines der Primärsysteme, in denen die eigentliche AMTS-Interaktionsprüfung stattfindet. Das AVS integriert Arzneimitteldatenbanken (z.B. [[ABDA-Datenbank]], MMI-Pharmindex), die bekannte Wechselwirkungen und Kontraindikationen enthalten. Seit der ePA-Integration kann das AVS außerdem den vollständigen Medikationsplan aus der [[ePA]] abrufen und für den Interaktionscheck nutzen, sofern der Versicherte den Zugriff erlaubt hat.
 
 ### ePA-Zugriff
 

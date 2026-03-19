@@ -36,7 +36,7 @@ Der ABDA-Artikelstamm ist die maßgebliche Produktdatenbank für das deutsche Ap
 - **Apothekenverkaufspreis (AVP), Großhandelspreis**: aktuelle Preise
 - **Verschreibungspflicht, Erstattungsfähigkeit**: rechtliche Klassifizierung
 - **Rabattverträge und Substitutionsinformationen**: für den Austausch nach § 129 [[SGB-V]]
-- **Interaktionsdaten (ABDA-Datenbank)**: Arzneimittelwechselwirkungen für die [[AMTS]]-Prüfung
+- **Interaktionsdaten ([[ABDA-Datenbank]])**: Arzneimittelwechselwirkungen für die [[AMTS]]-Prüfung
 
 Aktualisierungen erfolgen 14-täglich zum 1. und 15. eines Monats. AVS-Hersteller integrieren den Artikelstamm direkt in ihre Software. Er ist Pflichtbestandteil jedes zugelassenen AVS.
 

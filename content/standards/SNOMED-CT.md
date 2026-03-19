@@ -53,7 +53,7 @@ Im [[FHIR]]-Standard wird SNOMED CT als CodeSystem mit der kanonischen URL `http
 }
 ```
 
-Der FHIR-Terminologieserver des [[BfArM]] (terminologien.bfarm.de) stellt SNOMED CT als FHIR-konformen Dienst bereit. Über `$lookup` und `$validate-code` Operationen können Konzepte abgefragt und validiert werden.
+Der FHIR-[[Terminologieserver]] des [[BfArM]] (ontoserver.bfarm.de) stellt SNOMED CT als FHIR-konformen Dienst bereit. Über `$lookup` und `$validate-code` Operationen können Konzepte abgefragt und validiert werden.
 
 ### Nutzung in MIO-Profilen
 

@@ -4,6 +4,9 @@ audience: [technical, non-technical]
 tags: [standards, vergütung, ambulant, abrechnung, gkv, kbv]
 aliases: [Einheitlicher Bewertungsmaßstab, EBM-Ziffer, Bewertungsmaßstab]
 maturity: immergruen
+relevance:
+  sectors: [arztpraxis, psychotherapie, krankenhaus, zahnarzt, kasse, it-dienstleister, hersteller]
+  interests: [compliance, technik, business]
 ---
 
 # EBM
@@ -26,6 +29,9 @@ Das Punktesystem des EBM funktioniert zweistufig:
 
 1. **Orientierungswert**: Der bundeseinheitliche Geldwert eines Punktes, der jährlich zwischen KBV und GKV-Spitzenverband verhandelt wird. Für 2026 beträgt er **12,7404 Cent** (Anstieg um 2,8 % gegenüber 2025).
 2. **Regionaler Punktwert**: Die tatsächliche Vergütung kann je nach Morbiditätsstruktur und Budgetvolumen der einzelnen [[Kassenaerztliche-Vereinigung|KV]] variieren.
+
+> [!interesse-business] Marktdaten
+> Der EBM regelt die Vergütung von rund 150.000 Vertragsärzten und Vertragspsychotherapeuten. Das Gesamtvolumen der GKV-Gesamtvergütung im ambulanten Bereich liegt bei ca. 45 Milliarden Euro jährlich. Jede Änderung des Orientierungswerts (aktuell 12,7404 Cent/Punkt) verschiebt erhebliche Geldbeträge: Ein Anstieg um 1 Prozentpunkt entspricht Mehrkosten von ca. 450 Millionen Euro. PVS-Hersteller müssen nach jeder Beschlusslage des Bewertungsausschusses ihre Abrechnungssoftware aktualisieren.
 
 ### Abgrenzung zu anderen Vergütungssystemen
 
@@ -61,9 +67,15 @@ Die Höhe der TI-Pauschalen wird regelmäßig angepasst und ist im EBM-Kapitel 0
 
 ### Datenformat und Abrechnung
 
+> [!interesse-technik] EBM maschinenlesbar
+> Seit 2020 stellt die [[KBV]] den EBM als maschinenlesbares XML-Format bereit: [kbv.de/praxis/abrechnung/ebm](https://www.kbv.de/praxis/abrechnung/ebm). Das KVDT-Format für die Abrechnungsübermittlung gehört zur [[xDT]]-Familie. PVS-Hersteller nutzen das XML-Format zur automatischen GOP-Kodierunterstützung und zur Plausibilitätsprüfung vor der Abrechnung.
+
 Die Abrechnung gegenüber der [[Kassenaerztliche-Vereinigung|KV]] erfolgt über das **KVDT-Format** (Kassenärztlicher Datentransfer), das zur Familie der [[xDT]]-Formate gehört. Das [[PVS|Praxisverwaltungssystem (PVS)]] erzeugt eine KVDT-Datei mit allen im Quartal erbrachten Leistungen. Diese wird elektronisch an die KV übermittelt.
 
 Seit 2020 stellt die [[KBV]] den EBM auch in einem maschinenlesbaren XML-Format bereit, das von PVS-Herstellern zur automatischen Kodierunterstützung genutzt werden kann.
+
+> [!interesse-compliance] Abrechnungsregeln und Fristen
+> EBM-Änderungen treten quartalsweise in Kraft (1. Januar, 1. April, 1. Juli, 1. Oktober). Praxen müssen prüfen, ob ihr PVS nach jedem Quartalswechsel die aktuellen GOP korrekt abbildet. Nicht abgerechnete Leistungen verfallen: Die Einreichungsfrist für Quartalsziffern liegt typischerweise 4 bis 6 Wochen nach Quartalsende (je nach KV). Neue TI-Pflichtanwendungen erhalten oft zunächst befristete EBM-Vergütungen, die später in Dauervergütungen überführt werden.
 
 ### Bewertungsausschuss und Aktualisierungszyklen
 

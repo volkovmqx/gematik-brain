@@ -3,7 +3,10 @@ title: DKG
 audience: [technical, non-technical]
 tags: [organization, krankenhaus, gematik, selbstverwaltung]
 aliases: [Deutsche Krankenhausgesellschaft]
-maturity: immergruen
+maturity: wachsend
+relevance:
+  sectors: [krankenhaus, kasse, regulierung, verband, it-dienstleister, hersteller]
+  interests: [compliance, business]
 ---
 
 # DKG
@@ -33,6 +36,9 @@ Die DKG erfüllt mehrere gesetzlich zugewiesene Aufgaben in der gemeinsamen Selb
 
 ### Relevanz für Krankenhausfinanzierung
 
+> [!interesse-business] Marktposition der DKG
+> Die DKG vertritt knapp 1.900 Krankenhäuser mit einem Gesamtumsatz von ca. 127 Milliarden Euro und rund 1,2 Millionen Beschäftigten. Als Gesellschafterin der [[gematik]] hat sie Mitsprache bei allen TI-Entscheidungen. Hersteller von Krankenhaus-IT müssen ihre Produkte an den DKG-mitgestalteten Standards ([[ISiK]], G-DRG) ausrichten, um im deutschen Markt bestehen zu können.
+
 Das **[[InEK]]** (Institut für das Entgeltsystem im Krankenhaus) ist eine gemeinsame Einrichtung von DKG, [[GKV-Spitzenverband]] und Verband der Privaten Krankenversicherung. Es kalkuliert und pflegt das G-DRG-System (Diagnosis Related Groups), nach dem Krankenhäuser vergütet werden.
 
 ## Technische Details
@@ -53,6 +59,9 @@ Das Krankenhauszukunftsgesetz ([[KHZG]]) von 2020 stellte 4,3 Milliarden Euro f�
 - [[ePA]]-Module für Krankenhäuser
 
 ### ePA-Anschluss für Krankenhäuser
+
+> [!interesse-compliance] ePA-Pflicht für Krankenhäuser
+> Ab **April 2026** müssen Krankenhäuser ihren Patienten über ein zertifiziertes KIS-Modul Zugang zur [[ePA]] ermöglichen. KIS ohne zertifiziertes ePA-Modul können finanzielle Sanktionen nach sich ziehen. Die DKG hat gemeinsam mit der [[gematik]] die technischen Anforderungen mitgestaltet. Krankenhäuser sollten prüfen, ob ihr KIS-Anbieter die Zertifizierung bereits abgeschlossen hat.
 
 Ab **April 2026** müssen [[KIS|Krankenhausinformationssysteme]] ein zertifiziertes ePA-Modul enthalten. Krankenhäuser, deren KIS diese Anforderung nicht erfüllt, riskieren finanzielle Sanktionen. Die DKG hat die Anforderungen an das ePA-Krankenhausmodul in Abstimmung mit der [[gematik]] mitgestaltet.
 

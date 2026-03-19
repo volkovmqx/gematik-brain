@@ -31,7 +31,7 @@ Die KZBV hat zwei Kernaufgaben: Sicherstellung und Interessenvertretung.
 **Sicherstellung** bedeutet, dass flächendeckend ausreichend Vertragszahnärzte für die GKV-Versicherten vorhanden sein müssen. Die KZVen sind dafür auf Landesebene zuständig.
 
 **Interessenvertretung** umfasst die Verhandlung mit dem [[GKV-Spitzenverband]] über:
-- Vergütungshöhe und Bewertungsmaßstab zahnärztlicher Leistungen (BEMA, Bewertungsmaßstab Zahnärzte)
+- Vergütungshöhe und [[BEMA|Bewertungsmaßstab zahnärztlicher Leistungen (BEMA)]]
 - Abrechnungsregeln
 - Versorgungsverträge
 

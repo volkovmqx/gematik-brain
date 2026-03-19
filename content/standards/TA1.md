@@ -3,7 +3,7 @@ title: TA1
 audience: [technical]
 tags: [standards, abrechnung, apotheke, gkv, datenaustausch]
 aliases: [Technische Anlage 1, TA 1, Apothekenabrechnung, ARZ-Format]
-maturity: setzling
+maturity: wachsend
 relevance:
   sectors: [apotheke, kasse, hersteller, it-dienstleister]
   interests: [technik, compliance]
@@ -72,8 +72,8 @@ Scheitert eine Prüfung, wird der Satz mit einem Fehlercode (Retaxationscode) an
 
 Die wichtigsten Apothekenrechenzentren in Deutschland:
 
-- **NOVENTI**: Marktführer (nach Branchenschätzungen ca. 50 % der GKV-Rezepte), entstanden aus der Fusion von VSA (München), ALG (Datteln) und SARZ (Schwerin) zwischen 2016 und 2018. Kooperationspartner von ARZ Darmstadt seit 2018.
-- **ARZ Darmstadt**: eigenständiges, apothekergetragenes Rechenzentrum; kooperiert seit 2018 mit NOVENTI bei bestimmten Softwareprojekten, ist aber rechtlich und operativ unabhängig.
+- **NOVENTI**: Marktführer (nach Branchenschätzungen ca. 50 % der GKV-Rezepte), entstanden aus dem Zusammenschluss der Abrechnungszentren VSA (München), ALG (Datteln) und SARZ (Schwerin) zwischen 2016 und 2018.
+- **ARZ Darmstadt**: eigenständig; apothekergetragenes Rechenzentrum, das unabhängig von NOVENTI operiert.
 - **AvP** (insolvent 2020; Teile des Geschäftsbetriebs wurden von RZH, einer Tochter der ARZ-Haan-Gruppe, übernommen)
 - **DAD** (Deutsches Apothekenrechenzentrum der ABDA)
 - **ARZ Haan**
