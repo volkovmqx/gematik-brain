@@ -958,8 +958,9 @@
       "summary": "Die Digitale Patientenrechnung (DiPaG, gemäß §359a SGB V) ist laut OneRoadmap Q1/2026 für Ende 2026 als neue TI-Anwendung geplant. DiPaG ermöglicht Leistungserbringern (Ärzte, Zahnärzte, Apotheker), Rechnungen für Privatleistungen und Zuzahlungen digital zu übermitteln. Versicherte können die Rechnung in ihrer ePA oder GesundheitsID-App einsehen und an den Kostenträger (PKV, Beihilfe) weiterleiten. Ausbaustufe 2.0 mit erweiterten Funktionen folgt 2027. Produkttypsteckbrief und Feature-Spezifikation (gemF_DiPag V1.1.1) bereits auf gemspec.gematik.de veröffentlicht. API-Dokumentation auf GitHub (gematik/api-dipag).",
       "relevantArticles": ["ePA.md", "Gesundheits-ID.md", "Fachdienst.md"],
       "category": "specification",
-      "action": "new_article",
-      "details": "DiPaG ist eine neue TI-Anwendung ohne eigenen Artikel in der Wissensbasis. Da Spezifikation und Produkttypsteckbrief bereits vorhanden sind, ist jetzt ein guter Zeitpunkt für einen Artikel. Vorgeschlagener Pfad: content/technologies/DiPaG.md.",
+      "action": "applied",
+      "appliedDate": "2026-03-19",
+      "details": "DiPaG.md existiert bereits unter content/technologies/DiPaG.md. Der Artikel wurde in einem früheren Zyklus erstellt. Kein weiterer Handlungsbedarf.",
       "suggestedTerm": "DiPaG"
     },
     {

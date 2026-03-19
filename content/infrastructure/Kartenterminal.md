@@ -22,7 +22,7 @@ Es gibt zwei Varianten:
 - **Stationäres Terminal**: Fest installiertes Gerät am Empfang oder Behandlungsraum. Für Standard-Praxen die häufigste Form.
 - **Mobiles Terminal**: Für Hausbesuche oder flexible Einsatzorte. Kommuniziert drahtlos mit dem Konnektor.
 
-Kartenterminals sind zulassungspflichtig. Die [[gematik]] prüft und zertifiziert jedes Gerät. Nur zugelassene Terminals dürfen in der TI eingesetzt werden. Für die Aufnahme in die TI-Pauschale muss die Praxis die Anzahl der installierten Kartenterminals nachweisen.
+Kartenterminals sind zulassungspflichtig. Die [[gematik]] prüft und zertifiziert jedes Gerät. Nur zugelassene Terminals dürfen in der TI eingesetzt werden. Für die Aufnahme in die [[TI-Pauschale]] muss die Praxis die Anzahl der installierten Kartenterminals nachweisen.
 
 ## Technische Details
 

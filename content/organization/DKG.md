@@ -28,7 +28,7 @@ Die DKG erfüllt mehrere gesetzlich zugewiesene Aufgaben in der gemeinsamen Selb
 
 - Aushandlung der **Krankenhausvergütung** mit dem [[GKV-Spitzenverband]] (DRG-Systempflege über das [[InEK]])
 - Mitgestaltung der **Qualitätssicherung** im stationären Bereich (gemeinsam mit G-BA)
-- Stellungnahmen und Verhandlungen zu Krankenhaus-Gesetzgebung (z.B. [[KHZG]], KHVVG)
+- Stellungnahmen und Verhandlungen zu Krankenhaus-Gesetzgebung (z.B. [[KHZG]], [[KHVVG]])
 - Festlegung, welche Krankenhaus-IT-Systeme nach § 373 [[SGB V]] einer ISiK-Bestätigung bedürfen
 
 ### Relevanz für Krankenhausfinanzierung
@@ -60,7 +60,7 @@ Ab **April 2026** müssen [[KIS|Krankenhausinformationssysteme]] ein zertifizier
 
 Das G-DRG-System weist jedem Krankenhausfall eine Fallpauschale zu. Die Abrechnung erfolgt über strukturierte Datensätze mit [[ICD-10-GM]]-Diagnosen und [[OPS]]-Prozeduren. Das [[InEK]] kalibriert die Fallgewichte jährlich anhand von Kostendaten, die Krankenhäuser liefern.
 
-Das PEPP-System (Pauschalierendes Entgeltsystem Psychiatrie und Psychosomatik) ist ein analoges System für psychiatrische Einrichtungen.
+Das [[PEPP]]-System (Pauschalierendes Entgeltsystem Psychiatrie und Psychosomatik) ist ein analoges System für psychiatrische Einrichtungen.
 
 ## Verknüpfungen
 

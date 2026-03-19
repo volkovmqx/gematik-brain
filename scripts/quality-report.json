@@ -1,12 +1,84 @@
 {
-  "timestamp": "2026-03-19T07:00:00Z",
+  "timestamp": "2026-03-19T07:30:00Z",
   "overallScore": 84,
   "testResults": {
-    "passed": 138,
+    "passed": 143,
     "failed": 1,
-    "total": 139
+    "total": 144
   },
   "articles": [
+    {
+      "file": "content/processes/DMP.md",
+      "verdict": "revise",
+      "score": 70,
+      "issues": [
+        "Broken wiki-link [[BAS]] used 3 times — no matching file or alias in knowledge base (confirmed by test-report.json)",
+        "List of 11 DMP-Indikationen is accurate for G-BA-Anforderungen but the article does not distinguish between G-BA-Beschlüsse (11) and aktuell zugelassene/laufende Programme; per BAS (Stand 31.12.2025) sind 8 Indikationen zugelassen, Adipositas, Chronische Herzinsuffizienz, Chronischer Rückenschmerz und Depression befinden sich noch in der Umsetzungsphase",
+        "PKP 2026 value of 152,28 Euro is unverified against an authoritative primary source — only 149,16 Euro for 2025 confirmed by BAS page",
+        "Source URL 'kbv.de/html/dmp.php' is a legacy path pattern — verify canonical URL is kbv.de/praxis/patientenversorgung/dmp"
+      ],
+      "fixInstructions": "1. Replace all [[BAS]] with [[Bundesamt-fuer-Soziale-Sicherung]] or create a BAS.md stub with the full name as alias. 2. Add a clarifying sentence: '8 Indikationen sind aktuell vom BAS zugelassen; Adipositas, Chronische Herzinsuffizienz, Chronischer Rückenschmerz und Depression haben G-BA-Anforderungen, befinden sich aber noch in der Umsetzungsphase (Stand Januar 2026).' 3. Verify PKP 2026 value against GKV-Spitzenverband Festlegung and add official source. 4. Update KBV source URL to https://www.kbv.de/praxis/patientenversorgung/dmp."
+    },
+    {
+      "file": "content/concepts/TI-Pauschale.md",
+      "verdict": "revise",
+      "score": 75,
+      "issues": [
+        "Weak sources: 'der-niedergelassene-arzt.de' and 'telekonnekt.de' are commercial/trade-press sources, not official gematik/BMG/KBV publications; article has no official gematik source",
+        "Introduction date '1. Juli 2023' — KBV documents confirm 2023 introduction but the specific July date is not confirmed in official sources found in this review cycle",
+        "KBV source URL 'kbv.de/praxis/digitalisierung/telematikinfrastruktur' may not resolve to a stable page — the canonical KBV page for TI-Vergütung may have moved"
+      ],
+      "fixInstructions": "Replace 'der-niedergelassene-arzt.de' and 'telekonnekt.de' sources with: (1) KBV Praxisnachricht Januar 2026 https://www.kbv.de/praxis/tools-und-services/praxisnachrichten/2026/01-08/ti-pauschale-gestiegen and (2) KBV Entwicklung-TI-Pauschale PDF https://www.kbv.de/documents/infothek/rechtsquellen/bundesmantelvertrag/anlage-32-vereinbarung-telematikinfrastruktur/Entwicklung_TI-Pauschale.pdf — both are official KBV publications confirming the 2026 values."
+    },
+    {
+      "file": "content/concepts/PEPP.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "DocCheck Flexikon listed as third source — acceptable as supplementary but not authoritative; all core facts in the article are independently verified",
+        "Erprobungsphase 2013-2017, verbindlich ab 1. Januar 2018: confirmed correct against multiple sources",
+        "Basisentgeltwert 2024 (277,14 Euro) and 2025 (353,24 Euro): confirmed correct by GKV-Spitzenverband"
+      ],
+      "fixInstructions": "Optional: replace DocCheck Flexikon source with https://www.aok.de/pp/lexikon/pauschalierende-entgelte-fuer-psychiatrie-und-psychosomatik-pepp/ for a more institutional reference. No mandatory changes."
+    },
+    {
+      "file": "content/standards/KHVVG.md",
+      "verdict": "pass",
+      "score": 90,
+      "issues": [
+        "All key facts verified correct: Bundesrat 22.11.2024, Inkrafttreten 12.12.2024, 65 Leistungsgruppen, Transformationsfonds 50 Milliarden Euro (je 25 Mrd. Bund und Länder), Umsetzungszeitplan 2025-2029 — all confirmed by official BMG sources and Bundesgesetzblatt",
+        "BMG source URL verified live and resolves correctly"
+      ],
+      "fixInstructions": "No fixes required. Article is factually accurate and well-sourced with 4 official sources (BMG, BGBl, Bundestag DIP)."
+    },
+    {
+      "file": "content/organization/Bewertungsausschuss.md",
+      "verdict": "pass",
+      "score": 92,
+      "issues": [
+        "Composition 3+3 Vertreter KBV/GKV-SV confirmed against § 87 Abs. 3 SGB V",
+        "Orientierungswert 2026 (12,7404 Cent, +2,8%): confirmed and consistent with EBM.md and TI-Pauschale.md",
+        "Minor: Beschlüsse publication in 'Deutsches Ärzteblatt' is partially outdated — primary publication channel is now institut-ba.de; Ärzteblatt still carries selected notices but is not the primary registry"
+      ],
+      "fixInstructions": "Minor: add 'sowie auf der Website des Instituts des Bewertungsausschusses (institut-ba.de)' after 'im Deutschen Ärzteblatt veröffentlicht'. No structural changes needed."
+    },
+    {
+      "file": "content/standards/EBM.md",
+      "verdict": "pass",
+      "score": 90,
+      "issues": [],
+      "fixInstructions": "Modified article (added [[Bewertungsausschuss]] and [[TI-Pauschale]] links) — both links are relevant and correctly placed in context. No factual issues introduced."
+    },
+    {
+      "file": "content/organization/DKG.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "Added [[KHVVG]] and [[PEPP]] links are correctly placed and contextually relevant",
+        "Minor (carried): patient figures (17M stationär, 21M ambulant) are from 2020 data, not explicitly dated in the article"
+      ],
+      "fixInstructions": "Add '(Stand 2020)' after the patient figures. No changes needed for the newly added wiki-links."
+    },
     {
       "file": "content/organization/DAV.md",
       "verdict": "pass",
@@ -383,23 +455,25 @@
     }
   ],
   "staleArticles": [
+    "content/processes/DMP.md: Presents all 11 G-BA-Indikationen as equally active — 3 (Adipositas KiJu, Herzinsuffizienz, Rückenschmerz, Depression) are still in Umsetzungsphase and not yet enrollable per BAS Stand Januar 2026.",
     "content/infrastructure/IDP.md: RSA 2048 listed as 'gültig bis Ende 2025' — this deadline has elapsed (current date: 19.03.2026); should be updated to note transition to ECDSA is complete.",
     "content/standards/IVDR.md: Class D transition deadline (26. Mai 2025) is a past date but not explicitly noted as elapsed; readers may be confused about whether it is upcoming.",
     "content/technologies/Teleradiologie.md: references §25 StrlSchV for Teleradiologie — current law since 1. Januar 2019 is §123 StrlSchV 2018 (carried from previous cycle)",
     "content/technologies/Fernsignatur.md: cites eIDAS Art. 29 and Art. 3 Nr. 23 for Fernunterschrift — Art. 29a (explicit Fernsignatur framework) was added in the 2024 consolidated eIDAS (carried from previous cycle)"
   ],
   "summary": {
-    "reviewed": 9,
-    "pass": 7,
-    "revise": 2,
+    "reviewed": 16,
+    "pass": 12,
+    "revise": 4,
     "fail": 0,
     "keyIssues": [
-      "Patientenportal.md FACTUAL ERROR: ISiK attributed to BfArM — must be corrected to gematik. Dead URL simplifier.net/isik-basis-v4 must be replaced.",
-      "ePass.md: broken wiki-link [[BITMARCK]] — no article exists; either create BITMARCK article or plain-text the reference.",
-      "IDP.md: RSA 2048 deprecation note outdated — deadline of Ende 2025 has passed, should reflect completed transition.",
-      "IVDR.md: Class D deadline (26.05.2025) has passed; article should note this and add extended IVDD transition periods.",
-      "gRPC.md: CNCF date ambiguity (Feb 16 formal vs March 1 public) is minor; source URL for Google Cloud API Gateway is off-topic and should be replaced.",
-      "Carried unresolved: Teleradiologie.md (§25 vs §123 StrlSchV), Fernsignatur.md (eIDAS Art. citations), BfDI.md (Amtsantritt date), eArztbrief.md (EBM Cent), TA1.md and Apothekenrechenzentrum.md (NOVENTI lineage)."
+      "DMP.md: [[BAS]] wiki-link broken 3 times — highest priority fix, causes test failure; also needs clarification that 3-4 DMP-Indikationen are still in Umsetzungsphase and not yet enrollable.",
+      "TI-Pauschale.md: Two of four sources are commercial trade press; replace with official KBV publications.",
+      "Patientenportal.md FACTUAL ERROR (carried): ISiK attributed to BfArM — must be corrected to gematik. Dead URL simplifier.net/isik-basis-v4 must be replaced.",
+      "ePass.md (carried): broken wiki-link [[BITMARCK]] — no article exists; either create BITMARCK article or plain-text the reference.",
+      "No cross-article contradictions in new articles: Orientierungswert 2026 (12,7404 Cent) stated consistently in EBM.md, Bewertungsausschuss.md and TI-Pauschale.md; ePA launch dates consistent across all articles.",
+      "KHVVG.md and PEPP.md fully pass — all key facts verified against authoritative sources.",
+      "Carried unresolved: Teleradiologie.md (§25 vs §123 StrlSchV), Fernsignatur.md (eIDAS Art. citations), BfDI.md (Amtsantritt date), eArztbrief.md (EBM Cent), TA1.md and Apothekenrechenzentrum.md (NOVENTI lineage), IDP.md (RSA 2048 outdated)."
     ]
   }
 }

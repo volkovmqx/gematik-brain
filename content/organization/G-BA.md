@@ -36,7 +36,7 @@ Der G-BA entscheidet über den Leistungskatalog der [[GKV]]:
 - **Arzneimittel-Nutzenbewertung (AMNOG)**: Nach der Markteinführung neuer Medikamente bewertet der G-BA deren Zusatznutzen gegenüber der Standardtherapie. Das Ergebnis bestimmt den Erstattungsbetrag.
 - **Heilmittelrichtlinie**: Welche physio-, ergo- und logopädischen Leistungen werden erstattet?
 - **Qualitätssicherung**: Der G-BA erlässt Richtlinien zur Mindestqualität von Operationen, Krebsbehandlungen und weiteren Bereichen.
-- **Strukturierte Behandlungsprogramme (DMP)**: Programme für chronisch Kranke (z.B. Diabetes, Asthma).
+- **Strukturierte Behandlungsprogramme ([[DMP]])**: Programme für chronisch Kranke (z.B. Diabetes, Asthma).
 - **Digitale Gesundheitsanwendungen**: Seit 2020 ist der G-BA an der Nutzenbewertung von [[DiGA]] beteiligt.
 
 ## Technische Details

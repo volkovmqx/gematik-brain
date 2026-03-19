@@ -44,7 +44,7 @@ Die KVen sind an die [[Telematikinfrastruktur]] angebunden. Sie erhalten über d
 - [[eAU]]-Daten (Arbeitsunfähigkeitsbescheinigungen) von den Praxen
 - Abrechnungsrelevante Daten, die künftig über TI-Kommunikationswege wie [[KIM]] übermittelt werden
 
-Für die Prüfung der TI-Nutzung durch ihre Mitglieder spielen die KVen eine wichtige Rolle: Sie können die TI-Pauschale kürzen oder streichen, wenn Praxen Pflichtanwendungen nicht nutzen.
+Für die Prüfung der TI-Nutzung durch ihre Mitglieder spielen die KVen eine wichtige Rolle: Sie können die [[TI-Pauschale]] kürzen oder streichen, wenn Praxen Pflichtanwendungen nicht nutzen.
 
 ### KV-SafeNet
 
@@ -61,6 +61,8 @@ Für die Prüfung der TI-Nutzung durch ihre Mitglieder spielen die KVen eine wic
 - [[GKV]] (Gesetzliche Krankenversicherung, zahlt die Gesamtvergütung an die KVen)
 - [[SGB-V]] (Rechtsgrundlage für KVen, § 77 ff.)
 - [[Telematikinfrastruktur]] (Infrastruktur, über die Praxen und KVen kommunizieren)
+- [[TI-Pauschale]] (KVen zahlen die TI-Pauschale aus und prüfen die Voraussetzungen)
+- [[Bewertungsausschuss]] (beschließt EBM-Leistungen und Pauschalen, die KVen umsetzen)
 
 ## Quellen
 

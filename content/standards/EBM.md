@@ -3,6 +3,7 @@ title: EBM
 audience: [technical, non-technical]
 tags: [standards, vergütung, ambulant, abrechnung, gkv, kbv]
 aliases: [Einheitlicher Bewertungsmaßstab, EBM-Ziffer, Bewertungsmaßstab]
+maturity: immergruen
 ---
 
 # EBM
@@ -15,7 +16,7 @@ Wenn ein Arzt dich behandelt, bekommt er dafür Geld von der Krankenkasse. Aber 
 
 ## Überblick
 
-Der EBM wird gemeinsam von der [[KBV]] (Kassenärztliche Bundesvereinigung) und dem [[GKV-Spitzenverband]] im **Bewertungsausschuss** beschlossen. Er ist das zentrale Vergütungsinstrument für die ambulante vertragsärztliche Versorgung in Deutschland und gilt für alle rund 150.000 Vertragsärzte und Vertragspsychotherapeuten.
+Der EBM wird gemeinsam von der [[KBV]] (Kassenärztliche Bundesvereinigung) und dem [[GKV-Spitzenverband]] im **[[Bewertungsausschuss]]** beschlossen. Er ist das zentrale Vergütungsinstrument für die ambulante vertragsärztliche Versorgung in Deutschland und gilt für alle rund 150.000 Vertragsärzte und Vertragspsychotherapeuten.
 
 Der EBM ist nach Fachgebieten und Leistungsbereichen strukturiert. Er enthält mehrere tausend **GOP** (Gebührenordnungspositionen), die jeweils durch eine fünfstellige Ziffernkombination identifiziert werden. Jede GOP hat eine Punktzahl und Abrechnungsvoraussetzungen (z.B. Mindestzeit, Quartalsbeschränkungen).
 
@@ -50,7 +51,7 @@ Jede GOP (Gebührenordnungsposition) im EBM enthält:
 
 ### TI-Pauschalen im EBM
 
-Seit der Einführung der [[Telematikinfrastruktur]] enthält der EBM spezifische **TI-Pauschalen**, die Praxen für die Nutzung von TI-Diensten vergüten:
+Seit der Einführung der [[Telematikinfrastruktur]] enthält der EBM spezifische **[[TI-Pauschale|TI-Pauschalen]]**, die Praxen für die Nutzung von TI-Diensten vergüten:
 
 - **GOP 01660**: TI-Betriebspauschale für den Betrieb der TI-Infrastruktur
 - **GOP 01670–01672**: Pauschalen für [[eAU]] (elektronische Arbeitsunfähigkeitsbescheinigung)
@@ -81,6 +82,8 @@ Der **Bewertungsausschuss** (BA) ist das gemeinsame Beschlussgremium von KBV und
 - [[eAU]] (elektronische AU-Bescheinigung, hat eigene EBM-Pauschalen)
 - [[VSDM]] (Versichertenstammdaten-Abgleich, hat EBM-Pauschale)
 - [[Telematikinfrastruktur]] (TI-Nutzung wird über EBM-Pauschalen vergütet)
+- [[TI-Pauschale]] (eigenständige EBM-Pauschale für TI-Infrastrukturkosten)
+- [[Bewertungsausschuss]] (beschließt und aktualisiert den EBM)
 
 ## Quellen
 

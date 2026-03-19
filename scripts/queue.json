@@ -1,48 +1,6 @@
 {
   "pending": [
     {
-      "term": "DMP",
-      "category": "processes",
-      "reason": "Strukturierte Behandlungsprogramme (Disease-Management-Programme) für chronisch Kranke (Diabetes, Asthma, KHK). Vom G-BA beschlossen, von Krankenkassen umgesetzt. In G-BA.md als eine der Kernaufgaben aufgeführt. DiGA-Verordnungen ergänzen DMPs. Relevant für TI-Anwendungen wie ePA, E-Rezept und Telemedizin im chronischen Versorgungskontext.",
-      "mentionedIn": [
-        "content/organization/G-BA.md"
-      ],
-      "priority": 15
-    },
-    {
-      "term": "TI-Pauschale",
-      "category": "concepts",
-      "reason": "Monatliche Vergütung für Arztpraxen zur Abdeckung der TI-Infrastrukturkosten (Konnektor oder TI-Gateway, Kartenterminals, SMC-B, HBA, TI-Anwendungen). Seit 1. Januar 2026 ca. 263,62 Euro pro Einzelpraxis. Kürzung bei fehlenden Pflichtanwendungsnachweisen. Geregelt im EBM. In 7 Erwähnungen in Telematikinfrastruktur.md, EBM.md, Kartenterminal.md und Kassenaerztliche-Vereinigung.md. Zentrales Steuerungsinstrument für TI-Adoptionsquoten.",
-      "mentionedIn": [
-        "content/infrastructure/Telematikinfrastruktur.md",
-        "content/standards/EBM.md",
-        "content/infrastructure/Kartenterminal.md",
-        "content/organization/Kassenaerztliche-Vereinigung.md"
-      ],
-      "priority": 15
-    },
-    {
-      "term": "PEPP",
-      "category": "concepts",
-      "reason": "Pauschalierendes Entgeltsystem Psychiatrie und Psychosomatik. Parallelsystem zum G-DRG für psychiatrische und psychosomatische Krankenhäuser. In DRG.md als eigenständiges Vergütungssystem und in KIS.md im Abrechnungskontext erwähnt. Relevant für KIS-Implementierungen in psychiatrischen Kliniken.",
-      "mentionedIn": [
-        "content/concepts/DRG.md",
-        "content/infrastructure/KIS.md"
-      ],
-      "priority": 15
-    },
-    {
-      "term": "KHVVG",
-      "category": "standards",
-      "reason": "Krankenhausversorgungsverbesserungsgesetz 2024. Nachfolgegesetz des KHZG. Löst die einmalige Investitionsförderung durch strukturelle Vergütungsreformen ab (DRG-Strukturreform, Level-II-Versorgung). In KHZG.md und KHG.md als Folgegesetz erwähnt, in DKG.md als aktuelles Reformgesetz. Bedeutsam für Krankenhausplanung und KIS-Kontext.",
-      "mentionedIn": [
-        "content/standards/KHZG.md",
-        "content/standards/KHG.md",
-        "content/organization/DKG.md"
-      ],
-      "priority": 15
-    },
-    {
       "term": "HDDT",
       "category": "standards",
       "reason": "Health Device Data Transfer. Neue gematik-Spezifikation (RC v26_1, März 2026) für Datenaustausch zwischen Medizinprodukten (Insulinpumpen, Herzmonitore, Spirometer) und DiGA. Rechtsgrundlage § 374a SGB V. In DiGA.md als wichtige neue Schnittstelle beschrieben. FHIR R4-basiert, ermöglicht Übertragung von Gerätedaten in die ePA.",
@@ -52,20 +10,27 @@
       "priority": 14
     },
     {
-      "term": "Bewertungsausschuss",
-      "category": "organization",
-      "reason": "Paritätisches Gremium aus KBV und GKV-Spitzenverband zur Festlegung und Bewertung des EBM. Beschließt Punktwerte, Abrechnungsregeln und neue Leistungspositionen. In EBM.md zentral als normgebendes Organ, 5 Erwähnungen. Kein Verständnis des EBM-Abrechnungssystems ohne Kenntnis dieses Gremiums.",
+      "term": "ECC-Migration",
+      "category": "processes",
+      "reason": "TI-weite Umstellung der Kryptographie von RSA auf Elliptic Curve Cryptography (ECC). Seit 1. Januar 2026 sind alle neu ausgestellten Zertifikate ECC-Pflicht. Laufende Übergangsfristen: eHBA G2.0 bis 30. Juni 2026, gSMC-KT bis 31. Dezember 2026. Als eigenes Thema in HBA.md, SMC-B.md, gSMC-KT.md, Kartenterminal.md, TSL.md, Konnektoren.md und Telematikinfrastruktur.md behandelt. Querschnittsthema mit mehreren kritischen Fristen, das eine eigene Übersichtsseite verdient.",
       "mentionedIn": [
-        "content/standards/EBM.md"
+        "content/infrastructure/HBA.md",
+        "content/infrastructure/SMC-B.md",
+        "content/infrastructure/gSMC-KT.md",
+        "content/infrastructure/Kartenterminal.md",
+        "content/infrastructure/TSL.md",
+        "content/infrastructure/Konnektoren.md",
+        "content/infrastructure/Telematikinfrastruktur.md"
       ],
-      "priority": 15
+      "priority": 14
     },
     {
       "term": "AMNOG",
       "category": "standards",
-      "reason": "Arzneimittelmarktneuordnungsgesetz (2011). Regelt die frühe Nutzenbewertung neuer Arzneimittel durch G-BA und IQWiG. Bestimmt Erstattungsbeträge für neue Medikamente in der GKV. In G-BA.md als zentrales Verfahren erwähnt. Relevant für das Verständnis des DiGA-Nutzenbewertungsverfahrens, das AMNOG als Vorbild hatte.",
+      "reason": "Arzneimittelmarktneuordnungsgesetz (2011). Regelt die frühe Nutzenbewertung neuer Arzneimittel durch G-BA und IQWiG. Bestimmt Erstattungsbeträge für neue Medikamente in der GKV. In G-BA.md und IQWiG.md als zentrales Verfahren erwähnt. Relevant für das Verständnis des DiGA-Nutzenbewertungsverfahrens, das AMNOG als Vorbild hatte.",
       "mentionedIn": [
-        "content/organization/G-BA.md"
+        "content/organization/G-BA.md",
+        "content/organization/IQWiG.md"
       ],
       "priority": 13
     },
@@ -111,6 +76,11 @@
     }
   ],
   "done": [
+    "DMP",
+    "TI-Pauschale",
+    "PEPP",
+    "KHVVG",
+    "Bewertungsausschuss",
     "Patientenportal",
     "IQWiG",
     "ePass",

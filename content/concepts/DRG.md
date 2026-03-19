@@ -65,7 +65,7 @@ Krankenkassen haben das Recht, Abrechnungen durch den Medizinischen Dienst (MD) 
 
 ### PEPP: Pauschalierende Entgelte für Psychiatrie und Psychosomatik
 
-Psychiatrische und psychosomatische Krankenhäuser unterliegen nicht dem G-DRG-System. Für sie gilt seit 2013 das PEPP-System (Pauschalierendes Entgeltsystem Psychiatrie und Psychosomatik), das ebenfalls vom InEK gepflegt wird, aber auf anderen Strukturprinzipien basiert.
+Psychiatrische und psychosomatische Krankenhäuser unterliegen nicht dem G-DRG-System. Für sie gilt seit 2013 das [[PEPP]]-System (Pauschalierendes Entgeltsystem Psychiatrie und Psychosomatik), das ebenfalls vom InEK gepflegt wird, aber auf anderen Strukturprinzipien basiert.
 
 ## Verknüpfungen
 

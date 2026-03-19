@@ -29,7 +29,7 @@ Das InEK erfüllt vier Kernaufgaben:
 
 1. **Weiterentwicklung des G-DRG-Systems**: Jährliche Kalkulation der Bewertungsrelationen auf Basis realer Kostendaten aus dem Kalkulationskrankenhaus-Netz.
 2. **Pflege der Deutschen Kodierrichtlinien (DKR)**: Die DKR sind die verbindliche Anleitung, wie Diagnosen ([[ICD-10-GM]]) und Prozeduren ([[OPS]]) in Krankenhäusern zu kodieren sind.
-3. **PEPP-System**: Seit 2013 ist das InEK auch für das Pauschalierendes Entgeltsystem Psychiatrie und Psychosomatik (PEPP) zuständig.
+3. **[[PEPP]]-System**: Seit 2013 ist das InEK auch für das Pauschalierendes Entgeltsystem Psychiatrie und Psychosomatik (PEPP) zuständig.
 4. **Nutzerbewertung**: Das InEK betreibt ein Antragsverfahren, über das Krankenhäuser, Fachgesellschaften und Kassen Anpassungsvorschläge für das G-DRG-System einreichen können.
 
 ### Kalkulationskrankenhaus-Netz

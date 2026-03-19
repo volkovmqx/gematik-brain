@@ -67,7 +67,7 @@ Das KHZG schuf den Förderfonds (KHZF). Die Krankenhaus-Strukturfonds-Verfahrens
 
 ### Nachfolgegesetzgebung
 
-Das KHZG war ein einmaliges Investitionsprogramm. Die nachfolgende Krankenhausreform (Krankenhausversorgungsverbesserungsgesetz, KHVVG, 2024) setzt auf strukturelle Veränderungen der Vergütung statt auf direkte Investitionsförderung. Die durch KHZG angestoßene Digitalisierungspflicht bleibt als dauerhafte Anforderung erhalten.
+Das KHZG war ein einmaliges Investitionsprogramm. Die nachfolgende Krankenhausreform ([[KHVVG|Krankenhausversorgungsverbesserungsgesetz, KHVVG]], 2024) setzt auf strukturelle Veränderungen der Vergütung statt auf direkte Investitionsförderung. Die durch KHZG angestoßene Digitalisierungspflicht bleibt als dauerhafte Anforderung erhalten.
 
 ## Verknüpfungen
 
@@ -78,6 +78,7 @@ Das KHZG war ein einmaliges Investitionsprogramm. Die nachfolgende Krankenhausre
 - [[BSI]]: Beratende Rolle bei der ISMS-Pflicht nach KHZG
 - [[SGB-V]]: Krankenhausfinanzierung und ISiK-Anforderungen nach § 373 SGB V
 - [[gematik]]: Führt ISiK-Bestätigungen durch, die mit KHZG-Vorhaben verknüpft sind
+- [[KHVVG]]: Nachfolgegesetz mit strukturellen Vergütungsreformen
 
 ## Quellen
 

@@ -40,7 +40,7 @@ Das KHG ist ein Rahmengesetz. Es ermächtigt den Bundesgesetzgeber und die Selbs
 Das KHG wurde durch folgende Gesetze ergänzt oder weiterentwickelt:
 
 - **[[KHZG]] (Krankenhauszukunftsgesetz, 2020)**: Förderprogramm für digitale Infrastruktur in Krankenhäusern mit 4,3 Milliarden Euro.
-- **KHVVG (Krankenhausversorgungsverbesserungsgesetz, 2024)**: Strukturreform der Krankenhausvergütung, ersetzt die einmalige KHZG-Förderung durch dauerhafte strukturelle Veränderungen.
+- **[[KHVVG]] (Krankenhausversorgungsverbesserungsgesetz, 2024)**: Strukturreform der Krankenhausvergütung, ersetzt die einmalige KHZG-Förderung durch dauerhafte strukturelle Veränderungen.
 
 ## Technische Details
 

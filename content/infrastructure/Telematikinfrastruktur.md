@@ -41,7 +41,7 @@ Die Pflicht zur TI-Anbindung wird schrittweise ausgeweitet. Pflegeeinrichtungen 
 
 ### TI-Pauschale
 
-Die monatliche TI-Pauschale vergütet Arztpraxen die Kosten für TI-Infrastruktur und -Anwendungen. Zum **1. Januar 2026** stieg die Pauschale um **2,8 Prozent**. Für eine Einzelpraxis beträgt sie seither ca. **263,62 Euro pro Monat**.
+Die monatliche [[TI-Pauschale]] vergütet Arztpraxen die Kosten für TI-Infrastruktur und -Anwendungen. Zum **1. Januar 2026** stieg die Pauschale um **2,8 Prozent**. Für eine Einzelpraxis beträgt sie seither ca. **263,62 Euro pro Monat**.
 
 Die Pauschale setzt voraus, dass die Praxis vollständig technisch ausgestattet ist (Konnektor oder TI-Gateway, Kartenterminals, [[SMC-B]], [[HBA]]) und zentrale TI-Anwendungen aktiv nutzt ([[eAU]], [[ePA]], [[KIM]]). Fehlt der Nachweis einer Anwendung, wird die Pauschale um **50 Prozent** gekürzt. Fehlen mehrere Nachweise, entfällt sie vollständig.
 
