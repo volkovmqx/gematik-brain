@@ -21,7 +21,7 @@ Patienten mit drei oder mehr verordneten Medikamenten haben gesetzlichen Anspruc
 
 Vor dem eMP gab es den **[[BMP|Bundeseinheitlichen Medikationsplan (BMP)]]** als Papierausdruck mit maschinenlesbarem QR-Code auf einem DIN-A4-Blatt. Der BMP konnte auch auf der [[eGK]] gespeichert werden. Der eMP löst den BMP ab und ist seit März 2026 in die [[ePA]] integriert. Die gematik-Spezifikation `gemInfo_Überführung_BMP_in_eMP` beschreibt die Migration bestehender BMP-Daten.
 
-Der eMP ist eng mit der **elektronischen Medikationsliste (eML)** verknüpft. Während die eML alle verordneten und abgegebenen Medikamente automatisch aus [[E-Rezept]]-Daten zusammenstellt, enthält der eMP eine kuratierte, arztgeführte Übersicht der aktuellen Dauermedikation inklusive Selbstmedikation und klinischer Hinweise.
+Der eMP ist eng mit der **[[eML|elektronischen Medikationsliste (eML)]]** verknüpft. Während die eML alle verordneten und abgegebenen Medikamente automatisch aus [[E-Rezept]]-Daten zusammenstellt, enthält der eMP eine kuratierte, arztgeführte Übersicht der aktuellen Dauermedikation inklusive Selbstmedikation und klinischer Hinweise.
 
 ### Rollout
 
@@ -59,6 +59,8 @@ Die eigentliche Interaktionsprüfung (Wechselwirkungscheck) findet nicht im ePA-
 
 - [[AMTS]] (der eMP ist das zentrale Instrument der digitalen AMTS-Unterstützung)
 - [[ePA]] (Speicherort und Plattform des eMP seit März 2026)
+- [[eML]] (automatische Medikationsliste, die den eMP mit Verordnungsdaten ergänzt)
+- [[dgMP]] (übergeordneter Prozessrahmen, der eML und eMP zusammenfasst)
 - [[E-Rezept]] (Verordnungs- und Abgabedaten fließen automatisch in die eML ein)
 - [[FHIR]] (technisches Datenformat aller Medikationsressourcen)
 - [[MIO]] (KBV-Profile für den Medikationsplan)

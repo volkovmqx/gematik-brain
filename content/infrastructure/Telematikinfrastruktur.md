@@ -3,7 +3,7 @@ title: Telematikinfrastruktur (TI)
 aliases: [TI, Telematikinfrastruktur]
 audience: [technical, non-technical]
 tags: [infrastruktur, ti, netzwerk]
-maturity: immergruen
+maturity: wachsend
 relevance:
   sectors: [arztpraxis, krankenhaus, zahnarzt, apotheke, pflege, therapie, hersteller, ti-infrastruktur, it-dienstleister, startup, kasse, regulierung]
   interests: [compliance, technik, business]
@@ -100,6 +100,10 @@ Token-basierte Autorisierung sichert den Zugriff auf Fachdienste. Jedes Token ha
 ### Zero-Trust-Migration
 
 Mit TI 2.0 wird das bisherige VPN-Perimeter-Modell durch [[Zero-Trust]] ersetzt. Jede Verbindung zwischen [[Primärsystem]] und TI-Fachdienst erfordert [[mTLS]] (Mutual TLS), bei dem beide Seiten gültige Zertifikate vorlegen müssen. Das [[TI-Gateway]] ist die zentrale Umsetzungskomponente.
+
+### KHAG: Interoperabilitätsstandards für Krankenhäuser
+
+Das [[KHAG|Krankenhausreformanpassungsgesetz (KHAG)]] wurde am **27. März 2026** vom Bundesrat beschlossen. Es verpflichtet Krankenhäuser, verbindliche Interoperabilitätsstandards bis **September 2026** umzusetzen. Der begleitende Transformationsfonds stellt 50 Milliarden Euro (2026 bis 2035) für Krankenhäuser bereit. Krankenhäuser ohne zertifiziertes [[Patientenportal]] erhalten ab 2026 einen Abschlag von 0,5 Prozent je stationären Fall. Das KHAG treibt die FHIR-basierte Interoperabilität ([[ISiK]]) im stationären Bereich weiter voran.
 
 ## Standards
 

@@ -4,6 +4,9 @@ audience: [technical, non-technical]
 tags: [standards, gesetzgebung, epa, telematikinfrastruktur, sgb-v]
 aliases: [DigiG, Digitalgesetz, Digital-Gesetz, Gesetz zur Beschleunigung der Digitalisierung des Gesundheitswesens]
 maturity: wachsend
+relevance:
+  sectors: [arztpraxis, krankenhaus, zahnarzt, apotheke, startup, hersteller, kasse, regulierung, patient]
+  interests: [compliance, business, patient]
 ---
 
 # DigiG - Digital-Gesetz
@@ -21,6 +24,9 @@ Das DigiG (Gesetz zur Beschleunigung der Digitalisierung des Gesundheitswesens) 
 Das Herzstück des DigiG ist das **Opt-out-Modell für die [[ePA]]**: Ab dem 15. Januar 2025 wird für alle gesetzlich Versicherten automatisch eine elektronische Patientenakte angelegt. Wer keine haben möchte, muss der eigenen Krankenkasse gegenüber aktiv widersprechen. Damit soll die ePA-Nutzung von wenigen Prozent auf nahezu alle GKV-Versicherten gesteigert werden.
 
 Neben der ePA enthält das DigiG Regelungen zu [[Telemedizin]], DiGA, Cloud-Nutzung und der Governance der [[gematik]].
+
+> [!interesse-compliance]
+> Das DigiG ist seit **26. März 2024** in Kraft. Die wichtigsten Pflichten für Leistungserbringer: (1) Cloud-Nutzung für Gesundheitsdaten nur mit BSI-C5-Typ-2-Zertifizierung ab **1. Juli 2025**. (2) Strengere IT-Sicherheit nach § 75b SGB V. (3) ePA-Nutzung als Pflicht ab **1. Oktober 2025** für alle Einrichtungen. (4) DiGA können jetzt auch Risikoklasse IIb abdecken. Arztpraxen und Krankenhäuser müssen ihre Cloud-Verträge auf BSI-C5-Konformität prüfen.
 
 Das DigiG ist kein Endpunkt der Gesetzgebung. Als Nachfolge des gescheiterten [[GDAG]] plant das [[BMG]] das **[[GDVG]] (Gesetz für digitale Versorgung und den Gesundheitsdatenraum)**, dessen Referentenentwurf für H1/2026 erwartet wird. Das GDVG soll die gematik zu einer modernen Digitalagentur umgestalten und den Gesundheitsdatenraum weiter ausbauen.
 
@@ -47,6 +53,9 @@ Das DigiG hat auf ein **Opt-out-Modell** umgestellt:
 4. Der Widerspruch kann jederzeit ausgeübt werden.
 
 Die technische Umsetzung startete am 15. Januar 2025 zunächst in Hamburg, Franken und Nordrhein als Pilotregionen.
+
+> [!interesse-patient]
+> Das DigiG hat die Spielregeln für die elektronische Patientenakte grundlegend geändert: Sie bekommen die [[ePA]] jetzt automatisch, ohne Antrag stellen zu müssen. Wenn Sie keine ePA wollen, müssen Sie bei Ihrer Krankenkasse aktiv widersprechen (Opt-out). Sie können den Widerspruch jederzeit einlegen oder zurückziehen. Ihre Daten bleiben immer unter Ihrer Kontrolle: Sie entscheiden, wer Zugriff bekommt.
 
 ### DiGA-Erweiterung auf Risikoklasse IIb
 

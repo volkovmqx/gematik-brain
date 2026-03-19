@@ -24,7 +24,7 @@ Trotz ihres Alters sind xDT-Formate noch weit verbreitet: Viele [[PVS]] (Praxisv
 
 | Format | Langname | Zweck |
 |--------|----------|-------|
-| **KVDT** | Abrechnungsdatenträger | Abrechnungsdaten von Praxen an die Kassenärztliche Vereinigung |
+| **[[KVDT]]** | Abrechnungsdatenträger | Abrechnungsdaten von Praxen an die Kassenärztliche Vereinigung |
 | **GDT** | Gerätedatentransfer | Datenaustausch zwischen Praxissystemen und Medizingeräten (EKG, Laborgeräte, Spirometer) |
 | **LDT** | Labor-Datentransfer | Übermittlung von Laborbefunden vom Labor an die Arztpraxis |
 | **BDT** | Behandlungsdatenträger | Übertragung von Behandlungsdaten zwischen Praxen (z.B. bei Praxisübergabe) |
@@ -87,6 +87,7 @@ In vielen PVS-Systemen koexistieren xDT und FHIR: xDT für Altschnittstellen (La
 
 - [[PVS]] (Praxisverwaltungssysteme; primäre Nutzer der xDT-Formate)
 - [[KBV]] (entwickelt und pflegt die xDT-Spezifikationen)
+- [[KVDT]] (eigenständige Seite zur Quartalsabrechnung)
 - [[Kassenaerztliche-Vereinigung]] (Empfänger von KVDT-Abrechnungsdaten)
 - [[FHIR]] (moderner Nachfolgestandard; löst xDT schrittweise ab)
 - [[HL7]] (internationale Standardfamilie, zu der FHIR gehört)

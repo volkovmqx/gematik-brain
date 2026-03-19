@@ -34,7 +34,7 @@ Die KOB prüft vor allem die korrekte Implementierung von [[FHIR]]-Profilen und 
 Die [[gematik]] veröffentlicht auf dem Interoperabilitätsverzeichnis (INA) eine **Positivliste** der erfolgreich bewerteten Systeme.
 
 > [!klinik-integration] Klinik-Integration: KOB und ISiK-Bestätigung für KIS
-> Krankenhäuser sind als Betreiber und Auftraggeber von KIS direkt betroffen: Nur KIS-Systeme mit erfolgreicher KOB-Bestätigung dürfen ePA-Funktionen (insb. die digitale Medikationsliste, eML) im Klinikbetrieb nutzen.
+> Krankenhäuser sind als Betreiber und Auftraggeber von KIS direkt betroffen: Nur KIS-Systeme mit erfolgreicher KOB-Bestätigung dürfen ePA-Funktionen (insb. die digitale Medikationsliste, [[eML]]) im Klinikbetrieb nutzen.
 >
 > **Zwei parallele Verfahren für KIS-Hersteller:**
 > - **KOB (gematik):** Prüft FHIR-Profilkonformität und korrekte Terminologienutzung. Pflicht für ePA-Integration im Krankenhaus.
@@ -146,6 +146,7 @@ Ein [[PVS]] mit AMTS-Entscheidungsunterstützung kann gleichzeitig einer MDR-Kon
 - [[IVDR]] (EU-In-vitro-Diagnostika-Verordnung; für diagnostische Software)
 - [[FHIR]] (zentrales Prüfobjekt der KOB)
 - [[ePA]] (erster KOB-Anwendungsfall: eML-Medikationsliste)
+- [[eML]] (elektronische Medikationsliste: zentraler KOB-Pflichtanwendungsfall für PVS, KIS, AVS)
 - [[PVS]] (Primärsystem; Hauptzielgruppe der KOB)
 - [[AVS]] (Apothekenverwaltungssystem; ebenfalls KOB-pflichtig für eML)
 - [[KIS]] (Krankenhausinformationssystem; KOB für ePA-Krankenhaus-Module)

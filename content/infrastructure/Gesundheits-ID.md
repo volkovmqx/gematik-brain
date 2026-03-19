@@ -4,6 +4,9 @@ audience: [technical, non-technical]
 tags: [infrastructure, identität, authentifizierung, ti-2-0]
 aliases: [GesundheitsID, digitale Identität, al.vi]
 maturity: wachsend
+relevance:
+  sectors: [arztpraxis, zahnarzt, apotheke, krankenhaus, patient, kasse, hersteller, ti-infrastruktur]
+  interests: [technik, compliance, patient]
 ---
 
 # Gesundheits-ID
@@ -17,6 +20,9 @@ Stell dir vor, du brauchst normalerweise einen Bibliotheksausweis aus Plastik, u
 ## Überblick
 
 Die Gesundheits-ID erlaubt es Versicherten, sich ohne physische [[eGK]] an TI-Anwendungen anzumelden. Nutzbar ist sie etwa für die [[ePA]], das [[E-Rezept]] oder den [[TI-Messenger]]. Die gesetzliche Grundlage verpflichtet die Krankenkassen seit dem 1. Januar 2024, ihren Versicherten auf Wunsch eine Gesundheits-ID bereitzustellen.
+
+> [!interesse-compliance]
+> Seit **1. Januar 2024** sind Krankenkassen verpflichtet, ihren Versicherten auf Wunsch eine Gesundheits-ID bereitzustellen. Seit **1. Januar 2026** ist sie offiziell als digitaler Versicherungsnachweis beim Arztbesuch nutzbar. Praxen müssen die GesundheitsID als Nachweis akzeptieren. Ab **2027** soll sie als vollwertiger eGK-Ersatz für die TI-Nutzung beim Arztbesuch gelten. Stand Anfang 2026: rund 4,4 Millionen registrierte Versicherte.
 
 Seit **1. Januar 2026** kann die GesundheitsID als digitaler Versicherungsnachweis gegenüber Leistungserbringern genutzt werden. Stand Anfang 2026 haben sich laut Branchenberichten rund **4,4 Millionen Versicherte** registriert.
 
@@ -45,6 +51,9 @@ Nach erfolgreicher Einmalidentifikation wird das Smartphone-Gerät registriert u
 6. Bei erfolgreicher Prüfung erhält der Versicherte Zugriff
 
 Zur Sicherheit ist eine Zwei-Faktor-Authentifizierung vorgesehen. Geräte mit einem zertifizierten Secure Element (z.B. bestimmte Samsung-Modelle) können dieses als zweiten Faktor nutzen. Ohne Secure Element ist periodisch eine erneute Identifizierung mit [[eGK]] oder Personalausweis erforderlich.
+
+> [!interesse-patient]
+> Die Gesundheits-ID ist die digitale Alternative zur Krankenkassenkarte auf Ihrem Smartphone. Sie können damit beim Arzt nachweisen, dass Sie versichert sind, ohne die Karte einzustecken. Die Gesundheits-ID funktioniert über die App Ihrer Krankenkasse. Die Einrichtung der Gesundheits-ID ist freiwillig: Ihre normale Gesundheitskarte bleibt weiterhin gültig.
 
 ### Tokenformat und Protokolle
 

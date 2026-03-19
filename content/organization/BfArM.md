@@ -3,6 +3,10 @@ title: BfArM
 audience: [technical, non-technical]
 tags: [organisation, regulierung, arzneimittel, medizinprodukte, diga]
 aliases: [Bundesinstitut für Arzneimittel und Medizinprodukte, Bundesopiumstelle]
+relevance:
+  sectors: [arztpraxis, apotheke, krankenhaus, startup, hersteller, regulierung, kasse, patient]
+  interests: [compliance, business, technik]
+maturity: wachsend
 ---
 
 # BfArM
@@ -29,6 +33,9 @@ Im Bereich der digitalen Gesundheitsversorgung hat das BfArM eine besondere Roll
 
 Das BfArM prüft Zulassungsanträge für Arzneimittel nach nationalen, dezentralisierten und Mutual-Recognition-Verfahren. Es bewertet klinische Studien, Qualitätsdaten und toxikologische Gutachten. Nach der Zulassung überwacht es die Marktpräsenz über Pharmakovigilanz: Nebenwirkungsmeldungen aus der Praxis werden systematisch ausgewertet.
 
+> [!interesse-compliance]
+> Das BfArM ist die Zulassungsbehörde für [[DiGA]] und [[DiPA]]. DiGA-Hersteller müssen die Aufnahme ins DiGA-Verzeichnis (§ 139e SGB V) beim BfArM beantragen. Das Fast-Track-Verfahren dauert maximal 3 Monate. Wird nach vorläufiger Aufnahme kein positiver Versorgungseffekt innerhalb von 12 Monaten nachgewiesen, wird die DiGA aus dem Verzeichnis gestrichen. Arzneimittel und Medizinprodukte benötigen vor dem Marktzutritt eine BfArM-Zulassung oder CE-Kennzeichnung nach MDR.
+
 ### DiGA-Fast-Track-Verfahren
 
 Das BfArM ist gemäß § 139e [[SGB-V]] die zuständige Behörde für die Aufnahme von [[DiGA]] in das DiGA-Verzeichnis. Das Fast-Track-Verfahren läuft in maximal drei Monaten ab und prüft vier Kriterien:
@@ -47,6 +54,11 @@ Seit 2022 betreibt das BfArM auch das Fast-Track-Verfahren für [[DiPA|digitale 
 ### Medizinproduktebewertung
 
 Das BfArM bewertet Risiken von Medizinprodukten, koordiniert Rückrufe und betreibt ein Vorkommnis-Melde- und Informationssystem. Klinische Prüfungen von Medizinprodukten werden durch das BfArM genehmigt.
+
+> [!interesse-technik]
+> **DiGA-Verzeichnis**: [diga.bfarm.de](https://diga.bfarm.de/de) — maschinenlesbare Liste aller zugelassenen DiGA mit Indikation, Evidenzlage, Erstattungsbetrag.
+> **Klassifikationssysteme**: ICD-10-GM, OPS und SNOMED CT sind als FHIR CodeSystem unter `http://fhir.de/CodeSystem/bfarm/` registriert.
+> **AbEM-Daten**: Seit 1. Januar 2026 veröffentlicht das BfArM Ergebnisse der anwendungsbegleitenden Erfolgsmessung (AbEM) im DiGA-Verzeichnis halbjährlich.
 
 ### Medizinische Klassifikationssysteme
 

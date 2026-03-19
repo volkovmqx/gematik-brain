@@ -167,7 +167,8 @@ Das T-Rezept (Thalidomid-Rezept) hat die Digitalisierung bereits weiter voranget
 
 ## Quellen
 
-- [Deutsche Apotheker Zeitung: E-BtM-Rezept – Pilotstart frühestens Q4/2026 (Januar 2026)](https://www.deutsche-apotheker-zeitung.de/autoren/news/artikel/2026/01/06/epa-e-rezept-und-mehr-was-kommt-2026)
+- [Deutsches Ärzteblatt: Betäubungsmittelrezept – Rechtliche Grundlagen und Praxis](https://www.aerzteblatt.de/archiv/betaeubungsmittel-rezept)
 - [BfArM: BtM-Rezepte / Verschreibung – Bundesopiumstelle](https://www.bfarm.de/DE/Bundesopiumstelle/Betaeubungsmittel/BtM-Rezepte-Verschreibung/_node.html)
 - [gematik Fachportal: E-Rezept – Ausblick Sonderrezepte](https://fachportal.gematik.de/anwendungen/e-rezept)
+- [gematik gemspec: Feature-Draft eBtM_25_1 (Vorabveröffentlichung)](https://gemspec.gematik.de/prereleases/Draft_eBtM_Rezept_25_1/)
 - [Gelbe Liste: E-Rezept-Zeitplan](https://www.gelbe-liste.de/e-rezept/e-rezept-zeitplan)

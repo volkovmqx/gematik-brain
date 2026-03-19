@@ -1,6 +1,6 @@
 {
   "lastChecked": "2026-03-19",
-  "lastRun": "2026-03-19T20:00:00Z",
+  "lastRun": "2026-03-19T22:30:00Z",
   "findings": [
     {
       "title": "eMedikationsplan: Start verschoben auf Oktober 2026",
@@ -1195,6 +1195,66 @@
       "appliedDate": "2026-03-19",
       "details": "NCPeH.md: Neuer Absatz zu deutschen Pilotaktivitäten für Patient Summary ergänzt. AOK-Pilotprojekt und BMG-Konzeptpapier dokumentiert. Patient Summary vs. E-Rezept als separate Anwendungsfälle klar getrennt.",
       "suggestedTerm": "Europäische Patientenkurzakte"
+    },
+    {
+      "title": "ePA als Dreh- und Angelpunkt des Primärversorgungssystems: eReferral, Termindatenbank und Ersteinschätzung geplant",
+      "date": "2026-02-11",
+      "source": "https://www.aerzteblatt.de/news/elektronische-patientenakte-soll-dreh-und-angelpunkt-des-primarversorgungssystems-werden-41863b8d-749f-4a17-9678-f7dc5040008a",
+      "affects": ["ePA.md", "gematik.md"],
+      "action": "applied",
+      "appliedDate": "2026-03-19",
+      "category": "regulation",
+      "details": "Bundesgesundheitsministerin Warken skizzierte am 11. Februar 2026 ein Drei-Säulen-Modell für die Primärversorgung: (1) ePA, (2) Hausarztpraxis, (3) Telefonleitungen 116117. Die ePA soll Ersteinschätzung, Terminbuchung und elektronische Überweisung (eReferral) digital koordinieren. Eine zentrale Termindatenbank soll von gematik und Selbstverwaltung betrieben und per Gesetz im Sommer 2026 verankert werden. KBV reagierte skeptisch. ePA.md: Abschnitt 'Zukunftsvision' um eReferral-Funktion und Primärversorgungsgesetz-Kontext ergänzen. Noch kein konkreter Pflichttermin für eReferral.",
+      "suggestedTerm": "eReferral"
+    },
+    {
+      "title": "GDVG: Datenschutzkritik an umfassender Gesundheitsdatenverknüpfung und KI-Training ohne Einwilligung",
+      "date": "2026-02-16",
+      "source": "https://netzpolitik.org/2026/bundesgesundheitsministerium-so-umfassend-will-warken-die-gesundheitsdaten-aller-versicherten-verknuepfen/",
+      "affects": ["ePA.md", "GDVG.md"],
+      "action": "applied",
+      "appliedDate": "2026-03-19",
+      "category": "regulation",
+      "details": "Netzpolitik.org analysierte die geplante GDVG-Strategie des BMG: tägliche automatische ePA-Datenübermittlung an das FDZ ohne aktives Opt-out für GKV-Versicherte, KI-Training mit Gesundheitsdaten ohne individuelle Einwilligungspflicht, Vernetzung von ca. 350 Registern über pseudonymisierte Versicherungs-IDs, EHDS-Anbindung ab 2029. Datenschützer bezweifeln ausreichenden Re-Identifizierungsschutz und effektives Widerspruchsrecht. ePA.md sollte Datenschutzkritik am GDVG im Datenschutz-Abschnitt ergänzen. GDNG.md: Abschnitt zur geplanten Erweiterung durch GDVG aktualisieren."
+    },
+    {
+      "title": "ApoVWG: Bundesrat-Einspruch nach Bundestag-Beschluss (16. April 2026) möglich",
+      "date": "2026-03-18",
+      "source": "https://www.pharmazeutische-zeitung.de/apovwg-soll-am-16-april-beschlossen-werden-163685/",
+      "affects": ["E-Rezept.md"],
+      "action": "monitor",
+      "category": "regulation",
+      "details": "Das ApoVWG soll am 16. April 2026 in zweiter und dritter Lesung im Bundestag beschlossen werden. Ein Bundesrats-Veto ist möglich. Nach Beschluss: E-Rezept.md auf neue Apothekenstrukturen (Telepharmazie, Filialverbund ohne ständig anwesenden Apotheker) und Auswirkungen auf die E-Rezept-Einlösung prüfen. Das Gesetz regelt außerdem das Honorar (Anhebung auf 9,50 Euro/Packung umstritten) und Telepharmazie-Definitionen.",
+      "suggestedTerm": "ApoVWG"
+    },
+    {
+      "title": "KHAG: Bundesrat stimmte am 27. März 2026 zu, Gesetz tritt in Kraft",
+      "date": "2026-03-27",
+      "source": "https://mdoc.one/khag-beschlossen-neue-chancen-fuer-kliniken-telemedizin-und-patientenportale/",
+      "affects": ["KIS.md", "Telematikinfrastruktur.md", "ISiK.md"],
+      "action": "applied",
+      "appliedDate": "2026-03-19",
+      "category": "regulation",
+      "details": "Der Bundesrat stimmte dem Krankenhausreformanpassungsgesetz (KHAG) am 27. März 2026 zu. Das Gesetz ist damit in Kraft. Kerninhalte: Krankenhaus-Transformationsfonds 50 Milliarden Euro (2026-2035), Patientenportal-Abschlag 0,5% je Fall ohne zertifiziertes Portal ab 1. Januar 2026, Telemedizin-Netzwerke gefördert, Mindestanforderungen und Interoperabilitätsstandards bis September 2026 zu definieren. KIS.md: Inkrafttreten des KHAG und Bundesrats-Zustimmung 27.03.2026 ergänzen."
+    },
+    {
+      "title": "MyHealth@EU Wave 10: Deutschland plant E-Rezept-Produktivstart für NCPeH in 2026",
+      "date": "2026-02-25",
+      "source": "https://www.gesundheit.gv.at/news/aktuelles/aktuell-2026/eu-rezept.html",
+      "affects": ["NCPeH.md", "E-Rezept.md"],
+      "action": "applied",
+      "appliedDate": "2026-03-19",
+      "category": "regulation",
+      "details": "Deutschland plant den Anschluss an MyHealth@EU für E-Rezepte (ePrescription/eDispensation) als Wave-10-Teilnehmer in 2026. Österreich ermöglicht seit 25. Februar 2026 als erster Staat das Einlösen von E-Rezepten aus anderen EU-Staaten (zunächst Tschechien). Deutschland ist noch nicht produktiv dabei, aber die NCPeH-Infrastruktur (gemSpec NCPeH_24_2, März 2025) ist technisch spezifiziert. NCPeH.md sollte den konkreten Wave-10-Produktivstartplan für 2026 mit den genauen Anwendungsfällen (Country A: Arztbesuch im EU-Ausland, 6-stelliger Zugangscode) präzisieren."
+    },
+    {
+      "title": "DMEA 2026 (21.–23. April, Berlin): Letzte Ausgabe in Berlin, gematik mit TI-2.0-Schwerpunkt",
+      "date": "2026-03-19",
+      "source": "https://www.gematik.de/newsroom/news-detail/die-gematik-auf-der-dmea-2026-zukunft-vernetzt-sich",
+      "affects": ["Telematikinfrastruktur.md"],
+      "action": "info_only",
+      "category": "info",
+      "details": "DMEA 2026 findet 21.–23. April 2026 in Berlin statt (letzte Ausgabe in Berlin, ab 2027 München). Gematik ist mit Stand und Vorträgen in Halle 1.2 (D-108) vertreten. Themenschwerpunkte am gematik-Stand: TI 2.0, ePA-Weiterentwicklung, VSDM 2.0, PoPP, ZETA, DiPaG, EHDS/NCPeH, KI in der TI. Kongressprogramm betont datenbasierte Innovationen und EHDS-Umsetzung."
     }
   ]
 }

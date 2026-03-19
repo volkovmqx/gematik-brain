@@ -3,6 +3,10 @@ title: mTLS - Mutual TLS
 audience: [technical]
 tags: [konzept, sicherheit, tls, authentisierung, ti-2-0, kryptografie]
 aliases: [mTLS, Mutual TLS, gegenseitiges TLS, beidseitige TLS-Authentisierung]
+relevance:
+  sectors: [hersteller, ti-infrastruktur, it-dienstleister, krankenhaus, arztpraxis]
+  interests: [technik]
+maturity: wachsend
 ---
 
 # mTLS - Mutual TLS
@@ -20,6 +24,11 @@ Normales TLS (Transport Layer Security) schützt die Verbindung durch Verschlüs
 mTLS erweitert dieses Modell: Beide Seiten der Verbindung müssen ein gültiges [[X.509]]-Zertifikat vorlegen und beweisen, dass sie den zugehörigen privaten Schlüssel besitzen. Nur wenn beide Seiten erfolgreich validiert wurden, kommt die Verbindung zustande.
 
 mTLS ist kein neues Protokoll, sondern eine Konfigurationsoption innerhalb von TLS (definiert seit TLS 1.0). Die Spezifikation für zertifikatsgebundene Access Tokens in Verbindung mit mTLS ist in RFC 8705 festgelegt.
+
+> [!interesse-technik]
+> **TI 2.0 Pflicht**: Alle Primärsysteme ([[PVS]], [[KIS]], [[AVS]]) müssen beim Anschluss über das [[TI-Gateway]] mTLS mit TI-PKI-Zertifikaten implementieren. Zertifikatsalgorithmus: ECDSA (brainpoolP256r1) ab 1. Januar 2026 Pflicht.
+> **RFC 8705**: Token-Binding per `x5t#S256`-Claim im Access Token. Verhindert Token-Replay-Angriffe auch bei gestohlenen Tokens.
+> **Spezifikation**: gemSpec_TI-Gateway, Abschnitt mTLS-Client-Authentisierung. Download: [gemspec.gematik.de](https://gemspec.gematik.de/docs/gemSpec/gemSpec_TI-Gateway/latest/).
 
 ### Relevanz in der TI 2.0
 

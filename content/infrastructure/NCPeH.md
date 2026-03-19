@@ -5,8 +5,8 @@ tags: [infrastruktur, eu, interoperabilitaet, myhealth, ehds]
 aliases: [National Contact Point for eHealth, Nationaler Kontaktpunkt eHealth]
 maturity: setzling
 relevance:
-  sectors: [krankenhaus, arztpraxis, apotheke, kasse, ti-infrastruktur, regulierung]
-  interests: [compliance, technik]
+  sectors: [ti-infrastruktur, krankenhaus, arztpraxis, apotheke, kasse, patient, regulierung]
+  interests: [technik, compliance, patient]
 ---
 
 # NCPeH - National Contact Point for eHealth
@@ -27,6 +27,9 @@ Am **16. März 2026** besuchten fast 50 Delegierte aus 14 EU-Ländern die [[gema
 
 Parallel zur E-Rezept-Integration laufen in Deutschland erste Pilotaktivitäten für den grenzüberschreitenden Austausch von [[Patient-Summary|Patientenkurzakten (Patient Summary)]]. Die AOK hat Pilotprojektergebnisse und ein Konzeptpapier für den EU-weiten Patientenzusammenfassungsaustausch beim [[BMG]] eingereicht. Patient Summary und E-Rezept sind zwei eigenständige Anwendungsfälle: Das E-Rezept ist für Wave 10 (2026) priorisiert; der Patient-Summary-Austausch ist als separater Schritt geplant und befindet sich in der konzeptionellen Phase.
 
+> [!interesse-compliance]
+> Deutschland ist Wave-10-Teilnehmer für den grenzüberschreitenden E-Rezept-Austausch (2026). Die [[DVKA]] betreibt den NCPeH als Pflichtaufgabe nach EHDS-Verordnung (EU 2025/327, in Kraft März 2025). Krankenkassen und Leistungserbringer müssen keine eigene Infrastruktur aufbauen: Der NCPeH übernimmt die Grenzüberschreitung zentral. Bis 2029 ist die EU-weite Nutzbarkeit von [[Patient-Summary|Patientenzusammenfassung]] und [[E-Rezept]] verpflichtend.
+
 ### Geplante Teilnahme an MyHealth@EU
 
 Deutschland plant die Teilnahme an MyHealth@EU in mehreren Wellen:
@@ -34,9 +37,12 @@ Deutschland plant die Teilnahme an MyHealth@EU in mehreren Wellen:
 - **Wave 10 (2026)**: Deutschland plant den Anschluss für das [[E-Rezept]] (ePrescription)
 - **Bis 2029**: Vollständige Nutzbarkeit von [[Patient-Summary|Patientenzusammenfassung (Patient Summary)]] und [[E-Rezept]] EU-weit
 
-Österreich ist bereits seit **Februar 2026** aktiv am Austausch beteiligt: Es akzeptiert EU-E-Rezepte aus Tschechien, was ein erstes konkretes Beispiel für den funktionierenden grenzüberschreitenden Austausch ist.
+Österreich ist bereits seit **25. Februar 2026** aktiv am Austausch beteiligt: Es akzeptiert EU-E-Rezepte aus Tschechien, was ein erstes konkretes Beispiel für den funktionierenden grenzüberschreitenden Austausch ist. Deutschland plant als Wave-10-Teilnehmer den Produktivstart für den E-Rezept-Anwendungsfall in 2026.
 
 Das übergeordnete Ziel: Bürgerinnen und Bürger sollen bis 2029 ihre Gesundheitsdaten (Patientenzusammenfassung, E-Rezept) EU-weit nutzen können.
+
+> [!interesse-patient]
+> Wenn Sie im EU-Ausland krank werden, kann ein Arzt dort mit Ihrer Einwilligung auf Ihre deutschen Gesundheitsdaten zugreifen, etwa auf Ihre Medikamentenliste oder ein Rezept. Das funktioniert über den NCPeH. Sie müssen aktiv einwilligen, bevor Daten abgerufen werden. Der Zugriff ist auf das notwendige Minimum beschränkt. Ab 2029 soll das EU-weit für alle GKV-Versicherten möglich sein.
 
 ## Technische Details
 
@@ -48,6 +54,12 @@ Der NCPeH ist ein Gateway zwischen zwei Infrastrukturen:
 - **Außenseite (europäisch)**: Verbindung zum MyHealth@EU-Netzwerk über standardisierte eHealth-Protokolle
 
 Der Datenaustausch über MyHealth@EU basiert auf **IHE**-Profilen (Integrating the Healthcare Enterprise) und auf [[FHIR]]-basierten Austauschformaten.
+
+> [!interesse-technik]
+> **Spezifikation**: gemF_eRp_EU V1.0.0 (Release NCPeH_24_2, März 2025) auf [gemspec.gematik.de](https://gemspec.gematik.de/releases/NCPeH_24_2/).
+> **Protokoll**: IHE-Profile und FHIR-basierte Formate über das MyHealth@EU-Backbone-Netz.
+> **Autorisierung**: 6-stelliger alphanumerischer Zugangscode zusammen mit Versicherten-ID (KVNR). Kein Konnektor auf der ausländischen Seite erforderlich.
+> **Sicherheit**: PKI-basierte Authentisierung aller NCPs. Gegenseitige TLS-Authentisierung (mTLS) zwischen nationalen Kontaktpunkten.
 
 ### EU E-Rezept: gemF_eRp_EU V1.0.0
 
@@ -90,3 +102,4 @@ Der NCPeH überträgt personenbezogene Gesundheitsdaten über Ländergrenzen hin
 - [gematik: EU-Delegation besucht gematik (März 2026)](https://www.gematik.de/newsroom/news-detail/grenzueberschreitender-digitaler-gesundheitsdatenaustausch-europaeische-delegation-bei-der-gematik)
 - [Europäische Kommission: European Health Data Space (EHDS)](https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space_en)
 - [DVKA / eu-patienten.de: Grenzüberschreitende Gesundheitsversorgung – Nationale Kontaktstelle](https://www.eu-patienten.de)
+- [Gesundheit Österreich: EU-E-Rezept ab 25. Februar 2026 in Österreich einlösbar](https://www.gesundheit.gv.at/news/aktuelles/aktuell-2026/eu-rezept.html)

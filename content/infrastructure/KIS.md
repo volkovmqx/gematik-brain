@@ -104,10 +104,19 @@ Das [[KHZG|Krankenhauszukunftsgesetz (KHZG, 2020)]] stellte Fördermittel von 4,
 
 ### KHAG: Interoperabilitätspflichten ab 2026
 
-Das Krankenhausaufnahmegesetz (KHAG) legt digitale Mindestanforderungen für Krankenhäuser fest. Ab September 2026 müssen Krankenhäuser verbindliche Interoperabilitätsstandards umsetzen, die im [[Interoperabilitaetsverzeichnis|Interoperabilitätsverzeichnis]] (§ 385 SGB V) verankert sind. Krankenhäuser, die kein zertifiziertes [[Patientenportal]] betreiben, erhalten ab 2026 einen DRG-Abschlag. KIS-Systeme müssen die KHAG-Anforderungen erfüllen, um Krankenhäuser bei der Umsetzung zu unterstützen.
+Das **[[KHAG|Krankenhausreformanpassungsgesetz (KHAG)]]** wurde am **27. März 2026** vom Bundesrat beschlossen und ist damit in Kraft. Es ist ein wichtiges Nachfolgegesetz zur Krankenhausreform und legt digitale Mindestanforderungen für Krankenhäuser fest.
+
+Kerninhalte des KHAG:
+
+- **Transformationsfonds**: 50 Milliarden Euro für Krankenhäuser (2026 bis 2035) zur Förderung von Strukturanpassungen
+- **Patientenportal-Abschlag**: Krankenhäuser ohne zertifiziertes [[Patientenportal]] erhalten ab **1. Januar 2026** einen Abschlag von 0,5 Prozent je stationären Fall
+- **Telemedizin-Netzwerke**: Förderung telemedizinischer Verbundlösungen zwischen Krankenhäusern
+- **Interoperabilitätsstandards**: Verbindliche Standards müssen bis **September 2026** definiert werden. Sie werden im [[Interoperabilitaetsverzeichnis|Interoperabilitätsverzeichnis]] (§ 385 SGB V) verankert
+
+KIS-Systeme müssen die KHAG-Anforderungen unterstützen. Insbesondere die Interoperabilitätspflichten werden FHIR-basierte KIS-Schnittstellen ([[ISiK]]) weiter aufwerten.
 
 > [!interesse-compliance]
-> KHAG: Verbindliche Interoperabilitätsstandards für Krankenhäuser ab September 2026. DRG-Abschlag für Krankenhäuser ohne zertifiziertes Patientenportal ab 2026. ISiK Stufe 3 ist Pflicht bis 30.06.2026. KRITIS-Dachgesetz: Registrierungspflicht ab 17.07.2026.
+> **KHAG in Kraft** (27.03.2026): Patientenportal-Abschlag 0,5 % je Fall ohne zertifiziertes Portal ab 1. Januar 2026. Interoperabilitätsstandards bis September 2026 zu definieren. ISiK Stufe 3 ist Pflicht bis 30.06.2026. KRITIS-Dachgesetz: Registrierungspflicht ab 17.07.2026. Transformationsfonds: 50 Mrd. Euro 2026–2035.
 
 ## Verknüpfungen
 
@@ -132,3 +141,4 @@ Das Krankenhausaufnahmegesetz (KHAG) legt digitale Mindestanforderungen für Kra
 - [Dedalus: ORBIS erreicht ISiK-Bestätigung Stufe 1](https://www.dedalus.com/dach/de/media/news/orbis-erreicht-isik-bestaetigung-der-stufe-1/)
 - [gematik: ISiK](https://www.gematik.de/anwendungen/isik)
 - [kma Online: Turbulenzen im KIS-Markt nach SAP-Ausstieg](https://www.kma-online.de/aktuelles/it-digital-health/detail/turbulenzen-nach-sap-ausstieg-49621)
+- [mdoc.one: KHAG beschlossen (März 2026)](https://mdoc.one/khag-beschlossen-neue-chancen-fuer-kliniken-telemedizin-und-patientenportale/)

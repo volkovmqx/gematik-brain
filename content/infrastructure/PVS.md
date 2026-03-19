@@ -23,7 +23,7 @@ Ein PVS übernimmt alle zentralen Abläufe einer Praxis:
 
 - Patientenaufnahme und Stammdatenverwaltung
 - Dokumentation von Diagnosen, Behandlungen und Medikamenten
-- Abrechnung mit den Kassenärztlichen Vereinigungen (KV) über das KVDT-Format
+- Abrechnung mit den Kassenärztlichen Vereinigungen (KV) über das [[KVDT]]-Format
 - Ausstellung von Verordnungen und Überweisungen
 - Kommunikation über die [[Telematikinfrastruktur]]
 

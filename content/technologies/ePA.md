@@ -96,9 +96,9 @@ Mit Release ePA 3.1.2 (Mai 2025) wurden FHIR Implementation Guides aktualisiert,
 
 ### Digitaler Medikationsprozess (dgMP)
 
-Der **digital gestützte Medikationsprozess (dgMP)** ist seit März 2026 in seiner ersten Stufe produktiv. Er besteht aus zwei Komponenten, die klar zu unterscheiden sind:
+Der **[[dgMP|digital gestützte Medikationsprozess (dgMP)]]** ist seit März 2026 in seiner ersten Stufe produktiv. Er besteht aus zwei Komponenten, die klar zu unterscheiden sind:
 
-**Elektronische Medikationsliste (eML)**: Automatische Sammlung von Medikamentendaten in der ePA. Seit Januar 2025 werden E-Rezept-Dispensierdaten beim Einlösen automatisch in die eML der ePA kopiert. Seit März 2026 können Ärzte zusätzlich Medikamente ohne vorliegendes E-Rezept manuell nachtragen ("Nachtragen"). Ebenfalls seit März 2026 können Apotheken und Arztpraxen bestehende Medikationseinträge bearbeiten und korrigieren, etwa wenn ein Medikament eingetragen ist, das der Patient nie eingenommen hat. Die eML ist ein laufendes, chronologisches Protokoll der verordneten und abgegebenen Medikamente.
+**[[eML|Elektronische Medikationsliste (eML)]]**: Automatische Sammlung von Medikamentendaten in der ePA. Seit Januar 2025 werden E-Rezept-Dispensierdaten beim Einlösen automatisch in die eML der ePA kopiert. Seit März 2026 können Ärzte zusätzlich Medikamente ohne vorliegendes E-Rezept manuell nachtragen ("Nachtragen"). Ebenfalls seit März 2026 können Apotheken und Arztpraxen bestehende Medikationseinträge bearbeiten und korrigieren, etwa wenn ein Medikament eingetragen ist, das der Patient nie eingenommen hat. Die eML ist ein laufendes, chronologisches Protokoll der verordneten und abgegebenen Medikamente.
 
 **Elektronischer Medikationsplan (eMP)**: Strukturierter Plan mit Dosierungsangaben, Indikationen und Statusangaben (geplant/aktiv/pausiert/beendet) sowie [[AMTS]]-relevanten Zusatzinformationen. Die Pilotphase für den eMP startet im Juli 2026 in ausgewählten Regionen. Der bundesweite Rollout des vollständigen eMP ist für Oktober 2026 geplant.
 
@@ -124,6 +124,17 @@ Leistungserbringer authentisieren sich über [[SMC-B]] (Einrichtung) und [[HBA]]
 - **Strukturierte Dosierungsangaben**: Im eMedikationsplan, mit Schreibzugriff für Apotheken
 - **MIO-Integration**: Einbindung der Medizinischen Informationsobjekte ([[MIO]]) [[Mutterpass]], [[eImpfpass|Impfausweis]], [[Kinderuntersuchungsheft]] und Zahnärztliches Bonusheft
 
+### GDVG: Datenschutzkritik (Februar 2026)
+
+Das Nachrichtenportal netzpolitik.org analysierte am **16. Februar 2026** die geplante GDVG-Strategie des [[BMG]] und deckte weitreichende Datenschutzbedenken auf:
+
+- **KI-Training mit Gesundheitsdaten**: Das GDVG sieht vor, dass ePA-Daten ohne individuelle Einwilligungspflicht für KI-Training genutzt werden können.
+- **Automatische FDZ-Übermittlung**: Täglich sollen ePA-Daten aller GKV-Versicherten automatisch ans [[Forschungsdatenzentrum-Gesundheit|Forschungsdatenzentrum Gesundheit (FDZ)]] übermittelt werden, ohne aktives Opt-out.
+- **Registervernetzung**: Rund 350 Gesundheitsregister sollen über pseudonymisierte Versicherungs-IDs vernetzt werden.
+- **EHDS-Anbindung**: Ab 2029 sollen Daten in den europäischen Gesundheitsdatenraum ([[EHDS]]) fließen.
+
+Datenschützer und Bürgerrechtsorganisationen bezweifeln einen ausreichenden Re-Identifizierungsschutz und ein effektives Widerspruchsrecht. Die GFF-Klage gegen das FDZ läuft parallel weiter.
+
 ### GFF-Klage gegen das FDZ (2022/2026)
 
 Die Gesellschaft für Freiheitsrechte (GFF, unterstützt vom CCC) nahm im Februar 2026 ihre 2022 eingereichte Klage gegen das Forschungsdatenzentrum Gesundheit (FDZ) wieder auf (das Verfahren hatte seit Februar 2023 geruht, da das FDZ nicht operativ war). Kritisiert wird, dass die Pseudonymisierung der ePA-Daten von 73 Millionen GKV-Versicherten unzureichend sei und eine Re-Identifizierung bei seltenen Krankheiten ermögliche. Ein weiterer Kritikpunkt: GKV-Versicherte haben kein Widerspruchsrecht gegen die Datenübermittlung an das FDZ, PKV-Versicherte hingegen schon. Die Klage ist zum Stand März 2026 anhängig. Weitere Details im Artikel zum [[GDNG]].
@@ -133,6 +144,22 @@ Die Gesellschaft für Freiheitsrechte (GFF, unterstützt vom CCC) nahm im Februa
 Ende 2024 entdeckte der Chaos Computer Club (CCC) eine Sicherheitslücke in der ePA: Durch den Einsatz gefälschter [[SMC-B]]-Karten wäre theoretisch ein Massenzugriff auf Patientenakten möglich gewesen. Die [[gematik]] und das [[BSI]] bestätigten, dass kein Missbrauch dieser Art stattgefunden hatte. Sofortmaßnahmen wurden eingeleitet.
 
 Die dauerhafte Lösung kommt über den **[[PoPP]]-Dienst** (Proof of Patient Presence). PoPP stellt kryptografisch sicher, dass der Zugriff auf die ePA eines Versicherten nur dann möglich ist, wenn der Versicherte physisch anwesend ist oder aktiv online eingewilligt hat. Die PoPP-Spezifikation V1.0.0 wurde am 3. März 2026 veröffentlicht. Stufe 1 (eGK-basierter Präsenznachweis) soll Mitte 2026 produktiv gehen.
+
+### ePA als Primärversorgungsplattform (Planung 2026)
+
+Bundesgesundheitsministerin Nina Warken (CDU) skizzierte am **11. Februar 2026** ein Drei-Säulen-Modell für die digitale Primärversorgung:
+
+1. **ePA** als zentraler Datenhub und Koordinationsplattform
+2. **Hausarztpraxis** als erste Anlaufstelle
+3. **116117** als telefonische Ersteinschätzung
+
+Im Rahmen dieses Modells sind drei neue ePA-Funktionen in Planung:
+
+- **[[eReferral]]** (elektronische Überweisung): Digitale Weiterleitung von Patienten zwischen Leistungserbringern über die ePA. Noch kein verbindlicher Pflichttermin festgelegt.
+- **Zentrale Termindatenbank**: Betrieben von [[gematik]] und Selbstverwaltung, soll die Terminbuchung sektorübergreifend koordinieren. Gesetzliche Verankerung ist für Sommer 2026 geplant.
+- **Ersteinschätzung**: Digitale Triage-Funktion, die Patienten in den richtigen Versorgungskanal leitet.
+
+Die [[KBV]] reagierte skeptisch auf diese Pläne und betonte die Rolle des Hausarztes als persönlichem Ansprechpartner.
 
 ## Quiz
 
@@ -146,6 +173,9 @@ Die dauerhafte Lösung kommt über den **[[PoPP]]-Dienst** (Proof of Patient Pre
 - Empfängt Daten vom [[E-Rezept]]
 - Kommunikation über [[KIM]] und [[TI-Messenger]]
 - Zugang über [[Konnektoren]] und [[eGK]]
+- [[eML]] (elektronische Medikationsliste: automatische Komponente des dgMP)
+- [[dgMP]] (digital gestützter Medikationsprozess: Rahmen für eML und eMP)
+- [[eReferral]] (geplante Funktion: elektronische Überweisung über ePA)
 
 ## Quellen
 

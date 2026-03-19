@@ -37,7 +37,7 @@ Das Verzeichnis wird öffentlich zugänglich gemacht. Hersteller von [[Primärsy
 
 Das Interoperabilitätsverzeichnis ist übergeordnet: Es benennt, welche Standards verbindlich sind. Die konkreten technischen Details sind dann in den jeweiligen Spezifikationen festgelegt, z.B. in der [[ISiK]]-Spezifikation für Krankenhäuser oder in den [[FHIR]]-Profilen der [[gematik]] für die TI.
 
-Das Krankenhausaufnahmegesetz (KHAG, 2026) verweist explizit auf das Interoperabilitätsverzeichnis als Grundlage für die digitalen Mindestanforderungen für Krankenhäuser. Ab September 2026 müssen Krankenhäuser die dort verankerten Interoperabilitätsstandards nachweislich erfüllen.
+Das [[KHAG|Krankenhausreformanpassungsgesetz (KHAG, 2026)]] verweist explizit auf das Interoperabilitätsverzeichnis als Grundlage für die digitalen Mindestanforderungen für Krankenhäuser. Ab September 2026 müssen Krankenhäuser die dort verankerten Interoperabilitätsstandards nachweislich erfüllen.
 
 ## Technische Details
 

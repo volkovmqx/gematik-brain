@@ -41,7 +41,7 @@ Das E-Rezept wird digital erstellt, signiert und kann auf drei Wegen eingelöst 
 - [[DiGA]]-Verordnungen (Digitale Gesundheitsanwendungen, seit Oktober 2025)
 
 ### Was kommt noch?
-- **Wave-10-Anschluss an MyHealth@EU (2026)**: Deutschland plant die grenzüberschreitende E-Rezept-Einlösung im EU-Ausland über den [[NCPeH]]. Technische Grundlage ist die Spezifikation gemF_eRp_EU V1.0.0 (NCPeH_24_2, März 2025). Der Zugangsmechanismus für ausländische Leistungserbringer nutzt einen 6-stelligen alphanumerischen Code zusammen mit der Versicherten-ID.
+- **Wave-10-Anschluss an MyHealth@EU (2026)**: Deutschland plant die grenzüberschreitende E-Rezept-Einlösung im EU-Ausland über den [[NCPeH]]. Technische Grundlage ist die Spezifikation gemF_eRp_EU V1.0.0 (NCPeH_24_2, März 2025). Der Zugangsmechanismus für ausländische Leistungserbringer nutzt einen 6-stelligen alphanumerischen Code zusammen mit der Versicherten-ID. Seit **25. Februar 2026** kann Österreich als erster Staat EU-E-Rezepte aus anderen Mitgliedstaaten (zunächst Tschechien) einlösen. Deutschland ist als Wave-10-Teilnehmer geplant.
 - E-Rezept-Anforderung und Übermittlung via [[KIM]]
 - T-Rezepte (teratogene Stoffe, z.B. Lenalidomid): Spezifikation seit August 2025 veröffentlicht, Rollout-Start Mitte Q4/2026
 - Häusliche Krankenpflege und außerklinische Intensivpflege: Pflicht ab 1. Juli 2026

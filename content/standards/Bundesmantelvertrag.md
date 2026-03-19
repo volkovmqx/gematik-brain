@@ -55,7 +55,7 @@ Neben dem BMV-Ä existiert der **Bundesmantelvertrag-Zahnärzte (BMV-Z)** zwisch
 
 ### Relevanz für Abrechnungsdatenformate
 
-Der BMV-Ä verweist auf technische Anlagen, die für die digitale Abrechnung relevant sind. Die KBV definiert auf dieser Grundlage das **KVDT-Format** (Kassenärztliche Vereinigung Datentransfer), das von [[PVS|Praxisverwaltungssystemen]] für die Quartalsabrechnung gegenüber den [[Kassenaerztliche-Vereinigung|KVen]] verwendet wird.
+Der BMV-Ä verweist auf technische Anlagen, die für die digitale Abrechnung relevant sind. Die KBV definiert auf dieser Grundlage das **[[KVDT]]-Format** (Kassenärztliche Vereinigung Datentransfer), das von [[PVS|Praxisverwaltungssystemen]] für die Quartalsabrechnung gegenüber den [[Kassenaerztliche-Vereinigung|KVen]] verwendet wird.
 
 Formvorschriften im BMV-Ä bestimmen auch, welche Pflichtfelder Verordnungen enthalten müssen, was direkt in die FHIR-Profile für das [[E-Rezept]] eingeflossen ist.
 

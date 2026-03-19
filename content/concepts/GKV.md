@@ -6,7 +6,7 @@ aliases: [Gesetzliche Krankenversicherung, GKV-System, Krankenkasse]
 relevance:
   sectors: [arztpraxis, krankenhaus, apotheke, patient, kasse, regulierung, arbeitgeber]
   interests: [compliance, business, patient]
-maturity: setzling
+maturity: wachsend
 ---
 
 # GKV

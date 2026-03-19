@@ -20,7 +20,7 @@ KV-SafeNet wurde von der **Kassenärztlichen Bundesvereinigung ([[KBV]])** und d
 
 Die Hauptanwendungsfälle von KV-SafeNet sind:
 
-- **Quartalsabrechnung**: Übermittlung der KVDT-Abrechnungsdaten (→ [[xDT]]) vom [[PVS]] an die Kassenärztliche Vereinigung
+- **Quartalsabrechnung**: Übermittlung der [[KVDT]]-Abrechnungsdaten (→ [[xDT]]) vom [[PVS]] an die Kassenärztliche Vereinigung
 - **Stammdatenabfragen**: Prüfung von Versichertendaten
 - **Kommunikation**: Übertragung von Informationen zwischen Praxen und KV
 - **Dokumentenaustausch**: z.B. Qualitätssicherungs-Unterlagen

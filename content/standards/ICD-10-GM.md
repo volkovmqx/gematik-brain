@@ -3,6 +3,10 @@ title: ICD-10-GM
 audience: [technical]
 tags: [standards, kodierung, diagnosen, bfarm, interoperabilität]
 aliases: [ICD-10, Internationale Klassifikation der Krankheiten, International Classification of Diseases]
+relevance:
+  sectors: [krankenhaus, arztpraxis, zahnarzt, psychotherapie, kasse, hersteller, it-dienstleister, regulierung]
+  interests: [technik, compliance, business]
+maturity: wachsend
 ---
 
 # ICD-10-GM
@@ -34,6 +38,9 @@ ICD-10-GM ist hierarchisch aufgebaut:
 
 Daneben enthält die ICD-10-GM ein alphabetisches Verzeichnis, das gebräuchliche Diagnosebegriffe auf die systematischen Codes abbildet.
 
+> [!interesse-compliance]
+> ICD-10-GM ist Pflicht für die Abrechnung gegenüber GKV-Kassen im ambulanten und stationären Bereich. Die aktuelle Version (ICD-10-GM 2026) gilt ab **1. Januar 2026**. [[PVS]]- und [[KIS]]-Systeme müssen die neue Version jeweils zum Jahreswechsel eingespielt haben. Diagnosen in Abrechnungsdatensätzen (§ 295 SGB V) und [[DRG]]-Kodierung müssen aus der aktuellen GM-Version stammen. Falsche oder fehlende ICD-Codes führen zur Rechnungskürzung durch Krankenkassen oder den Medizinischen Dienst.
+
 ### Jährlicher Aktualisierungsprozess
 
 Das [[BfArM]] veröffentlicht jährlich eine neue Version der ICD-10-GM, die jeweils zum 1. Januar in Kraft tritt. Interessierte Parteien (Fachgesellschaften, Kliniken, Kassen) können Änderungsvorschläge einreichen. Das BfArM prüft und konsolidiert diese Vorschläge. Ab Version 2026 gilt ein auf drei Jahre gestreckter Proposalzyklus.
@@ -43,6 +50,13 @@ Die aktuelle Version ist ICD-10-GM 2026. Alle Versionen sind kostenlos auf der B
 ### Alpha-ID
 
 Ergänzend zur ICD-10-GM pflegt das BfArM die Alpha-ID, ein Verzeichnis deutschsprachiger Diagnosebegriffe mit einer eindeutigen, versionsübergreifenden Kennung. Alpha-ID ermöglicht es, Diagnosen über verschiedene ICD-Versionen hinweg konsistent zu verfolgen, auch wenn sich Codes ändern. Die Alpha-ID wird vor allem in Primärsystemen ([[KIS]], [[PVS]]) eingesetzt.
+
+> [!interesse-technik]
+> **FHIR URI**: `http://fhir.de/CodeSystem/bfarm/icd-10-gm` (kanonisch, versioniert per `version`-Parameter, z.B. `"2026"`)
+> **ISiKDiagnose**: FHIR-Profil `ISiKDiagnose` (Condition) mit ICD-10-GM-Code plus Diagnosesicherheit (G/V/Z/A) und Seitenlokalisation (L/R/B) als Extensions.
+> **Classifier Download**: Alle Versionen kostenlos auf [klassifikationen.bfarm.de](https://klassifikationen.bfarm.de).
+> **DEMIS**: Diagnosen in DEMIS-FHIR-Ressourcen referenzieren denselben URI.
+> **Alpha-ID**: Versionsstabile Diagnosebegriff-Kennung für PVS/KIS-Suchsysteme; separater Download via BfArM-Klassifikationsplattform.
 
 ### Verwendung in FHIR-Profilen
 

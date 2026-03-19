@@ -70,7 +70,7 @@ Die Höhe der TI-Pauschalen wird regelmäßig angepasst und ist im EBM-Kapitel 0
 > [!interesse-technik] EBM maschinenlesbar
 > Seit 2020 stellt die [[KBV]] den EBM als maschinenlesbares XML-Format bereit: [kbv.de/praxis/abrechnung/ebm](https://www.kbv.de/praxis/abrechnung/ebm). Das KVDT-Format für die Abrechnungsübermittlung gehört zur [[xDT]]-Familie. PVS-Hersteller nutzen das XML-Format zur automatischen GOP-Kodierunterstützung und zur Plausibilitätsprüfung vor der Abrechnung.
 
-Die Abrechnung gegenüber der [[Kassenaerztliche-Vereinigung|KV]] erfolgt über das **KVDT-Format** (Kassenärztlicher Datentransfer), das zur Familie der [[xDT]]-Formate gehört. Das [[PVS|Praxisverwaltungssystem (PVS)]] erzeugt eine KVDT-Datei mit allen im Quartal erbrachten Leistungen. Diese wird elektronisch an die KV übermittelt.
+Die Abrechnung gegenüber der [[Kassenaerztliche-Vereinigung|KV]] erfolgt über das **[[KVDT]]-Format** (Kassenärztlicher Datentransfer), das zur Familie der [[xDT]]-Formate gehört. Das [[PVS|Praxisverwaltungssystem (PVS)]] erzeugt eine KVDT-Datei mit allen im Quartal erbrachten Leistungen. Diese wird elektronisch an die KV übermittelt.
 
 Seit 2020 stellt die [[KBV]] den EBM auch in einem maschinenlesbaren XML-Format bereit, das von PVS-Herstellern zur automatischen Kodierunterstützung genutzt werden kann.
 
@@ -87,6 +87,7 @@ Der **Bewertungsausschuss** (BA) ist das gemeinsame Beschlussgremium von KBV und
 
 - [[Kassenaerztliche-Vereinigung|KV]] (nimmt Abrechnungen nach EBM entgegen, verteilt Vergütung)
 - [[KBV]] (gibt den EBM gemeinsam mit dem GKV-Spitzenverband heraus)
+- [[KVDT]] (Dateiformat für die Übermittlung der Quartalabrechnung an die KV)
 - [[PVS]] (Praxissoftware, in der EBM-Ziffern erfasst und KVDT-Dateien erstellt werden)
 - [[GKV]] (Kostenträger, finanziert EBM-Vergütungen über Gesamtvergütungen an KVen)
 - [[SGB-V]] (§ 87 SGB V: gesetzliche Grundlage für den EBM und den Bewertungsausschuss)

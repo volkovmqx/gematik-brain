@@ -57,6 +57,16 @@ Der Bundesverband Gesundheits-IT (bvitg) forderte in einem Positionspapier (11. 
 - Die [[ePA]] als zentralen Hub für alle Gesundheitsdaten.
 - Stabile TI als Grundvoraussetzung für alle weiteren Digitalisierungsschritte.
 
+### Datenschutzkritik (Februar 2026)
+
+Netzpolitik.org veröffentlichte am 16. Februar 2026 eine detaillierte Analyse der geplanten GDVG-Strategie. Kritisiert werden:
+
+- **KI-Training ohne Einwilligung**: Das GDVG soll ermöglichen, dass Gesundheitsdaten aus der [[ePA]] ohne individuelle Einwilligungspflicht für KI-Modelle genutzt werden.
+- **Automatische ePA-Datenübermittlung ans FDZ**: Täglich sollen ePA-Daten aller GKV-Versicherten pseudonymisiert an das [[Forschungsdatenzentrum-Gesundheit|Forschungsdatenzentrum Gesundheit (FDZ)]] übermittelt werden. GKV-Versicherte sollen kein Opt-out-Recht erhalten (PKV-Versicherte hingegen schon).
+- **Vernetzung von rund 350 Registern**: Über pseudonymisierte Versicherungs-IDs sollen Gesundheitsregister miteinander verknüpft werden. Kritiker bezweifeln den ausreichenden Schutz vor Re-Identifizierung.
+
+Datenschutzbehörden und Bürgerrechtsorganisationen wie die Gesellschaft für Freiheitsrechte (GFF) und der Chaos Computer Club (CCC) sehen das Vorhaben kritisch. Das Gesetz befindet sich noch in der Referentenentwurfsphase (Stand März 2026), sodass Details noch geändert werden können.
+
 ## Verknüpfungen
 
 - [[gematik]] (wird durch das GDVG zur Digitalagentur weiterentwickelt)
@@ -74,3 +84,4 @@ Der Bundesverband Gesundheits-IT (bvitg) forderte in einem Positionspapier (11. 
 - [bvitg: Positionspapier zu GDVG (März 2026)](https://www.kma-online.de/aktuelles/it-digital-health/detail/bvitg-anforderungen-nutzung-der-gesundheitsdaten-und-weiterentwicklung-der-infrastruktur-55357)
 - [Koalitionsvertrag CDU/CSU-SPD 2025: Gesundheitspolitik](https://pm-report.de/gesundheitswesen/2025/geplanter-koalitionsvertrag-was-soll-im-gesundheitswesen-passieren.html)
 - [GDAG (Kabinettsentwurf Juli 2024, nicht verabschiedet)](https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/gdag-kabinett-17-07-24.html)
+- [netzpolitik.org: Datenschutzkritik am GDVG (16. Februar 2026)](https://netzpolitik.org/2026/bundesgesundheitsministerium-so-umfassend-will-warken-die-gesundheitsdaten-aller-versicherten-verknuepfen/)
