@@ -1,6 +1,6 @@
 {
   "lastChecked": "2026-03-19",
-  "lastRun": "2026-03-19T18:00:00Z",
+  "lastRun": "2026-03-19T20:00:00Z",
   "findings": [
     {
       "title": "eMedikationsplan: Start verschoben auf Oktober 2026",
@@ -1171,6 +1171,30 @@
       "action": "applied",
       "appliedDate": "2026-03-19",
       "details": "ePA.md Nutzungsstatistik bereits auf dem Stand: 130.000+ Einrichtungen (81%), 700 Mio. Datensätze, 37 Mio. Dokumente. Die früheren Zahlen (110.000, 22 Mio. Dokumente) wurden bereits im Artikel aktualisiert."
+    },
+    {
+      "title": "Draft_gemF_TI-M_Headless_Client: Neuer Produkttyp für PVS/KIS-Integration des TI-Messengers (27. Januar 2026)",
+      "date": "2026-01-27",
+      "source": "https://gemspec.gematik.de/prereleases/Draft_gemF_TI-M_Headless_Client/index.html",
+      "summary": "Gematik veröffentlichte am 27. Januar 2026 eine Vorabveröffentlichung für die Feature-Spezifikation des TI-Messenger Headless Clients. Der Headless Client ist ein eigenständiger, nicht sichtbarer Softwarebaustein, der in Primärsysteme wie PVS, KIS oder Contact-Center-Systeme integriert werden kann. Er stellt keine neue Endnutzerfunktionalität bereit, sondern macht die bestehende TI-M-Pro-Funktionalität über eine programmierbare Schnittstelle verfügbar. Damit entfällt die Notwendigkeit einer separaten TI-Messenger-App für Mitarbeiter in Einrichtungen, die TI-M direkt in ihre Arbeitssoftware integrieren möchten. Eine Testumgebung war für März 2026 geplant. Nach Verfügbarkeit der Testumgebung wird die Spezifikation Grundlage für Produktzulassungen.",
+      "relevantArticles": ["TI-Messenger.md", "KIS.md"],
+      "category": "specification",
+      "action": "applied",
+      "appliedDate": "2026-03-19",
+      "details": "TI-Messenger.md: Neuer Unterabschnitt 'TI-Messenger Headless Client' in Technische Details ergänzt. Beschreibt direkte PVS/KIS-Integration ohne separate App-Oberfläche.",
+      "suggestedTerm": "TI-Messenger Headless Client"
+    },
+    {
+      "title": "AOK-Pilotprojekt europäische Patientenkurzakte (NCPeH): Ergebnisse an BMG übergeben (Januar 2026)",
+      "date": "2026-01-01",
+      "source": "https://www.aok.de/pp/bv/pm/europaeischen-patientenkurzakte/",
+      "summary": "Die AOKen übergaben dem Bundesgesundheitsministerium (BMG) im Januar 2026 ein Konzept sowie die Ergebnisse eines sechsmonatigen Pilotprojekts zur europäischen Patientenkurzakte (Patient Summary). Das Pilotprojekt testete Nutzerorientierung und Praxistauglichkeit einer EU-weit lesbaren digitalen Kurzakte über die MyHealth@EU-Infrastruktur (NCPeH als deutsches Gateway). Ziel: Versicherte sollen ab 2029 ihre Patientenkurzakte EU-weit Leistungserbringern bereitstellen können. Das Konzeptpapier fließt in die EHDS-Umsetzungsplanung in Deutschland ein. Die Inhalte der Patientenkurzakte (IPS, International Patient Summary) basieren auf dem FHIR-Profil des HL7 International Patient Summary.",
+      "relevantArticles": ["NCPeH.md", "Telematikinfrastruktur.md", "ePA.md", "FHIR.md"],
+      "category": "regulation",
+      "action": "applied",
+      "appliedDate": "2026-03-19",
+      "details": "NCPeH.md: Neuer Absatz zu deutschen Pilotaktivitäten für Patient Summary ergänzt. AOK-Pilotprojekt und BMG-Konzeptpapier dokumentiert. Patient Summary vs. E-Rezept als separate Anwendungsfälle klar getrennt.",
+      "suggestedTerm": "Europäische Patientenkurzakte"
     }
   ]
 }

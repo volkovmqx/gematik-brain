@@ -3,7 +3,7 @@ title: DiGA
 audience: [technical, non-technical]
 tags: [technologies, digitale-gesundheit, medizinprodukt, bfarm]
 aliases: [Digitale Gesundheitsanwendungen, App auf Rezept, DiGAV]
-maturity: wachsend
+maturity: setzling
 relevance:
   sectors: [startup, hersteller, arztpraxis, psychotherapie, patient, kasse, regulierung]
   interests: [technik, business, compliance, patient]
@@ -19,7 +19,7 @@ Stell dir vor, dein Arzt verschreibt dir nicht eine Pille, sondern eine App. Das
 
 ## Überblick
 
-DiGA wurden mit dem [[DVG|Digitale-Versorgung-Gesetz (DVG)]] im Jahr 2019 in Deutschland eingeführt. Seitdem können Ärzte und Psychotherapeuten DiGA auf einem Kassenrezept verordnen. Die [[GKV]] übernimmt die Kosten für alle 73 Millionen GKV-Versicherten.
+DiGA wurden mit dem [[DVG|Digitale-Versorgung-Gesetz (DVG)]] im Jahr 2019 in Deutschland eingeführt. Seitdem können Ärzte und Psychotherapeuten DiGA auf einem Kassenrezept verordnen. Die [[GKV]] übernimmt die Kosten für alle rund 74,5 Millionen GKV-Versicherten.
 
 Das Bundesinstitut für Arzneimittel und Medizinprodukte ([[BfArM]]) ist die zuständige Zulassungsbehörde. Es führt das öffentliche DiGA-Verzeichnis, in dem alle zugelassenen Apps mit Informationen zu Indikation, Evidenz und Erstattungsbetrag aufgeführt sind.
 

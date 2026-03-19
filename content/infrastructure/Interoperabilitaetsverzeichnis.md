@@ -31,7 +31,7 @@ Mit dem [[DigiG]] (2024) und der Einführung von § 385 [[SGB-V]] wurde das Verz
 - Festlegungen zu Fristen und Geltungsbereichen
 - Technische Normen, Kommunikationsstandards und Datenformate
 
-Das Verzeichnis wird öffentlich zugänglich gemacht. Hersteller von Primärsystemen ([[PVS]], [[KIS]], [[AVS]]) können anhand des Verzeichnisses prüfen, welche Standards sie implementieren müssen.
+Das Verzeichnis wird öffentlich zugänglich gemacht. Hersteller von [[Primärsystem|Primärsystemen]] ([[PVS]], [[KIS]], [[AVS]]) können anhand des Verzeichnisses prüfen, welche Standards sie implementieren müssen.
 
 ### Verhältnis zu ISiK und anderen Spezifikationen
 

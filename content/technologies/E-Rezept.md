@@ -46,8 +46,8 @@ Das E-Rezept wird digital erstellt, signiert und kann auf drei Wegen eingelöst 
 - T-Rezepte (teratogene Stoffe, z.B. Lenalidomid): Spezifikation seit August 2025 veröffentlicht, Rollout-Start Mitte Q4/2026
 - Häusliche Krankenpflege und außerklinische Intensivpflege: Pflicht ab 1. Juli 2026
 - Hilfsmittelverordnungen (Orthesen, Rollstühle etc.): Pflicht ab 1. Juli 2027
-- Heilmittelverordnungen ([[eVO]], Physiotherapie, Ergotherapie, Logopädie): Verordner müssen ab 1. Januar 2027 elektronische Heilmittelverordnungen ausstellen. Die TI-Anbindungspflicht für Heilmittelerbringer (Physiotherapeuten, Ergotherapeuten, Logopäden etc.) wurde vom 1. Januar 2026 auf den **1. Oktober 2027** verschoben. Begründung: Die elektronische Heilmittelverordnung (eVO) ist noch nicht verfügbar. Pflicht zur Einlösung ab 2028.
-- E-BtM-Rezept (Betäubungsmittel): Pilotstart frühestens Q4/2026, verpflichtende Einführung voraussichtlich 2027
+- [[Heilmittelverordnung|Heilmittelverordnungen]] ([[eVO]], Physiotherapie, Ergotherapie, Logopädie): Verordner müssen ab 1. Januar 2027 elektronische Heilmittelverordnungen ausstellen. Die TI-Anbindungspflicht für Heilmittelerbringer (Physiotherapeuten, Ergotherapeuten, Logopäden etc.) wurde vom 1. Januar 2026 auf den **1. Oktober 2027** verschoben. Begründung: Die elektronische Heilmittelverordnung (eVO) ist noch nicht verfügbar. Pflicht zur Einlösung ab 2028.
+- [[BTM-Rezept|E-BtM-Rezept]] (Betäubungsmittel): Pilotstart frühestens Q4/2026, verpflichtende Einführung voraussichtlich 2027
 - Grenzüberschreitende Einlösung in der EU
 
 ## Architektur

@@ -99,7 +99,7 @@ Token-basierte Autorisierung sichert den Zugriff auf Fachdienste. Jedes Token ha
 
 ### Zero-Trust-Migration
 
-Mit TI 2.0 wird das bisherige VPN-Perimeter-Modell durch [[Zero-Trust]] ersetzt. Jede Verbindung zwischen Primärsystem und TI-Fachdienst erfordert [[mTLS]] (Mutual TLS), bei dem beide Seiten gültige Zertifikate vorlegen müssen. Das [[TI-Gateway]] ist die zentrale Umsetzungskomponente.
+Mit TI 2.0 wird das bisherige VPN-Perimeter-Modell durch [[Zero-Trust]] ersetzt. Jede Verbindung zwischen [[Primärsystem]] und TI-Fachdienst erfordert [[mTLS]] (Mutual TLS), bei dem beide Seiten gültige Zertifikate vorlegen müssen. Das [[TI-Gateway]] ist die zentrale Umsetzungskomponente.
 
 ## Standards
 

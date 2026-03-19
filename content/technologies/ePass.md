@@ -3,7 +3,10 @@ title: ePass
 audience: [technical, non-technical]
 tags: [technologies, authentisierung, epa, nfc, identifikation]
 aliases: [ePass-Verfahren, Nect ePass, NFC-Identifikation ePA]
-maturity: setzling
+relevance:
+  sectors: [arztpraxis, krankenhaus, apotheke, patient, kasse, hersteller]
+  interests: [compliance, patient, technik]
+maturity: wachsend
 ---
 
 # ePass

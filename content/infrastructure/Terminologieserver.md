@@ -6,7 +6,7 @@ aliases: [Terminologiedienst, FHIR Terminology Server, ZTS BfArM]
 relevance:
   sectors: [krankenhaus, arztpraxis, hersteller, ti-infrastruktur, it-dienstleister, forschung]
   interests: [technik, compliance]
-maturity: setzling
+maturity: wachsend
 ---
 
 # Terminologieserver
@@ -111,7 +111,7 @@ Der BfArM-Terminologieserver ist Pflichtquelle für:
 >
 > **KIS-Anbindung:** Moderne KIS-Systeme (SAP ISH, Orbis, iMedOne, Dedalus) implementieren die FHIR Terminology API direkt oder über einen lokalen Proxy-Cache. Empfehlung: lokalen Terminology-Cache im Kliniknetz vorhalten, um Latenzen und Internet-Abhängigkeit zu reduzieren. Updatezyklus prüfen: BfArM veröffentlicht neue SNOMED-CT-Releases halbjährlich.
 >
-> **Deployment:** Der Terminologieserver ist öffentlich erreichbar, aber für Produktivbetrieb mit hohem Request-Volumen sollte ein lokaler Cache (z.B. Ontoserver, HAPI FHIR Terminology Server) eingesetzt werden. Verfügbarkeitsanforderung: 24/7 für alle Systeme, die bei Patientenaufnahme oder Befundcodierung terminologieabhängige Validierungen durchführen.
+> **Deployment:** Der Terminologieserver ist öffentlich erreichbar, aber für Produktivbetrieb mit hohem Request-Volumen sollte ein lokaler Cache (z.B. HAPI FHIR Terminology Server) eingesetzt werden. Verfügbarkeitsanforderung: 24/7 für alle Systeme, die bei Patientenaufnahme oder Befundcodierung terminologieabhängige Validierungen durchführen.
 
 ## Verknüpfungen
 
@@ -133,6 +133,7 @@ Der BfArM-Terminologieserver ist Pflichtquelle für:
 
 - [BfArM: Terminologieserver](https://www.bfarm.de/DE/Kodiersysteme/Services/Terminologieserver/_node.html)
 - [BfArM: Kommentar zum Terminologieserver (englisch)](https://www.bfarm.de/EN/Code-systems/Services/Terminologyserver/commentary/_node.html)
+- [BfArM: Pressemitteilung Zentraler Terminologieserver (2024)](https://www.bfarm.de/SharedDocs/Pressemitteilungen/DE/2024/pm07-2024.html)
 - [gematik INA: Positionspapier Terminologieservices](https://www.ina.gematik.de/fileadmin/Dokumente/Positionspapier_Terminologieservices.pdf)
 - [BfArM: Zentraler Terminologieserver (terminologien.bfarm.de)](https://terminologien.bfarm.de/)
 - [HL7.de Magazin: TerminoloGit – Open-Source-Terminologieserver aus Österreich](https://magazin.hl7.de/terminologit/)

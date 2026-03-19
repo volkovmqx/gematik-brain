@@ -3,6 +3,10 @@ title: Telemedizin
 audience: [technical, non-technical]
 tags: [konzepte, fernbehandlung, videosprechstunde, digitalisierung]
 aliases: [Fernbehandlung, Videosprechstunde, Telemonitoring, assistierte Telemedizin]
+relevance:
+  sectors: [arztpraxis, krankenhaus, psychotherapie, pflege, apotheke, patient, kasse]
+  interests: [compliance, business, patient]
+maturity: wachsend
 ---
 
 # Telemedizin
@@ -30,6 +34,9 @@ Der KBV-Patientenservice 116117 vermittelt seit 2025 telemedizinische Leistungen
 
 ## Technische Details
 
+> [!interesse-compliance]
+> Voraussetzungen für die GKV-Abrechnung von Videosprechstunden: (1) Vollständige TI-Anbindung der Praxis (Konnektor oder TI-Gateway, eGK-Lesegerät). (2) Nutzung eines KBV-zertifizierten Videodienstanbieters. (3) Neue Mindestanforderungen nach BMV-Ä Anlage 31c gelten seit 1. März 2025. Praxen ohne TI-Anbindung: Honorarabzug von bis zu 2,5 Prozent. Das [[DigiG]] hob Mengenbeschränkungen für Videosprechstunden auf (2024).
+
 ### Zertifizierte Videodienstanbieter
 
 Für die Abrechnung telemedizinischer Leistungen in der [[GKV]] müssen Videokonferenzsysteme durch die [[KBV]] zertifiziert sein. Die Anforderungen sind in Anlage 31b des [[Bundesmantelvertrag|Bundesmantelvertrags-Ärzte (BMV-Ä)]] festgelegt. Stand Mai 2025 sind 88 Anbieter zertifiziert. Zu den technischen Anforderungen gehören:
@@ -48,6 +55,9 @@ Telemedizinische Leistungen sind an die [[Telematikinfrastruktur]] gebunden. Ein
 - Zugriff auf das [[PVS]] (Praxisverwaltungssystem) mit ePA-Schnittstelle
 
 Praxen ohne vollständige TI-Anbindung erhalten Honorarabschläge von bis zu 2,5 Prozent.
+
+> [!interesse-patient]
+> Bei einer Videosprechstunde haben Sie dieselben Patientenrechte wie bei einem normalen Arzttermin. Der Arzt muss Sie über Datenschutz und Technik aufklären. Auf Wunsch können Sie jederzeit auf einen Präsenztermin bestehen. Ihre Krankenkasse muss Videosprechstunden erstatten, wenn sie medizinisch angemessen sind. Seit dem [[DigiG]] (2024) können Sie in Apotheken kostenlose Unterstützung bei der Videosprechstunde in Anspruch nehmen (assistierte Telemedizin).
 
 ### Telemonitoring
 

@@ -51,7 +51,7 @@ Als Gesellschafterin der [[gematik]] ist die KZBV bei allen wesentlichen TI-Ents
 - **[[SMC-B]]** für Zahnarztpraxen: Zahnarztpraxen erhalten eine Institutionskarte (SMC-B) für die TI-Anbindung.
 - **[[KIM]]**: Zahnärzte können über KIM sicher mit anderen Leistungserbringern kommunizieren.
 
-Die KZBV koordiniert zusammen mit den KZVen und der Bundeszahnärztekammer (BZÄK) die Einbindung der zahnärztlichen Leistungserbringer in die TI.
+Die KZBV koordiniert zusammen mit den KZVen und der [[BZÄK|Bundeszahnärztekammer (BZÄK)]] die Einbindung der zahnärztlichen Leistungserbringer in die TI.
 
 ### Abgrenzung zu anderen Organisationen
 
@@ -59,7 +59,7 @@ Die KZBV koordiniert zusammen mit den KZVen und der Bundeszahnärztekammer (BZÄ
 |---|---|
 | KZBV | Vertragszahnärzte (GKV-Abrechnung), Bundesebene |
 | KZV (17 Landesverbände) | Vertragszahnärzte, Landesebene |
-| BZÄK | Berufskammer für alle Zahnärzte (Berufsrecht, Fortbildung) |
+| [[BZÄK]] | Berufskammer für alle Zahnärzte (Berufsrecht, Fortbildung) |
 | [[KBV]] | Vertragsärzte (nicht Zahnärzte), Bundesebene |
 
 ## Verknüpfungen

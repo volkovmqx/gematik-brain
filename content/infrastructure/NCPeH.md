@@ -3,7 +3,10 @@ title: NCPeH - National Contact Point for eHealth
 audience: [technical, non-technical]
 tags: [infrastruktur, eu, interoperabilitaet, myhealth, ehds]
 aliases: [National Contact Point for eHealth, Nationaler Kontaktpunkt eHealth]
-maturity: wachsend
+maturity: setzling
+relevance:
+  sectors: [krankenhaus, arztpraxis, apotheke, kasse, ti-infrastruktur, regulierung]
+  interests: [compliance, technik]
 ---
 
 # NCPeH - National Contact Point for eHealth
@@ -21,6 +24,8 @@ Die **[[DVKA]]** (Deutsche Verbindungsstelle Krankenversicherung – Ausland) be
 Die rechtliche Grundlage auf EU-Ebene ist die **[[EHDS]]-Verordnung** (European Health Data Space, EU 2025/327), die im März 2025 in Kraft trat. Sie verpflichtet die EU-Mitgliedstaaten schrittweise zur Teilnahme am grenzüberschreitenden Gesundheitsdatenaustausch.
 
 Am **16. März 2026** besuchten fast 50 Delegierte aus 14 EU-Ländern die [[gematik]], um sich über den deutschen NCPeH und die TI-Infrastruktur zu informieren. Das zeigt das wachsende Interesse anderer Mitgliedstaaten an der deutschen Implementierung.
+
+Parallel zur E-Rezept-Integration laufen in Deutschland erste Pilotaktivitäten für den grenzüberschreitenden Austausch von [[Patient-Summary|Patientenkurzakten (Patient Summary)]]. Die AOK hat Pilotprojektergebnisse und ein Konzeptpapier für den EU-weiten Patientenzusammenfassungsaustausch beim [[BMG]] eingereicht. Patient Summary und E-Rezept sind zwei eigenständige Anwendungsfälle: Das E-Rezept ist für Wave 10 (2026) priorisiert; der Patient-Summary-Austausch ist als separater Schritt geplant und befindet sich in der konzeptionellen Phase.
 
 ### Geplante Teilnahme an MyHealth@EU
 
@@ -84,3 +89,4 @@ Der NCPeH überträgt personenbezogene Gesundheitsdaten über Ländergrenzen hin
 
 - [gematik: EU-Delegation besucht gematik (März 2026)](https://www.gematik.de/newsroom/news-detail/grenzueberschreitender-digitaler-gesundheitsdatenaustausch-europaeische-delegation-bei-der-gematik)
 - [Europäische Kommission: European Health Data Space (EHDS)](https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space_en)
+- [DVKA / eu-patienten.de: Grenzüberschreitende Gesundheitsversorgung – Nationale Kontaktstelle](https://www.eu-patienten.de)

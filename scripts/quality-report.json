@@ -1,286 +1,431 @@
 {
-  "timestamp": "2026-03-19T19:00:00Z",
-  "overallScore": 82,
+  "timestamp": "2026-03-19T20:00:00Z",
+  "overallScore": 83,
   "testResults": {
-    "passed": 166,
+    "passed": 171,
     "failed": 0,
-    "total": 166
+    "total": 171
   },
   "articles": [
     {
-      "file": "content/infrastructure/Terminologieserver.md",
-      "verdict": "revise",
-      "score": 55,
+      "file": "content/infrastructure/Primärsystem.md",
+      "verdict": "pass",
+      "score": 88,
       "issues": [
-        "FACTUAL ERROR: Article states 'basiert auf Ontoserver, einem FHIR-konformen Terminologieserver des australischen CSIRO'. This is wrong. BfArM's central terminology server is based on TerminoloGIT, an open-source solution developed by Austrian ELGA. CSIRO Ontoserver is a separate product used by NHS UK and others. Confirmed by BfArM official website (bfarm.de) and BfArM press release 2024.",
-        "FACTUAL ERROR: Article states the API base URL is 'https://ontoserver.bfarm.de/fhir'. The actual URL is 'https://terminologien.bfarm.de'. The domain 'ontoserver.bfarm.de' does not appear to exist as the official endpoint.",
-        "The technik callout references 'r4.ontoserver.csiro.au/fhir' as a test alternative — this CSIRO public instance is real, but framing it alongside a wrong BfArM URL compounds the confusion.",
-        "Section 'Ontoserver-Technologie' describes CSIRO-specific features (ECL, Syndication-API) as features of the BfArM server — these are specific to Ontoserver and may not apply to TerminoloGIT.",
-        "gematik INA Positionspapier source URL (ina.gematik.de/fileadmin/Dokumente/Positionspapier_Terminologieservices.pdf): unverified via browser — plausible path.",
-        "All frontmatter fields present. 13 wiki-links, all relevant. Required sections present. 4 sources, 2 official (BfArM, CSIRO).",
-        "Claim '350.000 SNOMED-CT Konzepte': unverifiable from quick search; SNOMED CT International has over 350,000 concepts — plausible.",
-        "BfArM URL source confirmed live via Playwright."
+        "All frontmatter fields present and valid. Sectors and interests are valid enum values.",
+        "Definition sentence is precise and correct.",
+        "KBV as PVS certification body: confirmed by gematik fachportal (fachportal.gematik.de/hersteller-anbieter/primaersysteme) and KBV sources.",
+        "KOB as mandatory since 2024: confirmed. Source: INA.gematik.de KOB-Dokumente. Note: KBV issued a directive to prevent exclusion of practices using uncertified PVS for up to 18 months (as of December 2025 ruling) — this nuance is missing from the article but not a factual error.",
+        "ECC-Migration Frist 30. Juni 2026: consistent with ECC-Migration.md and BZÄK.md. Cross-article consistent.",
+        "ZETA framework named correctly. VSDM 2.0 as first TI 2.0 application: confirmed by gematik.de/telematikinfrastruktur/ti-2-0.",
+        "Market claim: CompuGroup Medical, Medatixx, Tomedo, Dampsoft, x.isynet as top 5 PVS vendors: plausible; unverifiable from single official source but consistent with industry knowledge.",
+        "Source URLs: fachportal.gematik.de/hersteller-anbieter/primaersysteme — live (verified). kbv.de/html/praxissoftware.php — plausible URL pattern. gematik.de KOB page — live. gemspec.gematik.de — live.",
+        "14 wiki-links: all relevant, all likely resolve (PVS, KIS, AVS, Telematikinfrastruktur, Konnektoren, TI-Gateway, Fachdienst, FHIR, KBV, gematik, ECC-Migration, mTLS, ZETA, DRG, RIS, LIS, PACS listed in text — slightly more than in Verknüpfungen section, but no broken links).",
+        "Compliance callout content matches compliance type. Technik callout content matches technik type."
       ],
-      "fixInstructions": "1. In Überblick, replace 'Er basiert auf Ontoserver, einem FHIR-konformen Terminologieserver des australischen CSIRO (Commonwealth Scientific and Industrial Research Organisation).' with 'Er basiert auf TerminoloGIT, einem Open-Source-Terminologiedienst des österreichischen ELGA-Systems, der gemeinsam von gematik, BfArM, ELGA GmbH und eHealth Suisse weiterentwickelt wird.' 2. In the interesse-technik callout, replace 'https://ontoserver.bfarm.de/fhir' with 'https://terminologien.bfarm.de'. 3. Remove or reframe the 'Ontoserver-Technologie' section: replace 'Ontoserver ist ein kommerzieller FHIR-Terminologieserver von CSIRO' with an accurate description of TerminoloGIT and its collaborative development. Remove the CSIRO source in Quellen and replace with the TerminoloGIT/BfArM press release (https://www.bfarm.de/SharedDocs/Pressemitteilungen/DE/2024/pm07-2024.html). 4. Replace the CSIRO Ontoserver source URL with: [BfArM: Pressemitteilung Zentraler Terminologieserver (2024)](https://www.bfarm.de/SharedDocs/Pressemitteilungen/DE/2024/pm07-2024.html)."
+      "fixInstructions": "No blocking issues. Optional: add a note that KBV issued a December 2025 directive allowing 18-month transition for practices unable to achieve KOB certification."
+    },
+    {
+      "file": "content/infrastructure/TI-2.0.md",
+      "verdict": "pass",
+      "score": 90,
+      "issues": [
+        "All frontmatter fields present and valid.",
+        "ZETA Open Source release date 15 Dezember 2025: confirmed by gematik newsroom and healthcare-digital.de.",
+        "EY Strategy and Transactions GmbH as ZETA contractor: confirmed by heise.de and gematik newsroom.",
+        "VSDM 2.0 Parallelbetrieb ab 30. Juni 2026: confirmed by gematik.de/telematikinfrastruktur/ti-2-0.",
+        "TI-Gateway approved providers (RISE, Arvato Systems, Akquinet, Telekom TI-Connect): plausible; consistent with fachportal data; not individually verified this cycle.",
+        "VSDM 2.0 Vollmigration Februar 2027: unverifiable from public source; stated as fact — flag as 'unverifiable'.",
+        "PoPP Stufe 1 Mitte 2026: confirmed by gematik.de TI 2.0 page ('Ab Mitte 2026 ist auch ohne Kartenstecken möglich').",
+        "Article title in frontmatter is 'TI 2.0' but file is TI-2.0.md — consistent.",
+        "Source: gematik newsroom ZETA URL confirmed live.",
+        "12 wiki-links, all relevant.",
+        "Compliance and technik callouts match their types correctly."
+      ],
+      "fixInstructions": "Flag 'VSDM 2.0 Vollmigration: Februar 2027' as unverifiable from public primary source — qualify as 'laut gematik-Planungsstand'. Not blocking."
+    },
+    {
+      "file": "content/processes/BTM-Rezept.md",
+      "verdict": "revise",
+      "score": 72,
+      "issues": [
+        "FACTUAL ISSUE (stale/outdated): Article states 'Pilotprojekt: Frühestens im Q4 2026 geplant'. Web search confirms the Aerzteblatt reports 'Testphase für elektronische Betäubungsmittelrezepte ab Oktober geplant' (consistent with Q4 2026). The gematik draft spec eBtM_25_1 exists (gemspec.gematik.de/prereleases/Draft_eBtM_Rezept_25_1/). However, the PTAheute (March 2024) article stated 'Tests ab Oktober 2024, also BtM elektronisch ab 2025'. There has clearly been a delay/postponement. The article's timeline (Q4 2026 pilot, 2027 mandatory) is consistent with current reporting but the history of postponement is notable.",
+        "BfArM source URL DEAD: Article cites 'https://www.bfarm.de/DE/Bundesopiumstelle/Betaeubungsmittel/Verschreibung/Betaeubungsmittelrezept/_node.html'. Playwright confirms this URL now redirects to 'https://www.bfarm.de/DE/Bundesopiumstelle/Betaeubungsmittel/BtM-Rezepte-Verschreibung/_node.html'. The old URL 404s or redirects. Flag as url_dead (redirect to changed path).",
+        "Source 'Deutsche Apotheker Zeitung' (1. DAZ-Link): The URL cited is 'https://www.deutsche-apotheker-zeitung.de/autoren/news/artikel/2026/01/06/epa-e-rezept-und-mehr-was-kommt-2026' — the article title is about ePA/E-Rezept broadly, not specifically BTM. Potential url_mismatch (source covers BTM tangentially but mainly covers other 2026 updates).",
+        "Source 'Gelbe Liste E-Rezept-Zeitplan': a commercial/trade source (not official). Acceptable as supplementary only.",
+        "Only 1 clearly official source (BfArM, though dead URL). gematik Fachportal source is plausible.",
+        "Technically strong: FHIR-Profile, QES-Anforderungen, Abgrenzung zu T-Rezept: plausible and internally consistent.",
+        "8 wiki-links, all relevant. All frontmatter present and valid.",
+        "T-Rezept timeline: 'Spezifikation 2025, Einführung 2026' — plausible, consistent with gematik.de references to T-Register."
+      ],
+      "fixInstructions": "1. Fix BfArM source URL: replace 'https://www.bfarm.de/DE/Bundesopiumstelle/Betaeubungsmittel/Verschreibung/Betaeubungsmittelrezept/_node.html' with the current URL 'https://www.bfarm.de/DE/Bundesopiumstelle/Betaeubungsmittel/BtM-Rezepte-Verschreibung/_node.html'. 2. Replace the DAZ source with a more specific BTM reference, e.g. Deutsches Ärzteblatt: 'Testphase für elektronische Betäubungsmittelrezepte ab Oktober geplant' (https://www.aerzteblatt.de/news/testphase-fuer-elektronische-betaeubungsmittelrezepte-ab-oktober-geplant-7de41182-aabb-447d-b698-78db04f321d4). 3. Add the gematik gemspec prerelease as source: [gematik: Draft eBtM_25_1 (gemF_eRp_eBTM V1.0.1)](https://gemspec.gematik.de/prereleases/Draft_eBtM_Rezept_25_1/)."
+    },
+    {
+      "file": "content/organization/BZÄK.md",
+      "verdict": "pass",
+      "score": 82,
+      "issues": [
+        "All frontmatter fields present and valid.",
+        "BZÄK als Gesellschafterin der gematik: confirmed by web search and gematik.de/ueber-uns/gremien-gesellschafter. BZÄK holds 2.45% of shares.",
+        "FACTUAL IMPRECISION: Article states gematik Anteile as 'BMG 51%, GKV-SV 22,05%, PKV 7%, and the remaining 19,95% shared among Bundesärztekammer, KBV, KZBV, BZÄK, DAV, DKG'. The actual structure is: BMG 51%, GKV-SV 22,05%, PKV 7%, and seven Leistungserbringer-Organisationen share 19,95% (ca. 2,85% each). The article is not wrong but the math implies different totals — the description is correct in principle but the parenthetical '(nach dem BMG-Anteil von 51% und dem GKV-Spitzenverband-Anteil von 22,05% sowie dem PKV-Anteil von 7%)' totals 80.05%, leaving 19.95% for all Leistungserbringer. This is accurate.",
+        "BZÄK.de source URL confirmed live (redirects to organisationsstruktur.html but content is BZÄK — valid).",
+        "gematik Gesellschafter URL confirmed live.",
+        "17 Landeszahnärztekammern: confirmed by BZÄK website ('Mitglieder der Bundeszahnärztekammer sind die Zahnärztekammern der Bundesländer').",
+        "HBA G2.1 / ECC-Migration Frist 30. Juni 2026: consistent with ECC-Migration.md and BZÄK.md news item on zm-online.de about HBA extension.",
+        "DVG 2019 as Anbindungspflicht for Zahnärzte: confirmed.",
+        "Cross-article check: HBA G2.0 → G2.1 by 30. Juni 2026 consistent with ECC-Migration.md.",
+        "8 wiki-links, all relevant. Required sections present."
+      ],
+      "fixInstructions": "No blocking issues. The gematik source URL (gematik.de/ueber-uns/gremien-gesellschafter) is confirmed live. The BZÄK.de source URL redirects but content is valid."
+    },
+    {
+      "file": "content/processes/Heilmittelverordnung.md",
+      "verdict": "revise",
+      "score": 70,
+      "issues": [
+        "DEAD URL: Primary source 'https://www.gematik.de/anwendungen/e-rezept/heilmittelverordnung' returns 404 (confirmed via Playwright). This is the main official gematik source. Score -15.",
+        "eVO Pflicht ab 1. Januar 2027 für Ärzte: confirmed by web search (up-aktuell.de: 'Start der elektronischen Heilmittelverordnung verschiebt sich auf 2027').",
+        "TI-Anbindungspflicht für Heilmittelerbringer verschoben auf 1. Oktober 2027: confirmed by web search (verbandsbuero.de, physio-deutschland.de). Original deadline was 1. Januar 2026; shifted to 1. Oktober 2027 via amendment to Pflegekompetenzgesetz (October 2025 Bundestag vote). Article states this correctly.",
+        "160.000 Therapeutinnen und Therapeuten: unverifiable from quick search but plausible industry figure.",
+        "Cross-article consistency: BTM-Rezept.md Abgrenzungstabelle states 'eVO (Muster 13): Pflicht ab Jan. 2027' — consistent with this article.",
+        "Source 'up-aktuell.de' (March 2026 eVO article): a trade press source — acceptable. URL plausible but not verified via browser.",
+        "G-BA Heilmittel-Richtlinie source (g-ba.de/richtlinien/12/): plausible and likely valid.",
+        "KBV Heilmittel source (kbv.de/html/heilmittel.php): plausible.",
+        "10 wiki-links, all relevant. All frontmatter present and valid.",
+        "Compliance callout: correct type (legal deadlines). Patient callout: correct type.",
+        "Hilfsmittelverordnung (Muster 15) E-Rezept-Pflicht ab Jul. 2027: unverifiable from public source; consistent with gematik roadmap."
+      ],
+      "fixInstructions": "Fix dead URL: replace 'https://www.gematik.de/anwendungen/e-rezept/heilmittelverordnung' with a valid alternative. Candidates: (1) https://www.gematik.de/anwendungen/e-rezept (main E-Rezept page includes eVO references) or (2) https://fachportal.gematik.de/anwendungen/e-rezept (fachportal eVO section). Verify current gematik eVO page and update accordingly."
+    },
+    {
+      "file": "content/infrastructure/Terminologieserver.md",
+      "verdict": "pass",
+      "score": 82,
+      "issues": [
+        "FIX CONFIRMED: Previous cycle flagged CSIRO Ontoserver error and wrong API URL. Both are now fixed: article correctly states TerminoloGIT (Austrian ELGA) and API URL is now 'terminologien.bfarm.de' throughout.",
+        "FHIR Terminology Operations ($expand, $lookup, $validate-code, $translate): confirmed as standard FHIR R4 operations.",
+        "D-A-CH collaboration (BfArM, ELGA, eHealth Suisse): consistent with BfArM press release (pm07-2024.html) cited in Quellen.",
+        "dev-quickstart callout: API URL now correct (terminologien.bfarm.de/fhir). Content is technical; callout type matches.",
+        "klinik-integration callout: ISiK Basis Stufe 3 Frist Juli 2025 — plausible (ISiK Stufe 3 was scheduled for 2025). Content matches callout type.",
+        "6 sources, all official (BfArM ×4, gematik INA, HL7.de Magazin). BfArM source URL confirmed live in prior cycle.",
+        "13 wiki-links, all relevant.",
+        "HL7.de Magazin source URL (magazin.hl7.de/terminologit/): a professional association source — acceptable for TerminoloGIT description.",
+        "SNOMED CT >350.000 Konzepte: plausible (SNOMED International has over 350,000 concepts in the international release).",
+        "npm package registry note uses simplifier.net — correct for German FHIR packages."
+      ],
+      "fixInstructions": "No blocking issues. Factual errors from previous cycle are resolved."
+    },
+    {
+      "file": "content/organization/STIKO.md",
+      "verdict": "pass",
+      "score": 82,
+      "issues": [
+        "FIX CONFIRMED: [[BfArM|Paul-Ehrlich-Institut (PEI)]] incorrect wiki-link is no longer present. The article now correctly describes PEI as plain text with its own paragraph: 'Das Paul-Ehrlich-Institut (PEI) ist die Bundesbehörde, die Impfstoffe zulässt und überwacht.' PEI is not linked (no PEI article exists yet), which is the correct fallback.",
+        "Article also now mentions STIKO was founded at BGA in 1972, moved to RKI in 1994 — historically accurate.",
+        "STIKO bis zu 18 Sachverständige: confirmed by RKI ('12 bis 18 ehrenamtliche Mitglieder').",
+        "§ 20 IfSG as legal basis: confirmed.",
+        "maturity: setzling tag present — acceptable.",
+        "Two patientenrecht callouts: content is patient-facing, correct type. Check: max 2 per type — exactly 2 present, within limits.",
+        "3 sources — meets minimum.",
+        "8 wiki-links plus 1 plain text PEI reference — all relevant.",
+        "Required sections present. All frontmatter valid."
+      ],
+      "fixInstructions": "No blocking issues. Carried fix from previous cycle confirmed complete."
+    },
+    {
+      "file": "content/technologies/ePass.md",
+      "verdict": "pass",
+      "score": 80,
+      "issues": [
+        "FIX CONFIRMED: [[BITMARCK]] broken wiki-link resolved. Article now uses 'BITMARCK' as plain text without wiki-link brackets.",
+        "Nect GmbH (Hamburg) als Entwickler: confirmed by multiple sources.",
+        "ePass verfügbar seit 25. März 2026: confirmed by presseportal.de BITMARCK announcement.",
+        "80 Prozent der gesetzlichen Krankenkassen via BITMARCK: confirmed by multiple sources.",
+        "BEEP-Gesetz als Rechtsgrundlage, in Kraft seit 1. Januar 2026: confirmed. However, the BEEP-Gesetz is primarily about nursing competencies (§ 15a SGB V). The ePass-enabling provision is within the BEEP-Gesetz but it is a minor component — the article presents this correctly as the legal basis for expanded identification methods.",
+        "Personalausweis ab August 2021 / Reisepass ab 2005: confirmed by BITMARCK press release.",
+        "ICAO Doc 9303, BAC/PACE, Active Authentication: correct technical standards for biometric passport chip reading.",
+        "eID vs. ePass distinction: accurately described (eID requires PIN, ePass uses biometric selfie without PIN).",
+        "Source 'gematik Fachportal: Festlegung Identifikationsverfahren V1.2' confirmed live (search returns PDF document from November 2025 at fachportal.gematik.de). The cited search URL (fachportal.gematik.de/suche?q=ePass) is live and returns 2 relevant results.",
+        "3 non-official sources (presseportal, healthcare-digital, startbase, aerzteblatt): the Deutsches Ärzteblatt source is authoritative. Presseportal is BITMARCK's own PR wire — acceptable. Consider adding a direct gematik.de source. Score -5 for weak source balance.",
+        "6 wiki-links — meets minimum.",
+        "All frontmatter valid. Required sections present."
+      ],
+      "fixInstructions": "Broken wiki-link [[BITMARCK]] is fixed (now plain text). Optional: add a direct gematik.de source such as the gematik Fachportal Identifikationsverfahren PDF (https://fachportal.gematik.de/fileadmin/Fachportal/Smartcards_in_der_TI/Festlegung_Identifikationsverfahren_V1.2.pdf) as a primary source for the ePass confirmation."
+    },
+    {
+      "file": "content/infrastructure/NCPeH.md",
+      "verdict": "revise",
+      "score": 72,
+      "issues": [
+        "Missing frontmatter field: 'relevance' is absent. All other frontmatter fields present. Score -5.",
+        "Only 2 sources — meets minimum but is weak. Score -10.",
+        "DVKA betreibt NCPeH: confirmed by fachportal.gematik.de/anwendungen/myhealtheu.",
+        "Wave 10 E-Rezept 2026 Deutschland: confirmed by gematik fachportal MyHealth@EU page.",
+        "Österreich seit Februar 2026 aktiv: confirmed (Austrian health portal confirms 25. Februar 2026 start with Czech Republic).",
+        "EU Delegation 16. März 2026 (ca. 50 Delegierte, 14 EU-Länder): confirmed by gematik newsroom (verified via Playwright — page loads correctly).",
+        "EHDS EU 2025/327, in Kraft März 2025: consistent with EHDS.md.",
+        "NCPeH_24_2 Release 12. März 2025 mit gemF_eRp_EU V1.0.0: unverifiable from public source within this cycle; stated as specific fact. Flag as 'unverifiable'.",
+        "6-stelliger alphanumerischer Zugangscode: plausible based on gematik E-Rezept EU design; unverifiable from public source.",
+        "No relevance frontmatter: means sectors and interests are missing. This is a structural deficit."
+      ],
+      "fixInstructions": "1. Add relevance frontmatter: 'relevance:\\n  sectors: [ti-infrastruktur, krankenhaus, arztpraxis, apotheke, kasse, patient, regulierung]\\n  interests: [technik, compliance, patient]'. 2. Add at least 1 more official source, e.g. [gematik Fachportal: MyHealth@EU](https://fachportal.gematik.de/anwendungen/myhealtheu) or [DVKA: NCPeH](https://www.dvka.de/de/arbeitgeber_versicherungsunternehmen/myhealthateu/myhealthateu.html). 3. Qualify the NCPeH_24_2 release date 12. März 2025 as unverifiable from public sources."
+    },
+    {
+      "file": "content/technologies/TI-Messenger.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [
+        "7.309 Einrichtungen, 254.952 Versicherte, 500.577 Nachrichten (Stand März 2026): confirmed by web search — gematik TI-Dashboard data as of 9. März 2026 matches these figures.",
+        "TI-Messenger_26_1 released 5. März 2026: unverifiable from public source but consistent with gematik release cycle.",
+        "Sicherheits-Hotfixes A_26015-02 and A_28755 (5. März 2026): unverifiable from public source but referenced to gematik wiki (TI-M Blog). plausible.",
+        "Matrix-Protokoll, Olm/Megolm encryption, E2E: confirmed correct for Matrix protocol.",
+        "MatrixRTC (MSC 4143) für Sprachanrufe 2026: plausible; MSC 4143 is a real Matrix Spec Change.",
+        "Headless Client Draft 27. Januar 2026: unverifiable precisely; plausible draft name pattern.",
+        "Versichertenkanal seit März 2026: confirmed ('mehrere Krankenkassen haben ab März 2026 den Versichertenkanal aktiviert').",
+        "TI-Messenger Pro 1.1 für Mai 2026 geplant: unverifiable from public source.",
+        "Source: TI-Messenger Compass Blog (wiki.gematik.de): the specific URL cited may require authentication or be internal. Flag as potentially weak source for public verification.",
+        "All frontmatter valid. Required sections present.",
+        "5 wiki-links in Verknüpfungen: minimal but adequate given article cross-links."
+      ],
+      "fixInstructions": "No blocking issues. Optional: verify TI-Messenger_26_1 release URL on gemspec.gematik.de and add as direct source. The gematik wiki URL for the TI-M Blog may be restricted; consider using the public fachportal or newsroom URL instead."
+    },
+    {
+      "file": "content/concepts/GKV.md",
+      "verdict": "revise",
+      "score": 72,
+      "issues": [
+        "FACTUAL ERROR: Article states 'rund 73 Millionen Versicherte' (both in definition line and Überblick). Web search confirms the actual figure as of 2024/2025 is approximately 74.5 million GKV Versicherte (BMG statistics: 74.49 million in 2024 Jahresdurchschnitt; 74.63 million as of 1. Januar 2025). The figure '73 Millionen' is outdated. Score -15.",
+        "The '88 Prozent der Bevölkerung' figure: with 74.5M GKV / ~84.5M Gesamtbevölkerung this is approximately 88%, so the percentage is still accurate even if the absolute number is outdated.",
+        "§ 291a SGB V (alt) vs. §§ 306 ff. SGB V: correctly noted as superseded.",
+        "§ 311 SGB V for gematik tasks: confirmed.",
+        "§§ 334, 341 SGB V for ePA: confirmed.",
+        "§ 360 SGB V for E-Rezept: confirmed.",
+        "GKV-SV 22,05 % Anteil an gematik: confirmed.",
+        "GKV-SV 93 Prozent der Betriebskosten (1,50 EUR/Versicherter/Jahr): consistent with GKV-Spitzenverband.md; not independently verified this cycle.",
+        "ca. 90 Kassen: confirmed by GKV-SV statistics.",
+        "Cross-article: DiGA.md also uses '73 Millionen' — the same outdated figure. Consistency issue across articles.",
+        "Compliance callout: content correct (TI penalties). Patient callout: content correct. Business callout: uses '73 Millionen' — also outdated.",
+        "All frontmatter valid. Required sections present. 4 sources, all official."
+      ],
+      "fixInstructions": "1. Update the GKV Versichertenzahl: replace 'rund 73 Millionen' with 'rund 74,5 Millionen' (Stand 2024/2025, Quelle: BMG-Statistik). Update in: definition line, Überblick paragraph, and the interesse-business callout. 2. Note: DiGA.md also uses '73 Millionen' — the reporter should fix that article too. Source for update: BMG Mitglieder und Versicherte der GKV (https://www.bundesgesundheitsministerium.de/themen/krankenversicherung/zahlen-und-fakten-zur-krankenversicherung/mitglieder-und-versicherte.html)."
+    },
+    {
+      "file": "content/infrastructure/Fachdienst.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [
+        "All frontmatter valid. Required sections present.",
+        "E-Rezept-Fachdienst Betreiber gematik (IBM): consistent with ePA.md and prior cycle. IBM confirmed as operator.",
+        "ePA Aktensystem: IBM, RISE/BITMARCK: consistent with ePass.md and other articles.",
+        "KIM: 155+ Anbieter: stated as '>155'. Plausible; consistent with prior cycle data.",
+        "VAU-Protokoll description: technically accurate.",
+        "mTLS in TI 2.0: consistent with TI-2.0.md and Zero-Trust.md.",
+        "OAuth 2.0 / OpenID Connect for access tokens: confirmed correct.",
+        "IDP Access Token flow description: technically accurate.",
+        "Source URLs: E-Rezept-Fachdienst gemspec (gemspec.gematik.de/docs/gemSpec/gemSpec_FD_eRp/latest/) — plausible; fachportal URLs confirmed valid.",
+        "11 wiki-links, all relevant.",
+        "Business callout content matches business type. Technik callout content matches technik type.",
+        "§ 129 SGB V for Substitution — referenced in AVS.md context; not claimed here but consistent."
+      ],
+      "fixInstructions": "No blocking issues. Article is well-structured and factually consistent with related articles."
+    },
+    {
+      "file": "content/concepts/Telemedizin.md",
+      "verdict": "pass",
+      "score": 82,
+      "issues": [
+        "All frontmatter valid. Required sections present.",
+        "Fernbehandlungsverbot aufgehoben 121. Deutscher Ärztetag 2018: confirmed. The 121st Ärztetag was in May 2018 in Erfurt.",
+        "DigiG 2024 Aufhebung 30%-Mengenbeschränkung: confirmed (consistent with Videosprechstunde.md which states 'DigiG 30%-Begrenzung aufgehoben ab 26. März 2024').",
+        "Assistierte Telemedizin in Apotheken: confirmed by DigiG 2024.",
+        "§ 370a SGB V Telemedizin-Vermittlung via 116117 seit 2025: plausible; § 370a SGB V exists; 116117 is the KBV patient service.",
+        "88 zertifizierte Videodienstanbieter Stand Mai 2025: stated as 'Stand Mai 2025' — not verified this cycle; plausible.",
+        "BMV-Ä Anlage 31c ab 1. März 2025: confirmed in Telemedizin/Videosprechstunde context.",
+        "DigiG § 75b SGB V for Mengenbeschränkungen: correct reference.",
+        "Teleradiologie: StrlSchV § 25 and DIN 6868-159: confirmed regulatory basis.",
+        "Taylor Wessing source: law firm blog — acceptable as secondary legal analysis.",
+        "4 sources: BÄK, KBV, BMG, Taylor Wessing. Missing an official gematik source. Score -5.",
+        "10 wiki-links, all relevant.",
+        "Compliance callout: correct type. Patient callout: correct type."
+      ],
+      "fixInstructions": "Optional: add a gematik source for telemedical TI requirements, e.g. gematik's Videosprechstunde page or the KBV certification page for video providers."
+    },
+    {
+      "file": "content/infrastructure/AVS.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [
+        "All frontmatter valid. Required sections present.",
+        "DVG 2019 as TI-Anbindungspflicht for Apotheken, Frist 1. September 2020: confirmed.",
+        "ADAS als AVS-Zertifizierungsstelle (ABDA): ADAS (Apothekenrechenzentrum-Datenaustausch-Systemprüfstelle) — this body is real but the name spelling 'ADAS' is an internal acronym. Not publicly confirmed as 'ADAS' in this exact form; plausible.",
+        "LAUER-FISCHER (WINAPO), ADG, PHARMATECHNIK (Ixos), CGM (Pharmacy): plausible market leaders.",
+        "E-Rezept FHIR workflow (MedicationRequest, MedicationDispense): confirmed correct.",
+        "QES-Signatur prüfen bei E-Rezept-Einlösung: confirmed correct for Muster 16 E-Rezept.",
+        "BITMARCK betreibt ePA-Aktensystem für ca. 80 Prozent der Kassen: consistent with ePass.md and Fachdienst.md.",
+        "KIM-Integration in AVS: confirmed.",
+        "Source: gematik Checkliste Apotheke PDF (2021 date in URL): this is a 2021 document. May be outdated for TI 2.0 specifics but valid for general TI requirements.",
+        "4 sources, all official.",
+        "13 wiki-links, all relevant.",
+        "Compliance, business, technik callouts all match their types."
+      ],
+      "fixInstructions": "No blocking issues. Optional: add a more recent gematik source (2024/2025) for E-Rezept in Apotheken to supplement the 2021 checklist."
+    },
+    {
+      "file": "content/concepts/Zero-Trust.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "All frontmatter valid. Required sections present.",
+        "John Kindervag, Forrester Research, 2010: confirmed — Kindervag coined Zero Trust at Forrester in 2010.",
+        "NIST SP 800-207: confirmed as the authoritative Zero Trust reference.",
+        "BSI Zero Trust description: 'architektonisches Gestaltungsparadigma, das sich aus dem Assume Breach-Ansatz entwickelt hat' — confirmed by bsi.bund.de zero trust page.",
+        "ZETA Open Source 15. Dezember 2025: confirmed.",
+        "EY Strategy and Transactions GmbH als ZETA-Auftragnehmer: confirmed. Note: web search shows 'EY Consulting GmbH' in one source and 'EY Strategy and Transactions GmbH' in another. Both are EY subsidiaries; minor naming imprecision.",
+        "VSDM 2.0 ab Juli 2026 als erste ZETA-Anwendung: confirmed by gematik.de TI 2.0 page.",
+        "mTLS, OAuth 2.0, PKI: all technically accurate.",
+        "Source: BSI Zero Trust URL (bsi.bund.de) — confirmed valid domain.",
+        "NIST SP 800-207 URL (csrc.nist.gov): confirmed valid.",
+        "gematik TI 2.0 source confirmed live.",
+        "9 wiki-links, all relevant.",
+        "Compliance and technik callouts match their types."
+      ],
+      "fixInstructions": "No blocking issues. Optional: clarify EY entity name — use 'EY' without specifying the subsidiary to avoid imprecision."
+    },
+    {
+      "file": "content/infrastructure/Terminologieserver.md",
+      "verdict": "pass",
+      "score": 82,
+      "issues": [
+        "FIX CONFIRMED: Previous cycle factual errors (Ontoserver/CSIRO, wrong API URL) are now corrected.",
+        "Carried from previous cycle: gematik INA Positionspapier URL (ina.gematik.de/fileadmin/...) — unverified via browser but plausible path.",
+        "All frontmatter fields present. 13 wiki-links. Required sections present. 6 sources, 3+ official."
+      ],
+      "fixInstructions": "No blocking issues. Factual errors from previous cycle are resolved."
     },
     {
       "file": "content/processes/Konformitaetsbewertung.md",
       "verdict": "pass",
       "score": 82,
       "issues": [
-        "KOB started December 1 2024 (not 'November 2024' as implied in the article text about Tiger). Article states 'Seit November 2024 stellt die gematik die Tiger-Testplattform... bereit' — the INA page confirms KOB started 01.12.2024, but Tiger was announced/presented in November 2024, making the claim defensible as the platform introduction date. Minor imprecision only.",
-        "141 systems from ambulant, stationär, and Apotheke successfully assessed: confirmed by gematik press release (gematik.de/newsroom/news-detail/kob-sorgt-mit-standards-fuer-transparenz-141-systeme-bereits-erfolgreich-bewertet).",
-        "KOB GitHub URL (github.com/gematik/KOB-Testsuite): confirmed by gematik search results.",
-        "gematik INA KOB source URL (ina.gematik.de/kig/konformitaetsbewertung): confirmed live via Playwright.",
-        "MDR Rule 11 description: confirmed correct for Klasse IIa minimum for decision-support software.",
-        "MDR Risikoklassen I bis III: confirmed correct (MDR Annex VIII).",
-        "All frontmatter fields present. 11 wiki-links, all relevant. Required sections present. 4 sources, all official."
+        "Carried from previous cycle: November vs. Dezember 2024 Tiger Testplattform."
       ],
-      "fixInstructions": "Minor: Change 'Seit November 2024 stellt die gematik die Tiger-Testplattform' to 'Seit Dezember 2024 (KOB-Start 01.12.2024) stellt die gematik die Tiger-Testplattform' for precision. Not blocking."
+      "fixInstructions": "Carried. Minor: Change 'Seit November 2024 stellt die gematik die Tiger-Testplattform' to 'Seit Dezember 2024 (KOB-Start 01.12.2024) stellt die gematik die Tiger-Testplattform'."
     },
     {
       "file": "content/standards/Securpharm.md",
       "verdict": "pass",
       "score": 83,
       "issues": [
-        "Pflichtdatum 9. Februar 2019: confirmed by securpharm.de and EUR-Lex sources.",
-        "Legal basis Richtlinie 2011/62/EU (FMD) + delegierte Verordnung EU 2016/161: confirmed by securpharm.de and EUR-Lex.",
-        "PHAGRO (Bundesverband des pharmazeutischen Großhandels) listed as member: current securpharm.de website shows ABDA, ACS, Avoxa, BPI, IFA, NGDA, Pharma Deutschland, VFA as visual partners — PHAGRO is not prominently displayed as current member. Historically PHAGRO was involved; current membership uncertain. Mark as unverifiable.",
-        "securPharm e.V. website confirmed live via Playwright.",
-        "EUR-Lex source URLs (CELEX:32011L0062 and CELEX:32016R0161): confirmed valid EUR-Lex citation format.",
-        "ABDA source (abda.de/fuer-apotheker/was-ist-securpharm/): not verified via browser but ABDA is a confirmed securpharm.de partner.",
-        "All frontmatter fields present. 8 wiki-links, all relevant. Required sections present. 4 sources including 2 official EU sources."
+        "Carried from previous cycle: PHAGRO membership unverifiable."
       ],
-      "fixInstructions": "Minor: Verify current PHAGRO membership on securpharm.de/nutzer/pharmazeutische-grosshaendler/ before asserting it in the member list. If PHAGRO is no longer a member, adjust the list accordingly."
+      "fixInstructions": "Carried. Verify PHAGRO membership on securpharm.de."
     },
     {
       "file": "content/infrastructure/ABDA-Datenbank.md",
       "verdict": "pass",
       "score": 80,
       "issues": [
-        "ABDATA GmbH as ABDA Tochter: confirmed by abdata.de. ABDATA is the data services subsidiary.",
-        "rund 18.000 öffentliche Apotheken: consistent with standard figures across multiple articles. Confirmed plausible.",
-        "Aktualisierung alle 14 Tage: stated as fact; consistent with known ABDATA update rhythm; unverifiable from public primary source but widely cited in pharmacy literature.",
-        "Lauer-Taxe as ABDATA product: confirmed — Lauer-Taxe is indeed closely associated with ABDATA.",
-        "ABDATA source URL (abdata.de/datenangebot/abda-datenbank/ and abdata.de/produkte/abdadatenbank2/): not verified via browser. URL structure is plausible.",
-        "Pharmazeutische Zeitung source (pharmazeutische-zeitung.de/titel-24-1999/): old 1999 article, weak as primary source.",
-        "Mixed-language sentence in Lauer-Taxe section: 'Pharmacies and ARZ systems use it for pricing.' — this English sentence is a style error in a German article.",
-        "All frontmatter fields present. 12 wiki-links, all relevant. Required sections present. 4 sources (1 weak: PZ 1999)."
+        "Carried: English sentence 'Pharmacies and ARZ systems use it for pricing.' in German article."
       ],
-      "fixInstructions": "1. Fix English sentence in Lauer-Taxe section: replace 'Pharmacies and ARZ systems use it for pricing.' with 'Apotheken und ARZ-Systeme verwenden sie für die Preisfindung.' 2. Optional: replace the 1999 Pharmazeutische Zeitung source with a more recent ABDATA product page or industry reference."
+      "fixInstructions": "Carried. Replace with 'Apotheken und ARZ-Systeme verwenden sie für die Preisfindung.'"
     },
     {
       "file": "content/standards/BEMA.md",
       "verdict": "pass",
       "score": 80,
       "issues": [
-        "100 Millionen zahnärztliche Behandlungsfälle jährlich: confirmed by KZBV search results.",
-        "15 Milliarden Euro Gesamtvolumen GKV-Zahnarzt: not directly confirmed in search results. KZBV Jahrbuch 2023 would be the authoritative source; the claim is plausible but unverified.",
-        "BEMA in five parts as listed: confirmed by KZBV Gebührenverzeichnis sources.",
-        "§ 87 SGB V as legal basis for BEMA: confirmed.",
-        "GKV-Spitzenverband BEMA PDF source (2025_07_01_BEMA.pdf): URL contains '2025_07_01' indicating a July 2025 version. This specific file URL may be stale; the GKV-SV updates PDFs regularly. Flag for monitoring.",
-        "DocCheck Flexikon source: not authoritative; use as secondary only.",
-        "All frontmatter fields present. 10 wiki-links, all relevant. Required sections present. 4 sources (1 non-authoritative: DocCheck).",
-        "Claim 'rund 55.000 Vertragszahnärzte': consistent with KZBV figures; unverified in this cycle but standard figure."
+        "Carried: 15 Milliarden Euro GKV-Zahnarzt unverified."
       ],
-      "fixInstructions": "1. Verify the 15 Milliarden Euro figure with KZBV Jahrbuch or KZBV-Statistik (https://www.kzbv.de/statistik.340.de.html). 2. Consider replacing DocCheck source with the GKV-SV BEMA full text or KZBV official BEMA page. 3. Monitor GKV-SV BEMA PDF URL for validity after quarterly updates."
+      "fixInstructions": "Carried. Verify with KZBV Jahrbuch."
     },
     {
       "file": "content/organization/BMBF.md",
       "verdict": "pass",
       "score": 82,
       "issues": [
-        "BMBF fördert MII seit 2016: confirmed. BMBF Bekanntmachung 2015 initiated it; four consortia started in 2018. Article says 'seit 2016' — the first formal funding round started in 2016/2017 (Konzeptphase), so 2016 as start date is defensible.",
-        "MII Budget 'mehrere hundert Millionen Euro': confirmed by medizininformatik-initiative.de ('mehr als 480 Millionen Euro'). The article's phrasing 'mehrere hundert Millionen Euro' is accurate though understated.",
-        "Claim BMBF co-funds RKI with BMG: confirmed. RKI is in the Geschäftsbereich of BMG; BMBF co-funds specific research at RKI. Minor imprecision in institutional description.",
-        "BMBF website source URL confirmed valid (bmbf.de).",
-        "Claim about Innovationsfonds: 'Gemeinsam mit dem G-BA fördert das BMBF neue Versorgungsformen' — technically inaccurate: Innovationsfonds is funded by GKV-Kassen (§ 92a SGB V), not by BMBF. BMBF may co-fund adjacent programs but the Innovationsfonds is a G-BA/GKV instrument. Minor factual imprecision.",
-        "Only 3 sources — meets minimum.",
-        "All frontmatter fields present. 6 wiki-links. This is a stub article; limited depth is acceptable."
+        "Carried: Innovationsfonds attribution imprecision."
       ],
-      "fixInstructions": "1. Correct Innovationsfonds description: replace 'Gemeinsam mit dem G-BA fördert das BMBF neue Versorgungsformen und Versorgungsforschung' with 'Der G-BA betreibt einen Innovationsfonds (§ 92a SGB V) zur Förderung neuer Versorgungsformen; das BMBF fördert ergänzend Versorgungsforschung über eigene Programme.' 2. Consider specifying '480 Millionen Euro' instead of 'mehrere hundert Millionen' for accuracy."
-    },
-    {
-      "file": "content/organization/STIKO.md",
-      "verdict": "revise",
-      "score": 72,
-      "issues": [
-        "STIKO gegründet 1972: confirmed. However, it was founded at the Bundesgesundheitsamt (BGA), not the RKI. The article says 'Die STIKO wurde 1972 gegründet und ist beim RKI angesiedelt.' — the founding location (BGA) is omitted. Not a factual error (current location is RKI), but historically imprecise.",
-        "STIKO 'bis zu 18 ehrenamtlich tätigen Sachverständigen': RKI FAQ confirms '12 bis 18 ehrenamtliche Mitglieder'. The article's 'bis zu 18' is accurate.",
-        "FACTUAL ERROR (wiki-link target): In Technische Details, the article writes '[[BfArM|Paul-Ehrlich-Institut (PEI)]]' — this renders as 'Paul-Ehrlich-Institut (PEI)' but links to the BfArM article. BfArM and PEI are different institutions: PEI (Paul-Ehrlich-Institut) licenses vaccines and biologics; BfArM licenses chemical drugs. Using [[BfArM]] as the link target for PEI is incorrect and misleading. No PEI article exists yet.",
-        "§ 20 IfSG as legal basis for STIKO: confirmed. § 20 Abs. 2 IfSG governs STIKO membership and recommendations.",
-        "RKI source URLs (rki.de/stiko_node and rki.de/impfempfehlungen_node): plausible; not verified via browser but standard RKI URL patterns.",
-        "Only 3 sources — meets minimum.",
-        "All frontmatter fields present. 8 wiki-links. Required sections present."
-      ],
-      "fixInstructions": "1. Fix the broken wiki-link: replace '[[BfArM|Paul-Ehrlich-Institut (PEI)]]' with plain text 'Paul-Ehrlich-Institut (PEI)' in the Technische Details section. Then add '[[PEI]]' to the Verknüpfungen list (without a PEI article, use plain text or create a PEI stub). 2. Optional: add founding context 'ursprünglich am Bundesgesundheitsamt (BGA), seit 1994 beim RKI' in the Überblick."
+      "fixInstructions": "Carried. See previous cycle instructions."
     },
     {
       "file": "content/processes/Videosprechstunde.md",
       "verdict": "pass",
       "score": 85,
-      "issues": [
-        "FIX CONFIRMED: EBM GOP 01439 removed. GOP 01450 (40 Punkte, Höchstwert 700 Punkte/Quartal) correctly cited. Confirmed: Höchstwert reduced to 700 Punkte as of 1 July 2025 per KVB source.",
-        "GOP 01444 (Authentifizierungszuschlag, 10 Punkte, befristet bis 31. Dezember 2026): confirmed by KBV press release 'Videosprechstunde: Zuschlag für Authentifizierung wird weiterhin gezahlt' (September 2025).",
-        "GOP 01452 (30 Punkte, ab 1. April 2025): confirmed consistent with KBV EBM 2025 changes.",
-        "DigiG 30%-Begrenzung aufgehoben ab 26. März 2024: confirmed.",
-        "50% Behandlungsfälle ab 1. April 2025: confirmed by KBV sources.",
-        "Assistierte Telemedizin via Apotheken: confirmed for DigiG 2024.",
-        "ca. 25 zugelassene Videodienste Stand 2026: unverifiable precise count; plausible.",
-        "All frontmatter fields present. 12 wiki-links. Required sections present. 4 sources."
-      ],
-      "fixInstructions": "No blocking issues. Article is now factually correct after the fix cycle."
+      "issues": [],
+      "fixInstructions": "No blocking issues."
     },
     {
       "file": "content/organization/Medizininformatik-Initiative.md",
       "verdict": "pass",
       "score": 82,
-      "issues": [
-        "FIX CONFIRMED: [[BMBF]] wiki-link now resolves — BMBF.md stub created this cycle.",
-        "MII started 2016 by BMBF: confirmed. Four consortia since 2018.",
-        "29 Datenintegrationszentren: consistent with prior cycle; confirmed.",
-        "MII läuft bis mindestens 2027: plausible based on funding phase structure; unverifiable from public primary source.",
-        "All frontmatter fields present. 13 wiki-links. Required sections present. 4 sources."
-      ],
-      "fixInstructions": "No remaining blocking issues. Carried fix confirmed complete."
+      "issues": [],
+      "fixInstructions": "No remaining blocking issues."
     },
     {
       "file": "content/technologies/eImpfpass.md",
       "verdict": "pass",
       "score": 83,
-      "issues": [
-        "FIX CONFIRMED: [[STIKO]] wiki-link now resolves — STIKO.md stub created this cycle.",
-        "Typo fix 'Lotnnummer' → 'Lotnummer': needs verification that this was applied in the article.",
-        "MIO version 1.1.0: confirmed.",
-        "§ 22 IfSG: confirmed.",
-        "All frontmatter fields present. Wiki-links updated. 3 sources — meets minimum."
-      ],
-      "fixInstructions": "Verify typo fix 'Lotnummer' was applied in this cycle. If not, fix 'Lotnnummer' → 'Lotnummer' in the Inhalt des eImpfpasses section."
+      "issues": [],
+      "fixInstructions": "No blocking issues."
     },
     {
       "file": "content/standards/TA1.md",
       "verdict": "pass",
       "score": 87,
-      "issues": [
-        "FIX CONFIRMED: NOVENTI lineage now correctly shows 'Zusammenschluss der Abrechnungszentren VSA (München), ALG (Datteln) und SARZ (Schwerin) zwischen 2016 und 2018'. Confirmed by NOVENTI Meilensteine page.",
-        "ARZ Darmstadt described as independent and not part of NOVENTI: confirmed correct.",
-        "AvP insolvency 2020 and RZH acquisition: consistent with prior cycle; confirmed.",
-        "§ 129 SGB V as Rechtsgrundlage: confirmed.",
-        "All frontmatter fields present. 9 wiki-links. Required sections present. 4 sources."
-      ],
-      "fixInstructions": "No blocking issues. Carried factual error is now resolved."
+      "issues": [],
+      "fixInstructions": "No blocking issues."
     },
     {
       "file": "content/concepts/TI-Pauschale.md",
       "verdict": "pass",
       "score": 83,
-      "issues": [
-        "FIX CONFIRMED: Sources updated to KBV official sources. KHPflEG and 1 Juli 2023 confirmed by KBV documentation.",
-        "263,62 Euro TI-Pauschale 1 (1-3 Ärzte) ab 01.01.2026: confirmed by KBV source.",
-        "2,8 Prozent Anstieg 2026 per Orientierungswert: confirmed.",
-        "New sources (KBV Praxisnachricht, KBV TI page, gematik TI-Finanzierung): all plausible; KBV URLs confirmed valid pattern.",
-        "3 sources — meets minimum. Weak sources from previous cycle removed.",
-        "All frontmatter fields present. 13 wiki-links. Required sections present."
-      ],
-      "fixInstructions": "No remaining issues. Sources successfully upgraded from weak commercial sources to KBV and gematik official."
+      "issues": [],
+      "fixInstructions": "No remaining issues."
     },
     {
       "file": "content/standards/EBM.md",
       "verdict": "pass",
       "score": 90,
-      "issues": [
-        "Orientierungswert 2026: 12,7404 Cent, Anstieg 2,8%: confirmed by KBV press release.",
-        "45 Milliarden Euro Gesamtvergütung ambulant: unverifiable from quick search; stated as approximate figure, acceptable.",
-        "§ 87 SGB V als Rechtsgrundlage: confirmed.",
-        "GOP 01660 TI-Betriebspauschale, GOP 01670-01672 eAU, GOP 01469 VSDM: consistent with EBM structure; not individually verified this cycle but plausible.",
-        "relevance frontmatter: valid sectors and interests.",
-        "interesse-compliance callout: content matches compliance type — correct.",
-        "interesse-technik callout: content matches technik type (EBM XML, KVDT) — correct.",
-        "interesse-business callout: content matches business type (market volume, PVS update burden) — correct.",
-        "All frontmatter fields present. 11 wiki-links. 4 sources, all authoritative."
-      ],
-      "fixInstructions": "No issues. Profile enrichment is factually sound."
+      "issues": [],
+      "fixInstructions": "No issues."
     },
     {
       "file": "content/organization/DKG.md",
       "verdict": "pass",
       "score": 87,
       "issues": [
-        "17 Millionen stationär, 21 Millionen ambulant: data from 2020 per prior cycle note. Still not explicitly dated in article.",
-        "127 Milliarden Euro Gesamtumsatz: consistent; unverified precise year but broadly cited in DKG materials.",
-        "1.900 Krankenhäuser: consistent with standard DKG figures.",
-        "28 Mitgliedsverbände (16 Landes-, 12 Bundesverbände): unverified this cycle; standard DKG self-description.",
-        "April 2026 ePA-Pflicht für Krankenhäuser: consistent with ePA.md, ISiK.md, and KIS.md — cross-article consistent.",
-        "relevance frontmatter: valid sectors and interests.",
-        "interesse-compliance callout: April 2026 ePA-Pflicht — content matches compliance type. Correct.",
-        "interesse-business callout: market position data — correct.",
-        "DKG source URLs: confirmed valid structure."
+        "Carried: Add '(Stand 2020)' after stationäre/ambulante patient figures."
       ],
-      "fixInstructions": "Carried: Add '(Stand 2020)' after '17 Millionen stationäre und 21 Millionen ambulante Patientinnen und Patienten'. Not blocking."
+      "fixInstructions": "Carried."
     },
     {
       "file": "content/standards/BDSG.md",
       "verdict": "pass",
       "score": 87,
-      "issues": [
-        "BDSG 2018 neu gefasst: confirmed.",
-        "§ 42 BDSG Straftatbestände bis drei Jahre: confirmed.",
-        "§ 38 BDSG ab 20 Personen DSB-Pflicht: confirmed.",
-        "Art. 37 Abs. 1 lit. b DSGVO DSB-Pflicht ohne Größenschwelle: confirmed.",
-        "Art. 9 Abs. 4 DSGVO, Art. 88, Art. 85 Öffnungsklauseln: confirmed correct.",
-        "§ 27 BDSG Forschungsausnahme: confirmed.",
-        "§ 22 BDSG Gesundheits- und Sozialdaten: confirmed.",
-        "relevance frontmatter: valid sectors and interests.",
-        "interesse-compliance callout: Datenschutzpflichten im Gesundheitswesen — correct callout type. Bußgelder 20M/4% confirmed by Art. 83 DSGVO.",
-        "interesse-patient callout: Betroffenenrechte, ePA-Kontrollrechte — correct callout type.",
-        "gesetze-im-internet.de URL: confirmed valid.",
-        "Only 3 sources — meets minimum. Could benefit from a BMG or BSI source."
-      ],
-      "fixInstructions": "No blocking issues. Optional: add a fourth source such as the BfDI guidance on healthcare data protection."
+      "issues": [],
+      "fixInstructions": "No blocking issues."
     },
     {
       "file": "content/infrastructure/IDP.md",
       "verdict": "revise",
       "score": 78,
       "issues": [
-        "FIX PARTIALLY APPLIED: 'RSA 2048 bit: gültig bis Ende 2025' is now present in the article unchanged. Carried stale claim from prior cycle — as of March 2026, this transition is complete. The article still states 'gültig bis Ende 2025' without noting this deadline has now elapsed.",
-        "relevance frontmatter added: valid sectors and interests.",
-        "interesse-technik callout: IDP integration for developers — correct callout type.",
-        "interesse-compliance callout: authentication requirements — correct callout type. 'Ab 2026 müssen alle neuen TI-Anwendungen die TI-Federation unterstützen': plausible but unverifiable from public primary source.",
-        "IBM IDP outage 10.02.2026: factual incident report, not verifiable from public authoritative sources but treated as editorial content.",
-        "Sources: 3 sources, all official gematik."
+        "Carried: 'RSA 2048 bit: gültig bis Ende 2025' — deadline elapsed."
       ],
-      "fixInstructions": "Carried. Change 'RSA 2048 bit: gültig bis Ende 2025' to 'RSA 2048 bit: gültig bis Ende 2025 (seit 2026 abgelöst durch ECDSA)'."
+      "fixInstructions": "Carried. Change to 'RSA 2048 bit: gültig bis Ende 2025 (seit 2026 abgelöst durch ECDSA)'."
     },
     {
       "file": "content/standards/EHDS.md",
       "verdict": "pass",
       "score": 87,
-      "issues": [
-        "EHDS 'trat im März 2025 in Kraft': confirmed. Official date is 26 March 2025 (20 days after publication on 5 March 2025).",
-        "EU 2025/327: confirmed correct regulation number by EUR-Lex.",
-        "Durchführungsrechtsakte bis März 2027: confirmed (26 March 2027 deadline per EU regulation text).",
-        "Anwendung Primär- und Sekundärnutzungsregeln ab März 2029: confirmed.",
-        "Vollständige Teilnahme bis März 2031: confirmed.",
-        "Deutschland Wave 10 (2026) NCPeH: unverifiable precise wave number; consistent with NCPeH.md.",
-        "DVKA betreibt NCPeH: consistent with NCPeH.md.",
-        "Xt-EHR GitHub (github.com/Xt-EHR): confirmed plausible.",
-        "EU Commission source and EUR-Lex URL: confirmed valid.",
-        "relevance frontmatter: valid sectors and interests.",
-        "interesse-compliance callout: EHDS implementation deadlines — correct callout type.",
-        "interesse-technik callout: EHDS architecture — correct callout type.",
-        "interesse-patient callout: patient rights in EHDS — correct callout type.",
-        "3 sources — meets minimum."
-      ],
-      "fixInstructions": "No blocking issues. Optional: add gematik NCPeH specification source for German implementation details."
+      "issues": [],
+      "fixInstructions": "No blocking issues."
     },
     {
       "file": "content/processes/Mutterpass.md",
       "verdict": "pass",
       "score": 82,
-      "issues": [
-        "Carried from previous cycle: All key facts verified and confirmed in prior cycle."
-      ],
+      "issues": [],
       "fixInstructions": "Optional: add G-BA Mutterschafts-Richtlinie as fourth source."
     },
     {
@@ -295,7 +440,7 @@
       "verdict": "pass",
       "score": 85,
       "issues": [
-        "Carried: Minor structural imprecision 'zwölf Kapitel (Bücher)' — SGB V has Kapitel, not Bücher."
+        "Carried: 'zwölf Kapitel (Bücher)' imprecision."
       ],
       "fixInstructions": "Carried. Replace 'in zwölf Kapitel (Bücher)' with 'in zwölf Kapitel'."
     },
@@ -310,9 +455,7 @@
       "file": "content/organization/GKV-Spitzenverband.md",
       "verdict": "pass",
       "score": 83,
-      "issues": [
-        "Carried: ca. 100 Millionen Euro jährlich TI-Kosten from GKV-SV stated as 'Branchenschätzungen'."
-      ],
+      "issues": [],
       "fixInstructions": "No blocking issues."
     },
     {
@@ -368,9 +511,7 @@
       "file": "content/standards/HDDT.md",
       "verdict": "pass",
       "score": 90,
-      "issues": [
-        "Carried: quickbirdmedical.com as commercial blog source."
-      ],
+      "issues": [],
       "fixInstructions": "No changes required."
     },
     {
@@ -386,27 +527,21 @@
       "file": "content/standards/AMNOG.md",
       "verdict": "pass",
       "score": 85,
-      "issues": [
-        "Carried: Minor imprecision about retroactive November 2022 rule."
-      ],
-      "fixInstructions": "Carried. Replace 'rückwirkend seit November 2022 ab dem 7. Monat' with 'seit November 2022 gilt der Erstattungsbetrag ab dem 7. Monat nach Inverkehrbringen (statt bisher ab dem 13. Monat)'."
+      "issues": [],
+      "fixInstructions": "Carried minor imprecision — see previous cycle."
     },
     {
       "file": "content/standards/Bundesmantelvertrag.md",
       "verdict": "pass",
       "score": 87,
-      "issues": [
-        "Carried: KBV source URL redirect noted."
-      ],
+      "issues": [],
       "fixInstructions": "Carried. Update KBV source URL."
     },
     {
       "file": "content/concepts/PEPP.md",
       "verdict": "pass",
       "score": 88,
-      "issues": [
-        "Carried: DocCheck as third source."
-      ],
+      "issues": [],
       "fixInstructions": "Optional. Carried."
     },
     {
@@ -420,9 +555,7 @@
       "file": "content/organization/Bewertungsausschuss.md",
       "verdict": "pass",
       "score": 92,
-      "issues": [
-        "Carried: Beschlüsse publication via Deutsches Ärzteblatt partially outdated."
-      ],
+      "issues": [],
       "fixInstructions": "Carried. Add institut-ba.de as primary publication channel."
     },
     {
@@ -437,8 +570,7 @@
       "verdict": "revise",
       "score": 78,
       "issues": [
-        "Carried: Imprecise eIDAS citations (Art. 29 / Art. 3 Nr. 23 in original eIDAS 910/2014 vs. consolidated 2024 version).",
-        "Carried: Stale URL for TI-Gateway."
+        "Carried: eIDAS Art. 29/Art. 3 Nr. 23 citation imprecision."
       ],
       "fixInstructions": "Carried. See previous cycle fix instructions."
     },
@@ -446,10 +578,8 @@
       "file": "content/standards/BEEP-Gesetz.md",
       "verdict": "pass",
       "score": 85,
-      "issues": [
-        "Carried: Vermittlungsausschuss outcome date not mentioned."
-      ],
-      "fixInstructions": "Carried. Add Vermittlungsergebnis date to Überblick."
+      "issues": [],
+      "fixInstructions": "Carried. Add Vermittlungsergebnis date."
     },
     {
       "file": "content/organization/KZBV.md",
@@ -518,36 +648,32 @@
     },
     {
       "file": "content/technologies/DiGA.md",
-      "verdict": "pass",
-      "score": 88,
-      "issues": [],
-      "fixInstructions": "No changes required."
+      "verdict": "revise",
+      "score": 75,
+      "issues": [
+        "STALE FIGURE: '73 Millionen GKV-Versicherten' — same outdated figure as in GKV.md. Actual figure is ~74,5 Millionen (BMG 2024 statistics)."
+      ],
+      "fixInstructions": "Replace 'Die GKV übernimmt die Kosten für alle 73 Millionen GKV-Versicherten' with 'Die GKV übernimmt die Kosten für alle rund 74,5 Millionen GKV-Versicherten (Stand 2024)'."
     },
     {
       "file": "content/organization/gematik.md",
       "verdict": "pass",
       "score": 82,
-      "issues": [
-        "Carried: GDVG ePA-Wachstumsziel unverifiable from public sources."
-      ],
+      "issues": [],
       "fixInstructions": "Carried. Optional: add BMG/bundestag.de source for GDVG."
     },
     {
       "file": "content/processes/BMP.md",
       "verdict": "pass",
       "score": 90,
-      "issues": [
-        "Carried: 'ABDA (Deutscher Apothekerverband)' — formal party is DAV."
-      ],
+      "issues": [],
       "fixInstructions": "Carried. Minor: change to 'ABDA/DAV (Deutscher Apothekerverband)'."
     },
     {
       "file": "content/technologies/ePA.md",
       "verdict": "pass",
       "score": 87,
-      "issues": [
-        "Carried: BITMARCK referenced as plain text — no wiki-link."
-      ],
+      "issues": [],
       "fixInstructions": "Carried."
     },
     {
@@ -561,19 +687,8 @@
       "file": "content/infrastructure/Konnektoren.md",
       "verdict": "pass",
       "score": 85,
-      "issues": [
-        "Carried: Only 2 sources."
-      ],
+      "issues": [],
       "fixInstructions": "Carried. Add third source."
-    },
-    {
-      "file": "content/infrastructure/NCPeH.md",
-      "verdict": "pass",
-      "score": 85,
-      "issues": [
-        "Carried: Date '12. März 2025' unverifiable. Only 2 sources."
-      ],
-      "fixInstructions": "Carried. Add NCPeH_24_2 gemspec release URL."
     },
     {
       "file": "content/infrastructure/VZD.md",
@@ -587,7 +702,7 @@
       "verdict": "revise",
       "score": 78,
       "issues": [
-        "Carried: EBM 86900 stated as '27 Cent' — correct value is 28 Cent for sending."
+        "Carried: EBM 86900 value imprecision."
       ],
       "fixInstructions": "Carried. Fix: 'EBM 86900 (Versenden): 28 Cent; EBM 86901 (Empfangen): 27 Cent'."
     },
@@ -608,15 +723,6 @@
       "fixInstructions": "Optional: add primary GKV-SV or BAS source for PKP 2026 value."
     },
     {
-      "file": "content/technologies/ePass.md",
-      "verdict": "revise",
-      "score": 75,
-      "issues": [
-        "Carried: Broken wiki-link [[BITMARCK]]. No official gematik source."
-      ],
-      "fixInstructions": "Carried. Create BITMARCK.md stub or replace with plain text."
-    },
-    {
       "file": "content/standards/IVDR.md",
       "verdict": "pass",
       "score": 88,
@@ -629,24 +735,15 @@
       "file": "content/standards/GOZ.md",
       "verdict": "pass",
       "score": 85,
-      "issues": [
-        "Carried: KZBV PDF source URL may be broken after WordPress migration."
-      ],
-      "fixInstructions": "Carried. Replace with gesetze-im-internet.de/goz_1987/."
-    },
-    {
-      "file": "content/technologies/TI-Messenger.md",
-      "verdict": "pass",
-      "score": 87,
       "issues": [],
-      "fixInstructions": "Optional: add TI-Messenger_26_1 gemspec release."
+      "fixInstructions": "Carried. Replace with gesetze-im-internet.de/goz_1987/."
     },
     {
       "file": "content/organization/Landesaerztekammer.md",
       "verdict": "revise",
       "score": 80,
       "issues": [
-        "Carried: '17 Landesärztekammern' parenthetical explanation wrong — NRW has two chambers, not Bayern/Sachsen etc."
+        "Carried: '17 Landesärztekammern' parenthetical explanation wrong."
       ],
       "fixInstructions": "Carried. Replace parenthetical with '(Nordrhein-Westfalen zählt zwei: Ärztekammer Nordrhein und Ärztekammer Westfalen-Lippe)'."
     },
@@ -661,9 +758,7 @@
       "file": "content/technologies/gRPC.md",
       "verdict": "pass",
       "score": 88,
-      "issues": [
-        "Carried: März 2017 CNCF date precision."
-      ],
+      "issues": [],
       "fixInstructions": "Carried. Optional precision on CNCF date."
     },
     {
@@ -691,55 +786,57 @@
       "file": "content/organization/IQWiG.md",
       "verdict": "pass",
       "score": 90,
-      "issues": [
-        "Carried: Employee count and EU-HTA timeline unverifiable."
-      ],
+      "issues": [],
       "fixInstructions": "Carried. Qualify employee count and EU-HTA timeline."
     }
   ],
   "contradictions": [
     {
-      "claim": "Terminologieserver technology",
-      "articleA": "content/infrastructure/Terminologieserver.md claims BfArM server 'basiert auf Ontoserver... des australischen CSIRO'",
-      "articleB": "BfArM official website and press release confirm the server is based on TerminoloGIT from Austrian ELGA — developed jointly by BfArM, gematik, ELGA GmbH and eHealth Suisse. CSIRO Ontoserver is a different product."
+      "claim": "GKV Versichertenzahl",
+      "articleA": "content/concepts/GKV.md states 'rund 73 Millionen Versicherte' (in definition, Überblick, and interesse-business callout)",
+      "articleB": "content/technologies/DiGA.md states 'alle 73 Millionen GKV-Versicherten'. BMG official statistics (Jahresdurchschnitt 2024) confirm 74,49 Millionen. Both articles use the outdated 73 Millionen figure."
     },
     {
-      "claim": "BITMARCK wiki-link consistency",
-      "articleA": "content/technologies/ePass.md uses [[BITMARCK]] as a wiki-link (broken)",
-      "articleB": "content/technologies/ePA.md references BITMARCK as plain text; no BITMARCK article exists"
+      "claim": "BTM-Rezept Pilot-Starttermin",
+      "articleA": "content/processes/BTM-Rezept.md states 'Pilotprojekt: Frühestens im Q4 2026 geplant'",
+      "articleB": "Deutsches Ärzteblatt (current) reports 'Testphase für elektronische Betäubungsmittelrezepte ab Oktober geplant' — consistent with Q4 2026. Historical sources (2024) had earlier dates that were postponed. No contradiction between articles, but history of postponement is not noted."
+    },
+    {
+      "claim": "Heilmittelverordnung eVO Anbindungspflicht für Heilmittelerbringer",
+      "articleA": "content/processes/Heilmittelverordnung.md states '1. Oktober 2027' (after shift from 1. Januar 2026)",
+      "articleB": "No other article cross-references this deadline — consistency check passes. The date itself is confirmed by web search (verbandsbuero.de, physio-deutschland.de)."
     },
     {
       "claim": "Landesärztekammer wiki-link",
-      "articleA": "content/processes/ECC-Migration.md uses [[Landesärztekammer]] (broken)",
-      "articleB": "content/concepts/QES.md uses [[Landesärztekammer]] (broken); content/organization/Landesaerztekammer.md exists but has alias 'Landesärztekammern' (plural), not singular form — check alias"
-    },
-    {
-      "claim": "STIKO wiki-link in BfArM context",
-      "articleA": "content/organization/STIKO.md Technische Details section uses [[BfArM|Paul-Ehrlich-Institut (PEI)]] — displays PEI but links to BfArM article",
-      "articleB": "BfArM (Arzneimittel) and PEI (Impfstoffe/Biologika) are distinct federal agencies with different mandates; incorrect wiki-link conflates them"
+      "articleA": "content/processes/ECC-Migration.md uses [[Landesärztekammer]] (broken — carried from previous cycle)",
+      "articleB": "content/concepts/QES.md uses [[Landesärztekammer]] (broken — carried from previous cycle); content/organization/Landesaerztekammer.md exists with alias 'Landesärztekammern' (plural) — singular form not aliased"
     }
   ],
   "staleArticles": [
-    "content/infrastructure/IDP.md: RSA 2048 listed as 'gültig bis Ende 2025' — this deadline has elapsed (current date: 19.03.2026); transition to ECDSA is complete. Pending fix from prior cycle.",
-    "content/standards/IVDR.md: Class D transition deadline (26. Mai 2025) passed but not noted as elapsed.",
-    "content/technologies/Fernsignatur.md: eIDAS Art. 29 and Art. 3 Nr. 23 citations outdated — Art. 29a introduced in 2024 consolidated eIDAS.",
-    "content/infrastructure/Interoperabilitaetsverzeichnis.md: Source URL dead (404). Pending fix from prior cycle."
+    "content/infrastructure/IDP.md: RSA 2048 listed as 'gültig bis Ende 2025' — deadline elapsed (current date: 19.03.2026). Carried from prior cycle.",
+    "content/standards/IVDR.md: Class D transition deadline (26. Mai 2025) passed but not noted as elapsed. Carried.",
+    "content/technologies/Fernsignatur.md: eIDAS Art. 29/Art. 3 Nr. 23 citations outdated — 2024 consolidated eIDAS introduced Art. 29a. Carried.",
+    "content/infrastructure/Interoperabilitaetsverzeichnis.md: Source URL dead (404). Carried.",
+    "content/concepts/GKV.md: '73 Millionen GKV-Versicherte' — outdated. BMG 2024 statistics show ~74,5 Millionen. Needs update. NEW this cycle.",
+    "content/technologies/DiGA.md: '73 Millionen GKV-Versicherte' — same outdated figure as GKV.md. NEW this cycle."
   ],
   "summary": {
-    "reviewed": 17,
-    "pass": 13,
-    "revise": 4,
+    "reviewed": 15,
+    "pass": 10,
+    "revise": 5,
     "fail": 0,
     "keyIssues": [
-      "Terminologieserver.md FACTUAL ERROR (new): Article incorrectly states BfArM server is based on CSIRO Ontoserver. Confirmed: BfArM uses TerminoloGIT from Austrian ELGA. Also wrong API base URL (article: ontoserver.bfarm.de; correct: terminologien.bfarm.de). Score: 55 (revise).",
-      "STIKO.md WIKI-LINK ERROR (new): [[BfArM|Paul-Ehrlich-Institut (PEI)]] uses wrong link target — BfArM and PEI are different institutions. Score reduced to 72 (revise).",
-      "ABDA-Datenbank.md STYLE ERROR: English sentence 'Pharmacies and ARZ systems use it for pricing.' in German article. Score: 80 (pass but fix needed).",
-      "Videosprechstunde.md FIX CONFIRMED: GOP 01439 replaced with GOP 01450 (40 Punkte, Höchstwert 700 Punkte). Article now factually correct. Score: 85 (pass).",
-      "TA1.md FIX CONFIRMED: NOVENTI lineage now correctly shows VSA/ALG/SARZ. Contradiction with Apothekenrechenzentrum.md resolved. Score: 87 (pass).",
-      "TI-Pauschale.md FIX CONFIRMED: Sources upgraded to KBV official. KHPflEG 1 Juli 2023 confirmed. 263,62 Euro confirmed. Score: 83 (pass).",
-      "BMBF.md and STIKO.md stubs created, resolving broken wiki-links in Medizininformatik-Initiative.md and eImpfpass.md.",
-      "EBM.md, DKG.md, BDSG.md, EHDS.md profile enrichments verified: all callout types match content, all key facts confirmed. All pass.",
-      "Carried unresolved: IDP.md (RSA 2048 stale), Interoperabilitaetsverzeichnis.md (dead URL), ECC-Migration.md and QES.md (Landesärztekammer broken link), eArztbrief.md (EBM cent values), ePass.md (BITMARCK broken link), Fernsignatur.md (eIDAS citations), Landesaerztekammer.md (17 chambers parenthetical)."
+      "BTM-Rezept.md (new): BfArM source URL DEAD — old path '/Verschreibung/Betaeubungsmittelrezept/_node.html' redirected to '/BtM-Rezepte-Verschreibung/_node.html'. Score 72 (revise). Fix: update URL.",
+      "Heilmittelverordnung.md (new): Primary gematik source URL DEAD — 'gematik.de/anwendungen/e-rezept/heilmittelverordnung' returns 404 (confirmed via Playwright). Score 70 (revise). Fix: replace with working gematik URL.",
+      "NCPeH.md (modified): Missing 'relevance' frontmatter field (sectors/interests absent). Score 72 (revise). Fix: add relevance block.",
+      "GKV.md (modified): FACTUAL ERROR — '73 Millionen GKV-Versicherte' is outdated. BMG 2024 statistics: 74,49 Millionen Jahresdurchschnitt. Same error in DiGA.md. Score 72 (revise). Fix: update to ~74,5 Millionen.",
+      "Terminologieserver.md (modified): FIX CONFIRMED — Ontoserver/CSIRO error and wrong API URL both corrected. Now correctly states TerminoloGIT (ELGA) and terminologien.bfarm.de. Score 82 (pass).",
+      "STIKO.md (modified): FIX CONFIRMED — PEI/BfArM wiki-link confusion resolved. PEI now correctly described as plain text with separate paragraph. Score 82 (pass).",
+      "ePass.md (modified): FIX CONFIRMED — BITMARCK broken wiki-link resolved (now plain text). ePass launch date 25. März 2026 and 80% Kassenzugang confirmed. Score 80 (pass).",
+      "Primärsystem.md (new): Well-structured, factually accurate. Score 88 (pass).",
+      "TI-2.0.md (new): ZETA release date confirmed, EY as contractor confirmed, PoPP Mitte 2026 confirmed. Score 90 (pass).",
+      "BZÄK.md (new): BZÄK as gematik Gesellschafterin confirmed. 17 Landeszahnärztekammern confirmed. Score 82 (pass).",
+      "Carried unresolved: IDP.md (RSA 2048 stale), Interoperabilitaetsverzeichnis.md (dead URL), ECC-Migration.md and QES.md (Landesärztekammer broken link), eArztbrief.md (EBM cent values), Fernsignatur.md (eIDAS citations), Landesaerztekammer.md (17 chambers parenthetical), ABDA-Datenbank.md (English sentence)."
     ]
   }
 }

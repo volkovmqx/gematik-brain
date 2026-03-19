@@ -3,6 +3,10 @@ title: Zero-Trust
 audience: [technical]
 tags: [konzept, sicherheit, architektur, ti-2-0]
 aliases: [Zero Trust, Zero-Trust-Architektur, Zero Trust Architecture, ZTA]
+relevance:
+  sectors: [ti-infrastruktur, hersteller, it-dienstleister, krankenhaus, arztpraxis]
+  interests: [technik, compliance]
+maturity: wachsend
 ---
 
 # Zero-Trust
@@ -23,7 +27,7 @@ Zero Trust ersetzt das Perimeter-Modell durch ressourcenzentrierte Sicherheit: J
 
 NIST SP 800-207 definiert Zero Trust als "sich entwickelnden Satz von Cybersicherheitsparadigmen, der die Verteidigung von statischen, netzwerkbasierten Perimetern auf Nutzer, Assets und Ressourcen verlagert."
 
-In der deutschen [[Telematikinfrastruktur]] ist Zero Trust das tragende Architekturprinzip der TI 2.0. Der Übergang von TI 1.0 zu TI 2.0 bedeutet den Wechsel von einer VPN-basierten Vertrauensarchitektur zu einem Zero-Trust-Modell.
+In der deutschen [[Telematikinfrastruktur]] ist Zero Trust das tragende Architekturprinzip der [[TI-2.0|TI 2.0]]. Der Übergang von TI 1.0 zu TI 2.0 bedeutet den Wechsel von einer VPN-basierten Vertrauensarchitektur zu einem Zero-Trust-Modell.
 
 ## Technische Details
 
@@ -64,6 +68,12 @@ Die erste TI-2.0-Anwendung auf Zero-Trust-Basis ist [[VSDM]] 2.0, geplant zum 30
 
 Zero Trust ist kein einzelnes Produkt, sondern ein Gestaltungsprinzip. Das BSI betont, dass Zero Trust "keine einmalige Investition, sondern ein langfristiges Vorhaben" ist, das personelle und finanzielle Ressourcen erfordert.
 
+> [!interesse-compliance]
+> TI-2.0-Zeitplan: VSDM 2.0 mit Zero-Trust-Architektur ab 30. Juni 2026 (Parallelbetrieb), vollständige Migration bis 2029. Hersteller müssen [[mTLS]] in ihren Primärsystemen implementieren. Das [[TI-Gateway]] ersetzt schrittweise Hardware-Konnektoren. Migrationspflichten werden über gemSpec-Dokumente und gematik-Zulassungsverfahren durchgesetzt.
+
+> [!interesse-technik]
+> Technische Kernelemente in der TI 2.0: [[mTLS]] für wechselseitige Authentisierung, OAuth 2.0/OpenID Connect für Token-basierte Autorisierung, [[ZETA]]-Framework (Open Source: github.com/gematik/zeta) mit ZETA-Client-SDK und ZETA-Guard. NIST-Referenz: SP 800-207. BSI-Richtlinie: Zero-Trust-Prinzipien im BSI-Kompendium.
+
 ### [[ZETA]]: Zero-Trust-Implementierung für die TI
 
 Die konkrete Umsetzung von Zero Trust in der TI 2.0 erfolgt über das **ZETA**-Framework (Zero-Trust-Architektur). Am **15. Dezember 2025** veröffentlichte die [[gematik]] die zentralen ZETA-Komponenten als Open Source auf GitHub (github.com/gematik/zeta):
@@ -79,7 +89,8 @@ Das NIST-Dokument SP 800-207 "Zero Trust Architecture" von 2020 ist die führend
 
 ## Verknüpfungen
 
-- [[Telematikinfrastruktur]]: Zero Trust ist das Architekturprinzip der TI 2.0
+- [[Telematikinfrastruktur]]: Zero Trust ist das Architekturprinzip der [[TI-2.0|TI 2.0]]
+- [[TI-2.0]]: Das Architekturprogramm, das Zero Trust in der TI umsetzt
 - [[TI-Gateway]]: Zentrale Zugangskomponente, die Zero Trust umsetzt
 - [[ZETA]]: Konkrete Framework-Implementierung von Zero Trust für die TI 2.0
 - [[mTLS]]: Technisches Mittel zur beidseitigen Authentisierung

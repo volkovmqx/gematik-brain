@@ -6,7 +6,7 @@ aliases: [Ständige Impfkommission, Standing Committee on Vaccination]
 relevance:
   sectors: [arztpraxis, apotheke, krankenhaus, patient, regulierung, kasse]
   interests: [compliance, patient]
-maturity: setzling
+maturity: wachsend
 ---
 
 # STIKO
@@ -72,6 +72,8 @@ Im [[eImpfpass]] sind die STIKO-Empfehlungen als Referenzterminologie hinterlegt
 
 Das **Paul-Ehrlich-Institut (PEI)** ist die Bundesbehörde, die Impfstoffe zulässt und überwacht. Die STIKO empfiehlt auf Basis der zugelassenen Impfstoffe. Beide Institutionen kooperieren eng, sind aber organisatorisch getrennt. Das PEI ist eine Bundesoberbehörde im Geschäftsbereich des Bundesgesundheitsministeriums; die STIKO ist ein unabhängiges Beratungsgremium beim [[RKI]].
 
+Die STIKO wurde 1972 beim damaligen Bundesgesundheitsamt (BGA) gegründet. Seit 1994 ist sie beim [[RKI]] angesiedelt.
+
 ## Verknüpfungen
 
 - [[RKI]] (Heimatbehörde der STIKO; veröffentlicht das Epidemiologische Bulletin)
@@ -81,6 +83,7 @@ Das **Paul-Ehrlich-Institut (PEI)** ist die Bundesbehörde, die Impfstoffe zulä
 - [[ATC-Code]] (Kodierung der empfohlenen Impfstoffe)
 - [[SNOMED-CT]] (Terminologie für Indikationen im eImpfpass)
 - [[BfArM]] (Zulassung von Impfstoffen)
+- Paul-Ehrlich-Institut (PEI) (Bundesbehörde für Impfstoffzulassung und -überwachung)
 - [[MIO]] (Medizinisches Informationsobjekt; eImpfpass nutzt STIKO-Daten)
 
 ## Quellen

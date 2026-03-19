@@ -3,6 +3,10 @@ title: Fachdienst
 audience: [technical]
 tags: [infrastruktur, architektur, backend, ti-dienste]
 aliases: [Fachdienst, Fachdienste, TI-Fachdienst, Anwendungs-Fachdienst]
+relevance:
+  sectors: [hersteller, ti-infrastruktur, it-dienstleister, startup, krankenhaus, arztpraxis]
+  interests: [technik, business]
+maturity: wachsend
 ---
 
 # Fachdienst
@@ -17,7 +21,7 @@ Die [[Telematikinfrastruktur]] besteht nicht nur aus dem Netz, das Arztpraxen ve
 
 In der TI-Architektur gibt es eine klare Trennung zwischen der Basis-Infrastruktur (Netz, [[PKI]], [[IDP]], [[VZD]]) und den Anwendungs-Fachdiensten. Letztere implementieren die Fachlogik einer bestimmten TI-Anwendung.
 
-Jeder Fachdienst wird von einem oder mehreren zugelassenen Anbietern betrieben. Die [[gematik]] spezifiziert die Anforderungen und prüft die Zulassung. Der Anbieter übernimmt den Betrieb. Primärsysteme ([[PVS]], [[KIS]], [[AVS]]) in Arztpraxen, Kliniken und Apotheken kommunizieren mit dem Fachdienst über definierte Schnittstellen.
+Jeder Fachdienst wird von einem oder mehreren zugelassenen Anbietern betrieben. Die [[gematik]] spezifiziert die Anforderungen und prüft die Zulassung. Der Anbieter übernimmt den Betrieb. [[Primärsystem|Primärsysteme]] ([[PVS]], [[KIS]], [[AVS]]) in Arztpraxen, Kliniken und Apotheken kommunizieren mit dem Fachdienst über definierte Schnittstellen.
 
 ### Bekannte Fachdienste
 
@@ -28,6 +32,9 @@ Jeder Fachdienst wird von einem oder mehreren zugelassenen Anbietern betrieben. 
 | KIM-Fachdienst | [[KIM]] | Verschiedene Anbieter (155+) |
 | VSDM-Fachdienst | [[VSDM]] | Krankenkassen |
 | TI-Messenger-Fachdienst | [[TI-Messenger]] | Verschiedene Anbieter |
+
+> [!interesse-business]
+> Der Betrieb eines Fachdienstes erfordert eine gematik-Zulassung und setzt die Einhaltung aller gemSpec-Anforderungen voraus. Bestehende Fachdienst-Betreiber: IBM (E-Rezept, ePA), RISE/BITMARCK (ePA), und über 155 KIM-Anbieter. Neue Produkttypen entstehen mit TI 2.0 und dem [[TI-Gateway]].
 
 ### Zulassungspflicht
 
@@ -49,6 +56,9 @@ Ein Fachdienst folgt in der Regel diesem Muster:
 Fachdienste, die besonders sensible Gesundheitsdaten verarbeiten, nutzen eine [[VAU|Vertrauenswürdige Ausführungsumgebung (VAU)]]. Die VAU ist eine gehärtete Ausführungsumgebung, in der die Daten verschlüsselt verarbeitet werden. Selbst der Betreiber des Fachdienstes kann die Daten nicht im Klartext lesen.
 
 Der E-Rezept-Fachdienst und das ePA-Aktensystem nutzen VAU. Die gematik spezifiziert das VAU-Protokoll; der Anbieter implementiert es und weist die korrekte Umsetzung im Zulassungsverfahren nach.
+
+> [!interesse-technik]
+> Fachdienste implementieren REST/FHIR-APIs nach gemSpec-Vorgaben. Authentisierung: OAuth 2.0 / OpenID Connect über den [[IDP]]-Dienst. In TI 2.0: [[mTLS]] als Pflicht für alle Verbindungen. Sensible Dienste (ePA, E-Rezept) nutzen [[VAU]] (Vertrauenswürdige Ausführungsumgebung). API-Referenzen: gemspec.gematik.de/docs/gemSpec/
 
 ### Ablauf einer Fachdienst-Anfrage
 
@@ -85,6 +95,7 @@ Fachdienste bieten typischerweise zwei Schnittstellentypen:
 - [[Telematikinfrastruktur]] (Netz und Basis-Infrastruktur, auf der Fachdienste laufen)
 - [[mTLS]] (Verbindungsabsicherung in TI 2.0)
 - [[gematik]] (spezifiziert und zulässt Fachdienste)
+- [[Primärsystem]] (PVS, KIS, AVS als Clients der Fachdienste)
 
 ## Quellen
 

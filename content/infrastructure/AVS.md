@@ -3,6 +3,10 @@ title: AVS
 audience: [technical, non-technical]
 tags: [infrastruktur, apotheke, software, primärsystem]
 aliases: [Apothekenverwaltungssystem, Apothekensoftware]
+relevance:
+  sectors: [apotheke, hersteller, it-dienstleister, kasse, regulierung]
+  interests: [compliance, technik, business]
+maturity: wachsend
 ---
 
 # AVS
@@ -23,9 +27,18 @@ Die wichtigste TI-Anwendung für Apotheken ist das [[E-Rezept]]. Das AVS ruft di
 
 Zertifizierungsbehörde für AVS-Software ist das ADAS (Apothekenrechenzentrum-Datenaustausch-Systemprüfstelle) über die [[ABDA]] (Bundesvereinigung Deutscher Apothekerverbände). Die [[gematik]] prüft seit 2024 zusätzlich die korrekte TI-Implementierung im Rahmen der [[Konformitaetsbewertung|Konformitätsbewertung (KOB)]].
 
+> [!interesse-compliance]
+> Apotheken waren nach dem [[DVG]] verpflichtet, sich bis spätestens 1. September 2020 an die TI anzubinden. Seither ist das AVS der Pflichtanschlusspunkt für alle TI-Anwendungen: E-Rezept, ePA-Zugriff, KIM. Die [[gematik]] prüft TI-Konformität im Rahmen der Konformitätsbewertung (KOB). Apotheken ohne konforme TI-Anbindung riskieren Vergütungsabschläge.
+
+> [!interesse-business]
+> Marktführende AVS-Systeme: LAUER-FISCHER (WINAPO), ADG (Aposystem), PHARMATECHNIK (Ixos), CGM (Pharmacy). Das E-Rezept ist die treibende Anwendung für AVS-Weiterentwicklungen: tägliche Abwicklung von Millionen Verordnungen. BITMARCK betreibt das ePA-Aktensystem für ca. 80 Prozent der Kassen, das direkt vom AVS über den Fachdienst abgerufen wird.
+
 ## Technische Details
 
 ### TI-Anbindung
+
+> [!interesse-technik]
+> Das AVS spricht den [[Konnektoren|Konnektor]] bzw. das [[TI-Gateway]] über SOAP-Webservices an (gemSpec-konforme Schnittstelle). E-Rezept-API: FHIR R4 REST (KBV-Profile, MedicationRequest/MedicationDispense). ePA-API: FHIR R4. Abrechnung mit Apothekenrechenzentrum: TA1/ABDA-Format. Konformitätsbewertung durch gematik (KOB) ab 2024 verpflichtend.
 
 Das AVS kommuniziert mit dem [[Konnektoren|Konnektor]] oder dem [[TI-Gateway]] über SOAP-Webservices. Diese Schnittstelle entspricht der Schnittstellenspezifikation der [[gematik]] und ist mit der Schnittstelle des [[PVS]] vergleichbar. Über den Konnektor beziehungsweise das TI-Gateway steuert das AVS alle kryptografischen Operationen und den sicheren Datentransport.
 

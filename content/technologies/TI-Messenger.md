@@ -67,6 +67,10 @@ Die Identität jedes Teilnehmers wird über die TI verifiziert:
 
 Für die Adressierung von Teilnehmern nutzt der TI-Messenger den [[VZD|VZD-FHIR-Directory]]. Das Verzeichnis basiert auf [[FHIR]] und enthält die Matrix-User-IDs aller zugelassenen Teilnehmer. Beim Aufbau einer Verbindung wird die Empfängeradresse per FHIR-Suche im VZD aufgelöst. Das ermöglicht die Suche nach Ärzten und Einrichtungen anhand von Name, Fachrichtung oder Ort.
 
+### TI-Messenger Headless Client
+
+Seit dem **27. Januar 2026** liegt der Feature-Draft **Draft_gemF_TI-M_Headless_Client** vor. Der Headless Client ist ein neuer Produkttyp, der eine direkte Integration des TI-Messengers in [[PVS]]- und [[KIS]]-Systeme ermöglicht, ohne eine separate Messenger-App auf dem Endgerät. Das Primärsystem kommuniziert direkt mit dem Matrix-Homeserver über eine serverseitige Schnittstelle. Nachrichten können so automatisiert empfangen und gesendet werden, etwa für Rückfragen zu Verordnungen, Terminbestätigungen oder strukturierte Kommunikation zwischen Einrichtungen. Der Headless Client adressiert Einrichtungen, die den TI-Messenger in ihre Workflows einbinden wollen, ohne eine eigene Messenger-Oberfläche einzuführen.
+
 ### MatrixRTC und Sprachfunktionen
 
 Sprachanrufe und Videoanrufe im TI-Messenger hängen von **MatrixRTC** (Matrix Spec Change 4143) ab. MatrixRTC erweitert das Matrix-Protokoll um Echtzeit-Kommunikationsfunktionen. Ein Release im TI-Messenger-Kontext ist für **2026** geplant.
