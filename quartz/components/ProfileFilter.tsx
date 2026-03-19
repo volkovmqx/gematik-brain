@@ -3,12 +3,14 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 import script from "./scripts/profileFilter.inline"
 import style from "./styles/profileFilter.scss"
 import { classNames } from "../util/lang"
+import { pathToRoot } from "../util/path"
 
-const ProfileFilter: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
+const ProfileFilter: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
+  const baseDir = pathToRoot(fileData.slug!)
   return (
     <div class={classNames(displayClass, "profile-filter")} id="profile-filter">
       <div class="profile-empty" id="profile-empty">
-        <a href="/" class="profile-setup-link">
+        <a href={baseDir} class="profile-setup-link">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="14"

@@ -177,7 +177,12 @@
 
 @media all and ($mobile) {
   .scenario-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .scenario-card {
+    aspect-ratio: auto;
+    padding: 0.6rem 0.4rem;
   }
 
   .scenario-card .scenario-icon {

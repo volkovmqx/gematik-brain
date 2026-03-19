@@ -1,3 +1,5 @@
+import { getFullSlug, resolveRelative } from "../../util/path"
+
 const PROFILE_KEY = "gematik-brain-profile"
 const ONBOARDING_KEY = "gematik-brain-onboarding"
 const EXPANDED_KEY = "gematik-brain-expanded-callouts"
@@ -95,6 +97,18 @@ function scoreRelevance(
 }
 
 document.addEventListener("nav", async () => {
+  // "Profil einrichten" link: clear skip/profile state so onboarding shows
+  const setupLink = document.querySelector<HTMLAnchorElement>(".profile-setup-link")
+  if (setupLink) {
+    const fresh = setupLink.cloneNode(true) as HTMLAnchorElement
+    setupLink.parentNode?.replaceChild(fresh, setupLink)
+    fresh.addEventListener("click", (e) => {
+      localStorage.removeItem(PROFILE_KEY)
+      localStorage.removeItem(ONBOARDING_KEY)
+      document.documentElement.dataset.hasProfile = "false"
+    })
+  }
+
   const urlOverrides = getURLOverrides()
   const stored = getProfile()
   const active: Profile | null = urlOverrides
@@ -168,7 +182,9 @@ document.addEventListener("nav", async () => {
       localStorage.removeItem(PROFILE_KEY)
       localStorage.removeItem(ONBOARDING_KEY)
       document.documentElement.dataset.hasProfile = "false"
-      window.location.href = "/"
+      const slug = getFullSlug(window)
+      const url = new URL(resolveRelative(slug, "index"), window.location.toString())
+      window.spaNavigate(url)
     })
   }
 

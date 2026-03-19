@@ -19,11 +19,10 @@ export default (() => {
 
   Banner.css = `
 .site-banner {
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 998;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,8 +73,17 @@ export default (() => {
   display: none !important;
 }
 
-body.has-banner {
-  padding-top: var(--banner-height, 2rem);
+@media all and (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+  .page {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  .page > #quartz-body {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
 }
 
 @media all and (max-width: 600px) {
@@ -95,20 +103,12 @@ body.has-banner {
 
   if (sessionStorage.getItem(BANNER_KEY) === "1") {
     banner.classList.add("site-banner-hidden");
-    document.body.classList.remove("has-banner");
     return;
   }
-
-  document.body.classList.add("has-banner");
-  // measure actual banner height and set CSS var
-  var h = banner.offsetHeight;
-  document.body.style.setProperty("--banner-height", h + "px");
 
   if (closeBtn) {
     closeBtn.addEventListener("click", function() {
       banner.classList.add("site-banner-hidden");
-      document.body.classList.remove("has-banner");
-      document.body.style.removeProperty("--banner-height");
       sessionStorage.setItem(BANNER_KEY, "1");
     });
   }
