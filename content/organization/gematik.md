@@ -4,6 +4,9 @@ audience: [technical, non-technical]
 tags: [organisation, gematik, ti, regulierung]
 aliases: [gematik GmbH, Nationale Agentur für Digitale Medizin]
 maturity: immergruen
+relevance:
+  sectors: [regulierung, hersteller, it-dienstleister, startup, kasse, arztpraxis, krankenhaus]
+  interests: [compliance, business, technik]
 ---
 
 # gematik

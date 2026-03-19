@@ -3,6 +3,9 @@ title: BSI
 audience: [technical, non-technical]
 tags: [organization, sicherheit, kryptografie, zertifizierung]
 aliases: [Bundesamt für Sicherheit in der Informationstechnik]
+relevance:
+  sectors: [it-dienstleister, hersteller, ti-infrastruktur, regulierung]
+  interests: [technik, compliance]
 ---
 
 # BSI

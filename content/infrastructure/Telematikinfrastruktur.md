@@ -4,6 +4,9 @@ aliases: [TI, Telematikinfrastruktur]
 audience: [technical, non-technical]
 tags: [infrastruktur, ti, netzwerk]
 maturity: immergruen
+relevance:
+  sectors: [arztpraxis, krankenhaus, zahnarzt, apotheke, pflege, therapie, hersteller, ti-infrastruktur, it-dienstleister, startup, kasse, regulierung]
+  interests: [compliance, technik, business]
 ---
 
 # Telematikinfrastruktur (TI)

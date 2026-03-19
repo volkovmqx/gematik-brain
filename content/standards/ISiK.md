@@ -3,6 +3,9 @@ title: ISiK
 audience: [technical]
 tags: [standards, FHIR, krankenhaus, interoperabilität, KIS]
 aliases: [Informationstechnische Systeme im Krankenhaus, Informationstechnische Systeme in Krankenhäusern]
+relevance:
+  sectors: [krankenhaus, hersteller, it-dienstleister]
+  interests: [technik, compliance]
 ---
 
 # ISiK

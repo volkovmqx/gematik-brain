@@ -3,6 +3,9 @@ title: KBV
 audience: [technical, non-technical]
 tags: [organization, selbstverwaltung, fhir-profile, vertragsärzte]
 aliases: [Kassenärztliche Bundesvereinigung, KBV-Profile]
+relevance:
+  sectors: [arztpraxis, regulierung, hersteller]
+  interests: [compliance, business]
 ---
 
 # KBV

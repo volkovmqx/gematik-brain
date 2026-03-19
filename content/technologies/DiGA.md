@@ -4,6 +4,9 @@ audience: [technical, non-technical]
 tags: [technologies, digitale-gesundheit, medizinprodukt, bfarm]
 aliases: [Digitale Gesundheitsanwendungen, App auf Rezept, DiGAV]
 maturity: immergruen
+relevance:
+  sectors: [startup, hersteller, arztpraxis, psychotherapie, patient, kasse, regulierung]
+  interests: [technik, business, compliance, patient]
 ---
 
 # DiGA

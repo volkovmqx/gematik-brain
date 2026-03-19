@@ -4,6 +4,9 @@ audience: [technical, non-technical]
 tags: [anwendung, messenger, kommunikation]
 aliases: [TIM, TI-M]
 maturity: wachsend
+relevance:
+  sectors: [arztpraxis, krankenhaus, pflege, hersteller, startup, it-dienstleister]
+  interests: [technik, compliance]
 ---
 
 # TI-Messenger

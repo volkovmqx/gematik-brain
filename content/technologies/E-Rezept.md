@@ -4,6 +4,9 @@ audience: [technical, non-technical]
 tags: [anwendung, e-rezept, verordnung]
 aliases: [Elektronisches Rezept, eRezept]
 maturity: wachsend
+relevance:
+  sectors: [arztpraxis, zahnarzt, apotheke, hersteller, patient, kasse]
+  interests: [compliance, technik]
 ---
 
 # E-Rezept

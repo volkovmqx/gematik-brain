@@ -4,6 +4,9 @@ audience: [technical, non-technical]
 tags: [anwendung, kim, kommunikation]
 aliases: [Kommunikation im Medizinwesen, KOM-LE, Sichere E-Mail TI]
 maturity: wachsend
+relevance:
+  sectors: [arztpraxis, krankenhaus, zahnarzt, psychotherapie, apotheke, pflege, therapie, hersteller, it-dienstleister]
+  interests: [compliance, technik]
 ---
 
 # KIM - Kommunikation im Medizinwesen

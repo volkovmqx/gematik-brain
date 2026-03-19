@@ -3,6 +3,9 @@ title: CardLink
 audience: [technical, non-technical]
 tags: [anwendung, erezept, egk, apotheke, nfc]
 aliases: [eGK CardLink, Card Link]
+relevance:
+  sectors: [apotheke, startup, hersteller, patient]
+  interests: [compliance, business, technik]
 ---
 
 # CardLink

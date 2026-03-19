@@ -3,6 +3,9 @@ title: eAU - Elektronische Arbeitsunfähigkeitsbescheinigung
 audience: [technical, non-technical]
 tags: [anwendung, eau, arbeitsunfaehigkeit]
 aliases: [Elektronische Arbeitsunfähigkeitsbescheinigung, Elektronische Krankschreibung, Digitale Krankschreibung]
+relevance:
+  sectors: [arztpraxis, arbeitgeber, kasse, patient, hersteller]
+  interests: [compliance, patient]
 ---
 
 # eAU - Elektronische Arbeitsunfähigkeitsbescheinigung

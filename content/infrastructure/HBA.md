@@ -3,6 +3,9 @@ title: HBA - Heilberufsausweis
 audience: [technical, non-technical]
 tags: [infrastruktur, hba, karte, identitaet, signatur]
 aliases: [HBA, eHBA, Heilberufsausweis, Elektronischer Heilberufsausweis]
+relevance:
+  sectors: [arztpraxis, zahnarzt, psychotherapie, apotheke, ti-infrastruktur, hersteller]
+  interests: [compliance, technik]
 ---
 
 # HBA - Heilberufsausweis

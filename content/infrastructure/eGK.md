@@ -3,6 +3,9 @@ title: eGK - Elektronische Gesundheitskarte
 audience: [technical, non-technical]
 tags: [infrastruktur, egk, karte, identitaet]
 aliases: [Elektronische Gesundheitskarte, Gesundheitskarte, eGK G2.1]
+relevance:
+  sectors: [arztpraxis, apotheke, krankenhaus, patient, kasse, ti-infrastruktur, hersteller]
+  interests: [compliance, technik, patient]
 ---
 
 # eGK - Elektronische Gesundheitskarte

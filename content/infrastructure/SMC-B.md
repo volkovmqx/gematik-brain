@@ -4,6 +4,9 @@ audience: [technical]
 tags: [infrastruktur, smcb, karte, identitaet]
 aliases: [Institutionskarte, Security Module Card Typ B]
 maturity: immergruen
+relevance:
+  sectors: [arztpraxis, krankenhaus, zahnarzt, apotheke, pflege, therapie, ti-infrastruktur, hersteller]
+  interests: [compliance, technik]
 ---
 
 # SMC-B - Security Module Card Typ B

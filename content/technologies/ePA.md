@@ -4,6 +4,9 @@ audience: [technical, non-technical]
 tags: [anwendung, epa, patientenakte]
 aliases: [Elektronische Patientenakte, Patientenakte]
 maturity: wachsend
+relevance:
+  sectors: [arztpraxis, krankenhaus, zahnarzt, psychotherapie, apotheke, pflege, therapie, hebamme, patient, kasse, hersteller]
+  interests: [compliance, technik, patient]
 ---
 
 # ePA - Elektronische Patientenakte
@@ -24,9 +27,22 @@ Ab **April 2026** müssen [[KIS|Krankenhausinformationssysteme (KIS)]] ein zerti
 
 Rund 100 Krankenkassen nutzen zugelassene Aktensysteme. Die technischen Implementierungen stammen von IBM (ca. 16 Kassen) und RISE/BITMARCK (ca. 87 Kassen).
 
+> [!interesse-compliance] Fristen und Pflichten
+> - **15. Jan 2025**: Pilotstart in Modellregionen
+> - **29. Apr 2025**: Bundesweiter Rollout, Opt-out-Verfahren
+> - **1. Okt 2025**: Pflicht für alle medizinischen Einrichtungen
+> - **Apr 2026**: [[KIS]] muss zertifiziertes ePA-Modul enthalten (Sanktionen bei Nichteinhaltung)
+> - **Okt 2026**: Bundesweiter eMedikationsplan-Rollout
+
 ### Aktuelle Nutzung (Stand März 2026)
 
 Stand März 2026 haben über **130.000 von ca. 160.000 Einrichtungen (81 Prozent)** mindestens eine ePA geöffnet. Mehr als **700 Millionen Datensätze** wurden verarbeitet, darunter über **37 Millionen hochgeladene Dokumente**.
+
+> [!interesse-business] Marktüberblick
+> - ~100 Krankenkassen mit zugelassenen Aktensystemen
+> - 2 Betreiber: IBM (~16 Kassen), RISE/BITMARCK (~87 Kassen)
+> - 130.000 von 160.000 Einrichtungen aktiv (81%, Stand März 2026)
+> - 700 Mio. Datensätze verarbeitet, 37 Mio. Dokumente hochgeladen
 
 Seit **1. Januar 2026** sind Abrechnungsdaten in der ePA nur noch für Versicherte selbst sichtbar. Ärzte und andere Leistungserbringer können Abrechnungsdaten nicht ohne explizite Freigabe durch den Versicherten einsehen. Grundlage ist das **[[BEEP-Gesetz]]** (Gesetz zur Befugniserweiterung und Entbürokratisierung in der Pflege). Ebenfalls seit 1. Januar 2026 können Praxen in therapeutisch begründeten Einzelfällen auf die ePA-Befüllung verzichten (**§ 347 SGB V**).
 
@@ -43,6 +59,13 @@ Seit **1. Januar 2026** sind Abrechnungsdaten in der ePA nur noch für Versicher
 - **Leistungserbringer**: Über ihr Praxissystem, mit Einwilligung
 - **Krankenkassen**: Über das Aktensystem (Backend)
 
+> [!interesse-patient] Ihre Daten in der ePA
+> - Zugang über die App Ihrer Krankenkasse (kostenlos)
+> - Opt-out jederzeit möglich: Widerspruch bei Ihrer Kasse
+> - Push-Benachrichtigungen bei Zugriffen (seit März 2026)
+> - Abrechnungsdaten nur für Sie sichtbar (seit Januar 2026)
+> - Kein Widerspruchsrecht gegen FDZ-Datenübermittlung (Klage anhängig)
+
 ### Transparenz und Kontrolle
 
 Seit März 2026 erhalten Versicherte Push-Benachrichtigungen über die Krankenkassen-App, wenn jemand auf ihre ePA zugreift oder Änderungen vornimmt.
@@ -57,6 +80,13 @@ Die ePA nutzt die [[Telematikinfrastruktur]] als sicheres Netzwerk. Der Zugriff 
 - ePA 3.1.3: Spezifikation für erweitertes Medikationsmanagement ([[AMTS]]-relevante Zusatzinformationen); bundesweiter eMedikationsplan-Rollout verschoben auf Oktober 2026 (Pilotphase ab Juli 2026)
 
 ## Technische Details
+
+> [!interesse-technik] Entwickler-Quickstart
+> - **Datenformat**: [[FHIR]] R4, deutsche Profile auf [Simplifier.net](https://simplifier.net/organization/gematik)
+> - **Spezifikation**: [ePA 3.1.3](https://gemspec.gematik.de/releases/ePA_3_1_3-1/)
+> - **PoC**: [github.com/gematik/epa-poc-collection](https://github.com/gematik/epa-poc-collection)
+> - **Dokumentenverwaltung**: [[XDS]] (Registry + Repository)
+> - **Sicherheit**: [[VAU]] (Vertrauenswürdige Ausführungsumgebung)
 
 ### Datenformate und Dokumentenverwaltung
 

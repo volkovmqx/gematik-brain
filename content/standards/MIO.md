@@ -3,6 +3,9 @@ title: MIO
 audience: [technical, non-technical]
 tags: [standards, fhir, epa, kbv, interoperabilität]
 aliases: [Medizinische Informationsobjekte, MIOs, MIO42]
+relevance:
+  sectors: [arztpraxis, zahnarzt, hebamme, hersteller, it-dienstleister, patient]
+  interests: [technik, compliance, patient]
 ---
 
 # MIO

@@ -3,6 +3,9 @@ title: HL7
 audience: [technical]
 tags: [standards, interoperabilität, nachrichten, fhir, hl7v2, hl7v3, cda]
 aliases: [Health Level Seven, HL7 International, Health Level 7]
+relevance:
+  sectors: [hersteller, it-dienstleister, krankenhaus, forschung]
+  interests: [technik]
 ---
 
 # HL7

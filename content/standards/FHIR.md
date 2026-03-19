@@ -3,6 +3,9 @@ title: FHIR - Fast Healthcare Interoperability Resources
 aliases: [FHIR, HL7 FHIR]
 audience: [technical]
 tags: [standard, fhir, interoperabilitaet]
+relevance:
+  sectors: [hersteller, it-dienstleister, startup, krankenhaus, forschung]
+  interests: [technik]
 ---
 
 # FHIR - Fast Healthcare Interoperability Resources

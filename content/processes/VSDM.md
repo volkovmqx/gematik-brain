@@ -3,6 +3,9 @@ title: VSDM - Versichertenstammdatenmanagement
 audience: [technical, non-technical]
 tags: [prozess, vsdm, stammdaten]
 aliases: [Versichertenstammdatenmanagement, VSDM 2.0, Versichertenstammdaten-Management]
+relevance:
+  sectors: [arztpraxis, zahnarzt, apotheke, kasse, hersteller, ti-infrastruktur]
+  interests: [compliance, technik]
 ---
 
 # VSDM - Versichertenstammdatenmanagement

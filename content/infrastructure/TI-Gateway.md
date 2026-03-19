@@ -4,6 +4,9 @@ audience: [technical, non-technical]
 tags: [infrastruktur, ti-2-0, gateway, cloud, konnektor]
 aliases: [TI-Gateway, TI 2.0 Gateway, vKON]
 maturity: immergruen
+relevance:
+  sectors: [ti-infrastruktur, hersteller, it-dienstleister, arztpraxis, krankenhaus]
+  interests: [technik, compliance]
 ---
 
 # TI-Gateway
