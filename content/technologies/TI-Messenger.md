@@ -3,6 +3,7 @@ title: TI-Messenger
 audience: [technical, non-technical]
 tags: [anwendung, messenger, kommunikation]
 aliases: [TIM, TI-M]
+maturity: wachsend
 ---
 
 # TI-Messenger
@@ -21,7 +22,7 @@ Während [[KIM]] für formelle, asynchrone Kommunikation gedacht ist (wie E-Mail
 
 1. **TI-Messenger Pro**: Chat zwischen Leistungserbringern und Einrichtungen (Arztpraxen, Kliniken, Apotheken, Kassen). Ab Anfang 2026 wurden erste produktive Instanzen von TI-Messenger Pro zugelassen. Version 1.1 ist für Mai 2026 geplant.
 2. **TI-Messenger ePA**: Nachrichten zwischen Versicherten und Leistungserbringern innerhalb der [[ePA]]
-3. **TI-Messenger Connect**: Zugang für Versicherte über integrierte Apps ([[DiGA]], Patientenportale, Telemedizin). Geplant ab Ende 2026.
+3. **TI-Messenger Connect**: Zugang für Versicherte über integrierte Apps ([[DiGA]], [[Patientenportal|Patientenportale]], Telemedizin). Geplant ab Ende 2026.
 
 ### Versichertenkanal und aktuelle Entwicklungen
 
@@ -83,6 +84,15 @@ Der Messenger-Proxy zwischen Client und Homeserver stellt sicher, dass nur TI-au
 
 Alle Nachrichten sind Ende-zu-Ende-verschlüsselt. Die Identität jedes Teilnehmers wird über die TI verifiziert. Das föderierte [[Matrix-Protokoll]] ermöglicht anbieterübergreifende Kommunikation, ohne die Sicherheit zu beeinträchtigen.
 
+### Sicherheits-Hotfixes März 2026
+
+Am 5. März 2026 veröffentlichte die [[gematik]] zwei Sicherheits-Hotfixes für TI-Messenger-Clients:
+
+- **TI-Messenger ePA (A_26015-02)**: Ende-zu-Ende-Verschlüsselung ist für alle Räume verpflichtend. Clients dürfen Räume nicht mehr mit öffentlichen Join-Regeln, welt-lesbarem Nachrichtenverlauf oder deaktivierter Verschlüsselung konfigurieren.
+- **TI-Messenger Pro (A_28755)**: Verbot öffentlicher Raumkonfigurationen. Bestehende öffentliche Räume werden auf Mitglieder desselben Homeservers beschränkt.
+
+Beide Hotfix-Versionen erhalten den Status "gültig"; Vorgängerversionen werden abgekündigt.
+
 ## Verknüpfungen
 
 - Ergänzt [[KIM]] (Messenger = schnell, KIM = formell)
@@ -96,3 +106,4 @@ Alle Nachrichten sind Ende-zu-Ende-verschlüsselt. Die Identität jedes Teilnehm
 - [TI-Messenger - Fachportal gematik](https://fachportal.gematik.de/anwendungen/ti-messenger)
 - [TI-Messenger Spezifikation - gemspec.gematik.de](https://gemspec.gematik.de/docs/gemSpec/gemSpec_TI-Messenger-Dienst/)
 - [Matrix.org Protokollspezifikation](https://spec.matrix.org/latest/)
+- [TI-Messenger Compass Blog (Sicherheits-Hotfixes März 2026)](https://wiki.gematik.de/spaces/TIMCOMP/pages/604603166/TI-Messenger+Compass+-+The+TI-M+Blog)

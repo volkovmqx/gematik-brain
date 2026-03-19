@@ -71,7 +71,7 @@ Die GOÄ ist nicht direkt Teil der [[Telematikinfrastruktur]], hat aber Berühru
 
 ### GOÄ und Zahnärzte / Tierärzte
 
-Die GOÄ gilt nur für Humanmediziner. Für Zahnärzte gilt die **GOZ** (Gebührenordnung für Zahnärzte), für Tierärzte die **GOT** (Gebührenordnung für Tierärzte). Beide folgen einer ähnlichen Systematik.
+Die GOÄ gilt nur für Humanmediziner. Für Zahnärzte gilt die **[[GOZ]]** (Gebührenordnung für Zahnärzte), für Tierärzte die **GOT** (Gebührenordnung für Tierärzte). Beide folgen einer ähnlichen Systematik.
 
 ## Verknüpfungen
 

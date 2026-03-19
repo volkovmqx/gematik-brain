@@ -1,33 +1,13 @@
 {
   "pending": [
     {
-      "term": "ePass",
-      "category": "technologies",
-      "reason": "NFC-basiertes Identifikationsverfahren für TI-Dienste (insbesondere ePA), das den NFC-Chip eines deutschen Personalausweises oder Reisepasses per Smartphone ausliest. Seit 25. März 2026 verfügbar. Von Nect GmbH entwickelt, über BITMARCK für ca. 80 Prozent der GKV-Kassen bereitgestellt. Rechtsgrundlage: BEEP-Gesetz. Ergänzt Gesundheits-ID und eGK als dritten Authentifizierungsweg. In 7 Erwähnungen in ePA.md und Gesundheits-ID.md.",
+      "term": "DMP",
+      "category": "processes",
+      "reason": "Strukturierte Behandlungsprogramme (Disease-Management-Programme) für chronisch Kranke (Diabetes, Asthma, KHK). Vom G-BA beschlossen, von Krankenkassen umgesetzt. In G-BA.md als eine der Kernaufgaben aufgeführt. DiGA-Verordnungen ergänzen DMPs. Relevant für TI-Anwendungen wie ePA, E-Rezept und Telemedizin im chronischen Versorgungskontext.",
       "mentionedIn": [
-        "content/technologies/ePA.md",
-        "content/infrastructure/Gesundheits-ID.md"
+        "content/organization/G-BA.md"
       ],
-      "priority": 16
-    },
-    {
-      "term": "IVDR",
-      "category": "standards",
-      "reason": "In-vitro-Diagnostika-Verordnung (EU) 2017/746. Schwesternverordnung zur MDR für Labordiagnostika und Testsysteme. In MDR.md als parallele EU-Regulierung erwähnt. Relevant für DEMIS-Labormeldungen, DiGA im Laborkontext und LIS-Systeme.",
-      "mentionedIn": [
-        "content/standards/MDR.md"
-      ],
-      "priority": 16
-    },
-    {
-      "term": "GOZ",
-      "category": "standards",
-      "reason": "Gebührenordnung für Zahnärzte. Abrechnungsgrundlage für privatärztliche zahnärztliche Leistungen. Natürliches Pendant zu GOÄ (Ärzte) und EBM (GKV). In EBM.md und GOÄ.md im Kontext des Gebührenordnungssystems erwähnt. Relevant für zahnärztliche TI-Anwendungen (HBA für Zahnärzte, E-Rezept, ePA-Zugriff).",
-      "mentionedIn": [
-        "content/standards/EBM.md",
-        "content/standards/GOÄ.md"
-      ],
-      "priority": 16
+      "priority": 15
     },
     {
       "term": "TI-Pauschale",
@@ -52,6 +32,26 @@
       "priority": 15
     },
     {
+      "term": "KHVVG",
+      "category": "standards",
+      "reason": "Krankenhausversorgungsverbesserungsgesetz 2024. Nachfolgegesetz des KHZG. Löst die einmalige Investitionsförderung durch strukturelle Vergütungsreformen ab (DRG-Strukturreform, Level-II-Versorgung). In KHZG.md und KHG.md als Folgegesetz erwähnt, in DKG.md als aktuelles Reformgesetz. Bedeutsam für Krankenhausplanung und KIS-Kontext.",
+      "mentionedIn": [
+        "content/standards/KHZG.md",
+        "content/standards/KHG.md",
+        "content/organization/DKG.md"
+      ],
+      "priority": 15
+    },
+    {
+      "term": "HDDT",
+      "category": "standards",
+      "reason": "Health Device Data Transfer. Neue gematik-Spezifikation (RC v26_1, März 2026) für Datenaustausch zwischen Medizinprodukten (Insulinpumpen, Herzmonitore, Spirometer) und DiGA. Rechtsgrundlage § 374a SGB V. In DiGA.md als wichtige neue Schnittstelle beschrieben. FHIR R4-basiert, ermöglicht Übertragung von Gerätedaten in die ePA.",
+      "mentionedIn": [
+        "content/technologies/DiGA.md"
+      ],
+      "priority": 14
+    },
+    {
       "term": "Bewertungsausschuss",
       "category": "organization",
       "reason": "Paritätisches Gremium aus KBV und GKV-Spitzenverband zur Festlegung und Bewertung des EBM. Beschließt Punktwerte, Abrechnungsregeln und neue Leistungspositionen. In EBM.md zentral als normgebendes Organ, 5 Erwähnungen. Kein Verständnis des EBM-Abrechnungssystems ohne Kenntnis dieses Gremiums.",
@@ -61,19 +61,9 @@
       "priority": 15
     },
     {
-      "term": "KHVVG",
-      "category": "standards",
-      "reason": "Krankenhausversorgungsverbesserungsgesetz 2024. Nachfolgegesetz des KHZG. Löst die einmalige Investitionsförderung durch strukturelle Vergütungsreformen ab (DRG-Strukturreform, Level-II-Versorgung). In KHZG.md und KHG.md als Folgegesetz erwähnt. Bedeutsam für Krankenhausplanung und KIS-Kontext.",
-      "mentionedIn": [
-        "content/standards/KHZG.md",
-        "content/standards/KHG.md"
-      ],
-      "priority": 14
-    },
-    {
       "term": "AMNOG",
       "category": "standards",
-      "reason": "Arzneimittelmarktneuordnungsgesetz (2011). Regelt die frühe Nutzenbewertung neuer Arzneimittel durch G-BA und IQWiG. Bestimmt Erstattungsbeträge für neue Medikamente in der GKV. In G-BA.md als zentrales Verfahren erwähnt. Relevant für das Verständnis des DiGA-Nutzenbewertungsverfahrens (das AMNOG als Vorbild hatte).",
+      "reason": "Arzneimittelmarktneuordnungsgesetz (2011). Regelt die frühe Nutzenbewertung neuer Arzneimittel durch G-BA und IQWiG. Bestimmt Erstattungsbeträge für neue Medikamente in der GKV. In G-BA.md als zentrales Verfahren erwähnt. Relevant für das Verständnis des DiGA-Nutzenbewertungsverfahrens, das AMNOG als Vorbild hatte.",
       "mentionedIn": [
         "content/organization/G-BA.md"
       ],
@@ -101,6 +91,15 @@
       "priority": 12
     },
     {
+      "term": "BEMA",
+      "category": "standards",
+      "reason": "Bewertungsmaßstab Zahnärzte. Abrechnungsregelwerk für vertragszahnärztliche GKV-Leistungen. Pendant zum EBM für Zahnärzte. In KZBV.md als Kernverhandlungsgegenstand zwischen KZBV und GKV-Spitzenverband erwähnt. Logische Ergänzung zu den bereits vorhandenen Artikeln EBM und GOZ.",
+      "mentionedIn": [
+        "content/organization/KZBV.md"
+      ],
+      "priority": 12
+    },
+    {
       "term": "BZÄK",
       "category": "organization",
       "reason": "Bundeszahnärztekammer. Gematik-Gesellschafter (anteilig zusammen mit anderen Verbänden). In gematik.md und BMG.md als Gesellschafter gelistet. Pendant zur Bundesärztekammer für Zahnärzte. Herausgeber von HBA für Zahnärzte über Landeszahnärztekammern. Relevant für zahnärztliche TI-Anwendungen.",
@@ -112,6 +111,11 @@
     }
   ],
   "done": [
+    "Patientenportal",
+    "IQWiG",
+    "ePass",
+    "IVDR",
+    "GOZ",
     "GKV-Spitzenverband",
     "RIS",
     "Highspeed-Konnektor",
@@ -247,5 +251,5 @@
     "KZBV",
     "DKG"
   ],
-  "lastRun": "2026-03-18"
+  "lastRun": "2026-03-19"
 }

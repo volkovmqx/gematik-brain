@@ -32,7 +32,7 @@ Der EBM gilt ausschließlich für ambulante GKV-Leistungen. Davon zu unterscheid
 
 - **[[DRG]]** (Diagnosis Related Groups): Vergütungssystem für stationäre Krankenhausbehandlungen.
 - **[[GOÄ]]** (Gebührenordnung für Ärzte): Vergütungsregelwerk für Privatpatienten (PKV) und Selbstzahler.
-- **GOZ** (Gebührenordnung für Zahnärzte): Analoges Regelwerk für Zahnärzte im PKV-Bereich.
+- **[[GOZ]]** (Gebührenordnung für Zahnärzte): Analoges Regelwerk für Zahnärzte im PKV-Bereich.
 
 ## Technische Details
 

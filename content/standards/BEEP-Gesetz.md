@@ -38,7 +38,7 @@ Das BEEP-Gesetz führt in § 347 [[SGB V]] eine Ausnahmeregelung ein: Leistungse
 
 ### ePass als Authentifizierungsweg
 
-Das BEEP-Gesetz schafft auch die Rechtsgrundlage für den **ePass**, einen neuen Identifikationsweg für die [[ePA]]. Der ePass nutzt den NFC-Chip eines deutschen Personalausweises (ab August 2021) oder Reisepasses (ab 2005). Versicherte können sich damit per Smartphone für die ePA authentisieren, ohne PIN oder Praxisbesuch. Er ergänzt die [[Gesundheits-ID]] und die [[eGK]].
+Das BEEP-Gesetz schafft auch die Rechtsgrundlage für den **[[ePass]]**, einen neuen Identifikationsweg für die [[ePA]]. Der ePass nutzt den NFC-Chip eines deutschen Personalausweises (ab August 2021) oder Reisepasses (ab 2005). Versicherte können sich damit per Smartphone für die ePA authentisieren, ohne PIN oder Praxisbesuch. Er ergänzt die [[Gesundheits-ID]] und die [[eGK]].
 
 ## Technische Details
 

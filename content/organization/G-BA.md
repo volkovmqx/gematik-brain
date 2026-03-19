@@ -55,7 +55,7 @@ Dieses zweistufige Verfahren war bei Einführung des DVG 2019 neu und internatio
 Das Arzneimittelmarktneuordnungsgesetz (AMNOG, 2011) schrieb das frühe Nutzenbewertungsverfahren vor. Der Ablauf:
 
 1. Pharmaunternehmen reicht Dossier ein (Zulassungstag)
-2. IQWIG (Institut für Qualität und Wirtschaftlichkeit im Gesundheitswesen) bewertet den Zusatznutzen
+2. [[IQWiG]] (Institut für Qualität und Wirtschaftlichkeit im Gesundheitswesen) bewertet den Zusatznutzen
 3. G-BA fasst Beschluss (Bewertung und Einstufung)
 4. GKV-Spitzenverband und Hersteller verhandeln Erstattungsbetrag
 

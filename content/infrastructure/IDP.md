@@ -3,7 +3,7 @@ title: IDP - Identity Provider
 audience: [technical, non-technical]
 tags: [infrastruktur, authentisierung, oauth, idp]
 aliases: [IDP, IDP-Dienst, Identity Provider, sektoraler IDP, TI-Federation]
-maturity: setzling
+maturity: wachsend
 ---
 
 # IDP - Identity Provider
@@ -80,7 +80,13 @@ Der IDP prüft bei jeder Authentisierung Gültigkeit, Integrität und Signatur d
 
 Die TI-Federation verteilt die Authentisierung auf mehrere sektorale IDPs. Das schafft Redundanz in der Theorie, birgt aber Konzentrationsrisiken in der Praxis: Wenn ein sektoraler IDP, der für viele Kassen zuständig ist, ausfällt, sind alle über ihn angebundenen Leistungserbringer nicht mehr authentisierbar.
 
-Am **10. Februar 2026** fiel der sektorale IDP der **IBM Deutschland GmbH** ab ca. 3:05 Uhr aus. Vermutliche Ursache war ein Rauchmelder-Problem in einem Frankfurter Rechenzentrum, das zu einem automatischen Shutdown führte. Behebung gegen 11:00 Uhr. Dauer: ca. 8 Stunden. Betroffen waren **Versicherte**, die sich über die [[Gesundheits-ID]] via diesen sektoralen IDP authentisierten. Für sie war der Zugang zu TI-Diensten wie [[ePA]] und [[E-Rezept]] während des Ausfalls nicht möglich. Das Ereignis verdeutlicht die Abhängigkeit kritischer TI-Anwendungen von einzelnen sektoralen IDPs.
+Am **10. Februar 2026** kam es zu zwei voneinander unabhängigen Störungen:
+
+1. **IBM sektoraler IDP**: Der sektorale IDP der IBM Deutschland GmbH fiel ab ca. 3:05 Uhr aus. Vermutliche Ursache war ein Rauchmelder-Problem in einem Frankfurter Rechenzentrum, das zu einem automatischen Shutdown führte. Behebung gegen 11:00 Uhr. Dauer: ca. 8 Stunden. Betroffen waren **Versicherte**, die sich über die [[Gesundheits-ID]] via diesen sektoralen IDP authentisierten. Für sie war der Zugang zu TI-Diensten wie [[ePA]] während des Ausfalls nicht möglich.
+
+2. **T-Systems VPN-Zugangsdienst**: Parallel fiel der VPN-Zugangsdienst von T-Systems aus, der für die Netzwerkkonnektivität von Leistungserbringern in die TI zuständig ist. Betroffen waren Arztpraxen und andere Einrichtungen, die über diesen Zugangsdienst mit der TI verbunden sind. Die beiden Vorfälle waren technisch unabhängig voneinander, trafen die TI jedoch am selben Tag.
+
+Das Ereignis verdeutlicht die Abhängigkeit kritischer TI-Anwendungen von einzelnen Infrastrukturanbietern.
 
 ## Verknüpfungen
 

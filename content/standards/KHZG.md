@@ -29,7 +29,7 @@ Das KHZG und die zugehörige Krankenhauszukunftsfonds-Verordnung (KHZFV) definie
 
 | Nr. | Fördertatbestand |
 |-----|-----------------|
-| 1 | Patientenportale (Online-Aufnahme, digitale Patientenkommunikation) |
+| 1 | [[Patientenportal\|Patientenportale]] (Online-Aufnahme, digitale Patientenkommunikation) |
 | 2 | Klinische Entscheidungsunterstützungssysteme |
 | 3 | Automatisierung von Krankenhausprozessen |
 | 4 | Digitale Pflege- und Behandlungsdokumentation |
@@ -51,7 +51,7 @@ Krankenhäuser, die KHZG-Mittel erhielten, sind verpflichtet, ab dem 1. Januar 2
 
 Das KHZG schuf einen Förderrahmen, der eng mit dem [[ISiK]]-Standard verzahnt ist. Viele geförderte Digitalisierungsvorhaben betreffen die Schnittstellen zwischen [[KIS|Krankenhausinformationssystemen (KIS)]] und anderen Subsystemen. [[ISiK]] definiert, wie diese Systeme interoperabel kommunizieren müssen.
 
-Konkret: Krankenhäuser, die KHZG-Mittel für Patientenportale, digitale Dokumentation oder Medikationsmanagement einsetzen, mussten ISiK-konforme Schnittstellen bereitstellen. Die ISiK-Stufe 3 (Pflichttermin 01.07.2025) ist als Nachweis für die Interoperabilität der geförderten Systeme relevant.
+Konkret: Krankenhäuser, die KHZG-Mittel für [[Patientenportal|Patientenportale]], digitale Dokumentation oder Medikationsmanagement einsetzen, mussten ISiK-konforme Schnittstellen bereitstellen. Die ISiK-Stufe 3 (Pflichttermin 01.07.2025) ist als Nachweis für die Interoperabilität der geförderten Systeme relevant.
 
 ### Digitalisierungsreife-Messung
 

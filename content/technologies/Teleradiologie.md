@@ -58,7 +58,7 @@ Ein typischer Teleradiologie-Workflow:
 
 Die Teleradiologie im engeren Sinne (Befundung ohne Radiologen vor Ort) ist an strenge Anforderungen geknüpft:
 
-- **Strahlenschutzverordnung (StrlSchV 2018, § 123)**: Der Teleradiologieradiologe muss unmittelbar erreichbar sein und steht mittels elektronischer Datenübertragung in direktem Kontakt mit der aufnehmenden Einrichtung. Die Befundung muss gemäß § 123 StrlSchV unmittelbar nach Bildübertragung erfolgen.
+- **Strahlenschutzverordnung (StrlSchV 2018, § 123)**: Der Teleradiologe muss unmittelbar erreichbar sein und den Befund sofort nach Bildübermittlung erstellen (§ 123 StrlSchV).
 - **DIN 6868-159**: Technische Norm für Teleradiologie-Systeme; regelt Qualitätsanforderungen an Übertragung und Befundungsmonitor.
 - **Datenschutz**: Bilder enthalten direkte Patientenidentifikatoren ([[KVNR]], Name, Geburtsdatum). Die Übertragung muss verschlüsselt erfolgen. Für Forschung oder externe Anbieter außerhalb Deutschlands ist [[DICOM]]-De-Identifikation nach PS3.15 Annex E erforderlich.
 - **Genehmigungspflicht**: Der externe Befunder benötigt eine eigene Röntgengenehmigung für Teleradiologie.
@@ -87,3 +87,4 @@ Die Teleradiologie im engeren Sinne (Befundung ohne Radiologen vor Ort) ist an s
 - [KBV: Radiologische Telekonsilien](https://www.kbv.de/html/27985.php)
 - [NIH/PMC: Teleradiologie und Telemedizin](https://pmc.ncbi.nlm.nih.gov/articles/PMC7545155/)
 - [DICOM Standard PS3.15 Annex E: De-Identification](https://www.dicomstandard.org/current)
+- [§ 123 Strahlenschutzverordnung 2018 (StrlSchV) - Gesetze im Internet](https://www.gesetze-im-internet.de/strlschv_2018/__123.html)

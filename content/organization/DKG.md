@@ -48,7 +48,7 @@ Laut § 373 [[SGB V]] muss das [[KIS]] bestimmte Datenaustauschfähigkeiten best
 Das Krankenhauszukunftsgesetz ([[KHZG]]) von 2020 stellte 4,3 Milliarden Euro für die Digitalisierung von Krankenhäusern bereit. Die DKG war maßgeblich an der Ausgestaltung der Fördertatbestände beteiligt und veröffentlichte Stellungnahmen zur Förderrichtlinie. Ein Großteil der KHZG-Investitionen floss in:
 
 - Verbesserung der [[KIS]]-Systeme
-- Einrichtung von Patientenportalen
+- Einrichtung von [[Patientenportal|Patientenportalen]]
 - Anbindung an die [[Telematikinfrastruktur]] (TI-Anschluss für Krankenhäuser)
 - [[ePA]]-Module für Krankenhäuser
 

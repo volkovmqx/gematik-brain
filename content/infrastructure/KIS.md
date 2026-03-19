@@ -91,7 +91,7 @@ Das [[KRITIS-Dachgesetz]] (Bundestag 29. Januar 2026, Bundesrat 6. März 2026) s
 
 ### Krankenhausfinanzierungsgesetz und KHZG
 
-Das [[KHZG|Krankenhauszukunftsgesetz (KHZG, 2020)]] stellte Fördermittel von 4,3 Milliarden Euro für die Digitalisierung von Krankenhäusern bereit. Ein Förderschwerpunkt war die Beschaffung und Modernisierung von KIS-Systemen sowie die Implementierung von Patientenportalen und digitalen Prozessen. KHZG-Vorhaben müssen Interoperabilitätsanforderungen erfüllen, die sich mit ISiK überschneiden.
+Das [[KHZG|Krankenhauszukunftsgesetz (KHZG, 2020)]] stellte Fördermittel von 4,3 Milliarden Euro für die Digitalisierung von Krankenhäusern bereit. Ein Förderschwerpunkt war die Beschaffung und Modernisierung von KIS-Systemen sowie die Implementierung von [[Patientenportal|Patientenportalen]] und digitalen Prozessen. KHZG-Vorhaben müssen Interoperabilitätsanforderungen erfüllen, die sich mit ISiK überschneiden.
 
 ## Verknüpfungen
 

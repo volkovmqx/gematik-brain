@@ -24,7 +24,7 @@ DiPaG standardisiert diesen Prozess digital und bindet ihn in die TI ein. Damit 
 
 ### Abgrenzung zur GKV-Abrechnung
 
-Die GKV-Abrechnung läuft über [[TA1]] und [[Apothekenrechenzentrum|Apothekenrechenzentren]] (für Apotheken) bzw. über die Kassenärztlichen Vereinigungen (für Arztpraxen). DiPaG adressiert primär die **privatärztliche Abrechnung (GOÄ/GOZ)** und Selbstzahlerleistungen, bei denen eine Rechnung direkt an den Patienten geht.
+Die GKV-Abrechnung läuft über [[TA1]] und [[Apothekenrechenzentrum|Apothekenrechenzentren]] (für Apotheken) bzw. über die Kassenärztlichen Vereinigungen (für Arztpraxen). DiPaG adressiert primär die **privatärztliche Abrechnung ([[GOÄ]]/[[GOZ]])** und Selbstzahlerleistungen, bei denen eine Rechnung direkt an den Patienten geht.
 
 ## Technische Details
 

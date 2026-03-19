@@ -3,7 +3,7 @@ title: gRPC
 audience: [technical]
 tags: [technologies, protokoll, api, ti-2-0, soap]
 aliases: [Google Remote Procedure Call, gRPC, Remote Procedure Call]
-maturity: setzling
+maturity: wachsend
 ---
 
 # gRPC
@@ -16,7 +16,7 @@ Wenn zwei Computerprogramme miteinander reden, benutzen sie eine Sprache und ein
 
 ## Überblick
 
-gRPC wurde ursprünglich von Google entwickelt und im Februar 2015 als Open-Source-Projekt veröffentlicht. Im Februar 2017 wurde es in die Cloud Native Computing Foundation (CNCF) aufgenommen. Es ist in nahezu allen modernen Programmiersprachen verfügbar (Java, Go, C#, Python, JavaScript, Rust u.a.).
+gRPC wurde ursprünglich von Google entwickelt und im Februar 2015 als Open-Source-Projekt veröffentlicht. Im März 2017 wurde es in die Cloud Native Computing Foundation (CNCF) aufgenommen. Es ist in nahezu allen modernen Programmiersprachen verfügbar (Java, Go, C#, Python, JavaScript, Rust u.a.).
 
 In der deutschen [[Telematikinfrastruktur]] spielte bislang SOAP (Simple Object Access Protocol) die zentrale Rolle für die Kommunikation zwischen Primärsystemen und dem [[Konnektoren|Konnektor]] sowie zwischen Fachdiensten. Mit der Einführung von TI 2.0 werden neue Schnittstellen auf gRPC umgestellt oder ergänzt. Der [[TI-Gateway]], der den Hardware-Konnektor ablöst, unterstützt gRPC neben den alten SOAP-Schnittstellen.
 

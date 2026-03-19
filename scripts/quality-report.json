@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-03-19T00:00:00Z",
+  "timestamp": "2026-03-19T07:00:00Z",
   "overallScore": 84,
   "testResults": {
-    "passed": 134,
-    "failed": 0,
-    "total": 134
+    "passed": 138,
+    "failed": 1,
+    "total": 139
   },
   "articles": [
     {
@@ -165,14 +165,13 @@
     },
     {
       "file": "content/technologies/gRPC.md",
-      "verdict": "revise",
-      "score": 62,
+      "verdict": "pass",
+      "score": 88,
       "issues": [
-        "FACTUAL ERROR: Article states gRPC is 'seit 2016 als Open-Source-Projekt unter der Cloud Native Computing Foundation (CNCF) verfügbar'. Both dates are wrong: (1) Google open-sourced gRPC in February 2015 (not 2016). (2) CNCF adopted gRPC in March 2017 (not 2016). Source: Google Open Source Blog announcement February 26, 2015; CNCF announcement March 1, 2017.",
-        "All required sections present.",
-        "TI-Gateway and VSDM 2.0 gRPC integration claims are unverifiable from public sources but directionally consistent with gematik TI 2.0 strategy."
+        "Minor precision: Article states 'Im März 2017 wurde es in die CNCF aufgenommen'. The formal TOC acceptance vote was February 16, 2017; the public CNCF announcement was March 1, 2017. 'März 2017' refers to the public announcement which is an acceptable framing.",
+        "Source URL https://docs.cloud.google.com/api-gateway/docs/grpc-overview links to Google Cloud API Gateway docs rather than a canonical gRPC overview page."
       ],
-      "fixInstructions": "Fix the CNCF/year claim in Überblick: replace 'seit 2016 als Open-Source-Projekt unter der Cloud Native Computing Foundation (CNCF) verfügbar' with 'seit Februar 2015 als Open-Source-Projekt von Google veröffentlicht und seit März 2017 unter der Cloud Native Computing Foundation (CNCF)'."
+      "fixInstructions": "Optional: For precision, add a footnote: 'formale CNCF-Aufnahme 16. Februar 2017, öffentliche Ankündigung 1. März 2017'. Replace the Google Cloud API Gateway source with the CNCF official announcement: https://www.cncf.io/blog/2017/03/01/cloud-native-computing-foundation-host-grpc-google/"
     },
     {
       "file": "content/technologies/Teleradiologie.md",
@@ -200,15 +199,15 @@
     {
       "file": "content/technologies/ePA.md",
       "verdict": "pass",
-      "score": 88,
+      "score": 87,
       "issues": [
-        "ePass addition verified: launch date 25. März 2026, developer Nect GmbH, distributor BITMARCK, coverage ca. 80% GKV-Kassen, legal basis BEEP-Gesetz in force 1. Januar 2026 — all confirmed.",
-        "ePass NFC requirement 'Personalausweis ab August 2021': plausible but unverifiable from public sources.",
-        "Reisepass ab 2005: correct.",
-        "Cross-article consistency with Gesundheits-ID.md: all ePass facts match.",
-        "All required sections present. 5 sources."
+        "dgMP section: eML since January 2025 (E-Rezept dispensing data auto-copied) verified correct for pilot regions; broader rollout April/May 2025.",
+        "eMP pilot July 2026, rollout October 2026: gematik-aligned sources confirm October 2026; one Ärztezeitung source mentioned May 2026 for eMP — minor ambiguity only, not a clear error.",
+        "Nachtragen (manual medication entry by physicians without E-Rezept) since March 2026: confirmed by gematik newsroom.",
+        "BITMARCK referenced without wiki-link (no BITMARCK article exists).",
+        "All required sections present. 6 sources including gematik official."
       ],
-      "fixInstructions": "None required. Consider verifying the 'ab August 2021' date for Personalausweis NFC chip against Bundesinnenministerium documentation."
+      "fixInstructions": "1. Clarify eML start: 'zunächst in Modellregionen (ab 15. Januar 2025), bundesweit ab April 2025' to reflect pilot vs. full rollout distinction. 2. Remove the [[BITMARCK]] reference or write it as plain text until a BITMARCK article is created."
     },
     {
       "file": "content/infrastructure/Gesundheits-ID.md",
@@ -248,13 +247,14 @@
     },
     {
       "file": "content/infrastructure/IDP.md",
-      "verdict": "revise",
-      "score": 74,
+      "verdict": "pass",
+      "score": 85,
       "issues": [
-        "FACTUAL IMPRECISION: The IBM outage section conflates two separate 10.02.2026 incidents — IBM sektoraler IDP (affecting Versicherte authenticating via Gesundheits-ID) and T-Systems VPN-Zugangsdienst (affecting Leistungserbringer network connectivity) are distinct. The article incorrectly attributes the IBM IDP effects to T-Systems-connected providers.",
-        "Outage time and cause details verified correct."
+        "IBM sektoraler IDP and T-Systems VPN outages on 10.02.2026 are correctly and clearly separated as two independent events — verified correct.",
+        "RSA 2048 note 'gültig bis Ende 2025' is now in the past (March 2026). Article should note transition is complete.",
+        "No official gematik Störungsportal source cited for the February 10 outage incidents."
       ],
-      "fixInstructions": "Revise IBM outage paragraph to separate the two incidents: IBM sektoraler IDP affected Versicherte (Gesundheits-ID/ePA access); T-Systems VPN Zugangsdienst affected Leistungserbringer connectivity — these are distinct failures on the same day."
+      "fixInstructions": "1. Update RSA 2048 line: change 'gültig bis Ende 2025' to 'bis Ende 2025 gültig (seit 2026 abgelöst durch ECDSA)'. 2. If available, add a gematik Störungsportal or operations status link as a source for the February 10, 2026 incident."
     },
     {
       "file": "content/infrastructure/VZD.md",
@@ -301,13 +301,92 @@
         "FACTUAL ERROR (carried): NOVENTI described as entstanden aus NARZ/ARZ Darmstadt — incorrect. Same error as TA1.md."
       ],
       "fixInstructions": "Carried from previous cycle. Same fix as TA1.md."
+    },
+    {
+      "file": "content/technologies/Patientenportal.md",
+      "verdict": "revise",
+      "score": 72,
+      "issues": [
+        "FACTUAL ERROR: Line 48 attributes ISiK to 'BfArM in Zusammenarbeit mit der gematik und der HL7-Usergroup Deutschland'. ISiK is developed and published exclusively by gematik under §373 SGB V. BfArM has no role in ISiK development. Verified against fachportal.gematik.de/informationen-fuer/isik and gematik.de/anwendungen/isik.",
+        "url_dead: Source URL https://simplifier.net/isik-basis-v4 returns HTTP 404. The package or guide at this path does not exist."
+      ],
+      "fixInstructions": "1. Replace line 48: change 'Der ISiK-Standard wird vom [[BfArM]] (Bundesinstitut für Arzneimittel und Medizinprodukte) in Zusammenarbeit mit der [[gematik]] und der HL7-Usergroup Deutschland veröffentlicht.' to 'Der ISiK-Standard wird von der [[gematik]] im gesetzlichen Auftrag (§ 373 [[SGB-V]]) entwickelt und veröffentlicht.' 2. Replace the dead Simplifier URL with https://fachportal.gematik.de/informationen-fuer/isik or the correct Simplifier guide URL for ISiK Stufe 4."
+    },
+    {
+      "file": "content/organization/IQWiG.md",
+      "verdict": "pass",
+      "score": 90,
+      "issues": [
+        "Founded 2004, GMG, Köln, §139a SGB V: all confirmed against iqwig.de and IQWiG legal foundations page.",
+        "Employee count 'rund 300' is unverifiable from public sources. Last confirmed figure (2020 annual report) was 246. Current count may be ~300 but cannot be confirmed without the 2024 annual report.",
+        "EU-HTA participation 'seit 2025' and AMNOG-Verfahren with EU-HTA Vorabprüfung 'Ab Frühjahr 2026': plausible given EU Regulation 2021/2282 schedule but unverifiable against a primary source in this cycle."
+      ],
+      "fixInstructions": "Consider qualifying employee count: 'rund 250 bis 300 Mitarbeiterinnen und Mitarbeiter' or adding '(Stand: Jahresbericht 2024)'. The EU-HTA timeline claim should be sourced or qualified as 'geplant'."
+    },
+    {
+      "file": "content/technologies/ePass.md",
+      "verdict": "revise",
+      "score": 75,
+      "issues": [
+        "broken_link: [[BITMARCK]] has no matching file or alias in the knowledge base (confirmed by test-report.json). BITMARCK is the primary deployment partner and the broken link degrades navigation.",
+        "Key facts verified: launch 25. März 2026, developer Nect GmbH, 80% GKV-Kassen via BITMARCK, BEEP-Gesetz in force 1. Januar 2026, NFC-chip Personalausweis ab August 2021, Reisepass ab 2005 — all confirmed by BITMARCK Presseportal press release.",
+        "Sources are primarily press releases (Presseportal, healthcare-digital, startbase, Ärzteblatt). No official gematik source (e.g., gematik Zulassung page or gematik.de newsroom) is cited."
+      ],
+      "fixInstructions": "1. Either create content/organization/BITMARCK.md or replace [[BITMARCK]] with plain text 'BITMARCK (IT-Dienstleister für rund 80 Prozent der GKV-Kassen)'. 2. Add an official gematik source, e.g. https://www.gematik.de/newsroom referencing the ePass Zulassung, or the BEEP-Gesetz page at BMG as a fifth source."
+    },
+    {
+      "file": "content/standards/IVDR.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "Key dates verified: verabschiedet 5. April 2017, in Kraft 25. Mai 2017 — confirmed correct against EUR-Lex.",
+        "Transition class deadlines (D: 26.05.2025, C: 26.05.2026, B/A: 26.05.2027) verified correct for new products requiring Benannte Stelle for the first time.",
+        "Class D deadline (26. Mai 2025) is now a past date. Article presents it as historical data but does not explicitly note it has already elapsed.",
+        "Extended transition deadlines for legacy IVDD-certified products (D: 31.12.2027, C: 31.12.2028, B/sterile A: 31.12.2029) are not mentioned. These are significant for practitioners."
+      ],
+      "fixInstructions": "1. Add a note that the Class D deadline (26. Mai 2025) has passed and Class D products must now be IVDR-certified. 2. Add a subsection covering the extended transition periods for products already CE-marked under IVDD: Klasse D bis 31.12.2027, Klasse C bis 31.12.2028, Klasse B/steriles A bis 31.12.2029."
+    },
+    {
+      "file": "content/standards/GOZ.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [
+        "Punktwert 5,62421 Cent confirmed against multiple official GOZ 2012 sources (LZK BW PDF, ZÄK Berlin).",
+        "GOZ 1. Januar 2012 in Kraft: confirmed correct.",
+        "Source URL https://www.kzbv.de/wp-content/uploads/gebuehrenordnung_fuer_zahnaerzte_2012.pdf returned empty Playwright response. KZBV migrated to WordPress; this PDF path may be broken.",
+        "BZÄK source URL was not verified via Playwright in this cycle."
+      ],
+      "fixInstructions": "Replace the KZBV PDF source URL with the official gesetze-im-internet.de text: https://www.gesetze-im-internet.de/goz_1987/BJNR023160987.html — this is the authoritative legal text and is stable."
+    },
+    {
+      "file": "content/technologies/TI-Messenger.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [
+        "Security hotfixes verified: A_26015-02 (TI-Messenger ePA, E2E encryption mandatory for all rooms) and A_28755 (TI-Messenger Pro, prohibition of public rooms) confirmed by web search against gematik wiki.",
+        "The gematik wiki source (TI-Messenger Compass blog) may require a gematik account to access. URL is valid but not fully public.",
+        "Requirement numbers and product assignment (A_26015-02 for ePA variant, A_28755 for Pro) verified correct."
+      ],
+      "fixInstructions": "Add the TI-Messenger_26_1 gemspec release page as a more publicly accessible additional source: https://gemspec.gematik.de/releases/TI-Messenger_26_1/index.html"
     }
   ],
-  "contradictions": [],
+  "contradictions": [
+    {
+      "claim": "ISiK publisher",
+      "articleA": "content/technologies/Patientenportal.md states ISiK is published by BfArM in collaboration with gematik and HL7-Usergroup",
+      "articleB": "content/standards/ISiK.md correctly states ISiK is developed by gematik under §373 SGB V; gematik.de/anwendungen/isik and fachportal.gematik.de confirm gematik as sole publisher"
+    },
+    {
+      "claim": "BITMARCK wiki-link consistency",
+      "articleA": "content/technologies/ePass.md uses [[BITMARCK]] as a wiki-link (broken)",
+      "articleB": "content/technologies/ePA.md references BITMARCK as plain text without a wiki-link; no BITMARCK article exists in the knowledge base"
+    }
+  ],
   "staleArticles": [
-    "content/technologies/gRPC.md: states 'seit 2016 unter CNCF' — correct dates are open-source February 2015 (Google), CNCF March 2017",
-    "content/technologies/Teleradiologie.md: references § 25 StrlSchV for Teleradiologie — current law since 1. Januar 2019 is § 123 StrlSchV 2018",
-    "content/technologies/Fernsignatur.md: cites eIDAS 'Art. 29, Erwägungsgrund 52' and 'Art. 3 Nr. 23' for Fernunterschrift — Art. 29a (explicit Fernsignatur framework) was added in the 2024 consolidated eIDAS; citations should reference the 2024 version"
+    "content/infrastructure/IDP.md: RSA 2048 listed as 'gültig bis Ende 2025' — this deadline has elapsed (current date: 19.03.2026); should be updated to note transition to ECDSA is complete.",
+    "content/standards/IVDR.md: Class D transition deadline (26. Mai 2025) is a past date but not explicitly noted as elapsed; readers may be confused about whether it is upcoming.",
+    "content/technologies/Teleradiologie.md: references §25 StrlSchV for Teleradiologie — current law since 1. Januar 2019 is §123 StrlSchV 2018 (carried from previous cycle)",
+    "content/technologies/Fernsignatur.md: cites eIDAS Art. 29 and Art. 3 Nr. 23 for Fernunterschrift — Art. 29a (explicit Fernsignatur framework) was added in the 2024 consolidated eIDAS (carried from previous cycle)"
   ],
   "summary": {
     "reviewed": 9,
@@ -315,9 +394,12 @@
     "revise": 2,
     "fail": 0,
     "keyIssues": [
-      "Fernsignatur.md: imprecise eIDAS article citations — Art. 29 and Art. 3 Nr. 23 do not explicitly define Fernunterschrift in the original 910/2014; Art. 29a (added in 2024 consolidated version) is the correct reference. Old fachportal URL (hersteller-anbieter path) needs update.",
-      "BEEP-Gesetz.md: Vermittlungsausschuss process description incomplete — article omits that a second Bundestag vote and Bundesrat vote on 19.12.2025 were needed to adopt the Vermittlungsergebnis before the law could enter into force.",
-      "Carried from previous cycles: gRPC.md (CNCF year), Teleradiologie.md (§ 25 StrlSchV), BfDI.md (Amtsantritt date), eArztbrief.md (EBM Cent value), TA1.md and Apothekenrechenzentrum.md (NOVENTI lineage) — these remain unresolved."
+      "Patientenportal.md FACTUAL ERROR: ISiK attributed to BfArM — must be corrected to gematik. Dead URL simplifier.net/isik-basis-v4 must be replaced.",
+      "ePass.md: broken wiki-link [[BITMARCK]] — no article exists; either create BITMARCK article or plain-text the reference.",
+      "IDP.md: RSA 2048 deprecation note outdated — deadline of Ende 2025 has passed, should reflect completed transition.",
+      "IVDR.md: Class D deadline (26.05.2025) has passed; article should note this and add extended IVDD transition periods.",
+      "gRPC.md: CNCF date ambiguity (Feb 16 formal vs March 1 public) is minor; source URL for Google Cloud API Gateway is off-topic and should be replaced.",
+      "Carried unresolved: Teleradiologie.md (§25 vs §123 StrlSchV), Fernsignatur.md (eIDAS Art. citations), BfDI.md (Amtsantritt date), eArztbrief.md (EBM Cent), TA1.md and Apothekenrechenzentrum.md (NOVENTI lineage)."
     ]
   }
 }

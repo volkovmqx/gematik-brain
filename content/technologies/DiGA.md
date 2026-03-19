@@ -58,7 +58,7 @@ Seit Oktober 2025 können DiGA als [[E-Rezept]] verordnet werden. Ein Pilotproje
 
 ### Integration mit dem TI-Messenger
 
-Der [[TI-Messenger]] sieht eine Zugangsoption für Versicherte über integrierte Apps vor, darunter auch DiGA und Patientenportale.
+Der [[TI-Messenger]] sieht eine Zugangsoption für Versicherte über integrierte Apps vor, darunter auch DiGA und [[Patientenportal|Patientenportale]].
 
 ### Zugangsweg
 

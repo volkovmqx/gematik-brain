@@ -64,9 +64,15 @@ Die ePA verwendet [[FHIR]] R4 als primäres Datenformat. Deutsche FHIR-Profile f
 
 Mit Release ePA 3.1.2 (Mai 2025) wurden FHIR Implementation Guides aktualisiert, die den Medikationsdienst und die Basisfunktionalitäten der Akte abdecken. Die Guides sind auf Simplifier.net veröffentlicht und bilden die technische Grundlage für die FHIR-basierten ePA-Schnittstellen.
 
-### Medikationsdienst
+### Digitaler Medikationsprozess (dgMP)
 
-Der Medikationsdienst ist ein eigener FHIR-basierter Service innerhalb der ePA. Er verwaltet die Medikationsinformationen strukturiert nach dem eMedikationsplan-Format. Ab Oktober 2026 sollen Apotheken Schreibzugriff auf den Medikationsdienst erhalten, um dispensierte Arzneimittel direkt einzutragen. Die [[AMTS]]-Prüfung (Arzneimitteltherapiesicherheit) wird dadurch unterstützt. Außerdem sollen strukturierte Dosierungsangaben eingeführt werden.
+Der **digital gestützte Medikationsprozess (dgMP)** ist seit März 2026 in seiner ersten Stufe produktiv. Er besteht aus zwei Komponenten, die klar zu unterscheiden sind:
+
+**Elektronische Medikationsliste (eML)**: Automatische Sammlung von Medikamentendaten in der ePA. Seit Januar 2025 werden E-Rezept-Dispensierdaten beim Einlösen automatisch in die eML der ePA kopiert. Seit März 2026 können Ärzte zusätzlich Medikamente ohne vorliegendes E-Rezept manuell nachtragen ("Nachtragen"). Die eML ist ein laufendes, chronologisches Protokoll der verordneten und abgegebenen Medikamente.
+
+**Elektronischer Medikationsplan (eMP)**: Strukturierter Plan mit Dosierungsangaben, Indikationen und Statusangaben (geplant/aktiv/pausiert/beendet) sowie [[AMTS]]-relevanten Zusatzinformationen. Die Pilotphase für den eMP startet im Juli 2026 in ausgewählten Regionen. Der bundesweite Rollout des vollständigen eMP ist für Oktober 2026 geplant.
+
+Technische Grundlage ist ePA 3.1.2 (Mai 2025). Ab Oktober 2026 erhalten Apotheken Schreibzugriff auf den Medikationsdienst, um dispensierte Arzneimittel (einschließlich OTC-Medikamente) direkt einzutragen.
 
 ### Vertrauenswürdige Ausführungsumgebung (VAU)
 
@@ -113,6 +119,7 @@ Die dauerhafte Lösung kommt über den **[[PoPP]]-Dienst** (Proof of Patient Pre
 
 ## Quellen
 
+- [gematik: Neue Funktionen der ePA für alle (dgMP, März 2026)](https://www.gematik.de/newsroom/news-detail/aktuelles-ueberblick-das-sind-die-neuen-funktionen-der-epa-fuer-alle)
 - [ePA für alle - Fachportal](https://fachportal.gematik.de/anwendungen/epa-fuer-alle)
 - [ePA Spezifikationen](https://gemspec.gematik.de/releases/ePA_3_1_3-1/)
 - [ePA Wiki](https://wiki.gematik.de/pages/viewpage.action?pageId=588640498)

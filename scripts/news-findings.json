@@ -1,6 +1,6 @@
 {
-  "lastChecked": "2026-03-18",
-  "lastRun": "2026-03-18T14:30:00Z",
+  "lastChecked": "2026-03-19",
+  "lastRun": "2026-03-19T10:00:00Z",
   "findings": [
     {
       "title": "eMedikationsplan: Start verschoben auf Oktober 2026",
@@ -1030,8 +1030,9 @@
       "summary": "Der digital gestützte Medikationsprozess (dgMP) ist seit März 2026 in erster Stufe produktiv. Bestandteile: (1) Elektronische Medikationsliste (eML): Seit Januar 2025 werden E-Rezept-Dispensierdaten automatisch in die ePA kopiert; seit März 2026 können Ärzte auch Medikamente ohne vorliegendes E-Rezept nachtragen. (2) Elektronischer Medikationsplan (eMP): Strukturierter Plan mit Dosierungsangaben, Indikationen, Statusangaben (geplant/aktiv/pausiert/beendet) und AMTS-relevanten Zusatzinformationen. Pilotphase für den eMP läuft ab Juli 2026 in ausgewählten Regionen; bundesweiter Rollout des vollständigen eMedikationsplans erst Oktober 2026. Grundlage ist ePA 3.1.2 (Mai 2025), technische Konzeptspezifikation von gematik im Juli 2025 vorveröffentlicht.",
       "relevantArticles": ["ePA.md", "E-Rezept.md"],
       "category": "specification",
-      "action": "update",
-      "details": "ePA.md sollte den March-2026-Start der dgMP-Phase-1 (Arzt-Nachtragen ohne E-Rezept) präziser darstellen. Der Artikel trennt eML und eMP noch nicht klar genug. Ein eigener Unterabschnitt 'Digitaler Medikationsprozess (dgMP)' wäre sinnvoll.",
+      "action": "applied",
+      "appliedDate": "2026-03-19",
+      "details": "ePA.md: Neuer Unterabschnitt 'Digitaler Medikationsprozess (dgMP)' mit klarer Trennung von eML und eMP ergänzt.",
       "suggestedTerm": "dgMP"
     },
     {
@@ -1042,6 +1043,28 @@
       "relevantArticles": ["ePA.md"],
       "category": "specification",
       "action": "info_only"
+    },
+    {
+      "title": "TI-Messenger: Sicherheits-Hotfixes für ePA- und Pro-Client (März 2026)",
+      "date": "2026-03-05",
+      "source": "https://wiki.gematik.de/spaces/TIMCOMP/pages/604603166/TI-Messenger+Compass+-+The+TI-M+Blog",
+      "summary": "Anfang März 2026 veröffentlichte gematik zwei Sicherheits-Hotfixes für den TI-Messenger. (1) TI-Messenger ePA: Clients dürfen Räume nicht mehr mit öffentlichen Join-Regeln, welt-lesbarem Verlauf oder deaktivierter Verschlüsselung konfigurieren (Anforderung A_26015-02). (2) TI-Messenger Pro: Neue Zugangsbeschränkungen für bestehende öffentliche Räume; Nutzung auf Mitglieder desselben Homeservers begrenzt (Anforderung A_28755). Beide Hotfix-Versionen erhalten Status 'gültig'; Vorgängerversionen werden abgekündigt.",
+      "relevantArticles": ["TI-Messenger.md"],
+      "category": "security",
+      "action": "applied",
+      "appliedDate": "2026-03-19",
+      "details": "TI-Messenger.md: Neuer Unterabschnitt 'Sicherheits-Hotfixes März 2026' im Abschnitt 'Sicherheit' ergänzt mit A_26015-02 (E2E-Pflicht) und A_28755 (Verbot öffentlicher Räume)."
+    },
+    {
+      "title": "Bundeskabinett beschließt Medizinregistergesetz (11. März 2026)",
+      "date": "2026-03-11",
+      "source": "https://www.bundesgesundheitsministerium.de/service/gesetze-und-verordnungen/detail/medizinregistergesetz",
+      "summary": "Das Bundeskabinett beschloss am 11. März 2026 den Regierungsentwurf des Medizinregistergesetzes (MRG). Vollständiger Titel: 'Gesetz zur Stärkung von Medizinregistern und zur Verbesserung der Medizinregisterdatennutzung'. Das Gesetz soll die Vernetzung medizinischer Register (z.B. Krebsregister, Implantateregister, Schlaganfallregister) verbessern und deren Daten für die Versorgungsforschung besser nutzbar machen. Referentenentwurf: 27. Oktober 2025. Das Gesetz liegt nun dem Bundestag zur Beratung vor. Kein unmittelbarer Bezug zu gematik oder TI-Infrastruktur, aber relevant für das Forschungsdatenzentrum Gesundheit (FDZ) und die EHDS-Umsetzung.",
+      "relevantArticles": ["GDNG.md", "BfArM.md"],
+      "category": "regulation",
+      "action": "monitor",
+      "details": "Sobald das MRG in Kraft tritt, prüfen, ob GDNG.md oder ein neuer Artikel 'Medizinregistergesetz' angelegt werden sollte. Verbindung zum FDZ Gesundheit und EHDS-Umsetzung beachten.",
+      "suggestedTerm": "Medizinregistergesetz"
     }
   ]
 }

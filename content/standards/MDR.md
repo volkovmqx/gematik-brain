@@ -70,7 +70,7 @@ Für die Einordnung digitaler Gesundheitsprodukte hat die EU-Kommission ein Klas
 
 ### Abgrenzung zur MDR: IVDR
 
-Neben der MDR gibt es die IVDR (In-vitro-Diagnostika-Verordnung, EU 2017/746), die Labordiagnostika und Schnelltests regelt. DEMIS-Labormeldungen betreffen z.B. Produkte, die unter die IVDR fallen.
+Neben der MDR gibt es die [[IVDR]] (In-vitro-Diagnostika-Verordnung, EU 2017/746), die Labordiagnostika und Schnelltests regelt. DEMIS-Labormeldungen betreffen z.B. Produkte, die unter die IVDR fallen.
 
 ## Verknüpfungen
 
