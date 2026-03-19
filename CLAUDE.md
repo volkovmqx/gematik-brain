@@ -76,6 +76,25 @@ Rules:
 - Most articles need 1-3 callouts, not all 4
 - See `content/technologies/ePA.md` for a fully worked example
 
+## Voice callouts
+
+Audience-adapted callout blocks added by voice agents. These auto-expand/collapse based on the reader's profile (sectors/interests).
+
+| Callout | Color | Auto-expands when | Purpose |
+|---------|-------|-------------------|---------|
+| `[!praxis-tipp]` | teal | sectors ∩ {arztpraxis, zahnarzt, apotheke, pflege, therapie, hebamme} | Practice workflow advice, checklists |
+| `[!dev-quickstart]` | dark green | interests ∩ {technik} | API examples, curl commands, code snippets |
+| `[!frist-warnung]` | red | interests ∩ {compliance} | Legal deadlines, § references, Handlungsbedarf |
+| `[!patientenrecht]` | purple | interests ∩ {patient} | Patient rights, opt-out steps, simple language |
+| `[!klinik-integration]` | steel blue | sectors ∩ {krankenhaus} | KIS integration, HL7, hospital workflows |
+| `[!checkliste]` | gray | any matching sector | Step-by-step action lists (any audience) |
+
+Rules:
+- Voice callouts are **additive only**: they never replace or modify existing text
+- Placed contextually within the relevant section (not bunched at top/bottom)
+- Max 2 voice callouts of the same type per article
+- Must pass the "So what?" test: every paragraph answers why this reader cares
+
 ## File organization
 
 - `content/technologies/` - Applications: ePA, E-Rezept, KIM, TI-Messenger, eAU
@@ -107,8 +126,16 @@ The knowledge base is autonomously expanded by a newsroom of Claude Code agents 
 | **Reporter** | researcher | `.claude/agents/researcher.md` | Writes new articles, integrates news, fixes quality issues |
 | **Wire Desk** | news-scout | `.claude/agents/news-scout.md` | Scans recent news, writes `scripts/news-findings.json` |
 | **Fact-Checker** | fact-checker | `.claude/agents/fact-checker.md` | Verifies facts, validates URLs (Playwright MCP), writes `scripts/quality-report.json` |
+| **Voice Desk** | 5 voice agents | `.claude/agents/voice-*.md` | Adds audience-adapted callout blocks to articles |
 | **Copy Desk** | grammar-fixer | `.claude/agents/grammar-fixer.md` | Fixes umlauts, spelling, and grammar |
 | **Style Guide Bot** | — | `scripts/test.sh` | Deterministic structural checks (no LLM), writes `scripts/test-report.json` |
+
+Voice Desk agents:
+- `voice-praxis` — Praxis-Redakteur, adds `[!praxis-tipp]` callouts for medical practices
+- `voice-technik` — Technik-Redakteur, adds `[!dev-quickstart]` callouts for developers
+- `voice-compliance` — Compliance-Redakteur, adds `[!frist-warnung]` callouts for compliance officers
+- `voice-patient` — Verständlichkeits-Redakteur, adds `[!patientenrecht]` callouts for patients
+- `voice-krankenhaus` — Krankenhaus-Redakteur, adds `[!klinik-integration]` callouts for hospital IT
 
 ### Editorial workflow (one cycle)
 
@@ -118,8 +145,9 @@ The knowledge base is autonomously expanded by a newsroom of Claude Code agents 
 3. Builds assignment list (priority: fixes > news > new articles)
 4. Dispatches Reporter with assignments
 5. Dispatches Fact-Checker → review gate (max 1 revision round)
-6. Dispatches Copy Desk
-7. Runs test.sh final check
+6. Dispatches Voice Desk (5 voice agents in parallel on matching articles)
+7. Dispatches Copy Desk
+8. Runs test.sh final check
 ```
 
 ### Running the newsroom

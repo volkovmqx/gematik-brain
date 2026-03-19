@@ -312,16 +312,88 @@ document.addEventListener("nav", async () => {
     }
   })
 
+  // Voice callout visibility (audience-adapted content from voice agents)
+  const voiceCalloutMapping: Record<string, { matchType: "sectors" | "interests"; values: string[] }> = {
+    "praxis-tipp": { matchType: "sectors", values: ["arztpraxis", "zahnarzt", "apotheke", "pflege", "therapie", "hebamme"] },
+    "dev-quickstart": { matchType: "interests", values: ["technik"] },
+    "frist-warnung": { matchType: "interests", values: ["compliance"] },
+    "patientenrecht": { matchType: "interests", values: ["patient"] },
+    "klinik-integration": { matchType: "sectors", values: ["krankenhaus"] },
+    "checkliste": { matchType: "sectors", values: [] }, // expands for any matching sector
+  }
+
+  const voiceCallouts = document.querySelectorAll<HTMLElement>(
+    '.callout[data-callout="praxis-tipp"], .callout[data-callout="dev-quickstart"], .callout[data-callout="frist-warnung"], .callout[data-callout="patientenrecht"], .callout[data-callout="klinik-integration"], .callout[data-callout="checkliste"]',
+  )
+
+  voiceCallouts.forEach((callout) => {
+    const type = callout.dataset.callout ?? ""
+    const mapping = voiceCalloutMapping[type]
+    if (!mapping) return
+
+    const wasExpanded = expandedSet.has(pagePath + "#voice-" + type)
+
+    let matches = false
+    if (type === "checkliste") {
+      // checkliste expands when any profile sector matches the article
+      matches = active.sectors.length > 0
+    } else if (mapping.matchType === "sectors") {
+      matches = mapping.values.some((v) => active.sectors.includes(v))
+    } else {
+      matches = mapping.values.some((v) => active.interests.includes(v))
+    }
+
+    if (!matches && !wasExpanded) {
+      callout.classList.add("interesse-collapsed")
+      callout.dataset.calloutFold = ""
+      injectHint(callout)
+      const titleRow = callout.querySelector(".callout-title")
+      if (titleRow) {
+        titleRow.addEventListener("click", () => {
+          if (callout.classList.contains("interesse-collapsed")) {
+            // Override the interest key for voice callouts
+            callout.classList.remove("interesse-collapsed")
+            callout.style.opacity = ""
+            callout.style.borderBottom = ""
+            const hint = callout.querySelector(".interesse-hint")
+            if (hint) hint.remove()
+            const content = callout.querySelector(".callout-content") as HTMLElement | null
+            if (content) {
+              content.style.maxHeight = ""
+              content.style.paddingBottom = ""
+            }
+            expandedSet.add(pagePath + "#voice-" + type)
+            saveExpanded()
+          }
+        })
+      }
+    } else {
+      callout.classList.remove("interesse-collapsed")
+    }
+  })
+
   // Build interesse navigator in the right sidebar
   const existingNav = document.querySelector(".interesse-nav")
   if (existingNav) existingNav.remove()
 
-  if (interesseCallouts.length > 0) {
+  // Combine interesse + voice callouts for the navigator
+  const allProfileCallouts = [
+    ...Array.from(interesseCallouts),
+    ...Array.from(voiceCallouts),
+  ]
+
+  if (allProfileCallouts.length > 0) {
     const navTypeLabels: Record<string, string> = {
       compliance: "Compliance",
       technik: "Technik",
       business: "Business",
       patient: "Patientensicht",
+      "praxis-tipp": "Praxis-Tipp",
+      "dev-quickstart": "Dev Quickstart",
+      "frist-warnung": "Frist-Warnung",
+      patientenrecht: "Patientenrecht",
+      "klinik-integration": "Klinik-Integration",
+      checkliste: "Checkliste",
     }
 
     // Find the right sidebar (TableOfContents area)
@@ -335,17 +407,35 @@ document.addEventListener("nav", async () => {
       heading.textContent = "Perspektiven"
       nav.appendChild(heading)
 
-      interesseCallouts.forEach((callout) => {
+      allProfileCallouts.forEach((callout) => {
         const type = callout.dataset.callout ?? ""
-        const interest = type.replace("interesse-", "")
+        const isInteresse = type.startsWith("interesse-")
+        const key = isInteresse ? type.replace("interesse-", "") : type
         const titleEl = callout.querySelector(".callout-title-inner")
         const label =
-          titleEl?.textContent?.trim() ?? navTypeLabels[interest] ?? interest
+          titleEl?.textContent?.trim() ?? navTypeLabels[key] ?? key
 
         const btn = document.createElement("button")
         btn.className = "interesse-nav-item"
-        btn.dataset.type = interest
-        if (!active.interests.includes(interest)) {
+        btn.dataset.type = key
+
+        // Determine if this callout matches the profile
+        let isDimmed = false
+        if (isInteresse) {
+          isDimmed = !active.interests.includes(key)
+        } else {
+          const mapping = voiceCalloutMapping[type]
+          if (mapping) {
+            if (type === "checkliste") {
+              isDimmed = active.sectors.length === 0
+            } else if (mapping.matchType === "sectors") {
+              isDimmed = !mapping.values.some((v) => active.sectors.includes(v))
+            } else {
+              isDimmed = !mapping.values.some((v) => active.interests.includes(v))
+            }
+          }
+        }
+        if (isDimmed) {
           btn.classList.add("interesse-nav-dimmed")
         }
 

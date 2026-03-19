@@ -126,6 +126,56 @@
     --callout-icon: var(--callout-icon-quiz);
   }
 
+  // Voice callout icons (audience-adapted content)
+  --callout-icon-praxis-tipp: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>');
+  --callout-icon-dev-quickstart: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>');
+  --callout-icon-frist-warnung: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>');
+  --callout-icon-patientenrecht: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>');
+  --callout-icon-klinik-integration: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>');
+  --callout-icon-checkliste: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 11.5H6"/><path d="M11 15.5H6"/><path d="M14 6.5l1 1 3-3"/><rect x="3" y="4.5" width="18" height="15" rx="2" ry="2"/></svg>');
+
+  &[data-callout="praxis-tipp"] {
+    --color: #0d9488;
+    --border: #0d948844;
+    --bg: #0d948810;
+    --callout-icon: var(--callout-icon-praxis-tipp);
+  }
+
+  &[data-callout="dev-quickstart"] {
+    --color: #15803d;
+    --border: #15803d44;
+    --bg: #15803d10;
+    --callout-icon: var(--callout-icon-dev-quickstart);
+  }
+
+  &[data-callout="frist-warnung"] {
+    --color: #dc2626;
+    --border: #dc262644;
+    --bg: #dc262610;
+    --callout-icon: var(--callout-icon-frist-warnung);
+  }
+
+  &[data-callout="patientenrecht"] {
+    --color: #9333ea;
+    --border: #9333ea44;
+    --bg: #9333ea10;
+    --callout-icon: var(--callout-icon-patientenrecht);
+  }
+
+  &[data-callout="klinik-integration"] {
+    --color: #4682b4;
+    --border: #4682b444;
+    --bg: #4682b410;
+    --callout-icon: var(--callout-icon-klinik-integration);
+  }
+
+  &[data-callout="checkliste"] {
+    --color: #6b7280;
+    --border: #6b728044;
+    --bg: #6b728010;
+    --callout-icon: var(--callout-icon-checkliste);
+  }
+
   // Interesse callout icons (custom per type)
   --callout-icon-compliance: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>');
   --callout-icon-technik: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>');

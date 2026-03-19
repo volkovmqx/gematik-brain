@@ -199,6 +199,32 @@ li:not(.audience-hidden) {
     color: #7c3aed;
     background: #7c3aed14;
   }
+
+  // Voice callout hint colors
+  &[data-callout="praxis-tipp"] .interesse-hint {
+    color: #0d9488;
+    background: #0d948814;
+  }
+  &[data-callout="dev-quickstart"] .interesse-hint {
+    color: #15803d;
+    background: #15803d14;
+  }
+  &[data-callout="frist-warnung"] .interesse-hint {
+    color: #dc2626;
+    background: #dc262614;
+  }
+  &[data-callout="patientenrecht"] .interesse-hint {
+    color: #9333ea;
+    background: #9333ea14;
+  }
+  &[data-callout="klinik-integration"] .interesse-hint {
+    color: #4682b4;
+    background: #4682b414;
+  }
+  &[data-callout="checkliste"] .interesse-hint {
+    color: #6b7280;
+    background: #6b728014;
+  }
 }
 
 // Expanded interesse callout (matches profile)
@@ -280,6 +306,14 @@ li:not(.audience-hidden) {
     background: #7c3aed;
   }
 
+  // Voice callout nav dots
+  &[data-type="praxis-tipp"] .interesse-nav-dot { background: #0d9488; }
+  &[data-type="dev-quickstart"] .interesse-nav-dot { background: #15803d; }
+  &[data-type="frist-warnung"] .interesse-nav-dot { background: #dc2626; }
+  &[data-type="patientenrecht"] .interesse-nav-dot { background: #9333ea; }
+  &[data-type="klinik-integration"] .interesse-nav-dot { background: #4682b4; }
+  &[data-type="checkliste"] .interesse-nav-dot { background: #6b7280; }
+
   // Active items: colored left border
   &[data-type="compliance"]:not(.interesse-nav-dimmed) {
     border-left: 3px solid #2563eb;
@@ -293,6 +327,14 @@ li:not(.audience-hidden) {
   &[data-type="patient"]:not(.interesse-nav-dimmed) {
     border-left: 3px solid #7c3aed;
   }
+
+  // Voice callout active left borders
+  &[data-type="praxis-tipp"]:not(.interesse-nav-dimmed) { border-left: 3px solid #0d9488; }
+  &[data-type="dev-quickstart"]:not(.interesse-nav-dimmed) { border-left: 3px solid #15803d; }
+  &[data-type="frist-warnung"]:not(.interesse-nav-dimmed) { border-left: 3px solid #dc2626; }
+  &[data-type="patientenrecht"]:not(.interesse-nav-dimmed) { border-left: 3px solid #9333ea; }
+  &[data-type="klinik-integration"]:not(.interesse-nav-dimmed) { border-left: 3px solid #4682b4; }
+  &[data-type="checkliste"]:not(.interesse-nav-dimmed) { border-left: 3px solid #6b7280; }
 
   &.interesse-nav-dimmed {
     opacity: 0.55;
@@ -329,6 +371,12 @@ li:not(.audience-hidden) {
   &[data-type="technik"] .legend-dot { background: #059669; }
   &[data-type="business"] .legend-dot { background: #d97706; }
   &[data-type="patient"] .legend-dot { background: #7c3aed; }
+  &[data-type="praxis-tipp"] .legend-dot { background: #0d9488; }
+  &[data-type="dev-quickstart"] .legend-dot { background: #15803d; }
+  &[data-type="frist-warnung"] .legend-dot { background: #dc2626; }
+  &[data-type="patientenrecht"] .legend-dot { background: #9333ea; }
+  &[data-type="klinik-integration"] .legend-dot { background: #4682b4; }
+  &[data-type="checkliste"] .legend-dot { background: #6b7280; }
 }
 
 @media all and (max-width: 600px) {
