@@ -27,6 +27,8 @@ import Homepage from "./Homepage"
 import FloatingButtons from "./FloatingButtons"
 import DailyFact from "./DailyFact"
 import CategoryGraph from "./CategoryGraph"
+import ProfileFilter from "./ProfileFilter"
+import Banner from "./Banner"
 
 export {
   ArticleTitle,
@@ -58,4 +60,6 @@ export {
   FloatingButtons,
   DailyFact,
   CategoryGraph,
+  ProfileFilter,
+  Banner,
 }

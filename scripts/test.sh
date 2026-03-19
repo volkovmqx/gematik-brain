@@ -119,6 +119,38 @@ check_article() {
     done
   fi
 
+  # --- Relevance frontmatter validation ---
+  if echo "$fm" | grep -q "^relevance:"; then
+    # Extract sectors line (may be on same line or next line)
+    local sectors_line
+    sectors_line="$(echo "$fm" | grep "sectors:" || true)"
+    if [[ -n "$sectors_line" ]]; then
+      local valid_sectors="arztpraxis|krankenhaus|zahnarzt|psychotherapie|apotheke|pflege|therapie|hebamme|hersteller|ti-infrastruktur|it-dienstleister|startup|kasse|regulierung|verband|forschung|patient|arbeitgeber"
+      local sectors_values
+      sectors_values="$(echo "$sectors_line" | sed 's/.*\[//;s/\].*//' | tr ',' '\n' | sed 's/^ *//;s/ *$//')"
+      while IFS= read -r sector; do
+        [[ -z "$sector" ]] && continue
+        if ! echo "$sector" | grep -qE "^($valid_sectors)$"; then
+          add_issue "$file" "invalid_sector" "warning" "Invalid sector in relevance: $sector"
+        fi
+      done <<< "$sectors_values"
+    fi
+
+    local interests_line
+    interests_line="$(echo "$fm" | grep "interests:" || true)"
+    if [[ -n "$interests_line" ]]; then
+      local valid_interests="compliance|technik|business|patient"
+      local interests_values
+      interests_values="$(echo "$interests_line" | sed 's/.*\[//;s/\].*//' | tr ',' '\n' | sed 's/^ *//;s/ *$//')"
+      while IFS= read -r interest; do
+        [[ -z "$interest" ]] && continue
+        if ! echo "$interest" | grep -qE "^($valid_interests)$"; then
+          add_issue "$file" "invalid_interest" "warning" "Invalid interest in relevance: $interest"
+        fi
+      done <<< "$interests_values"
+    fi
+  fi
+
   # --- Section completeness ---
   for section in "${REQUIRED_SECTIONS[@]}"; do
     if ! echo "$content" | grep -q "^## ${section}"; then

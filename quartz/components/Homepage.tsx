@@ -6,10 +6,46 @@ import style from "./styles/homepage.scss"
 import dailyFactStyle from "./styles/dailyFact.scss"
 import heatmapStyle from "./styles/heatmap.scss"
 import explorationStyle from "./styles/explorationProgress.scss"
+import scenarioStyle from "./styles/scenarioCards.scss"
 // @ts-ignore
 import explorationScript from "./scripts/explorationProgress.inline"
 // @ts-ignore
 import dailyFactScript from "./scripts/dailyFact.inline"
+// @ts-ignore
+import scenarioScript from "./scripts/scenarioCards.inline"
+
+interface ScenarioCard {
+  id: number
+  icon: string
+  title: string
+  description: string
+  sectors: string[]
+  interests: string[]
+  audience: string
+  primary: boolean
+}
+
+const scenarioCards: ScenarioCard[] = [
+  // Largest audiences first: citizens, employers, common healthcare
+  { id: 13, icon: "\u{1F464}", title: "Meine Gesundheitsdaten", description: "", sectors: ["patient"], interests: ["patient"], audience: "non-technical", primary: true },
+  { id: 14, icon: "\u{1F3E2}", title: "eAU f\u00FCr Arbeitgeber", description: "", sectors: ["arbeitgeber"], interests: ["compliance"], audience: "non-technical", primary: true },
+  { id: 1, icon: "\u{1FA7A}", title: "ePA in meiner Praxis", description: "", sectors: ["arztpraxis"], interests: ["compliance"], audience: "non-technical", primary: true },
+  { id: 5, icon: "\u{1F48A}", title: "E-Rezept in der Apotheke", description: "", sectors: ["apotheke"], interests: ["compliance"], audience: "non-technical", primary: true },
+  { id: 3, icon: "\u{1F3E5}", title: "Krankenhaus-IT", description: "", sectors: ["krankenhaus"], interests: ["compliance", "technik"], audience: "non-technical", primary: true },
+  { id: 7, icon: "\u{1F932}", title: "Pflege digitalisieren", description: "", sectors: ["pflege"], interests: ["compliance"], audience: "non-technical", primary: true },
+  { id: 2, icon: "\u{1F9B7}", title: "Digitale Zahnmedizin", description: "", sectors: ["zahnarzt"], interests: ["compliance"], audience: "non-technical", primary: true },
+  { id: 4, icon: "\u{1F9E0}", title: "Psychotherapie digital", description: "", sectors: ["psychotherapie"], interests: ["compliance"], audience: "non-technical", primary: true },
+  // Smaller/specialized audiences
+  { id: 8, icon: "\u{1F3C3}", title: "TI f\u00FCr Therapeuten", description: "", sectors: ["therapie"], interests: ["compliance"], audience: "non-technical", primary: false },
+  { id: 9, icon: "\u{1F930}", title: "Hebammenversorgung", description: "", sectors: ["hebamme"], interests: ["compliance", "patient"], audience: "non-technical", primary: false },
+  { id: 15, icon: "\u{1F3E6}", title: "Kassen-Digitalisierung", description: "", sectors: ["kasse"], interests: ["business", "technik"], audience: "non-technical", primary: false },
+  { id: 16, icon: "\u{1F3DB}\u{FE0F}", title: "Regulierung und Politik", description: "", sectors: ["regulierung", "verband"], interests: ["compliance", "business"], audience: "non-technical", primary: false },
+  { id: 6, icon: "\u{1F4F1}", title: "CardLink und Online-Rezepte", description: "", sectors: ["apotheke", "startup"], interests: ["compliance", "business"], audience: "non-technical", primary: false },
+  // Technical / developer audiences
+  { id: 10, icon: "\u{1F4BB}", title: "App oder DiGA bauen", description: "", sectors: ["startup"], interests: ["technik", "business"], audience: "technical", primary: false },
+  { id: 11, icon: "\u{1F527}", title: "FHIR und TI-APIs", description: "", sectors: ["hersteller", "it-dienstleister"], interests: ["technik"], audience: "technical", primary: false },
+  { id: 12, icon: "\u{1F510}", title: "TI-Sicherheit", description: "", sectors: ["it-dienstleister"], interests: ["technik", "compliance"], audience: "technical", primary: false },
+]
 
 const categories = [
   {
@@ -166,6 +202,33 @@ export default (() => {
             <a href="https://github.com/volkovmqx/gematik-brain">GitHub</a>
           </div>
         </section>
+
+        {/* Scenario onboarding (first visit) */}
+        <section id="scenario-onboarding" class="scenario-onboarding">
+          <h2 class="scenario-heading">Wie nutzen Sie die Telematikinfrastruktur?</h2>
+          <p class="scenario-subheading">
+            Wählen Sie 1-3 Szenarien. Wir passen die Inhalte an Ihre Perspektive an.
+          </p>
+          <div class="scenario-grid" data-cards={JSON.stringify(scenarioCards)}>
+            {scenarioCards.map((card) => (
+              <button
+                class={`scenario-card${card.primary ? "" : " scenario-extra"}`}
+                data-card-id={card.id}
+              >
+                <span class="scenario-icon" aria-hidden="true">{card.icon}</span>
+                <span class="scenario-title">{card.title}</span>
+              </button>
+            ))}
+          </div>
+          <div class="scenario-actions">
+            <button class="scenario-more" id="scenario-more">Mehr Szenarien anzeigen</button>
+            <button class="scenario-confirm" id="scenario-confirm" disabled>Los geht's</button>
+            <button class="scenario-skip" id="scenario-skip">Überspringen</button>
+          </div>
+        </section>
+
+        {/* Main content (return visits) */}
+        <div id="homepage-main" class="homepage-main">
 
         {/* Stats */}
         <div class="homepage-stats" role="list">
@@ -353,11 +416,13 @@ export default (() => {
             Vollständigen Graphen anzeigen
           </button>
         </section>
+
+        </div>{/* /homepage-main */}
       </div>
     )
   }
 
-  Homepage.css = style + dailyFactStyle + heatmapStyle + explorationStyle
-  Homepage.afterDOMLoaded = dailyFactScript + explorationScript
+  Homepage.css = style + dailyFactStyle + heatmapStyle + explorationStyle + scenarioStyle
+  Homepage.afterDOMLoaded = dailyFactScript + explorationScript + scenarioScript
   return Homepage
 }) satisfies QuartzComponentConstructor

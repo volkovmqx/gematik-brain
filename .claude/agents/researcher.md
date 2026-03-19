@@ -48,6 +48,39 @@ Write new articles for given terms. For each term:
 - Write in plain, clear German. No marketing speak, no slop.
 - Every technical term that has (or could have) its own page must be a `[[wiki-link]]`.
 
+#### 2b. Add relevance frontmatter
+
+Every article MUST include a `relevance` block in the frontmatter:
+
+```yaml
+relevance:
+  sectors: [<2-6 sectors>]
+  interests: [<1-3 interests>]
+```
+
+**Sectors** (pick 2-6 that fit): arztpraxis, krankenhaus, zahnarzt, psychotherapie, apotheke, pflege, therapie, hebamme, hersteller, ti-infrastruktur, it-dienstleister, startup, kasse, regulierung, verband, forschung, patient, arbeitgeber
+
+**Interests** (pick 1-3): compliance, technik, business, patient
+
+Ask: "Who would search for this term, and why?" That determines sectors and interests.
+
+#### 2c. Add interesse callouts
+
+For articles about TI applications, processes, or standards that affect multiple audiences, add 1-3 `[!interesse-X]` callouts with perspective-specific summaries:
+
+- `[!interesse-compliance]` — deadlines, legal requirements, Pflichttermine
+- `[!interesse-technik]` — APIs, specs, FHIR profiles, GitHub links
+- `[!interesse-business]` — market data, adoption numbers, vendor landscape
+- `[!interesse-patient]` — patient rights, data access, opt-out, privacy
+
+**Rules:**
+- Only add callouts where there's genuinely distinct content for that perspective.
+- Place callouts within the section they relate to (not bunched at the top).
+- Callouts supplement the main text, they don't replace it.
+- Not every article needs callouts. Narrow technical standards (e.g., XDS, CDA) probably only need `[!interesse-technik]`.
+- Infrastructure articles (e.g., eGK, SMC-B) benefit from `[!interesse-compliance]` (who needs one, deadlines) and `[!interesse-technik]` (specs).
+- See `content/technologies/ePA.md` for a fully worked example.
+
 #### 3. Update existing articles
 
 - Use Grep to find all existing articles that mention the new term.
@@ -88,8 +121,9 @@ For each flagged article:
    - Add sources if too few.
    - Expand thin sections with researched content (use WebSearch).
    - Fix factual inaccuracies identified by the fact-checker.
-3. **Research if needed**: if the fix requires new information (e.g., "add official BMG source"), use WebSearch to find it.
-4. **Don't over-edit**: fix only what was flagged. Don't restructure or rewrite content that wasn't flagged.
+3. **Add `relevance` frontmatter** if missing. Use the same sector/interest rules as step 2b for new articles.
+4. **Research if needed**: if the fix requires new information (e.g., "add official BMG source"), use WebSearch to find it.
+5. **Don't over-edit**: fix only what was flagged. Don't restructure or rewrite content that wasn't flagged.
 
 ## File naming rules
 

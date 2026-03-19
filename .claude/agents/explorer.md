@@ -50,6 +50,24 @@ Write to `scripts/queue.json`:
 - Keep `pending` sorted by priority descending.
 - Limit `pending` to the top 30 most important terms (avoid noise).
 
+6. **Track relevance coverage** — identify articles missing `relevance` frontmatter:
+   - Use Grep to find articles without `relevance:` in their frontmatter.
+   - Add a `missingRelevance` array to queue.json with file paths.
+   - Also flag articles about TI applications that lack interesse callouts.
+
+## Output format update
+
+Add to queue.json:
+
+```json
+{
+  "pending": [...],
+  "done": [...],
+  "missingRelevance": ["content/concepts/PKI.md", "content/standards/XDS.md"],
+  "lastRun": "..."
+}
+```
+
 ## Rules
 
 - Read CLAUDE.md first to understand the project structure.

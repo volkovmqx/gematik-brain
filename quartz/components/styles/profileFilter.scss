@@ -1,0 +1,344 @@
+@use "../../styles/variables.scss" as *;
+
+.profile-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0;
+  min-height: 2rem;
+  border-bottom: 1px solid var(--lightgray);
+}
+
+.profile-empty {
+  .profile-setup-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.8rem;
+    color: var(--gray);
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--secondary);
+    }
+
+    svg {
+      flex-shrink: 0;
+    }
+  }
+}
+
+.profile-active {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  border-left: 3px solid var(--secondary);
+  padding-left: 0.5rem;
+}
+
+.profile-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--darkgray);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.profile-pills {
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.profile-pill {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.sector-pill {
+  background: color-mix(in srgb, var(--secondary) 12%, var(--light));
+  color: var(--secondary);
+  border: 1px solid color-mix(in srgb, var(--secondary) 25%, transparent);
+}
+
+.interest-pill {
+  background: var(--highlight);
+  color: var(--darkgray);
+  border: 1px solid var(--lightgray);
+
+  &[data-interest="compliance"] {
+    background: #2563eb14;
+    color: #2563eb;
+    border-color: #2563eb33;
+  }
+
+  &[data-interest="technik"] {
+    background: #05966914;
+    color: #059669;
+    border-color: #05966933;
+  }
+
+  &[data-interest="business"] {
+    background: #d9770614;
+    color: #d97706;
+    border-color: #d9770633;
+  }
+
+  &[data-interest="patient"] {
+    background: #7c3aed14;
+    color: #7c3aed;
+    border-color: #7c3aed33;
+  }
+}
+
+.profile-edit-btn,
+.profile-reset-btn {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: var(--gray);
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+
+  &:hover {
+    color: var(--dark);
+    background: var(--highlight);
+  }
+}
+
+// Dimming for low-relevance items
+.profile-dimmed {
+  opacity: 0.35;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+// Audience hidden (carried from AudienceFilter for compatibility)
+.audience-hidden {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
+  transition:
+    opacity 0.2s ease,
+    max-height 0.2s ease,
+    margin 0.2s ease,
+    padding 0.2s ease;
+}
+
+li:not(.audience-hidden) {
+  transition:
+    opacity 0.2s ease,
+    max-height 0.2s ease;
+}
+
+// Interest callout collapse
+.interesse-collapsed {
+  opacity: 0.7;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  border-bottom: 2px dashed var(--lightgray);
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &.callout > .callout-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+      padding 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    padding-bottom: 0;
+  }
+
+  &.callout:not(.is-collapsed) > .callout-title > .fold-callout-icon {
+    transform: rotateZ(-90deg);
+  }
+
+  .interesse-hint {
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-left: auto;
+    padding: 0.1rem 0.5rem;
+    border-radius: 999px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: background 0.15s ease;
+  }
+
+  &[data-callout="interesse-compliance"] .interesse-hint {
+    color: #2563eb;
+    background: #2563eb14;
+  }
+  &[data-callout="interesse-technik"] .interesse-hint {
+    color: #059669;
+    background: #05966914;
+  }
+  &[data-callout="interesse-business"] .interesse-hint {
+    color: #d97706;
+    background: #d9770614;
+  }
+  &[data-callout="interesse-patient"] .interesse-hint {
+    color: #7c3aed;
+    background: #7c3aed14;
+  }
+}
+
+// Expanded interesse callout (matches profile)
+.callout[data-callout^="interesse"]:not(.interesse-collapsed) {
+  transition: opacity 0.3s ease;
+}
+
+// Interesse navigator (floating mini-TOC for interesse callouts on page)
+.interesse-nav {
+  position: sticky;
+  top: 6.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.75rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 0.5rem;
+  background: var(--light);
+  margin-bottom: 0.75rem;
+
+  &:empty {
+    display: none;
+  }
+
+  .interesse-nav-heading {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--gray);
+    margin: 0;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--lightgray);
+    margin-bottom: 0.25rem;
+  }
+}
+
+.interesse-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--darkgray);
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-family: var(--bodyFont);
+  transition: background 0.15s ease, color 0.15s ease;
+  text-align: left;
+  width: 100%;
+  appearance: none;
+
+  &:hover {
+    background: var(--highlight);
+    color: var(--dark);
+  }
+
+  .interesse-nav-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  &[data-type="compliance"] .interesse-nav-dot {
+    background: #2563eb;
+  }
+  &[data-type="technik"] .interesse-nav-dot {
+    background: #059669;
+  }
+  &[data-type="business"] .interesse-nav-dot {
+    background: #d97706;
+  }
+  &[data-type="patient"] .interesse-nav-dot {
+    background: #7c3aed;
+  }
+
+  // Active items: colored left border
+  &[data-type="compliance"]:not(.interesse-nav-dimmed) {
+    border-left: 3px solid #2563eb;
+  }
+  &[data-type="technik"]:not(.interesse-nav-dimmed) {
+    border-left: 3px solid #059669;
+  }
+  &[data-type="business"]:not(.interesse-nav-dimmed) {
+    border-left: 3px solid #d97706;
+  }
+  &[data-type="patient"]:not(.interesse-nav-dimmed) {
+    border-left: 3px solid #7c3aed;
+  }
+
+  &.interesse-nav-dimmed {
+    opacity: 0.55;
+    font-style: italic;
+  }
+}
+
+// Legend below navigator
+.interesse-nav-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--lightgray);
+  font-size: 0.7rem;
+  color: var(--gray);
+}
+
+.interesse-nav-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  white-space: nowrap;
+
+  .legend-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  &[data-type="compliance"] .legend-dot { background: #2563eb; }
+  &[data-type="technik"] .legend-dot { background: #059669; }
+  &[data-type="business"] .legend-dot { background: #d97706; }
+  &[data-type="patient"] .legend-dot { background: #7c3aed; }
+}
+
+@media all and (max-width: 600px) {
+  .profile-filter {
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .profile-pill {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.5rem;
+  }
+}

@@ -60,6 +60,12 @@ Build the assignment list based on priority rules:
 - If > 0 actionable findings: create `news_update` assignments for up to 5 findings.
 - Also include findings with `action: "new_article"` as `new_article` assignments.
 
+**Priority B2 — Profile enrichment (if articles lack relevance metadata):**
+- Count articles missing `relevance` frontmatter (check via grep).
+- If > 10 articles lack it: create `profile_enrichment` assignments for up to 5 articles.
+- Priority order: most-linked articles first (they're seen by the most readers).
+- Each assignment: "Add relevance frontmatter and 1-3 interesse callouts to [article.md]"
+
 **Priority C — Write new articles (coverage gaps):**
 - Read `scripts/queue.json` and pick the top 3-5 terms by priority.
 - Create `new_article` assignments for these terms.
@@ -90,7 +96,11 @@ QUALITY FIXES:
 1. [article.md] — [fix instructions from quality-report.json]
 2. ...
 
-For new articles, follow the template in CLAUDE.md exactly. For news updates, edit the affected articles with the new information and mark the finding as applied in news-findings.json. For quality fixes, follow the specific fix instructions."
+PROFILE ENRICHMENT:
+1. [article.md] — Add relevance frontmatter (sectors: [...], interests: [...]) and interesse callouts
+2. ...
+
+For new articles, follow the template in CLAUDE.md exactly. For news updates, edit the affected articles with the new information and mark the finding as applied in news-findings.json. For quality fixes, follow the specific fix instructions. For profile enrichment, add relevance frontmatter and 1-3 interesse callouts following the guidelines in researcher.md steps 2b/2c."
 ```
 
 ### Phase 4: Review gate

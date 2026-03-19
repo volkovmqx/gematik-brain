@@ -1,13 +1,14 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
-import AudienceFilter from "./quartz/components/AudienceFilter"
+import ProfileFilter from "./quartz/components/ProfileFilter"
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [
+    Component.Banner(),
     Component.ConditionalRender({
-      component: AudienceFilter(),
+      component: ProfileFilter(),
       condition: (page) => page.fileData.slug !== "index",
     }),
   ],

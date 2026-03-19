@@ -61,6 +61,8 @@ For each reviewed article, **verify every URL** in the Quellen section using the
 - **Erklärt für Einsteiger**: Is it actually simple? No jargon? Uses analogies?
 - **Technische Details**: Does it contain actual technical content (protocols, formats, architecture)?
 - **Verknüpfungen**: Are links relevant, not just random?
+- **Relevance frontmatter**: If present, verify sectors and interests use valid values from the allowed lists. Flag unknown values.
+- **Interesse callouts**: If `[!interesse-X]` callouts exist, verify X is one of: compliance, technik, business, patient. Check that callout content matches its type (e.g., an interesse-technik callout shouldn't contain only compliance deadlines).
 
 ### 6. Produce quality report
 
@@ -109,6 +111,8 @@ Calculate scores as follows:
 - -15 for factual inaccuracy found
 - -10 for stale information (passed deadlines, outdated versions)
 - -5 for weak sources (no official source)
+- -5 for missing `relevance` frontmatter
+- -5 for invalid sector or interest values in relevance
 - -15 for dead URL in Quellen (`url_dead`)
 
 **Verdicts:**

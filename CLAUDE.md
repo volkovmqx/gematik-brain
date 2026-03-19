@@ -29,6 +29,9 @@ title: <Name>
 audience: [technical] or [technical, non-technical]
 tags: [<category>, <relevant-tags>]
 aliases: [<alternative names, acronyms>]
+relevance:
+  sectors: [<2-6 from: arztpraxis, krankenhaus, zahnarzt, psychotherapie, apotheke, pflege, therapie, hebamme, hersteller, ti-infrastruktur, it-dienstleister, startup, kasse, regulierung, verband, forschung, patient, arbeitgeber>]
+  interests: [<1-3 from: compliance, technik, business, patient>]
 ---
 
 # <Name>
@@ -55,6 +58,23 @@ aliases: [<alternative names, acronyms>]
 
 <Links to official docs, RFCs, gematik Fachportal, Wikipedia. Minimum 2 sources.>
 ```
+
+## Interesse callouts
+
+Use `[!interesse-X]` callouts to add perspective-specific content within articles. These callouts are automatically expanded for readers whose profile matches, and collapsed (but visible) for others.
+
+Available types:
+- `[!interesse-compliance]` — blue, deadlines and legal requirements
+- `[!interesse-technik]` — green, APIs, specs, developer references
+- `[!interesse-business]` — orange, market data, vendor landscape
+- `[!interesse-patient]` — purple, patient rights, data access, privacy
+
+Rules:
+- Only add where there's genuinely distinct perspective-specific content
+- Place contextually within the relevant section
+- Supplement the main text, don't replace it
+- Most articles need 1-3 callouts, not all 4
+- See `content/technologies/ePA.md` for a fully worked example
 
 ## File organization
 
