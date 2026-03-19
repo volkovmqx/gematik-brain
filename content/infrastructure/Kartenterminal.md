@@ -39,7 +39,7 @@ Die Verbindung zum [[Konnektoren|Konnektor]] oder [[TI-Gateway]] erfolgt über d
 
 Jedes zugelassene eHealth-Kartenterminal enthält ein eigenes Sicherheitsmodul: die **[[gSMC-KT]]** (gerätespezifische Security Module Card für Kartenterminals). Diese Karte stellt die TI-Identität des Terminals bereit und ermöglicht eine verschlüsselte, authentisierte Verbindung zum Konnektor. Ohne gSMC-KT kann kein Terminal in der TI betrieben werden.
 
-Im Zuge der ECC-Migration (Umstellung von RSA auf ECC) müssen alle gSMC-KT bis 31. Dezember 2026 auf ECC-fähige Nachfolger umgestellt sein.
+Im Zuge der [[ECC-Migration]] (Umstellung von RSA auf ECC) müssen alle gSMC-KT bis 31. Dezember 2026 auf ECC-fähige Nachfolger umgestellt sein.
 
 ### Kartensteckplätze
 

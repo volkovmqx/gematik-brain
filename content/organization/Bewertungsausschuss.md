@@ -37,7 +37,7 @@ Bei Themen, die die ambulante spezialfachärztliche Versorgung (ASV) betreffen, 
 Der Bewertungsausschuss:
 - Legt den Inhalt und die Punktwerte aller abrechnungsfähigen vertragsärztlichen Leistungen fest
 - Beschließt den bundesweit geltenden Orientierungswert (in Cent je Punkt)
-- Reagiert auf neue medizinische Leistungen, Arzneimittelzulassungen (z.B. neue EBM-Positionen bei AMNOG-Verfahren) und politische Vorgaben
+- Reagiert auf neue medizinische Leistungen, Arzneimittelzulassungen (z.B. neue EBM-Positionen bei [[AMNOG]]-Verfahren) und politische Vorgaben
 - Überprüft bestehende Leistungsbeschreibungen nach aktuellem medizinischem Stand
 - Beschließt Sonderregelungen, z.B. für Telemedizin, Videosprechstunden oder Laborleistungen
 

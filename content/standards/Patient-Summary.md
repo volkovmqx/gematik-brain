@@ -46,7 +46,7 @@ Ein IPS-Dokument ist ein FHIR Bundle vom Typ `document`. Es enthält:
 - **Empfohlene Abschnitte**: Impfungen, Eingriffe, Implantate, Ergebnisse
 - **Optionale Abschnitte**: Vorsorgeplanung, Anamnese, Familienanamnese
 
-Die Terminologie nutzt international anerkannte Codesysteme: [[SNOMED CT]] für Diagnosen und klinische Konzepte, ATC-Codes für Medikamente sowie EDQM-Codes für Verabreichungswege.
+Die Terminologie nutzt international anerkannte Codesysteme: [[SNOMED CT]] für Diagnosen und klinische Konzepte, [[ATC-Code|ATC-Codes]] für Medikamente sowie EDQM-Codes für Verabreichungswege.
 
 ### Sprachneutrale Darstellung
 

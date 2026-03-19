@@ -4,6 +4,9 @@ audience: [technical]
 tags: [standards, abrechnung, apotheke, gkv, datenaustausch]
 aliases: [Technische Anlage 1, TA 1, Apothekenabrechnung, ARZ-Format]
 maturity: setzling
+relevance:
+  sectors: [apotheke, kasse, hersteller, it-dienstleister]
+  interests: [technik, compliance]
 ---
 
 # TA1
@@ -43,6 +46,9 @@ Mit der Einführung des [[E-Rezept]]s blieb die TA1 als Abrechnungsformat erhalt
 ## Technische Details
 
 ### Dateistruktur
+
+> [!interesse-technik]
+> Die TA1 ist eine zeichenbasierte Textdatei mit fixen Feldpositionen und -längen. Verbindliche Spezifikation: Rahmenvertrag nach § 129 [[SGB-V]] zwischen [[GKV-Spitzenverband]] und [[DAV]]. Die langfristige Migration auf [[FHIR]] ist geplant, ein verbindlicher Termin steht (Stand 2026) noch nicht fest.
 
 Die TA1-Datei ist eine zeichenbasierte Textdatei mit fester Satzstruktur. Sie besteht aus mehreren Satzarten:
 

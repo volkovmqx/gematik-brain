@@ -3,6 +3,10 @@ title: PVS
 audience: [technical, non-technical]
 tags: [infrastruktur, praxis, software, primärsystem]
 aliases: [Praxisverwaltungssystem, Praxissoftware, Arztpraxissoftware]
+relevance:
+  sectors: [arztpraxis, hersteller, it-dienstleister]
+  interests: [technik, business]
+maturity: wachsend
 ---
 
 # PVS
@@ -27,11 +31,17 @@ Die [[KBV]] (Kassenärztliche Bundesvereinigung) ist die zentrale Instanz für d
 
 Es gibt über 100 zertifizierte PVS-Produkte in Deutschland. Marktführer sind CompuGroup Medical (CGM) mit Systemen wie CGM M1 PRO, medatixx mit x.isynet (über 14.600 Installationen), sowie weitere Anbieter wie Turbomed, Zollsoft und INDAMED.
 
+> [!interesse-business]
+> Der PVS-Markt umfasst über 100 zertifizierte Produkte. Marktführer: CompuGroup Medical (CGM M1 PRO), medatixx x.isynet (über 14.600 Installationen), Turbomed, Zollsoft, INDAMED. Hersteller müssen neben der KBV-Zertifizierung seit 2024 eine Konformitätsbewertung (KOB) bei der [[gematik]] durchlaufen. PVS-Hersteller sind wesentliche Treiber der TI-Einführung in der ambulanten Versorgung.
+
 Die KBV schließt mit Herstellern auf freiwilliger Basis Rahmenvereinbarungen nach § 332b SGB V ab. Diese legen Qualitätskriterien fest: Benutzerfreundlichkeit, Preistransparenz, Sicherheitsstandards und Kundenservice.
 
 ## Technische Details
 
 ### Anbindung an die Telematikinfrastruktur
+
+> [!interesse-technik]
+> Das PVS kommuniziert mit dem Konnektor über SOAP-Webservices (gemSpec_Kon). Mit TI 2.0 und [[TI-Gateway]] ist [[mTLS]] erforderlich: das PVS authentisiert sich mit eigenem Zertifikat. FHIR R4-Profile der [[KBV]] (fhir.kbv.de) sind Pflicht für E-Rezept und eAU. Konformitätsbewertung (KOB) bei der [[gematik]] seit 2024 gesetzlich vorgeschrieben.
 
 Das PVS kommuniziert mit dem [[Konnektoren|Konnektor]] (oder ab TI 2.0 mit dem [[TI-Gateway]]) über SOAP-Webservices. Über diese Schnittstelle steuert das PVS alle TI-Operationen:
 

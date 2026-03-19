@@ -33,7 +33,7 @@ Der G-BA besteht aus:
 
 Der G-BA entscheidet über den Leistungskatalog der [[GKV]]:
 
-- **Arzneimittel-Nutzenbewertung (AMNOG)**: Nach der Markteinführung neuer Medikamente bewertet der G-BA deren Zusatznutzen gegenüber der Standardtherapie. Das Ergebnis bestimmt den Erstattungsbetrag.
+- **Arzneimittel-Nutzenbewertung ([[AMNOG]])**: Nach der Markteinführung neuer Medikamente bewertet der G-BA deren Zusatznutzen gegenüber der Standardtherapie. Das Ergebnis bestimmt den Erstattungsbetrag.
 - **Heilmittelrichtlinie**: Welche physio-, ergo- und logopädischen Leistungen werden erstattet?
 - **Qualitätssicherung**: Der G-BA erlässt Richtlinien zur Mindestqualität von Operationen, Krebsbehandlungen und weiteren Bereichen.
 - **Strukturierte Behandlungsprogramme ([[DMP]])**: Programme für chronisch Kranke (z.B. Diabetes, Asthma).
@@ -52,7 +52,7 @@ Dieses zweistufige Verfahren war bei Einführung des DVG 2019 neu und internatio
 
 ### AMNOG-Verfahren
 
-Das Arzneimittelmarktneuordnungsgesetz (AMNOG, 2011) schrieb das frühe Nutzenbewertungsverfahren vor. Der Ablauf:
+Das [[AMNOG|Arzneimittelmarktneuordnungsgesetz (AMNOG, 2011)]] schrieb das frühe Nutzenbewertungsverfahren vor. Der Ablauf:
 
 1. Pharmaunternehmen reicht Dossier ein (Zulassungstag)
 2. [[IQWiG]] (Institut für Qualität und Wirtschaftlichkeit im Gesundheitswesen) bewertet den Zusatznutzen

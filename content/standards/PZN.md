@@ -67,7 +67,7 @@ In der [[AMTS|Arzneimitteltherapiesicherheit]] wird die PZN verwendet, um Wechse
 | Identifikator | Beschreibung |
 |---|---|
 | PZN | Deutsches Produkt-ID-System für Arzneimittel |
-| ATC-Code | WHO-Klassifikation nach Wirkstoff und Indikation |
+| [[ATC-Code]] | WHO-Klassifikation nach Wirkstoff und Indikation |
 | EAN/GTIN | Internationaler Barcode-Standard (kann PZN enthalten) |
 | Zulassungsnummer | Behördliche Zulassung durch [[BfArM]] oder EMA |
 

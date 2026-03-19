@@ -70,7 +70,7 @@ Regeln den Datenschutz beim Umgang mit Sozialdaten im GKV-System, einschließlic
 
 Das SGB V steht in einem engen Verhältnis zu weiteren Rechtsquellen:
 
-- **Bundesmantelvertrag-Ärzte (BMV-Ä)**: Konkretisiert SGB-V-Regelungen für den Vertragsarztbereich
+- **[[Bundesmantelvertrag|Bundesmantelvertrag-Ärzte (BMV-Ä)]]**: Konkretisiert SGB-V-Regelungen für den Vertragsarztbereich
 - **[[DSGVO]] und [[BDSG]]**: Überlagerung der SGB-V-Datenschutzregelungen durch europäisches Datenschutzrecht
 - **[[MDR]] (EU Medizinprodukteverordnung)**: Gilt ergänzend für DiGA neben dem SGB V
 - **[[DiGAV]]**: Durchführungsverordnung zu §33a SGB V

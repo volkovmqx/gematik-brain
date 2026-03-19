@@ -1,6 +1,6 @@
 {
   "lastChecked": "2026-03-19",
-  "lastRun": "2026-03-19T10:00:00Z",
+  "lastRun": "2026-03-19T14:00:00Z",
   "findings": [
     {
       "title": "eMedikationsplan: Start verschoben auf Oktober 2026",
@@ -1066,6 +1066,47 @@
       "action": "monitor",
       "details": "Sobald das MRG in Kraft tritt, prüfen, ob GDNG.md oder ein neuer Artikel 'Medizinregistergesetz' angelegt werden sollte. Verbindung zum FDZ Gesundheit und EHDS-Umsetzung beachten.",
       "suggestedTerm": "Medizinregistergesetz"
+    },
+    {
+      "title": "KHAG beschlossen: Digitale Mindestanforderungen für Krankenhäuser bis September 2026",
+      "date": "2026-03-06",
+      "source": "https://mdoc.one/khag-beschlossen-neue-chancen-fuer-kliniken-telemedizin-und-patientenportale/",
+      "summary": "Der Bundestag beschloss am 6. März 2026 das Krankenhausreformanpassungsgesetz (KHAG). Digital relevante Neuerungen: (1) Bis September 2026 müssen bundeseinheitliche Mindestanforderungen und Interoperabilitätsstandards für Krankenhäuser definiert werden. (2) Telemedizin-Netzwerke (inkl. robotergestützte Fernchirurgie, Fernberatung, sektorenübergreifende Vernetzung) werden über den Transformationsfonds (Fördertatbestand 3) gefördert. (3) Patientenportale werden als strategische Pflichtinfrastruktur gestärkt: Krankenhäuser ohne zertifiziertes Patientenportal zahlen ab 1. Januar 2026 einen Abschlag von 0,5 Prozent je Abrechnungsfall. (4) Der KrankenhausTransformationsfonds (KHTF) erhält 50 Milliarden Euro (2026-2035). Der Bundesrat stimmte am 27. März 2026 zu. Das KHAG tritt damit in Kraft und schafft mehr Planungssicherheit für digitale Klinikinvestitionen 2026/2027.",
+      "relevantArticles": ["KIS.md", "Telematikinfrastruktur.md", "ISiK.md"],
+      "category": "regulation",
+      "action": "update",
+      "details": "KIS.md sollte das KHAG und die September-2026-Frist für Interoperabilitätsstandards sowie den Patientenportal-Abschlag ab 2026 dokumentieren. ISiK.md kann den KHAG-Kontext ergänzen. Patientenportal.md sollte auf die neue gesetzliche Pflichtverankerung hinweisen.",
+      "suggestedTerm": "KHAG"
+    },
+    {
+      "title": "DiGA: Freiwillige elektronische Verordnung (ohne E-Rezept-Pflicht) ab März 2026 möglich",
+      "date": "2026-03-17",
+      "source": "https://die-gesunde-wahrheit.de/2026/03/17/neue-chancen-fuer-die-digitale-gesundheitsversorgung-elektronische-verordnung-fuer-diga-jetzt-freiwillig/",
+      "summary": "Seit März 2026 können Ärzte DiGA-Verordnungen freiwillig elektronisch ausstellen, ohne auf das formale E-Rezept-System angewiesen zu sein. Dies ergänzt die seit Oktober 2025 bestehende Möglichkeit, DiGA per E-Rezept zu verordnen. Praktische Bedeutung: Arztpraxen können DiGA-Verordnungen je nach Präferenz und Ausstattung als E-Rezept, per direkter Softwareintegration oder auf dem Papierweg ausstellen. Die Pflicht zur E-Rezept-Verordnung für DiGA ist noch nicht eingeführt. Hintergrund: Laut DiGAV-Änderungsverordnung (2. DiGAVÄndV, in Kraft 1. Februar 2026) müssen DiGA die Authentifizierung via GesundheitsID und den ePA-Schreibzugriff unterstützen.",
+      "relevantArticles": ["DiGA.md", "E-Rezept.md"],
+      "category": "specification",
+      "action": "update",
+      "details": "DiGA.md sollte klarstellen, dass seit Oktober 2025 E-Rezept-Verordnung möglich und seit März 2026 auch freiwillige elektronische Verordnung ohne E-Rezept-Format zulässig ist. Derzeit keine Pflicht zur elektronischen Verordnung für DiGA. E-Rezept.md Abschnitt zu DiGA prüfen."
+    },
+    {
+      "title": "GDVG-Referentenentwurf: BMG konkretisiert gematik-Umbau für Q2/2026",
+      "date": "2026-03-19",
+      "source": "https://www.kma-online.de/aktuelles/politik/detail/bmg-stellt-digitalisierungsstrategie-2026-vor-das-sind-warkens-plaene-55231",
+      "summary": "Das BMG treibt die Verabschiedung des Gesetzes für digitale Versorgung und den Gesundheitsdatenraum (GDVG) voran. Laut Bundesgesundheitsministerin Warken wird der Referentenentwurf in Q1/Q2 2026 vorgelegt. Kernpunkte: (1) gematik wird zur modernen Digitalagentur mit erweiterten Durchsetzungsbefugnissen umgebaut (Nachfolge des gescheiterten GDAG). (2) Das Forschungsdatenzentrum Gesundheit (FDZ) wird KI-fähig ausgebaut und an den EHDS angebunden. (3) Ziel: bis Ende 2026 mindestens 300 FDZ-Forschungsprojekte. (4) ePA soll bis 2030 auf 20 Millionen aktive Nutzer wachsen (Stand März 2026: ca. 4 Millionen). (5) KI-gestützte Dokumentation soll bis 2028 in über 70 Prozent der Einrichtungen Standard sein. Der Bvitg (Bundesverband Gesundheits-IT) fordert gematik als neutralen Rahmenanbieter und erleichterten Forschungsdatenzugang.",
+      "relevantArticles": ["gematik.md", "GDNG.md", "ePA.md"],
+      "category": "regulation",
+      "action": "update",
+      "details": "gematik.md sollte den Fortschritt des GDVG-Referentenentwurfs und die konkreten Ziele (gematik-Umbau, FDZ-Ausbau, ePA-Wachstumsziel) ergänzen. GDNG.md kann den EHDS-Anschluss des FDZ und die KI-Fähigkeit dokumentieren.",
+      "suggestedTerm": "GDVG"
+    },
+    {
+      "title": "KHAG im Bundesrat: Zustimmung am 27. März 2026 erwartet",
+      "date": "2026-03-19",
+      "source": "https://www.bundestag.de/dokumente/textarchiv/2026/kw10-de-krankenhausreform-1151184",
+      "summary": "Der Bundesrat soll dem am 6. März 2026 vom Bundestag beschlossenen KHAG am 27. März 2026 zustimmen. Das Gesetz bedarf der Zustimmung des Bundesrats. Wesentliche Inhalte: Erhöhung des Transformationsfonds von 25 auf 29 Milliarden Euro (Finanzierung aus Infrastrukturreserven statt GKV-Mitteln), Reduzierung der Leistungsgruppen von 65 auf 61, Verlängerung der Länder-Implementierungsfristen. Der KHTF (Krankenhaus-Transformationsfonds) fördert digitale Investitionen ab 2026.",
+      "relevantArticles": ["KIS.md", "Telematikinfrastruktur.md"],
+      "category": "regulation",
+      "action": "info_only"
     }
   ]
 }

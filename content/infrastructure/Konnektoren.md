@@ -4,6 +4,9 @@ audience: [technical, non-technical]
 tags: [infrastruktur, konnektor, hardware]
 aliases: [Konnektor, TI-Konnektor, Health Connector]
 maturity: wachsend
+relevance:
+  sectors: [arztpraxis, krankenhaus, zahnarzt, apotheke, hersteller, ti-infrastruktur]
+  interests: [technik, compliance]
 ---
 
 # Konnektoren
@@ -36,7 +39,7 @@ Jede Einrichtung im Gesundheitswesen braucht entweder einen Konnektor oder die n
 
 ### Netzwerk
 
-- ECC 256 Verschlüsselung (seit 1. Januar 2026 Pflicht; RSA-only-Konnektoren haben keinen TI-Zugang mehr)
+- ECC 256 Verschlüsselung (seit 1. Januar 2026 Pflicht per [[ECC-Migration]]; RSA-only-Konnektoren haben keinen TI-Zugang mehr)
 - IPv4 mit Standard-MTU von 1500 (konfigurierbar)
 - IPv6 mit Dual-Stack-Lite und reduzierter MTU von 1400
 - Größere Einrichtungen nutzen Highspeed-Konnektoren für Skalierbarkeit
@@ -44,6 +47,9 @@ Jede Einrichtung im Gesundheitswesen braucht entweder einen Konnektor oder die n
 ## Technische Details
 
 ### SOAP-Webservices
+
+> [!interesse-technik]
+> Das Primärsystem kommuniziert mit dem Konnektor über SOAP-Webservices (gemSpec_Kon). Wichtige Dienste: SignaturDienst ([[QES]]), VerschlüsselungsDienst ([[KIM]]), ZertifikatsDienst ([[OCSP]]), EventDienst. Mit TI 2.0 kommen [[gRPC]]-APIs hinzu. ECC-Preferred-Feature (RISE Firmware 6.1.3:1.0.0, Februar 2026) ermöglicht schrittweise RSA-ECC-Migration.
 
 Das Primärsystem kommuniziert mit dem Konnektor über SOAP-Webservices. Diese Schnittstelle ist in der gemSpec_Kon (Konnektor-Spezifikation) der [[gematik]] definiert. Die wichtigsten Dienste:
 
@@ -60,6 +66,9 @@ Die SOAP-Schnittstelle ist abwärtskompatibel gehalten, damit bestehende Primär
 Mit der Einführung von TI 2.0 werden neben SOAP auch **[[gRPC]]**-basierte APIs eingeführt. gRPC ist effizienter als SOAP, binärbasiert und besser für moderne Anwendungsarchitekturen geeignet. Neue Primärsysteme und Fachdienste können damit direkt integriert werden.
 
 ### ECC 256 Migration
+
+> [!interesse-compliance]
+> Seit 1. Januar 2026 ist ECC 256 für alle Konnektoren Pflicht. RSA-only-Konnektoren haben keinen TI-Zugang mehr. Fristen für den Kartentausch: eHBA G2.0 und SMC-B G2.0 bis 30. Juni 2026. Praxen und Apotheken müssen sicherstellen, dass ihr Konnektor und ihre Kartenterminals ECC-fähig sind.
 
 Seit 1. Januar 2026 ist ECC 256 (Elliptic Curve Cryptography) für alle Konnektoren Pflicht. RSA-only-Konnektoren verlieren seither den TI-Zugang. Hintergrund: RSA gilt langfristig als weniger sicher gegenüber Quantencomputer-Angriffen, und ECC ermöglicht bei gleichem Sicherheitsniveau kürzere Schlüssel und schnellere Operationen.
 

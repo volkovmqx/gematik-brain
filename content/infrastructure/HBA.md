@@ -63,7 +63,7 @@ Die PIN-Eingabe am Kartenterminal ist für jede QES-Signatur Pflicht. Damit wird
 
 ### ECC-Migration und Übergangsfrist
 
-Die Vorgängergeneration **G2.0** unterstützte ausschließlich RSA. Die Übergangsfrist für den Wechsel von G2.0 (RSA) auf G2.1 (ECC) wurde bis zum **30. Juni 2026** verlängert. Über 30.000 eHBAs müssen noch ausgetauscht werden.
+Die Vorgängergeneration **G2.0** unterstützte ausschließlich RSA. Die TI-weite [[ECC-Migration]] sieht den Wechsel von G2.0 (RSA) auf G2.1 (ECC) bis zum **30. Juni 2026** vor. Über 30.000 eHBAs müssen noch ausgetauscht werden.
 
 Ab **1. Januar 2026** dürfen Kartenherausgeber nur noch ECC-fähige Karten produzieren. Ausnahme: Telekom-Kunden sind von der Übergangsfrist ausgenommen, da für dieses Segment die Migration bereits früher abgeschlossen wurde.
 

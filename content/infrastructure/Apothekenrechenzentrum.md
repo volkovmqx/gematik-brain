@@ -4,6 +4,9 @@ audience: [technical, non-technical]
 tags: [infrastruktur, apotheke, abrechnung, gkv, arz]
 aliases: [ARZ, Apothekenrechenzentren, VDARZ]
 maturity: setzling
+relevance:
+  sectors: [apotheke, kasse, hersteller, it-dienstleister, regulierung]
+  interests: [compliance, technik, business]
 ---
 
 # Apothekenrechenzentrum
@@ -40,6 +43,9 @@ Die wichtigsten Apothekenrechenzentren in Deutschland:
 - **GRZ (Gesundheitsrechenzentrum)**: Weiterer Wettbewerber.
 
 ### Bedeutung im E-Rezept-Kontext
+
+> [!interesse-business]
+> Die wichtigsten Apothekenrechenzentren in Deutschland: NOVENTI (ca. 50 % Marktanteil, entstanden aus VSA, ALG und SARZ), ARZ Darmstadt (apothekergetragen, eigenständig), ARZ Haan, ARZ Wünsch, DAD und GRZ. Der Markt ist oligopolistisch. NOVENTI ist mit Abstand Marktführer und betreibt auch das Softwarehaus Awinta.
 
 Mit der Einführung des [[E-Rezept]]s (Pflicht seit 1. Januar 2024) hat sich die technische Rolle der ARZs verändert. Die Verordnungsdaten kommen nun als [[FHIR]]-Ressourcen vom E-Rezept-Fachdienst der [[gematik]], nicht mehr als eingescannte Papierrezepte. Die ARZs haben ihre Systeme entsprechend angepasst: Sie nehmen FHIR-Dispensierdaten entgegen und übersetzen sie in die klassische [[TA1]]-Abrechnungsstruktur für die Krankenkassen.
 

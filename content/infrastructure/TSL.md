@@ -66,7 +66,7 @@ Die TSL definiert, welchen CAs vertraut wird. Die aktuelle **Gültigkeit einzeln
 
 ### ECC-Migration und TSL
 
-Im Zuge der ECC-Migration der TI-PKI wurden neue CA-Einträge in die TSL aufgenommen. Karten der Generation G2.0 (RSA-only) und G2.1 (ECC) werden von unterschiedlichen CA-Zweigen abgedeckt. Die TSL enthält parallel die CA-Zertifikate beider Generationen, solange die Übergangsfrist läuft.
+Im Zuge der [[ECC-Migration]] der TI-PKI wurden neue CA-Einträge in die TSL aufgenommen. Karten der Generation G2.0 (RSA-only) und G2.1 (ECC) werden von unterschiedlichen CA-Zweigen abgedeckt. Die TSL enthält parallel die CA-Zertifikate beider Generationen, solange die Übergangsfrist läuft.
 
 ## Verknüpfungen
 

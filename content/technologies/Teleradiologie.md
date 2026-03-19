@@ -4,6 +4,9 @@ audience: [technical, non-technical]
 tags: [technologies, radiologie, dicom, telemedizin, bildgebung]
 aliases: [Teleradiology, Telekonsil Radiologie, Fernbefundung]
 maturity: setzling
+relevance:
+  sectors: [krankenhaus, arztpraxis, hersteller, it-dienstleister, regulierung]
+  interests: [compliance, technik]
 ---
 
 # Teleradiologie
@@ -62,6 +65,9 @@ Die Teleradiologie im engeren Sinne (Befundung ohne Radiologen vor Ort) ist an s
 - **DIN 6868-159**: Technische Norm für Teleradiologie-Systeme; regelt Qualitätsanforderungen an Übertragung und Befundungsmonitor.
 - **Datenschutz**: Bilder enthalten direkte Patientenidentifikatoren ([[KVNR]], Name, Geburtsdatum). Die Übertragung muss verschlüsselt erfolgen. Für Forschung oder externe Anbieter außerhalb Deutschlands ist [[DICOM]]-De-Identifikation nach PS3.15 Annex E erforderlich.
 - **Genehmigungspflicht**: Der externe Befunder benötigt eine eigene Röntgengenehmigung für Teleradiologie.
+
+> [!interesse-compliance]
+> Rechtsgrundlage für Teleradiologie im engeren Sinne ist § 123 StrlSchV 2018 (in Kraft seit 1. Januar 2019). Der Teleradiologe muss unmittelbar erreichbar sein und den Befund sofort nach Bildübermittlung erstellen. Der externe Befunder benötigt eine eigene Röntgengenehmigung. Abrechnung des Telekonsils erfolgt über EBM-Ziffer 34800 ff. durch die zuständige [[Kassenärztliche-Vereinigung|Kassenärztliche Vereinigung]].
 
 ### Abgrenzung: Teleradiologie vs. Telekonsil
 

@@ -44,7 +44,7 @@ Laut DiGAV Anlage 2 müssen DiGA Datenexporte in interoperablen Formaten ermögl
 
 ### Schnittstelle zu Medizingeräten: HDDT
 
-Seit § 374a [[SGB V]] können Medizinprodukte und Implantate (z.B. Insulinpumpen, Herzmonitore, Spirometer) Messdaten direkt an DiGAs übertragen. Die technische Schnittstelle dafür heißt **HDDT** (Health Device Data Transfer). Die gematik veröffentlichte am 10. März 2026 den Release Candidate der HDDT-Spezifikation Version 26_1. Diese Version ergänzt die bereits vorhandenen [[FHIR]]-Profile für Diabetes (Glukosemessung) um Profile für:
+Seit § 374a [[SGB V]] können Medizinprodukte und Implantate (z.B. Insulinpumpen, Herzmonitore, Spirometer) Messdaten direkt an DiGAs übertragen. Die technische Schnittstelle dafür heißt **[[HDDT]]** (Health Device Data Transfer). Die gematik veröffentlichte am 10. März 2026 den Release Candidate der HDDT-Spezifikation Version 26_1. Diese Version ergänzt die bereits vorhandenen [[FHIR]]-Profile für Diabetes (Glukosemessung) um Profile für:
 
 - **Lungenfunktionsmessung** (Spirometrie-Daten)
 - **Blutdruckmessung** (systolisch, diastolisch, Puls)

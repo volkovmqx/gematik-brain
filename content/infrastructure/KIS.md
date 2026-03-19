@@ -4,6 +4,9 @@ audience: [technical, non-technical]
 tags: [infrastruktur, krankenhaus, software, primärsystem]
 aliases: [Krankenhausinformationssystem, Klinikinformationssystem]
 maturity: wachsend
+relevance:
+  sectors: [krankenhaus, hersteller, it-dienstleister]
+  interests: [technik, business]
 ---
 
 # KIS
@@ -25,6 +28,9 @@ Ein KIS deckt den gesamten Behandlungsprozess im stationären Bereich ab, von de
 - Medikamentenmanagement (Verbindung zum Klinikapothekensystem)
 - Abrechnung nach [[DRG]] (Diagnosis Related Groups) gegenüber den Krankenkassen
 - Kodierung nach ICD-10-GM und [[OPS]] (Operationen- und Prozedurenschlüssel)
+
+> [!interesse-business]
+> Der deutsche KIS-Markt ist hochkonzentriert: Dedalus ORBIS (über 820 Installationen, über 41 % der stationären Fälle), Oracle Cerner i.s.h.med (Unikliniken), Telekom iMedOne (über 250), NEXUS KIS (über 250), Meierhofer M-KIS (über 275 im deutschsprachigen Raum). SAP hat sich aus dem Direktgeschäft zurückgezogen. Der Markt ist geprägt von langen Vertragslaufzeiten und hohen Wechselkosten.
 
 Der deutsche KIS-Markt ist stark konzentriert. Marktführer ist **Dedalus** mit dem System ORBIS. Laut Marktberichten von 2024 werden über 41 Prozent aller stationären Fälle in Deutschland über ORBIS abgerechnet. Weitere wichtige Anbieter:
 
@@ -49,6 +55,9 @@ Moderne KIS-Systeme sind modular aufgebaut. Ein typisches KIS besteht aus einem 
 Die Subsysteme kommunizieren über standardisierte Schnittstellen, historisch vorwiegend über **[[HL7|HL7]] v2** (z.B. HL7 ADT-Nachrichten für Aufnahme, Verlegung, Entlassung). Neuere Systeme implementieren zunehmend **[[FHIR]] R4**.
 
 ### ISiK-Anforderungen
+
+> [!interesse-technik]
+> ISiK definiert FHIR R4-Schnittstellen für KIS. Stufe 3 ist verbindlich bis 30.06.2026. Stufe 5 (Juli 2025 veröffentlicht) fasst alle ISiK-Module zusammen, Pflichtdatum noch offen. Bestätigungsverfahren läuft über die [[gematik]]. FHIR-Profile auf Simplifier.net und dem gematik-Fachportal. Schnittstellen für [[ePA]], [[E-Rezept]], [[KIM]] und [[DEMIS]] sind Teil der TI-Anbindung.
 
 Der verbindliche [[ISiK]]-Standard (Informationstechnische Systeme in Krankenhäusern, § 373 SGB V) verpflichtet KIS-Hersteller, standardisierte FHIR-REST-Schnittstellen bereitzustellen. ISiK definiert Stufen:
 

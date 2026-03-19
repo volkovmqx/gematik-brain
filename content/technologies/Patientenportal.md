@@ -4,6 +4,9 @@ audience: [technical, non-technical]
 tags: [technologies, krankenhaus, khzg, isik, digitalisierung]
 aliases: [Patientenportale, digitales Patientenportal, Krankenhausportal]
 maturity: setzling
+relevance:
+  sectors: [krankenhaus, hersteller, it-dienstleister, patient, kasse]
+  interests: [compliance, technik, patient]
 ---
 
 # Patientenportal
@@ -34,6 +37,9 @@ Ab **April 2026** müssen zertifizierte [[KIS]]-Systeme ISiK Stufe 3 unterstütz
 
 Die **[[DKG]] (Deutsche Krankenhausgesellschaft)** und das Bundesamt für Soziale Sicherung (BAS) überwachen die KHZG-Umsetzung. Krankenhäuser, die Fördertatbestand 2 bis Ende 2026 nicht nachweislich umgesetzt haben, erhalten DRG-Abschläge von 0,5 Prozent auf ihre Fallpauschalen.
 
+> [!interesse-compliance]
+> KHZG Fördertatbestand 2 (digitales Aufnahme- und Entlassmanagement) ist Pflicht. Krankenhäuser, die den Nachweis bis Ende 2026 nicht erbringen, erhalten einen DRG-Abschlag von 0,5 Prozent. Zertifizierte [[KIS]]-Systeme müssen ab April 2026 ISiK Stufe 3 unterstützen.
+
 ## Technische Details
 
 ### ISiK-Anbindung
@@ -46,7 +52,10 @@ Patientenportale kommunizieren über [[FHIR]]-konforme REST-APIs mit dem [[KIS]]
 - **DocumentReference / Binary**: Digitale Dokumente und Befunde
 - **Consent**: Einwilligungserklärungen
 
-Der ISiK-Standard wird von der [[gematik]] auf Basis von §373 SGB V veröffentlicht. Grundlage ist [[FHIR]] R4.
+Der ISiK-Standard wird von der [[gematik]] im gesetzlichen Auftrag (§ 373 [[SGB-V]]) entwickelt und veröffentlicht. Grundlage ist [[FHIR]] R4.
+
+> [!interesse-technik]
+> ISiK-Spezifikationen und FHIR-Profile sind auf dem [[gematik]]-Fachportal verfügbar: https://fachportal.gematik.de/informationen-fuer/isik. Relevante Ressourcen: Patient, Encounter, Appointment, DocumentReference, Consent (alle FHIR R4). ISiK Stufe 3 ist ab April 2026 Pflicht für zertifizierte KIS-Systeme.
 
 ### Integration in die TI
 

@@ -3,6 +3,10 @@ title: PKI - Public Key Infrastructure
 audience: [technical]
 tags: [konzepte, pki, kryptographie, zertifikate, sicherheit]
 aliases: [PKI, TI-PKI, Public Key Infrastructure, Zertifikatsinfrastruktur]
+relevance:
+  sectors: [hersteller, ti-infrastruktur, it-dienstleister]
+  interests: [technik, compliance]
+maturity: wachsend
 ---
 
 # PKI - Public Key Infrastructure
@@ -80,9 +84,15 @@ Für die Prüfung der Zertifikatsgültigkeit nutzt die TI zwei Mechanismen:
 Laut gematik-Spezifikation gilt:
 
 - **RSA 2048**: War bis Ende 2025 zugelassen
-- **ECC (brainpoolP256r1, brainpoolP384r1)**: Aktuelle Standard seit 2026
+- **ECC (brainpoolP256r1, brainpoolP384r1)**: Aktueller Standard seit 2026
 - **SHA-256 / SHA-384**: Hashfunktionen
 - Anforderungen folgen den [[BSI]]-Technischen Richtlinien (TR-03116, TR-02102)
+
+> [!interesse-compliance]
+> Seit 1. Januar 2026 sind RSA-Zertifikate in der TI nicht mehr zulässig. Alle neu ausgestellten Zertifikate für [[SMC-B]], [[HBA]] und Konnektoren müssen ECC (brainpoolP256r1 oder brainpoolP384r1) verwenden. Fristen für den Kartentausch: eHBA G2.0 bis 30. Juni 2026, gSMC-KT bis 31. Dezember 2026. [[TSP|Trust Service Provider]] müssen ihre CA-Infrastruktur auf ECC umgestellt haben.
+
+> [!interesse-technik]
+> Zertifikatsprüfung läuft über [[OCSP]] (Online Certificate Status Protocol) und CRL. Die [[TSL]] (Trust Service List) enthält alle akkreditierten Sub-CAs und OCSP-Responder-Adressen. Spezifikation: gemKPT_PKI_TIP. Zertifikatshierarchie: gematik Root-CA → Sub-CA (je TSP) → End-Entity-Zertifikate. QES-Zertifikate auf dem [[HBA]] (C.HP.QES) unterliegen der eIDAS-Verordnung und werden von der [[Bundesnetzagentur]] beaufsichtigt.
 
 ### QES-PKI
 

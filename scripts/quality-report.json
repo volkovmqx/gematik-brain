@@ -1,12 +1,154 @@
 {
-  "timestamp": "2026-03-19T07:30:00Z",
-  "overallScore": 84,
+  "timestamp": "2026-03-19T13:15:00Z",
+  "overallScore": 80,
   "testResults": {
-    "passed": 143,
-    "failed": 1,
-    "total": 144
+    "passed": 147,
+    "failed": 2,
+    "total": 149
   },
   "articles": [
+    {
+      "file": "content/standards/HDDT.md",
+      "verdict": "pass",
+      "score": 90,
+      "issues": [
+        "Third source (quickbirdmedical.com) is a commercial blog source, not official gematik or government. Two official gematik sources are present so no deduction."
+      ],
+      "fixInstructions": "No changes required. Both gematik URLs (gemspec prerelease and IG) verified live and content matches. Draft v26_1 date (10 March 2026), § 374a SGB V basis, FHIR R4, LOINC, and covered domains all confirmed against live gemspec pages."
+    },
+    {
+      "file": "content/processes/ECC-Migration.md",
+      "verdict": "revise",
+      "score": 80,
+      "issues": [
+        "Broken wiki-link: [[Landesärztekammer]] — no matching file or alias in knowledge base (confirmed by test-report.json). Appears in the compliance callout."
+      ],
+      "fixInstructions": "Remove [[Landesärztekammer]] wiki-link syntax and write as plain text 'zuständigen Ärztekammer' to fix broken link. All factual claims verified correct: RSA-only Konnektor exclusion from 1 January 2026, HBA G2.0/SMC-B G2.0 deadline 30 June 2026, gSMC-KT deadline 31 December 2026 — confirmed via gematik.de and KBV sources. RISE firmware 6.1.3:1.0.0 details are unverifiable from public sources; marked unverifiable, not wrong."
+    },
+    {
+      "file": "content/standards/AMNOG.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [
+        "Minor imprecision: 'rückwirkend seit November 2022 ab dem 7. Monat' implies retroactive application to pre-2022 products. The GKV-Finanzstabilisierungsgesetz (in force 12 November 2022) changed the rule for new market entries from that date onward, not retroactively. Phrasing is misleading."
+      ],
+      "fixInstructions": "Replace 'rückwirkend seit November 2022 ab dem 7. Monat' with 'seit November 2022 gilt der Erstattungsbetrag ab dem 7. Monat nach Inverkehrbringen (statt bisher ab dem 13. Monat)' for precision. Core facts (Beschluss 11 November 2010, Inkrafttreten 1 January 2011, § 35a SGB V, G-BA/IQWiG process) all verified correct."
+    },
+    {
+      "file": "content/standards/ATC-Code.md",
+      "verdict": "revise",
+      "score": 72,
+      "issues": [
+        "Factual inaccuracy in Überblick: Article states 'Das ATC-Klassifikationssystem wurde 1976 von der European Pharmaceutical Market Research Association (EPhMRA) entwickelt und 1990 von der WHO übernommen.' Both the developer attribution and the dates are incorrect. The EPhMRA system was initiated in 1971 (not 1976). The ATC/DDD system was developed by Norwegian/Nordic researchers (not EPhMRA) as an extension of the EPhMRA system, and first used statistically in 1976. WHO recognized it as an international standard in 1996 (not 1990).",
+        "Possibly incorrect legal basis: § 73 SGB V cited as Rechtsgrundlage for BfArM German ATC adaptations. The BfArM ATC assignment authority derives from the Rahmenvertrag nach § 131 SGB V, not § 73. Requires verification."
+      ],
+      "fixInstructions": "Replace the Überblick history sentence with: 'Die Grundlage des ATC-Systems wurde 1971 von der European Pharmaceutical Market Research Association (EPhMRA) gelegt. Das heutige ATC/DDD-System wurde von norwegischen Forschern als Erweiterung des EPhMRA-Systems entwickelt und 1976 erstmals für nordische Arzneimittelstatistiken eingesetzt. Die WHO erkannte das System 1996 als internationalen Standard an. Das WHO Collaborating Centre for Drug Statistics Methodology in Oslo ist seither für die internationale Pflege zuständig.' Also verify and correct the § 73 SGB V claim — the BfArM role likely derives from § 131 SGB V."
+    },
+    {
+      "file": "content/standards/Bundesmantelvertrag.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [
+        "KBV source URL in Quellen (https://www.kbv.de/html/bundesmantelvertrag.php) redirects to /infothek/rechtsquellen/bundesmantelvertrag — redirect works but the canonical URL should be used."
+      ],
+      "fixInstructions": "Update the KBV source URL from https://www.kbv.de/html/bundesmantelvertrag.php to https://www.kbv.de/infothek/rechtsquellen/bundesmantelvertrag. All other facts verified: 1 October 2013 unification, § 87 Abs. 1 SGB V, Anlage 31b Videosprechstunde, Anlage 32 TI-Pauschale all confirmed."
+    },
+    {
+      "file": "content/technologies/Teleradiologie.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [
+        "New relevance frontmatter and compliance callout are factually consistent with the existing article body. The § 123 StrlSchV 2018 citation is correct (pre-existing error in the article was separately flagged in a prior cycle and appears to be fixed in this version)."
+      ],
+      "fixInstructions": "No changes needed for the new additions."
+    },
+    {
+      "file": "content/technologies/Patientenportal.md",
+      "verdict": "pass",
+      "score": 82,
+      "issues": [
+        "New relevance frontmatter uses valid sector and interest values.",
+        "The compliance callout correctly states ISiK Stufe 3 Pflicht ab April 2026. This deadline should be monitored for changes.",
+        "The technik callout correctly attributes ISiK to gematik under § 373 SGB V — consistent with the corrected article body (previous error about BfArM was fixed in this cycle)."
+      ],
+      "fixInstructions": "No changes needed for the new additions."
+    },
+    {
+      "file": "content/organization/BfDI.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "Specht-Riemenschneider elected 16 May 2024, Amtsantritt 3 September 2024 — both verified correct.",
+        "Resignation announcement March 2026 for health reasons — verified correct (announced 17 March 2026).",
+        "BfDI source URL (Pressemitteilung 18/2025) loads successfully and content matches topic."
+      ],
+      "fixInstructions": "No changes needed. Factual claims all verified."
+    },
+    {
+      "file": "content/infrastructure/Apothekenrechenzentrum.md",
+      "verdict": "pass",
+      "score": 83,
+      "issues": [
+        "New relevance and business callout are structurally valid.",
+        "NOVENTI market share ~50% attributed to Branchenschätzungen — acceptable as approximate, widely cited.",
+        "NOVENTI lineage description (from VSA, ALG, SARZ) is correct in this version of the article."
+      ],
+      "fixInstructions": "No changes needed for the new additions."
+    },
+    {
+      "file": "content/standards/TA1.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [
+        "New technik callout is well-placed and factually consistent with the article body."
+      ],
+      "fixInstructions": "No changes needed for the new additions."
+    },
+    {
+      "file": "content/infrastructure/Konnektoren.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "Both new callouts are factually consistent with ECC-Migration.md and with gematik.de/rsa2ecc-migration."
+      ],
+      "fixInstructions": "No changes needed."
+    },
+    {
+      "file": "content/infrastructure/KIS.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [
+        "New relevance frontmatter is valid. Sectors and interests use valid values."
+      ],
+      "fixInstructions": "No changes needed."
+    },
+    {
+      "file": "content/concepts/PKI.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [
+        "New relevance frontmatter valid. No inaccuracies in added content."
+      ],
+      "fixInstructions": "No changes needed."
+    },
+    {
+      "file": "content/infrastructure/PVS.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [
+        "New relevance frontmatter valid. No inaccuracies in added content."
+      ],
+      "fixInstructions": "No changes needed."
+    },
+    {
+      "file": "content/concepts/QES.md",
+      "verdict": "revise",
+      "score": 80,
+      "issues": [
+        "Broken wiki-link: [[Landesärztekammer]] — no matching file or alias in knowledge base (confirmed by test-report.json). Appears in the interesse-compliance callout."
+      ],
+      "fixInstructions": "Replace [[Landesärztekammer]] with plain text 'zuständigen Ärztekammer' in the compliance callout. Alternatively, create a stub Landesärztekammer.md article with the alias [[Landesärztekammer]]."
+    },
     {
       "file": "content/processes/DMP.md",
       "verdict": "revise",
@@ -444,36 +586,31 @@
   ],
   "contradictions": [
     {
-      "claim": "ISiK publisher",
-      "articleA": "content/technologies/Patientenportal.md states ISiK is published by BfArM in collaboration with gematik and HL7-Usergroup",
-      "articleB": "content/standards/ISiK.md correctly states ISiK is developed by gematik under §373 SGB V; gematik.de/anwendungen/isik and fachportal.gematik.de confirm gematik as sole publisher"
-    },
-    {
       "claim": "BITMARCK wiki-link consistency",
       "articleA": "content/technologies/ePass.md uses [[BITMARCK]] as a wiki-link (broken)",
       "articleB": "content/technologies/ePA.md references BITMARCK as plain text without a wiki-link; no BITMARCK article exists in the knowledge base"
     }
   ],
   "staleArticles": [
-    "content/processes/DMP.md: Presents all 11 G-BA-Indikationen as equally active — 3 (Adipositas KiJu, Herzinsuffizienz, Rückenschmerz, Depression) are still in Umsetzungsphase and not yet enrollable per BAS Stand Januar 2026.",
+    "content/standards/ATC-Code.md: History paragraph states incorrect dates for EPhMRA (1976, should be 1971) and WHO adoption (1990, should be 1996).",
+    "content/processes/DMP.md: Presents all 11 G-BA-Indikationen as equally active — 3-4 are still in Umsetzungsphase and not yet enrollable per BAS Stand Januar 2026.",
     "content/infrastructure/IDP.md: RSA 2048 listed as 'gültig bis Ende 2025' — this deadline has elapsed (current date: 19.03.2026); should be updated to note transition to ECDSA is complete.",
-    "content/standards/IVDR.md: Class D transition deadline (26. Mai 2025) is a past date but not explicitly noted as elapsed; readers may be confused about whether it is upcoming.",
-    "content/technologies/Teleradiologie.md: references §25 StrlSchV for Teleradiologie — current law since 1. Januar 2019 is §123 StrlSchV 2018 (carried from previous cycle)",
-    "content/technologies/Fernsignatur.md: cites eIDAS Art. 29 and Art. 3 Nr. 23 for Fernunterschrift — Art. 29a (explicit Fernsignatur framework) was added in the 2024 consolidated eIDAS (carried from previous cycle)"
+    "content/standards/IVDR.md: Class D transition deadline (26. Mai 2025) is a past date but not explicitly noted as elapsed.",
+    "content/technologies/Fernsignatur.md: cites eIDAS Art. 29 and Art. 3 Nr. 23 for Fernunterschrift — Art. 29a added in the 2024 consolidated eIDAS (carried from previous cycle)"
   ],
   "summary": {
-    "reviewed": 16,
-    "pass": 12,
-    "revise": 4,
+    "reviewed": 15,
+    "pass": 11,
+    "revise": 3,
     "fail": 0,
     "keyIssues": [
-      "DMP.md: [[BAS]] wiki-link broken 3 times — highest priority fix, causes test failure; also needs clarification that 3-4 DMP-Indikationen are still in Umsetzungsphase and not yet enrollable.",
-      "TI-Pauschale.md: Two of four sources are commercial trade press; replace with official KBV publications.",
-      "Patientenportal.md FACTUAL ERROR (carried): ISiK attributed to BfArM — must be corrected to gematik. Dead URL simplifier.net/isik-basis-v4 must be replaced.",
-      "ePass.md (carried): broken wiki-link [[BITMARCK]] — no article exists; either create BITMARCK article or plain-text the reference.",
-      "No cross-article contradictions in new articles: Orientierungswert 2026 (12,7404 Cent) stated consistently in EBM.md, Bewertungsausschuss.md and TI-Pauschale.md; ePA launch dates consistent across all articles.",
-      "KHVVG.md and PEPP.md fully pass — all key facts verified against authoritative sources.",
-      "Carried unresolved: Teleradiologie.md (§25 vs §123 StrlSchV), Fernsignatur.md (eIDAS Art. citations), BfDI.md (Amtsantritt date), eArztbrief.md (EBM Cent), TA1.md and Apothekenrechenzentrum.md (NOVENTI lineage), IDP.md (RSA 2048 outdated)."
+      "ATC-Code.md FACTUAL ERROR: History paragraph incorrectly states EPhMRA developed ATC in 1976 and WHO adopted it in 1990. Correct: EPhMRA initiated predecessor in 1971; Norwegian/Nordic researchers developed ATC/DDD used from 1976; WHO recognized as standard in 1996.",
+      "ECC-Migration.md + QES.md: Both have broken wiki-link [[Landesärztekammer]] — highest priority fix, causes test failures.",
+      "AMNOG.md: Minor phrasing imprecision about the 7-month Erstattungsbetrag rule; not retroactive, applies to new market entries from November 2022.",
+      "Bundesmantelvertrag.md: KBV source URL stale (redirect works, update to canonical path).",
+      "No cross-article contradictions found among the 15 reviewed articles. ECC deadline dates are consistent across ECC-Migration.md, Konnektoren.md, and QES.md.",
+      "HDDT.md fully passes with both gematik source URLs confirmed live and content verified.",
+      "Carried unresolved from prior cycles: DMP.md ([[BAS]] broken links), TI-Pauschale.md (weak sources), ePass.md ([[BITMARCK]] broken link), eArztbrief.md (EBM Cent values), IDP.md (RSA 2048 outdated), Fernsignatur.md (eIDAS citations)."
     ]
   }
 }

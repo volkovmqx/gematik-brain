@@ -34,7 +34,7 @@ Die verwendeten Terminologien:
 - **SNOMED CT**: Klinische Konzepte (Diagnosen, Prozeduren, Befunde)
 - **[[LOINC]]**: Laborparameter und Beobachtungen
 - **[[ICD-10-GM]]**: Diagnosecodierung nach deutschem Standard ([[BfArM]] pflegt die deutsche Modifikation)
-- **ATC**: Arzneimittelklassifikation
+- **[[ATC-Code|ATC]]**: Arzneimittelklassifikation
 
 MIOs sind als npm-Pakete veröffentlicht und können in [[FHIR]]-Validatoren direkt eingebunden werden.
 

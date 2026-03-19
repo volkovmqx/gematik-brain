@@ -54,7 +54,7 @@ Nur wenn alle drei Prüfungen positiv sind, wird das Terminal als vertrauenswür
 
 ### ECC-Migration und Übergangsfrist
 
-Wie alle anderen TI-Smartcards werden auch die gSMC-KTs im Zuge der ECC-Migration auf neue Schlüsselverfahren umgestellt. Kartenterminals mit gSMC-KT G2.0 (RSA-only) müssen bis zum **31. Dezember 2026** durch Geräte mit ECC-fähiger gSMC-KT G2.1 ersetzt werden. Ab diesem Datum verlieren Terminals mit alter gSMC-KT die TI-Zulassung.
+Wie alle anderen TI-Smartcards werden auch die gSMC-KTs im Zuge der [[ECC-Migration]] auf neue Schlüsselverfahren umgestellt. Kartenterminals mit gSMC-KT G2.0 (RSA-only) müssen bis zum **31. Dezember 2026** durch Geräte mit ECC-fähiger gSMC-KT G2.1 ersetzt werden. Ab diesem Datum verlieren Terminals mit alter gSMC-KT die TI-Zulassung.
 
 Hersteller von Kartenterminals, die noch G2.0-gSMC-KTs eingebaut haben, müssen entweder neue Terminals ausliefern oder die gSMC-KT im Gerät austauschen, sofern der Formfaktor das erlaubt.
 

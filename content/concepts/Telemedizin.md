@@ -32,7 +32,7 @@ Der KBV-Patientenservice 116117 vermittelt seit 2025 telemedizinische Leistungen
 
 ### Zertifizierte Videodienstanbieter
 
-Für die Abrechnung telemedizinischer Leistungen in der [[GKV]] müssen Videokonferenzsysteme durch die [[KBV]] zertifiziert sein. Die Anforderungen sind in Anlage 31b des Bundesmantelvertrags-Ärzte (BMV-Ä) festgelegt. Stand Mai 2025 sind 88 Anbieter zertifiziert. Zu den technischen Anforderungen gehören:
+Für die Abrechnung telemedizinischer Leistungen in der [[GKV]] müssen Videokonferenzsysteme durch die [[KBV]] zertifiziert sein. Die Anforderungen sind in Anlage 31b des [[Bundesmantelvertrag|Bundesmantelvertrags-Ärzte (BMV-Ä)]] festgelegt. Stand Mai 2025 sind 88 Anbieter zertifiziert. Zu den technischen Anforderungen gehören:
 
 - Ende-zu-Ende-Verschlüsselung der Videoverbindung
 - Serverstandort in Deutschland oder EWR

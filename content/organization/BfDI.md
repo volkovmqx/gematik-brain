@@ -4,6 +4,9 @@ audience: [technical, non-technical]
 tags: [organisation, datenschutz, aufsicht, bundesbehörde]
 aliases: [Bundesbeauftragter für den Datenschutz und die Informationsfreiheit, Bundesdatenschutzbeauftragte, BfDI]
 maturity: setzling
+relevance:
+  sectors: [regulierung, ti-infrastruktur, hersteller, kasse, krankenhaus, patient]
+  interests: [compliance, patient]
 ---
 
 # BfDI
@@ -45,6 +48,9 @@ Die [[Telematikinfrastruktur]] berührt den Zuständigkeitsbereich des BfDI auf 
 - **ePA und GDNG**: Der BfDI hat sich wiederholt zur [[ePA]] und zur Sekundärnutzung von Gesundheitsdaten nach dem [[GDNG]] geäußert.
 
 ### BfDI und ePA
+
+> [!interesse-compliance]
+> Hersteller und Betreiber von TI-Diensten (KIM-Anbieter, VPN-Zugangsdienstleister) können der BfDI-Aufsicht unterliegen, wenn sie als Telekommunikationsdienstleister eingestuft werden. Die [[gematik]] als mehrheitlich bundeseigene Gesellschaft steht ebenfalls unter BfDI-Aufsicht. Datenschutz-Folgenabschätzungen (DSFA) nach Art. 35 [[DSGVO]] sind für alle TI-Anwendungen erforderlich, die Gesundheitsdaten verarbeiten.
 
 Die BfDI Louisa Specht-Riemenschneider äußerte folgende Positionen zur [[ePA]]:
 

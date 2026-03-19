@@ -3,6 +3,10 @@ title: QES - Qualifizierte Elektronische Signatur
 audience: [technical, non-technical]
 tags: [konzepte, qes, signatur, eidas, recht]
 aliases: [QES, Qualifizierte Elektronische Signatur, qualifizierte Signatur]
+relevance:
+  sectors: [arztpraxis, krankenhaus, apotheke, hersteller, ti-infrastruktur]
+  interests: [technik, compliance]
+maturity: wachsend
 ---
 
 # QES - Qualifizierte Elektronische Signatur
@@ -23,6 +27,12 @@ In der [[Telematikinfrastruktur]] ist die QES für mehrere Anwendungsfälle verp
 - **[[eAU]]**: Elektronische Arbeitsunfähigkeitsbescheinigung trägt QES des Arztes
 - **[[NFDM]]**: Notfalldaten werden durch Heilberufler mit QES signiert
 - **Arztbriefe**: Für die Abrechnung im ambulanten Bereich erforderlich
+
+> [!interesse-compliance]
+> QES ist für [[E-Rezept]] und [[eAU]] gesetzlich vorgeschrieben. Jeder Arzt, Zahnarzt und Psychotherapeut benötigt einen [[HBA]] mit QES-Zertifikat. Der HBA wird von der zuständigen [[Landesaerztekammer|Landesärztekammer]] ausgegeben. Ohne HBA können keine E-Rezepte ausgestellt werden. Die QES-Zertifikate unterliegen der [[eIDAS]]-Verordnung und werden von der [[Bundesnetzagentur]] beaufsichtigt.
+
+> [!interesse-technik]
+> QES-Erstellung in der TI: Primärsystem ([[PVS]]/[[KIS]]) sendet Dokument per SOAP an [[Konnektoren|Konnektor]], Konnektor leitet an [[HBA]] im Kartenterminal weiter, Arzt gibt PIN ein, HBA erzeugt Signatur (privater Schlüssel verlässt die Karte nie). Signaturformat: CAdES oder PAdES je nach Anwendungsfall. Zertifikat C.HP.QES auf dem HBA. Prüfung über TI-[[PKI]] und [[OCSP]].
 
 ### Signaturebenen nach eIDAS
 
