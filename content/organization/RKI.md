@@ -3,6 +3,10 @@ title: RKI
 audience: [technical, non-technical]
 tags: [organisation, gesundheit, infektionsschutz, surveillance, bundesbehörde]
 aliases: [Robert Koch-Institut, Robert-Koch-Institut]
+relevance:
+  sectors: [regulierung, forschung, krankenhaus]
+  interests: [compliance, technik]
+maturity: wachsend
 ---
 
 # RKI
@@ -28,6 +32,9 @@ Die Kernaufgaben des RKI:
 
 Das RKI nimmt eine "Antennenfunktion" wahr: Es erkennt Gesundheitsgefahren frühzeitig und leitet die Informationen an die zuständigen Stellen weiter.
 
+> [!interesse-compliance]
+> Ärzte, Krankenhäuser und Labore sind nach dem [[IfSG]] zur Meldung bestimmter Infektionskrankheiten und Erregernachweise verpflichtet. Die Meldung erfolgt seit 2023 verpflichtend über [[DEMIS]] (Deutsches Elektronisches Melde- und Informationssystem). Nicht rechtzeitig erstattete Meldungen sind Ordnungswidrigkeiten nach § 73 IfSG (Bußgeld bis zu 25.000 Euro).
+
 ## Technische Details
 
 ### Rechtsgrundlage und Stellung
@@ -46,6 +53,39 @@ Das RKI entwickelt und betreibt [[DEMIS]] (Deutsches Elektronisches Melde- und I
 4. RKI wertet bundesweit aus und veröffentlicht Surveillance-Berichte
 
 Das Fachgebiet 32 des RKI ist für DEMIS verantwortlich. Es entwickelt die [[FHIR]]-Profile für Meldungen, betreibt die Infrastruktur und stellt Testumgebungen für Softwarehersteller bereit.
+
+> [!klinik-integration] Klinik-Integration: DEMIS-Anbindung im Krankenhaus
+> **Meldepflicht:** Krankenhäuser sind nach §§ 6 und 8 IfSG namentlich meldepflichtig. Seit 2023 ist die elektronische Übermittlung über DEMIS verpflichtend. Arztmeldungen (§ 6 IfSG) und Labormeldungen (§ 7 IfSG) müssen als FHIR R4 Bundle übertragen werden. Bei Nichtmeldung droht ein Bußgeld bis 25.000 Euro (§ 73 IfSG).
+>
+> **KIS-Integration:** Verbreitete KIS-Systeme (z.B. Meierhofer M-KIS, CGM Medico, Dedalus Orbis) bieten DEMIS-Module an, die Meldungen direkt aus dem Behandlungsfall heraus erzeugen und versenden. Voraussetzung: Implementierung der DEMIS-FHIR-Schnittstelle und Authentifizierung mit einem institutionellen Zertifikat. Klären Sie mit Ihrem KIS-Hersteller, ob das DEMIS-Modul für Arztmeldungen (Erkrankungsmeldung) und Labormeldungen separat lizenziert wird.
+>
+> **Notaufnahme-Besonderheit:** Meldepflichtige Erkrankungen können zuerst in der Notaufnahme auffallen. Stellen Sie sicher, dass das DEMIS-Modul auch im Notaufnahme-Workflow des KIS verfügbar ist und nicht nur im stationären Bereich.
+
+> [!dev-quickstart] Dev Quickstart: DEMIS Labormeldung per FHIR senden
+> Meldungen werden als FHIR R4 Bundle per HTTP POST an die DEMIS Notification API gesendet. Auth via Bearer Token des DEMIS Token Provider.
+> ```bash
+> POST https://demis.rki.de/notification-api/fhir/$process-notification
+> Content-Type: application/fhir+json
+> Authorization: Bearer <demis-token>
+>
+> {
+>   "resourceType": "Bundle",
+>   "meta": { "profile": ["https://demis.rki.de/fhir/StructureDefinition/NotificationBundleLaboratory"] },
+>   "type": "document",
+>   "entry": [
+>     { "resource": { "resourceType": "Composition", ... } },
+>     { "resource": { "resourceType": "Patient", ... } },
+>     { "resource": { "resourceType": "DiagnosticReport", ... } }
+>   ]
+> }
+> ```
+> - Testumgebung: [gematik/DEMIS-Test_Environment](https://github.com/gematik/DEMIS-Test_Environment) (Docker-basiert)
+> - FHIR-Profile: [simplifier.net/rki.demis.laboratory](https://simplifier.net/rki.demis.laboratory) (Package `de.rki.demis.laboratory`)
+> - Dokumentation für Sender: [wiki.gematik.de DEMIS Wissensdatenbank](https://wiki.gematik.de/pages/viewpage.action?pageId=143884296)
+> - LOINC für Erregernachweise und SNOMED-CT für Krankheiten verpflichtend
+
+> [!interesse-technik]
+> DEMIS nutzt FHIR R4 (HL7 FHIR) für strukturierte Meldungen. Die Profile sind auf Simplifier.net veröffentlicht (Package: `de.rki.demis.disease`). Meldungen erfolgen über eine REST-API (HTTPS POST). Testumgebung: [demis.rki.de/testing](https://demis.rki.de/testing). Laborberichte nach § 7 IfSG werden als FHIR-Bundle übertragen. LOINC-Codes für Labortests und SNOMED-CT für Krankheiten sind verpflichtend.
 
 ### Surveillance-Systeme
 

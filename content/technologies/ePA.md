@@ -19,7 +19,7 @@ Stell dir vor, du gehst zum Arzt und der weiß nicht, welche Medikamente dir ein
 
 ## Überblick
 
-Ab dem **15. Januar 2025** startete die ePA in Modellregionen (Pilot). Der **bundesweite Rollout** begann am **29. April 2025**: Seither wird die ePA automatisch für alle gesetzlich Versicherten angelegt. Man muss aktiv widersprechen, wenn man keine haben will (Opt-out). Seit dem **1. Oktober 2025** ist die ePA in allen medizinischen Einrichtungen Pflicht.
+Ab dem **15. Januar 2025** startete die ePA in Modellregionen (Pilot). Der **bundesweite Rollout** begann am **29. April 2025**: Seither wird die ePA automatisch für alle gesetzlich Versicherten angelegt. Man muss aktiv widersprechen, wenn man keine haben will ([[Opt-Out-ePA|Opt-out]]). Seit dem **1. Oktober 2025** ist die ePA in allen medizinischen Einrichtungen Pflicht.
 
 Laut dem **TI-Atlas 2025** (gematik / IGES Institut, veröffentlicht 24. November 2025, Befragung von über 6.600 Einrichtungen und 1.400 Bürgerinnen und Bürgern) hatten **drei Viertel der Arztpraxen die ePA bereits vor dem Pflichtstarttermin genutzt**.
 
@@ -133,11 +133,11 @@ Das Nachrichtenportal netzpolitik.org analysierte am **16. Februar 2026** die ge
 - **Registervernetzung**: Rund 350 Gesundheitsregister sollen über pseudonymisierte Versicherungs-IDs vernetzt werden.
 - **EHDS-Anbindung**: Ab 2029 sollen Daten in den europäischen Gesundheitsdatenraum ([[EHDS]]) fließen.
 
-Datenschützer und Bürgerrechtsorganisationen bezweifeln einen ausreichenden Re-Identifizierungsschutz und ein effektives Widerspruchsrecht. Die GFF-Klage gegen das FDZ läuft parallel weiter.
+Datenschützer und Bürgerrechtsorganisationen bezweifeln einen ausreichenden Re-Identifizierungsschutz und ein effektives Widerspruchsrecht. Die [[GFF]]-Klage gegen das FDZ läuft parallel weiter.
 
 ### GFF-Klage gegen das FDZ (2022/2026)
 
-Die Gesellschaft für Freiheitsrechte (GFF, unterstützt vom CCC) nahm im Februar 2026 ihre 2022 eingereichte Klage gegen das Forschungsdatenzentrum Gesundheit (FDZ) wieder auf (das Verfahren hatte seit Februar 2023 geruht, da das FDZ nicht operativ war). Kritisiert wird, dass die Pseudonymisierung der ePA-Daten von 73 Millionen GKV-Versicherten unzureichend sei und eine Re-Identifizierung bei seltenen Krankheiten ermögliche. Ein weiterer Kritikpunkt: GKV-Versicherte haben kein Widerspruchsrecht gegen die Datenübermittlung an das FDZ, PKV-Versicherte hingegen schon. Die Klage ist zum Stand März 2026 anhängig. Weitere Details im Artikel zum [[GDNG]].
+Die [[GFF|Gesellschaft für Freiheitsrechte (GFF)]], unterstützt vom CCC, nahm im Februar 2026 ihre 2022 eingereichte Klage gegen das Forschungsdatenzentrum Gesundheit (FDZ) wieder auf (das Verfahren hatte seit Februar 2023 geruht, da das FDZ nicht operativ war). Kritisiert wird, dass die Pseudonymisierung der ePA-Daten von 73 Millionen GKV-Versicherten unzureichend sei und eine Re-Identifizierung bei seltenen Krankheiten ermögliche. Ein weiterer Kritikpunkt: GKV-Versicherte haben kein Widerspruchsrecht gegen die Datenübermittlung an das FDZ, PKV-Versicherte hingegen schon. Die Klage ist zum Stand März 2026 anhängig. Weitere Details im Artikel zum [[GDNG]].
 
 ### Sicherheitsvorfälle und PoPP
 

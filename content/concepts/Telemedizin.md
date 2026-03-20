@@ -61,7 +61,7 @@ Praxen ohne vollständige TI-Anbindung erhalten Honorarabschläge von bis zu 2,5
 
 ### Telemonitoring
 
-Beim Telemonitoring übermitteln Patienten kontinuierlich Vitaldaten vom häuslichen Umfeld an die Praxis. Technisch werden Daten über zertifizierte Messgeräte und Übertragungsmodule (z.B. Bluetooth zu einem Hub, dann per Mobilfunk) an ein Telemonitoringzentrum gesendet. Die [[ePA]] ist als perspektivischer Datenspeicher für Telemonitoringdaten vorgesehen.
+Beim [[Telemonitoring]] übermitteln Patienten kontinuierlich Vitaldaten vom häuslichen Umfeld an die Praxis. Technisch werden Daten über zertifizierte Messgeräte und Übertragungsmodule (z.B. Bluetooth zu einem Hub, dann per Mobilfunk) an ein Telemonitoringzentrum gesendet. Die [[ePA]] ist als perspektivischer Datenspeicher für Telemonitoringdaten vorgesehen.
 
 Das [[DigiG]] ermöglichte es, [[DiGA]] der Risikoklasse IIb für Telemonitoringzwecke zuzulassen. Damit können komplexere Telemonitoringanwendungen als GKV-Leistung erstattet werden.
 

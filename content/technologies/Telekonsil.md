@@ -21,7 +21,7 @@ Stell dir vor, ein Hausarzt sieht ein auffälliges Hautbild und ist unsicher, ob
 
 Das Telekonsil unterscheidet sich von der [[Videosprechstunde]]: Bei der Videosprechstunde ist der Patient aktiv beteiligt. Beim Telekonsil kommunizieren zwei Ärzte über einen Fall, oft ohne direkte Patientenbeteiligung.
 
-In Deutschland ist das ärztliche Telekonsil seit 2020 eine abrechnungsfähige Leistung im Einheitlichen Bewertungsmaßstab ([[EBM]]). Es gibt drei Kernszenarien:
+In Deutschland ist das ärztliche Telekonsil seit dem **1. Oktober 2020** eine abrechnungsfähige Leistung im Einheitlichen Bewertungsmaßstab ([[EBM]]). Es gibt drei Kernszenarien:
 
 1. **Dermato-Telekonsil (Hautarzt)**: Ein Hausarzt oder Nicht-Dermatologe schickt Bilder und Befunde an einen Dermatologen. Häufigster Anwendungsfall in Deutschland.
 2. **Radiologisches Telekonsil**: Zweitmeinung zu Röntgen-, CT- oder MRT-Aufnahmen durch Radiologen an anderen Standorten (Teleradiologie).
@@ -178,6 +178,7 @@ Die technische Integration von Telekonsil-Dokumenten in die ePA folgt dem gleich
 ## Quellen
 
 - [KBV: Telekonsil – Abrechnung und Voraussetzungen](https://www.kbv.de/html/telekonsil.php)
+- [KBV: EBM-Ziffer 01671 – Telekonsiliarische Beurteilung](https://www.kbv.de/html/ebm.php)
 - [Bundesärztekammer: Telemedizin und Telekonsil](https://www.bundesaerztekammer.de/themen/aerzte/digitalisierung/telemedizin)
 - [gematik: KIM – Kommunikation im Medizinwesen](https://www.gematik.de/anwendungen/kim)
 - [Wikipedia: Telemedizin (Telekonsultation)](https://de.wikipedia.org/wiki/Telemedizin)

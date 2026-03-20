@@ -94,7 +94,7 @@ Neben dem BTM-Rezept gibt es weitere Sonderrezeptformen, die schrittweise digita
 
 Das T-Rezept (Thalidomid-Rezept) hat die Digitalisierung bereits weiter vorangetrieben: Die gematik veröffentlichte im August 2025 die finale Spezifikation für das elektronische T-Rezept.
 
-> [!dev-quickstart] Dev Quickstart: E-Rezept-Fachdienst — Task erstellen (Basis für E-BtM)
+> [!dev-quickstart] Dev Quickstart: E-Rezept-Fachdienst, Task erstellen (Basis für E-BtM)
 > Das E-BtM-Rezept wird als Erweiterung des E-Rezept-Fachdienstes implementiert. Aktuell produktiv für Muster-16:
 > ```bash
 > # Schritt 1: Task anlegen (FlowType 160 = regulär, BTM wird eigener FlowType)

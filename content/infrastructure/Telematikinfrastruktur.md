@@ -103,7 +103,7 @@ Mit TI 2.0 wird das bisherige VPN-Perimeter-Modell durch [[Zero-Trust]] ersetzt.
 
 ### KHAG und Transformationsfonds: TI-Förderung für Krankenhäuser
 
-Das [[KHAG|Krankenhausreformanpassungsgesetz (KHAG)]] steht am **27. März 2026** im Bundesrat zur Abstimmung. Es würde Krankenhäuser verpflichten, verbindliche Interoperabilitätsstandards bis **September 2026** umzusetzen. Das KHAG treibt die FHIR-basierte Interoperabilität ([[ISiK]]) im stationären Bereich weiter voran.
+Das [[KHAG|Krankenhausreformanpassungsgesetz (KHAG)]] soll am **27. März 2026** vom Bundesrat beschlossen werden. Es würde Krankenhäuser verpflichten, verbindliche Interoperabilitätsstandards bis **September 2026** umzusetzen. Das KHAG treibt die FHIR-basierte Interoperabilität ([[ISiK]]) im stationären Bereich weiter voran.
 
 Der **Transformationsfonds** stellt **50 Milliarden Euro** (2026 bis 2035) für Krankenhäuser bereit. Die Antragsphase läuft seit **Januar 2026**. Explizit förderfähige Maßnahmen umfassen:
 

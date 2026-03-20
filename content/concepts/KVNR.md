@@ -3,6 +3,10 @@ title: KVNR - Krankenversicherungsnummer
 audience: [technical, non-technical]
 tags: [konzepte, identität, krankenversicherung, versicherte, gkv]
 aliases: [KVNR, Krankenversicherungsnummer, Versichertennummer, unveränderliche Krankenversicherungsnummer]
+relevance:
+  sectors: [arztpraxis, krankenhaus, zahnarzt, apotheke, pflege, kasse, ti-infrastruktur]
+  interests: [technik, compliance]
+maturity: wachsend
 ---
 
 # KVNR - Krankenversicherungsnummer
@@ -20,6 +24,19 @@ Die KVNR wurde mit dem Gesundheitsstrukturgesetz 1993 eingeführt. Vor 1993 verg
 Die KVNR ist auf der [[eGK]] (elektronischen Gesundheitskarte) aufgedruckt und im Chip gespeichert. Sie ist auch Bestandteil der Versichertenstammdaten im [[VSDM]]-System. Krankenkassen, Arztpraxen und Abrechnungsstellen verwenden die KVNR als primären Identifikator für Versicherte.
 
 In der [[Telematikinfrastruktur]] hat die KVNR besondere Bedeutung als dauerhafter, systemübergreifender Identifier. Alle TI-Anwendungen, die Versicherte betreffen, referenzieren deren Daten über die KVNR.
+
+> [!praxis-tipp] Praxis-Tipp: KVNR im Praxisalltag
+> Die KVNR begegnet Ihnen täglich, ohne dass Sie es merken. Ihr PVS liest sie automatisch beim VSDM-Check vom Chip der eGK aus.
+>
+> Was Sie wissen müssen:
+> - **Kartenlesen ist Pflicht:** Einmal pro Quartal muss die eGK über das Kartenlesegerät eingelesen werden. Das löst den VSDM-Check aus und bestätigt die Versichertendaten.
+> - **Keine Karte vorhanden?** Seit Juli 2025 müssen Praxen auch die elektronische Ersatzbescheinigung (eEB) akzeptieren. Patienten können die eEB über die App ihrer Krankenkasse vorzeigen.
+> - **KVNR für die ePA:** Das PVS nutzt die KVNR, um die ePA des Patienten eindeutig abzufragen. Stimmt die KVNR nicht mit den Kassendaten überein, schlägt der ePA-Zugriff fehl.
+>
+> Häufiger Fehler: Patient gibt die KVNR mündlich an (z.B. am Telefon). Tippen Sie die Nummer nie manuell ein. Nutzen Sie immer die Karte oder die eEB. Manuelle Eingaben führen zu Tipp- und Zuordnungsfehlern.
+
+> [!interesse-compliance]
+> Die KVNR ist ein personenbezogenes Datum nach DSGVO (Art. 4 Nr. 1). Sie darf nur für Zwecke der Sozialversicherung und der Gesundheitsversorgung verarbeitet werden (§ 290 SGB V). Eine Nutzung zur kassenübergreifenden Profilbildung ist unzulässig. Praxen und Krankenhäuser müssen die KVNR als besonders schützenswerte Information behandeln und in Verfahrensverzeichnisse aufnehmen.
 
 ## Technische Details
 
@@ -87,6 +104,34 @@ Die [[eGK]] speichert die KVNR sowohl im Chip (als Feld in den Versichertenstamm
 ### Datenschutz
 
 Die KVNR ist ein personenbezogenes Datum nach DSGVO. Sie darf nur für Zwecke der Sozialversicherung und der Gesundheitsversorgung verarbeitet werden. Eine Nutzung der KVNR zur kassenübergreifenden Profilbildung außerhalb des Versorgungskontexts ist nicht zulässig.
+
+> [!dev-quickstart] Dev Quickstart: KVNR in FHIR und IDP-Token
+> **FHIR Patient-Ressource mit KVNR:**
+> ```json
+> {
+>   "resourceType": "Patient",
+>   "identifier": [{
+>     "system": "http://fhir.de/sid/gkv/kvid-10",
+>     "value": "A123456789"
+>   }]
+> }
+> ```
+> **IDP-Token (JWT) des sektoralen IDP** enthält die KVNR als Pflichtclaim `kvnr`:
+> ```json
+> {
+>   "sub": "...",
+>   "kvnr": "A123456789",
+>   "given_name": "Max",
+>   "family_name": "Mustermann",
+>   "iss": "https://idp.krankenkasse.example"
+> }
+> ```
+> - Identifier-System: `http://fhir.de/sid/gkv/kvid-10` (definiert in [de.basisprofil.r4](https://simplifier.net/basisprofil-de-r4))
+> - Spec: [gemSpec_IDP_Sek](https://gemspec.gematik.de/docs/gemSpec/gemSpec_IDP_Sek/latest/) (KVNR als Pflichtclaim)
+> - ePA-Aktensystem: Akte wird über KVNR eindeutig zugeordnet (1 KVNR = 1 Akte)
+
+> [!interesse-technik]
+> KVNR im TI-Kontext: 10-stellig, alphanumerisch (1 Buchstabe + 8 Ziffern + 1 Prüfziffer). Identifier-System in FHIR: `http://fhir.de/sid/gkv/kvid-10`. Im [[IDP]]-Token des sektoralen IDP ist die KVNR als Pflichtclaim `kvnr` definiert (gemSpec_IDP_Sek). Pseudonymisierung im FDZ: HMAC-SHA256 über die KVNR mit geheimem Schlüssel (deterministisch für Längsschnittdaten).
 
 ## Verknüpfungen
 

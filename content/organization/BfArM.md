@@ -56,7 +56,7 @@ Seit 2022 betreibt das BfArM auch das Fast-Track-Verfahren für [[DiPA|digitale 
 Das BfArM bewertet Risiken von Medizinprodukten, koordiniert Rückrufe und betreibt ein Vorkommnis-Melde- und Informationssystem. Klinische Prüfungen von Medizinprodukten werden durch das BfArM genehmigt.
 
 > [!interesse-technik]
-> **DiGA-Verzeichnis**: [diga.bfarm.de](https://diga.bfarm.de/de) — maschinenlesbare Liste aller zugelassenen DiGA mit Indikation, Evidenzlage, Erstattungsbetrag.
+> **DiGA-Verzeichnis**: [diga.bfarm.de](https://diga.bfarm.de/de): maschinenlesbare Liste aller zugelassenen DiGA mit Indikation, Evidenzlage, Erstattungsbetrag.
 > **Klassifikationssysteme**: ICD-10-GM, OPS und SNOMED CT sind als FHIR CodeSystem unter `http://fhir.de/CodeSystem/bfarm/` registriert.
 > **AbEM-Daten**: Seit 1. Januar 2026 veröffentlicht das BfArM Ergebnisse der anwendungsbegleitenden Erfolgsmessung (AbEM) im DiGA-Verzeichnis halbjährlich.
 

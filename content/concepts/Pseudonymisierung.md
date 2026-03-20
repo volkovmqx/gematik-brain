@@ -91,12 +91,12 @@ Das [[Forschungsdatenzentrum-Gesundheit]] beim [[BfArM]] nutzt ein mehrstufiges 
 3. Der Pseudonymisierungsschlüssel ist beim BfArM getrennt von den Forschungsdaten gespeichert.
 4. Forscher erhalten ausschließlich pseudonymisierte Daten, niemals KVNRs.
 
-Die **GFF-Klage** (Gesellschaft für Freiheitsrechte, Klage wiederaufgenommen Februar 2026) kritisiert, dass dieses Verfahren bei seltenen Erkrankungen oder kleinen Grundgesamtheiten keine ausreichende Re-Identifizierungsresistenz bietet. Das Verfahren ist noch anhängig.
+Die **[[GFF]]-Klage** (Gesellschaft für Freiheitsrechte, Klage wiederaufgenommen Februar 2026) kritisiert, dass dieses Verfahren bei seltenen Erkrankungen oder kleinen Grundgesamtheiten keine ausreichende Re-Identifizierungsresistenz bietet. Das Verfahren ist noch anhängig.
 
 > [!frist-warnung] Frist-Warnung: Datenzugangsanträge FDZ Gesundheit
 > **Rechtsgrundlage:** § 303e SGB V i.V.m. § 4 GDNG (in Kraft seit 26. März 2024)
 > **Pflicht:** Forschungseinrichtungen, die auf pseudonymisierte GKV-Abrechnungsdaten beim FDZ Gesundheit (BfArM) zugreifen möchten, müssen einen förmlichen Datenzugangsantrag stellen. Das FDZ prüft gemäß § 303e Abs. 3 SGB V, ob das öffentliche Forschungsinteresse die Vertraulichkeitsinteressen der Versicherten überwiegt und das Re-Identifizierungsrisiko ausreichend minimiert ist.
-> **Handlungsbedarf:** Der Antrag muss den Forschungszweck, die Notwendigkeit der Datenverknüpfung und die technischen sowie organisatorischen Schutzmaßnahmen nachweisen. Eine Datenschutz-Folgenabschätzung (DSFA) nach Art. 35 DSGVO ist bei Projekten mit großen Mengen besonderer Kategorien von Gesundheitsdaten Pflicht und dem Antrag beizufügen.
+> **Handlungsbedarf:** Der Antrag muss den Forschungszweck, die Notwendigkeit der Datenverknüpfung und die technischen sowie organisatorischen Schutzmaßnahmen nachweisen. Eine [[DSFA|Datenschutz-Folgenabschätzung (DSFA)]] nach Art. 35 DSGVO ist bei Projekten mit großen Mengen besonderer Kategorien von Gesundheitsdaten Pflicht und dem Antrag beizufügen.
 > **Sanktionen:** Re-Identifizierungsversuche sind nach § 9 Abs. 1 Nr. 2 GDNG strafbar (Freiheitsstrafe bis zu einem Jahr oder Geldstrafe). Verstöße gegen die Geheimhaltungspflichten nach § 7 GDNG können zur sofortigen Sperrung des Datenzugangs führen.
 
 ### Pseudonymisierung in der ePA
@@ -148,6 +148,8 @@ Die [[MII]] (Medizininformatik-Initiative) verbindet Daten aus 35 Universitätsk
 - [[MII]] (Medizininformatik-Initiative; patientenübergreifende Pseudonymisierung über Klinikgrenzen)
 - [[BfArM]] (betreibt FDZ und Datenzugangsstelle nach GDNG)
 - [[GKV]] (Abrechnungsdaten der GKV sind Hauptdatenquelle im FDZ)
+- [[DSFA]] (Datenschutz-Folgenabschätzung; Pflicht bei Projekten mit Gesundheitsdaten)
+- [[GFF]] (klagt gegen unzureichende Pseudonymisierung im FDZ)
 
 ## Quellen
 

@@ -1303,10 +1303,22 @@
       "date": "2026-01-01",
       "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/beep-gesetz-bringt-digitale-pflegehilfen-auf-den-markt/68469307",
       "affects": ["DiGA.md"],
-      "action": "new_article",
+      "action": "applied",
+      "appliedDate": "2026-03-20",
       "category": "regulation",
       "details": "Das BEEP-Gesetz (in Kraft 1. Januar 2026) führt erstmals ein vorläufiges Aufnahmeverfahren für Digitale Pflegeanwendungen (DiPA) ein, analog zum bewährten Verfahren bei DiGA. Bislang war kein einziges Produkt im BfArM-DiPA-Verzeichnis zugelassen, da das frühere Verfahren einen vollständigen Nutzennachweis vor Aufnahme verlangte. Neu ab Januar 2026: Hersteller können DiPA für bis zu 12 Monate vorläufig ins Verzeichnis aufnehmen lassen, auch wenn der pflegerische Nutzen noch nicht vollständig belegt ist. Voraussetzung ist ein wissenschaftliches Evaluationskonzept. Gleichzeitig stieg die Vergütung: Pflegeversicherung zahlt jetzt bis zu 40 Euro monatlich für DiPA-Nutzung und bis zu 30 Euro für ergänzende Unterstützungsleistungen (statt bisherigem Pauschalrahmen von 53 Euro). Erste DiPA-Zulassungen werden für 2026 erwartet. DiPA sind für ambulant pflegebedürftige Personen (und seit BEEP auch für pflegende Angehörige) bestimmt. Kein direkter Bezug zur TI-Infrastruktur, aber als eigenständiger Artikel 'DiPA.md' sinnvoll, da DiGA.md bereits existiert und eine Gegenüberstellung Digital Health-Anwendungen (DiGA vs. DiPA) für die Wissensbasis fehlt.",
       "suggestedTerm": "DiPA"
+    },
+    {
+      "title": "BSI-Sicherheitsstudie: Gravierende Schwachstellen in 3 von 4 Praxisverwaltungssystemen (März 2026)",
+      "date": "2026-03-17",
+      "source": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2026/260317_Software-Produkte_Gesundheitswesen.html",
+      "summary": "Das BSI veröffentlichte am 17. März 2026 die Ergebnisse zweier Sicherheitsstudien: SiPra (Praxisverwaltungssysteme) und DiPS (digitale Pflegedokumentationssoftware). Ergebnis: Bei 3 von 4 getesteten PVS lassen sich durch Verkettung einzelner Schwachstellen Angriffe aus dem Internet ermöglichen. Konkrete Mängel: fehlende Transportverschlüsselung, veraltete Kryptoalgorithmen, schwache Authentifizierung, unsichere Software-Update-Mechanismen. Hersteller wurden informiert und behobene Schwachstellen zeitnah behoben. BSI veröffentlichte Empfehlungen für Hersteller und Betreiber; Kommentierungsfrist läuft bis 17. Juni 2026. Betroffene Systeme sind nicht namentlich genannt.",
+      "relevantArticles": ["Telematikinfrastruktur.md", "BSI.md", "KIS.md"],
+      "category": "security",
+      "action": "update",
+      "details": "BSI.md sollte die SiPra/DiPS-Studie (17.03.2026) als aktuelles Beispiel für TI-Sicherheitsanforderungen im ambulanten Bereich erwähnen. Telematikinfrastruktur.md kann im Sicherheitsabschnitt auf die BSI-Empfehlungen für PVS hinweisen. PVS-Hersteller sind nach gemSpec-Anforderungen zu sicherer Softwareentwicklung verpflichtet; die BSI-Studie zeigt, dass diese Anforderungen nicht flächendeckend umgesetzt werden."
     }
-  ]
+  ],
+  "lastChecked": "2026-03-20"
 }

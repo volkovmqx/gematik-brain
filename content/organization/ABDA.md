@@ -3,6 +3,10 @@ title: ABDA
 audience: [technical, non-technical]
 tags: [organisation, apotheke, interessenvertretung, artikelstamm]
 aliases: [Bundesvereinigung Deutscher Apothekerverbände, ABDA, DAV, BAK]
+relevance:
+  sectors: [apotheke, regulierung, verband]
+  interests: [compliance, business]
+maturity: wachsend
 ---
 
 # ABDA
@@ -25,6 +29,9 @@ Im deutschen Gesundheitswesen nimmt die ABDA Aufgaben wahr, die für das Zusamme
 
 Die Prüfung von AVS-Software erfolgt über das **ADAS** (Apothekenrechenzentrum-Datenaustausch-Systemprüfstelle), das im Auftrag des DAV tätig wird. Apothekensoftware muss nachweisen, dass sie die technischen Anlagen zur Abrechnungsvereinbarung korrekt umsetzt, insbesondere die **[[TA1|Technische Anlage 1 (TA1)]]** für den Datenaustausch mit den Apothekenrechenzentren. Ohne diese Prüfung kann ein AVS nicht zur GKV-Abrechnung zugelassen werden.
 
+> [!interesse-compliance]
+> Apotheken sind verpflichtet, den ABDA-Artikelstamm in ihrer AVS-Software zu nutzen. Die 14-täglichen Updates zum 1. und 15. eines Monats müssen eingespielt werden. Fehlen aktuelle Preise oder Substitutionsinformationen, kann die Abrechnung mit Rechenzentren scheitern. Apotheken haften gegenüber Krankenkassen für korrekte Abrechnung nach TA1.
+
 ## Technische Details
 
 ### ABDA-Artikelstamm
@@ -40,6 +47,16 @@ Der ABDA-Artikelstamm ist die maßgebliche Produktdatenbank für das deutsche Ap
 
 Aktualisierungen erfolgen 14-täglich zum 1. und 15. eines Monats. AVS-Hersteller integrieren den Artikelstamm direkt in ihre Software. Er ist Pflichtbestandteil jedes zugelassenen AVS.
 
+> [!praxis-tipp] Praxis-Tipp: Artikelstamm-Updates nicht verpassen
+> Ihr AVS bezieht die Artikelstamm-Updates in der Regel automatisch. Aber: Automatisch bedeutet nicht immer zeitgleich.
+>
+> Was Apotheken sicherstellen sollten:
+> 1. Prüfen Sie nach dem 1. und 15. jedes Monats, ob das Update eingespielt wurde. Im AVS finden Sie die aktuell verwendete Stammdatenversion in den Systemeinstellungen.
+> 2. Wenn das Update fehlt: Verordnungen mit neuen Präparaten oder geänderten Rabattverträgen können nicht korrekt abgerechnet werden. Die Abrechnung beim Rechenzentrum schlägt fehl.
+> 3. Vor langen Praxisschließungen (z.B. Urlaub): Prüfen Sie, ob in diesem Zeitraum ein Update fällig ist, und spielen Sie es vorher manuell ein.
+>
+> Häufiger Fehler: Das AVS läuft auf einem Computer ohne Internetverbindung oder mit abgelaufenen Zugangsdaten zum Update-Server. Dann kommen keine Updates an.
+
 ### Technische Anlage 1 (TA1)
 
 Die **TA1** ist das standardisierte Dateiformat für die Rezeptabrechnung zwischen Apotheken und Apothekenrechenzentren. Sie definiert:
@@ -53,7 +70,10 @@ Die TA1 ist als technische Anlage zur Vereinbarung über die Übermittlung von D
 
 ### Zusammenspiel mit der Telematikinfrastruktur
 
-Mit Einführung des [[E-Rezept|E-Rezepts]] müssen AVS-Systeme sowohl die FHIR-basierten TI-Schnittstellen als auch das TA1-Format beherrschen. Das [[E-Rezept]] liefert die Verordnungsdaten über den gematik-[[Fachdienst]] im [[FHIR]]-Format. Die Abrechnung gegenüber dem Apothekenrechenzentrum erfolgt weiterhin im TA1-Format. Das AVS übernimmt die Transformation zwischen beiden Formaten.
+Mit Einführung des [[E-Rezept|E-Rezepts]] müssen AVS-Systeme sowohl die FHIR-basierten TI-Schnittstellen als auch das TA1-Format beherrschen.
+
+> [!interesse-business]
+> Der ABDA-Artikelstamm ist eine Pflichtlizenz für jeden AVS-Hersteller. ABDATA lizenziert den Stamm an alle zugelassenen AVS-Hersteller. Für Hersteller neuer Apothekendigitalisierungslösungen ist die Einbindung des ABDA-Artikelstamms obligatorisch und kostenpflichtig. Die Integration muss Preis-, Substitutions- und Interaktionsdaten korrekt abbilden. Das [[E-Rezept]] liefert die Verordnungsdaten über den gematik-[[Fachdienst]] im [[FHIR]]-Format. Die Abrechnung gegenüber dem Apothekenrechenzentrum erfolgt weiterhin im TA1-Format. Das AVS übernimmt die Transformation zwischen beiden Formaten.
 
 ## Verknüpfungen
 

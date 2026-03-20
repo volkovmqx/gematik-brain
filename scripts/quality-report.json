@@ -1,12 +1,170 @@
 {
-  "timestamp": "2026-03-20T10:00:00Z",
-  "overallScore": 82,
+  "timestamp": "2026-03-20T11:50:00Z",
+  "overallScore": 81,
   "testResults": {
-    "passed": 185,
-    "failed": 1,
-    "total": 186
+    "passed": 192,
+    "failed": 0,
+    "total": 192
   },
   "articles": [
+    {
+      "file": "content/standards/LDT.md",
+      "verdict": "revise",
+      "score": 75,
+      "issues": [
+        "Stale version: article calls 'LDT 3.0' the 'aktuelle Hauptversion'. KBV portal shows version 3.2.19 as current (docs dated May 2025). The minor version line matters for implementors.",
+        "interesse-compliance callout references 'Version 3.x' but never states the actual current minor version 3.2.19."
+      ],
+      "fixInstructions": "In Überblick, change 'Die aktuelle Hauptversion ist LDT 3.0' to 'Die aktuelle Spezifikation ist LDT 3.2 (aktuelle Nebenversion: 3.2.19, Stand Mai 2025)'. Add alias 'LDT 3.2' to frontmatter. Source: https://update.kbv.de/ita-update/Labor/Labordatenkommunikation/"
+    },
+    {
+      "file": "content/organization/GFF.md",
+      "verdict": "revise",
+      "score": 62,
+      "issues": [
+        "url_dead: Source https://freiheitsrechte.org/ueber-uns/ returns 404. Correct URL is https://freiheitsrechte.org/ueber-die-gff/werwirsind",
+        "url_dead: Source https://freiheitsrechte.org/themen/datenschutz/ returns 404. Correct URL is https://freiheitsrechte.org/themen/freiheit-im-digitalen-zeitalter",
+        "Factual inaccuracy: Article cites 'Art. 8 Grundgesetz' for the right to informationelle Selbstbestimmung. Art. 8 GG covers freedom of assembly. The correct basis is Art. 2 Abs. 1 GG i.V.m. Art. 1 Abs. 1 GG (Volkszählungsurteil 1983)."
+      ],
+      "fixInstructions": "1. Replace source URL https://freiheitsrechte.org/ueber-uns/ with https://freiheitsrechte.org/ueber-die-gff/werwirsind. 2. Replace source URL https://freiheitsrechte.org/themen/datenschutz/ with https://freiheitsrechte.org/themen/freiheit-im-digitalen-zeitalter. 3. In Technische Details, correct 'Art. 8 Grundgesetz' to 'Art. 2 Abs. 1 GG i.V.m. Art. 1 Abs. 1 GG (allgemeines Persönlichkeitsrecht, Recht auf informationelle Selbstbestimmung)'."
+    },
+    {
+      "file": "content/concepts/Opt-Out-ePA.md",
+      "verdict": "revise",
+      "score": 67,
+      "issues": [
+        "Factual inaccuracy: Article states 'Rechtsgrundlage ist § 343 SGB V'. § 343 SGB V is 'Informationspflichten der Krankenkassen' (verified via gesetze-im-internet.de). The Widerspruchsrecht and the opt-out mechanism are in § 342 Abs. 1 Satz 2 SGB V (Sechswochenfrist vor Anlage). § 343 is correctly cited only for the duty to inform.",
+        "url_dead: Source https://www.gematik.de/anwendungen/epa-fuer-alle/opt-out returns 404. Correct URL is https://www.gematik.de/anwendungen/epa-fuer-alle/widerspruch",
+        "Unverifiable claim: 'Die Krankenkasse muss den Widerspruch innerhalb von drei Werktagen technisch umsetzen.' No three-Werktage deadline found in § 342, § 344, or § 343 SGB V. The statute says 'unverzüglich'. Mark as unverifiable or remove the specific deadline.",
+        "url_mismatch: Source https://www.bundesgesundheitsministerium.de/themen/digitalisierung/digital-gesetz redirects to a general digitalization overview. DigiG-specific URL is https://www.bundesgesundheitsministerium.de/ministerium/gesetze-und-verordnungen/guv-20-lp/digig"
+      ],
+      "fixInstructions": "1. In Überblick and Technische Details, change 'Rechtsgrundlage ist § 343 SGB V' to '§ 342 Abs. 1 Satz 2 SGB V' everywhere the Widerspruchsrecht is cited. § 343 may be mentioned only as the information-duty paragraph. 2. Replace dead gematik URL with https://www.gematik.de/anwendungen/epa-fuer-alle/widerspruch. 3. Remove 'drei Werktage' claim or replace with 'unverzüglich'. 4. Update BMG source URL to the DigiG-specific page."
+    },
+    {
+      "file": "content/technologies/Telemonitoring.md",
+      "verdict": "revise",
+      "score": 72,
+      "issues": [
+        "Factual inaccuracy in EBM codes: The interesse-compliance callout states 'GOP 13579 ff.' for Telemonitoring Herzinsuffizienz. KBV EBM search shows the actual codes are 04325 (Indikationsstellung), 04326 (Zusatzpauschale Allgemeinmedizin), 13584 (Telemonitoring mittels ext. Messgeräten), 13586, 13587. There is no GOP 13579 for Telemonitoring.",
+        "§ 137f SGB V cited as Rechtsgrundlage. The G-BA Richtlinie Telemonitoring Herzinsuffizienz (Beschluss 17.12.2020) was based on § 135 Abs. 1 SGB V, not § 137f (which covers DMP). The DMP connection is indirect. This needs clarification."
+      ],
+      "fixInstructions": "In the interesse-compliance callout, replace 'GOP 13579 ff.' with the correct EBM codes: '04325 (Indikationsstellung), 04326 (Zusatzpauschale GP), 13584/13586/13587 (kardiologische Ziffern)'. Clarify the legal basis: the G-BA Richtlinie ist nach § 135 SGB V, während die DMP-Einbindung nach § 137f erfolgt. Quelle: https://www.kbv.de/html/telemonitoring.php"
+    },
+    {
+      "file": "content/concepts/Medizinprodukte.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [
+        "MDR May 2021 and IVDR May 2022 dates verified correct.",
+        "[[IVDR]] is listed twice in Verknüpfungen (lines 107 and 113). Duplicate entry.",
+        "[[Konformitaetsbewertung]] wiki-link uses non-umlaut spelling — verify alias exists."
+      ],
+      "fixInstructions": "Remove the duplicate [[IVDR]] entry from Verknüpfungen (line 113). Verify [[Konformitaetsbewertung]] resolves to the correct article."
+    },
+    {
+      "file": "content/concepts/DSFA.md",
+      "verdict": "pass",
+      "score": 80,
+      "issues": [
+        "Solid stub with correct legal basis (Art. 35 DSGVO).",
+        "Source dsgvo-gesetz.de is a third-party commentary site. Prefer official EUR-Lex or gesetze-im-internet.de for the DSGVO article text."
+      ],
+      "fixInstructions": "Replace dsgvo-gesetz.de source with official text at https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32016R0679 or https://www.gesetze-im-internet.de/englisch_dsgvo/. Otherwise no structural fixes needed."
+    },
+    {
+      "file": "content/infrastructure/Telematikinfrastruktur.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [
+        "KHAG tense fix verified: 'soll am 27. März 2026 vom Bundesrat beschlossen werden' — correct conditional phrasing."
+      ],
+      "fixInstructions": null
+    },
+    {
+      "file": "content/technologies/Telekonsil.md",
+      "verdict": "pass",
+      "score": 86,
+      "issues": [
+        "EBM date fix to '1. Oktober 2020' confirmed correct by multiple sources.",
+        "Minor: [!dev-quickstart] FHIR Bundle uses eRezept-specific eventCoding ('eRezept_Rezeptanforderung;Rezeptanfrage') as the MessageHeader event in a Telekonsil example. Should use a Telekonsil-appropriate code or be marked as placeholder."
+      ],
+      "fixInstructions": "In [!dev-quickstart] block, replace the eRezept-specific eventCoding with a Telekonsil-appropriate service identifier or add a comment noting it is a structural placeholder."
+    },
+    {
+      "file": "content/standards/xDT.md",
+      "verdict": "pass",
+      "score": 83,
+      "issues": [
+        "LDT wiki-links added correctly and are consistent with LDT.md content.",
+        "LDT version reference 'LDT 3.0' inherits the minor staleness from LDT.md (actual current: 3.2.x)."
+      ],
+      "fixInstructions": null
+    },
+    {
+      "file": "content/concepts/Pseudonymisierung.md",
+      "verdict": "pass",
+      "score": 86,
+      "issues": [
+        "[[DSFA]] link now resolves correctly.",
+        "GDNG in-force date 26. März 2024 confirmed correct."
+      ],
+      "fixInstructions": null
+    },
+    {
+      "file": "content/concepts/KVNR.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [
+        "relevance frontmatter and callouts appropriate.",
+        "KVNR introduction year 1993 (Gesundheitsstrukturgesetz) correct."
+      ],
+      "fixInstructions": null
+    },
+    {
+      "file": "content/concepts/DRG.md",
+      "verdict": "pass",
+      "score": 83,
+      "issues": [
+        "G-DRG 2003 voluntary / 2004 mandatory confirmed correct.",
+        "§ 17b KHG as legal basis confirmed correct.",
+        "InEK in Siegburg confirmed correct.",
+        "No official InEK or BMG source. Sources are all third-party (vdek, reimbursement.institute). Minor source quality issue."
+      ],
+      "fixInstructions": "Add an official source: https://www.inek-drg.de (InEK) or https://www.bundesgesundheitsministerium.de/abrechnung-krankenhausleistungen (BMG)."
+    },
+    {
+      "file": "content/organization/ABDA.md",
+      "verdict": "pass",
+      "score": 83,
+      "issues": [
+        "ABDA founded 1950, Berlin confirmed consistent with Wikipedia.",
+        "relevance sectors appropriate.",
+        "TA1 source links to 2021 archived version — may be outdated but structurally correct."
+      ],
+      "fixInstructions": null
+    },
+    {
+      "file": "content/organization/RKI.md",
+      "verdict": "pass",
+      "score": 86,
+      "issues": [
+        "RKI founded 1891 correct.",
+        "DEMIS mandatory since 2023 consistent with IfSG amendments.",
+        "Bußgeld bis 25.000 Euro (§ 73 IfSG) — plausible and consistent with IfSG.md which already confirmed this."
+      ],
+      "fixInstructions": null
+    },
+    {
+      "file": "content/concepts/OCSP.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "RFC 6960 reference correct.",
+        "relevance sectors and interests appropriate for technical protocol.",
+        "ECC migration date consistent with Telematikinfrastruktur.md."
+      ],
+      "fixInstructions": null
+    },
     {
       "file": "content/standards/KVDT.md",
       "verdict": "pass",
@@ -364,36 +522,50 @@
       "fixInstructions": ""
     }
   ],
-  "contradictions": [
-    {
-      "claim": "KHAG Bundesrat-Beschluss",
-      "articleA": "content/infrastructure/Telematikinfrastruktur.md says 'Das KHAG wurde am 27. März 2026 vom Bundesrat beschlossen' (past tense)",
-      "articleB": "Reality: today is 20. März 2026; the Bundesrat session is scheduled for 27.03.2026 but has not yet occurred. The article states a future event as completed past fact."
-    }
-  ],
+  "contradictions": [],
   "staleArticles": [
-    "content/standards/DataMatrix.md — cites withdrawn ISO/IEC 16022:2006 edition; current edition is ISO/IEC 16022:2024 (iso.org/standard/80926.html)",
-    "content/standards/GDT.md — source URL https://www.kbv.de/html/gdt.php is dead (HTTP 404); KBV restructured website",
-    "content/standards/xDT.md — source URLs https://www.kbv.de/html/xdt.php and https://www.kbv.de/html/2016_27222.php are dead (HTTP 404)"
+    "content/standards/LDT.md: describes 'LDT 3.0' as current version; KBV portal shows 3.2.19 as of May 2025",
+    "content/standards/xDT.md: inherits LDT 3.0 reference (minor)",
+    "content/standards/DataMatrix.md: cites withdrawn ISO/IEC 16022:2006 edition; current is ISO/IEC 16022:2024",
+    "content/standards/GDT.md: source URL https://www.kbv.de/html/gdt.php dead (HTTP 404)",
+    "content/standards/xDT.md (prev cycle): source URLs https://www.kbv.de/html/xdt.php dead (HTTP 404)"
   ],
   "urlIssues": [
+    {
+      "file": "content/organization/GFF.md",
+      "url": "https://freiheitsrechte.org/ueber-uns/",
+      "status": "url_dead",
+      "note": "HTTP 404 confirmed via Playwright. Replacement: https://freiheitsrechte.org/ueber-die-gff/werwirsind"
+    },
+    {
+      "file": "content/organization/GFF.md",
+      "url": "https://freiheitsrechte.org/themen/datenschutz/",
+      "status": "url_dead",
+      "note": "HTTP 404 confirmed via Playwright. Replacement: https://freiheitsrechte.org/themen/freiheit-im-digitalen-zeitalter"
+    },
+    {
+      "file": "content/concepts/Opt-Out-ePA.md",
+      "url": "https://www.gematik.de/anwendungen/epa-fuer-alle/opt-out",
+      "status": "url_dead",
+      "note": "HTTP 404 confirmed via Playwright. Replacement: https://www.gematik.de/anwendungen/epa-fuer-alle/widerspruch"
+    },
+    {
+      "file": "content/concepts/Opt-Out-ePA.md",
+      "url": "https://www.bundesgesundheitsministerium.de/themen/digitalisierung/digital-gesetz",
+      "status": "url_mismatch",
+      "note": "Redirects to general digitalization overview. DigiG-specific URL: https://www.bundesgesundheitsministerium.de/ministerium/gesetze-und-verordnungen/guv-20-lp/digig"
+    },
     {
       "file": "content/standards/GDT.md",
       "url": "https://www.kbv.de/html/gdt.php",
       "status": "url_dead",
-      "note": "HTTP 404 confirmed via Playwright. KBV restructured website. Use https://update.kbv.de/ita-update/ as replacement."
+      "note": "HTTP 404. Use https://update.kbv.de/ita-update/ as replacement."
     },
     {
       "file": "content/standards/xDT.md",
       "url": "https://www.kbv.de/html/xdt.php",
       "status": "url_dead",
       "note": "HTTP 404 confirmed via Playwright."
-    },
-    {
-      "file": "content/standards/xDT.md",
-      "url": "https://www.kbv.de/html/2016_27222.php",
-      "status": "url_dead",
-      "note": "Same /html/ URL pattern as confirmed dead KBV pages; presumed dead."
     },
     {
       "file": "content/standards/KVDT.md",
@@ -405,7 +577,7 @@
       "file": "content/processes/Entlassmanagement.md",
       "url": "https://www.gkv-spitzenverband.de/krankenversicherung/krankenhaeuser/entlassmanagement/entlassmanagement.jsp",
       "status": "url_mismatch",
-      "note": "Path segment 'krankenhaeuser' does not match confirmed GKV-SV URL structure. Confirmed URL: https://www.gkv-spitzenverband.de/krankenversicherung/ambulant_stationaere_versorgung/entlassmanagement/entlassmanagement.jsp"
+      "note": "Confirmed URL: https://www.gkv-spitzenverband.de/krankenversicherung/ambulant_stationaere_versorgung/entlassmanagement/entlassmanagement.jsp"
     }
   ]
 }

@@ -3,6 +3,10 @@ title: OCSP
 audience: [technical]
 tags: [concepts, PKI, kryptographie, zertifikate, sicherheit]
 aliases: [Online Certificate Status Protocol, Zertifikatsstatus-Protokoll]
+relevance:
+  sectors: [ti-infrastruktur, hersteller, it-dienstleister]
+  interests: [technik]
+maturity: wachsend
 ---
 
 # OCSP
@@ -18,6 +22,9 @@ Wenn du einer Person vertraust, weil sie dir einen Ausweis zeigt, möchtest du m
 OCSP (Online Certificate Status Protocol) ist ein Protokoll aus der Infrastruktur für öffentliche Schlüssel ([[PKI]]). Es ermöglicht einem Client, den aktuellen Sperrstatus eines [[PKI|X.509]]-Zertifikats bei einer Zertifizierungsstelle oder einem beauftragten OCSP-Responder abzufragen. Der Standard ist in RFC 6960 spezifiziert und ersetzt in vielen Szenarien die älteren Certificate Revocation Lists (CRL).
 
 In der [[Telematikinfrastruktur]] (TI) ist OCSP ein zentraler Mechanismus zur Zertifikatsprüfung. [[Konnektoren]] prüfen bei jeder Kommunikation die Gültigkeit von Zertifikaten auf [[eGK]], [[HBA]] und [[SMC-B]] über OCSP-Anfragen an die [[TSP]]-Responder. Die gematik-Spezifikation gemKPT_PKI_TIP beschreibt OCSP als Standardprotokoll für den Zertifikatsstatus und definiert Optimierungsoptionen für die TI-Architektur.
+
+> [!interesse-technik]
+> OCSP-Responder-URL: Im Zertifikat im Feld `AuthorityInfoAccess` (OID 1.3.6.1.5.5.7.48.1). Anfrage per HTTP GET (bis 255 Byte) oder POST. Request/Response in DER-kodiertem ASN.1. Content-Type: `application/ocsp-request` / `application/ocsp-response`. In der TI werden OCSP-Antworten gecacht (Gültigkeitsdauer laut `nextUpdate`-Feld). gematik-Referenzimplementierung: [github.com/gematik/ref-GemLibPki](https://github.com/gematik/ref-GemLibPki). ECC-Migration: Ab 1. Januar 2026 müssen neue TI-Zertifikate ECC-256 nutzen; OCSP-Prüfung unterstützt beide Algorithmen in der Übergangszeit.
 
 Der Vorteil von OCSP gegenüber CRL liegt in der Aktualität: CRLs müssen heruntergeladen und lokal gecacht werden und können veraltet sein. OCSP liefert eine Echtzeitauskunft direkt für das angefragte Zertifikat.
 
@@ -65,6 +72,28 @@ Die TI-[[PKI]] verwendet eine [[TSL|Trust Service List (TSL)]], in der alle akkr
 ### Kryptografische Anforderungen
 
 Clients müssen RSA mit SHA-256 unterstützen. Die TI-Spezifikationen schreiben zudem ECC-Algorithmen vor, da die TI schrittweise von RSA auf ECC umgestellt wird.
+
+> [!dev-quickstart] Dev Quickstart: OCSP-Status per curl abfragen
+> OCSP-Responder-URL steht im Zertifikat im Feld `AuthorityInfoAccess`. Kleine Anfragen (unter 255 Byte) können per GET gestellt werden.
+> ```bash
+> # OCSP-Responder-URL aus Zertifikat extrahieren
+> openssl x509 -in zertifikat.pem -noout -text | grep "OCSP - URI"
+>
+> # OCSP-Anfrage per POST (DER-kodiert)
+> openssl ocsp \
+>   -issuer issuer.pem \
+>   -cert zertifikat.pem \
+>   -url <OCSP-Responder-URL> \
+>   -resp_text
+>
+> # Ausgabe: "Response verify OK" + "zertifikat.pem: good"
+> # Mögliche Status: good | revoked (mit Sperrzeitpunkt) | unknown
+> ```
+> TI-spezifisch:
+> - OCSP-Antworten werden in der TI gecacht (Gültigkeitsdauer via `nextUpdate`)
+> - Referenzimplementierung: [github.com/gematik/ref-GemLibPki](https://github.com/gematik/ref-GemLibPki)
+> - Spec: gemKPT_PKI_TIP, TUC_PKI_006 "OCSP-Abfrage"
+> - ECC-Migration: Ab 1. Januar 2026 neue TI-Zertifikate zwingend ECC-256
 
 ## Verknüpfungen
 

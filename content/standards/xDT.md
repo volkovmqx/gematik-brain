@@ -32,7 +32,7 @@ Trotz ihres Alters sind xDT-Formate noch weit verbreitet: Viele [[PVS]] (Praxisv
 |--------|----------|-------|
 | **[[KVDT]]** | Abrechnungsdatenträger | Abrechnungsdaten von Praxen an die Kassenärztliche Vereinigung |
 | **[[GDT]]** | Gerätedatentransfer | Datenaustausch zwischen Praxissystemen und Medizingeräten (EKG, Laborgeräte, Spirometer) |
-| **LDT** | Labor-Datentransfer | Übermittlung von Laborbefunden vom Labor an die Arztpraxis |
+| **[[LDT]]** | Labor-Datentransfer | Übermittlung von Laborbefunden vom Labor an die Arztpraxis |
 | **BDT** | Behandlungsdatenträger | Übertragung von Behandlungsdaten zwischen Praxen (z.B. bei Praxisübergabe) |
 
 ## Technische Details
@@ -70,7 +70,7 @@ Die aktuelle GDT-Version ist GDT 3.1, die Mitte der 2010er Jahre vom Qualitätsr
 
 ### LDT im Detail
 
-LDT ist der Standard für die Übermittlung von Laborbefunden. Labore senden LDT-Dateien an die beauftragenden Arztpraxen. Die aktuell verbreitete Version ist LDT 3.0, die eine reichere Struktur als Vorgängerversionen bietet und auch LOINC-Codes für Laborparameter unterstützt.
+[[LDT]] ist der Standard für die Übermittlung von Laborbefunden. Labore senden LDT-Dateien an die beauftragenden Arztpraxen. Die aktuell verbreitete Version ist LDT 3.0, die eine reichere Struktur als Vorgängerversionen bietet und auch LOINC-Codes für Laborparameter unterstützt.
 
 LDT-Dateien können als Einzelsatzdateien oder als Batchdateien mit mehreren Befunden geliefert werden.
 
@@ -101,6 +101,7 @@ In vielen PVS-Systemen koexistieren xDT und FHIR: xDT für Altschnittstellen (La
 - [[KBV]] (entwickelt und pflegt die xDT-Spezifikationen)
 - [[KVDT]] (eigenständige Seite zur Quartalsabrechnung)
 - [[GDT]] (eigenständige Seite zum Gerätedatentransfer)
+- [[LDT]] (eigenständige Seite zur Laborbefundübermittlung)
 - [[Kassenaerztliche-Vereinigung]] (Empfänger von KVDT-Abrechnungsdaten)
 - [[FHIR]] (moderner Nachfolgestandard; löst xDT schrittweise ab)
 - [[HL7]] (internationale Standardfamilie, zu der FHIR gehört)

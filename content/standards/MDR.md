@@ -7,7 +7,7 @@ aliases: [EU-Medizinprodukteverordnung, Medical Device Regulation, Verordnung EU
 
 # MDR
 
-Die MDR (Medical Device Regulation, Verordnung EU 2017/745) ist die europäische Verordnung für Medizinprodukte, die seit Mai 2021 gilt und die Grundlage für die CE-Zertifizierung aller Medizinprodukte im EU-Binnenmarkt bildet.
+Die MDR (Medical Device Regulation, Verordnung EU 2017/745) ist die europäische Verordnung für [[Medizinprodukte]], die seit Mai 2021 gilt und die Grundlage für die CE-Zertifizierung aller Medizinprodukte im EU-Binnenmarkt bildet.
 
 ## Erklärt für Einsteiger
 

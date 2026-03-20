@@ -11,7 +11,7 @@ maturity: wachsend
 
 # Entlassmanagement
 
-**Entlassmanagement** ist der gesetzlich geregelte Prozess, mit dem Krankenhäuser sicherstellen, dass Patienten nach der stationären Behandlung nahtlos in die ambulante oder pflegerische Weiterversorgung übergehen (§ 39 Abs. 1a SGB V).
+**Entlassmanagement** ist der gesetzlich geregelte Prozess, mit dem Krankenhäuser sicherstellen, dass Patienten nach der stationären Behandlung lückenlos in die ambulante oder pflegerische Weiterversorgung übergehen (§ 39 Abs. 1a SGB V).
 
 ## Erklärt für Einsteiger
 
@@ -150,7 +150,7 @@ Ein typischer Entlassmanagement-Workflow im [[KIS]]:
 > **KIM-Adressauflösung via VZD:** Die KIM-Adresse des weiterbehandelnden Arztes wird aus dem VZD bezogen. Fehlende oder veraltete LANR/BSNR in den KIS-Patientenstammdaten sind der häufigste Grund für KIM-Versandfehler. Monitoring des KIM-Versandstatus im KIS empfohlen: Fax-Fallback ist weiterhin erlaubt, aber nicht dokumentationsfest für den Nachweis gegenüber Krankenkassen.
 
 > [!interesse-business]
-> Entlassmanagement-Lösungen im KIS sind Pflichtkomponenten und oft Teil größerer KIS-Upgrade-Projekte. Differenzierungspotenzial liegt bei: automatisierter Nachsorgeplanung (KI-gestützte Risikoerkennung), integrierten Hilfsmittel-Beauftragungssystemen, nahtloser eVO-Anbindung, und KIM-Versand-Monitoring. Pflege und REHA-Überleitungen sind häufig manuell und technisch unterentwickelt, hier liegt Optimierungspotenzial.
+> Entlassmanagement-Lösungen im KIS sind Pflichtkomponenten und oft Teil größerer KIS-Upgrade-Projekte. Differenzierungspotenzial liegt bei: automatisierter Nachsorgeplanung (KI-gestützte Risikoerkennung), integrierten Hilfsmittel-Beauftragungssystemen, direkter eVO-Anbindung, und KIM-Versand-Monitoring. Pflege und REHA-Überleitungen sind häufig manuell und technisch unterentwickelt, hier liegt Optimierungspotenzial.
 
 ### Anschlussheilbehandlung und Rehabilitation
 
