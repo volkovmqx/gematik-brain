@@ -130,7 +130,7 @@ Versicherte haben ein Widerspruchsrecht gegen die Forschungsnutzung ihrer Daten 
 
 ### Pseudonymisierung in der Medizininformatik-Initiative
 
-Die [[MII]] (Medizininformatik-Initiative) verbindet Daten aus 35 Universitätskliniken. Sie nutzt einen **Broad Consent** und ein zentrales Pseudonymisierungskonzept (PID: Patienten-ID-Management). Jede beteiligte Universitätsklinik pseudonymisiert die Patientendaten lokal und übermittelt nur Pseudonyme an die zentralen Datenintegrationszentren (DIZ). Eine patientenübergreifende Verknüpfung über Klinikgrenzen hinweg erfordert eine TTP-vermittelte De-Pseudonymisierung.
+Die [[MII]] (Medizininformatik-Initiative) verbindet Daten aus 35 Universitätskliniken. Sie nutzt einen **[[Broad-Consent|Broad Consent]]** und ein zentrales Pseudonymisierungskonzept (PID: Patienten-ID-Management). Jede beteiligte Universitätsklinik pseudonymisiert die Patientendaten lokal und übermittelt nur Pseudonyme an die zentralen Datenintegrationszentren (DIZ). Eine patientenübergreifende Verknüpfung über Klinikgrenzen hinweg erfordert eine TTP-vermittelte De-Pseudonymisierung.
 
 > [!interesse-compliance]
 > Pseudonymisierung ersetzt keine DSGVO-Rechtsgrundlage. Pseudonymisierte Gesundheitsdaten bleiben besondere Kategorien personenbezogener Daten nach Art. 9 DSGVO. Verarbeitung für Forschung erfordert Rechtsgrundlage (Art. 9 Abs. 2 lit. j DSGVO i.V.m. nationalem Recht, z.B. [[GDNG]]). Re-Identifizierungsversuche sind nach § 7 [[GDNG]] strafbar. Datenschutz-Folgenabschätzung (DSFA) ist bei großen Gesundheitsdaten-Projekten Pflicht.

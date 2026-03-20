@@ -59,7 +59,7 @@ Software kann ein Medizinprodukt sein (Software as a Medical Device, SaMD). Ents
 
 Medizinprodukt-Software muss:
 - Klassifiziert werden (Risikoklassen I bis III nach Anhang VIII MDR)
-- Von einer **Benannten Stelle** (Notified Body) oder im Eigenverfahren (Klasse I) bewertet werden
+- Von einer **[[Benannte-Stelle|Benannten Stelle]]** (Notified Body) oder im Eigenverfahren (Klasse I) bewertet werden
 - Das CE-Zeichen tragen
 - In der **EUDAMED**-Datenbank der EU-Kommission registriert sein
 

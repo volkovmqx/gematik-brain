@@ -51,7 +51,7 @@ Mit ePA 3.1.3 werden **AMTS-rZI (AMTS-relevante Zusatzinformationen)** eingefüh
 
 ### Zugriff und Authentisierung
 
-Zugriff auf den eMP haben Ärzte, Zahnärzte, Psychotherapeuten, Krankenhäuser und Apotheken über ihr Primärsystem ([[PVS]], [[KIS]], AVS) und den [[Fachdienst|ePA-Fachdienst]]. Versicherte selbst haben Zugriff über die ePA-App. Der Zugriff ist an die Einwilligung des Patienten gebunden und wird in der [[ePA]] protokolliert.
+Zugriff auf den eMP haben Ärzte, Zahnärzte, Psychotherapeuten, Krankenhäuser und Apotheken über ihr Primärsystem ([[PVS]], [[KIS]], AVS) und den [[Fachdienst|ePA-Fachdienst]]. Versicherte selbst haben Zugriff über die [[ePA-App]]. Der Zugriff ist an die Einwilligung des Patienten gebunden und wird in der [[ePA]] protokolliert.
 
 Die eigentliche Interaktionsprüfung (Wechselwirkungscheck) findet nicht im ePA-Fachdienst statt, sondern in den Primärsystemen, die Datenbanken wie [[ABDA]] oder MMI-Pharmindex einbinden.
 

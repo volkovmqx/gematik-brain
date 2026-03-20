@@ -3,7 +3,10 @@ title: KHVVG
 audience: [technical, non-technical]
 tags: [standards, krankenhaus, reform, vergütung, gesetz]
 aliases: [Krankenhausversorgungsverbesserungsgesetz, Krankenhausreform 2024]
-maturity: immergruen
+maturity: wachsend
+relevance:
+  sectors: [krankenhaus, regulierung, kasse, hersteller, it-dienstleister]
+  interests: [compliance, business]
 ---
 
 # KHVVG
@@ -26,7 +29,7 @@ Das KHVVG ist das Nachfolgegesetz des [[KHZG]] (Krankenhauszukunftsgesetz). Wäh
 
 **Leistungsgruppen:** Die stationären Leistungen werden in zunächst 65 Leistungsgruppen eingeteilt. Jede Leistungsgruppe hat definierte Qualitätskriterien (Mindestfallzahlen, Strukturanforderungen, Prozessqualität). Nur Krankenhäuser, die diese Kriterien erfüllen, dürfen die entsprechenden Leistungen erbringen und abrechnen.
 
-**Transformationsfonds:** Für die Umsetzung der Reform stellt das KHVVG einen Transformationsfonds von 50 Milliarden Euro bereit. Bund und Länder teilen sich die Kosten je zur Hälfte. Der Fonds fördert Umstrukturierungen, Spezialisierungen und den Abbau von Überkapazitäten.
+**[[Transformationsfonds]]:** Für die Umsetzung der Reform stellt das KHVVG einen Transformationsfonds von 50 Milliarden Euro bereit. Bund und Länder teilen sich die Kosten je zur Hälfte. Der Fonds fördert Umstrukturierungen, Spezialisierungen und den Abbau von Überkapazitäten.
 
 **Ärztliche Personalbemessung:** Das Gesetz führt erstmals bundeseinheitliche Vorgaben zur ärztlichen Personalausstattung ein.
 

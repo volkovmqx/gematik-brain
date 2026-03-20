@@ -6,6 +6,7 @@ aliases: [Bundesamt für Sicherheit in der Informationstechnik]
 relevance:
   sectors: [it-dienstleister, hersteller, ti-infrastruktur, regulierung]
   interests: [technik, compliance]
+maturity: immergruen
 ---
 
 # BSI
@@ -45,7 +46,7 @@ Die TR-03116-1 schreibt vor, welche Algorithmen zugelassen sind und bis wann äl
 
 Hersteller von TI-Komponenten durchlaufen folgende Schritte:
 
-1. Antragsstellung beim BSI
+1. Antragstellung beim BSI
 2. Evaluation durch eine akkreditierte Prüfstelle (z.B. nach Common Criteria)
 3. Prüfung der Sicherheitsnachweise durch das BSI
 4. Ausstellung eines BSI-Zertifikats
@@ -55,9 +56,17 @@ Hersteller von TI-Komponenten durchlaufen folgende Schritte:
 
 Die [[PKI]] der Telematikinfrastruktur muss die BSI-Vorgaben zu Zertifikaten, Schlüssellängen und Algorithmen einhalten. Die Wurzelzertifikate der TI-Root-CA werden nach BSI-Anforderungen erstellt und verwaltet.
 
+### Sicherheitsstudie SiPra/DiPS (2026)
+
+Im März 2026 veröffentlichte das BSI die Ergebnisse zweier Sicherheitsstudien: **SiPra** (Sicherheit in der Praxis) und **DiPS** (Digitale Produkte im Gesundheitswesen). Untersucht wurden Praxisverwaltungssysteme ([[PVS]]) und Pflegedokumentationssoftware im ambulanten Bereich.
+
+Ergebnis: Bei drei von vier getesteten [[PVS]] lassen sich durch Verkettung einzelner Schwachstellen Angriffe aus dem Internet ermöglichen. Konkrete Mängel waren fehlende Transportverschlüsselung, veraltete Kryptoalgorithmen, schwache Authentifizierung und unsichere Update-Mechanismen.
+
+[[PVS]]-Hersteller sind nach den gemSpec-Anforderungen der [[gematik]] zu sicherer Softwareentwicklung verpflichtet. Die BSI-Studie zeigt, dass diese Anforderungen nicht flächendeckend umgesetzt werden. Das BSI veröffentlichte daraufhin Empfehlungen für Hersteller und Betreiber; eine Kommentierungsfrist lief bis 17. Juni 2026. Die betroffenen Systeme wurden nicht namentlich genannt.
+
 ### Relevanz für die VAU
 
-Die [[VAU]] (Vertrauenswürdige Ausführungsumgebung) des ePA-Aktensystems und des E-Rezept-Fachdienstes wird im Rahmen des Zulassungsverfahrens vom BSI geprüft. Der öffentliche Schlüssel der VAU ist in einem BSI-geprüften Verfahren verankert.
+Die [[VAU]] (Vertrauenswürdige Ausführungsumgebung) des ePA-Aktensystems und des E-Rezept-Fachdienstes wird im Rahmen des [[Zulassungsverfahren|Zulassungsverfahrens]] vom BSI geprüft. Der öffentliche Schlüssel der VAU ist in einem BSI-geprüften Verfahren verankert.
 
 ### KRITIS-Dachgesetz
 
@@ -81,4 +90,5 @@ Ab 2026 modernisiert das BSI den IT-Grundschutz unter dem Namen Grundschutz++. K
 
 - [BSI TR-03116: Kryptografische Vorgaben für Projekte der Bundesregierung | bsi.bund.de](https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Technische-Richtlinien/TR-nach-Thema-sortiert/tr03116/TR-03116_node.html)
 - [BSI: Gesundheitskarte und Telematikinfrastruktur | bsi.bund.de](https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/E-Health/Telematikinfrastruktur/telematikinfrastruktur.html)
+- [BSI Pressemitteilung: Sicherheitsstudie SiPra/DiPS (17. März 2026)](https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2026/260317_Software-Produkte_Gesundheitswesen.html)
 - [Wikipedia: Bundesamt für Sicherheit in der Informationstechnik](https://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Sicherheit_in_der_Informationstechnik)

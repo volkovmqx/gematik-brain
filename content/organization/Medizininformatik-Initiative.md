@@ -70,7 +70,7 @@ Behandlungsdaten in der MII werden vor der Übertragung an das FDPG pseudonymisi
 
 ### Broad Consent
 
-Patienten an MII-Standorten werden gebeten, einen **Broad Consent** zu unterzeichnen. Damit willigen sie ein, dass ihre pseudonymisierten Behandlungsdaten für eine Vielzahl zukünftiger Forschungszwecke verwendet werden dürfen. Der Broad Consent ist keine Blankovollmacht: Die Einwilligung kann widerrufen werden, und besonders sensible Daten (z.B. psychische Erkrankungen) erfordern eine gesonderte Einwilligung.
+Patienten an MII-Standorten werden gebeten, einen **[[Broad-Consent|Broad Consent]]** zu unterzeichnen. Damit willigen sie ein, dass ihre pseudonymisierten Behandlungsdaten für eine Vielzahl zukünftiger Forschungszwecke verwendet werden dürfen. Der Broad Consent ist keine Blankovollmacht: Die Einwilligung kann widerrufen werden, und besonders sensible Daten (z.B. psychische Erkrankungen) erfordern eine gesonderte Einwilligung.
 
 ## Verknüpfungen
 

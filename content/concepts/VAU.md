@@ -3,6 +3,10 @@ title: VAU - Vertrauenswürdige Ausführungsumgebung
 audience: [technical]
 tags: [konzept, sicherheit, kryptografie, epa, tee]
 aliases: [VAU, Vertrauenswürdige Ausführungsumgebung, Trusted Execution Environment, TEE]
+relevance:
+  sectors: [ti-infrastruktur, hersteller, it-dienstleister]
+  interests: [technik]
+maturity: immergruen
 ---
 
 # VAU - Vertrauenswürdige Ausführungsumgebung
@@ -30,6 +34,9 @@ Die VAU ist laut gematik-Spezifikation für das ePA-Aktensystem Pflicht. Sie ist
 
 ### Grundprinzip: VAU-Kanal
 
+> [!interesse-technik]
+> Die VAU-Spezifikation ist öffentlich verfügbar: [gemSpec_VAU_ePA](https://gemspec.gematik.de/docs/gemSpec/gemSpec_VAU_ePA/latest/). Proof-of-Concept-Code findet sich im Repository [epa-poc-collection](https://github.com/gematik/epa-poc-collection). Kryptografische Anforderungen (ECDH brainpoolP256r1, AES-GCM, ECDSA) sind in [gemSpec_Krypt](https://gemspec.gematik.de/docs/gemSpec/gemSpec_Krypt/latest/) definiert. Hersteller von ePA-Aktensystemen und E-Rezept-Fachdiensten müssen die VAU-Konformität im [[Zulassungsverfahren]] gegenüber [[BSI]] und [[gematik]] nachweisen.
+
 Der Schlüssel des VAU-Konzepts ist der **VAU-Kanal**: ein verschlüsselter Tunnel, der direkt zwischen dem Client (z.B. dem Primärsystem des Arztes oder der ePA-App) und der VAU aufgebaut wird, nicht nur bis zum Server-Betreiber.
 
 Der Aufbau des VAU-Kanals läuft in mehreren Schritten:
@@ -44,6 +51,36 @@ Der Aufbau des VAU-Kanals läuft in mehreren Schritten:
 - Symmetrische Verschlüsselung des VAU-Kanals: AES-GCM
 - Signatur des VAU-Attestierungszertifikats: ECDSA
 - Der öffentliche Schlüssel der VAU ist in einem vom [[BSI]] geprüften Verfahren verankert.
+
+> [!dev-quickstart] Dev Quickstart: VAU-Kanal implementieren
+> Bibliotheken und Referenzcode für den VAU-Kanalaufbau (ePA für alle):
+>
+> - Java-Implementierung: [gematik/lib-vau](https://github.com/gematik/lib-vau) (gemSpec_Krypt Kapitel 7)
+> - C#-Implementierung: [gematik/lib-vau-csharp](https://github.com/gematik/lib-vau-csharp)
+> - Docker-Compose-Setup (VAU + Aktensystem lokal): [gematik/epa-deployment](https://github.com/gematik/epa-deployment)
+> - PoC-Beispiele: [gematik/epa-poc-collection](https://github.com/gematik/epa-poc-collection)
+>
+> Ablauf VAU-Kanalaufbau (Message 1/2-Schema):
+>
+> ```
+> Client                                VAU
+>   |                                    |
+>   |-- Msg1: ECDH-PublicKey (client) -->|  (brainpoolP256r1 oder P-256)
+>   |         + Kyber-PublicKey (client)  |  (Hybrid-KEM ab ePA 3.x)
+>   |<-- Msg2: ECDH-PublicKey (VAU)  ----|
+>   |         + Attestierungszertifikat   |
+>   |                                    |
+>   |  ECDH -> SharedSecret -> AES-256-GCM-Sitzungsschlüssel
+>   |                                    |
+>   |== Inner-HTTP (AES-GCM verschlüsselt) ==>|
+>   |   POST /epa/... (eigentliche API-Anfrage)|
+> ```
+>
+> - Symmetrische Verschlüsselung: AES-256-GCM
+> - Schlüsselaustausch: ECDH brainpoolP256r1 (+ optionales Kyber für Post-Quantum-Hybrid)
+> - Attestierungszertifikat prüfen gegen: gematik Root-CA (TI-PKI)
+> - Spec: [gemSpec_VAU_ePA (latest)](https://gemspec.gematik.de/docs/gemSpec/gemSpec_VAU_ePA/latest/), [gemSpec_Krypt (latest)](https://gemspec.gematik.de/docs/gemSpec/gemSpec_Krypt/latest/)
+> - Tech-Blog-Artikel: [code.gematik.de – VAU-Kanal Part 1](https://code.gematik.de/tech/2025/02/03/vaukanal-part01.html)
 
 ### Softwarebasierte und Hardware-VAU
 
@@ -68,7 +105,7 @@ TLS schützt den Transport zwischen Client und Server (Ende-zu-Transport). Die V
 - Auch genutzt im [[E-Rezept]]-Fachdienst
 - Kryptografische Grundlagen in der [[PKI]] der [[Telematikinfrastruktur]]
 - Schutzkonzept ergänzt [[QES]] und [[eGK]]-Authentisierung
-- Prüfung durch [[BSI]] im Rahmen des Zulassungsverfahrens
+- Prüfung durch [[BSI]] im Rahmen des [[Zulassungsverfahren|Zulassungsverfahrens]]
 
 ## Quellen
 

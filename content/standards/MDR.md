@@ -32,10 +32,10 @@ Die MDR klassifiziert Medizinprodukte in vier Risikoklassen. Die Klasse bestimmt
 | Klasse | Risiko | Beispiele | Konformitätsbewertung |
 |---|---|---|---|
 | I | Niedrig | Verbandsmaterial, Brillen | Selbstbewertung des Herstellers |
-| I (steril/messend) | Mittel-niedrig | Sterile Einmalprodukte | Benannte Stelle erforderlich |
-| IIa | Mittel | Hörgeräte, Zahnfüllungen | Benannte Stelle erforderlich |
-| IIb | Mittel-hoch | Beatmungsgeräte, Röntgengeräte | Benannte Stelle erforderlich |
-| III | Hoch | Herzklappen, Koronarstents | Benannte Stelle, umfangreichste Prüfung |
+| I (steril/messend) | Mittel-niedrig | Sterile Einmalprodukte | [[Benannte-Stelle|Benannte Stelle]] erforderlich |
+| IIa | Mittel | Hörgeräte, Zahnfüllungen | [[Benannte-Stelle|Benannte Stelle]] erforderlich |
+| IIb | Mittel-hoch | Beatmungsgeräte, Röntgengeräte | [[Benannte-Stelle|Benannte Stelle]] erforderlich |
+| III | Hoch | Herzklappen, Koronarstents | [[Benannte-Stelle|Benannte Stelle]], umfangreichste Prüfung |
 
 ### [[Konformitaetsbewertung|Konformitätsbewertung]]
 

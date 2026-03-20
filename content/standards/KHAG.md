@@ -11,7 +11,7 @@ maturity: wachsend
 
 # KHAG - Krankenhausreformanpassungsgesetz
 
-Das **KHAG (Krankenhausreformanpassungsgesetz)** ist ein deutsches Bundesgesetz, das am **6. März 2026** vom Bundestag verabschiedet wurde. Es setzt die Krankenhausreform digital um, verpflichtet Krankenhäuser zu interoperablen IT-Systemen bis September 2026 und richtet einen 50-Milliarden-Euro-Transformationsfonds ein.
+Das **KHAG (Krankenhausreformanpassungsgesetz)** ist ein deutsches Bundesgesetz, das am **6. März 2026** vom Bundestag verabschiedet wurde. Es setzt die Krankenhausreform digital um, verpflichtet Krankenhäuser zu interoperablen IT-Systemen bis September 2026 und richtet einen 50-Milliarden-Euro-[[Transformationsfonds]] ein.
 
 ## Erklärt für Einsteiger
 

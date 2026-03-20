@@ -4,6 +4,9 @@ audience: [technical, non-technical]
 tags: [standards, recht, gesetz, digitalisierung, gematik]
 aliases: [Gesetz für digitale Versorgung und den Gesundheitsdatenraum, GDVG]
 maturity: wachsend
+relevance:
+  sectors: [regulierung, hersteller, kasse, krankenhaus, arztpraxis, ti-infrastruktur, startup]
+  interests: [compliance, business, technik]
 ---
 
 # GDVG
@@ -27,6 +30,18 @@ Der Koalitionsvertrag von CDU/CSU und SPD (April 2025) sieht die Modernisierung 
 - **Interoperabilität**: Alle Software- und IT-Anbieter im Gesundheitswesen sollen bis 2027 verlustfreien Datenaustausch auf Basis einheitlicher Standards sicherstellen.
 - **Kompetenzzentrum Interoperabilität (KIG)**: Das bei der [[gematik]] angesiedelte KIG soll gesetzlich verankert und gestärkt werden.
 
+> [!interesse-compliance]
+> Für Hersteller von [[PVS]], [[KIS]] und [[AVS]] bedeutet das GDVG erweiterte Durchsetzungsmöglichkeiten der [[gematik]]. Abweichende Schnittstellenimplementierungen können zukünftig sanktioniert werden. Der Referentenentwurf soll in H1/2026 vorgelegt werden. Bis 2027 müssen alle Software-Anbieter im Gesundheitswesen verlustfreien Datenaustausch auf Basis einheitlicher Standards sicherstellen.
+
+> [!interesse-business]
+> Das GDVG schafft neue Marktregeln: [[gematik]] erhält Durchsetzungsbefugnisse, die den Wettbewerb um standardkonforme Implementierungen verschärfen. Gleichzeitig sollen erleichterte Forschungsdatenzugänge über das [[Forschungsdatenzentrum-Gesundheit|FDZ Gesundheit]] neue Geschäftsmodelle für Health-Data-Startups ermöglichen. Der Markt für Interoperabilitätslösungen wächst: [[ISiK]]-konforme Systeme sind Voraussetzung für KHAG-Förderung.
+
+> [!frist-warnung] Frist-Warnung: EHDS-Pflichten ab 2027
+> **Rechtsgrundlage:** Verordnung (EU) 2025/327 (European Health Data Space, EHDS), in Kraft seit März 2025
+> **Frist:** Die primäre Nutzung von Gesundheitsdaten im EHDS (Zugang zur eigenen ePA über MyHealth@EU) beginnt stufenweise ab **März 2027**. Die Sekundärnutzungspflichten (Datenbereitstellung an den europäischen Gesundheitsdatenraum) greifen zu einem späteren Zeitpunkt entsprechend des EHDS-Anwendungsfahrplans.
+> **Handlungsbedarf:** Hersteller von PVS, KIS und AVS müssen die EHDS-kompatiblen Datenaustauschformate (European Electronic Health Record Exchange Format, EEHRxF) implementieren. Die gematik hat als nationaler Kontaktpunkt für digitale Gesundheit (NCPeH) die Schnittstellenspezifikationen bis zum Rollout bereitzustellen. Einrichtungen sollten die GDVG-Gesetzgebung ab H1/2026 eng verfolgen, da das GDVG die nationalen EHDS-Umsetzungspflichten konkretisieren wird.
+> **Bei Nichtbeachtung:** Verstöße gegen EHDS-Anforderungen können durch die zuständige nationale Aufsichtsbehörde (BfArM als Health Data Access Body) geahndet werden.
+
 ### Abgrenzung zum GDAG
 
 Das GDAG sah eine vollständige Umwandlung der gematik GmbH in eine neue Körperschaft (100 Prozent Bundesbesitz) vor. Das GDVG orientiert sich an ähnlichen Zielen, jedoch ist die Rechtsformfrage zum Stand März 2026 noch nicht abschließend geklärt. Das BMG hat signalisiert, dass das GDVG pragmatischer angesetzt sein soll als das gescheiterte GDAG.
@@ -34,6 +49,9 @@ Das GDAG sah eine vollständige Umwandlung der gematik GmbH in eine neue Körper
 ## Technische Details
 
 ### Erweiterte Befugnisse für gematik
+
+> [!interesse-technik]
+> Das GDVG plant, die [[gematik]] mit Befugnissen auszustatten, abweichende Schnittstellenimplementierungen in [[PVS]], [[KIS]] und [[AVS]] zu sanktionieren. Das Kompetenzzentrum Interoperabilität (KIG) soll verbindliche FHIR-Profile und Schnittstellen durchsetzen können. Außerdem ist geplant, das [[Forschungsdatenzentrum-Gesundheit|FDZ Gesundheit]] mit KI-Fähigkeiten auszubauen und an den [[EHDS]] anzubinden.
 
 Das GDVG soll der [[gematik]] ermöglichen, einheitliche Implementierungen von Standards durchzusetzen. Bisher konnte die gematik Hersteller von Primärsystemen ([[PVS]], [[KIS]], [[AVS]]) zwar zertifizieren, hatte aber wenig Handhabe gegen abweichende Implementierungen in der Praxis. Mit dem GDVG soll sich das ändern.
 
@@ -48,6 +66,12 @@ Das GDVG soll sicherstellen, dass Deutschland die Anforderungen des [[EHDS]] (EU
 ### Verhältnis zu DigiG und GDNG
 
 Das GDVG baut auf dem [[DigiG]] (Digital-Gesetz, 2024) auf, das die ePA für alle einführte, und dem [[GDNG]] (Gesundheitsdatennutzungsgesetz, 2024), das die Forschungsnutzung von Gesundheitsdaten regelt. Das GDVG soll diese Gesetze ergänzen und die institutionelle Seite (gematik als Digitalagentur) stärken.
+
+> [!frist-warnung] Frist-Warnung: Interoperabilitätspflicht bis 2027
+> **Rechtsgrundlage:** § 387 SGB V i.V.m. § 388 SGB V; geplante Erweiterung durch GDVG (Referentenentwurf H1/2026)
+> **Frist:** Nach dem aktuellen Planungsstand müssen alle Software-Anbieter im Gesundheitswesen (PVS, KIS, AVS) bis **2027** verlustfreien Datenaustausch auf Basis einheitlicher Standards (FHIR R4, ISiK, MIO) sicherstellen. Das geplante GDVG soll der gematik erweiterte Durchsetzungsbefugnisse geben, abweichende Implementierungen zu sanktionieren.
+> **Handlungsbedarf:** Hersteller müssen ihre Roadmaps auf die FHIR-basierten Interoperabilitätsanforderungen ausrichten. Das Kompetenzzentrum Interoperabilität (KIG) der gematik ist als Anlaufstelle für verbindliche Profilierungsentscheidungen zu beachten. Sobald der GDVG-Referentenentwurf in H1/2026 vorliegt, sind die konkreten Umsetzungsfristen und Sanktionsmechanismen zu prüfen und in die Produktplanung zu integrieren.
+> **Bei Nichtbeachtung:** Das Inverkehrbringen nicht-konformer Systeme ist nach § 388 SGB V bereits heute untersagt; das GDVG soll die Durchsetzung durch die gematik verschärfen.
 
 ### Bvitg-Forderungen (März 2026)
 

@@ -55,7 +55,7 @@ Seit **1. Januar 2026** sind Abrechnungsdaten in der ePA nur noch für Versicher
 
 ### Wer hat Zugriff?
 
-- **Versicherte**: Über die ePA-App der eigenen Krankenkasse
+- **Versicherte**: Über die [[ePA-App]] der eigenen Krankenkasse
 - **Leistungserbringer**: Über ihr Praxissystem, mit Einwilligung
 - **Krankenkassen**: Über das Aktensystem (Backend)
 

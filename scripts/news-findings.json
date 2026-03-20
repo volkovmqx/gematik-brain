@@ -1,6 +1,6 @@
 {
   "lastChecked": "2026-03-20",
-  "lastRun": "2026-03-20T10:00:00Z",
+  "lastRun": "2026-03-20T14:00:00Z",
   "findings": [
     {
       "title": "eMedikationsplan: Start verschoben auf Oktober 2026",
@@ -1310,14 +1310,25 @@
       "suggestedTerm": "DiPA"
     },
     {
+      "title": "BSI veröffentlicht Handlungsleitfaden zur EUDI-Wallet-Integration für Behörden (16. Januar 2026)",
+      "date": "2026-01-16",
+      "source": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/Handlungsleitfaden_EUDI-Wallet-260116.html",
+      "summary": "Das BSI veröffentlichte am 16. Januar 2026 einen Handlungsleitfaden für Behörden zur Vorbereitung auf die EUDI-Wallet-Integration. Der Leitfaden richtet sich an Digitalisierungsverantwortliche und behandelt: europäische und nationale EUDI-Wallet-Architektur, Teilnehmerrollen (Credential-Aussteller, Relying Parties) und Kernanforderungen an Authentifizierung und elektronische Attribute. Für den Gesundheitsbereich relevant: Die GesundheitsID ist als Health-Credential-Aussteller in der EUDI-Wallet-Architektur vorgesehen (BMG-Plan, GDVG). Der Leitfaden definiert den Rechtsrahmen der eIDAS-2.0-Verordnung und stellt klar, dass Nutzer selbst entscheiden, welche Daten für welchen Zweck weitergegeben werden (Privacy-by-Design). Praktische Implikation: Krankenkassen und gematik müssen als Credential-Aussteller für Versicherungsnachweis, Patientenkurzakte und E-Rezept innerhalb der EUDI-Wallet-Infrastruktur agieren. EU-Frist für Mitgliedstaaten: EUDI-Wallet bereitstellen bis November 2026; Deutschland plant Produktivstart Anfang 2027.",
+      "affects": ["EUDI-Wallet.md", "Gesundheits-ID.md", "BSI.md"],
+      "category": "regulation",
+      "action": "update",
+      "details": "EUDI-Wallet.md sollte den BSI-Handlungsleitfaden (16.01.2026) als Quelle ergänzen und die Rolle von gematik/GesundheitsID als gesundheitsspezifischen Credential-Aussteller in der EUDI-Wallet-Infrastruktur konkretisieren. BSI.md kann den Leitfaden im EUDI-Kontext referenzieren."
+    },
+    {
       "title": "BSI-Sicherheitsstudie: Gravierende Schwachstellen in 3 von 4 Praxisverwaltungssystemen (März 2026)",
       "date": "2026-03-17",
       "source": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2026/260317_Software-Produkte_Gesundheitswesen.html",
       "summary": "Das BSI veröffentlichte am 17. März 2026 die Ergebnisse zweier Sicherheitsstudien: SiPra (Praxisverwaltungssysteme) und DiPS (digitale Pflegedokumentationssoftware). Ergebnis: Bei 3 von 4 getesteten PVS lassen sich durch Verkettung einzelner Schwachstellen Angriffe aus dem Internet ermöglichen. Konkrete Mängel: fehlende Transportverschlüsselung, veraltete Kryptoalgorithmen, schwache Authentifizierung, unsichere Software-Update-Mechanismen. Hersteller wurden informiert und behobene Schwachstellen zeitnah behoben. BSI veröffentlichte Empfehlungen für Hersteller und Betreiber; Kommentierungsfrist läuft bis 17. Juni 2026. Betroffene Systeme sind nicht namentlich genannt.",
       "relevantArticles": ["Telematikinfrastruktur.md", "BSI.md", "KIS.md"],
       "category": "security",
-      "action": "update",
-      "details": "BSI.md sollte die SiPra/DiPS-Studie (17.03.2026) als aktuelles Beispiel für TI-Sicherheitsanforderungen im ambulanten Bereich erwähnen. Telematikinfrastruktur.md kann im Sicherheitsabschnitt auf die BSI-Empfehlungen für PVS hinweisen. PVS-Hersteller sind nach gemSpec-Anforderungen zu sicherer Softwareentwicklung verpflichtet; die BSI-Studie zeigt, dass diese Anforderungen nicht flächendeckend umgesetzt werden."
+      "action": "applied",
+      "appliedDate": "2026-03-20",
+      "details": "BSI.md: Neuer Unterabschnitt 'Sicherheitsstudie SiPra/DiPS (2026)' ergänzt. Ergebnis (3 von 4 PVS angreifbar), gemSpec-Anforderungen und BSI-Empfehlungen dokumentiert. Quelle hinzugefügt."
     }
   ],
   "lastChecked": "2026-03-20"

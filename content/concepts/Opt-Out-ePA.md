@@ -36,7 +36,7 @@ Ein Jahr nach bundesweitem Rollout (April 2025 bis April 2026) haben laut verfü
 > Was MFAs wissen müssen:
 > - "Ich will keine ePA" - Antwort: "Wenden Sie sich bitte an Ihre Krankenkasse. Die Krankenkasse schließt die Akte auf Wunsch."
 > - "Was sehen Sie in meiner ePA?" - Antwort: "Nur Dokumente, die Ihnen oder uns direkt zugeordnet sind, und nur wenn Sie uns Zugriff gegeben haben."
-> - "Kann ich bestimmte Dokumente verstecken?" - Antwort: "Ja, Sie können in der ePA-App einzelne Dokumente für bestimmte Leistungserbringer sperren."
+> - "Kann ich bestimmte Dokumente verstecken?" - Antwort: "Ja, Sie können in der [[ePA-App]] einzelne Dokumente für bestimmte Leistungserbringer sperren."
 >
 > Legen Sie eine kurze Informationskarte aus. Die gematik stellt kostenloses Patientenmaterial bereit.
 
