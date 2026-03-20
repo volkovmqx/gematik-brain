@@ -27,7 +27,7 @@ Patientenportale sind im deutschen Krankenhaus der zentrale Digitalisierungsschr
 - **Terminbuchung**: Online-Terminvereinbarung für elektive Eingriffe, Ambulanzen und Sprechstunden.
 - **Dokumentenbereitstellung**: Digitale Bereitstellung von Entlassbriefen, Befunden und Behandlungsplänen.
 - **Kommunikation**: Direkte Nachrichtenfunktion zwischen Patient und Einrichtung, perspektivisch über den [[TI-Messenger]].
-- **Entlassmanagement**: Koordination der nachstationären Versorgung (Reha, Pflege, Folgebehandlung).
+- **[[Entlassmanagement]]**: Koordination der nachstationären Versorgung (Reha, Pflege, Folgebehandlung).
 
 ### Regulatorischer Kontext
 

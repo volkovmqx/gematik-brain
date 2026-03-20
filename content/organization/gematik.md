@@ -77,6 +77,8 @@ Das GDVG verfolgt laut Referentenentwurf-Entwürfen drei konkrete Ziele:
 2. **FDZ-Ausbau**: Das [[Forschungsdatenzentrum-Gesundheit|Forschungsdatenzentrum Gesundheit (FDZ)]] soll zu einem zentralen Gesundheitsdatenraum ausgebaut werden, der auch an den [[EHDS]] (Europäischen Gesundheitsdatenraum) angeschlossen wird.
 3. **ePA-Wachstumsziel**: Die aktive Nutzungsrate der [[ePA]] soll durch regulatorische Anreize und technische Verbesserungen signifikant gesteigert werden.
 
+Das GDVG erweitert auch die Rolle der gematik im Bereich digitaler Identitäten: Die gematik soll die technische Koordination für die Integration der [[Gesundheits-ID]] in die [[EUDI-Wallet]]-Infrastruktur übernehmen. Damit wird die gematik zum zentralen Ansprechpartner für die Schnittstelle zwischen deutschem TI-Ökosystem und der europäischen digitalen Identitätsinfrastruktur nach eIDAS 2.0.
+
 ### Strategische Leitsätze 2026
 
 Am **15. Januar 2026** veröffentlichte gematik-CEO Dr. Florian Fuhrmann sieben strategische Leitsätze für die Weiterentwicklung der gematik. Kernaussagen:

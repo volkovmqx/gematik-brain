@@ -67,7 +67,7 @@ Die elektronische Heilmittelverordnung ([[eVO]]) ist die digitale Form der Heilm
 > - **2028**: Vollständige Pflichteinführung für alle Beteiligten.
 > Die ursprüngliche TI-Anbindungspflicht für Heilmittelerbringer (1. Januar 2026) wurde auf 1. Oktober 2027 verschoben.
 > [!klinik-integration] Klinik-Integration: Heilmittelverordnung im Entlassmanagement
-> **Krankenhäuser dürfen Heilmittel verordnen:** Im Rahmen des Entlassmanagements (§ 39 Abs. 1a SGB V) kann das Krankenhaus Heilmittelverordnungen für bis zu **7 Tage** nach Entlassung ausstellen. Behandlungsbeginn beim Therapeuten muss innerhalb von 7 Tagen, Behandlungsabschluss innerhalb von 12 Tagen nach Entlassung erfolgen. Diese Regelung gilt für Physiotherapie, Ergotherapie und Logopädie.
+> **Krankenhäuser dürfen Heilmittel verordnen:** Im Rahmen des [[Entlassmanagement|Entlassmanagements]] (§ 39 Abs. 1a SGB V) kann das Krankenhaus Heilmittelverordnungen für bis zu **7 Tage** nach Entlassung ausstellen. Behandlungsbeginn beim Therapeuten muss innerhalb von 7 Tagen, Behandlungsabschluss innerhalb von 12 Tagen nach Entlassung erfolgen. Diese Regelung gilt für Physiotherapie, Ergotherapie und Logopädie.
 >
 > **Ab 2027 als eVO:** Ab 1. Januar 2027 müssen auch Krankenhäuser Heilmittelverordnungen im Entlassmanagement als elektronische Heilmittelverordnung (eVO) ausstellen. Das KIS muss dafür die eVO-Funktion unterstützen. Klären Sie mit Ihrem KIS-Hersteller, ob das Entlassmanagement-Modul die eVO-Ausstellung bis Ende 2026 unterstützt.
 >

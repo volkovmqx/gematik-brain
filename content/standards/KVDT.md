@@ -6,7 +6,7 @@ aliases: [KVDT, Kassenärztlicher Datentransfer, Abrechnungsdatenträger, KV-Abr
 relevance:
   sectors: [arztpraxis, zahnarzt, psychotherapie, hersteller, it-dienstleister, regulierung]
   interests: [technik, compliance, business]
-maturity: setzling
+maturity: wachsend
 ---
 
 # KVDT - Kassenärztlicher Datentransfer
@@ -172,6 +172,6 @@ Mittel- bis langfristig werden Teile des Abrechnungsprozesses über TI-Kommunika
 
 ## Quellen
 
-- [KBV: Praxisverwaltungssystem und Praxissoftware](https://www.kbv.de/praxis/digitalisierung/praxisverwaltungssystem)
 - [Wikipedia: Abrechnungsdatenträger (KVDT)](https://de.wikipedia.org/wiki/Abrechnungsdatentr%C3%A4ger)
 - [KBV: Kassenärztliche Bundesvereinigung – Abrechnung](https://www.kbv.de/html/abrechnung.php)
+- [KBV ITA: KVDT-Datensatzbeschreibung und Prüfmaterial](https://update.kbv.de/ita-update/Abrechnung/)

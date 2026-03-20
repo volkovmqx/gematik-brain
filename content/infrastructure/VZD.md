@@ -4,6 +4,9 @@ audience: [technical, non-technical]
 tags: [infrastruktur, verzeichnis, kim, ti-messenger]
 aliases: [VZD, Verzeichnisdienst, VZD-FHIR-Directory]
 maturity: wachsend
+relevance:
+  sectors: [arztpraxis, krankenhaus, zahnarzt, apotheke, pflege, hersteller, ti-infrastruktur, it-dienstleister]
+  interests: [technik, compliance, business]
 ---
 
 # VZD - Verzeichnisdienst
@@ -25,6 +28,12 @@ Der VZD hat zwei unterschiedliche technische Realisierungen, die parallel existi
 2. **VZD-FHIR-Directory**: Eine moderne, REST-basierte Variante auf Basis von [[FHIR]]. Sie wird primär vom [[TI-Messenger]] genutzt und enthält zusätzliche strukturierte Informationen über Einrichtungen und deren Dienste. Alle Anwendungen sollen schrittweise auf das FHIR-Directory migrieren.
 
 Der VZD ist eine Pflichtkomponente: Ohne ihn können weder [[KIM]] noch der [[TI-Messenger]] Adressen auflösen oder Identitäten überprüfen.
+
+> [!interesse-compliance]
+> Jede Einrichtung, die KIM nutzt, muss im VZD eingetragen sein. Der Eintrag wird automatisch durch die SMC-B-Zertifikate der Einrichtung angelegt. Einrichtungen können ihre Eintragsdetails (z.B. Öffnungszeiten, Fachdisziplinen) selbst im VZD-FHIR-Directory pflegen. Voraussetzung: Authentifizierung über OpenID Connect mit der Telematik-ID. Keine manuelle Registrierung nötig, aber Datenqualität liegt in Verantwortung der Einrichtung.
+
+> [!interesse-business]
+> Der VZD ist der zentrale Verzeichnisdienst für alle rund 200.000 TI-Teilnehmer (Arztpraxen, Krankenhäuser, Apotheken, Zahnärzte, Psychotherapeuten). Als Pflichtkomponente bietet er keinen Wettbewerb auf Betreiberseite; Differenzierungspotenzial liegt bei Anwendungen, die auf VZD-Daten aufbauen (Suche, Terminbuchung, Verzeichnispflege-Tools).
 
 ## Technische Details
 
@@ -71,6 +80,9 @@ Der [[TI-Messenger]] nutzt das VZD-FHIR-Directory für die Kontaktsuche. Eine be
 ### Versionen
 
 Die Implementierung des VZD-FHIR-Directory wird kontinuierlich weiterentwickelt. Ab Version 1.5 unterstützt es erweiterte Selbstverwaltungsfunktionen für Einrichtungen und mehrwertige Datenfelder.
+
+> [!interesse-technik]
+> **REST-API (VZD-FHIR-Directory)**: Base-URL auf der Produktionsumgebung unter `vzd.ti-dienste.de`. Suchendpunkt für Versicherten-Apps: `GET /fdv/search?name=...`. Alle Einträge sind als FHIR R4-Ressourcen (Organization, Practitioner, HealthcareService) abrufbar. Authentifizierung per OAuth 2.0. LDAP-Administrations-Schnittstelle wurde mit Release VZD_25_2 (17. Februar 2026) abgeschaltet. Migration auf FHIR-API ist für alle Anwendungen Pflicht. Spezifikation: [gemSpec_VZD_FHIR_Directory auf gemspec.gematik.de](https://gemspec.gematik.de/docs/gemSpec/gemSpec_VZD_FHIR_Directory/latest/). GitHub: [gematik/api-vzd](https://github.com/gematik/api-vzd).
 
 ## Verknüpfungen
 

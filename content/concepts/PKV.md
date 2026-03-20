@@ -3,6 +3,10 @@ title: PKV
 audience: [technical, non-technical]
 tags: [konzepte, krankenversicherung, finanzierung, privatversicherung]
 aliases: [Private Krankenversicherung, PKV-Verband, Verband der Privaten Krankenversicherung]
+relevance:
+  sectors: [arztpraxis, krankenhaus, zahnarzt, apotheke, hersteller, kasse, patient, regulierung]
+  interests: [compliance, business, patient]
+maturity: wachsend
 ---
 
 # PKV
@@ -22,6 +26,9 @@ Die PKV wird durch das Versicherungsvertragsgesetz (VVG) und das Versicherungsau
 Der PKV-Verband hält seit dem 3. April 2020 einen Anteil von 7 Prozent an der [[gematik]] GmbH. Er war zuvor schon einmal Gesellschafter, hatte diesen Status aber zwischenzeitlich abgegeben. Mit der Wiederaufnahme in den Gesellschafterkreis trägt der PKV-Verband auch 7 Prozent der Finanzierung der gematik.
 
 Die PKV spielt eine wachsende Rolle in der [[Telematikinfrastruktur]]. Das erklärte Ziel lautet: "ePA für alle" soll auch für Privatversicherte gelten, unabhängig vom Versicherungsstatus.
+
+> [!interesse-patient]
+> Als PKV-Versicherter haben Sie keinen gesetzlichen Anspruch auf eine ePA wie GKV-Versicherte. Ihre private Krankenkasse kann Ihnen aber freiwillig eine ePA anbieten. Der Zugang läuft dann ausschließlich über die App Ihrer PKV und über die [[Gesundheits-ID]], nicht über eine physische Gesundheitskarte. Die E-Rezept-Nutzung und andere TI-Dienste stehen Ihnen aber beim Arzt genauso zur Verfügung, unabhängig vom Versicherungsstatus.
 
 ## Technische Details
 
@@ -44,7 +51,13 @@ Für die freiwillige ePA in der PKV gelten folgende Besonderheiten:
 
 ### Telematikinfrastruktur und PKV-Leistungserbringer
 
+> [!interesse-compliance]
+> Leistungserbringer behandeln PKV- und GKV-Patienten mit derselben TI-Infrastruktur. Der VSDM-Stammdatenabgleich (Einlesen der Versicherungskarte) gilt nur für GKV-Versicherte. PKV-Patienten können sich seit 2026 alternativ per [[Gesundheits-ID]] ausweisen, sofern ihre PKV diese unterstützt. Für Abrechnungszwecke gelten für PKV-Patienten die GOÄ-Regeln, nicht EBM; KVDT-Abrechnungen betreffen nur GKV.
+
 Ärzte und andere Leistungserbringer sind technisch nicht davon abhängig, ob ihr Patient GKV- oder PKV-versichert ist. Die TI-Komponenten (z.B. [[Konnektoren]], Kartenterminals, [[PVS]]) werden für alle Patienten genutzt. Abrechnungs- und Versorgungsunterschiede entstehen auf der organisatorischen, nicht auf der technischen Ebene.
+
+> [!interesse-business]
+> Der PKV-Markt umfasst rund 8,7 Millionen Vollversicherte (ca. 12 % der Bevölkerung). PKV-Versicherte haben statistisch höhere Einkommen und eine andere Morbiditätsstruktur als der GKV-Durchschnitt. Für Health-IT-Anbieter bedeutet die PKV: Separate Implementierungspfade für ePA-Zugang (App-only, ohne eGK), GOÄ-basierte Abrechnung statt EBM/KVDT, und potenziell höhere Zahlungsbereitschaft für Premiumfunktionen.
 
 ### Pflegeversicherung
 

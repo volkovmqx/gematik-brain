@@ -86,8 +86,8 @@ Für die Signatur mit [[QES]] durch den ausstellenden Arzt benötigt das KIS Zug
 
 KIS-Systeme implementieren typischerweise:
 
-- **HL7 v2 ADT**: Aufnahme/Entlassung/Verlegung-Nachrichten, weit verbreitet
-- **HL7 v2 ORM/ORU**: Laboraufträge und -ergebnisse
+- **[[HL7-v2|HL7 v2]] ADT**: Aufnahme/Entlassung/Verlegung-Nachrichten, weit verbreitet
+- **[[HL7-v2|HL7 v2]] ORM/ORU**: Laboraufträge und -ergebnisse
 - **HL7 v3 [[CDA]]** (Clinical Document Architecture): Strukturierte klinische Dokumente (Arztbriefe)
 - **HL7 FHIR R4**: Neue Standard-Schnittstelle für ISiK und TI-Anwendungen
 - **[[DICOM]]**: Bildübertragung im Radiologiekontext (PACS-Anbindung)
@@ -104,14 +104,16 @@ Das [[KHZG|Krankenhauszukunftsgesetz (KHZG, 2020)]] stellte Fördermittel von 4,
 
 ### KHAG: Interoperabilitätspflichten ab 2026
 
-Das **[[KHAG|Krankenhausreformanpassungsgesetz (KHAG)]]** wurde am **27. März 2026** vom Bundesrat beschlossen und ist damit in Kraft. Es ist ein wichtiges Nachfolgegesetz zur Krankenhausreform und legt digitale Mindestanforderungen für Krankenhäuser fest.
+Das **[[KHAG|Krankenhausreformanpassungsgesetz (KHAG)]]** steht am **27. März 2026** im Bundesrat zur Abstimmung. Es ist ein wichtiges Nachfolgegesetz zur Krankenhausreform und würde digitale Mindestanforderungen für Krankenhäuser festlegen.
 
 Kerninhalte des KHAG:
 
-- **Transformationsfonds**: 50 Milliarden Euro für Krankenhäuser (2026 bis 2035) zur Förderung von Strukturanpassungen
+- **Transformationsfonds**: 50 Milliarden Euro für Krankenhäuser (2026 bis 2035) zur Förderung von Strukturanpassungen. Die Antragsphase läuft seit **Januar 2026**.
 - **Patientenportal-Abschlag**: Krankenhäuser ohne zertifiziertes [[Patientenportal]] erhalten ab **1. Januar 2026** einen Abschlag von 0,5 Prozent je stationären Fall
 - **Telemedizin-Netzwerke**: Förderung telemedizinischer Verbundlösungen zwischen Krankenhäusern
 - **Interoperabilitätsstandards**: Verbindliche Standards müssen bis **September 2026** definiert werden. Sie werden im [[Interoperabilitaetsverzeichnis|Interoperabilitätsverzeichnis]] (§ 385 SGB V) verankert
+
+Die **TI-Anbindung** (Konnektoren, TI-Gateway, KIS-Erweiterungen) und **[[ISiK]]**-konforme Schnittstellen sind im Transformationsfonds explizit als förderfähige Maßnahmen anerkannt. Krankenhäuser können damit Kosten für die digitale Infrastruktur und Interoperabilität anteilig über den Fonds finanzieren.
 
 KIS-Systeme müssen die KHAG-Anforderungen unterstützen. Insbesondere die Interoperabilitätspflichten werden FHIR-basierte KIS-Schnittstellen ([[ISiK]]) weiter aufwerten.
 

@@ -3,7 +3,10 @@ title: xDT
 audience: [technical]
 tags: [standards, datenaustausch, interoperabilität, historisch, kvdt, gdt, ldt, bdt]
 aliases: [xDT-Formate, KVDT, GDT, LDT, BDT, Gerätedatentransfer]
-maturity: wachsend
+maturity: setzling
+relevance:
+  sectors: [arztpraxis, zahnarzt, psychotherapie, hersteller, it-dienstleister]
+  interests: [technik, compliance, business]
 ---
 
 # xDT
@@ -20,12 +23,15 @@ Die xDT-Formate wurden seit den 1980er und 1990er Jahren von der [[KBV]] (Kassen
 
 Trotz ihres Alters sind xDT-Formate noch weit verbreitet: Viele [[PVS]] (Praxisverwaltungssysteme) unterstützen sie als primäre Schnittstelle zu Laborgeräten und Abrechnungssystemen.
 
+> [!interesse-compliance]
+> Für die GKV-Abrechnung ist [[KVDT]] (Teil der xDT-Familie) Pflicht. Alle zugelassenen PVS-Systeme müssen die aktuelle KVDT-Spezifikation umsetzen. GDT-Schnittstellen sind de-facto-Standard für die Anbindung medizinischer Geräte. Ohne GDT-Schnittstelle können viele Geräte (EKG, Spirometer, Blutdruckmessgeräte) nicht in das PVS integriert werden.
+
 ### Die xDT-Familie
 
 | Format | Langname | Zweck |
 |--------|----------|-------|
 | **[[KVDT]]** | Abrechnungsdatenträger | Abrechnungsdaten von Praxen an die Kassenärztliche Vereinigung |
-| **GDT** | Gerätedatentransfer | Datenaustausch zwischen Praxissystemen und Medizingeräten (EKG, Laborgeräte, Spirometer) |
+| **[[GDT]]** | Gerätedatentransfer | Datenaustausch zwischen Praxissystemen und Medizingeräten (EKG, Laborgeräte, Spirometer) |
 | **LDT** | Labor-Datentransfer | Übermittlung von Laborbefunden vom Labor an die Arztpraxis |
 | **BDT** | Behandlungsdatenträger | Übertragung von Behandlungsdaten zwischen Praxen (z.B. bei Praxisübergabe) |
 
@@ -57,7 +63,7 @@ Die Feldnummern sind in der jeweiligen xDT-Spezifikation definiert und beschreib
 GDT ist die bekannteste xDT-Variante und wird bis heute aktiv genutzt. Es verbindet Arztpraxissysteme mit Medizingeräten:
 
 1. Das [[PVS]] sendet eine GDT-Datei mit Patientenstammdaten an das Gerät (z.B. EKG, Spirometer, Ultraschall).
-2. Das Gerät führt die Messung durch und erzeugt eine GDT-Antwortsdatei mit den Messergebnissen.
+2. Das Gerät führt die Messung durch und erzeugt eine GDT-Antwortdatei mit den Messergebnissen.
 3. Das PVS liest die Antwortdatei und übernimmt die Werte in die Patientenakte.
 
 Die aktuelle GDT-Version ist GDT 3.1, die Mitte der 2010er Jahre vom Qualitätsring Medizinische Software (QMS) standardisiert und von der [[KBV]] verabschiedet wurde. GDT 3.1 unterstützt auch den Austausch von Bild- und PDF-Anhängen.
@@ -83,11 +89,18 @@ Die [[KBV]] und die [[gematik]] treiben die Ablösung der xDT-Formate durch [[FH
 
 In vielen PVS-Systemen koexistieren xDT und FHIR: xDT für Altschnittstellen (Laborgeräte, KV-Abrechnung), FHIR für neue TI-Anwendungen.
 
+> [!interesse-technik]
+> xDT-Dateien sind zeilenbasierte Textdateien: Format LLLFFFFContent (3-stellige Länge + 4-stellige Feldnummer + Inhalt). Keine XML/JSON-Struktur, kein Schema-Autodiscovery. Parser müssen gegen die KBV-Spezifikation implementiert werden. GDT-Schnittstelle in PVS läuft typischerweise über lokales Dateisystem (Shared-Folder-Modell) oder COM-Port. KVDT-Spezifikation: [update.kbv.de](https://update.kbv.de/ita-update/Abrechnung/). GDT-Spezifikation (ab Version 3.5): [qms-standards.de](https://www.qms-standards.de/standards/gdt-schnittstelle/). Migration zu FHIR: Kein KVDT-Migrationsdatum gesetzt; GDT-Migration noch in Konzeptphase.
+
+> [!interesse-business]
+> Der xDT-Markt ist wartungsgetrieben: Kein Neuentwicklungsboom, aber hoher Bedarf an Interoperabilitäts-Middleware zwischen alten xDT-Geräten und neuen FHIR-Systemen. Hersteller, die FHIR-zu-GDT-Adapter oder PVS-Integrationsplattformen anbieten, profitieren von der langen Übergangsdauer. Schätzung: Die vollständige xDT-Ablösung dauert noch 10-15 Jahre.
+
 ## Verknüpfungen
 
 - [[PVS]] (Praxisverwaltungssysteme; primäre Nutzer der xDT-Formate)
 - [[KBV]] (entwickelt und pflegt die xDT-Spezifikationen)
 - [[KVDT]] (eigenständige Seite zur Quartalsabrechnung)
+- [[GDT]] (eigenständige Seite zum Gerätedatentransfer)
 - [[Kassenaerztliche-Vereinigung]] (Empfänger von KVDT-Abrechnungsdaten)
 - [[FHIR]] (moderner Nachfolgestandard; löst xDT schrittweise ab)
 - [[HL7]] (internationale Standardfamilie, zu der FHIR gehört)
@@ -95,7 +108,7 @@ In vielen PVS-Systemen koexistieren xDT und FHIR: xDT für Altschnittstellen (La
 
 ## Quellen
 
-- [KBV: xDT-Spezifikationen](https://www.kbv.de/html/xdt.php)
-- [KBV: GDT 3.1 Spezifikation](https://www.kbv.de/html/2016_27222.php)
+- [KBV ITA-Update Portal: KVDT-Spezifikationen](https://update.kbv.de/ita-update/Abrechnung/)
+- [QMS: GDT-Schnittstelle (Qualitätsring Medizinische Software)](https://www.qms-standards.de/standards/gdt-schnittstelle/)
 - [Wikipedia: Gerätedatentransfer (GDT)](https://de.wikipedia.org/wiki/Ger%C3%A4tedatentransfer)
-- [KBV: LDT 3.0](https://www.kbv.de/html/ldt.php)
+- [KBV ITA-Update Portal: LDT Labordatenkommunikation](https://update.kbv.de/ita-update/Labor/Labordatenkommunikation/)

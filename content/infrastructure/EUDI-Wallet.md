@@ -3,6 +3,10 @@ title: EUDI-Wallet
 audience: [technical, non-technical]
 tags: [infrastructure, identität, eu, eidas, digitale-identität]
 aliases: [European Digital Identity Wallet, EU Digital Identity Wallet, EUDIW, eIDAS 2.0 Wallet]
+relevance:
+  sectors: [arztpraxis, krankenhaus, apotheke, kasse, hersteller, ti-infrastruktur, it-dienstleister, regulierung, patient]
+  interests: [compliance, technik, patient]
+maturity: wachsend
 ---
 
 # EUDI-Wallet
@@ -18,6 +22,17 @@ Stell dir vor, du hast alle wichtigen Ausweise und Dokumente in einer einzigen, 
 Die EUDI-Wallet wurde mit der überarbeiteten eIDAS-Verordnung (EU 2024/1183, auch "eIDAS 2.0") eingeführt, die am 20. Mai 2024 in Kraft trat. Alle 27 EU-Mitgliedstaaten sind verpflichtet, ihren Bürgerinnen und Bürgern bis November 2026 mindestens eine kostenlose, staatlich angebotene EUDI-Wallet bereitzustellen.
 
 Die Nutzung der EUDI-Wallet ist freiwillig. Sie ergänzt bestehende nationale Identifikationssysteme, ersetzt sie aber nicht.
+
+> [!patientenrecht] Patientenrecht: EUDI-Wallet ist freiwillig
+> Die EUDI-Wallet ist eine neue App für Ihr Smartphone. Sie können damit Ihre Identität digital nachweisen. Zum Beispiel beim Arzt oder in anderen EU-Ländern.
+>
+> **Das ist wichtig für Sie:**
+> - Die Nutzung ist kostenlos und freiwillig.
+> - Sie werden nicht benachteiligt, wenn Sie die App nicht nutzen.
+> - Ihre bisherigen Ausweise und Karten bleiben gültig.
+> - Alle Daten werden nur auf Ihrem Gerät gespeichert. Niemand kann Ihre Daten zentral einsehen.
+>
+> **Sie entscheiden selbst:** Sie wählen, welche Daten Sie wem zeigen. Die App zeigt Ihnen, mit wem Sie in der Vergangenheit Daten geteilt haben.
 
 Kernfunktionen der EUDI-Wallet sind:
 - Digitaler Identitätsnachweis (online und offline) in allen EU-Mitgliedstaaten
@@ -75,9 +90,34 @@ Der Quellcode der staatlichen EUDI-Wallet wird als Open Source veröffentlicht.
 
 Die Konvergenz von EUDI-Wallet und TI ist ein strategisches Ziel der gematik im Rahmen der TI 2.0. Konkret sind folgende Szenarien in Planung oder Diskussion:
 
-- **Gesundheits-ID in der EUDI-Wallet**: Die [[Gesundheits-ID]] könnte als EAA in der EUDI-Wallet gespeichert und genutzt werden.
+- **Gesundheits-ID in der EUDI-Wallet**: Die [[Gesundheits-ID]] soll als EAA (Electronic Attestation of Attributes) in der EUDI-Wallet gespeichert und genutzt werden. Das BMG plant den Produktivstart Anfang 2027, pünktlich zur deutschen EUDI-Wallet-Einführung. Die Krankenkassen fungieren als Credential-Aussteller nach dem OID4VCI-Protokoll.
 - **HBA ohne Karte**: Ärztekammern sollen laut Gesetzgebung ab 2028 kartenunabhängige digitale Identitäten ausgeben. Diese könnten über die EUDI-Wallet als [[QES]]-fähige Fernsignatur genutzt werden.
 - **Wallet-kompatible TI**: Die bestehende TI soll wallet-kompatibel werden, sodass Karten- und Konnektortechnologie schrittweise ersetzt werden kann.
+
+### Gesundheitsdaten-Anwendungsfälle
+
+> [!patientenrecht] Patientenrecht: Gesundheitsdaten in der Wallet
+> Ab 2027 können Sie Ihre Krankenversicherungskarte als digitalen Nachweis in der EUDI-Wallet speichern. Das ist besonders nützlich, wenn Sie im EU-Ausland krank werden.
+>
+> **Was kommt in die Wallet?**
+> - Ihre Krankenversicherungskarte (als digitaler Nachweis)
+> - Ihr Impfausweis
+> - Im EU-Ausland ausgestellte Rezepte
+> - Wichtige Notfalldaten
+>
+> **Ihre Rechte:**
+> - Sie entscheiden selbst, welche Gesundheitsdaten Sie in die Wallet laden.
+> - Kein Arzt und keine Behörde kann Daten ohne Ihre Zustimmung hinzufügen.
+> - Sie können Daten jederzeit aus der Wallet entfernen.
+
+Über die Identitäts-Credentials hinaus sind weitere Gesundheitsdaten-Use-Cases für die EUDI-Wallet vorgesehen:
+
+- **Digitaler Impfnachweis**: Das europäische Impfzertifikat (bisher als EU Digital COVID Certificate bekannt) soll in die EUDI-Wallet überführt werden.
+- **Versicherungsnachweis**: Die [[Gesundheits-ID]] als Nachweis der Krankenversicherung gegenüber Leistungserbringern in anderen EU-Mitgliedstaaten.
+- **Elektronisches Rezept (ePrescription)**: Im Rahmen des EHDS soll die grenzüberschreitende Übermittlung von Rezepten via Wallet ermöglicht werden.
+- **Patientenkurzakte (Patient Summary)**: Notfalldaten sollen als Wallet-Credential ausgestellt werden, damit sie in anderen EU-Ländern lesbar sind.
+
+Diese Anwendungsfälle werden im Rahmen des [[EHDS]] (Europäischer Gesundheitsdatenraum) und der eIDAS-2.0-Umsetzung standardisiert.
 
 ## Verknüpfungen
 

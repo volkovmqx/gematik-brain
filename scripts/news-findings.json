@@ -1270,7 +1270,8 @@
       "date": "2026-03-10",
       "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/digitaler-gesundheitsausweis-soll-in-eu-wallet-aufgehen/68513085",
       "affects": ["Gesundheits-ID.md", "EUDI-Wallet.md", "gematik.md"],
-      "action": "update",
+      "action": "applied",
+      "appliedDate": "2026-03-20",
       "category": "regulation",
       "details": "Deutschland plant die strategische Integration der GesundheitsID in die EUDI-Wallet. Das BMG bestätigte, die Rolle von gematik in einem neuen umfassenden Digitalgesetz (GDVG) zu verankern, das auch die rechtliche Grundlage für die EUDI-Integration schaffen soll. Die EU-Frist für Mitgliedstaaten, eine EUDI-Wallet bereitzustellen, läuft November 2026 ab; Deutschland plant Produktivstart Anfang 2027. Technische Umsetzung: Die GesundheitsID-Infrastruktur soll als Credential-Aussteller für Gesundheitsattribute (Versicherungsnachweis, E-Rezept, Patientenkurzakte) in der EUDI-Wallet fungieren. Gesundheits-ID.md sollte den EUDI-Wallet-Integrationspfad als eigenen Unterabschnitt ergänzen. EUDI-Wallet.md (falls vorhanden) sollte Gesundheitsdaten-Use-Cases konkretisieren.",
       "suggestedTerm": "EUDI-Wallet"
@@ -1280,7 +1281,8 @@
       "date": "2026-01-15",
       "source": "https://www.bundesamtsozialesicherung.de/de/themen/transformationsfo/ueberblick/",
       "affects": ["Telematikinfrastruktur.md", "KIS.md"],
-      "action": "update",
+      "action": "applied",
+      "appliedDate": "2026-03-20",
       "category": "regulation",
       "details": "Der Krankenhaus-Transformationsfonds (KHTF, 50 Milliarden Euro, 2026–2035) läuft seit Januar 2026. Anträge werden ausschließlich digital über ein BAS-Portal gestellt; nur Bundesländer sind antragsberechtigt (nicht direkt Krankenhäuser). Digitalisierungsinvestitionen inkl. TI-Anbindung, Interoperabilität und IT-Sicherheit sind explizit förderfähig (Fördertatbestand 3: Telemedizin-Netzwerke; Fördertatbestand 5: Patientenportale, ISiK). ISiK-konforme KIS-Systeme sind Voraussetzung für bestimmte Fördertatbestände. KIS.md und Telematikinfrastruktur.md sollten den KHTF als Finanzierungsrahmen für digitale Klinikinfrastruktur erwähnen.",
       "suggestedTerm": "Krankenhaus-Transformationsfonds"
@@ -1290,10 +1292,21 @@
       "date": "2026-02-01",
       "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/diga-reform-neue-regeln-fuer-digitale-gesundheitsanwendungen-treten-in/68540752",
       "affects": ["DiGA.md", "DiGAV.md"],
-      "action": "update",
+      "action": "applied",
+      "appliedDate": "2026-03-20",
       "category": "regulation",
       "details": "Neben der bereits dokumentierten AbEM-Pflicht (20% Vergütungsanteil) enthält die 2. DiGAVÄndV (in Kraft 1. Februar 2026) eine weitere Neuerung: DiGA müssen die Authentifizierung via GesundheitsID und den ePA-Schreibzugriff unterstützen. Übergangsfristen entfallen. DiGA, die diese Anforderungen nicht erfüllen, riskieren den Ausschluss aus dem BfArM-DiGA-Verzeichnis. Außerdem: 'Erhalt der Arbeitsfähigkeit' ist ab sofort anerkannter Versorgungsbereich; DiGA in Reha und Wiedereingliederung werden damit förderungsfähig. DiGA.md sollte den neuen Versorgungsbereich ergänzen. Hinweis: Dieses Finding präzisiert bereits vorhandene Einträge zur DiGAV-Änderung; der Schwerpunkt auf 'Erhalt der Arbeitsfähigkeit' als neuem Nutzenpfad ist noch nicht dokumentiert.",
       "suggestedTerm": "DiGA-Nutzenpfade"
+    },
+    {
+      "title": "DiPA: BEEP-Gesetz schafft erstmals vorläufiges Aufnahmeverfahren ab Januar 2026",
+      "date": "2026-01-01",
+      "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/beep-gesetz-bringt-digitale-pflegehilfen-auf-den-markt/68469307",
+      "affects": ["DiGA.md"],
+      "action": "new_article",
+      "category": "regulation",
+      "details": "Das BEEP-Gesetz (in Kraft 1. Januar 2026) führt erstmals ein vorläufiges Aufnahmeverfahren für Digitale Pflegeanwendungen (DiPA) ein, analog zum bewährten Verfahren bei DiGA. Bislang war kein einziges Produkt im BfArM-DiPA-Verzeichnis zugelassen, da das frühere Verfahren einen vollständigen Nutzennachweis vor Aufnahme verlangte. Neu ab Januar 2026: Hersteller können DiPA für bis zu 12 Monate vorläufig ins Verzeichnis aufnehmen lassen, auch wenn der pflegerische Nutzen noch nicht vollständig belegt ist. Voraussetzung ist ein wissenschaftliches Evaluationskonzept. Gleichzeitig stieg die Vergütung: Pflegeversicherung zahlt jetzt bis zu 40 Euro monatlich für DiPA-Nutzung und bis zu 30 Euro für ergänzende Unterstützungsleistungen (statt bisherigem Pauschalrahmen von 53 Euro). Erste DiPA-Zulassungen werden für 2026 erwartet. DiPA sind für ambulant pflegebedürftige Personen (und seit BEEP auch für pflegende Angehörige) bestimmt. Kein direkter Bezug zur TI-Infrastruktur, aber als eigenständiger Artikel 'DiPA.md' sinnvoll, da DiGA.md bereits existiert und eine Gegenüberstellung Digital Health-Anwendungen (DiGA vs. DiPA) für die Wissensbasis fehlt.",
+      "suggestedTerm": "DiPA"
     }
   ]
 }

@@ -71,7 +71,7 @@ Das FDZ führt ein öffentliches **Antragsregister**, das Informationen über ge
 
 ### Pseudonymisierungsverfahren
 
-GKV-Abrechnungsdaten werden mit einem einheitlichen **Pseudonym** versehen, das die Verknüpfung von Daten über verschiedene Leistungserbringer hinweg ermöglicht (Längsschnittanalysen), ohne direkten Personenbezug herzustellen. Das Verfahren basiert auf einer kryptografischen Hashfunktion, angewendet auf die [[KVNR]] (Krankenversicherungsnummer).
+GKV-Abrechnungsdaten werden mit einem einheitlichen **Pseudonym** versehen, das die Verknüpfung von Daten über verschiedene Leistungserbringer hinweg ermöglicht (Längsschnittanalysen), ohne direkten Personenbezug herzustellen. Das Verfahren basiert auf einer kryptografischen Hashfunktion, angewendet auf die [[KVNR]] (Krankenversicherungsnummer). Mehr zum technischen Hintergrund: [[Pseudonymisierung]].
 
 Die Adäquatheit dieses Verfahrens ist Gegenstand der GFF-Klage (Februar 2026), da die KVNR als quasi-stabiles Pseudonym bei Datenlecks möglicherweise rückführbar ist.
 

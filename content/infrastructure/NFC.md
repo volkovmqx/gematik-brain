@@ -6,7 +6,7 @@ aliases: [Near Field Communication, Nahfeldkommunikation, kontaktlos, ISO 14443]
 relevance:
   sectors: [arztpraxis, zahnarzt, apotheke, krankenhaus, hersteller, ti-infrastruktur, it-dienstleister, patient]
   interests: [technik, compliance, patient]
-maturity: setzling
+maturity: immergruen
 ---
 
 # NFC
@@ -19,7 +19,7 @@ NFC ist dieselbe Technik, die auch beim kontaktlosen Bezahlen mit der Bankkarte 
 
 ## Überblick
 
-NFC wurde als gemeinsamer Standard von Philips (heute NXP Semiconductors) und Sony entwickelt und 2004 als NFC Forum-Standard veröffentlicht. Die technische Grundlage bildet die ISO-Norm 14443, die kontaktlose Chipkarten beschreibt.
+NFC wurde als gemeinsamer Standard von Nokia, Philips (heute NXP Semiconductors) und Sony entwickelt. Am 18. März 2004 gründeten diese drei Unternehmen das NFC Forum, das den Standard seither pflegt. Die zugrunde liegende Übertragungstechnologie (NFCIP-1, ISO 18092) entstand ab 2002; als NFC Forum-Standard wurde sie 2004 mit der Gründung des Forums etabliert. Die technische Grundlage bildet die ISO-Norm 14443, die kontaktlose Chipkarten beschreibt.
 
 Im deutschen Gesundheitswesen ist NFC an mehreren Stellen relevant:
 
@@ -142,7 +142,7 @@ CardLink wurde 2024 für die [[E-Rezept]]-Einlösung in Apotheken-Apps zugelasse
 > **Bei Nichtbeachtung:** Fehlende ePA-Unterstützung gilt als Pflichtverletzung; die TI-Anbindung ist Voraussetzung für die Abrechnung nach § 295 SGB V.
 
 > [!klinik-integration] Klinik-Integration: NFC-Kartenterminals im stationären Betrieb
-> **Aufnahme:** Gematik-zertifizierte eHealth-Kartenterminals mit vier Kartenschlächten (eGK, HBA, SMC-B, gSMC-KT) unterstützen NFC für eGK G2/G2.1. Bei mehr als 500 Aufnahmen täglich mehrere Terminals parallel einplanen. Der [[VSDM]]-Abgleich wird durch das Einlesen der eGK ausgelöst und per HL7 ADT^A01 an das [[KIS]] übermittelt.
+> **Aufnahme:** Gematik-zertifizierte eHealth-Kartenterminals mit vier Kartenschächten (eGK, HBA, SMC-B, gSMC-KT) unterstützen NFC für eGK G2/G2.1. Bei mehr als 500 Aufnahmen täglich mehrere Terminals parallel einplanen. Der [[VSDM]]-Abgleich wird durch das Einlesen der eGK ausgelöst und per HL7 ADT^A01 an das [[KIS]] übermittelt.
 > **Notaufnahme:** Mobile NFC-fähige Kartenterminals ermöglichen das eGK-Einlesen direkt am Bett und in der Triagezone. Bei Erstversorgung hat die klinische Behandlung Vorrang. Der VSDM-Abgleich kann nachgeholt werden. Der Offline-Modus (VSDM-Fallback) muss im KIS aktiviert und regelmäßig getestet sein.
 > **Ausfallszenario:** Netzwerkausfall zwischen Terminal und Konnektor blockiert den VSDM-Abgleich. Eskalationspfad und Verantwortlichkeit für diesen Fall schriftlich im Betriebshandbuch festhalten.
 

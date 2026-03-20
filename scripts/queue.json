@@ -1,37 +1,15 @@
 {
   "pending": [
     {
-      "term": "HL7 v2",
+      "term": "LDT",
       "category": "standards",
-      "reason": "HL7 Version 2 ist der dominierende KIS-interne Nachrichtenstandard (ADT, ORM, ORU); 13+ Nennungen in KIS-, LIS- und PACS-Artikeln; HL7-Artikel deckt v3/FHIR ab, nicht v2",
-      "mentionedIn": [
-        "content/infrastructure/KIS.md",
-        "content/infrastructure/LIS.md",
-        "content/standards/HL7.md"
-      ],
-      "priority": 18
-    },
-    {
-      "term": "GDT",
-      "category": "standards",
-      "reason": "Gerätedatentransfer: xDT-Subformat für medizinische Gerätedaten (EKG, Spirometer), 16+ Nennungen; xDT-Artikel deckt es kurz ab, aber GDT ist das meistgenutzte Subformat",
+      "reason": "Labor-Datentransfer: xDT-Subformat für Laborbefundübermittlung vom Labor zur Praxis; 18+ Nennungen in LIS- und xDT-Kontext",
       "mentionedIn": [
         "content/standards/xDT.md",
-        "content/infrastructure/KIS.md"
+        "content/infrastructure/LIS.md",
+        "content/standards/KVDT.md"
       ],
-      "priority": 16
-    },
-    {
-      "term": "Pseudonymisierung",
-      "category": "concepts",
-      "reason": "Zentral für FDZ/GDNG-Rechtsdebatte (GFF-Klage), ePA-Forschungsnutzung, Medizininformatik-Initiative; 12+ Nennungen ohne eigenen Artikel",
-      "mentionedIn": [
-        "content/technologies/ePA.md",
-        "content/infrastructure/Forschungsdatenzentrum-Gesundheit.md",
-        "content/standards/GDNG.md",
-        "content/organization/BfDI.md"
-      ],
-      "priority": 16
+      "priority": 14
     },
     {
       "term": "GFF",
@@ -42,48 +20,35 @@
         "content/organization/BfDI.md",
         "content/standards/GDNG.md",
         "content/standards/GDVG.md",
-        "content/standards/DSGVO.md"
+        "content/standards/DSGVO.md",
+        "content/technologies/ePA.md"
       ],
       "priority": 13
     },
     {
-      "term": "Telekonsil",
-      "category": "technologies",
-      "reason": "Telekonsilium zwischen Spezialisten: 7+ Nennungen in Telemedizin- und KIM-Kontext; abzugrenzen von Videosprechstunde (patientenseitig)",
+      "term": "Opt-Out ePA",
+      "category": "concepts",
+      "reason": "Das Widerspruchsverfahren der ePA (Opt-Out statt Opt-In seit DigiG 2025): in 20 Artikeln erwähnt, kein eigener Artikel; zentrales Patientenrechts-Konzept mit eigener Rechtsgrundlage (§ 343 SGB V) und Ausnahmen (kein Widerspruchsrecht gegen FDZ-Übermittlung)",
       "mentionedIn": [
-        "content/concepts/Telemedizin.md",
-        "content/technologies/KIM.md"
+        "content/technologies/ePA.md",
+        "content/standards/DigiG.md",
+        "content/standards/PDSG.md",
+        "content/standards/EHDS.md",
+        "content/standards/SGB-V.md",
+        "content/standards/GDNG.md",
+        "content/standards/DSGVO.md",
+        "content/standards/BEEP-Gesetz.md"
       ],
-      "priority": 14
-    },
-    {
-      "term": "Entlassmanagement",
-      "category": "processes",
-      "reason": "Gesetzliches Krankenhausentlassmanagement (§ 39 SGB V): löst Heilmittelverordnung, eVO, KIM-Arztbriefe aus; 8+ Nennungen ohne eigenen Artikel",
-      "mentionedIn": [
-        "content/processes/Heilmittelverordnung.md",
-        "content/processes/BTM-Rezept.md",
-        "content/technologies/Patientenportal.md"
-      ],
-      "priority": 14
-    },
-    {
-      "term": "LDT",
-      "category": "standards",
-      "reason": "Labor-Datentransfer: xDT-Subformat für Laborbefundübermittlung vom Labor zur Praxis; 24+ Nennungen in LIS- und xDT-Kontext",
-      "mentionedIn": [
-        "content/standards/xDT.md",
-        "content/infrastructure/LIS.md"
-      ],
-      "priority": 14
+      "priority": 12
     },
     {
       "term": "Telemonitoring",
       "category": "technologies",
-      "reason": "Kontinuierliche Fernüberwachung von Vitalparametern bei Chronikern; 8 Nennungen; Telemedizin-Artikel deckt es kurz ab, aber Telemonitoring ist GKV-Leistung mit eigenem Rechtsrahmen (§ 137f SGB V) und DiGA-Bezug",
+      "reason": "Kontinuierliche Fernüberwachung von Vitalparametern bei Chronikern; 10 Nennungen; Telemedizin-Artikel deckt es kurz ab, aber Telemonitoring ist GKV-Leistung mit eigenem Rechtsrahmen (§ 137f SGB V) und DiGA-Bezug",
       "mentionedIn": [
         "content/concepts/Telemedizin.md",
-        "content/organization/G-BA.md"
+        "content/organization/G-BA.md",
+        "content/standards/DigiG.md"
       ],
       "priority": 12
     },
@@ -102,11 +67,12 @@
     {
       "term": "ABDATA",
       "category": "infrastructure",
-      "reason": "ABDATA Pharma-Daten-Service GmbH: Herausgeber der ABDA-Datenbank, 20+ Nennungen in AVS- und AMTS-Kontext ohne eigene Seite",
+      "reason": "ABDATA Pharma-Daten-Service GmbH: Herausgeber der ABDA-Datenbank, 14+ Nennungen in AVS- und AMTS-Kontext ohne eigene Seite",
       "mentionedIn": [
         "content/infrastructure/ABDA-Datenbank.md",
         "content/processes/eMP.md",
-        "content/processes/AMTS.md"
+        "content/processes/AMTS.md",
+        "content/organization/ABDA.md"
       ],
       "priority": 12
     },
@@ -152,6 +118,16 @@
         "content/technologies/eReferral.md"
       ],
       "priority": 9
+    },
+    {
+      "term": "Leistungsgruppen",
+      "category": "concepts",
+      "reason": "65 Leistungsgruppen im KHVVG: strukturierendes Element der Krankenhausreform, das Planungs-, Vergütungs- und IT-Dokumentationsanforderungen verknüpft; 6 Nennungen in KHVVG und KHAG, KIS muss Leistungsgruppendokumentation unterstützen",
+      "mentionedIn": [
+        "content/standards/KHVVG.md",
+        "content/standards/KHAG.md"
+      ],
+      "priority": 8
     },
     {
       "term": "ePA-App",
@@ -204,6 +180,16 @@
       "priority": 7
     },
     {
+      "term": "LANR",
+      "category": "infrastructure",
+      "reason": "Lebenslange Arztnummer: 9-stellige lebenslange Arztnummer, Pendant zur BSNR auf Arztebene; in KVDT und eReferral referenziert, als Datenelement in jedem Abrechnungsvorgang zentral",
+      "mentionedIn": [
+        "content/standards/KVDT.md",
+        "content/technologies/eReferral.md"
+      ],
+      "priority": 6
+    },
+    {
       "term": "Interop Council",
       "category": "organization",
       "reason": "gematik Interoperability Council: im Interoperabilitätsverzeichnis-Artikel als Governance-Gremium für die IOP-Roadmap erwähnt; keine eigene Seite",
@@ -218,7 +204,8 @@
       "reason": "TI-Komponentenzulassung durch gematik: 9+ Nennungen in Konformitätsbewertungs- und Konnektor-Artikeln; erklärt wie Hardware/Software TI-Zugang erhält",
       "mentionedIn": [
         "content/processes/Konformitaetsbewertung.md",
-        "content/infrastructure/Konnektoren.md"
+        "content/infrastructure/Konnektoren.md",
+        "content/standards/SGB-V.md"
       ],
       "priority": 6
     },
@@ -252,6 +239,11 @@
     }
   ],
   "done": [
+    "HL7 v2",
+    "GDT",
+    "Pseudonymisierung",
+    "Telekonsil",
+    "Entlassmanagement",
     "ABDA",
     "ABDA-Datenbank",
     "AMNOG",
@@ -323,6 +315,7 @@
     "IQWiG",
     "ISMS",
     "ISiK",
+    "IS-H",
     "IVDR",
     "IfSG",
     "InEK",
@@ -337,6 +330,7 @@
     "KV-SafeNet",
     "KVNR",
     "KZBV",
+    "KVDT",
     "Kartenterminal",
     "Kassenärztliche Vereinigung",
     "Kassenaerztliche-Vereinigung",
@@ -352,9 +346,11 @@
     "Medizinischer Dienst",
     "Medizinischer-Dienst",
     "Medizininformatik-Initiative",
+    "Meldepflicht",
     "MyHealth@EU",
     "MyHealthAtEU",
     "NCPeH",
+    "NFC",
     "NFDM",
     "OAuth 2.0",
     "OAuth-2.0",
@@ -372,6 +368,7 @@
     "Patient-Summary",
     "Patientenportal",
     "PoPP",
+    "Primärsystem",
     "QES",
     "RIS",
     "RKI",
@@ -382,6 +379,7 @@
     "SMC-B",
     "SNOMED CT",
     "SNOMED-CT",
+    "SOAP",
     "STIKO",
     "TA1",
     "TI-Federation",
@@ -394,11 +392,13 @@
     "Telematikinfrastruktur",
     "Telemedizin",
     "Teleradiologie",
+    "Terminologieserver",
     "VAU",
     "VDG",
     "VPN-Zugangsdienst",
     "VSDM",
     "VZD",
+    "Videosprechstunde",
     "X.509",
     "XDS",
     "ZETA",
@@ -410,9 +410,11 @@
     "eID",
     "eIDAS",
     "eImpfpass",
+    "eML",
     "eMP",
     "ePA",
     "ePass",
+    "eReferral",
     "eVO",
     "gRPC",
     "gSMC-KT",
@@ -428,21 +430,20 @@
     "Interoperabilitaetsverzeichnis",
     "Mutterpass",
     "Kinderuntersuchungsheft",
-    "Videosprechstunde",
-    "Terminologieserver",
     "Konformitätsbewertung",
     "Konformitaetsbewertung",
     "Securpharm",
     "BEMA",
-    "Primärsystem",
     "TI 2.0",
     "TI-2.0",
     "BTM-Rezept",
     "BZÄK",
     "Heilmittelverordnung",
-    "eML",
     "dgMP",
     "KHAG",
+    "DataMatrix",
+    "BZÄK",
+    "DVKA",
     "eReferral",
     "KVDT",
     "SOAP",
@@ -504,36 +505,36 @@
     "content/concepts/PKV.md",
     "content/concepts/VAU.md",
     "content/concepts/ZETA.md",
+    "content/infrastructure/eGBR.md",
+    "content/infrastructure/eID.md",
     "content/infrastructure/EUDI-Wallet.md",
     "content/infrastructure/Forschungsdatenzentrum-Gesundheit.md",
-    "content/infrastructure/HSM-B.md",
+    "content/infrastructure/gSMC-KT.md",
     "content/infrastructure/Highspeed-Konnektor.md",
-    "content/infrastructure/KV-SafeNet.md",
+    "content/infrastructure/HSM-B.md",
     "content/infrastructure/Kartenterminal.md",
+    "content/infrastructure/KV-SafeNet.md",
     "content/infrastructure/LIS.md",
     "content/infrastructure/MVZ.md",
     "content/infrastructure/MyHealthAtEU.md",
     "content/infrastructure/PACS.md",
     "content/infrastructure/RIS.md",
+    "content/infrastructure/Telematik-ID.md",
     "content/infrastructure/TI-Federation.md",
     "content/infrastructure/TSL.md",
     "content/infrastructure/TSP.md",
-    "content/infrastructure/Telematik-ID.md",
     "content/infrastructure/VPN-Zugangsdienst.md",
     "content/infrastructure/VZD.md",
-    "content/infrastructure/eGBR.md",
-    "content/infrastructure/eID.md",
-    "content/infrastructure/gSMC-KT.md",
     "content/organization/ABDA.md",
     "content/organization/Bewertungsausschuss.md",
     "content/organization/Bundesaerztekammer.md",
     "content/organization/Bundesnetzagentur.md",
     "content/organization/DAV.md",
     "content/organization/DVKA.md",
-    "content/organization/IQWiG.md",
     "content/organization/InEK.md",
-    "content/organization/KZBV.md",
+    "content/organization/IQWiG.md",
     "content/organization/Kassenaerztliche-Vereinigung.md",
+    "content/organization/KZBV.md",
     "content/organization/Landesaerztekammer.md",
     "content/organization/Medizinischer-Dienst.md",
     "content/organization/OeGD.md",
@@ -541,47 +542,47 @@
     "content/processes/AMTS.md",
     "content/processes/BMP.md",
     "content/processes/DMP.md",
-    "content/processes/NFDM.md",
-    "content/processes/PoPP.md",
     "content/processes/eMP.md",
     "content/processes/eVO.md",
+    "content/processes/NFDM.md",
+    "content/processes/PoPP.md",
     "content/standards/BEEP-Gesetz.md",
     "content/standards/BSI-C5.md",
     "content/standards/CDA.md",
     "content/standards/DICOM.md",
-    "content/standards/DVG.md",
-    "content/standards/DVPMG.md",
     "content/standards/DiGAV.md",
     "content/standards/DiPAV.md",
+    "content/standards/DVG.md",
+    "content/standards/DVPMG.md",
     "content/standards/E-Health-Gesetz.md",
+    "content/standards/eIDAS.md",
     "content/standards/GDAG.md",
     "content/standards/GDNG.md",
     "content/standards/GDVG.md",
-    "content/standards/GOZ.md",
     "content/standards/GOÄ.md",
+    "content/standards/GOZ.md",
+    "content/standards/IfSG.md",
     "content/standards/IHE.md",
     "content/standards/IVDR.md",
-    "content/standards/IfSG.md",
     "content/standards/KHG.md",
     "content/standards/KHVVG.md",
     "content/standards/KHZG.md",
     "content/standards/KRITIS-Dachgesetz.md",
     "content/standards/LOINC.md",
-    "content/standards/MDR.md",
     "content/standards/Matrix-Protokoll.md",
+    "content/standards/MDR.md",
     "content/standards/OPS.md",
+    "content/standards/Patient-Summary.md",
     "content/standards/PDSG.md",
     "content/standards/PZN.md",
-    "content/standards/Patient-Summary.md",
     "content/standards/SGB-XI.md",
     "content/standards/SNOMED-CT.md",
     "content/standards/VDG.md",
     "content/standards/XDS.md",
-    "content/standards/eIDAS.md",
     "content/standards/xDT.md",
     "content/technologies/DEMIS.md",
-    "content/technologies/DiPA.md",
     "content/technologies/DiPaG.md",
+    "content/technologies/DiPA.md",
     "content/technologies/eArztbrief.md",
     "content/technologies/gRPC.md"
   ],

@@ -24,7 +24,7 @@ Teleradiologie ist ein Teilbereich der [[Telemedizin]]. Sie ermöglicht, dass ra
 In Deutschland sind zwei Anwendungsszenarien verbreitet:
 
 - **Teleradiologie im engeren Sinne**: Ein Krankenhaus ohne eigenen Radiologen schickt Bilder an einen externen Teleradiologieanbieter. Rechtsgrundlage ist § 123 der Strahlenschutzverordnung 2018 (StrlSchV 2018, in Kraft seit 1. Januar 2019). Genehmigungspflichtig durch das Landesamt für Umwelt (für den Betrieb).
-- **Telekonsil (radiologische Zweitbefundung)**: Ein Arzt schickt Bilder an einen anderen Radiologen zur Expertenmeinung. Vertragsärzte können das Telekonsil seit 2017 nach EBM-Ziffer 34800 ff. abrechnen.
+- **[[Telekonsil]] (radiologische Zweitbefundung)**: Ein Arzt schickt Bilder an einen anderen Radiologen zur Expertenmeinung. Vertragsärzte können das Telekonsil seit 2017 nach EBM-Ziffer 34800 ff. abrechnen.
 
 ### Versorgungsrelevanz
 

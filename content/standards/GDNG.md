@@ -3,7 +3,10 @@ title: GDNG
 audience: [technical, non-technical]
 tags: [standards, recht, gesetz, forschung, datenschutz, sekundärnutzung]
 aliases: [Gesundheitsdatennutzungsgesetz, Health Data Use Act]
-maturity: wachsend
+maturity: immergruen
+relevance:
+  sectors: [krankenhaus, arztpraxis, kasse, forschung, hersteller, it-dienstleister, startup, regulierung, patient]
+  interests: [compliance, business, patient]
 ---
 
 # GDNG
@@ -21,6 +24,9 @@ Das GDNG trat am 26. März 2024 in Kraft. Der vollständige Name lautet: "Gesetz
 Das GDNG verfolgt zwei Hauptziele. Erstens soll Forschung, die dem Gemeinwohl dient, erleichterten Zugang zu Gesundheitsdaten erhalten. Zweitens soll das Gesundheitswesen als lernendes System auf Basis von Versorgungsdaten weiterentwickelt werden. Das [[BMG]] sieht das GDNG als Grundlage für eine Gesundheitsdateninfrastruktur, die Deutschland im internationalen Wettbewerb um datenbasierte Medizin stärken soll.
 
 Die Sekundärnutzung von Daten aus der [[ePA]] ist ein zentraler Aspekt des Gesetzes. Versicherte können der Nutzung ihrer pseudonymisierten ePA-Daten für Forschungszwecke jederzeit widersprechen. Der Widerspruch ist über die Krankenkasse oder digital in der ePA-App möglich.
+
+> [!interesse-patient]
+> Ihre Gesundheitsdaten aus der ePA können für anonymisierte Forschung genutzt werden. Das GDNG erlaubt dies nur für gemeinwohlorientierte Forschung, nicht für kommerzielle Werbung. Sie haben ein Widerspruchsrecht: In der ePA-App unter "Einstellungen" können Sie die Forschungsnutzung Ihrer Daten jederzeit ablehnen. Der Widerspruch gilt sofort. Ihre Identität wird durch Pseudonymisierung geschützt; Forscher sehen keine Namen oder Adressen.
 
 ## Technische Details
 
@@ -41,9 +47,12 @@ Das FDZ kann unter dem GDNG pseudonymisierte Daten mit weiteren Registerdaten ve
 
 ### GFF-Klage gegen das FDZ (2022/2026)
 
-Die Gesellschaft für Freiheitsrechte (GFF, unterstützt vom CCC) nahm im Februar 2026 ihre 2022 eingereichte Klage gegen das [[Forschungsdatenzentrum-Gesundheit|Forschungsdatenzentrum Gesundheit (FDZ)]] wieder auf (das Verfahren hatte seit Februar 2023 geruht, da das FDZ nicht operativ war). Die Kritikpunkte: Die Pseudonymisierung der Daten von 73 Millionen GKV-Versicherten reiche nicht aus, da eine Re-Identifizierung bei seltenen Krankheiten möglich sei. Außerdem fehlen gesetzlich verankerte ausreichende Sicherheitsstandards. Ein weiterer Kritikpunkt: GKV-Versicherte haben kein Widerspruchsrecht gegen die Datenübermittlung an das FDZ, PKV-Versicherte hingegen schon. Die Klage ist zum Stand März 2026 anhängig.
+Die Gesellschaft für Freiheitsrechte (GFF, unterstützt vom CCC) nahm im Februar 2026 ihre 2022 eingereichte Klage gegen das [[Forschungsdatenzentrum-Gesundheit|Forschungsdatenzentrum Gesundheit (FDZ)]] wieder auf (das Verfahren hatte seit Februar 2023 geruht, da das FDZ nicht operativ war). Die Kritikpunkte: Die [[Pseudonymisierung]] der Daten von 73 Millionen GKV-Versicherten reiche nicht aus, da eine Re-Identifizierung bei seltenen Krankheiten möglich sei. Außerdem fehlen gesetzlich verankerte ausreichende Sicherheitsstandards. Ein weiterer Kritikpunkt: GKV-Versicherte haben kein Widerspruchsrecht gegen die Datenübermittlung an das FDZ, PKV-Versicherte hingegen schon. Die Klage ist zum Stand März 2026 anhängig.
 
 ### Datensicherheit und Forschungsgeheimnis
+
+> [!interesse-compliance]
+> Das GDNG verpflichtet alle Datenempfänger (Forschungseinrichtungen, Unternehmen) zum Forschungsgeheimnis nach § 7 GDNG. Verstöße gegen die Geheimhaltungspflicht oder Reidentifizierungsversuche sind strafbar (bis 3 Jahre Freiheitsstrafe oder Geldstrafe). Datenzugangsanträge müssen beim [[BfArM]] gestellt werden. Eine Genehmigung setzt voraus, dass der Forschungszweck gemeinwohlorientiert und nicht durch weniger eingreifende Mittel erreichbar ist.
 
 § 7 GDNG führt ein **Forschungsgeheimnis** ein. Forschende, die Zugang zu Gesundheitsdaten erhalten, sind strafrechtlich zur Geheimhaltung verpflichtet. Der Versuch, Versicherte oder Leistungserbringer zu reidentifizieren, ist in jedem Fall strafbar. Verstöße können mit bis zu drei Jahren Freiheitsstrafe oder Geldstrafen geahndet werden.
 
@@ -63,6 +72,9 @@ Das geplante **[[GDVG]] (Gesetz für digitale Versorgung und den Gesundheitsdate
 - **KI-Fähigkeit**: Der Gesundheitsdatenraum soll KI-fähig ausgebaut werden. Datensätze werden so aufbereitet, dass sie für maschinelles Lernen und KI-Modelltraining nutzbar sind, unter Wahrung der Pseudonymisierungsanforderungen des GDNG.
 
 Diese Erweiterungen bedeuten für Forscher: Mehr Datenquellen, grenzüberschreitende Verknüpfung und bessere Werkzeuge für KI-gestützte Analysen.
+
+> [!interesse-business]
+> Das GDNG schafft einen regulierten Markt für Gesundheitsdaten-Zugang. Unternehmen können Anträge auf Datenzugang beim BfArM stellen, sofern sie einen gemeinwohlorientierten Forschungszweck nachweisen. Pharma, MedTech und Health-IT-Unternehmen profitieren von größeren und repräsentativeren Datensätzen für Studien und Produktentwicklung. Der EHDS-Anschluss (geplant über GDVG) öffnet die Daten zusätzlich für internationale Kooperationen.
 
 ### Datenquellen und berechtigte Forschungszwecke
 
@@ -84,6 +96,7 @@ Als berechtigte Forschungszwecke gelten: medizinische Forschung, Versorgungsfors
 - [[GKV]] (Abrechnungsdaten der GKV sind zentrale Datenquelle im FDZ)
 - [[DVPMG]] (schuf das FDZ beim BfArM, 2021)
 - [[PDSG]] (regelt den Datenschutz der ePA als ergänzendes Gesetz)
+- [[Pseudonymisierung]] (zentrale Datenschutztechnik für die Forschungsnutzung im GDNG)
 
 ## Quellen
 
