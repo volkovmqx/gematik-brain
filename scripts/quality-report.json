@@ -1,780 +1,237 @@
 {
-  "timestamp": "2026-03-20T13:15:00Z",
+  "timestamp": "2026-03-20T14:05:00Z",
   "overallScore": 84,
   "testResults": {
-    "passed": 196,
-    "failed": 1,
-    "total": 197
+    "passed": 202,
+    "failed": 0,
+    "total": 202
   },
   "articles": [
     {
-      "file": "content/technologies/ePA-App.md",
-      "verdict": "pass",
-      "score": 88,
-      "issues": [
-        "ePA launch date phrasing: 'seit April 2025' is slightly imprecise; official date is 29. April 2025.",
-        "DigiG source URL in Quellen points to DVG page (digitale-versorgungsgesetz.html), not DigiG. Wrong law linked.",
-        "BITMARCK '80 Prozent der GKV-Versicherten' conflates Aktensystem and ePA-FdV; directionally accurate but imprecise."
-      ],
-      "fixInstructions": "1. Change 'seit April 2025' to 'seit dem 29. April 2025'. 2. Replace DigiG source URL with https://www.bundesgesundheitsministerium.de/themen/digitalisierung/digital-gesetz."
-    },
-    {
-      "file": "content/processes/Zulassungsverfahren.md",
-      "verdict": "revise",
-      "score": 78,
-      "issues": [
-        "Broken wiki-link [[ISIP]] — confirmed by test-report.json. No article exists for ISIP.",
-        "SGB V § 311 cited as primary Zulassungsnorm; § 325 is the direct Zulassungsrechtsgrundlage and should be mentioned in Überblick.",
-        "'Telematikgebührenverordnung (TelematikGebV)' is a non-standard term; actual fee basis is § 328 SGB V."
-      ],
-      "fixInstructions": "1. Remove [[ISIP]] wiki-link or replace with plain text 'Interoperabilitätsprofil Pflege (ISIP)'. 2. Add § 325 SGB V as the primary Zulassungsrechtsgrundlage in Überblick. 3. Replace 'TelematikGebV' with reference to § 328 SGB V."
-    },
-    {
       "file": "content/concepts/Transformationsfonds.md",
-      "verdict": "revise",
-      "score": 55,
-      "issues": [
-        "FACTUAL INACCURACY: Article states 'Der Bundesrat stimmte dem KHAG am 27. März 2026 zu' (past tense). As of 20. März 2026 the Bundesrat vote is scheduled but has NOT yet occurred. Future event presented as completed fact.",
-        "FACTUAL INACCURACY: Article claims KHAG moved Transformationsfonds financing from GKV to 'Bundesinfrastrukturreserve'. BAS official source (bundesamtsozialesicherung.de) as of March 2026 still states 25 Mrd. come from 'Liquiditätsreserve des Gesundheitsfonds', with KHAG changes described as 'voraussichtlich noch zu erwarten'. Claim overstates enacted provisions.",
-        "FACTUAL INACCURACY: 'reduzierte die Leistungsgruppen von 65 auf 61' attributed to KHAG — this reduction depends on KHAG passage, which has not yet occurred.",
-        "Contradicts content/standards/KHAG.md which correctly states Bundesrat vote was not yet complete as of 20. März 2026.",
-        "Source mdoc.one (trade blog) used as third source; replace with official BMG KHAG page."
-      ],
-      "fixInstructions": "1. Change all past-tense claims about Bundesrat KHAG vote to future/conditional: 'Der Bundesrat soll am 27. März 2026 über das KHAG abstimmen.' 2. Correct financing: revert to current KHVVG state (25 Mrd. aus GKV Liquiditätsreserve); frame KHAG financing change as planned pending enactment. 3. Remove or conditionalize '61 Leistungsgruppen' claim. 4. Replace mdoc.one source with https://www.bundesgesundheitsministerium.de/service/gesetze-und-verordnungen/detail/krankenhausreformanpassungsgesetz."
-    },
-    {
-      "file": "content/organization/Benannte-Stelle.md",
       "verdict": "pass",
-      "score": 87,
+      "score": 95,
       "issues": [
-        "MDR/IVDR application dates (Mai 2021 / Mai 2022) not stated explicitly — minor clarity gap.",
-        "Wartezeiten '12 bis 36 Monate' in business callout: widely reported figure but no primary source cited. Unverifiable without BfArM or EUDAMED data.",
-        "wiki-link [[Konformitaetsbewertung]] in Verknüpfungen: depends on article existing (not verified)."
+        "KHAG Bundesrat vote on 27. März 2026 correctly conditionalized throughout",
+        "GKV-Liquiditätsreserve correctly stated as current financing under KHVVG",
+        "65 Leistungsgruppen correctly stated as current; 61 correctly conditionalized on KHAG vote",
+        "All verified facts are accurate"
       ],
-      "fixInstructions": "Minor: Add MDR application date (26. Mai 2021) in Überblick. Add source citation for waiting time estimate."
+      "fixInstructions": null
     },
     {
-      "file": "content/concepts/Broad-Consent.md",
-      "verdict": "revise",
-      "score": 70,
+      "file": "content/technologies/Telekonsil.md",
+      "verdict": "pass",
+      "score": 93,
       "issues": [
-        "URL DEAD: Source 1 'MII: Consent – Medizininformatik-Initiative' at https://www.medizininformatik-initiative.de/de/consent-working-group returns 404. Verified with Playwright.",
-        "MII Broad Consent version 'V2022' is not the precise MII version string. Should be 'Mustertext Stand 2022'.",
-        "MII described as 'mehr als 30 deutschen Universitätskliniken' — MII covers ~36 Standorte across 4 consortia; claim is directionally correct but slightly imprecise."
+        "EBM date '1. Oktober 2020' verified correct via KBV and multiple sources",
+        "EBM-Ziffer 01671 'Telekonsiliarische Beurteilung' verified correct",
+        "All sources load (kbv.de/html/telekonsil.php, kbv.de/html/ebm.php are valid KBV pages)",
+        "Minor: praxis-tipp callout states 01671 = 128 Punkte (confirmed); description matches"
       ],
-      "fixInstructions": "1. Replace dead URL with correct URL: https://www.medizininformatik-initiative.de/de/zusammenarbeit/arbeitsgruppe-consent. 2. Change 'V2022' to 'Mustertext Stand 2022'."
+      "fixInstructions": null
+    },
+    {
+      "file": "content/organization/GFF.md",
+      "verdict": "pass",
+      "score": 95,
+      "issues": [
+        "URL freiheitsrechte.org/gesundheitsdaten/ redirects correctly to the GFF case page (verified live)",
+        "freiheitsrechte.org/ueber-die-gff/werwirsind verified live and correct",
+        "Art. 2 Abs. 1 GG i.V.m. Art. 1 Abs. 1 GG correctly stated as constitutional basis for informationelle Selbstbestimmung",
+        "GFF founded 2015 confirmed by Wikipedia and GFF website",
+        "GFF klage wiederaufgenommen February 2026 matches GFF press release of 25. Februar 2026"
+      ],
+      "fixInstructions": null
+    },
+    {
+      "file": "content/standards/xDT.md",
+      "verdict": "pass",
+      "score": 90,
+      "issues": [
+        "KBV ITA-Update Portal URLs (update.kbv.de/ita-update/Abrechnung/) verified live and returning KVDT spec files",
+        "update.kbv.de/ita-update/Labor/Labordatenkommunikation/ not directly verified (not tested) but domain/path pattern consistent with live portal",
+        "All technical claims (GDT 3.1, LDT 3.0) are accurate to known specs",
+        "Missing 'relevance' frontmatter field — structural test passes but field absent"
+      ],
+      "fixInstructions": "Add relevance frontmatter (sectors: [arztpraxis, zahnarzt, psychotherapie, hersteller, it-dienstleister], interests: [technik, compliance, business]) to match the existing content focus."
+    },
+    {
+      "file": "content/concepts/Opt-Out-ePA.md",
+      "verdict": "pass",
+      "score": 92,
+      "issues": [
+        "§ 342 Abs. 1 SGB V verified as correct legal basis (Satz 2 is where opt-out sits; Abs. 1 reference is accurate)",
+        "'unverzüglich' confirmed as statutory term from § 342 Abs. 2 lit. s and t SGB V",
+        "gesetze-im-internet.de URL for § 342 verified live",
+        "gematik ePA widerspruch URL and BMG DigiG URL not browser-tested but domain patterns are standard"
+      ],
+      "fixInstructions": null
+    },
+    {
+      "file": "content/infrastructure/EUDI-Wallet.md",
+      "verdict": "pass",
+      "score": 93,
+      "issues": [
+        "BSI Handlungsleitfaden URL verified live: bsi.bund.de/...Handlungsleitfaden_EUDI-Wallet-260116.html (published 16.01.2026)",
+        "eIDAS 2.0 EU 2024/1183 date (20. Mai 2024 in Kraft) verified accurate",
+        "November 2026 deadline for EUDI-Wallet rollout verified accurate",
+        "BMDS (not BMI) named as responsible ministry — correct per current government structure"
+      ],
+      "fixInstructions": null
     },
     {
       "file": "content/organization/BSI.md",
       "verdict": "pass",
-      "score": 92,
+      "score": 93,
       "issues": [
-        "SiPra/DiPS: all key facts verified against BSI press release (17. März 2026). '3 von 4 PVS' correct. Kommentierungsfrist 17. Juni 2026 correct. URL live.",
-        "SiPra contractor named as ERNW in press release — article does not mention contractor name (neutral, not an error).",
-        "RSA 2048 'bis Ende 2025 zugelassen' — consistent with known BSI ECC migration policy; fully verifiable only via TR-03116-1 full text."
+        "BSI EUDI-Wallet Handlungsleitfaden reference verified correct (January 2026, bsi.bund.de URL live)",
+        "KRITIS-Dachgesetz dates (Bundestag 29. Januar 2026, Bundesrat 6. März 2026) not independently verified but consistent with other articles",
+        "BSI founded 1991, Bonn headquarters confirmed accurate"
       ],
-      "fixInstructions": "No fixes required."
+      "fixInstructions": null
+    },
+    {
+      "file": "content/technologies/DEMIS.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "relevance frontmatter added — verified valid sector and interest values",
+        "FHIR R4 basis confirmed accurate",
+        "RKI as operator confirmed accurate",
+        "April 2026 Stammdaten-Pflicht is a future date relative to today (20. März 2026) — stated correctly as upcoming obligation",
+        "Only 4 sources — minimum met"
+      ],
+      "fixInstructions": null
     },
     {
       "file": "content/processes/AMTS.md",
-      "verdict": "pass",
-      "score": 85,
+      "verdict": "revise",
+      "score": 72,
       "issues": [
-        "ePA version 3.1.3 / AMTS-rZI reference consistent with ePA.md. Cross-article consistency confirmed.",
-        "§ 31a SGB V for Medikationsplan with 5+ Dauermedikamenten cited correctly.",
-        "Callout types all correctly matched: interesse-compliance, interesse-patient, interesse-technik."
+        "FACTUAL ERROR: Body text (Überblick) states 'Patienten mit fünf oder mehr Dauermedikamenten haben gesetzlichen Anspruch auf einen Medikationsplan' — WRONG. § 31a SGB V requires 'mindestens drei verordnete Arzneimittel'. The [!patientenrecht] callout correctly says 'drei oder mehr', but the Überblick text and [!interesse-compliance] callout both say 'fünf' — this contradicts the statute and other knowledge base articles (BMP.md, E-Health-Gesetz.md).",
+        "The E-Health-Gesetz.md article correctly states 'drei oder mehr Dauermedikamente' for the same § 31a SGB V entitlement"
       ],
-      "fixInstructions": "No fixes required."
+      "fixInstructions": "In Überblick paragraph: change 'Patienten mit fünf oder mehr Dauermedikamenten haben gesetzlichen Anspruch auf einen Medikationsplan' to 'Patienten mit mindestens drei verordneten Dauermedikamenten haben gesetzlichen Anspruch auf einen Medikationsplan'. In [!interesse-compliance] callout: change 'Patienten mit fünf oder mehr Dauermedikamenten haben seit 2016 einen gesetzlichen Anspruch auf einen Medikationsplan (§ 31a SGB V)' to 'Patienten mit mindestens drei verordneten Arzneimitteln haben seit 2016 einen gesetzlichen Anspruch auf einen Medikationsplan (§ 31a SGB V)'. In [!praxis-tipp] callout: change 'Patienten mit 5 oder mehr Dauermedikamenten haben gesetzlichen Anspruch' to 'Patienten mit mindestens 3 verordneten Dauermedikamenten haben gesetzlichen Anspruch'."
     },
     {
       "file": "content/processes/NFDM.md",
       "verdict": "pass",
-      "score": 83,
+      "score": 82,
       "issues": [
-        "Two Quellen entries point to nearly identical URLs (minor redundancy).",
-        "Verknüpfungen section uses prose format instead of standard bullet [[wiki-link]] format per CLAUDE.md template."
+        "relevance frontmatter added — valid values",
+        "Quellen section has only 2 sources (both fachportal.gematik.de, duplicate paths) — borderline minimum",
+        "GOP numbers (01640, 01641, 01642, 01643) and January 2026 changes not independently verified but internally consistent",
+        "Template compliant"
       ],
-      "fixInstructions": "Minor: Consolidate duplicate Quellen entries. Reformat Verknüpfungen as bullet [[wiki-link]] list."
-    },
-    {
-      "file": "content/concepts/VAU.md",
-      "verdict": "pass",
-      "score": 90,
-      "issues": [
-        "ECDH brainpoolP256r1, AES-GCM, ECDSA — consistent with BSI TR-03116 ECC requirements.",
-        "interesse-technik callout contains correct technical content (spec URLs, crypto params). No compliance content misplaced.",
-        "relevance frontmatter valid."
-      ],
-      "fixInstructions": "No fixes required."
-    },
-    {
-      "file": "content/standards/GDVG.md",
-      "verdict": "pass",
-      "score": 86,
-      "issues": [
-        "GDVG correctly identified as planned law with Referentenentwurf expected H1/2026. Status accurate.",
-        "EHDS regulation cited as 'EU-Verordnung 2025/327' — plausible regulation number but unverifiable against EUR-Lex without direct lookup. Flag as unverified.",
-        "netzpolitik.org and kma-online.de used alongside official sources — acceptable for critical coverage and industry positions."
-      ],
-      "fixInstructions": "Verify EHDS regulation number (EU) 2025/327 against EUR-Lex. If incorrect, update and add EUR-Lex URL as additional official source."
+      "fixInstructions": null
     },
     {
       "file": "content/processes/PoPP.md",
       "verdict": "pass",
       "score": 88,
       "issues": [
-        "PoPP spec V1.0.0 date '3. März 2026' verified: gemSpec_PoPP_Service_V1.0.0 revision dated 03.03.2026 confirmed by web search.",
-        "Only 2 Quellen entries — exactly at minimum threshold. Article benefits from a third source.",
-        "Callout types correctly matched: compliance for Mitte-2026 deadline, technik for JWT/REST/FHIR details."
-      ],
-      "fixInstructions": "Add a third source: https://gemspec.gematik.de/docs/gemKPT/gemKPT_PoPP/ (PoPP concept document)."
-    },
-    {
-      "file": "content/technologies/ePA.md",
-      "verdict": "pass",
-      "score": 91,
-      "issues": [
-        "All rollout dates consistent: 15. Jan 2025, 29. Apr 2025, 1. Okt 2025 — verified correct.",
-        "Push-Benachrichtigungen seit März 2026 — consistent with ePA-App.md.",
-        "eMP Oktober 2026 Rollout — consistent with AMTS.md. No contradiction found."
-      ],
-      "fixInstructions": "No fixes required. Backfill wiki-links relevant and valid."
-    },
-    {
-      "file": "content/concepts/Opt-Out-ePA.md",
-      "verdict": "pass",
-      "score": 89,
-      "issues": [
-        "§ 342 Abs. 1 SGB V as Rechtsgrundlage for Opt-Out — correct.",
-        "Opt-Out rate '3,6 bis 7 Prozent' appropriately hedged.",
-        "Callout types all correctly matched: frist-warnung, patientenrecht, klinik-integration, praxis-tipp."
-      ],
-      "fixInstructions": "No fixes required."
-    },
-    {
-      "file": "content/standards/KHVVG.md",
-      "verdict": "revise",
-      "score": 85,
-      "issues": [
-        "Missing relevance frontmatter: -5 points. No relevance.sectors or relevance.interests fields present."
-      ],
-      "fixInstructions": "Add relevance frontmatter: sectors: [krankenhaus, hersteller, it-dienstleister, regulierung, kasse], interests: [compliance, business, technik]."
-    },
-    {
-      "file": "content/standards/KHAG.md",
-      "verdict": "pass",
-      "score": 88,
-      "issues": [
-        "Bundesrat status correctly hedged: 'zweiter Durchgang (vorgesehen für 27. März 2026) war zum Redaktionsschluss noch nicht abgeschlossen.' Accurate.",
-        "ISiK Stufe 3 Pflicht 30. Juni 2026 consistent with ISiK roadmap.",
-        "Patientenportal-Abschlag 0,5% ab 1. Januar 2026 consistent with KHZG/KHAG history.",
-        "Source mdoc.one (trade blog) alongside official BMG sources — acceptable as secondary."
-      ],
-      "fixInstructions": "No fixes required."
-    },
-    {
-      "file": "content/standards/LDT.md",
-      "verdict": "revise",
-      "score": 75,
-      "issues": [
-        "Stale version: article calls 'LDT 3.0' the 'aktuelle Hauptversion'. KBV portal shows version 3.2.19 as current (docs dated May 2025). The minor version line matters for implementors.",
-        "interesse-compliance callout references 'Version 3.x' but never states the actual current minor version 3.2.19."
-      ],
-      "fixInstructions": "In Überblick, change 'Die aktuelle Hauptversion ist LDT 3.0' to 'Die aktuelle Spezifikation ist LDT 3.2 (aktuelle Nebenversion: 3.2.19, Stand Mai 2025)'. Add alias 'LDT 3.2' to frontmatter. Source: https://update.kbv.de/ita-update/Labor/Labordatenkommunikation/"
-    },
-    {
-      "file": "content/organization/GFF.md",
-      "verdict": "revise",
-      "score": 62,
-      "issues": [
-        "url_dead: Source https://freiheitsrechte.org/ueber-uns/ returns 404. Correct URL is https://freiheitsrechte.org/ueber-die-gff/werwirsind",
-        "url_dead: Source https://freiheitsrechte.org/themen/datenschutz/ returns 404. Correct URL is https://freiheitsrechte.org/themen/freiheit-im-digitalen-zeitalter",
-        "Factual inaccuracy: Article cites 'Art. 8 Grundgesetz' for the right to informationelle Selbstbestimmung. Art. 8 GG covers freedom of assembly. The correct basis is Art. 2 Abs. 1 GG i.V.m. Art. 1 Abs. 1 GG (Volkszählungsurteil 1983)."
-      ],
-      "fixInstructions": "1. Replace source URL https://freiheitsrechte.org/ueber-uns/ with https://freiheitsrechte.org/ueber-die-gff/werwirsind. 2. Replace source URL https://freiheitsrechte.org/themen/datenschutz/ with https://freiheitsrechte.org/themen/freiheit-im-digitalen-zeitalter. 3. In Technische Details, correct 'Art. 8 Grundgesetz' to 'Art. 2 Abs. 1 GG i.V.m. Art. 1 Abs. 1 GG (allgemeines Persönlichkeitsrecht, Recht auf informationelle Selbstbestimmung)'."
-    },
-    {
-      "file": "content/concepts/Opt-Out-ePA.md",
-      "verdict": "revise",
-      "score": 67,
-      "issues": [
-        "Factual inaccuracy: Article states 'Rechtsgrundlage ist § 343 SGB V'. § 343 SGB V is 'Informationspflichten der Krankenkassen' (verified via gesetze-im-internet.de). The Widerspruchsrecht and the opt-out mechanism are in § 342 Abs. 1 Satz 2 SGB V (Sechswochenfrist vor Anlage). § 343 is correctly cited only for the duty to inform.",
-        "url_dead: Source https://www.gematik.de/anwendungen/epa-fuer-alle/opt-out returns 404. Correct URL is https://www.gematik.de/anwendungen/epa-fuer-alle/widerspruch",
-        "Unverifiable claim: 'Die Krankenkasse muss den Widerspruch innerhalb von drei Werktagen technisch umsetzen.' No three-Werktage deadline found in § 342, § 344, or § 343 SGB V. The statute says 'unverzüglich'. Mark as unverifiable or remove the specific deadline.",
-        "url_mismatch: Source https://www.bundesgesundheitsministerium.de/themen/digitalisierung/digital-gesetz redirects to a general digitalization overview. DigiG-specific URL is https://www.bundesgesundheitsministerium.de/ministerium/gesetze-und-verordnungen/guv-20-lp/digig"
-      ],
-      "fixInstructions": "1. In Überblick and Technische Details, change 'Rechtsgrundlage ist § 343 SGB V' to '§ 342 Abs. 1 Satz 2 SGB V' everywhere the Widerspruchsrecht is cited. § 343 may be mentioned only as the information-duty paragraph. 2. Replace dead gematik URL with https://www.gematik.de/anwendungen/epa-fuer-alle/widerspruch. 3. Remove 'drei Werktage' claim or replace with 'unverzüglich'. 4. Update BMG source URL to the DigiG-specific page."
-    },
-    {
-      "file": "content/technologies/Telemonitoring.md",
-      "verdict": "revise",
-      "score": 72,
-      "issues": [
-        "Factual inaccuracy in EBM codes: The interesse-compliance callout states 'GOP 13579 ff.' for Telemonitoring Herzinsuffizienz. KBV EBM search shows the actual codes are 04325 (Indikationsstellung), 04326 (Zusatzpauschale Allgemeinmedizin), 13584 (Telemonitoring mittels ext. Messgeräten), 13586, 13587. There is no GOP 13579 for Telemonitoring.",
-        "§ 137f SGB V cited as Rechtsgrundlage. The G-BA Richtlinie Telemonitoring Herzinsuffizienz (Beschluss 17.12.2020) was based on § 135 Abs. 1 SGB V, not § 137f (which covers DMP). The DMP connection is indirect. This needs clarification."
-      ],
-      "fixInstructions": "In the interesse-compliance callout, replace 'GOP 13579 ff.' with the correct EBM codes: '04325 (Indikationsstellung), 04326 (Zusatzpauschale GP), 13584/13586/13587 (kardiologische Ziffern)'. Clarify the legal basis: the G-BA Richtlinie ist nach § 135 SGB V, während die DMP-Einbindung nach § 137f erfolgt. Quelle: https://www.kbv.de/html/telemonitoring.php"
-    },
-    {
-      "file": "content/concepts/Medizinprodukte.md",
-      "verdict": "pass",
-      "score": 87,
-      "issues": [
-        "MDR May 2021 and IVDR May 2022 dates verified correct.",
-        "[[IVDR]] is listed twice in Verknüpfungen (lines 107 and 113). Duplicate entry.",
-        "[[Konformitaetsbewertung]] wiki-link uses non-umlaut spelling — verify alias exists."
-      ],
-      "fixInstructions": "Remove the duplicate [[IVDR]] entry from Verknüpfungen (line 113). Verify [[Konformitaetsbewertung]] resolves to the correct article."
-    },
-    {
-      "file": "content/concepts/DSFA.md",
-      "verdict": "pass",
-      "score": 80,
-      "issues": [
-        "Solid stub with correct legal basis (Art. 35 DSGVO).",
-        "Source dsgvo-gesetz.de is a third-party commentary site. Prefer official EUR-Lex or gesetze-im-internet.de for the DSGVO article text."
-      ],
-      "fixInstructions": "Replace dsgvo-gesetz.de source with official text at https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32016R0679 or https://www.gesetze-im-internet.de/englisch_dsgvo/. Otherwise no structural fixes needed."
-    },
-    {
-      "file": "content/infrastructure/Telematikinfrastruktur.md",
-      "verdict": "pass",
-      "score": 87,
-      "issues": [
-        "KHAG tense fix verified: 'soll am 27. März 2026 vom Bundesrat beschlossen werden' — correct conditional phrasing."
+        "relevance frontmatter added — valid values",
+        "PoPP spec V1.0.0 publication date 3. März 2026 and RISE implementer not independently verified (gematik newsroom URL not browser-tested)",
+        "Only 2 sources — minimum met"
       ],
       "fixInstructions": null
     },
     {
-      "file": "content/technologies/Telekonsil.md",
-      "verdict": "pass",
-      "score": 86,
-      "issues": [
-        "EBM date fix to '1. Oktober 2020' confirmed correct by multiple sources.",
-        "Minor: [!dev-quickstart] FHIR Bundle uses eRezept-specific eventCoding ('eRezept_Rezeptanforderung;Rezeptanfrage') as the MessageHeader event in a Telekonsil example. Should use a Telekonsil-appropriate code or be marked as placeholder."
-      ],
-      "fixInstructions": "In [!dev-quickstart] block, replace the eRezept-specific eventCoding with a Telekonsil-appropriate service identifier or add a comment noting it is a structural placeholder."
-    },
-    {
-      "file": "content/standards/xDT.md",
-      "verdict": "pass",
-      "score": 83,
-      "issues": [
-        "LDT wiki-links added correctly and are consistent with LDT.md content.",
-        "LDT version reference 'LDT 3.0' inherits the minor staleness from LDT.md (actual current: 3.2.x)."
-      ],
-      "fixInstructions": null
-    },
-    {
-      "file": "content/concepts/Pseudonymisierung.md",
-      "verdict": "pass",
-      "score": 86,
-      "issues": [
-        "[[DSFA]] link now resolves correctly.",
-        "GDNG in-force date 26. März 2024 confirmed correct."
-      ],
-      "fixInstructions": null
-    },
-    {
-      "file": "content/concepts/KVNR.md",
-      "verdict": "pass",
-      "score": 85,
-      "issues": [
-        "relevance frontmatter and callouts appropriate.",
-        "KVNR introduction year 1993 (Gesundheitsstrukturgesetz) correct."
-      ],
-      "fixInstructions": null
-    },
-    {
-      "file": "content/concepts/DRG.md",
-      "verdict": "pass",
-      "score": 83,
-      "issues": [
-        "G-DRG 2003 voluntary / 2004 mandatory confirmed correct.",
-        "§ 17b KHG as legal basis confirmed correct.",
-        "InEK in Siegburg confirmed correct.",
-        "No official InEK or BMG source. Sources are all third-party (vdek, reimbursement.institute). Minor source quality issue."
-      ],
-      "fixInstructions": "Add an official source: https://www.inek-drg.de (InEK) or https://www.bundesgesundheitsministerium.de/abrechnung-krankenhausleistungen (BMG)."
-    },
-    {
-      "file": "content/organization/ABDA.md",
-      "verdict": "pass",
-      "score": 83,
-      "issues": [
-        "ABDA founded 1950, Berlin confirmed consistent with Wikipedia.",
-        "relevance sectors appropriate.",
-        "TA1 source links to 2021 archived version — may be outdated but structurally correct."
-      ],
-      "fixInstructions": null
-    },
-    {
-      "file": "content/organization/RKI.md",
-      "verdict": "pass",
-      "score": 86,
-      "issues": [
-        "RKI founded 1891 correct.",
-        "DEMIS mandatory since 2023 consistent with IfSG amendments.",
-        "Bußgeld bis 25.000 Euro (§ 73 IfSG) — plausible and consistent with IfSG.md which already confirmed this."
-      ],
-      "fixInstructions": null
-    },
-    {
-      "file": "content/concepts/OCSP.md",
-      "verdict": "pass",
-      "score": 88,
-      "issues": [
-        "RFC 6960 reference correct.",
-        "relevance sectors and interests appropriate for technical protocol.",
-        "ECC migration date consistent with Telematikinfrastruktur.md."
-      ],
-      "fixInstructions": null
-    },
-    {
-      "file": "content/standards/KVDT.md",
-      "verdict": "pass",
-      "score": 85,
-      "issues": [
-        "Source URL https://www.kbv.de/html/abrechnung.php redirects permanently to https://www.kbv.de/praxis/abrechnung — confirmed live via Playwright, redirect is functional",
-        "update.kbv.de KVDT PDF URL confirmed loadable (no 404)",
-        "KVDT version 6.02 (Stand 9. März 2026): consistent with KBV update server content"
-      ],
-      "fixInstructions": "Update source URL in Quellen from https://www.kbv.de/html/abrechnung.php to https://www.kbv.de/praxis/abrechnung to replace redirect with direct URL."
-    },
-    {
-      "file": "content/infrastructure/NFC.md",
+      "file": "content/concepts/ISMS.md",
       "verdict": "pass",
       "score": 90,
       "issues": [
-        "NFC Forum founding year 2004 (18. März 2004) — confirmed correct via NFC Forum press release and multiple sources. Previous fix correctly changed from 2003 to 2004.",
-        "ISO/IEC 14443, 13.56 MHz, eGK G2 dual interface — all confirmed correct"
+        "relevance frontmatter added — valid values",
+        "KRITIS threshold (30.000 stationäre Fälle) is the B3S-Krankenhaus threshold but the BSIG § 8a threshold is based on criticality category per KRITIS-Verordnung — this claim is a simplification but widely cited and not directly wrong",
+        "ISO 27001:2022 with 93 controls verified accurate",
+        "B3S Krankenhaus developed by DKG and BSI confirmed accurate"
       ],
-      "fixInstructions": ""
-    },
-    {
-      "file": "content/infrastructure/Gesundheits-ID.md",
-      "verdict": "pass",
-      "score": 85,
-      "issues": [
-        "4,4 Millionen registrierte Versicherte — confirmed by gematik TI-Dashboard as of early 2026",
-        "GesundheitsID als Versicherungsnachweis seit 1. Januar 2026 — confirmed correct",
-        "EUDI-Wallet integration subsection: eIDAS 2.0 November 2026 deadline confirmed; OID4VCI protocol reference correct",
-        "Source https://www.gematik.de/newsroom is not a specific article URL — too generic"
-      ],
-      "fixInstructions": "Replace generic gematik newsroom source with a specific article URL about GesundheitsID als Versicherungsnachweis ab 2026."
-    },
-    {
-      "file": "content/infrastructure/EUDI-Wallet.md",
-      "verdict": "pass",
-      "score": 88,
-      "issues": [
-        "eIDAS 2.0 (EU 2024/1183) in Kraft 20. Mai 2024 — confirmed correct (signed 11. April 2024, published 30. April, in Kraft 20. Mai 2024)",
-        "November 2026 Bereitstellungspflicht aller EU-Mitgliedstaaten — confirmed correct",
-        "Gesundheitsdaten-Anwendungsfälle (Impfnachweis, Versicherungsnachweis, ePrescription, Patient Summary) — factually consistent with EHDS and eIDAS 2.0 planning documents",
-        "BMDS as responsible ministry for Germany EUDI-Wallet — consistent with public reporting"
-      ],
-      "fixInstructions": ""
-    },
-    {
-      "file": "content/organization/gematik.md",
-      "verdict": "pass",
-      "score": 82,
-      "issues": [
-        "GDVG/EUDI coordination role for gematik — described as provision of a not-yet-published Referentenentwurf (expected Q2/2026). Appropriately framed in text but no authoritative source cited for this specific claim.",
-        "GDVG Referentenentwurf expected Q2/2026 — consistent across multiple articles"
-      ],
-      "fixInstructions": "The claim that GDVG assigns gematik the EUDI-Wallet coordination role is stated without a source. Add a qualifier such as 'laut gematik-Strategie 2026' or cite a specific gematik strategy document. Without Referentenentwurf, this should be presented as planned, not established."
-    },
-    {
-      "file": "content/infrastructure/Telematikinfrastruktur.md",
-      "verdict": "revise",
-      "score": 74,
-      "issues": [
-        "FACTUAL ERROR: 'Das KHAG wurde am 27. März 2026 vom Bundesrat beschlossen' — today is 20. März 2026. The Bundesrat session was scheduled for 27.03.2026 but had not yet occurred. A future event is stated as completed past fact.",
-        "Transformationsfonds 50 Milliarden Euro (2026-2035) — confirmed correct",
-        "Antragsphase seit Januar 2026 — confirmed consistent with web search"
-      ],
-      "fixInstructions": "Change 'wurde am 27. März 2026 vom Bundesrat beschlossen' to 'soll am 27. März 2026 vom Bundesrat beschlossen werden' (or update with actual Bundesrat decision confirmation once it occurs on 27.03.2026)."
+      "fixInstructions": null
     },
     {
       "file": "content/technologies/KIS.md",
-      "verdict": "fail",
-      "score": 0,
-      "issues": [
-        "CRITICAL: File content/technologies/KIS.md does not exist. The article was listed as a news update target (Transformationsfonds info) but is missing from the repository entirely.",
-        "Multiple other articles reference [[KIS]] (HL7-v2.md, Entlassmanagement.md, Telematikinfrastruktur.md, IS-H.md) — all these links exist but the target article is missing",
-        "test-report.json does not flag this because [[KIS]] links resolve to aliases or the file is not yet checked"
-      ],
-      "fixInstructions": "CREATE content/technologies/KIS.md as a new article. Required: standard frontmatter (title, audience: [technical, non-technical], tags, aliases, relevance with valid sectors/interests), definition sentence, Erklärt für Einsteiger, Überblick (include Transformationsfonds info: 50 Mrd EUR Fonds, förderfähige TI-Anbindung, ISiK-Implementierung), Technische Details, Verknüpfungen (link to HL7-v2, FHIR, ISiK, ePA, E-Rezept, KIM, DEMIS, IS-H), Quellen (minimum 2 official sources). Sectors: krankenhaus, hersteller, it-dienstleister, ti-infrastruktur. Interests: technik, compliance, business."
-    },
-    {
-      "file": "content/standards/HL7-v2.md",
       "verdict": "pass",
       "score": 88,
       "issues": [
-        "HL7 v2 ab 1987 entwickelt, erste Produktionsversion v2.1 (1990) — confirmed correct via HL7 International and multiple sources",
-        "Letzte Version v2.9 (2019) — confirmed correct",
-        "Verbreitetste Versionen v2.3, v2.3.1, v2.4, v2.5.1 — confirmed consistent with industry knowledge",
-        "MLLP on Port 2575 as de-facto transport standard — confirmed correct"
+        "SAP IS-H, Oracle Cerner/Millennium, Dedalus Orbis as main KIS vendors verified accurate",
+        "Oracle acquisition of Cerner in 2022 confirmed",
+        "ISiK Stufe 1/2/3 content description matches gematik specification",
+        "ePA obligation from 1. Oktober 2025 consistent with other articles",
+        "gematik newsroom URL for Dr.-Erler-Kliniken not browser-tested"
       ],
-      "fixInstructions": ""
+      "fixInstructions": null
     },
     {
-      "file": "content/standards/GDT.md",
-      "verdict": "revise",
-      "score": 68,
-      "issues": [
-        "DEAD URL: Source 'KBV: GDT – Gerätedatentransfer' at https://www.kbv.de/html/gdt.php returns HTTP 404 — confirmed via Playwright. KBV has restructured its website; /html/ URLs are no longer valid.",
-        "GDT 3.1 Mitte der 2010er Jahre verabschiedet — unverifiable exact year, but plausible",
-        "KBV-Datenbank der GDT-zertifizierten Geräte — plausible claim, unverifiable without source",
-        "GDT-Dateien Windows-1252-Kodierung — correct technical detail, confirmed standard knowledge"
-      ],
-      "fixInstructions": "Replace dead source URL https://www.kbv.de/html/gdt.php with the current KBV GDT page. The KBV ITA update server provides GDT documentation at https://update.kbv.de/ita-update/ — use this as the primary technical source. For the GDT overview page, check https://www.kbv.de/html/28223.php or search kbv.de for 'Gerätedatentransfer'."
-    },
-    {
-      "file": "content/concepts/Pseudonymisierung.md",
-      "verdict": "revise",
-      "score": 65,
-      "issues": [
-        "STRUCTURAL ERROR (confirmed by test-report.json): Broken wiki-link [[DSFA]] — no article content/concepts/DSFA.md or equivalent exists in the knowledge base. The link appears in the interesse-compliance callout.",
-        "All factual claims (DSGVO Art. 4 Nr. 5 definition, FDZ Gesundheit beim BfArM, MII, GFF-Klage Februar 2026) — confirmed correct or plausible",
-        "DSGVO Art. 4 Nr. 5 definition quoted in article is accurate",
-        "GFF-Klage wiederaufgenommen Februar 2026 — confirmed consistent with public reporting"
-      ],
-      "fixInstructions": "Fix broken wiki-link [[DSFA]]: Either (a) create stub article content/concepts/DSFA.md for Datenschutz-Folgenabschätzung (Art. 35 DSGVO), or (b) replace [[DSFA]] with plain text 'Datenschutz-Folgenabschätzung (DSFA)' without wiki-link until the article is created. Option (a) preferred for long-term completeness."
-    },
-    {
-      "file": "content/technologies/Telekonsil.md",
-      "verdict": "revise",
-      "score": 62,
-      "issues": [
-        "FACTUAL ERROR: 'Das ärztliche Telekonsil ist seit 2019 eine abrechnungsfähige Leistung im EBM' — incorrect. EBM-Ziffern für Telekonsile (01671, 01672) wurden zum 1. Oktober 2020 eingeführt, nicht 2019. Bestätigt durch multiple Quellen (KVHessen, IWW, DeutschesArztPortal).",
-        "EBM-Ziffer 01671 als 'konsiliarische Einbindung' beschrieben — inkorrekte Bezeichnung. Offizielle Bezeichnung: 'Telekonsiliarische Beurteilung'.",
-        "Übertragungsweg KIM für Telekonsilien — correct",
-        "Dermato-Telekonsil, Teleradiologie, Tumorkonferenz als Kernszenarien — correct"
-      ],
-      "fixInstructions": "1. KORRIGIERE DATUM: Ersetze 'seit 2019' durch 'seit dem 1. Oktober 2020' im Überblick-Abschnitt. 2. KORRIGIERE BEZEICHNUNG: Ersetze 'konsiliarische Einbindung' durch 'Telekonsiliarische Beurteilung' als Bezeichnung für EBM-Ziffer 01671 in der interesse-compliance callout. 3. Ergänze eine Quelle speziell für die EBM-Abrechnung von Telekonsilen, z.B. https://www.kbv.de/html/telekonsil.php oder den KVHessen-Abrechnungshinweis."
-    },
-    {
-      "file": "content/processes/Entlassmanagement.md",
-      "verdict": "pass",
-      "score": 82,
-      "issues": [
-        "Oktober 2017 als Pflichtbeginn — confirmed correct (Rahmenvertrag gilt seit 1. Oktober 2017)",
-        "§ 39 Abs. 1a SGB V als Rechtsgrundlage — confirmed correct",
-        "Entlassbrief binnen 24 Stunden — confirmed consistent with Rahmenvertrag requirement",
-        "URL MISMATCH: Source GKV-Spitzenverband uses path 'krankenhaeuser' but confirmed GKV-SV URL uses 'ambulant_stationaere_versorgung'. The listed URL https://www.gkv-spitzenverband.de/krankenversicherung/krankenhaeuser/entlassmanagement/entlassmanagement.jsp likely redirects or is wrong."
-      ],
-      "fixInstructions": "Update GKV-Spitzenverband Quellen URL from https://www.gkv-spitzenverband.de/krankenversicherung/krankenhaeuser/entlassmanagement/entlassmanagement.jsp to the confirmed URL https://www.gkv-spitzenverband.de/krankenversicherung/ambulant_stationaere_versorgung/entlassmanagement/entlassmanagement.jsp."
-    },
-    {
-      "file": "content/infrastructure/VZD.md",
-      "verdict": "pass",
-      "score": 87,
-      "issues": [
-        "VZD_25_2 release (17. Februar 2026) with LDAP admin interface shutdown — plausible and internally consistent with TI release cycle",
-        "FHIR-Directory REST API structure (PractitionerDirectory, OrganizationDirectory, HealthcareService) — confirmed against gemSpec",
-        "relevance frontmatter valid, callout types match content"
-      ],
-      "fixInstructions": ""
-    },
-    {
-      "file": "content/standards/GDNG.md",
+      "file": "content/infrastructure/BSNR.md",
       "verdict": "pass",
       "score": 90,
       "issues": [
-        "Inkrafttreten 26. März 2024 — confirmed correct via gesetze-im-internet.de (Ausfertigungsdatum 22.3.2024, in Kraft 26.3.2024)",
-        "§ 7 Forschungsgeheimnis, Strafrahmen bis 3 Jahre — confirmed correct per § 9 Abs. 2 GDNG (text verified via Playwright)",
-        "FDZ beim BfArM, GFF-Klage Februar 2026, DVPMG 2021 als FDZ-Gründung — all confirmed accurate",
-        "gesetze-im-internet.de URL confirmed live and correct"
+        "9-digit BSNR structure with 2-digit KV region code verified accurate",
+        "KBV FHIR profile URL (fhir.kbv.de/StructureDefinition/KBV_PR_Base_Organization) not browser-tested",
+        "KBV update.kbv.de URL verified live",
+        "Template compliant, good coverage"
       ],
-      "fixInstructions": ""
+      "fixInstructions": null
     },
     {
-      "file": "content/standards/IfSG.md",
+      "file": "content/infrastructure/LANR.md",
       "verdict": "pass",
-      "score": 88,
+      "score": 90,
       "issues": [
-        "IfSG Inkrafttreten 1. Januar 2001 — confirmed correct",
-        "§ 14 IfSG als Rechtsgrundlage für DEMIS — confirmed",
-        "Bußgeld bis 25.000 Euro (§ 73 IfSG) — confirmed correct",
-        "DEMIS Pflicht für Labore seit 1. Januar 2024 — confirmed correct",
-        "24-Stunden Meldefrist — confirmed correct"
+        "9-digit LANR with 2-digit Fachgruppennummer at end verified accurate",
+        "FHIR identifier system URL for LANR verified consistent with KBV naming conventions",
+        "OID 1.2.276.0.76.4.16 for LANR in HBA certificate — not independently verified but standard claim",
+        "Template compliant"
       ],
-      "fixInstructions": ""
+      "fixInstructions": null
     },
     {
-      "file": "content/standards/xDT.md",
+      "file": "content/processes/Häusliche-Krankenpflege.md",
       "verdict": "revise",
-      "score": 63,
+      "score": 68,
       "issues": [
-        "DEAD URL: Source https://www.kbv.de/html/xdt.php returns HTTP 404 — confirmed via Playwright",
-        "LIKELY DEAD URL: Source https://www.kbv.de/html/2016_27222.php — same /html/ pattern as confirmed dead KBV URLs; presumed dead (not separately verified but consistent pattern)",
-        "Core technical content (xDT format, field structure, KVDT/GDT/LDT/BDT family) — confirmed correct",
-        "GDT 3.1 Mitte der 2010er Jahre — consistent with xDT article in GDT.md"
+        "URL MISMATCH: Source URL 'https://www.g-ba.de/richtlinien/24/' points to the Soziotherapie-Richtlinie, NOT the HKP-Richtlinie. Verified by browser: page title is 'Soziotherapie-Richtlinie'. Correct URL is https://www.g-ba.de/richtlinien/11/",
+        "§ 37c SGB V for außerklinische Intensivpflege 'seit 2021' — accurate (introduced by Intensivpflege- und Rehabilitationsstärkungsgesetz, IPREG, effective 2021)",
+        "E-Rezept-Pflicht ab 1. Juli 2026 für HKP — claimed but not independently verified",
+        "Pflegedienste TI-Pflicht seit Juli 2025 — not independently verified"
       ],
-      "fixInstructions": "1. Replace dead source URL https://www.kbv.de/html/xdt.php. Working alternative: https://update.kbv.de/ita-update/ for technical specifications. 2. Replace https://www.kbv.de/html/2016_27222.php (likely dead) with a working KBV GDT specification reference. The KBV ITA update server at https://update.kbv.de/ita-update/ is confirmed accessible."
+      "fixInstructions": "Replace the G-BA source URL: change 'https://www.g-ba.de/richtlinien/24/' to 'https://www.g-ba.de/richtlinien/11/' in the Quellen section. The current URL incorrectly points to the Soziotherapie-Richtlinie instead of the HKP-Richtlinie."
     },
     {
-      "file": "content/concepts/PKV.md",
+      "file": "content/concepts/Vorhaltevergütung.md",
       "verdict": "pass",
-      "score": 85,
+      "score": 90,
       "issues": [
-        "PKV-Verband hält 7% seit 3. April 2020 — confirmed by gematik press release",
-        "8,7 Millionen Vollversicherte — plausible; ~12% of population, consistent with PKV-Verband statistics",
-        "PKV-Verband hält 7% der gematik-Anteile, trägt 7% Finanzierung — confirmed consistent with gematik.md",
-        "relevance frontmatter valid, callout types match content"
+        "60% Betriebskosten als Vorhaltevergütung ab 1. Januar 2027 verified via multiple sources (AOK, BVMed, Bundestag)",
+        "65 Leistungsgruppen in KHVVG verified accurate",
+        "KHAG conditionalization (Bundesrat 27. März 2026) consistent with Transformationsfonds article",
+        "Only 3 sources — minimum met, one Wikipedia"
       ],
-      "fixInstructions": ""
-    },
-    {
-      "file": "content/standards/KHAG.md",
-      "verdict": "pass",
-      "score": 85,
-      "issues": [
-        "Bundestag-Beschluss 6. März 2026 — confirmed via BMG official page",
-        "Transformationsfonds 50 Milliarden Euro — confirmed correct",
-        "Patientenportal-Abschlag 0,5 Prozent — confirmed",
-        "Interoperabilitätsstandards bis September 2026 — confirmed",
-        "Source quality: one vendor blog source (mdoc.one) — weak but supplementary only"
-      ],
-      "fixInstructions": "Optional: replace mdoc.one vendor source with Bundesrat press release once March 27 Bundesrat passage is confirmed."
-    },
-    {
-      "file": "content/standards/DataMatrix.md",
-      "verdict": "pass",
-      "score": 80,
-      "issues": [
-        "ISO/IEC 16022 source cites 2006 edition (withdrawn, superseded by 2024 edition) — stale source URL",
-        "EU FMD since February 2019 — confirmed correct"
-      ],
-      "fixInstructions": "Update ISO source URL from iso.org/standard/44230.html (2006, withdrawn) to iso.org/standard/80926.html (2024 current edition)."
-    },
-    {
-      "file": "content/infrastructure/IDP.md",
-      "verdict": "pass",
-      "score": 85,
-      "issues": [
-        "RSA to ECDSA migration completed 2026 — confirmed correct",
-        "gemSpec_IDP_Dienst version 2.1.0 — confirmed live via gemspec.gematik.de"
-      ],
-      "fixInstructions": ""
-    },
-    {
-      "file": "content/technologies/Fernsignatur.md",
-      "verdict": "pass",
-      "score": 82,
-      "issues": [
-        "eIDAS 2.0 (EU) 2024/1183 citation — confirmed correct",
-        "relevance frontmatter added in previous cycle — valid"
-      ],
-      "fixInstructions": ""
-    },
-    {
-      "file": "content/standards/SOAP.md",
-      "verdict": "pass",
-      "score": 86,
-      "issues": [
-        "W3C SOAP 1.2 Recommendation 2003 — confirmed correct"
-      ],
-      "fixInstructions": ""
-    },
-    {
-      "file": "content/infrastructure/IS-H.md",
-      "verdict": "pass",
-      "score": 81,
-      "issues": [
-        "Oracle Cerner acquisition 2022 — confirmed correct",
-        "SAP IS-H mainstream support ending 2027 — confirmed consistent"
-      ],
-      "fixInstructions": ""
-    },
-    {
-      "file": "content/processes/Meldepflicht.md",
-      "verdict": "pass",
-      "score": 83,
-      "issues": [
-        "'Pocken' should be updated to 'Orthopockenviren-Erkrankungen (inkl. Mpox)' to match current § 6 IfSG wording"
-      ],
-      "fixInstructions": "Update 'Pocken' to 'durch Orthopockenviren verursachte Erkrankungen (inkl. Mpox/Affenpocken)' to match current legal wording."
-    },
-    {
-      "file": "content/processes/eML.md",
-      "verdict": "pass",
-      "score": 85,
-      "issues": [
-        "gematik newsroom source URL is about ePA 3.0.5, not specifically dgMP March 2026 — minor url_mismatch"
-      ],
-      "fixInstructions": "Replace or supplement gematik newsroom source with a more specific dgMP reference."
-    },
-    {
-      "file": "content/processes/dgMP.md",
-      "verdict": "pass",
-      "score": 85,
-      "issues": [
-        "Same gematik newsroom url_mismatch as eML.md"
-      ],
-      "fixInstructions": "Replace or supplement gematik newsroom source with a more specific dgMP reference."
-    },
-    {
-      "file": "content/technologies/eReferral.md",
-      "verdict": "pass",
-      "score": 75,
-      "issues": [
-        "Typo 'Facharzrpraxis' in Erklärt für Einsteiger",
-        "Weak official source backing"
-      ],
-      "fixInstructions": "Fix typo: 'Facharzrpraxis' → 'Facharztpraxis'. Add official BMG source."
-    },
-    {
-      "file": "content/standards/GDVG.md",
-      "verdict": "pass",
-      "score": 80,
-      "issues": [
-        "Missing relevance frontmatter block"
-      ],
-      "fixInstructions": "Add relevance frontmatter: sectors: [regulierung, hersteller, kasse, krankenhaus, arztpraxis, ti-infrastruktur, startup], interests: [compliance, business, technik]."
-    },
-    {
-      "file": "content/infrastructure/NCPeH.md",
-      "verdict": "pass",
-      "score": 78,
-      "issues": [],
-      "fixInstructions": ""
-    },
-    {
-      "file": "content/concepts/GKV.md",
-      "verdict": "pass",
-      "score": 85,
-      "issues": [],
-      "fixInstructions": ""
-    },
-    {
-      "file": "content/technologies/DiGA.md",
-      "verdict": "pass",
-      "score": 83,
-      "issues": [],
-      "fixInstructions": ""
-    },
-    {
-      "file": "content/technologies/ePA.md",
-      "verdict": "pass",
-      "score": 87,
-      "issues": [],
-      "fixInstructions": ""
-    },
-    {
-      "file": "content/processes/BTM-Rezept.md",
-      "verdict": "pass",
-      "score": 76,
-      "issues": [
-        "gemF_eRp_eBTM version V1.0.0 in dev-quickstart callout — confirmed current is V1.0.1"
-      ],
-      "fixInstructions": "Update version from V1.0.0 to V1.0.1 in dev-quickstart callout."
-    },
-    {
-      "file": "content/processes/Heilmittelverordnung.md",
-      "verdict": "pass",
-      "score": 78,
-      "issues": [],
-      "fixInstructions": ""
-    },
-    {
-      "file": "content/standards/Interoperabilitaetsverzeichnis.md",
-      "verdict": "pass",
-      "score": 87,
-      "issues": [],
-      "fixInstructions": ""
+      "fixInstructions": null
     }
   ],
   "contradictions": [
     {
-      "claim": "KHAG Bundesrat vote",
-      "articleA": "content/concepts/Transformationsfonds.md states 'Der Bundesrat stimmte dem KHAG am 27. März 2026 zu' (past tense, presented as accomplished fact)",
-      "articleB": "content/standards/KHAG.md correctly states 'zweiter Durchgang im Bundesrat (vorgesehen für 27. März 2026) war zum Redaktionsschluss noch nicht abgeschlossen'",
-      "resolution": "KHAG.md is correct. Transformationsfonds.md must use future/conditional tense for the Bundesrat vote."
-    },
-    {
-      "claim": "Transformationsfonds financing source",
-      "articleA": "content/concepts/Transformationsfonds.md claims KHAG moved financing from GKV to 'Bundesinfrastrukturreserve'",
-      "articleB": "BAS official source (bundesamtsozialesicherung.de) states 25 Mrd. still come from GKV Liquiditätsreserve, KHAG change described as 'voraussichtlich noch zu erwarten'",
-      "resolution": "Transformationsfonds.md overstates enacted KHAG provisions. Must be corrected to reflect still-pending status."
-    },
-    {
-      "claim": "Leistungsgruppen count after KHAG",
-      "articleA": "content/concepts/Transformationsfonds.md: 'reduzierte die Leistungsgruppen von 65 auf 61' (presented as enacted)",
-      "articleB": "content/standards/KHVVG.md and content/standards/KHAG.md describe 65 Leistungsgruppen per KHVVG with KHAG reduction pending Bundesrat",
-      "resolution": "Transformationsfonds.md must qualify: KHAG plans reduction to 61 pending Bundesrat approval on 27. März 2026."
+      "claim": "§ 31a SGB V Medikationsplan Schwellenwert",
+      "articleA": "content/processes/AMTS.md says 'fünf oder mehr Dauermedikamenten' in Überblick and [!interesse-compliance]",
+      "articleB": "content/processes/BMP.md correctly says 'mindestens drei verschreibungspflichtigen Dauermedikamenten'; content/standards/E-Health-Gesetz.md correctly says 'drei oder mehr Dauermedikamente'; AMTS.md [!patientenrecht] callout correctly says 'drei oder mehr' — internal inconsistency within AMTS.md itself, and factual error against the law"
     }
   ],
-  "staleArticles": [
-    "content/concepts/Transformationsfonds.md: claims Bundesrat approved KHAG on 27. März 2026 (future date as of 20. März 2026); also claims KHAG-enacted financing changes not yet in force per BAS source",
-    "content/standards/LDT.md: describes 'LDT 3.0' as current version; KBV portal shows 3.2.19 as of May 2025",
-    "content/standards/xDT.md: inherits LDT 3.0 reference (minor)",
-    "content/standards/DataMatrix.md: cites withdrawn ISO/IEC 16022:2006 edition; current is ISO/IEC 16022:2024",
-    "content/standards/GDT.md: source URL https://www.kbv.de/html/gdt.php dead (HTTP 404)",
-    "content/standards/xDT.md (prev cycle): source URLs https://www.kbv.de/html/xdt.php dead (HTTP 404)"
-  ],
+  "staleArticles": [],
   "urlIssues": [
     {
-      "file": "content/concepts/Broad-Consent.md",
-      "url": "https://www.medizininformatik-initiative.de/de/consent-working-group",
-      "status": "url_dead",
-      "note": "HTTP 404 confirmed via Playwright. Correct URL: https://www.medizininformatik-initiative.de/de/zusammenarbeit/arbeitsgruppe-consent"
-    },
-    {
-      "file": "content/technologies/ePA-App.md",
-      "url": "https://www.bundesgesundheitsministerium.de/service/gesetze-und-verordnungen/detail/digitale-versorgungsgesetz.html",
+      "file": "content/processes/Häusliche-Krankenpflege.md",
+      "url": "https://www.g-ba.de/richtlinien/24/",
       "status": "url_mismatch",
-      "note": "URL points to DVG (Digitale-Versorgung-Gesetz), not DigiG. Correct DigiG URL: https://www.bundesgesundheitsministerium.de/themen/digitalisierung/digital-gesetz"
-    },
-    {
-      "file": "content/organization/GFF.md",
-      "url": "https://freiheitsrechte.org/ueber-uns/",
-      "status": "url_dead",
-      "note": "HTTP 404 confirmed via Playwright. Replacement: https://freiheitsrechte.org/ueber-die-gff/werwirsind"
-    },
-    {
-      "file": "content/organization/GFF.md",
-      "url": "https://freiheitsrechte.org/themen/datenschutz/",
-      "status": "url_dead",
-      "note": "HTTP 404 confirmed via Playwright. Replacement: https://freiheitsrechte.org/themen/freiheit-im-digitalen-zeitalter"
-    },
-    {
-      "file": "content/concepts/Opt-Out-ePA.md",
-      "url": "https://www.gematik.de/anwendungen/epa-fuer-alle/opt-out",
-      "status": "url_dead",
-      "note": "HTTP 404 confirmed via Playwright. Replacement: https://www.gematik.de/anwendungen/epa-fuer-alle/widerspruch"
-    },
-    {
-      "file": "content/concepts/Opt-Out-ePA.md",
-      "url": "https://www.bundesgesundheitsministerium.de/themen/digitalisierung/digital-gesetz",
-      "status": "url_mismatch",
-      "note": "Redirects to general digitalization overview. DigiG-specific URL: https://www.bundesgesundheitsministerium.de/ministerium/gesetze-und-verordnungen/guv-20-lp/digig"
-    },
-    {
-      "file": "content/standards/GDT.md",
-      "url": "https://www.kbv.de/html/gdt.php",
-      "status": "url_dead",
-      "note": "HTTP 404. Use https://update.kbv.de/ita-update/ as replacement."
-    },
-    {
-      "file": "content/standards/xDT.md",
-      "url": "https://www.kbv.de/html/xdt.php",
-      "status": "url_dead",
-      "note": "HTTP 404 confirmed via Playwright."
-    },
-    {
-      "file": "content/standards/KVDT.md",
-      "url": "https://www.kbv.de/html/abrechnung.php",
-      "status": "url_redirect",
-      "note": "Redirects to https://www.kbv.de/praxis/abrechnung — functional but should be updated to direct URL."
-    },
-    {
-      "file": "content/processes/Entlassmanagement.md",
-      "url": "https://www.gkv-spitzenverband.de/krankenversicherung/krankenhaeuser/entlassmanagement/entlassmanagement.jsp",
-      "status": "url_mismatch",
-      "note": "Confirmed URL: https://www.gkv-spitzenverband.de/krankenversicherung/ambulant_stationaere_versorgung/entlassmanagement/entlassmanagement.jsp"
+      "detail": "URL resolves to Soziotherapie-Richtlinie, not HKP-Richtlinie. Correct URL: https://www.g-ba.de/richtlinien/11/"
     }
+  ],
+  "verifiedUrls": [
+    {"url": "https://freiheitsrechte.org/ueber-die-gff/werwirsind", "status": "ok"},
+    {"url": "https://freiheitsrechte.org/gesundheitsdaten/", "status": "ok (redirects to full path)"},
+    {"url": "https://www.gesetze-im-internet.de/sgb_5/__342.html", "status": "ok"},
+    {"url": "https://update.kbv.de/ita-update/Abrechnung/", "status": "ok"},
+    {"url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/Handlungsleitfaden_EUDI-Wallet-260116.html", "status": "ok"}
   ]
 }

@@ -3,7 +3,7 @@ title: xDT
 audience: [technical]
 tags: [standards, datenaustausch, interoperabilität, historisch, kvdt, gdt, ldt, bdt]
 aliases: [xDT-Formate, KVDT, GDT, LDT, BDT, Gerätedatentransfer]
-maturity: setzling
+maturity: immergruen
 relevance:
   sectors: [arztpraxis, zahnarzt, psychotherapie, hersteller, it-dienstleister]
   interests: [technik, compliance, business]
@@ -42,7 +42,7 @@ Trotz ihres Alters sind xDT-Formate noch weit verbreitet: Viele [[PVS]] (Praxisv
 xDT-Dateien sind textbasierte, zeilenstrukturierte Dateien. Jede Zeile folgt dem Schema:
 
 ```
-LängeFieldnummerInhalt
+LängeFeldnummerInhalt
 ```
 
 Zum Beispiel:
@@ -68,6 +68,16 @@ GDT ist die bekannteste xDT-Variante und wird bis heute aktiv genutzt. Es verbin
 
 Die aktuelle GDT-Version ist GDT 3.1, die Mitte der 2010er Jahre vom Qualitätsring Medizinische Software (QMS) standardisiert und von der [[KBV]] verabschiedet wurde. GDT 3.1 unterstützt auch den Austausch von Bild- und PDF-Anhängen.
 
+> [!praxis-tipp] Praxis-Tipp: GDT-Schnittstelle bei neuen Geräten prüfen
+> Kaufen Sie ein neues Medizingerät (EKG, Spirometer, Ultraschall, Blutdruckmessgerät)? Dann prüfen Sie vor dem Kauf die GDT-Kompatibilität.
+>
+> Checkliste vor dem Gerätekauf:
+> 1. Unterstützt das Gerät GDT 3.1? (Wichtig: Nicht GDT 2.1 oder ältere Versionen, es sei denn Ihr PVS verlangt das.)
+> 2. Welcher PVS-Anbieter ist freigegeben? Fragen Sie den Gerätehersteller nach der Kompatibilitätsliste für Ihr PVS.
+> 3. Wer konfiguriert die GDT-Schnittstelle? Klären Sie im Vorfeld, ob PVS-Anbieter oder IT-Dienstleister das Setup übernimmt.
+>
+> Häufiger Fehler: Gerät wird geliefert, aber die GDT-Verbindung ist nicht eingerichtet. Befunde landen nicht automatisch in der Patientenakte. Zeitaufwand für die Einrichtung: ca. 1-2 Stunden durch einen IT-Dienstleister.
+
 ### LDT im Detail
 
 [[LDT]] ist der Standard für die Übermittlung von Laborbefunden. Labore senden LDT-Dateien an die beauftragenden Arztpraxen. Die aktuell verbreitete Version ist LDT 3.0, die eine reichere Struktur als Vorgängerversionen bietet und auch LOINC-Codes für Laborparameter unterstützt.
@@ -88,6 +98,29 @@ Die [[KBV]] und die [[gematik]] treiben die Ablösung der xDT-Formate durch [[FH
 - GDT soll langfristig durch FHIR-basierte Geräteschnittstellen ersetzt werden. Ein konkreter Migrationspfad ist noch nicht vollständig definiert.
 
 In vielen PVS-Systemen koexistieren xDT und FHIR: xDT für Altschnittstellen (Laborgeräte, KV-Abrechnung), FHIR für neue TI-Anwendungen.
+
+> [!dev-quickstart] Dev Quickstart: xDT-Datei parsen und GDT-Schnittstelle testen
+> xDT-Zeilenformat: `LLLFFFFInhalt\r\n` (3-stellige Länge + 4-stellige Feldnummer + Inhalt)
+> ```python
+> # xDT-Parser (Python) - Grundstruktur
+> def parse_xdt_line(line: bytes) -> dict:
+>     length = int(line[0:3])
+>     field_id = line[3:7].decode("latin-1")
+>     content = line[7:length - 2].decode("latin-1")  # ohne CR+LF
+>     return {"field": field_id, "value": content}
+>
+> # GDT-Datei einlesen (typisch: shared folder oder COM-Port)
+> with open("/pfad/zu/messung.gdt", "rb") as f:
+>     for raw_line in f:
+>         record = parse_xdt_line(raw_line)
+>         print(f"{record['field']}: {record['value']}")
+> # Wichtige GDT-Feldnummern:
+> # 8000 = Satzart, 3000 = Patienten-ID, 3102 = Name, 6200 = Messwert
+> ```
+> GDT-Schnittstelle in PVS: Shared-Folder-Modell (Verzeichnis für Aufträge + Ergebnisse).
+> - KVDT-Spezifikation: [update.kbv.de/ita-update/Abrechnung](https://update.kbv.de/ita-update/Abrechnung/)
+> - GDT-Spezifikation (v3.1): [qms-standards.de](https://www.qms-standards.de/standards/gdt-schnittstelle/)
+> - LDT 3.0 Spezifikation: [update.kbv.de/ita-update/Labor](https://update.kbv.de/ita-update/Labor/Labordatenkommunikation/)
 
 > [!interesse-technik]
 > xDT-Dateien sind zeilenbasierte Textdateien: Format LLLFFFFContent (3-stellige Länge + 4-stellige Feldnummer + Inhalt). Keine XML/JSON-Struktur, kein Schema-Autodiscovery. Parser müssen gegen die KBV-Spezifikation implementiert werden. GDT-Schnittstelle in PVS läuft typischerweise über lokales Dateisystem (Shared-Folder-Modell) oder COM-Port. KVDT-Spezifikation: [update.kbv.de](https://update.kbv.de/ita-update/Abrechnung/). GDT-Spezifikation (ab Version 3.5): [qms-standards.de](https://www.qms-standards.de/standards/gdt-schnittstelle/). Migration zu FHIR: Kein KVDT-Migrationsdatum gesetzt; GDT-Migration noch in Konzeptphase.

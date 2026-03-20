@@ -4,9 +4,9 @@ audience: [technical, non-technical]
 tags: [prozess, amts, medikation, sicherheit, epa]
 aliases: [AMTS, Arzneimitteltherapiesicherheit, Medikationssicherheit]
 relevance:
-  sectors: [arztpraxis, krankenhaus, apotheke, pflege]
-  interests: [compliance, patient]
-maturity: wachsend
+  sectors: [arztpraxis, krankenhaus, apotheke, pflege, hersteller]
+  interests: [compliance, technik, patient]
+maturity: setzling
 ---
 
 # AMTS - Arzneimitteltherapiesicherheit
@@ -28,18 +28,18 @@ Typische Risiken, die AMTS adressiert:
 - **Doppelverordnungen**: Derselbe Wirkstoff wird von mehreren Ärzten gleichzeitig verschrieben
 - **Fehldosierungen**: Falsche Menge oder falsches Anwendungsintervall
 
-Die gesetzliche Grundlage für digitale AMTS-Unterstützung wurde mit dem [[E-Health-Gesetz]] (2015) und dem [[DVG|Digitale-Versorgung-Gesetz (2019)]] geschaffen. Patienten mit fünf oder mehr Dauermedikamenten haben gesetzlichen Anspruch auf einen Medikationsplan.
+Die gesetzliche Grundlage für digitale AMTS-Unterstützung wurde mit dem [[E-Health-Gesetz]] (2015) und dem [[DVG|Digitale-Versorgung-Gesetz (2019)]] geschaffen. Patienten mit mindestens drei verordneten Arzneimitteln haben gesetzlichen Anspruch auf einen Medikationsplan (§ 31a SGB V).
 
 > [!interesse-compliance]
-> Patienten mit fünf oder mehr Dauermedikamenten haben seit 2016 einen gesetzlichen Anspruch auf einen Medikationsplan (§ 31a SGB V). Arztpraxen und Kliniken sind verpflichtet, diesen auf Wunsch auszustellen und bei jeder Änderung zu aktualisieren. Seit März 2026 ist der [[eMP|elektronische Medikationsplan]] in die [[ePA]] integriert; die Befüllung durch den Arzt ist Teil der Anforderungen für die volle [[TI-Pauschale]].
+> Patienten mit mindestens drei verordneten Arzneimitteln haben seit 2016 einen gesetzlichen Anspruch auf einen Medikationsplan (§ 31a SGB V). Arztpraxen und Kliniken sind verpflichtet, diesen auf Wunsch auszustellen und bei jeder Änderung zu aktualisieren. Seit März 2026 ist der [[eMP|elektronische Medikationsplan]] in die [[ePA]] integriert; die Befüllung durch den Arzt ist Teil der Anforderungen für die volle [[TI-Pauschale]].
 
 > [!interesse-patient]
-> Dein Arzt oder deine Ärztin kann dir einen Medikationsplan erstellen, der alle deine Medikamente auflistet. Seit 2026 ist dieser Plan in der elektronischen Patientenakte (ePA) gespeichert. Apotheken und andere Ärzte können ihn einsehen, wenn du das erlaubst. Das hilft, gefährliche Wechselwirkungen zu vermeiden.
+> Ihr Arzt oder Ihre Ärztin kann Ihnen einen Medikationsplan erstellen, der alle Ihre Medikamente auflistet. Seit 2026 ist dieser Plan in der elektronischen Patientenakte (ePA) gespeichert. Apotheken und andere Ärzte können ihn einsehen, wenn Sie das erlauben. Das hilft, gefährliche Wechselwirkungen zu vermeiden.
 
 ### Medikationsplan und ePA
 
 > [!praxis-tipp] Praxis-Tipp: Medikationsplan im Praxisalltag pflegen
-> Patienten mit 5 oder mehr Dauermedikamenten haben gesetzlichen Anspruch auf einen Medikationsplan (§ 31a SGB V). Ihre Praxis ist verpflichtet, ihn auszustellen und bei jeder Änderung zu aktualisieren.
+> Patienten mit mindestens drei verordneten Arzneimitteln haben gesetzlichen Anspruch auf einen Medikationsplan (§ 31a SGB V). Ihre Praxis ist verpflichtet, ihn auszustellen und bei jeder Änderung zu aktualisieren.
 >
 > Bewährter Ablauf:
 > 1. MFA erfasst aktuelle Medikation beim Einlesen der eGK vor
@@ -71,6 +71,22 @@ Die ePA-Version 3.1.3 führt ergänzend **AMTS-relevante Zusatzinformationen (AM
 > 4. Apotheken können den Plan ebenfalls lesen und aktualisieren, wenn Sie das erlauben
 >
 > Erwähnen Sie dabei auch Medikamente, die Sie ohne Rezept kaufen, zum Beispiel Schmerzmittel oder pflanzliche Mittel.
+
+> [!patientenrecht] Patientenrecht: Wer sieht meine Medikationsdaten?
+> Seit März 2026 sehen Ärzte und Apotheker Ihren Medikationsplan in der ePA. Aber nur, wenn Sie das erlauben.
+>
+> **Sie bestimmen selbst:**
+> - Sie können einzelnen Praxen oder Apotheken den Zugriff auf Ihre Medikationsdaten entziehen.
+> - Sie können einzelne Medikamente aus dem Plan ausblenden.
+> - Jeder Zugriff auf Ihre ePA wird protokolliert. Sie können das Protokoll jederzeit in der App einsehen.
+>
+> **So kontrollieren Sie den Zugriff:**
+> 1. Öffnen Sie die App Ihrer Krankenkasse.
+> 2. Gehen Sie zur ePA und öffnen Sie die Zugriffseinstellungen.
+> 3. Dort sehen Sie, wer Ihre Daten zuletzt eingesehen hat.
+> 4. Sie können Zugriffsrechte einzelner Praxen oder Apotheken dort entziehen.
+>
+> Ihre Krankenkasse hat keinen Zugriff auf den Inhalt Ihrer Medikationsdaten.
 
 ### Verbindung zum E-Rezept
 
@@ -107,7 +123,33 @@ Zugriff auf die Medikationsdaten in der [[ePA]] haben:
 
 Der Zugriff ist strikt an die Einwilligung des Patienten gebunden und wird in der [[ePA]] protokolliert.
 
+> [!dev-quickstart] Dev Quickstart: Medikationsliste aus der ePA abrufen
+> ePA Medication Service: `GET /epa/medication/api/v1/fhir/MedicationRequest`
+> ```bash
+> # Alle Verordnungen eines Versicherten abrufen (ePA Medication Service v1.3.0)
+> curl -s "https://<epa-fachdienst>/epa/medication/api/v1/fhir/MedicationRequest" \
+>   -H "Accept: application/fhir+json" \
+>   -H "Authorization: Bearer <idp-access-token>" \
+>   -H "x-insurantid: A123456789"
+>
+> # Mit Include: Medication-Ressourcen direkt mitladen
+> curl -s "https://<epa-fachdienst>/epa/medication/api/v1/fhir/MedicationRequest?_include=MedicationRequest:medication" \
+>   -H "Accept: application/fhir+json" \
+>   -H "Authorization: Bearer <idp-access-token>" \
+>   -H "x-insurantid: A123456789"
+> ```
+> - IG ePA Medication Service (v1.3.0): [gematik.de/fhir/epa-medication](https://www.gematik.de/fhir/epa-medication/1.3.0/op-get-medication-list.html)
+> - Simplifier: [simplifier.net/epa-medication](https://simplifier.net/epa-medication)
+> - Repo: [github.com/gematik/ePA-Medication](https://github.com/gematik/ePA-Medication)
+
 ### Primärsysteme und AMTS-Software
+
+> [!klinik-integration] Klinik-Integration: AMTS im stationären KIS-Workflow
+> Im Krankenhaus ist AMTS besonders kritisch, weil Patienten oft polypharmazeutisch behandelt werden und mehrere Fachbereiche gleichzeitig Medikamente verordnen. Das KIS ist das zentrale Instrument für eine strukturierte stationäre Medikationsdokumentation.
+>
+> **Medikationsmodul im KIS:** Stellen Sie sicher, dass das KIS ein aktives Medikationsmodul mit Wechselwirkungsprüfung betreibt (Arzneimitteldatenbanken: ABDA oder MMI-Pharmindex). Die Prüfung läuft im KIS, nicht im ePA-Fachdienst. Klären Sie mit Ihrem KIS-Hersteller (SAP IS-H, Orbis/Dedalus, iMedOne), ob die Arzneimitteldatenbank im Supportvertrag regelmäßig aktualisiert wird.
+> **ePA-Anbindung für Medikationsdaten:** Seit Oktober 2025 sind Krankenhäuser verpflichtet, Medikationsdaten in die ePA einzustellen. Der eMP (seit März 2026 in der ePA verfügbar) sollte bei der Entlassung aktualisiert werden. Das KIS muss dazu `MedicationRequest`- und `MedicationStatement`-FHIR-Ressourcen korrekt erzeugen und per ePA-API übertragen können.
+> **Entlassmedikation strukturiert übergeben:** Der Entlassbrief enthält die Entlassmedikation. Nur strukturiert kodierte Medikationsdaten (nicht Freitext) erlauben dem weiterbehandelnden Arzt eine automatische AMTS-Prüfung in seinem PVS. Prüfen Sie, ob das ISiK-Dokumentenmodul (Stufe 3) Ihres KIS strukturierte Medikationsdaten im Entlassbrief unterstützt.
 
 > [!praxis-tipp] Praxis-Tipp: Wechselwirkungsprüfung richtig nutzen
 > Die AMTS-Prüfung läuft in Ihrem PVS, nicht automatisch in der ePA. Voraussetzung: Ihr PVS hat eine aktuelle Arzneimitteldatenbank (ABDA oder MMI-Pharmindex).

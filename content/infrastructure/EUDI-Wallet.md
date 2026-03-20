@@ -6,7 +6,7 @@ aliases: [European Digital Identity Wallet, EU Digital Identity Wallet, EUDIW, e
 relevance:
   sectors: [arztpraxis, krankenhaus, apotheke, kasse, hersteller, ti-infrastruktur, it-dienstleister, regulierung, patient]
   interests: [compliance, technik, patient]
-maturity: wachsend
+maturity: immergruen
 ---
 
 # EUDI-Wallet
@@ -71,11 +71,40 @@ Die EUDI-Wallet setzt auf offene Standards:
 - **ISO/IEC 18013-5 (mDL)**: Standard für den mobilen Führerschein, auch offline per NFC oder Bluetooth nutzbar
 - **SD-JWT (Selective Disclosure JWT)**: Ermöglicht die selektive Offenlegung einzelner Attribute aus einem Nachweis (z.B. nur das Alter, nicht das Geburtsdatum)
 
+> [!dev-quickstart] Dev Quickstart: OID4VCI Credential Issuance (EUDI-Wallet)
+> Credential Issuer Metadata abrufen (Discovery-Endpoint):
+> ```bash
+> # Issuer-Metadaten abrufen (OID4VCI Draft 13)
+> curl -s "https://<issuer-host>/.well-known/openid-credential-issuer" \
+>   -H "Accept: application/json"
+>
+> # Access-Token für Credential-Anfrage holen (Pre-Authorized Code Flow)
+> curl -X POST "https://<issuer-host>/token" \
+>   -H "Content-Type: application/x-www-form-urlencoded" \
+>   -d "grant_type=urn:ietf:params:oauth:grant-type:pre-authorized_code" \
+>   -d "pre-authorized_code=<code-from-qr>"
+>
+> # Credential anfordern (SD-JWT Format)
+> curl -X POST "https://<issuer-host>/credential" \
+>   -H "Content-Type: application/json" \
+>   -H "Authorization: Bearer <access-token>" \
+>   -d '{"format":"dc+sd-jwt","credential_configuration_id":"eu.europa.ec.eudi.pid.1"}'
+> ```
+> - EU-Referenzimplementierung (PID Issuer): [github.com/eu-digital-identity-wallet/eudi-srv-pid-issuer](https://github.com/eu-digital-identity-wallet/eudi-srv-pid-issuer)
+> - EU ARF (Architecture Reference Framework): [github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework](https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework)
+> - Deutsche Sandbox (BMDS/SPRIND): gestartet 28. Januar 2026
+
 ### Datenschutz und Sicherheit
 
 Alle persönlichen Daten werden verschlüsselt lokal auf dem Smartphone des Nutzers gespeichert. Eine zentrale Speicherung oder ein staatliches Profiling ist technisch ausgeschlossen. Der Nutzer entscheidet selbst, welche Attribute er gegenüber welchem Dienst offenlegt.
 
 Das WSCD (Wallet Secure Cryptographic Device) schützt kryptografische Schlüssel. Es kann als Hardware-Sicherheitselement (Secure Element) im Gerät oder als cloudbasiertes HSM (Hardware Security Module) implementiert sein.
+
+> [!frist-warnung] Frist-Warnung: Bereitstellungspflicht EUDI-Wallet bis 21. November 2026
+> **Rechtsgrundlage:** Art. 5a Abs. 1 eIDAS 2.0 (Verordnung (EU) 2024/1183 vom 11. April 2024, ABl. L 2024/1183).
+> **Frist:** Alle 27 EU-Mitgliedstaaten sind verpflichtet, ihren Bürgerinnen, Bürgern und juristischen Personen bis zum 21. November 2026 mindestens eine kostenlose, staatlich zugelassene EUDI-Wallet bereitzustellen. Deutschland plant die Bereitstellung der Produktivversion für Anfang 2027 und liegt damit an der Grenze dieser Frist.
+> **Handlungsbedarf für Gesundheitseinrichtungen:** Krankenkassen, die die Gesundheits-ID als EUDI-Wallet-Credential ausgeben wollen, benötigen eine Zulassung als qualifizierter Credential-Aussteller (QEAA-Aussteller) nach Art. 45f eIDAS 2.0. Einrichtungen, die als Credential-Prüfer in die EUDI-Wallet-Infrastruktur eingebunden werden sollen, müssen sich beim BSI-Vertrauensdiensteanbieter-Register registrieren. Der BSI-Handlungsleitfaden zur EUDI-Wallet-Integration für Behörden (Januar 2026) beschreibt die technischen Schritte.
+> **Relevanz für die TI:** Die gematik koordiniert die Integration der Gesundheits-ID in die EUDI-Wallet. Krankenkassen und TI-Komponenten-Hersteller sollten die Entwicklung der Durchführungsrechtsakte der EU-Kommission für das OID4VCI-Protokoll beobachten.
 
 ### Deutschland: Umsetzungsstand
 
@@ -86,9 +115,30 @@ In Deutschland wird die EUDI-Wallet vom Bundesministerium für Digitales und Sta
 
 Der Quellcode der staatlichen EUDI-Wallet wird als Open Source veröffentlicht.
 
+> [!praxis-tipp] Praxis-Tipp: Was die EUDI-Wallet für Ihre Praxis bedeutet
+> Die EUDI-Wallet kommt in Deutschland voraussichtlich Anfang 2027. Für Ihre Praxis ändert sich kurzfristig nichts. Mittelfristig gibt es konkrete Auswirkungen.
+>
+> Was jetzt zu wissen ist:
+> - **2027:** Patienten können sich mit der EUDI-Wallet als Alternative zur eGK ausweisen. Ihre Praxis muss dafür nichts tun, solange Ihr PVS aktuell ist. Die eGK bleibt gültig.
+> - **Ab 2027:** Die Gesundheits-ID (GesundheitsID) als digitaler Versicherungsnachweis wird in die Wallet integriert. Das erleichtert die Anmeldung von Patienten, die keine physische eGK haben oder vergessen haben.
+> - **Ab 2028 (geplant):** Ärzte könnten ihren HBA digital in der Wallet nutzen. Das würde die Signatur von E-Rezepten vom Konnektor entkoppeln.
+>
+> Handlungsbedarf jetzt: keiner. Beobachten Sie die Updates Ihres PVS-Anbieters. Wenn Ihr PVS die Gesundheits-ID unterstützt, ist die Wallet-Integration automatisch abgedeckt.
+
 ### Relevanz für die Telematikinfrastruktur
 
-Die Konvergenz von EUDI-Wallet und TI ist ein strategisches Ziel der gematik im Rahmen der TI 2.0. Konkret sind folgende Szenarien in Planung oder Diskussion:
+> [!klinik-integration] Klinik-Integration: EUDI-Wallet und HBA-Verwaltung im Krankenhaus
+> Die EUDI-Wallet ist für Krankenhäuser heute kein Handlungsthema, aber ein strategisches Planungsthema: Sie wird mittelfristig die Art verändern, wie Krankenhausärzte ihre Berufsidentität (HBA) nachweisen und ePA-Dokumente signieren.
+>
+> **HBA ohne Karte ab 2028:** Ärztekammern sollen laut Gesetzgebung ab 2028 kartenunabhängige digitale Arztidentitäten ausgeben. Diese könnten als QEAA in der EUDI-Wallet des Arztes gespeichert werden und QES-fähige Fernsignatur ohne Konnektor ermöglichen. Für Krankenhäuser bedeutet das langfristig: weniger physische HBA-Logistik (Bestellung, Ausgabe, Sperrung bei Stellenwechsel).
+> **Jetzt kein Handlungsbedarf:** Die EUDI-Wallet ist bis Anfang 2027 nicht produktiv. KIS-Hersteller werden Wallet-Integration erst danach umsetzen. Planen Sie keine EUDI-Wallet-Abhängigkeiten in laufenden KIS-Projekten oder Konnektor-Ersatz-Vorhaben ein.
+> **Strategische Beobachtung:** Verfolgen Sie die gematik-Roadmap zur TI 2.0 und wallet-kompatibler TI-Infrastruktur. Die Frage, ob zukünftige KIS-Ausschreibungen HBA-Wallet-Unterstützung als Anforderung formulieren sollten, ist für Beschaffungen ab 2028 relevant.
+
+Die Konvergenz von EUDI-Wallet und TI ist ein strategisches Ziel der gematik im Rahmen der TI 2.0. Das [[BSI]] veröffentlichte im Januar 2026 einen Handlungsleitfaden zur EUDI-Wallet-Integration für Behörden, der auch für das Gesundheitswesen relevant ist: Er beschreibt, wie Institutionen als Credential-Aussteller oder -Prüfer in die EUDI-Wallet-Infrastruktur eingebunden werden können.
+
+Im Gesundheitsbereich ist die [[gematik]] als Koordinator für die TI-seitige EUDI-Wallet-Integration aktiv. Die [[Gesundheits-ID]] soll als gesundheitsspezifisches Credential in der EUDI-Wallet fungieren, ausgestellt von den Krankenkassen als qualifizierten Credential-Ausstellern.
+
+Konkret sind folgende Szenarien in Planung oder Diskussion:
 
 - **Gesundheits-ID in der EUDI-Wallet**: Die [[Gesundheits-ID]] soll als EAA (Electronic Attestation of Attributes) in der EUDI-Wallet gespeichert und genutzt werden. Das BMG plant den Produktivstart Anfang 2027, pünktlich zur deutschen EUDI-Wallet-Einführung. Die Krankenkassen fungieren als Credential-Aussteller nach dem OID4VCI-Protokoll.
 - **HBA ohne Karte**: Ärztekammern sollen laut Gesetzgebung ab 2028 kartenunabhängige digitale Identitäten ausgeben. Diese könnten über die EUDI-Wallet als [[QES]]-fähige Fernsignatur genutzt werden.
@@ -139,3 +189,4 @@ Diese Anwendungsfälle werden im Rahmen des [[EHDS]] (Europäischer Gesundheitsd
 - [eIDAS 2.0 (EU) 2024/1183 – EUR-Lex](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1183)
 - [Bundesärztekammer: Digitale Identitäten und EUDI-Wallet](https://www.bundesaerztekammer.de/themen/aerzte/digitalisierung/digitale-identitaeten)
 - [Deutsches EUDI-Wallet-Projekt (BMI/SPRIND)](https://bmi.usercontent.opencode.de/eudi-wallet/eidas2/en/start/)
+- [BSI: Handlungsleitfaden EUDI-Wallet-Integration für Behörden (Januar 2026)](https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/Handlungsleitfaden_EUDI-Wallet-260116.html)

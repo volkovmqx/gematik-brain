@@ -47,7 +47,7 @@ Der Bundestag verabschiedete das KHAG am **6. März 2026** in zweiter und dritte
 | Gesetz | Schwerpunkt |
 |---|---|
 | [[KHZG]] (2020) | 4,3 Mrd. Euro Digitalisierungsförderung, Patientenportale als Fördertatbestand |
-| [[KHVVG]] (2024) | Strukturreform: Leistungsgruppen, Vorhaltevergütung |
+| [[KHVVG]] (2024) | Strukturreform: Leistungsgruppen, [[Vorhaltevergütung]] |
 | KHAG (2026) | Digitale Umsetzung der Reform: Interoperabilität, Telemedizin, Transformationsfonds |
 
 Das KHAG baut auf dem KHZG auf. Während das KHZG einmalige Investitionen förderte, setzt das KHAG dauerhaftere strukturelle Anreize und Pflichten.

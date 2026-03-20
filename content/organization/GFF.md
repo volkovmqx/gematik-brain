@@ -6,7 +6,7 @@ aliases: [Gesellschaft für Freiheitsrechte, GFF e.V.]
 relevance:
   sectors: [regulierung, forschung, patient, verband]
   interests: [compliance, patient]
-maturity: setzling
+maturity: immergruen
 ---
 
 # GFF
@@ -48,6 +48,12 @@ Die GFF stützt ihre Argumentation auf:
 - **Art. 2 Abs. 1 GG i.V.m. Art. 1 Abs. 1 GG** (allgemeines Persönlichkeitsrecht): Recht auf informationelle Selbstbestimmung, hergeleitet aus dem Volkszählungsurteil des Bundesverfassungsgerichts von 1983.
 - **Verhältnismäßigkeit**: Die Pflichtübermittlung ohne ausdrückliche Einwilligung sei nicht das mildeste Mittel.
 
+> [!frist-warnung] Frist-Warnung: Rechtliche Unsicherheit bei FDZ-Datenzugang nach GDNG
+> **Rechtsgrundlage:** §§ 303a–303f SGB V i.V.m. § 1 GDNG (Gesundheitsdatennutzungsgesetz, in Kraft seit 26. März 2024); Art. 9 Abs. 2 DSGVO.
+> **Aktueller Stand (März 2026):** Das GFF-Klageverfahren vor dem Verwaltungsgericht Berlin gegen die Datenweitergabe an das FDZ beim BfArM ist seit Februar 2026 wiederaufgenommen. Das FDZ ist seit Oktober 2025 teilweise in Betrieb und gibt Daten heraus. Ein Endurteil steht noch aus.
+> **Handlungsbedarf für Forschungseinrichtungen:** Institutionen, die auf Basis von § 303e SGB V Anträge auf FDZ-Datenzugang gestellt haben oder planen, müssen die Verfahrensentwicklung aktiv beobachten. Bis zu einem rechtskräftigen Urteil besteht Unsicherheit über die Bestandskraft der Datenzugangsregelungen. Projektverträge und Data-Sharing-Agreements sollten Vorbehaltsklauseln für den Fall einer gerichtlichen Aufhebung der GDNG-Datenweitergabepflicht enthalten.
+> **Bei negativem Urteil:** Eine gerichtliche Aufhebung der FDZ-Datenweitergabepflicht würde laufende Forschungsprojekte unterbrechen und eine gesetzliche Nachbesserung erfordern.
+
 ### Abgrenzung: Opt-out im FDZ vs. Opt-out in der ePA
 
 Das [[GDNG]] enthält zwei verschiedene Opt-out-Regelungen:
@@ -72,6 +78,16 @@ Die GFF kritisiert insbesondere den letzten Punkt: Versicherte können der direk
 >
 > **Ihr Recht:** Sie haben das Recht auf informationelle Selbstbestimmung. Das bedeutet: Sie sollen grundsätzlich selbst entscheiden, wer Ihre Gesundheitsdaten sieht.
 
+> [!patientenrecht] Patientenrecht: GFF als Anlaufstelle für Datenschutzfragen
+> Die GFF ist keine Behörde und kann Ihnen keine Rechtsberatung geben. Aber sie ist eine wichtige Informationsquelle, wenn es um Ihre Datenschutzrechte im Gesundheitsbereich geht.
+>
+> **Was Sie konkret tun können:**
+> - Auf der GFF-Website finden Sie verständliche Erklärungen zu laufenden Klagen.
+> - Der offizielle Datenschutzbeauftragte Ihres Bundeslandes nimmt Beschwerden zu Datenschutzverstößen entgegen.
+> - Für individuelle Beratung zu Patientenrechten wenden Sie sich an die **Unabhängige Patientenberatung Deutschland (UPD)** unter 0800 011 77 22 (kostenlos, montags bis freitags 8 bis 22 Uhr).
+>
+> **Ihr Recht:** Sie können sich beim Datenschutzbeauftragten beschweren, wenn Sie glauben, dass Ihre Gesundheitsdaten unrechtmäßig verarbeitet werden. Das ist kostenlos und ohne Anwalt möglich.
+
 ### Institutionelle Einordnung
 
 Die GFF ist keine Behörde und hat keine hoheitlichen Befugnisse. Sie handelt als Kläger vor ordentlichen Gerichten und Verwaltungsgerichten. Neben dem Gesundheitsbereich führt die GFF strategische Prozesse in den Bereichen Überwachung, Presse- und Meinungsfreiheit sowie Asyl- und Migrationsrecht.
@@ -88,6 +104,7 @@ Die GFF ist keine Behörde und hat keine hoheitlichen Befugnisse. Sie handelt al
 
 ## Quellen
 
-- [GFF: Über uns](https://freiheitsrechte.org/)
+- [GFF: Wer wir sind](https://freiheitsrechte.org/ueber-die-gff/werwirsind)
 - [GFF: Klage gegen Gesundheitsdatengesetz](https://freiheitsrechte.org/gesundheitsdaten/)
+- [GFF: Freiheit im digitalen Zeitalter](https://freiheitsrechte.org/themen/freiheit-im-digitalen-zeitalter)
 - [Wikipedia: Gesellschaft für Freiheitsrechte](https://de.wikipedia.org/wiki/Gesellschaft_f%C3%BCr_Freiheitsrechte)

@@ -4,7 +4,7 @@ audience: [technical]
 tags: [prozess, sicherheit, authentisierung, epa]
 aliases: [Proof of Patient Presence, PoPP-Dienst]
 relevance:
-  sectors: [arztpraxis, apotheke, krankenhaus, hersteller, ti-infrastruktur]
+  sectors: [arztpraxis, zahnarzt, apotheke, krankenhaus, ti-infrastruktur, hersteller]
   interests: [technik, compliance]
 maturity: wachsend
 ---
@@ -38,6 +38,12 @@ PoPP ersetzt prospektiv das bisherige [[VSDM]]-Verfahren (VSDM++) für den Präs
 > - Für Sie und Ihre MFA ändert sich der sichtbare Ablauf kaum
 >
 > Handlungsbedarf jetzt: Fragen Sie Ihren PVS-Anbieter, ob das Update für PoPP-Stufe 1 bereits im Lieferplan steht. Ohne PVS-Update ist ab Einführung kein ePA-Zugriff mehr möglich. Planen Sie das Update außerhalb der Sprechstunde ein.
+
+> [!frist-warnung] Frist-Warnung: PoPP-Implementierungspflicht für PVS, KIS und AVS ab Mitte 2026
+> **Rechtsgrundlage:** § 291b SGB V (Fassung ab 1. April 2026 gemäß DigiG); gematik-Zulassungsordnung für ePA-kompatible Primärsysteme; gemSpec_PoPP_Service V1.0.0 (veröffentlicht 3. März 2026).
+> **Frist:** Ab Mitte 2026 ist PoPP Stufe 1 produktiv. Primärsysteme (PVS, KIS, AVS), die auf die ePA zugreifen wollen, müssen die PoPP-Schnittstelle implementiert haben. Das bisherige VSDM++-Verfahren läuft während der Einführungsphase parallel weiter. Ein konkreter Abschalttermin für VSDM++ ist noch nicht festgesetzt.
+> **Handlungsbedarf:** PVS-, KIS- und AVS-Hersteller müssen die PoPP-API-Spezifikation implementieren und ihre Systeme zertifizieren lassen. Leistungserbringer müssen bei ihrem Softwareanbieter schriftlich anfragen, ob das PoPP-Stufe-1-Update im Lieferplan steht und bis wann es ausgeliefert wird.
+> **Bei Nichtbeachtung:** Nach Abschaltung des VSDM++-Verfahrens verlieren Primärsysteme ohne PoPP-Zertifizierung den Zugriff auf die ePA. Für Leistungserbringer bedeutet dies: keine ePA-Befüllung und kein ePA-Datenabruf für Patienten.
 
 ### Ausbaustufen
 
@@ -82,6 +88,13 @@ Das bisherige VSDM++-Verfahren prüfte lediglich, ob eine gültige [[SMC-B]] vor
 - Token-Format: JSON Web Token (JWT), signiert durch den PoPP-Dienst
 - Integration: Primärsysteme ([[PVS]], [[KIS]], [[AVS]]) müssen die PoPP-Schnittstelle implementieren
 - Rückwärtskompatibilität: Während der Einführungsphase läuft VSDM++ parallel weiter
+
+> [!klinik-integration] Klinik-Integration: PoPP im Krankenhaus-Workflow
+> Im Krankenhaus bedeutet PoPP: Vor jedem ePA-Zugriff muss das KIS ein gültiges PoPP-Token vorlegen. Das Token wird erzeugt, indem die eGK des Patienten am Kartenterminal ausgelesen wird. Erst danach darf das KIS Dokumente aus der ePA abrufen oder einstellen.
+>
+> **Kartenterminal-Planung:** PoPP Stufe 1 (ab Mitte 2026) erfordert die physische eGK am Kartenterminal. Im Krankenhaus bedeutet das: An jedem Punkt, an dem ePA-Zugriffe stattfinden (Aufnahme, Station, Entlassung), muss ein Kartenterminal mit TI-Anbindung vorhanden sein. Bei Notaufnahmen mit hohem Patientenaufkommen (über 80 Aufnahmen/Tag) sind mehrere Terminals einzuplanen.
+> **KIS-Update-Pflicht:** Das KIS muss die PoPP-API implementieren und bei jedem ePA-Zugriff das PoPP-Token anfordern. Ohne KIS-Update ist ab PoPP-Einführung kein ePA-Zugriff mehr möglich. Fragen Sie Ihren KIS-Hersteller jetzt, ob das Update für PoPP Stufe 1 im Lieferplan steht und wann es verfügbar ist.
+> **Redundanz beachten:** Der PoPP-Dienst ist ein zentraler TI-Dienst. Wenn die TI-Verbindung ausfällt, ist kein PoPP-Token abrufbar und damit kein ePA-Zugriff möglich. Planen Sie einen dokumentierten Notfallprozess für den Ausfall der TI-Verbindung ein, der den klinischen Betrieb sicherstellt.
 
 > [!dev-quickstart] Dev Quickstart: PoPP-Token anfordern und verwenden
 > OpenAPI-Spec: [gematik/api-popp](https://github.com/gematik/api-popp) | Sample-Code: [gematik/popp-sample-code](https://github.com/gematik/popp-sample-code)

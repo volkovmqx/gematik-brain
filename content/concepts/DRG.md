@@ -72,7 +72,7 @@ Krankenkassen haben das Recht, Abrechnungen durch den Medizinischen Dienst (MD) 
 >
 > **KIS-Grouper-Integration:** Verbreitete KIS-Systeme (SAP ISH, Dedalus Orbis, iMedOne, CGM Medico, Meierhofer M-KIS) integrieren zertifizierte Grouper direkt. Die InEK-Zertifizierung des Groupers ist Pflichtvoraussetzung für die Abrechnung. Prüfen Sie: Ist Ihr KIS mit dem InEK-zertifizierten Grouper für die aktuelle Version 2026 kompatibel?
 >
-> **KHVVG-Umstellung 2027:** Ab 1. Januar 2027 ändert sich die Vergütungsstruktur durch das Krankenhauszukunftsverbesserungsgesetz (KHVVG): Vorhaltevergütung tritt neben die DRG-Fallpauschalen. Das KIS muss die neue Leistungsgruppen-Dokumentation unterstützen. Klären Sie mit Ihrem KIS-Hersteller, ob ein Update rechtzeitig vorliegt.
+> **KHVVG-Umstellung 2027:** Ab 1. Januar 2027 ändert sich die Vergütungsstruktur durch das Krankenhauszukunftsverbesserungsgesetz (KHVVG): [[Vorhaltevergütung]] tritt neben die DRG-Fallpauschalen. Das KIS muss die neue Leistungsgruppen-Dokumentation unterstützen. Klären Sie mit Ihrem KIS-Hersteller, ob ein Update rechtzeitig vorliegt.
 
 > [!interesse-compliance]
 > Krankenhäuser sind nach § 17b KHG zur vollständigen und korrekten Kodierung verpflichtet. Fehlkodierungen können zu Rückforderungen durch Krankenkassen führen. Der Medizinische Dienst (MD) prüft Abrechnungen stichprobenartig. Seit dem MDK-Reformgesetz (2020) sind Prüfquoten gedeckelt: Krankenkassen dürfen maximal 5 Prozent der abgerechneten Fälle prüfen lassen. Falsch kodierte Fälle führen zu Korrekturrechnungen und können die Zulassungsquote für MDK-Prüfungen erhöhen.
@@ -88,7 +88,7 @@ Krankenkassen haben das Recht, Abrechnungen durch den Medizinischen Dienst (MD) 
 
 > [!frist-warnung] Frist-Warnung: KHVVG-Systemwechsel ab 1. Januar 2027
 > **Rechtsgrundlage:** Krankenhausversorgungsverbesserungsgesetz (KHVVG), in Kraft seit 18. April 2025, §§ 135e ff. SGB V.
-> **Frist:** Ab 1. Januar 2027 wird das Vergütungssystem grundlegend umgestellt. Krankenhäuser erhalten dann eine Vorhaltevergütung (bis zu 60 % der Betriebskosten), die unabhängig von der Fallzahl ausgezahlt wird. Die verbleibenden 40 % der Vergütung laufen weiterhin über DRG-Fallpauschalen.
+> **Frist:** Ab 1. Januar 2027 wird das Vergütungssystem grundlegend umgestellt. Krankenhäuser erhalten dann eine [[Vorhaltevergütung]] (bis zu 60 % der Betriebskosten), die unabhängig von der Fallzahl ausgezahlt wird. Die verbleibenden 40 % der Vergütung laufen weiterhin über DRG-Fallpauschalen.
 > **Vorfristen:** Das InEK stellt bis zum 10. Dezember 2026 jedem Krankenhaus per Bescheid das individuelle Vorhaltevolumen fest. Die erstmalige Prüfung der Qualitätskriterien durch den Medizinischen Dienst muss bis 30. Juni 2026 abgeschlossen sein.
 > **Handlungsbedarf:** Krankenhäuser müssen die eigene Leistungsgruppen-Zuordnung prüfen, da das Vorhaltevolumen von den zugewiesenen Leistungsgruppen abhängt. Medizincontrolling und Geschäftsführung sollten die Bescheidfeststellung durch das InEK im Dezember 2026 engmaschig begleiten. Einspruchsfristen gegen fehlerhafte Bescheide müssen gewahrt werden.
 

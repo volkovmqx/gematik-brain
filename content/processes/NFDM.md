@@ -4,7 +4,7 @@ audience: [technical, non-technical]
 tags: [prozess, nfdm, notfalldaten]
 aliases: [Notfalldatenmanagement, NFD, Notfalldatensatz]
 relevance:
-  sectors: [arztpraxis, krankenhaus, apotheke, patient]
+  sectors: [arztpraxis, krankenhaus, zahnarzt, pflege, patient]
   interests: [technik, patient]
 maturity: wachsend
 ---
@@ -35,7 +35,7 @@ NFDM ist eine freiwillige Anwendung. Versicherte können bei ihrem Arzt Notfalld
 - Apotheker und Psychotherapeuten (mit Einwilligung, außerhalb von Notfällen)
 
 > [!interesse-patient]
-> Die Notfalldaten sind freiwillig. Du kannst deinen Hausarzt bitten, sie auf deiner Gesundheitskarte zu speichern. Du kannst die Daten jederzeit ändern oder löschen lassen. Im Notfall können Rettungskräfte die Daten lesen, auch wenn du nicht ansprechbar bist. Mit einer PIN kannst du den Zugriff zusätzlich schützen, zum Beispiel für sensible Diagnosen.
+> Die Notfalldaten sind freiwillig. Sie können Ihren Hausarzt bitten, sie auf Ihrer Gesundheitskarte zu speichern. Sie können die Daten jederzeit ändern oder löschen lassen. Im Notfall können Rettungskräfte die Daten lesen, auch wenn Sie nicht ansprechbar sind. Mit einer PIN können Sie den Zugriff zusätzlich schützen, zum Beispiel für sensible Diagnosen.
 
 > [!patientenrecht] Patientenrecht: Notfalldaten anlegen, ändern oder löschen
 > Ihre Notfalldaten gehören Ihnen. Sie entscheiden allein, was gespeichert wird.
@@ -48,6 +48,21 @@ NFDM ist eine freiwillige Anwendung. Versicherte können bei ihrem Arzt Notfalld
 > **PIN-Schutz:** In der Standardeinstellung ist kein PIN aktiv. Mit einem PIN können nur Personen mit Ihrer Karte und Ihrer PIN die Daten lesen. Im Notfall können Ärzte den Datensatz aber auch ohne PIN lesen. So bleiben Sie im Notfall geschützt und gut versorgt.
 >
 > Sprechen Sie Ihren Hausarzt an, wenn Sie Änderungen wünschen.
+
+> [!patientenrecht] Patientenrecht: Notfalldaten freiwillig und selbst bestimmt
+> Notfalldaten auf Ihrer Gesundheitskarte sind freiwillig. Niemand kann Sie dazu zwingen.
+>
+> **Was Sie wissen sollten:**
+> - Sie müssen aktiv Ihren Arzt bitten, Notfalldaten zu speichern.
+> - Sie können jederzeit einzelne Daten ändern oder alles löschen lassen.
+> - Für die Löschung stellt Ihr Arzt keinen Eigenanteil in Rechnung. Die Löschung ist für Sie kostenlos.
+>
+> **So lassen Sie Daten löschen:**
+> 1. Sprechen Sie Ihren Hausarzt an.
+> 2. Sagen Sie, dass Sie die Notfalldaten löschen möchten.
+> 3. Ihr Arzt löscht die Daten beim nächsten Praxisbesuch direkt von Ihrer Gesundheitskarte.
+>
+> Die Daten liegen nur auf Ihrer Gesundheitskarte, nicht in einer zentralen Datenbank.
 
 ## Ablauf
 
@@ -80,6 +95,16 @@ NFDM ist eine freiwillige Anwendung. Versicherte können bei ihrem Arzt Notfalld
 > **Besonderheit PIN-Schutz:** Hat der Patient einen PIN-Schutz aktiviert, ist ein Lesezugriff ohne PIN nur bei medizinischem Notfall zulässig. Schulen Sie das Notaufnahme-Personal entsprechend. Dokumentieren Sie den Zugriff ohne PIN im KIS.
 > **Kartenterminal-Bedarf:** Bei hohem Aufkommen (mehr als 80 Notaufnahmen täglich) sind mehrere Kartenterminals an Aufnahme und Ambulanz einzuplanen.
 
+> [!praxis-tipp] Praxis-Tipp: Notfalldaten aktiv anbieten
+> Viele Patienten wissen nicht, dass sie Notfalldaten auf der eGK speichern können. Sprechen Sie sie aktiv an, besonders bei Patienten mit Polymedikation, Allergien oder chronischen Erkrankungen.
+>
+> In Ihrer Praxis bedeutet das:
+> - Beim nächsten Termin eines Risikopatienten fragen: "Möchten Sie Ihre wichtigsten Daten auf der Gesundheitskarte speichern, damit der Rettungsdienst sie im Notfall sieht?"
+> - Besonders sinnvoll für Patienten mit Antikoagulanzien, Insulintherapie, schweren Allergien oder seltenen Diagnosen.
+> - Zeitaufwand: ca. 5-10 Minuten für die Erstanlage inkl. Dateneingabe und Signatur.
+>
+> Häufiger Fehler: Nur die Medikation einpflegen, aber Allergien vergessen. Beide Felder sind im Notfall gleich wichtig.
+
 ## Technische Details
 
 - Speicherort: [[eGK]] (lokaler Speicher auf der Chipkarte)
@@ -87,6 +112,36 @@ NFDM ist eine freiwillige Anwendung. Versicherte können bei ihrem Arzt Notfalld
 - Berechtigung: Arzt mit [[HBA]]
 - Datenformat: XML nach gematik-Spezifikation
 - Offline-fähig: Keine TI-Verbindung für Lesezugriff nötig (die Daten liegen direkt auf der Karte)
+
+> [!klinik-integration] Klinik-Integration: NFDM-Datenpflege im Entlassmanagement
+> Ändert sich die Medikation oder entstehen neue Diagnosen während des stationären Aufenthalts, kann das Krankenhaus den Patienten auf eine NFDM-Aktualisierung hinweisen. Das ist ein wichtiger, oft übersehener Schritt im Entlassmanagement.
+>
+> **Schreibzugriff erfordert TI-Anbindung:** Für das Aktualisieren der Notfalldaten auf der eGK benötigt der Arzt einen [[HBA]] und einen TI-fähigen Konnektor mit Kartenterminal. Anders als der Lesezugriff ist der Schreibzugriff TI-abhängig. Klären Sie, ob das Entlassmanagement-Team Zugang zu einem TI-fähigen Kartenterminal hat, das nicht ausschließlich für die Notaufnahme reserviert ist.
+> **KIS-Abgleich:** Das KIS sollte beim Entlassbrief prüfen, ob die stationäre Abschlussmedikation von dem abweicht, was als NFDM auf der eGK hinterlegt ist. Einige KIS-Systeme bieten NFDM-Vergleichsfunktionen an. Klären Sie mit Ihrem KIS-Hersteller, ob diese Funktion verfügbar ist.
+> **Abgrenzung zur ePA:** NFDM auf der eGK und Notfalldaten in der [[ePA]] sind zwei separate Datensätze mit unterschiedlicher Zugriffslogik. Der Entlassbrief in der ePA ist für alle Folgebehandler sichtbar und deckt für die meisten klinischen Szenarien den gleichen Informationsbedarf ab.
+
+> [!dev-quickstart] Dev Quickstart: NFD lesen und schreiben via Konnektor-API
+> Der Konnektor stellt eine SOAP-Webservice-API bereit (Schnittstellenspezifikation gemSpec_Kon).
+> ```bash
+> # NFD lesen: ReadNFD-Aufruf via Konnektor SOAP-API
+> curl -X POST "http://<konnektor-host>/service/nfdm" \
+>   -H "Content-Type: text/xml; charset=utf-8" \
+>   -H "SOAPAction: ReadNFD" \
+>   -d '<?xml version="1.0"?>
+> <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+>                   xmlns:nfdm="http://ws.gematik.de/conn/nfdm/v1.0">
+>   <soapenv:Body>
+>     <nfdm:ReadNFD>
+>       <nfdm:EhcHandle><CardHandle>EGK-HANDLE-123</CardHandle></nfdm:EhcHandle>
+>     </nfdm:ReadNFD>
+>   </soapenv:Body>
+> </soapenv:Envelope>'
+> ```
+> Schreibzugriff (WriteNFD): Erfordert zusätzlich QES-Signatur via `SignDocument` mit HBA.
+> Datenformat: XML nach `gemSpec_FM_NFDM`; Schema-Datei in der gematik-Spezifikation enthalten.
+> - Konnektor-Schnittstelle: gemSpec_Kon (SOAP, WSDL-basiert)
+> - Spezifikation: [fachportal.gematik.de/anwendungen/notfalldaten-management](https://fachportal.gematik.de/anwendungen/notfalldaten-management)
+> - Testumgebung: TI-Referenzimplementierung (gematik TU) oder lokaler Software-Konnektor
 
 > [!interesse-technik]
 > Der Notfalldatensatz wird im XML-Format nach gemSpec_FM_NFDM auf der [[eGK]] gespeichert und mit der [[QES]] des Arztes signiert. Der Schreibzugriff erfolgt über den Konnektor-Befehl `SignDocument` (QES) und `WriteNFD`. Lesezugriff im Notfall ist ohne TI-Verbindung möglich, da die Daten direkt auf der Karte liegen. Spezifikation: [gemSpec_FM_NFDM - Fachportal gematik](https://fachportal.gematik.de/anwendungen/notfalldaten-management).

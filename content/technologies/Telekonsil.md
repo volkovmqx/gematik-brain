@@ -6,7 +6,7 @@ aliases: [Telekonsilium, Online-Konsil, elektronisches Konsil, ärztliches Telek
 relevance:
   sectors: [arztpraxis, krankenhaus, zahnarzt, psychotherapie, hersteller, it-dienstleister, kasse]
   interests: [compliance, technik, business]
-maturity: setzling
+maturity: immergruen
 ---
 
 # Telekonsil
@@ -21,7 +21,7 @@ Stell dir vor, ein Hausarzt sieht ein auffälliges Hautbild und ist unsicher, ob
 
 Das Telekonsil unterscheidet sich von der [[Videosprechstunde]]: Bei der Videosprechstunde ist der Patient aktiv beteiligt. Beim Telekonsil kommunizieren zwei Ärzte über einen Fall, oft ohne direkte Patientenbeteiligung.
 
-In Deutschland ist das ärztliche Telekonsil seit dem **1. Oktober 2020** eine abrechnungsfähige Leistung im Einheitlichen Bewertungsmaßstab ([[EBM]]). Es gibt drei Kernszenarien:
+In Deutschland ist das ärztliche Telekonsil seit dem **1. Oktober 2020** eine abrechnungsfähige Leistung im Einheitlichen Bewertungsmaßstab ([[EBM]]). Seitdem können Ärzte Leistungen wie die EBM-Ziffer 01671 (Telekonsiliarische Beurteilung) abrechnen. Es gibt drei Kernszenarien:
 
 1. **Dermato-Telekonsil (Hautarzt)**: Ein Hausarzt oder Nicht-Dermatologe schickt Bilder und Befunde an einen Dermatologen. Häufigster Anwendungsfall in Deutschland.
 2. **Radiologisches Telekonsil**: Zweitmeinung zu Röntgen-, CT- oder MRT-Aufnahmen durch Radiologen an anderen Standorten (Teleradiologie).
@@ -30,7 +30,7 @@ In Deutschland ist das ärztliche Telekonsil seit dem **1. Oktober 2020** eine a
 Der Informationsaustausch beim Telekonsil läuft zunehmend über [[KIM]] (Kommunikation im Medizinwesen). KIM ermöglicht den sicheren, verschlüsselten Versand von Befunden, Bildern und Arztbriefen innerhalb der [[Telematikinfrastruktur]].
 
 > [!interesse-compliance]
-> Das ärztliche Telekonsil ist nach EBM-Ziffer 01671 (Telekonsiliarische Beurteilung) und verwandten Ziffern abrechnungsfähig. Voraussetzungen: Einwilligung des Patienten, Dokumentation im PVS/KIS, sichere Datenübertragung (z.B. per KIM oder anderer TI-gesicherter Verbindung). Das ärztliche Standeskonsil per Videokonferenz fällt unter § 7 Abs. 4 MBO-Ä (Musterberufsordnung). Datenschutz: Konsilunterlagen müssen DSGVO-konform übermittelt werden. KIM als TI-Kommunikationsweg ist die empfohlene Übertragungsform.
+> Das ärztliche Telekonsil ist nach EBM-Ziffer 01671 (Telekonsiliarische Beurteilung, konsiliarischer Arzt) und EBM-Ziffer 01670 (anfragender Arzt) seit dem 1. Oktober 2020 abrechnungsfähig. Voraussetzungen: Einwilligung des Patienten, Dokumentation im PVS/KIS, sichere Datenübertragung (z.B. per KIM oder anderer TI-gesicherter Verbindung). Das ärztliche Standeskonsil per Videokonferenz fällt unter § 7 Abs. 4 MBO-Ä (Musterberufsordnung). Datenschutz: Konsilunterlagen müssen DSGVO-konform übermittelt werden. KIM als TI-Kommunikationsweg ist die empfohlene Übertragungsform.
 
 > [!praxis-tipp] Praxis-Tipp: Telekonsil abrechnen
 > Als anfragender Arzt rechnen Sie EBM 01670 (128 Punkte, ca. 14 Euro) ab. Als konsiliarischer Facharzt rechnen Sie EBM 01671 ab.
@@ -91,7 +91,10 @@ Der konsiliarische Facharzt antwortet mit einer strukturierten oder unstrukturie
 >         "resourceType": "MessageHeader",
 >         "eventCoding": {
 >           "system": "https://gematik.de/fhir/atf/CodeSystem/service-identifier-cs",
->           "code": "eRezept_Rezeptanforderung;Rezeptanfrage"
+>           "code": "telekonsil;v=1.0"
+>           /* Hinweis: Eine offizielle gematik-ATF-Dienstkennung fuer Telekonsile ist noch
+>              nicht finalisiert. "telekonsil;v=1.0" ist ein Platzhalter-Beispiel.
+>              Aktuelle Kennung beim KIM-Anbieter oder in der ATF-Spezifikation pruefen. */
 >         },
 >         "source": { "endpoint": "hausarzt@praxis.kim.telematik" },
 >         "destination": [{ "endpoint": "dermatologe@facharzt.kim.telematik" }]
@@ -126,6 +129,12 @@ Im dermatologischen Bereich haben sich neben KIM spezialisierte Plattformen entw
 - **RegioConsult**: Regionale Telekonsil-Plattformen einzelner KVen
 
 Diese Plattformen bieten standardisierte Eingabemasken für Befunde, Fotodokumentation und Fallkategorisierung. Sie sind TI-unabhängig, bieten aber zunehmend KIM-Integration.
+
+> [!frist-warnung] Frist-Warnung: Telekonsil-Abrechnungsvoraussetzungen und Dokumentationspflicht
+> **Rechtsgrundlage:** EBM-Ziffern 01670 (anfragender Arzt) und 01671 (konsiliarischer Arzt), eingeführt zum 1. Oktober 2020; § 7 Abs. 4 MBO-Ä; Art. 9 Abs. 2 lit. h DSGVO i.V.m. § 630a ff. BGB (Aufklärungs- und Dokumentationspflicht).
+> **Dauerhafte Pflicht:** Die EBM-Abrechnung für Telekonsile ist an zwingend einzuhaltende Voraussetzungen geknüpft, die für jeden abgerechneten Fall erfüllt und dokumentiert sein müssen: schriftliche Patienteneinwilligung, sicherer Übertragungsweg (KIM-Dienst oder KBV-zertifizierter Videodienst), vollständige Dokumentation von Fragestellung und Konsilantwort im PVS oder KIS.
+> **Handlungsbedarf:** Praxen, die Telekonsile abrechnen, müssen sicherstellen, dass die Einwilligungsdokumentation revisionssicher im PVS gespeichert ist. KIM-Adressen müssen im VZD hinterlegt sein, damit Rückantworten empfangen werden können. Fehlende Dokumentation führt bei Plausibilitätsprüfungen der KV zu Honorarrückforderungen.
+> **Bei Nichtbeachtung:** Ohne nachweisbare Patienteneinwilligung und sicheren Übertragungsweg ist die EBM-Abrechnung unzulässig. Die KV kann bereits ausgezahlte Honorare zurückfordern.
 
 ### Teleradiologie
 

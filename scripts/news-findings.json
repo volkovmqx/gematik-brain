@@ -1316,8 +1316,9 @@
       "summary": "Das BSI veröffentlichte am 16. Januar 2026 einen Handlungsleitfaden für Behörden zur Vorbereitung auf die EUDI-Wallet-Integration. Der Leitfaden richtet sich an Digitalisierungsverantwortliche und behandelt: europäische und nationale EUDI-Wallet-Architektur, Teilnehmerrollen (Credential-Aussteller, Relying Parties) und Kernanforderungen an Authentifizierung und elektronische Attribute. Für den Gesundheitsbereich relevant: Die GesundheitsID ist als Health-Credential-Aussteller in der EUDI-Wallet-Architektur vorgesehen (BMG-Plan, GDVG). Der Leitfaden definiert den Rechtsrahmen der eIDAS-2.0-Verordnung und stellt klar, dass Nutzer selbst entscheiden, welche Daten für welchen Zweck weitergegeben werden (Privacy-by-Design). Praktische Implikation: Krankenkassen und gematik müssen als Credential-Aussteller für Versicherungsnachweis, Patientenkurzakte und E-Rezept innerhalb der EUDI-Wallet-Infrastruktur agieren. EU-Frist für Mitgliedstaaten: EUDI-Wallet bereitstellen bis November 2026; Deutschland plant Produktivstart Anfang 2027.",
       "affects": ["EUDI-Wallet.md", "Gesundheits-ID.md", "BSI.md"],
       "category": "regulation",
-      "action": "update",
-      "details": "EUDI-Wallet.md sollte den BSI-Handlungsleitfaden (16.01.2026) als Quelle ergänzen und die Rolle von gematik/GesundheitsID als gesundheitsspezifischen Credential-Aussteller in der EUDI-Wallet-Infrastruktur konkretisieren. BSI.md kann den Leitfaden im EUDI-Kontext referenzieren."
+      "action": "applied",
+      "appliedDate": "2026-03-20",
+      "details": "EUDI-Wallet.md: BSI-Handlungsleitfaden als Quelle ergänzt; Abschnitt zur Rolle von gematik/GesundheitsID als Credential-Aussteller ergänzt. BSI.md: Neuer Abschnitt 'EUDI-Wallet-Handlungsleitfaden (2026)' und Quelle ergänzt."
     },
     {
       "title": "BSI-Sicherheitsstudie: Gravierende Schwachstellen in 3 von 4 Praxisverwaltungssystemen (März 2026)",
@@ -1329,7 +1330,49 @@
       "action": "applied",
       "appliedDate": "2026-03-20",
       "details": "BSI.md: Neuer Unterabschnitt 'Sicherheitsstudie SiPra/DiPS (2026)' ergänzt. Ergebnis (3 von 4 PVS angreifbar), gemSpec-Anforderungen und BSI-Empfehlungen dokumentiert. Quelle hinzugefügt."
+    },
+    {
+      "title": "OneRoadmap Q1/2026: NCPeH 2.1 (MyHealth@EU E-Rezept) auf H1/2027 verschoben",
+      "date": "2026-02-26",
+      "source": "https://fachportal.gematik.de/telematikinfrastruktur/roadmap",
+      "summary": "Die aktualisierte OneRoadmap (Stand 26. Februar 2026) verschiebt den Produktivstart für NCPeH 2.1 (grenzüberschreitendes E-Rezept via MyHealth@EU) von 2026 auf H1/2027. Das bedeutet: Deutschland wird erst im ersten Halbjahr 2027 als Wave-10-Teilnehmer produktiv an MyHealth@EU angeschlossen. Österreich und Tschechien sind seit Februar 2026 bereits produktiv. Zugleich bestätigt die Roadmap ePA 3.1.3 Teil 1 (eMedikationsplan-Pilot) für Q3/2026 und T-Rezept als Bestandteil von E-Rezept 27.2/27.4, d.h. der T-Rezept-Rollout ist erst 2027 erwartet (nicht wie zuvor dokumentiert Q4/2026).",
+      "affects": ["NCPeH.md", "E-Rezept.md"],
+      "action": "update",
+      "category": "specification",
+      "details": "NCPeH.md sollte den Wave-10-Produktivstart von 2026 auf H1/2027 korrigieren. E-Rezept.md: T-Rezept-Rollout von 'Mitte Q4/2026' auf '2027 (E-Rezept 27.2/27.4)' korrigieren."
+    },
+    {
+      "title": "MIO-Zeitplan konkretisiert: Elektronischer Impfausweis und weitere MIOs erst 2027",
+      "date": "2026-02-01",
+      "source": "https://www.aerztezeitung.de/Wirtschaft/Welche-neuen-ePA-Funktionen-2026-kommen-sollen-460768.html",
+      "summary": "Die gematik OneRoadmap (Q1/2026) bestätigt: Die Medizinischen Informationsobjekte (MIOs) Impfausweis, Mutterpass, Kinderuntersuchungsheft und Zahnärztliches Bonusheft werden erst 2027 in die ePA integriert, nicht bereits 2026. In 2026 liegt der Fokus auf dem elektronischen Medikationsplan (eMP, Pilot ab Juli 2026). Der Impfausweis gilt als technisch am weitesten fortgeschrittenes MIO und soll als erstes folgen; konkrete Termine für die anderen MIOs sind noch 'TBD'. Einzelne Krankenkassen (u.a. eine AOK) pilotieren bereits einen E-Impfpass, aber ohne TI-Standardisierung.",
+      "affects": ["ePA.md"],
+      "action": "update",
+      "category": "specification",
+      "details": "ePA.md sollte den MIO-Zeitplan präzisieren: MIOs (Impfausweis, Mutterpass, U-Heft, Bonusheft) erst 2027, nicht 2026. Der Fokus 2026 liegt auf eMP-Pilot (Juli 2026) und eML-Erweiterungen."
+    },
+    {
+      "title": "Draft_E-Rezept_26_1: Kommentierungsfrist läuft bis 31. März 2026",
+      "date": "2026-03-17",
+      "source": "https://gemspec.gematik.de/prereleases/Draft_E-Rezept_26_1/index.html",
+      "summary": "Der Pre-Release Draft_E-Rezept_26_1 (17. März 2026) enthält 9 Änderungen, darunter als wichtigste: Communication v3 (überarbeitete Nachrichtenarchitektur für den E-Rezept-Fachdienst), ePA-Integration (Fachdienst als Client des MedicationService) sowie die Pflichtaushändigung eines Patientenausdrucks bei DiGA-Verordnung. Kommentierungsfrist: 31. März 2026. Der finale Release E-Rezept_26_1 ist Voraussetzung für das E-Rezept 26.1-Feature (strukturierte KIM-Nachrichten für Pflegeeinrichtungen, H1/2026). Hersteller haben Fragen nach der Kommentierungsphase zu klären.",
+      "affects": ["E-Rezept.md", "DiGA.md"],
+      "action": "monitor",
+      "category": "specification",
+      "details": "Nach Abschluss der Kommentierungsphase (31. März 2026) und Veröffentlichung als finaler Release: E-Rezept.md um Communication-v3-Architektur und ePA-MedicationService-Integration erweitern. DiGA.md: Pflichtaushändigung eines Patientenausdrucks bei DiGA-Verordnung als neue Anforderung dokumentieren."
+    },
+    {
+      "title": "KHAG-Bundesratsvoting am 27. März 2026: Zustimmung erwartet, Mecklenburg-Vorpommern kritisch",
+      "date": "2026-03-20",
+      "source": "https://www.bundestag.de/dokumente/textarchiv/2026/kw10-de-krankenhausreform-1151184",
+      "summary": "Der Bundesrat stimmt am 27. März 2026 (in 7 Tagen) über das KHAG ab. Bundesgesundheitsministerin Warken (CDU) rechnet fest mit Zustimmung. Mecklenburg-Vorpommern hat Bedenken angemeldet und plant, Kritikpunkte im Bundesrat vorzutragen. Ein Vermittlungsausschuss ist laut Warken unwahrscheinlich. Das KHAG ist kein zustimmungspflichtiges Gesetz im engeren Sinne, der Bundesrat kann jedoch Einspruch einlegen. Beim Scheitern im Bundesrat würden wichtige digitale Investitionsanreize (KHTF, Patientenportal-Pflicht, Telemedizin-Förderung) verzögert.",
+      "affects": ["KIS.md", "Telematikinfrastruktur.md", "ISiK.md"],
+      "action": "monitor",
+      "category": "regulation",
+      "details": "Stand 20. März 2026: Das KHAG-Votum im Bundesrat (27. März 2026) steht noch aus. Der bestehende Eintrag 'KHAG: Bundesrat stimmte am 27. März 2026 zu' (appliedDate 2026-03-19) ist vorausgreifend erfasst. Nach tatsächlicher Abstimmung KIS.md und ISiK.md auf Inkrafttreten aktualisieren. Falls Bundesrat Einspruch einlegt: Neues Finding erfassen.",
+      "suggestedTerm": "KHAG"
     }
   ],
+  "lastRun": "2026-03-20T16:00:00Z",
   "lastChecked": "2026-03-20"
 }

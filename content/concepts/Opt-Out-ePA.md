@@ -6,7 +6,7 @@ aliases: [Opt-Out, ePA Widerspruch, Widerspruchsrecht ePA, ePA Opt-Out, Opt-out-
 relevance:
   sectors: [patient, arztpraxis, krankenhaus, zahnarzt, apotheke, pflege, kasse, regulierung]
   interests: [compliance, patient]
-maturity: setzling
+maturity: immergruen
 ---
 
 # Opt-Out ePA
@@ -92,7 +92,19 @@ Versicherte können widersprechen:
 2. **Telefonisch oder schriftlich bei der Krankenkasse**
 3. **Über die Ombudsstelle** der Krankenkasse
 
-Der Widerspruch muss von der Krankenkasse unverzüglich technisch umgesetzt werden. Alle Daten in der geschlossenen Akte werden gelöscht.
+Der Widerspruch muss von der Krankenkasse unverzüglich technisch umgesetzt werden (kein gesetzlich definierter Drei-Tage-Zeitraum, aber zeitnahe Umsetzung ist rechtlich geboten). Alle Daten in der geschlossenen Akte werden gelöscht.
+
+> [!patientenrecht] Patientenrecht: Achtung bei der Löschung der ePA
+> Wenn Sie der ePA widersprechen, werden alle Daten darin unwiederbringlich gelöscht. Das lässt sich nicht rückgängig machen.
+>
+> **Bevor Sie widersprechen, prüfen Sie:**
+> - Sind bereits Dokumente in Ihrer ePA? Sie können diese vorher herunterladen.
+> - Möchten Sie nur der Forschungsnutzung widersprechen, aber die ePA behalten? Das geht getrennt.
+> - Möchten Sie einzelne Praxen oder Dokumente ausblenden, statt alles zu löschen? Auch das ist möglich.
+>
+> **Tipp:** Öffnen Sie zuerst die App Ihrer Krankenkasse und schauen Sie, was bereits in Ihrer ePA gespeichert ist. Dann können Sie besser entscheiden.
+>
+> **Widerspruch zurücknehmen:** Sie können Ihre ePA jederzeit wieder aktivieren lassen. Aber bereits gelöschte Daten kommen nicht zurück.
 
 ### Wiederherstellung der ePA nach Widerspruch
 
@@ -120,12 +132,18 @@ Wer seine ePA nach einem Widerspruch wiederherstellen möchte, muss aktiv eine n
 >
 > **Sanktion bei Datenschutzverletzung:** Unbefugtes Einstellen von Daten in eine geschlossene ePA kann als Datenschutzverletzung nach DSGVO gewertet werden (Bußgeld bis zu 20 Millionen Euro oder 4% des weltweiten Jahresumsatzes nach Art. 83 Abs. 5 DSGVO).
 
+> [!frist-warnung] Frist-Warnung: 72-Stunden-Meldepflicht bei unbefugtem ePA-Datenzugriff
+> **Rechtsgrundlage:** Art. 33 DSGVO (Meldung an Aufsichtsbehörde innerhalb von 72 Stunden nach Bekanntwerden); Art. 34 DSGVO (Benachrichtigung betroffener Personen bei hohem Risiko); § 342 Abs. 1 SGB V (Opt-out-Status ist für Leistungserbringer bindend).
+> **Frist:** Schreibt ein Leistungserbringer Daten in eine geschlossene ePA (Patient hat widersprochen), liegt eine Datenschutzverletzung nach Art. 4 Nr. 12 DSGVO vor. Die verantwortliche Stelle ist verpflichtet, diese Verletzung innerhalb von 72 Stunden nach Bekanntwerden der zuständigen Datenschutzaufsichtsbehörde zu melden.
+> **Handlungsbedarf:** Leistungserbringer müssen prüfen, ob ihre Primärsysteme (PVS, KIS, AVS) den Opt-out-Status bei jedem ePA-Zugriff live aus dem Aktensystem abfragen und bei geschlossener Akte den Upload technisch blockieren. Protokolle der Opt-out-Abfragen sind als Nachweis vorzuhalten.
+> **Bei Nichtbeachtung:** Bußgeld nach Art. 83 Abs. 5 DSGVO von bis zu 20 Millionen Euro oder 4 Prozent des weltweiten Jahresumsatzes. Zivilrechtliche Haftung gegenüber dem betroffenen Versicherten nach § 83 BDSG.
+
 ### Technische Prüfung des Opt-out-Status
 
 Das [[ePA]]-Aktensystem der [[gematik]] stellt eine API bereit, über die Primärsysteme ([[PVS]], [[KIS]], [[AVS]]) den aktuellen Opt-out-Status eines Versicherten abfragen können. Die Abfrage erfolgt anhand der [[KVNR]]. Nur wenn die Akte aktiv und für den anfragenden Leistungserbringer freigegeben ist, darf ein Schreibzugriff erfolgen.
 
 > [!klinik-integration] Klinik-Integration: ePA-Opt-Out im Krankenhaus-Workflow
-> **KIS-Pflicht ab Oktober 2025:** Seit dem 1. Oktober 2025 sind Krankenhäuser zur aktiven ePA-Nutzung verpflichtet. Das KIS muss den Opt-Out-Status bei der Aufnahme prüfen und darf nur bei aktiver ePA Dokumente einstellen. Systeme wie SAP ISH, Orbis (Dedalus), iMedOne und CGM Medico bieten ePA-Module an. Klären Sie mit Ihrem KIS-Hersteller, ob die aktuelle Softwareversion zertifiziert ist.
+> **KIS-Pflicht ab Oktober 2025:** Seit dem 1. Oktober 2025 sind Krankenhäuser zur aktiven ePA-Nutzung verpflichtet. Das KIS muss den Opt-out-Status bei der Aufnahme prüfen und darf nur bei aktiver ePA Dokumente einstellen. Systeme wie SAP IS-H, Orbis (Dedalus), iMedOne und CGM Medico bieten ePA-Module an. Klären Sie mit Ihrem KIS-Hersteller, ob die aktuelle Softwareversion zertifiziert ist.
 >
 > **Workflow Aufnahme:** Beim ADT-Prozess (Aufnahme) fragt das KIS über die ePA-API den Status anhand der KVNR ab. Widerspricht ein Patient, muss das KIS dies im Fallkontext dokumentieren und Uploads für diesen Fall sperren. Ein Patient kann auch während des stationären Aufenthalts widersprechen. Die Sperrung muss in Echtzeit wirken.
 >
@@ -156,6 +174,6 @@ Das [[ePA]]-Aktensystem der [[gematik]] stellt eine API bereit, über die Primä
 ## Quellen
 
 - [Gesetze im Internet: § 342 SGB V – Bereitstellung der elektronischen Patientenakte](https://www.gesetze-im-internet.de/sgb_5/__342.html)
-- [gematik: ePA für alle](https://www.gematik.de/epa-fuer-alle)
-- [BMG: DigiG – Digitalisierungsgesetz im Überblick](https://www.bundesgesundheitsministerium.de/themen/digitalisierung/digital-gesetz)
+- [gematik: ePA für alle – Widerspruch](https://www.gematik.de/anwendungen/epa-fuer-alle/widerspruch)
+- [BMG: DigiG – Digitalisierungsgesetz im Überblick](https://www.bundesgesundheitsministerium.de/ministerium/gesetze-und-verordnungen/guv-20-lp/digig)
 - [Wikipedia: Elektronische Patientenakte](https://de.wikipedia.org/wiki/Elektronische_Patientenakte)

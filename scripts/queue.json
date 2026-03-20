@@ -1,37 +1,60 @@
 {
   "pending": [
     {
-      "term": "BSNR",
-      "category": "infrastructure",
-      "reason": "Betriebsstättennummer: 9-stelliger KV-Identifier der Arztpraxis; 3 Nennungen in KVDT-, Entlassmanagement- und eReferral-Kontext; zusammen mit LANR zentrales Identifikationspaar für ambulante Abrechnung",
+      "term": "KIG",
+      "category": "organization",
+      "reason": "Kompetenzzentrum Interoperabilität bei der gematik: in 4 Artikeln (Interoperabilitätsverzeichnis, KHAG, GDVG, GDAG) als zentrales Governance-Gremium für verbindliche IOP-Standards und FHIR-Profile erwähnt; kein eigener Artikel",
       "mentionedIn": [
-        "content/processes/Entlassmanagement.md",
-        "content/standards/KVDT.md",
-        "content/technologies/eReferral.md"
+        "content/infrastructure/Interoperabilitaetsverzeichnis.md",
+        "content/standards/KHAG.md",
+        "content/standards/GDVG.md",
+        "content/standards/GDAG.md"
+      ],
+      "priority": 15
+    },
+    {
+      "term": "EUDAMED",
+      "category": "infrastructure",
+      "reason": "Europäische Datenbank für Medizinprodukte (European Database on Medical Devices): in 4 Artikeln (Konformitätsbewertung, Medizinprodukte, Benannte-Stelle, IVDR) als Pflichtregistrierung für SaMD/MDR erwähnt; kein eigener Artikel",
+      "mentionedIn": [
+        "content/processes/Konformitaetsbewertung.md",
+        "content/concepts/Medizinprodukte.md",
+        "content/organization/Benannte-Stelle.md",
+        "content/standards/IVDR.md"
+      ],
+      "priority": 12
+    },
+    {
+      "term": "SaMD",
+      "category": "concepts",
+      "reason": "Software as a Medical Device: in 4 Artikeln (Konformitätsbewertung, Medizinprodukte, Benannte-Stelle, IVDR) als Schlüsselkonzept für MDR-Einstufung von Gesundheitssoftware erwähnt; kein eigener Artikel",
+      "mentionedIn": [
+        "content/processes/Konformitaetsbewertung.md",
+        "content/concepts/Medizinprodukte.md",
+        "content/organization/Benannte-Stelle.md"
+      ],
+      "priority": 11
+    },
+    {
+      "term": "Primärversorgung",
+      "category": "concepts",
+      "reason": "Primärversorgungsmodell mit Hausarzt, ePA und 116117: in 3 Artikeln (Patient-Summary, eReferral, ePA) als neue Versorgungsarchitektur unter Nina Warken referenziert; kein eigener Artikel",
+      "mentionedIn": [
+        "content/standards/Patient-Summary.md",
+        "content/technologies/eReferral.md",
+        "content/technologies/ePA.md"
+      ],
+      "priority": 9
+    },
+    {
+      "term": "EEHRxF",
+      "category": "standards",
+      "reason": "European Electronic Health Record Exchange Format: in 2 Artikeln (EHDS, GDVG) als Pflichtformat für grenzüberschreitenden ePA-Datenaustausch ab 2027 referenziert; kein eigener Artikel",
+      "mentionedIn": [
+        "content/standards/EHDS.md",
+        "content/standards/GDVG.md"
       ],
       "priority": 7
-    },
-    {
-      "term": "LANR",
-      "category": "infrastructure",
-      "reason": "Lebenslange Arztnummer: 9-stellige lebenslange Arztnummer, Pendant zur BSNR auf Arztebene; 3 Nennungen in KVDT, Entlassmanagement und eReferral",
-      "mentionedIn": [
-        "content/processes/Entlassmanagement.md",
-        "content/standards/KVDT.md",
-        "content/technologies/eReferral.md"
-      ],
-      "priority": 6
-    },
-    {
-      "term": "Häusliche Krankenpflege",
-      "category": "processes",
-      "reason": "Häusliche Krankenpflege: E-Rezept ab Juli 2026 Pflicht; 3 Artikel referenzieren den Workflow für den Pflegesektor ohne eigenen Artikel",
-      "mentionedIn": [
-        "content/processes/Entlassmanagement.md",
-        "content/organization/G-BA.md",
-        "content/technologies/E-Rezept.md"
-      ],
-      "priority": 6
     },
     {
       "term": "Hilfsmittelverordnung",
@@ -41,17 +64,6 @@
         "content/processes/Heilmittelverordnung.md",
         "content/processes/Entlassmanagement.md",
         "content/technologies/E-Rezept.md"
-      ],
-      "priority": 6
-    },
-    {
-      "term": "Vorhaltevergütung",
-      "category": "concepts",
-      "reason": "Neue Vergütungskomponente im KHVVG: ab 1. Januar 2027 erhalten Krankenhäuser bis zu 60 Prozent der Betriebskosten als leistungsunabhängige Vorhaltevergütung; in DRG-, KHVVG- und KHAG-Artikel erwähnt, kein eigener Artikel",
-      "mentionedIn": [
-        "content/concepts/DRG.md",
-        "content/standards/KHVVG.md",
-        "content/standards/KHAG.md"
       ],
       "priority": 6
     },
@@ -123,8 +135,15 @@
     }
   ],
   "done": [
+    "BSNR",
+    "LANR",
+    "Häusliche Krankenpflege",
+    "Häusliche-Krankenpflege",
+    "Vorhaltevergütung",
     "Benannte Stelle",
+    "Benannte-Stelle",
     "Broad Consent",
+    "Broad-Consent",
     "ePA-App",
     "Transformationsfonds",
     "Zulassungsverfahren",
@@ -390,79 +409,73 @@
     "content/concepts/KRITIS.md",
     "content/concepts/OAuth-2.0.md",
     "content/concepts/PEPP.md",
-    "content/concepts/VAU.md",
     "content/concepts/ZETA.md",
-    "content/infrastructure/eGBR.md",
-    "content/infrastructure/eID.md",
     "content/infrastructure/Forschungsdatenzentrum-Gesundheit.md",
-    "content/infrastructure/gSMC-KT.md",
-    "content/infrastructure/Highspeed-Konnektor.md",
     "content/infrastructure/HSM-B.md",
-    "content/infrastructure/Kartenterminal.md",
+    "content/infrastructure/Highspeed-Konnektor.md",
     "content/infrastructure/KV-SafeNet.md",
+    "content/infrastructure/Kartenterminal.md",
     "content/infrastructure/LIS.md",
     "content/infrastructure/MVZ.md",
     "content/infrastructure/MyHealthAtEU.md",
     "content/infrastructure/PACS.md",
     "content/infrastructure/RIS.md",
-    "content/infrastructure/Telematik-ID.md",
     "content/infrastructure/TI-Federation.md",
     "content/infrastructure/TSL.md",
     "content/infrastructure/TSP.md",
+    "content/infrastructure/Telematik-ID.md",
     "content/infrastructure/VPN-Zugangsdienst.md",
+    "content/infrastructure/eGBR.md",
+    "content/infrastructure/eID.md",
+    "content/infrastructure/gSMC-KT.md",
     "content/organization/Bewertungsausschuss.md",
     "content/organization/Bundesaerztekammer.md",
     "content/organization/Bundesnetzagentur.md",
     "content/organization/DAV.md",
     "content/organization/DVKA.md",
-    "content/organization/InEK.md",
     "content/organization/IQWiG.md",
-    "content/organization/Kassenaerztliche-Vereinigung.md",
+    "content/organization/InEK.md",
     "content/organization/KZBV.md",
+    "content/organization/Kassenaerztliche-Vereinigung.md",
     "content/organization/Landesaerztekammer.md",
     "content/organization/Medizinischer-Dienst.md",
     "content/organization/OeGD.md",
-    "content/processes/AMTS.md",
     "content/processes/BMP.md",
     "content/processes/DMP.md",
     "content/processes/eMP.md",
     "content/processes/eVO.md",
-    "content/processes/NFDM.md",
-    "content/processes/PoPP.md",
     "content/standards/BEEP-Gesetz.md",
     "content/standards/BSI-C5.md",
     "content/standards/CDA.md",
     "content/standards/DICOM.md",
-    "content/standards/DiGAV.md",
-    "content/standards/DiPAV.md",
     "content/standards/DVG.md",
     "content/standards/DVPMG.md",
+    "content/standards/DiGAV.md",
+    "content/standards/DiPAV.md",
     "content/standards/E-Health-Gesetz.md",
-    "content/standards/eIDAS.md",
     "content/standards/GDAG.md",
-    "content/standards/GDVG.md",
-    "content/standards/GOÄ.md",
     "content/standards/GOZ.md",
+    "content/standards/GOÄ.md",
     "content/standards/IHE.md",
     "content/standards/IVDR.md",
     "content/standards/KHG.md",
-    "content/standards/KHVVG.md",
     "content/standards/KHZG.md",
     "content/standards/KRITIS-Dachgesetz.md",
     "content/standards/LOINC.md",
-    "content/standards/Matrix-Protokoll.md",
     "content/standards/MDR.md",
+    "content/standards/Matrix-Protokoll.md",
     "content/standards/OPS.md",
-    "content/standards/Patient-Summary.md",
     "content/standards/PDSG.md",
     "content/standards/PZN.md",
+    "content/standards/Patient-Summary.md",
     "content/standards/SGB-XI.md",
     "content/standards/SNOMED-CT.md",
     "content/standards/VDG.md",
     "content/standards/XDS.md",
+    "content/standards/eIDAS.md",
     "content/technologies/DEMIS.md",
-    "content/technologies/DiPaG.md",
     "content/technologies/DiPA.md",
+    "content/technologies/DiPaG.md",
     "content/technologies/eArztbrief.md",
     "content/technologies/gRPC.md"
   ],

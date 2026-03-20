@@ -36,6 +36,25 @@ Die Technische Richtlinie BSI TR-03116 legt bindende Anforderungen an kryptograf
 
 Die TR-03116-1 schreibt vor, welche Algorithmen zugelassen sind und bis wann ältere Verfahren abgelöst werden müssen. Beispielsweise war RSA 2048 bis Ende 2025 zugelassen; seitdem ist ECC (brainpoolP256r1, brainpoolP384r1) der Pflichtstandard.
 
+> [!dev-quickstart] Dev Quickstart: BSI TR-03116 konforme Kryptografie in der TI
+> Pflichtstandards ab 2026 (BSI TR-03116-1):
+> - Kurven: `brainpoolP256r1` (OID 1.3.36.3.3.2.8.1.1.7), `brainpoolP384r1` (OID 1.3.36.3.3.2.8.1.1.11)
+> - Signatur: ECDSA mit SHA-256 oder SHA-384
+> - TLS: TLS 1.2 (Mindest), TLS 1.3 empfohlen; Cipher Suites nach TR-03116-4
+> ```bash
+> # TLS-Konfiguration eines TI-Endpunkts prüfen (erlaubte Cipher Suites)
+> openssl s_client -connect <ti-dienst-host>:443 \
+>   -tls1_3 -curves brainpoolP256r1 2>&1 | grep -E "Cipher|Protocol|Curve"
+>
+> # ECC-Schlüsselpaar erzeugen (brainpoolP256r1, BSI TR-03116 konform)
+> openssl ecparam -name brainpoolP256r1 -genkey -noout -out ti-key.pem
+> openssl req -new -key ti-key.pem -out ti-csr.pem \
+>   -subj "/CN=ti-dienst/O=Muster GmbH/C=DE"
+> ```
+> - TR-03116-1 (TI-Kryptografie): [bsi.bund.de/TR-03116](https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Technische-Richtlinien/TR-nach-Thema-sortiert/tr03116/TR-03116_node.html)
+> - TR-02102-1 (Algorithmenempfehlungen): [bsi.bund.de/TR-02102](https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Technische-Richtlinien/TR-nach-Thema-sortiert/tr02102/tr02102_node.html)
+> - Grundschutz++ Kompendium (JSON): [github.com/BSI-Bund/Stand-der-Technik-Bibliothek](https://github.com/BSI-Bund/Stand-der-Technik-Bibliothek)
+
 ### Weitere relevante BSI-Richtlinien
 
 - **BSI TR-02102**: Kryptografische Verfahren allgemein (Empfehlungen zu Algorithmen und Schlüssellängen)
@@ -72,6 +91,10 @@ Die [[VAU]] (Vertrauenswürdige Ausführungsumgebung) des ePA-Aktensystems und d
 
 Der Bundestag verabschiedete das [[KRITIS-Dachgesetz]] am 29. Januar 2026, der Bundesrat stimmte am 6. März 2026 zu. Das Gesetz setzt die EU-CER-Richtlinie um und schafft einheitliche Mindeststandards für den physischen Schutz kritischer Infrastrukturen. Krankenhäuser und Gesundheitseinrichtungen fallen ausdrücklich in den Geltungsbereich. Betroffene Betreiber müssen sich ab 17. Juli 2026 registrieren und Risikoanalysen sowie Resilienzpläne erstellen. Das BSI koordiniert die Aufsicht über Cybersicherheitsanforderungen im Zusammenspiel mit dem neuen Gesetz.
 
+### EUDI-Wallet-Handlungsleitfaden (2026)
+
+Im Januar 2026 veröffentlichte das BSI einen Handlungsleitfaden zur Integration der [[EUDI-Wallet]] für Behörden. Der Leitfaden beschreibt, wie öffentliche Einrichtungen als Credential-Aussteller oder -Prüfer in die EUDI-Wallet-Infrastruktur eingebunden werden können. Für das Gesundheitswesen ist dies relevant: Krankenkassen als Aussteller der [[Gesundheits-ID]] und Leistungserbringer als Prüfer müssen die im Leitfaden beschriebenen Sicherheitsanforderungen erfüllen.
+
 ### IT-Grundschutz++
 
 Ab 2026 modernisiert das BSI den IT-Grundschutz unter dem Namen Grundschutz++. Kernänderungen sind die Überführung in ein maschinenlesbares JSON-Format für automatisierte Compliance-Prüfungen, ein stärker risikobasierter Ansatz und eine reduzierte Dokumentationslast besonders für kleinere Organisationen. Da die [[Telematikinfrastruktur]] unter IT-Grundschutz-Anforderungen fällt, sind TI-Betreiber und Hersteller von den Neuerungen betroffen. Eine Übergangsphase läuft ab Januar 2026.
@@ -91,4 +114,5 @@ Ab 2026 modernisiert das BSI den IT-Grundschutz unter dem Namen Grundschutz++. K
 - [BSI TR-03116: Kryptografische Vorgaben für Projekte der Bundesregierung | bsi.bund.de](https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Technische-Richtlinien/TR-nach-Thema-sortiert/tr03116/TR-03116_node.html)
 - [BSI: Gesundheitskarte und Telematikinfrastruktur | bsi.bund.de](https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/E-Health/Telematikinfrastruktur/telematikinfrastruktur.html)
 - [BSI Pressemitteilung: Sicherheitsstudie SiPra/DiPS (17. März 2026)](https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2026/260317_Software-Produkte_Gesundheitswesen.html)
+- [BSI: Handlungsleitfaden EUDI-Wallet-Integration (Januar 2026)](https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/Handlungsleitfaden_EUDI-Wallet-260116.html)
 - [Wikipedia: Bundesamt für Sicherheit in der Informationstechnik](https://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Sicherheit_in_der_Informationstechnik)
