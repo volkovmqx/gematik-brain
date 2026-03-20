@@ -1,6 +1,6 @@
 {
-  "lastChecked": "2026-03-19",
-  "lastRun": "2026-03-19T22:30:00Z",
+  "lastChecked": "2026-03-20",
+  "lastRun": "2026-03-20T10:00:00Z",
   "findings": [
     {
       "title": "eMedikationsplan: Start verschoben auf Oktober 2026",
@@ -1255,6 +1255,45 @@
       "action": "info_only",
       "category": "info",
       "details": "DMEA 2026 findet 21.–23. April 2026 in Berlin statt (letzte Ausgabe in Berlin, ab 2027 München). Gematik ist mit Stand und Vorträgen in Halle 1.2 (D-108) vertreten. Themenschwerpunkte am gematik-Stand: TI 2.0, ePA-Weiterentwicklung, VSDM 2.0, PoPP, ZETA, DiPaG, EHDS/NCPeH, KI in der TI. Kongressprogramm betont datenbasierte Innovationen und EHDS-Umsetzung."
+    },
+    {
+      "title": "ECC Quickcheck 23.–24. März 2026: Zweiter Quickcheck nach Wiederaktivierung von RSA auf RU",
+      "date": "2026-03-20",
+      "source": "https://wiki.gematik.de/spaces/RUAAS/pages/650426046/ECC-Testwochen",
+      "affects": ["Telematikinfrastruktur.md", "Konnektoren.md"],
+      "action": "info_only",
+      "category": "specification",
+      "details": "Nach Abschluss der ECC-only-Testphase (18. Februar bis 19. März 2026) wurde RSA am 20. März 2026 auf der Referenzumgebung (RU) wieder aktiviert. Am 23.–24. März 2026 fand ein zweiter Quickcheck statt, um die Interoperabilität nach RSA-Reaktivierung zu validieren. Ab 25. März 2026 laufen auf der RU RSA und ECC parallel. Die Ergebnisse der Testwochen fließen in die finale ECC-Migrationsstrategie vor dem 30. Juni 2026 ein (Pflicht-Tausch eHBA/SMC-B G2.1). Kein eigenständiger Artikel notwendig; Folge-Information zu bestehendem ECC-Testwochen-Eintrag."
+    },
+    {
+      "title": "GesundheitsID soll in EUDI-Wallet aufgehen: BMG kündigt gesetzliche Verankerung an",
+      "date": "2026-03-10",
+      "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/digitaler-gesundheitsausweis-soll-in-eu-wallet-aufgehen/68513085",
+      "affects": ["Gesundheits-ID.md", "EUDI-Wallet.md", "gematik.md"],
+      "action": "update",
+      "category": "regulation",
+      "details": "Deutschland plant die strategische Integration der GesundheitsID in die EUDI-Wallet. Das BMG bestätigte, die Rolle von gematik in einem neuen umfassenden Digitalgesetz (GDVG) zu verankern, das auch die rechtliche Grundlage für die EUDI-Integration schaffen soll. Die EU-Frist für Mitgliedstaaten, eine EUDI-Wallet bereitzustellen, läuft November 2026 ab; Deutschland plant Produktivstart Anfang 2027. Technische Umsetzung: Die GesundheitsID-Infrastruktur soll als Credential-Aussteller für Gesundheitsattribute (Versicherungsnachweis, E-Rezept, Patientenkurzakte) in der EUDI-Wallet fungieren. Gesundheits-ID.md sollte den EUDI-Wallet-Integrationspfad als eigenen Unterabschnitt ergänzen. EUDI-Wallet.md (falls vorhanden) sollte Gesundheitsdaten-Use-Cases konkretisieren.",
+      "suggestedTerm": "EUDI-Wallet"
+    },
+    {
+      "title": "KHVVG Transformationsfonds: Antragsphase läuft seit Januar 2026, TI-Anbindung explizit förderfähig",
+      "date": "2026-01-15",
+      "source": "https://www.bundesamtsozialesicherung.de/de/themen/transformationsfo/ueberblick/",
+      "affects": ["Telematikinfrastruktur.md", "KIS.md"],
+      "action": "update",
+      "category": "regulation",
+      "details": "Der Krankenhaus-Transformationsfonds (KHTF, 50 Milliarden Euro, 2026–2035) läuft seit Januar 2026. Anträge werden ausschließlich digital über ein BAS-Portal gestellt; nur Bundesländer sind antragsberechtigt (nicht direkt Krankenhäuser). Digitalisierungsinvestitionen inkl. TI-Anbindung, Interoperabilität und IT-Sicherheit sind explizit förderfähig (Fördertatbestand 3: Telemedizin-Netzwerke; Fördertatbestand 5: Patientenportale, ISiK). ISiK-konforme KIS-Systeme sind Voraussetzung für bestimmte Fördertatbestände. KIS.md und Telematikinfrastruktur.md sollten den KHTF als Finanzierungsrahmen für digitale Klinikinfrastruktur erwähnen.",
+      "suggestedTerm": "Krankenhaus-Transformationsfonds"
+    },
+    {
+      "title": "DiGAV 2. ÄndV: Interoperabilitätspflicht für DiGA mit ePA und GesundheitsID ab 1. Februar 2026 ohne Übergangsfrist",
+      "date": "2026-02-01",
+      "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/diga-reform-neue-regeln-fuer-digitale-gesundheitsanwendungen-treten-in/68540752",
+      "affects": ["DiGA.md", "DiGAV.md"],
+      "action": "update",
+      "category": "regulation",
+      "details": "Neben der bereits dokumentierten AbEM-Pflicht (20% Vergütungsanteil) enthält die 2. DiGAVÄndV (in Kraft 1. Februar 2026) eine weitere Neuerung: DiGA müssen die Authentifizierung via GesundheitsID und den ePA-Schreibzugriff unterstützen. Übergangsfristen entfallen. DiGA, die diese Anforderungen nicht erfüllen, riskieren den Ausschluss aus dem BfArM-DiGA-Verzeichnis. Außerdem: 'Erhalt der Arbeitsfähigkeit' ist ab sofort anerkannter Versorgungsbereich; DiGA in Reha und Wiedereingliederung werden damit förderungsfähig. DiGA.md sollte den neuen Versorgungsbereich ergänzen. Hinweis: Dieses Finding präzisiert bereits vorhandene Einträge zur DiGAV-Änderung; der Schwerpunkt auf 'Erhalt der Arbeitsfähigkeit' als neuem Nutzenpfad ist noch nicht dokumentiert.",
+      "suggestedTerm": "DiGA-Nutzenpfade"
     }
   ]
 }

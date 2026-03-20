@@ -3,7 +3,7 @@ title: IDP - Identity Provider
 audience: [technical, non-technical]
 tags: [infrastruktur, authentisierung, oauth, idp]
 aliases: [IDP, IDP-Dienst, Identity Provider, sektoraler IDP, TI-Federation]
-maturity: setzling
+maturity: wachsend
 relevance:
   sectors: [arztpraxis, krankenhaus, apotheke, kasse, hersteller, ti-infrastruktur, it-dienstleister, startup]
   interests: [technik, compliance]
@@ -82,8 +82,8 @@ Dies ermöglicht, dass Krankenkassen über ihre eigenen IDPs die [[Gesundheits-I
 
 Der IDP prüft bei jeder Authentisierung Gültigkeit, Integrität und Signatur des vorgelegten X.509-Zertifikats. Dabei gilt:
 
-- RSA 2048 bit: gültig bis Ende 2025
-- ECDSA (brainpoolP256r1 oder P-256): gültig bis mindestens 2029
+- RSA 2048 bit: gültig bis Ende 2025, seit 2026 abgelöst durch ECDSA
+- ECDSA (brainpoolP256r1 oder P-256): aktuell verpflichtend, gültig bis mindestens 2029
 
 ### Abhängigkeitsrisiken: Ausfall sektoraler IDPs
 

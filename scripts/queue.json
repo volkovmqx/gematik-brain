@@ -1,67 +1,9 @@
 {
   "pending": [
     {
-      "term": "SOAP",
-      "category": "standards",
-      "reason": "SOAP-Webservices are the primary Konnektor-Primärsystem protocol, referenced 38+ times across multiple articles without a dedicated page",
-      "mentionedIn": [
-        "content/infrastructure/Konnektoren.md",
-        "content/infrastructure/AVS.md",
-        "content/concepts/QES.md",
-        "content/infrastructure/KIS.md"
-      ],
-      "priority": 38
-    },
-    {
-      "term": "NFC",
-      "category": "infrastructure",
-      "reason": "Near Field Communication: used by eGK, eID, ePass, Kartenterminal; 35+ mentions, foundational to contactless card reading in the TI",
-      "mentionedIn": [
-        "content/infrastructure/eGK.md",
-        "content/infrastructure/eID.md",
-        "content/infrastructure/Kartenterminal.md",
-        "content/infrastructure/Gesundheits-ID.md",
-        "content/technologies/ePass.md"
-      ],
-      "priority": 35
-    },
-    {
-      "term": "IS-H",
-      "category": "infrastructure",
-      "reason": "SAP IS-H (Industry Solution Healthcare): major KIS used in German university hospitals, referenced 18+ times in KIS and TI 2.0 context",
-      "mentionedIn": [
-        "content/infrastructure/KIS.md",
-        "content/infrastructure/TI-2.0.md"
-      ],
-      "priority": 28
-    },
-    {
-      "term": "DataMatrix",
-      "category": "standards",
-      "reason": "2D barcode format used for E-Rezept paper printouts and Securpharm serialization; 10+ mentions, no dedicated page",
-      "mentionedIn": [
-        "content/technologies/E-Rezept.md",
-        "content/infrastructure/AVS.md",
-        "content/infrastructure/LIS.md",
-        "content/standards/Securpharm.md"
-      ],
-      "priority": 22
-    },
-    {
-      "term": "Meldepflicht",
-      "category": "processes",
-      "reason": "Infektionsschutz-Meldepflicht: core workflow for DEMIS; 27+ mentions across DEMIS, IfSG, RKI articles, no dedicated article",
-      "mentionedIn": [
-        "content/technologies/DEMIS.md",
-        "content/standards/IfSG.md",
-        "content/organization/RKI.md"
-      ],
-      "priority": 20
-    },
-    {
       "term": "HL7 v2",
       "category": "standards",
-      "reason": "HL7 version 2 is the dominant KIS-internal messaging standard (ADT, ORM, ORU); 13+ mentions in KIS, LIS, PACS articles; HL7 article covers v3/FHIR but not v2 in depth",
+      "reason": "HL7 Version 2 ist der dominierende KIS-interne Nachrichtenstandard (ADT, ORM, ORU); 13+ Nennungen in KIS-, LIS- und PACS-Artikeln; HL7-Artikel deckt v3/FHIR ab, nicht v2",
       "mentionedIn": [
         "content/infrastructure/KIS.md",
         "content/infrastructure/LIS.md",
@@ -72,7 +14,7 @@
     {
       "term": "GDT",
       "category": "standards",
-      "reason": "Gerätedatentransfer: xDT sub-format for medical device data exchange (EKG, Spirometer), 16+ mentions; xDT article covers it briefly but GDT is the most-used sub-format",
+      "reason": "Gerätedatentransfer: xDT-Subformat für medizinische Gerätedaten (EKG, Spirometer), 16+ Nennungen; xDT-Artikel deckt es kurz ab, aber GDT ist das meistgenutzte Subformat",
       "mentionedIn": [
         "content/standards/xDT.md",
         "content/infrastructure/KIS.md"
@@ -82,7 +24,7 @@
     {
       "term": "Pseudonymisierung",
       "category": "concepts",
-      "reason": "Central to FDZ/GDNG legal debate (GFF Klage), ePA data research use, Medizininformatik-Initiative; 12+ mentions without dedicated article",
+      "reason": "Zentral für FDZ/GDNG-Rechtsdebatte (GFF-Klage), ePA-Forschungsnutzung, Medizininformatik-Initiative; 12+ Nennungen ohne eigenen Artikel",
       "mentionedIn": [
         "content/technologies/ePA.md",
         "content/infrastructure/Forschungsdatenzentrum-Gesundheit.md",
@@ -92,9 +34,22 @@
       "priority": 16
     },
     {
+      "term": "GFF",
+      "category": "organization",
+      "reason": "Gesellschaft für Freiheitsrechte: 13 Nennungen als Klägerin gegen FDZ-Datenweitergabe (Feb 2026) und GDVG-Kritikerin; zentrale Datenschutz-Akteurin in der TI-Debatte",
+      "mentionedIn": [
+        "content/infrastructure/Forschungsdatenzentrum-Gesundheit.md",
+        "content/organization/BfDI.md",
+        "content/standards/GDNG.md",
+        "content/standards/GDVG.md",
+        "content/standards/DSGVO.md"
+      ],
+      "priority": 13
+    },
+    {
       "term": "Telekonsil",
       "category": "technologies",
-      "reason": "Teleconsultation between specialists: mentioned 7+ times in Telemedizin and KIM context; distinct from Videosprechstunde (patient-facing)",
+      "reason": "Telekonsilium zwischen Spezialisten: 7+ Nennungen in Telemedizin- und KIM-Kontext; abzugrenzen von Videosprechstunde (patientenseitig)",
       "mentionedIn": [
         "content/concepts/Telemedizin.md",
         "content/technologies/KIM.md"
@@ -104,7 +59,7 @@
     {
       "term": "Entlassmanagement",
       "category": "processes",
-      "reason": "Statutory hospital discharge management (§ 39 SGB V): triggers Heilmittelverordnung, eVO, KIM Arztbriefe; referenced 8+ times without own article",
+      "reason": "Gesetzliches Krankenhausentlassmanagement (§ 39 SGB V): löst Heilmittelverordnung, eVO, KIM-Arztbriefe aus; 8+ Nennungen ohne eigenen Artikel",
       "mentionedIn": [
         "content/processes/Heilmittelverordnung.md",
         "content/processes/BTM-Rezept.md",
@@ -115,7 +70,7 @@
     {
       "term": "LDT",
       "category": "standards",
-      "reason": "Labor-Datentransfer: xDT sub-format for laboratory result transmission from lab to practice; 24+ mentions in LIS and xDT context",
+      "reason": "Labor-Datentransfer: xDT-Subformat für Laborbefundübermittlung vom Labor zur Praxis; 24+ Nennungen in LIS- und xDT-Kontext",
       "mentionedIn": [
         "content/standards/xDT.md",
         "content/infrastructure/LIS.md"
@@ -123,9 +78,19 @@
       "priority": 14
     },
     {
+      "term": "Telemonitoring",
+      "category": "technologies",
+      "reason": "Kontinuierliche Fernüberwachung von Vitalparametern bei Chronikern; 8 Nennungen; Telemedizin-Artikel deckt es kurz ab, aber Telemonitoring ist GKV-Leistung mit eigenem Rechtsrahmen (§ 137f SGB V) und DiGA-Bezug",
+      "mentionedIn": [
+        "content/concepts/Telemedizin.md",
+        "content/organization/G-BA.md"
+      ],
+      "priority": 12
+    },
+    {
       "term": "Medizinprodukte",
       "category": "concepts",
-      "reason": "MDR/IVDR regulated products: 92+ mentions across DiGA, MDR, IVDR, Konformitätsbewertung articles; the broader concept deserves its own article",
+      "reason": "MDR/IVDR-regulierte Produkte: 92+ Nennungen in DiGA-, MDR-, IVDR- und Konformitätsbewertungs-Artikeln; das übergeordnete Konzept verdient einen eigenen Artikel",
       "mentionedIn": [
         "content/standards/MDR.md",
         "content/standards/IVDR.md",
@@ -137,7 +102,7 @@
     {
       "term": "ABDATA",
       "category": "infrastructure",
-      "reason": "ABDATA Pharma-Daten-Service GmbH: publisher of the ABDA-Datenbank, referenced 20+ times in AVS and AMTS context without distinct coverage",
+      "reason": "ABDATA Pharma-Daten-Service GmbH: Herausgeber der ABDA-Datenbank, 20+ Nennungen in AVS- und AMTS-Kontext ohne eigene Seite",
       "mentionedIn": [
         "content/infrastructure/ABDA-Datenbank.md",
         "content/processes/eMP.md",
@@ -146,9 +111,21 @@
       "priority": 12
     },
     {
+      "term": "Transformationsfonds",
+      "category": "concepts",
+      "reason": "50-Milliarden-Euro-Krankenhausfonds (KHVVG/KHAG, 2026-2035): 8 Nennungen in KHAG-, KHVVG- und KIS-Artikeln; zentrales Finanzierungsinstrument der Krankenhausreform ohne eigene Erklärungsseite",
+      "mentionedIn": [
+        "content/standards/KHAG.md",
+        "content/standards/KHVVG.md",
+        "content/infrastructure/KIS.md",
+        "content/infrastructure/Telematikinfrastruktur.md"
+      ],
+      "priority": 10
+    },
+    {
       "term": "Broad Consent",
       "category": "concepts",
-      "reason": "Broad consent model used by Medizininformatik-Initiative for research data; mentioned in MII article, conceptually distinct and reusable",
+      "reason": "Broad-Consent-Modell der Medizininformatik-Initiative für Forschungsdaten; im MII-Artikel erwähnt, konzeptuell eigenständig und wiederverwendbar",
       "mentionedIn": [
         "content/organization/Medizininformatik-Initiative.md",
         "content/infrastructure/Forschungsdatenzentrum-Gesundheit.md"
@@ -158,7 +135,7 @@
     {
       "term": "Benannte Stelle",
       "category": "organization",
-      "reason": "Notified Body for CE conformity assessment under MDR/IVDR (e.g. TÜV SÜD); 12+ mentions in Konformitätsbewertung and MDR articles",
+      "reason": "Notified Body für CE-Konformitätsbewertung nach MDR/IVDR (z.B. TÜV SÜD); 12+ Nennungen in Konformitätsbewertungs- und MDR-Artikeln",
       "mentionedIn": [
         "content/processes/Konformitaetsbewertung.md",
         "content/standards/MDR.md",
@@ -167,9 +144,19 @@
       "priority": 10
     },
     {
+      "term": "BSNR",
+      "category": "infrastructure",
+      "reason": "Betriebsstättennummer: 9-stelliger KV-Identifier der Arztpraxis; 5+ Nennungen in KVDT- und Abrechnungskontext; zusammen mit LANR zentrales Identifikationspaar für ambulante Abrechnung",
+      "mentionedIn": [
+        "content/standards/KVDT.md",
+        "content/technologies/eReferral.md"
+      ],
+      "priority": 9
+    },
+    {
       "term": "ePA-App",
       "category": "technologies",
-      "reason": "The Krankenkassen-provided patient-facing app for ePA access: referenced 9+ times but conflated with Gesundheits-ID and Patientenportal",
+      "reason": "Die kassenspezifische Patienten-App für den ePA-Zugriff: 9+ Nennungen, konzeptuell zwischen Gesundheits-ID und Patientenportal nicht klar abgegrenzt",
       "mentionedIn": [
         "content/technologies/ePA.md",
         "content/processes/eMP.md",
@@ -180,7 +167,7 @@
     {
       "term": "Häusliche Krankenpflege",
       "category": "processes",
-      "reason": "Home nursing care: E-Rezept becomes mandatory for it from July 2026; important workflow for pflege sector with no dedicated article",
+      "reason": "Häusliche Krankenpflege: E-Rezept ab Juli 2026 Pflicht; wichtiger Workflow für den Pflegesektor ohne eigenen Artikel",
       "mentionedIn": [
         "content/technologies/E-Rezept.md"
       ],
@@ -189,7 +176,7 @@
     {
       "term": "Hilfsmittelverordnung",
       "category": "processes",
-      "reason": "Prescription of medical aids (orthoses, wheelchairs etc.): E-Rezept mandatory from July 2027; referenced in E-Rezept and Heilmittelverordnung articles",
+      "reason": "Verordnung medizinischer Hilfsmittel (Orthesen, Rollstühle etc.): E-Rezept ab Juli 2027 Pflicht; in E-Rezept- und Heilmittelverordnungs-Artikeln referenziert",
       "mentionedIn": [
         "content/technologies/E-Rezept.md",
         "content/processes/Heilmittelverordnung.md"
@@ -199,7 +186,7 @@
     {
       "term": "T-Rezept",
       "category": "processes",
-      "reason": "Thalidomid-class teratogenic drug prescription: digitalization planned Q4/2026; referenced in E-Rezept article, distinct regulatory regime",
+      "reason": "Thalidomid-Klasse-Verordnung: Digitalisierung Q4/2026 geplant; im E-Rezept-Artikel referenziert, eigenes regulatorisches Regime",
       "mentionedIn": [
         "content/technologies/E-Rezept.md"
       ],
@@ -208,7 +195,7 @@
     {
       "term": "MMI-Pharmindex",
       "category": "infrastructure",
-      "reason": "Drug interaction database (competitor to ABDA-Datenbank) used in PVS/AVS for AMTS checks; referenced in eMP and AMTS without own article",
+      "reason": "Arzneimittelinteraktions-Datenbank (Konkurrenz zur ABDA-Datenbank) in PVS/AVS für AMTS-Prüfungen; in eMP und AMTS referenziert ohne eigenen Artikel",
       "mentionedIn": [
         "content/processes/eMP.md",
         "content/processes/AMTS.md",
@@ -219,7 +206,7 @@
     {
       "term": "Interop Council",
       "category": "organization",
-      "reason": "gematik Interoperability Council: mentioned in Interoperabilitätsverzeichnis article as governance body setting IOP-Roadmap; no dedicated page",
+      "reason": "gematik Interoperability Council: im Interoperabilitätsverzeichnis-Artikel als Governance-Gremium für die IOP-Roadmap erwähnt; keine eigene Seite",
       "mentionedIn": [
         "content/infrastructure/Interoperabilitaetsverzeichnis.md"
       ],
@@ -228,7 +215,7 @@
     {
       "term": "Zulassungsverfahren",
       "category": "processes",
-      "reason": "TI component approval process by gematik: 9+ mentions in Konformitätsbewertung and Konnektor articles; explains how hardware/software gets TI access",
+      "reason": "TI-Komponentenzulassung durch gematik: 9+ Nennungen in Konformitätsbewertungs- und Konnektor-Artikeln; erklärt wie Hardware/Software TI-Zugang erhält",
       "mentionedIn": [
         "content/processes/Konformitaetsbewertung.md",
         "content/infrastructure/Konnektoren.md"
@@ -238,7 +225,7 @@
     {
       "term": "Festbetrag",
       "category": "concepts",
-      "reason": "GKV fixed reimbursement amounts for generics: referenced in AMNOG and ABDA-Datenbank context; central pricing mechanism in statutory health insurance",
+      "reason": "GKV-Festbetragsregelung für Generika: in AMNOG- und ABDA-Datenbank-Kontext referenziert; zentraler Preismechanismus in der GKV",
       "mentionedIn": [
         "content/standards/AMNOG.md",
         "content/infrastructure/ABDA-Datenbank.md"
@@ -248,25 +235,16 @@
     {
       "term": "Zytostatika",
       "category": "processes",
-      "reason": "Cytostatic drug compounding in oncology pharmacies: E-Rezept already covers Zytostatika-Zuweisungen; relevant distinct workflow for hospital pharmacies",
+      "reason": "Zytostatika-Herstellung in onkologischen Krankenhausapotheken: E-Rezept deckt Zytostatika-Zuweisungen bereits ab; relevanter Workflow für Krankenhausapotheken",
       "mentionedIn": [
         "content/technologies/E-Rezept.md"
       ],
       "priority": 5
     },
     {
-      "term": "DMP",
-      "category": "processes",
-      "reason": "Disease Management Programmes already have an article but it is missing from done list — verify file exists",
-      "mentionedIn": [
-        "content/processes/DMP.md"
-      ],
-      "priority": 4
-    },
-    {
       "term": "EU-HTA",
       "category": "standards",
-      "reason": "EU Health Technology Assessment Regulation (2021/2282): from 2025 joint clinical assessments at EU level for new drugs; referenced in IQWiG article",
+      "reason": "EU Health Technology Assessment Regulation (2021/2282): ab 2025 gemeinsame klinische Bewertungen auf EU-Ebene für neue Arzneimittel; im IQWiG-Artikel referenziert",
       "mentionedIn": [
         "content/organization/IQWiG.md"
       ],
@@ -288,12 +266,14 @@
     "BMP",
     "BSI",
     "BSI C5",
+    "BSI-C5",
     "Bewertungsausschuss",
     "BfArM",
     "BfDI",
     "Bundesmantelvertrag",
     "Bundesnetzagentur",
     "Bundesärztekammer",
+    "Bundesaerztekammer",
     "CDA",
     "CardLink",
     "DAV",
@@ -322,6 +302,7 @@
     "Fachdienst",
     "Fernsignatur",
     "Forschungsdatenzentrum Gesundheit",
+    "Forschungsdatenzentrum-Gesundheit",
     "G-BA",
     "GDAG",
     "GDNG",
@@ -358,20 +339,25 @@
     "KZBV",
     "Kartenterminal",
     "Kassenärztliche Vereinigung",
+    "Kassenaerztliche-Vereinigung",
     "Konnektoren",
     "LIS",
     "LOINC",
     "Landesärztekammer",
+    "Landesaerztekammer",
     "MDR",
     "MIO",
     "MVZ",
     "Matrix-Protokoll",
     "Medizinischer Dienst",
+    "Medizinischer-Dienst",
     "Medizininformatik-Initiative",
     "MyHealth@EU",
+    "MyHealthAtEU",
     "NCPeH",
     "NFDM",
     "OAuth 2.0",
+    "OAuth-2.0",
     "OCSP",
     "OIDC",
     "OPS",
@@ -383,15 +369,19 @@
     "PVS",
     "PZN",
     "Patient Summary",
+    "Patient-Summary",
     "Patientenportal",
     "PoPP",
     "QES",
     "RIS",
     "RKI",
     "SGB V",
+    "SGB-V",
     "SGB XI",
+    "SGB-XI",
     "SMC-B",
     "SNOMED CT",
+    "SNOMED-CT",
     "STIKO",
     "TA1",
     "TI-Federation",
@@ -430,18 +420,23 @@
     "mTLS",
     "xDT",
     "ÖGD",
+    "OeGD",
     "JWT",
     "Sektoraler IDP",
+    "Sektoraler-IDP",
     "Interoperabilitätsverzeichnis",
+    "Interoperabilitaetsverzeichnis",
     "Mutterpass",
     "Kinderuntersuchungsheft",
     "Videosprechstunde",
     "Terminologieserver",
     "Konformitätsbewertung",
+    "Konformitaetsbewertung",
     "Securpharm",
     "BEMA",
     "Primärsystem",
     "TI 2.0",
+    "TI-2.0",
     "BTM-Rezept",
     "BZÄK",
     "Heilmittelverordnung",
@@ -449,48 +444,53 @@
     "dgMP",
     "KHAG",
     "eReferral",
-    "KVDT"
+    "KVDT",
+    "SOAP",
+    "NFC",
+    "IS-H",
+    "DataMatrix",
+    "Meldepflicht"
   ],
   "brokenWikiLinks": [
     {
       "link": "Kassenärztliche-Vereinigung",
       "resolvedBy": "content/organization/Kassenaerztliche-Vereinigung.md",
-      "note": "Alias mismatch: article uses ASCII filename but some links use umlaut form"
+      "note": "Alias-Mismatch: Artikel hat Alias 'Kassenärztliche Vereinigung' (ohne Bindestrich), aber Links verwenden 'Kassenärztliche-Vereinigung' (mit Bindestrich)"
     },
     {
       "link": "Konformitätsbewertung",
       "resolvedBy": "content/processes/Konformitaetsbewertung.md",
-      "note": "Alias mismatch: article uses ASCII filename but some links use umlaut form"
+      "note": "Alias-Mismatch: Artikel verwendet ASCII-Dateinamen, manche Links verwenden Umlautform"
     },
     {
       "link": "MyHealth@EU",
       "resolvedBy": "content/infrastructure/MyHealthAtEU.md",
-      "note": "Alias mismatch: @ vs At in filename"
+      "note": "Alias-Mismatch: @ vs At im Dateinamen"
     },
     {
       "link": "OAuth 2.0",
       "resolvedBy": "content/concepts/OAuth-2.0.md",
-      "note": "Space vs hyphen in link target"
+      "note": "Leerzeichen vs Bindestrich im Link-Ziel"
     },
     {
       "link": "SGB V",
       "resolvedBy": "content/standards/SGB-V.md",
-      "note": "Space vs hyphen in link target"
+      "note": "Leerzeichen vs Bindestrich im Link-Ziel"
     },
     {
       "link": "SGB XI",
       "resolvedBy": "content/standards/SGB-XI.md",
-      "note": "Space vs hyphen in link target"
+      "note": "Leerzeichen vs Bindestrich im Link-Ziel"
     },
     {
       "link": "SNOMED CT",
       "resolvedBy": "content/standards/SNOMED-CT.md",
-      "note": "Space vs hyphen in link target"
+      "note": "Leerzeichen vs Bindestrich im Link-Ziel"
     },
     {
       "link": "ÖGD",
       "resolvedBy": "content/organization/OeGD.md",
-      "note": "Alias mismatch: article uses OeGD filename"
+      "note": "Alias-Mismatch: Artikel verwendet OeGD-Dateinamen"
     }
   ],
   "missingRelevance": [
@@ -513,7 +513,6 @@
     "content/infrastructure/LIS.md",
     "content/infrastructure/MVZ.md",
     "content/infrastructure/MyHealthAtEU.md",
-    "content/infrastructure/NCPeH.md",
     "content/infrastructure/PACS.md",
     "content/infrastructure/RIS.md",
     "content/infrastructure/TI-Federation.md",
@@ -572,8 +571,8 @@
     "content/standards/Matrix-Protokoll.md",
     "content/standards/OPS.md",
     "content/standards/PDSG.md",
-    "content/standards/Patient-Summary.md",
     "content/standards/PZN.md",
+    "content/standards/Patient-Summary.md",
     "content/standards/SGB-XI.md",
     "content/standards/SNOMED-CT.md",
     "content/standards/VDG.md",
@@ -583,10 +582,8 @@
     "content/technologies/DEMIS.md",
     "content/technologies/DiPA.md",
     "content/technologies/DiPaG.md",
-    "content/technologies/Fernsignatur.md",
     "content/technologies/eArztbrief.md",
-    "content/technologies/ePass.md",
     "content/technologies/gRPC.md"
   ],
-  "lastRun": "2026-03-19"
+  "lastRun": "2026-03-20"
 }

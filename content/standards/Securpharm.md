@@ -53,7 +53,7 @@ Die Verifizierungspflicht gilt für verschreibungspflichtige Humanarzneimittel. 
 Jede betroffene Packung trägt zwei Pflichtmerkmale:
 
 1. **Erstöffnungsschutz (Tamper Evidence)**: Physische Sicherung der Packung gegen unbemerkte Öffnung (z.B. Sicherheitssiegel)
-2. **Individuelles Erkennungsmerkmal (Unique Identifier, UI)**: Maschinenlesbarer 2D-DataMatrix-Code mit vier Elementen:
+2. **Individuelles Erkennungsmerkmal (Unique Identifier, UI)**: Maschinenlesbarer 2D-[[DataMatrix]]-Code mit vier Elementen:
    - **Produktcode (PC)**: Nationale Pharmazentralnummer ([[PZN]])
    - **Seriennummer (SN)**: Bis zu 20-stellige alphanumerische Zufallszahl, einzigartig je Packung
    - **Chargennummer (LOT)**: Batch-Identifikation

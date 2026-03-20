@@ -6,7 +6,7 @@ aliases: [Interoperabilitätsverzeichnis, IOP-Verzeichnis, Interoperabilitäts-V
 relevance:
   sectors: [hersteller, krankenhaus, arztpraxis, it-dienstleister, regulierung, ti-infrastruktur]
   interests: [compliance, technik, business]
-maturity: setzling
+maturity: wachsend
 ---
 
 # Interoperabilitätsverzeichnis

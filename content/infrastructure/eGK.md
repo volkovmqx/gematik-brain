@@ -18,7 +18,7 @@ Die eGK ist die Chipkarte, die du von deiner Krankenkasse bekommst. Du steckst s
 
 ## Überblick
 
-Jeder gesetzlich Versicherte besitzt eine eGK. Die Karte hat einen Mikroprozessorchip mit zwei Schnittstellen: kontaktbehaftet (einstecken) und kontaktlos (NFC). Der Kartenkörper dient auch als visueller Ausweis.
+Jeder gesetzlich Versicherte besitzt eine eGK. Die Karte hat einen Mikroprozessorchip mit zwei Schnittstellen: kontaktbehaftet (einstecken) und kontaktlos ([[NFC]]). Der Kartenkörper dient auch als visueller Ausweis.
 
 ### Funktionen
 - Identifikation des Versicherten
@@ -36,7 +36,7 @@ Jeder gesetzlich Versicherte besitzt eine eGK. Die Karte hat einen Mikroprozesso
 
 ### Chipkarte
 - Kontaktbehaftete Schnittstelle (ISO 7816)
-- Kontaktlose Schnittstelle (NFC, ISO 14443)
+- Kontaktlose Schnittstelle ([[NFC]], ISO 14443)
 - Kryptografische Schlüsselpaare (RSA / ECC)
 - X.509-Zertifikate der [[PKI|TI-PKI]]
 - Kartenbetriebssystem (COS): Standardisierte elektrische Schnittstelle

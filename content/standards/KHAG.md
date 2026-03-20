@@ -6,7 +6,7 @@ aliases: [Krankenhausreformanpassungsgesetz, KHAG]
 relevance:
   sectors: [krankenhaus, hersteller, it-dienstleister, regulierung, kasse, ti-infrastruktur]
   interests: [compliance, business, technik]
-maturity: setzling
+maturity: wachsend
 ---
 
 # KHAG - Krankenhausreformanpassungsgesetz
@@ -21,13 +21,13 @@ Krankenhäuser sollen in Deutschland moderner und effizienter werden. Das KHAG i
 
 Das KHAG ist das digitale Begleitgesetz zur großen deutschen Krankenhausreform. Es baut auf dem [[KHVVG|Krankenhausversorgungsverbesserungsgesetz (KHVVG)]] auf und ergänzt dieses um konkrete digitale Pflichten.
 
-Der Bundestag verabschiedete das KHAG am **6. März 2026**. Die Abstimmung im Bundesrat ist für den **27. März 2026** vorgesehen. Anschließend soll das Gesetz in Kraft treten.
+Der Bundestag verabschiedete das KHAG am **6. März 2026** in zweiter und dritter Lesung. Der Bundesrat hat in seinem ersten Durchgang am 21. November 2025 zugestimmt. Der zweite Durchgang im Bundesrat (vorgesehen für den 27. März 2026) war zum Redaktionsschluss dieses Artikels (20. März 2026) noch nicht abgeschlossen. Das Gesetz tritt nach Abschluss des parlamentarischen Verfahrens und Verkündung im Bundesgesetzblatt in Kraft.
 
 ### Kerninhalte
 
 **Transformationsfonds (50 Milliarden Euro, 2026 bis 2035)**: Ein bundesweiter Fonds zur Förderung der Krankenhausstruktur. Ziel ist die Konzentration von Leistungen auf spezialisierte Einrichtungen. Ein Teil der Mittel fließt in Digitalisierungsvorhaben.
 
-**Patientenportal-Abschlag**: Krankenhäuser ohne zertifiziertes [[Patientenportal]] erhalten ab **1. Januar 2026** einen Abschlag von **0,5 Prozent je stationären Fall** auf ihre DRG-Vergütung. Dies setzt einen starken Anreiz zur Umsetzung digitaler Patientenangebote.
+**Patientenportal-Abschlag**: Krankenhäuser ohne zertifiziertes [[Patientenportal]] erhalten ab **1. Januar 2026** einen Abschlag von **0,5 Prozent je stationären Fall** auf ihre DRG-Vergütung. Dieser Abschlag geht auf die DRG-Digitalisierungsabschlagsregelung zurück, die bereits im Rahmen des [[KHZG]] eingeführt wurde. Das KHAG übernimmt und verstärkt diesen Mechanismus als dauerhaften strukturellen Anreiz zur Umsetzung digitaler Patientenangebote.
 
 **Telemedizin-Netzwerke**: Das KHAG fördert die Bildung telemedizinischer Verbundlösungen zwischen Krankenhäusern, um die Versorgung insbesondere in strukturschwachen Regionen zu verbessern.
 
@@ -128,8 +128,9 @@ Das KHAG fördert telemedizinische Verbundlösungen zwischen Krankenhäusern. Ko
 
 ## Quellen
 
+- [BMG: Gesetzesstatus KHAG (Gesetzgebungsverfahren)](https://www.bundesgesundheitsministerium.de/service/gesetze-und-verordnungen/detail/krankenhausreformanpassungsgesetz)
 - [BMG: Bundestag beschließt Krankenhausreformanpassungsgesetz (6. März 2026)](https://www.bundesgesundheitsministerium.de/ministerium/meldungen/bundestag-beschliesst-krankenhausreformanpassungsgesetz-pm-06-03-2026)
 - [BMG: Krankenhausreform (Übersichtsseite)](https://www.bundesgesundheitsministerium.de/themen/krankenhaus/krankenhausreform)
 - [mdoc.one: KHAG beschlossen – neue Chancen für Kliniken, Telemedizin und Patientenportale (März 2026)](https://mdoc.one/khag-beschlossen-neue-chancen-fuer-kliniken-telemedizin-und-patientenportale/)
-- [gematik: Interoperabilitätsverzeichnis (§ 385 SGB V)](https://www.gematik.de/anwendungen/interoperabilitaetsverzeichnis)
+- [gematik: Interoperabilitätsverzeichnis (§ 385 SGB V)](https://www.gematik.de/telematikinfrastruktur/iop)
 - [gematik Fachportal: ISiK](https://fachportal.gematik.de/informationen-fuer/isik)

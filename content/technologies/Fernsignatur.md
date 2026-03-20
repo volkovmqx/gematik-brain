@@ -3,7 +3,10 @@ title: Fernsignatur
 audience: [technical]
 tags: [technologies, signatur, qes, ti-gateway, eidas]
 aliases: [Ferngesteuerte qualifizierte elektronische Signatur, Remote-Signatur]
-maturity: setzling
+maturity: wachsend
+relevance:
+  sectors: [arztpraxis, krankenhaus, zahnarzt, apotheke, hersteller, it-dienstleister, ti-infrastruktur]
+  interests: [technik, compliance]
 ---
 
 # Fernsignatur
@@ -18,7 +21,7 @@ Normalerweise braucht ein Arzt einen physischen Ausweis (den [[HBA]]) und ein Ka
 
 Die [[QES]] ist in Deutschland für viele medizinische Dokumente vorgeschrieben oder rechtlich gleichwertig zur handschriftlichen Unterschrift. Bisher erforderte eine QES in der [[Telematikinfrastruktur]] zwingend einen physischen [[HBA]] im Kartenlesegerät und einen [[Konnektoren|Konnektor]]. Das erzeugt einen Medienbruch, wenn Ärzte mobil arbeiten oder mehrere Standorte haben.
 
-Die Fernsignatur ist in der EU durch die [[eIDAS]]-Verordnung geregelt. Die ursprüngliche eIDAS-Verordnung (EU) 910/2014 schuf den allgemeinen Rechtsrahmen für qualifizierte elektronische Signaturen. Mit der Änderungsverordnung (EU) 2024/1183 (eIDAS 2.0) wurde in Art. 29a erstmals eine explizite Regelung für Fernunterschriftserstellungseinheiten eingeführt. Der Unterschied zur kartenbasierten Signatur liegt im Speicherort des Signaturschlüssels: Bei der Fernsignatur liegt dieser beim qualifizierten Vertrauensdiensteanbieter ([[TSP]]) in einem zertifizierten HSM. Der Signaturprozess selbst wird vom TSP durchgeführt, nachdem der Signierende sich sicher authentisiert hat.
+Die Fernsignatur ist in der EU durch die [[eIDAS]]-Verordnung geregelt. Die ursprüngliche eIDAS-Verordnung (EU) 910/2014 definiert in Art. 3 Nr. 26 die qualifizierte elektronische Signaturerstellungseinheit und schuf den allgemeinen Rechtsrahmen für qualifizierte elektronische Signaturen. Art. 29 der ursprünglichen Verordnung legt die Anforderungen an qualifizierte Signaturerstellungseinheiten fest. Mit der Änderungsverordnung (EU) 2024/1183 (eIDAS 2.0) wurde Art. 29a eingefügt, der erstmals explizite Anforderungen an qualifizierte Dienste zur Verwaltung von Fernunterschriften-Erstellungseinheiten regelt. Der Unterschied zur kartenbasierten Signatur liegt im Speicherort des Signaturschlüssels: Bei der Fernsignatur liegt dieser beim qualifizierten Vertrauensdiensteanbieter ([[TSP]]) in einem zertifizierten HSM. Der Signaturprozess selbst wird vom TSP durchgeführt, nachdem der Signierende sich sicher authentisiert hat.
 
 In der Telematikinfrastruktur ist die Fernsignatur mit dem Konzept des [[TI-Gateway|TI-Gateways]] und der TI 2.0 verknüpft. Das TI-Gateway ist der cloudbasierte Ersatz für den Hardware-Konnektor. In der Feature-Roadmap des TI-Gateways ist die Fernsignatur als geplanter Zusatzdienst vorgesehen. Ziel ist, dass Ärzte ihre [[HBA]]-Funktion in Zukunft auch ohne physische Karte und ohne Konnektor nutzen können.
 
@@ -36,7 +39,7 @@ Der Signierende gibt zu keinem Zeitpunkt den privaten Schlüssel frei. Die Kontr
 
 ### Rechtliche Grundlage
 
-Die ursprüngliche [[eIDAS]]-Verordnung (EU) 910/2014 legte den allgemeinen Rahmen für qualifizierte elektronische Signaturen und deren Erstellungseinheiten fest. Die Änderungsverordnung (EU) 2024/1183 (eIDAS 2.0) führte in Art. 29a explizite Anforderungen an qualifizierte Dienste zur Verwaltung von Fernunterschriften-Erstellungseinheiten ein. Danach kann eine QES-Erstellungseinheit vom TSP im Auftrag des Unterzeichners verwaltet werden, sofern der TSP als qualifizierter Vertrauensdiensteanbieter zugelassen ist. In Deutschland regelt das Vertrauensdienstegesetz ([[VDG]]) die Zulassung der TSPs. Zuständige Aufsichtsbehörde ist die [[Bundesnetzagentur]].
+Die [[eIDAS]]-Verordnung (EU) 910/2014 (Art. 29) und die Änderungsverordnung (EU) 2024/1183 (Art. 29a) bilden die europäische Rechtsgrundlage. Danach kann eine QES-Erstellungseinheit vom [[TSP]] im Auftrag des Unterzeichners verwaltet werden, sofern der TSP als qualifizierter Vertrauensdiensteanbieter zugelassen ist. In Deutschland regelt das Vertrauensdienstegesetz ([[VDG]]) die Zulassung der TSPs. Zuständige Aufsichtsbehörde ist die [[Bundesnetzagentur]].
 
 ### Abgrenzung zur Komfortsignatur
 

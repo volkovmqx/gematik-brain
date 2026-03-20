@@ -110,7 +110,7 @@ Beide werden als Feldkennzeichen in der KVDT-Datei geführt. Arztpraxen mit mehr
 
 KVDT-Dateien werden nicht mehr auf physischen Datenträgern eingereicht, sondern online. Der verbreitete Weg ist:
 
-- **KV-Connect**: Ein von der [[KBV]] standardisiertes Kommunikationsportal für den Datenaustausch zwischen Praxen und KVen, das von allen 17 KVen angeboten wird.
+- **KV-Online-Portal**: Jede der 17 regionalen KVen betreibt ein eigenes Online-Portal für den Datenaustausch mit Praxen. Über dieses Portal werden KVDT-Abrechnungsdateien eingereicht und Rückmeldungen abgerufen.
 - **[[KV-SafeNet]]**: Ein von mehreren KVen genutztes VPN-basiertes Sicherheitsnetz, über das KVDT-Dateien übertragen werden können.
 - **[[KIM]]**: Zunehmend nutzen KVen den TI-Kommunikationsdienst KIM für die Übertragung von Abrechnungsdaten und -rückmeldungen.
 
@@ -172,6 +172,6 @@ Mittel- bis langfristig werden Teile des Abrechnungsprozesses über TI-Kommunika
 
 ## Quellen
 
-- [KBV: Praxissoftware und xDT-Formate](https://www.kbv.de/html/praxissoftware.php)
+- [KBV: Praxisverwaltungssystem und Praxissoftware](https://www.kbv.de/praxis/digitalisierung/praxisverwaltungssystem)
 - [Wikipedia: Abrechnungsdatenträger (KVDT)](https://de.wikipedia.org/wiki/Abrechnungsdatentr%C3%A4ger)
 - [KBV: Kassenärztliche Bundesvereinigung – Abrechnung](https://www.kbv.de/html/abrechnung.php)

@@ -51,7 +51,7 @@ Jede Einrichtung im Gesundheitswesen braucht entweder einen Konnektor oder die n
 > [!interesse-technik]
 > Das Primärsystem kommuniziert mit dem Konnektor über SOAP-Webservices (gemSpec_Kon). Wichtige Dienste: SignaturDienst ([[QES]]), VerschlüsselungsDienst ([[KIM]]), ZertifikatsDienst ([[OCSP]]), EventDienst. Mit TI 2.0 kommen [[gRPC]]-APIs hinzu. ECC-Preferred-Feature (RISE Firmware 6.1.3:1.0.0, Februar 2026) ermöglicht schrittweise RSA-ECC-Migration.
 
-Das Primärsystem kommuniziert mit dem Konnektor über SOAP-Webservices. Diese Schnittstelle ist in der gemSpec_Kon (Konnektor-Spezifikation) der [[gematik]] definiert. Die wichtigsten Dienste:
+Das Primärsystem kommuniziert mit dem Konnektor über [[SOAP]]-Webservices. Diese Schnittstelle ist in der gemSpec_Kon (Konnektor-Spezifikation) der [[gematik]] definiert. Die wichtigsten Dienste:
 
 - **SignaturDienst**: Erstellt und prüft qualifizierte elektronische Signaturen ([[QES]]) via [[HBA]]
 - **VerschlüsselungsDienst**: Ver- und Entschlüsselung von Nachrichten (für [[KIM]])

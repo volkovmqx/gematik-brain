@@ -35,7 +35,7 @@ Ein KIS deckt den gesamten Behandlungsprozess im stationären Bereich ab, von de
 Der deutsche KIS-Markt ist stark konzentriert. Marktführer ist **Dedalus** mit dem System ORBIS. Laut Marktberichten von 2024 werden über 41 Prozent aller stationären Fälle in Deutschland über ORBIS abgerechnet. Weitere wichtige Anbieter:
 
 - **Dedalus ORBIS**: Marktführer, über 820 Installationen in Deutschland
-- **Oracle Cerner i.s.h.med** (in Kombination mit SAP IS-H): Verbreitet in Unikliniken und großen Häusern; SAP hat sich aus dem Direktgeschäft zurückgezogen, Oracle Cerner betreut die Systeme weiter
+- **Oracle Cerner i.s.h.med** (in Kombination mit [[IS-H|SAP IS-H]]): Verbreitet in Unikliniken und großen Häusern; SAP hat sich aus dem Direktgeschäft zurückgezogen, Oracle Cerner betreut die Systeme weiter
 - **Telekom Healthcare Solutions iMedOne**: Über 250 Einrichtungen
 - **NEXUS KIS**: Über 250 Einrichtungen, mit Interoperabilitätsfokus
 - **Meierhofer M-KIS**: Über 275 Installationen im deutschsprachigen Raum

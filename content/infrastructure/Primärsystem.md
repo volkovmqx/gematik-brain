@@ -38,7 +38,7 @@ Weitere spezialisierte Primärsysteme existieren für Zahnärzte (ZABS/Zahnarzt-
 
 ### Anbindung an die TI
 
-Jedes Primärsystem verbindet sich mit der [[Telematikinfrastruktur]] über einen [[Konnektoren|Konnektor]] oder, seit TI 2.0, über ein [[TI-Gateway]]. Diese Verbindungskomponenten übernehmen die kryptografischen Operationen (Signatur, Verschlüsselung) und den sicheren Transport. Das Primärsystem steuert diese Operationen über definierte Schnittstellen (gemSpec-konforme SOAP-Webservices).
+Jedes Primärsystem verbindet sich mit der [[Telematikinfrastruktur]] über einen [[Konnektoren|Konnektor]] oder, seit TI 2.0, über ein [[TI-Gateway]]. Diese Verbindungskomponenten übernehmen die kryptografischen Operationen (Signatur, Verschlüsselung) und den sicheren Transport. Das Primärsystem steuert diese Operationen über definierte Schnittstellen (gemSpec-konforme [[SOAP]]-Webservices).
 
 > [!interesse-compliance]
 > Leistungserbringer, deren Primärsystem nicht TI-fähig ist oder keine aktuelle Zulassung hat, riskieren Vergütungsabzüge. Die [[KBV]] prüft PVS-Zertifizierungen; die [[gematik]] prüft seit 2024 TI-Konformität im Rahmen der [[Konformitaetsbewertung|Konformitätsbewertung (KOB)]]. PVS-Systeme, die nicht mit der [[ePA]] kompatibel sind, führen seit Anfang 2026 zu Abrechnungskürzungen.

@@ -48,6 +48,7 @@ Das Herzstück der DiGAV ist der Nachweis eines positiven Versorgungseffekts. Di
 
 - **Medizinischer Nutzen**: Patientenrelevante Endpunkte wie Verbesserung des Gesundheitsstatus, Verkürzung von Krankheitsdauer, Verbesserung der Lebensqualität
 - **Patientenrelevante Struktur- und Verfahrensverbesserung**: Verbesserung der Versorgungsabläufe, der Therapietreue, der Patientensicherheit oder der Gesundheitskompetenz
+- **Erhalt oder Verbesserung der Arbeitsfähigkeit** (neu ab 1. Februar 2026): DiGA in der medizinischen Rehabilitation und Wiedereingliederung in das Arbeitsleben sind damit erstattungsfähig.
 
 Hersteller, die noch keine abgeschlossene Studie vorlegen können, werden vorläufig für maximal 12 Monate in das DiGA-Verzeichnis aufgenommen (Erprobungsphase). In diesem Zeitraum müssen sie den Nachweis erbringen. Gelingt das nicht, wird die DiGA aus dem Verzeichnis entfernt.
 

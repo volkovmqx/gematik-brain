@@ -6,7 +6,7 @@ aliases: [eReferral, elektronische Überweisung, digitale Überweisung]
 relevance:
   sectors: [arztpraxis, krankenhaus, zahnarzt, psychotherapie, patient, kasse, hersteller]
   interests: [compliance, technik, patient]
-maturity: wachsend
+maturity: setzling
 ---
 
 # eReferral - Elektronische Überweisung

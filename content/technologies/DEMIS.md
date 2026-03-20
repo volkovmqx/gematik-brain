@@ -17,7 +17,7 @@ Wenn ein Arzt eine meldepflichtige Krankheit wie Masern oder Tuberkulose diagnos
 
 DEMIS wurde auf Basis des [[IfSG|Infektionsschutzgesetzes (IfSG)]] entwickelt und schrittweise eingeführt. Das RKI ist als nationale Gesundheitsbehörde für Betrieb und Weiterentwicklung verantwortlich.
 
-Das System digitalisiert die Meldekette nach IfSG: Ärzte, Krankenhäuser, Labore und andere meldepflichtige Einrichtungen übermitteln Krankheitsmeldungen und Laborbefunde elektronisch an die zuständigen [[OeGD|Gesundheitsämter]]. Die Gesundheitsämter übermitteln aggregierte Daten weiter an die Landesbehörden und schließlich an das RKI.
+Das System digitalisiert die [[Meldepflicht|Meldekette]] nach IfSG: Ärzte, Krankenhäuser, Labore und andere meldepflichtige Einrichtungen übermitteln Krankheitsmeldungen und Laborbefunde elektronisch an die zuständigen [[OeGD|Gesundheitsämter]]. Die Gesundheitsämter übermitteln aggregierte Daten weiter an die Landesbehörden und schließlich an das RKI.
 
 Während der COVID-19-Pandemie ab 2020 zeigte sich der Wert eines solchen Systems: Die Menge der Meldungen war mit klassischen Papiermeldungen nicht mehr handhabbar. DEMIS wurde zum zentralen Kanal für die bundesweite COVID-19-Surveillance. Das System ermöglichte es dem RKI erstmals, tagesaktuelle, strukturierte Falldaten in großem Umfang zu verarbeiten.
 
@@ -74,6 +74,7 @@ DEMIS ist kein Teil der klinischen TI-Infrastruktur (kein Dienst der [[Telematik
 
 - [[FHIR]]: Technische Basis aller DEMIS-Meldungen
 - [[IfSG]]: Rechtsgrundlage für DEMIS und alle Meldepflichten
+- [[Meldepflicht]]: §§ 6 und 7 IfSG als Grundlage der Meldepflicht
 - [[RKI]]: Betreibt DEMIS und koordiniert die nationale Surveillance
 - [[OeGD|Öffentlicher Gesundheitsdienst (ÖGD)]]: Gesundheitsämter als zentrale Empfänger der DEMIS-Meldungen
 - [[gematik]]: Betreiber der TI; DEMIS nutzt analoge Standards, ist aber ein eigenständiges System
