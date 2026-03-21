@@ -3,6 +3,10 @@ title: Kassenärztliche Vereinigung
 audience: [technical, non-technical]
 tags: [organisation, kv, abrechnung, ambulant]
 aliases: [KV, Kassenärztliche Vereinigungen, KVen, Kassenärztliche Vereinigung]
+relevance:
+  sectors: [arztpraxis, psychotherapie, kasse, regulierung]
+  interests: [compliance, business]
+maturity: wachsend
 ---
 
 # Kassenärztliche Vereinigung
@@ -45,6 +49,12 @@ Die KVen sind an die [[Telematikinfrastruktur]] angebunden. Sie erhalten über d
 - Abrechnungsrelevante Daten, die künftig über TI-Kommunikationswege wie [[KIM]] übermittelt werden
 
 Für die Prüfung der TI-Nutzung durch ihre Mitglieder spielen die KVen eine wichtige Rolle: Sie können die [[TI-Pauschale]] kürzen oder streichen, wenn Praxen Pflichtanwendungen nicht nutzen.
+
+> [!interesse-compliance]
+> Die [[TI-Pauschale]] wird über die KV ausgezahlt. Voraussetzung ist der Nachweis der Nutzung aller Pflichtanwendungen (ePA, eAU, KIM, E-Rezept). Fehlt eine Anwendung, kürzt die KV die Pauschale um 50 Prozent; fehlen mehrere, entfällt sie vollständig. Jede KV hat eigene Abrechnungsportale und Ansprechpartner für TI-Fragen. Die Fristen für neue Pflichtanwendungen werden von der jeweiligen KV kommuniziert.
+
+> [!interesse-business]
+> 17 KVen sichern zusammen die ambulante Versorgung für rund 74 Millionen GKV-Versicherte. Der Dachverband [[KBV]] ist Gesellschafter der [[gematik]] und gestaltet damit TI-Anforderungen mit. KVen verhandeln Gesamtvergütung mit den Krankenkassen und setzen [[EBM]]-Leistungspositionen um. Die TI-Pauschale ist seit 2020 eine eigenständige Vergütungsposition im EBM.
 
 ### KV-SafeNet
 

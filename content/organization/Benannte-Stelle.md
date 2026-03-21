@@ -46,7 +46,7 @@ Die Designation einer Organisation als Benannte Stelle ist ein mehrstufiger EU-P
 
 1. **Antrag bei nationaler Behörde**: In Deutschland ist dies das [[BfArM]] in Zusammenarbeit mit der Zentralstelle der Länder für Gesundheitsschutz bei Arzneimitteln und Medizinprodukten (ZLG)
 2. **Gemeinsame Bewertung**: Eine Expertengruppe der EU-Kommission (Joint Assessment) prüft die Kompetenz der antragstellenden Organisation (Prüflabore, qualifiziertes Personal, QM-System)
-3. **Notifikation**: Bei positivem Ergebnis trägt die EU-Kommission die Stelle in die EUDAMED-Datenbank (European Database on Medical Devices) und die NANDO-Datenbank ein
+3. **Notifikation**: Bei positivem Ergebnis trägt die EU-Kommission die Stelle in die [[EUDAMED]]-Datenbank (European Database on Medical Devices) und die NANDO-Datenbank ein
 4. **Überwachung**: Die nationale Behörde überwacht die Benannte Stelle regelmäßig
 
 ### Deutsche Benannte Stellen

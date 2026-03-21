@@ -27,7 +27,7 @@ Das GDAG hätte die [[gematik]] grundlegend umstrukturiert:
 - **Umwandlung in eine Bundesbehörde**: Die gematik GmbH wäre in eine neue Form als "Digitalagentur Gesundheit" überführt worden. Statt der bisherigen Gesellschafterstruktur (51 % BMG, 49 % Verbände) sollte eine staatlich dominierte Struktur entstehen.
 - **Erweiterte Durchsetzungsbefugnisse**: Die neue Agentur hätte Hersteller und Anbieter von TI-Komponenten direkt mit Auflagen belegen und bei Nicht-Einhaltung von Standards sanktionieren können.
 - **Schnellere Standardisierung**: Hersteller sollten verpflichtet werden, einheitliche digitale Standards bis 2027 umzusetzen, mit verbindlichen Fristen und Sanktionen bei Verstößen.
-- **Interoperabilitätsmandat**: Das geplante Kompetenzzentrum Interoperabilität (KIG) sollte gesetzlich verankert und gestärkt werden.
+- **Interoperabilitätsmandat**: Das geplante [[KIG|Kompetenzzentrum Interoperabilität (KIG)]] sollte gesetzlich verankert und gestärkt werden.
 
 ### Kritik am GDAG
 

@@ -64,7 +64,7 @@ Auch [[DiPA|Digitale Pflegeanwendungen (DiPA)]] unterliegen der MDR.
 
 ### Software als Medizinprodukt (SaMD)
 
-Die MDR enthält Regelungen für Software als eigenständiges Medizinprodukt (Software as a Medical Device, SaMD). Entscheidend ist die Zweckbestimmung: Software, die zur Diagnose, Prävention, Überwachung, Vorhersage oder Behandlung von Krankheiten dient, gilt als Medizinprodukt. Betriebssoftware oder reine Verwaltungssoftware fällt nicht darunter.
+Die MDR enthält Regelungen für Software als eigenständiges Medizinprodukt ([[SaMD|Software as a Medical Device, SaMD]]). Entscheidend ist die Zweckbestimmung: Software, die zur Diagnose, Prävention, Überwachung, Vorhersage oder Behandlung von Krankheiten dient, gilt als Medizinprodukt. Betriebssoftware oder reine Verwaltungssoftware fällt nicht darunter.
 
 Für die Einordnung digitaler Gesundheitsprodukte hat die EU-Kommission ein Klassifizierungsregelwerk in Anhang VIII MDR veröffentlicht. Regel 11 regelt die Klassifizierung von Software.
 

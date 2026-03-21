@@ -3,6 +3,10 @@ title: OPS
 audience: [technical, non-technical]
 tags: [standards, kodierung, krankenhaus, abrechnung, prozeduren]
 aliases: [Operationen- und Prozedurenschlüssel, Prozedurenklassifikation]
+relevance:
+  sectors: [krankenhaus, hersteller, kasse, it-dienstleister]
+  interests: [compliance, technik]
+maturity: wachsend
 ---
 
 # OPS
@@ -20,6 +24,9 @@ Der OPS entstand aus der deutschen Adaptation der International Classification o
 Der OPS ist neben dem [[ICD-10-GM]] das zweite zentrale Kodierungssystem im deutschen Gesundheitswesen. Während [[ICD-10-GM]] Diagnosen klassifiziert, erfasst der OPS durchgeführte Maßnahmen. Beide Systeme werden gemeinsam für die stationäre Abrechnung benötigt.
 
 Im [[DRG|G-DRG-System]] (German Diagnosis Related Groups) bestimmen die kodierten OPS-Prozeduren gemeinsam mit ICD-10-Diagnosen die Fallpauschale, nach der ein Krankenhaus vergütet wird. Fehlerhafte oder unvollständige OPS-Kodierung wirkt sich direkt auf die Erlöse des Krankenhauses aus.
+
+> [!interesse-compliance]
+> Die korrekte OPS-Kodierung ist Pflicht für alle stationären Einrichtungen. Das [[InEK]] prüft Abrechnungsdaten über den MD. Fehler in der OPS-Kodierung können zu Rückforderungen führen. Das [[BfArM]] veröffentlicht jährlich verbindliche Korrekturen und Übergangslösungen. Die aktuell gültige Version ist jeweils ab 1. Januar des laufenden Jahres verpflichtend anzuwenden.
 
 Außer im stationären Bereich kommt der OPS im ambulanten Operieren (§ 115b SGB V) und in der spezialärztlichen Ambulanzversorgung zum Einsatz.
 
@@ -82,6 +89,9 @@ In [[ISiK]]-Profilen wird der OPS in der Ressource `ISiKProzedur` (basiert auf F
 ```
 
 Das FHIR-Profil verlangt die Angabe des Systemjahrs (`version`), da OPS-Codes sich zwischen Versionen ändern können.
+
+> [!interesse-technik]
+> OPS als FHIR CodeSystem: `http://fhir.de/CodeSystem/bfarm/ops`. Immer mit `version`-Parameter (z.B. `2024`) verwenden. BfArM-Download: Systematisches Verzeichnis, Alphabetisches Verzeichnis und Anwendungshinweise als ZIP unter [bfarm.de/OPS](https://www.bfarm.de/DE/Kodiersysteme/Klassifikationen/OPS/_node.html). Für ISiK-konforme Systeme: FHIR-Profil `ISiKProzedur` (Ressource `Procedure`) mit OPS im `code`-Element nutzen. Validierungsserver: [ontoserver.bfarm.de](https://terminologien.bfarm.de/).
 
 ### Abgrenzung zum ICD-10-GM
 

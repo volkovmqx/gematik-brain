@@ -82,7 +82,7 @@ Wichtig für den deutschen Kontext:
 >
 > **IEC 62304:** Norm für Softwarelebenszyklusprozesse bei Medizinprodukten. Unterscheidet Software-Sicherheitsklassen A, B, C.
 >
-> **EU-Datenbank EUDAMED:** Öffentliches Register für Medizinprodukte der EU (eudamed.ec.europa.eu).
+> **EU-Datenbank [[EUDAMED]]:** Öffentliches Register für Medizinprodukte der EU (eudamed.ec.europa.eu).
 
 > [!dev-quickstart] Dev Quickstart: EUDAMED-Produktsuche per API
 > EUDAMED stellt eine öffentliche REST-API bereit. Keine Authentifizierung erforderlich. Antworten in JSON.

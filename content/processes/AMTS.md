@@ -6,7 +6,7 @@ aliases: [AMTS, Arzneimitteltherapiesicherheit, Medikationssicherheit]
 relevance:
   sectors: [arztpraxis, krankenhaus, apotheke, pflege, hersteller]
   interests: [compliance, technik, patient]
-maturity: setzling
+maturity: wachsend
 ---
 
 # AMTS - Arzneimitteltherapiesicherheit

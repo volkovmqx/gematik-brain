@@ -6,7 +6,7 @@ aliases: [HKP, Häusliche Pflege, häusliche Krankenpflege, außerklinische Inte
 relevance:
   sectors: [arztpraxis, pflege, krankenhaus, kasse, regulierung, patient]
   interests: [compliance, patient, technik]
-maturity: setzling
+maturity: wachsend
 ---
 
 # Häusliche Krankenpflege

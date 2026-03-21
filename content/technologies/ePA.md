@@ -122,7 +122,7 @@ Leistungserbringer authentisieren sich über [[SMC-B]] (Einrichtung) und [[HBA]]
 
 - **Volltextsuche**: Suche in gespeicherten Dokumenten der ePA. Die Funktion ist noch nicht produktiv. Pilot geplant für Q3/2026, bundesweiter Rollout ab Januar 2027.
 - **Strukturierte Dosierungsangaben**: Im eMedikationsplan, mit Schreibzugriff für Apotheken
-- **MIO-Integration**: Einbindung der Medizinischen Informationsobjekte ([[MIO]]) [[Mutterpass]], [[eImpfpass|Impfausweis]], [[Kinderuntersuchungsheft]] und Zahnärztliches Bonusheft
+- **MIO-Integration**: Einbindung der Medizinischen Informationsobjekte ([[MIO]]) [[Mutterpass]], [[eImpfpass|Impfausweis]], [[Kinderuntersuchungsheft]] und Zahnärztliches Bonusheft ist erst für 2027 geplant. Der Fokus 2026 liegt auf dem eMP-Pilot (Juli 2026) und den eML-Erweiterungen.
 
 ### GDVG: Datenschutzkritik (Februar 2026)
 
@@ -147,7 +147,7 @@ Die dauerhafte Lösung kommt über den **[[PoPP]]-Dienst** (Proof of Patient Pre
 
 ### ePA als Primärversorgungsplattform (Planung 2026)
 
-Bundesgesundheitsministerin Nina Warken (CDU) skizzierte am **11. Februar 2026** ein Drei-Säulen-Modell für die digitale Primärversorgung:
+Bundesgesundheitsministerin Nina Warken (CDU) skizzierte am **11. Februar 2026** ein Drei-Säulen-Modell für die digitale [[Primärversorgung]]:
 
 1. **ePA** als zentraler Datenhub und Koordinationsplattform
 2. **Hausarztpraxis** als erste Anlaufstelle

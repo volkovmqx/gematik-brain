@@ -19,7 +19,7 @@ Wenn dein Hausarzt dich zum Spezialisten schickt, bekommst du heute einen Zettel
 
 ## Überblick
 
-Der eReferral ist ein zentrales Element der von Bundesgesundheitsministerin Nina Warken (CDU) am **11. Februar 2026** vorgestellten Vision für die digitale Primärversorgung. Das Drei-Säulen-Modell sieht die [[ePA]] als Koordinationsplattform zwischen:
+Der eReferral ist ein zentrales Element der von Bundesgesundheitsministerin Nina Warken (CDU) am **11. Februar 2026** vorgestellten Vision für die digitale [[Primärversorgung]]. Das Drei-Säulen-Modell sieht die [[ePA]] als Koordinationsplattform zwischen:
 
 1. **Hausarztpraxis** als erste Anlaufstelle
 2. **[[ePA]]** als Datenhub und Koordinationsmedium

@@ -3,6 +3,10 @@ title: eIDAS
 audience: [technical, non-technical]
 tags: [standards, recht, signatur, eu, vertrauensdienste]
 aliases: [eIDAS-Verordnung, EU-Verordnung 910/2014, electronic Identification Authentication and trust Services]
+relevance:
+  sectors: [hersteller, ti-infrastruktur, regulierung, it-dienstleister]
+  interests: [compliance, technik]
+maturity: wachsend
 ---
 
 # eIDAS
@@ -25,6 +29,9 @@ Die Verordnung regelt zwei große Bereiche:
 2. **Vertrauensdienste**: Elektronische Signaturen, Siegel, Zeitstempel, Zertifikate für die Websiteauthentifizierung sowie elektronische Einschreiben.
 
 In der deutschen [[Telematikinfrastruktur]] ist eIDAS die rechtliche Grundlage für die [[QES]], die Ärzte beim Ausstellen von [[E-Rezept|E-Rezepten]] und [[eAU|elektronischen Krankmeldungen]] verwenden.
+
+> [!interesse-compliance]
+> Qualifizierte Vertrauensdiensteanbieter (VDA) benötigen eine Akkreditierung durch die [[Bundesnetzagentur]] und müssen in der EU-Vertrauensliste geführt sein. Für HBA-Hersteller: Die QES-Zertifikate (C.HP.QES) auf dem [[HBA]] müssen von einem akkreditierten VDA (z.B. D-Trust, T-Systems) stammen. eIDAS 2.0 (EU 2024/1183) trat am 20. Mai 2024 in Kraft: EUDI-Wallet-Pflicht für EU-Mitgliedstaaten bis Anfang 2027.
 
 ## Technische Details
 
@@ -68,6 +75,9 @@ Qualifizierte Signaturen folgen in der EU den technischen Standards des European
 - **PAdES** (PDF Advanced Electronic Signatures): Für PDF-Dokumente
 
 In der TI werden überwiegend CAdES-Signaturen eingesetzt, z.B. beim [[E-Rezept]]-Bundle.
+
+> [!interesse-technik]
+> ETSI-Standards für TI-Signaturen: CAdES (EN 319 122), XAdES (EN 319 132), PAdES (EN 319 142). QES in der TI: Signierung mit dem HBA-Chip (C.HP.QES), PIN-geschützt. Komfortsignatur: Bis zu 250 Dokumente mit einmaliger PIN. [[Fernsignatur]]: Signatur ohne physische Karte (serverseitig). Vertrauensliste (TSL) der EU: [esignature.ec.europa.eu/efts](https://esignature.ec.europa.eu/efts/)
 
 ### eIDAS 2.0
 

@@ -55,13 +55,13 @@ Die [[gematik]] veröffentlicht auf dem Interoperabilitätsverzeichnis (INA) ein
 
 Für Produkte, die als Medizinprodukte eingestuft werden, gilt zusätzlich die CE-Konformitätsbewertung nach der EU-Medizinprodukteverordnung ([[MDR]], EU 2017/745) bzw. der EU-In-vitro-Diagnostika-Verordnung ([[IVDR]], EU 2017/746).
 
-Software kann ein Medizinprodukt sein (Software as a Medical Device, SaMD). Entscheidend ist der bestimmungsgemäße Zweck: Wenn eine Software zur Diagnose, Prognose, Überwachung, Behandlung oder Linderung von Krankheiten eingesetzt wird, fällt sie unter die MDR.
+Software kann ein Medizinprodukt sein ([[SaMD|Software as a Medical Device, SaMD]]). Entscheidend ist der bestimmungsgemäße Zweck: Wenn eine Software zur Diagnose, Prognose, Überwachung, Behandlung oder Linderung von Krankheiten eingesetzt wird, fällt sie unter die MDR.
 
 Medizinprodukt-Software muss:
 - Klassifiziert werden (Risikoklassen I bis III nach Anhang VIII MDR)
 - Von einer **[[Benannte-Stelle|Benannten Stelle]]** (Notified Body) oder im Eigenverfahren (Klasse I) bewertet werden
 - Das CE-Zeichen tragen
-- In der **EUDAMED**-Datenbank der EU-Kommission registriert sein
+- In der **[[EUDAMED]]**-Datenbank der EU-Kommission registriert sein
 
 > [!frist-warnung] Frist-Warnung: MDR-Übergangsfrist für Legacy-Software (SaMD)
 > **Rechtsgrundlage:** Verordnung (EU) 2017/745 (MDR) i.V.m. Verordnung (EU) 2023/607 zur Verlängerung der Übergangsfristen

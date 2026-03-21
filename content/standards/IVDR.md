@@ -53,7 +53,7 @@ Hersteller müssen vor dem Inverkehrbringen ein Konformitätsbewertungsverfahren
 2. **Klinische Leistungsstudie / klinische Nachweise**: Für Klassen C und D sind eigene Leistungsstudien erforderlich, die den diagnostischen Nutzen belegen.
 3. **Prüfung durch Benannte Stelle**: Bewertung der Dokumentation und ggf. Produktmuster.
 4. **CE-Kennzeichnung**: Nach positivem Bescheid erhält das Produkt die CE-Kennzeichnung.
-5. **EUDAMED-Registrierung**: Hersteller und Produkte müssen in der europäischen Datenbank für Medizinprodukte (EUDAMED) registriert werden.
+5. **[[EUDAMED]]-Registrierung**: Hersteller und Produkte müssen in der europäischen Datenbank für Medizinprodukte (EUDAMED) registriert werden.
 
 ### Relevanz für deutsche Health-IT
 

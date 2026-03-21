@@ -3,6 +3,10 @@ title: DVG
 audience: [technical, non-technical]
 tags: [standards, gesetzgebung, diga, telematikinfrastruktur, sgb-v]
 aliases: [Digitale-Versorgung-Gesetz, Digital-Versorgung-Gesetz]
+relevance:
+  sectors: [hersteller, startup, kasse, regulierung, patient]
+  interests: [compliance, business]
+maturity: wachsend
 ---
 
 # DVG
@@ -22,6 +26,12 @@ Die wichtigste Neuerung des DVG war die Einführung der [[DiGA]] (Digitale Gesun
 Das DVG verpflichtete Apotheken und Krankenhäuser zum Anschluss an die [[Telematikinfrastruktur]]. Außerdem wurden neue Teilnehmergruppen zugelassen: Hebammen, Physiotherapeuten und Pflegeeinrichtungen erhielten die Möglichkeit, sich an die TI anzubinden.
 
 Neben DiGA enthielt das DVG weitere Regelungen: die Ausweitung telemedizinischer Leistungen, einen Innovationsfonds von 200 Millionen Euro jährlich für die Jahre 2020 bis 2024 sowie eine gesetzliche Grundlage für die Nutzung pseudonymisierter Routinedaten der Krankenkassen für die Versorgungsforschung.
+
+> [!interesse-business]
+> Das DVG schuf den Markt für "Apps auf Rezept" ([[DiGA]]). Seit Einführung 2020 wurden über 60 DiGA zugelassen (Stand 2026). Hersteller durchlaufen das Fast-Track-Verfahren beim [[BfArM]] (Prüfung in 3 Monaten). Im ersten Jahr gilt ein Herstellerpreis; danach wird mit dem [[GKV]]-Spitzenverband ein Erstattungsbetrag verhandelt. Ab 2026 muss mindestens 20 Prozent des Vergütungsbetrags von messbaren Versorgungserfolgen abhängen (AbEM).
+
+> [!interesse-compliance]
+> Das DVG legte Pflichtfristen für TI-Anbindungen fest: Apotheken ab 1. September 2020, Krankenhäuser ab 1. Januar 2021. Folgegesetze ([[DigiG]], [[DVPMG]]) bauen auf den DVG-Strukturen auf. Der aktuelle Rechtsrahmen für DiGA ist das DVG in Verbindung mit der DiGAV und § 139e SGB V.
 
 ## Technische Details
 

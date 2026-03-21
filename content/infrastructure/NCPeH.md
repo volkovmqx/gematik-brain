@@ -28,16 +28,16 @@ Am **16. März 2026** besuchten fast 50 Delegierte aus 14 EU-Ländern die [[gema
 Parallel zur E-Rezept-Integration laufen in Deutschland erste Pilotaktivitäten für den grenzüberschreitenden Austausch von [[Patient-Summary|Patientenkurzakten (Patient Summary)]]. Die AOK hat Pilotprojektergebnisse und ein Konzeptpapier für den EU-weiten Patientenzusammenfassungsaustausch beim [[BMG]] eingereicht. Patient Summary und E-Rezept sind zwei eigenständige Anwendungsfälle: Das E-Rezept ist für Wave 10 (2026) priorisiert; der Patient-Summary-Austausch ist als separater Schritt geplant und befindet sich in der konzeptionellen Phase.
 
 > [!interesse-compliance]
-> Deutschland ist Wave-10-Teilnehmer für den grenzüberschreitenden E-Rezept-Austausch (2026). Die [[DVKA]] betreibt den NCPeH als Pflichtaufgabe nach EHDS-Verordnung (EU 2025/327, in Kraft März 2025). Krankenkassen und Leistungserbringer müssen keine eigene Infrastruktur aufbauen: Der NCPeH übernimmt die Grenzüberschreitung zentral. Bis 2029 ist die EU-weite Nutzbarkeit von [[Patient-Summary|Patientenzusammenfassung]] und [[E-Rezept]] verpflichtend.
+> Der Produktivstart Deutschlands für den grenzüberschreitenden E-Rezept-Austausch (Wave 10) wurde auf H1/2027 verschoben (OneRoadmap Q1/2026). Die [[DVKA]] betreibt den NCPeH als Pflichtaufgabe nach EHDS-Verordnung (EU 2025/327, in Kraft März 2025). Krankenkassen und Leistungserbringer müssen keine eigene Infrastruktur aufbauen: Der NCPeH übernimmt die Grenzüberschreitung zentral. Bis 2029 ist die EU-weite Nutzbarkeit von [[Patient-Summary|Patientenzusammenfassung]] und [[E-Rezept]] verpflichtend.
 
 ### Geplante Teilnahme an MyHealth@EU
 
 Deutschland plant die Teilnahme an MyHealth@EU in mehreren Wellen:
 
-- **Wave 10 (2026)**: Deutschland plant den Anschluss für das [[E-Rezept]] (ePrescription)
+- **Wave 10 (H1/2027)**: Der Produktivstart Deutschlands für den E-Rezept-Anwendungsfall (ePrescription) wurde von 2026 auf das erste Halbjahr 2027 verschoben (Stand: OneRoadmap Q1/2026).
 - **Bis 2029**: Vollständige Nutzbarkeit von [[Patient-Summary|Patientenzusammenfassung (Patient Summary)]] und [[E-Rezept]] EU-weit
 
-Österreich ist bereits seit **25. Februar 2026** aktiv am Austausch beteiligt: Es akzeptiert EU-E-Rezepte aus Tschechien, was ein erstes konkretes Beispiel für den funktionierenden grenzüberschreitenden Austausch ist. Deutschland plant als Wave-10-Teilnehmer den Produktivstart für den E-Rezept-Anwendungsfall in 2026.
+Österreich ist bereits seit **25. Februar 2026** aktiv am Austausch beteiligt: Es akzeptiert EU-E-Rezepte aus Tschechien, was ein erstes konkretes Beispiel für den funktionierenden grenzüberschreitenden Austausch ist. Deutschland war ursprünglich als Wave-10-Teilnehmer mit Produktivstart in 2026 geplant; laut OneRoadmap Q1/2026 wurde der Termin auf H1/2027 verschoben.
 
 Das übergeordnete Ziel: Bürgerinnen und Bürger sollen bis 2029 ihre Gesundheitsdaten (Patientenzusammenfassung, E-Rezept) EU-weit nutzen können.
 
@@ -65,15 +65,15 @@ Der Datenaustausch über MyHealth@EU basiert auf **IHE**-Profilen (Integrating t
 
 Gematik veröffentlichte am 12. März 2025 mit Release **NCPeH_24_2** die Feature-Spezifikation **gemF_eRp_EU V1.0.0** für den Anwendungsfall "EU Zugriff E-Rezept" (ePrescription/eDispensation Country A). Sie beschreibt, wie Versicherte deutschen Leistungserbringern im EU-Ausland Zugriff auf ihre [[E-Rezept|E-Rezepte]] erteilen können.
 
-Der Autorisierungsmechanismus nutzt einen **6-stelligen alphanumerischen Zugangscode** zusammen mit der Versicherten-ID. Das Verfahren funktioniert ohne Konnektor oder physische Karte auf der ausländischen Seite. Der produktive Wave-10-Anschluss Deutschlands an MyHealth@EU für E-Rezepte ist für 2026 geplant.
+Der Autorisierungsmechanismus nutzt einen **6-stelligen alphanumerischen Zugangscode** zusammen mit der Versicherten-ID. Das Verfahren funktioniert ohne Konnektor oder physische Karte auf der ausländischen Seite. Der produktive Wave-10-Anschluss Deutschlands an MyHealth@EU für E-Rezepte ist für H1/2027 geplant (Stand: OneRoadmap Q1/2026).
 
 ### Datenarten im Austausch
 
 | Dienst | Inhalt | Status Deutschland |
 |---|---|---|
 | Patient Summary (PS) | Zusammenfassung der Krankengeschichte, Medikamente, Allergien | In Vorbereitung |
-| ePrescription | Elektronisches Rezept | Geplant Wave 10 (2026) |
-| eDispensation | Bestätigung der Abgabe | Geplant Wave 10 (2026) |
+| ePrescription | Elektronisches Rezept | Geplant Wave 10 (H1/2027) |
+| eDispensation | Bestätigung der Abgabe | Geplant Wave 10 (H1/2027) |
 
 ### EHDS und Sekundärnutzung
 

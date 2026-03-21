@@ -1,60 +1,51 @@
 {
   "pending": [
     {
-      "term": "KIG",
+      "term": "D-Trust",
       "category": "organization",
-      "reason": "Kompetenzzentrum Interoperabilität bei der gematik: in 4 Artikeln (Interoperabilitätsverzeichnis, KHAG, GDVG, GDAG) als zentrales Governance-Gremium für verbindliche IOP-Standards und FHIR-Profile erwähnt; kein eigener Artikel",
+      "reason": "D-Trust GmbH (Tochter der Bundesdruckerei) ist der zentrale zugelassene Vertrauensdiensteanbieter (TSP) für HBA und SMC-B in der TI. In 8 Artikeln erwähnt (HBA, SMC-B, HSM-B, Bundesaerztekammer, Landesaerztekammer, BZÄK) als primäres Trustcenter für Zertifikatserstellung; kein eigener Artikel.",
       "mentionedIn": [
-        "content/infrastructure/Interoperabilitaetsverzeichnis.md",
-        "content/standards/KHAG.md",
-        "content/standards/GDVG.md",
-        "content/standards/GDAG.md"
+        "content/infrastructure/HBA.md",
+        "content/infrastructure/SMC-B.md",
+        "content/infrastructure/HSM-B.md",
+        "content/organization/Bundesaerztekammer.md",
+        "content/organization/Landesaerztekammer.md",
+        "content/organization/BZÄK.md",
+        "content/concepts/PKI.md",
+        "content/infrastructure/TSP.md"
       ],
-      "priority": 15
+      "priority": 22
     },
     {
-      "term": "EUDAMED",
-      "category": "infrastructure",
-      "reason": "Europäische Datenbank für Medizinprodukte (European Database on Medical Devices): in 4 Artikeln (Konformitätsbewertung, Medizinprodukte, Benannte-Stelle, IVDR) als Pflichtregistrierung für SaMD/MDR erwähnt; kein eigener Artikel",
-      "mentionedIn": [
-        "content/processes/Konformitaetsbewertung.md",
-        "content/concepts/Medizinprodukte.md",
-        "content/organization/Benannte-Stelle.md",
-        "content/standards/IVDR.md"
-      ],
-      "priority": 12
-    },
-    {
-      "term": "SaMD",
+      "term": "Gesundheitsdatenraum",
       "category": "concepts",
-      "reason": "Software as a Medical Device: in 4 Artikeln (Konformitätsbewertung, Medizinprodukte, Benannte-Stelle, IVDR) als Schlüsselkonzept für MDR-Einstufung von Gesundheitssoftware erwähnt; kein eigener Artikel",
+      "reason": "Konzept des deutschen und europäischen Gesundheitsdatenraums (GDVG-Titel: 'Gesetz für digitale Versorgung und den Gesundheitsdatenraum'): in 8 Artikeln (EHDS, GDNG, GDVG, gematik, EUDI-Wallet) als übergreifendes Rahmenkonzept referenziert. EHDS deckt nur den EU-Aspekt ab; kein eigener Artikel für den nationalen Gesundheitsdatenraum.",
       "mentionedIn": [
-        "content/processes/Konformitaetsbewertung.md",
-        "content/concepts/Medizinprodukte.md",
-        "content/organization/Benannte-Stelle.md"
-      ],
-      "priority": 11
-    },
-    {
-      "term": "Primärversorgung",
-      "category": "concepts",
-      "reason": "Primärversorgungsmodell mit Hausarzt, ePA und 116117: in 3 Artikeln (Patient-Summary, eReferral, ePA) als neue Versorgungsarchitektur unter Nina Warken referenziert; kein eigener Artikel",
-      "mentionedIn": [
-        "content/standards/Patient-Summary.md",
-        "content/technologies/eReferral.md",
-        "content/technologies/ePA.md"
-      ],
-      "priority": 9
-    },
-    {
-      "term": "EEHRxF",
-      "category": "standards",
-      "reason": "European Electronic Health Record Exchange Format: in 2 Artikeln (EHDS, GDVG) als Pflichtformat für grenzüberschreitenden ePA-Datenaustausch ab 2027 referenziert; kein eigener Artikel",
-      "mentionedIn": [
+        "content/organization/gematik.md",
+        "content/infrastructure/EUDI-Wallet.md",
         "content/standards/EHDS.md",
-        "content/standards/GDVG.md"
+        "content/standards/GDVG.md",
+        "content/standards/GDNG.md",
+        "content/infrastructure/Forschungsdatenzentrum-Gesundheit.md",
+        "content/technologies/ePA.md",
+        "content/standards/DigiG.md"
       ],
-      "priority": 7
+      "priority": 18
+    },
+    {
+      "term": "KHSFV",
+      "category": "standards",
+      "reason": "Krankenhaus-Strukturfonds-Verfahrensverordnung: in 7 Artikeln (KHZG, ISiK, Interoperabilitaetsverzeichnis, KIS, Transformationsfonds, ISMS) als regulatorische Anforderung für ISiK-Bestätigungen und KHZG-Fördervoraussetzungen referenziert; kein eigener Artikel.",
+      "mentionedIn": [
+        "content/standards/KHZG.md",
+        "content/standards/ISiK.md",
+        "content/infrastructure/Interoperabilitaetsverzeichnis.md",
+        "content/technologies/KIS.md",
+        "content/infrastructure/KIS.md",
+        "content/concepts/Transformationsfonds.md",
+        "content/concepts/ISMS.md"
+      ],
+      "priority": 14
     },
     {
       "term": "Hilfsmittelverordnung",
@@ -242,7 +233,12 @@
     "KHG",
     "KHVVG",
     "KHZG",
+    "EEHRxF",
+    "EUDAMED",
+    "KIG",
     "KIM",
+    "Primärversorgung",
+    "SaMD",
     "KIS",
     "KRITIS",
     "KRITIS-Dachgesetz",
@@ -362,50 +358,35 @@
   ],
   "brokenWikiLinks": [
     {
-      "link": "Kassenärztliche-Vereinigung",
-      "resolvedBy": "content/organization/Kassenaerztliche-Vereinigung.md",
-      "note": "Alias-Mismatch: Artikel hat Alias 'Kassenärztliche Vereinigung' (ohne Bindestrich), aber 1 Link verwendet 'Kassenärztliche-Vereinigung' (mit Bindestrich)"
-    },
-    {
-      "link": "Konformitätsbewertung",
-      "resolvedBy": "content/processes/Konformitaetsbewertung.md",
-      "note": "Alias-Mismatch: Artikel verwendet ASCII-Dateinamen, manche Links verwenden Umlautform"
-    },
-    {
-      "link": "MyHealth@EU",
-      "resolvedBy": "content/infrastructure/MyHealthAtEU.md",
-      "note": "Alias-Mismatch: @ vs At im Dateinamen; MyHealthAtEU.md hat MyHealth@EU als Alias, sollte von Quartz aufgelöst werden"
+      "link": "SGB V",
+      "resolvedBy": "content/standards/SGB-V.md",
+      "note": "17 Vorkommen: SGB-V.md hat kein 'SGB V' Alias (nur 'SGB 5', 'Sozialgesetzbuch V'). Alias 'SGB V' muss in SGB-V.md ergänzt werden.",
+      "impact": "high"
     },
     {
       "link": "OAuth 2.0",
       "resolvedBy": "content/concepts/OAuth-2.0.md",
-      "note": "Leerzeichen vs Bindestrich im Link-Ziel; OAuth-2.0.md hat 'OAuth 2.0' als Alias - sollte auflösen"
-    },
-    {
-      "link": "SGB V",
-      "resolvedBy": "content/standards/SGB-V.md",
-      "note": "28 Vorkommen: SGB-V.md hat kein 'SGB V' Alias (nur 'SGB 5', 'Sozialgesetzbuch V'). Alias 'SGB V' muss in SGB-V.md ergänzt werden.",
-      "impact": "high"
-    },
-    {
-      "link": "SGB XI",
-      "resolvedBy": "content/standards/SGB-XI.md",
-      "note": "3 Vorkommen: SGB-XI.md hat kein 'SGB XI' Alias. Alias 'SGB XI' muss ergänzt werden."
+      "note": "4 Vorkommen: OAuth-2.0.md hat 'OAuth 2.0 / OpenID Connect' als Alias, aber nicht 'OAuth 2.0' allein. Alias muss ergänzt werden.",
+      "impact": "medium"
     },
     {
       "link": "SNOMED CT",
       "resolvedBy": "content/standards/SNOMED-CT.md",
-      "note": "7 Vorkommen: SNOMED-CT.md hat 'SNOMED CT International' als Alias, nicht 'SNOMED CT'. Alias muss ergänzt werden.",
+      "note": "4 Vorkommen: SNOMED-CT.md hat 'SNOMED CT International' als Alias, nicht 'SNOMED CT'. Alias muss ergänzt werden.",
       "impact": "medium"
     },
     {
-      "link": "ÖGD",
-      "resolvedBy": "content/organization/OeGD.md",
-      "note": "Alias-Mismatch: Artikel hat ÖGD als Alias, sollte von Quartz aufgelöst werden"
+      "link": "SGB XI",
+      "resolvedBy": "content/standards/SGB-XI.md",
+      "note": "2 Vorkommen: SGB-XI.md hat kein 'SGB XI' Alias. Alias muss ergänzt werden."
+    },
+    {
+      "link": "Kassenärztliche-Vereinigung",
+      "resolvedBy": "content/organization/Kassenaerztliche-Vereinigung.md",
+      "note": "1 Vorkommen (Videosprechstunde.md): Artikel hat 'Kassenärztliche Vereinigung' (ohne Bindestrich) als Alias, aber der Link verwendet den Bindestrich. Alias anpassen oder Link korrigieren."
     }
   ],
   "missingRelevance": [
-    "content/concepts/ISMS.md",
     "content/concepts/KRITIS.md",
     "content/concepts/OAuth-2.0.md",
     "content/concepts/PEPP.md",
@@ -435,8 +416,8 @@
     "content/organization/DVKA.md",
     "content/organization/IQWiG.md",
     "content/organization/InEK.md",
-    "content/organization/KZBV.md",
     "content/organization/Kassenaerztliche-Vereinigung.md",
+    "content/organization/KZBV.md",
     "content/organization/Landesaerztekammer.md",
     "content/organization/Medizinischer-Dienst.md",
     "content/organization/OeGD.md",
@@ -473,11 +454,10 @@
     "content/standards/VDG.md",
     "content/standards/XDS.md",
     "content/standards/eIDAS.md",
-    "content/technologies/DEMIS.md",
     "content/technologies/DiPA.md",
     "content/technologies/DiPaG.md",
     "content/technologies/eArztbrief.md",
     "content/technologies/gRPC.md"
   ],
-  "lastRun": "2026-03-20"
+  "lastRun": "2026-03-21"
 }

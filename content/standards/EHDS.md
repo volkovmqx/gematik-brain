@@ -75,12 +75,12 @@ MyHealth@EU (früher eHealth Digital Service Infrastructure, eHDSI) ist die Infr
 ### Interoperabilitätsvorgaben
 
 > [!interesse-technik] EHDS-Architektur für Entwickler
-> Technisches Format: European EHR Exchange Format (EEHRxF) auf Basis von [[HL7]] [[FHIR]] R4. Terminologien: [[SNOMED CT]], [[LOINC]], ICD-10. Deutsche Umsetzung: [[NCPeH]] als Gateway; [[ePA]] als nationale Datenquelle. Implementierungsleitfäden werden von der Europäischen Kommission und [[IHE]] Europe erarbeitet. GitHub: [github.com/Xt-EHR](https://github.com/Xt-EHR) (Xt-EHR-Projekt für FHIR-Profile).
+> Technisches Format: [[EEHRxF|European EHR Exchange Format (EEHRxF)]] auf Basis von [[HL7]] [[FHIR]] R4. Terminologien: [[SNOMED CT]], [[LOINC]], ICD-10. Deutsche Umsetzung: [[NCPeH]] als Gateway; [[ePA]] als nationale Datenquelle. Implementierungsleitfäden werden von der Europäischen Kommission und [[IHE]] Europe erarbeitet. GitHub: [github.com/Xt-EHR](https://github.com/Xt-EHR) (Xt-EHR-Projekt für FHIR-Profile).
 
 Der EHDS verpflichtet Mitgliedstaaten und Hersteller von Gesundheits-IT zur technischen Interoperabilität. Konkret:
 
 - Elektronische Patientenakten-Systeme (EHR-Systeme) müssen die Interoperabilitätsvorgaben gemäß den Durchführungsrechtsakten der Kommission (erwartet bis 2027) umsetzen. Die Pflicht zur tatsächlichen grenzüberschreitenden Bereitstellung gilt ab März 2029.
-- Das Format basiert auf dem **European Electronic Health Record Exchange Format (EEHRxF)**, der auf [[HL7]] [[FHIR]] und internationalen Terminologien ([[SNOMED CT]], [[LOINC]]) aufbaut.
+- Das Format basiert auf dem **[[EEHRxF|European Electronic Health Record Exchange Format (EEHRxF)]]**, der auf [[HL7]] [[FHIR]] und internationalen Terminologien ([[SNOMED CT]], [[LOINC]]) aufbaut.
 
 ### Datenschutz
 

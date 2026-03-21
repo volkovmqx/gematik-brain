@@ -28,7 +28,7 @@ Der Koalitionsvertrag von CDU/CSU und SPD (April 2025) sieht die Modernisierung 
 - **Umwandlung der gematik**: Die [[gematik]] soll als Digitalagentur erweiterte Durchsetzungsbefugnisse für einheitliche Standardimplementierungen erhalten. Statt bloßer Koordination soll sie klarer als zentrale Steuerungsstelle für die Digitalisierung des Gesundheitswesens positioniert werden.
 - **Gesundheitsdatenraum**: Das Gesetz soll die Nutzung von Gesundheitsdaten für Versorgung und Forschung verbessern und den deutschen Beitrag zum [[EHDS]] (European Health Data Space) stärken.
 - **Interoperabilität**: Alle Software- und IT-Anbieter im Gesundheitswesen sollen bis 2027 verlustfreien Datenaustausch auf Basis einheitlicher Standards sicherstellen.
-- **Kompetenzzentrum Interoperabilität (KIG)**: Das bei der [[gematik]] angesiedelte KIG soll gesetzlich verankert und gestärkt werden.
+- **[[KIG|Kompetenzzentrum Interoperabilität (KIG)]]**: Das bei der [[gematik]] angesiedelte KIG soll gesetzlich verankert und gestärkt werden.
 
 > [!interesse-compliance]
 > Für Hersteller von [[PVS]], [[KIS]] und [[AVS]] bedeutet das GDVG erweiterte Durchsetzungsmöglichkeiten der [[gematik]]. Abweichende Schnittstellenimplementierungen können zukünftig sanktioniert werden. Der Referentenentwurf soll in H1/2026 vorgelegt werden. Bis 2027 müssen alle Software-Anbieter im Gesundheitswesen verlustfreien Datenaustausch auf Basis einheitlicher Standards sicherstellen.
@@ -39,7 +39,7 @@ Der Koalitionsvertrag von CDU/CSU und SPD (April 2025) sieht die Modernisierung 
 > [!frist-warnung] Frist-Warnung: EHDS-Pflichten ab 2027
 > **Rechtsgrundlage:** Verordnung (EU) 2025/327 (European Health Data Space, EHDS), in Kraft seit März 2025
 > **Frist:** Die primäre Nutzung von Gesundheitsdaten im EHDS (Zugang zur eigenen ePA über MyHealth@EU) beginnt stufenweise ab **März 2027**. Die Sekundärnutzungspflichten (Datenbereitstellung an den europäischen Gesundheitsdatenraum) greifen zu einem späteren Zeitpunkt entsprechend des EHDS-Anwendungsfahrplans.
-> **Handlungsbedarf:** Hersteller von PVS, KIS und AVS müssen die EHDS-kompatiblen Datenaustauschformate (European Electronic Health Record Exchange Format, EEHRxF) implementieren. Die gematik hat als nationaler Kontaktpunkt für digitale Gesundheit (NCPeH) die Schnittstellenspezifikationen bis zum Rollout bereitzustellen. Einrichtungen sollten die GDVG-Gesetzgebung ab H1/2026 eng verfolgen, da das GDVG die nationalen EHDS-Umsetzungspflichten konkretisieren wird.
+> **Handlungsbedarf:** Hersteller von PVS, KIS und AVS müssen die EHDS-kompatiblen Datenaustauschformate ([[EEHRxF|European Electronic Health Record Exchange Format, EEHRxF]]) implementieren. Die gematik hat als nationaler Kontaktpunkt für digitale Gesundheit (NCPeH) die Schnittstellenspezifikationen bis zum Rollout bereitzustellen. Einrichtungen sollten die GDVG-Gesetzgebung ab H1/2026 eng verfolgen, da das GDVG die nationalen EHDS-Umsetzungspflichten konkretisieren wird.
 > **Bei Nichtbeachtung:** Verstöße gegen EHDS-Anforderungen können durch die zuständige nationale Aufsichtsbehörde (BfArM als Health Data Access Body) geahndet werden.
 
 ### Abgrenzung zum GDAG

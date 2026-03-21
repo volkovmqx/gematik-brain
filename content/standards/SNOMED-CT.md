@@ -3,6 +3,10 @@ title: SNOMED CT
 audience: [technical]
 tags: [standards, terminologie, kodierung, interoperabilität, semantik]
 aliases: [Systematisierte Nomenklatur der Medizin, SNOMED, SNOMED CT International]
+relevance:
+  sectors: [krankenhaus, arztpraxis, hersteller, it-dienstleister, forschung]
+  interests: [technik, compliance]
+maturity: wachsend
 ---
 
 # SNOMED CT
@@ -72,6 +76,12 @@ Das MIO DiGA Toolkit referenziert SNOMED CT für generische klinische Konzepte i
 ### Lizenzierung in Deutschland
 
 Da das [[BfArM]] die Nationallizenz hält, können Organisationen mit Sitz in Deutschland SNOMED CT kostenlos über den MLDS-Dienst (Member Licensing and Distribution Service) von SNOMED International lizenzieren. Für kommerzielle Produkte gelten gesonderte Bedingungen.
+
+> [!interesse-technik]
+> FHIR CodeSystem URI: `http://snomed.info/sct`. Terminologieserver des BfArM: [terminologien.bfarm.de](https://terminologien.bfarm.de/) (FHIR `$lookup`, `$validate-code`). Lizenzregistrierung (MLDS): [mlds.ihtsdotools.org](https://mlds.ihtsdotools.org/). Halbjährliche Releases: Januar und Juli. Deutsche Extension: [releases.ihtsdotools.org/de](https://releases.ihtsdotools.org/).
+
+> [!interesse-compliance]
+> § 355 Abs. 7 SGB V verpflichtet das [[BfArM]] zur Verwaltung von SNOMED CT in Deutschland. Die Nationallizenz gilt seit 2021. Für MIO-konforme Software und ISiK-zertifizierte KIS sind SNOMED-CT-Kodierungen in bestimmten Ressourcen verpflichtend. Hersteller von DiGA müssen SNOMED CT für klinische Konzepte im Datenexport nach §374a SGB V nutzen.
 
 ### Abgrenzung zu anderen Terminologien
 

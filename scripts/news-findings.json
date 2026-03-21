@@ -1337,9 +1337,10 @@
       "source": "https://fachportal.gematik.de/telematikinfrastruktur/roadmap",
       "summary": "Die aktualisierte OneRoadmap (Stand 26. Februar 2026) verschiebt den Produktivstart für NCPeH 2.1 (grenzüberschreitendes E-Rezept via MyHealth@EU) von 2026 auf H1/2027. Das bedeutet: Deutschland wird erst im ersten Halbjahr 2027 als Wave-10-Teilnehmer produktiv an MyHealth@EU angeschlossen. Österreich und Tschechien sind seit Februar 2026 bereits produktiv. Zugleich bestätigt die Roadmap ePA 3.1.3 Teil 1 (eMedikationsplan-Pilot) für Q3/2026 und T-Rezept als Bestandteil von E-Rezept 27.2/27.4, d.h. der T-Rezept-Rollout ist erst 2027 erwartet (nicht wie zuvor dokumentiert Q4/2026).",
       "affects": ["NCPeH.md", "E-Rezept.md"],
-      "action": "update",
+      "action": "applied",
+      "appliedDate": "2026-03-21",
       "category": "specification",
-      "details": "NCPeH.md sollte den Wave-10-Produktivstart von 2026 auf H1/2027 korrigieren. E-Rezept.md: T-Rezept-Rollout von 'Mitte Q4/2026' auf '2027 (E-Rezept 27.2/27.4)' korrigieren."
+      "details": "NCPeH.md: Wave-10-Produktivstart von 2026 auf H1/2027 korrigiert. E-Rezept.md: T-Rezept-Rollout von 'Mitte Q4/2026' auf '2027 (E-Rezept 27.2/27.4)' korrigiert."
     },
     {
       "title": "MIO-Zeitplan konkretisiert: Elektronischer Impfausweis und weitere MIOs erst 2027",
@@ -1347,9 +1348,10 @@
       "source": "https://www.aerztezeitung.de/Wirtschaft/Welche-neuen-ePA-Funktionen-2026-kommen-sollen-460768.html",
       "summary": "Die gematik OneRoadmap (Q1/2026) bestätigt: Die Medizinischen Informationsobjekte (MIOs) Impfausweis, Mutterpass, Kinderuntersuchungsheft und Zahnärztliches Bonusheft werden erst 2027 in die ePA integriert, nicht bereits 2026. In 2026 liegt der Fokus auf dem elektronischen Medikationsplan (eMP, Pilot ab Juli 2026). Der Impfausweis gilt als technisch am weitesten fortgeschrittenes MIO und soll als erstes folgen; konkrete Termine für die anderen MIOs sind noch 'TBD'. Einzelne Krankenkassen (u.a. eine AOK) pilotieren bereits einen E-Impfpass, aber ohne TI-Standardisierung.",
       "affects": ["ePA.md"],
-      "action": "update",
+      "action": "applied",
+      "appliedDate": "2026-03-21",
       "category": "specification",
-      "details": "ePA.md sollte den MIO-Zeitplan präzisieren: MIOs (Impfausweis, Mutterpass, U-Heft, Bonusheft) erst 2027, nicht 2026. Der Fokus 2026 liegt auf eMP-Pilot (Juli 2026) und eML-Erweiterungen."
+      "details": "ePA.md: MIO-Zeitplan präzisiert - MIOs (Impfausweis, Mutterpass, U-Heft, Bonusheft) erst 2027, Fokus 2026 auf eMP-Pilot (Juli 2026) und eML-Erweiterungen."
     },
     {
       "title": "Draft_E-Rezept_26_1: Kommentierungsfrist läuft bis 31. März 2026",
@@ -1371,8 +1373,38 @@
       "category": "regulation",
       "details": "Stand 20. März 2026: Das KHAG-Votum im Bundesrat (27. März 2026) steht noch aus. Der bestehende Eintrag 'KHAG: Bundesrat stimmte am 27. März 2026 zu' (appliedDate 2026-03-19) ist vorausgreifend erfasst. Nach tatsächlicher Abstimmung KIS.md und ISiK.md auf Inkrafttreten aktualisieren. Falls Bundesrat Einspruch einlegt: Neues Finding erfassen.",
       "suggestedTerm": "KHAG"
+    },
+    {
+      "title": "T-Systems IDP Totalausfall: GesundheitsID für Barmer und AOK 12. Februar 2026 ausgefallen",
+      "date": "2026-02-12",
+      "source": "https://www.pharmazeutische-zeitung.de/totalausfall-bei-gesundheits-id-fuer-barmer-und-aok-versicherte-162742/",
+      "summary": "Am 12. Februar 2026 fiel der sektorale Identity Provider (IDP) von T-Systems International GmbH aus, was einen 'Totalausfall' der GesundheitsID für Barmer- und AOK-Versicherte verursachte. Betroffene Dienste: E-Rezept-App (Anmeldung per GesundheitsID), ePA-Zugang. Nicht betroffen: E-Rezept-Einlösung via eGK, Papierausdruck und App mit PIN. Es war der zweite schwere TI-Ausfall dieser Woche (nach dem IBM-IDP-Ausfall am 10. Februar). Das BMG kündigte daraufhin eine grundsätzliche Überprüfung der Systemzuverlässigkeit des E-Rezeptions-Systems an.",
+      "relevantArticles": ["IDP.md", "Gesundheits-ID.md", "E-Rezept.md", "ePA.md"],
+      "category": "security",
+      "action": "update",
+      "details": "IDP.md: Der bestehende Abschnitt 'Abhängigkeitsrisiken: Ausfall sektoraler IDPs' sollte den T-Systems-Ausfall vom 12. Februar 2026 als zweiten Vorfall in der gleichen Woche (nach IBM am 10. Februar) ergänzen. Gesundheits-ID.md: Hinweis auf IDP-Abhängigkeit als Ausfallrisiko."
+    },
+    {
+      "title": "Barmer erste Kasse mit bundesweitem ePass-Verfahren für ePA (20. März 2026)",
+      "date": "2026-03-20",
+      "source": "https://www.pharmazeutische-zeitung.de/barmer-vereinfacht-epa-zugang-163830/",
+      "summary": "Die Barmer Krankenkasse führte am 20. März 2026 als erste gesetzliche Krankenkasse bundesweit das ePass-Identifikationsverfahren (von Nect) für den ePA-Zugang ein. Versicherte können sich damit per NFC-Chip des Personalausweises und Selfie-Video identifizieren, ohne PIN oder Filialbesuch. Ab 25. März 2026 bieten rund 80 Prozent aller GKV-Kassen ePass an (über Bitmarck-Infrastruktur). Unterstützt werden Personalausweise ab 2. August 2021 und perspektivisch EU/EFTA-Reisepässe. Das Verfahren ist nicht mit der GesundheitsID identisch, sondern ein ergänzendes Authentifizierungsverfahren.",
+      "relevantArticles": ["ePA.md", "Gesundheits-ID.md", "IDP.md"],
+      "category": "specification",
+      "action": "info_only",
+      "details": "ePass-Artikel und Gesundheits-ID.md sind bereits aktualisiert. Barmer als erste Kasse und bundesweite Verfügbarkeit ab 25. März 2026 sind bestätigte Fakten. Kein weiterer Update-Bedarf."
+    },
+    {
+      "title": "DMEA 2026 Bühnenprogramm veröffentlicht: KI, digitale Ökosysteme, smarte Pflege im Fokus",
+      "date": "2026-03-01",
+      "source": "https://www.dmea.de/de/presse/pressemitteilungen/news_15936.html",
+      "summary": "Die DMEA hat das offizielle Bühnenprogramm für die DMEA 2026 (21.–23. April, Berlin) veröffentlicht. Themenschwerpunkte: KI-gestützte Kliniksysteme und Dokumentationsunterstützung, datengetriebene Forschung und EHDS-Umsetzung, smarte Pflegelösungen. Rund 900 Aussteller und knapp 500 Redner erwartet. gematik ist in Halle 1.2 (Stand D-108) mit Fachvorträgen zu TI 2.0, VSDM 2.0, PoPP, ZETA, DiPaG und NCPeH/EHDS vertreten. Es ist die letzte DMEA in Berlin; ab 2027 zieht die Messe nach München.",
+      "relevantArticles": ["Telematikinfrastruktur.md"],
+      "category": "info",
+      "action": "info_only",
+      "details": "DMEA-Ankündigung bereits in den Findings dokumentiert. Bühnenprogramm-Details als Ergänzung. Kein Artikel-Update nötig."
     }
   ],
-  "lastRun": "2026-03-20T16:00:00Z",
-  "lastChecked": "2026-03-20"
+  "lastRun": "2026-03-21T10:00:00Z",
+  "lastChecked": "2026-03-21"
 }
