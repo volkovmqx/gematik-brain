@@ -6,7 +6,7 @@ aliases: [Krankenhaus-Strukturfonds-Verfahrensverordnung, Krankenhauszukunftsfon
 relevance:
   sectors: [krankenhaus, hersteller, it-dienstleister, regulierung]
   interests: [compliance, business]
-maturity: immergruen
+maturity: wachsend
 ---
 
 # KHSFV
@@ -68,7 +68,7 @@ Als Referenzmodell dient das EMRAM-Modell (Electronic Medical Record Adoption Mo
 
 ### ISMS-Pflicht
 
-Krankenhäuser, die Mittel aus dem KHZG-Teil des Strukturfonds erhalten haben, sind verpflichtet, ab dem 1. Januar 2025 ein [[ISMS|Information Security Management System (ISMS)]] nach ISO 27001 oder BSI-Grundschutz zu betreiben. Diese Pflicht gilt unabhängig davon, ob das Krankenhaus als [[KRITIS]]-Einrichtung eingestuft ist.
+Krankenhäuser, die Mittel aus dem KHZG-Teil des Strukturfonds erhalten haben, sind verpflichtet, ab dem 1. Januar 2025 ein [[ISMS|Information Security Management System (ISMS)]] nach [[ISO-27001|ISO 27001]] oder BSI-Grundschutz zu betreiben. Diese Pflicht gilt unabhängig davon, ob das Krankenhaus als [[KRITIS]]-Einrichtung eingestuft ist.
 
 > [!klinik-integration] Klinik-Integration: ISMS im Krankenhausbetrieb umsetzen
 > Das ISMS ist kein Papierprojekt, sondern muss gelebten Betrieb abbilden. Für die Krankenhaus-IT bedeutet das:

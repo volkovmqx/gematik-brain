@@ -19,7 +19,7 @@ Stell dir vor, du möchtest eine neue App auf deinem Smartphone installieren, di
 
 ## Überblick
 
-SMART on FHIR ist heute ein HL7-Standard (HL7 SMART App Launch Framework). Die Geschichte beginnt 2009/2010: Harvard Medical School und Boston Children's Hospital starteten das SMART-Projekt (Substitutable Medical Applications, Reusable Technologies) mit dem Ziel, eine App-Plattform für Gesundheits-IT zu schaffen. Ab Ende 2013 wurde SMART mit FHIR kombiniert, dem damals entstehenden HL7-Standard für den Datenaustausch. Die resultierende Plattform heißt seitdem "SMART on FHIR" und wurde im Februar 2014 auf der HIMSS-Konferenz öffentlich vorgestellt. Er kombiniert zwei Konzepte:
+SMART on FHIR ist heute ein HL7-Standard (HL7 SMART App Launch Framework). SMART on FHIR entstand 2010 als SMART-Projekt (Substitutable Medical Applications, Reusable Technologies) am Boston Children's Hospital und der Harvard Medical School. Ab 2013 wurde es mit dem HL7-FHIR-Standard kombiniert und als HL7 SMART App Launch Framework standardisiert. Die resultierende Plattform heißt seitdem "SMART on FHIR" und wurde im Februar 2014 auf der HIMSS-Konferenz öffentlich vorgestellt. Er kombiniert zwei Konzepte:
 
 1. **App Launch**: Ein standardisierter Startmechanismus für klinische Apps aus einem EHR-System heraus (Launch-Kontext)
 2. **Authorization**: Sichere Delegierung des Zugriffs auf [[FHIR]]-Ressourcen über [[OAuth 2.0]] Authorization Code Flow
@@ -160,6 +160,8 @@ SMART on FHIR kann optional [[OIDC]]-Tokens (ID Token) verwenden, um die Identit
 ### SMART on FHIR in ISiK
 
 Das ISiK-Sicherheitsmodul (ab Stufe 3) referenziert SMART App Launch als bevorzugtes Autorisierungsprotokoll. KIS-Hersteller, die Drittanwendungen über ISiK-Schnittstellen integrieren wollen, implementieren einen SMART-konformen Authorization Server. Dies ermöglicht beispielsweise, dass eine spezialisierte Befundauswertungs-App aus dem KIS heraus gestartet wird und direkt den richtigen Patienten im Kontext hat.
+
+Hinweis: Das ISiK-Sicherheitsmodul ist laut gematik Fachportal nicht normativ festgelegt. Die Verwendung von SMART App Launch wird als Referenzimplementierung empfohlen, ist aber nicht zwingend vorgeschrieben.
 
 > [!klinik-integration] Klinik-Integration: SMART App Launch im KIS
 > **KIS-Kontext:** Das ISiK-Sicherheitsmodul (Stufe 3, verpflichtend ab 01.07.2025) schreibt SMART App Launch als Autorisierungsprotokoll für Drittanwendungen vor. Ihr KIS muss einen SMART-konformen Authorization Server betreiben. Prüfen Sie mit dem KIS-Hersteller, ob dieser im ISiK-Bestätigungsverfahren enthalten ist.

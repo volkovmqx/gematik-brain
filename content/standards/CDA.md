@@ -3,6 +3,10 @@ title: CDA
 audience: [technical]
 tags: [standard, cda, hl7, dokumente]
 aliases: [Clinical Document Architecture, HL7 CDA]
+relevance:
+  sectors: [krankenhaus, hersteller, it-dienstleister, arztpraxis]
+  interests: [technik]
+maturity: wachsend
 ---
 
 # CDA
@@ -63,6 +67,9 @@ In der deutschen [[Telematikinfrastruktur]] spielte CDA eine wichtige Rolle:
 ### Migrationspfad
 
 Die [[gematik]] und [[KBV]] empfehlen die Migration auf [[FHIR]]-basierte Formate. CDA-Dokumente können als Binary-Ressourcen in [[FHIR]] eingebettet oder per Mapping in FHIR-Strukturen überführt werden. Der HL7 Deutschland e.V. koordiniert den Migrationsprozess.
+
+> [!interesse-technik] Technischer Einstieg: CDA-zu-FHIR-Migration
+> CDA R2-Dokumente können in FHIR als `DocumentReference` (mit Binary-Anhang) gewrappt werden. Für strukturierte Umwandlung existiert das HL7-Projekt CDA-to-FHIR Mapping. Namespace der CDA-Dokumente: `urn:hl7-org:v3`. Für neue Implementierungen in der TI ist FHIR R4 der empfohlene Standard. KIS-Hersteller, die noch CDA-Arztbriefe erzeugen, können diese für die [[ePA]] weiterhin im [[XDS]]-Kontext registrieren. Das ISiK-Modul Dokumentenaustausch (Stufe 3) fordert FHIR-native Dokumente, akzeptiert aber auch CDA als Binary-Anhang in einer `DocumentReference`.
 
 ## Verknüpfungen
 

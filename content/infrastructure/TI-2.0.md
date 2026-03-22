@@ -6,7 +6,7 @@ aliases: [TI2.0, Telematikinfrastruktur 2.0, TI-Transformation]
 relevance:
   sectors: [ti-infrastruktur, hersteller, it-dienstleister, arztpraxis, krankenhaus, apotheke, startup]
   interests: [technik, compliance, business]
-maturity: immergruen
+maturity: wachsend
 ---
 
 # TI 2.0
@@ -93,7 +93,7 @@ Das [[TI-Gateway]] ist die zentrale Zugangskomponente für TI 2.0. Es ersetzt de
 
 ### VSDM 2.0: Erste TI-2.0-Anwendung
 
-[[VSDM]] 2.0 (Versichertenstammdatenmanagement 2.0) ist die erste produktive TI-2.0-Anwendung. Wesentliche Unterschiede zu VSDM 1.0:
+[[VSDM-2|VSDM 2.0]] (Versichertenstammdatenmanagement 2.0) ist die erste produktive TI-2.0-Anwendung. Wesentliche Unterschiede zu VSDM 1.0:
 
 | Merkmal | VSDM 1.0 | VSDM 2.0 |
 |---|---|---|

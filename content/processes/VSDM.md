@@ -6,6 +6,7 @@ aliases: [Versichertenstammdatenmanagement, VSDM 2.0, Versichertenstammdaten-Man
 relevance:
   sectors: [arztpraxis, zahnarzt, apotheke, kasse, hersteller, ti-infrastruktur]
   interests: [compliance, technik]
+maturity: wachsend
 ---
 
 # VSDM - Versichertenstammdatenmanagement
@@ -37,7 +38,7 @@ Aktuell nur für gesetzlich Versicherte verfügbar.
 
 ## VSDM 2.0
 
-VSDM 2.0 ist die **erste TI-2.0-Anwendung** mit [[Zero-Trust]]-Architektur. Wichtige Änderungen:
+[[VSDM-2|VSDM 2.0]] ist die **erste TI-2.0-Anwendung** mit [[Zero-Trust]]-Architektur. Wichtige Änderungen:
 
 - Daten werden direkt vom Fachdienst der Krankenkasse abgerufen (nicht mehr von der [[eGK]])
 - Mobile Szenarien ohne physische Karte möglich

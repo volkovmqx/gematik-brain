@@ -2,7 +2,7 @@
 title: Kassenärztliche Vereinigung
 audience: [technical, non-technical]
 tags: [organisation, kv, abrechnung, ambulant]
-aliases: [KV, Kassenärztliche Vereinigungen, KVen, Kassenärztliche Vereinigung]
+aliases: [KV, Kassenärztliche Vereinigungen, KVen, Kassenärztliche Vereinigung, Kassenärztliche-Vereinigung]
 relevance:
   sectors: [arztpraxis, psychotherapie, kasse, regulierung]
   interests: [compliance, business]

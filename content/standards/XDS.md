@@ -3,6 +3,10 @@ title: XDS
 audience: [technical]
 tags: [standards, IHE, dokumentenmanagement, ePA]
 aliases: [Cross-Enterprise Document Sharing, XDS.b, IHE XDS]
+relevance:
+  sectors: [krankenhaus, hersteller, it-dienstleister, ti-infrastruktur]
+  interests: [technik]
+maturity: wachsend
 ---
 
 # XDS
@@ -74,6 +78,9 @@ Alle Akteure müssen mit dem [[IHE]]-Profil ATNA (Audit Trail and Node Authentic
 ### XDS in der ePA
 
 Die [[ePA]]-Komponenten nutzen XDS.b über SOAP-basierte Webservices. Das gematik-GitHub-Repository `ePA-XDS-Document` enthält die konkreten Ressourcen für den XDS Document Service. Für grenzüberschreitende Szenarien (ePA 3.x) wird die Transaktion `CrossGatewayDocumentProvide` verwendet.
+
+> [!interesse-technik] Technischer Einstieg: XDS in der ePA
+> Die ePA nutzt XDS.b mit MTOM/XOP-Transport. Schlüsseltransaktionen: ITI-41 (Provide and Register Document Set-b) zum Hochladen, ITI-18 (Registry Stored Query) zur Suche, ITI-43 (Retrieve Document Set) zum Abruf. Metadaten werden im ebXML-Format kodiert. Dokumenttypen werden über LOINC-Codes identifiziert (z.B. 18842-5 für Discharge Summary). Pflichtprofil ATNA für Audit Trail. gematik-Spezifikation: gemSpec_DM_ePA (XDS-Metadaten). GitHub: [gematik/ePA-XDS-Document](https://github.com/gematik/ePA-XDS-Document).
 
 ## Verknüpfungen
 

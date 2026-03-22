@@ -31,7 +31,7 @@ Anwendungsfelder sind breit: Kardiologie, Diabetologie, Psychotherapie, Physioth
 
 ### Fast-Track-Verfahren
 
-Das BfArM prüft DiGA-Anträge im sogenannten Fast-Track-Verfahren innerhalb von maximal drei Monaten. Geprüft wird:
+Das [[BfArM]] prüft DiGA-Anträge im sogenannten [[DiGA-Fast-Track|Fast-Track-Verfahren]] innerhalb von maximal drei Monaten. Geprüft wird:
 
 1. **Sicherheit und Funktionstüchtigkeit**: Entspricht der MDR, kein Schaden für Patienten
 2. **Datenschutz**: Daten dürfen nur in Deutschland verarbeitet werden; strenge Anforderungen an Datensparsamkeit

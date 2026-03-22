@@ -190,4 +190,4 @@ Nach § 291f [[SGB-V]] muss ein übermittelter Arztbrief mit einer [[QES|qualifi
 - [gematik Fachportal: ISiK – Informationstechnische Systeme im Krankenhaus](https://fachportal.gematik.de/informationen-fuer/isik)
 - [KBV: Basis-Arztbrief (CDA-Spezifikation)](https://www.kbv.de/html/2432.php)
 - [Simplifier.net: ISiK Dokumentenaustausch](https://simplifier.net/packages/de.gematik.isik-dokumentenaustausch)
-- [Rahmenvertrag Entlassmanagement (GKV-Spitzenverband)](https://www.gkv-spitzenverband.de/krankenversicherung/ambulant_stationaere_versorgung/entlassmanagement/entlassmanagement.jsp)
+- [Rahmenvertrag Entlassmanagement inkl. 13. Änderungsvereinbarung (GKV-Spitzenverband, Stand: 23.05.2025)](https://www.gkv-spitzenverband.de/krankenversicherung/ambulant_stationaere_versorgung/entlassmanagement/entlassmanagement.jsp)

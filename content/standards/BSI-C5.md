@@ -3,7 +3,10 @@ title: BSI C5
 audience: [technical]
 tags: [standards, cloud, sicherheit, bsi, zertifizierung, sgb-v]
 aliases: [C5, BSI C5-Testat, Cloud Computing Compliance Criteria Catalogue]
-maturity: immergruen
+maturity: wachsend
+relevance:
+  sectors: [hersteller, ti-infrastruktur, it-dienstleister, krankenhaus, kasse, regulierung]
+  interests: [compliance, technik]
 ---
 
 # BSI C5
@@ -18,7 +21,7 @@ Wenn ein Arzt oder ein Krankenhaus Patientendaten nicht auf einem eigenen Server
 
 Das [[BSI]] veröffentlichte den C5-Katalog erstmals im Jahr 2016 und aktualisierte ihn 2020 (C5:2020). Er definiert Mindestanforderungen an die Informationssicherheit von Cloud-Diensten in 17 Themenbereichen, darunter Organisationssicherheit, Identitäts- und Zugriffsmanagement, Datensicherheit und Incident Management.
 
-Der C5 ist im Prinzip eine Erweiterung des internationalen Standards ISO/IEC 27001 um cloudspezifische Anforderungen. Er unterscheidet sich von ISO 27001 dadurch, dass er explizit auf Cloud-Umgebungen zugeschnitten ist und Transparenzanforderungen zur Offenlegung von Lieferketten, Subunternehmern und geografischen Standorten enthält.
+Der C5 ist im Prinzip eine Erweiterung des internationalen Standards [[ISO-27001|ISO/IEC 27001]] um cloudspezifische Anforderungen. Er unterscheidet sich von [[ISO-27001|ISO 27001]] dadurch, dass er explizit auf Cloud-Umgebungen zugeschnitten ist und Transparenzanforderungen zur Offenlegung von Lieferketten, Subunternehmern und geografischen Standorten enthält.
 
 ### Gesetzliche Pflicht nach § 393 SGB V
 
@@ -27,6 +30,9 @@ Durch das **[[DigiG]]** (Digital-Gesetz 2024) wurde in **§ 393 SGB V** festgele
 Die Übergangsfristen laut § 393 SGB V:
 - **Typ-1-Testat**: Pflicht bis 1. Juli 2024 (Eignung des Kontrollsystems zum Stichtag)
 - **Typ-2-Testat**: Pflicht bis 1. Juli 2025 (Wirksamkeitsprüfung über einen Prüfzeitraum)
+
+> [!interesse-compliance] C5-Pflicht für Cloud-Nutzung im Gesundheitswesen
+> Seit 1. Juli 2025 ist das C5-Typ-2-Testat für alle Cloud-Dienstleister Pflicht, bei denen Leistungserbringer Patientendaten verarbeiten (§ 393 SGB V i.d.F. des [[DigiG]]). Das Testat muss auf Anfrage vorgelegt werden. Prüfen Sie bei Ihrem Cloud-Anbieter: Liegt ein gültiges Typ-2-Testat für die deutschen Rechenzentrumsregionen vor? Für [[ePA]]-Aktensystembetreiber, [[DiGA]]-Hersteller mit Cloud-Backend und KIS-Anbieter mit Cloud-Hosting ist das Testat keine Option, sondern gesetzliche Pflicht.
 
 ## Technische Details
 
@@ -71,6 +77,9 @@ Der C5:2020 deckt 17 Themenbereiche ab:
 Der C5 ergänzt bestehende Standards:
 
 - **ISO/IEC 27001**: Der C5 baut darauf auf. Ein C5-Testat setzt in der Regel eine bestehende ISO-27001-Zertifizierung voraus oder schließt deren Anforderungen ein.
+
+> [!interesse-technik] Technischer Einstieg: C5-Testat beantragen
+> Der C5 ist kein Selbst-Assessment, sondern eine externe Prüfung durch akkreditierte Wirtschaftsprüfer oder IT-Sicherheitsauditoren. Der Ablauf: (1) Scope festlegen (welche Cloud-Dienste, welche Standorte), (2) Typ-1-Audit für Design-Prüfung beauftragen, (3) Typ-2-Audit nach mindestens 6 Monaten Betrieb. Das BSI veröffentlicht keine öffentliche Liste akkreditierter Prüfer. Akkreditierte Prüfer sind bei der DAkkS registriert. Hyperscaler (AWS, Azure, Google Cloud) veröffentlichen ihre C5-Testate für deutsche Regionen auf eigenen Compliance-Portalen. Spezifische Gesundheits-Cloud-Anbieter müssen das Testat direkt vorlegen.
 - **SOC 2**: Amerikanisches Pendant. Einige Prüfer bieten kombinierte C5/SOC-2-Prüfungen an, um doppelten Aufwand zu reduzieren.
 - **BSI IT-Grundschutz**: Ergänzender Standard des BSI für den öffentlichen Sektor.
 

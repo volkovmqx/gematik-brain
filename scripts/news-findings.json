@@ -1,13 +1,15 @@
 {
-  "lastChecked": "2026-03-20",
-  "lastRun": "2026-03-20T14:00:00Z",
+  "lastChecked": "2026-03-22",
+  "lastRun": "2026-03-22T14:30:00Z",
   "findings": [
     {
       "title": "eMedikationsplan: Start verschoben auf Oktober 2026",
       "date": "2026-03-01",
       "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/emedikationsplan-start-verschoben-auf-oktober-2026/68597927",
       "summary": "Der bundesweite Start des eMedikationsplans wurde von ursprünglich März 2026 auf Oktober 2026 verschoben. Ab Juli 2026 läuft zunächst eine kontrollierte Pilotphase in ausgewählten Modellregionen. Die Verschiebung begründet gematik mit der Priorisierung technischer Stabilität. Neu: Apotheken erhalten Schreibzugriff für OTC-Medikamente.",
-      "relevantArticles": ["ePA.md"],
+      "relevantArticles": [
+        "ePA.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-18",
       "details": "ePA.md unter 'Versionen' bereits auf Oktober 2026 aktualisiert. Keine weiteren Änderungen nötig."
@@ -17,7 +19,9 @@
       "date": "2026-02-01",
       "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/epa-ab-maerz-2026-kontrolle-per-push-nachricht/68447169",
       "summary": "Seit März 2026 können Versicherte per Smartphone-Benachrichtigung (Push-Nachricht) nachverfolgen, wer auf ihre ePA zugegriffen oder Änderungen vorgenommen hat. Dies ist eine neue Transparenzfunktion der ePA für alle.",
-      "relevantArticles": ["ePA.md"],
+      "relevantArticles": [
+        "ePA.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-18",
       "details": "ePA.md im Abschnitt 'Transparenz und Kontrolle' bereits mit März 2026 und Push-Nachrichten dokumentiert. Kein Update nötig."
@@ -27,7 +31,9 @@
       "date": "2026-02-07",
       "source": "https://borncity.com/blog/2026/02/07/wie-geht-es-der-epa-kaum-nutzung-und-epas-bei-aok-bayern-geloescht/",
       "summary": "Rund ein Jahr nach dem bundesweiten Rollout (April 2025) liegt die aktive Nutzungsrate der ePA bei etwa 3,6 Prozent. Ca. 75 Millionen Akten wurden automatisch angelegt (Opt-out-Quote 3,8–7 Prozent). Zum Vergleich: Bei der TK nutzen 750.000 von 11 Millionen Versicherten die ePA aktiv. Kliniken und Praxen: Ende 2025 waren knapp 46.000 von 160.000 Einrichtungen ePA-fähig.",
-      "relevantArticles": ["ePA.md"],
+      "relevantArticles": [
+        "ePA.md"
+      ],
       "action": "info_only"
     },
     {
@@ -35,7 +41,10 @@
       "date": "2025-10-17",
       "source": "https://www.gematik.de/newsroom/news-detail/eine-milliarde-eingeloeste-e-rezepte",
       "summary": "Am 17. Oktober 2025 wurde das milliardste E-Rezept eingelöst. Seit Pflichteinführung im Januar 2024 werden täglich mehrere Millionen E-Rezepte ausgestellt. Seit Januar 2025 fließen E-Rezept-Daten automatisch in die elektronische Medikationsliste (eML) der ePA.",
-      "relevantArticles": ["E-Rezept.md", "ePA.md"],
+      "relevantArticles": [
+        "E-Rezept.md",
+        "ePA.md"
+      ],
       "action": "info_only"
     },
     {
@@ -43,7 +52,12 @@
       "date": "2026-01-15",
       "source": "https://www.gematik.de/newsroom/news-detail/aktuelle-information-ti-verschluesselungsalgorithmen-umstellung-von-rsa-auf-ecc",
       "summary": "Die Umstellung von RSA auf ECC in der TI ist in vollem Gange. Harte Fristen: (1) Bis 31.12.2025 mussten alle RSA-only-Konnektoren ausgetauscht sein. (2) Bis 30.06.2026 müssen eHBA G2.0 und SMC-B G2.0 gegen ECC-fähige Nachfolger (G2.1) getauscht sein. (3) Bis 31.12.2026 müssen gSMC-KT-Terminals umgestellt sein. Noch offene Baustelle: ca. 30.000+ eHBAs müssen noch getauscht werden. Gematik verlängerte die eHBA-Frist bis 30.06.2026. Ab 01.01.2026 dürfen Kartenanbieter nur noch ECC-Karten produzieren.",
-      "relevantArticles": ["Telematikinfrastruktur.md", "Konnektoren.md", "SMC-B.md", "HBA.md"],
+      "relevantArticles": [
+        "Telematikinfrastruktur.md",
+        "Konnektoren.md",
+        "SMC-B.md",
+        "HBA.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-18",
       "details": "SMC-B.md: Zusatz 'Ab 1. Januar 2026 dürfen Kartenherausgeber nur noch ECC-fähige SMC-B-Karten produzieren' ergänzt. HBA.md und Telematikinfrastruktur.md waren bereits aktualisiert.",
@@ -54,7 +68,10 @@
       "date": "2026-02-16",
       "source": "https://www.gematik.de/newsroom",
       "summary": "Gematik führt ECC-Testwochen auf der Referenzumgebung (RU) zwischen dem 16. Februar und 19. März 2026 durch. Hersteller und Anbieter können dort ECC-Kompatibilität ihrer TI-Komponenten validieren. Ziel: Frühzeitige Erkennung von Integrationsproblemen vor dem Produktiveinsatz.",
-      "relevantArticles": ["Konnektoren.md", "Telematikinfrastruktur.md"],
+      "relevantArticles": [
+        "Konnektoren.md",
+        "Telematikinfrastruktur.md"
+      ],
       "action": "info_only"
     },
     {
@@ -62,7 +79,11 @@
       "date": "2026-01-01",
       "source": "https://www.gematik.de/telematikinfrastruktur/ti-2-0",
       "summary": "VSDM 2.0 ist die erste TI-2.0-Anwendung mit Zero-Trust-Architektur. Ab 30. Juni 2026 beginnt der Parallelbetrieb mit VSDM 1.0. Vollständiger Rollout: Februar 2027. Ende des Parallelbetriebs (VSDM 1.0 Abschaltung): Mitte 2027. In VSDM 2.0 werden Versichertendaten direkt beim Fachdienst der Krankenkasse abgerufen, nicht mehr von der eGK. Mobile Szenarien und GesundheitsID werden unterstützt.",
-      "relevantArticles": ["VSDM.md", "Telematikinfrastruktur.md", "Zero-Trust.md"],
+      "relevantArticles": [
+        "VSDM.md",
+        "Telematikinfrastruktur.md",
+        "Zero-Trust.md"
+      ],
       "action": "info_only"
     },
     {
@@ -70,7 +91,11 @@
       "date": "2025-12-15",
       "source": "https://www.gematik.de/newsroom/news-detail/neuer-sicherheitsstandard-fuer-die-telematikinfrastruktur-ti-20-erste-version-von-zero-trust-kernkomponenten-veroeffentlicht",
       "summary": "Gematik veröffentlichte am 15. Dezember 2025 die erste Version der ZETA-Kernkomponenten (Zero-Trust-Architektur für TI 2.0) als Open Source auf GitHub. Veröffentlicht wurden: ZETA-Client-SDK und ZETA-Guard. Erster produktiver Einsatz ist für Juli 2026 mit VSDM 2.0 geplant. Ab 2027 folgen weitere TI-Anwendungen, vollständige Migration bis 2029 geplant.",
-      "relevantArticles": ["Zero-Trust.md", "Telematikinfrastruktur.md", "VSDM.md"],
+      "relevantArticles": [
+        "Zero-Trust.md",
+        "Telematikinfrastruktur.md",
+        "VSDM.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-18",
       "details": "Zero-Trust.md und Telematikinfrastruktur.md sollten den Open-Source-Release der ZETA-Komponenten vom Dezember 2025 und den GitHub-Link (github.com/gematik/zeta) ergänzen.",
@@ -81,7 +106,10 @@
       "date": "2025-11-01",
       "source": "https://www.gematik.de/newsroom/news-detail/zero-trust-als-sicherheitsstandard-fuer-die-ti-20-zuschlag-erteilt",
       "summary": "Gematik vergab den Auftrag zur Entwicklung, Wartung und Weiterentwicklung der zentralen Zero-Trust-Softwarekomponenten für TI 2.0 an EY Consulting GmbH. Umsetzung nach dem Prinzip 'Vertraue niemandem, prüfe alles'. Erster produktiver ZETA-Einsatz: Juli 2026 (VSDM 2.0 und Internet-Zugang für Praxen/Apotheken). Phase 2: Mobiler Zugang für Versicherte.",
-      "relevantArticles": ["Zero-Trust.md", "Telematikinfrastruktur.md"],
+      "relevantArticles": [
+        "Zero-Trust.md",
+        "Telematikinfrastruktur.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-18",
       "details": "Zero-Trust.md sollte EY Consulting als Auftragnehmer und den geplanten Zeitplan für ZETA-Phasen ergänzen."
@@ -91,7 +119,11 @@
       "date": "2026-01-01",
       "source": "https://www.gematik.de/newsroom/news-detail/popp-dienst-startet-mit-umsetzungsstufe-1-zuschlag-geht-an-rise",
       "summary": "Der PoPP-Dienst (Proof of Patient Presence) ist in Umsetzungsstufe 1 gestartet. RISE hat den Zuschlag für die Entwicklung erhalten. Stufe 1 deckt den kryptografisch gesicherten Nachweis der Patientenpräsenz per eGK beim Leistungserbringer ab (Praxis, Hausbesuch). Stufe 1 soll Mitte 2026 abgeschlossen sein. Stufe 2 (Online-Check-in, GesundheitsID, Telemedizin) ist für Ende 2026 geplant. PoPP löst perspektivisch das bisherige VSDM++-Verfahren ab.",
-      "relevantArticles": ["Telematikinfrastruktur.md", "eGK.md", "VSDM.md"],
+      "relevantArticles": [
+        "Telematikinfrastruktur.md",
+        "eGK.md",
+        "VSDM.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-18",
       "suggestedTerm": "PoPP"
@@ -101,7 +133,10 @@
       "date": "2026-01-10",
       "source": "https://www.zm-online.de/news/detail/uebergangsloesung-fuer-ehba-bis-30-juni-2026",
       "summary": "Gematik hat die Übergangsfrist für den Austausch von eHBAs der Generation 2.0 (RSA) auf Generation 2.1 (ECC) bis zum 30. Juni 2026 verlängert. Betroffen sind noch über 30.000 Heilberufsausweise. Telekom-Kunden sind von dieser Fristverlängerung ausgenommen.",
-      "relevantArticles": ["HBA.md", "Telematikinfrastruktur.md"],
+      "relevantArticles": [
+        "HBA.md",
+        "Telematikinfrastruktur.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-18",
       "details": "HBA.md sollte die Frist 30.06.2026 für G2.0-Tausch und den Ausnahmefall Telekom-Kunden dokumentieren.",
@@ -112,7 +147,10 @@
       "date": "2025-07-15",
       "source": "https://www.eqs-news.com/news/corporate/gematik-verlangert-docmorris-cardlink-zulassung-bis-januar-2027/0133220b-a3d8-40be-ab4e-9516349bb3ca",
       "summary": "Gematik hat die Produktzulassung für CardLink (eGK-basiertes E-Rezept-Einlösen per App ohne PIN) für DocMorris und Redcare bis Ende Januar 2027 verlängert. Die Verlängerung überbrückt den Übergang zur PoPP-Technologie. Gematik plant, die kontaktlose eGK-Nutzung ohne PIN auch im PoPP-Kontext bis Ende 2026 verfügbar zu machen.",
-      "relevantArticles": ["E-Rezept.md", "eGK.md"],
+      "relevantArticles": [
+        "E-Rezept.md",
+        "eGK.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-18",
       "suggestedTerm": "CardLink"
@@ -122,7 +160,9 @@
       "date": "2026-02-01",
       "source": "https://dorner.de/en/demis-schnittstelle/",
       "summary": "Ab April 2026 können nur Labore mit korrekt aktualisierten DEMIS-Stammdaten weiterhin Meldungen über die DEMIS-Schnittstelle versenden. Meldungsformat und Codelisten (LOINC, SNOMED) wurden aktualisiert. Ohne Anpassung laufen Meldungen in einen Fehlerstatus. Außerdem müssen seit der neuen DEMIS-Version auch negative SARS-CoV-2-PCR-Befunde gemäß IfSG §7 Abs. 4 gemeldet werden.",
-      "relevantArticles": ["DEMIS.md"],
+      "relevantArticles": [
+        "DEMIS.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-18",
       "details": "DEMIS.md: Stammdaten-Pflicht ab April 2026 bereits dokumentiert. Claim über negative SARS-CoV-2-PCR-Meldepflicht entfernt (keine gesetzliche Grundlage in § 7 IfSG)."
@@ -132,7 +172,10 @@
       "date": "2026-03-10",
       "source": "https://www.up-aktuell.de/aktuell/2026/03/gematik-evo-soll-mehr-als-ein-digitalisiertes-formular-werden.html",
       "summary": "Die elektronische Heilmittelverordnung (eVO) für Physiotherapie, Ergotherapie und Logopädie wird erst 2028 verpflichtend eingeführt. Pilotprojekte laufen 2026 und 2027. Gematik betont, die eVO solle mehr als nur ein digitalisiertes Formular werden: schnellere Übermittlung, sicherere Datenübertragung über die TI, flexiblere Anpassung von Verordnungsänderungen. Ab 01.07.2026 gilt die Pflicht bereits für häusliche Krankenpflege und außerklinische Intensivpflege.",
-      "relevantArticles": ["E-Rezept.md", "Telematikinfrastruktur.md"],
+      "relevantArticles": [
+        "E-Rezept.md",
+        "Telematikinfrastruktur.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-18",
       "details": "E-Rezept.md: 'Was kommt noch?' aktualisiert mit Pflicht ab 2028 für Heilmittel (eVO), Pilotprojekte 2026-2027.",
@@ -143,7 +186,9 @@
       "date": "2026-01-20",
       "source": "https://www.tk.de/presse/themen/digitale-gesundheit/digitaler-fortschritt/gematik-kassen-fordern-handlungsrahmen-und-faire-finanzierung-2211152",
       "summary": "Mehrere große Krankenkassen (AOK, BARMER, TK, DAK u.a.) fordern in einem gemeinsamen Positionspapier (Januar 2026) die Transformation der gematik zu einer modernen Digitalagentur mit klarem Handlungsrahmen. Kritikpunkte: GKV trägt 93 Prozent der gematik-Kosten (ca. 100 Mio. EUR/Jahr); zusätzlich 37 Cent je GKV-Mitglied für 2026. Forderung: Steuerfinanzierung für Aufgaben im öffentlichen Interesse.",
-      "relevantArticles": ["gematik.md"],
+      "relevantArticles": [
+        "gematik.md"
+      ],
       "action": "info_only"
     },
     {
@@ -151,7 +196,10 @@
       "date": "2026-01-15",
       "source": "https://www.gematik.de/newsroom/news-detail/sieben-leitlinien-der-gematik-fuer-die-digitale-zukunft-des-gesundheitswesens",
       "summary": "Am 15. Januar 2026 veröffentlichte gematik-Geschäftsführer Dr. Florian Fuhrmann sieben strategische Leitsätze. Kernaussagen: Digitalisierung ist keine Kür sondern Pflicht; Betriebsstabilität hat absolute Priorität; Komplexität muss reduziert werden; Gemeinschaftsprojekt aller Akteure; grenzübergreifendes Denken notwendig. Die Leitsätze signalisieren eine stärkere Fokussierung auf Nutzerfreundlichkeit und Vereinfachung.",
-      "relevantArticles": ["gematik.md", "Telematikinfrastruktur.md"],
+      "relevantArticles": [
+        "gematik.md",
+        "Telematikinfrastruktur.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-18",
       "details": "gematik.md sollte die strategischen Leitsätze von Januar 2026 und deren Bedeutung für die TI-Weiterentwicklung ergänzen.",
@@ -162,7 +210,11 @@
       "date": "2026-01-01",
       "source": "https://www.gematik.de/telematikinfrastruktur/ti-2-0",
       "summary": "Bis Ende 2026 soll die bisherige TI vollständig auf TI 2.0 migriert sein. Kernelement ist der Wechsel von perimeter-basierter Sicherheit zu Zero-Trust-Architektur (ZETA). Das TI-Gateway ersetzt Hardware-Konnektoren schrittweise. VSDM 2.0 (Start Juni 2026) ist die erste echte TI-2.0-Anwendung. Vollständiger Abschluss der Migration geplant bis 2029.",
-      "relevantArticles": ["Telematikinfrastruktur.md", "Konnektoren.md", "TI-Gateway.md"],
+      "relevantArticles": [
+        "Telematikinfrastruktur.md",
+        "Konnektoren.md",
+        "TI-Gateway.md"
+      ],
       "action": "info_only"
     },
     {
@@ -170,7 +222,10 @@
       "date": "2025-12-01",
       "source": "https://www.heise.de/en/news/Gematik-98-percent-of-practice-management-systems-ready-for-2026-11112236.html",
       "summary": "141 Primärsysteme haben den Evaluierungsprozess für die ePA-Medikationsliste erfolgreich abgeschlossen, was 98 Prozent des PVS-Marktanteils entspricht. Praxen, die ab Januar 2026 keine konforme Software haben, riskieren Abrechnungsausschluss.",
-      "relevantArticles": ["ePA.md", "E-Rezept.md"],
+      "relevantArticles": [
+        "ePA.md",
+        "E-Rezept.md"
+      ],
       "action": "info_only"
     },
     {
@@ -178,7 +233,9 @@
       "date": "2025-08-01",
       "source": "https://www.gelbe-liste.de/apotheke/spezifikationen-e-t-rezept-veroeffentlicht",
       "summary": "Gematik veröffentlichte im August 2025 die finale Spezifikation für das elektronische T-Rezept (Lenalidomid, Pomalidomid, Thalidomid). Einführung für 2026 geplant. Ca. 170.000 T-Rezepte werden jährlich ausgestellt. Papierdurchschläge entfallen; Datenweitergabe erfolgt automatisiert via E-Rezept-Fachdienst.",
-      "relevantArticles": ["E-Rezept.md"],
+      "relevantArticles": [
+        "E-Rezept.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-18",
       "details": "E-Rezept.md 'Was kommt noch?' aktualisiert: T-Rezept mit Hinweis auf Spezifikation seit August 2025 und Einführung 2026.",
@@ -189,7 +246,9 @@
       "date": "2026-01-01",
       "source": "https://www.apotheke-adhoc.de/nachrichten/detail/e-health/bundespolizei-e-rezept-ab-januar-2026/",
       "summary": "Seit 1. Januar 2026 können 44.000 Bundespolizistinnen und Bundespolizisten E-Rezepte erhalten. Das E-Rezept wird damit auch auf Bundesbehörden außerhalb der GKV ausgeweitet.",
-      "relevantArticles": ["E-Rezept.md"],
+      "relevantArticles": [
+        "E-Rezept.md"
+      ],
       "action": "info_only"
     },
     {
@@ -197,7 +256,10 @@
       "date": "2026-01-01",
       "source": "https://www.bfdi.bund.de/DE/Buerger/Inhalte/Telematik-Statistik-Verkehr-Bildung/Weiteres/FAQ-eRezept.html",
       "summary": "Ab Mitte 2026 werden E-Rezept-Daten aus der ePA pseudonymisiert an das Forschungsdatenzentrum Gesundheit (FDZ) übermittelt. Grundlage ist das Gesundheitsdatennutzungsgesetz (GDNG). E-Rezept-Daten werden seit Januar 2025 automatisch in die eML der ePA kopiert.",
-      "relevantArticles": ["E-Rezept.md", "ePA.md"],
+      "relevantArticles": [
+        "E-Rezept.md",
+        "ePA.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-18",
       "suggestedTerm": "Forschungsdatenzentrum Gesundheit"
@@ -207,7 +269,9 @@
       "date": "2026-01-01",
       "source": "https://us.arvato-systems.com/blog/digitizing-cross-sector-communication-with-the-ti-messenger-tim",
       "summary": "TI-Messenger Pro ist seit Januar 2026 in Ausbaustufe 1 produktiv verfügbar. Zielgruppe: Leistungserbringer (Praxen, Kliniken, Apotheken, Kassen). Ziel: Ausbau auf 150.000 Organisationen. Element hat pentest-Zertifizierung (Rating 'Gut') für Multi-Tenancy-Lösung ESS Pro erhalten.",
-      "relevantArticles": ["TI-Messenger.md"],
+      "relevantArticles": [
+        "TI-Messenger.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-18",
       "details": "TI-Messenger.md bereits aktualisiert mit Ausbaustufe 1 ab Anfang 2026."
@@ -217,7 +281,9 @@
       "date": "2026-03-01",
       "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/ti-messenger-digitaler-gesundheits-chat-startet-durch/68501956",
       "summary": "Mehrere große Krankenkassen planen, den direkten Nachrichtenkanal zwischen Versicherten und ihrer Kasse über den TI-Messenger um März 2026 herum zu aktivieren. Versicherte können damit Anfragen stellen, Dokumente einsenden und Anliegen klären, ohne Telefon oder Post nutzen zu müssen.",
-      "relevantArticles": ["TI-Messenger.md"],
+      "relevantArticles": [
+        "TI-Messenger.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-18",
       "details": "TI-Messenger.md bereits aktualisiert mit Versichertenkanal-Start März 2026."
@@ -227,7 +293,12 @@
       "date": "2026-03-05",
       "source": "https://gemspec.gematik.de/releases/",
       "summary": "Am 05.03.2026 hat gematik den Release TI-Messenger_26_1 mit 2 aktualisierten Dokumenten veröffentlicht. Ebenfalls frisch erschienen: Betr_26_1 (12.03.2026, Betriebsspezifikationen), KIM_1_5_5 (12.02.2026, 4 Dokumente), VZD_25_2 (17.02.2026, 2 Dokumente), ePA_3_1_3-1 (26.01.2026, 14 Dokumente).",
-      "relevantArticles": ["TI-Messenger.md", "KIM.md", "ePA.md", "VZD.md"],
+      "relevantArticles": [
+        "TI-Messenger.md",
+        "KIM.md",
+        "ePA.md",
+        "VZD.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-18",
       "details": "KIM.md bereits auf Version 1.5.5 (KIM_1_5_5, 12.02.2026) aktualisiert. Versionsnummer war korrekt."
@@ -237,7 +308,9 @@
       "date": "2025-05-28",
       "source": "https://gemspec.gematik.de/releases/ePA_3_1_2/",
       "summary": "ePA 3.1.2 (Release Mai 2025) brachte: Volltextsuche für FHIR/MHD-Dienste (Boolean-Operatoren, Phrasensuche), Push-Benachrichtigungen als TI-Basisdienst, Datenweiterleitung an Forschungseinrichtungen (Sekundärnutzung), Erweiterung der XDS-APPEND-Funktionalität und neue FHIR-IGs (IG ePA Medication Service v1.2.0, IG ePA Basisfunktionalitäten v1.2.0).",
-      "relevantArticles": ["ePA.md"],
+      "relevantArticles": [
+        "ePA.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-18",
       "details": "ePA.md: FHIR-IG-Versionen aus ePA 3.1.2 (IG ePA Medication Service v1.2.0, IG ePA Basisfunktionalitäten v1.2.0) in Abschnitt 'Datenformate und Dokumentenverwaltung' ergänzt."
@@ -247,7 +320,9 @@
       "date": "2026-01-01",
       "source": "https://www.apotheke-adhoc.de/nachrichten/detail/politik/bmg-das-aendert-sich-2026-in-gesundheit-und-pflege/",
       "summary": "Ab 1. Juli 2026 müssen Verordnungen für Hilfsmittel (Orthesen, Prothesen, Rollstühle etc.) sowie für häusliche Krankenpflege und außerklinische Intensivpflege verpflichtend als E-Rezept ausgestellt werden. Damit weitet sich die E-Rezept-Pflicht über Arzneimittel hinaus auf weitere Versorgungsbereiche aus. Heilmittelverordnungen (Physiotherapie etc.) folgen erst ab 1. Januar 2027.",
-      "relevantArticles": ["E-Rezept.md"],
+      "relevantArticles": [
+        "E-Rezept.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-18",
       "details": "E-Rezept.md 'Was kommt noch?' aktualisiert: Hilfsmittel und häusliche Krankenpflege Pflicht ab 01.07.2026."
@@ -257,7 +332,11 @@
       "date": "2026-01-01",
       "source": "https://www.medisign.de/blog/ab-2026-pflegeleistungen-vollelektronisch-via-kim-abrechnen/",
       "summary": "Ab 1. Dezember 2026 müssen alle Pflegeeinrichtungen ihre Abrechnungsdaten (SGB XI) ausschließlich über die TI und den KIM-Dienst übermitteln. Papierbasierte Übermittlung ist danach nicht mehr möglich. Voraussetzung: Anbindung an TI (seit Juli 2025 Pflicht), SMC-B, eHBA, KIM-Client.",
-      "relevantArticles": ["KIM.md", "Telematikinfrastruktur.md", "SMC-B.md"],
+      "relevantArticles": [
+        "KIM.md",
+        "Telematikinfrastruktur.md",
+        "SMC-B.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-18",
       "details": "KIM.md und Telematikinfrastruktur.md sollten die Pflicht zur elektronischen Pflegeabrechnung ab 01.12.2026 via KIM erwähnen."
@@ -267,7 +346,9 @@
       "date": "2026-03-05",
       "source": "https://wiki.gematik.de/spaces/TIMCOMP/pages/604603166/TI-Messenger+Compass+-+The+TI-M+Blog",
       "summary": "Die Konzeptphase für TI-Messenger Pro 1.1 läuft seit Anfang 2026. Spezifikationsarbeiten starten Ende Februar 2026, Veröffentlichung ist für Mai 2026 geplant. Testbereitschaft wird für Q4 2026 erwartet. Für später 2026 ist 'TI-Messenger Connect' geplant, der den TI-Messenger außerhalb der ePA-Haupt-App nutzbar macht.",
-      "relevantArticles": ["TI-Messenger.md"],
+      "relevantArticles": [
+        "TI-Messenger.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-18",
       "details": "TI-Messenger.md bereits aktualisiert mit Version 1.1 für Mai 2026 und TI-Messenger Connect ab Ende 2026.",
@@ -278,7 +359,9 @@
       "date": "2026-02-01",
       "source": "https://www.aerztezeitung.de/Wirtschaft/Welche-neuen-ePA-Funktionen-2026-kommen-sollen-460768.html",
       "summary": "Für 2026 geplante ePA-Erweiterungen: (1) Volltextsuche in Dokumenten für Ärzte und Patienten. (2) Strukturierte Dosierungsangaben im eMedikationsplan (mit Apotheken-Schreibzugriff). (3) Integration von Medizinischen Informationsobjekten (MIOs): Mutterpass, Impfausweis, Kinderuntersuchungsheft, Zahnärztliches Bonusheft. Zeitplan für MIOs noch nicht finalisiert.",
-      "relevantArticles": ["ePA.md"],
+      "relevantArticles": [
+        "ePA.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-18",
       "details": "ePA.md Volltextsuche-Zeitplan präzisiert: Pilot Q3/2026, bundesweiter Rollout ab Januar 2027.",
@@ -289,7 +372,9 @@
       "date": "2026-02-10",
       "source": "https://www.aok.de/pp/bayern/pm/update-epa-akten/",
       "summary": "Im Rahmen einer internen Systemumstellung löste AOK Bayern versehentlich einen Schließungsbefehl für ca. 6.400 aktive elektronische Patientenakten aus. Betroffene Versicherte verloren vorübergehend den Zugriff auf ihre Dokumente und erhielten irrtümlich Löschbestätigungen. Kein Datenverlust: Daten blieben verschlüsselt im Backup. AOK Bayern rekonstruierte die Akten mit höchster Priorität. Kein Hackerangriff.",
-      "relevantArticles": ["ePA.md"],
+      "relevantArticles": [
+        "ePA.md"
+      ],
       "category": "security",
       "action": "info_only"
     },
@@ -298,7 +383,11 @@
       "date": "2026-03-03",
       "source": "https://gemspec.gematik.de/docs/gemSpec/gemSpec_PoPP_Service/gemSpec_PoPP_Service_V1.0.0/index.html",
       "summary": "Am 3. März 2026 veröffentlichte gematik die finale Spezifikation des PoPP-Service (Proof of Patient Presence) Version 1.0.0. Damit ist die Umsetzungsstufe 1 technisch vollständig spezifiziert. RISE hat den Implementierungsauftrag erhalten. Produktivstart Stufe 1 (eGK-basierter Präsenznachweis in Praxis und Hausbesuch): Mitte 2026. Stufe 2 (Telemedizin, GesundheitsID) folgt Q4/2026.",
-      "relevantArticles": ["Telematikinfrastruktur.md", "eGK.md", "VSDM.md"],
+      "relevantArticles": [
+        "Telematikinfrastruktur.md",
+        "eGK.md",
+        "VSDM.md"
+      ],
       "category": "specification",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -310,7 +399,10 @@
       "appliedDate": "2026-03-18",
       "source": "https://www.verbandsbuero.de/ti-anbindung-fristverlaengerung-bis-oktober-2027/",
       "summary": "Der Bundestag verschob die verpflichtende TI-Anbindung für Heil- und Hilfsmittelerbringer (Physiotherapeuten, Ergotherapeuten, Logopäden, Podologen etc.) vom ursprünglichen Termin 1. Januar 2026 auf den 1. Oktober 2027. Begründung: Die elektronische Heilmittelverordnung (eVO), der zentrale Nutzwert für diese Gruppe, ist noch nicht verfügbar. Verbände begrüßen die Verschiebung ausdrücklich.",
-      "relevantArticles": ["Telematikinfrastruktur.md", "E-Rezept.md"],
+      "relevantArticles": [
+        "Telematikinfrastruktur.md",
+        "E-Rezept.md"
+      ],
       "category": "regulation",
       "action": "applied",
       "details": "E-Rezept.md aktualisiert: TI-Anbindungspflicht für Heilmittelerbringer auf 1. Oktober 2027 verschoben. Verordner-Pflicht ab 1. Januar 2027 klargestellt."
@@ -320,7 +412,9 @@
       "date": "2026-02-18",
       "source": "https://www.vzbv.de/pressemitteilungen/elektronische-patientenakte-viel-potenzial-bislang-wenig-nutzen",
       "summary": "Der Verbraucherzentrale Bundesverband (vzbv) veröffentlichte im Februar 2026 ein Forderungspapier zur ePA. Kritisiert werden: unzureichende Information durch Krankenkassen, fehlende granulare Datenkontrolle, technische Komplexität und anhaltende Datenschutzbedenken (u.a. nach CCC-Befunden). Forderung: Nationales ePA-Kompetenzzentrum, strukturierter Verbraucheraustausch, bessere Steuerungsmöglichkeiten für Dokumente.",
-      "relevantArticles": ["ePA.md"],
+      "relevantArticles": [
+        "ePA.md"
+      ],
       "category": "regulation",
       "action": "info_only"
     },
@@ -329,7 +423,9 @@
       "date": "2026-01-06",
       "source": "https://www.deutsche-apotheker-zeitung.de/autoren/news/artikel/2026/01/06/epa-e-rezept-und-mehr-was-kommt-2026",
       "summary": "Das elektronische Betäubungsmittelrezept (eBtM) ist derzeit noch in der Spezifikationsphase. Ein Pilotprojekt ist frühestens für Q4/2026 geplant. Verpflichtende Einführung wird erst 2027 erwartet. Gematik hat den Feature-Draft eBtM_25_1 als Vorabveröffentlichung bereitgestellt.",
-      "relevantArticles": ["E-Rezept.md"],
+      "relevantArticles": [
+        "E-Rezept.md"
+      ],
       "category": "specification",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -341,7 +437,11 @@
       "date": "2026-03-10",
       "source": "https://www.gematik.de/newsroom/news-detail/gemeinsames-pilotprojekt-zur-kartenlosen-institutions-identitaet-hsm-b-im-highspeed-konnektor",
       "summary": "Gematik startet gemeinsam mit RHÖN-KLINIKUM AG, D-Trust, DKTIG und RISE ein Friendly-User-Test-Pilotprojekt für HSM-B (Hardware Security Module Typ B). HSM-B ersetzt die physische SMC-B-Karte durch eine direkt im Highspeed-Konnektor (HSK) hinterlegte digitale Institutionsidentität. Vorteile: weniger Kartenterminals, kein PIN-Eintippen, Unterstützung mobiler Szenarien (z.B. Hausbesuche). Produktiver Einsatz ab 2026 geplant. HSK kann HSM-B und SMC-B parallel betreiben.",
-      "relevantArticles": ["SMC-B.md", "Konnektoren.md", "TI-Gateway.md"],
+      "relevantArticles": [
+        "SMC-B.md",
+        "Konnektoren.md",
+        "TI-Gateway.md"
+      ],
       "category": "specification",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -353,7 +453,11 @@
       "date": "2026-03-10",
       "source": "https://www.gematik.de/newsroom/news-detail/iop-roadmap-legt-themen-der-naechsten-zwei-jahre-fest",
       "summary": "Das Kompetenzzentrum Interoperabilität im Gesundheitswesen (KIG) hat gemeinsam mit dem Interop Council und dem IOP-Fachkreis die Roadmap für 2026 und 2027 veröffentlicht. Mehr als 50 Themeneinreichungen wurden per Scoring priorisiert. Laufende Arbeitsgruppen: Patientenportale (aktiv), Medizinische Register (in Vorbereitung), Notfallversorgung (in Vorbereitung). Neu: kürzere Workshop-Formate; stärkerer Fokus auf gesetzlich verankerte KIG-Aufgaben.",
-      "relevantArticles": ["Telematikinfrastruktur.md", "FHIR.md", "ISiK.md"],
+      "relevantArticles": [
+        "Telematikinfrastruktur.md",
+        "FHIR.md",
+        "ISiK.md"
+      ],
       "category": "specification",
       "action": "info_only"
     },
@@ -362,7 +466,11 @@
       "date": "2026-03-16",
       "source": "https://www.gematik.de/newsroom/news-detail/grenzueberschreitender-digitaler-gesundheitsdatenaustausch-europaeische-delegation-bei-der-gematik",
       "summary": "Fast 50 Vertreter aus 14 EU-Ländern und der Europäischen Kommission besuchten die gematik am 16. März 2026. Themen: grenzübergreifender Austausch von Gesundheitsdaten via MyHealth@EU (NCPeH als Gateway zwischen TI und EHDS) sowie Umsetzung der EHDS-Verordnung (EU 2025/327, in Kraft seit März 2025). Ziel: Bürger sollen ab 2029 Gesundheitsdaten (Patientenzusammenfassung, E-Rezept) EU-weit nutzen können.",
-      "relevantArticles": ["Telematikinfrastruktur.md", "ePA.md", "E-Rezept.md"],
+      "relevantArticles": [
+        "Telematikinfrastruktur.md",
+        "ePA.md",
+        "E-Rezept.md"
+      ],
       "category": "regulation",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -374,7 +482,9 @@
       "date": "2026-03-05",
       "source": "https://www.gematik.de/newsroom/news-detail/ti-dashboard-zeigt-aktuelle-zahlen-zum-ti-messenger",
       "summary": "Gematik hat das TI-Dashboard um tägliche Echtzeit-Kennzahlen zum TI-Messenger erweitert. Erfasst werden: Anzahl aktiver Mitarbeiter aus Einrichtungen und Institutionen, Anzahl registrierter Versicherter, Nachrichtenvolumen. Das Dashboard macht die Nutzungsrate des TI-Messengers transparent und vergleichbar. Die Zahlen werden täglich aktualisiert.",
-      "relevantArticles": ["TI-Messenger.md"],
+      "relevantArticles": [
+        "TI-Messenger.md"
+      ],
       "category": "info",
       "action": "info_only"
     },
@@ -383,7 +493,9 @@
       "date": "2026-02-25",
       "source": "https://www.gematik.de/newsroom/news-detail/epa-fuer-alle-gemeinsame-impulse-fuer-die-weiterentwicklung",
       "summary": "Gematik veröffentlichte die Ergebnisse eines Stakeholder-Dialogs (Juni bis Oktober 2025) mit über 30 Expertinnen und Experten. Ergebnis ist ein Weißbuch mit Impulsen für die ePA-Weiterentwicklung. Schwerpunkte: Labor- und Befunddaten, Diagnosen und Prozeduren, diagnostische Bildgebung, Widerspruchsmöglichkeiten. Botschaft: 'Wir entwickeln die ePA nicht allein.' Das Weißbuch fließt in kommende Spezifikationszyklen ein.",
-      "relevantArticles": ["ePA.md"],
+      "relevantArticles": [
+        "ePA.md"
+      ],
       "category": "regulation",
       "action": "info_only"
     },
@@ -392,7 +504,10 @@
       "date": "2026-02-25",
       "source": "https://www.gesundheit.gv.at/news/aktuelles/aktuell-2026/eu-rezept.html",
       "summary": "Seit dem 25. Februar 2026 können in Österreich erstmals elektronische Rezepte aus anderen EU-Staaten (zunächst Tschechien) eingelöst werden. Österreich ist damit Teil von MyHealth@EU, der europäischen Infrastruktur für grenzüberschreitenden Gesundheitsdatenaustausch. Deutschland plant die Teilnahme an MyHealth@EU (E-Rezept) für Wave 10 in 2026. Ab 2029 ist EU-weite Pflicht geplant. Das NCPeH ist das deutsche Gateway zur europäischen Infrastruktur.",
-      "relevantArticles": ["E-Rezept.md", "Telematikinfrastruktur.md"],
+      "relevantArticles": [
+        "E-Rezept.md",
+        "Telematikinfrastruktur.md"
+      ],
       "category": "regulation",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -404,7 +519,9 @@
       "date": "2026-03-10",
       "source": "https://gemspec.gematik.de/prereleases/Draft_HDDT_26_1/index.html",
       "summary": "Gematik veröffentlichte am 10. März 2026 den Release Candidate der HDDT-Spezifikation (Health Device Data Transfer) Version 26_1. HDDT definiert die Schnittstelle zwischen Medizinprodukten/Implantaten und DiGAs gemäß §374a SGB V. Die neue Version ergänzt die Diabetes-Profile um FHIR-Profile für Lungenfunktionsmessung und Blutdruckmessung. Kommentierungsfrist läuft bis 1. April 2026.",
-      "relevantArticles": ["DiGA.md"],
+      "relevantArticles": [
+        "DiGA.md"
+      ],
       "category": "specification",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -417,7 +534,10 @@
       "appliedDate": "2026-03-18",
       "source": "https://pm-report.de/gesundheitswesen/2025/geplanter-koalitionsvertrag-was-soll-im-gesundheitswesen-passieren.html",
       "summary": "Das Gesundheits-Digitalagentur-Gesetz (GDAG) ist mit dem Ende der Ampel-Koalition gescheitert (2. und 3. Lesung im Bundestag wurden wegen Neuwahl nicht mehr durchgeführt). Der Koalitionsvertrag von CDU/CSU und SPD (April 2025) sieht dennoch eine Modernisierung der gematik zu einer 'modernen Agentur' vor. Konkrete Umsetzungsschritte oder ein Nachfolgegesetz für das GDAG sind noch nicht beschlossen. Alle Software-/IT-Anbieter im Gesundheitswesen müssen bis 2027 verlustfreien Datenaustausch auf Basis einheitlicher Standards sicherstellen.",
-      "relevantArticles": ["gematik.md", "DigiG.md"],
+      "relevantArticles": [
+        "gematik.md",
+        "DigiG.md"
+      ],
       "category": "regulation",
       "action": "applied",
       "details": "gematik.md sollte das Scheitern des GDAG und die Pläne im Koalitionsvertrag 2025 erwähnen. DigiG.md könnte den Kontext des GDAG als geplante Erweiterung dokumentieren.",
@@ -428,7 +548,9 @@
       "date": "2026-03-01",
       "source": "https://dktig.de/save-the-date-dktig-auf-der-ti-summit-am-07-und-08-10-2026/",
       "summary": "Der zweite TI-SUMMIT findet am 7. und 8. Oktober 2026 in der Kongresshalle am Zoo Leipzig statt. Veranstalter: INNO3 gemeinsam mit gematik als exklusivem Inhaltspartner. Erwartete Teilnehmer: über 1.000 Gesundheits-IT-Fachleute. Themen: ePA, E-Rezept, KIM, TI-Messenger, TI-Gateway, PoPP, Digitale Identitäten, KI in der TI.",
-      "relevantArticles": ["Telematikinfrastruktur.md"],
+      "relevantArticles": [
+        "Telematikinfrastruktur.md"
+      ],
       "category": "info",
       "action": "info_only"
     },
@@ -437,7 +559,9 @@
       "date": "2026-03-01",
       "source": "https://www.heise.de/en/news/DMEA-Digital-Health-Trade-Fair-to-Change-Location-from-2027-11159313.html",
       "summary": "Die DMEA 2026 findet vom 21. bis 23. April 2026 in Berlin statt und ist die letzte Ausgabe am Berliner Standort. Ab April 2027 zieht Europas führende Digital-Health-Messe nach München um. Gematik ist als Aussteller und Redner vertreten. Themenschwerpunkt 2026: KI-gestützte Kliniksysteme, datengetriebene Forschung, EHDS-Umsetzung.",
-      "relevantArticles": ["Telematikinfrastruktur.md"],
+      "relevantArticles": [
+        "Telematikinfrastruktur.md"
+      ],
       "category": "info",
       "action": "info_only"
     },
@@ -446,7 +570,9 @@
       "date": "2025-04-30",
       "source": "https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/epa-sicherheitsluecke-geschlossen-pm-30-04-25.html",
       "summary": "Die vom Chaos Computer Club (CCC) Ende 2024 aufgedeckten ePA-Sicherheitslücken (Nutzung gefälschter SMC-B-Karten für Massenzugriff auf Patientenakten) wurden durch Sofortmaßnahmen teilweise geschlossen. Die endgültige technische Lösung aller bekannten Angriffsszenarien ist die Einführung von PoPP (Proof of Patient Presence), die 2026 produktiv geht. BSI und gematik betonen, dass kein Massenmissbrauch stattgefunden hat.",
-      "relevantArticles": ["ePA.md"],
+      "relevantArticles": [
+        "ePA.md"
+      ],
       "category": "security",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -457,7 +583,10 @@
       "date": "2026-02-01",
       "source": "https://www.gematik.de/telematikinfrastruktur/transparenz/faktencheck-1/ab-2026-soll-die-gesundheitsid-als-versicherungsnachweis-dienen-wird-die-egk-abgeschafft",
       "summary": "Gematik stellt klar: Die elektronische Gesundheitskarte (eGK) wird nicht abgeschafft. Die GesundheitsID ist ab 2026 ein zusätzlicher, digitaler Weg für den Versicherungsnachweis. Beide Wege koexistieren. Die GesundheitsID ermöglicht den Nachweis per Smartphone, ohne physische Karte. Frühestens 2027 soll die GesundheitsID als vollwertiger Arztbesuch-Ersatz für die eGK nutzbar sein.",
-      "relevantArticles": ["Gesundheits-ID.md", "eGK.md"],
+      "relevantArticles": [
+        "Gesundheits-ID.md",
+        "eGK.md"
+      ],
       "category": "info",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -468,7 +597,9 @@
       "date": "2026-01-01",
       "source": "https://borncity.com/news/epa-update-patienten-erhalten-alleinige-kontrolle-ueber-abrechnungsdaten/",
       "summary": "Seit 1. Januar 2026 sind Abrechnungsdaten in der ePA ausschließlich für die Versicherten selbst sichtbar. Ärzte, Therapeuten und Apotheker können diese Daten nicht mehr einsehen, solange der Patient sie nicht explizit freigibt. Grundlage ist das Gesetz zur Befugniserweiterung und Entbürokratisierung in der Pflege (BEEP), das gleichzeitig in Kraft trat. Außerdem: Praxen können seit 1. Januar 2026 in therapeutisch begründeten Einzelfällen auf die ePA-Befüllung verzichten (§ 347 SGB V).",
-      "relevantArticles": ["ePA.md"],
+      "relevantArticles": [
+        "ePA.md"
+      ],
       "category": "regulation",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -479,7 +610,10 @@
       "date": "2025-10-01",
       "source": "https://www.gematik.de/anwendungen/diga",
       "summary": "Seit Oktober 2025 können Digitale Gesundheitsanwendungen (DiGA) als E-Rezept verordnet werden. Das E-Rezept für DiGA wird nicht in der Apotheke, sondern bei der Krankenkasse eingereicht. Die Kasse erstellt daraufhin einen Gutscheincode für die DiGA-App. Ein Pilotprojekt lief von Mai bis September 2025. Etwa 15 von 91 im BfArM-Verzeichnis gelisteten DiGA wurden in den ersten Tests via E-Rezept verordnet.",
-      "relevantArticles": ["DiGA.md", "E-Rezept.md"],
+      "relevantArticles": [
+        "DiGA.md",
+        "E-Rezept.md"
+      ],
       "category": "specification",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -491,7 +625,10 @@
       "appliedDate": "2026-03-18",
       "source": "https://www.heise.de/en/news/EUDI-Wallet-gets-a-test-environment-11157061.html",
       "summary": "Am 28. Januar 2026 wurde eine Testumgebung (Sandbox) für die deutsche EUDI-Wallet bereitgestellt, betrieben vom Bundesministerium für Digitales und Staatsmodernisierung (BMDS) und der Bundesagentur für Sprunginnovationen (SPRIND). Unternehmen und Verwaltung können dort die Grundfunktion der digitalen Identifikation via Person Identification Data (PID) testen. Die erste öffentliche Stufe der deutschen EUDI-Wallet ist für Anfang 2027 geplant. Nach 12 Monaten können alternative Wallet-Anbieter ihre Lösungen als EUDI-Wallet zertifizieren lassen.",
-      "relevantArticles": ["EUDI-Wallet.md", "Gesundheits-ID.md"],
+      "relevantArticles": [
+        "EUDI-Wallet.md",
+        "Gesundheits-ID.md"
+      ],
       "category": "specification",
       "action": "applied",
       "details": "EUDI-Wallet.md sollte den Start der Testumgebung am 28. Januar 2026 und den geplanten Produktivstart Anfang 2027 ergänzen.",
@@ -503,7 +640,10 @@
       "appliedDate": "2026-03-18",
       "source": "https://borncity.com/blog/2026/02/26/gff-klage-gegen-zentrale-gesundheitsdatenspeicherung-aufgenommen/",
       "summary": "Die Gesellschaft für Freiheitsrechte (GFF, unterstützt vom CCC) hat im Februar 2026 eine Klage gegen das Forschungsdatenzentrum Gesundheit (FDZ) aufgenommen. Kritikpunkte: Die Pseudonymisierung der Daten von 73 Millionen GKV-Versicherten reiche nicht aus (Re-Identifizierung bei seltenen Krankheiten möglich). Es fehlen gesetzlich verankerte ausreichende Sicherheitsstandards und moderne Verschlüsselung. GKV-Versicherte haben kein Widerspruchsrecht gegen die Datenübermittlung an das FDZ, PKV-Versicherte hingegen schon.",
-      "relevantArticles": ["ePA.md", "GDNG.md"],
+      "relevantArticles": [
+        "ePA.md",
+        "GDNG.md"
+      ],
       "category": "security",
       "action": "applied",
       "details": "ePA.md und GDNG.md: GFF-Klage gegen FDZ ergänzt. Kritikpunkte Pseudonymisierung und fehlende GKV-Widerspruchsmöglichkeit dokumentiert."
@@ -514,7 +654,10 @@
       "appliedDate": "2026-03-18",
       "source": "https://www.gematik.de/newsroom/news-detail/die-epa-im-krankenhaus-einblicke-aus-den-dr-erler-kliniken-in-nuernberg",
       "summary": "Ab April 2026 müssen Krankenhäuser, deren Krankenhausinformationssystem (KIS) kein zertifiziertes ePA-Modul enthält, mit finanziellen Sanktionen rechnen. Gematik veröffentlichte im März 2026 einen Erfahrungsbericht der Dr.-Erler-Kliniken Nürnberg als frühes Anwenderbeispiel für die ePA im stationären Bereich. Der Großteil der Kliniken erwartet den flächendeckenden ePA-Betrieb erst im ersten oder zweiten Quartal 2026.",
-      "relevantArticles": ["ePA.md", "KIS.md"],
+      "relevantArticles": [
+        "ePA.md",
+        "KIS.md"
+      ],
       "category": "regulation",
       "action": "applied",
       "details": "ePA.md und KIS.md sollten den Sanktionstermin April 2026 für KIS-Einrichtungen ohne zertifiziertes ePA-Modul dokumentieren."
@@ -524,19 +667,23 @@
       "date": "2026-02-02",
       "source": "https://gemspec.gematik.de/releases/VSDM2_25_3/index.html",
       "summary": "Am 2. Februar 2026 veröffentlichte gematik den Release VSDM2_25_3 mit 3 aktualisierten Dokumenten (Spezifikation, Anbietersteckbrief, Produktsteckbrief für VSDM 2 FD). Das Release enthält Korrekturen und Klarstellungen für die VSDM-2.0-Implementierung und ist Voraussetzung für die Zulassung zum Produktivbetrieb ab Juni 2026.",
-      "relevantArticles": ["VSDM.md"],
+      "relevantArticles": [
+        "VSDM.md"
+      ],
       "category": "specification",
       "action": "info_only"
-    }
-  ,
+    },
     {
       "title": "KRITIS-Dachgesetz: Bundestag und Bundesrat beschlossen, Registrierungspflicht ab Juli 2026",
       "date": "2026-03-06",
       "appliedDate": "2026-03-18",
       "source": "https://www.bundestag.de/dokumente/textarchiv/2026/kw05-de-kritische-infrastruktur-1137002",
-
       "summary": "Der Bundestag verabschiedete das KRITIS-Dachgesetz am 29. Januar 2026, der Bundesrat stimmte am 6. März 2026 zu. Das Gesetz setzt die EU-CER-Richtlinie um und schafft erstmals einheitliche Mindeststandards für den physischen Schutz kritischer Infrastrukturen in Deutschland. Krankenhäuser und Gesundheitseinrichtungen fallen ausdrücklich in den Geltungsbereich. Betroffene Betreiber müssen sich ab 17. Juli 2026 registrieren und Risikoanalysen sowie Resilienzpläne erstellen. Bei Verstößen drohen empfindliche Bußgelder.",
-      "relevantArticles": ["Telematikinfrastruktur.md", "KIS.md", "BSI.md"],
+      "relevantArticles": [
+        "Telematikinfrastruktur.md",
+        "KIS.md",
+        "BSI.md"
+      ],
       "category": "regulation",
       "action": "applied",
       "details": "BSI.md: KRITIS-Dachgesetz-Abschnitt bereits vorhanden. KIS.md: neuen Abschnitt 'KRITIS-Dachgesetz und Krankenhäuser' mit Registrierungsfrist 17.07.2026 ergänzt.",
@@ -547,7 +694,10 @@
       "date": "2026-01-08",
       "source": "https://www.kbv.de/praxis/tools-und-services/praxisnachrichten/2026/01-08/ti-pauschale-gestiegen",
       "summary": "Die monatliche TI-Pauschale für Arztpraxen stieg zum 1. Januar 2026 um 2,8 Prozent. Für eine Einzelpraxis beträgt sie nun beispielsweise ca. 263,62 Euro monatlich. Die Pauschale erfordert die vollständige technische Ausstattung (Konnektor, Kartenterminals, SMC-B, eHBA) sowie die Nutzung zentraler TI-Anwendungen (eAU, ePA, KIM). Fehlt der Nachweis einer Anwendung, wird die Pauschale um 50 Prozent gekürzt; fehlen mehrere, entfällt sie ganz.",
-      "relevantArticles": ["Telematikinfrastruktur.md", "KIM.md"],
+      "relevantArticles": [
+        "Telematikinfrastruktur.md",
+        "KIM.md"
+      ],
       "category": "regulation",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -559,7 +709,10 @@
       "date": "2026-01-27",
       "source": "https://gemspec.gematik.de/releases/TI-Zugang_25_3/index.html",
       "summary": "Am 27. Januar 2026 veröffentlichte gematik den Release TI-Zugang_25_3 mit 5 Dokumenten. Enthalten sind aktualisierte Anbietertypsteckbriefe und Produkttypsteckbriefe für den Highspeed-Konnektor (HSK ATV 1.6.0, PTV 2.1.1) sowie das TI-Gateway (ATV 1.2.6, PTV 1.4.1) und den Standard-Konnektor (PTV6 6.0.3). Grundlage bilden die Änderungslisten Draft_HSK_25_2, Draft_TI-Gateway_25_3 und Draft_Konn_25_2.",
-      "relevantArticles": ["Konnektoren.md", "TI-Gateway.md"],
+      "relevantArticles": [
+        "Konnektoren.md",
+        "TI-Gateway.md"
+      ],
       "category": "specification",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -570,7 +723,10 @@
       "date": "2026-01-13",
       "source": "https://gemspec.gematik.de/releases/CI_25_5/index.html",
       "summary": "Am 13. Januar 2026 veröffentlichte gematik Release CI_25_5 mit 17 Dokumenten zu Zentralen Komponenten, VPN-Zugangsdienst, PKI und TSP-Kartenherausgeber. Inhaltlich enthält der Release: Spezifikationen zum TI-User-Agent, Optimierungen des IPv4-Adresskonzepts, Anpassung der PKI-Referenzen an aktuelle ETSI-Standards (Implementing Acts zu Trusted Lists) und die Freigabe von ECC für OCSP-Signaturen im Rahmen der RSA-Abschaltung.",
-      "relevantArticles": ["Telematikinfrastruktur.md", "PKI.md"],
+      "relevantArticles": [
+        "Telematikinfrastruktur.md",
+        "PKI.md"
+      ],
       "category": "specification",
       "action": "info_only"
     },
@@ -579,9 +735,11 @@
       "date": "2026-01-01",
       "appliedDate": "2026-03-18",
       "source": "https://wiki.isms-ratgeber.info/wiki/Grundschutz++",
-
       "summary": "Das BSI führt ab 2026 eine umfassende Modernisierung des IT-Grundschutzes ein, bekannt als Grundschutz++. Kernänderungen: Überführung in maschinenlesbares JSON-Format für automatisierte Compliance-Prüfungen, stärker risikobasierter Ansatz, reduzierte Dokumentationslast insbesondere für KMU. Eine Übergangsphase läuft ab Januar 2026. Da die TI unter IT-Grundschutz-Anforderungen fällt, sind TI-Betreiber und Hersteller von den Neuerungen betroffen.",
-      "relevantArticles": ["BSI.md", "Telematikinfrastruktur.md"],
+      "relevantArticles": [
+        "BSI.md",
+        "Telematikinfrastruktur.md"
+      ],
       "category": "regulation",
       "action": "applied",
       "details": "BSI.md: IT-Grundschutz++-Abschnitt bereits vorhanden mit JSON-Format, risikobasiertem Ansatz und Übergangsphase ab Januar 2026.",
@@ -592,7 +750,11 @@
       "date": "2026-03-03",
       "source": "https://www.apotheke-adhoc.de/nachrichten/detail/e-health/ti-stoerung-rise-konnektoren-down/",
       "summary": "Am 3. März 2026 fiel das TI-Gateway des Anbieters RISE aus, was alle über RISE angeschlossenen Leistungserbringer von der TI trennte. E-Rezept, ePA, VSDM und KIM waren für betroffene Apotheken und Praxen nicht nutzbar. Es folgten weitere Teilausfälle am 4. und 5. März. Der Ausfall gilt als einer der Auslöser für den bundesweiten Apothekenprotest am 23. März 2026. Mangels Offline-Fallback mussten viele Apotheken Patienten abweisen.",
-      "relevantArticles": ["E-Rezept.md", "TI-Gateway.md", "Telematikinfrastruktur.md"],
+      "relevantArticles": [
+        "E-Rezept.md",
+        "TI-Gateway.md",
+        "Telematikinfrastruktur.md"
+      ],
       "category": "security",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -603,7 +765,10 @@
       "date": "2026-02-25",
       "source": "https://www.ptaheute.de/aktuelles/2026/02/26/protest-apotheken-schliessen-am-23-maerz-2026",
       "summary": "Die außerordentliche Mitgliederversammlung der ABDA beschloss am 25. Februar 2026 einen bundesweiten Schließungstag für den 23. März 2026. Hintergrund: stagnierende Vergütung (Fixum seit 2013 unverändert bei 8,35 Euro/Packung), TI-Ausfälle Anfang März und umstrittene Regelungen im ApoVWG-Entwurf (erleichterter Betrieb ohne Apotheker vor Ort). Seit 2013 schlossen fast 20 Prozent der Apotheken. Die ABDA fordert Anhebung des Fixums auf 9,50 Euro und jährliche Dynamisierung.",
-      "relevantArticles": ["E-Rezept.md", "Telematikinfrastruktur.md"],
+      "relevantArticles": [
+        "E-Rezept.md",
+        "Telematikinfrastruktur.md"
+      ],
       "category": "regulation",
       "action": "info_only"
     },
@@ -612,7 +777,11 @@
       "date": "2026-03-02",
       "source": "https://www.pharmazeutische-zeitung.de/telekom-startet-neues-ti-angebot-163231/",
       "summary": "Die Telekom bietet ab Anfang 2026 mit TI-Connect einen TI-Zugang über ein cloudbasiertes TI-Gateway ohne lokalen Konnektor an. Einrichtungen verbinden sich per VPN mit einem Hochgeschwindigkeitskonnektor im Telekom-Rechenzentrum. Updates und Konfigurationen erfolgen zentral im Rechenzentrum. Die Telekom positioniert TI-Connect als Brücke zur TI 2.0. Das Produkt konkurriert mit ähnlichen Angeboten von RISE, Arvato Systems und Akquinet.",
-      "relevantArticles": ["Konnektoren.md", "TI-Gateway.md", "Telematikinfrastruktur.md"],
+      "relevantArticles": [
+        "Konnektoren.md",
+        "TI-Gateway.md",
+        "Telematikinfrastruktur.md"
+      ],
       "category": "specification",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -623,7 +792,10 @@
       "date": "2026-02-19",
       "source": "https://www.pharmazeutische-zeitung.de/medisign-ruft-neue-ehba-zurueck-162961/",
       "summary": "medisign GmbH lieferte Anfang Januar 2026 rund 2.600 ECC-only-HBAs mit fehlerhafter Personalisierung aus: Der RSA-Schlüssel war nicht korrekt deaktiviert, was zu Interoperabilitätsproblemen mit manchen Konnektoren führen kann. Gematik stellte die Fehlkonfiguration fest und verpflichtete medisign zum Austausch. Karten können weiterhin genutzt werden (kein Sicherheitsproblem), Betroffene wurden ab 19. Februar 2026 per E-Mail informiert. Zusätzliche Belastung für betroffene Leistungserbringer nach dem bereits laufenden RSA-zu-ECC-Tausch.",
-      "relevantArticles": ["HBA.md", "Konnektoren.md"],
+      "relevantArticles": [
+        "HBA.md",
+        "Konnektoren.md"
+      ],
       "category": "security",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -634,7 +806,11 @@
       "date": "2026-01-28",
       "source": "https://www.bundesdruckerei.de/de/newsroom/news/austauschaktion-fuer-ehbas-d-trust-reagiert-auf-sicherheitsluecke-infineon-chips",
       "summary": "Eine im September 2024 von NinjaLab entdeckte Seitenkanalangriff-Schwachstelle (EUCLEAK, CVE-2024-45678) im Infineon SLE78-Chip betrifft rund 130.000 eHBAs der Generation 2.1 von D-Trust und SHC+Care (Kartenträger: Idemia). Betroffene Karten müssen bis 30. Juni 2026 ausgetauscht werden, danach werden sie gesperrt. D-Trust liefert seit Februar 2026 Ersatzkarten auf G&D-Basis. Für einen Angriff wäre physischer Kartenzugang, PIN-Kenntnis und spezialisierte Ausrüstung nötig. Karten bleiben bis zum Tausch nutzbar.",
-      "relevantArticles": ["HBA.md", "PKI.md", "SMC-B.md"],
+      "relevantArticles": [
+        "HBA.md",
+        "PKI.md",
+        "SMC-B.md"
+      ],
       "category": "security",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -646,7 +822,11 @@
       "date": "2026-02-01",
       "source": "https://www.buzer.de/gesetz/13879/v336803-2026-02-01.htm",
       "summary": "Die Zweite Verordnung zur Änderung der DiGAV ist am 1. Februar 2026 in Kraft getreten. Kernänderung: Ab 2026 muss mindestens 20 Prozent des DiGA-Vergütungsbetrags von messbaren Versorgungserfolgen abhängen (Anwendungsbegleitende Erfolgsmessung, AbEM). Hersteller müssen vierteljährlich Daten zu Nutzungshäufigkeit, Patientenzufriedenheit und Gesundheitszustand erheben und halbjährlich an das BfArM melden. Ab 1. Januar 2026 veröffentlicht das BfArM AbEM-Ergebnisse im DiGA-Verzeichnis. Einführung der AbEM erfolgt schrittweise.",
-      "relevantArticles": ["DiGA.md", "DiGAV.md", "BfArM.md"],
+      "relevantArticles": [
+        "DiGA.md",
+        "DiGAV.md",
+        "BfArM.md"
+      ],
       "category": "regulation",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -657,7 +837,9 @@
       "date": "2026-03-09",
       "source": "https://www.pharmazeutische-zeitung.de/ti-messenger-werden-verhalten-genutzt-163458/",
       "summary": "Laut TI-Dashboard waren am 9. März 2026 insgesamt 7.309 Einrichtungen und 254.952 Versicherte im TI-Messenger aktiv registriert. Seit Einführung wurden 500.577 Aktivitäten (versendete Nachrichten) gezählt. Im Zeitraum 1. Januar bis 9. März 2026 stieg die Aktivität um rund 126.000 Nachrichten. Trotz kontinuierlichem Wachstum gilt die Nutzung für ein Netz mit 160.000 potenziellen Einrichtungen als verhalten.",
-      "relevantArticles": ["TI-Messenger.md"],
+      "relevantArticles": [
+        "TI-Messenger.md"
+      ],
       "category": "info",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -668,7 +850,11 @@
       "date": "2026-01-15",
       "source": "https://www.apotheke-adhoc.de/nachrichten/detail/e-health/nach-cardlink-so-gehts-2026-weiter/",
       "summary": "Gematik bestätigte den finalen Abschaltzeitpunkt für CardLink: 31. Januar 2027. Zwischen August 2026 und Januar 2027 laufen CardLink, VSDM 1.0 und PoPP im Parallelbetrieb. PoPP ersetzt ab Juli 2026 schrittweise CardLink (eGK-basierter Präsenznachweis). Die GesundheitsID ermöglicht ab 2026 den PoPP-basierten Zugang ohne physische Karte. Online-Apotheken (DocMorris, Redcare) haben ihre CardLink-Zulassung bis Ende Januar 2027 verlängert bekommen.",
-      "relevantArticles": ["CardLink.md", "E-Rezept.md", "eGK.md"],
+      "relevantArticles": [
+        "CardLink.md",
+        "E-Rezept.md",
+        "eGK.md"
+      ],
       "category": "specification",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -679,7 +865,9 @@
       "date": "2026-03-04",
       "source": "https://www.bundestag.de/presse/pressemitteilungen/2026/pm-260224-oepm-gesundheit-1149744",
       "summary": "Der Bundestag-Gesundheitsausschuss führte am 4. März 2026 die öffentliche Anhörung zum Apothekenversorgung-Weiterentwicklungsgesetz (ApoVWG) durch. Verbände und Experten forderten eine Honorarerhöhung und kritisierten geplante Lockerungen für Zweigapotheken (Betrieb ohne ständig anwesenden Apotheker). Das ApoVWG sieht neue Begriffe wie 'Filialverbund' und 'Telepharmazie' vor und regelt Abrechnungsmechanismen neu. Ein Beschluss des Bundestags ist für Frühjahr/Sommer 2026 erwartet.",
-      "relevantArticles": ["E-Rezept.md"],
+      "relevantArticles": [
+        "E-Rezept.md"
+      ],
       "category": "regulation",
       "action": "monitor",
       "details": "ApoVWG hat Auswirkungen auf die E-Rezept-Abwicklung und die Rolle der Apotheken in der TI. Sobald das Gesetz beschlossen ist, sollte E-Rezept.md aktualisiert werden.",
@@ -690,7 +878,9 @@
       "date": "2026-03-01",
       "source": "https://www.gematik.de/newsroom/news-detail/epa-nutzung-steigt",
       "summary": "Laut aktuellem gematik-Dashboard haben mehr als 110.000 von ca. 160.000 Einrichtungen (69 Prozent) bereits mindestens eine Patientenakte geöffnet. In der vergangenen Woche öffneten über 93.000 Einrichtungen aktiv Patientenakten. Inklusive E-Rezept-Daten enthalten die Patientenakten mehr als 700 Millionen Datensätze. Insgesamt wurden 22 Millionen Dokumente hochgeladen, 13 Millionen Medikamentenlisten abgerufen. Die Nutzung steigt kontinuierlich, bleibt aber hinter Erwartungen bezüglich aktiver Patientennutzung zurück.",
-      "relevantArticles": ["ePA.md"],
+      "relevantArticles": [
+        "ePA.md"
+      ],
       "category": "info",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -701,7 +891,12 @@
       "date": "2025-11-24",
       "source": "https://www.gematik.de/newsroom/news-detail/meldung-ti-atlas",
       "summary": "Gematik veröffentlichte am 24. November 2025 die Ergebnisse des TI-Atlas 2025, der gemeinsam mit dem IGES Institut durchgeführten jährlichen Digitalisierungsstudie. Befragung von über 6.600 Einrichtungen und 1.400 Bürgerinnen und Bürgern. Zentrale Ergebnisse: E-Rezept gilt bei 90 Prozent der GKV-Versicherten als sinnvoll, 87 Prozent sind zufrieden. Drei Viertel der Arztpraxen nutzten die ePA bereits vor dem Pflichtstarttermin. Pflegesektor: Mehr als 80 Prozent der Pflegeeinrichtungen haben einen Heilberufsausweis beantragt, ein Drittel ist bereits TI-angebunden und nutzt KIM.",
-      "relevantArticles": ["ePA.md", "E-Rezept.md", "KIM.md", "Telematikinfrastruktur.md"],
+      "relevantArticles": [
+        "ePA.md",
+        "E-Rezept.md",
+        "KIM.md",
+        "Telematikinfrastruktur.md"
+      ],
       "category": "info",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -712,7 +907,10 @@
       "date": "2026-02-19",
       "source": "https://gemspec.gematik.de/releases/Consumer_26_1/index.html",
       "summary": "Am 19. Februar 2026 veröffentlichte gematik Release Consumer_26_1 mit dem aktualisierten Basis-Consumer-Produkttypsteckbrief (gemProdT_Basis-Consumer_PTV_1.10.2-0) als Kompatibilitätsupdate für KIM 1.5.5. Bereits am 10. Februar 2026 erschien SigD_26_1 mit dem aktualisierten Signaturdienst-Produkttypsteckbrief (gemProdT_SigD_PTV_1.3.5-0) als Folgerelease zu ePA 3.1.3-1. Beide Releases sind Wartungsupdates ohne neue Funktionen.",
-      "relevantArticles": ["KIM.md", "ePA.md"],
+      "relevantArticles": [
+        "KIM.md",
+        "ePA.md"
+      ],
       "category": "specification",
       "action": "info_only"
     },
@@ -721,7 +919,12 @@
       "date": "2026-03-19",
       "source": "https://wiki.gematik.de/spaces/RUAAS/pages/650426046/ECC-Testwochen",
       "summary": "Die gematik ECC Testwochen auf der Referenzumgebung (RU) wurden planmäßig am 19. März 2026 abgeschlossen. Zeitplan: 16. Februar RSA-Abschaltung auf RU; 16.-17. Februar Quickcheck; 18. Februar bis 19. März ECC-only-Testphase für QES und non-QES. Ziel war die Validierung der ECC-Interoperabilität aller TI-Primärsysteme und Komponenten vor dem produktiven Einsatz. Ab 20. März 2026 wurde RSA auf der RU wieder aktiviert; ein weiterer Quickcheck folgte am 23.-24. März. Ergebnisse dienen als Grundlage für die finale ECC-Migration bis 30. Juni 2026 (eHBA/SMC-B G2.1).",
-      "relevantArticles": ["Telematikinfrastruktur.md", "Konnektoren.md", "HBA.md", "SMC-B.md"],
+      "relevantArticles": [
+        "Telematikinfrastruktur.md",
+        "Konnektoren.md",
+        "HBA.md",
+        "SMC-B.md"
+      ],
       "category": "specification",
       "action": "info_only"
     },
@@ -730,7 +933,12 @@
       "date": "2026-02-11",
       "source": "https://www.kma-online.de/aktuelles/politik/detail/bmg-stellt-digitalisierungsstrategie-2026-vor-das-sind-warkens-plaene-55231",
       "summary": "Bundesgesundheitsministerin Nina Warken (CDU) stellte am 11. Februar 2026 die Weiterentwicklung der Digitalisierungsstrategie für das Gesundheitswesen vor. Kernpunkte: (1) Gesetzentwurf 'Gesetz für digitale Versorgung und den Gesundheitsdatenraum' soll in Q1/2026 vorgelegt werden. (2) ePA-Ziel: ca. 20 Millionen aktive Nutzer bis 2030 (aktuell ca. 4 Millionen). (3) KI-gestützte Dokumentation soll bis 2028 in über 70 Prozent der Gesundheits- und Pflegeeinrichtungen Standard sein. (4) gematik erhält erweiterte Durchsetzungsbefugnisse zur einheitlichen Standardimplementierung. (5) FDZ Gesundheit wird mit KI-Fähigkeiten ausgebaut und an den EHDS angebunden.",
-      "affects": ["BMG.md", "gematik.md", "ePA.md", "DiGA.md"],
+      "affects": [
+        "BMG.md",
+        "gematik.md",
+        "ePA.md",
+        "DiGA.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-18",
       "details": "BMG.md sollte die neue Digitalisierungsstrategie 2026 und das geplante 'Gesetz für digitale Versorgung und den Gesundheitsdatenraum' erwähnen. gematik.md sollte die erweiterten Durchsetzungsbefugnisse ergänzen.",
@@ -742,7 +950,10 @@
       "date": "2026-01-01",
       "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/gesundheits-id-startet-als-digitaler-versicherungsnachweis/68447211",
       "summary": "Seit dem 1. Januar 2026 ist die Gesundheits-ID offiziell als digitaler Versicherungsnachweis beim Arztbesuch nutzbar. Bis Anfang 2026 haben sich ca. 4,4 Millionen Versicherte registriert (von ca. 74 Millionen GKV-Versicherten). Der Rollout nach erfolgreicher gematik-Zulassung fand im Frühjahr 2026 statt. Krankenkassen bewarben im Q1/2026 intensiv den Download der GesundheitsID-App. Bis Ende 2026 soll die digitale Identität als Standard-Versicherungsnachweis in Praxen etabliert sein. Als vollwertiger Ersatz der eGK beim Arztbesuch (inkl. PoPP-Szenario) ist die GesundheitsID ab 2027 geplant.",
-      "affects": ["Gesundheits-ID.md", "eGK.md"],
+      "affects": [
+        "Gesundheits-ID.md",
+        "eGK.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-18",
       "details": "Gesundheits-ID.md sollte den konkreten Rollout-Termin 1. Januar 2026 für den Versicherungsnachweis ergänzen und die Nutzungszahl von 4,4 Millionen Registrierungen nennen. Der Artikel erwähnt bislang nur das Pflichtdatum 2024 für Krankenkassen und 2027 als Zieldatum für vollwertigen eGK-Ersatz.",
@@ -753,7 +964,10 @@
       "date": "2026-03-01",
       "source": "https://wiki.gematik.de/spaces/TIMCOMP/pages/604603166/TI-Messenger+Compass+-+The+TI-M+Blog",
       "summary": "Die Sprachanruf- und Videofunktion im TI-Messenger hängt von der Fertigstellung und Freigabe der MatrixRTC-Spezifikation (MSC 4143) der Matrix Foundation ab. Aktuelle Erwartung: MatrixRTC-Release 2026. Danach kann der TI-Messenger föderierte Sprachanrufe und Videoanrufe integrieren. Eine gematik-Spezifikation für Sprachanrufe im TI-Messenger ist für Version Pro 1.2 (Testbereitschaft Q3/2027) geplant. Außerdem ist TI-Messenger Pro 1.2 in Konzeptplanung ab Ende Mai 2026 mit Testbereitschaft Q3/2027.",
-      "affects": ["TI-Messenger.md", "Matrix-Protokoll.md"],
+      "affects": [
+        "TI-Messenger.md",
+        "Matrix-Protokoll.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-18",
       "details": "TI-Messenger.md sollte MatrixRTC als geplante Technologie für Sprachanrufe und Video erwähnen, sowie den Zeitplan für Pro 1.2 (Konzeptphase ab Mai 2026, Test Q3/2027).",
@@ -765,7 +979,10 @@
       "date": "2026-01-01",
       "source": "https://thevea.de/praxis-wissen/e-rezept-heilmittelerbringer/",
       "summary": "Ab dem 1. Januar 2027 müssen Ärzte Heilmittelverordnungen (Physiotherapie, Ergotherapie, Logopädie, Podologie) verpflichtend als E-Rezept über die TI ausstellen. Heilmittelerbringer müssen ab diesem Datum auf Basis der elektronischen Verordnung abrechnen. Die TI-Anbindungspflicht für Heilmittelerbringer ist auf den 1. Oktober 2027 verschoben (nicht Oktober 2026). Die elektronische Heilmittelverordnung (eVO) ist damit ein Vorläufer des E-Rezepts für Heilmittel.",
-      "affects": ["E-Rezept.md", "Telematikinfrastruktur.md"],
+      "affects": [
+        "E-Rezept.md",
+        "Telematikinfrastruktur.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-18",
       "details": "E-Rezept.md enthält bereits korrekten Pflichttermin 1. Januar 2027 für Verordner und TI-Anbindungspflicht Oktober 2027 für Heilmittelerbringer. Wiki-Link [[eVO]] ergänzt.",
@@ -776,7 +993,9 @@
       "date": "2026-03-12",
       "source": "https://gemspec.gematik.de/releases/Betr_26_1/index.html",
       "summary": "Am 12. März 2026 veröffentlichte gematik den Release Betr_26_1 mit zwei aktualisierten Dokumenten: (1) gemKPT_Betr (Betriebskonzept) V3.61.0: Anpassungen zu Alert-Systemen, Service-Monitoring-Anforderungen, Fehlerbehandlung für User Agents und Verfügbarkeitsmodellen bei Wartungsfenstern. (2) gemSpec_Perf (Performance und Mengengerüst) V2.78.0: Überarbeitete Leistungsanforderungen, Telemetriedaten-Spezifikationen und Korrekturen zu ePA-Historikdaten-Berichtszeiträumen.",
-      "affects": ["Telematikinfrastruktur.md"],
+      "affects": [
+        "Telematikinfrastruktur.md"
+      ],
       "action": "info_only",
       "category": "specification"
     },
@@ -785,7 +1004,9 @@
       "date": "2026-03-18",
       "source": "https://www.gelbe-liste.de/e-rezept/e-rezept-zeitplan",
       "summary": "Die verpflichtende Einführung des E-Rezepts für Hilfsmittelverordnungen (Orthesen, Prothesen, Rollstühle etc.) sowie Verbandmittel, Medizinprodukte und enterale Ernährung gilt erst ab 1. Juli 2027, nicht ab 1. Juli 2026. Der bisherige Eintrag in E-Rezept.md war falsch. Korrekte Termine: (1) Häusliche Krankenpflege und außerklinische Intensivpflege: 1. Juli 2026. (2) Heilmittelverordnungen: 1. Januar 2027. (3) Hilfsmittel und weitere: 1. Juli 2027. Die Grundlage ist das Digital-Gesetz (DigiG) vom Dezember 2023.",
-      "affects": ["E-Rezept.md"],
+      "affects": [
+        "E-Rezept.md"
+      ],
       "category": "regulation",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -797,7 +1018,10 @@
       "appliedDate": "2026-03-18",
       "source": "https://www.kma-online.de/aktuelles/it-digital-health/detail/bvitg-anforderungen-nutzung-der-gesundheitsdaten-und-weiterentwicklung-der-infrastruktur-55357",
       "summary": "Das BMG hat angekündigt, in der ersten Jahreshälfte 2026 den Referentenentwurf für das Gesetz für digitale Versorgung und Gesundheitsdatenraum (GDVG) vorzulegen. Das Gesetz soll das gescheiterte GDAG ersetzen und gematik zu einer modernen Digitalagentur weiterentwickeln. Bvitg fordert in einem Positionspapier (11. März 2026): gematik als neutralen Rahmenanbieter (kein Marktakteur), erleichterten Datenzugang für Forschung und Industrie, stabile TI, interoperable Prozesse mit ePA als zentralem Hub. Das Gesetz soll außerdem gematik erweiterte Durchsetzungsbefugnisse für einheitliche Standardimplementierungen geben.",
-      "affects": ["gematik.md", "DigiG.md"],
+      "affects": [
+        "gematik.md",
+        "DigiG.md"
+      ],
       "category": "regulation",
       "action": "applied",
       "details": "gematik.md: GDVG-Abschnitt bereits vorhanden (GDAG gescheitert, GDVG als Nachfolger). DigiG.md: GDVG-Erwähnung bereits im Überblick-Abschnitt ergänzt.",
@@ -808,7 +1032,9 @@
       "date": "2026-01-06",
       "source": "https://www.deutsche-apotheker-zeitung.de/autoren/news/artikel/2026/01/06/epa-e-rezept-und-mehr-was-kommt-2026",
       "summary": "Der Rollout des elektronischen T-Rezepts (für Lenalidomid, Pomalidomid, Thalidomid) beginnt laut Roadmap im Q3/2026; der eigentliche Rollout-Start für Praxen und Apotheken wird Mitte Q4/2026 erwartet. Damit entfallen die bisher notwendigen Papierdurchschläge und die manuelle BfArM-Übermittlung durch Apotheken. Die Spezifikation wurde im August 2025 veröffentlicht.",
-      "affects": ["E-Rezept.md"],
+      "affects": [
+        "E-Rezept.md"
+      ],
       "category": "specification",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -819,7 +1045,10 @@
       "date": "2025-03-12",
       "source": "https://gemspec.gematik.de/releases/NCPeH_24_2/index.html",
       "summary": "Gematik veröffentlichte am 12. März 2025 den Release NCPeH_24_2 mit der Feature-Spezifikation 'EU Zugriff E-Rezept' (gemF_eRp_EU V1.0.0). Damit ist die technische Spezifikation für den Anwendungsfall ePrescription/eDispensation Country A vollständig: Versicherte können deutschen Leistungserbringern im EU-Ausland Zugriff auf ihre E-Rezepte erteilen. Der Autorisierungsmechanismus nutzt einen 6-stelligen alphanumerischen Zugangscode zusammen mit der Versicherten-ID. Deutschland plant den produktiven Wave-10-Anschluss an MyHealth@EU für E-Rezepte 2026.",
-      "affects": ["NCPeH.md", "E-Rezept.md"],
+      "affects": [
+        "NCPeH.md",
+        "E-Rezept.md"
+      ],
       "category": "specification",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -830,7 +1059,9 @@
       "date": "2026-02-01",
       "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/epa-wird-interaktiv-push-nachrichten-und-volltextsuche-starten-2026/68529113",
       "summary": "Die Volltextsuche in der ePA startet nicht bereits im März 2026, sondern erst in Q3/2026 im Pilotbetrieb. Der bundesweite Rollout ist für Januar 2027 geplant. Die Funktion ermöglicht die Suche nach Begriffen innerhalb von Dokumenttexten (nicht nur in Metadaten). Technische Basis ist ePA 3.1.2 (Mai 2025). Die ePA-App ermöglicht ab März 2026 nur Push-Benachrichtigungen, nicht die Volltextsuche.",
-      "affects": ["ePA.md"],
+      "affects": [
+        "ePA.md"
+      ],
       "category": "specification",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -841,7 +1072,9 @@
       "date": "2026-01-20",
       "source": "https://gemspec.gematik.de/releases/",
       "summary": "Am 20. Januar 2026 veröffentlichte gematik den Patch-Release CI_25_5-1 mit einem Dokument als Korrektur zum CI_25_5-Release vom 13. Januar 2026 (PKI, VPN, ECC-Umstellung).",
-      "affects": ["Telematikinfrastruktur.md"],
+      "affects": [
+        "Telematikinfrastruktur.md"
+      ],
       "category": "specification",
       "action": "info_only"
     },
@@ -850,7 +1083,11 @@
       "date": "2026-02-11",
       "source": "https://www.datenstrom.net/news/beitrag-lesen/neue-firmware-fuer-rise-konnektor-verfuegbar-version-6-1-3-ab-11-februar-2026.html",
       "summary": "Ab dem 11. Februar 2026 steht Firmware-Version 6.1.3:1.0.0 für den RISE Konnektor via KSR bereit. Kernmerkmal ist das ECC-Preferred-Feature, das den schrittweisen Umstieg von RSA auf ECC ermöglicht. Außerdem enthält das Update Anpassungen für Laufzeitverlängerungen und Bundesnetzagentur-Anforderungen. Bekannte Kompatibilitätsprobleme: IBM- und Akquinet-KIM-Clientmodule unterstützen Brainpool-Kurven nicht und können beim Umschalten auf ECC-Serverzertifikat Fehler zeigen. Voraussetzung für das Firmware-Update: Kartenterminals müssen vorab auf kompatible Versionen aktualisiert werden (Cherry ST1506 4.0.47, Worldline ORGA 6100 3.9.2, JDM 1.1.20).",
-      "relevantArticles": ["Konnektoren.md", "HBA.md", "SMC-B.md"],
+      "relevantArticles": [
+        "Konnektoren.md",
+        "HBA.md",
+        "SMC-B.md"
+      ],
       "category": "specification",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -862,7 +1099,11 @@
       "appliedDate": "2026-03-18",
       "source": "https://fachportal.gematik.de/informationen-fuer/isik",
       "summary": "Gematik hat ISiK (Informationstechnische Systeme im Krankenhaus) Stufe 5 zum 1. Juli 2025 veröffentlicht. ISiK Stufe 4 wurde gleichzeitig abgekündigt (Abkündigungsdatum 1. Juli 2025). Stufe 3 (inkl. Module Dokumentenaustausch, Medikation) ist verpflichtend ab 1. Juli 2025 und gültig bis 30. Juni 2026. Pflichttermin und Gültigkeitszeitraum für Stufe 5 sind noch nicht festgelegt ('TBD'). ISiK definiert verbindliche FHIR-basierte Schnittstellen für Krankenhausinformationssysteme (KIS) gemäß §374 SGB V. Neue Module in Stufe 5 sind noch nicht abschließend kommuniziert.",
-      "relevantArticles": ["ISiK.md", "KIS.md", "FHIR.md"],
+      "relevantArticles": [
+        "ISiK.md",
+        "KIS.md",
+        "FHIR.md"
+      ],
       "category": "specification",
       "action": "applied",
       "details": "ISiK.md: Stufen-Tabelle aktualisiert mit Stufe 5 (veröffentlicht 01.07.2025, Pflichttermin TBD), Stufe 3 verbindlich bis 30.06.2026, Stufe 4 abgekündigt. KIS.md: ISiK-Stufen-Liste aktualisiert.",
@@ -873,7 +1114,11 @@
       "date": "2025-10-31",
       "source": "https://www.gematik.de/newsroom/news-detail/ti-dashboard-erweitert-neue-kennzahlen-zum-ti-gateway",
       "summary": "Gematik erweiterte das TI-Dashboard am 31. Oktober 2025 um Kennzahlen zum TI-Gateway. Neu erfasst wird die Anzahl virtueller Konnektor-Instanzen über TI-Gateways (Stand Oktober 2025: ca. 22.000 Instanzen). Jede Instanz entspricht in der Regel einer Gesundheitseinrichtung ohne lokalen Hardware-Konnektor. Das Dashboard wird täglich aktualisiert und zeigt die Tages-Werte des Vortags. Bereits enthalten waren: ePA, E-Rezept, KIM, GesundheitsID.",
-      "relevantArticles": ["TI-Gateway.md", "Konnektoren.md", "Telematikinfrastruktur.md"],
+      "relevantArticles": [
+        "TI-Gateway.md",
+        "Konnektoren.md",
+        "Telematikinfrastruktur.md"
+      ],
       "category": "info",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -884,7 +1129,9 @@
       "date": "2024-11-26",
       "source": "https://www.gematik.de/newsroom/news-detail/aktuelles-gematik-beirat-mit-neuer-spitze-sebastian-claudius-semler-tmf-und-hans-peter-bursig-zvei-uebernehmen-vorsitz",
       "summary": "In der Beiratssitzung vom 26. November 2024 wurde Sebastian Claudius Semler (CEO der TMF – Technologie- und Methodenplattform für vernetzte medizinische Forschung) zum neuen Vorsitzenden des gematik-Beirats gewählt. Hans-Peter Bursig (Bereichsleiter Gesundheit, ZVEI) übernahm den stellvertretenden Vorsitz. Der Beirat berät die gematik-Gesellschafter und -Geschäftsführung in strategischen Fragen und hat Vertreter aus Wissenschaft, Industrie, Zivilgesellschaft und Versorgung.",
-      "relevantArticles": ["gematik.md"],
+      "relevantArticles": [
+        "gematik.md"
+      ],
       "category": "info",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -895,7 +1142,11 @@
       "date": "2026-03-16",
       "source": "https://gemspec.gematik.de/prereleases/Draft_ZETA_26_1/index.html",
       "summary": "Gematik veröffentlichte am 16. März 2026 den Pre-Release Draft_ZETA_26_1 mit aktualisierten Dokumenten zu gemSpec_ZETA und dem ZETA-Guard-Anforderungsverzeichnis. Inhaltlich enthält der Release 'Optimierungen und Aktualisierungen'. Kommentierungsfrist lief bis 23. März 2026. Änderungen sind als Change-Marked-Dokumente im ZIP verfügbar. Der Release ist Vorbereitung auf den offiziellen ZETA-Release, der vor dem Produktivstart von VSDM 2.0 im Juni 2026 erwartet wird.",
-      "relevantArticles": ["ZETA.md", "Zero-Trust.md", "VSDM.md"],
+      "relevantArticles": [
+        "ZETA.md",
+        "Zero-Trust.md",
+        "VSDM.md"
+      ],
       "category": "specification",
       "action": "info_only"
     },
@@ -904,7 +1155,12 @@
       "date": "2026-02-01",
       "source": "https://www.seqly.de/en/newsroom/detail/fda-relaxes-rules-for-wearables-1/",
       "summary": "Die Zweite Verordnung zur Änderung der DiGAV (in Kraft 1. Februar 2026) enthält neben der bereits dokumentierten AbEM-Pflicht zwei weitere wesentliche Neuerungen: (1) DiGA müssen künftig verpflichtend ePA-Schreibzugriff implementieren, damit Versicherte DiGA-Daten automatisch in die ePA übertragen lassen können. (2) DiGA müssen die Authentifizierung via GesundheitsID (digitale Identität der Versicherten) unterstützen. Übergangsfristen entfallen vollständig. DiGA, die diese Anforderungen nicht erfüllen, riskieren den Ausschluss aus dem BfArM-DiGA-Verzeichnis.",
-      "relevantArticles": ["DiGA.md", "DiGAV.md", "Gesundheits-ID.md", "ePA.md"],
+      "relevantArticles": [
+        "DiGA.md",
+        "DiGAV.md",
+        "Gesundheits-ID.md",
+        "ePA.md"
+      ],
       "category": "regulation",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -915,7 +1171,9 @@
       "date": "2026-03-18",
       "source": "https://www.pharmazeutische-zeitung.de/apovwg-soll-am-16-april-beschlossen-werden-163685/",
       "summary": "Die zweite und dritte Lesung des Apothekenversorgung-Weiterentwicklungsgesetzes (ApoVWG) im Bundestag sind für den 16. April 2026 angesetzt. Wesentliche Streitpunkte: Honorarerhöhung auf 9,50 Euro pro Packung, Zulassung von PTA-Vertretung und Regelungen zu Zweigapotheken. Ein Bundesrats-Veto wäre möglich. Das ApoVWG regelt auch Telepharmazie-Strukturen und indirekt die E-Rezept-Abwicklung in neuen Apothekenmodellen. Sofern beschlossen, tritt das Gesetz voraussichtlich Mitte 2026 in Kraft.",
-      "relevantArticles": ["E-Rezept.md"],
+      "relevantArticles": [
+        "E-Rezept.md"
+      ],
       "category": "regulation",
       "action": "monitor",
       "details": "ApoVWG betrifft E-Rezept-Abwicklung und Telepharmazie-Regelungen. Nach Beschluss am 16. April 2026 E-Rezept.md auf neue Apothekenstrukturen und mögliche Änderungen in der Rezept-Einlösung prüfen. Bisherigen 'monitor'-Eintrag als Folgeaktion behandeln."
@@ -925,7 +1183,10 @@
       "date": "2026-03-18",
       "source": "https://gemspec.gematik.de/prereleases/Draft_VSDM2_26_1/index.html",
       "summary": "Am 18. März 2026 veröffentlichte gematik den Pre-Release Draft_VSDM2_26_1. Kernneuerung: Ergänzung der 'Fachdienstlokalisierung' (CC2 mit alternativer Lösung via zentralem Fachdienst). Enthalten sind Aktualisierungen der VSDM-2-Spezifikation, des Anbietersteckbriefs VSDM 2 FD und des Produktsteckbriefs VSDM 2 FD sowie der Clientsystem-Schnittstelle. Kommentierungsfrist lief bis 23. März 2026. Der Release ist Vorbereitung auf den Produktivstart VSDM 2.0 im Juni 2026 (Parallelbetrieb mit VSDM 1.0).",
-      "relevantArticles": ["VSDM.md", "Telematikinfrastruktur.md"],
+      "relevantArticles": [
+        "VSDM.md",
+        "Telematikinfrastruktur.md"
+      ],
       "category": "specification",
       "action": "info_only"
     },
@@ -934,7 +1195,11 @@
       "date": "2026-03-17",
       "source": "https://www.presseportal.de/pm/181613/6237230",
       "summary": "Am 25. März 2026 startet ePass als erstes volldigitales Identifikationsverfahren für die ePA. BITMARCK stellt das Verfahren 80 Prozent der GKV-Kassen zur Verfügung. Technisches Verfahren (zweistufig): (1) NFC-Chip des Personalausweises oder Reisepasses wird per Smartphone ausgelesen. (2) Ausweis wird fotografiert und ein Selfie-Video aufgenommen; biometrische Daten werden abgeglichen. Rechtsgrundlage: BEEP-Gesetz (in Kraft 01.01.2026). Entwickelt von Nect GmbH. Unterstützte Dokumente: deutsche Personalausweise ab August 2021 und Reisepässe ab 2005 sowie ausländische Reisedokumente mit ePass-Funktion. PIN oder Besuch einer Geschäftsstelle entfällt. Einsetzbar nicht nur für ePA, sondern auch für Online-Servicecenter der Kassen.",
-      "relevantArticles": ["ePA.md", "Gesundheits-ID.md", "IDP.md"],
+      "relevantArticles": [
+        "ePA.md",
+        "Gesundheits-ID.md",
+        "IDP.md"
+      ],
       "category": "specification",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -946,7 +1211,10 @@
       "date": "2026-03-17",
       "source": "https://gemspec.gematik.de/prereleases/Draft_E-Rezept_26_1/index.html",
       "summary": "Gematik veröffentlichte am 17. März 2026 den Pre-Release Draft_E-Rezept_26_1 zur Kommentierung (Frist: 31. März 2026). Wesentliche Änderungen: (1) Communication v3: Überarbeitete Datenarchitektur für E-Rezept-Fachdienst-Nachrichten. (2) Push-Nachrichten: Klarstellung des notification.identifier-Felds. (3) DiGA-Ausdruck: Pflichtaushändigung eines Patientenausdrucks bei DiGA-Verordnung. (4) User-Agent-Header: E-Rezept-Fachdienst muss beim Kommunizieren mit Zentraldiensten User-Agent-Informationen übermitteln. (5) Digitales Doppel Fehlerbehandlung: Fehlerverhalten bei fehlender Telematik-ID. (6) ePA-Integration: E-Rezept-Fachdienst als Client des ePA MedicationService. (7) Registrierungszeitstempel: Speicherung von App-Registrierungszeitpunkten. (8) MedicationDispense-Referenz: Korrektur der Referenzdokumentation. (9) Versichertenidentifikation: Mechanismen für Testidentitäten.",
-      "relevantArticles": ["E-Rezept.md", "ePA.md"],
+      "relevantArticles": [
+        "E-Rezept.md",
+        "ePA.md"
+      ],
       "category": "specification",
       "action": "monitor",
       "details": "Nach Abschluss der Kommentierungsphase und Veröffentlichung als finaler Release E-Rezept_26_1 sollte E-Rezept.md die Communication-v3-Architektur und die ePA-Integration (Fachdienst als MedicationService-Client) erwähnen. DiGA.md: Pflichtaushändigung eines Patientenausdrucks bei DiGA-Verordnung ist eine neue Anforderung."
@@ -956,7 +1224,11 @@
       "date": "2026-02-26",
       "source": "https://fachportal.gematik.de/telematikinfrastruktur/roadmap",
       "summary": "Die Digitale Patientenrechnung (DiPaG, gemäß §359a SGB V) ist laut OneRoadmap Q1/2026 für Ende 2026 als neue TI-Anwendung geplant. DiPaG ermöglicht Leistungserbringern (Ärzte, Zahnärzte, Apotheker), Rechnungen für Privatleistungen und Zuzahlungen digital zu übermitteln. Versicherte können die Rechnung in ihrer ePA oder GesundheitsID-App einsehen und an den Kostenträger (PKV, Beihilfe) weiterleiten. Ausbaustufe 2.0 mit erweiterten Funktionen folgt 2027. Produkttypsteckbrief und Feature-Spezifikation (gemF_DiPag V1.1.1) bereits auf gemspec.gematik.de veröffentlicht. API-Dokumentation auf GitHub (gematik/api-dipag).",
-      "relevantArticles": ["ePA.md", "Gesundheits-ID.md", "Fachdienst.md"],
+      "relevantArticles": [
+        "ePA.md",
+        "Gesundheits-ID.md",
+        "Fachdienst.md"
+      ],
       "category": "specification",
       "action": "applied",
       "appliedDate": "2026-03-19",
@@ -968,7 +1240,12 @@
       "date": "2026-02-26",
       "source": "https://fachportal.gematik.de/telematikinfrastruktur/roadmap",
       "summary": "Die aktualisierte OneRoadmap (Stand 26. Februar 2026) bestätigt und präzisiert folgende Meilensteine: ePA 3.1.3 Teil 1 (eMedikationsplan-Pilot mit Push-Nachrichten): Q3/2026. ePA 3.1.3 Teil 2 (Volltextsuche): H1/2027. PoPP 2.0 (Telemedizin, GesundheitsID-Authentifizierung): Q4/2026. DiPaG 1.0 (Digitale Patientenrechnung): Ende 2026. E-Rezept 26.1 (strukturierte KIM-Nachrichten für Pflegeeinrichtungen): H1/2026. MyHealth@EU/NCPeH 2.1 (grenzüberschreitendes E-Rezept): H1/2027. T-Rezept und kontrollierte Substanzen: E-Rezept 27.2/27.4.",
-      "relevantArticles": ["ePA.md", "E-Rezept.md", "VSDM.md", "Telematikinfrastruktur.md"],
+      "relevantArticles": [
+        "ePA.md",
+        "E-Rezept.md",
+        "VSDM.md",
+        "Telematikinfrastruktur.md"
+      ],
       "category": "specification",
       "action": "info_only"
     },
@@ -977,7 +1254,13 @@
       "date": "2026-02-10",
       "source": "https://borncity.com/blog/2026/02/11/stoerung-ti-epa-erezept-und-datev-am-10-feb-2026/",
       "summary": "Am 10. Februar 2026 ab ca. 3:05 Uhr fiel der sektorale Identity Provider (IDP) der IBM Deutschland GmbH aus. Betroffene Dienste: ePA (Zugriff und Berechtigungen), E-Rezept (Erstellen, Einstellen, Einlösen), KIM und VSDM für über T-Systems angebundene Leistungserbringer. Vermutliche Ursache: Rauchmelder-Problem in einem Frankfurter Rechenzentrum führte zu automatischem Shutdown. Behebung gegen 11:00 Uhr. Dauer ca. 8 Stunden. Dies war der zweite schwere TI-Ausfall in kurzer Zeit (nach dem RISE-Ausfall Anfang März). In einem Statement räumte gematik Beeinträchtigungen ein und verwies auf die zugrunde liegenden Dienste.",
-      "relevantArticles": ["IDP.md", "TI-Federation.md", "E-Rezept.md", "ePA.md", "Telematikinfrastruktur.md"],
+      "relevantArticles": [
+        "IDP.md",
+        "TI-Federation.md",
+        "E-Rezept.md",
+        "ePA.md",
+        "Telematikinfrastruktur.md"
+      ],
       "category": "security",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -988,7 +1271,11 @@
       "date": "2026-02-17",
       "source": "https://gemspec.gematik.de/releases/VZD_25_2/index.html",
       "summary": "Der Release VZD_25_2 (17. Februar 2026) leitet das Ende der LDAP-basierten VZD-Schnittstellen ein: SOAP-Schnittstellen und die LDAP-Administrations-Schnittstelle werden abgeschaltet. Alle Anwendungen sollen schrittweise zum VZD-FHIR-Directory migrieren. Die LDAP-Variante wird nach 2026 abgekündigt und nur noch begrenzt weiterentwickelt. Im FHIR-Directory werden außerdem die Authentifizierungsbeschreibungen aktualisiert, neue ProfessionOIDs ergänzt und die OID 'Krankenkasse ePA' entfernt.",
-      "relevantArticles": ["VZD.md", "KIM.md", "TI-Messenger.md"],
+      "relevantArticles": [
+        "VZD.md",
+        "KIM.md",
+        "TI-Messenger.md"
+      ],
       "category": "specification",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -1000,7 +1287,11 @@
       "date": "2026-03-13",
       "source": "https://www.aerzteblatt.de/news/kv-niedersachsen-drangt-auf-hohere-pauschalen-fur-betrieb-der-telematikinfrastruktur-2e6c9cf7-ec95-4289-a6e4-f8c5fd7cb7c1",
       "summary": "Die Vertreterversammlung der KV Niedersachsen forderte das BMG am 13. März 2026 auf, die monatliche TI-Pauschale für Arztpraxen anzuheben. Begründung: Praxen tragen seit Monaten erhebliche Kosten für Rückruf- und Austauschprozesse (Personal, Fremdtechniker) durch die ECC-Umstellung. Dazu kommen wiederholte TI-Ausfälle (IBM IDP, RISE TI-Gateway), die Praxen arbeitsunfähig gemacht haben. Die Versammlung bezeichnete die Situation als 'nicht mehr tragbar'. Konkrete Beträge wurden nicht genannt. Gleichzeitig wurde gefordert, die Ausgleichsregelungen aus dem TSVG für Fachärzte zu erhalten.",
-      "relevantArticles": ["Telematikinfrastruktur.md", "Kassenaerztliche-Vereinigung.md", "KBV.md"],
+      "relevantArticles": [
+        "Telematikinfrastruktur.md",
+        "Kassenaerztliche-Vereinigung.md",
+        "KBV.md"
+      ],
       "category": "regulation",
       "action": "info_only"
     },
@@ -1009,7 +1300,11 @@
       "date": "2026-03-10",
       "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/e-rezept-chaos-apotheker-rufen-zum-bundesweiten-streik-auf/68654346",
       "summary": "ABDA-Geschäftsführerin Claudia Korf forderte in einem Schreiben an gematik nach dem TI-Gateway-Ausfall Anfang März 2026 eine deutlich höhere Ausfallsicherheit der Telematikinfrastruktur. Die ABDA bezifferte die wirtschaftliche Belastung für Apotheken: Betriebskosten seit 2013 um 65 Prozent gestiegen, Vergütung (Festbetrag 8,35 Euro/Packung) seit 13 Jahren eingefroren. Gematik antwortete mit dem Hinweis auf die aktualisierte OneRoadmap, die u.a. PoPP und VSDM 2.0 als Stabilitätsverbesserungen vorsieht. Der TI-Ausfall vom 3. März 2026 gilt als Mitauslöser des bundesweiten Apothekenstreiks am 23. März 2026.",
-      "relevantArticles": ["E-Rezept.md", "TI-Gateway.md", "Telematikinfrastruktur.md"],
+      "relevantArticles": [
+        "E-Rezept.md",
+        "TI-Gateway.md",
+        "Telematikinfrastruktur.md"
+      ],
       "category": "regulation",
       "action": "applied",
       "appliedDate": "2026-03-18",
@@ -1020,7 +1315,10 @@
       "date": "2026-02-24",
       "source": "https://www.gematik.de/newsroom/news-detail/neue-themenseiten-zum-ti-anschluss-fuer-heil-und-hilfsmittelerbringende",
       "summary": "Gematik veröffentlichte am 24. Februar 2026 neue, praxisorientierte Themenseiten für Heilmittelerbringer (Physiotherapeuten, Ergotherapeuten, Logopäden, Podologen) und Hilfsmittelerbringer (Hörakustiker, Orthopädietechniker). Die Seiten umfassen Checklisten zur TI-Anbindungsplanung, Übersichten zu benötigten Komponenten (KIM, SMC-B, eHBA), Finanzierungshinweise und Informationen zu den Nutzwerten (eVO, E-Rezept ab 2027). Hintergrund ist die auf den 1. Oktober 2027 verschobene TI-Anbindungspflicht für diese Sektoren.",
-      "relevantArticles": ["Telematikinfrastruktur.md", "KIM.md"],
+      "relevantArticles": [
+        "Telematikinfrastruktur.md",
+        "KIM.md"
+      ],
       "category": "info",
       "action": "info_only"
     },
@@ -1029,7 +1327,10 @@
       "date": "2026-03-01",
       "source": "https://www.gematik.de/newsroom/news-detail/aktuelles-ueberblick-das-sind-die-neuen-funktionen-der-epa-fuer-alle",
       "summary": "Der digital gestützte Medikationsprozess (dgMP) ist seit März 2026 in erster Stufe produktiv. Bestandteile: (1) Elektronische Medikationsliste (eML): Seit Januar 2025 werden E-Rezept-Dispensierdaten automatisch in die ePA kopiert; seit März 2026 können Ärzte auch Medikamente ohne vorliegendes E-Rezept nachtragen. (2) Elektronischer Medikationsplan (eMP): Strukturierter Plan mit Dosierungsangaben, Indikationen, Statusangaben (geplant/aktiv/pausiert/beendet) und AMTS-relevanten Zusatzinformationen. Pilotphase für den eMP läuft ab Juli 2026 in ausgewählten Regionen; bundesweiter Rollout des vollständigen eMedikationsplans erst Oktober 2026. Grundlage ist ePA 3.1.2 (Mai 2025), technische Konzeptspezifikation von gematik im Juli 2025 vorveröffentlicht.",
-      "relevantArticles": ["ePA.md", "E-Rezept.md"],
+      "relevantArticles": [
+        "ePA.md",
+        "E-Rezept.md"
+      ],
       "category": "specification",
       "action": "applied",
       "appliedDate": "2026-03-19",
@@ -1041,7 +1342,9 @@
       "date": "2025-11-22",
       "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/epa-wird-zur-plattform-termin-buchung-soll-integriert-werden/68379472",
       "summary": "Gematik-Produktmanagerin Lena Dimde kündigte an, die ePA perspektivisch zu einem digitalen Versorgungsportal weiterzuentwickeln. Geplante Erweiterung: Integration von Terminbuchungsfunktionen direkt in der ePA-App, so dass Versicherte z.B. nach Einsicht in ihren Impfausweis einen Impftermin direkt buchen können. Zeitplan: keine konkreten Meilensteine; realistische Umsetzung frühestens 2026/2027. Die Funktion hängt von der Primärversorgungsreform der Bundesregierung ab.",
-      "relevantArticles": ["ePA.md"],
+      "relevantArticles": [
+        "ePA.md"
+      ],
       "category": "specification",
       "action": "info_only"
     },
@@ -1050,7 +1353,9 @@
       "date": "2026-03-05",
       "source": "https://wiki.gematik.de/spaces/TIMCOMP/pages/604603166/TI-Messenger+Compass+-+The+TI-M+Blog",
       "summary": "Anfang März 2026 veröffentlichte gematik zwei Sicherheits-Hotfixes für den TI-Messenger. (1) TI-Messenger ePA: Clients dürfen Räume nicht mehr mit öffentlichen Join-Regeln, welt-lesbarem Verlauf oder deaktivierter Verschlüsselung konfigurieren (Anforderung A_26015-02). (2) TI-Messenger Pro: Neue Zugangsbeschränkungen für bestehende öffentliche Räume; Nutzung auf Mitglieder desselben Homeservers begrenzt (Anforderung A_28755). Beide Hotfix-Versionen erhalten Status 'gültig'; Vorgängerversionen werden abgekündigt.",
-      "relevantArticles": ["TI-Messenger.md"],
+      "relevantArticles": [
+        "TI-Messenger.md"
+      ],
       "category": "security",
       "action": "applied",
       "appliedDate": "2026-03-19",
@@ -1061,7 +1366,10 @@
       "date": "2026-03-11",
       "source": "https://www.bundesgesundheitsministerium.de/service/gesetze-und-verordnungen/detail/medizinregistergesetz",
       "summary": "Das Bundeskabinett beschloss am 11. März 2026 den Regierungsentwurf des Medizinregistergesetzes (MRG). Vollständiger Titel: 'Gesetz zur Stärkung von Medizinregistern und zur Verbesserung der Medizinregisterdatennutzung'. Das Gesetz soll die Vernetzung medizinischer Register (z.B. Krebsregister, Implantateregister, Schlaganfallregister) verbessern und deren Daten für die Versorgungsforschung besser nutzbar machen. Referentenentwurf: 27. Oktober 2025. Das Gesetz liegt nun dem Bundestag zur Beratung vor. Kein unmittelbarer Bezug zu gematik oder TI-Infrastruktur, aber relevant für das Forschungsdatenzentrum Gesundheit (FDZ) und die EHDS-Umsetzung.",
-      "relevantArticles": ["GDNG.md", "BfArM.md"],
+      "relevantArticles": [
+        "GDNG.md",
+        "BfArM.md"
+      ],
       "category": "regulation",
       "action": "monitor",
       "details": "Sobald das MRG in Kraft tritt, prüfen, ob GDNG.md oder ein neuer Artikel 'Medizinregistergesetz' angelegt werden sollte. Verbindung zum FDZ Gesundheit und EHDS-Umsetzung beachten.",
@@ -1072,7 +1380,11 @@
       "date": "2026-03-06",
       "source": "https://mdoc.one/khag-beschlossen-neue-chancen-fuer-kliniken-telemedizin-und-patientenportale/",
       "summary": "Der Bundestag beschloss am 6. März 2026 das Krankenhausreformanpassungsgesetz (KHAG). Digital relevante Neuerungen: (1) Bis September 2026 müssen bundeseinheitliche Mindestanforderungen und Interoperabilitätsstandards für Krankenhäuser definiert werden. (2) Telemedizin-Netzwerke (inkl. robotergestützte Fernchirurgie, Fernberatung, sektorenübergreifende Vernetzung) werden über den Transformationsfonds (Fördertatbestand 3) gefördert. (3) Patientenportale werden als strategische Pflichtinfrastruktur gestärkt: Krankenhäuser ohne zertifiziertes Patientenportal zahlen ab 1. Januar 2026 einen Abschlag von 0,5 Prozent je Abrechnungsfall. (4) Der KrankenhausTransformationsfonds (KHTF) erhält 50 Milliarden Euro (2026-2035). Der Bundesrat stimmte am 27. März 2026 zu. Das KHAG tritt damit in Kraft und schafft mehr Planungssicherheit für digitale Klinikinvestitionen 2026/2027.",
-      "relevantArticles": ["KIS.md", "Telematikinfrastruktur.md", "ISiK.md"],
+      "relevantArticles": [
+        "KIS.md",
+        "Telematikinfrastruktur.md",
+        "ISiK.md"
+      ],
       "category": "regulation",
       "action": "applied",
       "appliedDate": "2026-03-19",
@@ -1084,7 +1396,10 @@
       "date": "2026-03-17",
       "source": "https://die-gesunde-wahrheit.de/2026/03/17/neue-chancen-fuer-die-digitale-gesundheitsversorgung-elektronische-verordnung-fuer-diga-jetzt-freiwillig/",
       "summary": "Seit März 2026 können Ärzte DiGA-Verordnungen freiwillig elektronisch ausstellen, ohne auf das formale E-Rezept-System angewiesen zu sein. Dies ergänzt die seit Oktober 2025 bestehende Möglichkeit, DiGA per E-Rezept zu verordnen. Praktische Bedeutung: Arztpraxen können DiGA-Verordnungen je nach Präferenz und Ausstattung als E-Rezept, per direkter Softwareintegration oder auf dem Papierweg ausstellen. Die Pflicht zur E-Rezept-Verordnung für DiGA ist noch nicht eingeführt. Hintergrund: Laut DiGAV-Änderungsverordnung (2. DiGAVÄndV, in Kraft 1. Februar 2026) müssen DiGA die Authentifizierung via GesundheitsID und den ePA-Schreibzugriff unterstützen.",
-      "relevantArticles": ["DiGA.md", "E-Rezept.md"],
+      "relevantArticles": [
+        "DiGA.md",
+        "E-Rezept.md"
+      ],
       "category": "specification",
       "action": "applied",
       "appliedDate": "2026-03-19",
@@ -1095,7 +1410,11 @@
       "date": "2026-03-19",
       "source": "https://www.kma-online.de/aktuelles/politik/detail/bmg-stellt-digitalisierungsstrategie-2026-vor-das-sind-warkens-plaene-55231",
       "summary": "Das BMG treibt die Verabschiedung des Gesetzes für digitale Versorgung und den Gesundheitsdatenraum (GDVG) voran. Laut Bundesgesundheitsministerin Warken wird der Referentenentwurf in Q1/Q2 2026 vorgelegt. Kernpunkte: (1) gematik wird zur modernen Digitalagentur mit erweiterten Durchsetzungsbefugnissen umgebaut (Nachfolge des gescheiterten GDAG). (2) Das Forschungsdatenzentrum Gesundheit (FDZ) wird KI-fähig ausgebaut und an den EHDS angebunden. (3) Ziel: bis Ende 2026 mindestens 300 FDZ-Forschungsprojekte. (4) ePA soll bis 2030 auf 20 Millionen aktive Nutzer wachsen (Stand März 2026: ca. 4 Millionen). (5) KI-gestützte Dokumentation soll bis 2028 in über 70 Prozent der Einrichtungen Standard sein. Der Bvitg (Bundesverband Gesundheits-IT) fordert gematik als neutralen Rahmenanbieter und erleichterten Forschungsdatenzugang.",
-      "relevantArticles": ["gematik.md", "GDNG.md", "ePA.md"],
+      "relevantArticles": [
+        "gematik.md",
+        "GDNG.md",
+        "ePA.md"
+      ],
       "category": "regulation",
       "action": "applied",
       "appliedDate": "2026-03-19",
@@ -1107,7 +1426,10 @@
       "date": "2026-03-19",
       "source": "https://www.bundestag.de/dokumente/textarchiv/2026/kw10-de-krankenhausreform-1151184",
       "summary": "Der Bundesrat soll dem am 6. März 2026 vom Bundestag beschlossenen KHAG am 27. März 2026 zustimmen. Das Gesetz bedarf der Zustimmung des Bundesrats. Wesentliche Inhalte: Erhöhung des Transformationsfonds von 25 auf 29 Milliarden Euro (Finanzierung aus Infrastrukturreserven statt GKV-Mitteln), Reduzierung der Leistungsgruppen von 65 auf 61, Verlängerung der Länder-Implementierungsfristen. Der KHTF (Krankenhaus-Transformationsfonds) fördert digitale Investitionen ab 2026.",
-      "relevantArticles": ["KIS.md", "Telematikinfrastruktur.md"],
+      "relevantArticles": [
+        "KIS.md",
+        "Telematikinfrastruktur.md"
+      ],
       "category": "regulation",
       "action": "info_only"
     },
@@ -1116,7 +1438,9 @@
       "date": "2026-03-01",
       "source": "https://www.aerztezeitung.de/Wirtschaft/Welche-neuen-ePA-Funktionen-2026-kommen-sollen-460768.html",
       "summary": "Seit März 2026 können Apotheken und Arztpraxen einzelne Einträge in der elektronischen Medikationsliste (eML) nachträglich bearbeiten und korrigieren. Anwendungsfall: Ein Medikament ist in der eML eingetragen, obwohl der Patient es nie eingenommen hat. Bislang war nur das Hinzufügen (Nachtragen) von Medikamenten ohne E-Rezept möglich; das Editieren bestehender Einträge ist eine neue Funktion aus dem dgMP-Start März 2026. Technische Grundlage ist ePA 3.1.2 (Mai 2025).",
-      "relevantArticles": ["ePA.md"],
+      "relevantArticles": [
+        "ePA.md"
+      ],
       "category": "specification",
       "action": "applied",
       "appliedDate": "2026-03-19",
@@ -1127,7 +1451,9 @@
       "date": "2026-03-19",
       "source": "https://www.gematik.de/newsroom/news-detail/die-gematik-auf-der-dmea-2026-zukunft-vernetzt-sich",
       "summary": "Gematik kündigt ihre Teilnahme an der DMEA 2026 (21.–23. April 2026, Berlin) an. Die DMEA 2026 ist die letzte Ausgabe in Berlin; ab 2027 zieht die Messe nach München. Gematik ist als Aussteller und mit Vorträgen vertreten. Themenschwerpunkte am gematik-Stand: TI 2.0, ePA-Weiterentwicklung, VSDM 2.0, PoPP, ZETA, DiPaG, EHDS/NCPeH, KI in der TI.",
-      "relevantArticles": ["Telematikinfrastruktur.md"],
+      "relevantArticles": [
+        "Telematikinfrastruktur.md"
+      ],
       "category": "info",
       "action": "info_only"
     },
@@ -1136,7 +1462,11 @@
       "date": "2026-03-04",
       "source": "https://gemspec.gematik.de/prereleases/Draft_CI_26_2/index.html",
       "summary": "Gematik veröffentlichte am 4. März 2026 den Pre-Release Draft_CI_26_2 (2 Dokumente: C_12622_Anlage_V1.0.0 und gemAenderungsliste). Problem: Konnektoren bis PTV5 führten Registrierungen mit ECC-basiertem C.VPN.NK kombiniert mit RSA-basierter SMC-B-Signatur durch. Der VPN-Zugangsdienst prüft zyklisch gespeicherte Zertifikate auf Gültigkeit und entfernt ungültige Registrierungen. Bei RSA/ECC-Migration werden RSA-Zertifikate widerrufen, was diese Registrierungen als ungültig markiert und IPsec-Verbindungen terminiert. Lösung: Zyklische Verifikation wird konfigurierbar mit Toggles für 'Widerrufsstatus' und 'Laufzeit'; bei Bedarf pausierbar. Kommentierungsfrist lief bis 18. März 2026.",
-      "relevantArticles": ["Konnektoren.md", "VPN-Zugangsdienst.md", "Telematikinfrastruktur.md"],
+      "relevantArticles": [
+        "Konnektoren.md",
+        "VPN-Zugangsdienst.md",
+        "Telematikinfrastruktur.md"
+      ],
       "category": "specification",
       "action": "info_only"
     },
@@ -1145,7 +1475,12 @@
       "date": "2026-02-16",
       "source": "https://netzpolitik.org/2026/bundesgesundheitsministerium-so-umfassend-will-warken-die-gesundheitsdaten-aller-versicherten-verknuepfen/",
       "summary": "Das BMG stellte am 11. Februar 2026 eine erweiterte Digitalisierungsstrategie vor. Drei Kernelemente: (1) ePA wird zur Gesundheitsdatenplattform mit Echtzeit-Abfragen, strukturierten Daten und Terminbuchung. (2) FDZ Gesundheit erhält tägliche automatische ePA-Datenübermittlung; 80+ Institutionen (Forscher, Pharmaunternehmen, Behörden) erhalten Zugriff. (3) Medizinregistergesetz: ca. 350 bestehende Register werden standardisiert, Register-übergreifende Datenverknüpfung über pseudonymisierte Identifikatoren auf Basis der Versichertennummer. Datenschützer kritisieren unzureichenden Re-Identifizierungsschutz und fehlende Widerspruchsmöglichkeit. Ziel: EHDS-Anbindung bis 2029. Geplantes GDVG soll Rechtsgrundlage schaffen.",
-      "relevantArticles": ["ePA.md", "Forschungsdatenzentrum-Gesundheit.md", "GDNG.md", "BMG.md"],
+      "relevantArticles": [
+        "ePA.md",
+        "Forschungsdatenzentrum-Gesundheit.md",
+        "GDNG.md",
+        "BMG.md"
+      ],
       "category": "regulation",
       "action": "applied",
       "appliedDate": "2026-03-19",
@@ -1157,7 +1492,10 @@
       "date": "2025-12-11",
       "source": "https://www.gematik.de/newsroom/news-detail/kob-sorgt-mit-standards-fuer-transparenz-141-systeme-bereits-erfolgreich-bewertet",
       "summary": "Nach dem Abschluss der eML-KOB-Phase (141 Systeme, 98% Marktanteil) weitet gematik das Konformitätsbewertungsverfahren (KOB) 2026 auf den elektronischen Medikationsplan (eMP) aus. Systeme, die den Anforderungen nicht entsprechen, können vom Markt ausgeschlossen werden. Eine Schnittstellenimplementierung wird gemeinsam mit mio42 entwickelt. Gematik bezeichnet die KOB als 'Game-Changer' für Interoperabilität und Wettbewerb im PVS-Markt.",
-      "relevantArticles": ["ePA.md", "PVS.md"],
+      "relevantArticles": [
+        "ePA.md",
+        "PVS.md"
+      ],
       "category": "specification",
       "action": "info_only"
     },
@@ -1166,7 +1504,9 @@
       "date": "2026-03-19",
       "source": "https://www.gematik.de/newsroom",
       "summary": "Stand März 2026 haben über 130.000 von ca. 160.000 Einrichtungen (81 Prozent) mindestens eine ePA geöffnet. Über 37 Millionen Dokumente wurden hochgeladen (ältere Angabe: 22 Millionen). Mehr als 700 Millionen Datensätze insgesamt (inkl. E-Rezept-Daten). In der jeweils vergangenen Woche öffneten über 93.000 Einrichtungen aktiv Patientenakten. Die aktive Patientennutzung bleibt mit ca. 3,6 Prozent hinter den Erwartungen zurück.",
-      "relevantArticles": ["ePA.md"],
+      "relevantArticles": [
+        "ePA.md"
+      ],
       "category": "info",
       "action": "applied",
       "appliedDate": "2026-03-19",
@@ -1177,7 +1517,10 @@
       "date": "2026-01-27",
       "source": "https://gemspec.gematik.de/prereleases/Draft_gemF_TI-M_Headless_Client/index.html",
       "summary": "Gematik veröffentlichte am 27. Januar 2026 eine Vorabveröffentlichung für die Feature-Spezifikation des TI-Messenger Headless Clients. Der Headless Client ist ein eigenständiger, nicht sichtbarer Softwarebaustein, der in Primärsysteme wie PVS, KIS oder Contact-Center-Systeme integriert werden kann. Er stellt keine neue Endnutzerfunktionalität bereit, sondern macht die bestehende TI-M-Pro-Funktionalität über eine programmierbare Schnittstelle verfügbar. Damit entfällt die Notwendigkeit einer separaten TI-Messenger-App für Mitarbeiter in Einrichtungen, die TI-M direkt in ihre Arbeitssoftware integrieren möchten. Eine Testumgebung war für März 2026 geplant. Nach Verfügbarkeit der Testumgebung wird die Spezifikation Grundlage für Produktzulassungen.",
-      "relevantArticles": ["TI-Messenger.md", "KIS.md"],
+      "relevantArticles": [
+        "TI-Messenger.md",
+        "KIS.md"
+      ],
       "category": "specification",
       "action": "applied",
       "appliedDate": "2026-03-19",
@@ -1189,7 +1532,12 @@
       "date": "2026-01-01",
       "source": "https://www.aok.de/pp/bv/pm/europaeischen-patientenkurzakte/",
       "summary": "Die AOKen übergaben dem Bundesgesundheitsministerium (BMG) im Januar 2026 ein Konzept sowie die Ergebnisse eines sechsmonatigen Pilotprojekts zur europäischen Patientenkurzakte (Patient Summary). Das Pilotprojekt testete Nutzerorientierung und Praxistauglichkeit einer EU-weit lesbaren digitalen Kurzakte über die MyHealth@EU-Infrastruktur (NCPeH als deutsches Gateway). Ziel: Versicherte sollen ab 2029 ihre Patientenkurzakte EU-weit Leistungserbringern bereitstellen können. Das Konzeptpapier fließt in die EHDS-Umsetzungsplanung in Deutschland ein. Die Inhalte der Patientenkurzakte (IPS, International Patient Summary) basieren auf dem FHIR-Profil des HL7 International Patient Summary.",
-      "relevantArticles": ["NCPeH.md", "Telematikinfrastruktur.md", "ePA.md", "FHIR.md"],
+      "relevantArticles": [
+        "NCPeH.md",
+        "Telematikinfrastruktur.md",
+        "ePA.md",
+        "FHIR.md"
+      ],
       "category": "regulation",
       "action": "applied",
       "appliedDate": "2026-03-19",
@@ -1200,7 +1548,10 @@
       "title": "ePA als Dreh- und Angelpunkt des Primärversorgungssystems: eReferral, Termindatenbank und Ersteinschätzung geplant",
       "date": "2026-02-11",
       "source": "https://www.aerzteblatt.de/news/elektronische-patientenakte-soll-dreh-und-angelpunkt-des-primarversorgungssystems-werden-41863b8d-749f-4a17-9678-f7dc5040008a",
-      "affects": ["ePA.md", "gematik.md"],
+      "affects": [
+        "ePA.md",
+        "gematik.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-19",
       "category": "regulation",
@@ -1211,7 +1562,10 @@
       "title": "GDVG: Datenschutzkritik an umfassender Gesundheitsdatenverknüpfung und KI-Training ohne Einwilligung",
       "date": "2026-02-16",
       "source": "https://netzpolitik.org/2026/bundesgesundheitsministerium-so-umfassend-will-warken-die-gesundheitsdaten-aller-versicherten-verknuepfen/",
-      "affects": ["ePA.md", "GDVG.md"],
+      "affects": [
+        "ePA.md",
+        "GDVG.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-19",
       "category": "regulation",
@@ -1221,7 +1575,9 @@
       "title": "ApoVWG: Bundesrat-Einspruch nach Bundestag-Beschluss (16. April 2026) möglich",
       "date": "2026-03-18",
       "source": "https://www.pharmazeutische-zeitung.de/apovwg-soll-am-16-april-beschlossen-werden-163685/",
-      "affects": ["E-Rezept.md"],
+      "affects": [
+        "E-Rezept.md"
+      ],
       "action": "monitor",
       "category": "regulation",
       "details": "Das ApoVWG soll am 16. April 2026 in zweiter und dritter Lesung im Bundestag beschlossen werden. Ein Bundesrats-Veto ist möglich. Nach Beschluss: E-Rezept.md auf neue Apothekenstrukturen (Telepharmazie, Filialverbund ohne ständig anwesenden Apotheker) und Auswirkungen auf die E-Rezept-Einlösung prüfen. Das Gesetz regelt außerdem das Honorar (Anhebung auf 9,50 Euro/Packung umstritten) und Telepharmazie-Definitionen.",
@@ -1231,7 +1587,11 @@
       "title": "KHAG: Bundesrat stimmte am 27. März 2026 zu, Gesetz tritt in Kraft",
       "date": "2026-03-27",
       "source": "https://mdoc.one/khag-beschlossen-neue-chancen-fuer-kliniken-telemedizin-und-patientenportale/",
-      "affects": ["KIS.md", "Telematikinfrastruktur.md", "ISiK.md"],
+      "affects": [
+        "KIS.md",
+        "Telematikinfrastruktur.md",
+        "ISiK.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-19",
       "category": "regulation",
@@ -1241,7 +1601,10 @@
       "title": "MyHealth@EU Wave 10: Deutschland plant E-Rezept-Produktivstart für NCPeH in 2026",
       "date": "2026-02-25",
       "source": "https://www.gesundheit.gv.at/news/aktuelles/aktuell-2026/eu-rezept.html",
-      "affects": ["NCPeH.md", "E-Rezept.md"],
+      "affects": [
+        "NCPeH.md",
+        "E-Rezept.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-19",
       "category": "regulation",
@@ -1251,7 +1614,9 @@
       "title": "DMEA 2026 (21.–23. April, Berlin): Letzte Ausgabe in Berlin, gematik mit TI-2.0-Schwerpunkt",
       "date": "2026-03-19",
       "source": "https://www.gematik.de/newsroom/news-detail/die-gematik-auf-der-dmea-2026-zukunft-vernetzt-sich",
-      "affects": ["Telematikinfrastruktur.md"],
+      "affects": [
+        "Telematikinfrastruktur.md"
+      ],
       "action": "info_only",
       "category": "info",
       "details": "DMEA 2026 findet 21.–23. April 2026 in Berlin statt (letzte Ausgabe in Berlin, ab 2027 München). Gematik ist mit Stand und Vorträgen in Halle 1.2 (D-108) vertreten. Themenschwerpunkte am gematik-Stand: TI 2.0, ePA-Weiterentwicklung, VSDM 2.0, PoPP, ZETA, DiPaG, EHDS/NCPeH, KI in der TI. Kongressprogramm betont datenbasierte Innovationen und EHDS-Umsetzung."
@@ -1260,7 +1625,10 @@
       "title": "ECC Quickcheck 23.–24. März 2026: Zweiter Quickcheck nach Wiederaktivierung von RSA auf RU",
       "date": "2026-03-20",
       "source": "https://wiki.gematik.de/spaces/RUAAS/pages/650426046/ECC-Testwochen",
-      "affects": ["Telematikinfrastruktur.md", "Konnektoren.md"],
+      "affects": [
+        "Telematikinfrastruktur.md",
+        "Konnektoren.md"
+      ],
       "action": "info_only",
       "category": "specification",
       "details": "Nach Abschluss der ECC-only-Testphase (18. Februar bis 19. März 2026) wurde RSA am 20. März 2026 auf der Referenzumgebung (RU) wieder aktiviert. Am 23.–24. März 2026 fand ein zweiter Quickcheck statt, um die Interoperabilität nach RSA-Reaktivierung zu validieren. Ab 25. März 2026 laufen auf der RU RSA und ECC parallel. Die Ergebnisse der Testwochen fließen in die finale ECC-Migrationsstrategie vor dem 30. Juni 2026 ein (Pflicht-Tausch eHBA/SMC-B G2.1). Kein eigenständiger Artikel notwendig; Folge-Information zu bestehendem ECC-Testwochen-Eintrag."
@@ -1269,7 +1637,11 @@
       "title": "GesundheitsID soll in EUDI-Wallet aufgehen: BMG kündigt gesetzliche Verankerung an",
       "date": "2026-03-10",
       "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/digitaler-gesundheitsausweis-soll-in-eu-wallet-aufgehen/68513085",
-      "affects": ["Gesundheits-ID.md", "EUDI-Wallet.md", "gematik.md"],
+      "affects": [
+        "Gesundheits-ID.md",
+        "EUDI-Wallet.md",
+        "gematik.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-20",
       "category": "regulation",
@@ -1280,7 +1652,10 @@
       "title": "KHVVG Transformationsfonds: Antragsphase läuft seit Januar 2026, TI-Anbindung explizit förderfähig",
       "date": "2026-01-15",
       "source": "https://www.bundesamtsozialesicherung.de/de/themen/transformationsfo/ueberblick/",
-      "affects": ["Telematikinfrastruktur.md", "KIS.md"],
+      "affects": [
+        "Telematikinfrastruktur.md",
+        "KIS.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-20",
       "category": "regulation",
@@ -1291,7 +1666,10 @@
       "title": "DiGAV 2. ÄndV: Interoperabilitätspflicht für DiGA mit ePA und GesundheitsID ab 1. Februar 2026 ohne Übergangsfrist",
       "date": "2026-02-01",
       "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/diga-reform-neue-regeln-fuer-digitale-gesundheitsanwendungen-treten-in/68540752",
-      "affects": ["DiGA.md", "DiGAV.md"],
+      "affects": [
+        "DiGA.md",
+        "DiGAV.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-20",
       "category": "regulation",
@@ -1302,7 +1680,9 @@
       "title": "DiPA: BEEP-Gesetz schafft erstmals vorläufiges Aufnahmeverfahren ab Januar 2026",
       "date": "2026-01-01",
       "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/beep-gesetz-bringt-digitale-pflegehilfen-auf-den-markt/68469307",
-      "affects": ["DiGA.md"],
+      "affects": [
+        "DiGA.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-20",
       "category": "regulation",
@@ -1314,7 +1694,11 @@
       "date": "2026-01-16",
       "source": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/Handlungsleitfaden_EUDI-Wallet-260116.html",
       "summary": "Das BSI veröffentlichte am 16. Januar 2026 einen Handlungsleitfaden für Behörden zur Vorbereitung auf die EUDI-Wallet-Integration. Der Leitfaden richtet sich an Digitalisierungsverantwortliche und behandelt: europäische und nationale EUDI-Wallet-Architektur, Teilnehmerrollen (Credential-Aussteller, Relying Parties) und Kernanforderungen an Authentifizierung und elektronische Attribute. Für den Gesundheitsbereich relevant: Die GesundheitsID ist als Health-Credential-Aussteller in der EUDI-Wallet-Architektur vorgesehen (BMG-Plan, GDVG). Der Leitfaden definiert den Rechtsrahmen der eIDAS-2.0-Verordnung und stellt klar, dass Nutzer selbst entscheiden, welche Daten für welchen Zweck weitergegeben werden (Privacy-by-Design). Praktische Implikation: Krankenkassen und gematik müssen als Credential-Aussteller für Versicherungsnachweis, Patientenkurzakte und E-Rezept innerhalb der EUDI-Wallet-Infrastruktur agieren. EU-Frist für Mitgliedstaaten: EUDI-Wallet bereitstellen bis November 2026; Deutschland plant Produktivstart Anfang 2027.",
-      "affects": ["EUDI-Wallet.md", "Gesundheits-ID.md", "BSI.md"],
+      "affects": [
+        "EUDI-Wallet.md",
+        "Gesundheits-ID.md",
+        "BSI.md"
+      ],
       "category": "regulation",
       "action": "applied",
       "appliedDate": "2026-03-20",
@@ -1325,7 +1709,11 @@
       "date": "2026-03-17",
       "source": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2026/260317_Software-Produkte_Gesundheitswesen.html",
       "summary": "Das BSI veröffentlichte am 17. März 2026 die Ergebnisse zweier Sicherheitsstudien: SiPra (Praxisverwaltungssysteme) und DiPS (digitale Pflegedokumentationssoftware). Ergebnis: Bei 3 von 4 getesteten PVS lassen sich durch Verkettung einzelner Schwachstellen Angriffe aus dem Internet ermöglichen. Konkrete Mängel: fehlende Transportverschlüsselung, veraltete Kryptoalgorithmen, schwache Authentifizierung, unsichere Software-Update-Mechanismen. Hersteller wurden informiert und behobene Schwachstellen zeitnah behoben. BSI veröffentlichte Empfehlungen für Hersteller und Betreiber; Kommentierungsfrist läuft bis 17. Juni 2026. Betroffene Systeme sind nicht namentlich genannt.",
-      "relevantArticles": ["Telematikinfrastruktur.md", "BSI.md", "KIS.md"],
+      "relevantArticles": [
+        "Telematikinfrastruktur.md",
+        "BSI.md",
+        "KIS.md"
+      ],
       "category": "security",
       "action": "applied",
       "appliedDate": "2026-03-20",
@@ -1336,7 +1724,10 @@
       "date": "2026-02-26",
       "source": "https://fachportal.gematik.de/telematikinfrastruktur/roadmap",
       "summary": "Die aktualisierte OneRoadmap (Stand 26. Februar 2026) verschiebt den Produktivstart für NCPeH 2.1 (grenzüberschreitendes E-Rezept via MyHealth@EU) von 2026 auf H1/2027. Das bedeutet: Deutschland wird erst im ersten Halbjahr 2027 als Wave-10-Teilnehmer produktiv an MyHealth@EU angeschlossen. Österreich und Tschechien sind seit Februar 2026 bereits produktiv. Zugleich bestätigt die Roadmap ePA 3.1.3 Teil 1 (eMedikationsplan-Pilot) für Q3/2026 und T-Rezept als Bestandteil von E-Rezept 27.2/27.4, d.h. der T-Rezept-Rollout ist erst 2027 erwartet (nicht wie zuvor dokumentiert Q4/2026).",
-      "affects": ["NCPeH.md", "E-Rezept.md"],
+      "affects": [
+        "NCPeH.md",
+        "E-Rezept.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-21",
       "category": "specification",
@@ -1347,7 +1738,9 @@
       "date": "2026-02-01",
       "source": "https://www.aerztezeitung.de/Wirtschaft/Welche-neuen-ePA-Funktionen-2026-kommen-sollen-460768.html",
       "summary": "Die gematik OneRoadmap (Q1/2026) bestätigt: Die Medizinischen Informationsobjekte (MIOs) Impfausweis, Mutterpass, Kinderuntersuchungsheft und Zahnärztliches Bonusheft werden erst 2027 in die ePA integriert, nicht bereits 2026. In 2026 liegt der Fokus auf dem elektronischen Medikationsplan (eMP, Pilot ab Juli 2026). Der Impfausweis gilt als technisch am weitesten fortgeschrittenes MIO und soll als erstes folgen; konkrete Termine für die anderen MIOs sind noch 'TBD'. Einzelne Krankenkassen (u.a. eine AOK) pilotieren bereits einen E-Impfpass, aber ohne TI-Standardisierung.",
-      "affects": ["ePA.md"],
+      "affects": [
+        "ePA.md"
+      ],
       "action": "applied",
       "appliedDate": "2026-03-21",
       "category": "specification",
@@ -1358,7 +1751,10 @@
       "date": "2026-03-17",
       "source": "https://gemspec.gematik.de/prereleases/Draft_E-Rezept_26_1/index.html",
       "summary": "Der Pre-Release Draft_E-Rezept_26_1 (17. März 2026) enthält 9 Änderungen, darunter als wichtigste: Communication v3 (überarbeitete Nachrichtenarchitektur für den E-Rezept-Fachdienst), ePA-Integration (Fachdienst als Client des MedicationService) sowie die Pflichtaushändigung eines Patientenausdrucks bei DiGA-Verordnung. Kommentierungsfrist: 31. März 2026. Der finale Release E-Rezept_26_1 ist Voraussetzung für das E-Rezept 26.1-Feature (strukturierte KIM-Nachrichten für Pflegeeinrichtungen, H1/2026). Hersteller haben Fragen nach der Kommentierungsphase zu klären.",
-      "affects": ["E-Rezept.md", "DiGA.md"],
+      "affects": [
+        "E-Rezept.md",
+        "DiGA.md"
+      ],
       "action": "monitor",
       "category": "specification",
       "details": "Nach Abschluss der Kommentierungsphase (31. März 2026) und Veröffentlichung als finaler Release: E-Rezept.md um Communication-v3-Architektur und ePA-MedicationService-Integration erweitern. DiGA.md: Pflichtaushändigung eines Patientenausdrucks bei DiGA-Verordnung als neue Anforderung dokumentieren."
@@ -1368,7 +1764,11 @@
       "date": "2026-03-20",
       "source": "https://www.bundestag.de/dokumente/textarchiv/2026/kw10-de-krankenhausreform-1151184",
       "summary": "Der Bundesrat stimmt am 27. März 2026 (in 7 Tagen) über das KHAG ab. Bundesgesundheitsministerin Warken (CDU) rechnet fest mit Zustimmung. Mecklenburg-Vorpommern hat Bedenken angemeldet und plant, Kritikpunkte im Bundesrat vorzutragen. Ein Vermittlungsausschuss ist laut Warken unwahrscheinlich. Das KHAG ist kein zustimmungspflichtiges Gesetz im engeren Sinne, der Bundesrat kann jedoch Einspruch einlegen. Beim Scheitern im Bundesrat würden wichtige digitale Investitionsanreize (KHTF, Patientenportal-Pflicht, Telemedizin-Förderung) verzögert.",
-      "affects": ["KIS.md", "Telematikinfrastruktur.md", "ISiK.md"],
+      "affects": [
+        "KIS.md",
+        "Telematikinfrastruktur.md",
+        "ISiK.md"
+      ],
       "action": "monitor",
       "category": "regulation",
       "details": "Stand 20. März 2026: Das KHAG-Votum im Bundesrat (27. März 2026) steht noch aus. Der bestehende Eintrag 'KHAG: Bundesrat stimmte am 27. März 2026 zu' (appliedDate 2026-03-19) ist vorausgreifend erfasst. Nach tatsächlicher Abstimmung KIS.md und ISiK.md auf Inkrafttreten aktualisieren. Falls Bundesrat Einspruch einlegt: Neues Finding erfassen.",
@@ -1379,7 +1779,12 @@
       "date": "2026-02-12",
       "source": "https://www.pharmazeutische-zeitung.de/totalausfall-bei-gesundheits-id-fuer-barmer-und-aok-versicherte-162742/",
       "summary": "Am 12. Februar 2026 fiel der sektorale Identity Provider (IDP) von T-Systems International GmbH aus, was einen 'Totalausfall' der GesundheitsID für Barmer- und AOK-Versicherte verursachte. Betroffene Dienste: E-Rezept-App (Anmeldung per GesundheitsID), ePA-Zugang. Nicht betroffen: E-Rezept-Einlösung via eGK, Papierausdruck und App mit PIN. Es war der zweite schwere TI-Ausfall dieser Woche (nach dem IBM-IDP-Ausfall am 10. Februar). Das BMG kündigte daraufhin eine grundsätzliche Überprüfung der Systemzuverlässigkeit des E-Rezeptions-Systems an.",
-      "relevantArticles": ["IDP.md", "Gesundheits-ID.md", "E-Rezept.md", "ePA.md"],
+      "relevantArticles": [
+        "IDP.md",
+        "Gesundheits-ID.md",
+        "E-Rezept.md",
+        "ePA.md"
+      ],
       "category": "security",
       "action": "applied",
       "appliedDate": "2026-03-22",
@@ -1390,7 +1795,11 @@
       "date": "2026-03-20",
       "source": "https://www.pharmazeutische-zeitung.de/barmer-vereinfacht-epa-zugang-163830/",
       "summary": "Die Barmer Krankenkasse führte am 20. März 2026 als erste gesetzliche Krankenkasse bundesweit das ePass-Identifikationsverfahren (von Nect) für den ePA-Zugang ein. Versicherte können sich damit per NFC-Chip des Personalausweises und Selfie-Video identifizieren, ohne PIN oder Filialbesuch. Ab 25. März 2026 bieten rund 80 Prozent aller GKV-Kassen ePass an (über Bitmarck-Infrastruktur). Unterstützt werden Personalausweise ab 2. August 2021 und perspektivisch EU/EFTA-Reisepässe. Das Verfahren ist nicht mit der GesundheitsID identisch, sondern ein ergänzendes Authentifizierungsverfahren.",
-      "relevantArticles": ["ePA.md", "Gesundheits-ID.md", "IDP.md"],
+      "relevantArticles": [
+        "ePA.md",
+        "Gesundheits-ID.md",
+        "IDP.md"
+      ],
       "category": "specification",
       "action": "info_only",
       "details": "ePass-Artikel und Gesundheits-ID.md sind bereits aktualisiert. Barmer als erste Kasse und bundesweite Verfügbarkeit ab 25. März 2026 sind bestätigte Fakten. Kein weiterer Update-Bedarf."
@@ -1400,7 +1809,9 @@
       "date": "2026-03-01",
       "source": "https://www.dmea.de/de/presse/pressemitteilungen/news_15936.html",
       "summary": "Die DMEA hat das offizielle Bühnenprogramm für die DMEA 2026 (21.–23. April, Berlin) veröffentlicht. Themenschwerpunkte: KI-gestützte Kliniksysteme und Dokumentationsunterstützung, datengetriebene Forschung und EHDS-Umsetzung, smarte Pflegelösungen. Rund 900 Aussteller und knapp 500 Redner erwartet. gematik ist in Halle 1.2 (Stand D-108) mit Fachvorträgen zu TI 2.0, VSDM 2.0, PoPP, ZETA, DiPaG und NCPeH/EHDS vertreten. Es ist die letzte DMEA in Berlin; ab 2027 zieht die Messe nach München.",
-      "relevantArticles": ["Telematikinfrastruktur.md"],
+      "relevantArticles": [
+        "Telematikinfrastruktur.md"
+      ],
       "category": "info",
       "action": "info_only",
       "details": "DMEA-Ankündigung bereits in den Findings dokumentiert. Bühnenprogramm-Details als Ergänzung. Kein Artikel-Update nötig."
@@ -1410,23 +1821,41 @@
       "date": "2026-02-27",
       "source": "https://www.pharmazeutische-zeitung.de/warken-verspricht-950-euro-im-bundestag-163193/",
       "summary": "Bei der 1. Lesung des ApoVWG im Bundestag am 27. Februar 2026 versprach Bundesgesundheitsministerin Nina Warken (CDU) ausdrücklich, die Apothekenhonorar-Erhöhung auf 9,50 Euro pro Packung im Frühjahr 2026 per eigenständiger Verordnung umzusetzen, parallel zum ApoVWG. Die Honorarerhöhung ist nicht im ApoVWG-Gesetzestext enthalten, weil sie der Koalitionsvertrag als Rechtsverordnung vorsieht. Zusätzlich soll eine weitere Verordnung einen dauerhaften Verhandlungsmechanismus (Apothekerverbände versus GKV-Spitzenverband) für jährliche Honoraranpassungen einführen. CSU-Gesundheitspolitiker Pilsinger (Stand 20. März 2026) bekräftigte, die 9,50 Euro kämen mit dem ApoVWG wie vereinbart.",
-      "affects": ["E-Rezept.md"],
+      "affects": [
+        "E-Rezept.md"
+      ],
       "category": "regulation",
-      "action": "update",
+      "action": "applied",
       "details": "E-Rezept.md und ApoVWG-Eintrag: Ergänzung, dass die 9,50-Euro-Honorarerhöhung nicht im ApoVWG-Gesetzestext steht, sondern per eigenständiger BMG-Verordnung (Frühjahr 2026) parallel zum Gesetz kommen soll. Bestehende Einträge (ApoVWG 2./3. Lesung 16. April 2026) noch um dieses Detail erweitern.",
-      "suggestedTerm": "ApoVWG"
+      "suggestedTerm": "ApoVWG",
+      "appliedDate": "2026-03-22"
     },
     {
       "title": "TI-Teilausfall 3. März 2026: Bitmarck-Fachdienste und aAdG-NetG betroffen (12:30–14:00 Uhr)",
       "date": "2026-03-03",
       "source": "https://www.apotheke-adhoc.de/nachrichten/detail/e-health/teilausfall-bei-e-rezept-und-epa/",
       "summary": "Am 3. März 2026 kam es zwischen 12:30 und ca. 14:00 Uhr zu einem von der RISE TI-Gateway-Störung unabhängigen Teilausfall: Betroffen waren die Bitmarck-Fachdienste sowie die KBV-Anwendung aAdG-NetG. Folge: Apotheken und Praxen konnten zeitweise keine E-Rezepte per eGK einlösen, keine ePA-Berechtigungen setzen und keinen VSDM-Datenabgleich durchführen. Gematik kommunizierte die Störung über den offiziellen TI-Störungskanal. Der 3. März 2026 war damit ein Mehrfach-Ausfall-Tag mit zwei unabhängigen Vorfällen (RISE-Gateway-Ausfall und dieser Bitmarck/aAdG-Ausfall). Bekannte Schwäche: Konzentration auf wenige Anbieter von TI-Fachdiensten erhöht systemisches Ausfallrisiko.",
-      "affects": ["E-Rezept.md", "IDP.md", "Telematikinfrastruktur.md"],
+      "affects": [
+        "E-Rezept.md",
+        "IDP.md",
+        "Telematikinfrastruktur.md"
+      ],
       "category": "security",
-      "action": "update",
-      "details": "Telematikinfrastruktur.md: Abschnitt 'Ausfälle und Verfügbarkeit' um den Bitmarck/aAdG-NetG-Teilausfall am 3. März 2026 (12:30–14:00 Uhr) ergänzen. Kontext: Am gleichen Tag gab es den RISE-TI-Gateway-Ausfall. Beide Vorfälle zusammen unterstreichen das systemische Konzentrationsrisiko bei wenigen TI-Fachdienst-Anbietern. E-Rezept.md: Hinweis auf mehrfache Ausfallproblematik am 3. März 2026 ergänzen."
+      "action": "applied",
+      "details": "Telematikinfrastruktur.md: Abschnitt 'Ausfälle und Verfügbarkeit' um den Bitmarck/aAdG-NetG-Teilausfall am 3. März 2026 (12:30–14:00 Uhr) ergänzen. Kontext: Am gleichen Tag gab es den RISE-TI-Gateway-Ausfall. Beide Vorfälle zusammen unterstreichen das systemische Konzentrationsrisiko bei wenigen TI-Fachdienst-Anbietern. E-Rezept.md: Hinweis auf mehrfache Ausfallproblematik am 3. März 2026 ergänzen.",
+      "appliedDate": "2026-03-22"
+    },
+    {
+      "title": "ePA-Nutzerstudie: FH Münster und Fraunhofer SIT untersuchen Usability (21. März 2026)",
+      "date": "2026-03-21",
+      "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/epa-neuer-epass-und-nutzerstudie-sollen-digitalisierung-retten/68946975",
+      "summary": "Forscher der FH Münster und des Fraunhofer-Instituts für Sichere Informationstechnologie (SIT) führen eine umfassende Nutzerstudie zur ePA durch. Teilnehmer lösen typische Aufgaben in einem Simulator und kommentieren ihre Gedanken laut. Ziel ist es, Hürden bei Erstregistrierung und täglicher Nutzung zu identifizieren, um Handlungsempfehlungen für Krankenkassen und Softwarehersteller zu entwickeln. Hintergrund: Trotz automatischer Einrichtung von ca. 70 Millionen Akten nutzen nur 3,6 Prozent der Versicherten die ePA aktiv. Die Studie soll neue Maßstäbe für nutzerzentrierte Gestaltung aller Gesundheits-Apps setzen. Ergebnisse werden Mitte 2026 erwartet.",
+      "affects": [
+        "ePA.md"
+      ],
+      "category": "regulation",
+      "action": "info_only",
+      "details": "Hintergrundinformation zu ePA-Akzeptanzproblemen. Kein unmittelbarer Update-Bedarf; Ergebnisse der Studie (erwartet Mitte 2026) könnten Anlass geben, ePA.md um einen Abschnitt zur Nutzerakzeptanz und Usability-Forschung zu erweitern."
     }
-  ],
-  "lastRun": "2026-03-22T12:00:00Z",
-  "lastChecked": "2026-03-22"
+  ]
 }

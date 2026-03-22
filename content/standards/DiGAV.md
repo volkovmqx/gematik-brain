@@ -3,7 +3,10 @@ title: DiGAV
 audience: [technical, non-technical]
 tags: [standards, recht, diga, regulierung, bfarm]
 aliases: [Digitale-Gesundheitsanwendungen-Verordnung, DiGA-Verordnung]
-maturity: immergruen
+maturity: wachsend
+relevance:
+  sectors: [hersteller, startup, kasse, regulierung, patient, forschung]
+  interests: [compliance, business]
 ---
 
 # DiGAV
@@ -21,6 +24,9 @@ Das Digitale-Versorgung-Gesetz ([[DVG]]) schuf 2019 in [[SGB-V]] §33a den Recht
 Die Verordnung trat am 11. April 2020 in Kraft und wird laufend durch Änderungsverordnungen aktualisiert. Sie gilt ausschließlich für DiGA, also digitale Medizinprodukte der Risikoklasse I oder IIa nach der europäischen Medizinprodukteverordnung ([[MDR]]), nicht für andere digitale Gesundheitsprodukte.
 
 Das [[BfArM]] prüft DiGA-Anträge auf Basis der DiGAV innerhalb von maximal drei Monaten nach Eingang einer vollständigen Antragstellung. Dieses Fast-Track-Verfahren ist international ohne Parallele.
+
+> [!interesse-compliance] Pflichten für DiGA-Hersteller nach DiGAV
+> Die DiGAV verpflichtet Hersteller zu laufenden Nachweispflichten nach der Aufnahme ins Verzeichnis: Anlage-1-Anforderungen (Datenschutz, Datensicherheit, Penetrationstests) müssen dauerhaft erfüllt bleiben. Seit der Zweiten Änderungsverordnung (1. Februar 2026) ist die ePA-Interoperabilität (Schreibzugriff) und die Authentifizierung über die [[Gesundheits-ID]] Pflicht ohne Übergangsfristen. Außerdem gilt die Anwendungsbegleitende Erfolgsmessung (AbEM): Mindestens 20 Prozent des Erstattungsbetrags müssen von messbaren Versorgungsergebnissen abhängen, mit quartalsweiser Datenerhebung und halbjährlicher Meldung an das [[BfArM]].
 
 ## Technische Details
 
@@ -54,6 +60,8 @@ Hersteller, die noch keine abgeschlossene Studie vorlegen können, werden vorlä
 
 ### Fast-Track-Verfahren
 
+Mehr zum Ablauf des Verfahrens: [[DiGA-Fast-Track]].
+
 Das [[BfArM]] prüft in drei Schritten:
 
 1. **Formelle Vollständigkeitsprüfung**: Sind alle Unterlagen eingereicht?
@@ -65,6 +73,9 @@ Auf eine öffentliche Stellungnahmephase (wie bei Arzneimitteln) wird verzichtet
 ### Vergütung
 
 Nach Aufnahme in das DiGA-Verzeichnis gilt für die Erprobungsphase ein Erstattungsbetrag, den der Hersteller selbst festlegt. Nach dauerhafter Aufnahme verhandeln GKV-Spitzenverband und Hersteller einen Erstattungsbetrag. Einigen sie sich nicht, entscheidet eine Schiedsstelle.
+
+> [!interesse-business] Marktchancen und Vergütungsmodell
+> Der DiGA-Markt umfasst (Stand Anfang 2026) rund 60 bis 65 dauerhaft gelistete Anwendungen sowie weitere in der Erprobungsphase. Der selbst festgelegte Erstattungsbetrag in der 12-monatigen Erprobungsphase ist ein zentraler Hebel: Er ermöglicht Herstellern, den Marktwert vor der Verhandlung zu definieren. Ab der Zweiten DiGAV-Änderungsverordnung ist 20 Prozent des Erstattungsbetrags erfolgsabhängig, was Investoren bei der Bewertung von DiGA-Unternehmen zunehmend berücksichtigen. DiGA mit nachgewiesenem medizinischen Nutzen können dauerhaft gelistet bleiben und erzielen stabile GKV-Vergütungen ohne Mengensteuerung.
 
 ### Zweite Änderungsverordnung (2026): Anwendungsbegleitende Erfolgsmessung
 

@@ -6,7 +6,7 @@ aliases: [Gesundheitsversorgungsstärkungsgesetz]
 relevance:
   sectors: [arztpraxis, psychotherapie, kasse, regulierung, verband, krankenhaus]
   interests: [compliance, business]
-maturity: setzling
+maturity: immergruen
 ---
 
 # GVSG
@@ -19,7 +19,7 @@ Auf dem Land und in sozial benachteiligten Stadtvierteln finden immer weniger Me
 
 ## Überblick
 
-Das GVSG (Gesetz zur Stärkung der Gesundheitsversorgung in der Kommune) wurde am 30. Januar 2025 vom Bundestag verabschiedet (BT-Drucksache 20/11853) und am 14. Februar 2025 vom Bundesrat gebilligt (BR-Drucksache 36/25). Es trat am 01. März 2025 in Kraft. Das Gesetz ist das Ergebnis eines langen Gesetzgebungsprozesses unter der Ampel-Koalition, bei dem ursprünglich vorgesehene Maßnahmen wie Gesundheitskioske und Primärversorgungszentren (PVZ) noch vor der Verabschiedung gestrichen wurden.
+Das GVSG (Gesetz zur Stärkung der Gesundheitsversorgung in der Kommune) wurde vom Kabinett am 22. Mai 2024 beschlossen, am 30. Januar 2025 vom Bundestag verabschiedet (BT-Drucksache 20/11853) und am 14. Februar 2025 vom Bundesrat gebilligt (BR-Drucksache 36/25). Es trat am 01. März 2025 in Kraft. Das Gesetz ist das Ergebnis eines langen Gesetzgebungsprozesses unter der Ampel-Koalition, bei dem ursprünglich vorgesehene Maßnahmen wie Gesundheitskioske und Primärversorgungszentren (PVZ) noch vor der Kabinettsbefassung gestrichen wurden.
 
 Das GVSG verfolgt drei Hauptziele:
 
@@ -28,7 +28,7 @@ Das GVSG verfolgt drei Hauptziele:
 3. **Erleichterung der kommunalen MVZ-Gründung**: Für die Zulassung eines [[MVZ|Medizinischen Versorgungszentrums (MVZ)]] in der Rechtsform einer GmbH können die gesetzlich vorgesehenen Sicherheitsleistungen begrenzt werden. Das erleichtert insbesondere Kommunen und gemeinnützigen Trägern die MVZ-Gründung in unterversorgten Regionen.
 
 > [!praxis-tipp] Praxis-Tipp: Vorhaltepauschale ab 1. Januar 2026 beantragen
-> Die neue Vorhaltepauschale (GOP 03040) gilt ab 1. Januar 2026. Sie ersetzte die bisherige Ordinationskomplex-Pauschale. KBV und GKV-Spitzenverband haben die Kriterien im August 2025 beschlossen.
+> Die neue Vorhaltepauschale (GOP 03040) gilt ab 1. Januar 2026. Sie ersetzt die bisherige Ordinationskomplex-Pauschale. KBV und GKV-Spitzenverband haben die Kriterien im August 2025 beschlossen.
 >
 > Ihr Zuschlag hängt davon ab, wie viele Strukturkriterien Ihre Praxis erfüllt:
 > - Kein oder ein Kriterium erfüllt: GOP 03040 ohne Zuschlag (128 Punkte)
@@ -77,6 +77,13 @@ Das GVSG änderte und ergänzte mehrere Paragraphen im [[SGB-V]]:
 
 Das GVSG stärkt die koordinierende Funktion des Hausarztes. Hausarztpraxen, die als Anlaufstelle für chronisch kranke Patientinnen und Patienten fungieren, sind auf eine funktionsfähige TI-Anbindung angewiesen: [[KIM]] für die sektorenübergreifende Kommunikation, [[ePA]] für den Zugriff auf Vorbehandlungsdaten, [[E-Rezept]] für die Medikationsversorgung. Die mit dem GVSG eingeführte Versorgungspauschale für Chroniker setzt voraus, dass Praxen eine kontinuierliche Betreuung dokumentieren können, was digital unterstützte Prozesse erfordert.
 
+> [!klinik-integration] Klinik-Integration: ISiK als Datenbasis für sektorenübergreifende Chroniker-Versorgung
+> **ISiK Stufe 3 ab 1. Juli 2025 Pflicht:** Alle Krankenhäuser müssen das ISiK-Modul Dokumentenaustausch (Stufe 3) verpflichtend bereitstellen (§ 373 SGB V). Das bedeutet: Das KIS muss klinische Dokumente per FHIR R4 exportieren können (DocumentReference-Ressource, IHE MHD-Profil).
+>
+> **Relevanz für Chroniker-Versorgung:** Wenn ein chronisch kranker Patient zwischen Hausarzt-MVZ und Krankenhaus wechselt, können Befunde, Entlassbriefe und Medikationspläne über die ISiK-Schnittstelle strukturiert übergeben werden. Das unterstützt die Behandlungskontinuität, die die GVSG-Versorgungspauschale voraussetzt.
+>
+> **Workflow-Empfehlung:** Konfigurieren Sie Ihre ISiK-Schnittstelle so, dass Entlassbriefe automatisch als FHIR-DocumentReference bereitgestellt werden. Hausarzt-MVZs mit PVS-Unterstützung können diese Dokumente über [[KIM]] oder direkt per ISiK-Abfrage abrufen. Prüfen Sie, ob Ihr KIS-Hersteller den ISiK-Dokumentenaustausch Stufe 3 im Bestätigungsverfahren der gematik bereits zertifiziert hat.
+
 > [!klinik-integration] Klinik-Integration: GVSG und kommunale MVZ mit Krankenhaus-Trägerschaft
 > **Relevanz für Krankenhäuser:** Das GVSG erleichtert die Gründung kommunaler MVZ durch Begrenzung der Sicherheitsleistungen (§ 95 SGB V). Krankenhäuser, die bereits als Träger von Polikliniken oder Ambulanzen fungieren, können kommunale MVZ als eigenständige GmbH gründen oder als stiller Gesellschafter unterstützen. Das eröffnet einen Weg zur sektorenübergreifenden Versorgung unter einem Dach.
 >
@@ -105,8 +112,9 @@ Das GVSG stärkt die koordinierende Funktion des Hausarztes. Hausarztpraxen, die
 
 ## Quellen
 
-- [Bundesgesundheitsministerium: GVSG – Gesetze und Verordnungen](https://www.bundesgesundheitsministerium.de/service/gesetze-und-verordnungen/detail/gvsg)
+- [Bundesgesundheitsministerium: GVSG – Gesetze und Verordnungen](https://www.bundesgesundheitsministerium.de/service/gesetze-und-verordnungen/detail/gvsg.html)
 - [Bundesrat: Beratungsvorgang GVSG (BR-Drucksache 36/25)](https://www.bundesrat.de/SharedDocs/beratungsvorgaenge/2025/0001-0100/0036-25.html)
 - [Bundesrat: Gesetzentwurf GVSG (BR-Drucksache 234/24)](https://www.bundesrat.de/SharedDocs/beratungsvorgaenge/2024/0201-0300/0234-24.html)
 - [Deutscher Bundestag: Bundestag stimmt für Wegfall der Honorarbudgets für Hausärzte (30.01.2025)](https://www.bundestag.de/dokumente/textarchiv/2025/kw05-de-gesundheitsversorgung-1042024)
 - [KBV: Hausärztliche Leistungen werden ab Oktober entbudgetiert](https://www.kbv.de/praxis/tools-und-services/praxisnachrichten/2025/05-22/hausaerztliche-leistungen-werden-ab-oktober-entbudgetiert-eckpunkte-zur-neuen-vorhaltepauschale-vereinbart)
+- [KBV: KBV und GKV-Spitzenverband einigen sich auf neue Versorgungspauschale für Chroniker (12.03.2026)](https://www.kbv.de/praxis/tools-und-services/praxisnachrichten/2026/03-12/kbv-und-gkv-spitzenverband-einigen-sich-auf-neue-versorgungspauschale-fuer-chroniker)

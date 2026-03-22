@@ -3,6 +3,10 @@ title: PDSG - Patientendaten-Schutz-Gesetz
 audience: [technical, non-technical]
 tags: [standards, gesetzgebung, epa, datenschutz, telematikinfrastruktur, sgb-v]
 aliases: [PDSG, Patientendaten-Schutz-Gesetz, Patientendatenschutzgesetz]
+relevance:
+  sectors: [arztpraxis, krankenhaus, apotheke, kasse, hersteller, regulierung, patient]
+  interests: [compliance, patient]
+maturity: wachsend
 ---
 
 # PDSG - Patientendaten-Schutz-Gesetz
@@ -25,6 +29,9 @@ Das PDSG verfolgte drei Hauptziele:
 
 Das PDSG gilt als Zwischengesetz zwischen dem [[DVG]] (2019) und dem [[DigiG]] (2024). Während das DVG die ePA einführte, regelte das PDSG konkret, wie sie sicher betrieben werden soll. Das DigiG stellte das Modell dann auf Opt-out um.
 
+> [!interesse-compliance] Compliance-Relevanz des PDSG
+> Das PDSG legte die bis heute geltenden Grundregeln für die ePA-Sicherheit fest: Meldepflicht bei Sicherheitsvorfällen gegenüber der [[gematik]] (§ 307 SGB V), Bußgelder bis 300.000 Euro bei Verstößen und die Pflicht zur VAU-Architektur für Aktensystembetreiber. Diese Anforderungen gelten weiterhin, auch wenn das Opt-out-Modell erst durch das [[DigiG]] eingeführt wurde. Leistungserbringer und TI-Anbieter sollten prüfen, ob ihre Sicherheitskonzepte die PDSG-Anforderungen vollständig abdecken.
+
 ## Technische Details
 
 ### Änderungen im SGB V
@@ -41,6 +48,9 @@ Das PDSG ergänzte und änderte den elften Abschnitt des [[SGB-V]] (§§ 291a bi
 ### ePA unter dem PDSG: Opt-in-Modell
 
 Das PDSG behielt das **Opt-in-Modell** für die ePA bei: Versicherte mussten aktiv der Anlage einer ePA zustimmen. Erst das [[DigiG]] von 2024 stellte auf Opt-out um.
+
+> [!interesse-patient] Patientenrechte nach dem PDSG
+> Das PDSG legte erstmals klare Patientenrechte für die digitale Akte fest: granulare Zugriffssteuerung (wer darf welche Dokumente sehen), das Recht auf Löschung einzelner Dokumente und die vollständige Kontrolle über die eigene Akte. Diese Rechte gelten bis heute. Das [[DigiG]] hat den Zugang vereinfacht (Opt-out statt Opt-in), aber die Datenschutzrechte aus dem PDSG blieben erhalten.
 
 Das PDSG legte jedoch fest, dass Versicherte nach Anlage der Akte vollständige Kontrolle über ihre Daten haben:
 

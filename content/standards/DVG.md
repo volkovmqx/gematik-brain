@@ -46,7 +46,7 @@ Das DVG ergänzte und änderte zahlreiche Paragraphen im [[SGB-V]]:
 
 ### DiGA-Fast-Track-Verfahren
 
-Das DVG beauftragte das [[BfArM]] mit der Einrichtung des DiGA-Fast-Track-Verfahrens. Hersteller können ihre App innerhalb von drei Monaten prüfen lassen. Geprüft werden Sicherheit, Datenschutz, Interoperabilität (auf Basis von [[FHIR]] R4) und positiver Versorgungseffekt. Zugelassene DiGA werden im öffentlichen DiGA-Verzeichnis geführt. Die Erstattungsbeträge werden zwischen Herstellern und dem [[GKV]]-Spitzenverband verhandelt.
+Das DVG beauftragte das [[BfArM]] mit der Einrichtung des [[DiGA-Fast-Track|DiGA-Fast-Track-Verfahrens]]. Hersteller können ihre App innerhalb von drei Monaten prüfen lassen. Geprüft werden Sicherheit, Datenschutz, Interoperabilität (auf Basis von [[FHIR]] R4) und positiver Versorgungseffekt. Zugelassene DiGA werden im öffentlichen DiGA-Verzeichnis geführt. Die Erstattungsbeträge werden zwischen Herstellern und dem [[GKV]]-Spitzenverband verhandelt.
 
 ### TI-Pflichtanbindung
 

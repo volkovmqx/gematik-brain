@@ -1,49 +1,25 @@
 {
   "pending": [
     {
-      "term": "VSDM 2",
-      "category": "processes",
-      "reason": "VSDM-Nachfolger auf Basis der Gesundheits-ID (ohne eGK-Lesepflicht): in 6 Artikeln (VSDM, ZETA, Zero-Trust, Gesundheits-ID, TI-2.0, eGK) als zentraler Modernisierungsschritt der TI 2.0 erwähnt. Kein eigener Artikel, obwohl der Rollout 2025/2026 läuft.",
-      "mentionedIn": [
-        "content/processes/VSDM.md",
-        "content/concepts/ZETA.md",
-        "content/concepts/Zero-Trust.md",
-        "content/infrastructure/Gesundheits-ID.md",
-        "content/infrastructure/TI-2.0.md"
-      ],
-      "priority": 18
-    },
-    {
-      "term": "DiGA-Fast-Track",
-      "category": "processes",
-      "reason": "Das Schnellzulassungsverfahren für Digitale Gesundheitsanwendungen nach § 139e SGB V: in 5 Artikeln (SaMD, IQWiG, BfArM, DVG, DiGAV) als zentraler Prozess erwähnt. Kein eigener Artikel, obwohl es der wichtigste Prozessrahmen für DiGA-Hersteller ist.",
-      "mentionedIn": [
-        "content/concepts/SaMD.md",
-        "content/organization/IQWiG.md",
-        "content/organization/BfArM.md",
-        "content/standards/DVG.md",
-        "content/standards/DiGAV.md"
-      ],
-      "priority": 16
-    },
-    {
-      "term": "ISO 27001",
+      "term": "BSI IT-Grundschutz",
       "category": "standards",
-      "reason": "Internationale Norm für Informationssicherheitsmanagementsysteme: in 6 Artikeln (KRITIS, ISMS, KHSFV, KHZG, BSI-C5, Konnektoren) als Zertifizierungsbasis erwähnt. Zentrales Compliance-Dokument für TI-Anbieter. Kein eigener Artikel.",
+      "reason": "Das BSI IT-Grundschutz-Kompendium ist neben ISO 27001 das zweite zentrale ISMS-Framework für TI-Betreiber und Krankenhäuser. In 6 Artikeln (KRITIS, ISMS, BSI, TSP, KHSFV, BSI-C5) erwähnt. Der BSI- und ISMS-Artikel haben Sektionen dazu, aber kein Standalone-Artikel für das Grundschutz-Framework selbst (inkl. Grundschutz++ ab 2026).",
       "mentionedIn": [
         "content/concepts/KRITIS.md",
         "content/concepts/ISMS.md",
+        "content/organization/BSI.md",
+        "content/infrastructure/TSP.md",
         "content/standards/KHSFV.md",
-        "content/standards/KHZG.md"
+        "content/standards/BSI-C5.md"
       ],
-      "priority": 14
+      "priority": 12
     },
     {
       "term": "Komfortsignatur",
       "category": "concepts",
-      "reason": "Erleichtertes QES-Signaturverfahren für häufig signierende Heilberufsangehörige (PIN-Eingabe nur einmalig für eine konfigurierbare Zeitspanne): in 3 Artikeln (SOAP, eIDAS, Fernsignatur) erwähnt. Kein eigener Artikel, obwohl es ein zentrales UX-Konzept der TI ist.",
+      "reason": "Erleichtertes QES-Signaturverfahren für häufig signierende Heilberufsangehörige (PIN-Eingabe nur einmalig für eine konfigurierbare Zeitspanne, bis zu 250 Signaturen): in 3 Artikeln (QES, eIDAS, Fernsignatur) erwähnt. Kein eigener Artikel, obwohl es ein zentrales UX-Konzept der TI ist.",
       "mentionedIn": [
-        "content/standards/SOAP.md",
+        "content/concepts/QES.md",
         "content/standards/eIDAS.md",
         "content/technologies/Fernsignatur.md"
       ],
@@ -296,8 +272,8 @@
     "SGB-V",
     "SGB-XI",
     "SMC-B",
-
     "SMART on FHIR",
+    "SMART-on-FHIR",
     "SNOMED CT",
     "SNOMED-CT",
     "SOAP",
@@ -352,7 +328,12 @@
     "gematik",
     "mTLS",
     "xDT",
-    "ÖGD"
+    "ÖGD",
+    "VSDM 2",
+    "VSDM-2",
+    "DiGA-Fast-Track",
+    "ISO 27001",
+    "ISO-27001"
   ],
   "brokenWikiLinks": [
     {
@@ -397,7 +378,6 @@
     "content/concepts/OAuth-2.0.md",
     "content/concepts/PEPP.md",
     "content/concepts/ZETA.md",
-    "content/infrastructure/Forschungsdatenzentrum-Gesundheit.md",
     "content/infrastructure/HSM-B.md",
     "content/infrastructure/Highspeed-Konnektor.md",
     "content/infrastructure/KV-SafeNet.md",

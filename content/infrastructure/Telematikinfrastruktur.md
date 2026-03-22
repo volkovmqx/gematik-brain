@@ -3,7 +3,7 @@ title: Telematikinfrastruktur (TI)
 aliases: [TI, Telematikinfrastruktur]
 audience: [technical, non-technical]
 tags: [infrastruktur, ti, netzwerk]
-maturity: setzling
+maturity: wachsend
 relevance:
   sectors: [arztpraxis, krankenhaus, zahnarzt, apotheke, pflege, therapie, hersteller, ti-infrastruktur, it-dienstleister, startup, kasse, regulierung]
   interests: [compliance, technik, business]
@@ -112,6 +112,10 @@ Der **Transformationsfonds** stellt **50 Milliarden Euro** (2026 bis 2035) für 
 - Digitale Strukturtransformation, Telemedizin-Netzwerke, zertifizierte [[Patientenportal|Patientenportale]]
 
 Krankenhäuser ohne zertifiziertes [[Patientenportal]] erhalten ab 2026 einen Abschlag von 0,5 Prozent je stationären Fall.
+
+### Betriebsstabilität und Ausfälle
+
+Am 3. März 2026 kam es zu einem Mehrfach-Ausfall-Tag, der das systemische Konzentrationsrisiko der TI deutlich machte: Zwischen 12:30 und 14:00 Uhr fielen Bitmarck-Fachdienste und das KBV aAdG-NetG aus. Dieser Ausfall lief unabhängig vom RISE-TI-Gateway-Ausfall desselben Tages, der alle über RISE angeschlossenen Leistungserbringer von der TI trennte. Weitere Teilausfälle folgten am 4. und 5. März 2026. Mangels Offline-Fallback-Lösung mussten viele Apotheken Patienten abweisen. Die Ausfälle gelten als Mitauslöser für den bundesweiten Apothekenstreiktag am 23. März 2026. Die gematik verwies auf PoPP und VSDM 2.0 als geplante Stabilitätsverbesserungen.
 
 ## Standards
 

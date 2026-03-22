@@ -1,50 +1,185 @@
 {
-  "timestamp": "2026-03-22T20:20:00Z",
-  "overallScore": 83,
+  "timestamp": "2026-03-22T21:05:00Z",
+  "overallScore": 87,
   "testResults": {
-    "passed": 217,
+    "passed": 220,
     "failed": 0,
-    "total": 217
+    "total": 220
   },
   "articles": [
     {
-      "file": "content/processes/Entlassbrief.md",
+      "file": "content/processes/VSDM-2.md",
       "verdict": "revise",
-      "score": 80,
+      "score": 78,
       "issues": [
-        "Dead URL (url_dead): GKV-Spitzenverband Rahmenvertrag Entlassmanagement source 'https://www.gkv-spitzenverband.de/krankenversicherung/krankenhaus/entlassmanagement/entlassmanagement.jsp' returns 404.",
-        "ISiK Dokumentenaustausch Stufe 3 verpflichtend ab 01.07.2025 confirmed correct per gematik Fachportal live verification.",
-        "§ 39 Abs. 1a SGB V URL confirmed live and correct.",
-        "KBV Basis-Arztbrief and Simplifier URLs not individually checked but use stable, well-known patterns."
+        "Wrong GitHub URL in interesse-technik callout: article links to 'github.com/gematik/zero-trust' but actual gematik ZETA repo is 'github.com/gematik/zeta' (confirmed via gematik.de news article and GitHub search).",
+        "Wrong document count for VSDM2_25_3: article states '3 Dokumente: Spezifikation, Anbietersteckbrief, Produktsteckbrief' but gemspec.gematik.de/releases/VSDM2_25_3 shows 5 items: Spezifikation VSDM 2, Übergreifende Spezifikation Performance und Mengengerüst TI-Plattform, Anbietersteckbrief VSDM 2 FD, Produktsteckbrief VSDM 2 FD, Clientsystem-Schnittstelle zum VSDM 2 (plus FHIR package)."
       ],
-      "fixInstructions": "Replace dead source URL 'https://www.gkv-spitzenverband.de/krankenversicherung/krankenhaus/entlassmanagement/entlassmanagement.jsp' with a working alternative. Try https://www.gkv-spitzenverband.de/krankenversicherung/krankenhaus/entlassmanagement/entlassmanagement.jsp or link directly to the GKV-SV Krankenhaus overview page. The Rahmenvertrag itself may be found via DKG or GKV-SV document archive."
+      "fixInstructions": "1. In the interesse-technik callout (line 69), change 'github.com/gematik/zero-trust' URL and display text to 'github.com/gematik/zeta'. 2. Change '3 Dokumente: Spezifikation, Anbietersteckbrief, Produktsteckbrief' to '5 Dokumente: Spezifikation, Performance/Mengengerüst TI-Plattform, Anbietersteckbrief, Produktsteckbrief, Clientsystem-Schnittstelle' or simply remove the document count claim entirely to avoid future staleness."
+    },
+    {
+      "file": "content/processes/DiGA-Fast-Track.md",
+      "verdict": "revise",
+      "score": 78,
+      "issues": [
+        "Factual inaccuracy: article states 'Ein Clock Stop (Unterbrechung der Frist) ist im DiGA-Verfahren nicht vorgesehen.' This is incorrect. § 139e Abs. 3 Satz 1 SGB V explicitly permits the BfArM to extend the 3-month deadline by up to 3 further months in justified individual cases ('in begründeten Einzelfällen kann die Frist um bis zu weitere drei Monate verlängert werden'). Verified against live legal text on gesetze-im-internet.de."
+      ],
+      "fixInstructions": "Remove or correct the sentence 'Ein Clock Stop (Unterbrechung der Frist) ist im DiGA-Verfahren nicht vorgesehen.' Replace with: 'Eine Fristverlängerung von bis zu drei weiteren Monaten ist in begründeten Einzelfällen möglich (§ 139e Abs. 3 Satz 1 SGB V). Eine öffentliche Stellungnahmephase hingegen ist nicht vorgesehen.' The claim about no public consultation phase is correct and should be retained."
+    },
+    {
+      "file": "content/standards/ISO-27001.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "Minor: line 33 contains the phrase 'Cloud Computing Compliance Criteria Criteria Catalogue' (word 'Criteria' duplicated). Not a factual error but a copy error likely inherited from BSI-C5.md.",
+        "Transition deadline 31.10.2025 for ISO 27001:2013 certificates confirmed correct via IAF/DAkkS guidance."
+      ],
+      "fixInstructions": "Optional: fix 'Criteria Criteria' to 'Criteria' in line 33."
     },
     {
       "file": "content/standards/GVSG.md",
-      "verdict": "fail",
-      "score": 25,
+      "verdict": "pass",
+      "score": 92,
+      "issues": [],
+      "notes": "Full rewrite verified: Kabinett 22.05.2024 confirmed (BMG), Bundestag 30.01.2025 confirmed (BMG, Bundesrat), Bundesrat 14.02.2025 confirmed (bundesrat.de BR-Drs. 36/25), Inkrafttreten 01.03.2025 confirmed (BGBl I Nr. 64, 28.02.2025). BMG page shows '14.02.2024' which appears to be a display error on the BMG site — all independent sources confirm 2025. PVZ correctly stated as removed from the final bill. Entbudgetierung, Vorhaltepauschale, kommunale MVZ content accurate. All 6 source URLs verified as live."
+    },
+    {
+      "file": "content/technologies/E-Rezept.md",
+      "verdict": "pass",
+      "score": 85,
       "issues": [
-        "CRITICAL FACTUAL ERROR: PVZ (Primärversorgungszentren) were NOT introduced by the GVSG. Provisions for Gesundheitskioske, Primärversorgungszentren, and Verträge zur regionalen Versorgung were explicitly removed from the Kabinettsentwurf (May 2024). The entire section on PVZ in the article is wrong.",
-        "CRITICAL FACTUAL ERROR: Wrong passage date. The article says 'am 26. Juli 2024 vom Bundesrat gebilligt'. July 5, 2024 was only the 1st Bundesrat Durchgang. The Bundesrat approved the GVSG in the 2nd Durchgang on 14. February 2025. The law entered into force on 01. March 2025.",
-        "CRITICAL FACTUAL ERROR: Article says 'trat im August 2024 in Kraft'. Actual Inkrafttreten: 01.03.2025.",
-        "FACTUAL ERROR: § 87b SGB V PVZ claim is fabricated — PVZ was not legislated by GVSG.",
-        "FACTUAL ERROR: § 140a claim about Krankenkassen running own PVZs is wrong — this provision was struck from the law.",
-        "FACTUAL ERROR: The Überblick and Technische Details sections do not describe the actual GVSG content: Entbudgetierung der hausärztlichen Vergütung, neue Versorgungs- und Vorhaltepauschalen for coordination, Erleichterungen für kommunale MVZ-Gründungen.",
-        "Dead URL (url_dead): BMG source 'https://www.bundesgesundheitsministerium.de/themen/gesundheitsversorgung/primaerversorgung/gvsg.html' returns 404. Correct URL: https://www.bundesgesundheitsministerium.de/service/gesetze-und-verordnungen/detail/gvsg.html",
-        "Dead URL (url_dead): KBV source 'https://www.kbv.de/html/gvsg.php' returns 404.",
-        "Wrong URL (url_mismatch): Bundesrat source 'https://www.bundesrat.de/SharedDocs/drucksachen/2024/0301-0400/350-24.html' points to the federal budget 2025 Haushaltsjahr, not the GVSG. Correct GVSG Bundesrat-Drucksache is 234-24."
+        "ApoVWG 9.50€ claim is accurate: the 9.50 Euro increase is not in the ApoVWG law text, instead promised via separate BMG Verordnung. Article correctly represents this distinction (confirmed by ABDA statement).",
+        "ApoVWG second/third reading date of 16. April 2026 is stated as future fact — unverifiable but consistent with published parliamentary calendar."
       ],
-      "fixInstructions": "Complete rewrite required. (1) Remove entire PVZ section — PVZ was not in the final law. (2) Correct legislative timeline: Kabinett 22.05.2024, Bundestag 30.01.2025, Bundesrat 14.02.2025, Inkrafttreten 01.03.2025. (3) Describe actual GVSG content: Entbudgetierung der hausärztlichen Vergütung (Wegfall der Budgetvorgaben für alle Hausarztleistungen einschließlich Hausbesuche), neue Versorgungs- und Vorhaltepauschalen statt quartalsorientierter Fallpauschalen, Erleichterungen für kommunale MVZ-Gründungen. (4) Fix all source URLs: BMG → https://www.bundesgesundheitsministerium.de/service/gesetze-und-verordnungen/detail/gvsg.html; Bundesrat → correct GVSG document (Drucksache 234-24(B)); remove dead KBV link and replace with a valid KBV page if available, otherwise drop."
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/infrastructure/Telematikinfrastruktur.md",
+      "verdict": "pass",
+      "score": 86,
+      "issues": [
+        "03.03.2026 TI outage (RISE + Bitmarck + KBV aAdG-NetG) confirmed in industry press (apotheke-adhoc.de, pharmazeutische-zeitung.de). The claim that the two outages (RISE and Bitmarck/KBV) were independent but simultaneous is consistent across E-Rezept.md and Telematikinfrastruktur.md. No gematik official incident report confirmed but cross-article consistency is good."
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/standards/PDSG.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [],
+      "notes": "Relevance frontmatter valid (sectors and interests use allowed values). interesse-compliance and interesse-patient callouts correctly typed and relevant. DVG → PDSG → DigiG legislative chain correctly described. 3 sources sufficient for a legislative article."
+    },
+    {
+      "file": "content/standards/BSI-C5.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [],
+      "notes": "Relevance frontmatter valid. interesse-compliance and interesse-technik callouts appropriately typed. C5 Typ-1/Typ-2 Pflichtfristen (1.7.2024 / 1.7.2025 per § 393 SGB V as introduced by DigiG) are consistent with known regulatory timeline. 4 sources all on-topic."
+    },
+    {
+      "file": "content/standards/DiGAV.md",
+      "verdict": "pass",
+      "score": 89,
+      "issues": [],
+      "notes": "Relevance frontmatter valid. Both callouts correctly typed. Second DiGAV Änderungsverordnung (1. Februar 2026) content consistent with DiGA-Fast-Track.md. No contradictions detected."
+    },
+    {
+      "file": "content/standards/XDS.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [],
+      "notes": "Relevance frontmatter valid. interesse-technik callout well-targeted. Sources are authoritative (IHE official spec, gematik GitHub, gemSpec). Technical content is substantive and accurate."
+    },
+    {
+      "file": "content/standards/CDA.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [],
+      "notes": "Relevance frontmatter valid. interesse-technik callout appropriate. 3 sources is borderline but acceptable for a standards article. ISiK note about accepting CDA as Binary in DocumentReference is correct per ISiK Stufe 3 spec."
+    },
+    {
+      "file": "content/processes/Entlassbrief.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [],
+      "notes": "Dead URL was fixed in this cycle. Updated GKV-Spitzenverband URL now points to a working Entlassmanagement page. 5 sources present. All callout types correctly used. ISiK Stufe 3 deadline (01.07.2025) consistent with other articles."
     },
     {
       "file": "content/standards/SMART-on-FHIR.md",
-      "verdict": "revise",
+      "verdict": "pass",
+      "score": 89,
+      "issues": [],
+      "notes": "Founding date fix verified correct: article now states 2010 (Boston Children's Hospital / Harvard Medical School), FHIR integration from 2013, public launch February 2014 at HIMSS — all accurate. ISiK non-normative note correctly added. Relevance frontmatter valid."
+    },
+    {
+      "file": "content/concepts/ISMS.md",
+      "verdict": "pass",
       "score": 88,
-      "issues": [
-        "Minor factual imprecision: Article states 'SMART on FHIR wurde 2012 am Boston Children's Hospital entwickelt'. SMART (Substitutable Medical Applications) started in 2010 at Harvard Medical School / Boston Children's Hospital. FHIR emerged around 2012. SMART was integrated with FHIR in late 2013. The '2012' date conflates FHIR's emergence with SMART's founding.",
-        "ISiK Sicherheitsmodul is listed as 'nicht normativ festgelegt' per gematik Fachportal — the article's claim that it applies 'ab Stufe 3' is directionally correct but should be qualified."
-      ],
-      "fixInstructions": "Correct the founding sentence to: 'SMART on FHIR entstand 2010 als SMART-Projekt (Substitutable Medical Applications, Reusable Technologies) am Boston Children's Hospital und der Harvard Medical School. Ab 2013 wurde es mit dem HL7-FHIR-Standard kombiniert und als HL7 SMART App Launch Framework standardisiert.' Optionally add a note that the ISiK Sicherheitsmodul is 'nicht normativ festgelegt' per gematik Fachportal."
+      "issues": [],
+      "notes": "ISO 27001 wiki-link addition structurally correct, resolves to new article."
+    },
+    {
+      "file": "content/concepts/KRITIS.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [],
+      "notes": "ISO 27001 wiki-link addition structurally correct."
+    },
+    {
+      "file": "content/infrastructure/TI-2.0.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [],
+      "notes": "VSDM 2.0 wiki-link addition structurally correct."
+    },
+    {
+      "file": "content/processes/VSDM.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [],
+      "notes": "VSDM 2.0 wiki-link addition structurally correct."
+    },
+    {
+      "file": "content/standards/KHSFV.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [],
+      "notes": "ISO 27001 wiki-link addition structurally correct."
+    },
+    {
+      "file": "content/standards/KHZG.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [],
+      "notes": "Wiki-link fixes structurally correct."
+    },
+    {
+      "file": "content/standards/DVG.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [],
+      "notes": "DiGA-Fast-Track wiki-link addition structurally correct, resolves to new article."
+    },
+    {
+      "file": "content/organization/BfArM.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [],
+      "notes": "DiGA-Fast-Track wiki-link addition structurally correct."
+    },
+    {
+      "file": "content/technologies/DiGA.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [],
+      "notes": "DiGA-Fast-Track wiki-link addition structurally correct."
+    },
+    {
+      "file": "content/organization/Kassenaerztliche-Vereinigung.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [],
+      "notes": "Alias fix structurally correct."
     },
     {
       "file": "content/concepts/Patientenkurzakte.md",
@@ -164,13 +299,40 @@
     }
   ],
   "contradictions": [],
-  "staleArticles": [
-    "content/standards/GVSG.md — claims law passed 'im August 2024' (actual: 01.03.2025 Inkrafttreten), claims PVZ were introduced (they were removed from the bill), all three source URLs are dead or point to wrong documents"
-  ],
+  "staleArticles": [],
   "deadUrls": [
-    "content/standards/GVSG.md: https://www.bundesgesundheitsministerium.de/themen/gesundheitsversorgung/primaerversorgung/gvsg.html (404 — correct URL: https://www.bundesgesundheitsministerium.de/service/gesetze-und-verordnungen/detail/gvsg.html)",
-    "content/standards/GVSG.md: https://www.kbv.de/html/gvsg.php (404 — no valid replacement found)",
-    "content/standards/GVSG.md: https://www.bundesrat.de/SharedDocs/drucksachen/2024/0301-0400/350-24.html (url_mismatch — links to federal budget 2025, not GVSG; correct GVSG document is Drucksache 234-24)",
-    "content/processes/Entlassbrief.md: https://www.gkv-spitzenverband.de/krankenversicherung/krankenhaus/entlassmanagement/entlassmanagement.jsp (404)"
+    {
+      "file": "content/processes/VSDM-2.md",
+      "url": "https://github.com/gematik/zero-trust",
+      "issue": "url_mismatch — repo does not exist at this path. Actual ZETA repo is https://github.com/gematik/zeta"
+    }
+  ],
+  "urlChecksVerifiedLive": [
+    "https://fachportal.gematik.de/anwendungen/versichertenstammdaten-management",
+    "https://www.gesetze-im-internet.de/sgb_5/__139e.html",
+    "https://www.bundesgesundheitsministerium.de/service/gesetze-und-verordnungen/detail/gvsg.html",
+    "https://www.bundesrat.de/SharedDocs/beratungsvorgaenge/2025/0001-0100/0036-25.html",
+    "https://gemspec.gematik.de/releases/VSDM2_25_3/index.html",
+    "https://www.gematik.de/newsroom/news-detail/neuer-sicherheitsstandard-fuer-die-telematikinfrastruktur-ti-20-erste-version-von-zero-trust-kernkomponenten-veroeffentlicht",
+    "https://www.bfarm.de/DE/Medizinprodukte/Aufgaben/DiGA-und-DiPA/DiGA/Wissenswertes/_artikel.html"
+  ],
+  "factChecksVerified": [
+    "GVSG Kabinett 22.05.2024: confirmed via BMG",
+    "GVSG Bundestag 30.01.2025: confirmed via BMG and Bundesrat",
+    "GVSG Bundesrat 14.02.2025: confirmed via bundesrat.de BR-Drs. 36/25",
+    "GVSG Inkrafttreten 01.03.2025: confirmed via BMG (BGBl I Nr. 64, 28.02.2025)",
+    "VSDM 2.0 Parallelbetrieb ab 30.06.2026: confirmed via fachportal.gematik.de",
+    "VSDM 2.0 Vollrollout ca. Februar 2027: confirmed via fachportal.gematik.de",
+    "VSDM 1.0 Abschaltung Mitte 2027: confirmed via fachportal.gematik.de",
+    "ZETA Open Source release 15.12.2025: confirmed via gematik.de news (article date 16.12.2025, release date in text 15.12.2025)",
+    "ZETA correct GitHub repo: github.com/gematik/zeta (not zero-trust)",
+    "ISO 27001:2022 transition deadline 31.10.2025: confirmed via DAkkS/IAF guidance",
+    "§139e SGB V 3-Monats-Prüffrist: confirmed via live legal text",
+    "§139e SGB V Abs.3 Satz 1 allows up to 3-month extension: confirmed via live legal text (contradicts DiGA-Fast-Track.md clock-stop claim)",
+    "ApoVWG 9.50€ via separate BMG Verordnung not in law text: confirmed via ABDA statements"
+  ],
+  "factChecksUnverifiable": [
+    "BT-Drucksache 20/11853 for GVSG (plausible, not cross-checked against DIP)",
+    "Simultaneous nature of RISE and Bitmarck/KBV outages on 03.03.2026 (industry press confirms outages on date, simultaneous aspect unverified from official source)"
   ]
 }

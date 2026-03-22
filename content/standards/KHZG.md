@@ -6,7 +6,7 @@ aliases: [Krankenhauszukunftsgesetz, Krankenhaus-Zukunfts-Gesetz, KHZF]
 relevance:
   sectors: [krankenhaus, hersteller, it-dienstleister, kasse]
   interests: [compliance, business]
-maturity: immergruen
+maturity: wachsend
 ---
 
 # KHZG
@@ -60,7 +60,7 @@ Mindestens 15 Prozent der Fördermittel mussten für IT-Sicherheitsmaßnahmen (F
 
 ### IT-Sicherheitspflicht
 
-Krankenhäuser, die KHZG-Mittel erhielten, sind verpflichtet, ab dem 1. Januar 2025 ein [[ISMS|Information Security Management System (ISMS)]] nach anerkannten Standards (ISO 27001 oder BSI-Grundschutz) zu betreiben. Diese Pflicht gilt unabhängig von der Unternehmensgröße und betrifft auch Häuser, die keine [[KRITIS]]-Einrichtungen sind. Das [[BSI]] spielt dabei eine beratende Rolle.
+Krankenhäuser, die KHZG-Mittel erhielten, sind verpflichtet, ab dem 1. Januar 2025 ein [[ISMS|Information Security Management System (ISMS)]] nach anerkannten Standards ([[ISO-27001|ISO 27001]] oder BSI-Grundschutz) zu betreiben. Diese Pflicht gilt unabhängig von der Unternehmensgröße und betrifft auch Häuser, die keine [[KRITIS]]-Einrichtungen sind. Das [[BSI]] spielt dabei eine beratende Rolle.
 
 > [!frist-warnung] Frist-Warnung: ISMS-Pflicht seit 1. Januar 2025 für KHZG-Empfänger
 > **Rechtsgrundlage:** § 75c SGB V i.d.F. des KHZG (BGBl. I 2020 Nr. 46) i.V.m. § 14a Abs. 2 KHG

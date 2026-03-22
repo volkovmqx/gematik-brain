@@ -73,7 +73,11 @@ Jedes E-Rezept trägt eine qualifizierte elektronische Signatur. Apotheken prüf
 
 ## Betriebsstabilität und Kritik
 
-Im März 2026 forderte ABDA-Geschäftsführerin Claudia Korf in einem Schreiben an die [[gematik]] eine deutlich höhere Ausfallsicherheit der [[Telematikinfrastruktur]]. Hintergrund waren mehrere TI-Ausfälle Anfang März 2026, die E-Rezept, [[ePA]] und [[KIM]] für viele Apotheken und Praxen zeitweise unnutzbar machten. Apotheken, die mangels Offline-Fallback Patienten abweisen mussten, bezifferten den wirtschaftlichen Schaden als erheblich. Der Ausfall gilt als Mitauslöser für den bundesweiten Apothekenstreiktag am 23. März 2026, den die ABDA-Mitgliederversammlung am 25. Februar 2026 beschlossen hatte. Die gematik verwies in ihrer Antwort auf die OneRoadmap mit PoPP und VSDM 2.0 als geplante Stabilitätsverbesserungen.
+Im März 2026 forderte ABDA-Geschäftsführerin Claudia Korf in einem Schreiben an die [[gematik]] eine deutlich höhere Ausfallsicherheit der [[Telematikinfrastruktur]]. Hintergrund waren mehrere TI-Ausfälle Anfang März 2026, die E-Rezept, [[ePA]] und [[KIM]] für viele Apotheken und Praxen zeitweise unnutzbar machten. Apotheken, die mangels Offline-Fallback Patienten abweisen mussten, bezifferten den wirtschaftlichen Schaden als erheblich. Am 3. März 2026 gab es zwischen 12:30 und 14:00 Uhr einen weiteren Teilausfall: Bitmarck-Fachdienste und das KBV aAdG-NetG fielen zeitgleich aus, unabhängig vom RISE-TI-Gateway-Ausfall desselben Tages. Dieser Mehrfach-Ausfall-Tag unterstreicht das systemische Konzentrationsrisiko bei wenigen TI-Fachdienst-Anbietern. Der Ausfall gilt als Mitauslöser für den bundesweiten Apothekenstreiktag am 23. März 2026, den die ABDA-Mitgliederversammlung am 25. Februar 2026 beschlossen hatte. Die gematik verwies in ihrer Antwort auf die OneRoadmap mit PoPP und VSDM 2.0 als geplante Stabilitätsverbesserungen.
+
+### ApoVWG und Apothekenhonorar
+
+Das Apothekenversorgung-Weiterentwicklungsgesetz (ApoVWG) regelt unter anderem neue Apothekenstrukturen (Telepharmazie, Filialverbünde) und hat direkte Auswirkungen auf die E-Rezept-Abwicklung. Die zweite und dritte Lesung im Bundestag sind für den 16. April 2026 terminiert. Bundesgesundheitsministerin Nina Warken (CDU) bestätigte bei der ersten Lesung am 27. Februar 2026, dass die geforderte Honorarerhöhung für Apotheken auf 9,50 Euro je Packung nicht im ApoVWG-Gesetzestext steht, sondern über eine separate BMG-Verordnung parallel zum Gesetz kommen soll (voraussichtlich Frühjahr 2026).
 
 ## Verknüpfungen
 
@@ -90,3 +94,5 @@ Im März 2026 forderte ABDA-Geschäftsführerin Claudia Korf in einem Schreiben 
 - [E-Rezept - Fachportal](https://fachportal.gematik.de/anwendungen/elektronisches-rezept)
 - [E-Rezept - gematik.de](https://www.gematik.de/anwendungen/e-rezept)
 - [TI-Atlas 2025 | gematik](https://www.gematik.de/newsroom/news-detail/meldung-ti-atlas)
+- [ApoVWG: Warken verspricht 9,50 Euro per Parallelverordnung (Pharmazeutische Zeitung, 27.02.2026)](https://www.pharmazeutische-zeitung.de/warken-verspricht-950-euro-im-bundestag-163193/)
+- [TI-Ausfall März 2026: RISE, Bitmarck und KBV aAdG-NetG betroffen (Apotheke adhoc)](https://www.apotheke-adhoc.de/nachrichten/detail/e-health/teilausfall-bei-e-rezept-und-epa/)

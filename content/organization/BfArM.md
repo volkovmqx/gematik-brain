@@ -38,7 +38,7 @@ Das BfArM prüft Zulassungsanträge für Arzneimittel nach nationalen, dezentral
 
 ### DiGA-Fast-Track-Verfahren
 
-Das BfArM ist gemäß § 139e [[SGB-V]] die zuständige Behörde für die Aufnahme von [[DiGA]] in das DiGA-Verzeichnis. Das Fast-Track-Verfahren läuft in maximal drei Monaten ab und prüft vier Kriterien:
+Das BfArM ist gemäß § 139e [[SGB-V]] die zuständige Behörde für die Aufnahme von [[DiGA]] in das DiGA-Verzeichnis. Das [[DiGA-Fast-Track|Fast-Track-Verfahren]] läuft in maximal drei Monaten ab und prüft vier Kriterien:
 
 1. **Sicherheit und Funktionstüchtigkeit**: Entsprechend der europäischen Medizinprodukteverordnung ([[MDR]])
 2. **Datenschutz**: Datenverarbeitung muss in Deutschland erfolgen; strenge Datensparsamkeitsanforderungen
