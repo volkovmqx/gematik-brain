@@ -3,7 +3,7 @@ title: G-BA
 audience: [technical, non-technical]
 tags: [organisation, gkv, regulierung, selbstverwaltung, diga]
 aliases: [Gemeinsamer Bundesausschuss, G-BA]
-maturity: wachsend
+maturity: immergruen
 relevance:
   sectors: [arztpraxis, krankenhaus, kasse, hersteller, startup, regulierung]
   interests: [compliance, business]
@@ -61,7 +61,7 @@ Dieses zweistufige Verfahren war bei Einführung des DVG 2019 neu und internatio
 
 ### AMNOG-Verfahren
 
-Das [[AMNOG|Arzneimittelmarktneuordnungsgesetz (AMNOG, 2011)]] schrieb das frühe Nutzenbewertungsverfahren vor. Der Ablauf:
+Das [[AMNOG|Arzneimittelmarktneuordnungsgesetz (AMNOG, 2011)]] schrieb das [[Fruehe-Nutzenbewertung|frühe Nutzenbewertungsverfahren]] vor. Der Ablauf:
 
 1. Pharmaunternehmen reicht Dossier ein (Zulassungstag)
 2. [[IQWiG]] (Institut für Qualität und Wirtschaftlichkeit im Gesundheitswesen) bewertet den Zusatznutzen

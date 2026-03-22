@@ -168,7 +168,7 @@ Mit dem [[TI-Gateway]] als Software-Alternative zum Konnektor werden die SOAP-Sc
 > - Namespace SignaturDienst v7.5: `http://ws.gematik.de/conn/SignatureService/v7.5`
 > - Namespace EventService: `http://ws.gematik.de/conn/EventService/v7.2`
 > - Alle Namespaces und Versionen: [api-telematik/ReleaseNotes](https://github.com/gematik/api-telematik/blob/OPB5/ReleaseNotes.md)
-> - POC Komfortsignatur mit vollständigem Client-Beispiel: [gematik/poc-komfortsignatur](https://github.com/gematik/poc-komfortsignatur)
+> - POC [[Komfortsignatur]] mit vollständigem Client-Beispiel: [gematik/poc-komfortsignatur](https://github.com/gematik/poc-komfortsignatur)
 
 > [!praxis-tipp] Praxis-Tipp: Konnektor-Ablauf und TI-Gateway-Umstieg
 > SOAP läuft im Hintergrund. Ihr PVS spricht über SOAP mit dem Konnektor. Sie merken davon nichts, bis der Konnektor ausläuft oder getauscht werden muss.

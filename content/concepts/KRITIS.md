@@ -49,7 +49,7 @@ Klassische KRITIS-Betreiber nach BSIG müssen:
 1. **Technische und organisatorische Maßnahmen (TOMs)** zum Schutz ihrer IT-Systeme und Kommunikationsinfrastruktur umsetzen (§ 8a BSIG).
 2. Alle **zwei Jahre** den Nachweis der umgesetzten Maßnahmen gegenüber dem [[BSI]] erbringen, durch Audits, Prüfungen oder Zertifizierungen.
 3. **Sicherheitsvorfälle** erheblicher Wirkung unverzüglich dem [[BSI]] melden (§ 8b BSIG).
-4. Ein **[[ISMS]]** (Informationssicherheits-Managementsystem) betreiben, häufig zertifiziert nach [[ISO-27001|ISO 27001]] oder BSI IT-Grundschutz.
+4. Ein **[[ISMS]]** (Informationssicherheits-Managementsystem) betreiben, häufig zertifiziert nach [[ISO-27001|ISO 27001]] oder [[BSI-IT-Grundschutz|BSI IT-Grundschutz]].
 
 ### Relevanz für die Telematikinfrastruktur
 

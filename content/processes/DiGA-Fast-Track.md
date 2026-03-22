@@ -6,7 +6,7 @@ aliases: [DiGA Fast-Track, Fast-Track-Verfahren, DiGA-Zulassungsverfahren, Fast 
 relevance:
   sectors: [hersteller, startup, kasse, regulierung, patient, forschung]
   interests: [compliance, business]
-maturity: setzling
+maturity: immergruen
 ---
 
 # DiGA-Fast-Track

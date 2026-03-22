@@ -159,7 +159,7 @@ Der Zugriff ist strikt an die Einwilligung des Patienten gebunden und wird in de
 > - Ohne aktuelles Abo sind Wechselwirkungswarnungen veraltet, die Prüfung bleibt dennoch Ihre ärztliche Pflicht
 > - Apotheken prüfen beim Einlösen des E-Rezepts nochmals auf Wechselwirkungen. Bei Rückruf der Apotheke: Den Hinweis ernst nehmen und die Medikation gemeinsam prüfen
 
-Die eigentliche Interaktionsprüfung (Wechselwirkungscheck) findet nicht im [[Fachdienst]] der [[ePA]] statt, sondern in den Primärsystemen ([[PVS]], [[KIS]], [[AVS]]). Diese integrieren Datenbanken wie [[ABDA]] oder MMI-Pharmindex, die Arzneimitteldaten und bekannte Interaktionen enthalten. Die [[ePA]] liefert dazu die vollständige Datenbasis aller Medikamente.
+Die eigentliche Interaktionsprüfung (Wechselwirkungscheck) findet nicht im [[Fachdienst]] der [[ePA]] statt, sondern in den Primärsystemen ([[PVS]], [[KIS]], [[AVS]]). Diese integrieren Datenbanken wie [[ABDA]] oder [[MMI-Pharmindex]], die Arzneimitteldaten und bekannte Interaktionen enthalten. Die [[ePA]] liefert dazu die vollständige Datenbasis aller Medikamente.
 
 ## Verknüpfungen
 

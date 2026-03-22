@@ -45,7 +45,7 @@ Im deutschen Gesundheitswesen ist ein ISMS in mehreren Kontexten vorgeschrieben:
 Zwei Standards dominieren im deutschen Markt:
 
 - **[[ISO-27001|ISO/IEC 27001]]**: Internationaler Standard, rahmenbasiert, zertifizierbar durch akkreditierte Stellen.
-- **BSI IT-Grundschutz**: Deutsches Pendant des [[BSI]], technisch detaillierter. Ermöglicht ebenfalls eine [[ISO-27001|ISO-27001-Zertifizierung]] auf Basis von IT-Grundschutz.
+- **[[BSI-IT-Grundschutz|BSI IT-Grundschutz]]**: Deutsches Pendant des [[BSI]], technisch detaillierter. Ermöglicht ebenfalls eine [[ISO-27001|ISO-27001-Zertifizierung]] auf Basis von IT-Grundschutz.
 
 ## Technische Details
 

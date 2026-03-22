@@ -1,30 +1,148 @@
 {
-  "timestamp": "2026-03-22T21:05:00Z",
+  "timestamp": "2026-03-22T21:35:00Z",
   "overallScore": 87,
   "testResults": {
-    "passed": 220,
+    "passed": 225,
     "failed": 0,
-    "total": 220
+    "total": 225
   },
   "articles": [
     {
-      "file": "content/processes/VSDM-2.md",
-      "verdict": "revise",
-      "score": 78,
+      "file": "content/standards/BSI-IT-Grundschutz.md",
+      "verdict": "pass",
+      "score": 88,
       "issues": [
-        "Wrong GitHub URL in interesse-technik callout: article links to 'github.com/gematik/zero-trust' but actual gematik ZETA repo is 'github.com/gematik/zeta' (confirmed via gematik.de news article and GitHub search).",
-        "Wrong document count for VSDM2_25_3: article states '3 Dokumente: Spezifikation, Anbietersteckbrief, Produktsteckbrief' but gemspec.gematik.de/releases/VSDM2_25_3 shows 5 items: Spezifikation VSDM 2, Übergreifende Spezifikation Performance und Mengengerüst TI-Plattform, Anbietersteckbrief VSDM 2 FD, Produktsteckbrief VSDM 2 FD, Clientsystem-Schnittstelle zum VSDM 2 (plus FHIR package)."
+        "One source (hiscout.com) is a vendor blog, not an official authority — weak source but not disqualifying given two strong BSI sources are also present"
       ],
-      "fixInstructions": "1. In the interesse-technik callout (line 69), change 'github.com/gematik/zero-trust' URL and display text to 'github.com/gematik/zeta'. 2. Change '3 Dokumente: Spezifikation, Anbietersteckbrief, Produktsteckbrief' to '5 Dokumente: Spezifikation, Performance/Mengengerüst TI-Plattform, Anbietersteckbrief, Produktsteckbrief, Clientsystem-Schnittstelle' or simply remove the document count claim entirely to avoid future staleness."
+      "fixInstructions": "Optional: replace or supplement the HiScout source with the BSI GitHub repo (github.com/BSI-Bund/Stand-der-Technik-Bibliothek) for a stronger authoritative reference on Grundschutz++ JSON format"
+    },
+    {
+      "file": "content/concepts/Komfortsignatur.md",
+      "verdict": "pass",
+      "score": 90,
+      "issues": [],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/processes/Fruehe-Nutzenbewertung.md",
+      "verdict": "pass",
+      "score": 92,
+      "issues": [],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/infrastructure/MMI-Pharmindex.md",
+      "verdict": "revise",
+      "score": 70,
+      "issues": [
+        "FACTUAL ERROR: Line 72 states 'Der MMI-AMTS-Service ist als zugelassenes Medizinprodukt nach MDR (Klasse I) reguliert.' Official MMI website (mmi.de/mmi-pharmindex/mmi-amts-service) explicitly states 'Die Software ist ein Medizinprodukt der Klasse IIa nach der Verordnung (EU) 2017/745 (MDR)'. Klasse I is wrong.",
+        "The [!interesse-technik] callout (line 34) also references 'MDR (EU 2017/745) zugelassen' without specifying the class — must add 'Klasse IIa' qualifier consistent with line 72 fix"
+      ],
+      "fixInstructions": "In line 72, change 'Klasse I' to 'Klasse IIa'. In the [!interesse-technik] callout (line 34), change 'als Medizinprodukt nach [[MDR]] (EU 2017/745) zugelassen' to 'als Medizinprodukt nach [[MDR]] (Klasse IIa, EU 2017/745) zugelassen'. Source: https://www.mmi.de/mmi-pharmindex/mmi-amts-service"
+    },
+    {
+      "file": "content/processes/T-Rezept.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [
+        "Minor imprecision: article states 'Einlösung ist auf 7 Tage nach Ausstellung begrenzt' but the AMVV specifies validity 'bis zu sechs Tage nach dem Tag ihrer Ausstellung' (6 days after issuance day = 7 total counting the issuance day). Wording is colloquially acceptable but technically imprecise."
+      ],
+      "fixInstructions": "Optional precision fix: change wording to 'Das T-Rezept ist am Ausstellungstag und bis zu sechs Tage danach einlösbar (§ 3a AMVV)' to match exact legal language"
+    },
+    {
+      "file": "content/infrastructure/eID.md",
+      "verdict": "pass",
+      "score": 90,
+      "issues": [],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/standards/MDR.md",
+      "verdict": "pass",
+      "score": 91,
+      "issues": [],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/technologies/DiPA.md",
+      "verdict": "pass",
+      "score": 90,
+      "issues": [],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/standards/DICOM.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/standards/PZN.md",
+      "verdict": "revise",
+      "score": 80,
+      "issues": [
+        "DEAD URL: First source 'https://www.ifa-gmbh.de/pzn.html' resolves to a domain-for-sale page. The working IFA GmbH URL 'https://www.ifaffm.de/de/ifa-gmbh.html' is already listed as the second source in the same article."
+      ],
+      "fixInstructions": "Remove the dead first source 'https://www.ifa-gmbh.de/pzn.html' from the Quellen section. The replacement 'https://www.ifaffm.de/de/ifa-gmbh.html' is already present as source 2 and covers the same institution."
+    },
+    {
+      "file": "content/concepts/ISMS.md",
+      "verdict": "pass",
+      "score": 89,
+      "issues": [],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/standards/eIDAS.md",
+      "verdict": "pass",
+      "score": 91,
+      "issues": [],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/technologies/Fernsignatur.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/organization/IQWiG.md",
+      "verdict": "pass",
+      "score": 92,
+      "issues": [],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/organization/G-BA.md",
+      "verdict": "pass",
+      "score": 91,
+      "issues": [],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/standards/AMNOG.md",
+      "verdict": "pass",
+      "score": 90,
+      "issues": [],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/processes/VSDM-2.md",
+      "verdict": "pass",
+      "score": 89,
+      "issues": [],
+      "fixInstructions": "",
+      "notes": "GitHub URL (github.com/gematik/zeta) and document count ('5 Dokumente' for VSDM2_25_3) previously fixed by reporter; both now correct."
     },
     {
       "file": "content/processes/DiGA-Fast-Track.md",
-      "verdict": "revise",
-      "score": 78,
-      "issues": [
-        "Factual inaccuracy: article states 'Ein Clock Stop (Unterbrechung der Frist) ist im DiGA-Verfahren nicht vorgesehen.' This is incorrect. § 139e Abs. 3 Satz 1 SGB V explicitly permits the BfArM to extend the 3-month deadline by up to 3 further months in justified individual cases ('in begründeten Einzelfällen kann die Frist um bis zu weitere drei Monate verlängert werden'). Verified against live legal text on gesetze-im-internet.de."
-      ],
-      "fixInstructions": "Remove or correct the sentence 'Ein Clock Stop (Unterbrechung der Frist) ist im DiGA-Verfahren nicht vorgesehen.' Replace with: 'Eine Fristverlängerung von bis zu drei weiteren Monaten ist in begründeten Einzelfällen möglich (§ 139e Abs. 3 Satz 1 SGB V). Eine öffentliche Stellungnahmephase hingegen ist nicht vorgesehen.' The claim about no public consultation phase is correct and should be retained."
+      "verdict": "pass",
+      "score": 90,
+      "issues": [],
+      "fixInstructions": "",
+      "notes": "Clock-stop claim previously fixed by reporter; no erroneous clock-stop language present. Article correctly describes the § 139e Abs. 3 extension option."
     },
     {
       "file": "content/standards/ISO-27001.md",
@@ -304,7 +422,14 @@
     {
       "file": "content/processes/VSDM-2.md",
       "url": "https://github.com/gematik/zero-trust",
-      "issue": "url_mismatch — repo does not exist at this path. Actual ZETA repo is https://github.com/gematik/zeta"
+      "issue": "url_mismatch — repo does not exist at this path. Actual ZETA repo is https://github.com/gematik/zeta",
+      "cycle": "previous"
+    },
+    {
+      "file": "content/standards/PZN.md",
+      "url": "https://www.ifa-gmbh.de/pzn.html",
+      "issue": "url_dead — domain shows domain-for-sale page. Replacement https://www.ifaffm.de/de/ifa-gmbh.html already present in article as second source.",
+      "cycle": "2026-03-22"
     }
   ],
   "urlChecksVerifiedLive": [
@@ -314,9 +439,32 @@
     "https://www.bundesrat.de/SharedDocs/beratungsvorgaenge/2025/0001-0100/0036-25.html",
     "https://gemspec.gematik.de/releases/VSDM2_25_3/index.html",
     "https://www.gematik.de/newsroom/news-detail/neuer-sicherheitsstandard-fuer-die-telematikinfrastruktur-ti-20-erste-version-von-zero-trust-kernkomponenten-veroeffentlicht",
-    "https://www.bfarm.de/DE/Medizinprodukte/Aufgaben/DiGA-und-DiPA/DiGA/Wissenswertes/_artikel.html"
+    "https://www.bfarm.de/DE/Medizinprodukte/Aufgaben/DiGA-und-DiPA/DiGA/Wissenswertes/_artikel.html",
+    "https://www.mmi.de/mmi-pharmindex/mmi-pharmindex-plus",
+    "https://www.mmi.de/mmi-pharmindex/mmi-amts-service",
+    "https://fachportal.gematik.de/anwendungen/qualifizierte-elektronische-signatur",
+    "https://fachportal.gematik.de/telematikinfrastruktur/ti-zugang",
+    "https://www.hiscout.com/grundschutz-die-zukunft-des-bsi-it-grundschutz-fuer-mehr-effizienz-im-isms/",
+    "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/IT-Grundschutz-Kompendium/it-grundschutz-kompendium_node.html",
+    "https://www.g-ba.de/ueber-den-g-ba/wer-wir-sind/",
+    "https://www.iqwig.de/",
+    "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32014R0910",
+    "https://www.ifaffm.de/de/ifa-gmbh.html"
   ],
   "factChecksVerified": [
+    "MMI-AMTS-Service MDR Klasse IIa: confirmed via mmi.de/mmi-pharmindex/mmi-amts-service (article incorrectly states Klasse I)",
+    "PZN 8-digit format since 2012: confirmed via Wikipedia PZN article",
+    "eID introduced November 2010: confirmed",
+    "MDR in effect May 26, 2021: confirmed via EUR-Lex",
+    "DVPMG DiPA introduction June 2021: confirmed",
+    "T-Rezept legal basis § 3a AMVV (Thalidomid, Lenalidomid, Pomalidomid): confirmed",
+    "E-T-Rezept spec August 2025, rollout Q4/2026: confirmed",
+    "IQWiG founded 2004 on GMG basis, 300 staff in Cologne: confirmed",
+    "IQWiG legal basis § 139a SGB V: confirmed",
+    "G-BA founded 2004, § 91 SGB V: confirmed",
+    "eIDAS 2.0 (EU 2024/1183) in force May 20, 2024: confirmed",
+    "Komfortsignatur: 250 QES per session, 24h, PTV4+: confirmed",
+    "Fruehe Nutzenbewertung: IQWiG 3-month deadline, G-BA Beschluss 6 months total: confirmed via § 35a SGB V",
     "GVSG Kabinett 22.05.2024: confirmed via BMG",
     "GVSG Bundestag 30.01.2025: confirmed via BMG and Bundesrat",
     "GVSG Bundesrat 14.02.2025: confirmed via bundesrat.de BR-Drs. 36/25",

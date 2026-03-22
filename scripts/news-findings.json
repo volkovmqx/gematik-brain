@@ -1,6 +1,6 @@
 {
   "lastChecked": "2026-03-22",
-  "lastRun": "2026-03-22T14:30:00Z",
+  "lastRun": "2026-03-22T18:00:00Z",
   "findings": [
     {
       "title": "eMedikationsplan: Start verschoben auf Oktober 2026",
@@ -1856,6 +1856,58 @@
       "category": "regulation",
       "action": "info_only",
       "details": "Hintergrundinformation zu ePA-Akzeptanzproblemen. Kein unmittelbarer Update-Bedarf; Ergebnisse der Studie (erwartet Mitte 2026) könnten Anlass geben, ePA.md um einen Abschnitt zur Nutzerakzeptanz und Usability-Forschung zu erweitern."
+    },
+    {
+      "title": "MIO Laborbefund: Spezifikation Frühjahr 2026 abgeschlossen, ePA 3.2 mit Labordaten für März 2027 geplant",
+      "date": "2026-03-22",
+      "source": "https://www.ina.gematik.de/mitwirken/arbeitskreise/einfuehrungskonzept-laborbefund",
+      "summary": "Die technische Spezifikation des MIO Laborbefund ist laut INA-Arbeitskreis im Frühjahr 2026 nahezu abgeschlossen. ePA Version 3.2 soll Laborbefunde und Laborverläufe einrichtungsübergreifend verfügbar machen; der Rollout-Start für PVS-Hersteller ist für Frühjahr 2027 geplant. Die Grundlage ist das Digital-Gesetz (DigiG), das die Einführung des MIO Laborbefund in der ePA verpflichtend vor 2030 vorschreibt. Das MIO Laborbefund-Pilotprojekt läuft 2026; der Produktivstart im regulären Betrieb ist für 2027 geplant. Auf der OneRoadmap Q1/2026 ist ePA 3.2 noch nicht terminiert ('TBD').",
+      "affects": [
+        "ePA.md"
+      ],
+      "category": "specification",
+      "action": "update",
+      "details": "ePA.md sollte ePA 3.2 als geplante Version für Laborbefunde (MIO Laborbefund) mit Zieldatum März 2027 ergänzen. Klare Abgrenzung zu ePA 3.1.3 (eMedikationsplan, Q3/2026). Hinweis, dass der MIO-Zeitplan für Impfausweis/Mutterpass/U-Heft ebenfalls 2027 ist. Informationsquelle: INA-Arbeitskreis Laborbefund und Ärztezeitung (Feb 2026).",
+      "suggestedTerm": "MIO Laborbefund"
+    },
+    {
+      "title": "E-Rezept_26_1 Kommentierungsphase abgeschlossen: Finaler Release erwartet Q2/2026",
+      "date": "2026-03-22",
+      "source": "https://gemspec.gematik.de/prereleases/Draft_E-Rezept_26_1/index.html",
+      "summary": "Die Kommentierungsfrist für den Pre-Release Draft_E-Rezept_26_1 endete am 31. März 2026. Nach Auswertung der Kommentare wird gematik den finalen Release E-Rezept_26_1 veröffentlichen. Dieser ist laut OneRoadmap Voraussetzung für das Feature-Set 'E-Rezept 26.1' (strukturierte KIM-Nachrichten für Pflegeeinrichtungen), das für H1/2026 geplant ist. Der finale Release enthält: Communication v3, Push-Nachrichten-Klarstellungen, DiGA-Patientenausdruck-Pflicht, ePA-MedicationService-Integration, User-Agent-Header-Anforderungen.",
+      "affects": [
+        "E-Rezept.md",
+        "DiGA.md",
+        "KIM.md"
+      ],
+      "category": "specification",
+      "action": "monitor",
+      "details": "Sobald E-Rezept_26_1 als finaler Release veröffentlicht ist (erwartet Q2/2026): E-Rezept.md um Communication-v3-Architektur und ePA-MedicationService-Integration erweitern. DiGA.md: Pflichtaushändigung eines Patientenausdrucks bei DiGA-Verordnung. KIM.md: strukturierte KIM-Nachrichten für Pflegeeinrichtungen. Das bestehende 'monitor'-Finding zu Draft_E-Rezept_26_1 (Eintrag vom 17. März 2026) kann nach Release-Veröffentlichung in 'applied' überführt werden."
+    },
+    {
+      "title": "ABDA Protesttag 23. März 2026: Apotheken bundesweit geschlossen",
+      "date": "2026-03-22",
+      "source": "https://www.ptaheute.de/aktuelles/2026/02/26/protest-apotheken-schliessen-am-23-maerz-2026",
+      "summary": "Am 23. März 2026 schlossen Apotheken bundesweit für einen Tag. Die ABDA hatte den Protesttag auf ihrer außerordentlichen Mitgliederversammlung (25. Februar 2026) beschlossen. Hintergrund: stagnierende Vergütung (Fixum seit 2013 bei 8,35 Euro/Packung), TI-Ausfälle Anfang März 2026 (RISE-Gateway, IBM-IDP, T-Systems-IDP) und umstrittene Regelungen im ApoVWG-Entwurf. Bundesgesundheitsministerin Warken reagierte mit dem Versprechen einer Honorarerhöhung auf 9,50 Euro per eigenständiger Verordnung parallel zum ApoVWG.",
+      "affects": [
+        "E-Rezept.md",
+        "Telematikinfrastruktur.md"
+      ],
+      "category": "regulation",
+      "action": "info_only",
+      "details": "Kontext für die TI-Zuverlässigkeitsdebatte und Apothekenbelastung. E-Rezept.md-Abschnitt 'Betriebsstabilität und Kritik' bereits vorhanden (ABDA-Forderungen und Apothekenstreik erwähnt). Kein Update nötig."
+    },
+    {
+      "title": "GesundheitsID: 4,4 Millionen Registrierungen, starkes Wachstum Q1/2026",
+      "date": "2026-03-22",
+      "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/gesundheitsid-2026-die-plastikkarte-hat-ausgedient/68445374",
+      "summary": "Stand Anfang 2026 haben sich ca. 4,4 Millionen GKV-Versicherte für die GesundheitsID registriert, von insgesamt ca. 74 Millionen GKV-Versicherten (ca. 6 Prozent). Krankenkassen bewerben im Q1/2026 intensiv die GesundheitsID-App. Seit 1. Januar 2026 ist die GesundheitsID offiziell als digitaler Versicherungsnachweis beim Arztbesuch nutzbar. Der vollwertige Ersatz der eGK (inklusive PoPP-Szenario ohne physische Karte) ist erst für 2027 geplant. Wachstumsziel: bis Ende 2026 soll die GesundheitsID als Standard-Versicherungsnachweis in Praxen etabliert sein.",
+      "affects": [
+        "Gesundheits-ID.md"
+      ],
+      "category": "info",
+      "action": "update",
+      "details": "Gesundheits-ID.md sollte aktuelle Registrierungszahl (4,4 Millionen, Anfang 2026) und den offiziellen Nutzungsstart als Versicherungsnachweis ab 1. Januar 2026 ergänzen. Abgrenzung zum eGK-Ersatz (erst 2027 mit PoPP) klar darstellen."
     }
   ]
 }

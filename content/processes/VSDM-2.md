@@ -6,7 +6,7 @@ aliases: [VSDM 2.0, Versichertenstammdatenmanagement 2.0, VSDM2]
 relevance:
   sectors: [arztpraxis, krankenhaus, zahnarzt, apotheke, pflege, hersteller, kasse, ti-infrastruktur, it-dienstleister]
   interests: [compliance, technik]
-maturity: setzling
+maturity: wachsend
 ---
 
 # VSDM 2

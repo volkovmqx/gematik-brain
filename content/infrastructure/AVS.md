@@ -56,7 +56,7 @@ Der E-Rezept-Einlöseprozess im AVS läuft wie folgt ab:
 
 ### AMTS-Prüfung
 
-Das AVS ist neben [[PVS]] und [[KIS]] eines der Primärsysteme, in denen die eigentliche AMTS-Interaktionsprüfung stattfindet. Das AVS integriert Arzneimitteldatenbanken (z.B. [[ABDA-Datenbank]], MMI-Pharmindex), die bekannte Wechselwirkungen und Kontraindikationen enthalten. Seit der ePA-Integration kann das AVS außerdem den vollständigen Medikationsplan aus der [[ePA]] abrufen und für den Interaktionscheck nutzen, sofern der Versicherte den Zugriff erlaubt hat.
+Das AVS ist neben [[PVS]] und [[KIS]] eines der Primärsysteme, in denen die eigentliche AMTS-Interaktionsprüfung stattfindet. Das AVS integriert Arzneimitteldatenbanken (z.B. [[ABDA-Datenbank]], [[MMI-Pharmindex]]), die bekannte Wechselwirkungen und Kontraindikationen enthalten. Seit der ePA-Integration kann das AVS außerdem den vollständigen Medikationsplan aus der [[ePA]] abrufen und für den Interaktionscheck nutzen, sofern der Versicherte den Zugriff erlaubt hat.
 
 ### ePA-Zugriff
 

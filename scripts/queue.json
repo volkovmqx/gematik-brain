@@ -1,62 +1,162 @@
 {
   "pending": [
     {
-      "term": "BSI IT-Grundschutz",
-      "category": "standards",
-      "reason": "Das BSI IT-Grundschutz-Kompendium ist neben ISO 27001 das zweite zentrale ISMS-Framework für TI-Betreiber und Krankenhäuser. In 6 Artikeln (KRITIS, ISMS, BSI, TSP, KHSFV, BSI-C5) erwähnt. Der BSI- und ISMS-Artikel haben Sektionen dazu, aber kein Standalone-Artikel für das Grundschutz-Framework selbst (inkl. Grundschutz++ ab 2026).",
+      "term": "Laborbefund",
+      "category": "processes",
+      "reason": "Strukturierter Laborbefund als zentraler ePA-Datenstrom. In 19 Artikeln erwähnt: LIS, LDT, LOINC, GDT, HL7 v2, HL7, ePA, MyHealthAtEU, DEMIS, KIS, PVS, Telekonsil, EEHRxF, KVDT, xDT, Meldepflicht, Mutterpass, KHZG, Opt-Out-ePA. Ohne eigenen Artikel fehlt ein zentraler Anker für das gesamte Labor-Ökosystem.",
       "mentionedIn": [
-        "content/concepts/KRITIS.md",
-        "content/concepts/ISMS.md",
-        "content/organization/BSI.md",
-        "content/infrastructure/TSP.md",
-        "content/standards/KHSFV.md",
-        "content/standards/BSI-C5.md"
+        "content/infrastructure/LIS.md",
+        "content/standards/LDT.md",
+        "content/standards/LOINC.md",
+        "content/standards/GDT.md",
+        "content/standards/HL7-v2.md",
+        "content/standards/HL7.md",
+        "content/technologies/ePA.md",
+        "content/infrastructure/MyHealthAtEU.md",
+        "content/technologies/DEMIS.md",
+        "content/infrastructure/KIS.md",
+        "content/technologies/KIS.md",
+        "content/standards/EEHRxF.md",
+        "content/standards/KVDT.md",
+        "content/standards/xDT.md",
+        "content/concepts/Gesundheitsdatenraum.md",
+        "content/concepts/Opt-Out-ePA.md",
+        "content/processes/Meldepflicht.md",
+        "content/processes/Mutterpass.md",
+        "content/standards/KHZG.md"
       ],
-      "priority": 12
+      "priority": 38
     },
     {
-      "term": "Komfortsignatur",
+      "term": "TI-Anbindungspflicht",
       "category": "concepts",
-      "reason": "Erleichtertes QES-Signaturverfahren für häufig signierende Heilberufsangehörige (PIN-Eingabe nur einmalig für eine konfigurierbare Zeitspanne, bis zu 250 Signaturen): in 3 Artikeln (QES, eIDAS, Fernsignatur) erwähnt. Kein eigener Artikel, obwohl es ein zentrales UX-Konzept der TI ist.",
+      "reason": "Gesetzliche Pflicht zur TI-Anbindung für alle Leistungserbringer nach SGB V §§ 291 ff. In 5 Artikeln als zentraler Referenzpunkt erwähnt: BZÄK, Heilmittelverordnung, Hilfsmittelverordnung, eVO, E-Rezept. Kein eigener Artikel für dieses zentrale Compliance-Konzept.",
       "mentionedIn": [
-        "content/concepts/QES.md",
-        "content/standards/eIDAS.md",
-        "content/technologies/Fernsignatur.md"
-      ],
-      "priority": 10
-    },
-    {
-      "term": "Frühe Nutzenbewertung",
-      "category": "processes",
-      "reason": "Verfahren nach § 35a SGB V zur Bewertung neuer Arzneimittel: Kern des AMNOG-Prozesses. In 3 Artikeln (IQWiG, G-BA, AMNOG) als zentraler Prozessschritt erwähnt. Kein eigener Artikel.",
-      "mentionedIn": [
-        "content/organization/IQWiG.md",
-        "content/organization/G-BA.md",
-        "content/standards/AMNOG.md"
-      ],
-      "priority": 7
-    },
-    {
-      "term": "MMI-Pharmindex",
-      "category": "infrastructure",
-      "reason": "Arzneimittelinteraktions-Datenbank (Konkurrenz zur ABDA-Datenbank) in PVS/AVS für AMTS-Prüfungen. In 3 Artikeln (eMP, AMTS, AVS) referenziert. Kein eigener Artikel.",
-      "mentionedIn": [
-        "content/processes/eMP.md",
-        "content/processes/AMTS.md",
-        "content/infrastructure/AVS.md"
-      ],
-      "priority": 6
-    },
-    {
-      "term": "T-Rezept",
-      "category": "processes",
-      "reason": "Thalidomid-Klasse-Verordnung: Digitalisierung Q4/2026 geplant. In 3 Artikeln (BTM-Rezept, eML, E-Rezept) referenziert, eigenes regulatorisches Regime.",
-      "mentionedIn": [
-        "content/processes/BTM-Rezept.md",
-        "content/processes/eML.md",
+        "content/organization/BZÄK.md",
+        "content/processes/Heilmittelverordnung.md",
+        "content/processes/Hilfsmittelverordnung.md",
+        "content/processes/eVO.md",
         "content/technologies/E-Rezept.md"
       ],
-      "priority": 5
+      "priority": 30
+    },
+    {
+      "term": "FHIR-Profil",
+      "category": "standards",
+      "reason": "FHIR-Profile als konkrete Umsetzung des FHIR-Standards in der deutschen TI. In 59 Artikeln erwähnt - allgegenwärtig aber kein eigener Artikel. Ergänzt MIO.md und FHIR.md um das Konzept der Profilierung und der deutschen Implementierungsleitfäden (KBV, gematik, MI-Initiative).",
+      "mentionedIn": [
+        "content/standards/FHIR.md",
+        "content/standards/MIO.md",
+        "content/concepts/Gesundheitsdatenraum.md",
+        "content/infrastructure/AVS.md",
+        "content/infrastructure/Primärsystem.md",
+        "content/organization/Medizininformatik-Initiative.md",
+        "content/standards/ISiK.md",
+        "content/technologies/ePA.md"
+      ],
+      "priority": 28
+    },
+    {
+      "term": "NIS-2",
+      "category": "standards",
+      "reason": "EU-Richtlinie zur Netzwerk- und Informationssicherheit (NIS-2, 2022/2555): Pflicht zur Umsetzung im KRITIS-Dachgesetz. In 2 Artikeln (KRITIS.md, KRITIS-Dachgesetz.md) erwähnt. Ergänzt KRITIS-Dachgesetz-Artikel um den EU-rechtlichen Rahmen.",
+      "mentionedIn": [
+        "content/concepts/KRITIS.md",
+        "content/standards/KRITIS-Dachgesetz.md"
+      ],
+      "priority": 22
+    },
+    {
+      "term": "Pflegedokumentation",
+      "category": "processes",
+      "reason": "Digitale Pflegedokumentation als Schnittstelle zu TI-Primärsystemen (KIS, IS-H). In 9 Artikeln erwähnt: IS-H, KIS, Primärsystem, BSI, HL7-v2, KHSFV, KHZG, SGB-XI, technologies/KIS. Zentral für den Pflegebereich (SGB XI) und Krankenhäuser.",
+      "mentionedIn": [
+        "content/infrastructure/IS-H.md",
+        "content/infrastructure/KIS.md",
+        "content/infrastructure/Primärsystem.md",
+        "content/organization/BSI.md",
+        "content/standards/HL7-v2.md",
+        "content/standards/KHSFV.md",
+        "content/standards/KHZG.md",
+        "content/standards/SGB-XI.md",
+        "content/technologies/KIS.md"
+      ],
+      "priority": 20
+    },
+    {
+      "term": "Kartenherausgeber",
+      "category": "infrastructure",
+      "reason": "Ausgabestellen für HBA und SMC-B (Landesärztekammern für HBA, BZÄK/Landesärztekammern für ZA-HBA, KZBV-Strukturen für SMC-B). In 5 Artikeln erwähnt: HBA, SMC-B, Telematik-ID, BZÄK, Heilmittelverordnung. Erklärt die Zertifizierungsstruktur für Heilberufsausweise.",
+      "mentionedIn": [
+        "content/infrastructure/HBA.md",
+        "content/infrastructure/SMC-B.md",
+        "content/infrastructure/Telematik-ID.md",
+        "content/organization/BZÄK.md",
+        "content/processes/Heilmittelverordnung.md"
+      ],
+      "priority": 18
+    },
+    {
+      "term": "Interaktionsprüfung",
+      "category": "processes",
+      "reason": "AMTS-Prüfung auf Arzneimittelwechselwirkungen: Kernanwendungsfall für ABDA-Datenbank, AVS, eMP und AMTS. In 5 Artikeln erwähnt. Eigenes Konzept mit klinischer und technischer Dimension (Datenbankabfragen, Schweregrad-Klassifikation).",
+      "mentionedIn": [
+        "content/infrastructure/ABDA-Datenbank.md",
+        "content/infrastructure/AVS.md",
+        "content/processes/AMTS.md",
+        "content/processes/eMP.md",
+        "content/standards/ATC-Code.md"
+      ],
+      "priority": 16
+    },
+    {
+      "term": "LDAP",
+      "category": "infrastructure",
+      "reason": "Lightweight Directory Access Protocol: technische Basis des VZD (Verzeichnisdienst der TI). In 4 Artikeln erwähnt: VZD, TI-Gateway, KIM, Telematik-ID. Erklärt die Verzeichnisstruktur hinter der TI-Suche nach Adressen.",
+      "mentionedIn": [
+        "content/infrastructure/VZD.md",
+        "content/infrastructure/TI-Gateway.md",
+        "content/technologies/KIM.md",
+        "content/infrastructure/Telematik-ID.md"
+      ],
+      "priority": 14
+    },
+    {
+      "term": "Zugriffsrecht",
+      "category": "concepts",
+      "reason": "Feingranulare Zugriffssteuerung für ePA-Daten (Berechtigungskonzept für Leistungserbringer und Patienten). In 7 Artikeln erwähnt: Zero-Trust, AVS, AMTS, BEEP-Gesetz, SGB-V, ePA-App, Telemonitoring. Zentrales Konzept für ePA-Sicherheitsarchitektur.",
+      "mentionedIn": [
+        "content/concepts/Zero-Trust.md",
+        "content/infrastructure/AVS.md",
+        "content/processes/AMTS.md",
+        "content/standards/BEEP-Gesetz.md",
+        "content/standards/SGB-V.md",
+        "content/technologies/ePA-App.md",
+        "content/technologies/Telemonitoring.md"
+      ],
+      "priority": 13
+    },
+    {
+      "term": "Pflegegrad",
+      "category": "concepts",
+      "reason": "Einstufungssystem für Pflegebedürftigkeit (Pflegegrade 1–5) nach SGB XI: Grundlage für DiPA-Zulassung und Pflegeversicherungsleistungen. In 5 Artikeln erwähnt: Medizinischer-Dienst, DVPMG, DiPAV, SGB-XI, DiPA.",
+      "mentionedIn": [
+        "content/organization/Medizinischer-Dienst.md",
+        "content/standards/DVPMG.md",
+        "content/standards/DiPAV.md",
+        "content/standards/SGB-XI.md",
+        "content/technologies/DiPA.md"
+      ],
+      "priority": 11
+    },
+    {
+      "term": "eHKP",
+      "category": "standards",
+      "reason": "Elektronischer Heil- und Kostenplan: digitale Weiterentwicklung des zahnärztlichen HKP-Formulars im Rahmen des E-Health-Gesetzes. In BEMA.md mehrfach erwähnt, eigenes Fachkonzept der KZBV/BZÄK.",
+      "mentionedIn": [
+        "content/standards/BEMA.md"
+      ],
+      "priority": 7
     },
     {
       "term": "Interop Council",
@@ -122,6 +222,8 @@
     "BSI",
     "BSI C5",
     "BSI-C5",
+    "BSI IT-Grundschutz",
+    "BSI-IT-Grundschutz",
     "BTM-Rezept",
     "BZÄK",
     "Bewertungsausschuss",
@@ -147,8 +249,9 @@
     "DataMatrix",
     "DiGA",
     "DiGAV",
-    "DiPA",
     "DiPAV",
+    "DiPA",
+    "DiPaG",
     "DiPaG",
     "DigiG",
     "E-Health-Gesetz",
@@ -160,11 +263,11 @@
     "EEHRxF",
     "EUDAMED",
     "Entlassmanagement",
+    "Entlassbrief",
     "FHIR",
     "Fachdienst",
     "Fernsignatur",
     "CRL",
-    "Entlassbrief",
     "Forschungsdatenzentrum Gesundheit",
     "Forschungsdatenzentrum-Gesundheit",
     "GVSG",
@@ -218,6 +321,7 @@
     "Kassenaerztliche-Vereinigung",
     "Kassenärztliche Vereinigung",
     "Kinderuntersuchungsheft",
+    "Komfortsignatur",
     "Konformitaetsbewertung",
     "Konformitätsbewertung",
     "Konnektoren",
@@ -304,7 +408,6 @@
     "VSDM",
     "VZD",
     "Videosprechstunde",
-    "Vorhaltevergütung",
     "X.509",
     "XDS",
     "ZETA",
@@ -333,7 +436,11 @@
     "VSDM-2",
     "DiGA-Fast-Track",
     "ISO 27001",
-    "ISO-27001"
+    "ISO-27001",
+    "Frühe Nutzenbewertung",
+    "Fruehe-Nutzenbewertung",
+    "MMI-Pharmindex",
+    "T-Rezept"
   ],
   "brokenWikiLinks": [
     {
@@ -391,7 +498,6 @@
     "content/infrastructure/Telematik-ID.md",
     "content/infrastructure/VPN-Zugangsdienst.md",
     "content/infrastructure/eGBR.md",
-    "content/infrastructure/eID.md",
     "content/infrastructure/gSMC-KT.md",
     "content/organization/Bewertungsausschuss.md",
     "content/organization/Bundesaerztekammer.md",
@@ -408,11 +514,7 @@
     "content/processes/eMP.md",
     "content/processes/eVO.md",
     "content/standards/BEEP-Gesetz.md",
-    "content/standards/BSI-C5.md",
-    "content/standards/CDA.md",
-    "content/standards/DICOM.md",
     "content/standards/DVPMG.md",
-    "content/standards/DiGAV.md",
     "content/standards/DiPAV.md",
     "content/standards/E-Health-Gesetz.md",
     "content/standards/GDAG.md",
@@ -422,15 +524,11 @@
     "content/standards/IVDR.md",
     "content/standards/KHG.md",
     "content/standards/KRITIS-Dachgesetz.md",
-    "content/standards/MDR.md",
     "content/standards/Matrix-Protokoll.md",
-    "content/standards/PDSG.md",
-    "content/standards/PZN.md",
     "content/standards/Patient-Summary.md",
     "content/standards/SGB-XI.md",
     "content/standards/VDG.md",
     "content/standards/XDS.md",
-    "content/technologies/DiPA.md",
     "content/technologies/DiPaG.md",
     "content/technologies/eArztbrief.md",
     "content/technologies/gRPC.md"

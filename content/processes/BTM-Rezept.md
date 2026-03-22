@@ -89,7 +89,7 @@ Neben dem BTM-Rezept gibt es weitere Sonderrezeptformen, die schrittweise digita
 | Rezepttyp | Besonderheit | Status Digitalisierung |
 |---|---|---|
 | BTM-Rezept (gelb) | Betäubungsmittel nach BtMVV | Pilot Q4/2026 geplant |
-| T-Rezept (blau) | Thalidomid, Lenalidomid, Pomalidomid | Spezifikation 2025, Einführung 2026 |
+| [[T-Rezept]] (blau) | Thalidomid, Lenalidomid, Pomalidomid | Spezifikation 2025, Einführung 2026 |
 | [[E-Rezept]] (Muster 16) | Reguläre Rx-Arzneimittel | Pflicht seit Januar 2024 |
 
 Das T-Rezept (Thalidomid-Rezept) hat die Digitalisierung bereits weiter vorangetrieben: Die gematik veröffentlichte im August 2025 die finale Spezifikation für das elektronische T-Rezept.

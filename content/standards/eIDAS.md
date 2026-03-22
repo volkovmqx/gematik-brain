@@ -6,7 +6,7 @@ aliases: [eIDAS-Verordnung, EU-Verordnung 910/2014, electronic Identification Au
 relevance:
   sectors: [hersteller, ti-infrastruktur, regulierung, it-dienstleister]
   interests: [compliance, technik]
-maturity: wachsend
+maturity: immergruen
 ---
 
 # eIDAS
@@ -77,7 +77,7 @@ Qualifizierte Signaturen folgen in der EU den technischen Standards des European
 In der TI werden überwiegend CAdES-Signaturen eingesetzt, z.B. beim [[E-Rezept]]-Bundle.
 
 > [!interesse-technik]
-> ETSI-Standards für TI-Signaturen: CAdES (EN 319 122), XAdES (EN 319 132), PAdES (EN 319 142). QES in der TI: Signierung mit dem HBA-Chip (C.HP.QES), PIN-geschützt. Komfortsignatur: Bis zu 250 Dokumente mit einmaliger PIN. [[Fernsignatur]]: Signatur ohne physische Karte (serverseitig). Vertrauensliste (TSL) der EU: [esignature.ec.europa.eu/efts](https://esignature.ec.europa.eu/efts/)
+> ETSI-Standards für TI-Signaturen: CAdES (EN 319 122), XAdES (EN 319 132), PAdES (EN 319 142). QES in der TI: Signierung mit dem HBA-Chip (C.HP.QES), PIN-geschützt. [[Komfortsignatur]]: Bis zu 250 Dokumente mit einmaliger PIN. [[Fernsignatur]]: Signatur ohne physische Karte (serverseitig). Vertrauensliste (TSL) der EU: [esignature.ec.europa.eu/efts](https://esignature.ec.europa.eu/efts/)
 
 ### eIDAS 2.0
 

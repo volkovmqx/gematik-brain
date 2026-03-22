@@ -43,7 +43,7 @@ Die [[eIDAS]]-Verordnung (EU) 910/2014 (Art. 29) und die Änderungsverordnung (E
 
 ### Abgrenzung zur Komfortsignatur
 
-Die Komfortsignatur ist eine kartenbasierte Variante, bei der nach einmaliger PIN-Eingabe bis zu 250 Signaturen am Tag ohne erneute Eingabe erzeugt werden. Sie erfordert weiterhin den physischen [[HBA]] und den [[Konnektoren|Konnektor]]. Die Fernsignatur benötigt beides nicht.
+Die [[Komfortsignatur]] ist eine kartenbasierte Variante, bei der nach einmaliger PIN-Eingabe bis zu 250 Signaturen am Tag ohne erneute Eingabe erzeugt werden. Sie erfordert weiterhin den physischen [[HBA]] und den [[Konnektoren|Konnektor]]. Die Fernsignatur benötigt beides nicht.
 
 ### Einbindung in TI 2.0
 

@@ -3,6 +3,10 @@ title: DICOM
 audience: [technical]
 tags: [standards, bildgebung, medizin, interoperabilitaet, krankenhaus]
 aliases: [Digital Imaging and Communications in Medicine, DICOM-Standard]
+relevance:
+  sectors: [krankenhaus, arztpraxis, hersteller, it-dienstleister, ti-infrastruktur, forschung]
+  interests: [technik, business]
+maturity: wachsend
 ---
 
 # DICOM
@@ -25,9 +29,27 @@ Im deutschen Krankenhaus-IT-Kontext ist DICOM die Basis für:
 - **[[RIS]]** (Radiologie-Informationssystem): Verwaltet Aufträge und Befunde und kommuniziert über DICOM-Worklists mit den Modalitäten.
 - **[[Teleradiologie]]**: DICOM-Bilder können über standardisierte Schnittstellen an externe Befunder übertragen werden.
 
+> [!klinik-integration] Klinik-Integration: KIS-PACS-RIS-Anbindung über HL7 und DICOM
+> **HL7-Schnittstellen im Bildgebungs-Workflow:** Das KIS schickt bei einem Radiologieauftrag eine HL7 v2 ORM-Nachricht (Order Message) an das RIS. Das RIS trägt den Auftrag in die DICOM Modality Worklist ein. Die Modalität (CT, MRT, Röntgen) ruft die Workliste ab und übernimmt Patientendaten ohne manuelle Eingabe. Nach der Befundung schickt das RIS eine HL7 ORU-Nachricht (Observation Result) mit dem Befundtext zurück ans KIS. Fehler in dieser Kette (falsche AE-Title-Konfiguration, HL7-Mapping-Fehler) führen zu Doppeldokumentationen oder fehlenden Befunden.
+>
+> **Deployment und Hochverfügbarkeit:** Der PACS-Server ist für den 24/7-Klinikbetrieb ein kritisches System. Ausfallzeiten blockieren Notaufnahme, OP-Planung und Stationsvisiten. Anforderungen: RAID-gesicherter Storage mit mindestens N+1-Redundanz, PACS-Cluster für Zero-Downtime-Updates, Netzwerksegmentierung (DICOM-Geräte in separatem VLAN). Typische PACS-Ports (TCP 104, 11112) sind in der Firewall explizit freizuschalten und auf autorisierte AE-Titles zu beschränken.
+>
+> **DICOM-Datenschutz:** DICOM-Dateien enthalten Patientenidentifikatoren als Klartextattribute. Für Teleradiologie-Versendungen und Forschungsexporte ist De-Identifikation nach DICOM PS3.15 Annex E Pflicht. Im PACS-Backup darauf achten, dass verschlüsselte Speicherung aktiviert ist.
+
+> [!interesse-technik] Entwickler-Einstieg: DICOMweb und FHIR-Integration
+> Moderne Systeme nutzen **DICOMweb** statt klassischem DICOM-Netzwerkprotokoll. Die drei RESTful-Endpunkte sind WADO-RS (Abruf), STOW-RS (Speichern) und QIDO-RS (Suche). Mit der FHIR-Ressource `ImagingStudy` können DICOM-Serien in FHIR-Workflows referenziert werden, ohne die Bilddaten selbst im FHIR-Server zu speichern. Für die Integration in [[ePA]]-fähige Systeme ist perspektivisch der [[IHE]]-Workflow IHE RAD XDS-I.b relevant. Toolkits: dcm4chee (Open Source DICOM-Server), fo-dicom (.NET), pydicom (Python).
+
 ### Relevanz für die Telematikinfrastruktur
 
 In der zweiten Ausbaustufe von [[MyHealth@EU]] (Wave 2) sollen medizinische Bilddaten im DICOM-Format grenzüberschreitend ausgetauscht werden können. Das [[KIS]] kommuniziert über [[HL7]]-Nachrichten und DICOM-Schnittstellen mit dem PACS. Die [[ePA]] sieht in zukünftigen Versionen die Einbindung von DICOM-Objekten vor.
+
+> [!praxis-tipp] Praxis-Tipp: Bilddaten und ePA: Was heute schon funktioniert
+> In Ihrer Praxis bedeutet das: Die ePA unterstützt aktuell noch keine nativen DICOM-Dateien. Was Sie heute tun können:
+> - Befundberichte zu Röntgen- und MRT-Untersuchungen als PDF in die ePA des Patienten stellen
+> - Für die Weitergabe von Bilddaten: Das Patientenportal Ihres PACS-Anbieters nutzen (z.B. mediDOK). Bilder werden per QR-Code oder Link bereitgestellt.
+> - Wenn Sie einen Vorbefund aus einem anderen Haus benötigen: Direkt beim dortigen PACS-Betreiber den Bildexport im DICOM-Format anfragen.
+>
+> Sobald die ePA-Bildintegration verfügbar ist, wird Ihr PVS-Hersteller ein entsprechendes Update bereitstellen. Handlungsbedarf besteht jetzt noch nicht.
 
 ## Technische Details
 
@@ -73,6 +95,30 @@ Neuere Systeme implementieren **DICOMweb** (DICOM over HTTP), das drei RESTful-D
 - **QIDO-RS** (Query based on ID for DICOM Objects): Suche per HTTP GET
 
 DICOMweb ermöglicht die Integration von DICOM-Bildern in Webapplikationen und [[FHIR]]-basierte Systeme. Der [[IHE]]-Profil **IHE RAD: AIW-I** beschreibt die Integration von DICOMweb in Arbeitsabläufe der bildgebenden Diagnostik.
+
+> [!dev-quickstart] Dev Quickstart: DICOMweb QIDO-RS, WADO-RS und STOW-RS
+> Basis-URL des DICOMweb-Servers (Beispiel dcm4chee): `http://pacs.example.de:8080/dcm4chee-arc/aets/DCM4CHEE/rs`
+> ```bash
+> # QIDO-RS: Studien nach Patient ID suchen
+> curl -X GET "http://pacs.example.de:8080/dcm4chee-arc/aets/DCM4CHEE/rs/studies?PatientID=12345" \
+>   -H "Accept: application/dicom+json"
+>
+> # WADO-RS: Alle Instanzen einer Serie abrufen (gibt multipart/related DICOM zurück)
+> curl -X GET "http://pacs.example.de:8080/dcm4chee-arc/aets/DCM4CHEE/rs/studies/<StudyUID>/series/<SeriesUID>/instances" \
+>   -H "Accept: multipart/related; type=application/dicom"
+>
+> # STOW-RS: DICOM-Datei in PACS speichern
+> curl -X POST "http://pacs.example.de:8080/dcm4chee-arc/aets/DCM4CHEE/rs/studies" \
+>   -H "Content-Type: multipart/related; type=application/dicom" \
+>   --data-binary @image.dcm
+>
+> # FHIR ImagingStudy: DICOM-Studie per FHIR referenzieren (StudyUID als Identifier)
+> # GET [fhir-base]/ImagingStudy?identifier=urn:dicom:uid:1.2.840.10008.5.1.4.1.1.2.<StudyUID>
+> ```
+> - Content-Type für Metadaten: `application/dicom+json` (JSON) oder `application/dicom+xml` (XML)
+> - Open Source PACS-Server: [dcm4chee-arc](https://github.com/dcm4che/dcm4chee-arc-light)
+> - Python-Client: [dicomweb-client](https://dicomweb-client.readthedocs.io/)
+> - DICOM Standard PS3.18 (DICOMweb): [dicomstandard.org](https://www.dicomstandard.org/using/dicomweb)
 
 ### Datenschutz und De-Identifikation
 

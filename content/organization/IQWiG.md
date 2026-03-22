@@ -25,7 +25,7 @@ Gesetzliche Grundlage ist **§ 139a SGB V**. Das IQWiG erhält Aufträge ausschl
 
 ### Kernaufgaben
 
-- **[[AMNOG]]-Nutzenbewertung**: Bei neu zugelassenen Arzneimitteln erstellt das IQWiG im Auftrag des [[G-BA]] die frühe Nutzenbewertung (§ 35a [[SGB-V]]). Es prüft den Zusatznutzen gegenüber der zweckmäßigen Vergleichstherapie.
+- **[[AMNOG]]-Nutzenbewertung**: Bei neu zugelassenen Arzneimitteln erstellt das IQWiG im Auftrag des [[G-BA]] die [[Fruehe-Nutzenbewertung|frühe Nutzenbewertung]] (§ 35a [[SGB-V]]). Es prüft den Zusatznutzen gegenüber der zweckmäßigen Vergleichstherapie.
 - **Methodenbewertung**: Bewertung diagnostischer und therapeutischer Verfahren auf Basis klinischer Studien (§ 135 SGB V).
 - **Leitlinien**: Erstellung von Patientenleitlinien und evidenzbasierten Informationen für die Öffentlichkeit (gesundheitsinformation.de).
 - **DiGA-Nutzenbewertung**: Im Rahmen des Fast-Track-Verfahrens für Digitale Gesundheitsanwendungen ([[DiGA]]) kann der G-BA das IQWiG mit der Nutzenbewertung einer DiGA beauftragen, wenn nach der vorläufigen Aufnahme kein ausreichender Nutzenbeweis vorliegt.

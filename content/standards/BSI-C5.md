@@ -81,7 +81,7 @@ Der C5 ergänzt bestehende Standards:
 > [!interesse-technik] Technischer Einstieg: C5-Testat beantragen
 > Der C5 ist kein Selbst-Assessment, sondern eine externe Prüfung durch akkreditierte Wirtschaftsprüfer oder IT-Sicherheitsauditoren. Der Ablauf: (1) Scope festlegen (welche Cloud-Dienste, welche Standorte), (2) Typ-1-Audit für Design-Prüfung beauftragen, (3) Typ-2-Audit nach mindestens 6 Monaten Betrieb. Das BSI veröffentlicht keine öffentliche Liste akkreditierter Prüfer. Akkreditierte Prüfer sind bei der DAkkS registriert. Hyperscaler (AWS, Azure, Google Cloud) veröffentlichen ihre C5-Testate für deutsche Regionen auf eigenen Compliance-Portalen. Spezifische Gesundheits-Cloud-Anbieter müssen das Testat direkt vorlegen.
 - **SOC 2**: Amerikanisches Pendant. Einige Prüfer bieten kombinierte C5/SOC-2-Prüfungen an, um doppelten Aufwand zu reduzieren.
-- **BSI IT-Grundschutz**: Ergänzender Standard des BSI für den öffentlichen Sektor.
+- **[[BSI-IT-Grundschutz|BSI IT-Grundschutz]]**: Ergänzender Standard des BSI für den öffentlichen Sektor.
 
 ### Anbieter mit C5-Testat
 

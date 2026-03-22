@@ -42,7 +42,7 @@ Seit **März 2026** können Ärzte zusätzlich Medikamente ohne vorliegendes E-R
 > In Ihrer Praxis bedeutet das: Die eML befüllt sich automatisch, sobald ein Patient ein E-Rezept in der Apotheke einlöst. Sie müssen nichts extra tun.
 >
 > Was Sie seit März 2026 aktiv tun können:
-> 1. BtM-Rezepte und T-Rezepte manuell in die eML nachtragen (Ihr PVS bietet diese Funktion im ePA-Modul).
+> 1. BtM-Rezepte und [[T-Rezept|T-Rezepte]] manuell in die eML nachtragen (Ihr PVS bietet diese Funktion im ePA-Modul).
 > 2. Fehlerhafte Einträge korrigieren oder löschen, z. B. wenn ein Medikament irrtümlich doppelt erscheint.
 > 3. Medikamente nachtragen, die Patienten von anderen Praxen ohne E-Rezept erhalten haben.
 >

@@ -43,7 +43,7 @@ Das E-Rezept wird digital erstellt, signiert und kann auf drei Wegen eingelöst 
 ### Was kommt noch?
 - **Wave-10-Anschluss an MyHealth@EU (H1/2027)**: Deutschland plant die grenzüberschreitende E-Rezept-Einlösung im EU-Ausland über den [[NCPeH]]. Technische Grundlage ist die Spezifikation gemF_eRp_EU V1.0.0 (NCPeH_24_2, März 2025). Der Produktivstart wurde laut OneRoadmap Q1/2026 auf H1/2027 verschoben (zuvor 2026 geplant). Seit **25. Februar 2026** kann Österreich als erster Staat EU-E-Rezepte aus anderen Mitgliedstaaten (zunächst Tschechien) einlösen.
 - E-Rezept-Anforderung und Übermittlung via [[KIM]]
-- T-Rezepte (teratogene Stoffe, z.B. Lenalidomid): Spezifikation seit August 2025 veröffentlicht, Rollout-Start 2027 (E-Rezept 27.2/27.4)
+- [[T-Rezept|T-Rezepte]] (teratogene Stoffe, z.B. Lenalidomid): Spezifikation seit August 2025 veröffentlicht, Rollout-Start 2027 (E-Rezept 27.2/27.4)
 - [[Häusliche-Krankenpflege|Häusliche Krankenpflege]] und außerklinische Intensivpflege: Pflicht ab 1. Juli 2026
 - [[Hilfsmittelverordnung|Hilfsmittelverordnungen]] (Orthesen, Rollstühle etc.): Pflicht ab 1. Juli 2027
 - [[Heilmittelverordnung|Heilmittelverordnungen]] ([[eVO]], Physiotherapie, Ergotherapie, Logopädie): Verordner müssen ab 1. Januar 2027 elektronische Heilmittelverordnungen ausstellen. Die TI-Anbindungspflicht für Heilmittelerbringer (Physiotherapeuten, Ergotherapeuten, Logopäden etc.) wurde vom 1. Januar 2026 auf den **1. Oktober 2027** verschoben. Begründung: Die elektronische Heilmittelverordnung (eVO) ist noch nicht verfügbar. Pflicht zur Einlösung ab 2028.
