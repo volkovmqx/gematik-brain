@@ -6,7 +6,7 @@ aliases: [D-Trust GmbH, D-TRUST]
 relevance:
   sectors: [arztpraxis, zahnarzt, psychotherapie, apotheke, pflege, ti-infrastruktur, hersteller]
   interests: [compliance, technik]
-maturity: setzling
+maturity: wachsend
 ---
 
 # D-Trust

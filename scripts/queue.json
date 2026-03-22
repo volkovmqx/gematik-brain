@@ -1,116 +1,114 @@
 {
   "pending": [
     {
-      "term": "Entlassbrief",
+      "term": "VSDM 2",
       "category": "processes",
-      "reason": "Der Entlassbrief (ärztlicher Brief bei Krankenhausentlassung) wird in 10 Artikeln erwähnt (NFDM, AMTS, Entlassmanagement, dgMP, Heilmittelverordnung u.a.) als zentrales klinisches Dokument für die sektorenübergreifende Kommunikation. Kein eigener Artikel, obwohl er ein Pflichtdokument im ISiK-Modul 'Dokumentenaustausch' ist.",
+      "reason": "VSDM-Nachfolger auf Basis der Gesundheits-ID (ohne eGK-Lesepflicht): in 6 Artikeln (VSDM, ZETA, Zero-Trust, Gesundheits-ID, TI-2.0, eGK) als zentraler Modernisierungsschritt der TI 2.0 erwähnt. Kein eigener Artikel, obwohl der Rollout 2025/2026 läuft.",
       "mentionedIn": [
-        "content/processes/Heilmittelverordnung.md",
-        "content/processes/NFDM.md",
-        "content/processes/AMTS.md",
-        "content/processes/Entlassmanagement.md",
-        "content/processes/dgMP.md",
-        "content/technologies/KIS.md",
-        "content/technologies/eAU.md",
-        "content/infrastructure/KIS.md",
-        "content/standards/ISiK.md",
-        "content/technologies/KIM.md"
+        "content/processes/VSDM.md",
+        "content/concepts/ZETA.md",
+        "content/concepts/Zero-Trust.md",
+        "content/infrastructure/Gesundheits-ID.md",
+        "content/infrastructure/TI-2.0.md"
+      ],
+      "priority": 18
+    },
+    {
+      "term": "DiGA-Fast-Track",
+      "category": "processes",
+      "reason": "Das Schnellzulassungsverfahren für Digitale Gesundheitsanwendungen nach § 139e SGB V: in 5 Artikeln (SaMD, IQWiG, BfArM, DVG, DiGAV) als zentraler Prozess erwähnt. Kein eigener Artikel, obwohl es der wichtigste Prozessrahmen für DiGA-Hersteller ist.",
+      "mentionedIn": [
+        "content/concepts/SaMD.md",
+        "content/organization/IQWiG.md",
+        "content/organization/BfArM.md",
+        "content/standards/DVG.md",
+        "content/standards/DiGAV.md"
       ],
       "priority": 16
     },
     {
-      "term": "GVSG",
+      "term": "ISO 27001",
       "category": "standards",
-      "reason": "Gesundheitsversorgungsstärkungsgesetz (GVSG): regelt unter anderem die Primärversorgungszentren und die Weiterentwicklung der hausärztlichen Versorgung. In mehreren Artikeln als Nachfolger relevanter Regelungen referenziert; kein eigener Artikel.",
+      "reason": "Internationale Norm für Informationssicherheitsmanagementsysteme: in 6 Artikeln (KRITIS, ISMS, KHSFV, KHZG, BSI-C5, Konnektoren) als Zertifizierungsbasis erwähnt. Zentrales Compliance-Dokument für TI-Anbieter. Kein eigener Artikel.",
       "mentionedIn": [
-        "content/concepts/Primärversorgung.md",
-        "content/organization/Kassenaerztliche-Vereinigung.md",
-        "content/organization/KBV.md"
+        "content/concepts/KRITIS.md",
+        "content/concepts/ISMS.md",
+        "content/standards/KHSFV.md",
+        "content/standards/KHZG.md"
       ],
-      "priority": 12
+      "priority": 14
     },
     {
-      "term": "SMART on FHIR",
-      "category": "standards",
-      "reason": "SMART on FHIR (Substitutable Medical Applications, Reusable Technologies): offener Standard für den sicheren Zugriff auf FHIR-APIs via OAuth 2.0/OIDC. In 3 Artikeln (IS-H, KHAG, KIS) als geplantes Autorisierungsframework für KIS-Integrationen erwähnt; keine eigene Seite.",
-      "mentionedIn": [
-        "content/infrastructure/IS-H.md",
-        "content/standards/KHAG.md",
-        "content/technologies/KIS.md"
-      ],
-      "priority": 11
-    },
-    {
-      "term": "Patientenkurzakte",
+      "term": "Komfortsignatur",
       "category": "concepts",
-      "reason": "Patientenkurzakte (Patient Summary): wird in 4 Artikeln (NCPeH, EUDI-Wallet, Patient-Summary, MIO) als eigenständiges Konzept neben dem Patient Summary erwähnt; eigene FHIR-Profile für die grenzüberschreitende Nutzung; kein dedizierter Artikel.",
+      "reason": "Erleichtertes QES-Signaturverfahren für häufig signierende Heilberufsangehörige (PIN-Eingabe nur einmalig für eine konfigurierbare Zeitspanne): in 3 Artikeln (SOAP, eIDAS, Fernsignatur) erwähnt. Kein eigener Artikel, obwohl es ein zentrales UX-Konzept der TI ist.",
       "mentionedIn": [
-        "content/infrastructure/NCPeH.md",
-        "content/infrastructure/EUDI-Wallet.md",
-        "content/standards/Patient-Summary.md",
-        "content/standards/MIO.md"
+        "content/standards/SOAP.md",
+        "content/standards/eIDAS.md",
+        "content/technologies/Fernsignatur.md"
       ],
       "priority": 10
     },
     {
-      "term": "CRL",
-      "category": "concepts",
-      "reason": "Certificate Revocation List: Mechanismus zur Sperrung von X.509-Zertifikaten, komplementär zu OCSP. In 5 Artikeln (PKI, OCSP, X.509, TSL, Telematikinfrastruktur) als Zertifikatsprüfmechanismus in der TI-PKI erwähnt; kein eigener Artikel.",
+      "term": "Frühe Nutzenbewertung",
+      "category": "processes",
+      "reason": "Verfahren nach § 35a SGB V zur Bewertung neuer Arzneimittel: Kern des AMNOG-Prozesses. In 3 Artikeln (IQWiG, G-BA, AMNOG) als zentraler Prozessschritt erwähnt. Kein eigener Artikel.",
       "mentionedIn": [
-        "content/concepts/PKI.md",
-        "content/concepts/OCSP.md",
-        "content/concepts/X.509.md",
-        "content/infrastructure/TSL.md",
-        "content/infrastructure/Telematikinfrastruktur.md"
+        "content/organization/IQWiG.md",
+        "content/organization/G-BA.md",
+        "content/standards/AMNOG.md"
       ],
-      "priority": 9
+      "priority": 7
     },
     {
       "term": "MMI-Pharmindex",
       "category": "infrastructure",
-      "reason": "Arzneimittelinteraktions-Datenbank (Konkurrenz zur ABDA-Datenbank) in PVS/AVS für AMTS-Prüfungen; 3 Artikel referenzieren ihn ohne eigenen Artikel.",
+      "reason": "Arzneimittelinteraktions-Datenbank (Konkurrenz zur ABDA-Datenbank) in PVS/AVS für AMTS-Prüfungen. In 3 Artikeln (eMP, AMTS, AVS) referenziert. Kein eigener Artikel.",
       "mentionedIn": [
         "content/processes/eMP.md",
         "content/processes/AMTS.md",
         "content/infrastructure/AVS.md"
       ],
-      "priority": 5
+      "priority": 6
     },
     {
       "term": "T-Rezept",
       "category": "processes",
-      "reason": "Thalidomid-Klasse-Verordnung: Digitalisierung Q4/2026 geplant; im BTM-Rezept-Artikel referenziert, eigenes regulatorisches Regime.",
+      "reason": "Thalidomid-Klasse-Verordnung: Digitalisierung Q4/2026 geplant. In 3 Artikeln (BTM-Rezept, eML, E-Rezept) referenziert, eigenes regulatorisches Regime.",
       "mentionedIn": [
-        "content/processes/BTM-Rezept.md"
+        "content/processes/BTM-Rezept.md",
+        "content/processes/eML.md",
+        "content/technologies/E-Rezept.md"
       ],
-      "priority": 4
+      "priority": 5
     },
     {
       "term": "Interop Council",
       "category": "organization",
-      "reason": "gematik Interoperability Council: im Interoperabilitätsverzeichnis-Artikel als Governance-Gremium für die IOP-Roadmap erwähnt; keine eigene Seite.",
+      "reason": "gematik Interoperability Council: in 2 Artikeln (KIG, Interoperabilitätsverzeichnis) als Governance-Gremium für die IOP-Roadmap erwähnt. Keine eigene Seite.",
       "mentionedIn": [
+        "content/organization/KIG.md",
         "content/infrastructure/Interoperabilitaetsverzeichnis.md"
       ],
       "priority": 4
     },
     {
-      "term": "Festbetrag",
-      "category": "concepts",
-      "reason": "GKV-Festbetragsregelung für Generika: im AMNOG-Artikel referenziert; zentraler Preismechanismus in der GKV.",
-      "mentionedIn": [
-        "content/standards/AMNOG.md"
-      ],
-      "priority": 3
-    },
-    {
       "term": "EU-HTA",
       "category": "standards",
-      "reason": "EU Health Technology Assessment Regulation (2021/2282): ab 2025 gemeinsame klinische Bewertungen auf EU-Ebene für neue Arzneimittel; im IQWiG-Artikel referenziert.",
+      "reason": "EU Health Technology Assessment Regulation (2021/2282): ab 2025 gemeinsame klinische Bewertungen auf EU-Ebene für neue Arzneimittel. Im IQWiG-Artikel referenziert.",
       "mentionedIn": [
         "content/organization/IQWiG.md"
       ],
       "priority": 3
+    },
+    {
+      "term": "Festbetrag",
+      "category": "concepts",
+      "reason": "GKV-Festbetragsregelung für Generika: im AMNOG-Artikel referenziert. Zentraler Preismechanismus in der GKV.",
+      "mentionedIn": [
+        "content/standards/AMNOG.md"
+      ],
+      "priority": 2
     }
   ],
   "done": [
@@ -183,12 +181,17 @@
     "ECC-Migration",
     "EHDS",
     "EUDI-Wallet",
+    "EEHRxF",
+    "EUDAMED",
     "Entlassmanagement",
     "FHIR",
     "Fachdienst",
     "Fernsignatur",
+    "CRL",
+    "Entlassbrief",
     "Forschungsdatenzentrum Gesundheit",
     "Forschungsdatenzentrum-Gesundheit",
+    "GVSG",
     "G-BA",
     "GDAG",
     "GDNG",
@@ -226,12 +229,8 @@
     "KHG",
     "KHVVG",
     "KHZG",
-    "EEHRxF",
-    "EUDAMED",
     "KIG",
     "KIM",
-    "Primärversorgung",
-    "SaMD",
     "KIS",
     "KRITIS",
     "KRITIS-Dachgesetz",
@@ -284,8 +283,10 @@
     "Patient Summary",
     "Patient-Summary",
     "Patientenportal",
+    "Patientenkurzakte",
     "PoPP",
     "Primärsystem",
+    "Primärversorgung",
     "Pseudonymisierung",
     "QES",
     "RIS",
@@ -295,10 +296,13 @@
     "SGB-V",
     "SGB-XI",
     "SMC-B",
+
+    "SMART on FHIR",
     "SNOMED CT",
     "SNOMED-CT",
     "SOAP",
     "STIKO",
+    "SaMD",
     "Securpharm",
     "Sektoraler IDP",
     "Sektoraler-IDP",
@@ -324,6 +328,7 @@
     "VSDM",
     "VZD",
     "Videosprechstunde",
+    "Vorhaltevergütung",
     "X.509",
     "XDS",
     "ZETA",
@@ -353,37 +358,37 @@
     {
       "link": "Kassenärztliche-Vereinigung",
       "resolvedBy": "content/organization/Kassenaerztliche-Vereinigung.md",
-      "note": "4 Vorkommen (Videosprechstunde.md, Primärversorgung.md): Artikel hat 'Kassenärztliche Vereinigung' (ohne Bindestrich) als Alias, aber die Links verwenden den Bindestrich. Alias 'Kassenärztliche-Vereinigung' muss in Kassenaerztliche-Vereinigung.md ergänzt werden.",
+      "note": "4 Vorkommen in Videosprechstunde.md und Primärversorgung.md: Der Artikel hat 'Kassenärztliche Vereinigung' (ohne Bindestrich) als Alias, aber die Links verwenden den Bindestrich. Alias 'Kassenärztliche-Vereinigung' muss in Kassenaerztliche-Vereinigung.md ergänzt werden.",
       "impact": "medium"
     },
     {
       "link": "PKV\\",
       "resolvedBy": "content/concepts/PKV.md",
-      "note": "1 Vorkommen (gematik.md): Trailing backslash im Link [[PKV\\]] ist ein Schreibfehler. Link muss zu [[PKV]] korrigiert werden.",
+      "note": "1 Vorkommen in content/organization/gematik.md Zeile 32: Trailing backslash im Link [[PKV\\|...]] ist ein Schreibfehler. Link muss zu [[PKV|...]] korrigiert werden.",
       "impact": "low"
     },
     {
       "link": "Konnektoren\\",
       "resolvedBy": "content/infrastructure/Konnektoren.md",
-      "note": "1 Vorkommen (TI-Gateway.md): Trailing backslash im Link [[Konnektoren\\]] ist ein Schreibfehler. Link muss zu [[Konnektoren]] korrigiert werden.",
+      "note": "1 Vorkommen in content/infrastructure/TI-Gateway.md Zeile 65: Trailing backslash im Link [[Konnektoren\\|Konnektor]] ist ein Schreibfehler.",
       "impact": "low"
     },
     {
       "link": "eImpfpass\\",
       "resolvedBy": "content/technologies/eImpfpass.md",
-      "note": "1 Vorkommen (MIO.md): Trailing backslash im Link [[eImpfpass\\]] ist ein Schreibfehler.",
+      "note": "1 Vorkommen in content/standards/MIO.md Zeile 47: Trailing backslash im Link [[eImpfpass\\|Impfpass]] ist ein Schreibfehler.",
       "impact": "low"
     },
     {
       "link": "Kinderuntersuchungsheft\\",
       "resolvedBy": "content/processes/Kinderuntersuchungsheft.md",
-      "note": "1 Vorkommen (MIO.md): Trailing backslash im Link [[Kinderuntersuchungsheft\\]] ist ein Schreibfehler.",
+      "note": "1 Vorkommen in content/standards/MIO.md Zeile 50: Trailing backslash im Link [[Kinderuntersuchungsheft\\|U-Heft]] ist ein Schreibfehler.",
       "impact": "low"
     },
     {
       "link": "Patientenportal\\",
       "resolvedBy": "content/technologies/Patientenportal.md",
-      "note": "1 Vorkommen (KHZG.md): Trailing backslash im Link [[Patientenportal\\]] ist ein Schreibfehler.",
+      "note": "1 Vorkommen in content/standards/KHZG.md Zeile 39: Trailing backslash im Link [[Patientenportal\\|Patientenportale]] ist ein Schreibfehler.",
       "impact": "low"
     }
   ],
@@ -396,11 +401,9 @@
     "content/infrastructure/HSM-B.md",
     "content/infrastructure/Highspeed-Konnektor.md",
     "content/infrastructure/KV-SafeNet.md",
-    "content/infrastructure/Kartenterminal.md",
     "content/infrastructure/LIS.md",
     "content/infrastructure/MVZ.md",
     "content/infrastructure/MyHealthAtEU.md",
-    "content/infrastructure/PACS.md",
     "content/infrastructure/RIS.md",
     "content/infrastructure/TI-Federation.md",
     "content/infrastructure/TSL.md",
@@ -415,9 +418,7 @@
     "content/organization/Bundesnetzagentur.md",
     "content/organization/DAV.md",
     "content/organization/DVKA.md",
-    "content/organization/IQWiG.md",
     "content/organization/InEK.md",
-    "content/organization/Kassenaerztliche-Vereinigung.md",
     "content/organization/KZBV.md",
     "content/organization/Landesaerztekammer.md",
     "content/organization/Medizinischer-Dienst.md",
@@ -430,7 +431,6 @@
     "content/standards/BSI-C5.md",
     "content/standards/CDA.md",
     "content/standards/DICOM.md",
-    "content/standards/DVG.md",
     "content/standards/DVPMG.md",
     "content/standards/DiGAV.md",
     "content/standards/DiPAV.md",
@@ -441,19 +441,15 @@
     "content/standards/IHE.md",
     "content/standards/IVDR.md",
     "content/standards/KHG.md",
-    "content/standards/KHZG.md",
     "content/standards/KRITIS-Dachgesetz.md",
-    "content/standards/LOINC.md",
     "content/standards/MDR.md",
     "content/standards/Matrix-Protokoll.md",
     "content/standards/PDSG.md",
     "content/standards/PZN.md",
     "content/standards/Patient-Summary.md",
     "content/standards/SGB-XI.md",
-    "content/standards/SNOMED-CT.md",
     "content/standards/VDG.md",
     "content/standards/XDS.md",
-    "content/standards/eIDAS.md",
     "content/technologies/DiPA.md",
     "content/technologies/DiPaG.md",
     "content/technologies/eArztbrief.md",

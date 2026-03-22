@@ -26,7 +26,7 @@ Die TI wird von der **[[gematik|gematik GmbH]]** (Berlin, Rosenthaler Straße 30
 - **[[IDP]]-Dienst**: Identitätsmanagement und Authentisierung
 - **[[VZD]] (Verzeichnisdienst)**: Zentrales Adressbuch aller TI-Teilnehmer
 - **[[TSP]] (Trust Service Provider)**: [[PKI]]-Infrastruktur für Zertifikate
-- **[[OCSP]]/CRL**: Zertifikatsprüfung
+- **[[OCSP]]/[[CRL]]**: Zertifikatsprüfung
 
 ### Anwendungen auf der TI
 

@@ -165,7 +165,7 @@ Konkret sind folgende Szenarien in Planung oder Diskussion:
 - **Digitaler Impfnachweis**: Das europäische Impfzertifikat (bisher als EU Digital COVID Certificate bekannt) soll in die EUDI-Wallet überführt werden.
 - **Versicherungsnachweis**: Die [[Gesundheits-ID]] als Nachweis der Krankenversicherung gegenüber Leistungserbringern in anderen EU-Mitgliedstaaten.
 - **Elektronisches Rezept (ePrescription)**: Im Rahmen des EHDS soll die grenzüberschreitende Übermittlung von Rezepten via Wallet ermöglicht werden.
-- **Patientenkurzakte (Patient Summary)**: Notfalldaten sollen als Wallet-Credential ausgestellt werden, damit sie in anderen EU-Ländern lesbar sind.
+- **[[Patientenkurzakte]] (Patient Summary)**: Notfalldaten sollen als Wallet-Credential ausgestellt werden, damit sie in anderen EU-Ländern lesbar sind.
 
 Diese Anwendungsfälle werden im Rahmen des [[EHDS]] (Europäischer Gesundheitsdatenraum) und der eIDAS-2.0-Umsetzung standardisiert.
 

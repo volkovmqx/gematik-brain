@@ -6,7 +6,7 @@ aliases: [European Health Data Space, Europäischer Gesundheitsdatenraum, EU 202
 relevance:
   sectors: [krankenhaus, kasse, hersteller, it-dienstleister, regulierung, forschung, patient]
   interests: [compliance, technik, patient]
-maturity: wachsend
+maturity: immergruen
 ---
 
 # EHDS

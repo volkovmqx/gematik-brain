@@ -3,7 +3,7 @@ title: DVKA
 audience: [technical, non-technical]
 tags: [organisation, eu, grenzüberschreitend, ncpeh, ehds]
 aliases: [Deutsche Verbindungsstelle Krankenversicherung Ausland, DVKA]
-maturity: setzling
+maturity: immergruen
 ---
 
 # DVKA
@@ -70,7 +70,7 @@ Außerdem enthält der EHDS Regelungen zur **Sekundärnutzung** von Gesundheitsd
 - [[EHDS]] (EU-Rechtsrahmen für Gesundheitsdaten; DVKA ist zentrale Umsetzungsstelle)
 - [[GKV-Spitzenverband]] (Auftraggeber der DVKA)
 - [[ePA]] (Datenquelle für den grenzüberschreitenden Datenaustausch über NCPeH)
-- [[E-Rezept]] (geplante Nutzung im grenzüberschreitenden Kontext ab H1/2027)
+- [[E-Rezept]] (geplante Nutzung im grenzüberschreitenden Kontext ab Wave 10 (H1/2027))
 - [[Telematikinfrastruktur]] (nationale Infrastruktur, mit der der NCPeH verbunden ist)
 - [[BfArM]] (wird voraussichtlich Health Data Access Body unter dem EHDS)
 

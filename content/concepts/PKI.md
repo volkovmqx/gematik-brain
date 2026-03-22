@@ -75,7 +75,7 @@ Jede TI-Komponente lädt die TSL regelmäßig herunter und prüft damit eingehen
 Für die Prüfung der Zertifikatsgültigkeit nutzt die TI zwei Mechanismen:
 
 - **[[OCSP]]** (Online Certificate Status Protocol): Echtzeit-Abfrage beim OCSP-Responder des TSP
-- **CRL** (Certificate Revocation List): Liste gesperrter Zertifikate
+- **[[CRL]]** (Certificate Revocation List): Liste gesperrter Zertifikate
 
 [[Konnektoren]] führen diese Prüfungen durch und verwerfen Verbindungen mit gesperrten oder abgelaufenen Zertifikaten.
 

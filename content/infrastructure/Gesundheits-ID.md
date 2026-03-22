@@ -38,6 +38,8 @@ Die Gesundheits-ID ist ein zentraler Baustein der TI 2.0-Strategie. Das Ziel: Di
 
 Technisch basiert die Gesundheits-ID auf dem [[IDP]]-System der TI. Jede Krankenkasse betreibt einen eigenen sektoralen Identity Provider (sektoraler IDP), der über die [[TI-Federation]] mit dem zentralen [[IDP]] verbunden ist. Versicherte authentifizieren sich über die App ihrer Krankenkasse und erhalten dort ein Token, das von TI-Diensten akzeptiert wird.
 
+Die Abhängigkeit vom sektoralen IDP der eigenen Krankenkasse ist ein strukturelles Ausfallrisiko: Fällt der IDP-Betreiber aus, ist die kartenlose Authentifizierung für alle betroffenen Versicherten nicht mehr möglich. Im Februar 2026 wurden innerhalb weniger Tage gleich zwei solcher Ausfälle dokumentiert: Am 10. Februar 2026 fiel der IBM-sektorale IDP aus, am 12. Februar 2026 der T-Systems-sektorale IDP, der unter anderem Barmer- und AOK-Versicherte traf. In beiden Fällen konnten Versicherte während der Ausfallzeit nicht per Gesundheits-ID auf TI-Dienste zugreifen. Die physische [[eGK]] blieb in diesen Situationen weiterhin nutzbar.
+
 ## Technische Details
 
 ### Registrierung

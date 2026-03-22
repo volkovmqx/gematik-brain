@@ -44,10 +44,10 @@ MIOs sind als npm-Pakete veröffentlicht und können in [[FHIR]]-Validatoren dir
 
 | MIO | Version | Beschreibung |
 |---|---|---|
-| [[eImpfpass\|Impfpass]] | 1.1.0 | Digitale Dokumentation von Impfungen, Impfreaktionen und Immunstatus |
+| [[eImpfpass|Impfpass]] | 1.1.0 | Digitale Dokumentation von Impfungen, Impfreaktionen und Immunstatus |
 | Zahnärztliches Bonusheft | 1.1.0 | Dokumentation von Prophylaxe- und Zahnbehandlungsleistungen |
 | [[Mutterpass]] | 1.1.0 | Schwangerschaftsdokumentation gemäß Mutterschafts-Richtlinien |
-| [[Kinderuntersuchungsheft\|U-Heft]] | 1.0.1 | Kinderuntersuchungen (U1 bis U9) nach Kinder-Richtlinien |
+| [[Kinderuntersuchungsheft|U-Heft]] | 1.0.1 | Kinderuntersuchungen (U1 bis U9) nach Kinder-Richtlinien |
 
 #### MIOs in Entwicklung
 
@@ -56,7 +56,7 @@ MIOs sind als npm-Pakete veröffentlicht und können in [[FHIR]]-Validatoren dir
 | KH-Entlassbrief | 1.0.0 | Arztbrief bei Krankenhausentlassung |
 | Telemedizinisches Monitoring | 1.0.0 | Vitaldaten aus Remote-Patient-Monitoring |
 | Überleitungsbogen | 1.0.0 | Pflegeüberleitung zwischen Einrichtungen |
-| Patientenkurzakte | 1.0.0 | Zusammenfassung relevanter Gesundheitsdaten |
+| [[Patientenkurzakte]] | 1.0.0 | Zusammenfassung relevanter Gesundheitsdaten |
 | DiGA Toolkit | 1.0.0 | Exportformat für [[DiGA]]-Daten (Grundlage der [[DiGAV]] Anlage 2) |
 
 ### Das MIO DiGA Toolkit

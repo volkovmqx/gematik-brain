@@ -62,7 +62,7 @@ Wenn eine neue TSL verfügbar ist (höhere Sequenznummer), wird sie heruntergela
 
 ### OCSP und CRL als Ergänzung
 
-Die TSL definiert, welchen CAs vertraut wird. Die aktuelle **Gültigkeit einzelner Zertifikate** wird davon unabhängig per [[OCSP]] (Online Certificate Status Protocol) oder CRL (Certificate Revocation List) geprüft. Ein Zertifikat kann gültig sein, obwohl seine ausstellende CA in der TSL noch gelistet ist, wenn es individuell gesperrt wurde.
+Die TSL definiert, welchen CAs vertraut wird. Die aktuelle **Gültigkeit einzelner Zertifikate** wird davon unabhängig per [[OCSP]] (Online Certificate Status Protocol) oder [[CRL]] (Certificate Revocation List) geprüft. Ein Zertifikat kann gültig sein, obwohl seine ausstellende CA in der TSL noch gelistet ist, wenn es individuell gesperrt wurde.
 
 ### ECC-Migration und TSL
 

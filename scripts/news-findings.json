@@ -1381,8 +1381,9 @@
       "summary": "Am 12. Februar 2026 fiel der sektorale Identity Provider (IDP) von T-Systems International GmbH aus, was einen 'Totalausfall' der GesundheitsID für Barmer- und AOK-Versicherte verursachte. Betroffene Dienste: E-Rezept-App (Anmeldung per GesundheitsID), ePA-Zugang. Nicht betroffen: E-Rezept-Einlösung via eGK, Papierausdruck und App mit PIN. Es war der zweite schwere TI-Ausfall dieser Woche (nach dem IBM-IDP-Ausfall am 10. Februar). Das BMG kündigte daraufhin eine grundsätzliche Überprüfung der Systemzuverlässigkeit des E-Rezeptions-Systems an.",
       "relevantArticles": ["IDP.md", "Gesundheits-ID.md", "E-Rezept.md", "ePA.md"],
       "category": "security",
-      "action": "update",
-      "details": "IDP.md: Der bestehende Abschnitt 'Abhängigkeitsrisiken: Ausfall sektoraler IDPs' sollte den T-Systems-Ausfall vom 12. Februar 2026 als zweiten Vorfall in der gleichen Woche (nach IBM am 10. Februar) ergänzen. Gesundheits-ID.md: Hinweis auf IDP-Abhängigkeit als Ausfallrisiko."
+      "action": "applied",
+      "appliedDate": "2026-03-22",
+      "details": "IDP.md: T-Systems-IDP-Ausfall vom 12. Februar 2026 (Barmer und AOK GesundheitsID betroffen) als zweiten Vorfall ergänzt. Gesundheits-ID.md: Abschnitt zu IDP-Abhängigkeit als strukturelles Ausfallrisiko ergänzt, mit Bezug auf IBM-Ausfall (10.02.) und T-Systems-Ausfall (12.02.)."
     },
     {
       "title": "Barmer erste Kasse mit bundesweitem ePass-Verfahren für ePA (20. März 2026)",
@@ -1403,8 +1404,29 @@
       "category": "info",
       "action": "info_only",
       "details": "DMEA-Ankündigung bereits in den Findings dokumentiert. Bühnenprogramm-Details als Ergänzung. Kein Artikel-Update nötig."
+    },
+    {
+      "title": "ApoVWG 1. Lesung: Warken verspricht 9,50 Euro per Parallelverordnung (27. Februar 2026)",
+      "date": "2026-02-27",
+      "source": "https://www.pharmazeutische-zeitung.de/warken-verspricht-950-euro-im-bundestag-163193/",
+      "summary": "Bei der 1. Lesung des ApoVWG im Bundestag am 27. Februar 2026 versprach Bundesgesundheitsministerin Nina Warken (CDU) ausdrücklich, die Apothekenhonorar-Erhöhung auf 9,50 Euro pro Packung im Frühjahr 2026 per eigenständiger Verordnung umzusetzen, parallel zum ApoVWG. Die Honorarerhöhung ist nicht im ApoVWG-Gesetzestext enthalten, weil sie der Koalitionsvertrag als Rechtsverordnung vorsieht. Zusätzlich soll eine weitere Verordnung einen dauerhaften Verhandlungsmechanismus (Apothekerverbände versus GKV-Spitzenverband) für jährliche Honoraranpassungen einführen. CSU-Gesundheitspolitiker Pilsinger (Stand 20. März 2026) bekräftigte, die 9,50 Euro kämen mit dem ApoVWG wie vereinbart.",
+      "affects": ["E-Rezept.md"],
+      "category": "regulation",
+      "action": "update",
+      "details": "E-Rezept.md und ApoVWG-Eintrag: Ergänzung, dass die 9,50-Euro-Honorarerhöhung nicht im ApoVWG-Gesetzestext steht, sondern per eigenständiger BMG-Verordnung (Frühjahr 2026) parallel zum Gesetz kommen soll. Bestehende Einträge (ApoVWG 2./3. Lesung 16. April 2026) noch um dieses Detail erweitern.",
+      "suggestedTerm": "ApoVWG"
+    },
+    {
+      "title": "TI-Teilausfall 3. März 2026: Bitmarck-Fachdienste und aAdG-NetG betroffen (12:30–14:00 Uhr)",
+      "date": "2026-03-03",
+      "source": "https://www.apotheke-adhoc.de/nachrichten/detail/e-health/teilausfall-bei-e-rezept-und-epa/",
+      "summary": "Am 3. März 2026 kam es zwischen 12:30 und ca. 14:00 Uhr zu einem von der RISE TI-Gateway-Störung unabhängigen Teilausfall: Betroffen waren die Bitmarck-Fachdienste sowie die KBV-Anwendung aAdG-NetG. Folge: Apotheken und Praxen konnten zeitweise keine E-Rezepte per eGK einlösen, keine ePA-Berechtigungen setzen und keinen VSDM-Datenabgleich durchführen. Gematik kommunizierte die Störung über den offiziellen TI-Störungskanal. Der 3. März 2026 war damit ein Mehrfach-Ausfall-Tag mit zwei unabhängigen Vorfällen (RISE-Gateway-Ausfall und dieser Bitmarck/aAdG-Ausfall). Bekannte Schwäche: Konzentration auf wenige Anbieter von TI-Fachdiensten erhöht systemisches Ausfallrisiko.",
+      "affects": ["E-Rezept.md", "IDP.md", "Telematikinfrastruktur.md"],
+      "category": "security",
+      "action": "update",
+      "details": "Telematikinfrastruktur.md: Abschnitt 'Ausfälle und Verfügbarkeit' um den Bitmarck/aAdG-NetG-Teilausfall am 3. März 2026 (12:30–14:00 Uhr) ergänzen. Kontext: Am gleichen Tag gab es den RISE-TI-Gateway-Ausfall. Beide Vorfälle zusammen unterstreichen das systemische Konzentrationsrisiko bei wenigen TI-Fachdienst-Anbietern. E-Rezept.md: Hinweis auf mehrfache Ausfallproblematik am 3. März 2026 ergänzen."
     }
   ],
-  "lastRun": "2026-03-22T09:00:00Z",
+  "lastRun": "2026-03-22T12:00:00Z",
   "lastChecked": "2026-03-22"
 }

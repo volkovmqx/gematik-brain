@@ -36,7 +36,7 @@ Das KHZG und die zugehörige Krankenhauszukunftsfonds-Verordnung (KHZFV) definie
 
 | Nr. | Fördertatbestand |
 |-----|-----------------|
-| 1 | [[Patientenportal\|Patientenportale]] (Online-Aufnahme, digitale Patientenkommunikation) |
+| 1 | [[Patientenportal|Patientenportale]] (Online-Aufnahme, digitale Patientenkommunikation) |
 | 2 | Klinische Entscheidungsunterstützungssysteme |
 | 3 | Automatisierung von Krankenhausprozessen |
 | 4 | Digitale Pflege- und Behandlungsdokumentation |

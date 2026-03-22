@@ -96,6 +96,7 @@ Der NCPeH überträgt personenbezogene Gesundheitsdaten über Ländergrenzen hin
 - [[gematik]]: Spezifikation und Produkttypbestätigung für den NCPeH
 - [[FHIR]]: Datenformat für den Austausch über MyHealth@EU
 - [[GDNG]]: Deutsches Gesetz zur Sekundärnutzung von Gesundheitsdaten
+- [[Patientenkurzakte]]: Deutsches MIO-Profil, das die national gespeicherten Daten für den NCPeH-Austausch bereitstellt
 
 ## Quellen
 

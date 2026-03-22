@@ -3,7 +3,7 @@ title: MyHealth@EU
 audience: [technical, non-technical]
 tags: [infrastruktur, eu, interoperabilitaet, grenzueberschreitend, ehealth]
 aliases: [MyHealth@EU, eHDSI, eHealth Digital Service Infrastructure, EU-eHealth-Infrastruktur]
-maturity: wachsend
+maturity: immergruen
 ---
 
 # MyHealth@EU
@@ -12,7 +12,7 @@ maturity: wachsend
 
 ## Erklärt für Einsteiger
 
-Wenn du im Urlaub in Spanien krank wirst und ins Krankenhaus musst, sprechen die dortigen Computersysteme normalerweise eine andere Sprache als dein Arzt in Deutschland. MyHealth@EU ist das Netz, das diese Systeme verbindet. Es übersetzt zwischen den verschiedenen nationalen Gesundheitssystemen, damit ein spanischer Arzt deine deutschen Gesundheitsdaten abrufen kann. Dazu muss dein Land Mitglied sein und einen nationalen Zugangspunkt betreiben. Deutschland wird voraussichtlich ab H1/2027 mitmachen.
+Wenn du im Urlaub in Spanien krank wirst und ins Krankenhaus musst, sprechen die dortigen Computersysteme normalerweise eine andere Sprache als dein Arzt in Deutschland. MyHealth@EU ist das Netz, das diese Systeme verbindet. Es übersetzt zwischen den verschiedenen nationalen Gesundheitssystemen, damit ein spanischer Arzt deine deutschen Gesundheitsdaten abrufen kann. Dazu muss dein Land Mitglied sein und einen nationalen Zugangspunkt betreiben. Deutschland plant die Teilnahme ab H1/2027.
 
 ## Überblick
 

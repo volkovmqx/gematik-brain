@@ -6,7 +6,7 @@ aliases: [Leistungsgruppen KHVVG, Leistungsgruppen Krankenhausreform]
 relevance:
   sectors: [krankenhaus, kasse, regulierung, hersteller, it-dienstleister]
   interests: [compliance, business, technik]
-maturity: setzling
+maturity: wachsend
 ---
 
 # Leistungsgruppen

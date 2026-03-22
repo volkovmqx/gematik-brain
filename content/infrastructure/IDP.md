@@ -52,6 +52,40 @@ Der Standardfluss folgt dem OAuth 2.0 Authorization Code Grant mit PKCE:
 4. Bei Erfolg stellt der IDP einen Autorisierungscode aus.
 5. Die Anwendung tauscht den Code gegen Tokens ein.
 
+> [!dev-quickstart] Dev Quickstart: IDP Token-Endpunkt (zentraler IDP)
+> **Discovery:**
+> ```bash
+> curl https://idp.zentral.idp.splitdns.ti-dienste.de/.well-known/openid-configuration
+> # Nur aus TI erreichbar. Liefert authorization_endpoint, token_endpoint, scopes_supported.
+> ```
+> **Authorization Request (PKCE, Schritt 1):**
+> ```
+> GET <authorization_endpoint>
+>   ?client_id=<registrierte-client-id>
+>   &response_type=code
+>   &redirect_uri=<redirect-uri>
+>   &scope=openid+e-rezept    # oder: openid+epa
+>   &state=<random>
+>   &nonce=<random>
+>   &code_challenge=<S256-hash>
+>   &code_challenge_method=S256
+> ```
+> **Token Exchange (Schritt 2):**
+> ```bash
+> curl -X POST <token_endpoint> \
+>   -H "Content-Type: application/x-www-form-urlencoded" \
+>   -d "grant_type=authorization_code" \
+>   -d "code=<auth-code>" \
+>   -d "redirect_uri=<redirect-uri>" \
+>   -d "client_id=<client-id>" \
+>   -d "code_verifier=<verifier>"
+> ```
+> Access Token gültig: 300 Sekunden. Signatur: ECDSA brainpoolP256r1.
+> - Scopes: `openid`, `e-rezept`, `epa`, `pairing` (je nach Fachdienst-Registrierung)
+> - Spec: [gemSpec_IDP_Dienst](https://gemspec.gematik.de/docs/gemSpec/gemSpec_IDP_Dienst/latest/)
+> - E-Rezept Auth-Flow Beispiel: [github.com/gematik/api-erp](https://github.com/gematik/api-erp/blob/master/docs/authentisieren.adoc)
+> - Referenz-IDP (Testsystem): [github.com/gematik/ref-idp-server](https://gematik.github.io/ref-idp-server/tokenFlowPs.html)
+
 ### Token-Typen
 
 Der IDP stellt drei Token-Typen aus:
@@ -69,6 +103,12 @@ Der IDP stellt drei Token-Typen aus:
 > [!interesse-compliance] Authentisierungsanforderungen
 > Alle TI-Fachdienste, die auf personenbezogene Gesundheitsdaten zugreifen, müssen den IDP-Dienst der gematik nutzen. Eigenentwickelte Authentisierungslösungen sind nicht zulässig. Krankenkassen, die einen sektoralen IDP betreiben wollen, benötigen eine gematik-Zulassung nach den gemSpec_IDP_Sek-Anforderungen. Ab 2026 müssen alle neuen TI-Anwendungen die [[TI-Federation]] unterstützen.
 
+> [!frist-warnung] Frist-Warnung: GesundheitsID-Bereitstellungspflicht für Krankenkassen
+> **Rechtsgrundlage:** § 291 Abs. 8 SGB V i.d.F. des DigiG (Digitalisierungsgesetz, BGBl. I 2024, Nr. 40); gemSpec_IDP_Sek (gematik-Zulassungsanforderungen für sektorale IDPs)
+> **Frist:** Seit 1. Januar 2024 sind alle gesetzlichen Krankenkassen verpflichtet, ihren Versicherten auf Verlangen eine sichere digitale Identität (GesundheitsID) bereitzustellen. Ab 1. Januar 2026 gilt die GesundheitsID gleichwertig zur [[eGK]] für die Authentifizierung in der TI und als Versicherungsnachweis nach § 291a Abs. 1 SGB V.
+> **Handlungsbedarf:** Krankenkassen, die noch keinen eigenen sektoralen IDP betreiben, müssen einen zugelassenen sektoralen IDP-Anbieter beauftragen oder eine gematik-Zulassung gemäß gemSpec_IDP_Sek beantragen. Die GesundheitsID-Funktion muss in der Krankenkassen-App implementiert und für alle Versicherten aktivierbar sein.
+> **Bei Nichtbeachtung:** Krankenkassen ohne GesundheitsID-Angebot verstoßen gegen § 291 Abs. 8 SGB V. Die Aufsichtsbehörden (BVA für bundesunmittelbare Kassen, Landesbehörden für landesunmittelbare Kassen) können Beanstandungen und Anordnungen aussprechen.
+
 Mit der [[TI-Federation]] wird die Authentisierung dezentralisiert. Sektorale IDPs sind eigenständige Identity Provider, die:
 
 - Auf denselben Standards (OIDC, OAuth 2.0, JWT) basieren
@@ -85,6 +125,12 @@ Der IDP prüft bei jeder Authentisierung Gültigkeit, Integrität und Signatur d
 - RSA 2048 bit: gültig bis Ende 2025, seit 2026 abgelöst durch ECDSA
 - ECDSA (brainpoolP256r1 oder P-256): aktuell verpflichtend, gültig bis mindestens 2029
 
+> [!frist-warnung] Frist-Warnung: ECDSA-Pflicht für IDP und TI-Komponenten ab 2026
+> **Rechtsgrundlage:** gematik-Spezifikation gemSpec_Krypt (Kryptographievorgaben der gematik); BSI TR-02102-1 (Kryptographische Mechanismen); § 291b Abs. 2 SGB V (Vorgaben für die technische Ausstattung der TI)
+> **Frist:** Seit 1. Januar 2026 sind RSA-2048-Zertifikate für die Authentisierung in der TI nicht mehr zugelassen. Alle IDP-Tokens und X.509-Zertifikate müssen auf ECDSA (brainpoolP256r1 oder NIST P-256) basieren. Komponenten, die noch RSA-2048-Zertifikate ausstellen oder akzeptieren, sind nicht mehr konform.
+> **Handlungsbedarf:** Betreiber sektoraler IDPs und Hersteller von TI-Komponenten (Konnektoren, eGK-Firmware) müssen sicherstellen, dass alle ausgestellten und akzeptierten Zertifikate ECDSA nutzen. Komponentenzertifikate auf RSA-Basis müssen spätestens zum 31. Dezember 2025 erneuert worden sein.
+> **Bei Nichtbeachtung:** TI-Komponenten mit abgelaufenen RSA-Zertifikaten werden vom IDP abgewiesen. Betriebsstörungen, die auf veraltete Kryptografie zurückzuführen sind, liegen im Verantwortungsbereich des Betreibers der jeweiligen Komponente.
+
 ### Abhängigkeitsrisiken: Ausfall sektoraler IDPs
 
 Die TI-Federation verteilt die Authentisierung auf mehrere sektorale IDPs. Das schafft Redundanz in der Theorie, birgt aber Konzentrationsrisiken in der Praxis: Wenn ein sektoraler IDP, der für viele Kassen zuständig ist, ausfällt, sind alle über ihn angebundenen Leistungserbringer nicht mehr authentisierbar.
@@ -95,7 +141,32 @@ Am **10. Februar 2026** kam es zu zwei voneinander unabhängigen Störungen:
 
 2. **T-Systems VPN-Zugangsdienst**: Parallel fiel der VPN-Zugangsdienst von T-Systems aus, der für die Netzwerkkonnektivität von Leistungserbringern in die TI zuständig ist. Betroffen waren Arztpraxen und andere Einrichtungen, die über diesen Zugangsdienst mit der TI verbunden sind. Die beiden Vorfälle waren technisch unabhängig voneinander, trafen die TI jedoch am selben Tag.
 
-Das Ereignis verdeutlicht die Abhängigkeit kritischer TI-Anwendungen von einzelnen Infrastrukturanbietern.
+Am **12. Februar 2026** folgte ein weiterer Ausfall: Der **sektorale IDP von T-Systems** fiel aus und traf Versicherte der **Barmer** und der **AOK**, die ihre [[Gesundheits-ID]] über den T-Systems-IDP nutzen. Für diese Versicherten war während des Ausfalls keine kartenlose Authentifizierung an TI-Diensten möglich. Der Vorfall trat nur zwei Tage nach dem IBM-Ausfall auf und verdeutlicht, dass in einer kurzen Woche gleich drei unabhängige TI-Infrastrukturkomponenten ausfielen.
+
+Die Vorfälle Mitte Februar 2026 verdeutlichen die Abhängigkeit kritischer TI-Anwendungen von einzelnen Infrastrukturanbietern. Die Konzentration vieler Versicherter auf wenige sektorale IDP-Betreiber schafft Klumpenrisiken: Ein Ausfall bei IBM oder T-Systems trifft gleichzeitig mehrere große Krankenkassen und deren Versicherte.
+
+> [!klinik-integration] Klinik-Integration: IDP-Authentifizierung im Krankenhaus
+> **KIS-Kontext:** Krankenhäuser authentifizieren sich gegenüber TI-Diensten primär über die [[SMC-B]]-Karte der Einrichtung, nicht über sektorale IDPs. Der Ausfall eines sektoralen IDPs betrifft daher direkt die Patienten (kein Zugang zur [[ePA]] per [[Gesundheits-ID]]), aber nicht die Authentifizierung des Krankenhauses selbst.
+>
+> **GesundheitsID und Patientenaufnahme:** Ab 2026 gilt die GesundheitsID gleichwertig zur eGK. Im Krankenhaus bedeutet das: Patienten können sich bei stationärer Aufnahme ohne physische eGK über die App ihrer Krankenkasse identifizieren. Das KIS muss diesen Fall im Aufnahme-Workflow unterstützen. Klären Sie mit dem KIS-Hersteller, ob die Aufnahme mit GesundheitsID-Verifikation bereits implementiert ist.
+>
+> **Ausfallszenario 24/7-Betrieb:** Fällt ein sektoraler IDP aus, können betroffene Patienten nicht auf ihre ePA zugreifen. Das Krankenhaus kann klinische Daten dennoch weiter in die ePA einstellen, wenn die eigene SMC-B-basierte Verbindung intakt ist. Dokumentieren Sie IDP-Ausfälle im IT-Notfallprotokoll. Die Behandlung läuft unabhängig von IDP-Verfügbarkeit weiter. ePA-Abrufe bei Aufnahme sollten als "Best Effort" und nicht als Voraussetzung für die Behandlung eingestuft werden.
+>
+> **Redundanz:** Wenn das Krankenhaus eigene TI-Verbindungen über mehrere Zugangsprovider betreibt (z.B. T-Systems und einen zweiten Anbieter), reduziert sich das Risiko eines vollständigen TI-Ausfalls. Prüfen Sie, ob ein redundanter TI-VPN-Zugangspfad für Ihre Einrichtung wirtschaftlich vertretbar ist.
+
+> [!praxis-tipp] Praxis-Tipp: Wenn der IDP ausfällt, was dann?
+> Ein IDP-Ausfall betrifft in Ihrer Praxis hauptsächlich Patienten, die ihre [[Gesundheits-ID]] (kartenlos) nutzen. Für diese Patienten funktioniert die Authentifizierung an [[ePA]] und [[E-Rezept]]-App nicht. Was noch funktioniert und was nicht:
+>
+> **Was weiter funktioniert:**
+> - E-Rezept über die [[eGK]] einlösen: Der Weg über die physische Karte ist vom IDP-Ausfall nicht betroffen. Patienten können E-Rezepte mit der eGK in der Apotheke einlösen.
+> - E-Rezept per Ausdruck: Drucken Sie den 2D-Code auf Wunsch aus. Das ist auch bei TI-Störungen möglich.
+> - Kassenärztliche Versorgung allgemein: Behandlung und Abrechnung laufen weiter. Der IDP-Ausfall betrifft den Zugang zu TI-Diensten, nicht die Behandlung.
+>
+> **Was nicht funktioniert:**
+> - [[ePA]]-Zugriff über Gesundheits-ID: Kein Zugang für betroffene Versicherte bis zur Behebung.
+> - eArztbrief versenden und empfangen über KIM: Prüfen Sie, ob [[KIM]] eigenständig läuft oder von der TI-Verbindung abhängt (bei TI-Netzwerkausfall auch betroffen).
+>
+> Informieren Sie Ihr Team: Hängen Sie bei Störungen kurz eine Mitteilung ins Wartezimmer. Patienten mit Gesundheits-ID können die Behandlung mit eGK fortführen. Stören Sie sich nicht, wenn die ePA-App am Empfang nicht reagiert. Das ist ein Infrastrukturproblem, kein Fehler Ihres Systems.
 
 ## Verknüpfungen
 

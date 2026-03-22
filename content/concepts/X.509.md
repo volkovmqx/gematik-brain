@@ -54,7 +54,7 @@ Version 3 führte Erweiterungen ein, die für die TI zentral sind:
 - **Subject Alternative Name (SAN)**: Enthält alternative Bezeichner, z.B. DNS-Namen für Server-Zertifikate oder E-Mail-Adressen.
 - **Authority Key Identifier (AKI)**: Identifiziert den öffentlichen Schlüssel der ausstellenden CA und ermöglicht die Kettenverifizierung.
 - **Subject Key Identifier (SKI)**: Eindeutiger Fingerabdruck des enthaltenen öffentlichen Schlüssels.
-- **CRL Distribution Points**: URLs, unter denen Certificate Revocation Lists abgerufen werden können.
+- **[[CRL]] Distribution Points**: URLs, unter denen Certificate Revocation Lists abgerufen werden können.
 - **Authority Information Access (AIA)**: Enthält den [[OCSP]]-Responder-URL für Echtzeit-Zertifikatsprüfung.
 - **Certificate Policies**: Verweist auf die Certificate Policy (CP) und das Certificate Practice Statement (CPS) der ausstellenden CA.
 

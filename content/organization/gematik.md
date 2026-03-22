@@ -29,7 +29,7 @@ Die gematik hat neun Gesellschafter. Das Bundesministerium für Gesundheit ([[BM
 |---|---|
 | Bundesministerium für Gesundheit (BMG) | 51 % |
 | [[GKV-Spitzenverband]] | 22,05 % |
-| [[PKV\|Verband der Privaten Krankenversicherung (PKV)]] | 7 % |
+| [[PKV|Verband der Privaten Krankenversicherung (PKV)]] | 7 % |
 | [[Bundesaerztekammer|Bundesärztekammer (BÄK)]] | je anteilig |
 | [[BZÄK|Bundeszahnärztekammer (BZÄK)]] | je anteilig |
 | [[DAV|Deutscher Apothekerverband (DAV)]] | je anteilig |

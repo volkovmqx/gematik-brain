@@ -62,7 +62,7 @@ Laut gematik sollen künftig weitere Dienste über das TI-Gateway angeboten werd
 
 ### Abgrenzung zum Konnektor
 
-| Merkmal | [[Konnektoren\|Konnektor]] | TI-Gateway |
+| Merkmal | [[Konnektoren|Konnektor]] | TI-Gateway |
 |---|---|---|
 | Betriebsform | Hardware vor Ort | Cloud-Service |
 | VPN-Zugang | Separater Dienst | Integriert |
