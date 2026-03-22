@@ -3,7 +3,7 @@ title: Patient Summary
 audience: [technical, non-technical]
 tags: [standards, interoperabilität, europa, myhealth-eu, fhir, ips]
 aliases: [Patientenzusammenfassung, ePS, europäische Patientenkurzakte, International Patient Summary, IPS]
-maturity: wachsend
+maturity: immergruen
 ---
 
 # Patient Summary
@@ -78,7 +78,7 @@ Der Patient Summary ist kein Ersatz für eine vollständige Patientenakte:
 ### Rollout-Zeitplan für Deutschland
 
 - **2025**: EHDS-Verordnung in Kraft (März 2025). NCPeH-Aufbau läuft.
-- **2026**: Deutschland plant Teilnahme am E-Rezept-Austausch über MyHealth@EU (Wave 10).
+- **H1/2027**: Deutschland plant Teilnahme am E-Rezept-Austausch über MyHealth@EU (Wave 10, verschoben von ursprünglich 2026).
 - **2029**: Bereitstellung des Patient Summary aus der deutschen ePA für EU-Austausch geplant.
 - **2031**: EU-weite Pflicht für alle Mitgliedstaaten zur Umsetzung des Patient Summary.
 

@@ -6,7 +6,7 @@ aliases: [European Database on Medical Devices, Europäische Datenbank für Medi
 relevance:
   sectors: [hersteller, regulierung, ti-infrastruktur, krankenhaus, it-dienstleister]
   interests: [compliance, technik]
-maturity: setzling
+maturity: immergruen
 ---
 
 # EUDAMED
@@ -71,7 +71,7 @@ Das UDI-System (Unique Device Identifier) ist das Herzstück der Geräteregistri
 Für [[SaMD]] gilt: Die Version der Software ist Teil des UDI. Bei jeder neuen Version, die die Sicherheit oder Leistung beeinflusst, muss ein neuer UDI-DI vergeben werden.
 
 > [!interesse-technik]
-> EUDAMED-Zugang: [webgate.ec.europa.eu/eudamed](https://webgate.ec.europa.eu/eudamed). Öffentliches Suchportal: [eudamed.ec.europa.eu](https://ec.europa.eu/tools/eudamed/). Dateneingabe erfolgt über das EUDAMED-Webportal der Europäischen Kommission. Technische Spezifikation: EUDAMED Technical Onboarding Guide (Europäische Kommission). Für SaMD: Registrierung erfordert EMDN-Code (European Medical Device Nomenclature) und Risikoklasse nach MDR Annex VIII Rule 11.
+> EUDAMED-Zugang: [webgate.ec.europa.eu/eudamed](https://webgate.ec.europa.eu/eudamed). Registrierung über das Webportal oder über strukturierten Datenaustausch gemäß EUDAMED Technical Onboarding Guide (Europäische Kommission). Öffentliches Suchportal: [eudamed.ec.europa.eu](https://ec.europa.eu/tools/eudamed/). Für SaMD: Registrierung erfordert EMDN-Code (European Medical Device Nomenclature) und Risikoklasse nach MDR Annex VIII Rule 11.
 
 > [!dev-quickstart] Dev Quickstart: EUDAMED-Registrierung und M2M-Datenaustausch
 > **Registrierungsportal (Production):** [webgate.ec.europa.eu/eudamed](https://webgate.ec.europa.eu/eudamed)
@@ -99,7 +99,7 @@ Hersteller von [[SaMD]] in Deutschland müssen zusätzlich zur EUDAMED-Registrie
 2. Eine CE-Kennzeichnung anbringen
 3. Bei Klasse IIa, IIb oder III: Einbindung einer [[Benannte-Stelle|Benannten Stelle]]
 4. Technische Dokumentation und klinische Bewertung erstellen
-5. Ein Qualitätsmanagementsystem (QMS) nach ISO 13485 betreiben
+5. Ein Qualitätsmanagementsystem (QMS, ISO 13485) betreiben
 
 EUDAMED ist das finale Register, das den Abschluss dieses Prozesses dokumentiert.
 
@@ -125,3 +125,4 @@ EUDAMED ist das finale Register, das den Abschluss dieses Prozesses dokumentiert
 - [EUDAMED Pflichttermin 28. Mai 2026 (Osborne Clarke)](https://www.osborneclarke.com/insights/eu-triggers-mandatory-eudamed-use-diagnostics-and-medtech-may-2026)
 - [BfArM: EUDAMED](https://www.bfarm.de/EN/Medical-devices/Overview/Europe-and-EUDAMED/EUDAMED/_artikel.html)
 - [EUDAMED Webportal](https://webgate.ec.europa.eu/eudamed)
+- [Europäische Kommission: EUDAMED – vier erste Module ab 28. Mai 2026 verpflichtend](https://health.ec.europa.eu/latest-updates/eudamed-four-first-modules-will-be-mandatory-use-28-may-2026-2025-11-27_en)

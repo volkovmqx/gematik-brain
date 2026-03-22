@@ -3,6 +3,7 @@ title: MyHealth@EU
 audience: [technical, non-technical]
 tags: [infrastruktur, eu, interoperabilitaet, grenzueberschreitend, ehealth]
 aliases: [MyHealth@EU, eHDSI, eHealth Digital Service Infrastructure, EU-eHealth-Infrastruktur]
+maturity: wachsend
 ---
 
 # MyHealth@EU
@@ -11,7 +12,7 @@ aliases: [MyHealth@EU, eHDSI, eHealth Digital Service Infrastructure, EU-eHealth
 
 ## Erklärt für Einsteiger
 
-Wenn du im Urlaub in Spanien krank wirst und ins Krankenhaus musst, sprechen die dortigen Computersysteme normalerweise eine andere Sprache als dein Arzt in Deutschland. MyHealth@EU ist das Netz, das diese Systeme verbindet. Es übersetzt zwischen den verschiedenen nationalen Gesundheitssystemen, damit ein spanischer Arzt deine deutschen Gesundheitsdaten abrufen kann. Dazu muss dein Land Mitglied sein und einen nationalen Zugangspunkt betreiben. Deutschland wird voraussichtlich ab 2026 mitmachen.
+Wenn du im Urlaub in Spanien krank wirst und ins Krankenhaus musst, sprechen die dortigen Computersysteme normalerweise eine andere Sprache als dein Arzt in Deutschland. MyHealth@EU ist das Netz, das diese Systeme verbindet. Es übersetzt zwischen den verschiedenen nationalen Gesundheitssystemen, damit ein spanischer Arzt deine deutschen Gesundheitsdaten abrufen kann. Dazu muss dein Land Mitglied sein und einen nationalen Zugangspunkt betreiben. Deutschland wird voraussichtlich ab H1/2027 mitmachen.
 
 ## Überblick
 
@@ -28,7 +29,7 @@ In einer zweiten Ausbaustufe (Wave 2) sollen weitere Dienste hinzukommen: Laborb
 
 MyHealth@EU wächst schrittweise. Der Beitritt erfolgt in sogenannten **Waves** (Wellen). Pioniere wie Finnland, Estland und Tschechien sind seit mehreren Jahren aktiv. Österreich nahm im **Februar 2026** den grenzüberschreitenden Empfang von EU-E-Rezepten (aus Tschechien) auf.
 
-**Deutschland** plant die Teilnahme ab **Wave 10 (2026)**. Der deutsche [[NCPeH]], betrieben von der [[DVKA]] (Deutsche Verbindungsstelle Krankenversicherung Ausland), wird dabei als nationaler Zugangspunkt dienen. Die [[gematik]] ist für die Spezifikation des NCPeH zuständig.
+**Deutschland** plant die Teilnahme ab **Wave 10 (H1/2027)**. Der deutsche [[NCPeH]], betrieben von der [[DVKA]] (Deutsche Verbindungsstelle Krankenversicherung Ausland), wird dabei als nationaler Zugangspunkt dienen. Die [[gematik]] ist für die Spezifikation des NCPeH zuständig.
 
 ### Rechtlicher Rahmen: EHDS
 

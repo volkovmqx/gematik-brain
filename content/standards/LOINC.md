@@ -3,6 +3,10 @@ title: LOINC
 audience: [technical]
 tags: [standards, terminologie, laborwerte, fhir, interoperabilität]
 aliases: [Logical Observation Identifiers Names and Codes, LOINC-Code]
+relevance:
+  sectors: [krankenhaus, arztpraxis, forschung]
+  interests: [technik]
+maturity: immergruen
 ---
 
 # LOINC
@@ -80,6 +84,28 @@ LOINC und [[SNOMED-CT|SNOMED CT]] überschneiden sich in manchen Bereichen, habe
 - **SNOMED CT**: Fokus auf klinische Konzepte und ihre Beziehungen. Stärken: Diagnosen, Prozeduren, klinische Befunde.
 
 In deutschen [[FHIR]]-Profilen werden beide parallel eingesetzt. LOINC codiert den Beobachtungstyp, SNOMED CT kann den klinischen Kontext ergänzen.
+
+> [!interesse-technik]
+> FHIR CodeSystem URI: `http://loinc.org`. LOINC FHIR Terminology Service: [loinc.org/fhir](https://loinc.org/fhir/) (FHIR `$lookup`, `$validate-code`). Kostenfreier Download und Lizenzbedingungen: [loinc.org/downloads](https://loinc.org/downloads/). Zweijährliche Releases. Für [[ISiK]]-konforme KIS: LOINC ist Pflicht-Codesystem für FHIR Observation. Für [[MIO]]-konforme PVS: LOINC vorgeschrieben für Laborparameter und Vitalzeichen.
+
+> [!dev-quickstart] Dev Quickstart: LOINC-Codes per FHIR-API abrufen
+> **Base URL:** `https://fhir.loinc.org`
+>
+> ```bash
+> # Code-Lookup: Details zu LOINC-Code 2823-3 (Kalium im Serum)
+> curl "https://fhir.loinc.org/CodeSystem/$lookup?system=http://loinc.org&code=2823-3"
+>
+> # Code validieren
+> curl "https://fhir.loinc.org/CodeSystem/$validate-code?system=http://loinc.org&code=2823-3"
+>
+> # ValueSet expandieren (z.B. alle Vitalzeichen-LOINC-Codes)
+> curl "https://fhir.loinc.org/ValueSet/$expand?url=http://loinc.org/vs/VitalSigns"
+> ```
+> - Auth: Kostenloser LOINC-Account erforderlich (Basic Auth oder API-Key)
+> - Anmeldung: [loinc.org/downloads](https://loinc.org/downloads/)
+> - Unterstützte FHIR-Versionen: R4, STU3
+> - Ältere Versionen (ab 2.69) per `version`-Parameter abrufbar: `?system=http://loinc.org&code=2823-3&version=2.78`
+> - Offizielle API-Dokumentation: [loinc.org/fhir](https://loinc.org/fhir/)
 
 ### Pflege und Versionszyklen
 

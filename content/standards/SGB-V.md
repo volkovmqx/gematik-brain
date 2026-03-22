@@ -2,11 +2,11 @@
 title: SGB V
 audience: [technical, non-technical]
 tags: [standards, recht, gesetz, krankenversicherung, telematikinfrastruktur]
-aliases: [Fünftes Sozialgesetzbuch, SGB 5, Sozialgesetzbuch V]
+aliases: [Fünftes Sozialgesetzbuch, SGB 5, SGB V, Sozialgesetzbuch V]
 relevance:
   sectors: [arztpraxis, krankenhaus, apotheke, kasse, hersteller, regulierung, it-dienstleister, patient]
   interests: [compliance, technik, business]
-maturity: wachsend
+maturity: immergruen
 ---
 
 # SGB V

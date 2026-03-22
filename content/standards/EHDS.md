@@ -29,7 +29,7 @@ Konkrete Dienste im Aufbau:
 - **ePrescription / eDispensation**: Elektronische Rezepte, die EU-weit eingelöst werden können
 - **[[Patient-Summary|Patient Summary]]**: Zusammenfassung der wichtigsten Gesundheitsdaten (Diagnosen, Medikamente, Allergien)
 
-Deutschland plant die Teilnahme an MyHealth@EU ab **Wave 10 (2026)** über den deutschen [[NCPeH]].
+Deutschland plant die Teilnahme an MyHealth@EU ab **Wave 10 (H1/2027)** über den deutschen [[NCPeH]].
 
 > [!patientenrecht] Patientenrecht: Gesundheitsdaten im EU-Ausland
 > Sie haben das Recht, Ihre Gesundheitsdaten zu erhalten. Das gilt auch im EU-Ausland.
@@ -38,7 +38,7 @@ Deutschland plant die Teilnahme an MyHealth@EU ab **Wave 10 (2026)** über den d
 > Wenn Sie in einem anderen EU-Land krank werden, kann der dortige Arzt Ihre wichtigsten Daten abrufen. Zum Beispiel Ihre Medikamente oder bekannte Allergien. Das geht aber nur, wenn Sie dem zugestimmt haben.
 >
 > **Was kann ich tun?**
-> 1. Fragen Sie Ihre Krankenkasse, wann dieser Dienst in Deutschland startet (geplant: 2026).
+> 1. Fragen Sie Ihre Krankenkasse, wann dieser Dienst in Deutschland startet (geplant: H1/2027).
 > 2. Achten Sie auf Informationen Ihrer Krankenkasse zur Teilnahme an MyHealth@EU.
 > 3. Sie können der Weitergabe Ihrer Daten ins EU-Ausland widersprechen. Wenden Sie sich dazu an Ihre Krankenkasse.
 

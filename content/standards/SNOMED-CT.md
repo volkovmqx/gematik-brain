@@ -2,11 +2,11 @@
 title: SNOMED CT
 audience: [technical]
 tags: [standards, terminologie, kodierung, interoperabilität, semantik]
-aliases: [Systematisierte Nomenklatur der Medizin, SNOMED, SNOMED CT International]
+aliases: [Systematisierte Nomenklatur der Medizin, SNOMED, SNOMED CT, SNOMED CT International]
 relevance:
   sectors: [krankenhaus, arztpraxis, hersteller, it-dienstleister, forschung]
   interests: [technik, compliance]
-maturity: wachsend
+maturity: immergruen
 ---
 
 # SNOMED CT

@@ -69,7 +69,7 @@ Das GDNG und das [[DigiG]] bilden zusammen ein Gesetzespaket. Während das DigiG
 Das geplante **[[GDVG]] (Gesetz für digitale Versorgung und den Gesundheitsdatenraum)**, dessen Referentenentwurf für Q2/2026 erwartet wird, soll das GDNG ergänzen und weiterentwickeln. Konkret vorgesehen:
 
 - **EHDS-Anschluss**: Das [[Forschungsdatenzentrum-Gesundheit|Forschungsdatenzentrum Gesundheit (FDZ)]] soll an den Europäischen Gesundheitsdatenraum ([[EHDS]], EU-Verordnung 2025/327) angebunden werden. Damit können deutsche Gesundheitsdaten im Rahmen des EHDS grenzüberschreitend für zugelassene Forschungsprojekte bereitgestellt werden.
-- **KI-Fähigkeit**: Der Gesundheitsdatenraum soll KI-fähig ausgebaut werden. Datensätze werden so aufbereitet, dass sie für maschinelles Lernen und KI-Modelltraining nutzbar sind, unter Wahrung der Pseudonymisierungsanforderungen des GDNG.
+- **KI-Fähigkeit**: Der [[Gesundheitsdatenraum]] soll KI-fähig ausgebaut werden. Datensätze werden so aufbereitet, dass sie für maschinelles Lernen und KI-Modelltraining nutzbar sind, unter Wahrung der Pseudonymisierungsanforderungen des GDNG.
 
 Diese Erweiterungen bedeuten für Forscher: Mehr Datenquellen, grenzüberschreitende Verknüpfung und bessere Werkzeuge für KI-gestützte Analysen.
 

@@ -1,239 +1,288 @@
 {
-  "timestamp": "2026-03-21T15:45:00Z",
-  "overallScore": 79,
+  "timestamp": "2026-03-22T16:45:00Z",
+  "overallScore": 84,
   "testResults": {
-    "passed": 206,
+    "passed": 211,
     "failed": 1,
-    "total": 207
+    "total": 212
   },
   "articles": [
     {
       "file": "content/organization/KIG.md",
-      "verdict": "revise",
-      "score": 65,
-      "issues": [
-        "FACTUAL ERROR: Article cites § 394b SGB V as legal basis. This paragraph does not exist: gesetze-im-internet.de/sgb_5/__394b.html returns 404. Verified correct paragraph is § 385 SGB V (title: 'Bedarfsidentifizierung und -priorisierung, Spezifikation, Entwicklung und Festlegung von Standards').",
-        "URL dead (url_dead): https://www.gesetze-im-internet.de/sgb_5/__394b.html — 404 because the paragraph does not exist.",
-        "URL dead (url_dead): https://www.ina.gematik.de/kig — returns 404. INA has restructured its navigation.",
-        "IOP-Roadmap gematik news URL confirmed valid.",
-        "gematik IOP page URL confirmed valid."
-      ],
-      "fixInstructions": "1. Replace all occurrences of '§ 394b SGB V' with '§ 385 SGB V' throughout the article (Überblick, Technische Details, Verknüpfungen). 2. Update Quellen: replace the gesetze-im-internet.de URL with https://www.gesetze-im-internet.de/sgb_5/__385.html. 3. Replace the INA KIG source URL https://www.ina.gematik.de/kig with https://www.ina.gematik.de/kompetenzzentrum/wirkungsfelder-im-ueberblick/interop-roadmap-2026-2027 (verified working) or remove and replace with a description of the INA portal. 4. The Überblick text 'Die Rechtsgrundlage bildet § 394b SGB V' must become '§ 385 SGB V'. The Technische Details heading 'Aufgaben des KIG (§ 394b SGB V)' must become '§ 385 SGB V'. The Verknüpfungen entry '[[SGB-V]] (§ 394b SGB V: gesetzliche Grundlage des KIG)' must become '§ 385 SGB V'."
-    },
-    {
-      "file": "content/infrastructure/EUDAMED.md",
-      "verdict": "revise",
-      "score": 75,
-      "issues": [
-        "Broken wiki-link [[QMS]] — no matching file or alias (confirmed by test-report.json structural check).",
-        "EUDAMED mandatory date 28 May 2026 for four modules confirmed correct by official EC source.",
-        "Claim that EUDAMED offers a 'FHIR-basierte REST-API für automatisierte Registrierungen' is unverifiable from official EC sources. Official EC documentation does not describe a FHIR REST API for EUDAMED registration — EUDAMED uses a web portal interface and XML-based data exchange, not FHIR. This claim may be inaccurate.",
-        "Osborne Clarke source (law firm blog) used for the primary mandatory date. Acceptable as secondary source but official EC URL is more authoritative."
-      ],
-      "fixInstructions": "1. Fix the [[QMS]] link: either create a QMS stub article, or replace with plain text 'Qualitätsmanagementsystem (QMS)' and add a note '(ISO 13485)' to maintain usefulness. 2. In the [!interesse-technik] callout, remove or qualify the 'FHIR-basierte REST-API' claim. Replace with: 'EUDAMED-Zugang: webgate.ec.europa.eu/eudamed. Registrierung über das Webportal oder über strukturierten Datenaustausch gemäß EUDAMED Technical Onboarding Guide.' 3. Add official EC source to Quellen: https://health.ec.europa.eu/latest-updates/eudamed-four-first-modules-will-be-mandatory-use-28-may-2026-2025-11-27_en"
-    },
-    {
-      "file": "content/concepts/SaMD.md",
       "verdict": "pass",
-      "score": 88,
+      "score": 95,
       "issues": [
-        "MDR in force 2021 claim accurate (MDR EU 2017/745 applies since 26 May 2021).",
-        "DiGA risk class 'Klasse I oder IIa' confirmed accurate.",
-        "EUDAMED date 28 May 2026 consistent with EUDAMED.md.",
-        "IEC/ISO standards cited are accurate.",
-        "All required sections present."
+        "§ 385 SGB V confirmed correct via gesetze-im-internet.de (previously was wrong § 394b — now fixed).",
+        "All URLs verified: gematik.de/telematikinfrastruktur/iop loads correctly; gematik newsroom IOP-Roadmap loads correctly; gesetze-im-internet.de/sgb_5/__385.html confirmed valid.",
+        "INA portal URL in Quellen now points to main gematik.de IOP page, which is valid."
       ],
       "fixInstructions": ""
     },
     {
-      "file": "content/concepts/Primärversorgung.md",
+      "file": "content/infrastructure/EUDAMED.md",
       "verdict": "pass",
-      "score": 82,
+      "score": 90,
       "issues": [
-        "Nina Warken (CDU) as Bundesgesundheitsministerin confirmed by BMG.",
-        "11. Februar 2026 date confirmed: BMG published 'Handelsblatt 11-02-26' interview where Warken discussed Primärversorgung reforms.",
-        "Dialogprozess Auftakt January 2026 confirmed by BMG press release dated 27-01-2026.",
-        "Minor inconsistency: body text line 23 states 'Kabinettsbeschluss und die Wirksamkeit im GKV-System sind für 2028 geplant' — but the table correctly separates Kabinettsbeschluss (Ende 2026) and Wirksamkeit (2028)."
-      ],
-      "fixInstructions": "Minor fix: Line 23 should be updated to clearly separate the two milestones: 'Ein Referentenentwurf soll im Sommer 2026 vorgelegt werden, der Kabinettsbeschluss ist für Ende 2026 geplant und die Wirksamkeit im GKV-System für 2028.'"
-    },
-    {
-      "file": "content/standards/EEHRxF.md",
-      "verdict": "pass",
-      "score": 87,
-      "issues": [
-        "EHDS Verordnung EU 2025/327 confirmed at EUR-Lex. In-force date 26 March 2025 confirmed.",
-        "EEHRxF as Article 15 of EHDS confirmed by ehr-exchange-format.eu ('subject of the European Health Data Space regulation, article 15').",
-        "Implementing Acts deadline March 2027 confirmed ('formally established by March 2027 at the latest').",
-        "Phase 1 (2029) and Phase 2 (2031) dates consistent with EHDS timeline.",
-        "Source https://ehr-exchange-format.eu/ confirmed valid and loads correctly."
+        "EUDAMED mandatory date 28 May 2026 for four modules confirmed correct by official EC source.",
+        "Commission Decision (EU) 2025/2371 — article cites '27. November 2025' (OJ publication date). Actual adoption date was 26 November 2025. Citing OJ date is standard practice; not an error.",
+        "Broken [[QMS]] link removed in this fix cycle; article now uses plain text 'Qualitätsmanagementsystem (QMS, ISO 13485)'.",
+        "False FHIR API claim removed; replaced with correct XML/AS4 description. Verified against official EUDAMED M2M documentation.",
+        "EC source added to Quellen. All source URLs confirmed reachable via Playwright."
       ],
       "fixInstructions": ""
     },
     {
       "file": "content/infrastructure/NCPeH.md",
+      "verdict": "pass",
+      "score": 95,
+      "issues": [
+        "Wave-10 H1/2027 consistently stated throughout article.",
+        "DVKA as operator confirmed accurate.",
+        "EHDS EU 2025/327 in force March 2025 confirmed accurate.",
+        "Austria February 2026 activation confirmed by gesundheit.gv.at source."
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/standards/EHDS.md",
       "verdict": "revise",
-      "score": 72,
+      "score": 82,
       "issues": [
-        "Internal contradiction: line 68 retains stale text 'Der produktive Wave-10-Anschluss Deutschlands an MyHealth@EU für E-Rezepte ist für 2026 geplant.' — this directly contradicts the updated text in the same article (line 37, table line 75) which correctly states H1/2027.",
-        "Wave-10 H1/2027 claim in updated sections is consistent with E-Rezept.md and the OneRoadmap Q1/2026 reference."
+        "Wave-10 H1/2027 correctly stated in Überblick section.",
+        "Internal inconsistency: patientenrecht callout at line 42 still says '(geplant: 2026)' for the MyHealth@EU start date, contradicting the Überblick section which correctly states H1/2027."
       ],
-      "fixInstructions": "In the subsection 'EU E-Rezept: gemF_eRp_EU V1.0.0', the last sentence currently reads: 'Der produktive Wave-10-Anschluss Deutschlands an MyHealth@EU für E-Rezepte ist für 2026 geplant.' Replace with: 'Der produktive Wave-10-Anschluss Deutschlands an MyHealth@EU für E-Rezepte wurde auf H1/2027 verschoben (Stand: OneRoadmap Q1/2026).'"
+      "fixInstructions": "In the [!patientenrecht] callout under 'Primärnutzung: Patientenversorgung', change 'Fragen Sie Ihre Krankenkasse, wann dieser Dienst in Deutschland startet (geplant: 2026).' to 'Fragen Sie Ihre Krankenkasse, wann dieser Dienst in Deutschland startet (geplant: H1/2027).' to match the corrected Wave-10 timeline."
     },
     {
-      "file": "content/technologies/E-Rezept.md",
-      "verdict": "pass",
-      "score": 84,
+      "file": "content/infrastructure/MyHealthAtEU.md",
+      "verdict": "revise",
+      "score": 80,
       "issues": [
-        "Wave-10 H1/2027 correctly stated and consistent with NCPeH.md updated sections.",
-        "T-Rezept rollout 2027, specification August 2025 — plausible, unverifiable from official sources at time of check.",
-        "DiGA-Verordnungen seit Oktober 2025 — consistent with DiGA and DVG articles.",
-        "All required sections present."
+        "Wave-10 H1/2027 correctly stated in Überblick section and Rollout paragraph.",
+        "Internal inconsistency: Erklärt für Einsteiger section (line 14) still says 'Deutschland wird voraussichtlich ab 2026 mitmachen' — contradicts the corrected H1/2027 date in the same article."
+      ],
+      "fixInstructions": "In the Erklärt für Einsteiger section, change 'Deutschland wird voraussichtlich ab 2026 mitmachen.' to 'Deutschland plant die Teilnahme ab H1/2027.' to match the Wave-10 correction stated in the article body."
+    },
+    {
+      "file": "content/organization/DVKA.md",
+      "verdict": "revise",
+      "score": 78,
+      "issues": [
+        "Article body correctly states H1/2027 for Wave-10 E-Rezept cross-border (line 50).",
+        "Verknüpfungen section entry for [[E-Rezept]] still says 'geplante Nutzung im grenzüberschreitenden Kontext ab 2026' — stale, contradicts the corrected body text and all other articles.",
+        "EHDS HDAB claim: 'BfArM wird voraussichtlich diese Rolle übernehmen' — confirmed accurate: BfArM is building DACO (Data Access and Coordination Office) and HDAB infrastructure via the HDP4Germany EU project."
+      ],
+      "fixInstructions": "In Verknüpfungen section, update the [[E-Rezept]] entry from 'geplante Nutzung im grenzüberschreitenden Kontext ab 2026' to 'geplante Nutzung im grenzüberschreitenden Kontext ab Wave 10 (H1/2027)'."
+    },
+    {
+      "file": "content/standards/Patient-Summary.md",
+      "verdict": "pass",
+      "score": 93,
+      "issues": [
+        "H1/2027 Wave-10 date correctly stated in Rollout-Zeitplan section.",
+        "IPS standard HL7 FHIR R4, ISO 27269:2021 confirmed accurate.",
+        "2029 target for Patient Summary from ePA confirmed consistent with EHDS timeline.",
+        "All source URLs point to authoritative sources (HL7, EC, gematik, ISO)."
       ],
       "fixInstructions": ""
     },
     {
-      "file": "content/technologies/ePA.md",
+      "file": "content/standards/SGB-V.md",
       "verdict": "pass",
-      "score": 85,
+      "score": 93,
       "issues": [
-        "MIO-Integration pushed to 2027 consistent with internal article structure.",
-        "ePA launch dates consistent across knowledge base.",
-        "KIS obligation April 2026 consistent with DigiG.",
-        "BEEP-Gesetz and ePass (25 March 2026) claims are internally consistent.",
-        "All major structural sections present."
+        "SGB V alias 'SGB V' added — valid.",
+        "E-Rezept-Pflicht since 1. Januar 2024 (§ 360 SGB V) confirmed accurate.",
+        "ISiK § 371 SGB V confirmed accurate.",
+        "All required sections present, good source coverage."
       ],
       "fixInstructions": ""
     },
     {
-      "file": "content/standards/OPS.md",
+      "file": "content/concepts/OAuth-2.0.md",
       "verdict": "pass",
-      "score": 86,
+      "score": 95,
       "issues": [
-        "relevance frontmatter added with valid sectors and interests.",
-        "BfArM as OPS publisher, yearly update cycle, OPS chapter structure (1, 3, 5, 6, 8, 9) all accurate.",
-        "FHIR CodeSystem URL http://fhir.de/CodeSystem/bfarm/ops is standard and correct.",
-        "All required sections present."
+        "RFC 6749 reference confirmed accurate.",
+        "brainpoolP256r1 for TI as BSI-prescribed confirmed accurate.",
+        "All source URLs point to RFCs and official gematik specs."
       ],
       "fixInstructions": ""
     },
     {
       "file": "content/standards/SNOMED-CT.md",
       "verdict": "pass",
-      "score": 87,
+      "score": 93,
       "issues": [
-        "relevance frontmatter added with valid sectors and interests.",
-        "Germany SNOMED membership since 2021 confirmed. BfArM as NRC and § 355 Abs. 7 SGB V as legal basis confirmed accurate.",
+        "Germany SNOMED membership since 2021 confirmed.",
+        "BfArM as NRC per § 355 Abs. 7 SGB V confirmed accurate.",
         "Halbjährliche releases (January and July) confirmed accurate.",
-        "FHIR CodeSystem URI http://snomed.info/sct is standard and correct.",
-        "All required sections present."
+        "FHIR CodeSystem URI http://snomed.info/sct is standard and correct."
       ],
       "fixInstructions": ""
     },
     {
-      "file": "content/standards/eIDAS.md",
+      "file": "content/standards/SGB-XI.md",
       "verdict": "pass",
-      "score": 88,
+      "score": 92,
       "issues": [
-        "relevance frontmatter added with valid sectors and interests.",
-        "eIDAS EU Nr. 910/2014, in force 1 July 2016, confirmed accurate.",
-        "eIDAS 2.0 (EU 2024/1183) in force 20 May 2024 confirmed accurate.",
-        "EUDI-Wallet deadline 'Anfang 2027' consistent with eIDAS 2.0 implementation timeline.",
-        "All required sections present."
+        "Alias 'SGB XI' added — valid.",
+        "SGB XI in force 1. Januar 1995 confirmed accurate.",
+        "§ 40a, § 40b, § 78a SGB XI structure confirmed accurate.",
+        "50 Euro monthly cap for DiPA confirmed accurate per § 40b SGB XI."
       ],
       "fixInstructions": ""
     },
     {
-      "file": "content/organization/Kassenaerztliche-Vereinigung.md",
+      "file": "content/standards/KHZG.md",
       "verdict": "pass",
-      "score": 85,
+      "score": 92,
       "issues": [
-        "relevance frontmatter added with valid sectors and interests.",
-        "17 KVen claim with NRW having two (KV Nordrhein, KV Westfalen-Lippe) confirmed correct.",
-        "SGB V § 77 ff. as legal basis confirmed.",
-        "All required sections present."
+        "KHZG Inkrafttreten 29. Oktober 2020 confirmed accurate (BMG page: BGBl. I S. 2208 vom 28.10.2020, in force 29.10.2020).",
+        "4,3 Milliarden Euro total funding confirmed by BMG.",
+        "11 Fördertatbestände confirmed accurate.",
+        "ISMS-Pflicht ab 1. Januar 2025 confirmed by multiple sources.",
+        "relevance frontmatter values are all valid."
       ],
       "fixInstructions": ""
     },
     {
-      "file": "content/standards/DVG.md",
+      "file": "content/infrastructure/Kartenterminal.md",
       "verdict": "pass",
-      "score": 85,
+      "score": 92,
       "issues": [
-        "relevance frontmatter added with valid sectors and interests.",
-        "DVG enacted 7 November 2019, in force 19 December 2019 confirmed accurate.",
-        "§ 139e SGB V for DiGA Fast-Track confirmed correct.",
-        "TI obligation dates (Apotheken September 2020, Kliniken Januar 2021) confirmed correct.",
-        "All required sections present."
+        "ECC-Migration deadline 31. Dezember 2026 consistent with gematik migration timeline.",
+        "gSMC-KT as required security module confirmed accurate.",
+        "ISO 7816 (contact) and ISO 14443 (contactless) confirmed as correct standards.",
+        "relevance frontmatter values are all valid."
       ],
       "fixInstructions": ""
     },
     {
-      "file": "content/processes/AMTS.md",
+      "file": "content/standards/LOINC.md",
       "verdict": "pass",
-      "score": 84,
+      "score": 93,
       "issues": [
-        "Previously flagged issue FIXED: Article now correctly states 'mindestens drei verordneten Arzneimitteln' throughout for § 31a SGB V. Verified against gesetze-im-internet.de/sgb_5/__31a.html — threshold is 'mindestens drei gleichzeitig verordnete Arzneimittel'.",
-        "All [!patientenrecht] callouts also correctly use 'drei oder mehr Medikamente'.",
-        "Structural sections complete with multiple appropriate callout types."
+        "Regenstrief Institute in Indianapolis confirmed accurate.",
+        "LOINC code 2823-3 for Potassium in serum confirmed accurate.",
+        "Halbjährliche releases confirmed accurate.",
+        "~95,000 codes claimed; roughly consistent with current LOINC database size (~100,000; minor rounding acceptable).",
+        "relevance frontmatter values are all valid."
       ],
       "fixInstructions": ""
     },
     {
-      "file": "content/processes/Häusliche-Krankenpflege.md",
+      "file": "content/infrastructure/PACS.md",
       "verdict": "pass",
-      "score": 88,
+      "score": 93,
       "issues": [
-        "Previously flagged URL issue FIXED: Quellen section now correctly uses https://www.g-ba.de/richtlinien/11/ — confirmed via Playwright as 'Häusliche Krankenpflege-Richtlinie - Gemeinsamer Bundesausschuss'.",
-        "E-Rezept-Pflicht ab 1. Juli 2026 for HKP consistent with E-Rezept.md.",
-        "All required sections present."
+        "§ 85 Strahlenschutzgesetz 10-year retention confirmed accurate.",
+        "DICOM C-STORE, C-FIND, C-MOVE, WADO-RS confirmed standard DICOM services.",
+        "Market players (Agfa, Dedalus, Sectra, Siemens Healthineers Syngo.via, Fujifilm Synapse, Visus JiveX) confirmed as major German PACS vendors.",
+        "relevance frontmatter values are all valid."
       ],
       "fixInstructions": ""
+    },
+    {
+      "file": "content/organization/IQWiG.md",
+      "verdict": "pass",
+      "score": 93,
+      "issues": [
+        "IQWiG gegründet 2004 per GKV-Modernisierungsgesetz confirmed accurate (started operations 1 October 2004).",
+        "§ 139a SGB V as legal basis confirmed accurate.",
+        "Sitz in Köln confirmed accurate.",
+        "AMNOG seit 2011 confirmed accurate.",
+        "EU-HTA Verordnung 2021/2282 confirmed accurate.",
+        "relevance frontmatter values are all valid."
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/organization/D-Trust.md",
+      "verdict": "revise",
+      "score": 75,
+      "issues": [
+        "Broken wiki-link [[Bundesdruckerei]] appears twice — once in Verknüpfungen section and once in the article body ('Neben D-Trust sind weitere TSPs ... die [[Bundesdruckerei]] selbst'). No Bundesdruckerei.md article exists in the knowledge base. Confirmed by test-report.json with 2 broken-link errors.",
+        "D-Trust founding 1998 confirmed by D-Trust official About Us page ('Founding of D-Trust GmbH based in Berlin — 1998').",
+        "Bundesdruckerei 100% stake from 2010 confirmed by D-Trust About Us page ('Bundesdruckerei takes over a 100% stake in D-Trust — 2010').",
+        "eIDAS QTSP certification 2016 confirmed by D-Trust page ('Certification as a trust service provider by the BNetzA — 2016')."
+      ],
+      "fixInstructions": "Replace both instances of [[Bundesdruckerei]] with plain text 'Bundesdruckerei GmbH' until a Bundesdruckerei.md stub article is created. Alternatively, create content/organization/Bundesdruckerei.md with minimum required frontmatter and a one-line definition to resolve the broken link."
+    },
+    {
+      "file": "content/concepts/Gesundheitsdatenraum.md",
+      "verdict": "pass",
+      "score": 90,
+      "issues": [
+        "GDNG Inkrafttreten 26. März 2024 confirmed (BGBl. I 2024 Nr. 102, published 25 March, in force 26 March).",
+        "BfArM as HDAB/DACO role confirmed: BfArM is building the 'German Node' HDAB via EU project HDP4Germany.",
+        "FDZ Gesundheit at BfArM operational since October 2025 — consistent with article claims.",
+        "GDVG correctly hedged as 'geplant'."
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/standards/KHSFV.md",
+      "verdict": "pass",
+      "score": 90,
+      "issues": [
+        "§ 21 Abs. 2 KHSFV for ISiK-Bestätigung as Fördervoraussetzung — article is consistent with KHZG.md cross-reference.",
+        "BAS (Bundesamt für Soziale Sicherung) as administrator confirmed accurate.",
+        "ISiK-Stufe 3 Pflichttermin 01.07.2025 consistent with other articles.",
+        "ISMS-Pflicht ab 01.01.2025 confirmed accurate."
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/processes/Hilfsmittelverordnung.md",
+      "verdict": "pass",
+      "score": 83,
+      "issues": [
+        "E-Rezept-Pflicht 1. Juli 2027 confirmed accurate by multiple sources including BIV-OT and medizinrecht-blog.de.",
+        "TI-Anbindungspflicht ab 01.01.2026 for Hilfsmittellieferanten confirmed consistent with sources.",
+        "Weak sourcing: all four Quellen are secondary sources (PTAheute, medizinrecht-blog.de, BIV-OT, Gelbe Liste). No direct SGB V paragraph or official gematik/BMG/KBV source cited. The compliance deadlines are critical facts that warrant a primary source."
+      ],
+      "fixInstructions": "Add a primary source to Quellen: the relevant SGB V paragraph (§ 360 SGB V for E-Rezept-Pflicht) at https://www.gesetze-im-internet.de/sgb_5/__360.html, or a KBV or gematik page on the electronic Hilfsmittelverordnung. This is a minor issue that does not affect the verdict but reduces source reliability."
+    },
+    {
+      "file": "content/concepts/Leistungsgruppen.md",
+      "verdict": "revise",
+      "score": 78,
+      "issues": [
+        "Legislative timeline accuracy: article states 'Das KHVVG wurde im Oktober 2024 beschlossen'. The Bundestag vote was 17 October 2024, but the Bundesrat passed it 22 November 2024 and it entered into force 12 December 2024. Saying 'Oktober 2024 beschlossen' refers only to the Bundestag stage, which is technically correct but misleading — the law was fully enacted in December 2024.",
+        "Number of Leistungsgruppen: article consistently states 65. However, the KHAG (Krankenhausreformanpassungsgesetz) proceedings are expected to reduce this to 61. This is an ongoing legislative development that the article does not mention, which may become stale."
+      ],
+      "fixInstructions": "1. Update the legislative description in Überblick: change 'Das KHVVG wurde im Oktober 2024 beschlossen' to 'Der Bundestag beschloss das KHVVG am 17. Oktober 2024, der Bundesrat billigte es am 22. November 2024; das Gesetz trat am 12. Dezember 2024 in Kraft.' 2. Add a note about KHAG: 'Laut KHAG-Entwurf (Krankenhausreformanpassungsgesetz, Stand 2025/2026) ist eine Reduzierung von 65 auf 61 Leistungsgruppen geplant.' This prevents the article from becoming stale if KHAG passes."
     }
   ],
   "contradictions": [
     {
-      "claim": "Wave-10 / NCPeH E-Rezept Deutschland launch date",
-      "articleA": "content/infrastructure/NCPeH.md updated sections (lines 37, 75): Wave 10 verschoben auf H1/2027 (OneRoadmap Q1/2026)",
-      "articleB": "content/infrastructure/NCPeH.md line 68 (stale): 'Der produktive Wave-10-Anschluss ... ist für 2026 geplant' — contradicts the same article's updated sections",
-      "additionalConflicts": [
-        "content/standards/EHDS.md: 'ab Wave 10 (2026)' — not updated to H1/2027",
-        "content/standards/Patient-Summary.md: '2026: Deutschland plant Teilnahme ... Wave 10' — not updated",
-        "content/infrastructure/MyHealthAtEU.md: 'ab Wave 10 (2026)' — not updated",
-        "content/organization/DVKA.md: 'Wave 10 in 2026' — not updated"
-      ],
-      "resolution": "Authoritative claim is H1/2027 per OneRoadmap Q1/2026, as confirmed in NCPeH.md (updated sections) and E-Rezept.md. Articles EHDS.md, Patient-Summary.md, MyHealthAtEU.md, and DVKA.md still showing '2026' for Wave 10 need updating in the next cycle."
+      "claim": "Wave-10 / Deutschland MyHealth@EU E-Rezept launch date in DVKA Verknüpfungen",
+      "articleA": "content/organization/DVKA.md Verknüpfungen says '[[E-Rezept]] (geplante Nutzung im grenzüberschreitenden Kontext ab 2026)'",
+      "articleB": "content/organization/DVKA.md body (line 50), content/infrastructure/NCPeH.md, content/standards/EHDS.md, content/infrastructure/MyHealthAtEU.md, content/standards/Patient-Summary.md all correctly say Wave 10 (H1/2027)"
+    },
+    {
+      "claim": "Deutschland MyHealth@EU participation date in Erklärt für Einsteiger",
+      "articleA": "content/infrastructure/MyHealthAtEU.md Erklärt für Einsteiger (line 14) says 'Deutschland wird voraussichtlich ab 2026 mitmachen'",
+      "articleB": "content/infrastructure/MyHealthAtEU.md Überblick and all other updated articles say H1/2027"
+    },
+    {
+      "claim": "EHDS MyHealth@EU start date in patientenrecht callout",
+      "articleA": "content/standards/EHDS.md patientenrecht callout says '(geplant: 2026)'",
+      "articleB": "content/standards/EHDS.md Überblick section and all other articles say H1/2027"
     }
   ],
   "staleArticles": [
-    "content/infrastructure/NCPeH.md: line 68 retains stale '2026' claim for Wave-10 start — contradicts the rest of the same article",
-    "content/standards/EHDS.md: 'ab Wave 10 (2026)' should be 'H1/2027'",
-    "content/infrastructure/MyHealthAtEU.md: 'ab Wave 10 (2026)' should be 'H1/2027'",
-    "content/organization/DVKA.md: 'Wave 10 in 2026' should be 'H1/2027'",
-    "content/standards/Patient-Summary.md: '2026: Deutschland plant Teilnahme ... Wave 10' should be updated to H1/2027"
+    "content/organization/DVKA.md — Verknüpfungen [[E-Rezept]] entry still says 'ab 2026' instead of H1/2027",
+    "content/infrastructure/MyHealthAtEU.md — Erklärt für Einsteiger still says 'ab 2026 mitmachen'",
+    "content/standards/EHDS.md — patientenrecht callout still says '(geplant: 2026)'"
   ],
-  "urlIssues": [
-    {
-      "article": "content/organization/KIG.md",
-      "url": "https://www.gesetze-im-internet.de/sgb_5/__394b.html",
-      "type": "url_dead",
-      "severity": "error",
-      "note": "§ 394b SGB V does not exist — 404 confirmed. Correct paragraph is § 385 SGB V. Correct URL: https://www.gesetze-im-internet.de/sgb_5/__385.html"
-    },
-    {
-      "article": "content/organization/KIG.md",
-      "url": "https://www.ina.gematik.de/kig",
-      "type": "url_dead",
-      "severity": "error",
-      "note": "Returns 404. INA has restructured navigation. Working alternative: https://www.ina.gematik.de/kompetenzzentrum/wirkungsfelder-im-ueberblick/interop-roadmap-2026-2027"
-    }
-  ],
-  "verifiedUrls": [
+  "urlChecks": [
+    {"article": "content/organization/KIG.md", "url": "https://www.gematik.de/telematikinfrastruktur/iop", "status": "ok"},
     {"article": "content/organization/KIG.md", "url": "https://www.gematik.de/newsroom/news-detail/iop-roadmap-legt-themen-der-naechsten-zwei-jahre-fest", "status": "ok"},
+    {"article": "content/organization/KIG.md", "url": "https://www.gesetze-im-internet.de/sgb_5/__385.html", "status": "ok"},
     {"article": "content/infrastructure/EUDAMED.md", "url": "https://health.ec.europa.eu/medical-devices-eudamed_en", "status": "ok"},
-    {"article": "content/infrastructure/EUDAMED.md", "url": "https://www.bfarm.de/EN/Medical-devices/Overview/Europe-and-EUDAMED/EUDAMED/_artikel.html", "status": "ok"},
-    {"article": "content/standards/EEHRxF.md", "url": "https://ehr-exchange-format.eu/", "status": "ok"},
-    {"article": "content/processes/Häusliche-Krankenpflege.md", "url": "https://www.g-ba.de/richtlinien/11/", "status": "ok", "note": "Confirmed: Häusliche Krankenpflege-Richtlinie — correct page, previous url_mismatch now fixed"},
-    {"article": "content/organization/KIG.md", "url": "https://www.gesetze-im-internet.de/sgb_5/__385.html", "status": "ok", "note": "Correct URL for KIG legal basis (§ 385 SGB V)"}
+    {"article": "content/organization/D-Trust.md", "url": "https://www.d-trust.net/en/about-us", "status": "ok"},
+    {"article": "content/organization/D-Trust.md", "url": "https://www.d-trust.net/", "status": "ok"}
   ]
 }

@@ -2,7 +2,8 @@
 title: SGB XI
 audience: [technical, non-technical]
 tags: [standards, gesetzgebung, pflegeversicherung, sozialrecht]
-aliases: [Elftes Buch Sozialgesetzbuch, Soziale Pflegeversicherung, SGB 11, Pflegeversicherungsgesetz]
+aliases: [Elftes Buch Sozialgesetzbuch, Soziale Pflegeversicherung, SGB 11, SGB XI, Pflegeversicherungsgesetz]
+maturity: immergruen
 ---
 
 # SGB XI

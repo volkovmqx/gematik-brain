@@ -6,7 +6,7 @@ aliases: [Kompetenzzentrum Interoperabilität im Gesundheitswesen, Kompetenzzent
 relevance:
   sectors: [hersteller, ti-infrastruktur, it-dienstleister, krankenhaus, regulierung, kasse]
   interests: [technik, compliance]
-maturity: setzling
+maturity: immergruen
 ---
 
 # KIG

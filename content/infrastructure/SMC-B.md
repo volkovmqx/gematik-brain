@@ -56,7 +56,7 @@ Die Vorgängergeneration **G2.0** unterstützte ausschließlich RSA. Im Rahmen d
 
 Neben der physischen SMC-B-Karte entwickelt die [[gematik]] das **[[HSM-B]]** (Hardware Security Module Typ B) als Pilotprojekt für eine kartenlose institutionelle Identität. Beim HSM-B wird die digitale Institutionsidentität direkt im **[[Highspeed-Konnektor]] (HSK)** gespeichert, anstatt auf einer physischen Karte zu liegen.
 
-Im März 2026 startete die [[gematik]] einen Friendly-User-Test mit dem HSM-B. Beteiligte Partner sind RHÖN-KLINIKUM, D-Trust, DKTIG und RISE. Vorteile des HSM-B gegenüber der physischen SMC-B:
+Im März 2026 startete die [[gematik]] einen Friendly-User-Test mit dem HSM-B. Beteiligte Partner sind RHÖN-KLINIKUM, [[D-Trust]], DKTIG und RISE. Vorteile des HSM-B gegenüber der physischen SMC-B:
 
 - Keine physischen Kartenterminals für die institutionelle Authentisierung notwendig
 - Keine PIN-Eingabe erforderlich

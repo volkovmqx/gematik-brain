@@ -3,7 +3,7 @@ title: NCPeH - National Contact Point for eHealth
 audience: [technical, non-technical]
 tags: [infrastruktur, eu, interoperabilitaet, myhealth, ehds]
 aliases: [National Contact Point for eHealth, Nationaler Kontaktpunkt eHealth]
-maturity: setzling
+maturity: immergruen
 relevance:
   sectors: [ti-infrastruktur, krankenhaus, arztpraxis, apotheke, kasse, patient, regulierung]
   interests: [technik, compliance, patient]
@@ -25,7 +25,7 @@ Die rechtliche Grundlage auf EU-Ebene ist die **[[EHDS]]-Verordnung** (European 
 
 Am **16. März 2026** besuchten fast 50 Delegierte aus 14 EU-Ländern die [[gematik]], um sich über den deutschen NCPeH und die TI-Infrastruktur zu informieren. Das zeigt das wachsende Interesse anderer Mitgliedstaaten an der deutschen Implementierung.
 
-Parallel zur E-Rezept-Integration laufen in Deutschland erste Pilotaktivitäten für den grenzüberschreitenden Austausch von [[Patient-Summary|Patientenkurzakten (Patient Summary)]]. Die AOK hat Pilotprojektergebnisse und ein Konzeptpapier für den EU-weiten Patientenzusammenfassungsaustausch beim [[BMG]] eingereicht. Patient Summary und E-Rezept sind zwei eigenständige Anwendungsfälle: Das E-Rezept ist für Wave 10 (2026) priorisiert; der Patient-Summary-Austausch ist als separater Schritt geplant und befindet sich in der konzeptionellen Phase.
+Parallel zur E-Rezept-Integration laufen in Deutschland erste Pilotaktivitäten für den grenzüberschreitenden Austausch von [[Patient-Summary|Patientenkurzakten (Patient Summary)]]. Die AOK hat Pilotprojektergebnisse und ein Konzeptpapier für den EU-weiten Patientenzusammenfassungsaustausch beim [[BMG]] eingereicht. Patient Summary und E-Rezept sind zwei eigenständige Anwendungsfälle: Das E-Rezept ist für Wave 10 (H1/2027) priorisiert; der Patient-Summary-Austausch ist als separater Schritt geplant und befindet sich in der konzeptionellen Phase.
 
 > [!interesse-compliance]
 > Der Produktivstart Deutschlands für den grenzüberschreitenden E-Rezept-Austausch (Wave 10) wurde auf H1/2027 verschoben (OneRoadmap Q1/2026). Die [[DVKA]] betreibt den NCPeH als Pflichtaufgabe nach EHDS-Verordnung (EU 2025/327, in Kraft März 2025). Krankenkassen und Leistungserbringer müssen keine eigene Infrastruktur aufbauen: Der NCPeH übernimmt die Grenzüberschreitung zentral. Bis 2029 ist die EU-weite Nutzbarkeit von [[Patient-Summary|Patientenzusammenfassung]] und [[E-Rezept]] verpflichtend.

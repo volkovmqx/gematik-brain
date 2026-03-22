@@ -3,6 +3,10 @@ title: Kartenterminal
 audience: [technical, non-technical]
 tags: [infrastruktur, kartenterminal, hardware, ehealth-kt]
 aliases: [eHealth-Kartenterminal, eHealth-KT, Kartenlesegerät]
+relevance:
+  sectors: [arztpraxis, zahnarzt, apotheke, krankenhaus, ti-infrastruktur]
+  interests: [technik]
+maturity: immergruen
 ---
 
 # Kartenterminal
@@ -24,6 +28,17 @@ Es gibt zwei Varianten:
 
 Kartenterminals sind zulassungspflichtig. Die [[gematik]] prüft und zertifiziert jedes Gerät. Nur zugelassene Terminals dürfen in der TI eingesetzt werden. Für die Aufnahme in die [[TI-Pauschale]] muss die Praxis die Anzahl der installierten Kartenterminals nachweisen.
 
+> [!praxis-tipp] Praxis-Tipp: Kartenterminal kaufen oder ersetzen
+> Kaufen Sie nur Geräte aus dem gematik-Produktkatalog: [fachportal.gematik.de](https://fachportal.gematik.de). Nicht zugelassene Geräte funktionieren nicht in der TI.
+>
+> Worauf Sie achten sollten:
+> 1. Stationäres Terminal für den Empfang: ca. 600-700 € (z.B. ORGA Neo ca. 683 €). Die gSMC-KT ist oft separat, ca. 79 €.
+> 2. Für Behandlungsräume mit eigenem Terminal: Jedes Gerät braucht eine eigene gSMC-KT.
+> 3. Mobiles Terminal für Hausbesuche: Achten Sie auf WLAN-Kompatibilität mit Ihrem Konnektor.
+> 4. Ihr TI-Dienstleister (IT-Betreuer oder TI-Anbieter) muss das Terminal im Konnektor registrieren. Planen Sie dafür einen Servicetermin ein.
+>
+> Tipp: Fragen Sie beim Kauf, ob das Gerät bereits ECC-fähig (gSMC-KT G2.1) ausgeliefert wird.
+
 ## Technische Details
 
 ### Schnittstellen
@@ -41,6 +56,16 @@ Jedes zugelassene eHealth-Kartenterminal enthält ein eigenes Sicherheitsmodul: 
 
 Im Zuge der [[ECC-Migration]] (Umstellung von RSA auf ECC) müssen alle gSMC-KT bis 31. Dezember 2026 auf ECC-fähige Nachfolger umgestellt sein.
 
+> [!praxis-tipp] Praxis-Tipp: gSMC-KT auf ECC umstellen bis Ende 2026
+> In Ihrer Praxis bedeutet das: Prüfen Sie, ob Ihre Kartenterminals noch eine alte gSMC-KT G2.0 enthalten. Diese darf ab 1. Januar 2027 nicht mehr genutzt werden.
+>
+> So prüfen Sie das:
+> 1. Schauen Sie in das Verwaltungsportal Ihres Konnektors. Dort sind alle registrierten Terminals mit ihrer gSMC-KT-Version aufgelistet.
+> 2. Steht dort "G2.0": Bestellen Sie eine Ersatz-gSMC-KT G2.1 über Ihren TI-Dienstleister oder direkt beim Terminalhersteller (ca. 79 €).
+> 3. Der Tausch dauert ca. 15 Minuten und kann während der Sprechstundenpause erfolgen.
+>
+> Häufiger Fehler: Der Tausch wird auf die lange Bank geschoben. Wer erst im Dezember 2026 tauscht, riskiert Lieferengpässe.
+
 ### Kartensteckplätze
 
 Ein Standard-Kartenterminal hat typischerweise zwei bis vier Kartensteckplätze:
@@ -54,6 +79,39 @@ Im [[Konnektoren|Konnektor]] sind üblicherweise mehrere Kartenterminals gleichz
 ### Zulassungsverfahren
 
 Die [[gematik]] vergibt Zulassungen für Kartenterminal-Produkte nach Prüfung gemäß Produkttypsteckbrief (gemProdT KT). Zugelassene Geräte sind im gematik-Produktkatalog gelistet. Hersteller sind unter anderem Cherry, Ingenico und Worldline.
+
+> [!interesse-technik]
+> Spezifikation: gemSpec_KT (Kartenterminal-Spezifikation) auf [gemspec.gematik.de](https://gemspec.gematik.de). Das Kommunikationsprotokoll zwischen Terminal und Konnektor basiert auf TCP/IP mit einem proprietären gematik-Protokoll. Schnittstellen: ISO 7816 (kontaktbehaftet) und ISO 14443 / NFC (kontaktlos). ECC-Migration der gSMC-KT bis 31.12.2026 verpflichtend. Zugelassene Geräte im gematik-Produktkatalog: [fachportal.gematik.de](https://fachportal.gematik.de).
+
+> [!dev-quickstart] Dev Quickstart: Konnektor-SOAP-API für Kartenterminale nutzen
+> Der [[Konnektoren|Konnektor]] exponiert SOAP-Dienste für die Kartenverwaltung.
+>
+> **Service Discovery:**
+> ```bash
+> # Verfügbare Dienste und WSDL-Versionen abfragen
+> curl http://<konnektor-ip>/connector.sds
+> ```
+>
+> **Karten und Terminals abfragen (EventService, WSDL v7.2):**
+> ```xml
+> POST http://<konnektor-ip>/ws/EventService
+> Content-Type: text/xml; charset=utf-8
+>
+> <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+>   <SOAP-ENV:Body>
+>     <ns:GetCards xmlns:ns="http://ws.gematik.de/conn/EventService/v7.2">
+>       <ns:Context>
+>         <ns2:MandantId xmlns:ns2="http://ws.gematik.de/conn/ConnectorContext/v2.0">m1</ns2:MandantId>
+>         <ns2:ClientSystemId xmlns:ns2="http://ws.gematik.de/conn/ConnectorContext/v2.0">cs1</ns2:ClientSystemId>
+>         <ns2:WorkplaceId xmlns:ns2="http://ws.gematik.de/conn/ConnectorContext/v2.0">wp1</ns2:WorkplaceId>
+>       </ns:Context>
+>     </ns:GetCards>
+>   </SOAP-ENV:Body>
+> </SOAP-ENV:Envelope>
+> ```
+> - WSDL-Definitionen (OPB4/OPB5): [github.com/gematik/api-telematik](https://github.com/gematik/api-telematik)
+> - Implementierungsleitfaden: gemILF_PS auf [gemspec.gematik.de](https://gemspec.gematik.de/downloads/gemILF/gemILF_PS/gemILF_PS_V2.23.0_Aend.html)
+> - Protokoll Terminal–Konnektor (SICCT+eHealth): gemSpec_KT auf [gemspec.gematik.de](https://gemspec.gematik.de/downloads/gemSpec/gemSpec_KT/gemSpec_KT_V3.15.0.html)
 
 ## Verknüpfungen
 

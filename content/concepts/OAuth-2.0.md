@@ -2,7 +2,8 @@
 title: OAuth 2.0
 audience: [technical]
 tags: [konzept, sicherheit, authentifizierung, protokoll, ti-2-0, idp]
-aliases: [OAuth2, OpenID Connect, OIDC, OAuth 2.0 / OpenID Connect]
+aliases: [OAuth2, OAuth 2.0, OpenID Connect, OIDC, OAuth 2.0 / OpenID Connect]
+maturity: immergruen
 ---
 
 # OAuth 2.0

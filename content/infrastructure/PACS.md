@@ -4,6 +4,9 @@ audience: [technical]
 tags: [infrastruktur, radiologie, krankenhaus, bildgebung, dicom]
 aliases: [Picture Archiving and Communication System, Bildarchiv]
 maturity: immergruen
+relevance:
+  sectors: [krankenhaus, arztpraxis]
+  interests: [technik]
 ---
 
 # PACS
@@ -53,6 +56,33 @@ Die Aufbewahrungspflicht für medizinische Bilder beträgt in Deutschland nach �
 ### Vendor Neutral Archive (VNA)
 
 Ein VNA ist ein herstellerneutrales Bildarchiv, das DICOM-Bilder verschiedener Quellen und Formate zentral speichert. Ein VNA entkoppelt die Langzeitspeicherung von den RIS/PACS-Systemen einzelner Abteilungen. Das ermöglicht Migration zu neuen PACS-Lösungen, ohne das Bildarchiv zu verlieren.
+
+> [!interesse-technik]
+> DICOM-Standard: [dicomstandard.org](https://www.dicomstandard.org/). DICOMweb-Standard (WADO-RS, STOW-RS, QIDO-RS) für HTTP-basierte PACS-Integrationen. [[ISiK]] Stufe 3 definiert FHIR DiagnosticReport-Profile für diagnostische Berichte mit PACS-Bezug. Aufbewahrungspflicht medizinischer Bilder: 10 Jahre nach § 85 StrlSchG (bei Minderjährigen bis zum 28. Lebensjahr).
+
+> [!dev-quickstart] Dev Quickstart: DICOMweb REST-API (WADO-RS / QIDO-RS / STOW-RS)
+> DICOMweb-Endpunkte nach DICOM PS3.18. Basis-URL hängt vom PACS-Produkt ab.
+>
+> ```bash
+> BASE="https://<pacs-host>/wado"
+>
+> # QIDO-RS: Studie nach Patient-ID suchen
+> curl "${BASE}/studies?PatientID=123456&limit=10" \
+>   -H "Accept: application/dicom+json"
+>
+> # WADO-RS: Alle Instanzen einer Studie abrufen (multipart/related)
+> curl "${BASE}/studies/<StudyInstanceUID>/instances" \
+>   -H "Accept: multipart/related; type=\"application/dicom\""
+>
+> # STOW-RS: DICOM-Objekt hochladen
+> curl -X POST "${BASE}/studies" \
+>   -H "Content-Type: multipart/related; type=\"application/dicom\"" \
+>   --data-binary @image.dcm
+> ```
+> - Standard: DICOM PS3.18 auf [dicomstandard.org](https://www.dicomstandard.org/using/dicomweb/restful-structure)
+> - Open-Source-Referenzimplementierung: [Orthanc](https://www.orthanc-server.com/) mit DICOMweb-Plugin
+> - ISiK Stufe 3 DiagnosticReport-Profil: [simplifier.net/isik](https://simplifier.net/isik)
+> - Testserver (öffentlich): Azure Health Data Services DICOM Service und Orthanc Demo
 
 ### Integration in die Telematikinfrastruktur
 
