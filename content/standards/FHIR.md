@@ -35,7 +35,7 @@ FHIR definiert **Ressourcen** (z.B. Patient, Medication, Observation) und **Prof
 - **Practitioner**: Leistungserbringer-Daten
 - **Organization**: Daten zur Einrichtung
 
-### Deutsche Profile
+### Deutsche [[FHIR-Profil|Profile]]
 - **[[KBV]]-Profile**: Für [[E-Rezept]], [[eAU]]
 - **gematik-Profile**: Für [[ePA]], Dispensierinformationen
 - **Deutsche Basisprofile**: Grundlegende Anpassungen (z.B. Versichertennummer als Identifier)

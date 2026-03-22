@@ -3,7 +3,7 @@ title: ePA - Elektronische Patientenakte
 audience: [technical, non-technical]
 tags: [anwendung, epa, patientenakte]
 aliases: [Elektronische Patientenakte, Patientenakte]
-maturity: wachsend
+maturity: immergruen
 relevance:
   sectors: [arztpraxis, krankenhaus, zahnarzt, psychotherapie, apotheke, pflege, therapie, hebamme, patient, kasse, hersteller]
   interests: [compliance, technik, patient]
@@ -78,6 +78,7 @@ Die ePA nutzt die [[Telematikinfrastruktur]] als sicheres Netzwerk. Der Zugriff 
 
 - ePA 3.0.5: Basis-Release
 - ePA 3.1.3: Spezifikation für erweitertes Medikationsmanagement ([[AMTS]]-relevante Zusatzinformationen); bundesweiter eMedikationsplan-Rollout verschoben auf Oktober 2026 (Pilotphase ab Juli 2026)
+- ePA 3.2: Geplante Version für strukturierte Laborbefunde (MIO Laborbefund). Zieldatum: März 2027. Die MIO-Spezifikation für den Laborbefund wurde im Frühjahr 2026 abgeschlossen. ePA 3.2 ist klar von ePA 3.1.3 (Fokus: eMedikationsplan) zu unterscheiden. Die MIO-Einbindung von Impfausweis, Mutterpass und U-Heft ist ebenfalls für 2027 geplant.
 
 ## Technische Details
 

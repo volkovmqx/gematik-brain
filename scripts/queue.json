@@ -1,87 +1,28 @@
 {
   "pending": [
     {
-      "term": "Laborbefund",
-      "category": "processes",
-      "reason": "Strukturierter Laborbefund als zentraler ePA-Datenstrom. In 19 Artikeln erwähnt: LIS, LDT, LOINC, GDT, HL7 v2, HL7, ePA, MyHealthAtEU, DEMIS, KIS, PVS, Telekonsil, EEHRxF, KVDT, xDT, Meldepflicht, Mutterpass, KHZG, Opt-Out-ePA. Ohne eigenen Artikel fehlt ein zentraler Anker für das gesamte Labor-Ökosystem.",
+      "term": "Sekundärnutzung",
+      "category": "concepts",
+      "reason": "Sekundärnutzung von Gesundheitsdaten für Forschung und Versorgungsoptimierung: zentrale Grundlage für FDZ, EHDS, GDNG und ePA-Opt-Out-Debatte. In 16 Artikeln als eigenständiges Konzept verwendet: Broad-Consent, Gesundheitsdatenraum, Opt-Out-ePA, Pseudonymisierung, FDZ-Gesundheit, EHDS, GDNG, GDVG, BfDI, DSGVO, E-Health-Gesetz, DVKA, GFF, NCPeH, BDSG, Medizininformatik-Initiative. Kein eigener Artikel, obwohl das Konzept der Sekundärnutzung (Abgrenzung zur Primärnutzung, Rechtsgrundlagen, Opt-Out-Rechte) die Grundlage für das gesamte Gesundheitsdatenraum-Ökosystem ist.",
       "mentionedIn": [
-        "content/infrastructure/LIS.md",
-        "content/standards/LDT.md",
-        "content/standards/LOINC.md",
-        "content/standards/GDT.md",
-        "content/standards/HL7-v2.md",
-        "content/standards/HL7.md",
-        "content/technologies/ePA.md",
-        "content/infrastructure/MyHealthAtEU.md",
-        "content/technologies/DEMIS.md",
-        "content/infrastructure/KIS.md",
-        "content/technologies/KIS.md",
-        "content/standards/EEHRxF.md",
-        "content/standards/KVDT.md",
-        "content/standards/xDT.md",
+        "content/concepts/Broad-Consent.md",
         "content/concepts/Gesundheitsdatenraum.md",
         "content/concepts/Opt-Out-ePA.md",
-        "content/processes/Meldepflicht.md",
-        "content/processes/Mutterpass.md",
-        "content/standards/KHZG.md"
-      ],
-      "priority": 38
-    },
-    {
-      "term": "TI-Anbindungspflicht",
-      "category": "concepts",
-      "reason": "Gesetzliche Pflicht zur TI-Anbindung für alle Leistungserbringer nach SGB V §§ 291 ff. In 5 Artikeln als zentraler Referenzpunkt erwähnt: BZÄK, Heilmittelverordnung, Hilfsmittelverordnung, eVO, E-Rezept. Kein eigener Artikel für dieses zentrale Compliance-Konzept.",
-      "mentionedIn": [
-        "content/organization/BZÄK.md",
-        "content/processes/Heilmittelverordnung.md",
-        "content/processes/Hilfsmittelverordnung.md",
-        "content/processes/eVO.md",
-        "content/technologies/E-Rezept.md"
-      ],
-      "priority": 30
-    },
-    {
-      "term": "FHIR-Profil",
-      "category": "standards",
-      "reason": "FHIR-Profile als konkrete Umsetzung des FHIR-Standards in der deutschen TI. In 59 Artikeln erwähnt - allgegenwärtig aber kein eigener Artikel. Ergänzt MIO.md und FHIR.md um das Konzept der Profilierung und der deutschen Implementierungsleitfäden (KBV, gematik, MI-Initiative).",
-      "mentionedIn": [
-        "content/standards/FHIR.md",
-        "content/standards/MIO.md",
-        "content/concepts/Gesundheitsdatenraum.md",
-        "content/infrastructure/AVS.md",
-        "content/infrastructure/Primärsystem.md",
+        "content/concepts/Pseudonymisierung.md",
+        "content/infrastructure/Forschungsdatenzentrum-Gesundheit.md",
+        "content/infrastructure/NCPeH.md",
+        "content/organization/BfDI.md",
+        "content/organization/DVKA.md",
+        "content/organization/GFF.md",
         "content/organization/Medizininformatik-Initiative.md",
-        "content/standards/ISiK.md",
-        "content/technologies/ePA.md"
+        "content/standards/BDSG.md",
+        "content/standards/DSGVO.md",
+        "content/standards/E-Health-Gesetz.md",
+        "content/standards/EHDS.md",
+        "content/standards/GDNG.md",
+        "content/standards/GDVG.md"
       ],
-      "priority": 28
-    },
-    {
-      "term": "NIS-2",
-      "category": "standards",
-      "reason": "EU-Richtlinie zur Netzwerk- und Informationssicherheit (NIS-2, 2022/2555): Pflicht zur Umsetzung im KRITIS-Dachgesetz. In 2 Artikeln (KRITIS.md, KRITIS-Dachgesetz.md) erwähnt. Ergänzt KRITIS-Dachgesetz-Artikel um den EU-rechtlichen Rahmen.",
-      "mentionedIn": [
-        "content/concepts/KRITIS.md",
-        "content/standards/KRITIS-Dachgesetz.md"
-      ],
-      "priority": 22
-    },
-    {
-      "term": "Pflegedokumentation",
-      "category": "processes",
-      "reason": "Digitale Pflegedokumentation als Schnittstelle zu TI-Primärsystemen (KIS, IS-H). In 9 Artikeln erwähnt: IS-H, KIS, Primärsystem, BSI, HL7-v2, KHSFV, KHZG, SGB-XI, technologies/KIS. Zentral für den Pflegebereich (SGB XI) und Krankenhäuser.",
-      "mentionedIn": [
-        "content/infrastructure/IS-H.md",
-        "content/infrastructure/KIS.md",
-        "content/infrastructure/Primärsystem.md",
-        "content/organization/BSI.md",
-        "content/standards/HL7-v2.md",
-        "content/standards/KHSFV.md",
-        "content/standards/KHZG.md",
-        "content/standards/SGB-XI.md",
-        "content/technologies/KIS.md"
-      ],
-      "priority": 20
+      "priority": 26
     },
     {
       "term": "Kartenherausgeber",
@@ -137,6 +78,45 @@
       "priority": 13
     },
     {
+      "term": "Dispensierung",
+      "category": "processes",
+      "reason": "Abgabe (Dispensierung) von Arzneimitteln durch Apotheken: Kernprozess im E-Rezept-Workflow, verbindet AVS, Apothekenrechenzentrum, eML, DataMatrix und Securpharm. In 12 Artikeln als eigenständiger Prozessschritt erwähnt: ABDA-Datenbank, Apothekenrechenzentrum, BMP, T-Rezept, dgMP, eML, DataMatrix, EEHRxF, FHIR, Securpharm, TA1, ePA. Ergänzt E-Rezept.md und dgMP.md um den Apothekenside-Prozess.",
+      "mentionedIn": [
+        "content/infrastructure/ABDA-Datenbank.md",
+        "content/infrastructure/Apothekenrechenzentrum.md",
+        "content/processes/BMP.md",
+        "content/processes/T-Rezept.md",
+        "content/processes/dgMP.md",
+        "content/processes/eML.md",
+        "content/standards/DataMatrix.md",
+        "content/standards/EEHRxF.md",
+        "content/standards/FHIR.md",
+        "content/standards/Securpharm.md",
+        "content/standards/TA1.md",
+        "content/technologies/ePA.md"
+      ],
+      "priority": 12
+    },
+    {
+      "term": "Erstattungsbetrag",
+      "category": "processes",
+      "reason": "Verhandelter Erstattungsbetrag nach AMNOG-Nutzenbewertung: bestimmt den GKV-Preis für neue Arzneimittel, DiGA und DiPA. In 12 Artikeln erwähnt: Fruehe-Nutzenbewertung, DiGA-Fast-Track, IQWiG, BfArM, G-BA, SGB-XI, DVG, DiGAV, DiPAV, AMNOG, DiGA, DiPA. Verbindet das AMNOG-Verfahren mit der praktischen Preisbildung und ist Voraussetzung für die Erstattungsfähigkeit digitaler Gesundheitsprodukte.",
+      "mentionedIn": [
+        "content/processes/Fruehe-Nutzenbewertung.md",
+        "content/processes/DiGA-Fast-Track.md",
+        "content/organization/IQWiG.md",
+        "content/organization/BfArM.md",
+        "content/organization/G-BA.md",
+        "content/standards/DVG.md",
+        "content/standards/DiGAV.md",
+        "content/standards/DiPAV.md",
+        "content/standards/AMNOG.md",
+        "content/technologies/DiGA.md",
+        "content/technologies/DiPA.md"
+      ],
+      "priority": 11
+    },
+    {
       "term": "Pflegegrad",
       "category": "concepts",
       "reason": "Einstufungssystem für Pflegebedürftigkeit (Pflegegrade 1–5) nach SGB XI: Grundlage für DiPA-Zulassung und Pflegeversicherungsleistungen. In 5 Artikeln erwähnt: Medizinischer-Dienst, DVPMG, DiPAV, SGB-XI, DiPA.",
@@ -188,6 +168,11 @@
     }
   ],
   "done": [
+    "Laborbefund",
+    "TI-Anbindungspflicht",
+    "FHIR-Profil",
+    "NIS-2",
+    "Pflegedokumentation",
     "D-Trust",
     "Gesundheitsdatenraum",
     "KHSFV",
@@ -251,7 +236,6 @@
     "DiGAV",
     "DiPAV",
     "DiPA",
-    "DiPaG",
     "DiPaG",
     "DigiG",
     "E-Health-Gesetz",
@@ -528,7 +512,6 @@
     "content/standards/Patient-Summary.md",
     "content/standards/SGB-XI.md",
     "content/standards/VDG.md",
-    "content/standards/XDS.md",
     "content/technologies/DiPaG.md",
     "content/technologies/eArztbrief.md",
     "content/technologies/gRPC.md"

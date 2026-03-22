@@ -54,7 +54,7 @@ Mindestens 15 Prozent der Fördermittel mussten für IT-Sicherheitsmaßnahmen (F
 > Die elf Fördertatbestände haben unterschiedliche KIS- und Infrastrukturanforderungen. Für IT-Leiter relevante Übersicht:
 >
 > **FTB 1 (Patientenportal):** Erfordert ISiK-Stufe-1-Bestätigung für das KIS-Aufnahmesystem. Schnittstellen: HL7 FHIR (Patient, Encounter, Appointment). Anbindung des Portals ans KIS via REST-API.
-> **FTB 4 (Pflegedokumentation) und FTB 5 (Medikationsmanagement):** ISiK-Stufe-2- bzw. -Stufe-3-Bestätigung erforderlich. FHIR-Ressourcen: MedicationStatement, Condition, Observation. Prüfen Sie, ob Pflegedokumentationssystem und KIS über ISiK-konforme Schnittstellen kommunizieren.
+> **FTB 4 ([[Pflegedokumentation]]) und FTB 5 (Medikationsmanagement):** ISiK-Stufe-2- bzw. -Stufe-3-Bestätigung erforderlich. FHIR-Ressourcen: MedicationStatement, Condition, Observation. Prüfen Sie, ob Pflegedokumentationssystem und KIS über ISiK-konforme Schnittstellen kommunizieren.
 > **FTB 6 (Leistungsanforderung):** Labor-LIS und Radiologie-RIS müssen ISiK-Module für Anforderung und Rückmeldung bereitstellen. Nachricht: HL7 v2 ORU^R01 (Laborbefund) oder FHIR DiagnosticReport je nach KIS-Generation.
 > **FTB 10 (Digitale Notaufnahme):** KIS-Anbindung der Notaufnahme mit ADT-Nachrichtenfluss (HL7 ADT^A01/A08) und ISiK-Encounter. Besonderheit: Auch ohne VSDM-Prüfung muss die Notaufnahme systemseitig dokumentieren können. Ausfallkonzept für TI-Ausfall vorsehen.
 

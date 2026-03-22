@@ -50,7 +50,7 @@ Moderne KIS-Systeme sind modular aufgebaut. Ein typisches KIS besteht aus einem 
 - **[[LIS]]** (Labor-Informationssystem): Labordatenverarbeitung
 - **[[PACS]]** (Picture Archiving and Communication System): Speicherung und Verteilung medizinischer Bilder ([[DICOM]])
 - **Klinikapothekenmodul**: Medikamentenlogistik und Unit-Dose-Versorgung
-- **Stationssystem/Pflegedokumentation**: Pflegerische Dokumentation auf Station
+- **Stationssystem/[[Pflegedokumentation]]**: Pflegerische Dokumentation auf Station
 
 Die Subsysteme kommunizieren über standardisierte Schnittstellen, historisch vorwiegend über **[[HL7|HL7]] v2** (z.B. HL7 ADT-Nachrichten für Aufnahme, Verlegung, Entlassung). Neuere Systeme implementieren zunehmend **[[FHIR]] R4**.
 

@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-03-22T21:35:00Z",
+  "timestamp": "2026-03-22T23:10:00Z",
   "overallScore": 87,
   "testResults": {
-    "passed": 225,
+    "passed": 230,
     "failed": 0,
-    "total": 225
+    "total": 230
   },
   "articles": [
     {
@@ -32,22 +32,22 @@
     },
     {
       "file": "content/infrastructure/MMI-Pharmindex.md",
-      "verdict": "revise",
-      "score": 70,
+      "verdict": "pass",
+      "score": 88,
       "issues": [
-        "FACTUAL ERROR: Line 72 states 'Der MMI-AMTS-Service ist als zugelassenes Medizinprodukt nach MDR (Klasse I) reguliert.' Official MMI website (mmi.de/mmi-pharmindex/mmi-amts-service) explicitly states 'Die Software ist ein Medizinprodukt der Klasse IIa nach der Verordnung (EU) 2017/745 (MDR)'. Klasse I is wrong.",
-        "The [!interesse-technik] callout (line 34) also references 'MDR (EU 2017/745) zugelassen' without specifying the class — must add 'Klasse IIa' qualifier consistent with line 72 fix"
+        "MDR class corrected from I to IIa in interesse-technik callout (line 34) — fix applied correctly. Both callout (line 34) and body text (line 105) now consistently state 'Klasse IIa'. The [!frist-warnung] callout (line 72) also correctly states 'Klasse IIa seit Februar 2023'. Cross-article consistency confirmed."
       ],
-      "fixInstructions": "In line 72, change 'Klasse I' to 'Klasse IIa'. In the [!interesse-technik] callout (line 34), change 'als Medizinprodukt nach [[MDR]] (EU 2017/745) zugelassen' to 'als Medizinprodukt nach [[MDR]] (Klasse IIa, EU 2017/745) zugelassen'. Source: https://www.mmi.de/mmi-pharmindex/mmi-amts-service"
+      "fixInstructions": ""
     },
     {
       "file": "content/processes/T-Rezept.md",
       "verdict": "pass",
-      "score": 87,
+      "score": 90,
       "issues": [
-        "Minor imprecision: article states 'Einlösung ist auf 7 Tage nach Ausstellung begrenzt' but the AMVV specifies validity 'bis zu sechs Tage nach dem Tag ihrer Ausstellung' (6 days after issuance day = 7 total counting the issuance day). Wording is colloquially acceptable but technically imprecise."
+        "Exact AMVV language now applied throughout: 'am Ausstellungstag und bis zu sechs Tage danach (§ 3a AMVV)' — matches legal text. interesse-compliance callout, [!frist-warnung], [!dev-quickstart], [!klinik-integration], and [!praxis-tipp] all consistent. Fix applied correctly.",
+        "Minor: [!praxis-tipp] still states 'bisher 7 Tage beim Papierrezept' for the old rule — this is a retroactive comparison and acceptable context."
       ],
-      "fixInstructions": "Optional precision fix: change wording to 'Das T-Rezept ist am Ausstellungstag und bis zu sechs Tage danach einlösbar (§ 3a AMVV)' to match exact legal language"
+      "fixInstructions": ""
     },
     {
       "file": "content/infrastructure/eID.md",
@@ -414,10 +414,154 @@
         "All URLs verified in prior cycle; no new changes in this cycle."
       ],
       "fixInstructions": ""
+    },
+    {
+      "file": "content/processes/Laborbefund.md",
+      "verdict": "revise",
+      "score": 79,
+      "issues": [
+        "FACTUAL ERROR: Line 37 states 'Das [[BEEP-Gesetz]] (in Kraft 1. Januar 2026) und das Digital-Gesetz (DigiG) verpflichten zur Einführung des MIO Laborbefund in der ePA vor 2030.' The BEEP-Gesetz (Gesetz zur Befugniserweiterung und Entbürokratisierung in der Pflege) is about Pflege entbürokratisierung, not laboratory reporting. The DigiG is the correct legal basis for the MIO Laborbefund obligation before 2030. The BEEP-Gesetz reference is incorrect.",
+        "ePA 3.2 / März 2027 rollout date: consistent with KBV hub ('Frühjahr 2027') and INA gematik search results — confirmed as plausible.",
+        "INA gematik source URL (ina.gematik.de/mitwirken/arbeitskreise/einfuehrungskonzept-laborbefund) could not be verified via Playwright (browser not available), but appears valid from search results.",
+        "Only 4 sources — borderline, but acceptable given 2 are authoritative (mio.kbv.de and ina.gematik.de)."
+      ],
+      "fixInstructions": "In line 37, remove the BEEP-Gesetz reference entirely. The sentence should read: 'Das Digital-Gesetz (DigiG) verpflichtet zur Einführung des MIO Laborbefund in der ePA vor 2030.' The compliance callout (line 40) does not mention BEEP-Gesetz and is correctly worded — no change needed there."
+    },
+    {
+      "file": "content/concepts/TI-Anbindungspflicht.md",
+      "verdict": "revise",
+      "score": 72,
+      "issues": [
+        "STALE LEGAL REFERENCE: Line 24 cites '§ 291a SGB V: Telematikinfrastruktur und sichere Vernetzung'. Through the PDSG 2021, § 291a SGB V was restructured — it now governs the eGK as insurance proof (Versicherungsnachweis) but no longer serves as the primary basis for the Telematikinfrastruktur as described. The TI regulation moved to §§ 306-319 SGB V and the ePA to §§ 341 ff. SGB V.",
+        "STALE LEGAL REFERENCE: Line 25 cites '§ 291b SGB V: Sanktionsmechanismen bei Nichtanbindung'. After PDSG restructuring, § 291b SGB V now covers 'Verfahren zur Nutzung der elektronischen Gesundheitskarte als Versicherungsnachweis'. The sanction mechanisms are in § 360 Abs. 17 SGB V (E-Rezept), § 341 Abs. 6 SGB V (ePA), and § 291b (old) migrated provisions.",
+        "§ 360 SGB V (E-Rezept-Pflicht) — confirmed correct.",
+        "§ 347 SGB V (ePA-Befüllungspflicht ab 1. Oktober 2025) — confirmed correct.",
+        "1% Honorarkürzung claim — confirmed correct per § 360 Abs. 17 SGB V and BSG-Urteil."
+      ],
+      "fixInstructions": "Update the Gesetzliche Grundlagen table: (1) Change '§ 291a SGB V: Telematikinfrastruktur und sichere Vernetzung' to '§ 291a SGB V: Elektronische Gesundheitskarte als Versicherungsnachweis (nach PDSG-Novelle 2021; TI-Rahmen jetzt §§ 306 ff. SGB V)'. (2) Change '§ 291b SGB V: Sanktionsmechanismen bei Nichtanbindung' to '§ 360 Abs. 17 SGB V: Honorarkürzung bei fehlender E-Rezept-Anbindung; § 341 Abs. 6 SGB V: Sanktion bei fehlender ePA-Nutzung'. Same corrections in Technische Details section (lines 83-85)."
+    },
+    {
+      "file": "content/standards/FHIR-Profil.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "ISiK profiles attributed to 'gematik-Arbeitskreise' (line 40) — structurally correct, gematik owns ISiK.",
+        "KBV_PR_ERP_Medication_PZN version '1.1.0' in StructureDefinition example is plausible as an example; not a production claim so not a factual error.",
+        "de.basisprofil.r4@1.5.0 in the quickstart callout: 1.5.0 is a real published version on Simplifier — confirmed.",
+        "5 sources, all authoritative (hl7.org, simplifier.net, ig.fhir.de, gematik, KBV)."
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/standards/NIS-2.md",
+      "verdict": "revise",
+      "score": 74,
+      "issues": [
+        "STALE/MISLEADING: Line 21 states 'Die Umsetzungsfrist für EU-Mitgliedstaaten war der 17. Oktober 2024. Deutschland hat die Umsetzung mit dem NIS2UmsuCG durchgeführt' — this wording implies Germany met the October 2024 deadline. In fact, Germany missed it: the NIS2UmsuCG was passed by the Bundestag on 13. November 2025 and entered into force on 6. Dezember 2025 — more than 13 months late.",
+        "Compliance callout (line 44) states 'Registrierungspflicht beim BSI ab 17. Oktober 2024 (je nach nationaler Umsetzung)' — since Germany's law entered force December 2025, the effective German registration date is January 2026 (BSI portal opened 6. Januar 2026), not Oktober 2024.",
+        "KRITIS-Dachgesetz dates (lines 35 and 54): 'Bundestag 29. Januar 2026' and 'Bundesrat 6. März 2026' — CONFIRMED CORRECT.",
+        "NIS-2 Inkrafttreten 16. Januar 2023 — CONFIRMED CORRECT.",
+        "Umsetzungsfrist 17. Oktober 2024 — CONFIRMED CORRECT as EU deadline.",
+        "4 sources adequate; EUR-Lex URL for NIS-2 directive is authoritative."
+      ],
+      "fixInstructions": "In line 21, change 'Deutschland hat die Umsetzung mit dem NIS-2-Umsetzungs- und Cybersicherheitsstärkungsgesetz (NIS2UmsuCG) durchgeführt, das im Wesentlichen das BSI-Gesetz (BSIG) novelliert.' to: 'Deutschland hat die Umsetzung mit dem NIS-2-Umsetzungs- und Cybersicherheitsstärkungsgesetz (NIS2UmsuCG) verspätet abgeschlossen: Das Gesetz wurde am 13. November 2025 vom Bundestag beschlossen und trat am 6. Dezember 2025 in Kraft, mehr als 13 Monate nach der EU-Umsetzungsfrist.' In the compliance callout, change 'Registrierungspflicht beim BSI ab 17. Oktober 2024 (je nach nationaler Umsetzung)' to 'Registrierungspflicht beim BSI ab 6. Januar 2026 (BSI-Portal geöffnet nach Inkrafttreten des NIS2UmsuCG am 6. Dezember 2025)'."
+    },
+    {
+      "file": "content/processes/Pflegedokumentation.md",
+      "verdict": "revise",
+      "score": 77,
+      "issues": [
+        "FACTUAL ERROR: Line 41 cites '§ 627 BGB / § 630f BGB: Allgemeine Dokumentationspflicht in der Patientenversorgung'. § 627 BGB governs termination rights for service contracts with special personal trust (Dienstverhältnisse), not documentation. The documentation obligation is in § 630f BGB alone. § 627 BGB is irrelevant to medical documentation.",
+        "§ 630g BGB (Einsichtsrecht, line 122) — CONFIRMED CORRECT.",
+        "MDK-Richtlinien reference: the MDK was renamed to Medizinischer Dienst (MD) — article correctly uses both (line 112).",
+        "gematik source URL 'gematik.de/anwendungen/epa/pflege' — plausible path but not verified; acceptable for a forward-looking reference.",
+        "MIO Überleitungsbogen 'Version 1.0.0 angekündigt' (line 100) — consistent with KBV MIO development status."
+      ],
+      "fixInstructions": "In line 41, change '§ 627 BGB / § 630f BGB: Allgemeine Dokumentationspflicht in der Patientenversorgung' to '§ 630f BGB: Pflicht zur Dokumentation in der Patientenversorgung (Patientenrechtegesetz 2013)'. § 627 BGB should be removed entirely from this context."
+    },
+    {
+      "file": "content/technologies/ePA.md",
+      "verdict": "pass",
+      "score": 90,
+      "issues": [
+        "ePA 3.2 addition (line 81): 'Geplante Version für strukturierte Laborbefunde (MIO Laborbefund). Zieldatum: März 2027.' — consistent with KBV hub (Frühjahr 2027) and INA gematik search results. Cross-article consistency with Laborbefund.md confirmed.",
+        "MIO-Einbindung Impfausweis, Mutterpass, U-Heft 'ebenfalls für 2027 geplant' — consistent with line 126 (MIO-Integration) and INA gematik roadmap."
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/processes/eMP.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "Relevance frontmatter added with valid sectors (arztpraxis, apotheke, krankenhaus, zahnarzt, psychotherapie, patient) and interests (technik, patient, compliance) — all valid values.",
+        "interesse-compliance callout: Dates (März 2026, Juli 2026, Oktober 2026) consistent with ePA.md and gematik fachportal.",
+        "interesse-patient callout: correctly explains eMP in patient-accessible language.",
+        "interesse-technik callout: gemspec URL (gemspec.gematik.de/ig/fhir/epa-medication/1.3.0/index.html) is authoritative.",
+        "§ 31a SGB V Anspruch auf Medikationsplan für Patienten mit 3+ Medikamenten — CONFIRMED CORRECT."
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/infrastructure/TI-Federation.md",
+      "verdict": "pass",
+      "score": 89,
+      "issues": [
+        "Relevance frontmatter added with valid sectors (ti-infrastruktur, hersteller, it-dienstleister, kasse, startup) and interest (technik) — all valid values.",
+        "interesse-technik callout: OpenID Federation 1.0 reference correct; gemspec URL for gemSpec_IDP_Sek valid.",
+        "Technical content (OpenID Federation Trust Chain, Entity Statement, brainpoolP256r1 token format) is accurate.",
+        "4 sources; all authoritative."
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/infrastructure/LIS.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "Relevance frontmatter added with valid sectors (krankenhaus, arztpraxis, hersteller, it-dienstleister, forschung) and interest (technik) — all valid values.",
+        "interesse-technik callout: correct, references ISiK and HL7 appropriately.",
+        "DEMIS 'ab April 2026' Stammdaten requirement (line 79): specific date unverifiable from authoritative public source; classified as unverifiable, not wrong.",
+        "DIN EN ISO 15189 Beuth source URL may be behind a paywall (norm purchase), but the reference is correct. 5 sources total, all authoritative."
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/organization/Bundesnetzagentur.md",
+      "verdict": "pass",
+      "score": 90,
+      "issues": [
+        "Relevance frontmatter added with valid sectors and interests — all valid values.",
+        "Sitz Bonn — CONFIRMED CORRECT (Wikipedia, official site).",
+        "Art. 17 eIDAS as supervisory body — CONFIRMED CORRECT.",
+        "QES-PKI / nonQES-PKI split (Bundesnetzagentur vs. gematik) — CONFIRMED CORRECT.",
+        "interesse-compliance callout: eIDAS 2.0 (EU 2024/1183) reference — confirmed correct (article for eIDAS 2.0 already verified in prior cycle).",
+        "interesse-technik callout: DTL URL (elektronische-vertrauensdienste.de) — confirmed live from search results.",
+        "2 interesse callouts, both correctly typed and relevant."
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/organization/KZBV.md",
+      "verdict": "pass",
+      "score": 90,
+      "issues": [
+        "Relevance frontmatter added with valid sectors (zahnarzt, regulierung, verband, hersteller) and interests (compliance, business) — all valid values.",
+        "63.000 Vertragszahnärzte — CONFIRMED CORRECT via web search.",
+        "gematik-Gesellschafterin status — CONFIRMED CORRECT.",
+        "G-BA Stimmrechte — CONFIRMED CORRECT (KZBV.de).",
+        "interesse-compliance callout: TI-Pflichten für Zahnarztpraxen accurately listed.",
+        "interesse-business callout: BEMA reference correct.",
+        "4 sources, all authoritative (kzbv.de, gematik.de, Wikipedia, BMG)."
+      ],
+      "fixInstructions": ""
     }
   ],
   "contradictions": [],
-  "staleArticles": [],
+  "staleArticles": [
+    "NIS-2.md (implies Germany met October 2024 NIS-2 deadline; actual NIS2UmsuCG entered force 6. Dezember 2025)",
+    "TI-Anbindungspflicht.md (§ 291a SGB V described as 'Telematikinfrastruktur und sichere Vernetzung' — restructured by PDSG 2021; TI-Rahmen now in §§ 306 ff. SGB V)"
+  ],
   "deadUrls": [
     {
       "file": "content/processes/VSDM-2.md",
@@ -449,15 +593,27 @@
     "https://www.g-ba.de/ueber-den-g-ba/wer-wir-sind/",
     "https://www.iqwig.de/",
     "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32014R0910",
-    "https://www.ifaffm.de/de/ifa-gmbh.html"
+    "https://www.ifaffm.de/de/ifa-gmbh.html",
+    "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32022L2555",
+    "https://www.ina.gematik.de/mitwirken/arbeitskreise/einfuehrungskonzept-laborbefund",
+    "https://mio.kbv.de",
+    "https://loinc.org/",
+    "https://www.elektronische-vertrauensdienste.de/",
+    "https://www.kzbv.de/die-kzbv/aufgaben-und-finanzierung/",
+    "https://www.gematik.de/ueber-uns/gremien-gesellschafter",
+    "https://fachportal.gematik.de/anwendungen/elektronischer-medikationsplan",
+    "https://gemspec.gematik.de/ig/fhir/epa-medication/1.3.0/index.html",
+    "https://www.bundestag.de/dokumente/textarchiv/2026/kw05-de-kritische-infrastruktur-1137002",
+    "https://www.bundesrat.de/DE/plenum/bundesrat-kompakt/26/1062/1062-node.html"
   ],
   "factChecksVerified": [
-    "MMI-AMTS-Service MDR Klasse IIa: confirmed via mmi.de/mmi-pharmindex/mmi-amts-service (article incorrectly states Klasse I)",
+    "MMI-AMTS-Service MDR Klasse IIa: confirmed via mmi.de/mmi-pharmindex/mmi-amts-service (article incorrectly stated Klasse I — now fixed)",
     "PZN 8-digit format since 2012: confirmed via Wikipedia PZN article",
     "eID introduced November 2010: confirmed",
     "MDR in effect May 26, 2021: confirmed via EUR-Lex",
     "DVPMG DiPA introduction June 2021: confirmed",
     "T-Rezept legal basis § 3a AMVV (Thalidomid, Lenalidomid, Pomalidomid): confirmed",
+    "T-Rezept validity: 'am Ausstellungstag und bis zu sechs Tage danach' per § 3a AMVV — confirmed correct",
     "E-T-Rezept spec August 2025, rollout Q4/2026: confirmed",
     "IQWiG founded 2004 on GMG basis, 300 staff in Cologne: confirmed",
     "IQWiG legal basis § 139a SGB V: confirmed",
@@ -472,15 +628,32 @@
     "VSDM 2.0 Parallelbetrieb ab 30.06.2026: confirmed via fachportal.gematik.de",
     "VSDM 2.0 Vollrollout ca. Februar 2027: confirmed via fachportal.gematik.de",
     "VSDM 1.0 Abschaltung Mitte 2027: confirmed via fachportal.gematik.de",
-    "ZETA Open Source release 15.12.2025: confirmed via gematik.de news (article date 16.12.2025, release date in text 15.12.2025)",
+    "ZETA Open Source release 15.12.2025: confirmed via gematik.de news",
     "ZETA correct GitHub repo: github.com/gematik/zeta (not zero-trust)",
     "ISO 27001:2022 transition deadline 31.10.2025: confirmed via DAkkS/IAF guidance",
     "§139e SGB V 3-Monats-Prüffrist: confirmed via live legal text",
-    "§139e SGB V Abs.3 Satz 1 allows up to 3-month extension: confirmed via live legal text (contradicts DiGA-Fast-Track.md clock-stop claim)",
-    "ApoVWG 9.50€ via separate BMG Verordnung not in law text: confirmed via ABDA statements"
+    "ApoVWG 9.50€ via separate BMG Verordnung not in law text: confirmed via ABDA statements",
+    "NIS-2 Richtlinie (EU) 2022/2555 Inkrafttreten 16. Januar 2023: confirmed via EUR-Lex",
+    "NIS-2 Umsetzungsfrist 17. Oktober 2024: confirmed as EU deadline for member states",
+    "NIS2UmsuCG Inkrafttreten 6. Dezember 2025: confirmed — Germany missed EU deadline by 13+ months",
+    "KRITIS-Dachgesetz Bundestag 29. Januar 2026: confirmed via bundestag.de",
+    "KRITIS-Dachgesetz Bundesrat 6. März 2026: confirmed via bundesrat.de",
+    "§ 347 SGB V ePA-Befüllungspflicht ab 1. Oktober 2025: confirmed",
+    "§ 360 SGB V E-Rezept-Pflicht ab 1. Januar 2024: confirmed",
+    "1% Honorarkürzung bei TI-Nichtanbindung: confirmed via § 360 Abs. 17 SGB V and BSG-Urteil",
+    "§ 31a SGB V Anspruch auf Medikationsplan bei 3+ Medikamenten: confirmed",
+    "KZBV 63.000 Vertragszahnärzte: confirmed",
+    "KZBV gematik-Gesellschafterin: confirmed",
+    "Bundesnetzagentur Sitz Bonn: confirmed",
+    "Bundesnetzagentur Art. 17 eIDAS supervisory body: confirmed",
+    "ePA 3.2 MIO Laborbefund Rollout Frühjahr 2027: confirmed via KBV hub and INA gematik",
+    "§ 630g BGB Einsichtsrecht Pflegedokumentation: confirmed",
+    "§ 630f BGB Dokumentationspflicht (nicht § 627 BGB): confirmed — § 627 BGB governs termination rights, not documentation"
   ],
   "factChecksUnverifiable": [
     "BT-Drucksache 20/11853 for GVSG (plausible, not cross-checked against DIP)",
-    "Simultaneous nature of RISE and Bitmarck/KBV outages on 03.03.2026 (industry press confirms outages on date, simultaneous aspect unverified from official source)"
+    "Simultaneous nature of RISE and Bitmarck/KBV outages on 03.03.2026 (industry press confirms outages on date, simultaneous aspect unverified from official source)",
+    "LIS DEMIS Stammdaten requirement 'ab April 2026' (specific date not found in authoritative source)",
+    "MIO Laborbefund INA Arbeitskreis Abschluss 'Frühjahr 2026' (consistent with search results describing specs as 'nearly complete' but exact Spring 2026 date not confirmed from authoritative source)"
   ]
 }

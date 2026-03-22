@@ -6,7 +6,7 @@ aliases: [MMI Pharmindex, Gelbe Liste Pharmindex, Vidal MMI, MMI-Datenbank, Gelb
 relevance:
   sectors: [arztpraxis, apotheke, krankenhaus, zahnarzt, hersteller, it-dienstleister]
   interests: [technik, business, compliance]
-maturity: setzling
+maturity: wachsend
 ---
 
 # MMI-Pharmindex
@@ -32,7 +32,7 @@ Im Kontext der deutschen [[Telematikinfrastruktur]] ist der MMI-Pharmindex relev
 - **[[BMP]] (Bundeseinheitlicher Medikationsplan)**: Arzneimittelstammdaten für die Befüllung des BMP
 
 > [!interesse-technik] Integration in PVS und AVS
-> MMI-Pharmindex Pro ist als Webservice verfügbar und kann über eine REST-API in Primärsysteme integriert werden. Die API liefert Arzneimittelstammdaten (nach [[PZN]]), Interaktionsdaten, Kontraindikationshinweise und Dosierungsinformationen. Der zugrundeliegende AMTS-Service ist als Medizinprodukt nach [[MDR]] (EU 2017/745) zugelassen. Die Interaktionsdaten stammen aus der Datenbank der Abteilung Klinische Pharmakologie und Pharmakoepidemologie des Universitätsklinikums Heidelberg. Für die Integration in Konnektor-gebundene Systeme (PVS mit TI-Anbindung) gelten keine spezifischen Konnektoren-Anforderungen, da die Datenbankabfrage unabhängig von der TI-Kommunikationsschicht erfolgt.
+> MMI-Pharmindex Pro ist als Webservice verfügbar und kann über eine REST-API in Primärsysteme integriert werden. Die API liefert Arzneimittelstammdaten (nach [[PZN]]), Interaktionsdaten, Kontraindikationshinweise und Dosierungsinformationen. Der zugrundeliegende AMTS-Service ist als Medizinprodukt nach [[MDR]] (Klasse IIa, EU 2017/745) zugelassen. Die Interaktionsdaten stammen aus der Datenbank der Abteilung Klinische Pharmakologie und Pharmakoepidemologie des Universitätsklinikums Heidelberg. Für die Integration in Konnektor-gebundene Systeme (PVS mit TI-Anbindung) gelten keine spezifischen Konnektoren-Anforderungen, da die Datenbankabfrage unabhängig von der TI-Kommunikationsschicht erfolgt.
 
 > [!interesse-business] Marktstellung und Wettbewerb
 > Vidal MMI und die ABDA (über ihre Tochtergesellschaft ABDATA) teilen den deutschen Markt für Arzneimittelstammdaten in Primärsystemen. PVS-Hersteller lizenzieren in der Regel eine der beiden Datenbanken oder bieten den Kunden die Wahl. Für Apothekensoftware (AVS) ist die [[ABDA-Datenbank]] traditionell dominierend, da sie aus dem Apothekerumfeld stammt. Im Praxissegment (PVS) ist der MMI-Pharmindex stark vertreten. Die Marktanteile sind nicht öffentlich bekannt.

@@ -102,7 +102,7 @@ Die KZBV vertritt die kassenzahnärztlichen Interessen und handelt mit dem GKV-S
 - [[G-BA]] (Gemeinsamer Bundesausschuss, mit dem BZÄK in der Versorgungspolitik interagiert)
 - [[ePA]] (TI-Pflichtanwendung für Zahnarztpraxen)
 - [[QES]] (qualifizierte elektronische Signatur via HBA)
-- [[DVG]] (begründete TI-Anbindungspflicht für Zahnärzte)
+- [[DVG]] (begründete [[TI-Anbindungspflicht]] für Zahnärzte)
 
 ## Quellen
 

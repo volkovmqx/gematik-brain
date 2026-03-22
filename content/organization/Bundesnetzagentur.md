@@ -3,6 +3,10 @@ title: Bundesnetzagentur
 audience: [technical, non-technical]
 tags: [organisation, regulierung, eidas, qes, vertrauensdienste]
 aliases: [BNetzA, Bundesnetzagentur für Elektrizität Gas Telekommunikation Post und Eisenbahnen]
+relevance:
+  sectors: [regulierung, hersteller, ti-infrastruktur, it-dienstleister, arztpraxis, krankenhaus]
+  interests: [compliance, technik]
+maturity: immergruen
 ---
 
 # Bundesnetzagentur
@@ -21,11 +25,17 @@ Für das deutsche Gesundheitswesen ist die Bundesnetzagentur relevant, weil sie 
 
 Die Bundesnetzagentur nimmt in Deutschland die Funktion der zuständigen nationalen Behörde (englisch: supervisory body) nach Art. 17 eIDAS-Verordnung wahr. Sie erteilt die Qualifizierung, führt die Deutsche Vertrauensliste und überwacht laufend die Einhaltung der Anforderungen.
 
+> [!interesse-compliance] Pflichten für VDA-Anbieter und Produkthersteller
+> Wer qualifizierte elektronische Signaturen ([[QES]]) in TI-Produkten nutzen will, muss sicherstellen, dass die eingesetzten Zertifikate von einem qualifizierten VDA aus der Deutschen Vertrauensliste stammen. PVS- und KIS-Hersteller, die [[HBA]]-Zertifikate prüfen, müssen die Deutsche Vertrauensliste regelmäßig aktualisieren. Vertrauensdiensteanbieter unterliegen der laufenden Aufsicht der Bundesnetzagentur; Sicherheitsvorfälle sind unverzüglich zu melden (Art. 19 eIDAS). Ab eIDAS 2.0 (EU 2024/1183) kommen neue Anforderungen für qualifizierte elektronische Attributsbescheinigungen hinzu.
+
 ## Technische Details
 
 ### Qualifizierungsprozess für VDA
 
 Damit ein Vertrauensdiensteanbieter als qualifizierter VDA anerkannt wird, muss er ein aufwendiges Konformitätsbewertungsverfahren durchlaufen. Unabhängige Prüfstellen begutachten die technische und organisatorische Eignung des Anbieters. Erst nach erfolgreicher Prüfung erteilt die Bundesnetzagentur die Qualifizierung und nimmt den Anbieter in die Deutsche Vertrauensliste auf.
+
+> [!interesse-technik] Deutsche Vertrauensliste: maschinenlesbar abfragen
+> Die Deutsche Vertrauensliste (DTL) ist ein signiertes XML-Dokument (ETSI TS 119 612). Abruf: [bundesnetzagentur.de/evd](https://www.elektronische-vertrauensdienste.de/EVD/DE/Institutionen/VDA/Trustlist/Start.html). TI-Komponenten wie [[Konnektoren]] und [[TI-Gateway]] laden die DTL automatisch, um die Gültigkeit von QES-Zertifikaten zu prüfen. In der TI-PKI ist die DTL als Teil der Trust Service List (TSL) integriert, die von der gematik verwaltet wird.
 
 ### Deutsche Vertrauensliste
 

@@ -38,7 +38,7 @@ Kernanforderungen des KRITIS-DachG:
 
 ### NIS-2-Richtlinie und BSIG
 
-Parallel dazu gilt die **NIS-2-Richtlinie (Network and Information Security)**, die durch eine Novelle des BSI-Gesetzes umgesetzt wurde. NIS-2 erweitert den Kreis der verpflichteten Einrichtungen erheblich: Auch mittlere und große Unternehmen in kritischen Sektoren, darunter viele Gesundheitsdienstleister, fallen nun unter die Anforderungen. NIS-2 unterscheidet zwischen **wesentlichen Einrichtungen** (essential entities, höhere Anforderungen) und **wichtigen Einrichtungen** (important entities).
+Parallel dazu gilt die **[[NIS-2]]-Richtlinie (Network and Information Security)**, die durch eine Novelle des BSI-Gesetzes umgesetzt wurde. NIS-2 erweitert den Kreis der verpflichteten Einrichtungen erheblich: Auch mittlere und große Unternehmen in kritischen Sektoren, darunter viele Gesundheitsdienstleister, fallen nun unter die Anforderungen. NIS-2 unterscheidet zwischen **wesentlichen Einrichtungen** (essential entities, höhere Anforderungen) und **wichtigen Einrichtungen** (important entities).
 
 ## Technische Details
 

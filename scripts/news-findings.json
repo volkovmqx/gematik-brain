@@ -1,6 +1,6 @@
 {
   "lastChecked": "2026-03-22",
-  "lastRun": "2026-03-22T18:00:00Z",
+  "lastRun": "2026-03-22T20:30:00Z",
   "findings": [
     {
       "title": "eMedikationsplan: Start verschoben auf Oktober 2026",
@@ -1866,8 +1866,9 @@
         "ePA.md"
       ],
       "category": "specification",
-      "action": "update",
-      "details": "ePA.md sollte ePA 3.2 als geplante Version für Laborbefunde (MIO Laborbefund) mit Zieldatum März 2027 ergänzen. Klare Abgrenzung zu ePA 3.1.3 (eMedikationsplan, Q3/2026). Hinweis, dass der MIO-Zeitplan für Impfausweis/Mutterpass/U-Heft ebenfalls 2027 ist. Informationsquelle: INA-Arbeitskreis Laborbefund und Ärztezeitung (Feb 2026).",
+      "action": "applied",
+      "appliedDate": "2026-03-22",
+      "details": "ePA.md: ePA 3.2 als geplante Version für Laborbefunde (MIO Laborbefund) mit Zieldatum März 2027 ergänzt. Klare Abgrenzung zu ePA 3.1.3 (eMedikationsplan, Q3/2026). Hinweis, dass der MIO-Zeitplan für Impfausweis/Mutterpass/U-Heft ebenfalls 2027 ist.",
       "suggestedTerm": "MIO Laborbefund"
     },
     {
@@ -1906,8 +1907,9 @@
         "Gesundheits-ID.md"
       ],
       "category": "info",
-      "action": "update",
-      "details": "Gesundheits-ID.md sollte aktuelle Registrierungszahl (4,4 Millionen, Anfang 2026) und den offiziellen Nutzungsstart als Versicherungsnachweis ab 1. Januar 2026 ergänzen. Abgrenzung zum eGK-Ersatz (erst 2027 mit PoPP) klar darstellen."
+      "action": "applied",
+      "appliedDate": "2026-03-22",
+      "details": "Gesundheits-ID.md: Registrierungszahl (4,4 Millionen, Anfang 2026) und offizieller Nutzungsstart als Versicherungsnachweis ab 1. Januar 2026 waren bereits dokumentiert. Kein weiterer Update nötig."
     }
   ]
 }

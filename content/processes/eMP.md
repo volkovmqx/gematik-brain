@@ -3,6 +3,10 @@ title: eMP - Elektronischer Medikationsplan
 audience: [technical, non-technical]
 tags: [prozess, medikation, amts, epa, fhir]
 aliases: [eMP, Elektronischer Medikationsplan, e-Medikationsplan]
+relevance:
+  sectors: [arztpraxis, apotheke, krankenhaus, zahnarzt, psychotherapie, patient]
+  interests: [technik, patient, compliance]
+maturity: wachsend
 ---
 
 # eMP - Elektronischer Medikationsplan
@@ -27,7 +31,17 @@ Der eMP ist eng mit der **[[eML|elektronischen Medikationsliste (eML)]]** verkn�
 
 Ab März 2026 können Versicherte den eMP in der [[ePA]] speichern lassen. Der flächendeckende Rollout als Pflichtteil der ePA ist für Oktober 2026 geplant, mit einer Pilotphase ab Juli 2026.
 
+> [!interesse-compliance] Fristen und Pflichten für Leistungserbringer
+> - **März 2026**: eMP freiwillig in der ePA nutzbar
+> - **Juli 2026**: Pilotstart eMedikationsplan in ausgewählten Regionen
+> - **Oktober 2026**: Bundesweiter Rollout; [[PVS]]-, [[KIS]]- und [[AVS]]-Hersteller müssen das eMP-Modul bis dahin zertifiziert haben
+> - Gesetzlicher Anspruch auf Medikationsplan für Patienten mit drei oder mehr Medikamenten: § 31a [[SGB V]]
+> - Praxen sind verpflichtet, den eMP auf Anforderung des Patienten zu erstellen und in die ePA einzustellen
+
 ## Technische Details
+
+> [!interesse-patient] Was der eMP für Patienten bedeutet
+> Der eMP ist Ihre persönliche Medikamentenliste in der [[ePA]]. Sie enthält alle Dauermedikamente, Dosierungsanweisungen und klinische Hinweise. Jeder Arzt, der auf Ihre ePA zugreift, sieht diese Liste und kann prüfen, ob ein neues Medikament gefährliche Wechselwirkungen hat. Sie selbst können den eMP über die App Ihrer Krankenkasse einsehen. Einträge können nur Ärzte und Apotheken vornehmen, nicht Sie selbst, aber Sie haben das Recht, einzelne Einträge löschen zu lassen.
 
 ### FHIR-Datenmodell
 
@@ -40,6 +54,9 @@ Der eMP in der [[ePA]] basiert auf [[FHIR]] R4. Der Medication Service ist ein e
 - `Provenance` und `AuditEvent`: Protokollierung aller Änderungen
 
 Die [[KBV]] definiert spezifische [[FHIR]]-Profile für den Medikationsplan als [[MIO]] (Medizinische Informationsobjekte). Diese Profile standardisieren die Darstellung von Medikationsdaten in der TI.
+
+> [!interesse-technik] FHIR-Profil und API-Zugang
+> Der eMP-Medication-Service ist ein eigenständiger FHIR-Datendienst im ePA-Aktensystem. Zugang über die ePA-Schnittstelle (VAU-verschlüsselt). Spezifikation: [gemspec.gematik.de/ig/fhir/epa-medication](https://gemspec.gematik.de/ig/fhir/epa-medication/1.3.0/index.html). FHIR-Profile für den Medikationsplan: [[MIO]] Medikationsplan auf [mio.kbv.de](https://mio.kbv.de). Wichtig: Extern übertragene FHIR-Instanzen sind Data Transfer Objects, keine Speicherobjekte. Der Dienst vergibt interne IDs und speichert nur "Must Support"-Elemente.
 
 ### Verarbeitungsprinzip im Medication Service
 
@@ -54,6 +71,21 @@ Mit ePA 3.1.3 werden **AMTS-rZI (AMTS-relevante Zusatzinformationen)** eingefüh
 Zugriff auf den eMP haben Ärzte, Zahnärzte, Psychotherapeuten, Krankenhäuser und Apotheken über ihr Primärsystem ([[PVS]], [[KIS]], AVS) und den [[Fachdienst|ePA-Fachdienst]]. Versicherte selbst haben Zugriff über die [[ePA-App]]. Der Zugriff ist an die Einwilligung des Patienten gebunden und wird in der [[ePA]] protokolliert.
 
 Die eigentliche Interaktionsprüfung (Wechselwirkungscheck) findet nicht im ePA-Fachdienst statt, sondern in den Primärsystemen, die Datenbanken wie [[ABDA]] oder [[MMI-Pharmindex]] einbinden.
+
+> [!patientenrecht] Patientenrecht: Ihr Medikationsplan gehört Ihnen
+> Sie haben einen gesetzlichen Anspruch auf einen Medikationsplan, wenn Sie drei oder mehr Medikamente einnehmen (§ 31a SGB V). Ihr Arzt muss diesen Plan auf Anfrage erstellen und in Ihre ePA einstellen.
+>
+> **Was können Sie selbst tun?**
+> - Sie können Ihren Medikationsplan jederzeit in der ePA-App Ihrer Krankenkasse einsehen.
+> - Sie können den gesamten eMP aus Ihrer ePA widersprechen. Sprechen Sie dazu Ihre Krankenkasse an oder nutzen Sie die Kassen-App.
+> - Sie können einzelne Einträge löschen lassen. Bitten Sie Ihren Arzt oder Ihre Apotheke darum.
+>
+> **Wichtig:** Selbst ändern können Sie den eMP nicht direkt. Nur Ärzte und Apotheken dürfen Einträge vornehmen. Wenn Sie einen Fehler bemerken, sprechen Sie Ihren Arzt darauf an.
+>
+> **Widerspruch gegen den eMP:**
+> 1. Wenden Sie sich an Ihre Krankenkasse (Telefon oder App).
+> 2. Sagen Sie, dass Sie dem elektronischen Medikationsplan in der ePA widersprechen möchten.
+> 3. Ihre Medikamentendaten werden dann nicht mehr automatisch dort gespeichert.
 
 ## Verknüpfungen
 

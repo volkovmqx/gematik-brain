@@ -3,7 +3,10 @@ title: LIS
 audience: [technical]
 tags: [infrastruktur, labor, krankenhaus, interoperabilität, hl7]
 aliases: [Labor-Informationssystem, Laborinformationssystem, Laboratory Information System]
-maturity: immergruen
+maturity: wachsend
+relevance:
+  sectors: [krankenhaus, arztpraxis, hersteller, it-dienstleister, forschung]
+  interests: [technik]
 ---
 
 # LIS
@@ -62,6 +65,9 @@ Für den Datenaustausch zwischen Einsenderlaboren und niedergelassenen Arztpraxe
 
 [[LOINC]] (Logical Observation Identifiers Names and Codes) ist die Standardterminologie für Laborparameter. Ein LIS ordnet jedem Labortest einen LOINC-Code zu. Das ermöglicht die systemübergreifende Auswertung von Laborergebnissen. LOINC-Codes sind auch in den [[FHIR]]-Ressourcen für Laborwerte (Observation) vorgeschrieben.
 
+> [!interesse-technik] Schnittstellen-Übersicht für LIS-Integratoren
+> Wichtigste Standards für die LIS-Integration: HL7 v2 (OML^O21 für Aufträge, OUL^R22/ORU^R01 für Ergebnisse), LDT 3.0 mit LOINC-Codes für Einsenderlabore, FHIR R4 (Observation + DiagnosticReport) für ISiK-Stufe 3. DEMIS-Meldepflicht: FHIR Bundle (DiagnosticReport + Composition) an RKI. Profil-Referenzen: ISiK Modul Labor auf [simplifier.net/isik](https://simplifier.net/isik). HL7-v2-Spezifikation für OML/OUL: [hl7.org](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=185).
+
 #### FHIR-Schnittstellen
 
 Moderne LIS-Systeme implementieren zunehmend [[FHIR]] R4. Im [[ISiK]]-Kontext werden Laborergebnisse als FHIR-Observation-Ressourcen bereitgestellt. Die ISiK-Profile für Laborwerte schreiben LOINC-Codes und spezifische Wertcodierungen vor.
@@ -90,7 +96,7 @@ Labore müssen akkreditiert sein (DIN EN ISO 15189 für medizinische Laboratorie
 Das LIS ist kein direkter Teilnehmer der [[Telematikinfrastruktur]], aber über das [[KIS]] mit ihr verbunden:
 
 - Laborergebnisse können über das KIS in die [[ePA]] des Patienten eingestellt werden
-- [[KIM]]-Nachrichten können Laborbefunde im PDF- oder LDT-Format übertragen
+- [[KIM]]-Nachrichten können [[Laborbefund|Laborbefunde]] im PDF- oder LDT-Format übertragen
 - DEMIS-Meldungen laufen über das DEMIS-Meldeportal, das selbst FHIR-basiert ist
 
 ## Verknüpfungen
@@ -102,6 +108,7 @@ Das LIS ist kein direkter Teilnehmer der [[Telematikinfrastruktur]], aber über 
 - [[LOINC]] (Terminologie für Laborparameter; in LDT 3.0 und FHIR integriert)
 - [[DEMIS]] (Meldeportal des RKI; LIS ist primäres Quellsystem für Labormeldungen)
 - [[xDT]] (LDT-Format für Laborbefunde an Arztpraxen)
+- [[Laborbefund]] (strukturiertes FHIR-Dokument für die ePA, erzeugt vom LIS)
 - [[ISiK]] (FHIR-basierter Interoperabilitätsstandard für Laborwerte im Krankenhaus)
 - [[RKI]] (Empfänger der DEMIS-Labormeldungen)
 - [[IfSG]] (Infektionsschutzgesetz; Rechtsgrundlage für Labormeldepflichten)

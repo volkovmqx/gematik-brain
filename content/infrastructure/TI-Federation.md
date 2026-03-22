@@ -3,6 +3,10 @@ title: TI-Federation
 audience: [technical]
 tags: [infrastruktur, identität, authentisierung, ti-2-0, federation, idp]
 aliases: [TI-Federation, TI-Föderation, Föderierung, Identitätsföderation]
+relevance:
+  sectors: [ti-infrastruktur, hersteller, it-dienstleister, kasse, startup]
+  interests: [technik]
+maturity: wachsend
 ---
 
 # TI-Federation
@@ -34,6 +38,9 @@ Die TI-Federation verfolgt mehrere Ziele:
 - **[[Gesundheits-ID]]**: Versicherte können sich per App ihrer Krankenkasse statt mit der physischen [[eGK]] authentisieren
 
 ## Technische Details
+
+> [!interesse-technik] Spezifikationen und Implementierungsreferenzen
+> Die TI-Federation basiert auf OpenID Federation 1.0. Spezifikation des sektoralen IDP: `gemSpec_IDP_Sek` auf [gemspec.gematik.de](https://gemspec.gematik.de/docs/gemSpec/gemSpec_IDP_Sek/latest/). Trust Anchor: gematik (Entity Configuration unter `https://idp.ti.de/.well-known/openid-federation`). Discovery-Endpunkt für sektorale IDPs: wird von der gematik betrieben und listet alle registrierten IDPs mit Sektorzuordnung. Token-Format: JWT (ES256/brainpoolP256r1). Relevante OpenID-Spezifikationen: [openid.net/specs/openid-federation-1_0.html](https://openid.net/specs/openid-federation-1_0.html).
 
 ### Grundlagen: OpenID Federation
 
@@ -67,6 +74,30 @@ Sektorale IDPs müssen laut gematik-Spezifikation (`gemSpec_IDP_Sek`) folgende A
 - Einheitliche Scopes für Nutzergruppen
 - Registrierung beim Trust Anchor (gematik) über ein Subordinate Statement
 - Nutzung von JSON Web Keys (JWK) statt klassischer TLS-PKI für die Federation
+
+> [!dev-quickstart] Dev Quickstart: TI-Federation OAuth/OIDC-Flow implementieren
+> Spezifikation: `gemSpec_IDP_Sek` v3.2.0 — [gemspec.gematik.de/docs/gemSpec/gemSpec_IDP_Sek/latest/](https://gemspec.gematik.de/docs/gemSpec/gemSpec_IDP_Sek/latest/)
+> gematik Referenz-IDP (Open Source): [github.com/gematik/app-gemSekIdp](https://github.com/gematik/app-gemSekIdp)
+>
+> ```bash
+> # 1. Entity Configuration des Trust Anchors abrufen
+> curl https://idp.ti.de/.well-known/openid-federation
+>
+> # 2. Alle registrierten sektoralen IDPs auflesen (Federation Master)
+> curl https://idp.ti.de/federation_master/idp_list
+>
+> # 3. Entity Configuration eines sektoralen IDP abrufen
+> curl https://<sek-idp-host>/.well-known/openid-federation
+>
+> # 4. Pushed Authorization Request (PAR) an sektoralen IDP
+> curl -X POST https://<sek-idp-host>/as/par \
+>   -d "client_id=<client_id>&response_type=code&scope=openid+kvnr" \
+>   -d "redirect_uri=<uri>&code_challenge=<pkce-challenge>&code_challenge_method=S256"
+> ```
+>
+> Token-Format: JWT, signiert mit ES256 (brainpoolP256r1)
+> Pflicht-Claims im ID-Token: `kvnr`, `given_name`, `family_name`, `iss`, `sub`, `aud`, `exp`
+> IDP-Wissensdatenbank (gematik Confluence): [wiki.gematik.de/display/IDPKB](https://wiki.gematik.de/display/IDPKB)
 
 ### IDP-Discovery
 

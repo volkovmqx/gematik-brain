@@ -16,7 +16,7 @@ Stell dir vor, ein Krankenhaus wird von einem Hochwasser überflutet oder ein St
 
 ## Überblick
 
-Das KRITIS-Dachgesetz wurde vom **Bundestag am 29. Januar 2026** verabschiedet. Der **Bundesrat stimmte am 6. März 2026** zu. Es setzt die europäische **CER-Richtlinie** (Critical Entities Resilience Directive, EU 2022/2557) in deutsches Recht um. Die CER-Richtlinie ist das physische Gegenstück zur NIS-2-Richtlinie (Cybersicherheit) und verlangt von den Mitgliedstaaten, kritische Einrichtungen auch gegen physische Bedrohungen zu schützen.
+Das KRITIS-Dachgesetz wurde vom **Bundestag am 29. Januar 2026** verabschiedet. Der **Bundesrat stimmte am 6. März 2026** zu. Es setzt die europäische **CER-Richtlinie** (Critical Entities Resilience Directive, EU 2022/2557) in deutsches Recht um. Die CER-Richtlinie ist das physische Gegenstück zur [[NIS-2]]-Richtlinie (Cybersicherheit) und verlangt von den Mitgliedstaaten, kritische Einrichtungen auch gegen physische Bedrohungen zu schützen.
 
 Das Gesetz schafft einen einheitlichen Rahmen für den physischen Schutz kritischer Infrastrukturen, der bislang fragmentiert auf verschiedene Sektorgesetze verteilt war. Das [[BSI]] erhält eine koordinierende Rolle für den Bereich Cybersicherheit in Verbindung mit dem Bundesamt für Bevölkerungsschutz und Katastrophenhilfe (BBK) für den physischen Schutz.
 
@@ -63,7 +63,7 @@ Betreiber kritischer Anlagen nach KRITIS-Dachgesetz müssen:
 Das KRITIS-Dachgesetz ergänzt, ersetzt aber nicht die bestehenden IT-Sicherheitsanforderungen:
 
 - **KRITIS-Dachgesetz**: Physischer Schutz (Gebäudesicherheit, Zugangskontrolle, Redundanz kritischer Systeme, Schutz vor Naturkatastrophen)
-- **BSI-Gesetz / NIS-2**: Cybersicherheit und IT-Sicherheit
+- **BSI-Gesetz / [[NIS-2]]**: Cybersicherheit und IT-Sicherheit
 
 Für viele Betreiber greifen beide Regelwerke gleichzeitig. Krankenhäuser müssen damit sowohl nach BSI-Gesetz ihre IT absichern als auch nach KRITIS-Dachgesetz ihre physische Infrastruktur schützen.
 

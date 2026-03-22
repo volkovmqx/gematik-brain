@@ -6,7 +6,7 @@ aliases: [T-Rezept, Thalidomid-Rezept, Sonderrezept Thalidomid, E-T-Rezept, elek
 relevance:
   sectors: [arztpraxis, apotheke, krankenhaus, hersteller, regulierung, patient]
   interests: [compliance, technik]
-maturity: wachsend
+maturity: immergruen
 ---
 
 # T-Rezept
@@ -30,7 +30,7 @@ Die betroffenen Wirkstoffe sind:
 Diese Wirkstoffe sind Therapieoptionen bei multiplem Myelom (Knochenmarkkrebs) und anderen hämatologischen Erkrankungen. Ihre Anwendung ist an strenge Bedingungen geknüpft, die über das normale Verschreibungsrecht hinausgehen.
 
 > [!interesse-compliance] Besondere Verschreibungspflichten
-> Ärzte dürfen T-Rezept-pflichtige Arzneimittel nur verschreiben, wenn sie beim BfArM-T-Register registriert sind und die spezifischen Schulungen absolviert haben. Patientinnen im gebärfähigen Alter müssen einen negativen Schwangerschaftstest nachweisen und verlässliche Verhütungsmaßnahmen einhalten. Apotheken dürfen das T-Rezept nur einlösen, wenn es vollständig ausgefüllt ist (Arztregisternummer, Patientennummer aus dem T-Register, Bestätigung der Aufklärung). Die Einlösung ist auf 7 Tage nach Ausstellung begrenzt. Bei Verstößen gegen das T-Register-Verfahren drohen dem Arzt der Entzug der Verschreibungserlaubnis und strafrechtliche Konsequenzen.
+> Ärzte dürfen T-Rezept-pflichtige Arzneimittel nur verschreiben, wenn sie beim BfArM-T-Register registriert sind und die spezifischen Schulungen absolviert haben. Patientinnen im gebärfähigen Alter müssen einen negativen Schwangerschaftstest nachweisen und verlässliche Verhütungsmaßnahmen einhalten. Apotheken dürfen das T-Rezept nur einlösen, wenn es vollständig ausgefüllt ist (Arztregisternummer, Patientennummer aus dem T-Register, Bestätigung der Aufklärung). Das T-Rezept ist am Ausstellungstag und bis zu sechs Tage danach einlösbar (§ 3a AMVV). Bei Verstößen gegen das T-Register-Verfahren drohen dem Arzt der Entzug der Verschreibungserlaubnis und strafrechtliche Konsequenzen.
 
 > [!frist-warnung] Frist-Warnung: Einführung des elektronischen T-Rezepts (E-T-Rezept)
 > **Rechtsgrundlage:** § 3a AMVV (Arzneimittelverschreibungsverordnung) i.V.m. dem gematik-Spezifikationsrahmen für das E-Rezept
@@ -62,7 +62,7 @@ Wichtige Änderungen durch das E-T-Rezept:
 >
 > **KIS-Anpassungsbedarf ab Q4/2026:** Das eingesetzte KIS muss das T-Rezept-FHIR-Profil der gematik implementieren. Pflichtfelder sind Arztregisternummer und Patientenregisternummer aus dem T-Register. Krankenhäuser, die eigene IT-Entwicklung betreiben oder KIS-Module beauftragen, müssen diese Anforderungen in die Leistungsbeschreibung an den KIS-Hersteller aufnehmen.
 >
-> **Krankenhausapotheke:** Die Krankenhausapotheke übernimmt die Dispensierung. Nach Einführung des E-T-Rezepts erfolgt die Meldung an das BfArM-T-Register digital über den E-Rezept-Fachdienst. Die bisherigen manuellen Meldeprozesse der Apotheke (Papierformulare) entfallen. Apothekensoftware im Krankenhaus muss bis Q4/2026 die neue Validierungslogik (7-Tage-Einlösefrist, T-Registernummern-Prüfung) unterstützen.
+> **Krankenhausapotheke:** Die Krankenhausapotheke übernimmt die Dispensierung. Nach Einführung des E-T-Rezepts erfolgt die Meldung an das BfArM-T-Register digital über den E-Rezept-Fachdienst. Die bisherigen manuellen Meldeprozesse der Apotheke (Papierformulare) entfallen. Apothekensoftware im Krankenhaus muss bis Q4/2026 die neue Validierungslogik (Einlösefrist: Ausstellungstag plus sechs Tage nach § 3a AMVV, T-Registernummern-Prüfung) unterstützen.
 
 ## Technische Details
 
@@ -81,7 +81,7 @@ Das System ist Teil des europäischen **Pregnancy Prevention Programme (PPP)** f
 Das E-T-Rezept basiert auf der bestehenden [[E-Rezept]]-Infrastruktur der gematik. Die Besonderheiten:
 
 - **[[FHIR]]-Profil für T-Rezepte**: Die gematik hat ein eigenes FHIR-Profil für das T-Rezept erstellt, das die T-Register-spezifischen Pflichtfelder (Arztregisternummer, Patientenregisternummer) abbildet.
-- **Workflow-Anpassung**: Der E-Rezept-Fachdienst erkennt T-Rezepte als Sonderrezept-Typ und wendet spezifische Einlöse-Validierungen an (z.B. 7-Tage-Frist, T-Register-Nummernprüfung).
+- **Workflow-Anpassung**: Der E-Rezept-Fachdienst erkennt T-Rezepte als Sonderrezept-Typ und wendet spezifische Einlöse-Validierungen an (Ausstellungstag plus sechs Tage nach § 3a AMVV, T-Register-Nummernprüfung).
 - **BfArM-Schnittstelle**: Eine neue Schnittstelle zwischen dem E-Rezept-Fachdienst und dem BfArM-T-Register ermöglicht die digitale Übermittlung der Dispensierungsdaten.
 
 > [!interesse-technik] Spezifikation und Implementierung
@@ -117,7 +117,7 @@ Das E-T-Rezept basiert auf der bestehenden [[E-Rezept]]-Infrastruktur der gemati
 > ```
 > - E-Rezept-Workflow-Profile (Simplifier): [simplifier.net/erezept-workflow](https://simplifier.net/erezept-workflow)
 > - GitHub API-Dokumentation: [gematik/api-erp](https://github.com/gematik/api-erp)
-> - Gültigkeitsfrist des T-Rezepts: 7 Tage (Validierung durch E-Rezept-Fachdienst serverseitig)
+> - Gültigkeitsfrist des T-Rezepts: Ausstellungstag und bis zu sechs Tage danach nach § 3a AMVV (Validierung durch E-Rezept-Fachdienst serverseitig)
 > - BfArM T-Register: [bfarm.de/T-Register](https://www.bfarm.de/DE/Bundesopiumstelle/T-Register/_node.html)
 
 ### Abgrenzung zu anderen Sonderrezepten

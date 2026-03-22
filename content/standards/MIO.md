@@ -28,7 +28,7 @@ MIOs werden über das öffentliche Portal [mio.kbv.de](https://mio.kbv.de) verö
 
 ### Technische Grundlagen
 
-MIOs basieren auf **[[FHIR]] R4** (Fast Healthcare Interoperability Resources, Version 4). FHIR-Ressourcen werden als JSON oder XML kodiert. Jedes MIO definiert ein oder mehrere **FHIR-Profile** (StructureDefinition), die die Basis-FHIR-Ressourcen einschränken und erweitern.
+MIOs basieren auf **[[FHIR]] R4** (Fast Healthcare Interoperability Resources, Version 4). FHIR-Ressourcen werden als JSON oder XML kodiert. Jedes MIO definiert ein oder mehrere **[[FHIR-Profil|FHIR-Profile]]** (StructureDefinition), die die Basis-FHIR-Ressourcen einschränken und erweitern.
 
 Die verwendeten Terminologien:
 - **SNOMED CT**: Klinische Konzepte (Diagnosen, Prozeduren, Befunde)
