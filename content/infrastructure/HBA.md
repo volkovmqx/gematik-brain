@@ -27,7 +27,7 @@ Die Ausgabe erfolgt über die zuständigen Heilberufskammern:
 - Psychotherapeuten: Landespsychotherapeutenkammern
 - Pflegekräfte, Hebammen, Physiotherapeuten: über das [[eGBR|elektronische Gesundheitsberuferegister (eGBR)]]
 
-Für bestimmte Gruppen, zum Beispiel EU-Versandapotheker, ist [[gematik]] direkt der Kartenherausgeber.
+Für bestimmte Gruppen, zum Beispiel EU-Versandapotheker, ist [[gematik]] direkt der [[Kartenherausgeber]].
 
 Die aktuelle Kartengeneration ist **G2.1**. Sie unterstützt sowohl RSA- als auch ECC-Schlüsselpaare und entspricht den aktuellen Sicherheitsanforderungen der TI-[[PKI]].
 

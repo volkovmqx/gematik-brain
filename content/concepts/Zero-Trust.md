@@ -37,7 +37,7 @@ Zero Trust basiert auf mehreren Grundsätzen:
 
 1. **Kein implizites Vertrauen**: Kein Nutzer, kein Gerät und kein Dienst wird allein aufgrund seiner Netzwerkposition als vertrauenswürdig eingestuft.
 2. **Explizite Verifikation**: Jeder Zugriff erfordert eine Authentifizierung und Autorisierung, unabhängig davon, ob die Anfrage von innen oder außen kommt.
-3. **Minimale Rechte (Least Privilege)**: Jede Entität erhält nur die minimal notwendigen Zugriffsrechte für ihre Aufgabe.
+3. **Minimale Rechte (Least Privilege)**: Jede Entität erhält nur die minimal notwendigen [[Zugriffsrecht|Zugriffsrechte]] für ihre Aufgabe.
 4. **Assume Breach**: Das System geht davon aus, dass ein Angreifer bereits im Netz sein könnte. Schutzmaßnahmen werden so konzipiert, dass Schäden begrenzt bleiben.
 5. **Mikrosegmentierung**: Netzwerke und Ressourcen werden in kleine Segmente aufgeteilt. Ein Angreifer, der ein Segment kompromittiert, kommt nicht automatisch in andere.
 

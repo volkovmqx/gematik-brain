@@ -50,7 +50,7 @@ Im Gegensatz zum [[HBA]], der an eine Einzelperson gebunden ist und eine qualifi
 
 Die aktuelle Pflichtgeneration ist die **G2.1**. Sie unterstützt ECC-basierte Schlüsselpaare und entspricht den aktuellen kryptografischen Anforderungen der TI-[[PKI]].
 
-Die Vorgängergeneration **G2.0** unterstützte ausschließlich RSA. Im Rahmen der [[ECC-Migration]] müssen Einrichtungen, die noch eine SMC-B G2.0 betreiben, diese bis zum **30. Juni 2026** durch eine ECC-fähige G2.1 ersetzen. Ab diesem Datum verliert die RSA-only-Generation den TI-Zugang. Ab **1. Januar 2026** dürfen Kartenherausgeber nur noch ECC-fähige SMC-B-Karten produzieren.
+Die Vorgängergeneration **G2.0** unterstützte ausschließlich RSA. Im Rahmen der [[ECC-Migration]] müssen Einrichtungen, die noch eine SMC-B G2.0 betreiben, diese bis zum **30. Juni 2026** durch eine ECC-fähige G2.1 ersetzen. Ab diesem Datum verliert die RSA-only-Generation den TI-Zugang. Ab **1. Januar 2026** dürfen [[Kartenherausgeber]] nur noch ECC-fähige SMC-B-Karten produzieren.
 
 ### HSM-B: Digitale Nachfolgetechnologie
 

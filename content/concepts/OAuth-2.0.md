@@ -4,6 +4,9 @@ audience: [technical]
 tags: [konzept, sicherheit, authentifizierung, protokoll, ti-2-0, idp]
 aliases: [OAuth2, OAuth 2.0, OpenID Connect, OIDC, OAuth 2.0 / OpenID Connect]
 maturity: immergruen
+relevance:
+  sectors: [hersteller, ti-infrastruktur, it-dienstleister]
+  interests: [technik]
 ---
 
 # OAuth 2.0
@@ -24,6 +27,39 @@ In der [[Telematikinfrastruktur]] sind OAuth 2.0 und OIDC die Basisprotokolle f�
 - Den **sektoralen IDP** der Gesundheits-ID: Krankenkassen betreiben eigene IDPs, die über die [[TI-Federation]] mit dem gematik-IDP föderiert sind.
 - Den **[[VZD|VZD-FHIR-Directory]]**: Verzeichnisdienst-Anfragen werden über OAuth-2.0-Tokens autorisiert.
 - Die **[[ZETA]]-Architektur** (Zero-Trust Extended Token Architecture): ZETA verwendet OAuth-2.0-Tokens als zentralen Autorisierungsmechanismus in TI 2.0.
+
+> [!interesse-technik]
+> OAuth 2.0 und OIDC sind die Autorisierungs- und Authentifizierungsprotokolle aller TI-Fachdienste. Relevante RFCs: OAuth 2.0 (RFC 6749), Authorization Code Flow mit PKCE (RFC 7636), JWT (RFC 7519), OpenID Connect Core 1.0. Die gematik-Spezifikation für den IDP-Dienst: gemSpec_IDP_Dienst. Discovery-Endpunkt des gematik IDP: `/.well-known/openid-configuration`. TI-spezifisch: ECDSA mit brainpoolP256r1 statt des im Web üblichen P-256.
+
+> [!dev-quickstart] Dev Quickstart: gematik IDP Discovery und Token-Flow
+> Discovery-Dokument abrufen (öffentlich erreichbar):
+> ```bash
+> # Von außerhalb der TI (öffentliches Internet)
+> curl -s https://idp.app.ti-dienste.de/.well-known/openid-configuration | jq .
+>
+> # Nur aus der TI erreichbar
+> # https://idp.zentral.idp.splitdns.ti-dienste.de/.well-known/openid-configuration
+> ```
+> Authorization Code Flow mit PKCE (RFC 7636):
+> ```bash
+> # 1. Code Verifier erzeugen
+> CODE_VERIFIER=$(openssl rand -base64 32 | tr -d '=+/' | head -c 43)
+> CODE_CHALLENGE=$(echo -n "$CODE_VERIFIER" | openssl dgst -sha256 -binary | base64 -w0 | tr '+/' '-_' | tr -d '=')
+>
+> # 2. Authorization Request (Redirect-URL)
+> # GET https://idp.app.ti-dienste.de/auth?response_type=code&client_id=<CLIENT_ID>
+> #   &redirect_uri=<REDIRECT>&scope=openid+e-rezept&code_challenge=$CODE_CHALLENGE
+> #   &code_challenge_method=S256
+>
+> # 3. Token-Endpunkt: Code gegen Token tauschen
+> curl -X POST https://idp.app.ti-dienste.de/token \
+>   -d "grant_type=authorization_code&code=<AUTH_CODE>" \
+>   -d "code_verifier=$CODE_VERIFIER&client_id=<CLIENT_ID>"
+> ```
+> - Schlüsselkurve: **brainpoolP256r1** (JWT-Algorithmus: `BP256R1`)
+> - ID-Token enthält `telematikID` (Leistungserbringer) oder `kvnr` (Versicherter)
+> - Referenz-IDP (gematik): [gematik.github.io/ref-idp-server](https://gematik.github.io/ref-idp-server/tokenFlowPs.html)
+> - Spec: [gemSpec_IDP_Dienst V1.6.0](https://gemspec.gematik.de/docs/gemSpec/gemSpec_IDP_Dienst/gemSpec_IDP_Dienst_V1.6.0/)
 
 ## Technische Details
 

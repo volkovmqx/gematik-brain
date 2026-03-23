@@ -45,7 +45,7 @@ Die ABDA-Datenbank wird **alle 14 Tage** regulär aktualisiert. Bei sicherheitsr
 > In Ihrer Apotheke bedeutet das: Konfigurieren Sie das automatische Update im AVS. Prüfen Sie den Datenstand einmal pro Woche unter Einstellungen. Aktueller Stand ist Voraussetzung für korrekte AMTS-Prüfungen und damit für Ihre Haftungssicherheit.
 
 > [!interesse-business] Marktstellung
-> Die ABDA-Datenbank hat in Deutschland faktisch eine Monopolstellung für Apothekensoftware. Alle zugelassenen AVS-Systeme integrieren sie. Für AVS-Hersteller ist die ABDATA-Lizenz ein wesentlicher Kostenfaktor. Alternativprodukte für den deutschen Markt (z.B. ifap, Lauer-Taxe für Preisinformationen) decken nur Teilbereiche ab. Für Hersteller anderer Gesundheitssoftware (PVS, KIS) ist der AMTS-Datensatz relevant für die Integration eigener Interaktionsprüfungen.
+> Die ABDA-Datenbank hat in Deutschland faktisch eine Monopolstellung für Apothekensoftware. Alle zugelassenen AVS-Systeme integrieren sie. Für AVS-Hersteller ist die ABDATA-Lizenz ein wesentlicher Kostenfaktor. Alternativprodukte für den deutschen Markt (z.B. ifap, Lauer-Taxe für Preisinformationen) decken nur Teilbereiche ab. Für Hersteller anderer Gesundheitssoftware (PVS, KIS) ist der AMTS-Datensatz relevant für die Integration eigener [[Interaktionsprüfung|Interaktionsprüfungen]].
 
 ## Technische Details
 

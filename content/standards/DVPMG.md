@@ -3,6 +3,10 @@ title: DVPMG
 audience: [technical, non-technical]
 tags: [standards, gesetzgebung, dipa, pflege, telematikinfrastruktur]
 aliases: [Digitale-Versorgung-und-Pflege-Modernisierungs-Gesetz, Digitale Versorgung und Pflege Modernisierungsgesetz]
+relevance:
+  sectors: [apotheke, arztpraxis, pflege, hersteller, regulierung]
+  interests: [compliance, business]
+maturity: wachsend
 ---
 
 # DVPMG
@@ -21,7 +25,30 @@ Das Herzstück des DVPMG ist die Einführung der **[[DiPA]] (Digitale Pflegeanwe
 
 Ein weiteres zentrales Element ist die **[[Gesundheits-ID]]**: Das DVPMG verpflichtet Krankenkassen ab dem 1. Januar 2023, ihren Versicherten ergänzend zur [[eGK]] eine nicht kartengebundene digitale Identität anzubieten. Ab 2024 soll diese als vollständiger Versicherungsnachweis gelten. Damit wurde die gesetzliche Grundlage für die TI 2.0-Strategie der [[gematik]] gelegt.
 
+> [!frist-warnung] Frist-Warnung: Gesundheits-ID-Pflicht und DiPA-Zulassungsanforderung
+> **Rechtsgrundlage:** § 291a Abs. 1 SGB V (Gesundheits-ID-Pflicht für Krankenkassen, eingefügt durch DVPMG); § 40a Abs. 1 SGB XI i.V.m. DiPAV (DiPA-Zulassungspflicht)
+> **Fristen:**
+> - **Gesundheits-ID:** Krankenkassen sind seit dem 1. Januar 2023 verpflichtet, ihren Versicherten eine nicht kartengebundene digitale Identität (Gesundheits-ID) anzubieten. Die Anerkennung als gleichwertiger Versicherungsnachweis zur eGK gilt seit 2024, soweit die technischen Voraussetzungen vorliegen.
+> - **DiPA-Zulassung:** Pflegeeinrichtungen und ambulante Pflegedienste, die digitale Pflegeanwendungen im Rahmen des § 40a SGB XI einsetzen oder empfehlen, dürfen ausschließlich vom BfArM zugelassene DiPA verwenden. Seit Dezember 2022 ist das BfArM-Antragsverfahren nach der DiPAV geöffnet.
+> **Handlungsbedarf für Pflegeeinrichtungen:** Prüfen Sie vor dem Einsatz einer digitalen Pflegeanwendung, ob diese im DiPA-Verzeichnis des BfArM gelistet ist. Nicht zugelassene Anwendungen begründen keinen Erstattungsanspruch gegenüber der Pflegekasse und können haftungsrechtliche Fragen aufwerfen.
+> **Handlungsbedarf für Krankenkassen:** Stellen Sie sicher, dass Ihre Gesundheits-ID-Lösung vom GKV-Spitzenverband zugelassen ist und Versicherte über die Möglichkeit aktiv informiert werden.
+
 Das DVPMG enthält außerdem den Auftrag an die [[gematik]], einen "Zukunftskonnektor oder Zukunftskonnektordienst" zu entwickeln. Dieser Auftrag führte letztlich zum [[TI-Gateway]] als Cloud-basierter Alternative zum Hardware-[[Konnektoren|Konnektor]]. Das Gesetz bereitete so den Übergang von einer karten- und hardwarebasierten zu einer softwarebasierten Telematikinfrastruktur vor.
+
+> [!praxis-tipp] Praxis-Tipp: Was das DVPMG für Ihren Praxisalltag bedeutet
+> Zwei konkrete Änderungen aus dem DVPMG betreffen Ihre Praxis direkt:
+>
+> **Gesundheits-ID statt eGK:**
+> Krankenkassen bieten seit 2023 die Gesundheits-ID als digitale Alternative zur eGK an. Patienten können sich damit künftig per Smartphone in Ihrer Praxis ausweisen. Ihr PVS muss die Gesundheits-ID als Versicherungsnachweis akzeptieren. Prüfen Sie, ob Ihr PVS bereits ein Update erhalten hat.
+>
+> **DiPA-Verordnung für Pflegebedürftige:**
+> Pflegebedürftige Patienten (mit Pflegegrad) können digitale Pflegeanwendungen (DiPA) nutzen, die von der Pflegekasse erstattet werden (bis 50 Euro monatlich). Sie als Arztpraxis stellen keine DiPA-Verordnung aus: DiPA werden direkt bei der Pflegekasse beantragt. Informieren Sie pflegebedürftige Patienten auf Nachfrage über diese Möglichkeit.
+
+> [!interesse-compliance]
+> Das DVPMG verpflichtet Krankenkassen seit dem 1. Januar 2023, ihren Versicherten eine Gesundheits-ID anzubieten. Pflegeheime und ambulante Pflegedienste, die DiPA einsetzen, müssen sicherstellen, dass die zugehörigen Anwendungen vom BfArM zugelassen sind. Die DiPAV (Ausführungsverordnung zum DVPMG) regelt das Zulassungsverfahren und die Erstattungsbeträge für DiPA.
+
+> [!interesse-business]
+> Das DVPMG öffnete den Markt für digitale Pflegeanwendungen (DiPA). Das Marktpotenzial umfasst die rund 4,9 Millionen Pflegebedürftigen in Deutschland (2023). Erste DiPA wurden 2022/2023 zugelassen. Im Gegensatz zu DiGA (GKV-Finanzierung) werden DiPA aus der gesetzlichen Pflegeversicherung erstattet (bis 50 Euro monatlich).
 
 ## Technische Details
 

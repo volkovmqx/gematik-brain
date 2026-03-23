@@ -1,83 +1,6 @@
 {
   "pending": [
     {
-      "term": "Sekundärnutzung",
-      "category": "concepts",
-      "reason": "Sekundärnutzung von Gesundheitsdaten für Forschung und Versorgungsoptimierung: zentrale Grundlage für FDZ, EHDS, GDNG und ePA-Opt-Out-Debatte. In 16 Artikeln als eigenständiges Konzept verwendet: Broad-Consent, Gesundheitsdatenraum, Opt-Out-ePA, Pseudonymisierung, FDZ-Gesundheit, EHDS, GDNG, GDVG, BfDI, DSGVO, E-Health-Gesetz, DVKA, GFF, NCPeH, BDSG, Medizininformatik-Initiative. Kein eigener Artikel, obwohl das Konzept der Sekundärnutzung (Abgrenzung zur Primärnutzung, Rechtsgrundlagen, Opt-Out-Rechte) die Grundlage für das gesamte Gesundheitsdatenraum-Ökosystem ist.",
-      "mentionedIn": [
-        "content/concepts/Broad-Consent.md",
-        "content/concepts/Gesundheitsdatenraum.md",
-        "content/concepts/Opt-Out-ePA.md",
-        "content/concepts/Pseudonymisierung.md",
-        "content/infrastructure/Forschungsdatenzentrum-Gesundheit.md",
-        "content/infrastructure/NCPeH.md",
-        "content/organization/BfDI.md",
-        "content/organization/DVKA.md",
-        "content/organization/GFF.md",
-        "content/organization/Medizininformatik-Initiative.md",
-        "content/standards/BDSG.md",
-        "content/standards/DSGVO.md",
-        "content/standards/E-Health-Gesetz.md",
-        "content/standards/EHDS.md",
-        "content/standards/GDNG.md",
-        "content/standards/GDVG.md"
-      ],
-      "priority": 26
-    },
-    {
-      "term": "Kartenherausgeber",
-      "category": "infrastructure",
-      "reason": "Ausgabestellen für HBA und SMC-B (Landesärztekammern für HBA, BZÄK/Landesärztekammern für ZA-HBA, KZBV-Strukturen für SMC-B). In 5 Artikeln erwähnt: HBA, SMC-B, Telematik-ID, BZÄK, Heilmittelverordnung. Erklärt die Zertifizierungsstruktur für Heilberufsausweise.",
-      "mentionedIn": [
-        "content/infrastructure/HBA.md",
-        "content/infrastructure/SMC-B.md",
-        "content/infrastructure/Telematik-ID.md",
-        "content/organization/BZÄK.md",
-        "content/processes/Heilmittelverordnung.md"
-      ],
-      "priority": 18
-    },
-    {
-      "term": "Interaktionsprüfung",
-      "category": "processes",
-      "reason": "AMTS-Prüfung auf Arzneimittelwechselwirkungen: Kernanwendungsfall für ABDA-Datenbank, AVS, eMP und AMTS. In 5 Artikeln erwähnt. Eigenes Konzept mit klinischer und technischer Dimension (Datenbankabfragen, Schweregrad-Klassifikation).",
-      "mentionedIn": [
-        "content/infrastructure/ABDA-Datenbank.md",
-        "content/infrastructure/AVS.md",
-        "content/processes/AMTS.md",
-        "content/processes/eMP.md",
-        "content/standards/ATC-Code.md"
-      ],
-      "priority": 16
-    },
-    {
-      "term": "LDAP",
-      "category": "infrastructure",
-      "reason": "Lightweight Directory Access Protocol: technische Basis des VZD (Verzeichnisdienst der TI). In 4 Artikeln erwähnt: VZD, TI-Gateway, KIM, Telematik-ID. Erklärt die Verzeichnisstruktur hinter der TI-Suche nach Adressen.",
-      "mentionedIn": [
-        "content/infrastructure/VZD.md",
-        "content/infrastructure/TI-Gateway.md",
-        "content/technologies/KIM.md",
-        "content/infrastructure/Telematik-ID.md"
-      ],
-      "priority": 14
-    },
-    {
-      "term": "Zugriffsrecht",
-      "category": "concepts",
-      "reason": "Feingranulare Zugriffssteuerung für ePA-Daten (Berechtigungskonzept für Leistungserbringer und Patienten). In 7 Artikeln erwähnt: Zero-Trust, AVS, AMTS, BEEP-Gesetz, SGB-V, ePA-App, Telemonitoring. Zentrales Konzept für ePA-Sicherheitsarchitektur.",
-      "mentionedIn": [
-        "content/concepts/Zero-Trust.md",
-        "content/infrastructure/AVS.md",
-        "content/processes/AMTS.md",
-        "content/standards/BEEP-Gesetz.md",
-        "content/standards/SGB-V.md",
-        "content/technologies/ePA-App.md",
-        "content/technologies/Telemonitoring.md"
-      ],
-      "priority": 13
-    },
-    {
       "term": "Dispensierung",
       "category": "processes",
       "reason": "Abgabe (Dispensierung) von Arzneimitteln durch Apotheken: Kernprozess im E-Rezept-Workflow, verbindet AVS, Apothekenrechenzentrum, eML, DataMatrix und Securpharm. In 12 Artikeln als eigenständiger Prozessschritt erwähnt: ABDA-Datenbank, Apothekenrechenzentrum, BMP, T-Rezept, dgMP, eML, DataMatrix, EEHRxF, FHIR, Securpharm, TA1, ePA. Ergänzt E-Rezept.md und dgMP.md um den Apothekenside-Prozess.",
@@ -424,79 +347,71 @@
     "Frühe Nutzenbewertung",
     "Fruehe-Nutzenbewertung",
     "MMI-Pharmindex",
-    "T-Rezept"
+    "T-Rezept",
+    "Sekundärnutzung",
+    "Kartenherausgeber",
+    "Interaktionsprüfung",
+    "LDAP",
+    "Zugriffsrecht"
   ],
   "brokenWikiLinks": [
     {
-      "link": "Kassenärztliche-Vereinigung",
-      "resolvedBy": "content/organization/Kassenaerztliche-Vereinigung.md",
-      "note": "4 Vorkommen in Videosprechstunde.md und Primärversorgung.md: Der Artikel hat 'Kassenärztliche Vereinigung' (ohne Bindestrich) als Alias, aber die Links verwenden den Bindestrich. Alias 'Kassenärztliche-Vereinigung' muss in Kassenaerztliche-Vereinigung.md ergänzt werden.",
-      "impact": "medium"
-    },
-    {
-      "link": "PKV\\",
-      "resolvedBy": "content/concepts/PKV.md",
-      "note": "1 Vorkommen in content/organization/gematik.md Zeile 32: Trailing backslash im Link [[PKV\\|...]] ist ein Schreibfehler. Link muss zu [[PKV|...]] korrigiert werden.",
+      "link": "Forschungsdatenzentrum-Gesundheit\\|FDZ Gesundheit",
+      "file": "content/concepts/Sekundärnutzung.md",
+      "line": 73,
+      "note": "Trailing backslash in table cell: [[Forschungsdatenzentrum-Gesundheit\\|FDZ Gesundheit]]. Muss zu [[Forschungsdatenzentrum-Gesundheit|FDZ Gesundheit]] korrigiert werden.",
       "impact": "low"
     },
     {
-      "link": "Konnektoren\\",
-      "resolvedBy": "content/infrastructure/Konnektoren.md",
-      "note": "1 Vorkommen in content/infrastructure/TI-Gateway.md Zeile 65: Trailing backslash im Link [[Konnektoren\\|Konnektor]] ist ein Schreibfehler.",
+      "link": "Landesaerztekammer\\|Landesärztekammer",
+      "file": "content/infrastructure/Kartenherausgeber.md",
+      "line": 36,
+      "note": "Trailing backslash in table cell: [[Landesaerztekammer\\|Landesärztekammer]]. Muss zu [[Landesaerztekammer|Landesärztekammer]] korrigiert werden.",
       "impact": "low"
     },
     {
-      "link": "eImpfpass\\",
-      "resolvedBy": "content/technologies/eImpfpass.md",
-      "note": "1 Vorkommen in content/standards/MIO.md Zeile 47: Trailing backslash im Link [[eImpfpass\\|Impfpass]] ist ein Schreibfehler.",
+      "link": "Kassenaerztliche-Vereinigung\\|KV",
+      "file": "content/infrastructure/Kartenherausgeber.md",
+      "line": 50,
+      "note": "Trailing backslash in 2 Stellen (Zeilen 50 und 58): [[Kassenaerztliche-Vereinigung\\|...]]. Muss ohne Backslash vor dem Pipe-Zeichen geschrieben werden.",
       "impact": "low"
     },
     {
-      "link": "Kinderuntersuchungsheft\\",
-      "resolvedBy": "content/processes/Kinderuntersuchungsheft.md",
-      "note": "1 Vorkommen in content/standards/MIO.md Zeile 50: Trailing backslash im Link [[Kinderuntersuchungsheft\\|U-Heft]] ist ein Schreibfehler.",
-      "impact": "low"
-    },
-    {
-      "link": "Patientenportal\\",
-      "resolvedBy": "content/technologies/Patientenportal.md",
-      "note": "1 Vorkommen in content/standards/KHZG.md Zeile 39: Trailing backslash im Link [[Patientenportal\\|Patientenportale]] ist ein Schreibfehler.",
+      "link": "KZBV\\|KZV",
+      "file": "content/infrastructure/Kartenherausgeber.md",
+      "line": 51,
+      "note": "Trailing backslash in 2 Stellen (Zeilen 51 und 58): [[KZBV\\|KZV]]. Muss zu [[KZBV|KZV]] korrigiert werden.",
       "impact": "low"
     }
   ],
   "missingRelevance": [
+    "content/processes/BMP.md",
+    "content/processes/DMP.md",
+    "content/processes/eVO.md",
     "content/concepts/KRITIS.md",
     "content/concepts/OAuth-2.0.md",
     "content/concepts/PEPP.md",
     "content/concepts/ZETA.md",
+    "content/organization/Bewertungsausschuss.md",
+    "content/organization/Bundesaerztekammer.md",
+    "content/organization/DAV.md",
+    "content/organization/DVKA.md",
+    "content/organization/InEK.md",
+    "content/organization/Landesaerztekammer.md",
+    "content/organization/Medizinischer-Dienst.md",
+    "content/organization/OeGD.md",
     "content/infrastructure/HSM-B.md",
     "content/infrastructure/Highspeed-Konnektor.md",
     "content/infrastructure/KV-SafeNet.md",
-    "content/infrastructure/LIS.md",
     "content/infrastructure/MVZ.md",
     "content/infrastructure/MyHealthAtEU.md",
     "content/infrastructure/RIS.md",
-    "content/infrastructure/TI-Federation.md",
     "content/infrastructure/TSL.md",
     "content/infrastructure/TSP.md",
     "content/infrastructure/Telematik-ID.md",
     "content/infrastructure/VPN-Zugangsdienst.md",
     "content/infrastructure/eGBR.md",
     "content/infrastructure/gSMC-KT.md",
-    "content/organization/Bewertungsausschuss.md",
-    "content/organization/Bundesaerztekammer.md",
-    "content/organization/Bundesnetzagentur.md",
-    "content/organization/DAV.md",
-    "content/organization/DVKA.md",
-    "content/organization/InEK.md",
-    "content/organization/KZBV.md",
-    "content/organization/Landesaerztekammer.md",
-    "content/organization/Medizinischer-Dienst.md",
-    "content/organization/OeGD.md",
-    "content/processes/BMP.md",
-    "content/processes/DMP.md",
-    "content/processes/eMP.md",
-    "content/processes/eVO.md",
     "content/standards/BEEP-Gesetz.md",
     "content/standards/DVPMG.md",
     "content/standards/DiPAV.md",
@@ -516,5 +431,5 @@
     "content/technologies/eArztbrief.md",
     "content/technologies/gRPC.md"
   ],
-  "lastRun": "2026-03-22"
+  "lastRun": "2026-03-23"
 }

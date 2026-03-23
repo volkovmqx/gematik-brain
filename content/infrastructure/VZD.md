@@ -39,7 +39,7 @@ Der VZD ist eine Pflichtkomponente: Ohne ihn können weder [[KIM]] noch der [[TI
 
 ### LDAP-VZD
 
-Der klassische VZD basiert auf dem LDAP-Protokoll (Lightweight Directory Access Protocol). Einträge folgen einem definierten Schema mit Attributen wie:
+Der klassische VZD basiert auf dem [[LDAP]]-Protokoll (Lightweight Directory Access Protocol). Einträge folgen einem definierten Schema mit Attributen wie:
 
 - [[Telematik-ID]] des Teilnehmers
 - KIM-Adresse(n)

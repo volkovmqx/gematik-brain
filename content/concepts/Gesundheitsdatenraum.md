@@ -23,7 +23,7 @@ Der Begriff "Gesundheitsdatenraum" umfasst zwei eng verbundene, aber unterschied
 
 **Nationaler Ebene** (Deutschland): Der deutsche Gesundheitsdatenraum ist die Infrastruktur und der Rechtsrahmen für die Nutzung von Gesundheitsdaten zu Forschungs- und Versorgungszwecken innerhalb Deutschlands. Die Grundlage bildet das [[GDNG|Gesundheitsdaten-Nutzungsgesetz (GDNG)]] von 2024. Das [[GDVG|Gesetz für digitale Versorgung und den Gesundheitsdatenraum (GDVG)]] setzt diesen Rahmen weiter fort.
 
-**Europäische Ebene** (EU): Der Europäische Gesundheitsdatenraum ist die [[EHDS|EHDS-Verordnung (EU 2025/327)]], die seit März 2025 in Kraft ist und den grenzüberschreitenden Datenaustausch sowie die Sekundärnutzung auf EU-Ebene regelt.
+**Europäische Ebene** (EU): Der Europäische Gesundheitsdatenraum ist die [[EHDS|EHDS-Verordnung (EU 2025/327)]], die seit März 2025 in Kraft ist und den grenzüberschreitenden Datenaustausch sowie die [[Sekundärnutzung]] auf EU-Ebene regelt.
 
 ### Unterschied zu EHDS
 

@@ -3,6 +3,10 @@ title: IHE
 audience: [technical]
 tags: [standards, interoperabilität, dokumentenaustausch, IHE]
 aliases: [Integrating the Healthcare Enterprise, IHE International, IHE-D]
+relevance:
+  sectors: [krankenhaus, hersteller, ti-infrastruktur]
+  interests: [technik]
+maturity: immergruen
 ---
 
 # IHE
@@ -62,6 +66,37 @@ Jedes IHE-Profil besteht aus Akteuren und Transaktionen zwischen ihnen. Beispiel
 - **Document Consumer** ruft Dokumente ab (sendet ITI-18, ITI-43)
 
 Hersteller deklarieren, welche Akteure ihr Produkt implementiert. Das ermöglicht standardisierte Integrationstests.
+
+> [!interesse-technik]
+> Alle IHE-Spezifikationen sind frei zugänglich unter [profiles.ihe.net](https://profiles.ihe.net). Für die ePA sind besonders relevant: XDS.b (ITI-41, ITI-18, ITI-43), MHD (ITI-65, ITI-66, ITI-67, ITI-68) und ATNA (ITI-20). Connectathons als Interoperabilitätstests finden jährlich statt, organisiert von IHE-D für den deutschsprachigen Raum.
+
+> [!klinik-integration] Klinik-Integration: IHE-Profile im KIS-Betrieb
+> IHE-Profile sind für Krankenhäuser nicht nur durch die ePA relevant, sondern auch durch [[ISiK]] (Informationstechnische Systeme in Krankenhäusern), das gematik-Mandat für KIS-Interoperabilität nach § 373 SGB V.
+>
+> **XDS im Krankenhaus:** Große Kliniken und Klinikverbünde setzen XDS.b für das einrichtungsinterne oder -übergreifende Dokumentenmanagement ein. Das [[KIS]] agiert dabei als Document Source (ITI-41) und Document Consumer (ITI-18, ITI-43). Fragen Sie bei Ihrem KIS-Hersteller, ob eine zertifizierte XDS.b-Implementierung vorliegt.
+> **PIX/PDQ für Patientenidentifikation:** Krankenhäuser mit mehreren Systemen (KIS, RIS, LIS, PDMS) benötigen einen Patienten-Master-Index (EMPI). PIX (ITI-8/ITI-44) verknüpft Patienten-IDs über Systemgrenzen, PDQ (ITI-21) ermöglicht demographische Suchanfragen. Diese Profile sind besonders relevant bei Fusionen und Verbundstrukturen.
+> **ISiK und ATNA:** ISiK Stufe 3 schreibt die Audit-Protokollierung nach ATNA vor. Das bedeutet, Ihre [[KIS]]-Schnittstelle muss Zugriffsprotokoll-Ereignisse (ITI-20) an einen zentralen Audit-Repository-Server senden. Das ist gleichzeitig eine Anforderung aus dem KRITIS-ISMS-Rahmen.
+
+> [!dev-quickstart] Dev Quickstart: IHE MHD Dokument hochladen und abrufen
+> **ITI-65 Provide Document Bundle** (Dokument einstellen, FHIR R4):
+> ```bash
+> POST https://epa-hcpo.example.ti-dienste.de/epa/basic/api/v1/fhir
+> Authorization: Bearer <IDP-Access-Token>
+> Content-Type: application/fhir+json
+>
+> # Body: FHIR Bundle vom Typ "transaction" mit DocumentReference + Binary
+> # Profil: IHE MHD ITI-65, Minimal Metadata Option
+> ```
+> **ITI-68 Retrieve Document** (Dokument abrufen per URL aus DocumentReference):
+> ```bash
+> GET <DocumentReference.content.attachment.url>
+> Authorization: Bearer <IDP-Access-Token>
+> Accept: application/pdf   # oder application/fhir+json je nach Dokumenttyp
+> ```
+> - MHD-Spezifikation v4.2.3: [profiles.ihe.net/ITI/MHD](https://profiles.ihe.net/ITI/MHD/)
+> - Alle IHE ITI-Profile: [profiles.ihe.net/ITI](https://profiles.ihe.net/ITI/)
+> - GitHub: [IHE/ITI.MHD](https://github.com/IHE/ITI.MHD)
+> - IHE-D Connectathon (jährlich, deutschsprachiger Raum): [ihe-d.de](https://www.ihe-d.de/)
 
 ### IHE in der deutschen Telematikinfrastruktur
 

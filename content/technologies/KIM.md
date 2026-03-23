@@ -41,7 +41,7 @@ Das Clientmodul ist in das Primärsystem (Praxissoftware) integriert. Es verschl
 Der [[Fachdienst|KIM-Fachdienst]] routet verschlüsselte Nachrichten zwischen Teilnehmern. Er wird von zugelassenen Anbietern betrieben.
 
 #### 3. Verzeichnisdienst (VZD)
-Ein LDAP-basiertes Adressbuch ([[VZD]]), in dem alle registrierten KIM-Teilnehmer gelistet sind. KIM-Adressen haben das Format `name@anbieter.kim.telematik` und werden über den [[VZD]] aufgelöst.
+Ein [[LDAP]]-basiertes Adressbuch ([[VZD]]), in dem alle registrierten KIM-Teilnehmer gelistet sind. KIM-Adressen haben das Format `name@anbieter.kim.telematik` und werden über den [[VZD]] aufgelöst.
 
 ### Protokoll und Verschlüsselung
 

@@ -23,7 +23,7 @@ Das GDNG trat am 26. März 2024 in Kraft. Der vollständige Name lautet: "Gesetz
 
 Das GDNG verfolgt zwei Hauptziele. Erstens soll Forschung, die dem Gemeinwohl dient, erleichterten Zugang zu Gesundheitsdaten erhalten. Zweitens soll das Gesundheitswesen als lernendes System auf Basis von Versorgungsdaten weiterentwickelt werden. Das [[BMG]] sieht das GDNG als Grundlage für eine Gesundheitsdateninfrastruktur, die Deutschland im internationalen Wettbewerb um datenbasierte Medizin stärken soll.
 
-Die Sekundärnutzung von Daten aus der [[ePA]] ist ein zentraler Aspekt des Gesetzes. Versicherte können der Nutzung ihrer pseudonymisierten ePA-Daten für Forschungszwecke jederzeit widersprechen. Der Widerspruch ist über die Krankenkasse oder digital in der ePA-App möglich.
+Die [[Sekundärnutzung]] von Daten aus der [[ePA]] ist ein zentraler Aspekt des Gesetzes. Versicherte können der Nutzung ihrer pseudonymisierten ePA-Daten für Forschungszwecke jederzeit widersprechen. Der Widerspruch ist über die Krankenkasse oder digital in der ePA-App möglich.
 
 > [!interesse-patient]
 > Ihre Gesundheitsdaten aus der ePA können für anonymisierte Forschung genutzt werden. Das GDNG erlaubt dies nur für gemeinwohlorientierte Forschung, nicht für kommerzielle Werbung. Sie haben ein Widerspruchsrecht: In der ePA-App unter "Einstellungen" können Sie die Forschungsnutzung Ihrer Daten jederzeit ablehnen. Der Widerspruch gilt sofort. Ihre Identität wird durch Pseudonymisierung geschützt; Forscher sehen keine Namen oder Adressen.

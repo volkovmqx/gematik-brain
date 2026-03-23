@@ -11,7 +11,7 @@ maturity: wachsend
 
 # ePA-App
 
-Die **ePA-App** ist die kassenspezifische Smartphone-Anwendung, über die Versicherte ihre [[ePA|elektronische Patientenakte]] verwalten, Dokumente einsehen und Zugriffsrechte steuern.
+Die **ePA-App** ist die kassenspezifische Smartphone-Anwendung, über die Versicherte ihre [[ePA|elektronische Patientenakte]] verwalten, Dokumente einsehen und [[Zugriffsrecht|Zugriffsrechte]] steuern.
 
 ## Erklärt für Einsteiger
 

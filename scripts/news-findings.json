@@ -1,6 +1,6 @@
 {
-  "lastChecked": "2026-03-22",
-  "lastRun": "2026-03-22T20:30:00Z",
+  "lastChecked": "2026-03-23",
+  "lastRun": "2026-03-23T10:00:00Z",
   "findings": [
     {
       "title": "eMedikationsplan: Start verschoben auf Oktober 2026",
@@ -1910,6 +1910,36 @@
       "action": "applied",
       "appliedDate": "2026-03-22",
       "details": "Gesundheits-ID.md: Registrierungszahl (4,4 Millionen, Anfang 2026) und offizieller Nutzungsstart als Versicherungsnachweis ab 1. Januar 2026 waren bereits dokumentiert. Kein weiterer Update nötig."
+    },
+    {
+      "title": "DiGA: Neuer Abrechnungscode GOP 01482 und weitere Listungsänderungen ab April 2026",
+      "date": "2026-04-01",
+      "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/diga-reform-neue-abrechnung-und-erfolgspflicht-ab-april/68945938",
+      "summary": "Ab 1. April 2026 können Ärzte erstmals eine eigenständige Gebührenordnungsposition (GOP 01482) für die Versorgung mit der DiGA 'Kranus Mictera' (Inkontinenz-App für Frauen) abrechnen: 64 Punkte je Fall (ca. 8,15 Euro), extrabudgetär für die ersten zwei Jahre. Gleichzeitig wurden 'Oviva Direkt Bluthochdruck' und 'INKA' offiziell in den Erstattungsrahmen aufgenommen. Hinweis: Die 20-Prozent-AbEM-Pflicht (Anwendungsbegleitende Erfolgsmessung) läuft seit Februar 2026 und wird ab April 2026 erstmals für volle Quartale berichtet.",
+      "relevantArticles": [
+        "DiGA.md"
+      ],
+      "category": "regulation",
+      "action": "update",
+      "details": "DiGA.md: Neuen Abschnitt zu DiGA-Abrechnungsmechanismen ergänzen. GOP 01482 als erster eigenständiger Abrechnungscode für eine spezifische DiGA dokumentieren. Hintergrund: Bisher konnten Ärzte DiGA nur über Muster-16-Rezept verordnen, aber keine zusätzliche Konsultationsvergütung für DiGA-spezifische Beratung abrechnen. GOP 01482 ist ein Pilotmodell, das perspektivisch auf weitere DiGA ausgedehnt werden könnte.",
+      "suggestedTerm": "DiGA-Abrechnungscode"
+    },
+    {
+      "title": "KHZG Digitalisierungsabschläge ab 2026: Konkrete Prozentsätze je Fördertatbestand",
+      "date": "2026-01-01",
+      "source": "https://planfox.de/drg-digitalisierungsabschlag-vermeiden/",
+      "summary": "Seit 1. Januar 2026 erheben Krankenkassen bei Krankenhäusern ohne ausreichende Digitalisierungsmaßnahmen DRG-Abschläge je Abrechnungsfall. Die konkreten Jahressätze: 0,5% Patientenportale (FTB 2), 0,6% Digitale Pflege- und Behandlungsdokumentation (FTB 3), 0,2% Klinische Entscheidungsunterstützung (FTB 4), 0,4% Digitales Medikationsmanagement (FTB 5), 0,3% Digitale Leistungsanforderung (FTB 6); Maximum 2,0% Gesamtabschlag je Fall. Für 2026 und 2027 reicht Nachweis der Beauftragung ('beauftragt'); ab 2028 muss tatsächliche Nutzung nachgewiesen werden. Basis: KHZG-Folgeregeln aus dem Krankenhauszukunftsfonds.",
+      "relevantArticles": [
+        "KIS.md",
+        "Telematikinfrastruktur.md",
+        "ISiK.md"
+      ],
+      "category": "regulation",
+      "action": "update",
+      "details": "KIS.md: Abschnitt zu KHZG/Digitalisierungsabschlägen mit konkreten Prozentsätzen je Fördertatbestand ergänzen (FTB 2–6, 0,2–0,6%, Max 2,0%). Klarstellen: In 2026/2027 genügt 'beauftragt' als Nachweis; ab 2028 muss Nutzung belegt werden. Bisher sind nur generelle KHAG-Inhalte und der 0,5%-Abschlag für Patientenportale in KIS.md dokumentiert; die Gesamtstruktur aller fünf Fördertatbestände fehlt.",
+      "suggestedTerm": "KHZG-Digitalisierungsabschlag"
     }
-  ]
+  ],
+  "lastRun": "2026-03-23T10:00:00Z",
+  "lastChecked": "2026-03-23"
 }
