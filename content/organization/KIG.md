@@ -25,7 +25,7 @@ Das KIG arbeitet eng mit dem **Interop Council** zusammen. Der Interop Council i
 
 Die Ergebnisse der KIG-Arbeit werden im **[[Interoperabilitaetsverzeichnis|Interoperabilitätsverzeichnis (INA)]]** veröffentlicht. INA ist ein öffentlich zugänglicher Katalog aller von KIG und Interop Council priorisierten Spezifikationen, Profile und Leitfäden.
 
-Im März 2026 veröffentlichte das KIG gemeinsam mit dem Interop Council die IOP-Roadmap für 2026 und 2027. Über 50 Themeneinreichungen wurden per Scoring priorisiert. Aktive Arbeitsgruppen bestehen zu Themen wie Patientenportale, medizinische Register und Notfallversorgung.
+Im März 2026 veröffentlichte das KIG gemeinsam mit dem Interop Council die [[IOP-Roadmap]] für 2026 und 2027. Über 50 Themeneinreichungen wurden per Scoring priorisiert. Aktive Arbeitsgruppen bestehen zu Themen wie Patientenportale, medizinische Register und Notfallversorgung.
 
 > [!interesse-compliance]
 > Welche Standards das KIG dem [[BMG]] zur verbindlichen Festsetzung empfiehlt, können für Hersteller von Primärsystemen, KIS, AVS und DiGA zu Pflichtanforderungen werden. Hersteller sollten die IOP-Roadmap und das [[Interoperabilitaetsverzeichnis]] regelmäßig prüfen. Verbindlich festgesetzte Standards müssen in Produkte innerhalb der gesetzten Fristen implementiert werden.

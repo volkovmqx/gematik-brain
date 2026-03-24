@@ -3,7 +3,7 @@ title: DiGA
 audience: [technical, non-technical]
 tags: [technologies, digitale-gesundheit, medizinprodukt, bfarm]
 aliases: [Digitale Gesundheitsanwendungen, App auf Rezept, DiGAV]
-maturity: wachsend
+maturity: setzling
 relevance:
   sectors: [startup, hersteller, arztpraxis, psychotherapie, patient, kasse, regulierung]
   interests: [technik, business, compliance, patient]
@@ -55,11 +55,23 @@ Die Kommentierungsfrist für den Release Candidate läuft bis 1. April 2026. HDD
 
 Ab dem **1. Februar 2026** müssen DiGA verpflichtend den Schreibzugriff auf die [[ePA]] unterstützen. Versicherte können DiGA-Daten mit ihrer Einwilligung automatisch in ihre [[ePA]] übertragen lassen. Die Übertragung ist konfigurierbar und endet automatisch nach Ablauf der Verordnungsdauer. Grundlage ist die Zweite Verordnung zur Änderung der [[DiGAV]], die gleichzeitig die Authentifizierung via [[Gesundheits-ID]] als Pflichtanforderung einführt. DiGA, die diese Anforderungen nicht erfüllen, riskieren den Ausschluss aus dem BfArM-Verzeichnis.
 
+> [!patientenrecht] Patientenrecht: Ihre DiGA-Daten in der ePA
+> Ab Februar 2026 können DiGA Ihre Gesundheitsdaten in Ihre elektronische Patientenakte (ePA) übertragen.
+>
+> **Wichtig:** Das passiert nur mit Ihrer Einwilligung. Die App fragt Sie vorher.
+>
+> **Sie entscheiden selbst:**
+> - Sie können die Übertragung jederzeit stoppen.
+> - Nach Ablauf der Verordnung endet die Übertragung automatisch.
+> - In der ePA-App Ihrer Krankenkasse können Sie die DiGA-Daten einsehen und löschen.
+>
+> Sie möchten keine DiGA-Daten in der ePA? Lehnen Sie die Einwilligung in der App einfach ab oder wenden Sie sich an Ihre Krankenkasse.
+
 ### Integration mit dem E-Rezept
 
-Seit Oktober 2025 können DiGA als [[E-Rezept]] verordnet werden. Ein Pilotprojekt lief von Mai bis September 2025, rund 15 der im BfArM-Verzeichnis gelisteten DiGA wurden initial via E-Rezept verordnet. Wichtig: Das DiGA-E-Rezept wird nicht in der Apotheke, sondern direkt bei der Krankenkasse eingereicht. Die Kasse prüft und stellt daraufhin einen Gutscheincode für die DiGA-App aus.
+Seit Oktober 2025 können DiGA als [[E-Rezept]] verordnet werden. Ein Pilotprojekt lief von Mai bis September 2025, ausgewählte DiGA wurden initial via E-Rezept verordnet. Wichtig: Das DiGA-E-Rezept wird nicht in der Apotheke, sondern direkt bei der Krankenkasse eingereicht. Die Kasse prüft und stellt daraufhin einen Gutscheincode für die DiGA-App aus.
 
-Seit März 2026 ist zusätzlich die freiwillige elektronische DiGA-Verordnung ohne E-Rezept-Format möglich. Ärzte können DiGA damit auch über andere digitale Verordnungswege einreichen, die nicht das strenge E-Rezept-Format voraussetzen. Eine Pflicht zur elektronischen DiGA-Verordnung besteht bislang nicht. Das klassische Papierrezept (Muster 16) ist weiterhin zulässig.
+Seit März 2026 ist zusätzlich die freiwillige elektronische DiGA-Verordnung ohne E-Rezept-Format möglich. Ärzte können DiGA damit auch über andere digitale Verordnungswege einreichen, die nicht das strenge E-Rezept-Format voraussetzen. Eine Pflicht zur elektronischen DiGA-Verordnung besteht bislang nicht. Das klassische Papierrezept ([[Muster-16]]) ist weiterhin zulässig.
 
 > [!interesse-compliance]
 > Keine Pflicht zur elektronischen DiGA-Verordnung (Stand März 2026). Zwei optionale Wege: E-Rezept-Verordnung (seit Oktober 2025) und freiwillige elektronische Verordnung ohne E-Rezept-Format (seit März 2026). Das klassische Muster-16-Rezept bleibt zulässig.
@@ -75,6 +87,54 @@ Der [[TI-Messenger]] sieht eine Zugangsoption für Versicherte über integrierte
 3. Krankenkasse prüft und stellt Aktivierungscode aus (innerhalb von 3 Werktagen)
 4. Versicherter lädt App aus dem App-Store und aktiviert sie mit dem Code
 5. DiGA ist für die Verordnungsdauer (meist 90 Tage) freigeschaltet
+
+> [!praxis-tipp] Praxis-Tipp: DiGA verordnen im Praxisalltag
+> DiGA verordnen Sie wie ein Arzneimittel, aber das Rezept geht nicht zur Apotheke.
+>
+> Ablauf in Ihrer Praxis:
+> 1. Prüfen Sie das BfArM-Verzeichnis: Ist die DiGA zugelassen? (diga.bfarm.de)
+> 2. Stellen Sie Muster 16 aus: DiGA-Name, Indikation, Verordnungszeitraum (meist 90 Tage). Keine PZN nötig.
+> 3. Weisen Sie den Patienten hin: Das Rezept geht direkt an die Krankenkasse, nicht an die Apotheke.
+> 4. Die Kasse stellt den Aktivierungscode innerhalb von 3 Werktagen aus.
+>
+> Seit Oktober 2025 ist auch die Verordnung per E-Rezept möglich. Das DiGA-E-Rezept wird ebenfalls bei der Kasse eingereicht. Prüfen Sie, ob Ihr PVS die DiGA-E-Rezept-Funktion unterstützt.
+
+> [!patientenrecht] Patientenrecht: DiGA kostenlos erhalten
+> Ihre Krankenkasse bezahlt die App. Sie zahlen nichts dazu.
+>
+> **So bekommen Sie eine DiGA:**
+> 1. Sprechen Sie Ihren Arzt oder Ihre Ärztin an. Fragen Sie, ob eine App-Verordnung für Sie sinnvoll ist.
+> 2. Mit dem Rezept gehen Sie zur Krankenkasse. Das geht per Post, App oder Online-Portal.
+> 3. Die Kasse schickt Ihnen innerhalb von 3 Werktagen einen Aktivierungscode.
+> 4. Sie laden die App kostenlos herunter und geben den Code ein.
+>
+> **Alternativ:** Sie können die DiGA auch direkt bei Ihrer Krankenkasse beantragen, ohne Rezept. Das geht, wenn Ihr Arzt oder Psychotherapeut die Indikation bestätigt.
+>
+> Die App ist für die Verordnungsdauer freigeschaltet, meist 90 Tage. Eine Verlängerung ist möglich.
+
+### DiGA-Abrechnungsmechanismen (ab April 2026)
+
+Bisher konnten Ärzte DiGA über das Muster-16-Rezept verordnen, aber keine zusätzliche Beratungsvergütung abrechnen. Ab **1. April 2026** wurde erstmals eine eigenständige Gebührenordnungsposition für eine DiGA eingeführt:
+
+- **GOP 01482**: Abrechnungsposition für die DiGA "Kranus Mictera" (Inkontinenz-App für Frauen). 64 Punkte je Fall (ca. 8,15 Euro), extrabudgetär für die ersten zwei Jahre nach Einführung.
+
+Gleichzeitig wurden weitere DiGA in den Erstattungsrahmen aufgenommen: **Oviva Direkt Bluthochdruck** und **INKA** sind seit April 2026 erstattungsfähig.
+
+Die **AbEM-Pflicht (Anwendungsbegleitende Erfolgsmessung)** läuft seit Februar 2026 und wird ab April 2026 erstmals für volle Quartale berichtet. DiGA-Hersteller müssen nachweisen, dass mindestens 20 % der Nutzer die App tatsächlich nutzen, sonst riskieren sie den Verbleib im Verzeichnis.
+
+> [!interesse-compliance]
+> Die GOP 01482 ist ein Pilotmodell für DiGA-spezifische Beratungsvergütungen. Arztpraxen, die "Kranus Mictera" verordnen, können ab 1. April 2026 GOP 01482 zusätzlich zur Verordnung abrechnen. Prüfen Sie, ob Ihr PVS die neue GOP bereits in der EBM-Datenbank enthält. Die 20%-AbEM-Pflicht betrifft DiGA-Hersteller, nicht Verordner.
+
+> [!praxis-tipp] Praxis-Tipp: GOP 01482 abrechnen ab April 2026
+> Wenn Sie "Kranus Mictera" (Inkontinenz-App für Frauen) verordnen, können Sie ab 1. April 2026 zusätzlich GOP 01482 abrechnen.
+>
+> Was Sie konkret tun müssen:
+> 1. Prüfen Sie in Ihrem PVS: Ist GOP 01482 in der EBM-Liste verfügbar? Falls nicht, fragen Sie Ihren PVS-Anbieter nach einem Update.
+> 2. GOP 01482 ist einmal je Fall ansetzbar (64 Punkte, ca. 8,15 Euro, extrabudgetär).
+> 3. Die Vergütung ist für zwei Jahre nach Einführung extrabudgetär. Ab 2028 fällt sie ins Regelbudget.
+> 4. Indikation dokumentieren: Stressharninkontinenz oder Dranginkontinenz bei Patientinnen ab 18 Jahren.
+>
+> Hinweis: Die AbEM-Pflicht (Nutzungsnachweis 20 %) liegt beim Hersteller Kranus Health. Sie als Verordner haben damit keine direkte Pflicht.
 
 ### Abgrenzung: DiGA vs. DiPA
 

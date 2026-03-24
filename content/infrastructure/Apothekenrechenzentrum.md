@@ -56,7 +56,7 @@ Mit der Einführung des [[E-Rezept]]s (Pflicht seit 1. Januar 2024) hat sich die
 Der Abrechnungsfluss zwischen Apotheke, ARZ und Krankenkasse sieht im E-Rezept-Zeitalter wie folgt aus:
 
 1. Die Apotheke ruft das E-Rezept-Token per FHIR vom E-Rezept-Fachdienst ab.
-2. Das [[AVS]] erfasst die Dispensierung und erzeugt monatlich eine [[TA1]]-konforme Abrechnungsdatei.
+2. Das [[AVS]] erfasst die [[Dispensierung]] und erzeugt monatlich eine [[TA1]]-konforme Abrechnungsdatei.
 3. Das ARZ empfängt die Datei, prüft sie auf [[TA1]]-Konformität und Plausibilität (PZN bekannt, Preis korrekt laut Lauertaxe, [[KVNR]] gültig).
 4. Das ARZ bündelt die geprüften Sätze und übermittelt sie elektronisch an die jeweiligen Krankenkassen.
 5. Die Krankenkasse erstattet den Apotheken über das ARZ den Betrag, abzüglich gesetzlicher Abschläge.

@@ -15,7 +15,7 @@ Die **NIS-2-Richtlinie** (EU 2022/2555) ist die EU-Richtlinie zur Netzwerk- und 
 
 ## Erklärt für Einsteiger
 
-Stell dir vor, die EU entscheidet: Alle wichtigen Einrichtungen, also Krankenhäuser, Energieversorger und Behörden, müssen ihre Computer und Netzwerke besser schützen. Wer das nicht tut, muss hohe Geldstrafen zahlen. NIS-2 ist das Gesetz, das diese Anforderungen aufstellt. Es gibt vor, welche Sicherheitsmaßnahmen Minimum sind und wer das überwacht. Deutschland setzt NIS-2 in nationales Recht um, hauptsächlich durch das NIS2UmsuCG (NIS-2-Umsetzungsgesetz).
+Stell dir vor, die EU entscheidet: Alle wichtigen Einrichtungen, also Krankenhäuser, Energieversorger und Behörden, müssen ihre Computer und Netzwerke besser schützen. Wer das nicht tut, muss hohe Geldstrafen zahlen. NIS-2 ist das Gesetz, das diese Anforderungen aufstellt. Es gibt vor, welche Sicherheitsmaßnahmen Minimum sind und wer das überwacht. Deutschland setzt NIS-2 in nationales Recht um, hauptsächlich durch das [[NIS2UmsuCG]] (NIS-2-Umsetzungsgesetz).
 
 ## Überblick
 

@@ -4,9 +4,9 @@ audience: [technical, non-technical]
 tags: [standards, gesetzgebung, dipa, pflege, telematikinfrastruktur]
 aliases: [Digitale-Versorgung-und-Pflege-Modernisierungs-Gesetz, Digitale Versorgung und Pflege Modernisierungsgesetz]
 relevance:
-  sectors: [apotheke, arztpraxis, pflege, hersteller, regulierung]
+  sectors: [arztpraxis, krankenhaus, apotheke, pflege, hersteller, patient, kasse]
   interests: [compliance, business]
-maturity: wachsend
+maturity: setzling
 ---
 
 # DVPMG
@@ -19,7 +19,7 @@ Das DVPMG ist das Nachfolgegesetz des [[DVG]] von 2019. Während das DVG digital
 
 ## Überblick
 
-Das DVPMG (Gesetz zur digitalen Modernisierung von Versorgung und Pflege) wurde am 3. Juni 2021 vom Bundestag verabschiedet und trat am 9. Juni 2021 in Kraft. Es ist das dritte große Digitalisierungsgesetz des [[BMG]] nach dem [[E-Health-Gesetz]] (2015) und dem [[DVG]] (2019).
+Das DVPMG (Gesetz zur digitalen Modernisierung von Versorgung und Pflege) wurde am 6. Mai 2021 vom Bundestag beschlossen und trat am 9. Juni 2021 in Kraft (BGBl. I S. 1309). Es ist das dritte große Digitalisierungsgesetz des [[BMG]] nach dem [[E-Health-Gesetz]] (2015) und dem [[DVG]] (2019).
 
 Das Herzstück des DVPMG ist die Einführung der **[[DiPA]] (Digitale Pflegeanwendungen)**. Mit dem DVPMG wurden die §§ 40a und 40b im Elften Buch Sozialgesetzbuch ([[SGB-XI|SGB XI]]) neu eingefügt. Sie begründen den Rechtsanspruch Pflegebedürftiger auf DiPA und regeln das Prüfverfahren beim [[BfArM]]. DiPA sind das Pendant zu [[DiGA]] in der gesetzlichen Pflegeversicherung.
 
@@ -49,6 +49,9 @@ Das DVPMG enthält außerdem den Auftrag an die [[gematik]], einen "Zukunftskonn
 
 > [!interesse-business]
 > Das DVPMG öffnete den Markt für digitale Pflegeanwendungen (DiPA). Das Marktpotenzial umfasst die rund 4,9 Millionen Pflegebedürftigen in Deutschland (2023). Erste DiPA wurden 2022/2023 zugelassen. Im Gegensatz zu DiGA (GKV-Finanzierung) werden DiPA aus der gesetzlichen Pflegeversicherung erstattet (bis 50 Euro monatlich).
+
+> [!interesse-patient]
+> Das DVPMG schafft zwei direkte Vorteile für Patienten: (1) Wer einen Pflegegrad hat, kann digitale Pflegeanwendungen (DiPA) bei seiner Pflegekasse beantragen. Die Pflegekasse zahlt bis zu 50 Euro pro Monat. Eine Verordnung durch den Arzt ist nicht nötig. (2) Seit 2023 bieten Krankenkassen die [[Gesundheits-ID]] an: ein digitaler Versicherungsausweis auf dem Smartphone. Damit können Arztbesuche ohne Chipkarte abgewickelt werden.
 
 ## Technische Details
 
@@ -80,6 +83,17 @@ Im Fünften Buch Sozialgesetzbuch (SGB V) erweiterte das DVPMG:
 ### Bedeutung für die TI-Architektur
 
 Der im DVPMG verankerte Auftrag zum Zukunftskonnektor war strategisch bedeutend. Er signalisierte, dass der Hardware-Konnektor mittelfristig durch Cloud-Dienste abgelöst werden soll. Neue Leistungserbringergruppen wie Pflegeeinrichtungen und therapeutische Berufe sollten nicht mehr verpflichtet werden, teure Hardware zu installieren, sondern sich über softwarebasierte Lösungen anbinden können.
+
+> [!praxis-tipp] Praxis-Tipp: DiPA in der Pflegeeinrichtung einsetzen
+> Wenn Sie in einer Pflegeeinrichtung oder als ambulanter Pflegedienst tätig sind, gilt: Nur BfArM-zugelassene DiPA sind erstattungsfähig.
+>
+> Bevor Sie eine DiPA empfehlen oder einsetzen:
+> 1. DiPA-Verzeichnis des BfArM prüfen: dipa.bfarm.de. Steht die App dort? Dann ist sie zugelassen.
+> 2. Pflegebedürftige beantragen die DiPA selbst bei der Pflegekasse. Keine Arztverordnung nötig.
+> 3. Die Pflegekasse erstattet bis zu 50 Euro pro Monat je Pflegebedürftigem.
+> 4. Dokumentieren Sie intern, welche DiPAs in Ihrer Einrichtung eingesetzt werden, und aktualisieren Sie die Liste, wenn der BfArM-Status einer App sich ändert.
+>
+> Achtung: Nicht zugelassene Pflege-Apps begründen keinen Erstattungsanspruch. Empfehlen Sie nur Apps aus dem offiziellen Verzeichnis.
 
 ## Verknüpfungen
 

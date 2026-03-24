@@ -39,7 +39,7 @@ Das Entlassmanagement ist eng mit den TI-Anwendungen verknüpft. Der Entlassbrie
 
 Ein zentrales Element des Entlassmanagements sind Kurzzeitverordnungen, die der Krankenhausarzt direkt ausstellen kann, um Versorgungslücken bis zum ersten ambulanten Termin zu überbrücken. Diese umfassen:
 
-- **Arzneimittelverordnungen**: Bis zu 7 Tage Versorgung mit Arzneimitteln als [[E-Rezept]] (gesetzliche Pflicht ab 2024) oder Papierrezept (Muster 16)
+- **Arzneimittelverordnungen**: Bis zu 7 Tage Versorgung mit Arzneimitteln als [[E-Rezept]] (gesetzliche Pflicht ab 2024) oder Papierrezept ([[Muster-16]])
 - **[[Heilmittelverordnung|Heilmittelverordnungen]]**: Physiotherapie, Ergotherapie, Logopädie, für maximal 14 Tage nach Entlassung
 - **[[eVO|Häusliche Krankenpflege (HKP)]]**: Häusliche Pflege als elektronische Verordnung
 - **Hilfsmittelversorgung**: Rollstuhl, Gehhilfen, Stomamaterial

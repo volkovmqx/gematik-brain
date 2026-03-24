@@ -3,6 +3,10 @@ title: TSP - Trust Service Provider
 audience: [technical]
 tags: [infrastruktur, pki, zertifikate, sicherheit, vertrauensdienste]
 aliases: [TSP, Trust Service Provider, Zertifikatsaussteller, Vertrauensdiensteanbieter]
+relevance:
+  sectors: [ti-infrastruktur, hersteller, it-dienstleister]
+  interests: [technik, compliance]
+maturity: wachsend
 ---
 
 # TSP - Trust Service Provider
@@ -20,6 +24,9 @@ Die TI-[[PKI]] ist eine dreistufige Zertifikatshierarchie. An der Spitze steht d
 Ohne akkreditierte TSPs könnten keine gültigen Zertifikate für die TI ausgestellt werden. Kein Zertifikat ist in der TI gültig, das nicht von einer Sub-CA eines akkreditierten TSP stammt, welche wiederum von der gematik Root-CA zertifiziert wurde.
 
 TSPs in der TI sind nicht identisch mit Vertrauensdiensteanbietern (VDA) nach der [[eIDAS]]-Verordnung, obwohl der Begriff ähnlich klingt. VDAs nach eIDAS stellen [[QES]]-Zertifikate aus und unterliegen der Aufsicht der [[Bundesnetzagentur]]. TSPs im TI-Kontext beziehen sich speziell auf Anbieter im nonQES-Bereich der gematik-PKI.
+
+> [!interesse-compliance]
+> Hersteller von TI-Komponenten (Konnektoren, TI-Gateway-Software, Fachdienste) müssen sicherstellen, dass ihre Produkte ausschließlich Zertifikate von akkreditierten TSPs akzeptieren. Nicht-akkreditierte CAs werden von TI-Komponenten automatisch abgewiesen. Für QES-Zertifikate auf dem [[HBA]] (C.HP.QES) gilt zusätzlich die [[eIDAS]]-Akkreditierung durch die [[Bundesnetzagentur]]. Die Liste der akkreditierten TSPs ist über die [[TSL]] abrufbar und wird von der [[gematik]] gepflegt.
 
 ## Technische Details
 
@@ -60,6 +67,9 @@ TSPs in der TI sind nach Aufgabenbereichen spezialisiert:
 ### OCSP-Betrieb
 
 Jeder TSP muss einen **OCSP-Responder** betreiben, über den der Sperrstatus seiner ausgestellten Zertifikate abgefragt werden kann. Die URL des OCSP-Responders ist in jedem Zertifikat im Feld `AuthorityInfoAccess` eingetragen. [[Konnektoren]] und andere TI-Komponenten fragen vor jeder sicherheitsrelevanten Kommunikation den OCSP-Responder des zuständigen TSP ab.
+
+> [!interesse-technik]
+> TSP-Zertifikate lassen sich über die [[TSL]] validieren: Download der aktuellen TSL von `https://download.tsl.ti-dienste.de/TSL.xml`, Signaturprüfung gegen den gematik Root-CA-Public-Key (im Konnektor/TI-Gateway fest verankert). OCSP-Responder-URLs sind im Zertifikat im Feld `AuthorityInfoAccess` (OID 1.3.6.1.5.5.7.48.1) eingetragen. Für die ECC-Migration: TSPs stellen Zertifikate für beide Schlüsseltypen (RSA-2048 und ECC-BP256) aus, solange die Übergangsfrist bis Ende 2026 läuft. Spezifikation: gemKPT_PKI_TIP auf gemspec.gematik.de.
 
 ### Abgrenzung nonQES und QES
 

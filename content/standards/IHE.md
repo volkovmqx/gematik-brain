@@ -4,9 +4,9 @@ audience: [technical]
 tags: [standards, interoperabilität, dokumentenaustausch, IHE]
 aliases: [Integrating the Healthcare Enterprise, IHE International, IHE-D]
 relevance:
-  sectors: [krankenhaus, hersteller, ti-infrastruktur]
+  sectors: [krankenhaus, hersteller, ti-infrastruktur, it-dienstleister]
   interests: [technik]
-maturity: immergruen
+maturity: wachsend
 ---
 
 # IHE
@@ -105,6 +105,13 @@ Die [[ePA]] nutzt XDS.b als Dokumentenverwaltungsgrundlage. Konkret verwendet di
 Das MHD-Profil wird für FHIR-basierte Zugriffe auf Dokumente eingesetzt, insbesondere in Szenarien, in denen mobile Apps oder Primärsysteme ohne vollständigen XDS-Stack auf Dokumente zugreifen.
 
 Das ATNA-Profil ist in der [[ePA]] verpflichtend für Audit-Protokollierung.
+
+> [!klinik-integration] Klinik-Integration: MHD als KIS-Zugangspunkt zur ePA
+> Für [[KIS]]-Systeme, die noch keinen vollständigen XDS.b-Stack implementieren, bietet das MHD-Profil (ITI-65/66/67/68) einen FHIR-basierten Einstieg in das ePA-Dokumentenmanagement.
+>
+> **MHD statt XDS im KIS:** Die meisten KIS-Hersteller (SAP IS-H, Dedalus Orbis, iMedOne) bieten ihre ePA-Anbindung über MHD-Transaktionen an, nicht über den vollständigen XDS.b-Stack. Das vereinfacht die Integration erheblich: Statt ebXML-Metadaten werden FHIR-R4-Ressourcen (DocumentReference, Bundle) verwendet. Prüfen Sie beim KIS-Hersteller, ob das ePA-Modul ITI-65 (Dokument einstellen) und ITI-67/68 (Dokument suchen und abrufen) abdeckt.
+> **XDS-Repository im Klinikverbund:** Große Klinikverbünde betreiben eigene XDS.b-Repositories für den einrichtungsübergreifenden Dokumentenaustausch (z.B. Entlassbriefe an Niedergelassene). Hier ist eine XCA-Bridge (Cross-Community Access) relevant, um den internen XDS-Bestand mit der ePA zu verbinden. Klären Sie mit Ihrem IT-Dienstleister, ob ein vorhandenes XDS-Repository als ePA-Dokumentenquelle konfiguriert werden kann.
+> **Hochverfügbarkeit:** Die ATNA-Audit-Protokollierung muss auch bei KIS-Wartungsfenstern laufen. Planen Sie den Audit-Repository-Server als eigenständigen Dienst mit Redundanz.
 
 ## Verknüpfungen
 

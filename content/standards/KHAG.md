@@ -98,7 +98,7 @@ Das KHAG verpflichtet Krankenhäuser zur Umsetzung verbindlicher Interoperabilit
 > Simplifier: [ISiK Sicherheit v3](https://simplifier.net/guide/isik-sicherheit-v3)
 
 > [!interesse-technik]
-> Die KHAG-Interoperabilitätsstandards werden im [[Interoperabilitaetsverzeichnis]] des [[gematik|Kompetenzzentrums Interoperabilität (KIG)]] verankert. Hersteller sollten die Veröffentlichungen des KIG zur [[ISiK]]-Roadmap und zu neuen Themen der IOP-Roadmap 2026/2027 im Blick behalten. Die IOP-Roadmap wurde im März 2026 für die Jahre 2026 und 2027 veröffentlicht. Laufende Arbeitsgruppen: Patientenportale (aktiv), Medizinische Register (in Vorbereitung).
+> Die KHAG-Interoperabilitätsstandards werden im [[Interoperabilitaetsverzeichnis]] des [[gematik|Kompetenzzentrums Interoperabilität (KIG)]] verankert. Hersteller sollten die Veröffentlichungen des KIG zur [[ISiK]]-Roadmap und zu neuen Themen der [[IOP-Roadmap]] 2026/2027 im Blick behalten. Die IOP-Roadmap wurde im März 2026 für die Jahre 2026 und 2027 veröffentlicht. Laufende Arbeitsgruppen: Patientenportale (aktiv), Medizinische Register (in Vorbereitung).
 
 ### Patientenportal-Anforderungen
 

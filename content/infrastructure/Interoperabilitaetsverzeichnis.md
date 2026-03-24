@@ -57,7 +57,7 @@ Eng mit dem Interoperabilitätsverzeichnis verbunden ist das **Kompetenzzentrum 
 
 - Koordiniert die inhaltliche Entwicklung des Verzeichnisses
 - Betreibt den **Interop Council**: ein Gremium aus Vertretern von Herstellern, Leistungserbringern und Kostenträgern
-- Veröffentlicht eine jährliche IOP-Roadmap mit Themen für kommende Standardisierungsarbeiten
+- Veröffentlicht eine jährliche [[IOP-Roadmap]] mit Themen für kommende Standardisierungsarbeiten
 - Führt offene Konsultationen zu neuen Standards durch
 
 Im März 2026 veröffentlichte das KIG die IOP-Roadmap 2026-2027. Priorisierte Themen: Patientenportale, Medizinische Register und Notfallversorgung.

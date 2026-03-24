@@ -3,6 +3,10 @@ title: Telematik-ID
 audience: [technical]
 tags: [infrastruktur, identitaet, pki, vzd, zertifikat]
 aliases: [Telematik-ID, TelematikID, TI-ID]
+relevance:
+  sectors: [arztpraxis, krankenhaus, zahnarzt, apotheke, pflege, it-dienstleister, ti-infrastruktur]
+  interests: [technik, compliance]
+maturity: wachsend
 ---
 
 # Telematik-ID
@@ -20,6 +24,9 @@ Die Telematik-ID wird einmalig vergeben und ist dauerhaft mit einer Person oder 
 Die Vergabe der Telematik-ID erfolgt durch die Kartenherausgeber bei Beantragung des [[HBA]] oder der [[SMC-B]]. Für Ärzte, Zahnärzte und Apotheker sind das die jeweiligen Heilberufskammern. Für Gesundheitsberufe ohne Kammer ist das [[eGBR]]. Für Sonderfälle gibt [[gematik]] die Karten direkt aus. Der Nummernraum für die Präfixe wird von der [[gematik]] verwaltet.
 
 Die Telematik-ID ist nicht identisch mit anderen Identifikatoren im deutschen Gesundheitswesen. Die [[eGK]] eines Patienten trägt keine Telematik-ID, sondern die [[KVNR|Krankenversicherungsnummer (KVNR)]]. Die Telematik-ID identifiziert ausschließlich Leistungserbringer und Einrichtungen.
+
+> [!interesse-compliance]
+> Jede Einrichtung und jede Person, die aktiv an der TI teilnimmt, erhält genau eine Telematik-ID. Sie ist in der [[SMC-B]] (Einrichtung) oder im [[HBA]] (Person) fest kodiert. Die Telematik-ID wird nicht direkt beantragt: Sie entsteht automatisch bei Beantragung der Karte bei der zuständigen Kammer oder dem [[eGBR]]. Wer seine Telematik-ID kennen muss: Betreiber von TI-Diensten, die Zugriffsprotokoll-Auswertungen durchführen oder eigene API-Integrationen gegen den [[VZD]] oder [[IDP]] testen.
 
 ### Verwendung in der TI
 
@@ -44,6 +51,9 @@ Die Gesamtlänge der Telematik-ID (Präfix, Trennzeichen und Fortsatz) darf 128 
 ### Kodierung im X.509-Zertifikat
 
 Die Telematik-ID wird in nicht-QES-Zertifikaten ([[PKI]]-Typ "nonQES") im X.509-Feld `SubjectSerialNumber` im `SubjectDN` gespeichert. Ergänzend wird sie in der Admission Extension als `registrationNumber` kodiert. Die Admission Extension enthält außerdem die Berufsbezeichnung (`professionOID`), die die Rolle des Karteninhabers (Arzt, Apotheker, Krankenhaus usw.) angibt.
+
+> [!interesse-technik]
+> Die Telematik-ID wird in X.509-Zertifikaten im Feld `SubjectSerialNumber` (nonQES) kodiert und erscheint als Claim `idNummer` im ID_TOKEN des [[IDP]]. Beim Parsen von Zertifikaten: Admission Extension OID `1.3.36.8.3.3`, Feld `registrationNumber` innerhalb von `ProfessionInfo`. Normative Definition: gemSpec_PKI, Tab_PKI_101 (Präfixstruktur). VZD-Abfrage per FHIR: `GET /fhir/Practitioner?identifier=https://gematik.de/fhir/sid/telematik-id|<ID>`.
 
 ### Präfixstruktur nach Kartentyp
 

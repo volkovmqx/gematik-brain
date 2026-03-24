@@ -1920,8 +1920,9 @@
         "DiGA.md"
       ],
       "category": "regulation",
-      "action": "update",
-      "details": "DiGA.md: Neuen Abschnitt zu DiGA-Abrechnungsmechanismen ergänzen. GOP 01482 als erster eigenständiger Abrechnungscode für eine spezifische DiGA dokumentieren. Hintergrund: Bisher konnten Ärzte DiGA nur über Muster-16-Rezept verordnen, aber keine zusätzliche Konsultationsvergütung für DiGA-spezifische Beratung abrechnen. GOP 01482 ist ein Pilotmodell, das perspektivisch auf weitere DiGA ausgedehnt werden könnte.",
+      "action": "applied",
+      "appliedDate": "2026-03-24",
+      "details": "DiGA.md: Neuen Abschnitt 'DiGA-Abrechnungsmechanismen (ab April 2026)' in Technische Details ergänzt. GOP 01482 (64 Punkte, ca. 8,15 Euro, extrabudgetär) für Kranus Mictera dokumentiert. Oviva Direkt Bluthochdruck und INKA als neue Erstattungs-DiGA genannt. 20%-AbEM-Pflicht seit Februar 2026 beschrieben. [!interesse-compliance] Callout für Verordner hinzugefügt.",
       "suggestedTerm": "DiGA-Abrechnungscode"
     },
     {
@@ -1935,11 +1936,24 @@
         "ISiK.md"
       ],
       "category": "regulation",
-      "action": "update",
-      "details": "KIS.md: Abschnitt zu KHZG/Digitalisierungsabschlägen mit konkreten Prozentsätzen je Fördertatbestand ergänzen (FTB 2–6, 0,2–0,6%, Max 2,0%). Klarstellen: In 2026/2027 genügt 'beauftragt' als Nachweis; ab 2028 muss Nutzung belegt werden. Bisher sind nur generelle KHAG-Inhalte und der 0,5%-Abschlag für Patientenportale in KIS.md dokumentiert; die Gesamtstruktur aller fünf Fördertatbestände fehlt.",
+      "action": "applied",
+      "appliedDate": "2026-03-24",
+      "details": "KIS.md: Neuen Abschnitt 'KHZG-Digitalisierungsabschläge (ab 2026)' in Technische Details ergänzt. Tabelle mit FTB 2-6, Abschlagsprozentsätzen (0,2-0,6%, max 2,0%) und Nachweisanforderungen (2026/2027: Beauftragung genügt; ab 2028: Nutzungsnachweis). [!frist-warnung] Callout mit Handlungsbedarf und Beispielrechnung eingefügt.",
       "suggestedTerm": "KHZG-Digitalisierungsabschlag"
+    },
+    {
+      "title": "ePA_3_1_3-2: Korrektur-Release vom 23. März 2026 mit mehreren Aktensystem-Operatoren",
+      "date": "2026-03-23",
+      "source": "https://gemspec.gematik.de/releases/ePA_3_1_3-2/index.html",
+      "summary": "Am 23. März 2026 veröffentlichte gematik den Korrektur-Release ePA_3_1_3-2. Wesentliche Änderungen: (1) Unterstützung für mehr als zwei Aktensystembetreiber (Erweiterung der bisherigen Zwei-Betreiber-Begrenzung). (2) Temporäres Einfrieren und Auftauen von VAU-geschützten Daten (z.B. für Wartungsszenarien). (3) Überarbeiteter Re-Verschlüsselungs-Workflow (C_12684). (4) Unterstützung versionierter EventCodes. Aktualisiert wurden: Anbietersteckbriefe ePA-Aktensystem und Signaturdienst, Produktsteckbriefe ePA-Aktensystem/Frontend/Signaturdienst, Primärsystemschnittstellen für DiGA, Kostenträger, Ombudsstellen und Apotheken sowie das Hersteller-Frontend-Verzeichnis.",
+      "relevantArticles": [
+        "ePA.md"
+      ],
+      "category": "specification",
+      "action": "info_only",
+      "details": "Korrektur-Release ohne neue Funktionalität für Endnutzer. Relevant für Aktensystembetreiber und PVS/KIS-Hersteller. Die Erweiterung auf mehr als zwei Aktensystembetreiber ist strukturell bedeutsam für den Wettbewerb im ePA-Betreibermarkt."
     }
   ],
-  "lastRun": "2026-03-23T10:00:00Z",
-  "lastChecked": "2026-03-23"
+  "lastRun": "2026-03-24T09:00:00Z",
+  "lastChecked": "2026-03-24"
 }

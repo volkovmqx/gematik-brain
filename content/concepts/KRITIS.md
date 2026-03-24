@@ -43,7 +43,7 @@ Kernanforderungen des KRITIS-DachG:
 - **Meldepflicht**: Sicherheitsvorfälle, die den Betrieb erheblich beeinträchtigen, müssen gemeldet werden.
 
 > [!frist-warnung] Frist-Warnung: NIS-2-Registrierungspflicht und KRITIS-DachG-Fristen
-> **Rechtsgrundlage:** § 33 BSIG (NIS2UmsuCG, in Kraft seit 6. Dezember 2025) für die NIS-2-Registrierung; KRITIS-DachG (verabschiedet 6. März 2026) für die physische Resilienz
+> **Rechtsgrundlage:** § 33 BSIG ([[NIS2UmsuCG]], in Kraft seit 6. Dezember 2025) für die NIS-2-Registrierung; KRITIS-DachG (verabschiedet 6. März 2026) für die physische Resilienz
 > **Fristen:**
 > - **NIS-2-Registrierung:** Die Registrierung beim BSI nach dem NIS2UmsuCG war bis zum **6. März 2026** zu erbringen. Einrichtungen im Gesundheitssektor, die als wesentliche oder wichtige Einrichtungen eingestuft sind, müssen ihre Registrierung unverzüglich nachholen, sofern noch nicht erfolgt.
 > - **KRITIS-DachG-Registrierung:** KRITIS-Betreiber nach dem neuen KRITIS-DachG müssen sich beim BSI voraussichtlich ab **17. Juli 2026** registrieren (Umsetzungsfrist aus der CER-Richtlinie). Die genaue Frist wird durch die noch ausstehende Rechtsverordnung konkretisiert.
@@ -94,7 +94,7 @@ Die [[Telematikinfrastruktur]] ist als kritische Infrastruktur eingestuft. Die [
 > Krankenhäuser ab 30.000 vollstationären Fällen pro Jahr sind seit 2019 als KRITIS-Betreiber eingestuft. Mit dem KRITIS-DachG (in Kraft seit März 2026) kommen zusätzliche Pflichten zur physischen Resilienz hinzu.
 >
 > **Registrierung und Kontaktstelle:** Registrierung beim BSI verpflichtend (voraussichtlich ab Mitte 2026). Das Krankenhaus muss eine Kontaktstelle beim BSI benennen, die für Meldungen und Rückfragen erreichbar ist. Verantwortlich ist üblicherweise der IT-Leiter oder ein dedizierter CISO.
-> **ISMS-Pflicht:** Betrieb eines Informationssicherheits-Managementsystems nach ISO 27001 oder BSI IT-Grundschutz. Der branchenspezifische Sicherheitsstandard B3S Medizinische Versorgung (Version 1.3.1, Stand Januar 2026) ist der anerkannte Umsetzungsrahmen für Krankenhäuser. Alle zwei Jahre ist ein Nachweis der umgesetzten Maßnahmen gegenüber dem BSI zu erbringen (Audit oder Zertifizierung).
+> **ISMS-Pflicht:** Betrieb eines Informationssicherheits-Managementsystems nach ISO 27001 oder BSI IT-Grundschutz. Der branchenspezifische Sicherheitsstandard [[B3S-Krankenhaus|B3S Medizinische Versorgung]] (Version 1.3.1, Stand Januar 2026) ist der anerkannte Umsetzungsrahmen für Krankenhäuser. Alle zwei Jahre ist ein Nachweis der umgesetzten Maßnahmen gegenüber dem BSI zu erbringen (Audit oder Zertifizierung).
 > **TI-relevante Systeme im ISMS-Scope:** Der [[Highspeed-Konnektor]] oder das [[TI-Gateway]], der [[KIM]]-Client im [[KIS]] und die ePA-Anbindung sind als kritische IT-Systeme im ISMS zu dokumentieren. Ausfälle dieser Systeme, die den Klinikbetrieb erheblich beeinträchtigen, sind meldepflichtig.
 > **NIS-2-Erweiterung:** Krankenhäuser unterhalb der KRITIS-Schwelle (unter 30.000 Fälle) können trotzdem als "wichtige Einrichtungen" nach NIS-2 verpflichtet sein, sofern sie die Größenschwellen (ab 50 Mitarbeiter oder 10 Mio. Euro Umsatz) überschreiten.
 

@@ -15,7 +15,7 @@ Die **Hilfsmittelverordnung** ist die ärztliche Verordnung medizinischer Hilfsm
 
 ## Erklärt für Einsteiger
 
-Wenn ein Arzt einem Patienten eine Knieorthese oder einen Rollstuhl verschreibt, ist das eine Hilfsmittelverordnung. Bisher war das immer ein Papiervordruck (Muster 16), den der Patient in ein Sanitätshaus oder einen Hilfsmittellieferanten bringen musste. Ab Juli 2027 wird diese Verordnung digital ausgestellt: Als E-Rezept auf der Gesundheitskarte oder in der App, genau wie schon heute das Rezept für Medikamente.
+Wenn ein Arzt einem Patienten eine Knieorthese oder einen Rollstuhl verschreibt, ist das eine Hilfsmittelverordnung. Bisher war das immer ein Papiervordruck ([[Muster-16]]), den der Patient in ein Sanitätshaus oder einen Hilfsmittellieferanten bringen musste. Ab Juli 2027 wird diese Verordnung digital ausgestellt: Als E-Rezept auf der Gesundheitskarte oder in der App, genau wie schon heute das Rezept für Medikamente.
 
 ## Überblick
 

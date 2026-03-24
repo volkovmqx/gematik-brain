@@ -130,7 +130,7 @@ Die [[KBV]] entwickelt eigene [[FHIR]]-Profile für Heilmittelverordnungen. Dies
 
 | Verordnungsform | Gegenstand | Status Digital |
 |---|---|---|
-| [[E-Rezept]] (Muster 16) | Verschreibungspflichtige Arzneimittel | Pflicht seit Jan. 2024 |
+| [[E-Rezept]] ([[Muster-16|Muster 16]]) | Verschreibungspflichtige Arzneimittel | Pflicht seit Jan. 2024 |
 | [[eVO]] (Muster 13) | Heilmittel (Physio, Ergo, Logo, Podo) | Pflicht ab Jan. 2027 |
 | [[BTM-Rezept]] (gelb) | Betäubungsmittel | Pilot Q4/2026 geplant |
 | Hilfsmittelverordnung (Muster 15) | Prothesen, Orthesen, Rollstühle | E-Rezept-Pflicht ab Jul. 2027 |

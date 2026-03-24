@@ -1,150 +1,188 @@
 {
-  "timestamp": "2026-03-23T14:15:00Z",
-  "overallScore": 87,
+  "timestamp": "2026-03-24T22:30:00Z",
+  "overallScore": 83,
   "testResults": {
-    "passed": 235,
+    "passed": 240,
     "failed": 0,
-    "total": 235
+    "total": 240
   },
   "articles": [
-    {
-      "file": "content/concepts/Sekundärnutzung.md",
-      "verdict": "revise",
-      "score": 75,
-      "issues": [
-        "Faktenfehler: BfArM Datenzugangs- und Koordinierungsstelle ist in GDNG § 3 geregelt, nicht § 1 (§ 1 beschreibt nur Zweck und Anwendungsbereich)",
-        "EHDS-Kapitelstruktur unverifiable: Kapitel II, III, IV für Primär- und Sekundärnutzung konnte nicht durch Lektüre der Verordnung (EU) 2025/327 direkt bestätigt werden",
-        "Quelle 3 (netzwerk-datenschutzexpertise.de PDF) ist eine schwache Quelle ohne offizielle Stellung; keine stabile HTML-URL"
-      ],
-      "fixInstructions": "Korrigiere 'GDNG, § 1' zu 'GDNG, § 3'. Für EHDS-Kapitelreferenzen: entweder konkrete Artikelnummer nennen oder Formulierung absichern ('Kapitel zur Sekundärnutzung' statt 'Kapitel III und IV'). PDF-Direktlink als Quelle durch eine stabile offizielle Seite ersetzen."
-    },
-    {
-      "file": "content/infrastructure/Kartenherausgeber.md",
-      "verdict": "revise",
-      "score": 80,
-      "issues": [
-        "URL-Redirect: Quelle 2 (fachportal.gematik.de/schnelleinstieg/smartcards-und-identitaeten-in-der-ti/kartenherausgabe-der-gematik) leitet auf eine andere Seite um als erwartet",
-        "Inhaltlicher Fehler HBA-Tabelle: 'Notfallsanitäter – gematik' ist nicht durch gematik Fachportal explizit belegt; laut Fachportal ist gematik Herausgeber für Berufsgruppen ohne eigene Kammer (z.B. EU-Versandapotheker), Notfallsanitäter werden nicht explizit genannt",
-        "Inhaltlicher Fehler SMC-B-Tabelle: 'Krankenhäuser – gematik oder Landesverbände' – 'Landesverbände' als SMC-B-Herausgeber ist nicht durch das Fachportal belegt"
-      ],
-      "fixInstructions": "URL 2 aktualisieren auf: https://fachportal.gematik.de/telematikinfrastruktur/identitaets-und-kartenherausgabe. Notfallsanitäter-Eintrag in HBA-Tabelle mit Quelle belegen oder als 'bestimmte Berufsgruppen ohne eigene Kammer' allgemein formulieren. SMC-B Krankenhäuser-Eintrag auf 'gematik (direkt)' reduzieren, 'oder Landesverbände' entfernen."
-    },
-    {
-      "file": "content/processes/Interaktionsprüfung.md",
-      "verdict": "pass",
-      "score": 88,
-      "issues": [
-        "ABDA-Quelle URL abdata.de verifiziert und erreichbar",
-        "Sechsstufige Klassifikation plausibel; ABDATA-Seite beschreibt Interaktionsdaten mit Schweregrad-Einschätzung"
-      ],
-      "fixInstructions": "Keine Korrekturen nötig."
-    },
-    {
-      "file": "content/infrastructure/LDAP.md",
-      "verdict": "revise",
-      "score": 78,
-      "issues": [
-        "Unverifiable claim: 'Die gematik hat den FHIR-VZD im März 2026 zugelassen' – kein offizieller Beleg gefunden; sehr spezifisches Datum ohne Quellenangabe",
-        "Letzte Quelle (e-health-com.de) ist eine nicht-offizielle Publikation; kein direkter Link auf gematik-Spezifikation gemSpec_VZD"
-      ],
-      "fixInstructions": "Den Claim 'FHIR-VZD im März 2026 zugelassen' entweder mit einer offiziellen gematik-Quelle (gemSpec_VZD Release-Note) belegen oder zu 'gematik arbeitet an der schrittweisen Ablösung des LDAP-VZD durch die FHIR-Schnittstelle' umformulieren. Die e-health-com.de-Quelle durch gemSpec_VZD auf gemspec.gematik.de ersetzen."
-    },
-    {
-      "file": "content/concepts/Zugriffsrecht.md",
-      "verdict": "revise",
-      "score": 78,
-      "issues": [
-        "Staleness: Artikel nennt 'ePA für alle (ePA 3.0, ab Januar 2025)' – der bundesweite Rollout startete am 29. April 2025 (bestätigt durch gematik.de). Januar 2025 war nur ein Pilotbetrieb in Modellregionen.",
-        "Quelle 3 (pkv.de) ist für ein GKV/SGB-V-Thema eine Randquelle; PKV-Patienten unterliegen einem anderen Zugriffsmodell"
-      ],
-      "fixInstructions": "Datum korrigieren: 'ab Januar 2025' ersetzen durch 'bundesweiter Rollout ab 29. April 2025' oder 'ab 2025 (Pilotstart Januar, bundesweiter Rollout April 2025)'. PKV-Quelle durch eine gematik- oder KBV-Quelle ersetzen."
-    },
-    {
-      "file": "content/concepts/KRITIS.md",
-      "verdict": "revise",
-      "score": 80,
-      "issues": [
-        "Tote URL: Quelle 2 (bundesrat.de/...2026/1099/tagesordnung/to_node.html) gibt HTTP 404 zurück"
-      ],
-      "fixInstructions": "Quelle 2 URL ersetzen durch: https://www.bundesrat.de/DE/plenum/bundesrat-kompakt/26/1062/1062-node.html (korrekte Seite für die Bundesrat-Sitzung vom 6. März 2026). Fakten zu KRITIS-DachG (Bundestag 29.01.2026, Bundesrat 06.03.2026) sind korrekt und bestätigt."
-    },
-    {
-      "file": "content/standards/IHE.md",
-      "verdict": "pass",
-      "score": 92,
-      "issues": [
-        "Alle Kernfakten verifiziert: Gründung 1998, Gründer RSNA+HIMSS, IHE International als Nonprofit, Connectathons, Technical Framework-Struktur korrekt"
-      ],
-      "fixInstructions": "Keine Korrekturen nötig."
-    },
-    {
-      "file": "content/standards/DVPMG.md",
-      "verdict": "pass",
-      "score": 85,
-      "issues": [
-        "Datum-Formulierung leicht ungenau: '3. Juni 2021 vom Bundestag verabschiedet' – der Bundestag-Beschluss war am 6. Mai 2021, der 3. Juni ist das Ausfertigungsdatum. Inkrafttreten war 9. Juni 2021.",
-        "Quelle 4 (pflege.de) ist ein nicht-offizieller Blog; drei offizielle Quellen sind vorhanden, daher akzeptabel"
-      ],
-      "fixInstructions": "Datum-Formulierung präzisieren: 'wurde am 6. Mai 2021 vom Bundestag beschlossen und trat am 9. Juni 2021 in Kraft' statt '3. Juni 2021 vom Bundestag verabschiedet'. Pflege.de-Quelle kann durch Bundestag-DIP-Quelle (bereits vorhanden in Quelle 3) als alleinige informelle Quelle weggelassen werden."
-    },
-    {
-      "file": "content/concepts/OAuth-2.0.md",
-      "verdict": "pass",
-      "score": 93,
-      "issues": [
-        "Alle technischen Fakten korrekt: RFC 6749, RFC 7636 (PKCE), RFC 7519 (JWT), OpenID Connect Core 1.0, brainpoolP256r1",
-        "Alle Quellen offiziell und verifizierbar"
-      ],
-      "fixInstructions": "Keine Korrekturen nötig."
-    },
     {
       "file": "content/infrastructure/MVZ.md",
       "verdict": "revise",
       "score": 75,
       "issues": [
-        "Faktenfehler: '§ 65a SGB V ab 2024' für Telemonitoring-Pflicht ist falsch. § 65a SGB V regelt Bonus-Programme der Krankenkassen für Gesundheitsförderung. Das kardiale Telemonitoring ist in § 37c SGB V geregelt.",
-        "MVZ-Statistik 'über 4.700 MVZ mit mehr als 23.000 angestellten Ärzten (Ende 2023)' – in der Größenordnung plausibel, aber exakte Bestätigung für 2023 nicht möglich. KBV-Daten zeigen kontinuierliches Wachstum."
+        "url_dead: https://www.kbv.de/html/mvz.php returns 404",
+        "Claim 'über 4.700 MVZ mit mehr als 23.000 angestellten Ärzten (Stand Ende 2023)' – unverifiable without accessible KBV source after URL is dead",
+        "ePA-Befüllungspflicht ab 1. Oktober 2025 consistent with other articles"
       ],
-      "fixInstructions": "Paragraphen-Referenz korrigieren: '§ 65a SGB V' in '§ 37c SGB V' ändern (kardiologisches Telemonitoring). Alternativ den Klammerverweis entfernen, wenn er nicht sicher belegt werden kann. MVZ-Statistik mit Jahrgang und KBV-Quelle ausweisen: 'laut KBV (Stand Ende 2023)'."
-    }
-  ],
-  "contradictions": [
+      "fixInstructions": "Replace dead URL https://www.kbv.de/html/mvz.php with a working KBV MVZ page. Try https://www.kbv.de/html/zulassung_mvz.php or search kbv.de for 'Medizinisches Versorgungszentrum'. Verify MVZ count figure against accessible KBV statistics page."
+    },
     {
-      "claim": "ePA für alle Startdatum",
-      "articleA": "content/concepts/Zugriffsrecht.md: 'ab Januar 2025'",
-      "articleB": "Gesicherter Fakt (gematik.de): bundesweiter Rollout war 29. April 2025; Januar 2025 war nur Pilotbetrieb in Modellregionen. Andere Artikel sollten auf Konsistenz geprüft werden."
+      "file": "content/concepts/Zugriffsrecht.md",
+      "verdict": "pass",
+      "score": 86,
+      "issues": [
+        "ePA 3.0 Pilotstart Januar 2025, bundesweiter Rollout 29. April 2025 stated correctly (consistent with ePA.md)",
+        "§ 352 SGB V (Protokollierungspflicht) citation plausible but not individually verified via gesetze-im-internet.de"
+      ],
+      "fixInstructions": "Optionally verify § 352 SGB V paragraph text. No blocking issues."
+    },
+    {
+      "file": "content/technologies/DiGA.md",
+      "verdict": "revise",
+      "score": 78,
+      "issues": [
+        "GOP 01482 Kranus Mictera: 64 Punkte, ca. 8,15 Euro, extrabudgetär, ab 1. April 2026 – CONFIRMED by BvDU and KV sources",
+        "Claim 'Pilotprojekt lief von Mai bis September 2025, rund 15 der im BfArM-Verzeichnis gelisteten DiGA wurden initial via E-Rezept verordnet' – unverifiable, no authoritative source found",
+        "HDDT Spezifikation Version 26_1 Release Candidate vom 10. März 2026, Kommentierungsfrist bis 1. April 2026 – unverifiable in this session, treat as plausible",
+        "AbEM 20%-Pflicht – plausible given DiGAV context but specific threshold unverified"
+      ],
+      "fixInstructions": "Add an authoritative BfArM or gematik source for the E-Rezept DiGA pilot figures. If unavailable, soften to 'ausgewählte DiGA wurden initial via E-Rezept verordnet'. Add HDDT spec link from gemspec.gematik.de once officially published."
+    },
+    {
+      "file": "content/technologies/KIS.md",
+      "verdict": "revise",
+      "score": 79,
+      "issues": [
+        "KHZG Digitalisierungsabschläge percentages confirmed: FTB2 0.5%, FTB3 0.6%, FTB4 0.2%, FTB5 0.4%, FTB6 0.3%, max 2.0% – CORRECT",
+        "KRITIS-Dachgesetz Registrierungsfrist 17. Juli 2026 confirmed – CORRECT",
+        "KRITIS Schwellenwert 500.000 Personen confirmed – CORRECT",
+        "Transformationsfonds 50 Milliarden Euro 2026–2035 – consistent with other articles in knowledge base but not independently verified in this cycle"
+      ],
+      "fixInstructions": "Consider adding a direct source for the KHZG Digitalisierungsabschlagsvereinbarung: https://www.dkgev.de/fileadmin/default/Mediapool/2_Themen/2.1_Digitalisierung_Daten/2.1.8._Krankenhauszukunftsfonds__KHZF_/KHZG_Digitalisierungsabschlagsvereinbarung.pdf. No blocking issues."
+    },
+    {
+      "file": "content/infrastructure/Telematik-ID.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "Admission Extension OID 1.3.36.8.3.3 and SubjectSerialNumber field consistent with gemSpec_PKI knowledge",
+        "gemspec.gematik.de source URL loaded successfully via Playwright"
+      ],
+      "fixInstructions": "No issues requiring action."
+    },
+    {
+      "file": "content/standards/IHE.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "IHE founding 1998 by RSNA and HIMSS – CONFIRMED",
+        "XDS transaction numbers (ITI-41, ITI-18, ITI-43) are standard and correct",
+        "MHD transaction numbers (ITI-65, ITI-66, ITI-67, ITI-68) correct"
+      ],
+      "fixInstructions": "No issues requiring action."
+    },
+    {
+      "file": "content/infrastructure/TSP.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "TSL download URL https://download.tsl.ti-dienste.de/TSL.xml consistent with spec, not Playwright-verified",
+        "gemKPT_PKI_TIP source URL loaded via Playwright (confirmed)"
+      ],
+      "fixInstructions": "No issues requiring action."
+    },
+    {
+      "file": "content/infrastructure/TSL.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [
+        "ETSI TS 119 612 reference correct for Trust Service Lists standard",
+        "fachportal.gematik.de source URLs structurally plausible, not individually Playwright-verified"
+      ],
+      "fixInstructions": "No issues requiring action."
+    },
+    {
+      "file": "content/standards/DVPMG.md",
+      "verdict": "revise",
+      "score": 70,
+      "issues": [
+        "FACTUAL INACCURACY: Article states 'wurde am 3. Juni 2021 vom Bundestag verabschiedet'. Correct: Bundestag voted 6. Mai 2021. 3. Juni approximates the BGBl. publication (8. Juni 2021); in-force date was 9. Juni 2021. The article conflates publication/in-force date with the Bundestag vote.",
+        "BMG source URL https://www.bundesgesundheitsministerium.de/service/gesetze-und-verordnungen/guv-19-lp/dvpmg.html verified OK via Playwright",
+        "Quelle 4 (pflege.de) is a commercial/informational site, not an official source"
+      ],
+      "fixInstructions": "Correct 'wurde am 3. Juni 2021 vom Bundestag verabschiedet' to 'wurde am 6. Mai 2021 vom Bundestag beschlossen und trat am 9. Juni 2021 in Kraft (BGBl. I S. 1309)'. The pflege.de source can remain as supplementary reference but should not be the only non-official link."
+    },
+    {
+      "file": "content/processes/Dispensierung.md",
+      "verdict": "revise",
+      "score": 75,
+      "issues": [
+        "url_dead: https://www.gematik.de/anwendungen/e-rezept/fuer-apotheken returns 404",
+        "§ 17 ApBetrO source URL https://www.gesetze-im-internet.de/apobetro_1987/__17.html verified OK via Playwright",
+        "E-Rezept-Pflicht seit Januar 2024 consistent with Muster-16.md and other articles",
+        "Securpharm DataMatrix entwertung seit 2019 described correctly"
+      ],
+      "fixInstructions": "Replace dead URL https://www.gematik.de/anwendungen/e-rezept/fuer-apotheken with the current gematik page, e.g. https://www.gematik.de/anwendungen/e-rezept or https://fachportal.gematik.de/anwendungen/e-rezept."
+    },
+    {
+      "file": "content/standards/B3S-Krankenhaus.md",
+      "verdict": "revise",
+      "score": 75,
+      "issues": [
+        "url_dead: https://www.bsi.bund.de/DE/Themen/KRITIS-und-regulierte-Unternehmen/Kritische-Infrastrukturen/B3S/b3s_node.html returns 404 (BSI restructured KRITIS pages after NIS2UmsuCG entered into force)",
+        "B3S version 1.3.1, Stand Januar 2026 (document date 2026-01-14) – CONFIRMED via DKG and medconweb.de",
+        "KRITIS-Schwellenwert 30.000 vollstationäre Fälle – CORRECT",
+        "NIS2UmsuCG in-force date 6. Dezember 2025 – CORRECT"
+      ],
+      "fixInstructions": "Replace dead BSI B3S URL with: https://www.bsi.bund.de/SharedDocs/Textbausteine/DE/KRITIS/B3S/Gesundheit/b3s-krankenhaus.html (BSI B3S Krankenhaus page, confirmed reachable via search). Alternatively use the DKG IT-Sicherheit page: https://www.dkgev.de/themen/digitalisierung-daten/informationssicherheit-und-technischer-datenschutz/informationssicherheit-im-krankenhaus/"
+    },
+    {
+      "file": "content/standards/NIS2UmsuCG.md",
+      "verdict": "revise",
+      "score": 67,
+      "issues": [
+        "FACTUAL INACCURACY: Article states 'Das NIS2UmsuCG wurde am 5. Dezember 2025 vom Bundestag verabschiedet'. Correct timeline: Bundestag voted 13. November 2025; Bundesrat approved 21. November 2025; BGBl. publication 5. Dezember 2025; in force 6. Dezember 2025. The article incorrectly assigns the BGBl. publication date to the Bundestag vote.",
+        "url_mismatch: https://www.bundesrat.de/SharedDocs/drucksachen/2024/0001-0100/18-24.pdf loads the wrong document ('Dritter Bericht über Erfahrungen mit Präimplantationsdiagnostik', BR-Drucksache 18/24 aus 2024), entirely unrelated to NIS2UmsuCG",
+        "In-force date 6. Dezember 2025 – CORRECT",
+        "EU-Umsetzungsfrist 17. Oktober 2024 – CORRECT",
+        "EU-Richtlinie (EU) 2022/2555 citation – CORRECT"
+      ],
+      "fixInstructions": "1. Correct Bundestag date: change 'wurde am 5. Dezember 2025 vom Bundestag verabschiedet' to 'wurde am 13. November 2025 vom Bundestag und am 21. November 2025 vom Bundesrat beschlossen. Es wurde am 5. Dezember 2025 im Bundesgesetzblatt (BGBl. 2025 I Nr. 289) verkündet und trat am 6. Dezember 2025 in Kraft.' 2. Replace the wrong Bundesrat Drucksachen URL with a correct NIS2 reference, e.g. https://www.bundesregierung.de/breg-de/aktuelles/nis-2-richtlinie-deutschland-2373174 or https://www.bsi.bund.de/DE/Themen/Regulierte-Wirtschaft/NIS-2-regulierte-Unternehmen/nis-2-regulierte-unternehmen_node.html"
+    },
+    {
+      "file": "content/processes/Muster-16.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [
+        "E-Rezept-Pflicht seit 1. Januar 2024 confirmed consistent across all articles",
+        "DiGA Muster-16 still permitted (Stand März 2026) consistent with DiGA.md",
+        "FHIR field mapping table for Muster-16 vs. KBV_PR_ERP_Prescription plausible and consistent with KBV FHIR profile knowledge"
+      ],
+      "fixInstructions": "No issues requiring action."
+    },
+    {
+      "file": "content/processes/IOP-Roadmap.md",
+      "verdict": "pass",
+      "score": 84,
+      "issues": [
+        "§ 385 SGB V as legal basis for gematik Interoperability mandate confirmed (gesetze-im-internet.de source cited correctly)",
+        "DigiG 2024 as legal basis consistent with DigiG.md in knowledge base",
+        "Claim 'über 260 Fachleuten' in IOP-Expertenzirkel – unverifiable, treat as plausible"
+      ],
+      "fixInstructions": "No issues requiring action."
     }
   ],
+  "contradictions": [],
   "staleArticles": [
-    "content/concepts/Zugriffsrecht.md: ePA 3.0 Startdatum 'Januar 2025' ist irreführend; bundesweiter Start war April 2025",
-    "content/infrastructure/LDAP.md: Claim 'FHIR-VZD im März 2026 zugelassen' ist unverifiable",
-    "content/infrastructure/MVZ.md: Paragraphen-Fehler § 65a SGB V statt § 37c SGB V für Telemonitoring"
+    "content/standards/DVPMG.md: states 'Bundestag verabschiedet 3. Juni 2021'; correct date is 6. Mai 2021 (in-force 9. Juni 2021)",
+    "content/standards/NIS2UmsuCG.md: states 'Bundestag verabschiedet 5. Dezember 2025'; correct Bundestag date is 13. November 2025"
   ],
   "urlChecks": {
     "dead": [
-      {
-        "article": "content/concepts/KRITIS.md",
-        "url": "https://www.bundesrat.de/DE/plenum/bundesrat-sitzungen/2026/1099/tagesordnung/to_node.html",
-        "status": "404",
-        "replacement": "https://www.bundesrat.de/DE/plenum/bundesrat-kompakt/26/1062/1062-node.html"
-      },
-      {
-        "article": "content/infrastructure/Kartenherausgeber.md",
-        "url": "https://fachportal.gematik.de/schnelleinstieg/smartcards-und-identitaeten-in-der-ti/kartenherausgabe-der-gematik",
-        "status": "redirect_mismatch",
-        "replacement": "https://fachportal.gematik.de/telematikinfrastruktur/identitaets-und-kartenherausgabe"
-      }
+      "content/infrastructure/MVZ.md: https://www.kbv.de/html/mvz.php (404)",
+      "content/processes/Dispensierung.md: https://www.gematik.de/anwendungen/e-rezept/fuer-apotheken (404)",
+      "content/standards/B3S-Krankenhaus.md: https://www.bsi.bund.de/DE/Themen/KRITIS-und-regulierte-Unternehmen/Kritische-Infrastrukturen/B3S/b3s_node.html (404, BSI page restructured)"
+    ],
+    "mismatch": [
+      "content/standards/NIS2UmsuCG.md: https://www.bundesrat.de/SharedDocs/drucksachen/2024/0001-0100/18-24.pdf loads 'Dritter Bericht Präimplantationsdiagnostik' (BR-Drucksache 18/24 aus 2024), entirely unrelated to NIS2"
     ],
     "verified_ok": [
-      "content/concepts/Sekundärnutzung.md: BMG GDNG-Seite (bundesgesundheitsministerium.de)",
-      "content/concepts/Sekundärnutzung.md: gesetze-im-internet.de/gdng",
-      "content/processes/Interaktionsprüfung.md: abdata.de/amts-modul",
-      "content/standards/DVPMG.md: bundesgesundheitsministerium.de/dvpmg",
-      "content/concepts/KRITIS.md: bsi.bund.de KRITIS-Seite",
-      "content/standards/IHE.md: profiles.ihe.net, ihe.net, ihe-d.de",
-      "content/concepts/OAuth-2.0.md: rfc-editor.org RFC 6749, openid.net, gemspec.gematik.de",
-      "content/infrastructure/Kartenherausgeber.md: gematik.de/hba OK",
-      "content/infrastructure/LDAP.md: rfc-editor.org RFC 4511 OK, github.com/gematik/api-vzd OK"
+      "content/processes/Dispensierung.md: https://www.gesetze-im-internet.de/apobetro_1987/__17.html",
+      "content/infrastructure/MVZ.md: https://www.gesetze-im-internet.de/sgb_5/__95.html",
+      "content/standards/DVPMG.md: https://www.bundesgesundheitsministerium.de/service/gesetze-und-verordnungen/guv-19-lp/dvpmg.html",
+      "content/infrastructure/TSP.md: https://gemspec.gematik.de/docs/gemKPT/gemKPT_PKI_TIP/gemKPT_PKI_TIP_V2.14.0/index.html"
     ]
   }
 }

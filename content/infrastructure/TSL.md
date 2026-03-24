@@ -3,6 +3,10 @@ title: TSL
 audience: [technical]
 tags: [infrastruktur, pki, zertifikate, vertrauen, ti]
 aliases: [Trust Service List, Vertrauensliste, TSL-CA, BNetzA-VL]
+relevance:
+  sectors: [ti-infrastruktur, hersteller, it-dienstleister]
+  interests: [technik, compliance]
+maturity: wachsend
 ---
 
 # TSL
@@ -20,6 +24,9 @@ In der [[Telematikinfrastruktur]] gibt es viele verschiedene Komponenten: [[Konn
 Die TSL ist das zentrale Dokument, das festlegt, welchen CAs vertraut wird. Sie wird von der [[gematik]] als Root-CA-Betreiber herausgegeben und digital signiert. Alle TI-Komponenten laden die TSL beim Start und aktualisieren sie regelmäßig. Eine Verbindung zu einem Dienst, dessen Zertifikat nicht auf eine in der TSL gelistete CA zurückgeführt werden kann, wird abgelehnt.
 
 Die TSL der TI ist technisch an das **ETSI TS 119 612**-Format angelehnt, dem europäischen Standard für Trust Service Lists (der auch für die Vertrauenslisten der EU-Mitgliedstaaten nach eIDAS verwendet wird).
+
+> [!interesse-compliance]
+> Alle TI-Komponenten (Konnektoren, TI-Gateway-Software, Fachdienste) müssen die TSL regelmäßig herunterladen und aktualisieren. Wird die TSL nicht rechtzeitig aktualisiert, können abgelaufene oder gesperrte CAs weiterhin als vertrauenswürdig eingestuft werden. Hersteller müssen im Rahmen der gematik-Zulassung nachweisen, dass ihr Produkt die TSL korrekt verarbeitet. Mit der [[ECC-Migration]] enthält die TSL parallel RSA- und ECC-CA-Einträge: Produkte müssen beide Typen unterstützen.
 
 ### Abgrenzung zur BNetzA-Vertrauensliste
 
@@ -59,6 +66,9 @@ Die [[PKI|TI-PKI]] ist hierarchisch aufgebaut. An der Spitze steht die **gematik
 Jede TI-Komponente (Konnektor, TI-Gateway, Fachdienst) lädt die TSL beim Start von einem definierten Download-Endpunkt der gematik. Das Intervall für die Aktualisierung ist in der Komponentenspezifikation festgelegt. Typischerweise wird die TSL täglich oder bei jedem Start geprüft.
 
 Wenn eine neue TSL verfügbar ist (höhere Sequenznummer), wird sie heruntergeladen und die Signatur geprüft. Erst nach erfolgreicher Signaturprüfung ersetzt die neue TSL die alte. Schlägt die Prüfung fehl, verwendet die Komponente weiterhin die zuletzt gültige TSL und meldet einen Fehler.
+
+> [!interesse-technik]
+> TSL-Download-Endpunkt: `https://download.tsl.ti-dienste.de/TSL.xml` (produktiv) und `https://download.tsl.test.ti-dienste.de/TSL.xml` (Testumgebung). Signaturprüfung: xmldsig-Signatur über das Root-Element, Verifikation gegen den gematik Root-CA-Public-Key. Sequenznummer und Nächstes-Update-Datum im Element `<tsl:NextUpdate>`. Format: ETSI TS 119 612, XML-Schema auf gemspec.gematik.de (gemSpec_TSL). Für die ECC-Migration: Neue ECC-Sub-CA-Einträge unter `<tsl:TrustServiceProvider>` mit ServiceTypeIdentifier `http://uri.etsi.org/TrstSvc/Svctype/CA/QC`.
 
 ### OCSP und CRL als Ergänzung
 

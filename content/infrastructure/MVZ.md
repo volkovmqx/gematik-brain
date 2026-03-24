@@ -51,7 +51,7 @@ Größere MVZ mit vielen Arztarbeitsplätzen setzen häufig einen **[[Highspeed-
 > **Typischer Fehler:** Krankenhausgetragene MVZ versuchen, den Highspeed-Konnektor des Krankenhauses mitzunutzen. Das ist technisch und regulatorisch nicht zulässig. Jede rechtlich eigenständige Betriebsstätte braucht einen eigenen TI-Zugang.
 
 > [!interesse-business]
-> MVZ sind ein wachsendes Segment im deutschen Gesundheitsmarkt. Ende 2023 gab es laut KBV über 4.700 MVZ mit mehr als 23.000 angestellten Ärzten (laut KBV). IT-Dienstleister können mit MVZ Rahmenverträge für TI-Anbindung und PVS/KIS-Wartung schließen, da MVZ zentralisiert einkaufen. Krankenhausgetragene MVZ haben oft bereits IT-Strukturen, die eine TI-Gateway-Anbindung statt eines separaten Konnektors wirtschaftlich sinnvoll machen.
+> MVZ sind ein wachsendes Segment im deutschen Gesundheitsmarkt. Laut KBV (Stand Ende 2023) gab es über 4.700 MVZ mit mehr als 23.000 angestellten Ärzten. IT-Dienstleister können mit MVZ Rahmenverträge für TI-Anbindung und PVS/KIS-Wartung schließen, da MVZ zentralisiert einkaufen. Krankenhausgetragene MVZ haben oft bereits IT-Strukturen, die eine TI-Gateway-Anbindung statt eines separaten Konnektors wirtschaftlich sinnvoll machen.
 
 > [!interesse-compliance]
 > Jeder im MVZ tätige Arzt benötigt einen eigenen HBA. Der HBA wird vom Arzt persönlich bei der zuständigen Landesärztekammer beantragt, nicht vom MVZ. Die SMC-B für das MVZ wird über die zuständige KV beantragt. Für die Telemonitoring-Pflicht (§ 37c SGB V ab 2024) und die ePA-Befüllungspflicht (ab 2025) gelten dieselben Fristen wie für Einzelpraxen.
@@ -77,6 +77,17 @@ Für die Netzwerkarchitektur gibt es mehrere Muster:
 ### Abrechnung und TI
 
 Die Abrechnung eines MVZ läuft über die [[Kassenaerztliche-Vereinigung|KV]]. Für [[E-Rezept]] und [[eAU]] ist die QES-Signatur durch den behandelnden Arzt mit seinem persönlichen [[HBA]] erforderlich. Die [[SMC-B]] des MVZ wird für die Einrichtungsauthentisierung und den [[KIM]]-Nachrichtenversand genutzt.
+
+> [!praxis-tipp] Praxis-Tipp: HBA-Ablauf im MVZ rechtzeitig prüfen
+> Im MVZ arbeiten mehrere Ärzte mit je einem eigenen HBA. Ein abgelaufener HBA blockiert E-Rezept und eAU für genau diesen Arzt.
+>
+> In Ihrem MVZ bedeutet das:
+> - Legen Sie eine zentrale Liste aller HBA-Ablaufdaten an. Prüfen Sie sie quartalsweise.
+> - Ein neuer HBA muss bei der zuständigen Landesärztekammer beantragt werden. Vorlaufzeit: ca. 4 bis 6 Wochen.
+> - RSA-only-HBAs (eHBA G1.x) müssen bis zum 30. Juni 2026 durch ECC-fähige Karten (G2.1) ersetzt werden. Betrifft alle Ärzte im MVZ.
+> - Tipp für die Praxismanagerin: Richten Sie eine Kalender-Erinnerung 8 Wochen vor Ablauf jedes HBAs ein.
+>
+> Häufiger Fehler: Im Trubel des Alltags wird ein HBA-Ablauf übersehen. Dann kann der betroffene Arzt keine E-Rezepte mehr signieren und die Sprechstunde läuft auf Notbetrieb.
 
 > [!klinik-integration] Klinik-Integration: Krankenhausgetragenes MVZ als eigene TI-Einheit
 > Ein vom Krankenhaus gegründetes MVZ (§ 95 Abs. 1 SGB V) ist rechtlich eine eigenständige Betriebsstätte. Das hat direkte Konsequenzen für die TI-Architektur.
@@ -105,5 +116,5 @@ Krankenhäuser dürfen MVZ gründen (§ 95 Abs. 1 SGB V). Solche Einrichtungen n
 ## Quellen
 
 - [§ 95 SGB V – Zulassung zur vertragsärztlichen Versorgung](https://www.gesetze-im-internet.de/sgb_5/__95.html)
-- [Kassenärztliche Bundesvereinigung: Medizinisches Versorgungszentrum](https://www.kbv.de/html/mvz.php)
+- [Bundesgesundheitsministerium: Medizinische Versorgungszentren](https://www.bundesgesundheitsministerium.de/themen/krankenversicherung/ambulante-versorgung/medizinische-versorgungszentren)
 - [Wikipedia: Medizinisches Versorgungszentrum](https://de.wikipedia.org/wiki/Medizinisches_Versorgungszentrum)

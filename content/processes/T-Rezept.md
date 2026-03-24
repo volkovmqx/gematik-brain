@@ -126,7 +126,7 @@ Das E-T-Rezept basiert auf der bestehenden [[E-Rezept]]-Infrastruktur der gemati
 |---|---|---|
 | T-Rezept | Thalidomid, Lenalidomid, Pomalidomid | T-Register-Pflicht, Schwangerschaftsprävention |
 | [[BTM-Rezept]] | Betäubungsmittel (Opioide, etc.) | Bundesopiumstelle, spezielle Formulare |
-| Normales Rezept (Muster 16) | Alle verschreibungspflichtigen Arzneimittel | Standardrezept |
+| Normales Rezept ([[Muster-16]]) | Alle verschreibungspflichtigen Arzneimittel | Standardrezept |
 | [[E-Rezept]] | Alle verschreibungspflichtigen Arzneimittel | Digitale Form des Standardrezepts |
 
 Das T-Rezept ersetzt auf der Verordnungsseite das bisherige analoge Muster-16-Formular für diese Wirkstoffe. Es ist kein BTM-Rezept, obwohl es ebenfalls besondere Verschreibungspflichten hat.

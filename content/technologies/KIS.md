@@ -6,7 +6,7 @@ aliases: [Krankenhausinformationssystem, KIS-System, Hospital Information System
 relevance:
   sectors: [krankenhaus, hersteller, it-dienstleister, ti-infrastruktur]
   interests: [technik, compliance, business]
-maturity: wachsend
+maturity: setzling
 ---
 
 # KIS
@@ -139,6 +139,27 @@ Der Entlassbrief ist das wichtigste Dokument, das Krankenhäuser in die ePA eins
 > **Stammdaten ab April 2026:** Ab April 2026 müssen Einrichtungen korrekte Stammdaten im DEMIS-System hinterlegt haben, sonst werden Meldungen zurückgewiesen. Prüfen Sie jetzt den Stammdatenstatus Ihrer Einrichtung.
 > **Workflow-Integration:** Die DEMIS-Meldung sollte direkt aus dem KIS-Befunddokumentationsprozess getriggert werden, ohne manuelle Mehrfacherfassung. Authentifizierung erfolgt per Einrichtungszertifikat (nicht über TI-PKI). Planen Sie einen Fallback-Prozess für KIS-Wartungsfenster ein.
 
+### KHZG-Digitalisierungsabschläge (ab 2026)
+
+Seit dem **1. Januar 2026** erheben Krankenkassen bei Krankenhäusern ohne ausreichende Digitalisierungsmaßnahmen DRG-Abschläge je Abrechnungsfall. Die Abschläge sind nach [[KHZG]]-Fördertatbeständen (FTB) gestaffelt:
+
+| Fördertatbestand | Inhalt | Abschlag |
+|---|---|---|
+| FTB 2 | Patientenportale | 0,5 % |
+| FTB 3 | Digitale Pflege- und Behandlungsdokumentation | 0,6 % |
+| FTB 4 | Klinische Entscheidungsunterstützung (CDSS) | 0,2 % |
+| FTB 5 | Digitales Medikationsmanagement | 0,4 % |
+| FTB 6 | Digitale Leistungsanforderung | 0,3 % |
+| **Maximum** | | **2,0 %** |
+
+Für die Jahre **2026 und 2027** genügt der Nachweis der Beauftragung ("beauftragt"). Ab **2028** muss die tatsächliche Nutzung belegt werden.
+
+> [!frist-warnung] Frist-Warnung: KHZG-Digitalisierungsabschläge
+> **Rechtsgrundlage:** [[KHZG]] i.V.m. den Folgeregeln aus dem Krankenhauszukunftsfonds; §§ 19 ff. KHEntgG.
+> **Frist:** Abschläge werden seit dem 1. Januar 2026 je Abrechnungsfall erhoben.
+> **Handlungsbedarf:** Stellen Sie sicher, dass für jeden der fünf Fördertatbestände (FTB 2–6) entweder ein laufendes KHZG-Projekt mit Beauftragungsnachweis vorliegt oder die Maßnahme bereits produktiv ist. In 2026 und 2027 reicht der Nachweis der Beauftragung. Ab 2028 muss die tatsächliche Nutzung (z.B. Patientenportal-Logins, Dokumentationsquoten) gegenüber den Krankenkassen belegt werden.
+> **Bei Nichtbeachtung:** Jeder DRG-Abrechnungsfall kann mit bis zu 2,0 % Abschlag belastet werden. Bei einem Krankenhaus mit 500 Millionen Euro DRG-Erlös entspricht das bis zu 10 Millionen Euro jährlichem Verlust.
+
 ### DRG-Abrechnung
 
 Die [[DRG]]-Abrechnung (Diagnosis Related Groups) ist eine Kernfunktion des KIS. Das KIS kodiert Diagnosen nach [[ICD-10-GM]] und Prozeduren nach [[OPS]], berechnet den DRG-Code und erstellt die Abrechnungsdaten für die Krankenkassen. Das Datenübermittlungsverfahren läuft über §301-Datensätze nach dem SGB V.
@@ -177,3 +198,4 @@ Die [[DRG]]-Abrechnung (Diagnosis Related Groups) ist eine Kernfunktion des KIS.
 - [Simplifier.net: ISiK Basis Stufe 1-3](https://simplifier.net/isik)
 - [Wikipedia: Krankenhausinformationssystem](https://de.wikipedia.org/wiki/Krankenhausinformationssystem)
 - [gematik Newsroom: ePA im Krankenhaus (Dr.-Erler-Kliniken, März 2026)](https://www.gematik.de/newsroom/news-detail/die-epa-im-krankenhaus-einblicke-aus-den-dr-erler-kliniken-in-nuernberg)
+- [DKG/GKV-SV: Digitalisierungsabschlagsvereinbarung nach KHZG (PDF)](https://www.dkgev.de/fileadmin/default/Mediapool/2_Themen/2.1_Digitalisierung_Daten/2.1.8._Krankenhauszukunftsfonds__KHZF_/KHZG_Digitalisierungsabschlagsvereinbarung.pdf)

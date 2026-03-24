@@ -1,22 +1,12 @@
 {
   "pending": [
     {
-      "term": "Dispensierung",
-      "category": "processes",
-      "reason": "Abgabe (Dispensierung) von Arzneimitteln durch Apotheken: Kernprozess im E-Rezept-Workflow, verbindet AVS, Apothekenrechenzentrum, eML, DataMatrix und Securpharm. In 12 Artikeln als eigenständiger Prozessschritt erwähnt: ABDA-Datenbank, Apothekenrechenzentrum, BMP, T-Rezept, dgMP, eML, DataMatrix, EEHRxF, FHIR, Securpharm, TA1, ePA. Ergänzt E-Rezept.md und dgMP.md um den Apothekenside-Prozess.",
+      "term": "ApBetrO",
+      "category": "standards",
+      "reason": "Apothekenbetriebsordnung: rechtliche Basis für AMTS-Prüfpflichten (§ 17 ApBetrO), Dokumentationspflichten und AVS-Zulassungsanforderungen in Apotheken. In Interaktionsprüfung.md und DataMatrix.md als zwingender Rechtsrahmen erwähnt. Fehlt als eigenständiger Artikel für Compliance-Leser im Apothekenbereich.",
       "mentionedIn": [
-        "content/infrastructure/ABDA-Datenbank.md",
-        "content/infrastructure/Apothekenrechenzentrum.md",
-        "content/processes/BMP.md",
-        "content/processes/T-Rezept.md",
-        "content/processes/dgMP.md",
-        "content/processes/eML.md",
-        "content/standards/DataMatrix.md",
-        "content/standards/EEHRxF.md",
-        "content/standards/FHIR.md",
-        "content/standards/Securpharm.md",
-        "content/standards/TA1.md",
-        "content/technologies/ePA.md"
+        "content/processes/Interaktionsprüfung.md",
+        "content/standards/DataMatrix.md"
       ],
       "priority": 12
     },
@@ -352,44 +342,20 @@
     "Kartenherausgeber",
     "Interaktionsprüfung",
     "LDAP",
-    "Zugriffsrecht"
+    "Zugriffsrecht",
+    "KHSFV",
+    "Interop Council",
+    "Dispensierung",
+    "B3S-Krankenhaus",
+    "NIS2UmsuCG",
+    "Muster-16",
+    "IOP-Roadmap"
   ],
-  "brokenWikiLinks": [
-    {
-      "link": "Forschungsdatenzentrum-Gesundheit\\|FDZ Gesundheit",
-      "file": "content/concepts/Sekundärnutzung.md",
-      "line": 73,
-      "note": "Trailing backslash in table cell: [[Forschungsdatenzentrum-Gesundheit\\|FDZ Gesundheit]]. Muss zu [[Forschungsdatenzentrum-Gesundheit|FDZ Gesundheit]] korrigiert werden.",
-      "impact": "low"
-    },
-    {
-      "link": "Landesaerztekammer\\|Landesärztekammer",
-      "file": "content/infrastructure/Kartenherausgeber.md",
-      "line": 36,
-      "note": "Trailing backslash in table cell: [[Landesaerztekammer\\|Landesärztekammer]]. Muss zu [[Landesaerztekammer|Landesärztekammer]] korrigiert werden.",
-      "impact": "low"
-    },
-    {
-      "link": "Kassenaerztliche-Vereinigung\\|KV",
-      "file": "content/infrastructure/Kartenherausgeber.md",
-      "line": 50,
-      "note": "Trailing backslash in 2 Stellen (Zeilen 50 und 58): [[Kassenaerztliche-Vereinigung\\|...]]. Muss ohne Backslash vor dem Pipe-Zeichen geschrieben werden.",
-      "impact": "low"
-    },
-    {
-      "link": "KZBV\\|KZV",
-      "file": "content/infrastructure/Kartenherausgeber.md",
-      "line": 51,
-      "note": "Trailing backslash in 2 Stellen (Zeilen 51 und 58): [[KZBV\\|KZV]]. Muss zu [[KZBV|KZV]] korrigiert werden.",
-      "impact": "low"
-    }
-  ],
+  "brokenWikiLinks": [],
   "missingRelevance": [
     "content/processes/BMP.md",
     "content/processes/DMP.md",
     "content/processes/eVO.md",
-    "content/concepts/KRITIS.md",
-    "content/concepts/OAuth-2.0.md",
     "content/concepts/PEPP.md",
     "content/concepts/ZETA.md",
     "content/organization/Bewertungsausschuss.md",
@@ -403,7 +369,6 @@
     "content/infrastructure/HSM-B.md",
     "content/infrastructure/Highspeed-Konnektor.md",
     "content/infrastructure/KV-SafeNet.md",
-    "content/infrastructure/MVZ.md",
     "content/infrastructure/MyHealthAtEU.md",
     "content/infrastructure/RIS.md",
     "content/infrastructure/TSL.md",
@@ -419,7 +384,6 @@
     "content/standards/GDAG.md",
     "content/standards/GOZ.md",
     "content/standards/GOÄ.md",
-    "content/standards/IHE.md",
     "content/standards/IVDR.md",
     "content/standards/KHG.md",
     "content/standards/KRITIS-Dachgesetz.md",
@@ -431,5 +395,5 @@
     "content/technologies/eArztbrief.md",
     "content/technologies/gRPC.md"
   ],
-  "lastRun": "2026-03-23"
+  "lastRun": "2026-03-24"
 }

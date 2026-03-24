@@ -57,7 +57,7 @@ Die ABDA-Datenbank wird über verschiedene Formate und Schnittstellen bereitgest
 - **API-Zugang**: Für Softwarepartner bietet ABDATA auch API-Schnittstellen zum Echtzeit-Abruf (z.B. für Online-Apotheken und Portale).
 - **FHIR-Kompatibilität**: Für den [[E-Rezept]]-Kontext werden Teile der ABDA-Daten in FHIR-kompatible Ressourcentypen überführt. Die gematik schreibt für den E-Rezept-Dispensierdatensatz bestimmte Codierungen vor, die auf ABDA-Stammdaten basieren.
 
-### Rolle bei der E-Rezept-Dispensierung
+### Rolle bei der E-Rezept-[[Dispensierung]]
 
 Wenn ein [[E-Rezept]] eingelöst wird, prüft das [[AVS]] anhand der ABDA-Datenbank:
 

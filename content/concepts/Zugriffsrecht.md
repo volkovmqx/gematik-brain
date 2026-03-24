@@ -6,7 +6,7 @@ aliases: [Zugriffsrechte, Berechtigung, Berechtigungskonzept ePA, Zugriffssteuer
 relevance:
   sectors: [patient, arztpraxis, krankenhaus, apotheke, hersteller, it-dienstleister]
   interests: [compliance, technik, patient]
-maturity: setzling
+maturity: wachsend
 ---
 
 # Zugriffsrecht
@@ -30,7 +30,7 @@ Das Berechtigungskonzept der ePA regelt, wer unter welchen Bedingungen auf die G
 
 ### Zugriffsmodell ab ePA für alle (2025)
 
-Mit der Einführung der **ePA für alle** (ePA 3.0, bundesweiter Rollout ab April 2025, Pilotstart Januar 2025) hat sich das Zugriffsmodell grundlegend geändert:
+Mit der Einführung der **ePA für alle** (ePA 3.0, Pilotstart Januar 2025, bundesweiter Rollout ab 29. April 2025) hat sich das Zugriffsmodell grundlegend geändert:
 
 **Vorher (ePA 1.x und 2.x):** Aktives Opt-in. Versicherte mussten jedem einzelnen Leistungserbringer explizit einen Zugriffstoken in der Praxis übergeben. Ohne diesen Schritt war kein Zugriff möglich.
 
@@ -183,4 +183,4 @@ Das ePA-Zugriffsrechtekonzept folgt den Prinzipien der [[Zero-Trust]]-Architektu
 - [BMG: Elektronische Patientenakte (ePA)](https://www.bundesgesundheitsministerium.de/elektronische-patientenakte.html)
 - [gematik: ePA – Technische Grundlagen (gemSpec_ePA)](https://fachportal.gematik.de/telematikinfrastruktur/anwendungen/elektronische-patientenakte)
 - [KBV: Elektronische Patientenakte – Informationen für Arztpraxen](https://www.kbv.de/html/epa.php)
-- [KVWL: Elektronische Patientenakte (ePA)](https://www.kvwl.de/themen-a-z/elektronische-patientenakte-epa)
+- [gematik: Zugriffsrechte in der ePA (Übersicht)](https://www.gematik.de/anwendungen/e-patientenakte/zugriffsrechte)
