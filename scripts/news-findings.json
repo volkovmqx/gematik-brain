@@ -1,6 +1,6 @@
 {
-  "lastChecked": "2026-03-23",
-  "lastRun": "2026-03-23T10:00:00Z",
+  "lastChecked": "2026-03-25",
+  "lastRun": "2026-03-25T10:00:00Z",
   "findings": [
     {
       "title": "eMedikationsplan: Start verschoben auf Oktober 2026",
@@ -1952,8 +1952,68 @@
       "category": "specification",
       "action": "info_only",
       "details": "Korrektur-Release ohne neue Funktionalität für Endnutzer. Relevant für Aktensystembetreiber und PVS/KIS-Hersteller. Die Erweiterung auf mehr als zwei Aktensystembetreiber ist strukturell bedeutsam für den Wettbewerb im ePA-Betreibermarkt."
+    },
+    {
+      "title": "Bundesrat ApoVWG-Stellungnahme: PTA-Vertretung abgelehnt, 9,50 Euro unterstützt (30. Januar 2026)",
+      "date": "2026-01-30",
+      "source": "https://www.apotheke-adhoc.de/nachrichten/detail/apothekenreform/bundesrat-kassiert-pta-vertretung/",
+      "summary": "Der Bundesrat verabschiedete am 30. Januar 2026 seine Stellungnahme zum Apothekenversorgung-Weiterentwicklungsgesetz (ApoVWG). Kernergebnis: Die Bundesratsmehrheit lehnte die geplante PTA-Vertretung (Apotheken ohne ständig anwesenden Apotheker) ab. Gleichzeitig sprachen sich die Länder für die Honorarerhöhung auf 9,50 Euro pro Packung und einen jährlichen Verhandlungsmechanismus zwischen ABDA und GKV-Spitzenverband aus. Das Votum ist nicht bindend, gibt aber der Regierungskoalition ein starkes Signal für die parlamentarischen Beratungen. Die 2. und 3. Lesung im Bundestag ist für den 16. April 2026 geplant. Das ApoVWG regelt indirekt auch Telepharmazie-Strukturen, die für die E-Rezept-Abwicklung in neuen Apothekenmodellen relevant sind.",
+      "affects": [
+        "E-Rezept.md"
+      ],
+      "category": "regulation",
+      "action": "info_only"
+    },
+    {
+      "title": "ePass live: Barmer als erste Kasse ab 25. März 2026, 80 Prozent der GKV folgen",
+      "date": "2026-03-25",
+      "source": "https://www.nachrichten-heute.net/1639258-neues-identifizierungsverfahren-epass-zugang-zur-elektronischen-patientenakte-wird-einfacher.html",
+      "summary": "Das neue NFC-Identifikationsverfahren ePass ist seit dem 25. März 2026 produktiv live. Barmer startete als erste Kasse; BITMARCK stellt das Verfahren für ca. 80 Prozent der GKV-Kassen bereit. Versicherte können sich damit volldigital per NFC-Chip des Personalausweises und Selfie-Video für die GesundheitsID registrieren, ohne PIN-Eingabe oder Filialbesuch. Das Verfahren basiert auf dem BEEP-Gesetz (in Kraft 01.01.2026) und wurde von Nect GmbH entwickelt. Unterstützte Dokumente: deutsche Personalausweise ab August 2021 und Reisepässe ab 2005. Das ePass-Verfahren ist nicht nur für die ePA, sondern für alle Online-Services der Kassen nutzbar. Erwartung: deutliche Steigerung der GesundheitsID-Registrierungsrate über die aktuellen 4,4 Millionen hinaus.",
+      "affects": [
+        "ePA.md",
+        "Gesundheits-ID.md",
+        "IDP.md"
+      ],
+      "category": "specification",
+      "action": "update",
+      "suggestedTerm": "ePass"
+    },
+    {
+      "title": "Apothekenprotest 23. März 2026: 25.000 Teilnehmer in vier Städten",
+      "date": "2026-03-23",
+      "source": "https://www.apotheken-umschau.de/gesundheitspolitik/apothekenprotest-am-23-maerz-2026-das-muessen-sie-wissen-1496605.html",
+      "summary": "Am 23. März 2026 demonstrierten bundesweit rund 25.000 Apothekerinnen, Apotheker und pharmazeutische Angestellte auf Kundgebungen in Berlin, Düsseldorf, Hannover und München. ABDA-Präsident Thomas Preis beklagte chronische Unterfinanzierung und forderte die Anhebung des Fixums auf 9,50 Euro sowie eine jährliche Dynamisierung. Seit 2013 haben nach ABDA-Angaben rund 5.000 Apotheken geschlossen (heute ca. 17.000). Notdienstapotheken hielten die Versorgung aufrecht. Der Protest richtete sich auch gegen die TI-Ausfälle Anfang März 2026 (RISE-Gateway, IBM-IDP, T-Systems-IDP) als zusätzliche Belastung. Bundesgesundheitsministerin Warken reagierte mit dem Versprechen, die 9,50 Euro per eigenständiger Verordnung parallel zum ApoVWG umzusetzen.",
+      "affects": [
+        "E-Rezept.md",
+        "Telematikinfrastruktur.md"
+      ],
+      "category": "regulation",
+      "action": "info_only"
+    },
+    {
+      "title": "ePA März 2026: Granulare Medikationslisten-Kontrolle für Einrichtungen freigeschaltet",
+      "date": "2026-03-19",
+      "source": "https://www.ad-hoc-news.de/boerse/news/ueberblick/epa-und-ti-2-0-deutschlands-digitale-gesundheitswende-nimmt-fahrt-auf/68947307",
+      "summary": "Ab März 2026 können Versicherte in der ePA-App die elektronische Medikationsliste (eML) gezielt für einzelne Einrichtungen ausblenden, statt wie bisher nur pauschal für alle oder keine Einrichtungen. Diese granulare Zugangskontrolle ist eine neue Datenschutzfunktion und Reaktion auf anhaltende Kritik vom vzbv und dem Chaos Computer Club. Technisch basiert die Funktion auf ePA 3.1.2 (Mai 2025). Die neue Steuerungsmöglichkeit gilt nur für die eML; der vollständige granulare Dokumentenzugriff (auf Ebene einzelner Dokumente) kommt erst mit einer späteren ePA-Version.",
+      "affects": [
+        "ePA.md"
+      ],
+      "category": "specification",
+      "action": "update"
+    },
+    {
+      "title": "TI-Ausfall 10. Februar 2026: Ursache bestätigt als Rauchmelder-Auslösung in Frankfurter IBM-Rechenzentrum",
+      "date": "2026-02-11",
+      "source": "https://borncity.com/blog/2026/02/11/stoerung-ti-epa-erezept-und-datev-am-10-feb-2026/",
+      "summary": "Die Ursache des TI-Ausfalls vom 10. Februar 2026 (ca. 3:05 bis 11:00 Uhr, 8 Stunden) wurde durch Leserberichte an das Blog-Medium bestätigt: Ein Rauchmelder-Alarm in einem Frankfurter IBM-Rechenzentrum löste automatische Sicherheitsabschaltungen aus, was den sektoralen Identity Provider (IDP) der IBM Deutschland GmbH lahm legte. Betroffene Dienste: ePA (Zugriff und Berechtigungsverwaltung), E-Rezept (Erstellen, Einlösen), KIM und VSDM für über T-Systems angebundene Leistungserbringer. Das Ereignis unterstreicht die physische Abhängigkeit der TI-Verfügbarkeit von wenigen zentralen Rechenzentrumsstandorten und die fehlende automatische Failover-Infrastruktur.",
+      "affects": [
+        "IDP.md",
+        "Telematikinfrastruktur.md"
+      ],
+      "category": "security",
+      "action": "update"
     }
   ],
-  "lastRun": "2026-03-24T14:00:00Z",
-  "lastChecked": "2026-03-24"
+  "lastRun": "2026-03-25T10:00:00Z",
+  "lastChecked": "2026-03-25"
 }

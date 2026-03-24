@@ -38,7 +38,7 @@ Das AMNOG wurde am 11. November 2010 vom Deutschen Bundestag beschlossen und tra
 6. **Erstattungsbetrag**: Der ausgehandelte Erstattungsbetrag gilt rückwirkend ab dem 7. Monat nach Markteintritt (so geregelt seit dem GKV-Finanzstabilisierungsgesetz, November 2022). Bis dahin kann der Hersteller den Preis frei setzen.
 
 > [!interesse-compliance]
-> Pharmaunternehmen müssen beim ersten Inverkehrbringen eines Arzneimittels mit neuem Wirkstoff automatisch ein Dossier beim [[G-BA]] einreichen (§ 35a [[SGB-V]]). Wird kein Dossier eingereicht, gilt der Erstattungsbetrag auf Basis des Festbetrags automatisch. Die frühe Nutzenbewertung ist verpflichtend für alle neuen Wirkstoffe, die zulasten der [[GKV]] verordnet werden.
+> Pharmaunternehmen müssen beim ersten Inverkehrbringen eines Arzneimittels mit neuem Wirkstoff automatisch ein Dossier beim [[G-BA]] einreichen (§ 35a [[SGB-V]]). Wird kein Dossier eingereicht, gilt der Erstattungsbetrag auf Basis des [[Festbetrag]]s automatisch. Die frühe Nutzenbewertung ist verpflichtend für alle neuen Wirkstoffe, die zulasten der [[GKV]] verordnet werden.
 
 ### Ergebniskategorien
 
@@ -68,7 +68,7 @@ Das AMNOG war das Vorbild für das **DiGA-Nutzenbewertungsverfahren** nach [[DiG
 | [[Bewertungsausschuss]] | Ärztliche Leistungen (EBM) | KBV/[[GKV-Spitzenverband]] | § 87 [[SGB-V]] |
 
 > [!interesse-business]
-> Seit Einführung des AMNOG wurden bis 2025 über 1.000 Nutzenbewertungen abgeschlossen. In etwa 60 % der Fälle attestiert der G-BA keinen Zusatznutzen. Ohne Nachweis gilt nur der Festbetrag als Erstattungsgrundlage. Der Erstattungsbetrag wird nicht öffentlich, sondern vertraulich verhandelt. Die gematik und das [[BfArM]] haben das AMNOG-Modell als Blaupause für das DiGA-Bewertungsverfahren genutzt.
+> Seit Einführung des AMNOG wurden bis 2025 über 1.000 Nutzenbewertungen abgeschlossen. In etwa 60 % der Fälle attestiert der G-BA keinen Zusatznutzen. Ohne Nachweis gilt nur der [[Festbetrag]] als Erstattungsgrundlage. Der Erstattungsbetrag wird nicht öffentlich, sondern vertraulich verhandelt. Die gematik und das [[BfArM]] haben das AMNOG-Modell als Blaupause für das DiGA-Bewertungsverfahren genutzt.
 
 ### ATC-Code-Relevanz
 

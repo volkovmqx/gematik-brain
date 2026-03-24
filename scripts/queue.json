@@ -1,16 +1,164 @@
 {
   "pending": [
     {
-      "term": "Festbetrag",
-      "category": "concepts",
-      "reason": "GKV-Festbetragsregelung für Generika: im AMNOG-Artikel referenziert. Zentraler Preismechanismus in der GKV.",
+      "term": "E-Rezept-Fachdienst",
+      "category": "infrastructure",
+      "reason": "Zentraler gematik-Fachdienst für alle Rezepttypen (Arzneimittel, eVO, HKP); in 30 Artikeln als eigenständige technische Komponente referenziert, distinkt vom E-Rezept als Anwendung",
       "mentionedIn": [
-        "content/standards/AMNOG.md"
+        "content/processes/Hilfsmittelverordnung.md",
+        "content/processes/Zulassungsverfahren.md",
+        "content/processes/Häusliche-Krankenpflege.md",
+        "content/processes/eVO.md",
+        "content/technologies/E-Rezept.md"
       ],
-      "priority": 3
-    }
+      "priority": 30
+    },
+    {
+      "term": "PVS-Hersteller",
+      "category": "organization",
+      "reason": "Zentraler Akteur im TI-Ökosystem mit spezifischen Zulassungs- und Updatepflichten; in 22 Artikeln als eigenständiger Akteur erwähnt, kein eigener Artikel",
+      "mentionedIn": [
+        "content/processes/Hilfsmittelverordnung.md",
+        "content/processes/T-Rezept.md",
+        "content/processes/Interaktionsprüfung.md",
+        "content/processes/VSDM-2.md",
+        "content/processes/Laborbefund.md"
+      ],
+      "priority": 22
+    },
+    {
+      "term": "ePA-Aktensystem",
+      "category": "infrastructure",
+      "reason": "Technische Plattform hinter der ePA mit eigenem FHIR-API; in 20 Artikeln als eigenständige Komponente genannt, distinkt vom ePA-Konzept",
+      "mentionedIn": [
+        "content/processes/eMP.md",
+        "content/processes/Zulassungsverfahren.md",
+        "content/processes/Entlassbrief.md",
+        "content/processes/dgMP.md",
+        "content/concepts/Zugriffsrecht.md"
+      ],
+      "priority": 20
+    },
+    {
+      "term": "Zugangsdienst",
+      "category": "infrastructure",
+      "reason": "TI-Zugangsdienst als übergeordneter Begriff (VPN-Zugangsdienst, TI-Gateway als Cloud-Zugangsdienst); in 18 Artikeln als infrastruktureller Knotenpunkt erwähnt",
+      "mentionedIn": [
+        "content/processes/Zulassungsverfahren.md",
+        "content/processes/VSDM-2.md",
+        "content/concepts/KRITIS.md",
+        "content/concepts/ZETA.md",
+        "content/concepts/TI-Pauschale.md"
+      ],
+      "priority": 18
+    },
+    {
+      "term": "Testumgebung",
+      "category": "infrastructure",
+      "reason": "gematik-Entwicklungsumgebungen RU (Referenzumgebung), TU (Testumgebung), PU (Produktivumgebung): Voraussetzung für Zulassung und Entwicklung; in 16 Artikeln erwähnt",
+      "mentionedIn": [
+        "content/processes/Häusliche-Krankenpflege.md",
+        "content/processes/Meldepflicht.md",
+        "content/processes/NFDM.md",
+        "content/processes/Konformitaetsbewertung.md",
+        "content/organization/RKI.md"
+      ],
+      "priority": 16
+    },
+    {
+      "term": "Widerspruchsrecht",
+      "category": "processes",
+      "reason": "Patientenrecht auf Widerspruch gegen Befüllung und Nutzung der ePA; in 11 Artikeln erwähnt, zentral für Patientenperspektive, kein eigener Artikel",
+      "mentionedIn": [
+        "content/concepts/Opt-Out-ePA.md",
+        "content/concepts/Pseudonymisierung.md",
+        "content/concepts/Sekundärnutzung.md",
+        "content/organization/BfDI.md",
+        "content/organization/GFF.md"
+      ],
+      "priority": 11
+    },
+    {
+      "term": "Retaxation",
+      "category": "processes",
+      "reason": "Apothekenspezifischer Mechanismus: Krankenkasse streicht Vergütung bei fehlerhafter Rezeptabwicklung; in 8 Artikeln als Sanktionsmechanismus erwähnt",
+      "mentionedIn": [
+        "content/processes/Muster-16.md",
+        "content/processes/Dispensierung.md",
+        "content/infrastructure/Apothekenrechenzentrum.md",
+        "content/standards/eHKP.md",
+        "content/standards/SGB-XI.md"
+      ],
+      "priority": 8
+    },
+    {
+      "term": "Ombudsstelle",
+      "category": "organization",
+      "reason": "Beschwerdeinstanz der Krankenkassen für Versicherte bei ePA- und eML-Konflikten; in 8 Artikeln erwähnt, kein eigener Artikel",
+      "mentionedIn": [
+        "content/processes/eML.md",
+        "content/processes/dgMP.md",
+        "content/concepts/Zugriffsrecht.md",
+        "content/concepts/Opt-Out-ePA.md",
+        "content/concepts/Pseudonymisierung.md"
+      ],
+      "priority": 8
+    },
+    {
+      "term": "OID",
+      "category": "standards",
+      "reason": "Object Identifier: in TI-Zertifikaten, FHIR-Profilen, Telematik-ID und HL7-Nachrichten allgegenwärtig; in 25 Artikeln technisch referenziert ohne Erklärungsartikel",
+      "mentionedIn": [
+        "content/concepts/CRL.md",
+        "content/concepts/OCSP.md",
+        "content/infrastructure/Telematik-ID.md",
+        "content/processes/T-Rezept.md",
+        "content/processes/DMP.md"
+      ],
+      "priority": 7
+    },
+    {
+      "term": "Medication Service",
+      "category": "infrastructure",
+      "reason": "Eigenständiger FHIR-Datendienst im ePA-Aktensystem für eMP und Medikationsdaten; in 6 Artikeln als Komponente erwähnt",
+      "mentionedIn": [
+        "content/processes/eMP.md",
+        "content/processes/BMP.md",
+        "content/processes/AMTS.md",
+        "content/processes/eML.md",
+        "content/processes/dgMP.md"
+      ],
+      "priority": 6
+    },
+    {
+      "term": "Sub-CA",
+      "category": "concepts",
+      "reason": "Untergeordnete Zertifizierungsstelle in der TI-PKI-Hierarchie; in 6 Artikeln im Kontext ECC-Migration und Zertifikatsverwaltung erwähnt",
+      "mentionedIn": [
+        "content/processes/ECC-Migration.md",
+        "content/concepts/PKI.md",
+        "content/concepts/X.509.md",
+        "content/infrastructure/Kartenherausgeber.md",
+        "content/infrastructure/TSP.md"
+      ],
+      "priority": 6
+    },
+    {
+      "term": "Konformitätserklärung",
+      "category": "processes",
+      "reason": "Herstellererklärung für TI-Komponenten und Medizinprodukte nach MDR/IVDR; in 5 Artikeln im Zulassungs- und Regulierungskontext erwähnt",
+      "mentionedIn": [
+        "content/concepts/SaMD.md",
+        "content/concepts/Medizinprodukte.md",
+        "content/infrastructure/MMI-Pharmindex.md",
+        "content/standards/IVDR.md",
+        "content/standards/MDR.md"
+      ],
+      "priority": 5
+    },
   ],
   "done": [
+    "Festbetrag",
     "Laborbefund",
     "TI-Anbindungspflicht",
     "FHIR-Profil",
@@ -288,19 +436,17 @@
   "brokenWikiLinks": [],
   "missingRelevance": [
     "content/concepts/PEPP.md",
-    "content/concepts/ZETA.md",
-    "content/infrastructure/eGBR.md",
-    "content/infrastructure/gSMC-KT.md",
-    "content/infrastructure/Highspeed-Konnektor.md",
     "content/infrastructure/HSM-B.md",
+    "content/infrastructure/Highspeed-Konnektor.md",
     "content/infrastructure/KV-SafeNet.md",
     "content/infrastructure/MyHealthAtEU.md",
     "content/infrastructure/RIS.md",
+    "content/infrastructure/eGBR.md",
+    "content/infrastructure/gSMC-KT.md",
     "content/organization/Bewertungsausschuss.md",
     "content/organization/Bundesaerztekammer.md",
     "content/organization/DAV.md",
     "content/organization/DVKA.md",
-    "content/organization/InEK.md",
     "content/organization/Landesaerztekammer.md",
     "content/organization/Medizinischer-Dienst.md",
     "content/organization/OeGD.md",
@@ -311,8 +457,8 @@
     "content/standards/DiPAV.md",
     "content/standards/E-Health-Gesetz.md",
     "content/standards/GDAG.md",
-    "content/standards/GOÄ.md",
     "content/standards/GOZ.md",
+    "content/standards/GOÄ.md",
     "content/standards/IVDR.md",
     "content/standards/KHG.md",
     "content/standards/KRITIS-Dachgesetz.md",
@@ -323,5 +469,5 @@
     "content/technologies/eArztbrief.md",
     "content/technologies/gRPC.md"
   ],
-  "lastRun": "2026-03-24"
+  "lastRun": "2026-03-25"
 }

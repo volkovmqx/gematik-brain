@@ -3,6 +3,10 @@ title: ZETA
 audience: [technical]
 tags: [konzept, sicherheit, zero-trust, ti-2-0, open-source]
 aliases: [Zero Trust Enforcement and Trust Architecture, ZETA-Guard, ZETA-Client-SDK]
+relevance:
+  sectors: [ti-infrastruktur, hersteller, it-dienstleister]
+  interests: [technik]
+maturity: wachsend
 ---
 
 # ZETA
@@ -46,6 +50,9 @@ Die Kernelemente:
 3. **Token-basierte Autorisierung**: Nach der Authentifizierung erhält der Client ein kurzlebiges Access-Token (OAuth 2.0 / OpenID Connect via [[IDP]]). Das Token enthält den genehmigten Scope und verfällt nach kurzer Zeit.
 4. **Policy Decision Point (PDP) / Policy Enforcement Point (PEP)**: ZETA-Guard fungiert als PEP: Er prüft bei jeder Anfrage das Token und die angeforderte Ressource gegen die aktuellen Richtlinien.
 
+> [!interesse-technik]
+> Das ZETA-Client-SDK ist Open Source und auf GitHub verfügbar: [github.com/gematik/zeta](https://github.com/gematik/zeta). Es ist in Java implementiert und bietet Bindings für weitere Sprachen. Primärsysteme, die VSDM 2.0 (Produktivstart Juli 2026) nutzen wollen, müssen das SDK integrieren. Kernanforderungen: mTLS mit TI-Zertifikaten (aus eGK, HBA oder SMC-B), Token-Anforderung via OIDC am IDP-Dienst, automatische Token-Erneuerung. Die ZETA-Guard-Komponente steht als Docker-Image bereit und kann als Sidecar-Container vor jeden FHIR-Fachdienst gesetzt werden. Technische Doku: gemSpec_ZETA (in Vorbereitung) und GitHub-README im zeta-Repository.
+
 ### ZETA-Client-SDK
 
 Das SDK stellt Entwicklern fertige Implementierungen für:
@@ -57,6 +64,33 @@ Das SDK stellt Entwicklern fertige Implementierungen für:
 
 Das SDK ist als Open-Source-Bibliothek verfügbar und kann in Java und über Bindings in weiteren Sprachen genutzt werden.
 
+> [!dev-quickstart] Dev Quickstart: ZETA-Client-SDK einbinden (Kotlin/JVM)
+> Gradle-Dependency (JVM-Target):
+> ```kotlin
+> // build.gradle.kts
+> dependencies {
+>     implementation("de.gematik.zeta:zeta-sdk-jvm:<aktuelle-version>")
+> }
+> ```
+> SMC-B-Zertifikat (AUT_E256) aus `.p12`-Datei laden und SDK initialisieren:
+> ```kotlin
+> val zetaClient = ZetaClient.Builder()
+>     .withCertificate(smcbCert)       // X.509 aus SMC-B (AUT_E256)
+>     .withPrivateKey(smcbPrivateKey)
+>     .withTokenEndpoint("https://<idp-dienst>/token")
+>     .build()
+>
+> // Access-Token für VSDM 2.0 anfordern
+> val token = zetaClient.requestAccessToken(
+>     scope = "vsdm2:read",
+>     resource = "https://vsdm2.ti-dienste.de"
+> )
+> ```
+> - Repo: [gematik/zeta-sdk](https://github.com/gematik/zeta-sdk) (Kotlin Multiplatform: JVM, Android, iOS)
+> - Releases und Changelogs: [gematik/zeta-sdk/releases](https://github.com/gematik/zeta-sdk/releases)
+> - VSDM 2.0 FHIR-Profil und OpenAPI: [gematik/spec-VSDM2](https://github.com/gematik/spec-VSDM2)
+> - Technische Spezifikation: [gemSpec_ZETA v1.0](https://gemspec.gematik.de/downloads/gemSpec/gemSpec_ZETA/gemSpec_ZETA_V1.0.0.pdf)
+
 ### ZETA-Guard
 
 Der ZETA-Guard ist die serverseitige Komponente, die als Reverse Proxy vor einem Fachdienst sitzt. Er:
@@ -66,6 +100,32 @@ Der ZETA-Guard ist die serverseitige Komponente, die als Reverse Proxy vor einem
 - Leitet gültige Anfragen an den Fachdienst weiter
 - Gibt standardisierte Fehlerantworten zurück (OAuth 2.0 Error Responses)
 - Schreibt strukturierte Audit-Logs für jeden Zugriff
+
+> [!dev-quickstart] Dev Quickstart: ZETA-Guard als Docker-Sidecar deployen
+> ZETA-Guard steht als Helm-Chart für Kubernetes-Deployments bereit:
+> ```bash
+> helm repo add gematik-zeta https://gematik.github.io/zeta-guard-helm
+> helm install zeta-guard gematik-zeta/zeta-guard \
+>   --set backend.url=http://mein-fachdienst:8080 \
+>   --set tls.certFile=/certs/smcb.crt \
+>   --set tls.keyFile=/certs/smcb.key \
+>   --set policy.pdpEndpoint=http://pdp-service:8181
+> ```
+> Eingehende Anfrage (nach erfolgreicher mTLS-Handshake + Token-Validierung):
+> ```
+> GET /fhir/Patient/123
+> Authorization: Bearer <ZETA-Access-Token>
+> X-Request-Id: <uuid>
+> ```
+> Fehlerantwort bei ungültigem Token (OAuth 2.0 RFC 6750):
+> ```json
+> HTTP/1.1 401 Unauthorized
+> WWW-Authenticate: Bearer error="invalid_token",
+>                   error_description="Token expired"
+> ```
+> - Helm-Charts: [gematik/zeta-guard-helm](https://github.com/gematik/zeta-guard-helm)
+> - Vollständige Architektur und Kubernetes-Manifeste: [gematik/zeta](https://github.com/gematik/ZETA) (Ordner `docs/user-manual/`)
+> - Zero-Trust-Schnittstellenspezifikation: [gematik/spec-t20r](https://github.com/gematik/spec-t20r)
 
 ### Verhältnis zum TI-Gateway
 

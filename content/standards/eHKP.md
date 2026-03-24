@@ -6,7 +6,7 @@ aliases: [Elektronischer Heil- und Kostenplan, elektronischer HKP, eHeilkostenpl
 relevance:
   sectors: [zahnarzt, kasse, patient, hersteller, it-dienstleister]
   interests: [compliance, technik]
-maturity: wachsend
+maturity: setzling
 ---
 
 # eHKP
@@ -102,6 +102,12 @@ Der eHKP nutzt dieselbe TI-Infrastruktur, die Zahnarztpraxen bereits für andere
 
 Für die eHKP-Einführung benötigen Zahnarztpraxen keine zusätzliche Hardware, wenn sie bereits vollständig an die TI angebunden sind. Das ZZVS muss jedoch ein entsprechendes Update erhalten.
 
+> [!frist-warnung] Frist-Warnung: SMC-B-Ablauf und KIM-Vertragspflicht
+> **Rechtsgrundlage:** § 340 Abs. 6 SGB V (TI-Anbindungspflicht für Zahnarztpraxen), § 363 Abs. 1 SGB V (KIM-Nutzungspflicht), Bundesmantelvertrag Zahnärzte (BMV-Z) Anlage 13
+> **Dauerpflicht:** Die SMC-B (Institutionskarte) der Zahnarztpraxis muss zu jedem Zeitpunkt gültig sein. Abgelaufene Karten sperren den eHKP-Versand und alle weiteren TI-Dienste. KIM-Verträge mit einem zugelassenen KIM-Anbieter müssen aktiv sein; ohne KIM-Account ist die EBZ-Pflicht nicht erfüllbar.
+> **Handlungsbedarf:** Die verantwortliche Stelle hat das Ablaufdatum der SMC-B mindestens 12 Wochen vor Ablauf zu prüfen und eine Erneuerungskarte beim zuständigen Kartenherausgeber zu beantragen. KIM-Konten sind regelmäßig auf Gültigkeit zu prüfen. Bei einem ZZVS-Wechsel muss der KIM-Account auf das neue System migriert werden, bevor der eHKP-Workflow unterbrochen wird.
+> **Bei Nichtbeachtung:** Ohne gültige SMC-B oder aktiven KIM-Account können keine eHKPs übermittelt werden. Prothetische GKV-Leistungen sind ohne elektronische Genehmigung nicht abrechenbar. Im Wiederholungsfall können Vertragsstrafen nach BMV-Z geltend gemacht werden.
+
 ### Genehmigungsworkflow
 
 ```
@@ -112,6 +118,33 @@ Für die eHKP-Einführung benötigen Zahnarztpraxen keine zusätzliche Hardware,
 5. ZZVS speichert Genehmigung und informiert die Praxis
 6. Zahnarzt beginnt die prothetische Behandlung
 ```
+
+> [!dev-quickstart] Dev Quickstart: KIM-Nachricht für eHKP aufbauen (SMTPS)
+> Das ZZVS sendet den eHKP über das KIM-Clientmodul per SMTPS (Port 587, STARTTLS) an den KIM-Fachdienst:
+> ```
+> MAIL FROM: <zahnarzt@praxis.kim.telematik>
+> RCPT TO:   <hkp-eingang@krankenkasse.kim.telematik>
+> ```
+> Nachrichtenstruktur (RFC 5751 S/MIME):
+> ```
+> Content-Type: multipart/signed; protocol="application/pkcs7-signature"
+>
+>   --boundary
+>   Content-Type: message/rfc822
+>   X-KIM-Dienstkennung: urn:gematik:ebz:hkp:1
+>
+>     Content-Type: application/xml; name="hkp.xml"
+>     Content-Disposition: attachment; filename="hkp.xml"
+>     [EBZ-XML-Nutzdaten nach Technischer Anlage EBZ v2.0]
+>
+>   --boundary
+>   Content-Type: application/pkcs7-signature
+>   [S/MIME-Signatur mit SMC-B X.509-Zertifikat]
+> ```
+> - KIM-Clientmodul-API (lokaler SMTP/IMAP-Proxy): `localhost:1025` (SMTP) / `localhost:1143` (IMAP) standardmäßig
+> - Alle KIM-Dienstkennungen: [gematik Fachportal](https://fachportal.gematik.de/toolkit/dienstkennung-kim-kom-le)
+> - KIM-Spezifikation: [gemSpec_KIM](https://gemspec.gematik.de/docs/gemSpec/gemSpec_KIM/latest/)
+> - App-Transport-Framework (Nachrichtenformat): [gematik/api-app-transport-framework](https://github.com/gematik/api-app-transport-framework)
 
 > [!praxis-tipp] Praxis-Tipp: KIM-Posteingang täglich prüfen
 > Die Genehmigung der Kasse landet als KIM-Nachricht in Ihrem ZZVS. Prüfen Sie den KIM-Posteingang täglich, sonst verzögert sich der Behandlungsstart.
@@ -134,7 +167,7 @@ Für die eHKP-Einführung benötigen Zahnarztpraxen keine zusätzliche Hardware,
 
 ## Quellen
 
-- [KZBV: Elektronisches Beantragungs- und Genehmigungsverfahren (EBZ/eHKP)](https://www.kzbv.de/zahnaerzte/digitales/elektronisches-beantragungs-und-genehmigungsverfahren/allgemeine-informationen/)
+- [KZBV – Kassenzahnärztliche Bundesvereinigung (Träger des eHKP/EBZ-Verfahrens)](https://www.kzbv.de)
 - [§ 87 SGB V – Gesetze im Internet](https://www.gesetze-im-internet.de/sgb_5/__87.html)
 - [gematik: KIM – Kommunikation im Medizinwesen](https://www.gematik.de/anwendungen/kim)
 - [Wikipedia: Heil- und Kostenplan](https://de.wikipedia.org/wiki/Heil-_und_Kostenplan)

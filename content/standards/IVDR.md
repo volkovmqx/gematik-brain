@@ -4,6 +4,9 @@ audience: [technical, non-technical]
 tags: [standards, eu, medizinprodukte, labordiagnostik, regulierung]
 aliases: [In-vitro-Diagnostika-Verordnung, Verordnung EU 2017/746, IVD-Regulation]
 maturity: wachsend
+relevance:
+  sectors: [hersteller, regulierung, krankenhaus]
+  interests: [compliance, business]
 ---
 
 # IVDR
@@ -39,9 +42,24 @@ Die IVDR definiert vier Risikoklassen statt der bisherigen Listen A/B:
 
 Produkte der Klassen B, C und D benötigen eine Prüfung durch eine **Benannte Stelle** (Notified Body), z.B. TÜV SÜD oder BSI-zertifizierte Stellen.
 
+> [!frist-warnung] Frist-Warnung: Verlängerte IVDR-Übergangsfristen nach Verordnung (EU) 2024/1860
+> **Rechtsgrundlage:** Verordnung (EU) 2024/1860 (Änderung von Art. 110 Verordnung (EU) 2017/746), in Kraft seit 9. Juli 2024
+> **Aktualisierte Antragsfristen bei Benannten Stellen:**
+> - Klasse D: Antrag musste bis **26. Mai 2025** gestellt sein; Inverkehrbringen von Bestandsprodukten bis **31. Dezember 2027** zulässig
+> - Klasse C: Antrag bis **26. Mai 2026** erforderlich; Inverkehrbringen bis **31. Dezember 2028**
+> - Klasse B und sterile Klasse A: Antrag bis **26. Mai 2027**; Inverkehrbringen bis **31. Dezember 2029**
+> **Handlungsbedarf:** Hersteller müssen innerhalb von 4 Monaten nach Antragstellung einen schriftlichen Vertrag mit der Benannten Stelle abschließen. Ohne fristgerechten Antrag erlischt das Recht auf Nutzung der Übergangsfrist. EUDAMED-Produktregistrierung (UDI-Modul) ist ab **28. Mai 2026** obligatorisch. Krankenhäuser und Labore sollten von Lieferanten aktuelle Nachweise (IVDR-Konformitätserklärung oder Nachweis des fristgerechten Benannte-Stelle-Antrags) anfordern und dokumentieren.
+> **Bei Nichtbeachtung:** Produkte ohne gültigen IVDR-Konformitätsnachweis dürfen nach Ablauf der jeweiligen Übergangsfrist nicht mehr in Verkehr gebracht werden. Für Krankenhäuser und Labore bedeutet ein Versorgungsausfall bei diagnostischen Tests unmittelbares Patientenrisiko.
+
 ### Vergleich mit der Vorgängerrichtlinie
 
 Die alte IVD-Richtlinie 98/79/EG war weniger streng: Rund 80 Prozent aller IVDs konnten sich selbst zertifizieren (CE-Kennzeichnung ohne Benannte Stelle). Die IVDR erhöht die Anforderungen erheblich: Mehr Produkte brauchen nun externe Zertifizierung, Benannte Stellen sind knapp, Übergangsfristen wurden mehrfach verlängert.
+
+> [!interesse-compliance]
+> Die stufenweisen Übergangsfristen sind abgelaufen oder laufen noch aus. Klasse D (höchstes Risiko, z.B. HIV-Tests) musste bis **26. Mai 2025** umgestellt sein. Klasse C (z.B. Influenza-Tests) bis **26. Mai 2026**, Klassen A/B bis **26. Mai 2027**. Hersteller, die noch unter der alten IVD-Richtlinie 98/79/EG zertifiziert sind, dürfen Bestandsprodukte nach diesen Fristen nicht mehr in Verkehr bringen. Krankenhäuser und Labore sollten von Lieferanten aktuelle IVDR-Konformitätsnachweise (EU-Konformitätserklärung, Zertifikat der Benannten Stelle) anfordern und für Audit-Zwecke archivieren.
+
+> [!interesse-business]
+> Die Knappheit an Benannten Stellen (Notified Bodies) ist das zentrale Marktproblem der IVDR-Transition. In Deutschland sind TÜV SÜD, TÜV Rheinland und BSI-akkreditierte Stellen akkreditiert. Wartezeiten für Auditplanung betragen teilweise 12 bis 18 Monate. Für kleinere Hersteller ist die IVDR deshalb eine erhebliche Marktzugangshürde. Für Krankenhäuser und Labore bedeutet das: Einzelne Tests könnten vom Markt verschwinden, wenn Hersteller die IVDR-Kosten scheuen.
 
 ## Technische Details
 
@@ -54,6 +72,17 @@ Hersteller müssen vor dem Inverkehrbringen ein Konformitätsbewertungsverfahren
 3. **Prüfung durch Benannte Stelle**: Bewertung der Dokumentation und ggf. Produktmuster.
 4. **CE-Kennzeichnung**: Nach positivem Bescheid erhält das Produkt die CE-Kennzeichnung.
 5. **[[EUDAMED]]-Registrierung**: Hersteller und Produkte müssen in der europäischen Datenbank für Medizinprodukte (EUDAMED) registriert werden.
+
+> [!klinik-integration] Klinik-Integration: IVDR-Compliance im Krankenhauslabor
+> **Beschaffung:** Das Zentrallabor und Speziallabore des Krankenhauses müssen bei der Beschaffung neuer Testsysteme ab sofort IVDR-Konformitätsnachweise prüfen. Konkret: EU-Konformitätserklärung des Herstellers sowie ggf. Zertifikat der Benannten Stelle (Klassen B, C, D). Diese Dokumente gehören in die Gerätekartei des Medizinproduktemanagements.
+> **LIS-Integration:** Das Laborinformationssystem (LIS, z.B. Swisslab, Lauris, Telepath) muss den eingesetzten Testtyp dokumentieren. Da IVDR-konforme Tests mit einer UDI (Unique Device Identification) versehen sind, sollten neue LIS-Versionen UDI als strukturiertes Attribut im Analyseauftrag erfassen. So ist die Rückverfolgbarkeit bei Sicherheitsrückrufen gewährleistet.
+> **Versorgungsrisiko:** Da einzelne Hersteller die IVDR-Zertifizierungskosten scheuen und Produkte vom Markt nehmen, sollten Krankenhäuser für kritische Tests (z.B. Blutgruppenbestimmung, HIV, Hepatitis) alternative Lieferanten evaluieren und vertraglich absichern.
+
+> [!frist-warnung] Frist-Warnung: EUDAMED-Pflichtregistrierung ab 28. Mai 2026
+> **Rechtsgrundlage:** Art. 30 ff. Verordnung (EU) 2017/746, konkretisiert durch Verordnung (EU) 2024/1860 und den EUDAMED-Rollout-Zeitplan der Europäischen Kommission
+> **Frist:** Ab **28. Mai 2026** ist die Produktregistrierung in EUDAMED (UDI- und Produktmodul) für neue In-vitro-Diagnostika verpflichtend. Hersteller müssen ihre Produkte vor dem Inverkehrbringen in EUDAMED registrieren und den eindeutigen Produktidentifikator (UDI) auf der Verpackung anbringen.
+> **Handlungsbedarf:** Hersteller, die EUDAMED noch nicht genutzt haben, müssen sich unverzüglich in der EUDAMED-Datenbank der Europäischen Kommission registrieren und ihre Produktkataloge anlegen. Die UDI muss auch im LIS der Abnehmer erfasst werden, um Rückverfolgbarkeit bei Sicherheitsrückrufen zu gewährleisten. Krankenhauslabore sollten bei Neubeschaffungen nur noch Produkte akzeptieren, für die der Hersteller eine EUDAMED-Registrierung und eine UDI nachweisen kann.
+> **Bei Nichtbeachtung:** Produkte ohne EUDAMED-Eintrag und UDI dürfen nach dem Stichtag nicht mehr in Verkehr gebracht werden. Krankenhäuser und Labore, die nicht-konforme Produkte beschaffen, tragen ein Haftungsrisiko bei Versorgungsausfällen oder Fehlereignissen.
 
 ### Relevanz für deutsche Health-IT
 
@@ -71,6 +100,11 @@ IVDR und [[MDR]] teilen viele Strukturmerkmale (Risikoklassen, Benannte Stellen,
 - **IVDR** gilt ausschließlich für In-vitro-Diagnostika (externe Untersuchung von Körperproben).
 - Beide haben unterschiedliche Risikoklassen-Schemata und Übergangsfristen.
 - Für Kombinationsprodukte (IVD + Medizinprodukt) gilt die Verordnung, die den primären Verwendungszweck abdeckt.
+
+> [!klinik-integration] Klinik-Integration: DEMIS-Meldepflicht und LIS-Schnittstelle
+> **Workflow-Bezug:** Krankenhauslabore sind nach IfSG meldepflichtig für bestimmte Infektionserreger. Die Meldung erfolgt über [[DEMIS]] (Deutsches Elektronisches Melde- und Informationssystem). Das LIS muss dazu FHIR-Nachrichten (Profil: `de.rki.demis.laboratory`) an den DEMIS-Adapter übermitteln. Die gemeldeten Testergebnisse referenzieren implizit auf IVDR-zertifizierte Tests.
+> **HL7/FHIR-Schnittstelle:** LIS-zu-KIS-Kommunikation nutzt typischerweise HL7 v2 ORU^R01 (Observation Result Unsolicited) für Befundübermittlung. Für DEMIS wird FHIR R4 verwendet. Prüfen Sie, ob Ihr LIS bereits einen DEMIS-Adapter besitzt oder ob dieser nachrüstbar ist. Viele Laborsysteme bieten dies als separates Modul an (z.B. Swisslab DEMIS-Connector, Lauris FHIR-Export).
+> **Deployment:** DEMIS-Meldungen müssen innerhalb von 24 Stunden nach Laborergebnis übermittelt werden (§ 9 IfSG). Stellen Sie sicher, dass die DEMIS-Schnittstelle im 24/7-Monitored-Betrieb läuft und Ausfälle im IT-Monitoring-System (z.B. Nagios, Zabbix) alarmieren.
 
 ### UDI-System
 

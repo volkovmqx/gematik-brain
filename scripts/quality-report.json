@@ -1,229 +1,165 @@
 {
-  "timestamp": "2026-03-24T23:15:00Z",
+  "timestamp": "2026-03-25T00:15:00Z",
   "overallScore": 83,
   "testResults": {
-    "passed": 244,
-    "failed": 1,
-    "total": 245
+    "passed": 246,
+    "failed": 0,
+    "total": 246
   },
   "articles": [
     {
       "file": "content/standards/EU-HTA.md",
-      "verdict": "revise",
-      "score": 60,
+      "verdict": "pass",
+      "score": 85,
       "issues": [
-        "FACTUAL INACCURACY: Article states the first wave (ab 12. Januar 2025) covers 'onkologische Arzneimittel und Arzneimittel für seltene Krankheiten'. Correct: the 2025 wave covers onkologische Arzneimittel AND ATMPs (Advanced Therapy Medicinal Products). Arzneimittel für seltene Krankheiten (Orphan Drugs) are covered from 2028, not 2025. Source: Regulation (EU) 2021/2282, Annex I.",
-        "broken_wiki_link: [[EMA]] — no EMA.md article exists in knowledge base (flagged by test.sh)",
-        "url_dead: No URL failures in Quellen section — EUR-Lex, EU Commission health HTA page, G-BA EU-HTA page, and Wikipedia all expected live"
+        "Fix verified correct: article now states 2025 wave covers onkologische Arzneimittel und ATMPs (Advanced Therapy Medicinal Products), Orphan Drugs correctly placed at 2028.",
+        "EMA wiki-link fix verified: EMA appears as plain text 'EMA (European Medicines Agency)' — no broken [[EMA]] wiki-link present.",
+        "url_dead: https://www.g-ba.de/themen/arzneimittel/hta-europa/ returns 404. G-BA restructured this URL path. The other three Quellen URLs (EUR-Lex, EC health HTA page, Wikipedia) not individually re-checked but expected live based on authoritative stable URLs.",
+        "MINOR: The compliance callout on line 42 correctly identifies G-BA as the national interface for EU-HTA/AMNOG. The frist-warnung callout (line 44-51) is accurate and complete."
       ],
-      "fixInstructions": "1. Correct the 2025 applicability scope: change 'onkologische Arzneimittel und Arzneimittel für seltene Krankheiten zuerst' to 'onkologische Arzneimittel und Arzneimittel für neuartige Therapien (ATMPs) zuerst'. 2. For the 2028 row, add that it includes Arzneimittel für seltene Krankheiten (Orphan Drugs). 3. Either create an EMA.md stub article or replace [[EMA]] with a plain reference 'Europäische Arzneimittelagentur (EMA)' until the stub exists."
+      "fixInstructions": "Replace dead Quellen URL https://www.g-ba.de/themen/arzneimittel/hta-europa/ with the current G-BA EU-HTA page. Try https://www.g-ba.de/themen/arzneimittel/arzneimittel-richtlinie-anlagen/nutzenbewertung-35a/eu-hta-verordnung/ (confirmed live by WebSearch result)."
     },
     {
       "file": "content/standards/ApBetrO.md",
-      "verdict": "revise",
-      "score": 65,
+      "verdict": "pass",
+      "score": 88,
       "issues": [
-        "FACTUAL INACCURACY: Article attributes the AMTS/Interaktionsprüfungspflicht (Pflicht zur Prüfung auf Wechselwirkungen) to § 17 ApBetrO. Verified via gesetze-im-internet.de: § 17 ApBetrO governs the dispensing process (Abgabe) and packaging requirements, not interaction checking. The consultation and interaction screening obligation is found in § 20 ApBetrO (Beratung der Patienten und Überprüfung der Arzneimittel auf Wechselwirkungen).",
-        "url_dead: https://www.abda.de/themen/recht/apothekenrecht/ returns 404 — ABDA restructured this URL path"
+        "Fix verified correct: § 20 ApBetrO is consistently used throughout as the basis for Interaktionsprüfungspflicht/AMTS. § 17 is correctly used only for dispensing obligations and Beratungspflicht.",
+        "Dead ABDA URL fix verified: No ABDA URL present in Quellen section. Replaced with three gesetze-im-internet.de sources (§ 17, § 20, full text) plus Wikipedia. All gesetze-im-internet.de URLs are stable and expected live.",
+        "NOTE: The article text (line 74 in Technische Details) also correctly attributes the AMTS interaction check basis to § 20 in the interesse-technik callout."
       ],
-      "fixInstructions": "1. Correct all references that attribute Interaktionsprüfung/AMTS to § 17 ApBetrO — change to § 20 ApBetrO. Update any inline links pointing to § 17 for this claim. 2. Replace dead ABDA URL https://www.abda.de/themen/recht/apothekenrecht/ with a working ABDA source, e.g. https://www.abda.de/themen/apothekenpraxis/ or the gesetze-im-internet.de page for § 20 ApBetrO: https://www.gesetze-im-internet.de/apobetro_1987/__20.html"
+      "fixInstructions": "No issues requiring action. Article is factually accurate and sources are clean."
     },
     {
       "file": "content/standards/eHKP.md",
       "verdict": "revise",
-      "score": 80,
+      "score": 75,
       "issues": [
-        "url_dead: https://www.kzbv.de/telematikinfrastruktur.97.de.html redirects to the KZBV homepage rather than loading the specific TI page — the KZBV restructured this URL"
+        "url_dead: https://fachportal.gematik.de/anwendungen/zahnaerztliche-kommunikation returns 404 (confirmed via Playwright). The KZBV dead URL was replaced, but the replacement is itself dead. This URL was used as the first Quellen source.",
+        "The remaining three Quellen URLs (gesetze-im-internet.de/§87, gematik.de/anwendungen/kim, Wikipedia Heil- und Kostenplan) are expected live.",
+        "Factual claims verified: § 87 Abs. 1a SGB V as legal basis for HKP — correct. EBZ verpflichtend seit 1. Januar 2023 — plausible, unverifiable from authoritative source in this cycle. KIM as transport channel — correct per gematik documentation."
       ],
-      "fixInstructions": "Replace dead KZBV URL https://www.kzbv.de/telematikinfrastruktur.97.de.html with a working KZBV TI reference. Try https://www.kzbv.de/telematikinfrastruktur.1040.de.html or search kzbv.de for 'Telematikinfrastruktur'. Alternatively, use the gematik page for KIM/eHKP integration: https://fachportal.gematik.de/anwendungen/zahnaerztliche-kommunikation"
+      "fixInstructions": "Replace dead Quellen URL https://fachportal.gematik.de/anwendungen/zahnaerztliche-kommunikation with a working reference for eHKP/EBZ. Options: (1) https://www.kzbv.de/ebz.1040.de.html (KZBV EBZ page, verify first), (2) https://www.gematik.de/anwendungen/kim (already present as source 3, so use a KZBV-specific URL), (3) https://fachportal.gematik.de/anwendungen/kim as fallback."
     },
     {
-      "file": "content/processes/Erstattungsbetrag.md",
+      "file": "content/concepts/Festbetrag.md",
       "verdict": "pass",
       "score": 87,
       "issues": [
-        "§ 130b SGB V as legal basis for Erstattungsbetrag negotiations — CORRECT",
-        "AMNOG 2010 introduction of the Erstattungsbetrag system — CORRECT (AMNOG in force 1. Januar 2011)",
-        "GKV-Spitzenverband as negotiating party — CORRECT",
-        "DiGA/DiPA Erstattungsbeträge gedeckelt per DVG/DVPMG — CORRECT and consistent with DiGA.md and DiPA.md"
+        "§ 35 SGB V as legal basis — CORRECT. Confirmed via gesetze-im-internet.de and GKV-Spitzenverband.",
+        "Three-Stufen system (Stufe 1: gleicher Wirkstoff, Stufe 2: pharmakologisch vergleichbar, Stufe 3: therapeutisch vergleichbar) — CORRECT. Confirmed via § 35 Abs. 1 SGB V structure.",
+        "G-BA forms Festbetragsgruppen, GKV-Spitzenverband sets the Betrag — CORRECT.",
+        "Relationship to AMNOG described accurately: Festbetrag for off-patent generics, AMNOG/Erstattungsbetrag for new patented drugs — CORRECT.",
+        "Zuzahlungsbefreiung bei >30% unter Festbetrag (§ 31 Abs. 3 SGB V) — CORRECT.",
+        "All five Quellen URLs verified: gesetze-im-internet.de/§35 (stable), GKV-Spitzenverband Festbeträge page (confirmed live via Playwright), G-BA Festbetragsgruppenbildung (expected live), BMG Festbeträge page (confirmed live via Playwright), Wikipedia (expected live).",
+        "MINOR: The intro definition in line 13 states GKV pays the Festbetrag and the patient pays the difference. This is accurate per BMG source confirmed via Playwright."
       ],
-      "fixInstructions": "No issues requiring action."
+      "fixInstructions": "No issues. Article is factually accurate, well-sourced, and all key claims verified against authoritative sources."
     },
     {
-      "file": "content/concepts/Pflegegrad.md",
-      "verdict": "pass",
-      "score": 88,
+      "file": "content/organization/InEK.md",
+      "verdict": "revise",
+      "score": 78,
       "issues": [
-        "NBA-Gewichtungen (Mobilität 10%, Kognition/Kommunikation 15%, Verhaltensweisen 15%, Selbstversorgung 40%, selbstständige Krankheitsbewältigung 20%, Gestaltung des Alltags 15%) — CORRECT per § 15 SGB XI",
-        "Pflegegrad-Punktschwellen (1: 12.5–26.9, 2: 27–47.4, 3: 47.5–69.9, 4: 70–89.9, 5: ab 90 inkl. besondere Bedarfskonstellation) — CORRECT",
-        "Pflegegeld-Beträge ab 1. Januar 2024: Pflegegrad 2: 332 Euro, Pflegegrad 3: 573 Euro, Pflegegrad 4: 765 Euro, Pflegegrad 5: 947 Euro — plausible per PUEG 2023 Erhöhung, not individually re-verified in this cycle"
+        "FACTUAL INACCURACY (minor): Article states 'DKR 2026 wurden vom InEK im Dezember 2025 veröffentlicht'. Per the InEK website (g-drg.de/ag-drg-system-2026/kodierrichtlinien), the DKR 2026 were adopted on 26.09.2025 (September, not December). The 2025 DKR were adopted on 26.09.2024. DKR release is annually in September/October, not December.",
+        "url_mismatch: Quellen source 'InEK GmbH: Kodierrichtlinien 2026' links to https://www.g-drg.de/ag-drg-system-2025/kodierrichtlinien/kodierrichtlinien — this is the DKR 2025 page, not DKR 2026. Confirmed via Playwright: that URL serves 2025 Kodierrichtlinien content.",
+        "Founding year 2001 — confirmed correct via g-drg.de.",
+        "Sitz Siegburg — confirmed correct (phone area code +49 2241 is Siegburg).",
+        "Three Selbstverwaltungspartner (DKG, GKV-Spitzenverband, PKV) — confirmed correct via InEK website.",
+        "Relevance frontmatter: sectors [krankenhaus, kasse, regulierung, forschung] — appropriate. interests [compliance, business] — appropriate.",
+        "interesse-compliance callout: § 21 KHEntgG Datenmeldepflicht, Frist 31. März — factually accurate.",
+        "interesse-business callout: InEK Datenbrowser for benchmarking — factually accurate."
       ],
-      "fixInstructions": "No issues requiring action."
+      "fixInstructions": "1. Correct the DKR 2026 publication month: change 'im Dezember 2025 veröffentlicht' to 'am 26. September 2025 verabschiedet'. 2. Fix the Quellen URL: change https://www.g-drg.de/ag-drg-system-2025/kodierrichtlinien/kodierrichtlinien to https://www.g-drg.de/ag-drg-system-2026/kodierrichtlinien (confirmed live, shows DKR 2026 content)."
     },
     {
-      "file": "content/infrastructure/MVZ.md",
-      "verdict": "pass",
-      "score": 80,
-      "issues": [
-        "Previously flagged url_dead (https://www.kbv.de/html/mvz.php) — FIX CONFIRMED: article now cites BMG URL https://www.bundesgesundheitsministerium.de/themen/krankenversicherung/ambulante-versorgung/medizinische-versorgungszentren, which loads successfully",
-        "MVZ count figure ('über 4.700 MVZ') still present; now supportable via BMG source"
-      ],
-      "fixInstructions": "No blocking issues. Previously flagged URL fix confirmed applied."
-    },
-    {
-      "file": "content/processes/Dispensierung.md",
+      "file": "content/concepts/ZETA.md",
       "verdict": "pass",
       "score": 82,
       "issues": [
-        "Previously flagged url_dead (https://www.gematik.de/anwendungen/e-rezept/fuer-apotheken) — FIX CONFIRMED: article now cites https://www.gematik.de/anwendungen/e-rezept/apotheken, which loads successfully via Playwright",
-        "§ 17 ApBetrO citation for dispensing steps — correct for the dispensing procedure itself; interaction checking belongs to § 20 but that was not claimed here"
+        "Open source release date 15. Dezember 2025 — plausible, consistent with gematik newsroom URL in Quellen. Unverifiable without live URL check in this cycle.",
+        "EY Strategy and Transactions GmbH as ZETA development contractor — stated in article and supported by gematik newsroom source URL in Quellen.",
+        "VSDM 2.0 produktiv July 2026 — listed as planned milestone, correctly presented as future date.",
+        "Relevance frontmatter: sectors [ti-infrastruktur, hersteller, it-dienstleister] — appropriate for a deeply technical TI-2.0 framework article. interests [technik] — appropriate.",
+        "interesse-technik callout: SDK on GitHub, Java implementation, Docker image for ZETA-Guard — consistent with open-source release claims.",
+        "Quellen URLs: two gematik.de newsroom URLs (not individually verified via Playwright), one gematik.de TI-2.0 overview, one GitHub repo. All are plausible and consistent with article claims.",
+        "MINOR: gemSpec_ZETA noted as 'in Vorbereitung' in interesse-technik callout — appropriately hedged."
       ],
-      "fixInstructions": "No blocking issues. Previously flagged URL fix confirmed applied."
+      "fixInstructions": "No blocking issues. Consider verifying gematik newsroom URLs are live in a future cycle."
     },
     {
-      "file": "content/standards/B3S-Krankenhaus.md",
+      "file": "content/infrastructure/Highspeed-Konnektor.md",
       "verdict": "pass",
-      "score": 79,
+      "score": 80,
       "issues": [
-        "Previously flagged url_dead (specific BSI B3S URL) — FIX APPLIED: article now uses general BSI KRITIS URL https://www.bsi.bund.de and BSI NIS-2 regulated entities page, both load successfully",
-        "B3S version 1.3.1 (Stand Januar 2026) — CONFIRMED correct",
-        "KRITIS-Schwellenwert 30.000 vollstationäre Fälle — CORRECT"
+        "RISE GmbH as HSK manufacturer — stated as fact. Unverifiable against authoritative source in this cycle, marked as unverifiable.",
+        "PTV 2.1.1 as current approval version — stated as fact. Unverifiable without gematik Fachportal zulassung page check in this cycle.",
+        "HSM-B Pilotprojekt Produktivstart März 2026 — consistent with Quellen source URL (gematik.de newsroom, März 2026), and current date is 25. März 2026. Plausible.",
+        "Relevance frontmatter: sectors [arztpraxis, krankenhaus, zahnarzt, hersteller, ti-infrastruktur] — appropriate. interests [technik] — appropriate for a technical infrastructure article. MINOR: interests could include [business] given cloud-hosting cost considerations for larger facilities, but single-interest is acceptable.",
+        "interesse-technik callout: SOAP IConnector_v2, gRPC for TI-2.0, cloud VPN model — technically specific and plausible.",
+        "Only 3 Quellen sources (minimum is 2, so passes). Gemspec URL https://gemspec.gematik.de/docs/gemSpec/gemSpec_Kon/ — stable and expected live.",
+        "MINOR: The article correctly notes the Konnektor-Zulassung URL at fachportal.gematik.de/telematikinfrastruktur/ti-zugang. Not verified via Playwright."
       ],
-      "fixInstructions": "No blocking issues. Previously flagged URL replaced with live BSI pages."
+      "fixInstructions": "No blocking issues. For a future cycle: verify RISE GmbH manufacturer claim against gematik Fachportal zulassung list. Verify PTV version number."
     },
     {
-      "file": "content/standards/NIS2UmsuCG.md",
+      "file": "content/standards/IVDR.md",
       "verdict": "pass",
       "score": 85,
       "issues": [
-        "Previously flagged FACTUAL INACCURACY (wrong Bundestag date) — FIX CONFIRMED: article now correctly states 'am 13. November 2025 vom Bundestag ... 21. November 2025 vom Bundesrat beschlossen. Es wurde am 5. Dezember 2025 im Bundesgesetzblatt (BGBl. 2025 I Nr. 289) verkündet und trat am 6. Dezember 2025 in Kraft'",
-        "Previously flagged Bundesrat URL mismatch (BR-Drucksache 18/24 aus 2024) — whether replaced needs separate verification; the factual date error is corrected"
+        "Verabschiedung 5. April 2017, Inkrafttreten 25. Mai 2017 — CORRECT per EUR-Lex source.",
+        "Risikoklassen transition dates: Klasse D 26. Mai 2025, Klasse C 26. Mai 2026, Klassen A/B 26. Mai 2027 — CORRECT. Confirmed via EUR-Lex search result.",
+        "Klasse D date (26. Mai 2025) is now passed (today: 25. März 2026). Article correctly presents this in past tense in the compliance callout ('Die stufenweisen Übergangsfristen sind abgelaufen oder laufen noch aus'). No staleness issue.",
+        "MINOR: The article states 'Produkte der Klassen B, C und D benötigen eine Prüfung durch eine Benannte Stelle'. This is mostly accurate but Klasse A sterile products also require a Benannte Stelle — minor omission, not a factual error.",
+        "Relevance frontmatter: sectors [hersteller, regulierung, krankenhaus] — appropriate. interests [compliance, business] — appropriate.",
+        "interesse-compliance callout: transition deadlines accurate and complete.",
+        "interesse-business callout: Notified Body bottleneck, 12-18 month wait times — plausible, consistent with widely reported industry issue.",
+        "Quellen: EUR-Lex (stable), Wikipedia (live), TÜV SÜD IVDR page, Johner Institut blog. Note: Johner Institut is a specialized consultancy blog, not an official source. However, two official sources (EUR-Lex, Wikipedia) are present.",
+        "No dead URLs detected in Quellen (stable EUR-Lex and Wikipedia URLs, TÜV SÜD expected live)."
       ],
-      "fixInstructions": "Verify the Bundesrat source URL now points to correct NIS2UmsuCG documentation rather than the unrelated BR-Drucksache 18/24. Replace with https://www.bsi.bund.de/DE/Themen/Regulierte-Wirtschaft/NIS-2-regulierte-Unternehmen/nis-2-regulierte-unternehmen_node.html if the Bundesrat URL still mismatches."
+      "fixInstructions": "No blocking issues. Optional improvement: add BfArM as official German source for IVDR questions (https://www.bfarm.de/DE/Medizinprodukte/) to strengthen the official source base."
     },
     {
-      "file": "content/standards/DVPMG.md",
+      "file": "content/standards/KRITIS-Dachgesetz.md",
       "verdict": "pass",
-      "score": 87,
+      "score": 83,
       "issues": [
-        "Previously flagged FACTUAL INACCURACY (wrong Bundestag date 3. Juni 2021) — FIX CONFIRMED: article now correctly states 'am 6. Mai 2021 vom Bundestag beschlossen und trat am 9. Juni 2021 in Kraft (BGBl. I S. 1309)'",
-        "pflege.de source remains as supplementary non-official reference — acceptable"
+        "Bundestag vote date 29. Januar 2026 — CORRECT. Confirmed via bundestag.de search result.",
+        "Bundesrat Zustimmung 6. März 2026 — CORRECT. Confirmed via bundesrat.de search result.",
+        "Registrierungspflicht Stichtag 17. Juli 2026 — CORRECT. Confirmed via Bundestag source ('spätestens drei Monate nach Einstufung, frühestens 17. Juli 2026').",
+        "Bußgeld bis 2% des globalen Jahresumsatzes — plausible, consistent with EU CER-Richtlinie structure. Not individually verified against law text.",
+        "BBK as registration authority — CORRECT per article text and confirmed by Bundestag source.",
+        "Relevance frontmatter: sectors [krankenhaus, ti-infrastruktur, it-dienstleister, regulierung] — appropriate. interests [compliance, technik] — appropriate.",
+        "interesse-compliance callout: Frist 17. Juli 2026, BBK as authority — CORRECT.",
+        "interesse-technik callout: BBK/BSI cooperation, ISO 27001 reuse — factually accurate.",
+        "MINOR: [[NIS-2]] wiki-link used in article. NIS-2.md exists at content/standards/NIS-2.md — link is valid.",
+        "Quellen: Bundestag Drucksache link (dip.bundestag.de), BMI page, EUR-Lex CER-Richtlinie, BSI KRITIS page — all are appropriate authoritative sources. dip.bundestag.de URL uses Vorgangs-ID format which is stable."
       ],
-      "fixInstructions": "No blocking issues. Previously flagged date fix confirmed applied."
-    },
-    {
-      "file": "content/infrastructure/TSP.md",
-      "verdict": "pass",
-      "score": 88,
-      "issues": [
-        "Relevance frontmatter enrichment applied — valid sectors and interests used",
-        "No new structural or factual issues"
-      ],
-      "fixInstructions": "No issues requiring action."
-    },
-    {
-      "file": "content/infrastructure/VPN-Zugangsdienst.md",
-      "verdict": "pass",
-      "score": 87,
-      "issues": [
-        "Relevance frontmatter and interesse callouts added — valid callout types and values used",
-        "No new structural or factual issues"
-      ],
-      "fixInstructions": "No issues requiring action."
-    },
-    {
-      "file": "content/standards/SGB-XI.md",
-      "verdict": "pass",
-      "score": 86,
-      "issues": [
-        "Relevance frontmatter and interesse callouts added — valid sectors and interests used",
-        "SGB XI in-force date (1. Januar 1995) — CORRECT",
-        "DiPA provisions §§ 40a, 40b inserted by DVPMG 2021 — CORRECT and consistent with DiPA.md and DVPMG.md"
-      ],
-      "fixInstructions": "No issues requiring action."
-    },
-    {
-      "file": "content/standards/AMNOG.md",
-      "verdict": "pass",
-      "score": 87,
-      "issues": [
-        "[[Erstattungsbetrag]] wiki-link added — correct, article for Erstattungsbetrag now exists",
-        "AMNOG Bundestag vote 11. November 2010, in-force 1. Januar 2011 — CORRECT",
-        "No new structural or factual issues"
-      ],
-      "fixInstructions": "No issues requiring action."
-    },
-    {
-      "file": "content/processes/Fruehe-Nutzenbewertung.md",
-      "verdict": "pass",
-      "score": 88,
-      "issues": [
-        "Wiki-links added — all link targets verified to exist in knowledge base",
-        "G-BA 180-day decision timeline — CORRECT per § 35a SGB V",
-        "IQWiG 90-day evaluation window — CORRECT"
-      ],
-      "fixInstructions": "No issues requiring action."
-    },
-    {
-      "file": "content/organization/IQWiG.md",
-      "verdict": "pass",
-      "score": 87,
-      "issues": [
-        "[[EU-HTA]] wiki-link added — correct, EU-HTA.md exists",
-        "IQWiG founded 2004 via GMG, § 139a SGB V legal basis, ~300 employees, location Köln — CORRECT",
-        "No new structural or factual issues"
-      ],
-      "fixInstructions": "No issues requiring action."
-    },
-    {
-      "file": "content/standards/BEMA.md",
-      "verdict": "pass",
-      "score": 87,
-      "issues": [
-        "[[eHKP]] wiki-link added — correct, eHKP.md now exists",
-        "BEMA legal basis (§ 87 SGB V) and KZBV/GKV-Spitzenverband as contracting parties — CORRECT",
-        "No new structural or factual issues"
-      ],
-      "fixInstructions": "No issues requiring action."
-    },
-    {
-      "file": "content/technologies/DiPA.md",
-      "verdict": "pass",
-      "score": 88,
-      "issues": [
-        "Wiki-link for [[DiPAV]] added — consistent with DVPMG.md and SGB-XI.md",
-        "50 Euro/Monat Erstattungsgrenze — CORRECT per § 40a SGB XI",
-        "No new structural or factual issues"
-      ],
-      "fixInstructions": "No issues requiring action."
+      "fixInstructions": "No issues requiring action. Article is factually accurate with all key dates verified."
     }
   ],
   "contradictions": [],
   "staleArticles": [
-    "content/standards/EU-HTA.md: states first JCA wave (2025) covers 'seltene Krankheiten' — correct first wave is ATMPs, seltene Krankheiten only from 2028 per Regulation (EU) 2021/2282 Annex I",
-    "content/standards/ApBetrO.md: attributes Interaktionsprüfungspflicht to § 17 ApBetrO — correct paragraph is § 20 ApBetrO"
+    "content/organization/InEK.md — states 'DKR 2026 im Dezember 2025 veröffentlicht', actual adoption date was 26. September 2025 per InEK website"
   ],
-  "urlChecks": {
-    "dead": [
-      "content/standards/ApBetrO.md: https://www.abda.de/themen/recht/apothekenrecht/ (404)",
-      "content/standards/eHKP.md: https://www.kzbv.de/telematikinfrastruktur.97.de.html (redirects to KZBV homepage, not TI page)"
-    ],
-    "mismatch": [],
-    "verified_ok": [
-      "content/standards/DVPMG.md: https://www.bundesgesundheitsministerium.de/service/gesetze-und-verordnungen/guv-19-lp/dvpmg.html",
-      "content/standards/DVPMG.md: https://www.gesetze-im-internet.de/sgb_11/__40a.html",
-      "content/processes/Dispensierung.md: https://www.gematik.de/anwendungen/e-rezept/apotheken",
-      "content/processes/Dispensierung.md: https://www.gesetze-im-internet.de/apobetro_1987/__17.html",
-      "content/infrastructure/MVZ.md: https://www.bundesgesundheitsministerium.de/themen/krankenversicherung/ambulante-versorgung/medizinische-versorgungszentren",
-      "content/standards/B3S-Krankenhaus.md: https://www.bsi.bund.de (main domain)",
-      "content/standards/B3S-Krankenhaus.md: https://www.bsi.bund.de/DE/Themen/Regulierte-Wirtschaft/NIS-2-regulierte-Unternehmen/nis-2-regulierte-unternehmen_node.html"
-    ]
-  },
-  "previousCycleFixStatus": {
-    "content/infrastructure/MVZ.md": "FIXED — dead KBV URL replaced with live BMG URL",
-    "content/processes/Dispensierung.md": "FIXED — dead gematik URL replaced with live apotheken URL",
-    "content/standards/B3S-Krankenhaus.md": "FIXED — dead BSI B3S-specific URL replaced with live BSI KRITIS/NIS-2 pages",
-    "content/standards/NIS2UmsuCG.md": "FIXED — Bundestag date corrected from 5. Dezember to 13. November 2025; Bundesrat date and BGBl. publication date now correctly separated",
-    "content/standards/DVPMG.md": "FIXED — Bundestag date corrected from 3. Juni to 6. Mai 2021; in-force date 9. Juni 2021 now stated correctly"
-  }
+  "urlIssues": [
+    {
+      "file": "content/standards/EU-HTA.md",
+      "url": "https://www.g-ba.de/themen/arzneimittel/hta-europa/",
+      "status": "url_dead",
+      "note": "404 confirmed via Playwright. Replace with https://www.g-ba.de/themen/arzneimittel/arzneimittel-richtlinie-anlagen/nutzenbewertung-35a/eu-hta-verordnung/"
+    },
+    {
+      "file": "content/standards/eHKP.md",
+      "url": "https://fachportal.gematik.de/anwendungen/zahnaerztliche-kommunikation",
+      "status": "url_dead",
+      "note": "404 confirmed via Playwright. Previous KZBV dead URL was replaced with this, which is also dead."
+    },
+    {
+      "file": "content/organization/InEK.md",
+      "url": "https://www.g-drg.de/ag-drg-system-2025/kodierrichtlinien/kodierrichtlinien",
+      "status": "url_mismatch",
+      "note": "URL resolves to DKR 2025 page, but source is labeled as 'Kodierrichtlinien 2026'. Replace with https://www.g-drg.de/ag-drg-system-2026/kodierrichtlinien"
+    }
+  ]
 }

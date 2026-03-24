@@ -6,7 +6,7 @@ aliases: [EU Health Technology Assessment, HTA-Verordnung, EU-HTA-Regulation, Ve
 relevance:
   sectors: [hersteller, kasse, regulierung, forschung, krankenhaus, startup]
   interests: [compliance, business]
-maturity: setzling
+maturity: wachsend
 ---
 
 # EU-HTA
@@ -65,6 +65,11 @@ Die wissenschaftliche Arbeit wird durch Untergruppen (Subgroups) geleistet, in d
 > **Formularium-Entscheidungen:** Die Arzneimittelkommission des Krankenhauses bewertet neue Wirkstoffe für das Klinikrepertorium. Ab Januar 2025 liefern EU-HTA Joint Clinical Assessments (JCA) eine zusätzliche Evidenzgrundlage für onkologische Präparate und ATMPs. JCA-Berichte sind öffentlich über das ECBTS-Portal der EU-Kommission abrufbar und können direkt in die Nutzenbewertung der Kommission einfließen.
 > **Beschaffungs-Workflow:** Im Krankenhaus läuft die Aufnahme eines Neuwirkstoffs typischerweise: JCA-Bericht prüfen → G-BA-Beschluss zum Zusatznutzen abwarten → AMNOG-Erstattungsbetrag als Kalkulationsbasis für Zusatzentgelt-Verhandlung verwenden → Entscheidung der Arzneimittelkommission im KIS-Formularium hinterlegen. Das KIS (Materialwirtschaft/Apothekensystem) muss die Freigabe des Präparats für die stationäre Verordnung abbilden.
 
+> [!klinik-integration] Klinik-Integration: Hochrisiko-Medizinprodukte ab 2030 unter EU-HTA
+> **Deployment-Relevanz:** Ab Januar 2030 unterliegen Klasse-IIb- und Klasse-III-Medizinprodukte (z.B. implantierbare Herzschrittmacher, chirurgische Robotersysteme) der EU-HTA-JCA-Pflicht. Krankenhäuser, die solche Geräte beschaffen, müssen ab dann den JCA-Bericht als Teil des Beschaffungsprozesses berücksichtigen.
+> **KIS-Kontext:** Medizinprodukt-Stammdaten werden in der Materialwirtschaft des KIS (z.B. SAP ISH MM, Dedalus ORBIS Logistik) gepflegt. Die EUDAMED-UDI-Nummer des Produkts ist ab MDR/EU-HTA-Zeitplan Pflichtfeld bei der Produktaufnahme. Prüfen Sie, ob Ihr KIS-Materialwirtschaftsmodul EUDAMED-IDs als strukturiertes Attribut speichern kann.
+> **Handlungsbedarf jetzt:** Identifizieren Sie bereits heute, welche Ihrer eingesetzten Hochrisiko-Medizinprodukte ab 2030 unter die JCA-Pflicht fallen werden. So vermeiden Sie Beschaffungsengpässe, wenn Hersteller das JCA-Verfahren durchlaufen müssen.
+
 ### Verhältnis zu deutschem AMNOG-Verfahren
 
 Das deutsche [[AMNOG]]-Verfahren nach § 35a [[SGB-V|SGB V]] wird durch EU-HTA nicht ersetzt, aber angepasst:
@@ -81,6 +86,12 @@ Das [[IQWiG]] und der [[G-BA]] haben sich frühzeitig in die EUnetHTA-Vorläufer
 ### Dossierformat
 
 Für die gemeinsame klinische Bewertung müssen Hersteller ein strukturiertes **PICO-Dossier** (Population, Intervention, Comparator, Outcome) einreichen. Das Format orientiert sich an internationalen HTA-Standards und wird durch Leitlinien der Koordinierungsgruppe konkretisiert. Die Anforderungen überschneiden sich mit dem AMNOG-Dossierformat, sind aber nicht identisch.
+
+> [!frist-warnung] Frist-Warnung: JCA-Dossiereinreichung 45 Tage vor CHMP-Meinung
+> **Rechtsgrundlage:** Art. 12 Abs. 5 Verordnung (EU) 2021/2282 i.V.m. den Verfahrensregeln der HTA-Koordinierungsgruppe
+> **Frist:** Das JCA-Dossier im PICO-Format ist spätestens 45 Tage vor der CHMP-Stellungnahme der EMA einzureichen. Bei beschleunigter EMA-Bewertung (Accelerated Assessment) verkürzt sich dieses Fenster faktisch auf 30 bis 40 Tage.
+> **Handlungsbedarf:** Die verantwortliche Stelle muss den PICO-Scoping-Prozess (Abstimmung der Vergleichstherapie und Endpunkte mit der HTA-Koordinierungsgruppe) mindestens 6 Monate vor der geplanten Zulassung anstoßen. Anträge auf Joint Scientific Consultations (JSC) sind in einem der vier jährlichen Einreichungsfenster zu stellen (2026: 7. Januar, 1. April, 3. Juni, 23. September). Für Medizinprodukte der Klasse IIb und III gilt die JCA-Pflicht ab Januar 2030.
+> **Bei Nichtbeachtung:** Verspätete oder unvollständige Dossiers können zur Verzögerung des JCA-Verfahrens führen und damit den nationalen Erstattungsantrag nach § 35a SGB V blockieren, da dieser erst nach Vorliegen des JCA-Berichts eingeleitet werden kann.
 
 ## Verknüpfungen
 
