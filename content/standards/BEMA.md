@@ -88,7 +88,7 @@ Die elektronische Abrechnung nach BEMA erfolgt im **BZDT-Format** (Bundeseinheit
 Mit der Einführung digitaler Anwendungen in der Zahnarztpraxis entstehen neue BEMA-Positionen:
 
 - **Digitale Abdrucksysteme**: Der G-BA hat in den [[ePA]]-Anforderungen die Speicherung zahnärztlicher Befunddokumente vorgesehen. Zahnärzte erhalten ab dem [[ePA]]-Rollout Zugang zur ePA ihrer Patienten.
-- **eHKP (elektronischer Heil- und Kostenplan)**: Der zahnärztliche Heil- und Kostenplan wird digital übermittelt. Die Übermittlung über [[KIM]] ist im Aufbau.
+- **[[eHKP]] (elektronischer Heil- und Kostenplan)**: Der zahnärztliche Heil- und Kostenplan wird digital übermittelt. Die Übermittlung über [[KIM]] ist im Aufbau.
 
 > [!praxis-tipp] Praxis-Tipp: eHKP und ePA in der Zahnarztpraxis einrichten
 > Zwei neue Pflichten für Zahnarztpraxen ab 2025/2026:

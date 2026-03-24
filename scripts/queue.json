@@ -1,83 +1,13 @@
 {
   "pending": [
     {
-      "term": "ApBetrO",
-      "category": "standards",
-      "reason": "Apothekenbetriebsordnung: rechtliche Basis für AMTS-Prüfpflichten (§ 17 ApBetrO), Dokumentationspflichten und AVS-Zulassungsanforderungen in Apotheken. In Interaktionsprüfung.md und DataMatrix.md als zwingender Rechtsrahmen erwähnt. Fehlt als eigenständiger Artikel für Compliance-Leser im Apothekenbereich.",
-      "mentionedIn": [
-        "content/processes/Interaktionsprüfung.md",
-        "content/standards/DataMatrix.md"
-      ],
-      "priority": 12
-    },
-    {
-      "term": "Erstattungsbetrag",
-      "category": "processes",
-      "reason": "Verhandelter Erstattungsbetrag nach AMNOG-Nutzenbewertung: bestimmt den GKV-Preis für neue Arzneimittel, DiGA und DiPA. In 12 Artikeln erwähnt: Fruehe-Nutzenbewertung, DiGA-Fast-Track, IQWiG, BfArM, G-BA, SGB-XI, DVG, DiGAV, DiPAV, AMNOG, DiGA, DiPA. Verbindet das AMNOG-Verfahren mit der praktischen Preisbildung und ist Voraussetzung für die Erstattungsfähigkeit digitaler Gesundheitsprodukte.",
-      "mentionedIn": [
-        "content/processes/Fruehe-Nutzenbewertung.md",
-        "content/processes/DiGA-Fast-Track.md",
-        "content/organization/IQWiG.md",
-        "content/organization/BfArM.md",
-        "content/organization/G-BA.md",
-        "content/standards/DVG.md",
-        "content/standards/DiGAV.md",
-        "content/standards/DiPAV.md",
-        "content/standards/AMNOG.md",
-        "content/technologies/DiGA.md",
-        "content/technologies/DiPA.md"
-      ],
-      "priority": 11
-    },
-    {
-      "term": "Pflegegrad",
-      "category": "concepts",
-      "reason": "Einstufungssystem für Pflegebedürftigkeit (Pflegegrade 1–5) nach SGB XI: Grundlage für DiPA-Zulassung und Pflegeversicherungsleistungen. In 5 Artikeln erwähnt: Medizinischer-Dienst, DVPMG, DiPAV, SGB-XI, DiPA.",
-      "mentionedIn": [
-        "content/organization/Medizinischer-Dienst.md",
-        "content/standards/DVPMG.md",
-        "content/standards/DiPAV.md",
-        "content/standards/SGB-XI.md",
-        "content/technologies/DiPA.md"
-      ],
-      "priority": 11
-    },
-    {
-      "term": "eHKP",
-      "category": "standards",
-      "reason": "Elektronischer Heil- und Kostenplan: digitale Weiterentwicklung des zahnärztlichen HKP-Formulars im Rahmen des E-Health-Gesetzes. In BEMA.md mehrfach erwähnt, eigenes Fachkonzept der KZBV/BZÄK.",
-      "mentionedIn": [
-        "content/standards/BEMA.md"
-      ],
-      "priority": 7
-    },
-    {
-      "term": "Interop Council",
-      "category": "organization",
-      "reason": "gematik Interoperability Council: in 2 Artikeln (KIG, Interoperabilitätsverzeichnis) als Governance-Gremium für die IOP-Roadmap erwähnt. Keine eigene Seite.",
-      "mentionedIn": [
-        "content/organization/KIG.md",
-        "content/infrastructure/Interoperabilitaetsverzeichnis.md"
-      ],
-      "priority": 4
-    },
-    {
-      "term": "EU-HTA",
-      "category": "standards",
-      "reason": "EU Health Technology Assessment Regulation (2021/2282): ab 2025 gemeinsame klinische Bewertungen auf EU-Ebene für neue Arzneimittel. Im IQWiG-Artikel referenziert.",
-      "mentionedIn": [
-        "content/organization/IQWiG.md"
-      ],
-      "priority": 3
-    },
-    {
       "term": "Festbetrag",
       "category": "concepts",
       "reason": "GKV-Festbetragsregelung für Generika: im AMNOG-Artikel referenziert. Zentraler Preismechanismus in der GKV.",
       "mentionedIn": [
         "content/standards/AMNOG.md"
       ],
-      "priority": 2
+      "priority": 3
     }
   ],
   "done": [
@@ -343,21 +273,29 @@
     "Interaktionsprüfung",
     "LDAP",
     "Zugriffsrecht",
-    "KHSFV",
     "Interop Council",
     "Dispensierung",
     "B3S-Krankenhaus",
     "NIS2UmsuCG",
     "Muster-16",
-    "IOP-Roadmap"
+    "IOP-Roadmap",
+    "ApBetrO",
+    "Pflegegrad",
+    "Erstattungsbetrag",
+    "eHKP",
+    "EU-HTA"
   ],
   "brokenWikiLinks": [],
   "missingRelevance": [
-    "content/processes/BMP.md",
-    "content/processes/DMP.md",
-    "content/processes/eVO.md",
     "content/concepts/PEPP.md",
     "content/concepts/ZETA.md",
+    "content/infrastructure/eGBR.md",
+    "content/infrastructure/gSMC-KT.md",
+    "content/infrastructure/Highspeed-Konnektor.md",
+    "content/infrastructure/HSM-B.md",
+    "content/infrastructure/KV-SafeNet.md",
+    "content/infrastructure/MyHealthAtEU.md",
+    "content/infrastructure/RIS.md",
     "content/organization/Bewertungsausschuss.md",
     "content/organization/Bundesaerztekammer.md",
     "content/organization/DAV.md",
@@ -366,30 +304,20 @@
     "content/organization/Landesaerztekammer.md",
     "content/organization/Medizinischer-Dienst.md",
     "content/organization/OeGD.md",
-    "content/infrastructure/HSM-B.md",
-    "content/infrastructure/Highspeed-Konnektor.md",
-    "content/infrastructure/KV-SafeNet.md",
-    "content/infrastructure/MyHealthAtEU.md",
-    "content/infrastructure/RIS.md",
-    "content/infrastructure/TSL.md",
-    "content/infrastructure/TSP.md",
-    "content/infrastructure/Telematik-ID.md",
-    "content/infrastructure/VPN-Zugangsdienst.md",
-    "content/infrastructure/eGBR.md",
-    "content/infrastructure/gSMC-KT.md",
+    "content/processes/BMP.md",
+    "content/processes/DMP.md",
+    "content/processes/eVO.md",
     "content/standards/BEEP-Gesetz.md",
-    "content/standards/DVPMG.md",
     "content/standards/DiPAV.md",
     "content/standards/E-Health-Gesetz.md",
     "content/standards/GDAG.md",
-    "content/standards/GOZ.md",
     "content/standards/GOÄ.md",
+    "content/standards/GOZ.md",
     "content/standards/IVDR.md",
     "content/standards/KHG.md",
     "content/standards/KRITIS-Dachgesetz.md",
     "content/standards/Matrix-Protokoll.md",
     "content/standards/Patient-Summary.md",
-    "content/standards/SGB-XI.md",
     "content/standards/VDG.md",
     "content/technologies/DiPaG.md",
     "content/technologies/eArztbrief.md",

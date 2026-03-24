@@ -6,7 +6,7 @@ aliases: [NIS-2-Umsetzungsgesetz, NIS-2-Cybersicherheitsstärkungsgesetz, NIS2-U
 relevance:
   sectors: [krankenhaus, ti-infrastruktur, it-dienstleister, hersteller, regulierung]
   interests: [compliance, technik]
-maturity: setzling
+maturity: wachsend
 ---
 
 # NIS2UmsuCG
@@ -60,7 +60,7 @@ Alle verpflichteten Einrichtungen müssen:
 > Für Krankenhaus-IT-Abteilungen bedeutet das NIS2UmsuCG konkrete operative Schritte, die über die Registrierung hinausgehen.
 >
 > **Registrierung (sofort):** Seit dem 6. Dezember 2025 sind Krankenhäuser zur Registrierung beim BSI verpflichtet. Das BSI-Portal (MIP) ist seit März 2026 aktiv. Die IT-Leitung muss eine 24/7-erreichbare Kontaktstelle benennen. Klären Sie, ob Ihr Haus als "wesentliche" oder "wichtige" Einrichtung eingestuft ist.
-> **Meldeprozess für KIS-Vorfälle:** Ein Ransomware-Angriff auf das KIS oder ein unautorisierten Zugriff auf Patientendaten ist ein meldepflichtiger Vorfall. Die Erstmeldung muss innerhalb von 24 Stunden beim BSI eingehen. Richten Sie dafür einen vorbereiteten Meldeprozess ein: Wer meldet? Welche Informationen werden benötigt? Wo ist das BSI-Meldeformular hinterlegt? Die IT-Abteilung sollte den Ablauf jährlich üben.
+> **Meldeprozess für KIS-Vorfälle:** Ein Ransomware-Angriff auf das KIS oder ein unautorisierter Zugriff auf Patientendaten ist ein meldepflichtiger Vorfall. Die Erstmeldung muss innerhalb von 24 Stunden beim BSI eingehen. Richten Sie dafür einen vorbereiteten Meldeprozess ein: Wer meldet? Welche Informationen werden benötigt? Wo ist das BSI-Meldeformular hinterlegt? Die IT-Abteilung sollte den Ablauf jährlich üben.
 > **Lieferantenmanagement:** KIS-Hersteller, Dienstleister mit Fernzugang und Cloud-Anbieter sind Teil der Lieferkette. NIS-2 verlangt vertragliche Sicherheitsanforderungen. Prüfen Sie bestehende KIS-Wartungsverträge auf NIS-2-konforme Klauseln zu Incident-Response, Patch-Pflichten und Zugriffslogging.
 
 ### Abgrenzung zu [[KRITIS]]

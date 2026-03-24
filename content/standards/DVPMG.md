@@ -6,7 +6,7 @@ aliases: [Digitale-Versorgung-und-Pflege-Modernisierungs-Gesetz, Digitale Versor
 relevance:
   sectors: [arztpraxis, krankenhaus, apotheke, pflege, hersteller, patient, kasse]
   interests: [compliance, business]
-maturity: setzling
+maturity: wachsend
 ---
 
 # DVPMG
@@ -15,7 +15,7 @@ Das **DVPMG (Digitale-Versorgung-und-Pflege-Modernisierungs-Gesetz)** ist ein de
 
 ## Erklärt für Einsteiger
 
-Das DVPMG ist das Nachfolgegesetz des [[DVG]] von 2019. Während das DVG digitale Apps für Kranke eingeführt hat, hat das DVPMG dasselbe für Pflegebedürftige gemacht: Wer einen Pflegegrad hat, kann nun auch digitale Helfer-Apps bekommen, die die Pflegekasse bezahlt. Außerdem hat das Gesetz festgelegt, dass Krankenkassen ihren Versicherten eine digitale Identität fürs Gesundheitswesen anbieten müssen, also eine Art Ausweis auf dem Handy für Arztbesuche.
+Das DVPMG ist das Nachfolgegesetz des [[DVG]] von 2019. Während das DVG digitale Apps für Kranke eingeführt hat, hat das DVPMG dasselbe für Pflegebedürftige gemacht: Wer einen [[Pflegegrad]] hat, kann nun auch digitale Helfer-Apps bekommen, die die Pflegekasse bezahlt. Außerdem hat das Gesetz festgelegt, dass Krankenkassen ihren Versicherten eine digitale Identität fürs Gesundheitswesen anbieten müssen, also eine Art Ausweis auf dem Handy für Arztbesuche.
 
 ## Überblick
 

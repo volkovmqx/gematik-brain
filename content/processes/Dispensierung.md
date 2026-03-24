@@ -6,7 +6,7 @@ aliases: [Abgabe, Arzneimittelabgabe, Dispensation]
 relevance:
   sectors: [apotheke, arztpraxis, krankenhaus, kasse, patient]
   interests: [compliance, technik]
-maturity: setzling
+maturity: wachsend
 ---
 
 # Dispensierung
@@ -19,7 +19,7 @@ Wenn du mit einem Rezept in die Apotheke gehst, passiert mehr als ein einfacher 
 
 ## Überblick
 
-Die Dispensierung ist der Kernprozess jeder Apotheke und gesetzlich streng geregelt. Die wichtigste Rechtsgrundlage ist **§ 17 Apothekenbetriebsordnung (ApBetrO)**: Arzneimittel dürfen nur in den Geschäftsräumen der Apotheke, nur durch pharmazeutisches Personal und nur nach Prüfung der Verordnung abgegeben werden.
+Die Dispensierung ist der Kernprozess jeder Apotheke und gesetzlich streng geregelt. Die wichtigste Rechtsgrundlage ist **§ 17 [[ApBetrO|Apothekenbetriebsordnung (ApBetrO)]]**: Arzneimittel dürfen nur in den Geschäftsräumen der Apotheke, nur durch pharmazeutisches Personal und nur nach Prüfung der Verordnung abgegeben werden.
 
 Der Dispensierungsprozess umfasst drei Kernpflichten:
 

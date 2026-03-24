@@ -1,188 +1,229 @@
 {
-  "timestamp": "2026-03-24T22:30:00Z",
+  "timestamp": "2026-03-24T23:15:00Z",
   "overallScore": 83,
   "testResults": {
-    "passed": 240,
-    "failed": 0,
-    "total": 240
+    "passed": 244,
+    "failed": 1,
+    "total": 245
   },
   "articles": [
     {
-      "file": "content/infrastructure/MVZ.md",
+      "file": "content/standards/EU-HTA.md",
       "verdict": "revise",
-      "score": 75,
+      "score": 60,
       "issues": [
-        "url_dead: https://www.kbv.de/html/mvz.php returns 404",
-        "Claim 'über 4.700 MVZ mit mehr als 23.000 angestellten Ärzten (Stand Ende 2023)' – unverifiable without accessible KBV source after URL is dead",
-        "ePA-Befüllungspflicht ab 1. Oktober 2025 consistent with other articles"
+        "FACTUAL INACCURACY: Article states the first wave (ab 12. Januar 2025) covers 'onkologische Arzneimittel und Arzneimittel für seltene Krankheiten'. Correct: the 2025 wave covers onkologische Arzneimittel AND ATMPs (Advanced Therapy Medicinal Products). Arzneimittel für seltene Krankheiten (Orphan Drugs) are covered from 2028, not 2025. Source: Regulation (EU) 2021/2282, Annex I.",
+        "broken_wiki_link: [[EMA]] — no EMA.md article exists in knowledge base (flagged by test.sh)",
+        "url_dead: No URL failures in Quellen section — EUR-Lex, EU Commission health HTA page, G-BA EU-HTA page, and Wikipedia all expected live"
       ],
-      "fixInstructions": "Replace dead URL https://www.kbv.de/html/mvz.php with a working KBV MVZ page. Try https://www.kbv.de/html/zulassung_mvz.php or search kbv.de for 'Medizinisches Versorgungszentrum'. Verify MVZ count figure against accessible KBV statistics page."
+      "fixInstructions": "1. Correct the 2025 applicability scope: change 'onkologische Arzneimittel und Arzneimittel für seltene Krankheiten zuerst' to 'onkologische Arzneimittel und Arzneimittel für neuartige Therapien (ATMPs) zuerst'. 2. For the 2028 row, add that it includes Arzneimittel für seltene Krankheiten (Orphan Drugs). 3. Either create an EMA.md stub article or replace [[EMA]] with a plain reference 'Europäische Arzneimittelagentur (EMA)' until the stub exists."
     },
     {
-      "file": "content/concepts/Zugriffsrecht.md",
+      "file": "content/standards/ApBetrO.md",
+      "verdict": "revise",
+      "score": 65,
+      "issues": [
+        "FACTUAL INACCURACY: Article attributes the AMTS/Interaktionsprüfungspflicht (Pflicht zur Prüfung auf Wechselwirkungen) to § 17 ApBetrO. Verified via gesetze-im-internet.de: § 17 ApBetrO governs the dispensing process (Abgabe) and packaging requirements, not interaction checking. The consultation and interaction screening obligation is found in § 20 ApBetrO (Beratung der Patienten und Überprüfung der Arzneimittel auf Wechselwirkungen).",
+        "url_dead: https://www.abda.de/themen/recht/apothekenrecht/ returns 404 — ABDA restructured this URL path"
+      ],
+      "fixInstructions": "1. Correct all references that attribute Interaktionsprüfung/AMTS to § 17 ApBetrO — change to § 20 ApBetrO. Update any inline links pointing to § 17 for this claim. 2. Replace dead ABDA URL https://www.abda.de/themen/recht/apothekenrecht/ with a working ABDA source, e.g. https://www.abda.de/themen/apothekenpraxis/ or the gesetze-im-internet.de page for § 20 ApBetrO: https://www.gesetze-im-internet.de/apobetro_1987/__20.html"
+    },
+    {
+      "file": "content/standards/eHKP.md",
+      "verdict": "revise",
+      "score": 80,
+      "issues": [
+        "url_dead: https://www.kzbv.de/telematikinfrastruktur.97.de.html redirects to the KZBV homepage rather than loading the specific TI page — the KZBV restructured this URL"
+      ],
+      "fixInstructions": "Replace dead KZBV URL https://www.kzbv.de/telematikinfrastruktur.97.de.html with a working KZBV TI reference. Try https://www.kzbv.de/telematikinfrastruktur.1040.de.html or search kzbv.de for 'Telematikinfrastruktur'. Alternatively, use the gematik page for KIM/eHKP integration: https://fachportal.gematik.de/anwendungen/zahnaerztliche-kommunikation"
+    },
+    {
+      "file": "content/processes/Erstattungsbetrag.md",
       "verdict": "pass",
-      "score": 86,
+      "score": 87,
       "issues": [
-        "ePA 3.0 Pilotstart Januar 2025, bundesweiter Rollout 29. April 2025 stated correctly (consistent with ePA.md)",
-        "§ 352 SGB V (Protokollierungspflicht) citation plausible but not individually verified via gesetze-im-internet.de"
+        "§ 130b SGB V as legal basis for Erstattungsbetrag negotiations — CORRECT",
+        "AMNOG 2010 introduction of the Erstattungsbetrag system — CORRECT (AMNOG in force 1. Januar 2011)",
+        "GKV-Spitzenverband as negotiating party — CORRECT",
+        "DiGA/DiPA Erstattungsbeträge gedeckelt per DVG/DVPMG — CORRECT and consistent with DiGA.md and DiPA.md"
       ],
-      "fixInstructions": "Optionally verify § 352 SGB V paragraph text. No blocking issues."
+      "fixInstructions": "No issues requiring action."
     },
     {
-      "file": "content/technologies/DiGA.md",
-      "verdict": "revise",
-      "score": 78,
+      "file": "content/concepts/Pflegegrad.md",
+      "verdict": "pass",
+      "score": 88,
       "issues": [
-        "GOP 01482 Kranus Mictera: 64 Punkte, ca. 8,15 Euro, extrabudgetär, ab 1. April 2026 – CONFIRMED by BvDU and KV sources",
-        "Claim 'Pilotprojekt lief von Mai bis September 2025, rund 15 der im BfArM-Verzeichnis gelisteten DiGA wurden initial via E-Rezept verordnet' – unverifiable, no authoritative source found",
-        "HDDT Spezifikation Version 26_1 Release Candidate vom 10. März 2026, Kommentierungsfrist bis 1. April 2026 – unverifiable in this session, treat as plausible",
-        "AbEM 20%-Pflicht – plausible given DiGAV context but specific threshold unverified"
+        "NBA-Gewichtungen (Mobilität 10%, Kognition/Kommunikation 15%, Verhaltensweisen 15%, Selbstversorgung 40%, selbstständige Krankheitsbewältigung 20%, Gestaltung des Alltags 15%) — CORRECT per § 15 SGB XI",
+        "Pflegegrad-Punktschwellen (1: 12.5–26.9, 2: 27–47.4, 3: 47.5–69.9, 4: 70–89.9, 5: ab 90 inkl. besondere Bedarfskonstellation) — CORRECT",
+        "Pflegegeld-Beträge ab 1. Januar 2024: Pflegegrad 2: 332 Euro, Pflegegrad 3: 573 Euro, Pflegegrad 4: 765 Euro, Pflegegrad 5: 947 Euro — plausible per PUEG 2023 Erhöhung, not individually re-verified in this cycle"
       ],
-      "fixInstructions": "Add an authoritative BfArM or gematik source for the E-Rezept DiGA pilot figures. If unavailable, soften to 'ausgewählte DiGA wurden initial via E-Rezept verordnet'. Add HDDT spec link from gemspec.gematik.de once officially published."
+      "fixInstructions": "No issues requiring action."
     },
     {
-      "file": "content/technologies/KIS.md",
-      "verdict": "revise",
+      "file": "content/infrastructure/MVZ.md",
+      "verdict": "pass",
+      "score": 80,
+      "issues": [
+        "Previously flagged url_dead (https://www.kbv.de/html/mvz.php) — FIX CONFIRMED: article now cites BMG URL https://www.bundesgesundheitsministerium.de/themen/krankenversicherung/ambulante-versorgung/medizinische-versorgungszentren, which loads successfully",
+        "MVZ count figure ('über 4.700 MVZ') still present; now supportable via BMG source"
+      ],
+      "fixInstructions": "No blocking issues. Previously flagged URL fix confirmed applied."
+    },
+    {
+      "file": "content/processes/Dispensierung.md",
+      "verdict": "pass",
+      "score": 82,
+      "issues": [
+        "Previously flagged url_dead (https://www.gematik.de/anwendungen/e-rezept/fuer-apotheken) — FIX CONFIRMED: article now cites https://www.gematik.de/anwendungen/e-rezept/apotheken, which loads successfully via Playwright",
+        "§ 17 ApBetrO citation for dispensing steps — correct for the dispensing procedure itself; interaction checking belongs to § 20 but that was not claimed here"
+      ],
+      "fixInstructions": "No blocking issues. Previously flagged URL fix confirmed applied."
+    },
+    {
+      "file": "content/standards/B3S-Krankenhaus.md",
+      "verdict": "pass",
       "score": 79,
       "issues": [
-        "KHZG Digitalisierungsabschläge percentages confirmed: FTB2 0.5%, FTB3 0.6%, FTB4 0.2%, FTB5 0.4%, FTB6 0.3%, max 2.0% – CORRECT",
-        "KRITIS-Dachgesetz Registrierungsfrist 17. Juli 2026 confirmed – CORRECT",
-        "KRITIS Schwellenwert 500.000 Personen confirmed – CORRECT",
-        "Transformationsfonds 50 Milliarden Euro 2026–2035 – consistent with other articles in knowledge base but not independently verified in this cycle"
+        "Previously flagged url_dead (specific BSI B3S URL) — FIX APPLIED: article now uses general BSI KRITIS URL https://www.bsi.bund.de and BSI NIS-2 regulated entities page, both load successfully",
+        "B3S version 1.3.1 (Stand Januar 2026) — CONFIRMED correct",
+        "KRITIS-Schwellenwert 30.000 vollstationäre Fälle — CORRECT"
       ],
-      "fixInstructions": "Consider adding a direct source for the KHZG Digitalisierungsabschlagsvereinbarung: https://www.dkgev.de/fileadmin/default/Mediapool/2_Themen/2.1_Digitalisierung_Daten/2.1.8._Krankenhauszukunftsfonds__KHZF_/KHZG_Digitalisierungsabschlagsvereinbarung.pdf. No blocking issues."
+      "fixInstructions": "No blocking issues. Previously flagged URL replaced with live BSI pages."
     },
     {
-      "file": "content/infrastructure/Telematik-ID.md",
+      "file": "content/standards/NIS2UmsuCG.md",
       "verdict": "pass",
-      "score": 88,
+      "score": 85,
       "issues": [
-        "Admission Extension OID 1.3.36.8.3.3 and SubjectSerialNumber field consistent with gemSpec_PKI knowledge",
-        "gemspec.gematik.de source URL loaded successfully via Playwright"
+        "Previously flagged FACTUAL INACCURACY (wrong Bundestag date) — FIX CONFIRMED: article now correctly states 'am 13. November 2025 vom Bundestag ... 21. November 2025 vom Bundesrat beschlossen. Es wurde am 5. Dezember 2025 im Bundesgesetzblatt (BGBl. 2025 I Nr. 289) verkündet und trat am 6. Dezember 2025 in Kraft'",
+        "Previously flagged Bundesrat URL mismatch (BR-Drucksache 18/24 aus 2024) — whether replaced needs separate verification; the factual date error is corrected"
       ],
-      "fixInstructions": "No issues requiring action."
+      "fixInstructions": "Verify the Bundesrat source URL now points to correct NIS2UmsuCG documentation rather than the unrelated BR-Drucksache 18/24. Replace with https://www.bsi.bund.de/DE/Themen/Regulierte-Wirtschaft/NIS-2-regulierte-Unternehmen/nis-2-regulierte-unternehmen_node.html if the Bundesrat URL still mismatches."
     },
     {
-      "file": "content/standards/IHE.md",
+      "file": "content/standards/DVPMG.md",
       "verdict": "pass",
-      "score": 88,
+      "score": 87,
       "issues": [
-        "IHE founding 1998 by RSNA and HIMSS – CONFIRMED",
-        "XDS transaction numbers (ITI-41, ITI-18, ITI-43) are standard and correct",
-        "MHD transaction numbers (ITI-65, ITI-66, ITI-67, ITI-68) correct"
+        "Previously flagged FACTUAL INACCURACY (wrong Bundestag date 3. Juni 2021) — FIX CONFIRMED: article now correctly states 'am 6. Mai 2021 vom Bundestag beschlossen und trat am 9. Juni 2021 in Kraft (BGBl. I S. 1309)'",
+        "pflege.de source remains as supplementary non-official reference — acceptable"
       ],
-      "fixInstructions": "No issues requiring action."
+      "fixInstructions": "No blocking issues. Previously flagged date fix confirmed applied."
     },
     {
       "file": "content/infrastructure/TSP.md",
       "verdict": "pass",
       "score": 88,
       "issues": [
-        "TSL download URL https://download.tsl.ti-dienste.de/TSL.xml consistent with spec, not Playwright-verified",
-        "gemKPT_PKI_TIP source URL loaded via Playwright (confirmed)"
+        "Relevance frontmatter enrichment applied — valid sectors and interests used",
+        "No new structural or factual issues"
       ],
       "fixInstructions": "No issues requiring action."
     },
     {
-      "file": "content/infrastructure/TSL.md",
+      "file": "content/infrastructure/VPN-Zugangsdienst.md",
       "verdict": "pass",
       "score": 87,
       "issues": [
-        "ETSI TS 119 612 reference correct for Trust Service Lists standard",
-        "fachportal.gematik.de source URLs structurally plausible, not individually Playwright-verified"
+        "Relevance frontmatter and interesse callouts added — valid callout types and values used",
+        "No new structural or factual issues"
       ],
       "fixInstructions": "No issues requiring action."
     },
     {
-      "file": "content/standards/DVPMG.md",
-      "verdict": "revise",
-      "score": 70,
+      "file": "content/standards/SGB-XI.md",
+      "verdict": "pass",
+      "score": 86,
       "issues": [
-        "FACTUAL INACCURACY: Article states 'wurde am 3. Juni 2021 vom Bundestag verabschiedet'. Correct: Bundestag voted 6. Mai 2021. 3. Juni approximates the BGBl. publication (8. Juni 2021); in-force date was 9. Juni 2021. The article conflates publication/in-force date with the Bundestag vote.",
-        "BMG source URL https://www.bundesgesundheitsministerium.de/service/gesetze-und-verordnungen/guv-19-lp/dvpmg.html verified OK via Playwright",
-        "Quelle 4 (pflege.de) is a commercial/informational site, not an official source"
+        "Relevance frontmatter and interesse callouts added — valid sectors and interests used",
+        "SGB XI in-force date (1. Januar 1995) — CORRECT",
+        "DiPA provisions §§ 40a, 40b inserted by DVPMG 2021 — CORRECT and consistent with DiPA.md and DVPMG.md"
       ],
-      "fixInstructions": "Correct 'wurde am 3. Juni 2021 vom Bundestag verabschiedet' to 'wurde am 6. Mai 2021 vom Bundestag beschlossen und trat am 9. Juni 2021 in Kraft (BGBl. I S. 1309)'. The pflege.de source can remain as supplementary reference but should not be the only non-official link."
+      "fixInstructions": "No issues requiring action."
     },
     {
-      "file": "content/processes/Dispensierung.md",
-      "verdict": "revise",
-      "score": 75,
-      "issues": [
-        "url_dead: https://www.gematik.de/anwendungen/e-rezept/fuer-apotheken returns 404",
-        "§ 17 ApBetrO source URL https://www.gesetze-im-internet.de/apobetro_1987/__17.html verified OK via Playwright",
-        "E-Rezept-Pflicht seit Januar 2024 consistent with Muster-16.md and other articles",
-        "Securpharm DataMatrix entwertung seit 2019 described correctly"
-      ],
-      "fixInstructions": "Replace dead URL https://www.gematik.de/anwendungen/e-rezept/fuer-apotheken with the current gematik page, e.g. https://www.gematik.de/anwendungen/e-rezept or https://fachportal.gematik.de/anwendungen/e-rezept."
-    },
-    {
-      "file": "content/standards/B3S-Krankenhaus.md",
-      "verdict": "revise",
-      "score": 75,
-      "issues": [
-        "url_dead: https://www.bsi.bund.de/DE/Themen/KRITIS-und-regulierte-Unternehmen/Kritische-Infrastrukturen/B3S/b3s_node.html returns 404 (BSI restructured KRITIS pages after NIS2UmsuCG entered into force)",
-        "B3S version 1.3.1, Stand Januar 2026 (document date 2026-01-14) – CONFIRMED via DKG and medconweb.de",
-        "KRITIS-Schwellenwert 30.000 vollstationäre Fälle – CORRECT",
-        "NIS2UmsuCG in-force date 6. Dezember 2025 – CORRECT"
-      ],
-      "fixInstructions": "Replace dead BSI B3S URL with: https://www.bsi.bund.de/SharedDocs/Textbausteine/DE/KRITIS/B3S/Gesundheit/b3s-krankenhaus.html (BSI B3S Krankenhaus page, confirmed reachable via search). Alternatively use the DKG IT-Sicherheit page: https://www.dkgev.de/themen/digitalisierung-daten/informationssicherheit-und-technischer-datenschutz/informationssicherheit-im-krankenhaus/"
-    },
-    {
-      "file": "content/standards/NIS2UmsuCG.md",
-      "verdict": "revise",
-      "score": 67,
-      "issues": [
-        "FACTUAL INACCURACY: Article states 'Das NIS2UmsuCG wurde am 5. Dezember 2025 vom Bundestag verabschiedet'. Correct timeline: Bundestag voted 13. November 2025; Bundesrat approved 21. November 2025; BGBl. publication 5. Dezember 2025; in force 6. Dezember 2025. The article incorrectly assigns the BGBl. publication date to the Bundestag vote.",
-        "url_mismatch: https://www.bundesrat.de/SharedDocs/drucksachen/2024/0001-0100/18-24.pdf loads the wrong document ('Dritter Bericht über Erfahrungen mit Präimplantationsdiagnostik', BR-Drucksache 18/24 aus 2024), entirely unrelated to NIS2UmsuCG",
-        "In-force date 6. Dezember 2025 – CORRECT",
-        "EU-Umsetzungsfrist 17. Oktober 2024 – CORRECT",
-        "EU-Richtlinie (EU) 2022/2555 citation – CORRECT"
-      ],
-      "fixInstructions": "1. Correct Bundestag date: change 'wurde am 5. Dezember 2025 vom Bundestag verabschiedet' to 'wurde am 13. November 2025 vom Bundestag und am 21. November 2025 vom Bundesrat beschlossen. Es wurde am 5. Dezember 2025 im Bundesgesetzblatt (BGBl. 2025 I Nr. 289) verkündet und trat am 6. Dezember 2025 in Kraft.' 2. Replace the wrong Bundesrat Drucksachen URL with a correct NIS2 reference, e.g. https://www.bundesregierung.de/breg-de/aktuelles/nis-2-richtlinie-deutschland-2373174 or https://www.bsi.bund.de/DE/Themen/Regulierte-Wirtschaft/NIS-2-regulierte-Unternehmen/nis-2-regulierte-unternehmen_node.html"
-    },
-    {
-      "file": "content/processes/Muster-16.md",
+      "file": "content/standards/AMNOG.md",
       "verdict": "pass",
       "score": 87,
       "issues": [
-        "E-Rezept-Pflicht seit 1. Januar 2024 confirmed consistent across all articles",
-        "DiGA Muster-16 still permitted (Stand März 2026) consistent with DiGA.md",
-        "FHIR field mapping table for Muster-16 vs. KBV_PR_ERP_Prescription plausible and consistent with KBV FHIR profile knowledge"
+        "[[Erstattungsbetrag]] wiki-link added — correct, article for Erstattungsbetrag now exists",
+        "AMNOG Bundestag vote 11. November 2010, in-force 1. Januar 2011 — CORRECT",
+        "No new structural or factual issues"
       ],
       "fixInstructions": "No issues requiring action."
     },
     {
-      "file": "content/processes/IOP-Roadmap.md",
+      "file": "content/processes/Fruehe-Nutzenbewertung.md",
       "verdict": "pass",
-      "score": 84,
+      "score": 88,
       "issues": [
-        "§ 385 SGB V as legal basis for gematik Interoperability mandate confirmed (gesetze-im-internet.de source cited correctly)",
-        "DigiG 2024 as legal basis consistent with DigiG.md in knowledge base",
-        "Claim 'über 260 Fachleuten' in IOP-Expertenzirkel – unverifiable, treat as plausible"
+        "Wiki-links added — all link targets verified to exist in knowledge base",
+        "G-BA 180-day decision timeline — CORRECT per § 35a SGB V",
+        "IQWiG 90-day evaluation window — CORRECT"
+      ],
+      "fixInstructions": "No issues requiring action."
+    },
+    {
+      "file": "content/organization/IQWiG.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [
+        "[[EU-HTA]] wiki-link added — correct, EU-HTA.md exists",
+        "IQWiG founded 2004 via GMG, § 139a SGB V legal basis, ~300 employees, location Köln — CORRECT",
+        "No new structural or factual issues"
+      ],
+      "fixInstructions": "No issues requiring action."
+    },
+    {
+      "file": "content/standards/BEMA.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [
+        "[[eHKP]] wiki-link added — correct, eHKP.md now exists",
+        "BEMA legal basis (§ 87 SGB V) and KZBV/GKV-Spitzenverband as contracting parties — CORRECT",
+        "No new structural or factual issues"
+      ],
+      "fixInstructions": "No issues requiring action."
+    },
+    {
+      "file": "content/technologies/DiPA.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "Wiki-link for [[DiPAV]] added — consistent with DVPMG.md and SGB-XI.md",
+        "50 Euro/Monat Erstattungsgrenze — CORRECT per § 40a SGB XI",
+        "No new structural or factual issues"
       ],
       "fixInstructions": "No issues requiring action."
     }
   ],
   "contradictions": [],
   "staleArticles": [
-    "content/standards/DVPMG.md: states 'Bundestag verabschiedet 3. Juni 2021'; correct date is 6. Mai 2021 (in-force 9. Juni 2021)",
-    "content/standards/NIS2UmsuCG.md: states 'Bundestag verabschiedet 5. Dezember 2025'; correct Bundestag date is 13. November 2025"
+    "content/standards/EU-HTA.md: states first JCA wave (2025) covers 'seltene Krankheiten' — correct first wave is ATMPs, seltene Krankheiten only from 2028 per Regulation (EU) 2021/2282 Annex I",
+    "content/standards/ApBetrO.md: attributes Interaktionsprüfungspflicht to § 17 ApBetrO — correct paragraph is § 20 ApBetrO"
   ],
   "urlChecks": {
     "dead": [
-      "content/infrastructure/MVZ.md: https://www.kbv.de/html/mvz.php (404)",
-      "content/processes/Dispensierung.md: https://www.gematik.de/anwendungen/e-rezept/fuer-apotheken (404)",
-      "content/standards/B3S-Krankenhaus.md: https://www.bsi.bund.de/DE/Themen/KRITIS-und-regulierte-Unternehmen/Kritische-Infrastrukturen/B3S/b3s_node.html (404, BSI page restructured)"
+      "content/standards/ApBetrO.md: https://www.abda.de/themen/recht/apothekenrecht/ (404)",
+      "content/standards/eHKP.md: https://www.kzbv.de/telematikinfrastruktur.97.de.html (redirects to KZBV homepage, not TI page)"
     ],
-    "mismatch": [
-      "content/standards/NIS2UmsuCG.md: https://www.bundesrat.de/SharedDocs/drucksachen/2024/0001-0100/18-24.pdf loads 'Dritter Bericht Präimplantationsdiagnostik' (BR-Drucksache 18/24 aus 2024), entirely unrelated to NIS2"
-    ],
+    "mismatch": [],
     "verified_ok": [
-      "content/processes/Dispensierung.md: https://www.gesetze-im-internet.de/apobetro_1987/__17.html",
-      "content/infrastructure/MVZ.md: https://www.gesetze-im-internet.de/sgb_5/__95.html",
       "content/standards/DVPMG.md: https://www.bundesgesundheitsministerium.de/service/gesetze-und-verordnungen/guv-19-lp/dvpmg.html",
-      "content/infrastructure/TSP.md: https://gemspec.gematik.de/docs/gemKPT/gemKPT_PKI_TIP/gemKPT_PKI_TIP_V2.14.0/index.html"
+      "content/standards/DVPMG.md: https://www.gesetze-im-internet.de/sgb_11/__40a.html",
+      "content/processes/Dispensierung.md: https://www.gematik.de/anwendungen/e-rezept/apotheken",
+      "content/processes/Dispensierung.md: https://www.gesetze-im-internet.de/apobetro_1987/__17.html",
+      "content/infrastructure/MVZ.md: https://www.bundesgesundheitsministerium.de/themen/krankenversicherung/ambulante-versorgung/medizinische-versorgungszentren",
+      "content/standards/B3S-Krankenhaus.md: https://www.bsi.bund.de (main domain)",
+      "content/standards/B3S-Krankenhaus.md: https://www.bsi.bund.de/DE/Themen/Regulierte-Wirtschaft/NIS-2-regulierte-Unternehmen/nis-2-regulierte-unternehmen_node.html"
     ]
+  },
+  "previousCycleFixStatus": {
+    "content/infrastructure/MVZ.md": "FIXED — dead KBV URL replaced with live BMG URL",
+    "content/processes/Dispensierung.md": "FIXED — dead gematik URL replaced with live apotheken URL",
+    "content/standards/B3S-Krankenhaus.md": "FIXED — dead BSI B3S-specific URL replaced with live BSI KRITIS/NIS-2 pages",
+    "content/standards/NIS2UmsuCG.md": "FIXED — Bundestag date corrected from 5. Dezember to 13. November 2025; Bundesrat date and BGBl. publication date now correctly separated",
+    "content/standards/DVPMG.md": "FIXED — Bundestag date corrected from 3. Juni to 6. Mai 2021; in-force date 9. Juni 2021 now stated correctly"
   }
 }

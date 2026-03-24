@@ -6,7 +6,7 @@ aliases: [Frühe Nutzenbewertung, Zusatznutzenbewertung, AMNOG-Verfahren, § 35a
 relevance:
   sectors: [hersteller, kasse, regulierung, forschung, arztpraxis, patient]
   interests: [compliance, business]
-maturity: immergruen
+maturity: wachsend
 ---
 
 # Frühe Nutzenbewertung
@@ -33,7 +33,7 @@ Das Verfahren ist unmittelbar bei der europäischen Marktzulassung durch die [[Z
 - **[[G-BA]]** (Gemeinsamer Bundesausschuss): Träger des Verfahrens, trifft die abschließende Bewertungsentscheidung.
 - **[[IQWiG]]** (Institut für Qualität und Wirtschaftlichkeit im Gesundheitswesen): Wird vom G-BA beauftragt, das Herstellerdossier wissenschaftlich zu bewerten. Das IQWiG hat drei Monate Zeit für seine Bewertung.
 - **Hersteller**: Reichen das Dossier ein, können Stellung nehmen und sind verpflichtet, angeforderte Daten nachzuliefern.
-- **GKV-Spitzenverband**: Verhandelt nach der Nutzenbewertung den Erstattungsbetrag.
+- **GKV-Spitzenverband**: Verhandelt nach der Nutzenbewertung den [[Erstattungsbetrag]].
 - **Patientenvertreter und Fachgesellschaften**: Können im Stellungnahmeverfahren kommentieren.
 
 > [!praxis-tipp] Praxis-Tipp: Neues Medikament verordnen: Was beachten?

@@ -6,12 +6,12 @@ aliases: [Arzneimittelmarktneuordnungsgesetz, frühe Nutzenbewertung]
 relevance:
   sectors: [kasse, regulierung, hersteller, arztpraxis, krankenhaus, forschung]
   interests: [compliance, business]
-maturity: immergruen
+maturity: wachsend
 ---
 
 # AMNOG
 
-Das **AMNOG (Arzneimittelmarktneuordnungsgesetz)** ist das deutsche Gesetz aus dem Jahr 2011, das die [[Fruehe-Nutzenbewertung|frühe Nutzenbewertung]] neuer Arzneimittel durch den [[G-BA]] und das [[IQWiG]] eingeführt hat und damit den Erstattungsbetrag für neue Medikamente in der [[GKV]] an den nachgewiesenen Zusatznutzen knüpft.
+Das **AMNOG (Arzneimittelmarktneuordnungsgesetz)** ist das deutsche Gesetz aus dem Jahr 2011, das die [[Fruehe-Nutzenbewertung|frühe Nutzenbewertung]] neuer Arzneimittel durch den [[G-BA]] und das [[IQWiG]] eingeführt hat und damit den [[Erstattungsbetrag]] für neue Medikamente in der [[GKV]] an den nachgewiesenen Zusatznutzen knüpft.
 
 ## Erklärt für Einsteiger
 

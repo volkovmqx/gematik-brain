@@ -6,7 +6,7 @@ aliases: [Digitale Pflegeanwendungen, DiPA]
 relevance:
   sectors: [pflege, hersteller, startup, kasse, patient, regulierung]
   interests: [compliance, business, patient]
-maturity: immergruen
+maturity: wachsend
 ---
 
 # DiPA
@@ -21,7 +21,7 @@ Digitale Pflegeanwendungen (DiPA) sind vom [[BfArM]] zugelassene digitale Anwend
 
 DiPA wurden mit dem Digitale-Versorgung-und-Pflege-Modernisierungs-Gesetz ([[DVPMG]]) vom 9. Juni 2021 eingeführt. Die rechtliche Grundlage findet sich in den §§ 40a und 40b des Elften Buches Sozialgesetzbuch ([[SGB-XI|SGB XI]]). Die zugehörige Ausführungsverordnung ist die [[DiPAV|Digitale Pflegeanwendungen-Verordnung (DiPAV)]] vom Oktober 2022.
 
-Das [[BfArM]] führt das Prüfverfahren durch und betreibt das DiPA-Verzeichnis. Nur DiPA, die in diesem Verzeichnis aufgeführt sind, können von den Pflegekassen erstattet werden. Pflegebedürftige der Pflegegrade 1 bis 5 in häuslicher Pflege haben Anspruch auf Versorgung mit DiPA.
+Das [[BfArM]] führt das Prüfverfahren durch und betreibt das DiPA-Verzeichnis. Nur DiPA, die in diesem Verzeichnis aufgeführt sind, können von den Pflegekassen erstattet werden. Pflegebedürftige der [[Pflegegrad|Pflegegrade]] 1 bis 5 in häuslicher Pflege haben Anspruch auf Versorgung mit DiPA.
 
 Der monatliche Erstattungsbetrag beträgt bis zu 50 Euro für die DiPA selbst sowie ergänzende Unterstützungsleistungen ambulanter Pflegeeinrichtungen. Die Pflegekasse entscheidet im Einzelfall über die Notwendigkeit der Versorgung.
 

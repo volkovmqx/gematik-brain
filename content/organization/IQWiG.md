@@ -3,7 +3,7 @@ title: IQWiG
 audience: [technical, non-technical]
 tags: [organisation, nutzenbewertung, amnog, evidenz, g-ba]
 aliases: [Institut für Qualität und Wirtschaftlichkeit im Gesundheitswesen]
-maturity: immergruen
+maturity: wachsend
 relevance:
   sectors: [hersteller, kasse, regulierung, forschung]
   interests: [compliance, business]
@@ -29,7 +29,7 @@ Gesetzliche Grundlage ist **§ 139a SGB V**. Das IQWiG erhält Aufträge ausschl
 - **Methodenbewertung**: Bewertung diagnostischer und therapeutischer Verfahren auf Basis klinischer Studien (§ 135 SGB V).
 - **Leitlinien**: Erstellung von Patientenleitlinien und evidenzbasierten Informationen für die Öffentlichkeit (gesundheitsinformation.de).
 - **DiGA-Nutzenbewertung**: Im Rahmen des Fast-Track-Verfahrens für Digitale Gesundheitsanwendungen ([[DiGA]]) kann der G-BA das IQWiG mit der Nutzenbewertung einer DiGA beauftragen, wenn nach der vorläufigen Aufnahme kein ausreichender Nutzenbeweis vorliegt.
-- **EU-HTA-Verfahren**: Seit 2025 beteiligt sich das IQWiG an gemeinsamen klinischen Bewertungen auf EU-Ebene (EU-Verordnung 2021/2282). Ab Frühjahr 2026 starten erste AMNOG-Verfahren mit EU-HTA-Vorabprüfung.
+- **[[EU-HTA]]-Verfahren**: Seit 2025 beteiligt sich das IQWiG an gemeinsamen klinischen Bewertungen auf EU-Ebene ([[EU-HTA|EU-Verordnung 2021/2282]]). Ab Frühjahr 2026 starten erste AMNOG-Verfahren mit EU-HTA-Vorabprüfung.
 
 > [!interesse-compliance]
 > Für Hersteller neuer Arzneimittel startet mit der Markteinführung (Tag 0) automatisch das AMNOG-Verfahren: Das Dossier muss gleichzeitig beim [[G-BA]] eingereicht werden. Ab Tag 90 ist der IQWiG-Bewertungsbericht öffentlich. Ab 2026 starten erste AMNOG-Verfahren mit EU-HTA-Vorabprüfung, was eine frühzeitige Koordination mit europäischen Bewertungsstellen erfordert. Für [[DiGA]]-Hersteller: Wenn der G-BA nach der 12-monatigen Probephase das IQWiG mit einer Nutzenbewertung beauftragt, kann die DiGA bei nicht belegtem Nutzen aus dem Verzeichnis gestrichen werden.

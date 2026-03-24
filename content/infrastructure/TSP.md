@@ -4,7 +4,7 @@ audience: [technical]
 tags: [infrastruktur, pki, zertifikate, sicherheit, vertrauensdienste]
 aliases: [TSP, Trust Service Provider, Zertifikatsaussteller, Vertrauensdiensteanbieter]
 relevance:
-  sectors: [ti-infrastruktur, hersteller, it-dienstleister]
+  sectors: [arztpraxis, krankenhaus, zahnarzt, apotheke, hersteller, ti-infrastruktur]
   interests: [technik, compliance]
 maturity: wachsend
 ---

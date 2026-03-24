@@ -59,7 +59,7 @@ Das deutsche System zur Umsetzung heißt [[Securpharm]]. Hersteller kodieren die
 > Häufiger Fehler: Scanner ist auf 1D-Modus eingestellt. Prüfen Sie die Scannerkonfiguration in den AVS-Einstellungen.
 
 > [!frist-warnung] Frist-Warnung: Securpharm-Scan-Pflicht bei Arzneimittelabgabe
-> **Rechtsgrundlage:** Art. 25 Delegierte Verordnung (EU) 2016/161 i.V.m. § 17 Abs. 6c ApBetrO (Apothekenbetriebsordnung)
+> **Rechtsgrundlage:** Art. 25 Delegierte Verordnung (EU) 2016/161 i.V.m. § 17 Abs. 6c [[ApBetrO]] (Apothekenbetriebsordnung)
 > **Frist:** Seit 9. Februar 2019 verbindlich für alle EU-Mitgliedstaaten. Keine laufende Übergangsfrist mehr. Jede Abgabe eines verschreibungspflichtigen Arzneimittels erfordert den Verifikationsscan.
 > **Handlungsbedarf:** Apotheken (öffentlich und Krankenhausapotheken) sind verpflichtet, bei jeder Abgabe von Rx-Arzneimitteln den GS1-DataMatrix-Code zu scannen, die Seriennummer gegen das EMVS (European Medicines Verification System) zu prüfen und die Packung anschließend zu deaktivieren. Dazu wird ein 2D-Scanner und ein AVS mit aktiver securPharm-Anbindung benötigt.
 > **Bei Nichtbeachtung:** Verstöße können als Verstoß gegen das Arzneimittelgesetz (§ 8 AMG) gewertet werden und durch Landesbehörden mit Auflagen bis hin zur Betriebsuntersagung geahndet werden. Hersteller ohne korrekte Serialisierung riskieren Rückrufverpflichtungen.

@@ -33,7 +33,7 @@ Mit der [[ePA]] und dem [[eMP|Elektronischen Medikationsplan (eMP)]] soll die In
 
 ### Rechtliche Verpflichtung
 
-Die Interaktionsprüfung ist keine freiwillige Leistung. Sie ist Teil der gesetzlich vorgeschriebenen AMTS-Prüfungen, die Apotheken gemäß Apothekenbetriebsordnung (ApBetrO) durchführen müssen. Apothekensoftware (AVS) muss für die Zulassung in Deutschland nachweisen, dass sie die AMTS-Prüfungen korrekt implementiert.
+Die Interaktionsprüfung ist keine freiwillige Leistung. Sie ist Teil der gesetzlich vorgeschriebenen AMTS-Prüfungen, die Apotheken gemäß [[ApBetrO|Apothekenbetriebsordnung (ApBetrO)]] durchführen müssen. Apothekensoftware (AVS) muss für die Zulassung in Deutschland nachweisen, dass sie die AMTS-Prüfungen korrekt implementiert.
 
 > [!frist-warnung] Frist-Warnung: AMTS-Prüfpflicht und eMP-Befüllung in der Apotheke
 > **Rechtsgrundlage:** § 17 Abs. 1 ApBetrO (Beratungs- und Prüfpflicht bei der Arzneimittelabgabe); § 22 ApBetrO (Dokumentationspflicht); § 334 Abs. 1 Nr. 4 SGB V (Elektronischer Medikationsplan in der ePA)

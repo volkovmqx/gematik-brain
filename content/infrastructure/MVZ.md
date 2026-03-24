@@ -6,7 +6,7 @@ aliases: [Medizinisches Versorgungszentrum, Medizinische Versorgungszentren]
 relevance:
   sectors: [arztpraxis, krankenhaus, it-dienstleister]
   interests: [business, compliance]
-maturity: setzling
+maturity: wachsend
 ---
 
 # MVZ
