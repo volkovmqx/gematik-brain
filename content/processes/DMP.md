@@ -3,6 +3,9 @@ title: DMP
 audience: [technical, non-technical]
 tags: [processes, chronische-erkrankung, gkv, g-ba, versorgung]
 aliases: [Disease-Management-Programm, Disease-Management-Programme, Chronikerprogramm]
+relevance:
+  sectors: [arztpraxis, krankenhaus, kasse, patient]
+  interests: [compliance, patient]
 maturity: wachsend
 ---
 
@@ -17,6 +20,9 @@ Stell dir vor, du hast Diabetes. Ohne besonderes Programm gehst du mal zum Hausa
 ## Überblick
 
 DMPs wurden in Deutschland mit dem Gesetz zur Reform des Risikostrukturausgleichs im Jahr 2002 eingeführt. Rechtsgrundlage ist § 137f [[SGB V]]. Der [[G-BA]] (Gemeinsamer Bundesausschuss) legt in der DMP-Anforderungen-Richtlinie (DMP-A-RL) fest, für welche chronischen Krankheiten ein DMP aufgelegt werden kann und welche inhaltlichen Anforderungen es erfüllen muss.
+
+> [!interesse-patient]
+> Wenn Sie an einer chronischen Erkrankung leiden (zum Beispiel Diabetes, Asthma, KHK oder Brustkrebs), können Sie sich bei Ihrer Krankenkasse in ein passendes Disease-Management-Programm einschreiben. Das ist kostenlos und freiwillig. Sie bekommen dann regelmäßige Kontrolltermine, Schulungsangebote und eine strukturierte Begleitung durch Ihren Hausarzt. Sie können das Programm jederzeit wieder verlassen. Fragen Sie Ihren Arzt oder Ihre Krankenkasse, ob für Ihre Erkrankung ein DMP verfügbar ist.
 
 Die Krankenkassen schließen auf Basis dieser Richtlinie Verträge mit Leistungserbringern (Hausärzte, Fachärzte, Krankenhäuser) und melden die Programme beim Bundesamt für Soziale Sicherung (BAS) zur Zulassung an.
 
@@ -66,6 +72,9 @@ Die Datensätze werden elektronisch an Datenannahmestellen übermittelt, von dor
 ### Schnittstellen zur TI
 
 Der [[G-BA]] hat im März 2025 digitale Module für DMP Diabetes mellitus Typ 1 und 2 beschlossen. Diese Module erlauben die digitale Unterstützung der Versorgung, z.B. durch [[DiGA|digitale Gesundheitsanwendungen (DiGA)]] zur Begleitung zwischen Arztterminen. Perspektivisch sollen DMP-Dokumentationen auch über die [[ePA]] zugänglich sein, sodass alle beteiligten Leistungserbringer auf dieselben Verlaufsdaten zugreifen können.
+
+> [!interesse-compliance]
+> Arztpraxen, die an DMP-Verträgen teilnehmen, müssen die strukturierten Dokumentationsdatensätze fristgerecht elektronisch übermitteln. Die Fristen richten sich nach dem jeweiligen DMP-Vertrag mit der Krankenkasse (üblich: quartalsweise). Fehlerhafte oder fehlende Dokumentationen können zur Rückforderung der Dokumentationspauschale führen. Praxen müssen außerdem die jährlichen Feedbackberichte der Auswertungsstellen auswerten. DMP-Schulungsangebote für Patienten sind vertraglich vorgeschrieben und müssen dokumentiert werden.
 
 Die Abrechnung der Dokumentations- und Koordinationsleistungen erfolgt über die [[Kassenaerztliche-Vereinigung|Kassenärztliche Vereinigung]] auf Basis des [[EBM]].
 

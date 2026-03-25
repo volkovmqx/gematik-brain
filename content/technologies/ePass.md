@@ -73,7 +73,7 @@ Nect verarbeitet biometrische Daten (Gesichtsbild). Diese Daten werden laut Nect
 
 ## Quellen
 
-- [gematik Fachportal: Identifikationsverfahren – Festlegung und bestätigte Verfahren](https://fachportal.gematik.de/suche?q=ePass)
+- [gematik Fachportal: Identifikationsverfahren mit Bestätigung der sicherheitstechnischen Eignung (inkl. Nect ePass)](https://fachportal.gematik.de/fileadmin/Fachportal/Identitaeten/Identifikationsverfahren_mit_sicherheitstechnischer_Eignung.pdf)
 - [Presseportal: BITMARCK - Neues Identifizierungsverfahren ePass (März 2026)](https://www.presseportal.de/pm/181613/6237230)
 - [healthcare-digital.de: ePass vereinfacht Zugang zur ePA](https://www.healthcare-digital.de/epass-vereinfacht-zugang-zur-epa-a-4cf2ce59ce59e9c10231ef31660b3ca5/)
 - [Startbase: Offizieller Startschuss für Nect Ident mit ePass](https://www.startbase.com/news/offizieller-startschuss-fuer-nect-ident-mit-epass/)

@@ -6,7 +6,7 @@ aliases: [Elektronischer Heil- und Kostenplan, elektronischer HKP, eHeilkostenpl
 relevance:
   sectors: [zahnarzt, kasse, patient, hersteller, it-dienstleister]
   interests: [compliance, technik]
-maturity: setzling
+maturity: immergruen
 ---
 
 # eHKP
@@ -167,7 +167,7 @@ Für die eHKP-Einführung benötigen Zahnarztpraxen keine zusätzliche Hardware,
 
 ## Quellen
 
-- [KZBV – Kassenzahnärztliche Bundesvereinigung (Träger des eHKP/EBZ-Verfahrens)](https://www.kzbv.de)
+- [KZBV – Elektronisches Beantragungs- und Genehmigungsverfahren (EBZ)](https://www.kzbv.de/zahnaerzte/digitales/elektronisches-beantragungs-und-genehmigungsverfahren/)
 - [§ 87 SGB V – Gesetze im Internet](https://www.gesetze-im-internet.de/sgb_5/__87.html)
 - [gematik: KIM – Kommunikation im Medizinwesen](https://www.gematik.de/anwendungen/kim)
 - [Wikipedia: Heil- und Kostenplan](https://de.wikipedia.org/wiki/Heil-_und_Kostenplan)

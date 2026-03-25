@@ -67,7 +67,7 @@ Die TI wird grundlegend weiterentwickelt. Die wichtigsten Änderungen:
 - **[[TI-Gateway]] statt Konnektor**: Hardwareunabhängig, flexibler, zukunftssicher
 - **[[VSDM]] 2.0** ist die erste TI-2.0-Anwendung (Start: 30. Juni 2026)
 
-Über 19 zugelassene [[VPN-Zugangsdienst|VPN-Zugangsdienstanbieter]] bieten Anschluss-Pakete an.
+Über 19 zugelassene [[VPN-Zugangsdienst|VPN-Zugangsdienstanbieter]] bieten Anschluss-Pakete an. Der Oberbegriff für alle Zugangsformen (VPN-Zugangsdienst und [[TI-Gateway]]) ist der [[Zugangsdienst]].
 
 ### Netzwerk
 
@@ -114,6 +114,8 @@ Der **Transformationsfonds** stellt **50 Milliarden Euro** (2026 bis 2035) für 
 Krankenhäuser ohne zertifiziertes [[Patientenportal]] erhalten ab 2026 einen Abschlag von 0,5 Prozent je stationären Fall.
 
 ### Betriebsstabilität und Ausfälle
+
+Am **10. Februar 2026** kam es zu einem mehrstündigen TI-Ausfall (ca. 3:05 bis 11:00 Uhr). Auslöser war ein Rauchmelder-Alarm in einem Frankfurter IBM-Rechenzentrum, der eine automatische Sicherheitsabschaltung auslöste. Betroffen waren die Dienste [[ePA]], [[E-Rezept]], [[KIM]] und [[VSDM]]. Der Vorfall unterstreicht die physische Abhängigkeit der TI von wenigen zentralen Rechenzentrumsstandorten: Ein einzelner Fehlalarm in Frankfurt legte für acht Stunden wesentliche TI-Anwendungen lahm.
 
 Am 3. März 2026 kam es zu einem Mehrfach-Ausfall-Tag, der das systemische Konzentrationsrisiko der TI deutlich machte: Zwischen 12:30 und 14:00 Uhr fielen Bitmarck-Fachdienste und das KBV aAdG-NetG aus. Dieser Ausfall lief unabhängig vom RISE-TI-Gateway-Ausfall desselben Tages, der alle über RISE angeschlossenen Leistungserbringer von der TI trennte. Weitere Teilausfälle folgten am 4. und 5. März 2026. Mangels Offline-Fallback-Lösung mussten viele Apotheken Patienten abweisen. Die Ausfälle gelten als Mitauslöser für den bundesweiten Apothekenstreiktag am 23. März 2026. Die gematik verwies auf PoPP und VSDM 2.0 als geplante Stabilitätsverbesserungen.
 

@@ -1975,7 +1975,9 @@
         "IDP.md"
       ],
       "category": "specification",
-      "action": "update",
+      "action": "applied",
+      "appliedDate": "2026-03-25",
+      "details": "ePass.md bereits vollständig mit allen Details (Barmer, BITMARCK, 25.03.2026, Nect GmbH, unterstützte Dokumente) vorhanden. ePA.md: ePass als Authentisierungsweg bereits in Abschnitt 'Authentisierungsmethoden' dokumentiert. Gesundheits-ID.md: Abschnitt 'ePass als ergänzendes Identifikationsverfahren' bereits vorhanden. IDP.md: Kein separater Update nötig.",
       "suggestedTerm": "ePass"
     },
     {
@@ -1999,7 +2001,9 @@
         "ePA.md"
       ],
       "category": "specification",
-      "action": "update"
+      "action": "applied",
+      "appliedDate": "2026-03-25",
+      "details": "ePA.md: Granulare eML-Kontrolle ab März 2026 in Abschnitt 'Transparenz und Kontrolle' ergänzt. Versicherte können eML gezielt für einzelne Einrichtungen ausblenden (ePA 3.1.2-Funktion). Unterschied zu früherem pauschalem Ausblenden erläutert. Hinweis auf späteren vollständigen granularen Dokumentenzugriff ergänzt."
     },
     {
       "title": "TI-Ausfall 10. Februar 2026: Ursache bestätigt als Rauchmelder-Auslösung in Frankfurter IBM-Rechenzentrum",
@@ -2011,9 +2015,26 @@
         "Telematikinfrastruktur.md"
       ],
       "category": "security",
-      "action": "update"
+      "action": "applied",
+      "appliedDate": "2026-03-25",
+      "details": "Telematikinfrastruktur.md: Neuer Absatz zum 10.02.2026-Ausfall in Abschnitt 'Betriebsstabilität und Ausfälle' ergänzt: Rauchmelder-Alarm im Frankfurter IBM-Rechenzentrum, automatische Sicherheitsabschaltung, ca. 3:05-11:00 Uhr (8 Stunden), betroffene Dienste ePA/E-Rezept/KIM/VSDM, physische Abhängigkeit von zentralen Rechenzentrumsstandorten betont. IDP.md: Ausfall bereits vollständig dokumentiert (kein weiteres Update nötig)."
+    },
+    {
+      "title": "NIS2UmsuCG: BSI startet aktive Durchsetzungsphase nach Registrierungsfrist 6. März 2026",
+      "date": "2026-03-07",
+      "source": "https://www.advisori.de/blog/nis2-durchsetzung-2026-bsi-pruefung-bussgeld",
+      "summary": "Die Registrierungsfrist für das NIS-2-Umsetzungsgesetz (NIS2UmsuCG, in Kraft seit 6. Dezember 2025) lief am 6. März 2026 ab. Laut BSI-Schätzungen haben ca. 18.500 Unternehmen die Frist versäumt. Das BSI ist damit von der Beratungs- in die aktive Durchsetzungsphase übergegangen: Es kann nun bindende Anordnungen erteilen, Audits durchführen, Bußgelder bis zu 10 Millionen Euro verhängen und Geschäftsleitungen persönlich haftbar machen (§ 38 NIS2UmsuCG). Im Gesundheitswesen betroffen: Krankenhäuser, Labore, Pharmahersteller, Medizinproduktehersteller und TI-Dienstleister mit mindestens 50 Mitarbeitern oder 10 Millionen Euro Jahresumsatz. Anforderungen: Risikoanalysen, Sicherheitsmaßnahmen (MFA, Verschlüsselung, Zugriffskontrollen), Meldepflicht bei erheblichen Vorfällen innerhalb 24 Stunden, BSI-Online-Portal für Meldungen seit 6. Januar 2026 aktiv.",
+      "affects": [
+        "BSI.md",
+        "KIS.md",
+        "Telematikinfrastruktur.md"
+      ],
+      "category": "regulation",
+      "action": "new_article",
+      "details": "NIS2 / NIS2UmsuCG ist bislang nicht in der Wissensbasis dokumentiert, obwohl es alle Krankenhäuser, viele TI-Dienstleister und Medizinproduktehersteller betrifft. Ein neuer Artikel 'NIS2.md' (oder 'NIS2UmsuCG.md') im Ordner content/standards/ oder content/concepts/ wäre sinnvoll. BSI.md sollte den Übergang zur Durchsetzungsphase ab März 2026 und die BSI-Befugnisse (§ 38 NIS2UmsuCG) ergänzen. KIS.md: Hinweis auf NIS2-Pflichten für Krankenhäuser.",
+      "suggestedTerm": "NIS2UmsuCG"
     }
   ],
-  "lastRun": "2026-03-25T10:00:00Z",
+  "lastRun": "2026-03-25T14:00:00Z",
   "lastChecked": "2026-03-25"
 }

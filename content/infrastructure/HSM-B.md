@@ -3,6 +3,10 @@ title: HSM-B
 audience: [technical]
 tags: [infrastruktur, sicherheit, identitaet, smcb, konnektor]
 aliases: [Hardware Security Module Typ B]
+relevance:
+  sectors: [krankenhaus, hersteller, ti-infrastruktur, it-dienstleister]
+  interests: [technik]
+maturity: immergruen
 ---
 
 # HSM-B
@@ -37,6 +41,9 @@ Das HSM-B löst das zentrale Problem großer Einrichtungen: Dort muss die [[SMC-
 | RISE GmbH | HSK-Herstellung und technische Umsetzung |
 
 ## Technische Details
+
+> [!interesse-technik]
+> Das HSM-B implementiert dieselbe X.509-Zertifikatsstruktur wie die [[SMC-B]] (C.HCI.AUT, C.HCI.ENC, C.HCI.OSIG). Die Zertifikate werden von zugelassenen Trustcentern (D-Trust, Bundesdruckerei) erzeugt und sicher in den [[Highspeed-Konnektor]] eingebracht. Schlüsselgenerierung erfolgt innerhalb des HSM, private Schlüssel verlassen das Modul nie. Für Hersteller: Die Integration in PVS- und KIS-Systeme ändert sich durch das HSM-B nicht, da die API-Schnittstellen zur [[SMC-B]]-Nutzung beibehalten werden. Der HSK unterstützt Parallelbetrieb HSM-B + SMC-B für schrittweise Migration. Spezifikation: gemSpec_SMC-B_OCI und HSK-Produktdokumentation von RISE GmbH.
 
 ### Sicherheitsarchitektur
 

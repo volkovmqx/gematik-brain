@@ -3,7 +3,10 @@ title: BMP
 audience: [technical, non-technical]
 tags: [prozess, medikation, medikationsplan, papier, qr-code]
 aliases: [Bundeseinheitlicher Medikationsplan, Medikationsplan, BMP]
-maturity: immergruen
+relevance:
+  sectors: [arztpraxis, apotheke, krankenhaus, pflege, patient]
+  interests: [compliance, patient]
+maturity: wachsend
 ---
 
 # BMP
@@ -17,6 +20,9 @@ Stell dir vor, du nimmst fünf Medikamente von drei verschiedenen Ärzten. Kein 
 ## Überblick
 
 Der BMP wurde zum **1. Oktober 2016** eingeführt, als Rechtsgrundlage gilt **§ 31a SGB V**. Seitdem haben Patienten mit mindestens drei verschreibungspflichtigen Dauermedikamenten Anspruch auf die Erstellung, Aktualisierung und Aushändigung eines BMP durch ihren Arzt. Apotheken sind verpflichtet, auf Wunsch den BMP zu aktualisieren.
+
+> [!interesse-patient]
+> Wenn Sie drei oder mehr Dauermedikamente einnehmen, haben Sie das Recht, von Ihrem Arzt einen Medikationsplan zu verlangen. Der Plan listet alle Ihre Medikamente mit Dosierung und Hinweisen auf einem DIN-A4-Blatt auf. Sie können ihn in jeder Arztpraxis und Apotheke vorzeigen. Ab März 2026 gibt es auch den digitalen Medikationsplan in der ePA-App: Fragen Sie Ihren Arzt, ob Ihre Medikamente bereits digital in die [[ePA]] eingetragen sind.
 
 Der BMP basiert auf einer gemeinsamen Vereinbarung von [[KBV]] (Kassenärztliche Bundesvereinigung), [[Bundesaerztekammer|Bundesärztekammer (BÄK)]] und [[ABDA]] (Deutscher Apothekerverband). Die technische Spezifikation (Anlage 3 der Vereinbarung) definiert Inhalt, Format und Codierung des QR-Codes.
 
@@ -56,7 +62,10 @@ Primärsysteme ([[PVS]], [[AVS]]) können den QR-Code einlesen und automatisch d
 
 Neben dem Papierausdruck konnte der BMP auf dem Chip der [[eGK]] gespeichert werden. Das erforderte eine Verbindung zur [[Telematikinfrastruktur]] und den [[Konnektoren|Konnektor]] in der Praxis. Die Speicherung auf der eGK setzte sich in der Praxis weniger durch als der Papierausdruck.
 
-Ab dem Rollout des digitalen [[eMP]] im März 2026 wird die eGK-Speicherung des BMP durch den Medication Service der [[ePA]] abgelöst. Der [[eMP]] ist vollständig [[FHIR]]-basiert und erlaubt automatische Aktualisierung durch Dispensierdaten aus dem [[E-Rezept]]-Fachdienst.
+> [!interesse-compliance]
+> Arztpraxen und Apotheken sind weiterhin verpflichtet, den BMP auf Anfrage zu erstellen und auszuhändigen (§ 31a [[SGB-V|SGB V]]). Die Pflicht entfällt nicht durch die Einführung des [[eMP]]. Solange nicht alle Patienten die [[ePA]] aktiv nutzen, bleibt der Papier-BMP ein notwendiger Parallelweg. PVS-Hersteller sind verpflichtet, die BMP-Erstellung und den QR-Code-Export weiterhin zu unterstützen.
+
+Ab dem Rollout des digitalen [[eMP]] im März 2026 wird die eGK-Speicherung des BMP durch den Medication Service des [[ePA-Aktensystem|ePA-Aktensystems]] abgelöst. Der [[eMP]] ist vollständig [[FHIR]]-basiert und erlaubt automatische Aktualisierung durch Dispensierdaten aus dem [[E-Rezept]]-Fachdienst.
 
 ### Abgrenzung zum Notfallausweis
 

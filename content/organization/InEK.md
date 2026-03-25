@@ -6,7 +6,7 @@ aliases: [Institut für das Entgeltsystem im Krankenhaus, InEK GmbH, DRG-Institu
 relevance:
   sectors: [krankenhaus, kasse, regulierung, forschung]
   interests: [compliance, business]
-maturity: setzling
+maturity: immergruen
 ---
 
 # InEK
@@ -41,7 +41,7 @@ Das InEK erfüllt vier Kernaufgaben:
 Die Grundlage für die DRG-Kalkulation sind die **Istkosten** von freiwillig teilnehmenden Krankenhäusern (Kalkulationskrankenhäuser). Für das G-DRG-System 2026 haben rund **260 Krankenhäuser** ihre Kostendaten geliefert, was mehrere Millionen Behandlungsfälle umfasst.
 
 > [!interesse-compliance]
-> Jedes Krankenhaus ist nach § 21 KHEntgG verpflichtet, jährlich seine DRG-Falldaten im XML-Format an das InEK zu übermitteln. Frist ist in der Regel der 31. März des Folgejahres. Fehlende oder fehlerhafte Datenmeldungen können zu Korrekturen der Vergütungsvereinbarungen führen. Zudem sind die Deutschen Kodierrichtlinien (DKR), die das InEK jährlich im Dezember veröffentlicht, ab dem 1. Januar des Folgejahres für alle Abrechnungen verbindlich. KIS-Systeme müssen den neuen Grouper-Algorithmus und die aktualisierten DKR jährlich vor dem Jahreswechsel einspielen.
+> Jedes Krankenhaus ist nach § 21 KHEntgG verpflichtet, jährlich seine DRG-Falldaten im XML-Format an das InEK zu übermitteln. Frist ist in der Regel der 31. März des Folgejahres. Fehlende oder fehlerhafte Datenmeldungen können zu Korrekturen der Vergütungsvereinbarungen führen. Zudem sind die Deutschen Kodierrichtlinien (DKR), die das InEK jährlich im September oder Oktober verabschiedet, ab dem 1. Januar des Folgejahres für alle Abrechnungen verbindlich. KIS-Systeme müssen den neuen Grouper-Algorithmus und die aktualisierten DKR jährlich vor dem Jahreswechsel einspielen.
 
 > [!klinik-integration] Klinik-Integration: DRG-Grouper im KIS aktuell halten
 > **KIS-Kontext:** Der DRG-Grouper ist ein zentrales Modul jedes KIS (SAP ISH, Dedalus ORBIS, iMedOne, CGM). Das InEK veröffentlicht jährlich im September/Oktober den neuen Grouper-Algorithmus und die aktualisierten Deutschen Kodierrichtlinien (DKR). KIS-Hersteller liefern daraufhin ein Grouper-Update, das vor dem **1. Januar** des Folgejahres eingespielt sein muss.

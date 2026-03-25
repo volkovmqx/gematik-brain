@@ -52,7 +52,7 @@ Das E-Rezept wird digital erstellt, signiert und kann auf drei Wegen eingelöst 
 
 ## Architektur
 
-Der [[Fachdienst|E-Rezept-Fachdienst]] ist ein zentraler Dienst in der [[Telematikinfrastruktur]].
+Der [[E-Rezept-Fachdienst]] ist ein zentraler Dienst in der [[Telematikinfrastruktur]].
 
 ### Ablauf
 1. Arzt erstellt Verordnung im [[PVS|Praxisverwaltungssystem (PVS)]]

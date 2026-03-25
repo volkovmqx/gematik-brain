@@ -3,6 +3,9 @@ title: Bewertungsausschuss
 audience: [technical, non-technical]
 tags: [organization, ebm, vergütung, selbstverwaltung, kbv]
 aliases: [Bewertungsausschüsse, erweiterter Bewertungsausschuss, ergänzter Bewertungsausschuss, BA]
+relevance:
+  sectors: [arztpraxis, kasse, regulierung, verband]
+  interests: [compliance, business]
 maturity: immergruen
 ---
 
@@ -41,6 +44,9 @@ Der Bewertungsausschuss:
 - Überprüft bestehende Leistungsbeschreibungen nach aktuellem medizinischem Stand
 - Beschließt Sonderregelungen, z.B. für Telemedizin, Videosprechstunden oder Laborleistungen
 
+> [!interesse-compliance]
+> Beschlüsse des Bewertungsausschusses sind für alle Vertragsärzte unmittelbar verbindlich, ohne dass eine gesonderte Umsetzung erforderlich ist. Neue oder geänderte EBM-Ziffern gelten ab dem im Beschluss genannten Datum. Vertragsärzte müssen sicherstellen, dass ihr [[PVS]] die aktuellen EBM-Ziffern enthält. Meist liefern PVS-Hersteller Updates innerhalb weniger Wochen nach Beschlussdatum. Fehlerhafte Abrechnungen auf Basis veralteter EBM-Stände werden von der [[Kassenaerztliche-Vereinigung|KV]] im Rahmen der Plausibilitätsprüfung beanstandet.
+
 ### Beispiel: TI-Pauschale
 
 Der Bewertungsausschuss hat auch die [[TI-Pauschale]] beschlossen und passt sie jährlich an den Orientierungswert an. Die Pauschale ist eine eigenständige EBM-Position außerhalb des Regelleistungsvolumens, die Arztpraxen für die Nutzung der [[Telematikinfrastruktur]] erhalten.
@@ -58,6 +64,9 @@ Beschlüsse des Bewertungsausschusses werden im Deutschen Ärzteblatt veröffent
 ### Abgrenzung: G-BA
 
 Der [[G-BA]] (Gemeinsamer Bundesausschuss) beschließt, welche Leistungen im Leistungskatalog der [[GKV]] enthalten sind. Der Bewertungsausschuss hingegen legt fest, wie viel die einzelne Leistung kostet. Beide Gremien sind Teil der gemeinsamen Selbstverwaltung, aber mit getrennten Zuständigkeiten.
+
+> [!interesse-business]
+> Der Bewertungsausschuss steuert über den jährlichen Orientierungswert direkt die Honorarlandschaft für rund 160.000 Vertragsärzte. Krankenkassen und Kassenärztliche Vereinigungen verhandeln auf dieser Basis die regionalen Gesamtvergütungen. Für PVS-Hersteller bedeutet jede EBM-Änderung ein Pflicht-Update: Neue Ziffern, geänderte Abrechnungsregeln und neue Ausschlüsse müssen zeitnah eingepflegt werden. Die InBA-Website (institut-des-bewertungsausschusses.de) veröffentlicht alle Beschlüsse als maschinenlesbare Datenbankexporte.
 
 ### EBM und Orientierungswert
 

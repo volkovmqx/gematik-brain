@@ -1,71 +1,6 @@
 {
   "pending": [
     {
-      "term": "E-Rezept-Fachdienst",
-      "category": "infrastructure",
-      "reason": "Zentraler gematik-Fachdienst für alle Rezepttypen (Arzneimittel, eVO, HKP); in 30 Artikeln als eigenständige technische Komponente referenziert, distinkt vom E-Rezept als Anwendung",
-      "mentionedIn": [
-        "content/processes/Hilfsmittelverordnung.md",
-        "content/processes/Zulassungsverfahren.md",
-        "content/processes/Häusliche-Krankenpflege.md",
-        "content/processes/eVO.md",
-        "content/technologies/E-Rezept.md"
-      ],
-      "priority": 30
-    },
-    {
-      "term": "PVS-Hersteller",
-      "category": "organization",
-      "reason": "Zentraler Akteur im TI-Ökosystem mit spezifischen Zulassungs- und Updatepflichten; in 22 Artikeln als eigenständiger Akteur erwähnt, kein eigener Artikel",
-      "mentionedIn": [
-        "content/processes/Hilfsmittelverordnung.md",
-        "content/processes/T-Rezept.md",
-        "content/processes/Interaktionsprüfung.md",
-        "content/processes/VSDM-2.md",
-        "content/processes/Laborbefund.md"
-      ],
-      "priority": 22
-    },
-    {
-      "term": "ePA-Aktensystem",
-      "category": "infrastructure",
-      "reason": "Technische Plattform hinter der ePA mit eigenem FHIR-API; in 20 Artikeln als eigenständige Komponente genannt, distinkt vom ePA-Konzept",
-      "mentionedIn": [
-        "content/processes/eMP.md",
-        "content/processes/Zulassungsverfahren.md",
-        "content/processes/Entlassbrief.md",
-        "content/processes/dgMP.md",
-        "content/concepts/Zugriffsrecht.md"
-      ],
-      "priority": 20
-    },
-    {
-      "term": "Zugangsdienst",
-      "category": "infrastructure",
-      "reason": "TI-Zugangsdienst als übergeordneter Begriff (VPN-Zugangsdienst, TI-Gateway als Cloud-Zugangsdienst); in 18 Artikeln als infrastruktureller Knotenpunkt erwähnt",
-      "mentionedIn": [
-        "content/processes/Zulassungsverfahren.md",
-        "content/processes/VSDM-2.md",
-        "content/concepts/KRITIS.md",
-        "content/concepts/ZETA.md",
-        "content/concepts/TI-Pauschale.md"
-      ],
-      "priority": 18
-    },
-    {
-      "term": "Testumgebung",
-      "category": "infrastructure",
-      "reason": "gematik-Entwicklungsumgebungen RU (Referenzumgebung), TU (Testumgebung), PU (Produktivumgebung): Voraussetzung für Zulassung und Entwicklung; in 16 Artikeln erwähnt",
-      "mentionedIn": [
-        "content/processes/Häusliche-Krankenpflege.md",
-        "content/processes/Meldepflicht.md",
-        "content/processes/NFDM.md",
-        "content/processes/Konformitaetsbewertung.md",
-        "content/organization/RKI.md"
-      ],
-      "priority": 16
-    },
-    {
       "term": "Widerspruchsrecht",
       "category": "processes",
       "reason": "Patientenrecht auf Widerspruch gegen Befüllung und Nutzung der ePA; in 11 Artikeln erwähnt, zentral für Patientenperspektive, kein eigener Artikel",
@@ -155,7 +90,7 @@
         "content/standards/MDR.md"
       ],
       "priority": 5
-    },
+    }
   ],
   "done": [
     "Festbetrag",
@@ -347,8 +282,8 @@
     "RIS",
     "RKI",
     "SGB V",
-    "SGB XI",
     "SGB-V",
+    "SGB XI",
     "SGB-XI",
     "SMC-B",
     "SMART on FHIR",
@@ -392,6 +327,7 @@
     "eArztbrief",
     "eGBR",
     "eGK",
+    "eHBA",
     "eID",
     "eIDAS",
     "eImpfpass",
@@ -431,13 +367,146 @@
     "Pflegegrad",
     "Erstattungsbetrag",
     "eHKP",
-    "EU-HTA"
+    "EU-HTA",
+    "FDZ",
+    "MII",
+    "E-Rezept-Fachdienst",
+    "PVS-Hersteller",
+    "ePA-Aktensystem",
+    "Zugangsdienst",
+    "Testumgebung"
   ],
-  "brokenWikiLinks": [],
+  "brokenWikiLinks": [
+    {
+      "link": "SGB V",
+      "canonical": "SGB-V",
+      "occurrences": 17,
+      "affectedFiles": [
+        "content/infrastructure/Apothekenrechenzentrum.md",
+        "content/infrastructure/Forschungsdatenzentrum-Gesundheit.md",
+        "content/infrastructure/eGBR.md",
+        "content/organization/Bewertungsausschuss.md",
+        "content/organization/DKG.md",
+        "content/organization/GKV-Spitzenverband.md",
+        "content/organization/Medizinischer-Dienst.md",
+        "content/processes/BMP.md",
+        "content/processes/DMP.md",
+        "content/processes/eMP.md",
+        "content/processes/eVO.md",
+        "content/standards/BEEP-Gesetz.md",
+        "content/standards/BSI-C5.md",
+        "content/standards/E-Health-Gesetz.md",
+        "content/standards/KHG.md",
+        "content/standards/KHVVG.md",
+        "content/technologies/DiGA.md"
+      ]
+    },
+    {
+      "link": "SNOMED CT",
+      "canonical": "SNOMED-CT",
+      "occurrences": 7,
+      "affectedFiles": [
+        "content/concepts/Gesundheitsdatenraum.md",
+        "content/concepts/Patientenkurzakte.md",
+        "content/infrastructure/Forschungsdatenzentrum-Gesundheit.md",
+        "content/infrastructure/MyHealthAtEU.md",
+        "content/standards/CDA.md",
+        "content/standards/EHDS.md",
+        "content/standards/Patient-Summary.md"
+      ]
+    },
+    {
+      "link": "OAuth 2.0",
+      "canonical": "OAuth-2.0",
+      "occurrences": 5,
+      "affectedFiles": [
+        "content/concepts/Zero-Trust.md",
+        "content/infrastructure/IDP.md",
+        "content/infrastructure/TI-Federation.md",
+        "content/infrastructure/Telematikinfrastruktur.md",
+        "content/standards/SMART-on-FHIR.md"
+      ]
+    },
+    {
+      "link": "Kassenärztliche-Vereinigung",
+      "canonical": "Kassenaerztliche-Vereinigung",
+      "occurrences": 3,
+      "affectedFiles": [
+        "content/concepts/Primärversorgung.md",
+        "content/concepts/TI-Anbindungspflicht.md",
+        "content/processes/Videosprechstunde.md"
+      ]
+    },
+    {
+      "link": "MyHealth@EU",
+      "canonical": "MyHealthAtEU",
+      "occurrences": 2,
+      "affectedFiles": [
+        "content/standards/DICOM.md",
+        "content/standards/Patient-Summary.md"
+      ]
+    },
+    {
+      "link": "SGB XI",
+      "canonical": "SGB-XI",
+      "occurrences": 2,
+      "affectedFiles": [
+        "content/standards/BEEP-Gesetz.md",
+        "content/technologies/KIM.md"
+      ]
+    },
+    {
+      "link": "eHBA",
+      "canonical": "HBA",
+      "occurrences": 1,
+      "affectedFiles": [
+        "content/processes/Häusliche-Krankenpflege.md"
+      ]
+    },
+    {
+      "link": "MII",
+      "canonical": "Medizininformatik-Initiative",
+      "occurrences": 1,
+      "affectedFiles": [
+        "content/concepts/Pseudonymisierung.md"
+      ]
+    },
+    {
+      "link": "FDZ",
+      "canonical": "Forschungsdatenzentrum-Gesundheit",
+      "occurrences": 1,
+      "affectedFiles": [
+        "content/concepts/Gesundheitsdatenraum.md"
+      ]
+    },
+    {
+      "link": "Konnektor",
+      "canonical": "Konnektoren",
+      "occurrences": 1,
+      "affectedFiles": [
+        "content/organization/D-Trust.md"
+      ]
+    },
+    {
+      "link": "Konformitätsbewertung",
+      "canonical": "Konformitaetsbewertung",
+      "occurrences": 1,
+      "affectedFiles": [
+        "content/infrastructure/Terminologieserver.md"
+      ]
+    },
+    {
+      "link": "ÖGD",
+      "canonical": "OeGD",
+      "occurrences": 1,
+      "affectedFiles": [
+        "content/technologies/eImpfpass.md"
+      ]
+    }
+  ],
   "missingRelevance": [
     "content/concepts/PEPP.md",
     "content/infrastructure/HSM-B.md",
-    "content/infrastructure/Highspeed-Konnektor.md",
     "content/infrastructure/KV-SafeNet.md",
     "content/infrastructure/MyHealthAtEU.md",
     "content/infrastructure/RIS.md",
@@ -459,9 +528,7 @@
     "content/standards/GDAG.md",
     "content/standards/GOZ.md",
     "content/standards/GOÄ.md",
-    "content/standards/IVDR.md",
     "content/standards/KHG.md",
-    "content/standards/KRITIS-Dachgesetz.md",
     "content/standards/Matrix-Protokoll.md",
     "content/standards/Patient-Summary.md",
     "content/standards/VDG.md",

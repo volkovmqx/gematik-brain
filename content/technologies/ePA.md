@@ -3,7 +3,7 @@ title: ePA - Elektronische Patientenakte
 audience: [technical, non-technical]
 tags: [anwendung, epa, patientenakte]
 aliases: [Elektronische Patientenakte, Patientenakte]
-maturity: immergruen
+maturity: wachsend
 relevance:
   sectors: [arztpraxis, krankenhaus, zahnarzt, psychotherapie, apotheke, pflege, therapie, hebamme, patient, kasse, hersteller]
   interests: [compliance, technik, patient]
@@ -69,6 +69,8 @@ Seit **1. Januar 2026** sind Abrechnungsdaten in der ePA nur noch für Versicher
 ### Transparenz und Kontrolle
 
 Seit März 2026 erhalten Versicherte Push-Benachrichtigungen über die Krankenkassen-App, wenn jemand auf ihre ePA zugreift oder Änderungen vornimmt.
+
+Ebenfalls ab März 2026 können Versicherte die elektronische Medikationsliste ([[eML]]) gezielt für einzelne Einrichtungen ausblenden. Bisher war nur ein pauschales Ausblenden der gesamten eML möglich. Mit dieser granularen Zugangskontrolle, basierend auf ePA 3.1.2, können Versicherte zum Beispiel die eML für eine bestimmte Arztpraxis sperren, ohne den Zugriff anderer Leistungserbringer zu beeinträchtigen. Vollständig granularer Dokumentenzugriff auf Einzeldokumentebene ist für eine spätere ePA-Version geplant.
 
 ## Architektur
 

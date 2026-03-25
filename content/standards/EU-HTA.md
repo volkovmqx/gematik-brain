@@ -6,7 +6,7 @@ aliases: [EU Health Technology Assessment, HTA-Verordnung, EU-HTA-Regulation, Ve
 relevance:
   sectors: [hersteller, kasse, regulierung, forschung, krankenhaus, startup]
   interests: [compliance, business]
-maturity: wachsend
+maturity: immergruen
 ---
 
 # EU-HTA
@@ -109,5 +109,5 @@ Für die gemeinsame klinische Bewertung müssen Hersteller ein strukturiertes **
 
 - [Verordnung (EU) 2021/2282 – EUR-Lex](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32021R2282)
 - [Europäische Kommission: Health Technology Assessment](https://health.ec.europa.eu/health-technology-assessment_de)
-- [G-BA: EU-HTA und die deutsche Nutzenbewertung](https://www.g-ba.de/themen/arzneimittel/hta-europa/)
+- [G-BA: EU-HTA-Verordnung und deutsche Nutzenbewertung](https://www.g-ba.de/themen/arzneimittel/arzneimittel-richtlinie-anlagen/nutzenbewertung-35a/eu-hta-verordnung/)
 - [Wikipedia: Health Technology Assessment](https://de.wikipedia.org/wiki/Health_Technology_Assessment)
