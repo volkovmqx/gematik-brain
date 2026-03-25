@@ -3,6 +3,9 @@ title: E-Health-Gesetz
 audience: [technical, non-technical]
 tags: [standards, recht, gesetz, telematikinfrastruktur, egk, geschichte]
 aliases: [E-Health-Gesetz 2015, Gesetz für sichere digitale Kommunikation, EGKuaÄndG]
+relevance:
+  sectors: [arztpraxis, krankenhaus, apotheke, ti-infrastruktur, regulierung]
+  interests: [compliance]
 ---
 
 # E-Health-Gesetz
@@ -48,6 +51,12 @@ Das E-Health-Gesetz beauftragte die [[gematik]], bis Ende 2018 technische und or
 ### Sanktionsmechanismus
 
 Als erstes Gesetz führte das E-Health-Gesetz direkte finanzielle Sanktionen für die Nichtteilnahme an der TI ein. Vertragsärzte, die ihren Konnektor nicht fristgerecht installierten, mussten einen prozentualen Abzug auf ihre Vergütung hinnehmen. Dieser Sanktionsmechanismus war politisch umstritten, aber wirkungsvoll: Die Anschlussquote der Praxen stieg nach 2018 deutlich.
+
+> [!interesse-compliance] Historische Fristen und Sanktionen
+> - **Mitte 2018**: VSDM-Pflicht; Praxen ohne Konnektor erhielten 1 % Honorarabzug
+> - **Oktober 2016**: Anspruch auf Medikationsplan für Patienten mit ≥3 Dauermedikamenten
+> - Das E-Health-Gesetz war der erste Präzedenzfall für finanzielle Sanktionen bei TI-Nichtteilnahme
+> - Nachfolgegesetze (DVG, PDSG, DigiG) haben den Sanktionsmechanismus ausgebaut und verschärft
 
 ### Einordnung in die Gesetzgebungsgeschichte
 

@@ -66,7 +66,7 @@ Seit **März 2026** können Ärzte zusätzlich Medikamente ohne vorliegendes E-R
 > 1. Öffnen Sie die App Ihrer Krankenkasse.
 > 2. Gehen Sie in den Bereich der Patientenakte (ePA).
 > 3. Wählen Sie die Option, die Medikationsliste zu verbergen.
-> 4. Alternativ: Wenden Sie sich an die Ombudsstelle Ihrer Krankenkasse.
+> 4. Alternativ: Wenden Sie sich an die [[Ombudsstelle]] Ihrer Krankenkasse.
 >
 > **Wichtig:** Der Widerspruch gilt immer für die gesamte Liste. Einzelne Einträge können nur Ärzte oder Apotheken entfernen, nicht Sie selbst.
 

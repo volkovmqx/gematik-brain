@@ -4,6 +4,9 @@ audience: [technical, non-technical]
 tags: [organisation, aerzte, berufsrecht, gematik, hba]
 aliases: [BÄK, Bundesaerztekammer, Ärztekammer]
 maturity: wachsend
+relevance:
+  sectors: [arztpraxis, krankenhaus, regulierung, verband]
+  interests: [compliance, business]
 ---
 
 # Bundesärztekammer
@@ -50,6 +53,17 @@ Die Landesärztekammern sind im technischen Sinne die **zuständigen Stellen** n
 ### Arztregister und Telematik-ID
 
 Jede Landesärztekammer führt ein Arztregister. Die Daten aus diesen Registern fließen in den [[VZD]] (Verzeichnisdienst der Telematikinfrastruktur) ein, damit Ärzte über die TI auffindbar und erreichbar sind.
+
+> [!interesse-compliance] Berufsrechtliche Pflichten für Ärzte in der TI
+> - HBA-Pflicht: Jeder approbierten Arzt muss für die elektronische Signatur und TI-Nutzung einen HBA besitzen
+> - Fernbehandlung nur bei medizinischer Vertretbarkeit (MBO-Ä § 7 Abs. 4); Landesärztekammer gibt Detailregelungen vor
+> - Datenschutz und Dokumentationspflicht nach MBO-Ä § 23 gilt auch für ePA-Einträge
+> - E-Rezept: Verschreibungspflichten nach § 12 MBO-Ä bleiben unverändert; die Form (elektronisch) ist gesetzlich vorgeschrieben
+
+> [!interesse-business] Politisches Gewicht und Markteinfluss
+> - Bundesärztekammer als gematik-Gesellschafterin beeinflusst Prioritäten bei der TI-Spezifikation
+> - HBA-Markt: Landesärztekammern beauftragen D-Trust, Medisign und TELESEC für die Kartenproduktion
+> - Positionspapiere der BÄK zu ePA, Telemedizin und Digitalisierung prägen politische Diskussion
 
 ### Musterberufsordnung und Digitalisierung
 

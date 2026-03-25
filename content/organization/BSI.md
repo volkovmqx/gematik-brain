@@ -87,6 +87,26 @@ Ergebnis: Bei drei von vier getesteten [[PVS]] lassen sich durch Verkettung einz
 
 Die [[VAU]] (Vertrauenswürdige Ausführungsumgebung) des ePA-Aktensystems und des E-Rezept-Fachdienstes wird im Rahmen des [[Zulassungsverfahren|Zulassungsverfahrens]] vom BSI geprüft. Der öffentliche Schlüssel der VAU ist in einem BSI-geprüften Verfahren verankert.
 
+### NIS2-Durchsetzungsphase
+
+Seit dem **6. März 2026** befindet sich das [[NIS2UmsuCG]] (NIS2-Umsetzungsgesetz) in der aktiven Durchsetzungsphase. Das BSI hat damit verbindliche Befugnisse erhalten, um Compliance-Verstöße zu ahnden. Laut BSI verpassten rund **18.500 Unternehmen** die Registrierungsfrist.
+
+Die Durchsetzungsbefugnisse des BSI nach § 38 NIS2UmsuCG umfassen:
+
+- **Verbindliche Anordnungen**: Das BSI kann verpflichtende Maßnahmen zur Mängelbehebung anordnen
+- **Audits und Prüfungen**: Das BSI darf Sicherheitsprüfungen und Audits anordnen
+- **Bußgelder bis 10 Millionen Euro** (oder 2 Prozent des weltweiten Jahresumsatzes bei Unternehmen ab 50 Mitarbeitern oder 10 Millionen Euro Umsatz)
+- **Persönliche Haftung der Geschäftsleitung**: Leitungsorgane haften persönlich für grobe Vernachlässigung von Cybersicherheitspflichten
+
+Für das Gesundheitswesen gilt: Krankenhäuser und Gesundheitseinrichtungen, die die NIS2-Schwellenwerte erfüllen (ab 50 Mitarbeiter oder 10 Millionen Euro Umsatz), sind als "wesentliche Einrichtungen" oder "wichtige Einrichtungen" eingestuft und unterliegen direkt der BSI-Aufsicht.
+
+> [!interesse-compliance] NIS2-Pflichten im Gesundheitswesen
+> - Krankenhäuser mit ≥50 Mitarbeitern oder ≥10 Mio. EUR Umsatz: NIS2-Pflicht seit 18. Oktober 2024
+> - Registrierung beim BSI: Frist war Oktober 2024; BSI hat Nachfrist bis März 2026 gewährt
+> - Meldepflicht für Sicherheitsvorfälle: 24 Stunden Erstmeldung, 72 Stunden Folgemeldung
+> - Bußgelder bis 10 Mio. EUR; Geschäftsführer persönlich haftbar
+> - [[KIS]] und TI-Komponenten müssen den BSI-Mindestsicherheitsanforderungen genügen
+
 ### KRITIS-Dachgesetz
 
 Der Bundestag verabschiedete das [[KRITIS-Dachgesetz]] am 29. Januar 2026, der Bundesrat stimmte am 6. März 2026 zu. Das Gesetz setzt die EU-CER-Richtlinie um und schafft einheitliche Mindeststandards für den physischen Schutz kritischer Infrastrukturen. Krankenhäuser und Gesundheitseinrichtungen fallen ausdrücklich in den Geltungsbereich. Betroffene Betreiber müssen sich ab 17. Juli 2026 registrieren und Risikoanalysen sowie Resilienzpläne erstellen. Das BSI koordiniert die Aufsicht über Cybersicherheitsanforderungen im Zusammenspiel mit dem neuen Gesetz.

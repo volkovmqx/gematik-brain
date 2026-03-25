@@ -1,45 +1,6 @@
 {
   "pending": [
     {
-      "term": "Widerspruchsrecht",
-      "category": "processes",
-      "reason": "Patientenrecht auf Widerspruch gegen Befüllung und Nutzung der ePA; in 11 Artikeln erwähnt, zentral für Patientenperspektive, kein eigener Artikel",
-      "mentionedIn": [
-        "content/concepts/Opt-Out-ePA.md",
-        "content/concepts/Pseudonymisierung.md",
-        "content/concepts/Sekundärnutzung.md",
-        "content/organization/BfDI.md",
-        "content/organization/GFF.md"
-      ],
-      "priority": 11
-    },
-    {
-      "term": "Retaxation",
-      "category": "processes",
-      "reason": "Apothekenspezifischer Mechanismus: Krankenkasse streicht Vergütung bei fehlerhafter Rezeptabwicklung; in 8 Artikeln als Sanktionsmechanismus erwähnt",
-      "mentionedIn": [
-        "content/processes/Muster-16.md",
-        "content/processes/Dispensierung.md",
-        "content/infrastructure/Apothekenrechenzentrum.md",
-        "content/standards/eHKP.md",
-        "content/standards/SGB-XI.md"
-      ],
-      "priority": 8
-    },
-    {
-      "term": "Ombudsstelle",
-      "category": "organization",
-      "reason": "Beschwerdeinstanz der Krankenkassen für Versicherte bei ePA- und eML-Konflikten; in 8 Artikeln erwähnt, kein eigener Artikel",
-      "mentionedIn": [
-        "content/processes/eML.md",
-        "content/processes/dgMP.md",
-        "content/concepts/Zugriffsrecht.md",
-        "content/concepts/Opt-Out-ePA.md",
-        "content/concepts/Pseudonymisierung.md"
-      ],
-      "priority": 8
-    },
-    {
       "term": "OID",
       "category": "standards",
       "reason": "Object Identifier: in TI-Zertifikaten, FHIR-Profilen, Telematik-ID und HL7-Nachrichten allgegenwärtig; in 25 Artikeln technisch referenziert ohne Erklärungsartikel",
@@ -93,6 +54,11 @@
     }
   ],
   "done": [
+    "Widerspruchsrecht",
+    "Bestätigungsverfahren",
+    "Bestaetigungsverfahren",
+    "Retaxation",
+    "Ombudsstelle",
     "Festbetrag",
     "Laborbefund",
     "TI-Anbindungspflicht",
@@ -430,11 +396,15 @@
     {
       "link": "Kassenärztliche-Vereinigung",
       "canonical": "Kassenaerztliche-Vereinigung",
-      "occurrences": 3,
+      "occurrences": 7,
       "affectedFiles": [
         "content/concepts/Primärversorgung.md",
         "content/concepts/TI-Anbindungspflicht.md",
-        "content/processes/Videosprechstunde.md"
+        "content/processes/Videosprechstunde.md",
+        "content/standards/GVSG.md",
+        "content/standards/Bundesmantelvertrag.md",
+        "content/standards/EBM.md",
+        "content/processes/eVO.md"
       ]
     },
     {
@@ -506,22 +476,17 @@
   ],
   "missingRelevance": [
     "content/concepts/PEPP.md",
-    "content/infrastructure/HSM-B.md",
     "content/infrastructure/KV-SafeNet.md",
     "content/infrastructure/MyHealthAtEU.md",
     "content/infrastructure/RIS.md",
     "content/infrastructure/eGBR.md",
     "content/infrastructure/gSMC-KT.md",
-    "content/organization/Bewertungsausschuss.md",
     "content/organization/Bundesaerztekammer.md",
     "content/organization/DAV.md",
     "content/organization/DVKA.md",
     "content/organization/Landesaerztekammer.md",
     "content/organization/Medizinischer-Dienst.md",
     "content/organization/OeGD.md",
-    "content/processes/BMP.md",
-    "content/processes/DMP.md",
-    "content/processes/eVO.md",
     "content/standards/BEEP-Gesetz.md",
     "content/standards/DiPAV.md",
     "content/standards/E-Health-Gesetz.md",

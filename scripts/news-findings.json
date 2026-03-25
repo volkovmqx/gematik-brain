@@ -2030,11 +2030,12 @@
         "Telematikinfrastruktur.md"
       ],
       "category": "regulation",
-      "action": "new_article",
-      "details": "NIS2 / NIS2UmsuCG ist bislang nicht in der Wissensbasis dokumentiert, obwohl es alle Krankenhäuser, viele TI-Dienstleister und Medizinproduktehersteller betrifft. Ein neuer Artikel 'NIS2.md' (oder 'NIS2UmsuCG.md') im Ordner content/standards/ oder content/concepts/ wäre sinnvoll. BSI.md sollte den Übergang zur Durchsetzungsphase ab März 2026 und die BSI-Befugnisse (§ 38 NIS2UmsuCG) ergänzen. KIS.md: Hinweis auf NIS2-Pflichten für Krankenhäuser.",
+      "action": "applied",
+      "appliedDate": "2026-03-25",
+      "details": "BSI.md: Neuer Abschnitt 'NIS2-Durchsetzungsphase' ergänzt mit BSI-Befugnissen nach § 38 NIS2UmsuCG (verbindliche Anordnungen, Audits, Bußgelder bis 10 Mio. EUR, persönliche Haftung der Geschäftsleitung), 18.500 Unternehmen mit verpasster Frist, NIS2-compliance-callout für Gesundheitswesen. KIS.md: Hinweis auf NIS2-Pflicht für Krankenhäuser ab 50 Mitarbeitern oder 10 Mio. EUR Umsatz in compliance-callout ergänzt.",
       "suggestedTerm": "NIS2UmsuCG"
     }
   ],
-  "lastRun": "2026-03-25T14:00:00Z",
+  "lastRun": "2026-03-25T16:30:00Z",
   "lastChecked": "2026-03-25"
 }

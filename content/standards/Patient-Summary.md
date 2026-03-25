@@ -4,6 +4,9 @@ audience: [technical, non-technical]
 tags: [standards, interoperabilität, europa, myhealth-eu, fhir, ips]
 aliases: [Patientenzusammenfassung, ePS, europäische Patientenkurzakte, International Patient Summary, IPS]
 maturity: immergruen
+relevance:
+  sectors: [arztpraxis, krankenhaus, ti-infrastruktur, hersteller, patient]
+  interests: [technik, compliance]
 ---
 
 # Patient Summary
@@ -81,6 +84,19 @@ Der Patient Summary ist kein Ersatz für eine vollständige Patientenakte:
 - **H1/2027**: Deutschland plant Teilnahme am E-Rezept-Austausch über MyHealth@EU (Wave 10, verschoben von ursprünglich 2026).
 - **2029**: Bereitstellung des Patient Summary aus der deutschen ePA für EU-Austausch geplant.
 - **2031**: EU-weite Pflicht für alle Mitgliedstaaten zur Umsetzung des Patient Summary.
+
+> [!interesse-compliance] Fristen und Umsetzungspflichten
+> - **2029**: Deutschland muss Patient Summary aus der ePA für EU-Austausch bereitstellen
+> - **2031**: Alle EU-Mitgliedstaaten sind verpflichtet (EHDS Art. 12)
+> - KIS-Hersteller müssen ab 2029 IPS-Export aus den klinischen Daten unterstützen
+> - NCPeH ist das gesetzlich beauftragte Gateway (§ 372 SGB V); gematik koordiniert den Aufbau
+
+> [!interesse-technik] Technische Spezifikation
+> - Standard: HL7 IPS (International Patient Summary), ISO 27269:2021 / EN ISO 27269
+> - Format: FHIR R4 Bundle (type: `document`), Pflichtabschnitte per IPS-IG
+> - Terminologie: [[SNOMED-CT]] für Diagnosen, ATC für Medikamente, EDQM für Verabreichungswege
+> - IPS-Implementation Guide: [hl7.org/fhir/uv/ips](https://hl7.org/fhir/uv/ips/)
+> - EHDS-konforme IPS-Profile für Deutschland: in Entwicklung über HL7 Deutschland
 
 ## Verknüpfungen
 

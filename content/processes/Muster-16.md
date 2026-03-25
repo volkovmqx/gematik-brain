@@ -48,7 +48,7 @@ Das Muster 16 bleibt in bestimmten Bereichen weiterhin zulässig, zum Beispiel b
 > **Rechtsgrundlage:** § 360 Abs. 1 SGB V i.d.F. des Digitalgesetzes (DigiG, BGBl. 2024 I Nr. 40); Bundesmantelvertrag-Ärzte (BMV-Ä) § 29 i.V.m. Anlage 4a.
 > **Frist:** Seit dem **1. Januar 2024** sind Vertragsärzte und Vertragszahnärzte verpflichtet, GKV-Arzneimittelverordnungen ausschließlich als E-Rezept auszustellen. Das Ausstellen eines Muster-16-Papierrezepts für GKV-Arzneimittel ist seither nicht mehr regelkonform.
 > **Handlungsbedarf:** Prüfen Sie, ob Ihr [[PVS]] vollständig auf E-Rezept umgestellt ist und kein Muster-16-Formular mehr für Routineverordnungen erzeugt. Halten Sie Muster-16-Blöcke ausschließlich für dokumentierte Ausnahmefälle (BTM, T-Rezept, TI-Ausfall) bereit.
-> **Bei Nichtbeachtung:** Papierrezepte für GKV-Arzneimittel ohne dokumentierten Ausnahmegrund können von der Kassenärztlichen Vereinigung beanstandet werden; Apotheken können Retaxation durch die Krankenkasse riskieren.
+> **Bei Nichtbeachtung:** Papierrezepte für GKV-Arzneimittel ohne dokumentierten Ausnahmegrund können von der Kassenärztlichen Vereinigung beanstandet werden; Apotheken können [[Retaxation]] durch die Krankenkasse riskieren.
 
 > [!frist-warnung] Frist-Warnung: E-Rezept-Pflicht für Heilmittel und Pflegehilfsmittel ab 1. Juli 2026
 > **Rechtsgrundlage:** § 360 Abs. 1 und Abs. 7 SGB V i.d.F. des DigiG.

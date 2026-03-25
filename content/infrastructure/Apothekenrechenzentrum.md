@@ -28,7 +28,7 @@ Der Branchenverband **VDARZ (Verband Deutscher Apothekenrechenzentren)** vertrit
 - Entgegennahme der monatlichen Abrechnungsdaten aus [[AVS|Apothekenverwaltungssystemen (AVS)]]
 - Prüfung der Daten auf formale und inhaltliche Korrektheit nach dem [[TA1]]-Format
 - Bündelung der Abrechnungssätze und Weiterleitung an die zuständigen [[GKV]]-Krankenkassen
-- Abwicklung von Gutschriften und Korrekturen bei Retaxationen
+- Abwicklung von Gutschriften und Korrekturen bei [[Retaxation|Retaxationen]]
 - Einzug von Herstellerrabatten nach § 130a [[SGB V]]
 
 ### Marktstruktur

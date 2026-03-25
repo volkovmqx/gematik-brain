@@ -4,6 +4,9 @@ audience: [technical, non-technical]
 tags: [standards, recht, gesetz, krankenhaus, finanzierung, drg]
 aliases: [Krankenhausfinanzierungsgesetz, KHG]
 maturity: immergruen
+relevance:
+  sectors: [krankenhaus, regulierung, kasse]
+  interests: [compliance, business]
 ---
 
 # KHG
@@ -57,6 +60,18 @@ Seit 2019 werden Pflegepersonalkosten nicht mehr über die DRG-Fallpauschalen ve
 ### § 17c KHG: Prüfung von Abrechnungen
 
 § 17c KHG regelt die Prüfung von Krankenhausabrechnungen durch den [[Medizinischer-Dienst|Medizinischen Dienst (MD)]]. Krankenkassen können den MD beauftragen, Krankenhausrechnungen auf Korrektheit zu prüfen. Das Verfahren wurde durch das MDK-Reformgesetz (2020) und folgende Gesetze mehrfach überarbeitet.
+
+> [!interesse-compliance] Relevante Fristen und Pflichten
+> - **Ab 2026**: ISiK-Konformität ist Voraussetzung für Transformationsfonds-Förderung (§ 374 SGB V auf KHG-Basis)
+> - **Ab April 2026**: Krankenhäuser benötigen ein gematik-zertifiziertes ePA-Modul im KIS, sonst DRG-Abschläge
+> - Krankenhausplanung (§ 6 KHG): Nur im Landeskrankenhausplan gelistete Häuser erhalten Investitionsmittel
+> - KHVVG (2024): Neue Leistungsgruppen und Mindestversorgungsstufen gelten ab 2025; Planbetten werden ab 2027 durch Vorhalteleistungen ersetzt
+
+> [!interesse-business] Finanzierungsstruktur und Marktdynamik
+> - Duale Finanzierung: Investitionsmittel der Länder oft chronisch unterfinanziert (geschätztes Defizit >50 Mrd. EUR)
+> - Transformationsfonds: bis zu 50 Mrd. EUR (Bund + Länder) für Krankenhausreform bis 2035
+> - DRG-System: 1.200+ Fallpauschalen; InEK aktualisiert den Katalog jährlich
+> - KHVVG-Reform: Verlagerung von Fallpauschalen zu Vorhaltevergütung soll Wirtschaftlichkeitsdruck mindern
 
 ### KHG und Digitalisierung: ISiK und KHZG
 

@@ -90,7 +90,7 @@ Versicherte können widersprechen:
 
 1. **ePA-App der Krankenkasse**: Direkt in der App unter Datenschutzeinstellungen
 2. **Telefonisch oder schriftlich bei der Krankenkasse**
-3. **Über die Ombudsstelle** der Krankenkasse
+3. **Über die [[Ombudsstelle]]** der Krankenkasse
 
 Der Widerspruch muss von der Krankenkasse unverzüglich technisch umgesetzt werden (kein gesetzlich definierter Drei-Tage-Zeitraum, aber zeitnahe Umsetzung ist rechtlich geboten). Alle Daten in der geschlossenen Akte werden gelöscht.
 

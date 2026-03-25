@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-03-25T00:11:02Z",
-  "totalArticles": 251,
-  "passed": 251,
-  "failed": 0,
-  "issues": []
+  "timestamp": "2026-03-25T09:25:32Z",
+  "totalArticles": 255,
+  "passed": 254,
+  "failed": 1,
+  "issues": [{"file":"content/processes/Bestaetigungsverfahren.md","type":"broken_link","severity":"error","message":"Broken wiki-link: [[ISiP]] — no matching file or alias"}]
 }

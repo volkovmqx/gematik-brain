@@ -4,6 +4,9 @@ audience: [technical, non-technical]
 tags: [standards, gesetz, epa, pflege, datenschutz]
 aliases: [Gesetz zur Befugniserweiterung und Entbürokratisierung in der Pflege, Pflegekompetenzgesetz]
 maturity: wachsend
+relevance:
+  sectors: [pflege, apotheke, arztpraxis, regulierung]
+  interests: [compliance]
 ---
 
 # BEEP-Gesetz
@@ -49,6 +52,13 @@ Technisch werden die Abrechnungsdaten in einem separaten Bereich der [[ePA]] ges
 ### Auswirkungen auf Primärsysteme
 
 Praxissoftware ([[PVS]]) und Krankenhausinformationssysteme ([[KIS]]) mussten technisch angepasst werden: Die Benutzeroberflächen zeigen Abrechnungsdaten-Bereiche der ePA nicht mehr ohne Weiteres an. Primärsysteme, die nach dem 1. Januar 2026 versuchen, Abrechnungsdaten ohne Freigabe abzurufen, erhalten einen Zugriffsfehler vom ePA-Aktensystem.
+
+> [!interesse-compliance] Was sich konkret ändert (in Kraft seit 1. Januar 2026)
+> - Abrechnungsdaten in der ePA sind für Ärzte und Apotheken standardmäßig gesperrt
+> - Ausnahme von ePA-Befüllung möglich bei therapeutischen Gründen (§ 347 SGB V): schriftlich dokumentieren
+> - [[ePass]] als neuer Identifikationsweg für die ePA zulässig
+> - Pflegefachkräfte erhalten erweiterte Handlungsspielräume (Befugniserweiterung); berufliche Beratung empfehlenswert
+> - Primärsysteme (PVS, KIS) mussten bis 1. Januar 2026 technisch angepasst werden
 
 ### Bezug zu anderen Regelungen
 

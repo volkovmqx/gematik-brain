@@ -73,7 +73,7 @@ Beispiel für Basis-Ressourcen:
 
 ### Bestätigungsverfahren
 
-Hersteller müssen die Konformität ihrer Produkte über das Bestätigungsverfahren von gematik nachweisen. Die Liste bestätigter Systeme ist auf Simplifier.net öffentlich zugänglich. Nur bestätigte Systeme erfüllen die Fördervoraussetzungen.
+Hersteller müssen die Konformität ihrer Produkte über das [[Bestaetigungsverfahren|Bestätigungsverfahren]] von gematik nachweisen. Die Liste bestätigter Systeme ist auf Simplifier.net öffentlich zugänglich. Nur bestätigte Systeme erfüllen die Fördervoraussetzungen.
 
 ### Verhältnis zur ePA
 

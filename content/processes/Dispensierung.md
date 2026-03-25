@@ -31,7 +31,7 @@ Der Dispensierungsprozess umfasst drei Kernpflichten:
 > **Rechtsgrundlage:** § 17 Abs. 1 ApBetrO i.V.m. § 5 ApBetrO (pharmazeutische Tätigkeit).
 > **Dauerpflicht:** Die Interaktions- und Verträglichkeitsprüfung ist gesetzlich vorgeschriebener Bestandteil jeder Abgabe, keine optionale Serviceleistung. Eine fehlende oder nicht dokumentierte AMTS-Prüfung gilt als Verstoß gegen § 17 ApBetrO.
 > **Handlungsbedarf:** Das [[AVS]] muss so konfiguriert sein, dass die Interaktionsprüfung gegen eine aktuelle Datenbank (z.B. [[ABDA-Datenbank]]) bei jedem Dispensierungsvorgang automatisch ausgelöst und das Ergebnis dokumentiert wird. Manuelles Übergehen der Prüfung ist nur bei pharmazeutisch begründetem und dokumentiertem Einzelfall zulässig.
-> **Bei Nichtbeachtung:** Vollständige Retaxation der Abgabe durch die Krankenkasse; bei wiederholten Verstößen mögliche Maßnahmen im Rahmen der Apothekenüberwachung durch die zuständige Landesbehörde gemäß § 64 AMG.
+> **Bei Nichtbeachtung:** Vollständige [[Retaxation]] der Abgabe durch die Krankenkasse; bei wiederholten Verstößen mögliche Maßnahmen im Rahmen der Apothekenüberwachung durch die zuständige Landesbehörde gemäß § 64 AMG.
 
 > [!klinik-integration] Klinik-Integration: Dispensierung in der Krankenhausapotheke
 > In der Krankenhausapotheke läuft die Dispensierung anders als in öffentlichen Apotheken: Sie ist stationär eingebettet und direkt mit dem [[KIS]] verknüpft.
