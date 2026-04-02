@@ -21,7 +21,7 @@ Stell dir vor, dein Arzt verschreibt dir nicht eine Pille, sondern eine App. Das
 
 DiGA wurden mit dem [[DVG|Digitale-Versorgung-Gesetz (DVG)]] im Jahr 2019 in Deutschland eingeführt. Seitdem können Ärzte und Psychotherapeuten DiGA auf einem Kassenrezept verordnen. Die [[GKV]] übernimmt die Kosten für alle rund 74,5 Millionen GKV-Versicherten.
 
-Das Bundesinstitut für Arzneimittel und Medizinprodukte ([[BfArM]]) ist die zuständige Zulassungsbehörde. Es führt das öffentliche DiGA-Verzeichnis, in dem alle zugelassenen Apps mit Informationen zu Indikation, Evidenz und Erstattungsbetrag aufgeführt sind.
+Das Bundesinstitut für Arzneimittel und Medizinprodukte ([[BfArM]]) ist die zuständige Zulassungsbehörde. Es führt das öffentliche [[DiGA-Verzeichnis]], in dem alle zugelassenen Apps mit Informationen zu Indikation, Evidenz und Erstattungsbetrag aufgeführt sind.
 
 DiGA sind rechtlich Medizinprodukte der Risikoklasse I oder IIa nach der europäischen Medizinprodukteverordnung ([[MDR]]). Sie müssen ein CE-Kennzeichen tragen. Zusätzlich zur MDR gelten die speziellen Anforderungen der Digitale-Gesundheitsanwendungen-Verordnung ([[DiGAV]]).
 

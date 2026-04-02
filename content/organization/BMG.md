@@ -6,7 +6,7 @@ aliases: [Bundesministerium für Gesundheit, Bundesgesundheitsministerium]
 relevance:
   sectors: [regulierung, hersteller, kasse, ti-infrastruktur, it-dienstleister, startup]
   interests: [compliance, business]
-maturity: wachsend
+maturity: setzling
 ---
 
 # BMG
@@ -47,6 +47,10 @@ Das BMG gibt durch seine Mehrheit bei der [[gematik]] die strategische Ausrichtu
 | [[BfArM]] | Zulassung von [[DiGA]] und [[DiPA]], Pflege von ICD-10-GM und OPS |
 | [[RKI]] | Betrieb von [[DEMIS]], Infektionsschutz-Surveillance |
 | Paul-Ehrlich-Institut (PEI) | Zulassung von Impfstoffen und Sera |
+
+### Aktuelle Maßnahmen
+
+**Aktionsplan Arzneimitteltherapiesicherheit (AMTS) 2026-2029**: Das Bundeskabinett beschloss am **1. April 2026** den AMTS-Aktionsplan. Er benennt [[ePA]] (elektronische Medikationsliste und elektronischer Medikationsplan), [[E-Rezept]] und den [[dgMP|digital gestützten Medikationsprozess]] als zentrale digitale Instrumente zur Reduzierung vermeidbarer unerwünschter Arzneimittelereignisse. Zielgruppe sind insbesondere ältere Patienten mit Polypharmazie. Der Plan koordiniert bestehende gesetzliche Maßnahmen (DigiG, GDNG, DiGAV) unter einem gemeinsamen Qualitätsdach ohne neue eigenständige Fristen.
 
 ### Relevante Gesetze
 
@@ -91,7 +95,7 @@ Die restlichen 19,95 Prozent verteilen sich auf die sechs Verbände aus dem Gesu
 
 ## Quellen
 
-- [Bundesgesundheitsministerium: Über das BMG](https://www.bundesgesundheitsministerium.de/ministerium/ueber-das-ministerium)
+- [Bundesgesundheitsministerium: Ministerium](https://www.bundesgesundheitsministerium.de/ministerium)
 - [gematik: Gesellschafter und Gremien](https://www.gematik.de/ueber-uns/gremien-gesellschafter)
 - [BMG: Bundeskabinett beschließt Ausbau der gematik zur Digitalagentur](https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/gdag-kabinett-17-07-24.html)
 - [Wikipedia: Bundesministerium für Gesundheit](https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Gesundheit)

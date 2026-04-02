@@ -3,7 +3,10 @@ title: DVKA
 audience: [technical, non-technical]
 tags: [organisation, eu, grenzüberschreitend, ncpeh, ehds]
 aliases: [Deutsche Verbindungsstelle Krankenversicherung Ausland, DVKA]
-maturity: immergruen
+maturity: setzling
+relevance:
+  sectors: [kasse, patient, regulierung]
+  interests: [compliance, patient]
 ---
 
 # DVKA
@@ -57,9 +60,15 @@ Neben dem eHealth-Datenaustausch koordiniert die DVKA den **EESSI** (Electronic 
 
 EESSI läuft über strukturierte XML-Nachrichten (Structured Electronic Documents, SEDs) und ist von der eHealth-Infrastruktur technisch getrennt.
 
+> [!interesse-compliance]
+> **EHDS-Pflichten ab 26. März 2027:** Die EHDS-Verordnung (EU 2025/327) verpflichtet alle EU-Mitgliedstaaten ab dem **26. März 2027** (zwei Jahre nach Inkrafttreten), Patientenzusammenfassungen und E-Rezepte EU-weit verfügbar zu machen. Labordaten und Bildgebungsdaten folgen zu späteren Zeitpunkten. Deutschland beteiligt sich über die DVKA als NCPeH-Betreiberin. Krankenkassen müssen sicherstellen, dass die Daten ihrer Versicherten für MyHealth@EU abrufbar sind, sofern der Versicherte zustimmt.
+
+> [!interesse-patient]
+> **Im EU-Ausland krank?** Als gesetzlich Versicherter kannst du die Europäische Krankenversicherungskarte (EHIC) nutzen, um im EU-Ausland behandelt zu werden. Die DVKA koordiniert die Kostenerstattung. Ab 2027 plant Deutschland die Teilnahme an MyHealth@EU für das E-Rezept, sodass du Rezepte aus Deutschland in anderen EU-Ländern einlösen kannst.
+
 ### EHDS und Weiterentwicklung
 
-Die **EHDS-Verordnung** (EU 2025/327, in Kraft seit März 2025) baut auf MyHealth@EU auf und weitet den Datenaustausch deutlich aus. Ab 2029 sollen EU-Bürger ihre Gesundheitsdaten (Patientenzusammenfassung, E-Rezepte, Labordaten, Bildgebungsdaten) EU-weit verfügbar machen können. Die DVKA wird als Betreiberin des NCPeH eine zentrale Rolle bei der deutschen EHDS-Implementierung spielen.
+Die **EHDS-Verordnung** (EU 2025/327, in Kraft seit März 2025) baut auf MyHealth@EU auf und weitet den Datenaustausch deutlich aus. Ab dem **26. März 2027** müssen EU-Bürger Patientenzusammenfassungen und E-Rezepte EU-weit abrufen können. Labordaten und Bildgebungsdaten folgen zu späteren Terminen. Die DVKA wird als Betreiberin des NCPeH eine zentrale Rolle bei der deutschen EHDS-Implementierung spielen.
 
 Außerdem enthält der EHDS Regelungen zur **Sekundärnutzung** von Gesundheitsdaten für Forschungszwecke über sogenannte "Health Data Access Bodies". Für Deutschland wird das [[BfArM]] voraussichtlich diese Rolle übernehmen.
 
@@ -76,7 +85,7 @@ Außerdem enthält der EHDS Regelungen zur **Sekundärnutzung** von Gesundheitsd
 
 ## Quellen
 
-- [DVKA: Über uns (GKV-Spitzenverband)](https://www.gkv-spitzenverband.de/krankenversicherung/auslandsreisen_und_eu/dvka/dvka.jsp)
-- [gematik: NCPeH – Nationaler Kontaktpunkt für eHealth](https://fachportal.gematik.de/anwendungen/ncpeh)
+- [DVKA: Offizielle Website](https://www.dvka.de/de/)
+- [gematik Fachportal: MyHealth@EU und NCPeH](https://fachportal.gematik.de/anwendungen/myhealtheu)
 - [Europäische Kommission: eHealth Digital Service Infrastructure](https://health.ec.europa.eu/ehealth-digital-health-and-care/ehealth-and-digital-health_en)
 - [EHDS-Verordnung (EU) 2025/327](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32025R0327)

@@ -1,21 +1,242 @@
 {
-  "timestamp": "2026-03-25T00:20:00Z",
-  "overallScore": 87,
+  "timestamp": "2026-04-01T20:45:00Z",
+  "overallScore": 86,
   "testResults": {
-    "passed": 250,
-    "failed": 1,
-    "total": 251
+    "passed": 259,
+    "failed": 2,
+    "total": 261
   },
   "articles": [
+    {
+      "file": "content/infrastructure/Zugangsdienst.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [
+        "Feb 10 2026 outage description now correctly attributes single root cause (IBM Frankfurt Rauchmelder-Alarm). Fix verified against borncity.com reporting.",
+        "Outage times (3:05–11:00 Uhr), affected services (ePA, E-Rezept, KIM, VSDM), and single-cause framing now consistent with Telematikinfrastruktur.md.",
+        "All 4 Quellen URLs live: fachportal.gematik.de/telematikinfrastruktur/ti-zugang confirmed live."
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/technologies/ePass.md",
+      "verdict": "pass",
+      "score": 82,
+      "issues": [
+        "Replaced weak Fachportal URL now points to PDF (Identifikationsverfahren_mit_sicherheitstechnischer_Eignung.pdf) — confirmed live via Playwright.",
+        "Launch date 25. März 2026 confirmed (Presseportal BITMARCK, Ärzteblatt).",
+        "BEEP-Gesetz as legal basis, in force 1 Jan 2026, confirmed by multiple sources.",
+        "80 Prozent der gesetzlichen Krankenkassen via BITMARCK confirmed.",
+        "Nect GmbH Hamburg confirmed as developer.",
+        "MINOR: No direct gematik.de newsroom URL in Quellen — all sources are news portals and press releases. Acceptable after URL replacement but slight weakness for an officially approved TI method."
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/processes/Bestaetigungsverfahren.md",
+      "verdict": "revise",
+      "score": 72,
+      "issues": [
+        "[[ISiP]] broken link was fixed — ISiP now appears as plain text, not a wiki-link. Test confirms no broken links in this file.",
+        "url_dead: First Quellen source (https://fachportal.gematik.de/hersteller-anbieter/produktzulassung/bestaetigungsverfahren-isik) returns 404. Confirmed via Playwright.",
+        "All other Quellen URLs (simplifier.net/isik, Wikipedia, gesetze-im-internet.de/sgb_5/__373.html) expected live and stable.",
+        "Factual claims (ISiK stages 1-3, KHZG prerequisites, FHIR Touchstone testing) are well-sourced and plausible."
+      ],
+      "fixInstructions": "Replace dead Quellen URL. Working alternative: https://fachportal.gematik.de/hersteller-anbieter/produktzulassung/bestaetigungsverfahren-isik may have moved to https://fachportal.gematik.de/hersteller-anbieter/zulassungen-bestaetigungen or https://fachportal.gematik.de/zulassungs-bestaetigungsuebersichten — verify and replace."
+    },
+    {
+      "file": "content/infrastructure/PoPP.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "VER-Smartphone NOT in Stufe 1 confirmed: Draft_PoPP1_26_1 gemspec page live and confirms this exclusion. Article's compliance callout is accurate.",
+        "Draft_PoPP1_26_1 date (25. März 2026) and gemSpec_PoPP_Service V1.0.0 date (3. März 2026) confirmed via live gemspec URLs.",
+        "gematik newsroom URL (RISE contract) confirmed live.",
+        "All 4 Quellen URLs live and content-appropriate.",
+        "PoPP Stufe 2 timeline (Q4/2026) and Stufe 1 Produktivstart (Mitte 2026) consistent with gematik sources."
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/technologies/ePA.md",
+      "verdict": "pass",
+      "score": 87,
+      "issues": [
+        "AMTS Aktionsplan 2026-2029: Bundeskabinett Beschluss on 1. April 2026 confirmed by Pharmazeutische Zeitung article published same day.",
+        "AMTS plan correctly describes ePA (eML/eMP), E-Rezept, dgMP as central instruments — consistent with PZ article content.",
+        "AMTS plan 'keine eigenständigen neuen Fristen' claim is consistent with PZ reporting.",
+        "All other previously verified ePA facts (launch dates, PoPP, granular eML control) remain accurate.",
+        "ePA.md and BMG.md are consistent on AMTS Aktionsplan date (both state 1. April 2026)."
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/organization/BMG.md",
+      "verdict": "revise",
+      "score": 74,
+      "issues": [
+        "AMTS Aktionsplan 2026-2029, Beschluss 1. April 2026: confirmed via PZ and web sources. Fact accurate.",
+        "url_dead: Quellen source 'Über das BMG' (https://www.bundesgesundheitsministerium.de/ministerium/ueber-das-ministerium) returns 404. Confirmed via Playwright.",
+        "GDAG URL (https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/gdag-kabinett-17-07-24.html) confirmed live (redirects to .../gdag-kabinett-17-07-24 without .html — page content loads).",
+        "BMG 51% gematik stake, gesellschafterstruktur table: standard verified knowledge.",
+        "All other claims (DVG 2019, DigiG 2024, BfArM/RKI as nachgeordnete Behörden) are correct."
+      ],
+      "fixInstructions": "Fix dead Quellen URL for 'Über das BMG': replace with https://www.bundesgesundheitsministerium.de/ministerium or find current URL on bundesgesundheitsministerium.de."
+    },
+    {
+      "file": "content/infrastructure/RIS.md",
+      "verdict": "pass",
+      "score": 83,
+      "issues": [
+        "Relevance frontmatter added: sectors [krankenhaus, hersteller, it-dienstleister], interests [technik] — valid and appropriate.",
+        "interesse-technik callout added: content matches type (protocol details, vendor list).",
+        "HL7 v2 ORM/ORR/ORU message types for RIS-KIS: confirmed standard HL7 v2 knowledge.",
+        "DICOM Modality Worklist (MWL), MPPS, C-STORE, C-FIND/C-MOVE: correct DICOM standard services.",
+        "Vendors (Dedalus ORBIS, Siemens Syngo, Sectra, AGFA): plausible standard market knowledge.",
+        "MINOR: Only 4 Quellen sources. IHE, HL7, DICOM, Simplifier.net — all authoritative. No gematik direct source, but RIS is not a TI component so this is acceptable."
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/infrastructure/gSMC-KT.md",
+      "verdict": "revise",
+      "score": 74,
+      "issues": [
+        "Relevance frontmatter added: sectors [arztpraxis, zahnarzt, krankenhaus, apotheke, hersteller], interests [technik, compliance] — valid values.",
+        "interesse-compliance callout (ECC migration deadline 31. Dez 2026) and interesse-technik callout added correctly.",
+        "url_dead: Quellen source https://fachportal.gematik.de/telematikinfrastruktur/ecc-migration returns 404. Confirmed via Playwright.",
+        "url_dead: Quellen source https://fachportal.gematik.de/telematikinfrastruktur/smartcards confirmed LIVE (page title 'Smartcards - fachportal.gematik.de').",
+        "gemSpec_KT URL (gemspec.gematik.de/docs/gemSpec/gemSpec_KT/latest/) not directly tested but same pattern as other live gemspec URLs.",
+        "ECC G2.0 (RSA) to G2.1 (ECC) migration, deadline 31 Dez 2026: consistent with gSMC-K.md and ECC-Migration.md."
+      ],
+      "fixInstructions": "Fix dead URL: replace https://fachportal.gematik.de/telematikinfrastruktur/ecc-migration with https://fachportal.gematik.de/hersteller-anbieter/ecc-migration or the current ECC migration page URL. Verify on fachportal.gematik.de."
+    },
+    {
+      "file": "content/organization/DVKA.md",
+      "verdict": "revise",
+      "score": 70,
+      "issues": [
+        "Relevance frontmatter: sectors [kasse, patient, regulierung], interests [compliance, patient] — valid values.",
+        "interesse-compliance and interesse-patient callouts added; content matches callout types.",
+        "EHDS Verordnung (EU) 2025/327: article states 'in Kraft seit März 2025'. Confirmed: published 5 March 2025, entered into force 26 March 2025. Claim accurate.",
+        "EHDS '2029 Pflichten': article says 'bis 2029'. Actual: EHDS applies from 26 March 2027 (2 years after entry into force) for primary use, with further phases for secondary use. '2029' is technically imprecise — the first obligations apply from 2027. However, article uses 'bis 2029' which could encompass the full rollout. Flagged as potential stale/imprecise claim.",
+        "url_dead: Quellen source https://www.gkv-spitzenverband.de/krankenversicherung/auslandsreisen_und_eu/dvka/dvka.jsp returns 404. Confirmed via Playwright.",
+        "url_dead: Quellen source https://fachportal.gematik.de/anwendungen/ncpeh returns 404. Confirmed via Playwright.",
+        "DVKA as department of GKV-Spitzenverband since 1. Juli 2008: standard verified knowledge.",
+        "E-Rezept MyHealth@EU Wave 10 H1/2027: unverifiable but plausible future planning."
+      ],
+      "fixInstructions": "Fix 2 dead URLs: (1) GKV-Spitzenverband DVKA URL — find current URL on gkv-spitzenverband.de; try https://www.gkv-spitzenverband.de/service/versicherte_res/dvka_1/dvka.jsp or search the site. (2) NCPeH Fachportal URL — replace with https://fachportal.gematik.de/anwendungen or find current NCPeH page. Also clarify EHDS 2027 vs 2029: first Mitgliedstaat obligations apply from 26 March 2027, not 2029."
+    },
+    {
+      "file": "content/standards/DiPAV.md",
+      "verdict": "pass",
+      "score": 86,
+      "issues": [
+        "Relevance frontmatter: sectors [pflege, hersteller, kasse, startup], interests [compliance, business] — valid values.",
+        "interesse-compliance and interesse-business callouts added; content matches types correctly.",
+        "DiPAV in Kraft 7. Oktober 2022, Rechtsgrundlage § 78a SGB XI via DVPMG: confirmed via gesetze-im-internet.de (URL live).",
+        "Erstattungsbetrag split 2026 (40 Euro § 40a SGB XI + 30 Euro § 39a SGB XI): unverified specific detail but article notes 'ab 2026' and cites the paragraph split. Plausible.",
+        "BfArM DiPA page URL confirmed live.",
+        "Gesetze-im-internet.de DiPAV URL confirmed live.",
+        "MINOR: Ärztezeitung source URL not tested but article text is consistent with known facts."
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/standards/GOZ.md",
+      "verdict": "pass",
+      "score": 85,
+      "issues": [
+        "Relevance frontmatter: sectors [zahnarzt, patient, kasse], interests [compliance, business] — valid values.",
+        "interesse-compliance and interesse-business callouts added; content matches types correctly.",
+        "GOZ Punktwert 5,62421 Cent: confirmed by multiple sources (PKV, Zahnaerzteblatt Hamburg). Correct.",
+        "GOZ in Kraft 1. Januar 2012: confirmed standard knowledge.",
+        "Rechtsgrundlage § 15 ZHG: standard verified knowledge.",
+        "Steigerungsfaktor 2,3-fach as Regelhöchstsatz, 3,5-fach as Höchstsatz: confirmed standard GOZ knowledge.",
+        "GOZ sections A-J: confirmed by PKV PDF source.",
+        "MINOR: KZBV PDF URL not directly tested via Playwright but KZBV and BZÄK domains are stable."
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/infrastructure/gSMC-K.md",
+      "verdict": "revise",
+      "score": 70,
+      "issues": [
+        "broken_link: [[TR-03116]] used twice — no matching file or alias in knowledge base. Confirmed by test report (2 errors). The BSI TR-03116 page URL in Root-CA.md Quellen is live, but no wiki article exists.",
+        "url_dead: Quellen source https://fachportal.gematik.de/telematikinfrastruktur/ecc-migration returns 404.",
+        "ECC migration deadline for gSMC-K G2.0 was 31 Dez 2025 (Konnektoren lost VPN access from Jan 2026): consistent with ECC-Migration.md and industry knowledge.",
+        "gSMC-K certificates (C.NK.VPN, C.NK.CS, C.SAK.AUT): technically plausible, consistent with gemSpec_Krypt structure.",
+        "gemSpec_Krypt URL (gemspec.gematik.de/docs/gemSpec/gemSpec_Krypt/latest/) confirmed live.",
+        "gemSpec_VPN_Zugangsdienst URL: same pattern, expected live."
+      ],
+      "fixInstructions": "Remove or replace [[TR-03116]] wiki-links — no article exists for this term. Use plain text 'BSI TR-03116' or link to [[BSI]] instead. Fix dead ECC-migration Fachportal URL. No TR-03116 article should be created without editorial approval."
+    },
+    {
+      "file": "content/infrastructure/Root-CA.md",
+      "verdict": "revise",
+      "score": 72,
+      "issues": [
+        "broken_link: [[TR-03116]] used twice — no matching file or alias. Confirmed by test report (2 errors).",
+        "url_dead: Quellen source https://fachportal.gematik.de/telematikinfrastruktur/pki returns 404. Confirmed via Playwright.",
+        "gemSpec_PKI URL (gemspec.gematik.de/docs/gemSpec/gemSpec_PKI/latest/) confirmed live.",
+        "BSI TR-03116 URL (bsi.bund.de) confirmed live.",
+        "Root-CA operated by gematik, offline principle, three-level PKI hierarchy: confirmed by gematik Fachportal search results and gemspec documentation.",
+        "TSL signed by Root-CA: confirmed standard TI-PKI knowledge.",
+        "ECC migration for Root-CA: factually plausible, consistent with ECC-Migration.md."
+      ],
+      "fixInstructions": "Remove or replace [[TR-03116]] wiki-links with plain text 'BSI TR-03116'. Fix dead Quellen URL: replace https://fachportal.gematik.de/telematikinfrastruktur/pki with https://fachportal.gematik.de/telematikinfrastruktur/komponenten-dienste/gematik-root-ca (confirmed live from search results)."
+    },
+    {
+      "file": "content/concepts/TI-Anwendung.md",
+      "verdict": "pass",
+      "score": 88,
+      "issues": [
+        "Taxonomy (Pflicht-, freiwillig, Zusatz-Anwendungen) consistent with gematik Fachportal structure.",
+        "VSDM Pflicht seit 2019, KIM 2021, eAU 2022, E-Rezept 2024, ePA 2025: all dates consistent with respective articles in knowledge base.",
+        "TI 2.0 architecture comparison (Konnektor vs TI-Gateway, SOAP vs FHIR REST) accurate.",
+        "All 4 Quellen URLs use stable official sources (gematik Fachportal, gematik.de, gesetze-im-internet.de, Wikipedia).",
+        "Wiki-links comprehensive and appropriate.",
+        "MINOR: NFDM listed as 'Pflicht: Laufend' — slightly vague but not inaccurate."
+      ],
+      "fixInstructions": ""
+    },
+    {
+      "file": "content/standards/OID.md",
+      "verdict": "revise",
+      "score": 72,
+      "issues": [
+        "url_dead: Quellen source https://www.bfarm.de/DE/Kodiersysteme/Terminologien/OID/_node.html returns 404. Confirmed via Playwright. Actual current URL is https://www.bfarm.de/DE/Kodiersysteme/Services/OID-Register/_node.html.",
+        "OID 1.2.276 = Deutschland, branch 1.2.276.0.76 = Gesundheitswesen (DIMDI/BfArM): confirmed correct via BfArM OID register search results.",
+        "DIMDI as OID root holder, now part of BfArM: confirmed. Historical accuracy fine.",
+        "OID table values (HBA 1.2.276.0.76.4.3, SMC-B 1.2.276.0.76.4.30, etc.): consistent with gemSpec_OID (confirmed live).",
+        "HL7 OIDs (ICD-10 2.16.840.1.113883.6.3, LOINC .6.1, SNOMED .6.96): standard HL7 known-good values.",
+        "gemSpec_OID URL confirmed live."
+      ],
+      "fixInstructions": "Fix dead Quellen URL: replace https://www.bfarm.de/DE/Kodiersysteme/Terminologien/OID/_node.html with https://www.bfarm.de/DE/Kodiersysteme/Services/OID-Register/_node.html (confirmed live via web search results)."
+    },
+    {
+      "file": "content/infrastructure/DiGA-Verzeichnis.md",
+      "verdict": "pass",
+      "score": 84,
+      "issues": [
+        "diga.bfarm.de/de/verzeichnis URL confirmed reachable via Playwright.",
+        "Claim 'über 50 DiGA mindestens zeitweise aufgenommen seit Oktober 2020': confirmed accurate (68 total by end 2024, ~55 currently active).",
+        "DiGA introduction Oktober 2020 (DVG 2019): correct.",
+        "Erstattungsbetrag range (ca. 10 Euro to 600 Euro/Monat): unverified specific range but plausible.",
+        "PZN-based E-Rezept verordnung workflow (Arzt → Kasse → Freischaltcode) is accurate.",
+        "All 4 Quellen URLs are authoritative (BfArM, BfArM, gematik Fachportal, Wikipedia). BfArM Fast-Track URL confirmed live.",
+        "MINOR: Kategorisierung unter content/infrastructure/ ist ungewöhnlich für ein Register des BfArM — eher content/organization/ oder content/standards/ wäre passender. Kein Fehler, aber Inkonsistenz."
+      ],
+      "fixInstructions": ""
+    },
     {
       "file": "content/standards/eHKP.md",
       "verdict": "pass",
       "score": 90,
       "issues": [
-        "KZBV EBZ source URL (https://www.kzbv.de/zahnaerzte/digitales/elektronisches-beantragungs-und-genehmigungsverfahren/) confirmed live via Playwright — dead URL fix verified correct.",
-        "EBZ verpflichtend seit 1. Jan 2023 confirmed by KZBV page text ('Seit dem 1. Januar 2023 haben Zahnarztpraxen mit der verpflichtenden Nutzung des EBZ bereits ca. 29 Mio. EBZ-Anträge... versendet').",
-        "KIM-Dienstkennung urn:gematik:ebz:hkp:1 not independently verifiable but technically plausible.",
-        "All remaining Quellen URLs (gesetze-im-internet.de/§87, gematik.de/kim, Wikipedia) expected live and stable."
+        "EBZ verpflichtend seit 1. Jan 2023 confirmed.",
+        "All Quellen URLs previously verified live."
       ],
       "fixInstructions": ""
     },
@@ -24,9 +245,8 @@
       "verdict": "pass",
       "score": 92,
       "issues": [
-        "DKR 2026 date fix verified correct: article now states '26. September 2025 verabschiedet'. Confirmed via g-drg.de (file dated 20.11.2025 = Endversion publication; agreement/Verabschiedung date is Sep 26, 2025 per multiple sources).",
-        "Updated Quellen URL https://www.g-drg.de/ag-drg-system-2026/kodierrichtlinien/deutsche-kodierrichtlinien-2026 confirmed live via Playwright — URL fix verified correct.",
-        "Previous issues (DKR date wrong, URL pointing to 2025 page) are now resolved."
+        "DKR 2026 date fix verified correct.",
+        "Updated Quellen URL confirmed live."
       ],
       "fixInstructions": ""
     },
@@ -35,20 +255,8 @@
       "verdict": "pass",
       "score": 93,
       "issues": [
-        "Replacement G-BA URL https://www.g-ba.de/themen/arzneimittel/arzneimittel-richtlinie-anlagen/nutzenbewertung-35a/eu-hta-verordnung/ confirmed live via Playwright and content matches the EU-HTA topic — dead URL fix verified correct.",
-        "Article correctly separates: regulation entered into force 11 Jan 2022; becomes applicable (anwendbar) from 12 Jan 2025. G-BA page uses 'in Kraft getreten' loosely for Jan 12 2025 but this refers to the applicability date. Article's distinction is factually precise.",
-        "All four Quellen URLs now valid."
-      ],
-      "fixInstructions": ""
-    },
-    {
-      "file": "content/technologies/ePA.md",
-      "verdict": "pass",
-      "score": 88,
-      "issues": [
-        "New paragraph on granulare eML-Kontrolle per Einrichtung verified: ePA 3.1.2 enabling per-institution eML blocking from March 2026 is supported by multiple sources (PZ, ePA-Aktensystem.md, medical-tribune.de).",
-        "Launch dates consistent across knowledge base: pilot 15. Jan 2025 (confirmed DigiG.md, Opt-Out-ePA.md), rollout 29. Apr 2025, Pflicht 1. Okt 2025.",
-        "Claim 130.000 of 160.000 Einrichtungen (81%) active: unverifiable, stated as 'Stand März 2026'."
+        "Replacement G-BA URL confirmed live and content-appropriate.",
+        "Regulation dates (in force 11 Jan 2022, applicable 12 Jan 2025) factually precise."
       ],
       "fixInstructions": ""
     },
@@ -57,35 +265,17 @@
       "verdict": "pass",
       "score": 86,
       "issues": [
-        "TI-Ausfall 10.02.2026 paragraph verified: Rauchmelder-Alarm in Frankfurt IBM data center confirmed by borncity.com and other sources. Outage time 3:05–11:00 Uhr and affected services (ePA, E-Rezept, KIM, VSDM) consistent with reporting.",
-        "March 2026 multi-outage paragraph (RISE TI-Gateway, Bitmarck, Apothekenstreik 23 März 2026): not independently verified via web search; flagged as unverifiable but internally consistent."
+        "TI-Ausfall 10.02.2026 paragraph verified: single root cause (IBM Frankfurt Rauchmelder) confirmed.",
+        "March 2026 multi-outage paragraph: unverifiable but internally consistent."
       ],
       "fixInstructions": ""
-    },
-    {
-      "file": "content/technologies/ePass.md",
-      "verdict": "revise",
-      "score": 80,
-      "issues": [
-        "Launch date 25. März 2026 confirmed via Presseportal BITMARCK and Ärzteblatt.",
-        "Developer Nect GmbH (Hamburg) confirmed.",
-        "80 Prozent der gesetzlichen Krankenkassen confirmed.",
-        "BEEP-Gesetz as legal basis confirmed (Bundesrat approved 19 Dez 2025, in force 1 Jan 2026).",
-        "BEEP-Gesetz full title: 'Gesetz zur Befugniserweiterung und Entbürokratisierung in der Pflege' — correct in article.",
-        "url_weak: First Quellen source points to gematik Fachportal search query (https://fachportal.gematik.de/suche?q=ePass) rather than a direct page. Not a dead URL but not a stable, direct reference.",
-        "No official gematik.de or fachportal.gematik.de direct page in Quellen — all sources are news portals and press releases. Slight weakness for an article about an officially approved TI identification method."
-      ],
-      "fixInstructions": "Replace the gematik Fachportal search URL with a direct page link. Possible options: https://fachportal.gematik.de/anwendungen/gesundheits-id or the specific ePass/Identifikationsverfahren page. Also consider adding https://www.gematik.de as a primary source reference if a relevant newsroom article exists."
     },
     {
       "file": "content/infrastructure/IDP.md",
       "verdict": "pass",
       "score": 88,
       "issues": [
-        "TI-Ausfall content confirmed added and factually accurate.",
-        "Feb 10 2026: Two independent outages described (IBM sektoraler IDP + separate TI outage) — consistent with Telematikinfrastruktur.md.",
-        "Feb 12 2026: T-Systems sektoraler IDP outage affecting Barmer and AOK described. Cross-consistent with Zugangsdienst.md.",
-        "Concentration risk framing is accurate and editorially appropriate."
+        "Feb 10 and Feb 12 2026 outage descriptions consistent with Zugangsdienst.md and Telematikinfrastruktur.md."
       ],
       "fixInstructions": ""
     },
@@ -94,11 +284,7 @@
       "verdict": "pass",
       "score": 86,
       "issues": [
-        "Relevance sectors [arztpraxis, krankenhaus, therapie, hersteller, ti-infrastruktur, it-dienstleister] appropriate.",
-        "Interests [compliance, technik] appropriate.",
-        "eVO mandatory date 1. Jan 2027 (Ärzte) and TI-Anbindung 1. Okt 2027 (Heilmittelerbringer) confirmed via verbandsbuero.de source in article.",
-        "interesse-compliance and interesse-technik callouts used correctly and content matches type.",
-        "MINOR: 'kasse' sector not included but Kassen are relevant receivers of eVO billing. Not a blocking issue."
+        "eVO mandatory dates confirmed. Callouts appropriate."
       ],
       "fixInstructions": ""
     },
@@ -107,11 +293,7 @@
       "verdict": "pass",
       "score": 88,
       "issues": [
-        "Relevance sectors [arztpraxis, apotheke, krankenhaus, pflege, patient] appropriate.",
-        "Interests [compliance, patient] appropriate.",
-        "BMP introduction 1. Oktober 2016, § 31a SGB V: confirmed standard knowledge.",
-        "eMP rollout März 2026: consistent with ePA.md eML paragraph and other articles.",
-        "interesse-patient and interesse-compliance callouts used appropriately, content matches callout type."
+        "BMP facts confirmed. Callouts appropriate."
       ],
       "fixInstructions": ""
     },
@@ -120,10 +302,7 @@
       "verdict": "pass",
       "score": 90,
       "issues": [
-        "Relevance sectors [krankenhaus, hersteller, ti-infrastruktur, it-dienstleister] appropriate for technical audience.",
-        "Interests [technik] correct for audience:[technical] article.",
-        "Pilot launch März 2026 with RHÖN-KLINIKUM, D-Trust, DKTIG, RISE: gematik source URL provided and consistent with today's date.",
-        "interesse-technik callout content (X.509 structure, HSM key generation, no private key export) matches callout type correctly."
+        "Pilot launch März 2026 confirmed. Callout appropriate."
       ],
       "fixInstructions": ""
     },
@@ -132,10 +311,7 @@
       "verdict": "pass",
       "score": 90,
       "issues": [
-        "Relevance sectors [arztpraxis, kasse, regulierung, verband] appropriate.",
-        "Interests [compliance, business] appropriate.",
-        "Orientierungswert 12,7404 Cent ab 1. Jan 2026 (+2,8%): specific but unverified in this cycle. Plausible and consistent with the TI-Pauschale +2,8% claim in Telematikinfrastruktur.md.",
-        "interesse-compliance and interesse-business callouts used appropriately with content matching type."
+        "Orientierungswert and callouts appropriate."
       ],
       "fixInstructions": ""
     },
@@ -144,13 +320,7 @@
       "verdict": "pass",
       "score": 86,
       "issues": [
-        "Relevance sectors [arztpraxis, krankenhaus, kasse, patient] appropriate.",
-        "Interests [compliance, patient] appropriate.",
-        "DMP Rheumatoide Arthritis 'seit Juli 2025': unverified but plausible.",
-        "7,7 Millionen GKV-Versicherte in DMP (Stand 2025): unverified but consistent with known BAS figures.",
-        "PKP 2025: 149,16 Euro, 2026: 152,28 Euro: unverified specific figures.",
-        "G-BA digital modules for DMP Diabetes März 2025: unverified but plausible.",
-        "interesse-patient and interesse-compliance callouts used appropriately."
+        "Key figures unverified but internally consistent. Callouts appropriate."
       ],
       "fixInstructions": ""
     },
@@ -159,12 +329,7 @@
       "verdict": "pass",
       "score": 92,
       "issues": [
-        "1 Milliarde E-Rezepte bis 17. Oktober 2025: confirmed via gematik.de newsroom and multiple press sources.",
-        "FHIR endpoints, KBV profile names (KBV_PR_ERP_Bundle, KBV_PR_ERP_Prescription etc.) consistent with gematik specifications.",
-        "VAU architecture description accurate.",
-        "ePA integration 'seit Januar 2025' consistent with ePA.md.",
-        "DiGA-Rezepte 'seit Oktober 2025': unverified but plausible.",
-        "All 4 Quellen URLs point to authoritative, live gematik/KBV sources."
+        "1 Milliarde E-Rezepte confirmed. All Quellen URLs authoritative."
       ],
       "fixInstructions": ""
     },
@@ -173,68 +338,79 @@
       "verdict": "pass",
       "score": 84,
       "issues": [
-        "CGM as market leader with TURBOMED, MEDISTAR, ALBIS products: correct standard knowledge.",
-        "Dampsoft as market leader in dental segment: correct standard knowledge.",
-        "x.comfort (x-tention): product name may be imprecise; x-tention is known but 'x.comfort' may not be the current product name. Unverifiable, minor risk.",
-        "1.100+ Primärsysteme with E-Rezept Konformitätsbestätigung: consistent with E-Rezept-Fachdienst.md.",
-        "Quellen URL for 'Produktkatalog' points to fachportal.gematik.de/anwendungen/e-rezept rather than a dedicated Produktkatalog page — slightly imprecise labeling."
+        "CGM market leadership confirmed. Minor product name uncertainty for x-tention."
       ],
-      "fixInstructions": "Verify the exact product name for x-tention. Consider checking the gematik Produktkatalog (fachportal.gematik.de/hersteller-anbieter/komponenten-dienste/primaersystem) for exact PVS names."
+      "fixInstructions": ""
     },
     {
       "file": "content/infrastructure/ePA-Aktensystem.md",
       "verdict": "pass",
       "score": 90,
       "issues": [
-        "RISE/BITMARCK for 87 Krankenkassen: confirmed by BITMARCK press release (Playwright navigation path).",
-        "IBM for ~16 Krankenkassen: consistent with ePA.md and general knowledge.",
-        "ePA version 3.1.3 current (Stand März 2026): plausible, gemSpec URL provided.",
-        "Health Record Relocation 60-day deadline: unverified but cites GitHub spec.",
-        "99,5% SLA: standard gematik requirement, plausible.",
-        "All 4 Quellen URLs point to authoritative gematik sources."
+        "RISE/BITMARCK and IBM operator split confirmed. All Quellen authoritative."
       ],
       "fixInstructions": ""
-    },
-    {
-      "file": "content/infrastructure/Zugangsdienst.md",
-      "verdict": "revise",
-      "score": 78,
-      "issues": [
-        "FACTUAL IMPRECISION: The Feb 10 2026 outage paragraph states 'T-Systems VPN-Zugangsdienst parallel zum IBM-IDP-Ausfall für mehrere Stunden nicht verfügbar war'. Web sources (borncity.com) confirm the IBM Frankfurt data center smoke detector was the root cause for the entire outage. The T-Systems VPN was affected as a downstream consequence of the IBM data center shutdown — not as a separate, parallel independent failure. The phrasing implies two independent failures rather than one root cause.",
-        "TI-Gateway availability 'seit 2023 (Zulassungen)': unverified but plausible.",
-        "IPSec technical parameters, mTLS for TI-Gateway: consistent with gematik specifications.",
-        "All 4 Quellen URLs point to gematik sources expected to be live."
-      ],
-      "fixInstructions": "Correct the Feb 10 2026 outage description: the IBM Frankfurt Rechenzentrum smoke-detector shutdown was the single root cause that took down both IBM's sektoraler IDP and the T-Systems VPN access service (which was co-located or dependent on the same infrastructure). Change the sentence to: 'Dies zeigte sich am 10. Februar 2026, als der IBM-Rechenzentrumsausfall in Frankfurt gleichzeitig den IBM-sektoralen IDP und den T-Systems VPN-Zugangsdienst für mehrere Stunden lahmlegte.' Cross-reference with Telematikinfrastruktur.md for consistency."
     },
     {
       "file": "content/infrastructure/Testumgebung.md",
       "verdict": "pass",
       "score": 88,
       "issues": [
-        "RU/TU/PU structure accurate and consistent with gematik documentation.",
-        "ECC test weeks Feb/March 2026: unverified but plausible.",
-        "VSDM 2.0 as first TI-2.0-Dienst, Start Juni 2026: consistent with Telematikinfrastruktur.md.",
-        "All 4 Quellen URLs point to authoritative gematik sources (Fachportal, GitHub, gemSpec)."
+        "RU/TU/PU structure accurate. VSDM 2.0 timeline consistent."
       ],
       "fixInstructions": ""
     }
   ],
-  "contradictions": [
-    {
-      "claim": "TI-Ausfall 10.02.2026 root cause framing",
-      "articleA": "Zugangsdienst.md: implies T-Systems VPN outage was parallel/independent to IBM IDP outage",
-      "articleB": "Telematikinfrastruktur.md: single root cause was IBM Frankfurt Rechenzentrum Rauchmelder-Alarm",
-      "verdict": "Telematikinfrastruktur.md is more accurate. Zugangsdienst.md needs correction (see fixInstructions)."
-    }
-  ],
+  "contradictions": [],
   "staleArticles": [],
   "urlIssues": [
     {
-      "file": "content/technologies/ePass.md",
-      "url": "https://fachportal.gematik.de/suche?q=ePass",
-      "status": "url_weak",
-      "note": "Search query URL rather than direct page. Replace with a stable direct gematik Fachportal page for the ePass/Identifikationsverfahren."
+      "file": "content/processes/Bestaetigungsverfahren.md",
+      "url": "https://fachportal.gematik.de/hersteller-anbieter/produktzulassung/bestaetigungsverfahren-isik",
+      "status": "url_dead",
+      "note": "Returns 404. Replace with current ISiK Bestätigungsverfahren page on fachportal.gematik.de."
+    },
+    {
+      "file": "content/infrastructure/gSMC-KT.md",
+      "url": "https://fachportal.gematik.de/telematikinfrastruktur/ecc-migration",
+      "status": "url_dead",
+      "note": "Returns 404. Find current ECC-Migration page on fachportal.gematik.de."
+    },
+    {
+      "file": "content/infrastructure/gSMC-K.md",
+      "url": "https://fachportal.gematik.de/telematikinfrastruktur/ecc-migration",
+      "status": "url_dead",
+      "note": "Returns 404. Same as gSMC-KT.md."
+    },
+    {
+      "file": "content/infrastructure/Root-CA.md",
+      "url": "https://fachportal.gematik.de/telematikinfrastruktur/pki",
+      "status": "url_dead",
+      "note": "Returns 404. Replace with https://fachportal.gematik.de/telematikinfrastruktur/komponenten-dienste/gematik-root-ca (confirmed live)."
+    },
+    {
+      "file": "content/organization/BMG.md",
+      "url": "https://www.bundesgesundheitsministerium.de/ministerium/ueber-das-ministerium",
+      "status": "url_dead",
+      "note": "Returns 404. Replace with https://www.bundesgesundheitsministerium.de/ministerium or find current URL."
+    },
+    {
+      "file": "content/organization/DVKA.md",
+      "url": "https://www.gkv-spitzenverband.de/krankenversicherung/auslandsreisen_und_eu/dvka/dvka.jsp",
+      "status": "url_dead",
+      "note": "Returns 404. Find current DVKA page on gkv-spitzenverband.de."
+    },
+    {
+      "file": "content/organization/DVKA.md",
+      "url": "https://fachportal.gematik.de/anwendungen/ncpeh",
+      "status": "url_dead",
+      "note": "Returns 404. Find current NCPeH page on fachportal.gematik.de."
+    },
+    {
+      "file": "content/standards/OID.md",
+      "url": "https://www.bfarm.de/DE/Kodiersysteme/Terminologien/OID/_node.html",
+      "status": "url_dead",
+      "note": "Returns 404. Replace with https://www.bfarm.de/DE/Kodiersysteme/Services/OID-Register/_node.html (confirmed live)."
     }
   ]
 }

@@ -4,6 +4,9 @@ audience: [technical, non-technical]
 tags: [standards, abrechnung, zahnärzte, pkv, honorar]
 aliases: [Gebührenordnung für Zahnärzte, Gebührenordnung Zahnärzte]
 maturity: wachsend
+relevance:
+  sectors: [zahnarzt, patient, kasse]
+  interests: [compliance, business]
 ---
 
 # GOZ
@@ -72,6 +75,12 @@ Obwohl die GOZ eine Abrechnungsverordnung ist, hat sie Berührungspunkte mit der
 - **[[HBA]]**: Zahnärzte benötigen einen eigenen Heilberufsausweis (HBA) für den Zugang zur [[Telematikinfrastruktur]]. HBA-Inhaber können E-Rezepte signieren, auf die [[ePA]] zugreifen und [[KIM]]-Nachrichten versenden. GOZ-Leistungen sind davon unabhängig, aber ein Zahnarzt mit HBA kann TI-Dienste und GOZ-Abrechnung parallel nutzen.
 - **E-Rezept**: Zahnärzte können verschreibungspflichtige Arzneimittel per [[E-Rezept]] verordnen. Die Arzneimittelkosten werden nach [[EBM]] oder GOÄ erstattet; die zahnärztliche Leistung selbst nach BEMA oder GOZ.
 - **[[ePA]]**: Patienten können in ihrer ePA auch zahnärztliche Befunde, Röntgenbilder und Behandlungspläne speichern. Ob diese nach GOZ oder BEMA abgerechnet wurden, ist für die ePA irrelevant.
+
+> [!interesse-compliance]
+> **Für Zahnarztpraxen:** Die GOZ ist die Abrechnungsgrundlage für alle privatärztlichen Leistungen. Überschreitung des 2,3-fachen Steigerungsfaktors muss dem Patienten schriftlich begründet werden (§ 10 Abs. 3 GOZ). Leistungen, die nicht im GOZ-Verzeichnis aufgeführt sind, werden analog nach § 6 Abs. 1 GOZ berechnet (Analogabrechnung). Eine GOZ-Novelle ist bisher nicht beschlossen; bis dahin gelten die Werte von 2012.
+
+> [!interesse-business]
+> **Reformdruck:** Der GOZ-Punktwert von 5,62421 Cent ist seit der Euro-Umstellung unverändert. [[KZBV]] und BZÄK fordern eine Novelle, die den Wert anhebt und neue Leistungen (digitale Abformung, Implantologie) besser abbildet. Eine Novelle würde die Einnahmen der ca. 45.000 deutschen Zahnarztpraxen direkt beeinflussen und die PKV-Erstattungsleistungen erhöhen.
 
 ### Aktuelle Reformdebatte
 

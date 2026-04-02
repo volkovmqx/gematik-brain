@@ -2034,8 +2034,61 @@
       "appliedDate": "2026-03-25",
       "details": "BSI.md: Neuer Abschnitt 'NIS2-Durchsetzungsphase' ergänzt mit BSI-Befugnissen nach § 38 NIS2UmsuCG (verbindliche Anordnungen, Audits, Bußgelder bis 10 Mio. EUR, persönliche Haftung der Geschäftsleitung), 18.500 Unternehmen mit verpasster Frist, NIS2-compliance-callout für Gesundheitswesen. KIS.md: Hinweis auf NIS2-Pflicht für Krankenhäuser ab 50 Mitarbeitern oder 10 Mio. EUR Umsatz in compliance-callout ergänzt.",
       "suggestedTerm": "NIS2UmsuCG"
+    },
+    {
+      "title": "Draft_PoPP1_26_1: Spezifikationsanpassungen für Stufe 1 veröffentlicht (25. März 2026)",
+      "date": "2026-03-25",
+      "source": "https://gemspec.gematik.de/prereleases/Draft_PoPP1_26_1/index.html",
+      "summary": "Am 25. März 2026 veröffentlichte gematik den Pre-Release Draft_PoPP1_26_1 mit aktualisierten Dokumenten für den PoPP-Dienst Stufe 1. Kommentierungsfrist lief bis 1. April 2026. Wesentliche Änderungen: (1) Anpassung der Bestandsdatenlieferung, Telemetriedaten und Selbstauskunft. (2) Klarstellung, dass VER-Smartphones (Versicherter per Smartphone) in Stufe 1 noch nicht unterstützt werden ('kein VER Smartphone in Stufe 1'). (3) Aktualisierungen der Testdokumentation (gemKPT_Test). Enthaltene Dokumente: gemSpec_PoPP_Service (Stufe-1-Version), Änderungsliste C_12625_Anlage und C_12662_Anlage. Der Pre-Release ist Vorbereitung auf den finalen PoPP-Release vor dem Produktivstart Stufe 1 (Mitte 2026).",
+      "relevantArticles": [
+        "PoPP.md",
+        "VSDM.md",
+        "eGK.md"
+      ],
+      "category": "specification",
+      "action": "applied",
+      "appliedDate": "2026-04-01",
+      "details": "PoPP.md erstellt (neuer Artikel). Enthält Klarstellung: VER-Smartphone-Szenarien sind in Stufe 1 nicht enthalten. Stufe 2 (Q4/2026) bringt Smartphone-basierten Zugang. Pre-Release Draft_PoPP1_26_1 vom 25. März 2026 dokumentiert."
+    },
+    {
+      "title": "Bundeskabinett beschließt Aktionsplan Arzneimitteltherapiesicherheit (AMTS) 2026-2029 (1. April 2026)",
+      "date": "2026-04-01",
+      "source": "https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/",
+      "summary": "Das Bundeskabinett beschloss am 1. April 2026 den Aktionsplan Arzneimitteltherapiesicherheit (AMTS) für den Zeitraum 2026-2029. Der Aktionsplan setzt einen Schwerpunkt auf die digitale Unterstützung des Medikationsprozesses: E-Rezept, ePA und der digital gestützte Medikationsprozess (dgMP) sind zentrale Instrumente. Ziel ist die Reduzierung vermeidbarer unerwünschter Arzneimittelereignisse (UAE), besonders bei älteren Patienten und Polypharmazie. Die ePA mit elektronischer Medikationsliste (eML) und elektronischem Medikationsplan (eMP) wird als Kernelement für einrichtungsübergreifende Medikationsübersicht benannt. Der Aktionsplan hat keine eigenen gesetzlichen Fristen, sondern koordiniert bestehende Maßnahmen (DigiG, GDNG, DiGAV) unter einem Qualitätsdach.",
+      "relevantArticles": [
+        "ePA.md",
+        "E-Rezept.md",
+        "BMG.md"
+      ],
+      "category": "regulation",
+      "action": "applied",
+      "appliedDate": "2026-04-01",
+      "details": "ePA.md: AMTS-Aktionsplan 2026-2029 im Abschnitt 'Digitaler Medikationsprozess (dgMP)' ergänzt. BMG.md: Neuer Abschnitt 'Aktuelle Maßnahmen' mit AMTS-Aktionsplan 2026-2029 hinzugefügt."
+    },
+    {
+      "title": "KBV empfiehlt PVS-Updates vor 1. April 2026: EBM-Änderungen und E-Rezept-Anforderungen",
+      "date": "2026-03-26",
+      "source": "https://www.kbv.de/praxis/tools-und-services/praxisnachrichten/2026/03-26/pvs-updates-einspielen/",
+      "summary": "Die KBV empfahl am 26. März 2026 allen Praxen, vor dem 1. April 2026 die aktuellen Software-Updates ihrer Praxisverwaltungssysteme (PVS) einzuspielen. Hintergrund: Ab 1. April 2026 gelten neue EBM-Positionen (u.a. GOP 01482 für DiGA Kranus Mictera) sowie technische Anpassungen für die elektronische Verordnung und Arbeitsunfähigkeitsbescheinigung (eAU). Praxen ohne aktuelle Software riskieren Abrechnungsfehler oder nicht-konforme elektronische Übermittlungen. Die KBV-Empfehlung ist regelmäßige Routine bei Quartalsübergängen; der Hinweis auf technische E-Rezept- und eAU-Anforderungen zeigt, dass TI-konforme Primärsysteme laufende Wartung erfordern.",
+      "relevantArticles": [
+        "E-Rezept.md",
+        "Telematikinfrastruktur.md"
+      ],
+      "category": "info",
+      "action": "info_only"
+    },
+    {
+      "title": "gematik E-Health Community: 1.400 Mitglieder, 4.200 abgeschlossene Umfragen (März 2026)",
+      "date": "2026-03-25",
+      "source": "https://www.gematik.de/newsroom/news-detail/3-fragen-an-jasmin-kratz-produktmanagerin-research",
+      "summary": "Gematik-Produktmanagerin Jasmin Kratz berichtete im März 2026 über das E-Health Community-Panel, das Feedback von Gesundheitsfachleuten und TI-Nutzern für die Produktentwicklung sammelt. Nach einem Jahr: 1.400+ verifizierte Mitglieder, 4.200 abgeschlossene Umfragen, 90+ Interviews. Das Panel ist offen für direkte TI-Nutzer und andere Personen, die professionell mit der TI arbeiten. Erkenntnisse fließen in gematik-Produktentscheidungen zu ePA, E-Rezept, TI-Messenger und anderen Diensten ein. Die Community ist Teil des nutzerzentrierten Ansatzes, den gematik nach den Leitsätzen von Januar 2026 forciert.",
+      "relevantArticles": [
+        "gematik.md"
+      ],
+      "category": "info",
+      "action": "info_only"
     }
   ],
-  "lastRun": "2026-03-25T16:30:00Z",
-  "lastChecked": "2026-03-25"
+  "lastRun": "2026-04-01T10:00:00Z",
+  "lastChecked": "2026-04-01"
 }

@@ -3,6 +3,10 @@ title: gSMC-KT
 audience: [technical]
 tags: [infrastruktur, karte, kartenterminal, sicherheit, pki]
 aliases: [Security Module Card Kartenterminal, Kartenterminal-Sicherheitsmodul]
+relevance:
+  sectors: [arztpraxis, zahnarzt, krankenhaus, apotheke, hersteller]
+  interests: [technik, compliance]
+maturity: setzling
 ---
 
 # gSMC-KT
@@ -52,11 +56,17 @@ Die gSMC-KT-Zertifikate bilden einen eigenen Zweig in der [[PKI|TI-PKI]]-Hierarc
 
 Nur wenn alle drei Prüfungen positiv sind, wird das Terminal als vertrauenswürdig eingestuft.
 
+> [!interesse-compliance]
+> **ECC-Migrationsfrist:** Kartenterminals mit gSMC-KT G2.0 (RSA-only) verlieren ab **31. Dezember 2026** die TI-Zulassung. Praxen und Apotheken müssen bis dahin sicherstellen, dass ihre Terminals mit ECC-fähiger gSMC-KT G2.1 ausgestattet sind. Hersteller müssen entweder neue Terminals liefern oder die gSMC-KT im Gerät tauschen.
+
 ### ECC-Migration und Übergangsfrist
 
 Wie alle anderen TI-Smartcards werden auch die gSMC-KTs im Zuge der [[ECC-Migration]] auf neue Schlüsselverfahren umgestellt. Kartenterminals mit gSMC-KT G2.0 (RSA-only) müssen bis zum **31. Dezember 2026** durch Geräte mit ECC-fähiger gSMC-KT G2.1 ersetzt werden. Ab diesem Datum verlieren Terminals mit alter gSMC-KT die TI-Zulassung.
 
 Hersteller von Kartenterminals, die noch G2.0-gSMC-KTs eingebaut haben, müssen entweder neue Terminals ausliefern oder die gSMC-KT im Gerät austauschen, sofern der Formfaktor das erlaubt.
+
+> [!interesse-technik]
+> **Spezifikation:** gemSpec_KT (aktuelle Version auf gemspec.gematik.de). Das Authentisierungsprotokoll zwischen Konnektor und Terminal ist in gemSpec_KT Kapitel "Sicherheitsfunktionen" spezifiziert. Zertifikatstyp: C.KT.AUT. Prüfpfad: TSL → CA-Zertifikat → gSMC-KT-Zertifikat → OCSP-Status. Generationenwechsel: G2.0 (RSA-2048) zu G2.1 (ECC, P-256/brainpoolP256r1).
 
 ### Kommunikation Konnektor-Terminal
 
@@ -82,4 +92,4 @@ Der Konnektor kommuniziert mit dem Kartenterminal über eine gesicherte Verbindu
 
 - [gematik Fachportal: Smartcards in der TI](https://fachportal.gematik.de/telematikinfrastruktur/smartcards)
 - [gemSpec_KT - gematik Spezifikation Kartenterminal](https://gemspec.gematik.de/docs/gemSpec/gemSpec_KT/latest/)
-- [gematik Fachportal: ECC-Migration](https://fachportal.gematik.de/telematikinfrastruktur/ecc-migration)
+- [gematik Fachportal: Gerätespezifische Sicherheitsmodulkarte Typ KT](https://fachportal.gematik.de/telematikinfrastruktur/smartcards/geraetespezifische-sicherheitsmodulkarte-typ-kt)

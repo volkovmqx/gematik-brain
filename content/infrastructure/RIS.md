@@ -3,7 +3,10 @@ title: RIS
 audience: [technical]
 tags: [infrastruktur, radiologie, krankenhaus, software, bildgebung]
 aliases: [Radiologie-Informationssystem, Radiologieinformationssystem]
-maturity: immergruen
+maturity: wachsend
+relevance:
+  sectors: [krankenhaus, hersteller, it-dienstleister]
+  interests: [technik]
 ---
 
 # RIS
@@ -59,6 +62,9 @@ Die Anbindung an bildgebende Geräte (Modalitäten) erfolgt über [[DICOM]]-Dien
 ### Befundsystem und Diktierlösung
 
 Radiologen erstellen Befunde entweder direkt im RIS oder über separate Diktier- und Spracherkennungssysteme (z.B. Nuance Dragon Medical). Die fertigen Befunddokumente werden als strukturierter Text oder als DICOM Structured Report (SR) gespeichert.
+
+> [!interesse-technik]
+> **RIS-Schnittstellen im Überblick:** Die KIS-RIS-Kommunikation nutzt in deutschen Krankenhäusern überwiegend HL7 v2 (ORM/ORR/ORU). Die DICOM-Worklist (MWL) ist der Standardweg für die Gerät-RIS-Integration. Für TI-Anbindung (ISiK Stufe 3): FHIR ServiceRequest und DiagnosticReport als standardisierte Nachfolge. Hersteller: Dedalus (ORBIS), Siemens Healthineers (Syngo), Sectra, AGFA.
 
 ### Integration in die Telematikinfrastruktur
 

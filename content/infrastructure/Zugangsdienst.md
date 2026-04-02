@@ -6,7 +6,7 @@ aliases: [TI-Zugangsdienst, VPN-Zugangsdienst, TI-Zugang, Zugangsdienstanbieter]
 relevance:
   sectors: [arztpraxis, krankenhaus, zahnarzt, apotheke, pflege, hersteller, ti-infrastruktur, it-dienstleister]
   interests: [technik, compliance]
-maturity: setzling
+maturity: wachsend
 ---
 
 # Zugangsdienst
@@ -49,7 +49,7 @@ Die [[gematik]] führt eine öffentliche Liste zugelassener Zugangsdienst-Anbiet
 - **Bitmarck** (für Kassen-seitige Verbindungen)
 - **RISE GmbH** (TI-Gateway-Anbieter)
 
-Der Ausfall eines großen Anbieters kann viele Einrichtungen gleichzeitig treffen. Dies zeigte sich am **10. Februar 2026**: Ein Rauchmelder-Alarm im IBM-Rechenzentrum Frankfurt löste eine automatische Systemabschaltung aus. Dieser einzelne Vorfall war die alleinige Ursache für zwei nachgelagerte Ausfälle: Sowohl der IBM-sektorale IDP als auch der T-Systems VPN-Zugangsdienst wurden für mehrere Stunden lahmgelegt, weil beide Dienste in demselben Rechenzentrum betrieben werden. Betroffene TI-Dienste waren ePA, E-Rezept, [[KIM]] und VSDM. Die Störung dauerte von ca. 3:05 Uhr bis etwa 11:00 Uhr.
+Der Ausfall eines großen Anbieters kann viele Einrichtungen gleichzeitig treffen. Dies zeigte sich am **10. Februar 2026**, als der IBM-Rechenzentrumsausfall in Frankfurt gleichzeitig den IBM-sektoralen [[Sektoraler-IDP|IDP]] und den T-Systems VPN-Zugangsdienst für mehrere Stunden lahmlegte. Ursache war ein Rauchmelder-Alarm, der eine automatische Systemabschaltung im IBM-Rechenzentrum Frankfurt auslöste. Da beide Dienste in demselben Rechenzentrum betrieben werden, war dies ein einziger Auslöser mit mehrfacher Wirkung. Betroffene TI-Dienste waren [[ePA]], [[E-Rezept]], [[KIM]] und [[VSDM]]. Die Störung dauerte von ca. 3:05 Uhr bis etwa 11:00 Uhr.
 
 ## Technische Details
 

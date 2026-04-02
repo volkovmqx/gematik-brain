@@ -107,6 +107,8 @@ Der **[[dgMP|digital gestützte Medikationsprozess (dgMP)]]** ist seit März 202
 
 Technische Grundlage ist ePA 3.1.2 (Mai 2025). Ab Oktober 2026 erhalten Apotheken Schreibzugriff auf den Medikationsdienst, um dispensierte Arzneimittel (einschließlich OTC-Medikamente) direkt einzutragen.
 
+Das **Bundeskabinett** beschloss am **1. April 2026** den **Aktionsplan Arzneimitteltherapiesicherheit (AMTS) 2026-2029**. Der Plan benennt [[ePA]] (eML und eMP), [[E-Rezept]] und [[dgMP]] als zentrale Instrumente zur Reduzierung vermeidbarer unerwünschter Arzneimittelereignisse. Schwerpunkt ist die Patientengruppe mit Polypharmazie (gleichzeitig mehrere Medikamente). Der Aktionsplan setzt keinen eigenen gesetzlichen Fristen, sondern koordiniert bestehende Maßnahmen (DigiG, GDNG, DiGAV) unter einem gemeinsamen Qualitätsdach.
+
 ### Vertrauenswürdige Ausführungsumgebung (VAU)
 
 Die [[VAU|Vertrauenswürdige Ausführungsumgebung (VAU)]] ist eine zentrale Sicherheitskomponente der ePA. Sie sorgt dafür, dass Patientendaten auch für den Aktenbetreiber selbst verschlüsselt bleiben. Zugriffe auf Patientendaten finden innerhalb der VAU statt, wo die Daten temporär entschlüsselt werden können, ohne dass der Betreiber dauerhaft Einsicht hat.

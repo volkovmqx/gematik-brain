@@ -6,6 +6,7 @@ aliases: [Bestätigungsverfahren gematik, Konformitätsnachweis gematik, Bestät
 relevance:
   sectors: [krankenhaus, arztpraxis, hersteller, ti-infrastruktur, it-dienstleister, regulierung]
   interests: [compliance, technik, business]
+maturity: setzling
 ---
 
 # Bestätigungsverfahren
@@ -25,7 +26,7 @@ Das Bestätigungsverfahren unterscheidet sich vom klassischen [[Zulassungsverfah
 Das Bestätigungsverfahren wird insbesondere für folgende Bereiche angewendet:
 
 - **[[ISiK]] (Informationstechnische Systeme im Krankenhaus)**: Krankenhaussoftware (KIS, Subsysteme) muss ISiK-Konformität nachweisen, um Fördergelder aus dem [[Transformationsfonds]] oder [[KHZG]] in Anspruch nehmen zu können.
-- **[[ISiP]] (Informationstechnische Systeme in der Pflege)**: Pflegesoftware analog zu ISiK.
+- **ISiP (Informationstechnische Systeme in der Pflege)**: Pflegesoftware analog zu ISiK. Das Rahmenwerk orientiert sich an den Sicherheitsanforderungen des [[BSI-IT-Grundschutz]] und überträgt sie auf den Pflegebereich.
 - **Primärsysteme für die TI**: PVS und KIS, die auf die ePA zugreifen oder am E-Rezept-Dienst teilnehmen, benötigen eine Bestätigung durch gematik oder deren akkreditierte Prüfstellen.
 
 Die gesetzliche Grundlage für ISiK-Pflichten im Krankenhaus bildet das [[KHAG]] (Krankenhauszukunftsgesetz-Ausführungsgesetz) in Verbindung mit dem [[KHZG]] und dem [[KHVVG]].
@@ -91,7 +92,7 @@ Alle Systeme mit gültigem Bestätigungsbescheid sind im öffentlichen Produktka
 
 ## Quellen
 
-- [gematik Fachportal: Bestätigungsverfahren ISiK](https://fachportal.gematik.de/hersteller-anbieter/produktzulassung/bestaetigungsverfahren-isik)
+- [gematik Fachportal: Zulassungs- und Bestätigungsübersichten](https://fachportal.gematik.de/zulassungs-bestaetigungsuebersichten)
 - [gematik: ISiK-Spezifikation auf simplifier.net](https://simplifier.net/isik)
 - [Wikipedia: Krankenhauszukunftsgesetz](https://de.wikipedia.org/wiki/Krankenhauszukunftsgesetz)
 - [§ 373 SGB V: Informationstechnische Systeme im Krankenhaus (ISiK)](https://www.gesetze-im-internet.de/sgb_5/__373.html)

@@ -1,15 +1,15 @@
 {
   "pending": [
     {
-      "term": "OID",
+      "term": "TR-03116",
       "category": "standards",
-      "reason": "Object Identifier: in TI-Zertifikaten, FHIR-Profilen, Telematik-ID und HL7-Nachrichten allgegenwärtig; in 25 Artikeln technisch referenziert ohne Erklärungsartikel",
+      "reason": "BSI Technische Richtlinie für kryptographische Vorgaben in der TI (ECC-Kurven, Schlüssellängen, TLS-Versionen); in 26 Artikeln als Normreferenz erwähnt",
       "mentionedIn": [
-        "content/concepts/CRL.md",
-        "content/concepts/OCSP.md",
-        "content/infrastructure/Telematik-ID.md",
-        "content/processes/T-Rezept.md",
-        "content/processes/DMP.md"
+        "content/processes/ECC-Migration.md",
+        "content/concepts/PKI.md",
+        "content/concepts/X.509.md",
+        "content/organization/BSI.md",
+        "content/concepts/mTLS.md"
       ],
       "priority": 7
     },
@@ -49,6 +49,15 @@
         "content/infrastructure/MMI-Pharmindex.md",
         "content/standards/IVDR.md",
         "content/standards/MDR.md"
+      ],
+      "priority": 5
+    },
+    {
+      "term": "ISiP",
+      "category": "standards",
+      "reason": "Informationssicherheit in Praxen (BSI/KBV-Rahmenwerk); im Bestätigungsverfahren als broken wiki-link referenziert; relevant für niedergelassene Ärzte",
+      "mentionedIn": [
+        "content/processes/Bestaetigungsverfahren.md"
       ],
       "priority": 5
     }
@@ -340,13 +349,19 @@
     "PVS-Hersteller",
     "ePA-Aktensystem",
     "Zugangsdienst",
-    "Testumgebung"
+    "Testumgebung",
+    "gSMC-K",
+    "Root-CA",
+    "TI-Anwendung",
+    "OID",
+    "DiGA-Verzeichnis",
+    "PoPP"
   ],
   "brokenWikiLinks": [
     {
       "link": "SGB V",
       "canonical": "SGB-V",
-      "occurrences": 17,
+      "occurrences": 30,
       "affectedFiles": [
         "content/infrastructure/Apothekenrechenzentrum.md",
         "content/infrastructure/Forschungsdatenzentrum-Gesundheit.md",
@@ -370,7 +385,7 @@
     {
       "link": "SNOMED CT",
       "canonical": "SNOMED-CT",
-      "occurrences": 7,
+      "occurrences": 14,
       "affectedFiles": [
         "content/concepts/Gesundheitsdatenraum.md",
         "content/concepts/Patientenkurzakte.md",
@@ -384,7 +399,7 @@
     {
       "link": "OAuth 2.0",
       "canonical": "OAuth-2.0",
-      "occurrences": 5,
+      "occurrences": 8,
       "affectedFiles": [
         "content/concepts/Zero-Trust.md",
         "content/infrastructure/IDP.md",
@@ -400,17 +415,13 @@
       "affectedFiles": [
         "content/concepts/Primärversorgung.md",
         "content/concepts/TI-Anbindungspflicht.md",
-        "content/processes/Videosprechstunde.md",
-        "content/standards/GVSG.md",
-        "content/standards/Bundesmantelvertrag.md",
-        "content/standards/EBM.md",
-        "content/processes/eVO.md"
+        "content/processes/Videosprechstunde.md"
       ]
     },
     {
       "link": "MyHealth@EU",
       "canonical": "MyHealthAtEU",
-      "occurrences": 2,
+      "occurrences": 5,
       "affectedFiles": [
         "content/standards/DICOM.md",
         "content/standards/Patient-Summary.md"
@@ -419,10 +430,26 @@
     {
       "link": "SGB XI",
       "canonical": "SGB-XI",
-      "occurrences": 2,
+      "occurrences": 3,
       "affectedFiles": [
         "content/standards/BEEP-Gesetz.md",
         "content/technologies/KIM.md"
+      ]
+    },
+    {
+      "link": "MII",
+      "canonical": "Medizininformatik-Initiative",
+      "occurrences": 3,
+      "affectedFiles": [
+        "content/concepts/Pseudonymisierung.md"
+      ]
+    },
+    {
+      "link": "Konformitätsbewertung",
+      "canonical": "Konformitaetsbewertung",
+      "occurrences": 2,
+      "affectedFiles": [
+        "content/infrastructure/Terminologieserver.md"
       ]
     },
     {
@@ -434,11 +461,12 @@
       ]
     },
     {
-      "link": "MII",
-      "canonical": "Medizininformatik-Initiative",
+      "link": "ISiP",
+      "canonical": "ISiP",
+      "note": "Seite existiert noch nicht — neuer Artikel nötig",
       "occurrences": 1,
       "affectedFiles": [
-        "content/concepts/Pseudonymisierung.md"
+        "content/processes/Bestaetigungsverfahren.md"
       ]
     },
     {
@@ -458,14 +486,6 @@
       ]
     },
     {
-      "link": "Konformitätsbewertung",
-      "canonical": "Konformitaetsbewertung",
-      "occurrences": 1,
-      "affectedFiles": [
-        "content/infrastructure/Terminologieserver.md"
-      ]
-    },
-    {
       "link": "ÖGD",
       "canonical": "OeGD",
       "occurrences": 1,
@@ -481,25 +501,33 @@
     "content/infrastructure/RIS.md",
     "content/infrastructure/eGBR.md",
     "content/infrastructure/gSMC-KT.md",
-    "content/organization/Bundesaerztekammer.md",
     "content/organization/DAV.md",
     "content/organization/DVKA.md",
     "content/organization/Landesaerztekammer.md",
     "content/organization/Medizinischer-Dienst.md",
     "content/organization/OeGD.md",
-    "content/standards/BEEP-Gesetz.md",
     "content/standards/DiPAV.md",
-    "content/standards/E-Health-Gesetz.md",
     "content/standards/GDAG.md",
     "content/standards/GOZ.md",
     "content/standards/GOÄ.md",
-    "content/standards/KHG.md",
     "content/standards/Matrix-Protokoll.md",
-    "content/standards/Patient-Summary.md",
     "content/standards/VDG.md",
     "content/technologies/DiPaG.md",
     "content/technologies/eArztbrief.md",
     "content/technologies/gRPC.md"
   ],
-  "lastRun": "2026-03-25"
+  "missingCallouts": [
+    "content/technologies/CardLink.md",
+    "content/technologies/DiPaG.md",
+    "content/technologies/E-Rezept.md",
+    "content/technologies/Fernsignatur.md",
+    "content/technologies/KIM.md",
+    "content/technologies/TI-Messenger.md",
+    "content/technologies/eAU.md",
+    "content/technologies/eArztbrief.md",
+    "content/technologies/ePass.md",
+    "content/technologies/gRPC.md",
+    "content/processes/VSDM.md"
+  ],
+  "lastRun": "2026-04-01"
 }

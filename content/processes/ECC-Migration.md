@@ -55,7 +55,7 @@ ECC-Kurven in der TI: **brainpoolP256r1** und **brainpoolP384r1** (gemäß BSI T
 
 #### Konnektoren
 
-Seit 1. Januar 2026 sind RSA-only-Konnektoren von der TI ausgeschlossen. [[Konnektoren|Konnektoren]], die ECC-Verschlüsselung unterstützen, benötigen in der Regel ein Firmware-Update. RISE hat am 11. Februar 2026 die Firmware-Version 6.1.3:1.0.0 mit **ECC-Preferred-Feature** freigegeben. Einige ältere Konnektor-Modelle laufen technisch aus und können nicht auf ECC aufgerüstet werden. In diesem Fall ist der Wechsel auf den [[Highspeed-Konnektor]] oder das [[TI-Gateway]] erforderlich.
+Seit 1. Januar 2026 sind RSA-only-Konnektoren von der TI ausgeschlossen. Die eingebaute [[gSMC-K]] (Gerätekarte des Konnektors) musste auf Generation G2.1 (ECC) umgestellt sein. [[Konnektoren|Konnektoren]], die ECC-Verschlüsselung unterstützen, benötigen in der Regel ein Firmware-Update. RISE hat am 11. Februar 2026 die Firmware-Version 6.1.3:1.0.0 mit **ECC-Preferred-Feature** freigegeben. Einige ältere Konnektor-Modelle laufen technisch aus und können nicht auf ECC aufgerüstet werden. In diesem Fall ist der Wechsel auf den [[Highspeed-Konnektor]] oder das [[TI-Gateway]] erforderlich.
 
 #### Heilberufsausweise (HBA) und SMC-B
 

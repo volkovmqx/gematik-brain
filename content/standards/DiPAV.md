@@ -3,6 +3,10 @@ title: DiPAV
 audience: [technical, non-technical]
 tags: [standards, gesetzgebung, dipa, pflege, bfarm]
 aliases: [Digitale Pflegeanwendungen-Verordnung, DiPA-Verordnung]
+relevance:
+  sectors: [pflege, hersteller, kasse, startup]
+  interests: [compliance, business]
+maturity: wachsend
 ---
 
 # DiPAV
@@ -60,6 +64,12 @@ Die DiPAV verpflichtet Hersteller zur Umsetzung technischer, syntaktischer und s
 | Prüfbehörde | [[BfArM]] | [[BfArM]] |
 | Zielgruppe | GKV-Versicherte | Pflegebedürftige Pflegegrade 1-5 |
 | Zugang | Ärztliche Verordnung | Eigenantrag bei der Pflegekasse |
+
+> [!interesse-compliance]
+> **Antragsprozess für Hersteller:** Elektronischer Antrag beim [[BfArM]] mit Herstellerangaben, Zweckbestimmung und kostenfreiem Testzugang. Aufnahmegebühren: 3.000 bis 9.900 Euro. Vorläufige Aufnahme ohne vollständigen Nutzennachweis möglich (12 Monate Zeit für Studiennachlieferung). Zielgruppe: Pflegebedürftige Pflegegrade 1-5. Erstattungsbetrag: bis zu 50 Euro/Monat (ab 2026: 40 Euro für DiPA nach § 40a SGB XI).
+
+> [!interesse-business]
+> **Markt DiPA:** Weniger etabliert als der DiGA-Markt; wenige zugelassene DiPA im Verzeichnis. Hersteller brauchen quantitative vergleichende Studien zum pflegerischen Nutzen. Die Zugangshürde ist vergleichbar mit DiGA, die Zielgruppe (Pflegebedürftige) ist spezifischer. Erstattung läuft über Pflegekassen (SGB XI), nicht GKV (SGB V). Kein ärztliches Rezept erforderlich: Pflegebedürftige stellen den Antrag direkt bei der Pflegekasse.
 
 ### Vorläufige Aufnahme
 
